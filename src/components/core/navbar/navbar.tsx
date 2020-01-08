@@ -90,7 +90,7 @@ export class NavBarPresenterUnconnected extends React.PureComponent<IProps, any>
                                     {
                                         this.state.localeMap.map((locale: LocalizationMap) => {
                                             return (
-                                                <span onClick={() => this.selectLanguage(locale)}
+                                                <span onClick={() => this.selectLanguage(locale)} key={locale.code}
                                                     className="dropdown-item pointer">{locale.name}
                                                 </span>
                                             );

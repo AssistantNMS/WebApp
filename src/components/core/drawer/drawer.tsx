@@ -67,27 +67,28 @@ export class Drawer extends React.PureComponent<any, any> {
         });
     }
 
-    renderMenuItem = (item: DrawerMenuItem) => {
-        const classes = classNames('nav-item', {
-            active: item.isActive,
-            separator: item.isSeparator
+    renderMenuItems = (menuItems: DrawerMenuItem[]) => {
+        return menuItems.map((item: DrawerMenuItem, index: number) => {
+            const classes = classNames('nav-item', {
+                active: item.isActive,
+                separator: item.isSeparator
+            });
+
+            if (item.isSeparator) return <li className={classes}></li>;
+
+            let icon: any = null;
+            if (item.iconType === DrawerIconType.Material) icon = <i className="material-icons">{item.icon}</i>;
+            if (item.iconType === DrawerIconType.Custom) icon = <img className="custom-icons" src={item.icon} alt={item.icon} />;
+            return (
+                <li onClick={this.menuItemClick}
+                    className={classes} key={`${item.link}-${index}`}>
+                    <Link to={item.link} className="nav-link">
+                        {icon}
+                        <p>{item.name}</p>
+                    </Link>
+                </li>
+            );
         });
-
-        if (item.isSeparator) return <li className={classes}></li>;
-
-        let icon = null;
-        if (item.iconType === DrawerIconType.Material) icon = <i className="material-icons">{item.icon}</i>;
-        if (item.iconType === DrawerIconType.Custom) icon = <img className="custom-icons" src={item.icon} alt={item.icon} />;
-
-        return (
-            <li onClick={this.menuItemClick}
-                className={classes}>
-                <Link to={item.link} className="nav-link">
-                    {icon}
-                    <p>{item.name}</p>
-                </Link>
-            </li>
-        );
     }
 
     render() {
@@ -99,9 +100,7 @@ export class Drawer extends React.PureComponent<any, any> {
                             <img src={require('../../../assets/images/DrawerHeader.png')} alt="drawerHeader" />
                         </div>
                         {
-                            this.state.menuItems.map((item: DrawerMenuItem) => {
-                                return this.renderMenuItem(item);
-                            })
+                            this.renderMenuItems(this.state.menuItems)
                         }
                         <div style={{ textAlign: 'center', padding: '.5em' }}>{this.state.appVersion}</div>
                     </ul>
