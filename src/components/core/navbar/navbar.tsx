@@ -4,13 +4,9 @@ import i18next from 'i18next';
 import { LocalizationMap } from '../../../localization/LocalizationMap';
 import { localeMap } from '../../../localization/Localization';
 import classNames from 'classnames';
-import { withRouter } from 'react-router-dom';
 
 interface IProps {
     title: string;
-    location: any;
-    match: any;
-    history: any;
 }
 
 interface IState {
@@ -19,7 +15,7 @@ interface IState {
     localeMap: LocalizationMap[]
 }
 
-export class NavBarPresenterUnconnected extends React.PureComponent<IProps, any> {
+export class NavBar extends React.PureComponent<IProps, any> {
     constructor(props: any) {
         super(props);
 
@@ -115,7 +111,3 @@ export class NavBarPresenterUnconnected extends React.PureComponent<IProps, any>
         );
     }
 }
-
-export const NavBar = withRouter<IProps, any>((props: IProps) => (
-    <NavBarPresenterUnconnected {...props} />
-));

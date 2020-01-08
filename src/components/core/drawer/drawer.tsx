@@ -1,87 +1,49 @@
 import React from 'react';
-import update from 'immutability-helper';
 
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
 import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/DrawerMenuItemsHelper';
 import { getCatalogueMenuItems } from '../../../helper/CatalogueMenuItemsHelper';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
-export class Drawer extends React.PureComponent<any, any> {
-    constructor(props: any) {
-        super(props);
+interface IProps {
+    location: any;
+    match: any;
+    history: any;
+}
 
-        this.state = {
-            menuItems: this.getAllDrawerMenuItems(),
-            appVersion: require('../../../buildName.json'),
-        };
-    }
+export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
+    const baseItems = getDrawerMenuItems();
+    const catalogueItems = getCatalogueMenuItems();
 
-    getAllDrawerMenuItems = (): Array<DrawerMenuItem> => {
-        const baseItems = getDrawerMenuItems();
-        const catalogueItems = getCatalogueMenuItems();
+    const menuItems = baseItems.concat(catalogueItems);
+    menuItems.push(menuItemSeperator);
 
-        const combined = baseItems.concat(catalogueItems);
-        combined.push(menuItemSeperator);
-        return combined;
-    }
-
-    menuItemClick = () => {
+    const menuItemClick = () => {
         const htmlTag = document.querySelector('html');
         if (htmlTag != null) {
             htmlTag.classList.toggle('nav-open');
         }
     }
 
-    toggleMenuItemIsActive = (links: Array<string>): void => {
-        let state = update(this.state.menuItems, {});
-        for (let itemIndex = 0; itemIndex < state.length; itemIndex++) {
-            const item = state[itemIndex];
-            state = update(state, {
-                [itemIndex]: {
-                    isActive: { $set: links.includes(item.link) }
-                }
-            });
-        }
-        this.setState(() => {
-            return {
-                menuItems: state
-            }
-        });
-    }
+    const renderMenuItems = (menuItems: DrawerMenuItem[]) => {
+        const { pathname } = props.location;
 
-    reTranslateDrawerItems = (newMenuItems: Array<DrawerMenuItem>) => {
-        for (
-            let menuItemIndex = 0;
-            menuItemIndex < this.state.menuItems.length;
-            menuItemIndex++
-        ) {
-            const isActive = this.state.menuItems[menuItemIndex].isActive;
-            newMenuItems[menuItemIndex].isActive = isActive;
-        }
-        this.setState(() => {
-            return {
-                menuItems: newMenuItems
-            }
-        });
-    }
-
-    renderMenuItems = (menuItems: DrawerMenuItem[]) => {
         return menuItems.map((item: DrawerMenuItem, index: number) => {
             const classes = classNames('nav-item', {
-                active: item.isActive,
+                active: pathname === item.link,
                 separator: item.isSeparator
             });
 
-            if (item.isSeparator) return <li className={classes}></li>;
+            if (item.isSeparator) return <li className={classes} key={`seperator-${index}`}></li>;
 
             let icon: any = null;
             if (item.iconType === DrawerIconType.Material) icon = <i className="material-icons">{item.icon}</i>;
             if (item.iconType === DrawerIconType.Custom) icon = <img className="custom-icons" src={item.icon} alt={item.icon} />;
             return (
-                <li onClick={this.menuItemClick}
-                    className={classes} key={`${item.link}-${index}`}>
+                <li onClick={menuItemClick} key={`${item.link}-${index}`}
+                    className={classes}>
                     <Link to={item.link} className="nav-link">
                         {icon}
                         <p>{item.name}</p>
@@ -91,21 +53,21 @@ export class Drawer extends React.PureComponent<any, any> {
         });
     }
 
-    render() {
-        return (
-            <div className="sidebar">
-                <div className="sidebar-wrapper ps-theme-default">
-                    <ul className="nav">
-                        <div className="logo">
-                            <img src={require('../../../assets/images/DrawerHeader.png')} alt="drawerHeader" />
-                        </div>
-                        {
-                            this.renderMenuItems(this.state.menuItems)
-                        }
-                        <div style={{ textAlign: 'center', padding: '.5em' }}>{this.state.appVersion}</div>
-                    </ul>
-                </div>
+    return (
+        <div className="sidebar">
+            <div className="sidebar-wrapper ps-theme-default">
+                <ul className="nav">
+                    <div className="logo">
+                        <img src={require('../../../assets/images/DrawerHeader.png')} alt="drawerHeader" />
+                    </div>
+                    {
+                        renderMenuItems(menuItems)
+                    }
+                    <div style={{ textAlign: 'center', padding: '.5em' }}>{require('../../../buildName.json')}</div>
+                </ul>
             </div>
-        );
-    };
+        </div>
+    );
 }
+
+export const Drawer = withRouter(DrawerUnconnected);
