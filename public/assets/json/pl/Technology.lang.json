@@ -1,0 +1,806 @@
+[
+  {
+    "Id": "tech1",
+    "Name": "Ochrona przed zagrożeniami",
+    "Group": "Ochrona egzokombinezonu przed czynnikami zewnętrznymi",
+    "Description": "System ochrony przed zagrożeniami egzokombinezonu stale monitoruje i stabilizuje otoczenie użytkownika. \n\nStandardowa ochrona reaktywna może zostać wzmocniona przez tarcze środowiskowe, zapewniające lepszą ochronę przed konkretnymi warunkami.\n\nUrządzenie jest ładowane substancjami na bazie sodu. Użytkownik powinien pamiętać, że brak zasilania systemu ochrony przed zagrożeniami może spowodować brak zgodności pomiędzy otoczeniem a jego życiem."
+  },
+  {
+    "Id": "tech2",
+    "Name": "Krata tarczy",
+    "Group": "Ulepszenie ochrony przed zagrożeniami",
+    "Description": "Zwiększa pojemność układu ochrony przed zagrożeniami, dzięki czemu użytkownik może spędzić więcej czasu w niebezpiecznym otoczeniu, bez konieczności doładowywania egzokombinezonu."
+  },
+  {
+    "Id": "tech3",
+    "Name": "System podtrzymania życia",
+    "Group": "Pakiet zasilający do systemów podtrzymania życia egzokombinezonu",
+    "Description": "Rdzeń egzokombinezonu, system podtrzymania życia, stale filtruje i pompuje tlen potrzebny do oddychania.\n\nOprócz zapewnienia przetrwania użytkownikowi egzokombinezonu, jednostka podtrzymania życia korzysta też z nadwyżki tlenu do generowania zasilania systemów dodatkowych, takich jak plecak odrzutowy, wzmocnienie szybkości czy reflektor."
+  },
+  {
+    "Id": "tech4",
+    "Name": "Przetwarzacz tlenu",
+    "Group": "Ulepszenie systemu podtrzymania życia",
+    "Description": "Zwiększa podstawową pojemność systemu podtrzymania życia, dzięki czemu użytkownik może poruszać się dłużej bez konieczności ładowania."
+  },
+  {
+    "Id": "tech5",
+    "Name": "Plecak odrzutowy",
+    "Group": "Jednostka napędu powietrznego",
+    "Description": "Dodaje do egzokombinezonu zaawansowane możliwości poruszania się, w tym czasową zdolność lotu.\n\nKontroluj ciąg za pomocą JUMP. Latający plecak używa energii z systemu podtrzymania życia egzokombinezonu, aby zwiększyć ciśnienie i wyrzucać krótkie obłoki gazu, wystrzeliwując użytkownika w powietrze.\n\nPlecak odrzutowy można chwilowo przeładować, zbierając rośliny zasobne w deuter, co dramatycznie zwiększa dostępny ciąg."
+  },
+  {
+    "Id": "tech6",
+    "Name": "Stymulator neuralny",
+    "Group": "Ulepszenie systemów ruchu egzokombinezonu",
+    "Description": "Zwiększa pojemność zbiorników plecaka odrzutowego oraz rezerw pomp przynerkowych egzokombinezonu, dzięki czemu użytkownik może dłużej latać i biec sprintem."
+  },
+  {
+    "Id": "tech7",
+    "Name": "Buty rakietowe",
+    "Group": "Ulepszenie egzokombinezonu",
+    "Description": "Wyposaża plecak odrzutowy egzokombinezonu w zaawansowane zdolności skoku, dzięki czemu użytkownik może z łatwością wykonywać dalekie susy.\n\nAktywuj układy skoku, szybko naciskając JUMP."
+  },
+  {
+    "Id": "tech8",
+    "Name": "Sieć chłodząca",
+    "Group": "Moduł ochrony przed zagrożeniami",
+    "Description": "Użytkownik jest chroniony przed obrażeniami związanymi z ciepłem na gorących planetach.\n\nZapewnia ulgę od ciepła atmosferycznego i słonecznego dzięki rozprowadzeniu płynnego frenu po powłoce egzokombinezonu.\n\nUrządzenie jest zasilane ekstraktami mineralnymi, które znaleźć można w gorących ekosystemach. Działa automatycznie po skonstruowaniu w ekwipunku egzokombinezonu użytkownika."
+  },
+  {
+    "Id": "tech9",
+    "Name": "Powłoka termiczna",
+    "Group": "Moduł ochrony przed zagrożeniami",
+    "Description": "Użytkownik jest chroniony przed obrażeniami związanymi z wychłodzeniem na zamarzniętych planetach.\n\nKapilary cieplne przeprowadzone przez egzokombinezon użytkownika rozprowadzają kalid po całym ciele, co gwarantuje właściwą jego temperaturę.\n\nUrządzenie jest zasilane ekstraktami mineralnymi, które znaleźć można w zamarzniętych ekosystemach. Działa automatycznie po skonstruowaniu w ekwipunku egzokombinezonu użytkownika."
+  },
+  {
+    "Id": "tech10",
+    "Name": "Supresor toksyn",
+    "Group": "Moduł ochrony przed zagrożeniami",
+    "Description": "Użytkownik jest chroniony przed toksycznością.\n\nAktywne związki zawarte w supresorze usuwają toksyczne płyny spadające na użytkownika, tym samym zmniejszając zagrożenie obrażeniami i zadławieniem.\n\nUrządzenie jest zasilane ekstraktami mineralnymi, które można znaleźć w toksycznych ekosystemach. Działa automatycznie po skonstruowaniu w ekwipunku egzokombinezonu użytkownika."
+  },
+  {
+    "Id": "tech11",
+    "Name": "Deflektor radiacji",
+    "Group": "Moduł ochrony przed zagrożeniami",
+    "Description": "Użytkownik jest chroniony przed radiacją.\n\nZnacznie zmniejsza niebezpieczeństwo związane z badaniem radiacyjnych układów planetarnych. Mikrowibracje zwiększają częstotliwość fal elektromagnetycznych, co wiąże się z mniejszym wchłanianiem szkodliwego promieniowania.\n\nUrządzenie jest zasilane ekstraktami mineralnymi, które można znaleźć w radioaktywnych ekosystemach. Działa automatycznie po skonstruowaniu w ekwipunku egzokombinezonu użytkownika."
+  },
+  {
+    "Id": "tech12",
+    "Name": "Membrana powietrzna",
+    "Group": "Pomoc w oddychaniu podwodnym",
+    "Description": "Wydłużony czas pozostawania pod wodą.\n\nPochłanianie gazów rozpuszczonych w wodzie poprzez specjalną membranę umieszczoną na ustach lub otworze oddechowym użytkownika (jeśli jest on przedstawicielem rasy o tradycyjnej budowie).\n\nDziała automatycznie po skonstruowaniu w ekwipunku egzokombinezonu użytkownika."
+  },
+  {
+    "Id": "tech13",
+    "Name": "Rękawica haz-mat",
+    "Group": "Modyfikacja egzokombinezonu",
+    "Description": "Ulepsza metalowe ekranowanie rękawic egzokombinezonu.\n\nZaawansowana mieszanka wzmocnionego metalu i katalitycznych osłon pozwala użytkownikowi bezpiecznie przenosić niebezpieczne substancje, a także wzmacnia jego siłę, która jest potrzebna do zbierania niektórych rodzajów flory uprawnej."
+  },
+  {
+    "Id": "tech14",
+    "Name": "Pamięć",
+    "Group": "Relikt z innego miejsca.",
+    "Description": "Wewnątrz znajduje się wszystko, cokolwiek udało ci się poznać."
+  },
+  {
+    "Id": "tech15",
+    "Name": "Gwiezdne ziarno",
+    "Group": "Bezcenny fragment",
+    "Description": "Mikroskopijna iskra zawieszona w polu ochronnym nieznanego pochodzenia.\n\nZiarno migocze życiem, desperacko próbując uciec i zrealizować swój potencjał."
+  },
+  {
+    "Id": "tech16",
+    "Name": "Przestarzała technologia",
+    "Group": "Stara, bezużyteczna technologia",
+    "Description": "Technologia zniszczona przez zakłócenia ze strony Atlasa.\n\nMożna ją przetworzyć na użyteczne komponenty."
+  },
+  {
+    "Id": "tech17",
+    "Name": "Wydajne dysze wodne",
+    "Group": "Jednostka ulepszająca plecak odrzutowy",
+    "Description": "Zmniejszają zużycie paliwa dysz wodnych plecaka odrzutowego, a tym samym obciążenie systemów podtrzymania życia egzokombinezonu.\n\nW turbinach plecaka odrzutowego zainstalowane zostają jednostki akwa-kompresora, dzięki czemu nie są już konieczne duże nakłady energii na zapłon podwodny."
+  },
+  {
+    "Id": "tech18",
+    "Name": "Przetwarzacz tlenu",
+    "Group": "Awaryjny system podtrzymania życia",
+    "Description": "Ulepszenie membrany powietrznej egzokombinezonu, pozwalające na pozyskanie tlenu z systemu podtrzymania życia w przypadku awaryjnego problemu z oddychaniem. Pozwala użytkownikowi wynurzyć się i poszukać konwencjonalnych źródeł zasilania.\n\nUwaga: Długotrwała konwersja energii podtrzymania życia na powietrze nie jest zalecana. Może spowodować, że życie nie będzie dłużej podtrzymywane."
+  },
+  {
+    "Id": "tech19",
+    "Name": "Prosty translator",
+    "Group": "Automatyczny analizator języka",
+    "Description": "Urządzenie do automatycznego tłumaczenia. Nagrywa i analizuje pobliskie rozmowy, a następnie przepuszcza dane przez kontekstualny system uczący się, aby określić znaczenie.\n\nModel ten ma stosunkowo niewiele pamięci, a więc jego możliwości tłumaczeniowe są ograniczone."
+  },
+  {
+    "Id": "tech20",
+    "Name": "Ulepszony translator",
+    "Group": "Automatyczny analizator języka",
+    "Description": "Urządzenie do automatycznego tłumaczenia. Nagrywa i analizuje pobliskie rozmowy, a następnie przepuszcza dane przez kontekstualny system uczący się, aby określić znaczenie.\n\nRównoległe procesory języka pozwalają na tłumaczenie większej ilości nagranej mowy."
+  },
+  {
+    "Id": "tech21",
+    "Name": "Zaawansowany translator",
+    "Group": "Automatyczny analizator języka",
+    "Description": "Urządzenie do automatycznego tłumaczenia. Nagrywa i analizuje pobliskie rozmowy, a następnie przepuszcza dane przez kontekstualny system uczący się, aby określić znaczenie.\n\nDuża macierz pamięci oraz podkręcone procesory językowe pozwalają na tłumaczenie dużych partii mowy w czasie rzeczywistym."
+  },
+  {
+    "Id": "tech22",
+    "Name": "Translator Artemis",
+    "Group": "Automatyczny analizator języka",
+    "Description": "Urządzenie do automatycznego tłumaczenia. Należy je wykalibrować, przesyłając istniejące dane tłumaczeniowe. Aby działać, urządzenie musi posiadać połączenie sieciowe z Artemis.\n\nBez dostępu do usługi tłumaczeniowej hosta, obwody wewnętrzne ograniczają tłumaczenie w czasie rzeczywistym do niewielkiej liczby słów."
+  },
+  {
+    "Id": "tech23",
+    "Name": "Silnik pulsacyjny",
+    "Group": "Dopalacz lotu kosmicznego",
+    "Description": "Zapewnia napęd do lotów kosmicznych, dopalaczy i skoków impulsowych w lokalnym układzie.\n \nUżytkownik powinien zwrócić uwagę, że do naładowania silnika pulsacyjnego wymagany jest tryt. Tryt występuje w obfitości w polach asteroid w pobliskiej przestrzeni kosmicznej.\n\nPrzytrzymaj jednocześnie ROLLLEFT i ROLLRIGHT, aby włączyć skok impulsowy.\nPrzytrzymaj BOOST, aby włączyć dopalanie w trakcie lotu w kosmosie."
+  },
+  {
+    "Id": "tech24",
+    "Name": "Rdzeń fotonowy",
+    "Group": "Moduł towarzyszący do silnika pulsacyjnego",
+    "Description": "Zwiększa manewrowość statku i pozwala na dłuższe dopalanie."
+  },
+  {
+    "Id": "tech25",
+    "Name": "Silnik startowy",
+    "Group": "System startu pionowego",
+    "Description": "Nieodzowny system startu i lądowania.\n \nDo ładowania silnika wymagane jest specjalne paliwo, pochodzące z diwodoru. Uruchomienie procedur wymaga wystarczającej ilości paliwa przed aktywacją.\n \nPrzytrzymaj THRUST, aby wystartować z powierzchni planety.\nPrzytrzymaj BOOST, aby włączyć dopalacz w locie."
+  },
+  {
+    "Id": "tech26",
+    "Name": "Wydajne silniki",
+    "Group": "Ulepszenie systemu startowego statku gwiezdnego",
+    "Description": "Ulepsza układy statku gwiezdnego, zmniejszając zużycie paliwa podczas startu."
+  },
+  {
+    "Id": "tech27",
+    "Name": "System układu startowego",
+    "Group": "Ulepszenie systemu startowego statku gwiezdnego",
+    "Description": "Fotowoltaiczne panele, przytwierdzone do silników startowych, pozwalają na powolne ładowanie w czasie, gdy statek nie jest używany.\n\nPobrane światło pozyskuje diwodór z atmosfery i z czasem automatycznie napełnia paliwem silniki startowe."
+  },
+  {
+    "Id": "tech28",
+    "Name": "Odbiornik teleportacji",
+    "Group": "Urządzenie teleportacyjne montowane na statku",
+    "Description": "Urządzenie modulujące standardowe sygnały komunikacji statku gwiezdnego, co pozwala przesyłać nie tylko dane, ale także materię.\n\nStatki gwiezdne wyposażone w takie urządzenie, mogą wysyłać i odbierać produkty i substancje do i z egzokombinezonu użytkownika na dalekie odległości."
+  },
+  {
+    "Id": "tech29",
+    "Name": "Hipernapęd",
+    "Group": "Napęd warp prędkości świetlnej",
+    "Description": "Napęd nadświetlny FTL jest efektywnym sposobem osiągnięcia prędkości warp i dokonywania skoków pomiędzy sąsiednimi układami.\n\nUżytkownikowi zaleca się używanie systemów hipernapędu poprzez mapę galaktyki."
+  },
+  {
+    "Id": "tech30",
+    "Name": "Napęd kadmowy",
+    "Group": "Ulepszenie hipernapędu: Czerwone układy",
+    "Description": "Magnesy ekranujące rdzeń hipernapędu zostają ulepszone, co zapobiega szybkiemu rozpadowi przy próbach dotarcia do rzadkich ciał niebieskich klasy czerwonej.\n\nDostęp do systemów hipernapędu zalecany jest poprzez mapę galaktyki."
+  },
+  {
+    "Id": "tech31",
+    "Name": "Napęd emerylowy",
+    "Group": "Ulepszenie hipernapędu: Zielone układy",
+    "Description": "Ekranowanie hipernapędu zostaje ulepszone, co zapobiega czasowym anomaliom przy próbach dotarcia do rzadkich ciał niebieskich klasy zielonej.\n\nDostęp do systemów hipernapędu zalecany jest poprzez mapę galaktyki."
+  },
+  {
+    "Id": "tech32",
+    "Name": "Napęd indowy",
+    "Group": "Ulepszenie hipernapędu: Błękitne układy",
+    "Description": "Macierz obliczeniowa hipernapędu zostaje ulepszona, co zapobiega błędom czasoprzestrzeni przy próbach dotarcia do rzadkich ciał niebieskich klasy błękitnej.\n\nDostęp do systemów hipernapędu zalecany jest poprzez mapę galaktyki."
+  },
+  {
+    "Id": "tech33",
+    "Name": "Tarcza odbijająca",
+    "Group": "Ochrona kadłuba statku kosmicznego",
+    "Description": "Tarcza energetyczna, chroniąca statek użytkownika przed ostrzałem laserowym, pociskami i przypadkowymi zderzeniami z kosmicznymi odłamkami.\n\nDo przeładowania urządzenia wykorzystywane są pierwiastki katalityczne.\n\nDziała automatycznie po skonstruowaniu w ekwipunku statku użytkownika."
+  },
+  {
+    "Id": "tech34",
+    "Name": "Pancerz ablacyjny",
+    "Group": "Ulepszenie tarczy statku gwiezdnego",
+    "Description": "Dodaje do systemów defensywnych statku gwiezdnego warstwę superpodgrzanej tarczy, która odparowuje nadlatujący ostrzał.\n\nZnacznie zwiększa wydajność tarczy statku gwiezdnego."
+  },
+  {
+    "Id": "tech35",
+    "Name": "Wyrzutnia rakiet",
+    "Group": "Uzbrojenie statku kosmicznego",
+    "Description": "Niszczycielska, ale niezbyt szybkostrzelna broń, która wywołuje ekstremalną destrukcję w trakcie walk statków.\n\nNaciśnij SHIPFIRE, aby aktywować."
+  },
+  {
+    "Id": "tech36",
+    "Name": "Duże wyrzutnie rakiet",
+    "Group": "Ulepszenie rakiet statku gwiezdnego",
+    "Description": "Rozszerza komorę ładunkową wyrzutni rakiet statku gwiezdnego, co przekłada się na lepszą prędkość wylotową i znacznie szybsze odprowadzanie ciepła."
+  },
+  {
+    "Id": "tech37",
+    "Name": "Działko fotonowe",
+    "Group": "Uzbrojenie statku kosmicznego",
+    "Description": "Niszczycielska broń, która gwarantuje szybkie zniszczenie celu w trakcie walk pomiędzy statkami.\n\nNaciśnij SHIPFIRE, aby aktywować."
+  },
+  {
+    "Id": "tech39",
+    "Name": "Skaner gospodarczy",
+    "Group": "Technologia czujników dalekiego zasięgu",
+    "Description": "Ulepszenie czujników galaktycznych statku kosmicznego. To urządzenie daje użytkownikowi dostęp do szczegółowych danych gospodarczych dotyczących systemu bez konieczności odwiedzania go."
+  },
+  {
+    "Id": "tech40",
+    "Name": "Skaner konfliktów",
+    "Group": "Technologia czujników dalekiego zasięgu",
+    "Description": "Ulepszenie czujników galaktycznych statku kosmicznego. To urządzenie daje użytkownikowi dostęp do szczegółowych danych o konfliktach na mapie galaktyki, bez konieczności narażania się."
+  },
+  {
+    "Id": "tech41",
+    "Name": "Promień fazowy",
+    "Group": "Laser wydobywczy dla statku kosmicznego",
+    "Description": "Kosmiczna broń promieniowa i narzędzie wydobywcze do użycia na asteroidach.\n\nDo przeładowania urządzenia wykorzystywane są pierwiastki organiczne.\n\nNaciśnij SHIPFIRE, aby aktywować."
+  },
+  {
+    "Id": "tech42",
+    "Name": "De-ogranicznik Fouriera",
+    "Group": "Ulepszenie promienia fazowego",
+    "Description": "Wyposaża promień fazowy w obwody oparte o nanity, dzięki czemu ograniczenia konwencjonalnej rzeczywistości odnośnie mocy lasera znikają.\n\nZnacząco ulepsza wydajność cieplną."
+  },
+  {
+    "Id": "tech43",
+    "Name": "Strumienica pozytronów",
+    "Group": "Wysokoenergetyczne uzbrojenie statku gwiezdnego",
+    "Description": "Strzały sieją zniszczenie na szerszym obszarze.\n\nZmniejsza zasięg i szybkostrzelność, zachęcając użytkownika do walki na krótszym dystansie."
+  },
+  {
+    "Id": "tech44",
+    "Name": "Superładowarka cząstek",
+    "Group": "Ulepszenie pozytronów statku gwiezdnego",
+    "Description": "Modernizuje mechanizm spustowy strumienicy pozytronów, co przekłada się na szybsze i celniejsze wystrzeliwanie cząstek.\n\nUlepsza zasięg i celność."
+  },
+  {
+    "Id": "tech45",
+    "Name": "Akcelerator infra-noża",
+    "Group": "Szybkostrzelne uzbrojenie statku gwiezdnego",
+    "Description": "Wystrzeliwuje ciągłe i szybkie serie.\n\nUżytkownik powinien ograniczyć liczbę serii, gdyż może dojść do bardzo szybkiego przegrzania."
+  },
+  {
+    "Id": "tech46",
+    "Name": "Nieliniowa optyka",
+    "Group": "Ulepszenie działka fotonowego",
+    "Description": "Zastępuje konwencjonalną optykę działka fotonowego eksperymentalnym układem szklanym, co zwiększa wydajność w walce.\n\nZnacząco ulepsza wydajność radiatora."
+  },
+  {
+    "Id": "tech47",
+    "Name": "Katapulta cyklotronowa",
+    "Group": "Niekierowane uzbrojenie statku gwiezdnego",
+    "Description": "Wystrzeliwuje w kierunku celu dużą, skoncentrowaną kulę naładowanych cząstek, powodując ciężkie uszkodzenia. Ładunek jest niekierowany i będzie leciał zgodnie z trajektorią tak długo, aż natrafi na przeszkodę."
+  },
+  {
+    "Id": "tech48",
+    "Name": "Pompa Dysona",
+    "Group": "Ulepszenie cyklotronu statku gwiezdnego",
+    "Description": "Wymienia radiator katapulty cyklotronowej, zmieniając całą jednostkę w megastrukturę absorbującą ciepło. Ciepło jest następnie zamieniane w energię, aby zwiększyć wydajność w walce.\n\nZnacząco ulepsza wydajność cieplną."
+  },
+  {
+    "Id": "tech49",
+    "Name": "Frachtowiec Hipernapęd",
+    "Group": "Napęd warp prędkości świetlnej",
+    "Description": "Napęd nadświetlny FTL jest efektywnym sposobem osiągnięcia prędkości warp i dokonywania skoków pomiędzy sąsiednimi układami."
+  },
+  {
+    "Id": "tech56",
+    "Name": "Wyłom w kadłubie",
+    "Group": "Uszkodzony komponent statku gwiezdnego",
+    "Description": "Podsystem statku krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane jako magazyn ani miejsce na technologię, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech57",
+    "Name": "Przerdzewiałe obwody",
+    "Group": "Uszkodzony komponent statku gwiezdnego",
+    "Description": "Podsystem statku krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane jako magazyn ani miejsce na technologię, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech58",
+    "Name": "Rozbita tama",
+    "Group": "Uszkodzony komponent statku gwiezdnego",
+    "Description": "Podsystem statku krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane jako magazyn ani miejsce na technologię, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech59",
+    "Name": "Wyciek radioaktywny",
+    "Group": "Uszkodzony komponent statku gwiezdnego",
+    "Description": "Podsystem statku krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane jako magazyn ani miejsce na technologię, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech60",
+    "Name": "Awaria pola",
+    "Group": "Uszkodzony komponent statku gwiezdnego",
+    "Description": "Podsystem statku krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane jako magazyn ani miejsce na technologię, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech61",
+    "Name": "Uszkodzone zębatki",
+    "Group": "Uszkodzony komponent statku gwiezdnego",
+    "Description": "Podsystem statku krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane jako magazyn ani miejsce na technologię, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech62",
+    "Name": "Wizjer analityczny",
+    "Group": "Lornetka oznaczająca",
+    "Description": "Specjalistyczna jednostka odkrywcza i badawcza.\n\nModyfikuje standardowy skaner, dzięki czemu przesyła on dane o środowisku bezpośrednio do wizjera użytkownika. Pozwala identyfikować odległe miejsca godne zwiedzenia.\n\nWizjer generuje cenne dane w trakcie badania flory, fauny i minerałów.\n\nPrzytrzymaj AIM, aby użyć. Naciśnij ZOOM, aby przybliżyć."
+  },
+  {
+    "Id": "tech63",
+    "Name": "Skaner",
+    "Group": "Badania topograficzne",
+    "Description": "Modyfikacja osobistego radaru powierzchniowego do multinarzędzia. \n\nSkaner wysyła wysokoenergetyczny impuls, który odkrywa wokół zasoby potrzebne do przetrwania. Dane są przesyłane bezpośrednio do egzokombinezonu, a następnie do wzrokowego układu nerwowego użytkownika.\n \nNaciśnij SCAN, aby aktywować lokalne skanowanie."
+  },
+  {
+    "Id": "tech64",
+    "Name": "Odzyskiwacz kształtu fali",
+    "Group": "Ulepszenie multinarzędzia",
+    "Description": "Potężny procesor poprzeczny, włożony do układu skanowania multinarzędzia pozwala urządzeniu ładować się znacznie szybciej.\n\nZwiększa potencjalną częstotliwość skanowania."
+  },
+  {
+    "Id": "tech65",
+    "Name": "Urządzenie badawcze",
+    "Group": "Ulepszenie wizjera analitycznego",
+    "Description": "Samodzielne ulepszenie obwodów wizjera analitycznego, dodające do układu skanującego analizę terenu w czasie rzeczywistym.\n\nPrzełączaj pomiędzy trybami wizjera, używając SURVEYFILTERL/SURVEYFILTERR. Użyj trybu badawczego, aby wykryć zasoby ukryte w terenie."
+  },
+  {
+    "Id": "tech66",
+    "Name": "Manipulator terenu",
+    "Group": "Narzędzie do kształtowania krajobrazu",
+    "Description": "Zaawansowane urządzenie do przekształcania terenu. Moduł przeładowuje istniejące systemy multinarzędzia, pozwalając użytkownikowi przekształcać teren jak zechce.\n\nDoładuj pierwiastkami metalicznymi."
+  },
+  {
+    "Id": "tech67",
+    "Name": "Osobiste pole siłowe",
+    "Group": "Defensywna technologia tarczy",
+    "Description": "Po aktywacji, moduł pobiera moc z systemów podtrzymania życia egzokombinezonu i przeładowuje multinarzędzie, zakłócając pole elektromagnetyczne wokół użytkownika. Powoduje to wytworzenie potężnej osobistej tarczy.\n\nChoć pole to gwarantuje znaczącą ochronę przed ostrzałem laserowym, użytkownik powinien pamiętać, że w trakcie zasilania tarczy, multinarzędzia nie można używać w innych celach."
+  },
+  {
+    "Id": "tech68",
+    "Name": "Celownik bojowy",
+    "Group": "Precyzyjne ulepszenie broni",
+    "Description": "Celownik stabilizujący odrzut, umożliwiający precyzyjną walkę."
+  },
+  {
+    "Id": "tech69",
+    "Name": "Laser wydobywczy",
+    "Group": "Laser do ekstrakcji minerałów",
+    "Description": "Promień wydobywczy multinarzędzia, zasilany pierwiastkami węglopochodnymi. Użyj promienia za pomocą ATTACK.\n\nInstaluje w multinarzędziu system optyki koncentrującej wiązkę, dzięki czemu może ono emitować wysokoenergetyczny promień. Promień jest tak wykalibrowany, aby wzbudzać cząsteczki w pospolitych obiektach organicznych lub geologicznych, dzięki czemu multinarzędzie staje się niezwykle efektywnym sprzętem wydobywczym.\n\nUWAGA: Niszczenie flory, fauny lub minerałów może przyciągnąć uwagę Strażników."
+  },
+  {
+    "Id": "tech70",
+    "Name": "Zaawansowany laser wydobywczy",
+    "Group": "Moduł towarzyszący do lasera wydobywczego",
+    "Description": "Zastępuje standardową optykę promienia wydobywczego wysokiej jakości żywym szkłem, dzięki czemu promień staje się efektywny przy wydobyciu z dużych i/lub rzadkich złóż zasobów.\n\nSzkło automatycznie dostraja się do minimalnych wahań kształtu fali promienia, zmniejszając rozproszenie i zwiększając potencjał wydobywczy urządzenia."
+  },
+  {
+    "Id": "tech71",
+    "Name": "Świder optyczny",
+    "Group": "Wzmacniacz zysków materialnych",
+    "Description": "Układy cienkich jak bibuła soczewek, ułożone w idealnie wykalibrowaną macierz sterującą promieniem wydobywczym na poziomie atomowym.\n\nTa dodatkowa precyzja pozwala na niezwykle wydajne wydobycie. Pierwiastki też są pozyskiwane szybciej, co zwiększa liczbę przedmiotów zbieranych multinarzędziem."
+  },
+  {
+    "Id": "tech72",
+    "Name": "Błyskacz",
+    "Group": "Broń energetyczna",
+    "Description": "Uniwersalny dodatek uzbrojenia do multinarzędzia. Zmień tryb ostrzału, naciskając CYCLEWEAPON i strzelaj za pomocą ATTACK.\n\nBłyskacz tak modyfikuje multinarzędzie, aby przeładowywało pierwiastki metaliczne i wystrzeliwało je jako niezwykle szybkie pociski, zdolne do zadawania ekstremalnych obrażeń."
+  },
+  {
+    "Id": "tech73",
+    "Name": "Jonizator lufy",
+    "Group": "Ulepszenie błyskacza",
+    "Description": "Umieszcza potężne urządzenie jonizujące w lufie błyskacza, co zwiększa stabilność pocisku, lecącego w powietrzu.\n\nZwiększa celność urządzenia i pozwala graczowi strzelać dłużej bez zmniejszenia wydajności w walce."
+  },
+  {
+    "Id": "tech74",
+    "Name": "Błyskacz PM",
+    "Group": "Moduł towarzyszący do błyskacza",
+    "Description": "Strzały z błyskacza zadają większe obrażenia fizyczne.\n\nNadaje dodatkową energię kinetyczną jonizowanym pociskom plazmowym.\n\nDziała automatycznie po skonstruowaniu w ekwipunku multinarzędzia użytkownika."
+  },
+  {
+    "Id": "tech75",
+    "Name": "System schładzania promienia sigma",
+    "Group": "Ulepszenie promienia wydobywczego",
+    "Description": "Znaczące ulepszenie promienia wydobywczego.\n\nDo głównej komory kryształów lasera wydobywczego wkładane są dodatkowe elementy odbijające, dzięki czemu wzmacniana jest energia promienia oraz zmniejszane są niepożądane straty ciepła."
+  },
+  {
+    "Id": "tech76",
+    "Name": "Wyrzutnia plazmy",
+    "Group": "Granaty wybuchowe",
+    "Description": "Wybuchowa broń dystansowa. Wystrzeliwane ładunki plazmowe odbijają się od powierzchni do momentu, gdy wbudowany stoper osiągnie zero. Uruchamia to potężną eksplozję.\n\nŁadowane niestabilną plazmą. Nieostrożne użytkowanie może wiązać się z obrażeniami użytkownika.\n\nNaciśnij ALTATTACK, aby aktywować."
+  },
+  {
+    "Id": "tech77",
+    "Name": "Działko geologiczne",
+    "Group": "Urządzenie niszczące teren",
+    "Description": "Wyrzutnia pocisków wielkoświdrujących. Wystrzeliwuje pociski plazmowe, zaprojektowane do szybkiego wiercenia w gruncie.\n \nŁadowane niestabilną plazmą. Uwaga: Wiercenie otworów metodą eksplozji może też uszkodzić pobliską materię organiczną.\n \nNaciśnij ALTATTACK, aby aktywować."
+  },
+  {
+    "Id": "tech78",
+    "Name": "Oszczep rozbłysku",
+    "Group": "Energetyczna broń promieniowa",
+    "Description": "Agresywny dodatek uzbrojenia do multinarzędzia. Zmień tryb ostrzału naciskając CYCLEWEAPON i strzelaj za pomocą ATTACK.\n\nOszczep rozbłysku zadaje natychmiastowe obrażenia celom.\n\nW procesie ładowania plazmy powstaje zjonizowany łuk gazowy, który wystrzeliwuje pociski z ogromną prędkością. Użytkownik zauważy niszczycielskie efekty dokładnie w momencie naciśnięcia spustu."
+  },
+  {
+    "Id": "tech79",
+    "Name": "Akcelerator cząstek",
+    "Group": "Ulepszenie oszczepu rozbłysku",
+    "Description": "Rozszerza komorę oszczepu rozbłysku, dzięki czemu wewnętrzne akceleratory cząstek osiągają większą masę i prędkość.\n\nZnacznie zwiększa obrażenia zadawane przez broń."
+  },
+  {
+    "Id": "tech80",
+    "Name": "Blaster rozproszony",
+    "Group": "Rozproszona broń miotająca",
+    "Description": "Specjalistyczny dodatek krótkodystansowego uzbrojenia do multinarzędzia. Zmień tryb ostrzału, naciskając CYCLEWEAPON i strzelaj za pomocą ATTACK.\n\nBlaster rozproszony tak modyfikuje multinarzędzie, aby rozgrzewało i rozpryskiwało pierwiastki metaliczne, wystrzeliwując je w szerokim stożku destrukcji. Zasięg jest ograniczony, ale odłamki są niezwykle efektywne z bliskiej odległości."
+  },
+  {
+    "Id": "tech81",
+    "Name": "Smarowacz powłoki",
+    "Group": "Ulepszenie blastera rozproszonego",
+    "Description": "Zaawansowane komponenty samosmarujące zmniejszają tarcie w blasterze rozproszonym, co przekłada się na znaczne skrócenie czasu przeładowania."
+  },
+  {
+    "Id": "tech82",
+    "Name": "PM pulsacyjny",
+    "Group": "Szybkostrzelna broń miotająca",
+    "Description": "Specjalistyczny dodatek szybkostrzelnego uzbrojenia do multinarzędzia. Zmień tryb ostrzału, naciskając CYCLEWEAPON i strzelaj za pomocą ATTACK.\n\nPM pulsacyjny przekierowuje optykę multinarzędzia i jonizuje wprowadzone pierwiastki metaliczne. Pociski te są wystrzeliwane z ogromną częstotliwością i bombardują potencjalne cele falą wysokoenergetycznej plazmy."
+  },
+  {
+    "Id": "tech83",
+    "Name": "Wzmocnione magazynki",
+    "Group": "Ulepszenie PMa pulsacyjnego",
+    "Description": "Specjalistyczne rezonatory harmoniczne pozwalają PMowi pulsacyjnemu dzielić włożoną amunicję, efektywnie wytwarzając więcej strzałów z mniejszej ilości materiałów.\n\nZwiększa pojemność magazynka broni."
+  },
+  {
+    "Id": "tech84",
+    "Name": "Krótkie spięcie",
+    "Group": "Uszkodzony komponent multinarzędzia",
+    "Description": "Podsystem multinarzędzia krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech85",
+    "Name": "Przepalony tranzystor",
+    "Group": "Uszkodzony komponent multinarzędzia",
+    "Description": "Podsystem multinarzędzia krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech86",
+    "Name": "Uszkodzone okablowanie",
+    "Group": "Uszkodzony komponent multinarzędzia",
+    "Description": "Podsystem multinarzędzia krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech87",
+    "Name": "Przerdzewiały rdzeń zasilający",
+    "Group": "Uszkodzony komponent multinarzędzia",
+    "Description": "Podsystem multinarzędzia krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech88",
+    "Name": "Uszkodzony moduł",
+    "Group": "Uszkodzony komponent multinarzędzia",
+    "Description": "Podsystem multinarzędzia krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech89",
+    "Name": "Uszkodzenie wiązki",
+    "Group": "Uszkodzony komponent multinarzędzia",
+    "Description": "Podsystem multinarzędzia krytycznie uszkodzony.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj REPAIR, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania."
+  },
+  {
+    "Id": "tech90",
+    "Name": "Silnik syntezy",
+    "Group": "System zasilania egzopojazdu",
+    "Description": "Przenośny rdzeń syntezy, wspólny dla wszystkich egzopojazdów.\n\nDo działania wymaga paliwa."
+  },
+  {
+    "Id": "tech91",
+    "Name": "Zawieszenie driftowe",
+    "Group": "Modyfikacja prowadzenia egzopojazdu",
+    "Description": "Zmienia parametry prowadzenia egzopojazdu poprzez połączenie regulacji oprogramowania, zmiany ciśnienia oraz dodanie studni mikrograwitacyjnych do kluczowych komponentów zawieszenia.\n\nSpecjalnie wyregulowane, aby zwiększyć zdolność egzopojazdu do driftowania."
+  },
+  {
+    "Id": "tech92",
+    "Name": "Zawieszenie przyczepne",
+    "Group": "Modyfikacja prowadzenia egzopojazdu",
+    "Description": "Zmienia parametry prowadzenia egzopojazdu poprzez połączenie regulacji oprogramowania, zmian w ciśnieniu oraz dodaniu studni mikrograwitacyjnych do kluczowych komponentów zawieszenia.\n\nSpecjalnie wyregulowane, aby zwiększyć zdolność egzopojazdu do ostrego skręcania."
+  },
+  {
+    "Id": "tech93",
+    "Name": "Zawieszenie wysokiego ślizgu",
+    "Group": "Modyfikacja prowadzenia egzopojazdu",
+    "Description": "Zmienia parametry prowadzenia egzopojazdu poprzez połączenie regulacji oprogramowania, zmian w ciśnieniu oraz dodaniu studni mikrograwitacyjnych do kluczowych komponentów zawieszenia.\n\nSpecjalnie wyregulowane, aby zwiększyć zdolność egzopojazdu do wykonywania ślizgów."
+  },
+  {
+    "Id": "tech94",
+    "Name": "Wzmacniacz sygnału egzopojazdu",
+    "Group": "Sprzęt skanujący egzopojazdu",
+    "Description": "Duży i skomplikowany polowy radar podprzestrzenny.\n\nZe względu na duże zużycie mocy i dużą niestabilność subatomową, można go zainstalować wyłącznie na egzopojeździe.\n\nNaciśnij QUICK_MENU , aby aktywować Wzmacniacz sygnału."
+  },
+  {
+    "Id": "tech95",
+    "Name": "Ulepszenie wzmacniacza sygnału egzopojazdu sigma",
+    "Group": "Ulepszenie wzmacniacza sygnału egzopojazdu",
+    "Description": "Pozwala na wykrywanie wzmacniaczem sygnału egzopojazdu dodatkowych rodzajów budynków."
+  },
+  {
+    "Id": "tech96",
+    "Name": "Ulepszenie wzmacniacza sygnału egzopojazdu tau",
+    "Group": "Ulepszenie wzmacniacza sygnału egzopojazdu",
+    "Description": "Pozwala na wykrywanie wzmacniaczem sygnału egzopojazdu dodatkowych rodzajów budynków."
+  },
+  {
+    "Id": "tech97",
+    "Name": "Moduł przyspieszenia egzopojazdu",
+    "Group": "Ulepszenie silnika egzopojazdu",
+    "Description": "Wydajny wtryskiwacz plazmy podłączony do silnika, pozwalający uzyskać krótkie, ale gwałtowne przyspieszenie."
+  },
+  {
+    "Id": "tech98",
+    "Name": "Laser wydobywczy egzopojazdu",
+    "Group": "Rozszerzenie zdolności wydobywczych egzopojazdu.",
+    "Description": "Laser wydobywczy zbyt nieporęczny, by przenosić go osobiście - należy zainstalować go na egzopojeździe."
+  },
+  {
+    "Id": "tech99",
+    "Name": "Ulepszenie lasera wydobywczego egzopojazdu sigma",
+    "Group": "Ulepszenie zdolności wydobywczych egzopojazdu",
+    "Description": "Zwiększa moc lasera wydobywczego egzopojazdu"
+  },
+  {
+    "Id": "tech100",
+    "Name": "Działko egzopojazdu",
+    "Group": "Rozszerzenie broni egzopojazdu",
+    "Description": "Broń wymagająca zbyt dużego ładunku energii, by przenosić ją osobiście. Należy ją zamocować na egzopojeździe."
+  },
+  {
+    "Id": "tech101",
+    "Name": "Napęd Humboldta",
+    "Group": "System zasilania egzopojazdu",
+    "Description": "Wydajny temperaturowo, odporny na inwersję reaktor, zdolny do napędzania Nautilona nawet na ekstremalnych głębokościach.\n\nZasilany hydrotermalnymi ogniwami paliwowymi."
+  },
+  {
+    "Id": "tech102",
+    "Name": "Działko Nautilona",
+    "Group": "Uzbrojenie łodzi podwodnej",
+    "Description": "Działko stacjonarne, zaprojektowane specjalnie z myślą o łodzi podwodnej Nautilon.\n\nWysokoenergetyczny system uzbrojenia, rozgrzewający do ekstremalnie wysokiej temperatury niewielkie pociski wodne, a następnie wystrzeliwujące je błyskawicznie w kierunku celu.\n\nZaprojektowany głównie z myślą o walce z istotami biologicznymi, jest też niezbyt wydajnym urządzeniem wydobywczym."
+  },
+  {
+    "Id": "tech103",
+    "Name": "Promień Tetydy",
+    "Group": "Laser wydobywczy łodzi podwodnej",
+    "Description": "Stacjonarny system laserowy, zaprojektowany specjalnie z myślą o łodzi podwodnej Nautilon.\n\nWystrzeliwuje w kierunku celu skoncentrowany promień plazmy, który następnie ulega zapłonowi. Taki system odpalania pozwala na użycie wysokoenergetycznych optycznych systemów wydobywczych w środowisku płynnym."
+  },
+  {
+    "Id": "tech104",
+    "Name": "Sonar dużej mocy",
+    "Group": "Urządzenie analityczne łodzi podwodnej",
+    "Description": "Niezwykle precyzyjny sonar, będący ulepszeniem technologii skanujących łodzi podwodnej klasy Nautilon do poziomów wizjera analitycznego.\nNaciśnij SCAN, aby aktywować sonar dużej mocy."
+  },
+  {
+    "Id": "tech105",
+    "Name": "Generator osmotyczny",
+    "Group": "Ulepszenie napędu Humboldta",
+    "Description": "Zainstalowany w systemie napędowym łodzi podwodnej Nautilon.\n\nPobiera energię z wody morskiej w głębinach, co pozwala na powolne zasilanie napędu Humboldta w przypadku awaryjnego braku paliwa."
+  },
+  {
+    "Id": "tech106",
+    "Name": "Mechanizm blokujący",
+    "Group": "Uszkodzony komponent",
+    "Description": "Proste urządzenie blokujące, zaprojektowane do powstrzymywania nieautoryzowanych rzezimieszków. Uszkodzenie spowodowało, że nie można go otworzyć."
+  },
+  {
+    "Id": "tech107",
+    "Name": "Zamek magnetyczny",
+    "Group": "Uszkodzony komponent",
+    "Description": "Zaawansowane urządzenie blokujące. Problem z polaryzacją spowodował, że zostało zamknięte na amen."
+  },
+  {
+    "Id": "tech108",
+    "Name": "Zamek nadprzewodnikowy",
+    "Group": "Uszkodzony komponent",
+    "Description": "Niezwykle zaawansowane urządzenie blokujące. Uszkodzenie obwodów zasilających elektromagnes spowodowało stałe zamknięcie."
+  },
+  {
+    "Id": "tech109",
+    "Name": "Terminal wprowadzania",
+    "Group": "Uszkodzony komponent",
+    "Description": "Terminal zaprojektowany do ręcznego sterowania urządzeniem. Został uszkodzony i nie odbiera sygnałów."
+  },
+  {
+    "Id": "tech110",
+    "Name": "Czujnik bio-wprowadzania",
+    "Group": "Uszkodzony komponent",
+    "Description": "Zaawansowana jednostka kontrolna, zaprojektowana do interakcji urządzenie-istota cielesna. Usterka uniemożliwia prawidłowe działanie. Korzystanie w obecnej sytuacji jest niewskazane."
+  },
+  {
+    "Id": "tech111",
+    "Name": "Jednostka kotłowa",
+    "Group": "Uszkodzony komponent",
+    "Description": "Mały bojler, wytwarzający ciepło, dzięki któremu urządzenie może pracować w trudnym klimacie. W wyniku usterki bojler się przepełnił i uszkodził."
+  },
+  {
+    "Id": "tech112",
+    "Name": "Silniczek",
+    "Group": "Uszkodzony komponent",
+    "Description": "Bardzo mały silniczek, zaprojektowany do zasilania małych części. Skorodował i jest pełen małych płatków rdzy."
+  },
+  {
+    "Id": "tech113",
+    "Name": "Układ chłodzenia",
+    "Group": "Uszkodzony komponent",
+    "Description": "Pompa i system wymiany cieplnej, zaprojektowane aby przeciwdziałać przegrzaniu się urządzenia. System sam się przegrzał i przestał działać."
+  },
+  {
+    "Id": "tech114",
+    "Name": "Ekran wynikowy",
+    "Group": "Uszkodzony komponent",
+    "Description": "Terminal z ekranem, komunikujący status urządzenia użytkownikowi. Terminal jest zepsuty, a więc użytkownik nie dowie się, że terminal jest zepsuty."
+  },
+  {
+    "Id": "tech115",
+    "Name": "Urządzenie zapobiegające manipulacjom",
+    "Group": "Uszkodzony komponent",
+    "Description": "Jednostka zaprojektowana do zniszczenia najważniejszych systemów w przypadku, gdyby nieautoryzowany użytkownik próbował nimi manipulować. Niestety, jednostka uległa uszkodzeniu i do czasu naprawy kontynuuje stałe niszczenie systemów."
+  },
+  {
+    "Id": "tech116",
+    "Name": "Alarm bezpieczeństwa",
+    "Group": "Uszkodzony komponent",
+    "Description": "Niewielki system świetlno-dźwiękowy, zaprojektowany do ostrzegania przed nieautoryzowanym dostępem do urządzenia. Usterka alarmu spowodowała przeładowanie i zwarcie pobliskich obwodów."
+  },
+  {
+    "Id": "tech117",
+    "Name": "Pudełko ze sprężyną",
+    "Group": "Uszkodzony komponent",
+    "Description": "Obudowa ściśniętej sprężyny. Pękła, przez co sprężyna wystrzeliła i uszkodziła resztę urządzenia."
+  },
+  {
+    "Id": "tech118",
+    "Name": "Termoregulator",
+    "Group": "Uszkodzony komponent",
+    "Description": "Jednostka kontrolna zaprojektowana do utrzymywania równej temperatury w całym urządzeniu. Jej czujnik został uszkodzony, w związku z czym odprowadza ona ciepło lub generuje je w niewłaściwych momentach."
+  },
+  {
+    "Id": "tech119",
+    "Name": "Pompa paliwowa",
+    "Group": "Uszkodzony komponent",
+    "Description": "Wysokowydajna pompa, zapewniająca dostawy paliwa do każdej części urządzenia we wszystkich warunkach grawitacyjnych. Filtr został zatkany dziwną substancją, przez co pompa straciła zasilanie."
+  },
+  {
+    "Id": "tech120",
+    "Name": "Ramię wspomagane",
+    "Group": "Uszkodzony komponent",
+    "Description": "Niewielki mechaniczny przegub, używany do niwelowania niewielkich błędów mechanicznych w całym urządzeniu. Usterka powoduje, że pobiera on komponenty funkcjonalne i wpycha je w niewłaściwe miejsce, powodując jeszcze większe uszkodzenia."
+  },
+  {
+    "Id": "tech121",
+    "Name": "Cewka cylindryczna",
+    "Group": "Uszkodzony komponent",
+    "Description": "Przekaźnik, pomagający w zasilaniu urządzenia. Niestety, jego styki skorodowały, a cewka przestała działać."
+  },
+  {
+    "Id": "tech122",
+    "Name": "Komora ciśnieniowa",
+    "Group": "Uszkodzony komponent",
+    "Description": "Niewielka komora ciśnieniowa, wytwarzająca skompresowany gaz potrzebny urządzeniu do działania. Na komorze pojawiły się pęknięcia, powodujące wyciek."
+  },
+  {
+    "Id": "tech123",
+    "Name": "Obwód główny",
+    "Group": "Uszkodzony komponent",
+    "Description": "Obwód kontrolujący wszystkie pozostałe komponenty urządzenia. Uszkodzenia obwodu są krytyczne."
+  },
+  {
+    "Id": "tech124",
+    "Name": "Dystrybutor mocy",
+    "Group": "Uszkodzony komponent",
+    "Description": "Centralna jednostka zasilająca urządzenie. Jej uszkodzenie oznacza, że zakłóca ona obecnie zasilanie pewnego obwodu, powodując niebezpieczne spięcie."
+  },
+  {
+    "Id": "tech125",
+    "Name": "Wyrównywacz obciążenia",
+    "Group": "Uszkodzony komponent",
+    "Description": "Niewielka jednostka zaprojektowana do regulacji przepływu mocy w całym urządzeniu. Usterka wywołuje spięcie i uszkodzenie pozostałych komponentów."
+  },
+  {
+    "Id": "tech126",
+    "Name": "Interfejs sieciowy",
+    "Group": "Uszkodzony komponent",
+    "Description": "Uniwersalny interfejs sieciowy, pozwalający urządzeniu łączyć się ze zdalnym centrum kontroli. Uszkodzenie interfejsu powoduje interpretację radiacji tła jako sygnałów sieciowych. Dane w innych obwodach zostają przez to uszkodzone."
+  },
+  {
+    "Id": "tech127",
+    "Name": "Panel bezpieczeństwa",
+    "Group": "Uszkodzony komponent",
+    "Description": "Panel bezpieczeństwa odcina potencjalnie niebezpieczne komponenty w przypadku uszkodzenia. Nadwrażliwy czujnik spowodował aktywację i zapobiega działaniu całego urządzenia."
+  },
+  {
+    "Id": "tech128",
+    "Name": "Alternator",
+    "Group": "Uszkodzony komponent",
+    "Description": "Alternator generuje i reguluje zasilanie w całym urządzeniu. Uległ jednak tajemniczej korozji, która uniemożliwia działanie."
+  },
+  {
+    "Id": "tech129",
+    "Name": "Panel fotowoltaiczny",
+    "Group": "Uszkodzony komponent",
+    "Description": "Niewielki, ale wydajny panel, pobierający światło i przekształcający je na zasilanie. Panel pękł i jest skurzony, a więc nie można na nim polegać."
+  },
+  {
+    "Id": "tech130",
+    "Name": "Przekładnia",
+    "Group": "Uszkodzony komponent",
+    "Description": "Mechanizm przekładni urządzenia. Smar, dzięki któremu przekładnia działa, został zastąpiony zielonym szlamem i tryby się zatarły."
+  },
+  {
+    "Id": "tech131",
+    "Name": "Starożytny zamek",
+    "Group": "Ciężki mechanizm zamka",
+    "Description": "Tajemniczy zamek z kilkoma dziurkami - ten artefakt musi strzec cennego skarbu."
+  },
+  {
+    "Id": "tech132",
+    "Name": "Dar perły",
+    "Group": "Dar dla morza",
+    "Description": "Skrzynia żąda żywej perły, którą można zebrać z gigantycznych matek-mięczaków, rosnących na dnie oceanu."
+  },
+  {
+    "Id": "tech133",
+    "Name": "Uszkodzona elektroda",
+    "Group": "Uszkodzony komponent",
+    "Description": "Ten moduł ulepszenia egzokombinezonu jest krytycznie uszkodzony. Napraw systemy, by przywrócić działanie ulepszenia.\n\nNaprawa nie pociągnie za sobą opłat za ulepszenie egzokombinezonu."
+  },
+  {
+    "Id": "tech134",
+    "Name": "Rozbity rdzeń zasilający",
+    "Group": "Uszkodzony komponent",
+    "Description": "Ten moduł ulepszenia egzokombinezonu jest krytycznie uszkodzony. Napraw systemy, by przywrócić działanie ulepszenia.\n\nNaprawa nie pociągnie za sobą opłat za ulepszenie egzokombinezonu."
+  },
+  {
+    "Id": "tech135",
+    "Name": "Wadliwy hologram",
+    "Group": "Uszkodzony komponent",
+    "Description": "Ten moduł ulepszenia egzokombinezonu jest krytycznie uszkodzony. Napraw systemy, by przywrócić działanie ulepszenia.\n\nNaprawa nie pociągnie za sobą opłat za ulepszenie egzokombinezonu."
+  },
+  {
+    "Id": "tech136",
+    "Name": "Rezonator rdzenia warp",
+    "Group": "Moduł towarzyszący do hipernapędu",
+    "Description": "Modyfikacja gigantycznego silnika hipernapędu frachtowca międzygwiezdnego.\n\nRezonans kwantowy zwiększa niezawodność napędu podczas podróży z prędkością nadświetlną i pozwala sięgnąć gwiazd, które poprzednio były poza zasięgiem."
+  },
+  {
+    "Id": "tech137",
+    "Name": "Wtryskiwacz plazmatycznego warp",
+    "Group": "Moduł towarzyszący do hipernapędu",
+    "Description": "Modyfikacja gigantycznego silnika hipernapędu frachtowca międzygwiezdnego.\n\nHipernapęd zostaje wyposażony w zaawansowane technologie syntezy, dzięki którym statek osiąga wyższą prędkość warp. Statek użytkownika może skakać dalej w przestrzeń kosmiczną, ku odległym układom gwiezdnym."
+  },
+  {
+    "Id": "tech138",
+    "Name": "Odgwintawiacz rzeczywistości",
+    "Group": "Moduł towarzyszący do hipernapędu",
+    "Description": "Modyfikacja gigantycznego silnika hipernapędu frachtowca międzygwiezdnego.\n\nDo hipernapędu statku dołączone zostają nieograniczane, ale stabilizowane, systemy syntezy. Pozwala to wykonywać skoki jeszcze dalej, w głęboki kosmos."
+  },
+  {
+    "Id": "tech139",
+    "Name": "Wzmocnione ekranowanie warp",
+    "Group": "Ulepszenie hipernapędu: Czerwone układy",
+    "Description": "Magnesy ekranujące rdzeń hipernapędu zostają ulepszone, co zapobiega szybkiemu rozpadowi przy próbach dotarcia do rzadkich ciał niebieskich klasy czerwonej.\n\nDostęp do systemów hipernapędu zalecany jest poprzez mapę galaktyki."
+  },
+  {
+    "Id": "tech140",
+    "Name": "Chromatyczne ekranowanie warp",
+    "Group": "Ulepszenie hipernapędu: Zielone układy",
+    "Description": "Ekranowanie hipernapędu zostaje ulepszone, co zapobiega czasowym anomaliom przy próbach dotarcia do rzadkich ciał niebieskich klasy zielonej.\n\nDostęp do systemów hipernapędu zalecany jest poprzez mapę galaktyki."
+  },
+  {
+    "Id": "tech141",
+    "Name": "Czasoprzestrzenny komputer warp",
+    "Group": "Ulepszenie hipernapędu: Błękitne układy",
+    "Description": "Macierz obliczeniowa hipernapędu zostaje ulepszona, co zapobiega błędom czasoprzestrzeni przy próbach dotarcia do rzadkich ciał niebieskich klasy błękitnej.\n\nDostęp do systemów hipernapędu zalecany jest poprzez mapę galaktyki."
+  }
+]

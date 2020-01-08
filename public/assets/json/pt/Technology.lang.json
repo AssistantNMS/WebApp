@@ -1,0 +1,806 @@
+[
+  {
+    "Id": "tech1",
+    "Name": "Proteção Contra Perigos",
+    "Group": "Blindagem Ambiental para Exofato",
+    "Description": "O sistema de Proteção contra Perigos do Exofato monitoriza e estabiliza o ambiente do utilizador.\n\nA proteção reativa geral pode ser aumentada com Escudos de ambiente para oferecer uma maior proteção em condições específicas.\n\nO dispositivo é carregado com substâncias de sódio. Recomenda-se ao utilizador que um sistema de Proteção Contra Perigos subcarregado pode tornar o ambiente incompatível."
+  },
+  {
+    "Id": "tech2",
+    "Name": "Malha de Escudo",
+    "Group": "Atualização de Proteção Contra Perigos",
+    "Description": "Aumenta a capacidade base do sistema de Proteção Contra Perigos, permitindo que o utilizador passe mais tempo em ambientes perigosos sem recarregar o seu Exofato."
+  },
+  {
+    "Id": "tech3",
+    "Name": "Suporte de Vida",
+    "Group": "Pacote de Energia para Sobrevivência",
+    "Description": "O Sistema de suporte de vida é o núcleo do Exofato, bombeando e filtrando Oxigénio respirável.\n\nPara além da sua função na existência continuada do utilizador do Exofato, a Unidade de Suporte de Vida usa o oxigénio em excesso para gerar energia utilizável em sistemas secundários, como o Jetpack, o Aumento de velocidade e a Lanterna."
+  },
+  {
+    "Id": "tech4",
+    "Name": "Reciclador de Oxigénio",
+    "Group": "Atualização do Suporte de Vida",
+    "Description": "Aumenta a capacidade básica do sistema de Suporte de Vida, permitindo que o utilizador gaste mais tempo sem recargas."
+  },
+  {
+    "Id": "tech5",
+    "Name": "Jetpack",
+    "Group": "Impulsionador de Propulsão Aérea",
+    "Description": "Fornece o Exofato com habilidades avançadas de movimento, incluindo voo temporário.\n\nControla o impulso com JUMP. O dispositivo de voo usa energia do sistema de Suporte de vida do exofato para pressurizar e ventilar impulsos de gás de forma a propulsionar o utilizador pelo ar.\n\nO jetpack pode ser sobrecarregado temporariamente ao recolher plantas ricas em Deutério, criando um aumento dramático da propulsão disponível."
+  },
+  {
+    "Id": "tech6",
+    "Name": "Estimulador Neural",
+    "Group": "Atualização de movimento para exofato",
+    "Description": "Aumenta a capacidade dos Tanques do Jetpack e das  Reservas de Bombas Adrenais do Exofato, permitindo que o utilizador voe e corra durante mais tempo."
+  },
+  {
+    "Id": "tech7",
+    "Name": "Botas Foguetão",
+    "Group": "Atualização para o Exofato",
+    "Description": "Equipa o jetpack do Exofato com capacidades de salto avançadas que permitem que o utilizador faça saltos enormes com facilidade.\n\nAtiva sistemas de salto ao premir rapidamente JUMP."
+  },
+  {
+    "Id": "tech8",
+    "Name": "Rede de Refrigeração",
+    "Group": "Unidade de Proteção Contra Perigos",
+    "Description": "O utilizador é resguardado dos danos causados por calor extremo.\n\nOferece ao utilizador um alívio temporário do calor atmosférico e solar através de uma rede de distribuição cutânea de frénio líquido.\n\nO dispositivo é recarregado com extratos minerais, encontrados em ambientes quentes. Funciona de forma automática a partir do momento em que é construído no inventário do exofato do utilizador."
+  },
+  {
+    "Id": "tech9",
+    "Name": "Camada Térmica",
+    "Group": "Unidade de Proteção Contra Perigos",
+    "Description": "O utilizador é resguardado dos danos causados por frio extremo em mundos congelados.\n\nUm conjunto de tubos de calor capilares, enfiados no fato do utilizador e que distribuem Calídio líquido em toda a superfície corporal para assegurar uma temperatura corporal confortável.\n\nO dispositivo é carregado com extratos minerais, encontrados em ambientes gelados. Funciona automaticamente quando é construído no inventário do exofato do utilizador."
+  },
+  {
+    "Id": "tech10",
+    "Name": "Supressor de Toxinas",
+    "Group": "Unidade de Proteção Contra Perigos",
+    "Description": "O utilizador é protegido dos danos tóxicos.\n\nOs compostos reativos do Supressor removem líquidos tóxicos que caem por cima do utilizador, reduzindo o perigo e os riscos de asfixia.\n\nO dispositivo é carregado com extratos minerais, encontrados em ambientes tóxicos. Funciona de forma automática a partir do momento em que é construído no inventário do exofato do utilizador."
+  },
+  {
+    "Id": "tech11",
+    "Name": "Defletor de Radiação",
+    "Group": "Unidade de Proteção Contra Perigos",
+    "Description": "O utilizador é resguardado dos danos de radiação.\n\nReduz consideravelmente o risco do utilizador durante a exploração de sistemas planetários radioativos. As micro-vibrações aumentam a reflexão de ondas eletromagnéticas, reduzindo a absorção.\n\nO dispositivo é carregado com extratos minerais encontrados em ambientes radioativos. Funciona de forma automática a partir do momento em que é construído no inventário do exofato do utilizador."
+  },
+  {
+    "Id": "tech12",
+    "Name": "Membrana de Ventilação",
+    "Group": "Suporte de Respiração Aquática",
+    "Description": "O utilizador ganha a capacidade de nadar debaixo de água por um período prolongado.\n\nAbsorve gases dissolvidos na água através de uma membrana que, caso o utilizador seja de uma espécie criada convencionalmente, é colocada sobre a boca ou orifício de respiração facial.\n\nFunciona de forma automática a partir do momento em que é construído no inventário do exofato do utilizador."
+  },
+  {
+    "Id": "tech13",
+    "Name": "Luva Haz-Mat",
+    "Group": "Aumento do Exofato",
+    "Description": "Atualiza a proteção metálica das luvas do Exofato.\n\nUma mistura avançada de metal reforçado e proteção com catalisador permite que o utilizador manuseie substâncias perigosas em segurança, assim como executar as manobras de força necessárias para recolher certos elementos de flora cultivável."
+  },
+  {
+    "Id": "tech14",
+    "Name": "Lembrança",
+    "Group": "Uma relíquia de outro lugar",
+    "Description": "Tudo o que alguma vez soubeste está dentro de ti."
+  },
+  {
+    "Id": "tech15",
+    "Name": "Semente Estelar",
+    "Group": "Fragmento Inestimável",
+    "Description": "A mais pequena das faíscas, alojada num campo de contenção de origem desconhecida.\n\nA semente brilha com vida, desesperada por escapar e atingir todo o seu potencial."
+  },
+  {
+    "Id": "tech16",
+    "Name": "Tecnologia obsoleta",
+    "Group": "Tecnologia velha e inutilizável",
+    "Description": "Uma peça de tecnologia corrompida por interferência do Atlas.\n\nPode ser reciclada por componentes funcionais."
+  },
+  {
+    "Id": "tech17",
+    "Name": "Jatos de Água Eficientes",
+    "Group": "Unidade Jetpack Atualizada",
+    "Description": "Melhora a eficiência do combustível dos jatos marinhos, reduzindo o esgotamento dos sistemas de suporte de vida do Exofato.\n\nAs unidades aquosas do compressor são instaladas nas turbinas do jetpack, ignorando os grandes requisitos de energia para a ignição submersa."
+  },
+  {
+    "Id": "tech18",
+    "Name": "Redirecionador de oxigénio",
+    "Group": "Sistema de Suporte de Vida de Emergência",
+    "Description": "Atualiza a Membrana de Ventilação do Exofato para recolher oxigénio do sistema de Suporte de Vida em caso de emergência respiratória, permitindo ao utilizador ressurgir e procurar suprimentos de combustível convencionais.\n\nNota: a conversão a longo prazo da energia de suporte de vida em gás respirável não é recomendada, e pode resultar na impossibilidade de suportar a vida."
+  },
+  {
+    "Id": "tech19",
+    "Name": "Tradutor Simples",
+    "Group": "Analisador Automático de Línguas",
+    "Description": "Um dispositivo de tradução automática. Grava e analisa conversas próximas antes de trabalhar os dados por meio de um sistema de aprendizagem contextual para determinar o significado pretendido.\n\nA pouca capacidade de memória neste modelo ideal para principiantes limita a capacidade de tradução."
+  },
+  {
+    "Id": "tech20",
+    "Name": "Tradutor Superior",
+    "Group": "Analisador Automático de Línguas",
+    "Description": "Um dispositivo de tradução automática. Grava e analisa conversas próximas antes de trabalhar os dados por meio de um sistema de aprendizagem contextual para determinar o significado pretendido.\n\nOs processadores de idioma paralelos permitem que uma proporção maior de fala gravada seja traduzida."
+  },
+  {
+    "Id": "tech21",
+    "Name": "Tradutor Avançado",
+    "Group": "Analisador Automático de Línguas",
+    "Description": "Um dispositivo de tradução automática. Grava e analisa conversas próximas antes de trabalhar os dados por meio de um sistema de aprendizagem contextual para determinar o significado pretendido.\n\nUma grande capacidade de memória e processadores de linguagem sobrepostos permite a tradução em tempo real de partes consideráveis de texto."
+  },
+  {
+    "Id": "tech22",
+    "Name": "Tradutor de Artemis",
+    "Group": "Analisador Automático de Línguas",
+    "Description": "Um dispositivo de tradução automática. O dispositivo deve ser calibrado ao ser pré-carregado com dados de tradução existentes. O dispositivo deve ter uma ligação de rede à Artemis para funcionar.\n\nSem acesso ao serviço de tradução do anfitrião, o circuito integrado permite a tradução limitada em tempo real de um pequeno número de palavras."
+  },
+  {
+    "Id": "tech23",
+    "Name": "Motor de Pulsação",
+    "Group": "Impulso de Voo Espacial",
+    "Description": "Propulsão de voo espacial que ativa saltos de pulsação num sistema local.\n\nO utilizador precisa de utilizar Trítio para carregar o Motor de Pulsação. O Trítio é abundante em campos de asteroides próximos\n\nManter ROLLLEFT e ROLLRIGHT pressionados em conjunto para ativar o salto pulsante.\nPressionar BOOST para iniciar o impulso de velocidade durante o voo."
+  },
+  {
+    "Id": "tech24",
+    "Name": "Núcleo Fotonix",
+    "Group": "Unidade Complementar para Motor de Pulsação",
+    "Description": "Aumenta a capacidade de manobras e permite maiores impulsos durante voos espaciais."
+  },
+  {
+    "Id": "tech25",
+    "Name": "Propulsor de Lançamento",
+    "Group": "Sistema de Descolagem Vertical",
+    "Description": "Sistema de engrenagem de lançamento e aterragem essencial.\n\nÉ necessário um combustível especializado e derivado de Di-hidrogénio para recarregar o propulsor. Os procedimentos de lançamento precisam de combustível suficiente para serem ativados.\n\nPressiona THRUST para descolar do planeta.\nPressiona BOOST para iniciar o impulso de velocidade."
+  },
+  {
+    "Id": "tech26",
+    "Name": "Propulsores eficientes",
+    "Group": "Atualização sistema de lançamento da nave",
+    "Description": "Atualiza os sistemas de lançamento da nave espacial ao reduzir o custo de combustível ao descolar."
+  },
+  {
+    "Id": "tech27",
+    "Name": "Recarregador de sistemas de lançamento",
+    "Group": "Atualização sistema de lançamento da nave",
+    "Description": "Painéis fotovoltaicos instalados nos Propulsores de Lançamento da nave espacial permitem uma carga lenta enquanto a nave não está em operação.\n\nA luz recolhida é usada para fundir o di-hidrogénio da atmosfera e, com o tempo, reabastecer os Propulsores de Lançamento automaticamente."
+  },
+  {
+    "Id": "tech28",
+    "Name": "Recetor de Teletransporte",
+    "Group": "Dispositivo de teletransporte montado na nave",
+    "Description": "Um dispositivo que modula os sinais padrão de comunicação da nave espacial para permitir o transporte de matéria e de dados.\n\nAs naves espaciais equipadas com um destes dispositivos podem enviar e receber produtos e substâncias para o exofato de um utilizador através de longa distância."
+  },
+  {
+    "Id": "tech29",
+    "Name": "Hiperdrive",
+    "Group": "Unidade de Velocidade Warp",
+    "Description": "Unidade de propulsão FTL que fornece um meio eficaz para o utilizador atingir velocidades warp e saltar entre sistemas contíguos.\n\nO utilizador é aconselhado a aceder aos sistemas Hiperdrive através do Mapa Galáctico."
+  },
+  {
+    "Id": "tech30",
+    "Name": "Propulsor de Cádmio",
+    "Group": "Atualização de Hiperdrive: Sistemas vermelhos",
+    "Description": "Atualiza os ímanos limitadores do núcleo da Hiperdrive, evitando a desmontagem rápida ao tentar alcançar corpos estelares vermelhos de classe rara.\n\nAconselha-se o utilizador a aceder aos sistemas Hiperdrive através do Mapa Galáctico."
+  },
+  {
+    "Id": "tech31",
+    "Name": "Propulsor de Emeril",
+    "Group": "Atualização de Hiperdrive: Sistemas verdes",
+    "Description": "Atualiza a integridade do escudo da Hiperdrive, evitando erros na realidade ao tentar alcançar corpos estelares verdes de classe rara.\n\nAconselha-se aceder aos sistemas Hiperdrive através do Mapa Galáctico."
+  },
+  {
+    "Id": "tech32",
+    "Name": "Propulsor de Índio",
+    "Group": "Atualização de Hiperdrive: Sistemas azuis",
+    "Description": "Atualiza a matriz de blindagem da Hiperdrive, evitando anomalias temporais ao tentar alcançar corpos estelares azuis de classe rara.\n\nAconselha-se aceder aos sistemas Hiperdrive através do Mapa Galáctico."
+  },
+  {
+    "Id": "tech33",
+    "Name": "Escudo Defletor",
+    "Group": "Proteção da Fuselagem da Nave",
+    "Description": "Escudo de energia que protege naves de disparos laser, projéteis e lixo espacial.\n\nAviso ao utilizador: são necessários elementos catalisadores para recarregar o dispositivo.\n\nFunciona de forma automática a partir do momento em que é integrada no inventário da nave do utilizador."
+  },
+  {
+    "Id": "tech34",
+    "Name": "Armadura Ablativa",
+    "Group": "Atualização da Blindagem da Nave",
+    "Description": "Acrescenta uma camada de proteção aquecida à defesa da nave para vaporizar fogo de ataque.\n\nAumenta significativamente o desempenho do escudo da nave."
+  },
+  {
+    "Id": "tech35",
+    "Name": "Lança-Mísseis",
+    "Group": "Arma Projétil da Nave Espacial",
+    "Description": "Arma altamente destrutiva que facilita a destruição extrema de nave-a-nave.\n\nPressiona SHIPFIRE para ativar."
+  },
+  {
+    "Id": "tech36",
+    "Name": "Tubos de Mísseis Grandes",
+    "Group": "Atualização dos Mísseis da Nave",
+    "Description": "Expande a câmara de carregamento do Lança-Mísseis, melhorando o desempenho de escape e permitindo uma recuperação de calor significativamente mais rápida."
+  },
+  {
+    "Id": "tech37",
+    "Name": "Canhão de Fotões",
+    "Group": "Arma da Nave Espacial",
+    "Description": "Arma altamente destrutiva e de apoio a destruição de naves.\n\nPressionar SHIPFIRE para ativar."
+  },
+  {
+    "Id": "tech39",
+    "Name": "Detetor de Economia",
+    "Group": "Tecnologia de Sensores de Longo Alcance",
+    "Description": "Uma atualização para os sensores de escala galáctica da nave espacial. Este dispositivo permite ao utilizador aceder a dados detalhados sobre a economia de um sistema sem ter de o visitar."
+  },
+  {
+    "Id": "tech40",
+    "Name": "Detetor de Conflitos",
+    "Group": "Tecnologia de Sensores de Longo Alcance",
+    "Description": "Uma atualização para os sensores de escala galáctica da nave espacial. Este dispositivo permite ao utilizador aceder a dados de conflito no mapa da galáxia sem ter que se colocar em perigo."
+  },
+  {
+    "Id": "tech41",
+    "Name": "Laser Polifásico",
+    "Group": "Dispositivo de Laser da Nave Espacial",
+    "Description": "Arma laser espacial e ferramenta de mineração de asteroides.\n\nAviso ao utilizador: são necessários elementos orgânicos para recarregar o dispositivo.\n\nPressionar SHIPFIRE para ativar."
+  },
+  {
+    "Id": "tech42",
+    "Name": "Delimitador Fourier",
+    "Group": "Atualização do Laser Polifásico",
+    "Description": "Religa o Laser Polifásico com circuitos à base de nanite para ignorar os limites convencionais da realidade com energia a laser.\n\nMelhora significativamente o desempenho de calor."
+  },
+  {
+    "Id": "tech43",
+    "Name": "Ejetor de Positrões",
+    "Group": "Arma de nave espacial de alta energia",
+    "Description": "Os disparos têm um cone de destruição mais amplo.\n\nCom menor alcance e cadência de fogo, os utilizadores são encorajados a atacar os seus alvos a curta distância."
+  },
+  {
+    "Id": "tech44",
+    "Name": "Supercompressor de Fragmentos",
+    "Group": "Atualização do Ejetor de Positrões da Nave",
+    "Description": "Altera o mecanismo de disparo do Ejetor de Positrões, criando partículas mais rápidas e precisas.\n\nMelhora o alcance e a pontaria."
+  },
+  {
+    "Id": "tech45",
+    "Name": "Acelerador Infra-Faca",
+    "Group": "Arma de nave espacial de disparo rápido",
+    "Description": "Liberta sequências de fogo rápidas e constantes.\n\nO utilizador é aconselhado a disparar de forma limitada para não causar sobreaquecimento."
+  },
+  {
+    "Id": "tech46",
+    "Name": "Óticas não lineares",
+    "Group": "Atualização do Canhão de Fotões",
+    "Description": "Substitui as óticas convencionais do Canhão de Fotões com uma gama experimental de vidro, melhorando o desempenho em combate.\n\nAumenta significativamente a capacidade do dissipador térmico."
+  },
+  {
+    "Id": "tech47",
+    "Name": "Catapulta Ciclotron",
+    "Group": "Arma de nave espacial de energia não-guiada",
+    "Description": "Dispara uma bola grande e concentrada de partículas carregadas a alvos avançados, causando grandes danos. A carga não é guiada e continuará em sua trajetória até que impacte com um obstáculo."
+  },
+  {
+    "Id": "tech48",
+    "Name": "Bomba de Dyson",
+    "Group": "Atualização do Ciclotron da Nave",
+    "Description": "Substitui o dissipador térmico da Catapulta Ciclotron ao envolver a unidade com uma mega-estrutura de absorção de calor. A saída de calor é reciclada para melhorar a eficácia em combate.\n\nAumenta significativamente o desempenho de calor."
+  },
+  {
+    "Id": "tech49",
+    "Name": "Cargueiro Hiperdrive",
+    "Group": "Unidade de Velocidade Warp",
+    "Description": "Unidade de propulsão FTL que fornece um meio eficaz para o utilizador atingir velocidades warp e saltar entre sistemas contíguos."
+  },
+  {
+    "Id": "tech56",
+    "Name": "Fratura do casco",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech57",
+    "Name": "Circuitos enferrujados",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech58",
+    "Name": "Baluarte destruído",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech59",
+    "Name": "Fuga de Radiação",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech60",
+    "Name": "Falha na contenção",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech61",
+    "Name": "Mecanismos danificados",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech62",
+    "Name": "Visor de Análise",
+    "Group": "Dispositivo de Marcação Binocular",
+    "Description": "Unidade especializada de Descoberta e Inspeção.\n\nAumenta as capacidades normais do Detetor ao projetar dados detalhados do ambiente diretamente no visor do utilizador. Permite identificar pontos de interesse distantes.\n\nO Visor gera dados valiosos ao ser utilizado para analisar flora, fauna e minerais.\n\nManter AIM pressionado para ativar. Pressionar ZOOM para ampliar."
+  },
+  {
+    "Id": "tech63",
+    "Name": "Detetor",
+    "Group": "Análise Topográfica",
+    "Description": "Um aumento do radar de exploração pessoal para a Multiferramenta.\n\nO Detetor liberta um pulso de elevada energia que revela recursos críticos de sobrevivência na área imediata. Os dados são transmitidos através do Exofato diretamente através do sistema visual nervoso.\n \nPressionar SCAN para ativar a deteção local."
+  },
+  {
+    "Id": "tech64",
+    "Name": "Reciclador de Formas de Ondas",
+    "Group": "Atualização de Multiferramenta",
+    "Description": "Um processador lateral fortíssimo inserido num Sistema de deteção de Multiferramenta que permite que o dispositivo recarregue a um ritmo significativamente melhorado.\n\nAumenta a a frequência potencial de deteção."
+  },
+  {
+    "Id": "tech65",
+    "Name": "Dispositivo de Análise",
+    "Group": "Atualização do Visor de Análise",
+    "Description": "Uma atualização de circuito independente para o  Visor de Análise, adicionando uma análise de terreno em tempo real às funcionalidades de digitalização.\n\nAlterna entre os modos de visor com SURVEYFILTERL/SURVEYFILTERR. Usa o Modo de Pesquisa para detetar recursos ocultos do terreno."
+  },
+  {
+    "Id": "tech66",
+    "Name": "Manipulador de Terrenos",
+    "Group": "Ferramenta de Formação de Paisagens",
+    "Description": "Dispositivo de terraformação avançada. Este módulo sobrecarrega sistemas de multiferramentas existentes, permitindo que o utilizador remodele as regiões conforme desejar.\n \nCarrega-se com elementos metálicos."
+  },
+  {
+    "Id": "tech67",
+    "Name": "Campo de Força Pessoal",
+    "Group": "Tecnologia de Escudo Defensivo",
+    "Description": "Durante a ativação, este módulo recebe a energia dos sistemas de Suporte de Vida do Exofato para sobrecarregar a Multiferramenta, distorcendo o campo eletromagnético à volta do utilizador e criando assim um poderoso escudo pessoal.\n\nEmbora este campo ofereça uma proteção considerável contra os ataques a laser, avisa-se o utilizador que a Multiferramenta não pode ser utilizada para outras funções enquanto alimenta o escudo."
+  },
+  {
+    "Id": "tech68",
+    "Name": "Alcance de Combate",
+    "Group": "Melhoria de Precisão de Arma",
+    "Description": "Uma mira de arma com coice estável para precisão em combate."
+  },
+  {
+    "Id": "tech69",
+    "Name": "Laser de Mineração",
+    "Group": "Laser de Extração Mineral",
+    "Description": "Laser de mineração da Multiferramenta carregado com elementos de Carbono. Dispara o raio com ATTACK.\n\nInstala ópticas de concentração na Multiferramenta para que emita um raio de alta energia. O raio é calibrado para despertar moléculas em objetos orgânicos ou geológicos comuns, permitindo que funcione como um dispositivo de mineração altamente eficaz.\n\nAVISO: A destruição de flora, fauna ou minerais podem atrair a atenção de Sentinelas."
+  },
+  {
+    "Id": "tech70",
+    "Name": "Laser de Mineração Avançado",
+    "Group": "Unidade de acompanhamento de mineração",
+    "Description": "Substitui as óticas do Laser de mineração normal com Vidro Vivo de elevada qualidade, permitindo que o raio seja eficaz em depósitos de recursos grandes e/ou raros.\n\nA lente adapta-se automaticamente a flutuações mínimas com as formas de onda de raios, reduzindo destroços ao mínimo e aumentando o potencial de mineração do dispositivo."
+  },
+  {
+    "Id": "tech71",
+    "Name": "Broca Ótica",
+    "Group": "Amplificador de Ganho de Material",
+    "Description": "As matrizes de lentes finas estão dispostas numa matriz altamente calibrada, concentrando o Laser de Mineração a um nível atómico.\n\nEsta precisão extra proporciona uma mineração altamente eficiente. Os elementos são extraídos mais eficientemente, aumentando o rendimento dos itens recolhidos com a multiferramenta."
+  },
+  {
+    "Id": "tech72",
+    "Name": "Boltcaster",
+    "Group": "Arma de Projéteis de Energia",
+    "Description": "Arma de combate anexada à Multiferramenta. Pressiona CYCLEWEAPON para aceder ao modo de disparo e dispara a arma com ATTACK.\n\nO Boltcaster reconfigura a Multiferramenta para recarregar Elementos metálicos, disparando-os como projéteis de alta velocidade capazes de causar dano extremo."
+  },
+  {
+    "Id": "tech73",
+    "Name": "Barril Ionizador",
+    "Group": "Atualização da Boltcaster",
+    "Description": "Insere um dispositivo de ionização de campos no barril do Boltcaster para aumentar a estabilidade do projétil no ar.\n\nMelhora a pontaria do dispositivo e permite que o utilizador dispare por períodos mais prolongados sem prejudicar o seu desempenho em combate."
+  },
+  {
+    "Id": "tech74",
+    "Name": "Boltcaster SM",
+    "Group": "Unidade Complementar para Boltcaster",
+    "Description": "Os disparos da Boltcaster causam mais dano físico ao atingirem o alvo.\n\nConcede mais energia cinética aos sistemas de distribuição de plasma ionizado do utilizador.\n\nFunciona de forma automática a partir do momento em que é integrada no inventário da multiferramenta do utilizador."
+  },
+  {
+    "Id": "tech75",
+    "Name": "Sistema de Refrigeração para Lasers Sigma",
+    "Group": "Atualização do Laser de Mineração",
+    "Description": "Uma atualização significativa para o Laser de Mineração.\n\nInsere elementos refletores adicionais na câmara de cristal principal do Laser de Mineração, aumentando a energia do feixe central, diminuindo o derramamento de calor indesejado."
+  },
+  {
+    "Id": "tech76",
+    "Name": "Lança-Plasma",
+    "Group": "Granadas Explosivas",
+    "Description": "Arma de projéteis de alto impacto. Os disparos de plasma ricocheteiam nas superfícies até que o temporizador interno ative uma grande explosão.\n\nCarregado com Plasma Instável. Um uso descuidado pode causar danos no utilizador.\n\nPressionar ALTATTACK para ativar."
+  },
+  {
+    "Id": "tech77",
+    "Name": "Canhão Geológico",
+    "Group": "Dispositivo de Destruição do Terreno",
+    "Description": "Lançador de projétil de grande diâmetro. Impulsiona projéteis de plasma concebidos para escavação rápida do solo.\n\nCarregado com Plasma Instável. Aviso: A criação explosiva de furos pode também danificar a matéria orgânica próxima.\n\nPressiona ALTATTACK para ativar."
+  },
+  {
+    "Id": "tech78",
+    "Name": "Dardo de Arremesso Brilhante",
+    "Group": "Arma de Feixe de Energia",
+    "Description": "Anexo agressivo de arma para a Multiferramenta. Prime CYCLEWEAPON para aceder ao modo de disparo e dispara a arma com ATTACK.\n\nO Dardo de Arremesso Brilhante causa dano instantâneo em todos os alvos.\n\nO processo de carregamento de plasma cria um arco de gás ionizado para disparar os projéteis a alta velocidade. Após premir o gatilho, os resultados destruidores serão instantâneos."
+  },
+  {
+    "Id": "tech79",
+    "Name": "Acelerador de Massa",
+    "Group": "Atualização de Dardo de Arremesso",
+    "Description": "Prolonga a câmara de disparo do Dardo de Arremesso, permitindo que os aceleradores internos de partículas alcancem uma maior massa e velocidade.\n\nMelhora significativamente o dano da arma."
+  },
+  {
+    "Id": "tech80",
+    "Name": "Detonador de Fragmentação",
+    "Group": "Arma de Projéteis de Fragmentação Difusos",
+    "Description": "Anexo de arma de combate cerrado especializada para a Multiferramenta. Prime CYCLEWEAPON para aceder ao modo de disparo e dispara a arma com ATTACK.\n\nO Detonador de Fragmentação reconfigura a Multiferramenta para aquecer e dispersar elementos metálicos, disparando-os num cone de destruição ampliado. O alcance é limitado, mas é eficaz a curto alcance."
+  },
+  {
+    "Id": "tech81",
+    "Name": "Lubrificador de Escudo",
+    "Group": "Atualização do Detonador de Fragmentação",
+    "Description": "Componentes avançados de lubrificação automática que reduzem a fricção no interior do Detonador de Fragmentação para oferecer melhorias significativas aos tempos de recarga."
+  },
+  {
+    "Id": "tech82",
+    "Name": "Cuspidor de Pulsação",
+    "Group": "Arma de Projéteis de Disparo Rápido",
+    "Description": "Anexo de arma de disparo rápido especializada para a Multiferramenta. Prime CYCLEWEAPON para aceder ao modo de disparo e dispara a arma com ATTACK.\n\nO Cuspidor de Pulsação redireciona as óticas da Multiferramenta para ionizar os Elementos metálicos inseridos. Estes projéteis são lançados em disparo rápido, bombardeando alvos potenciais com uma onda de plasma de elevada energia."
+  },
+  {
+    "Id": "tech83",
+    "Name": "Cartuchos Ampliados",
+    "Group": "Atualização do Cuspidor de Pulsação",
+    "Description": "Os ressoadores harmónicos especialistas permitem que o Cuspidor de Pulsação divida munições inseridas para criar mais disparos a partir de menos materiais.\n\nAumenta o tamanho do clipe da arma."
+  },
+  {
+    "Id": "tech84",
+    "Name": "Curto-circuito",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech85",
+    "Name": "Transístor explodido",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech86",
+    "Name": "Cabos danificados",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech87",
+    "Name": "Núcleo de energia enferrujado",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech88",
+    "Name": "Módulo corrupto",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech89",
+    "Name": "Dano no feixe",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech90",
+    "Name": "Motor de fusão",
+    "Group": "Sistema de potência da Exonave",
+    "Description": "Um núcleo de fusão compacto comum a todas as Exonaves.\n\nRequer combustível para funcionar."
+  },
+  {
+    "Id": "tech91",
+    "Name": "Suspensão de deriva",
+    "Group": "Modificação de controlo da Exonave",
+    "Description": "Reformula os valores de controlo da exonave através de uma combinação de ajustes de software, ajustes de pressão e inserção de poços de microgravidade em componentes-chave da suspensão.\n \nEspecificamente ajustado para aumentar a capacidade da exonave para deriva."
+  },
+  {
+    "Id": "tech92",
+    "Name": "Suspensão de aderência da propulsão",
+    "Group": "Modificação de controlo da Exonave",
+    "Description": "Reformula os valores de controlo da exonave através de uma combinação de ajustes de software, ajustes de pressão e inserção de poços de microgravidade em componentes-chave da suspensão.\n \nEspecificamente ajustado para aumentar a capacidade da exonave para curvar acentuadamente."
+  },
+  {
+    "Id": "tech93",
+    "Name": "Suspensão de deslizamento",
+    "Group": "Modificação de controlo da Exonave",
+    "Description": "Reformula os valores de controlo da exonave através de uma combinação de ajustes de software, ajustes de pressão e inserção de poços de microgravidade em componentes-chave da suspensão.\n \nEspecificamente ajustado para aumentar a capacidade da exonave para deslizar."
+  },
+  {
+    "Id": "tech94",
+    "Name": "Impulsionador de Sinal da Exonave",
+    "Group": "Equipamento de deteção da Exonave",
+    "Description": "Um radar grande e complexo baseado em campo subespacial.\n\nDevido ao seu grande consumo de energia e inerente instabilidade subatómica, apenas se encontram instalados na Exonave.\n\nPrime QUICK_MENU para ativar o Impulsionador de sinal."
+  },
+  {
+    "Id": "tech95",
+    "Name": "Atualização Sigma do Impulsionador de Sinal da Exonave",
+    "Group": "Atualização do Impulsionador de Sinal da Exonave",
+    "Description": "Permite que tipos de construção adicionais sejam adquiridos pelo Impulsionador de Sinal da Exonave."
+  },
+  {
+    "Id": "tech96",
+    "Name": "Atualização Tau do Impulsionador de Sinal da Exonave",
+    "Group": "Atualização do Impulsionador de Sinal da Exonave",
+    "Description": "Permite que tipos de construção adicionais sejam adquiridos pelo Impulsionador de Sinal da Exonave."
+  },
+  {
+    "Id": "tech97",
+    "Name": "Módulo de aceleração da Exonave",
+    "Group": "Atualização do motor da Exonave",
+    "Description": "Um injetor de plasma eficiente acoplado ao motor que permite rajadas curtas de velocidade."
+  },
+  {
+    "Id": "tech98",
+    "Name": "Laser de Mineração da Exonave",
+    "Group": "Anexo de Mineração da Exonave",
+    "Description": "Um laser de mineração grande demais para transportar, tem de ser montado numa Exonave."
+  },
+  {
+    "Id": "tech99",
+    "Name": "Atualização Sigma do Laser de Mineração da Exonave",
+    "Group": "Atualização do Laser de Mineração ",
+    "Description": "Aumenta o poder do Laser de Mineração da Exonave."
+  },
+  {
+    "Id": "tech100",
+    "Name": "Canhão montado na Exonave",
+    "Group": "Arma anexada à Exonave",
+    "Description": "Devido aos requisitos de energia que uma arma tão poderosa exige, apenas poderá ser disparada montada numa Exonave."
+  },
+  {
+    "Id": "tech101",
+    "Name": "Condutor de Humboldt",
+    "Group": "Sistema de potência da Exonave",
+    "Description": "Um motor de reator à prova de inversão, termicamente eficiente, capaz de alimentar o Nautilon mesmo em profundidades extremas.\n\nAtivado por Células de Combustível Hidrotérmico ."
+  },
+  {
+    "Id": "tech102",
+    "Name": "Canhão do Nautilon",
+    "Group": "Arma Submarina",
+    "Description": "Um canhão montado especificamente para o Submarino Nautilon.\n\nUm sistema de armas de alta energia, sobreaquece um pequeno corpo de água antes de o lançar rapidamente em direção ao alvo pretendido.\n\nProjetado principalmente para danos contra entidades biológicas, é ineficaz como dispositivo de mineração."
+  },
+  {
+    "Id": "tech103",
+    "Name": "Feixe de Tétis",
+    "Group": "Laser de Mineração Submarino",
+    "Description": "Um sistema de laser montado especificamente para o Submarino Nautilon.\n\nDispara um feixe de plasma concentrado em direção ao alvo pretendido, que fica então aceso. Este mecanismo de gatilho permite o uso de sistemas de mineração ótica de alta energia num meio líquido."
+  },
+  {
+    "Id": "tech104",
+    "Name": "Sonar de Alta Intensidade",
+    "Group": "Dispositivo de Análise Submarina",
+    "Description": "Um dispositivo de sonar de elevado detalhe, capaz de atualizar a tecnologia do detetor a bordo de um submarino Nautilon para os níveis do Visor de Análise.\nPrime SCAN para ativar o Sonar de Alta Intensidade."
+  },
+  {
+    "Id": "tech105",
+    "Name": "Gerador de Osmose",
+    "Group": "Atualização do Condutor de Humboldt",
+    "Description": "Instalado no sistema de acionamento a bordo do Submarino Nautilon.\n\nCaptura energia ao explorar o gradiente salino em ambientes de águas profundas, permitindo uma recarga lenta do Condutor de Humboldt em caso de emergências de combustível."
+  },
+  {
+    "Id": "tech106",
+    "Name": "Mecanismo de Bloqueio",
+    "Group": "Componente Danificado",
+    "Description": "Um dispositivo de bloqueio simples, projetado para evitar gatunos não autorizados. Uma avaria bloqueou-o de forma permanente."
+  },
+  {
+    "Id": "tech107",
+    "Name": "Cadeado Magnético",
+    "Group": "Componente Danificado",
+    "Description": "Um dispositivo de bloqueio avançado. Um incidente de polaridade fez com que ficasse fechado e selado permanentemente."
+  },
+  {
+    "Id": "tech108",
+    "Name": "Cadeado Supercondutor",
+    "Group": "Componente Danificado",
+    "Description": "Um dispositivo de bloqueio altamente avançado. O dano aos circuitos que fornecem o íman causou o bloqueio permanente."
+  },
+  {
+    "Id": "tech109",
+    "Name": "Entrada do Terminal",
+    "Group": "Componente Danificado",
+    "Description": "Um terminal projetado para permitir o controlo manual do dispositivo. Os danos impedem que receba quaisquer instruções."
+  },
+  {
+    "Id": "tech110",
+    "Name": "Sensor de Entrada Biológica",
+    "Group": "Componente Danificado",
+    "Description": "Uma unidade de controlo avançada, projetada para permitir a interação entre o dispositivo e o corpo. Os danos impedem que funcione corretamente. Fazer o interface enquanto está neste estado não é aconselhável."
+  },
+  {
+    "Id": "tech111",
+    "Name": "Unidade de Caldeira",
+    "Group": "Componente Danificado",
+    "Description": "Uma pequena caldeira que gera calor de forma a permitir que o dispositivo funcione em climas difíceis. O resultado de uma avaria foi um derramamento prejudicial para a caldeira."
+  },
+  {
+    "Id": "tech112",
+    "Name": "Motor Minúsculo",
+    "Group": "Componente Danificado",
+    "Description": "Um motor muito pequeno projetado para alimentar peças muito pequenas. Está corroído e cheio de ferrugem muito pequena."
+  },
+  {
+    "Id": "tech113",
+    "Name": "Sistema de Refrigeração",
+    "Group": "Componente Danificado",
+    "Description": "Um sistema de troca de calor e bomba projetado para evitar o sobreaquecimento do dispositivo. Já sobreaqueceu uma vez e agora já não funciona."
+  },
+  {
+    "Id": "tech114",
+    "Name": "Ecrã de Desempenho",
+    "Group": "Componente Danificado",
+    "Description": "Um terminal de visualização projetado para comunicar o estado do dispositivo ao utilizador. Quando o terminal deixa de funcionar, o utilizador já não pode ser informado que o terminal deixou de funcionar."
+  },
+  {
+    "Id": "tech115",
+    "Name": "Dispositivo de Prevenção de Adulteração",
+    "Group": "Componente Danificado",
+    "Description": "Uma unidade projetada para destruir sistemas vitais no caso do dispositivo ser adulterado por alguém não autorizado. Infelizmente avariou e continuará a danificar outros sistemas até ser consertado."
+  },
+  {
+    "Id": "tech116",
+    "Name": "Alarme de Segurança",
+    "Group": "Componente Danificado",
+    "Description": "Um pequeno híbrido de luz e buzina, projetado para avisar sobre o acesso não autorizado ao dispositivo. Os danos ao alarme fizeram com que sobrecarregasse e fizesse um curto-circuito a outros circuitos próximos."
+  },
+  {
+    "Id": "tech117",
+    "Name": "Invólucro de Rebento",
+    "Group": "Componente Danificado",
+    "Description": "O invólucro para uma mola de alta compressão. O invólucro rompeu, o que fez com que a mola disparasse e danificasse o resto do dispositivo."
+  },
+  {
+    "Id": "tech118",
+    "Name": "Termorregulador",
+    "Group": "Componente Danificado",
+    "Description": "Uma unidade de controlo projetada para manter a temperatura constante em todo o dispositivo. A unidade do sensor está danificada, fazendo com que ventile ou gere calor em momentos inoportunos."
+  },
+  {
+    "Id": "tech119",
+    "Name": "Bomba de Combustível",
+    "Group": "Componente Danificado",
+    "Description": "Uma bomba de alta capacidade que garante que o combustível chega a todas as partes do dispositivo em qualquer condição gravitacional. O filtro está entupido com uma substância estranha, o que faz que perca energia."
+  },
+  {
+    "Id": "tech120",
+    "Name": "Braço de Servomecanismo",
+    "Group": "Componente Danificado",
+    "Description": "Uma pequena junta mecânica utilizada para corrigir pequenos erros mecânicos em todo o dispositivo. Uma avaria está a fazer que utilize componentes funcionais no lugar errado, criando ainda mais danos."
+  },
+  {
+    "Id": "tech121",
+    "Name": "Solenoide",
+    "Group": "Componente Danificado",
+    "Description": "Um interruptor de transmissão destinado a facilitar a alimentação do dispositivo. Os conetores ficaram corroídos e o solenoide já não está a funcionar."
+  },
+  {
+    "Id": "tech122",
+    "Name": "Câmara de Pressão",
+    "Group": "Componente Danificado",
+    "Description": "Uma pequena câmara pressurizada, projetada para criar o gás comprimido necessário para que o dispositivo funcione. Surgiram fissuras na câmara, o que criou uma fuga."
+  },
+  {
+    "Id": "tech123",
+    "Name": "Circuito Principal",
+    "Group": "Componente Danificado",
+    "Description": "O circuito de controlo para todos os outros componentes do dispositivo. Os danos neste circuito são fatais."
+  },
+  {
+    "Id": "tech124",
+    "Name": "Distribuidor de Energia",
+    "Group": "Componente Danificado",
+    "Description": "A unidade de energia central para o dispositivo. Os danos à unidade significam que está a distribuir atualmente toda a energia para um único circuito, o que causa um curto-circuito perigoso."
+  },
+  {
+    "Id": "tech125",
+    "Name": "Compensador de Carga",
+    "Group": "Componente Danificado",
+    "Description": "Uma pequena unidade projetada para regular o fluxo de energia pelo dispositivo. Uma avaria está a causar um curto-circuito, prejudicando outros componentes."
+  },
+  {
+    "Id": "tech126",
+    "Name": "Interface de Rede",
+    "Group": "Componente Danificado",
+    "Description": "Um interface de rede universal que permite que o dispositivo esteja ligado a uma central de controlo remoto. Os danos neste interface fazem com que interprete a radiação de fundo como um sinal de rede, corrompendo assim os dados de outros circuitos."
+  },
+  {
+    "Id": "tech127",
+    "Name": "Painel de segurança",
+    "Group": "Componente Danificado",
+    "Description": "O painel de segurança veda os componentes potencialmente perigosos em caso de avaria. Um gatilho muito sensível ativou o painel, o que impede o funcionamento do dispositivo."
+  },
+  {
+    "Id": "tech128",
+    "Name": "Alternador",
+    "Group": "Componente Danificado",
+    "Description": "O alternador gera e regula a energia do dispositivo. Uma estranha corrosão infiltrou-se no alternador impedindo que funcione."
+  },
+  {
+    "Id": "tech129",
+    "Name": "Painel Fotovoltaico",
+    "Group": "Componente Danificado",
+    "Description": "Um painel pequeno mas eficiente, projetado para recolher a luz e convertê-la em energia. No entanto, o painel está rachado e empoeirado, o que não o torna fiável."
+  },
+  {
+    "Id": "tech130",
+    "Name": "Caixa de Transmissão",
+    "Group": "Componente Danificado",
+    "Description": "O mecanismo de engrenagem do dispositivo. O lubrificante que o mantém operacional parece ter sido substituído por uma coisa viscosa verde de outro mundo e as engrenagens agora estão paradas."
+  },
+  {
+    "Id": "tech131",
+    "Name": "Fechadura Anciã",
+    "Group": "Mecanismo de Bloqueio Pesado",
+    "Description": "Esta relíquia, uma fechadura misteriosa com vários buracos de fechadura, protege o que deve certamente ser um tesouro valioso."
+  },
+  {
+    "Id": "tech132",
+    "Name": "Oferta de Pérola",
+    "Group": "Oferta ao Mar",
+    "Description": "O peito requer uma Pérola Viva, colhida dos gigantes moluscos-mãe que crescem no fundo do oceano."
+  },
+  {
+    "Id": "tech133",
+    "Name": "Elétrodo danificado",
+    "Group": "Componente Danificado",
+    "Description": "Este Módulo de Atualização de Exofato tem danos críticos. Repara os sistemas para recuperar a funcionalidade.\n\nSe for reparado, não será cobrado ao Utilizador qualquer Atualização de Exofato."
+  },
+  {
+    "Id": "tech134",
+    "Name": "Núcleo de energia destruído",
+    "Group": "Componente Danificado",
+    "Description": "Este Módulo de Atualização de Exofato tem danos críticos. Repara os sistemas para recuperar a funcionalidade.\n\nSe for reparado, não será cobrado ao Utilizador qualquer Atualização de Exofato."
+  },
+  {
+    "Id": "tech135",
+    "Name": "Holograma defeituoso",
+    "Group": "Componente Danificado",
+    "Description": "Este Módulo de Atualização de Exofato tem danos críticos. Repara os sistemas para recuperar a funcionalidade.\n\nSe for reparado, não será cobrado ao Utilizador qualquer Atualização de Exofato."
+  },
+  {
+    "Id": "tech136",
+    "Name": "Ressoador do Núcleo de Velocidade Warp",
+    "Group": "Unidade Complementar para Hiperdrive",
+    "Description": "Um aumento do motor hyperdrive colossal do cargueiro interestelar.\n\nA ressonância quântica aumenta a robustez do impulso em viagens FTL, concedendo a capacidade de viajar até estrelas anteriormente fora de alcance."
+  },
+  {
+    "Id": "tech137",
+    "Name": "Injetor Warp Plasmático",
+    "Group": "Unidade Complementar para Hiperdrive",
+    "Description": "Um aumento do motor hyperdrive colossal do cargueiro interestelar.\n\nO Hiperdrive adquire um sistema de fusão avançada para atingir velocidades warp mais elevadas. A nave do utilizador será capaz de viajar ainda mais profundo no espaço e até sistemas planetários mais distantes."
+  },
+  {
+    "Id": "tech138",
+    "Name": "Devastador de Realidade",
+    "Group": "Unidade Complementar para Hiperdrive",
+    "Description": "Um aumento do motor hyperdrive colossal do cargueiro interestelar.\n\nSistemas de fusão não contidos mas estáveis são interligados à unidade Hiperdrive do utilizador. Permite que a nave atinja distâncias mais longas no espaço profundo."
+  },
+  {
+    "Id": "tech139",
+    "Name": "Blindagem Warp Amplificada",
+    "Group": "Atualização de Hiperdrive: Sistemas vermelhos",
+    "Description": "Atualiza os ímanos limitadores do núcleo da Hiperdrive, evitando a desmontagem rápida ao tentar alcançar corpos estelares vermelhos de classe rara.\n\nAconselha-se o utilizador a aceder aos sistemas Hiperdrive através do Mapa Galáctico."
+  },
+  {
+    "Id": "tech140",
+    "Name": "Blindagem Warp Cromática",
+    "Group": "Atualização de Hiperdrive: Sistemas verdes",
+    "Description": "Atualiza a integridade do escudo da Hiperdrive, evitando erros na realidade ao tentar alcançar corpos estelares verdes de classe rara.\n\nAconselha-se aceder aos sistemas Hiperdrive através do Mapa Galáctico."
+  },
+  {
+    "Id": "tech141",
+    "Name": "Computador Warp Temporal",
+    "Group": "Atualização de Hiperdrive: Sistemas azuis",
+    "Description": "Atualiza a matriz de blindagem da Hiperdrive, evitando anomalias temporais ao tentar alcançar corpos estelares azuis de classe rara.\n\nAconselha-se aceder aos sistemas Hiperdrive através do Mapa Galáctico."
+  }
+]

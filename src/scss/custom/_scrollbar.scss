@@ -1,0 +1,21 @@
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: $brand-primary-background;
+}
+
+*::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: $brand-primary-background;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $brand-primary;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, .2) 50%,
+            rgba(255, 255, 255, .2) 75%,
+            transparent 75%,
+            transparent)
+}

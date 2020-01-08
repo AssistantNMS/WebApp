@@ -1,0 +1,37 @@
+#app {
+
+    color: $body-color;
+    background-color: $body-bg; // 2
+
+    .main-panel {
+        #navbar.navbar {
+            background-color: $brand-primary;
+            color: white;
+        }
+
+        .content {
+            background-color: $brand-primary-background;
+        }
+
+        .game-item {
+            background-color: #ededed;
+
+            .text-container p {
+                color: black;
+            }
+        }
+
+        .catalogue-item {
+            background-color: rgba(255, 255, 255, 0.6);
+
+            a,
+            p {
+                color: black;
+            }
+        }
+    }
+
+    .sidebar {
+        background: white;
+    }
+}

@@ -1,0 +1,20 @@
+export class ExternalUrls {
+  static cvWebsite = 'https://kurtlourens.com';
+  static personalBlog = 'https://blog.kurtlourens.com';
+  static directoryOfWebsites = 'https://khaoznet.xyz';
+  static buyMeACoffee = 'https://www.buymeacoffee.com/kurt';
+  static payPal = 'https://paypal.me/KurtLourens';
+  static patreon = 'https://www.patreon.com/nmsassistant';
+  static kofi = 'https://ko-fi.com/nomansskyrecipes';
+  static kurtLourensEmail = 'mailto:nms@kurtlourens.com?subject=NMS Assistant Translation';
+  static githubLanguageRepo = 'https://github.com/NoMansSkyRecipes/Languages';
+  static githubGeneralRepo = 'https://github.com/NoMansSkyRecipes/General';
+  static nmsPortals = 'http://nmsportals.github.io/#';
+  static googlePlayListing = 'https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes';
+  static appStoreListing = 'https://apps.apple.com/us/app/id1480287625';
+  static noMansSkyWebsite = 'https://nomanssky.com';
+  static discord = 'https://discord.gg/q3aFBQM?ref=nmsAssistant';
+  static twitter = 'https://twitter.com/AssistantNMS';
+  static defaultProfilePic = 'https://nmsassistant.com/assets/img/vykeen.png';
+  static bat = 'https://brave.com/nms136';
+}

@@ -1,0 +1,807 @@
+[
+  {
+    "Id": "tech1",
+    "Name": "Hazard Protection",
+    "Group": "Exosuit Environmental Shielding",
+    "Description": "The Exosuit's Hazard Protection system continually monitors and stabilises the user's environment. \n\nGeneral reactive protection may be augmented with Environmental Shields, offering increased protection against specific conditions.\n\nThe device is charged with sodium-based substances. User is advised that a failure to charge the Hazard Protection system may allow their environment to become incompatible with life."
+  },
+  {
+    "Id": "tech2",
+    "Name": "Shield Lattice",
+    "Group": "Hazard Protection Upgrade",
+    "Description": "Increases the base capacity of the Hazard Protection system, allowing the user to spend longer in hazardous environments without recharging their Exosuit."
+  },
+  {
+    "Id": "tech3",
+    "Name": "Life Support",
+    "Group": "Suit Survival Power Pack",
+    "Description": "The core of the Exosuit, the Life Support System continually filters and pumps breathable Oxygen.\n\nIn addition to its role in the continued existence of the Exosuit user, the Life Support Unit uses surplus oxygen to generate power for secondary systems, such as the Jetpack, Speed Augmentation and Torch."
+  },
+  {
+    "Id": "tech4",
+    "Name": "Oxygen Recycler",
+    "Group": "Life Support Upgrade",
+    "Description": "Increases the base capacity of the Life Support system, allowing the user to go longer between charges."
+  },
+  {
+    "Id": "tech5",
+    "Name": "Jetpack",
+    "Group": "Aerial Propulsion Booster",
+    "Description": "Provides the Exosuit with advanced movement capabilities, including temporary flight.\n\nControl thrust with JUMP. The flightpack uses energy from the Exosuit Life Support system to pressurise and vent bursts of gas, propelling the user into the air.\n\nJetpack can be temporarily overloaded by gathering Deuterium-rich plants, causing a dramatic increase in available thrust."
+  },
+  {
+    "Id": "tech6",
+    "Name": "Neural Stimulator",
+    "Group": "Exosuit Movement Upgrade",
+    "Description": "Increases the capacity of the Exosuit's Jetpack Tanks and Adrenal Pump Reserves, allowing the user to both fly and sprint longer."
+  },
+  {
+    "Id": "tech7",
+    "Name": "Rocket Boots",
+    "Group": "Exosuit Upgrade",
+    "Description": "Equips the Exosuit jetpack with advanced jump capabilities, allowing the user to take huge leaps with ease.\n\nActivate jump systems by rapidly pressing JUMP."
+  },
+  {
+    "Id": "tech8",
+    "Name": "Coolant Network",
+    "Group": "Hazard Protection Unit",
+    "Description": "User is guarded from extreme heat damage on scorched worlds.\n\nProvides relief from intense atmospheric and solar heat through a threaded dermal distribution network of liquid frenium.\n\nDevice is charged by mineral extracts found in hot environments. Operates automatically once constructed within user's exosuit inventory."
+  },
+  {
+    "Id": "tech9",
+    "Name": "Thermic Layer",
+    "Group": "Hazard Protection Unit",
+    "Description": "User is guarded from extreme cold damage on frozen worlds.\n\nHeat capillaries threaded through a user's suit that evenly distributes liquid calidium to maintain a comfortable body temperature.\n\nDevice is charged by mineral extracts found in frozen environments. Operates automatically once constructed within user's exosuit inventory."
+  },
+  {
+    "Id": "tech10",
+    "Name": "Toxic Suppressor",
+    "Group": "Hazard Protection Unit",
+    "Description": "User is protected from toxic damage.\n\nReactive compounds within the Suppressor remove toxic liquids that fall on the user, thereby reducing peril and choking hazards.\n\nDevice is charged by mineral extracts found in toxic environments. Operates automatically once constructed within user's exosuit inventory."
+  },
+  {
+    "Id": "tech11",
+    "Name": "Radiation Deflector",
+    "Group": "Hazard Protection Unit",
+    "Description": "User is shielded from radiation damage.\n\nGreatly reduces user peril during the exploration of irradiated worlds. Micro-vibrations increase electromagnetic wave reflection, thereby reducing absorption.\n\nDevice is charged by mineral extracts found in radioactive environments. Operates automatically once constructed within user's exosuit inventory."
+  },
+  {
+    "Id": "tech12",
+    "Name": "Aeration Membrane",
+    "Group": "Aquatic Respiration Aid",
+    "Description": "User is able to swim underwater for extended periods.\n\nAbsorbs gases dissolved in water through a membrane contactor that, if user is of a conventionally structured species, is placed over the mouth or facial breathing hole.\n\nOperates automatically once constructed within user's exosuit inventory."
+  },
+  {
+    "Id": "tech13",
+    "Name": "Haz-Mat Gauntlet",
+    "Group": "Exosuit Augmentation",
+    "Description": "Upgrades the metallic shielding of the Exosuit's gloves.\n\nAn advanced blend of reinforced metal and catalytic shielding allows the user to safely handle hazardous substances, as well perform the necessary feats of strength required to harvest certain farmable flora."
+  },
+  {
+    "Id": "tech14",
+    "Name": "Remembrance",
+    "Group": "A relic of another place",
+    "Description": "Everything you ever knew is within."
+  },
+  {
+    "Id": "tech15",
+    "Name": "Star Seed",
+    "Group": "Priceless Fragment",
+    "Description": "The smallest of sparks, housed within a containment field of unknown origins.\n\nThe seed glows with life, desperate to escape and fulfill its potential."
+  },
+  {
+    "Id": "tech16",
+    "Name": "Obsolete Technology",
+    "Group": "Old, unusable technology",
+    "Description": "A piece of technology, corrupted by interference from the Atlas.\n\nCan be recycled for usable components."
+  },
+  {
+    "Id": "tech17",
+    "Name": "Efficient Water Jets",
+    "Group": "Jetpack Upgrade Unit",
+    "Description": "Improves the fuel efficiency of the jetpack's marine jets, reducing the drain on Exosuit life support systems.\n\nAqueous compressor units are installed into the jetpack's turbines, bypassing the large energy requirements of underwater ignition."
+  },
+  {
+    "Id": "tech18",
+    "Name": "Oxygen Rerouter",
+    "Group": "Emergency Life Support System",
+    "Description": "Upgrades the Aeration Membrane of the Exosuit to harvest oxygen from the Life Support system in the event of a breathing emergency, allowing the user to resurface and seek conventional fuel supplies.\n\nNote: Long-term conversion of life support energy to breathable gas is not recommended, and may result in life no longer being supported."
+  },
+  {
+    "Id": "tech19",
+    "Name": "Simple Translator",
+    "Group": "Automatic Language Parser",
+    "Description": "A automatic translation device. It records and parses nearby conversations before running the data through a contextual learning system to determine intended meaning.\n\nLow memory capacity on this entry-level model limits translation capacity."
+  },
+  {
+    "Id": "tech20",
+    "Name": "Superior Translator",
+    "Group": "Automatic Language Parser",
+    "Description": "A automatic translation device. It records and parses nearby conversations before running the data through a contextual learning system to determine intended meaning.\n\nParallel language processors enable a greater proportion of recorded speech to be translated."
+  },
+  {
+    "Id": "tech21",
+    "Name": "Advanced Translator",
+    "Group": "Automatic Language Parser",
+    "Description": "A automatic translation device. It records and parses nearby conversations before running the data through a contextual learning system to determine intended meaning.\n\nA large memory array and overclocked language processors allow the real-time translation of significant chunks of speech."
+  },
+  {
+    "Id": "tech22",
+    "Name": "Artemis' Translator",
+    "Group": "Automatic Language Parser",
+    "Description": "A automatic translation device. Device must be calibrated by pre-loading with existing translation data. Device must have network connection to Artemis to function.\n\nWithout access to host translation service, on-board circuit allows limited real-time translation of a small number of words."
+  },
+  {
+    "Id": "tech23",
+    "Name": "Pulse Engine",
+    "Group": "Starship Flight Booster",
+    "Description": "Spaceflight propulsion, boosts and on-demand Pulse Jumps through local system.\n \nUser is advised that Tritium is required to charge Pulse Engine. Tritium is abundant in near-space asteroid fields.\n\nHold ROLLLEFT and ROLLRIGHT together to engage Pulse Jump.\nHold BOOST to initiate in-flight speed boost."
+  },
+  {
+    "Id": "tech24",
+    "Name": "Photonix Core",
+    "Group": "Pulse Engine Companion Unit",
+    "Description": "Provides increased manoeuvrability and longer boosts during spaceflight."
+  },
+  {
+    "Id": "tech25",
+    "Name": "Launch Thruster",
+    "Group": "Vertical Take-off System",
+    "Description": "Vital launch and landing gear system.\n \nUser is advised that specialised, Deuterium-derived fuel is required to recharge thruster. Launch procedures require sufficient fuel levels before activation.\n \nHold THRUST to take off from planet.\nHold BOOST to initiate in-flight speed boost."
+  },
+  {
+    "Id": "tech26",
+    "Name": "Efficient Thrusters",
+    "Group": "Starship Launch System Upgrade",
+    "Description": "Upgrades the starship launch systems, decreasing the fuel cost of takeoff."
+  },
+  {
+    "Id": "tech27",
+    "Name": "Launch System Recharger",
+    "Group": "Starship Launch System Upgrade",
+    "Description": "Photovoltaic panels fitted to the starship Launch Thrusters allow for a slow trickle charge while the ship is not in operation.\n\nHarvested light is used to fuse di-hydrogen from the atmosphere and over time will refuel the Launch Thrusters automatically."
+  },
+  {
+    "Id": "tech28",
+    "Name": "Teleport Receiver",
+    "Group": "Ship-Mounted Teleportation Device",
+    "Description": "A device that modulates standard starship communication signals to enable the transport of matter as well as data.\n\nStarships fitted with such a device can send and receive products and substances to a user's exosuit over a long distance."
+  },
+  {
+    "Id": "tech29",
+    "Name": "Hyperdrive",
+    "Group": "Lightspeed Warp Drive",
+    "Description": "FTL propulsion drive that allows starship to attain warp speed and jump between neighbouring systems.\n\nUser is advised to access Hyperdrive systems through Galactic Map."
+  },
+  {
+    "Id": "tech30",
+    "Name": "Cadmium Drive",
+    "Group": "Hyperdrive Upgrade: Red Systems",
+    "Description": "Upgrades the hyperdrive's core bounding magnets, preventing rapid disassembly when attempting to reach rare-class red stellar bodies.\n\nUser is advised to access Hyperdrive systems via the Galactic Map."
+  },
+  {
+    "Id": "tech31",
+    "Name": "Emeril Drive",
+    "Group": "Hyperdrive Upgrade: Green Systems",
+    "Description": "Upgrades the hyperdrive's shield integrity, preventing reality glitches when attempting to reach rare-class green stellar bodies.\n\nUser is advised to access Hyperdrive systems via the Galactic Map."
+  },
+  {
+    "Id": "tech32",
+    "Name": "Indium Drive",
+    "Group": "Hyperdrive Upgrade: Blue Systems",
+    "Description": "Upgrades the hyperdrive's computational matrix,  preventing temporal anomalies when attempting to reach rare-class blue stellar bodies.\n\nUser is advised to access Hyperdrive systems via the Galactic Map."
+  },
+  {
+    "Id": "tech33",
+    "Name": "Deflector Shield",
+    "Group": "Spacecraft Hull Protection",
+    "Description": "Energy shield that protects spacecraft from laser fire, in-flight projectiles and accidental space debris interaction.\n\nUser is advised that catalytic elements are required to recharge device.\n\nOperates automatically once constructed within user's starship inventory."
+  },
+  {
+    "Id": "tech34",
+    "Name": "Ablative Armour",
+    "Group": "Starship Shield Upgrade",
+    "Description": "Adds a layer of superheated shielding to the starship's defense array, vaporising incoming fire.\n\nSignificantly increases starship shield performance."
+  },
+  {
+    "Id": "tech35",
+    "Name": "Rocket Launcher",
+    "Group": "Spacecraft Projectile Weapon",
+    "Description": "Highly destructive weapon that facilitates rapid ship-to-ship destruction.\n\nPress SHIPFIRE to activate."
+  },
+  {
+    "Id": "tech36",
+    "Name": "Large Rocket Tubes",
+    "Group": "Starship Rockets Upgrade",
+    "Description": "Expands the loading chamber of the starship Rocket Launcher, improving exhaust performance and allowing for significantly faster heat recovery."
+  },
+  {
+    "Id": "tech37",
+    "Name": "Photon Cannon",
+    "Group": "Spacecraft Projectile Weapon",
+    "Description": "Highly destructive weapon that facilitates rapid ship-to-ship destruction.\n\nPress SHIPFIRE to activate."
+  },
+  {
+    "Id": "tech39",
+    "Name": "Economy Scanner",
+    "Group": "Long-range Sensor Technology",
+    "Description": "An upgrade to the starship's galactic-scale sensors. This device allows the user to access detailed economic data about a system without having to visit."
+  },
+  {
+    "Id": "tech40",
+    "Name": "Conflict Scanner",
+    "Group": "Long-range Sensor Technology",
+    "Description": "An upgrade to the starship's galactic-scale sensors. This device allows the user to access conflict data in the galaxy map, without having to put themselves in harm's way."
+  },
+  {
+    "Id": "tech41",
+    "Name": "Phase Beam",
+    "Group": "Spacecraft Laser Device",
+    "Description": "Spacefaring beam weapon and asteroid mining tool.\n\nUser is advised that organic elements are required to recharge device.\n\nPress SHIPFIRE to activate."
+  },
+  {
+    "Id": "tech42",
+    "Name": "Fourier De-Limiter",
+    "Group": "Phase Beam Upgrade",
+    "Description": "Rewires the Phase Beam with nanite-based circuitry, bypassing conventional reality limits on laser power.\n\nSignificantly improves heat performance."
+  },
+  {
+    "Id": "tech43",
+    "Name": "Positron Ejector",
+    "Group": "High Energy Starship Weapon",
+    "Description": "Shots are granted a wide cone of destruction.\n\nWith reduced range and rate of fire, users are encouraged to engage their targets in close proximity."
+  },
+  {
+    "Id": "tech44",
+    "Name": "Fragment Supercharger",
+    "Group": "Starship Positron Ejector Upgrade",
+    "Description": "Overhauls the firing mechanism of the Positron Ejector, resulting in faster, more accurate particles.\n\nImproves range and accuracy."
+  },
+  {
+    "Id": "tech45",
+    "Name": "Infra-Knife Accelerator",
+    "Group": "Rapid Fire Starship Weapon",
+    "Description": "Releases sustained rapid sequences of fire.\n\nUser is advised to limit bursts as overheating can occur very rapidly."
+  },
+  {
+    "Id": "tech46",
+    "Name": "Nonlinear Optics",
+    "Group": "Photon Cannon Upgrade",
+    "Description": "Replaces the conventional Photon Cannon optics with an experimental glass array, boosting combat performance.\n\nSignificantly improves heat sink capacity."
+  },
+  {
+    "Id": "tech47",
+    "Name": "Cyclotron Ballista",
+    "Group": "Non-guided Starship Weapon",
+    "Description": "Fires a large, concentrated ball of charged particles at forward targets, causing heavy damage. The charge is non-guided and will continue on its trajectory until it impacts with an obstacle."
+  },
+  {
+    "Id": "tech48",
+    "Name": "Dyson Pump",
+    "Group": "Starship Cyclotron Upgrade",
+    "Description": "Replaces the hint sink of the Cyclotron Ballista by encompassing the entire unit with a heat-absorbing megastructure. Heat output is recycled to boost combat efficiency.\n\nSignificantly improves heat performance."
+  },
+  {
+    "Id": "tech49",
+    "Name": "Freighter Hyperdrive",
+    "Group": "Lightspeed Warp Drive",
+    "Description": "FTL propulsion drive that allows starship to attain warp speed and jump between neighbouring systems."
+  },
+  {
+    "Id": "tech56",
+    "Name": "Hull Fracture",
+    "Group": "Damaged Starship Component",
+    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech57",
+    "Name": "Rusted Circuits",
+    "Group": "Damaged Starship Component",
+    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech58",
+    "Name": "Shattered Bulwark",
+    "Group": "Damaged Starship Component",
+    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech59",
+    "Name": "Radiation Leak",
+    "Group": "Damaged Starship Component",
+    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech60",
+    "Name": "Containment Failure",
+    "Group": "Damaged Starship Component",
+    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech61",
+    "Name": "Damaged Gears",
+    "Group": "Damaged Starship Component",
+    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech62",
+    "Name": "Analysis Visor",
+    "Group": "Binocular Tagging Device",
+    "Description": "Specialist Discovery and Survey unit.\n\nAugments standard Scanner capabilities by projecting detailed environmental data directly over the user's visor. Allows the identification of distant points of interest.\n\nThe Visor will generate valuable data when used to study flora, fauna and minerals.\n\nHold AIM to operate. Press ZOOM to zoom."
+  },
+  {
+    "Id": "tech63",
+    "Name": "Scanner",
+    "Group": "Topographic Survey",
+    "Description": "A Personal Surface Radar augmentation for the Multi-Tool. \n\nThe Scanner releases a high-energy pulse that reveals any critical survival resources in the immediate area. Data is transmitted via the Exosuit directly into the user's visual nervous system.\n \nPress SCAN to activate a local scan."
+  },
+  {
+    "Id": "tech64",
+    "Name": "Waveform Recycler",
+    "Group": "Multi-Tool Upgrade",
+    "Description": "A powerful lateral processor inserted into the Multi-Tool Scanning System allows the device to recharge at a significantly improved rate.\n\nIncreases potential scan frequency."
+  },
+  {
+    "Id": "tech65",
+    "Name": "Survey Device",
+    "Group": "Analysis Visor Upgrade",
+    "Description": "A self-contained circuitry upgrade for the Analysis Visor, adding real-time terrain analysis to the scanning array.\n\nToggle between Visor modes with SURVEYFILTERL/SURVEYFILTERR. Use Surveying Mode to detect hidden terrain resources."
+  },
+  {
+    "Id": "tech66",
+    "Name": "Terrain Manipulator",
+    "Group": "Landscape Shaping Tool",
+    "Description": "Advanced terraforming device. This module overloads existing multi-tool systems, allowing the user to reshape regions as they wish.\n\nCharged with metallic elements."
+  },
+  {
+    "Id": "tech67",
+    "Name": "Personal Forcefield",
+    "Group": "Defensive Shield Technology",
+    "Description": "On activation, this module draws power from Exosuit Life Support systems to overload the Multi-Tool, distorting the electromagnetic field around the user and creating a powerful personal shield.\n\nWhile this field offers substantial protection against incoming laser fire, the user is advised that the Multi-Tool cannot be used for other functions while powering the shield."
+  },
+  {
+    "Id": "tech68",
+    "Name": "Combat Scope",
+    "Group": "Weapon Precision Enhancement",
+    "Description": "A recoil-stabilising weapon scope for precise combat."
+  },
+  {
+    "Id": "tech69",
+    "Name": "Mining Beam",
+    "Group": "Mineral Extraction Laser",
+    "Description": "Multi-Tool Mining Beam powered by Carbon-based Elements. Fire the beam with ATTACK.\n\nInstalls focusing optics within the Multi-Tool, allowing it to emit a high-energy beam. The beam is calibrated to excite molecules within common organic or geological objects, allowing it to operate as a highly effective mining device.\n\nWARNING: Destruction of flora, fauna or minerals may attract Sentinel attention."
+  },
+  {
+    "Id": "tech70",
+    "Name": "Advanced Mining Laser",
+    "Group": "Mining Beam Companion Unit",
+    "Description": "Replaces standard Mining Beam optics with high-grade Living Glass, allowing the beam to be effective against large and/or rare resource deposits.\n\nThe lens adapts automatically to minute fluctuations in the beam waveform, minimising scatter and increasing device mining potential."
+  },
+  {
+    "Id": "tech71",
+    "Name": "Optical Drill",
+    "Group": "Material Gain Amplifier",
+    "Description": "Wafer-thin lens arrays are arranged in a highly calibrated matrix, focusing the Mining Beam on an atomic level.\n\nThis extra precision allows for highly efficient mining. Elements are extracted more efficiently, increasing the yield from items harvested with the Multi-Tool."
+  },
+  {
+    "Id": "tech72",
+    "Name": "Boltcaster",
+    "Group": "Energy Projectile Weapon",
+    "Description": "Generalist weapon attachment for the Multi-Tool. Access fire mode by pressing CYCLEWEAPON and fire weapon with ATTACK.\n\nThe Boltcaster reconfigures the Multi-Tool to supercharge Metallic Elements, firing them as high-velocity projectiles capable of causing extreme damage."
+  },
+  {
+    "Id": "tech73",
+    "Name": "Barrel Ioniser",
+    "Group": "Boltcaster Upgrade",
+    "Description": "Inserts a powerful field ionisation device into the barrel of the Boltcaster, increasing projectile stability through the air.\n\nImproves device accuracy and allows the user to fire for longer periods without degrading combat performance."
+  },
+  {
+    "Id": "tech74",
+    "Name": "Boltcaster SM",
+    "Group": "Boltcaster Companion Unit",
+    "Description": "Boltcaster shots deliver added physical damage upon impact.\n\nGrants additional kinetic energy to the user's ionised plasma distribution systems.\n\nOperates automatically once constructed within user's Multi-Tool inventory.",
+    "Additional": "This Blueprint is only available for players who bought the Limited Edition (PS4) version of the game, or recieved it from the day-one patch"
+  },
+  {
+    "Id": "tech75",
+    "Name": "Plasma Resonator",
+    "Group": "Mining Beam Upgrade",
+    "Description": "A significant upgrade for the Mining Beam.\n\nUpgrades the Mining Laser's primary crystal chamber, boosting core beam energy while decreasing unwanted heat spill."
+  },
+  {
+    "Id": "tech76",
+    "Name": "Plasma Launcher",
+    "Group": "Explosive Grenades",
+    "Description": "High-impact projectile weapon. Launched plasma shells bounce off surfaces until their internal timer triggers a large explosion.\n \nCharged with Unstable Plasma. Careless use can result in damage to user.\n \nPress ALTATTACK to activate."
+  },
+  {
+    "Id": "tech77",
+    "Name": "Geology Cannon",
+    "Group": "Terrain Destruction Device",
+    "Description": "Large-bore projectile launcher. Propels plasma shells designed for rapid ground excavation.\n \nCharged with Unstable Plasma. Warning: Explosive hole creation may also damage nearby organic matter.\n \nPress ALTATTACK to activate."
+  },
+  {
+    "Id": "tech78",
+    "Name": "Blaze Javelin",
+    "Group": "Energy Beam Weapon",
+    "Description": "Aggressive weapon attachment for the Multi-Tool. Access fire mode by pressing CYCLEWEAPON and fire weapon with ATTACK.\n\nThe Blaze Javelin delivers instantaneous damage on targets.\n\nPlasma charge process creates an ionised gas arc to propel projectiles at great speed. User will perceive destructive results simultaneous to the pull of the trigger."
+  },
+  {
+    "Id": "tech79",
+    "Name": "Mass Accelerator",
+    "Group": "Blaze Javelin Upgrade",
+    "Description": "Extends the firing chamber of the Blaze Javelin, allowing the internal particle accelerators to reach both greater mass and speed.\n\nSignificantly improves weapon damage."
+  },
+  {
+    "Id": "tech80",
+    "Name": "Scatter Blaster",
+    "Group": "Scatter Shot Projectile Weapon",
+    "Description": "Specialist close combat weapon attachment for the Multi-Tool. Access fire mode by pressing CYCLEWEAPON and fire weapon with ATTACK.\n\nThe Scatter Blaster reconfigures the Multi-Tool to heat and shatter Metallic Elements, firing them in a wide cone of destruction. Range is limited, but the shrapnel is highly effective at close range."
+  },
+  {
+    "Id": "tech81",
+    "Name": "Shell Greaser",
+    "Group": "Scatter Blaster Upgrade",
+    "Description": "Advanced self-lubricating components decrease friction within the Scatter Blaster, offering significant improves to reload times."
+  },
+  {
+    "Id": "tech82",
+    "Name": "Pulse Spitter",
+    "Group": "Rapid Fire Projectile Weapon",
+    "Description": "Specialist rapid fire weapon attachment for the Multi-Tool. Access fire mode by pressing CYCLEWEAPON and fire weapon with ATTACK.\n\nThe Pulse Spitter redirects Multi-Tool optics to ionise inserted Metallic Elements. These projectiles are launched in a rapid-fire spread, bombarding potential targets with a wave of high-energy plasma."
+  },
+  {
+    "Id": "tech83",
+    "Name": "Amplified Cartridges",
+    "Group": "Pulse Spitter Upgrade",
+    "Description": "Specialist harmonic resonators allow the Pulse Spitter to split inserted ammunition, effective manufacturing more shots from fewer materials.\n\nIncreases weapon clip size."
+  },
+  {
+    "Id": "tech84",
+    "Name": "Short Circuit",
+    "Group": "Damaged Multi-Tool Component",
+    "Description": "Multi-Tool subsystem critically damaged.\n\nSlot cannot be used until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech85",
+    "Name": "Blown Transistor",
+    "Group": "Damaged Multi-Tool Component",
+    "Description": "Multi-Tool subsystem critically damaged.\n\nSlot cannot be used until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech86",
+    "Name": "Damaged Wiring",
+    "Group": "Damaged Multi-Tool Component",
+    "Description": "Multi-Tool subsystem critically damaged.\n\nSlot cannot be used until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech87",
+    "Name": "Rusted Power Core",
+    "Group": "Damaged Multi-Tool Component",
+    "Description": "Multi-Tool subsystem critically damaged.\n\nSlot cannot be used until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech88",
+    "Name": "Corrupt Module",
+    "Group": "Damaged Multi-Tool Component",
+    "Description": "Multi-Tool subsystem critically damaged.\n\nSlot cannot be used until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech89",
+    "Name": "Loom Damage",
+    "Group": "Damaged Multi-Tool Component",
+    "Description": "Multi-Tool subsystem critically damaged.\n\nSlot cannot be used until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use."
+  },
+  {
+    "Id": "tech90",
+    "Name": "Fusion Engine",
+    "Group": "Exocraft Power System",
+    "Description": "A compact fusion core common to all Exocraft.\n\nRequires fuel to function."
+  },
+  {
+    "Id": "tech91",
+    "Name": "Drift Suspension",
+    "Group": "Exocraft Handling Modification",
+    "Description": "Overhauls Exocraft handling values through a combination of software tweaks, pressure adjustments and the insertion of microgravity wells into key suspension components.\n\nSpecifically tuned to increase the ability of the Exocraft to drift."
+  },
+  {
+    "Id": "tech92",
+    "Name": "Grip Boost Suspension",
+    "Group": "Exocraft Handling Modification",
+    "Description": "Overhauls Exocraft handling values through a combination of software tweaks, pressure adjustments and the insertion of microgravity wells into key suspension components.\n\nSpecifically tuned to increase the ability of the Exocraft to turn sharply."
+  },
+  {
+    "Id": "tech93",
+    "Name": "Hi-Slide Suspension",
+    "Group": "Exocraft Handling Modification",
+    "Description": "Overhauls Exocraft handling values through a combination of software tweaks, pressure adjustments and the insertion of microgravity wells into key suspension components.\n\nSpecifically tuned to increase the ability of the Exocraft to slide."
+  },
+  {
+    "Id": "tech94",
+    "Name": "Exocraft Signal Booster",
+    "Group": "Exocraft Scan Equipment",
+    "Description": "A large and complex field-based subspace radar.\n\nDue to their large power consumption and inherent subatomic instability, they are found only installed on Exocraft.\n\nPress QUICK_MENU to activate the Signal Booster."
+  },
+  {
+    "Id": "tech95",
+    "Name": "Exocraft Signal Booster Upgrade Sigma",
+    "Group": "Exocraft Signal Booster Upgrade",
+    "Description": "Allows for additional building types to be acquired by the Exocraft Signal Booster."
+  },
+  {
+    "Id": "tech96",
+    "Name": "Exocraft Signal Booster Upgrade Tau",
+    "Group": "Exocraft Signal Booster Upgrade",
+    "Description": "Allows for additional building types to be acquired by the Exocraft Signal Booster."
+  },
+  {
+    "Id": "tech97",
+    "Name": "Exocraft Acceleration Module",
+    "Group": "Exocraft Engine Upgrade",
+    "Description": "An efficient plasma injector coupled to the engine that allows short bursts of speed."
+  },
+  {
+    "Id": "tech98",
+    "Name": "Exocraft Mining Laser",
+    "Group": "Exocraft Mining Attachment",
+    "Description": "A mining laser too cumbersome for handheld operation, they are found only installed on Exocraft."
+  },
+  {
+    "Id": "tech99",
+    "Name": "Exocraft Mining Laser Upgrade Sigma",
+    "Group": "Exocraft Mining Upgrade",
+    "Description": "Increases power of the Exocraft Mining Laser."
+  },
+  {
+    "Id": "tech100",
+    "Name": "Exocraft Mounted Cannon",
+    "Group": "Exocraft Weapon Attachment",
+    "Description": "Due to the energy requirements of this powerful weapon, they can only be fired from an Exocraft mount."
+  },
+  {
+    "Id": "tech101",
+    "Name": "Humboldt Drive",
+    "Group": "Exocraft Power System",
+    "Description": "A thermally-efficient, inversion-proof reactor engine capable of powering the Nautilon even at extreme depths.\n\nPowered by Hydrothermal Fuel Cells."
+  },
+  {
+    "Id": "tech102",
+    "Name": "Nautilon Cannon",
+    "Group": "Submarine Weapon",
+    "Description": "A mounted cannon specifically designed for the Nautilon Submarine.\n\nA high-energy weapon system, it superheats a small body of water before launching it rapidly towards the intended target.\n\nDesigned primarily for damage against biological entities and inefficient when deployed as a mining device."
+  },
+  {
+    "Id": "tech103",
+    "Name": "Tethys Beam",
+    "Group": "Submarine Mining Laser",
+    "Description": "A mounted laser system specifically designed for the Nautilon Submarine.\n\nFires a concentrated plasma beam towards the intended target, which is then ignited. Such a trigger mechanism allows the use of high-energy optical mining systems in a liquid medium."
+  },
+  {
+    "Id": "tech104",
+    "Name": "High-Power Sonar",
+    "Group": "Submarine Analysis Device",
+    "Description": "A high-detail sonar device, capable of upgrading the scanner technology aboard a Nautilon-class submarine to Analysis Visor levels.\nPress SCAN to activate the High-Power Sonar."
+  },
+  {
+    "Id": "tech105",
+    "Name": "Osmotic Generator",
+    "Group": "Humboldt Drive Upgrade",
+    "Description": "Installed into the drive system aboard the Nautilon Submarine.\n\nCaptures energy by exploiting the saline gradient in deep water environments, allowing a slow recharge of the Humboldt Drive in the event of fuel emergencies."
+  },
+  {
+    "Id": "tech106",
+    "Name": "Locking mechanism",
+    "Group": "Damaged Component",
+    "Description": "A simple locking device, designed to keep out unauthorised pilferers. Damage has locked it permanently."
+  },
+  {
+    "Id": "tech107",
+    "Name": "Magnetic Lock",
+    "Group": "Damaged Component",
+    "Description": "An advanced locking device. A polarity incident has caused it to seal shut permanently."
+  },
+  {
+    "Id": "tech108",
+    "Name": "Superconductive Lock",
+    "Group": "Damaged Component",
+    "Description": "A highly advanced locking device. Damage to the circuits supplying the magnet has caused it to lock permanently."
+  },
+  {
+    "Id": "tech109",
+    "Name": "Input terminal",
+    "Group": "Damaged Component",
+    "Description": "A terminal designed to allow manual control of the device. Damage prevents it actually receiving any input."
+  },
+  {
+    "Id": "tech110",
+    "Name": "Bio-input sensor",
+    "Group": "Damaged Component",
+    "Description": "An advanced control unit, designed to allow device/flesh interaction. Damage prevents it functioning correctly. Interfacing while it is in this state is not advised."
+  },
+  {
+    "Id": "tech111",
+    "Name": "Boiler Unit",
+    "Group": "Damaged Component",
+    "Description": "A small boiler, generating heat to allow the device to function in difficult climates. A malfunction has resulted in a damaging boiler overflow."
+  },
+  {
+    "Id": "tech112",
+    "Name": "Tiny motor",
+    "Group": "Damaged Component",
+    "Description": "A very small motor, designed to power very small parts. It has corroded, and is full of very small rust."
+  },
+  {
+    "Id": "tech113",
+    "Name": "Cooling system",
+    "Group": "Damaged Component",
+    "Description": "A pump and heat exchange system designed to keep the device from overheating. It has itself overheated, and is no longer functional."
+  },
+  {
+    "Id": "tech114",
+    "Name": "Output screen",
+    "Group": "Damaged Component",
+    "Description": "A display terminal designed to communicate the device's status to the user. As the terminal is broken, the user cannot be made aware that the terminal is broken."
+  },
+  {
+    "Id": "tech115",
+    "Name": "Tamper Prevention Device",
+    "Group": "Damaged Component",
+    "Description": "A unit designed to destroy vital systems in the event that the device is tampered with by an unauthorised party. Unfortunately, it has itself malfunctioned and will continue to damage other systems until repaired."
+  },
+  {
+    "Id": "tech116",
+    "Name": "Security Alarm",
+    "Group": "Damaged Component",
+    "Description": "A small light/klaxon hybrid, designed to warn of unauthorised access to the device. Damage to the alarm has caused it to overload and short other nearby circuits."
+  },
+  {
+    "Id": "tech117",
+    "Name": "Spring Casing",
+    "Group": "Damaged Component",
+    "Description": "The casing for a high-compression spring. The casing has ruptured, causing the spring to shoot out and damage the rest of the device."
+  },
+  {
+    "Id": "tech118",
+    "Name": "Thermoregulator",
+    "Group": "Damaged Component",
+    "Description": "A control unit designed to keep temperatures even across the device. The sensor unit is damaged, causing it to vent or generate heat at inappropriate times."
+  },
+  {
+    "Id": "tech119",
+    "Name": "Fuel Pump",
+    "Group": "Damaged Component",
+    "Description": "A high-capacity pump, ensuring that fuel reaches every part of the device in all gravitational conditions. The filter is clogged with a strange substance, causing it to lose power."
+  },
+  {
+    "Id": "tech120",
+    "Name": "Servo Arm",
+    "Group": "Damaged Component",
+    "Description": "A small mechanical joint, used to correct small mechanical errors across the device. A malfunction is causing it to take functional components and push them into the wrong place, creating even more damage."
+  },
+  {
+    "Id": "tech121",
+    "Name": "Solenoid",
+    "Group": "Damaged Component",
+    "Description": "A relay switch, intended to aid the powering up of the device. The connectors have become corroded, and the solenoid is no longer functioning."
+  },
+  {
+    "Id": "tech122",
+    "Name": "Pressure Chamber",
+    "Group": "Damaged Component",
+    "Description": "A small pressurised chamber, designed to create the compressed gas necessary for the device to function. Cracks have appeared in the chamber, causing it to leak."
+  },
+  {
+    "Id": "tech123",
+    "Name": "Master Circuit",
+    "Group": "Damaged Component",
+    "Description": "The control circuit for all the other components in the device. Damage to this circuitry is fatal."
+  },
+  {
+    "Id": "tech124",
+    "Name": "Power Distributor",
+    "Group": "Damaged Component",
+    "Description": "The central power unit for the device. Damage to the unit means it is currently distributing all the power to one particular circuit, causing a dangerous short."
+  },
+  {
+    "Id": "tech125",
+    "Name": "Load Balancer",
+    "Group": "Damaged Component",
+    "Description": "A small unit designed to regulate the flow of power across the device. A malfunction is causing it to short, damaging other components."
+  },
+  {
+    "Id": "tech126",
+    "Name": "Network Interface",
+    "Group": "Damaged Component",
+    "Description": "A universal network interface, allowing the device to connect to a remote control centre. Damage to this interface is causing it to interpret background radiation as network signals, corrupting data in other circuits."
+  },
+  {
+    "Id": "tech127",
+    "Name": "Safety Panel",
+    "Group": "Damaged Component",
+    "Description": "The safety panel seals off potentially dangerous components in the event of a malfunction. An over sensitive trigger has caused it to activate, preventing the device from operating."
+  },
+  {
+    "Id": "tech128",
+    "Name": "Alternator",
+    "Group": "Damaged Component",
+    "Description": "The alternator generates and regulates power for the device. A strange corrosion seeps through it, preventing it from working."
+  },
+  {
+    "Id": "tech129",
+    "Name": "Photovoltaic Panel",
+    "Group": "Damaged Component",
+    "Description": "A small but efficient panel, designed to harvest light and convert it to power. However, the panel is now cracked and dusty, and can no longer be relied on."
+  },
+  {
+    "Id": "tech130",
+    "Name": "Transmission Box",
+    "Group": "Damaged Component",
+    "Description": "The gearing mechanism for the device. The lubricant that keeps it operational appears to have been replaced with an otherworldly green goo, and the gears are now stuck."
+  },
+  {
+    "Id": "tech131",
+    "Name": "Ancient Lock",
+    "Group": "Heavy Locking Mechanism",
+    "Description": "A mysterious lock with several keyholes, this relic protects what must surely be a valuable treasure."
+  },
+  {
+    "Id": "tech132",
+    "Name": "Pearl Offering",
+    "Group": "Offering to the Sea",
+    "Description": "The chest requires a Living Pearl, harvested from the giant mother-molluscs that grow on the ocean floor."
+  },
+  {
+    "Id": "tech133",
+    "Name": "Damaged Electrode",
+    "Group": "Damaged Component",
+    "Description": "This Exosuit Upgrade Module is critically damaged. Repair systems to restore upgrade functionality.\n\nIf repaired, User will not be charged for any Exosuit Upgrades."
+  },
+  {
+    "Id": "tech134",
+    "Name": "Shattered Power Core",
+    "Group": "Damaged Component",
+    "Description": "This Exosuit Upgrade Module is critically damaged. Repair systems to restore upgrade functionality.\n\nIf repaired, User will not be charged for any Exosuit Upgrades."
+  },
+  {
+    "Id": "tech135",
+    "Name": "Faulty Hologram",
+    "Group": "Damaged Component",
+    "Description": "This Exosuit Upgrade Module is critically damaged. Repair systems to restore upgrade functionality.\n\nIf repaired, User will not be charged for any Exosuit Upgrades."
+  },
+  {
+    "Id": "tech136",
+    "Name": "Warp Core Resonator",
+    "Group": "Hyperdrive Companion Unit",
+    "Description": "An augmentation for the colossal hyperdrive engine of an interstellar freighter.\n\nQuantum resonation improves the robustness of the drive during FTL travel, granting the ability to leap to stars previously out of reach."
+  },
+  {
+    "Id": "tech137",
+    "Name": "Plasmatic Warp Injector",
+    "Group": "Hyperdrive Companion Unit",
+    "Description": "An augmentation for the colossal hyperdrive engine of an interstellar freighter.\n\nHyperdrive benefits from advanced fusion that brings starship to higher warp speed and intensity. User's craft will become able to leap deeper into space, and into more distant planetary systems."
+  },
+  {
+    "Id": "tech138",
+    "Name": "Reality De-Threader",
+    "Group": "Hyperdrive Companion Unit",
+    "Description": "An augmentation for the colossal hyperdrive engine of an interstellar freighter.\n\nUncapped, yet stabilised, fusion systems are threaded into user's hyperdrive. Allows starship to jump ever longer distances in deep space."
+  },
+  {
+    "Id": "tech139",
+    "Name": "Amplified Warp Shielding",
+    "Group": "Hyperdrive Upgrade: Red Systems",
+    "Description": "Upgrades the hyperdrive's core bounding magnets, preventing rapid disassembly when attempting to reach rare-class red stellar bodies.\n\nUser is advised to access Hyperdrive systems via the Galactic Map."
+  },
+  {
+    "Id": "tech140",
+    "Name": "Chromatic Warp Shielding",
+    "Group": "Hyperdrive Upgrade: Green Systems",
+    "Description": "Upgrades the hyperdrive's shield integrity, preventing reality glitches when attempting to reach rare-class green stellar bodies.\n\nUser is advised to access Hyperdrive systems via the Galactic Map."
+  },
+  {
+    "Id": "tech141",
+    "Name": "Temporal Warp Computer",
+    "Group": "Hyperdrive Upgrade: Blue Systems",
+    "Description": "Upgrades the hyperdrive's computational matrix,  preventing temporal anomalies when attempting to reach rare-class blue stellar bodies.\n\nUser is advised to access Hyperdrive systems via the Galactic Map."
+  }
+]

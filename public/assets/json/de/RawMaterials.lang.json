@@ -1,0 +1,466 @@
+[
+  {
+    "Id": "raw1",
+    "Name": "Kohlenstoff",
+    "Abbrev": "C",
+    "Group": "Nicht raffiniertes organisches Element",
+    "Rarity": "Common",
+    "Description": "Die Basiskomponente allen organischen Lebens. Wichtig für Raumfahrer, da Kohlenstoff Bergbau-Ausrüstung aufladen kann.\n \nDer Minenlaser erntet Kohlenstoff von Bäumen, Pflanzen und allen anderen Pflanzenformen."
+  },
+  {
+    "Id": "raw2",
+    "Name": "Verdichteter Kohlenstoff",
+    "Abbrev": "C+",
+    "Group": "Raffiniertes organisches Element",
+    "Rarity": "Uncommon",
+    "Description": "Fortgeschrittenes Material, mit einer Raffinerie aus gewöhnlichem Kohlenstoff gewonnen.\n\nDie erhöhte Molekulardichte führt zu einem erheblich verbesserten Energie-Gewicht-Verhältnis.\n\nWird gelegentlich in Kristallform gefunden. Das Abernten von großen Kristallen könnte einen fortgeschrittenen Minenlaser erfordern."
+  },
+  {
+    "Id": "raw3",
+    "Name": "Sauerstoff",
+    "Abbrev": "O2",
+    "Group": "Konzentrierter Flüssigtreibstoff",
+    "Rarity": "Common",
+    "Description": "Wesentlich für die atmosphärische Filtertechnik im Kern des Exo-Anzug-Lebenserhaltungssystems.\n\nMithilfe der Materialaufbereitung des Exo-Anzugs wird Sauerstoff direkt aus der geeigneten planetaren Flora bezogen.\n\nAndere Pflanzen können mithilfe des Analysevisiers gescannt werden, um alternative Sauerstoffquellen zu entdecken."
+  },
+  {
+    "Id": "raw4",
+    "Name": "Hexit",
+    "Abbrev": "X",
+    "Group": "Nicht raffiniertes organisches Element",
+    "Rarity": "Common",
+    "Description": "Diese geruchlose, mineralienreiche Substanz besitzt eine hexagonale Kristallstruktur und kann in den Fäkalien einer Kreatur vorkommen."
+  },
+  {
+    "Id": "raw5",
+    "Name": "Diwasserstoff",
+    "Abbrev": "H",
+    "Group": "Substanz mit hoher Energie",
+    "Rarity": "Common",
+    "Description": "Eine stabile, kristalline Wasserstoff-Form, die sowohl durch ihre extreme Energiedichte als auch durch ihre Stabilität unter atmosphärischem Druck besticht.\n\nDiwasserstoff findet man auf allen Welten in Form von großen blauen Kristallen. Es ist ein Hauptbestandteil von Raumschiffstart-Treibstoff."
+  },
+  {
+    "Id": "raw6",
+    "Name": "Deuterium",
+    "Abbrev": "D",
+    "Group": "Substanz mit hoher Energie",
+    "Rarity": "Common",
+    "Description": "Ein stabiles Wasserstoff-Isotop, das sowohl in kleinen Fusionsreaktoren als auch in der Neutronenstreuungs-Schildtechnologie viel verwendet wird.\n\nDeuterium kommt in der Natur nur sehr selten vor. Die meisten Vorräte der Galaxie entstehen durch die Verarbeitung von Diwasserstoff und Tritium in Raffinerien."
+  },
+  {
+    "Id": "raw7",
+    "Name": "Tritium",
+    "Abbrev": "H3",
+    "Group": "Neutronenreiches Treibstoff-Element",
+    "Rarity": "Common",
+    "Description": "Radioaktives Isotop, das in der Regel als Treibstoff für den Fusionsreaktor der Impulsantriebe eines Raumschiffs verwendet wird.\n\nGroße Vorkommen in interstellaren Asteroidenfeldern. Tritium kann mit den Waffen des Raumschiffs von Asteroiden abgebaut werden."
+  },
+  {
+    "Id": "raw8",
+    "Name": "Ferritstaub",
+    "Abbrev": "Fe",
+    "Group": "Metallische Mineralien-Extraktion",
+    "Rarity": "Common",
+    "Description": "Ein häufiges Mineralelement, das in Gesteinsformationen und Gebieten von geologischem Interesse zu finden ist. Ist mit einem Minenlaser einfach abzubauen.\n\nErfordert üblicherweise eine Verarbeitung in einer Raffinerie, bevor es im Bau oder bei der Technologieherstellung verwendet werden kann."
+  },
+  {
+    "Id": "raw9",
+    "Name": "Reines Ferrit",
+    "Abbrev": "Fe+",
+    "Group": "Verarbeitete metallische Mineralien",
+    "Rarity": "Uncommon",
+    "Description": "Verarbeitetes Metall, frei von Staub und Geröll. Wird bei der Herstellung einer Vielzahl von Strukturen und Technologien verwendet.\n\nWird üblicherweise mit einer Raffinerie aus gereinigtem Ferritstaub gewonnen und kann gelegentlich in großen Einlagerungen gefunden werden. Die Sammlung könnte einen fortgeschrittenen Minenlaser erfordern."
+  },
+  {
+    "Id": "raw10",
+    "Name": "Magnetisiertes Ferrit",
+    "Abbrev": "Fe++",
+    "Group": "Aufgeladenes metallisches Element",
+    "Rarity": "Uncommon",
+    "Description": "Ein hochverarbeitetes Metall, das mehrere Stufen der Veredelung in einer Raffinerie erfordert.\n\nWird bei der Herstellung fortschrittlicher Strukturen und Technologien verwendet. Nicht schlucken."
+  },
+  {
+    "Id": "raw11",
+    "Name": "Silikatpulver",
+    "Abbrev": "Si",
+    "Group": "Häufiges Mineral",
+    "Rarity": "Common",
+    "Description": "Ein häufiges Mineralelement, das in den Gesteinsschichten aller felsigen Welten zu finden ist. Lässt sich mit einem Terrainmanipulator leicht abbauen. Grabe irgendwo einen Tunnel, um mit dem Abbau zu beginnen.\n\nVerarbeite es in einer Raffinerie, um Glas herzustellen."
+  },
+  {
+    "Id": "raw12",
+    "Name": "Natrium",
+    "Abbrev": "Na",
+    "Group": "Nicht raffiniertes katalytisches Element",
+    "Rarity": "Uncommon",
+    "Description": "Ein starker Katalysator, nützlich für die Aufladung defensiver Technologien wie Schilde und Gefahrenschutz.\n \nExo-Anzug-Materialtransport-Technologie ermöglicht die automatische Gewinnung aus geeigneten, natriumreichen Pflanzen.\n\nEin lebenswichtiger Bestandteil bei der Herstellung vieler fortgeschrittener Geräte, Produkte und Komponenten."
+  },
+  {
+    "Id": "raw13",
+    "Name": "Natriumnitrat",
+    "Abbrev": "Na+",
+    "Group": "Raffiniertes katalytisches Element",
+    "Rarity": "Rare",
+    "Description": "Ein fortgeschrittener Katalysator, nützlich für die Aufladung defensiver Technologien wie Schilde und Gefahrenschutz.\n \nWird mit einer Raffinerie veredelt oder gelegentlich in Kristallform auf einer Planetenoberfläche gefunden.\n\nHat im Vergleich mit regulärem Natrium ein deutlich verbessertes Energie-Gewicht-Verhältnis."
+  },
+  {
+    "Id": "raw14",
+    "Name": "Kobalt",
+    "Abbrev": "Co",
+    "Group": "Unterirdisches Mineral",
+    "Rarity": "Common",
+    "Description": "Kobalt wird aus unterirdischen Mineralien gewonnen und ist in großen Vorkommen in Höhlen und anderen Hohlräumen zu finden. Nützlich bei der Herstellung von Ionenakkus.\n\nEs wird bei der Herstellung verschiedener Technologien und Strukturen verwendet und kann mit einer Raffinerie verarbeitet werden, um das Meiste aus seiner inhärenten Ladung zu gewinnen."
+  },
+  {
+    "Id": "raw15",
+    "Name": "Ionisiertes Kobalt",
+    "Abbrev": "Co+",
+    "Group": "Verarbeitetes unterirdisches Mineral",
+    "Rarity": "Rare",
+    "Description": "Als hoch energetisierte Form des Kobalts wird dieses verarbeitete Metall zur Herstellung von fortgeschrittenen Ionenakkus verwendet, einer komfortabel tragbaren Energiequelle für den Exo-Anzug.\n\nWird häufig als Hauptkomponente bei der Herstellung fortschrittlicher Technologien und Strukturen verwendet."
+  },
+  {
+    "Id": "raw16",
+    "Name": "Salz",
+    "Abbrev": "NaCl",
+    "Group": "Aquatisches Mineral-Extrakt",
+    "Rarity": "Common",
+    "Description": "Ein natürlich vorkommendes Salz, das man in großen Mengen in Unterwassermineralien findet.\n\nKann in einer Raffinerie zur Herstellung von Chlor verarbeitet werden. Diese veredelte Form wird zur Herstellung hochentwickelter Produkte und Technologien verwendet."
+  },
+  {
+    "Id": "raw17",
+    "Name": "Chlor",
+    "Abbrev": "Cl",
+    "Group": "Verarbeitetes Wassermineral",
+    "Rarity": "Rare",
+    "Description": "Ein reaktionsfreudiges Element, das sich am einfachsten durch die Verarbeitung von salzhaltigen Mineralien aus Ozeanen gewinnen lässt.\n\nWird bei der Herstellung fortschrittlicher Technologien verwendet."
+  },
+  {
+    "Id": "raw18",
+    "Name": "Zytophosphat",
+    "Abbrev": "Cy",
+    "Group": "Organische Verbindung",
+    "Rarity": "Rare",
+    "Description": "Eine blaugrüne organische Verbindung, die während des metabolischen Zyklus von Tiefseepflanzen produziert wird. Zytophosphate sind reich an löslicher Energie und bei vielen U-Boot-Technologien von entscheidender Wichtigkeit.\n \nDer Minenlaser sammelt Zytophosphat-Verbindungen aus Unterwasserpflanzen."
+  },
+  {
+    "Id": "raw19",
+    "Name": "Kupfer",
+    "Abbrev": "Cu",
+    "Group": "Raffiniertes Stern-Metall: Gelb",
+    "Rarity": "Common",
+    "Description": "Ein chromatisches Metall, das durch Fusionen im Kern eines Sterns entsteht. Solche Sternenmaterie lagert sich an der Kruste lokaler Planeten ab.\n\nKupfer kommt auf Planeten vor, die gelbe Sterne umkreisen, und kann mithilfe einer Raffinerie zu reinem chromatischem Metall veredelt werden, das bei der Herstellung fortschrittlicher Technologien verwendet wird."
+  },
+  {
+    "Id": "raw20",
+    "Name": "Cadmium",
+    "Abbrev": "Cd",
+    "Group": "Raffiniertes Stern-Metall: Rot",
+    "Rarity": "Rare",
+    "Description": "Ein chromatisches Metall, das durch Fusionen im Kern eines Sterns entsteht. Solches Sternenmaterial lagert sich an der Kruste lokaler Planeten ab.\n\nCadmium kommt auf Planeten vor, die rote Sterne umkreisen, und kann mithilfe einer Raffinerie zu reinem chromatischem Metall veredelt werden, das bei der Herstellung fortschrittlicher Technologien verwendet wird."
+  },
+  {
+    "Id": "raw21",
+    "Name": "Emeril",
+    "Abbrev": "Em",
+    "Group": "Raffiniertes Stern-Metall: Grün",
+    "Rarity": "Rare",
+    "Description": "Ein chromatisches Metall, das durch Fusionen im Kern eines Sterns entsteht.\n\nEmeril kommt auf Planeten vor, die grüne Sterne umkreisen, und kann mithilfe einer Raffinerie zu reinem chromatischem Metall veredelt werden, das bei der Herstellung fortschrittlicher Technologien verwendet wird."
+  },
+  {
+    "Id": "raw22",
+    "Name": "Indium",
+    "Abbrev": "In",
+    "Group": "Raffiniertes Stern-Metall: Blau",
+    "Rarity": "Rare",
+    "Description": "Ein chromatisches Metall, das durch Fusionen im Kern eines Sterns entsteht. Solche Sternenmaterie lagert sich an der Kruste lokaler Planeten ab.\n\nIndium kommt auf Planeten vor, die blaue Sterne umkreisen, und kann mithilfe einer Raffinerie zu reinem chromatischem Metall veredelt werden, das bei der Herstellung fortschrittlicher Technologien verwendet wird."
+  },
+  {
+    "Id": "raw23",
+    "Name": "Chromatisches Metall",
+    "Abbrev": "Ch",
+    "Group": "Hochveredeltes Stern-Metall",
+    "Rarity": "Rare",
+    "Description": "Eine verarbeitete Metalllegierung, die in einer Raffinerie aus Stern-Metallen hergestellt wurde: Kupfer, Cadmium, Emeril und Indium.\n\nJe seltener das Stern-Metall, desto mehr chromatisches Metall wird erzeugt.\n\nDieses wertvolle Metall wird zur Herstellung vieler fortgeschrittener Technologien benutzt."
+  },
+  {
+    "Id": "raw24",
+    "Name": "Paraffinium",
+    "Abbrev": "Pf",
+    "Group": "Örtlich begrenztes Erdelement",
+    "Rarity": "Uncommon",
+    "Description": "Lokales Mineralienabbauprodukt, das üblicherweise in großen Ansammlungen zu finden ist oder nach der Überprüfung mit einem Analysevisier aus gewöhnlichen Mineralien gewonnen werden kann.\n\nIst für gewöhnlich auf Planeten mit tropischem Klima zu finden."
+  },
+  {
+    "Id": "raw25",
+    "Name": "Pyrit",
+    "Abbrev": "Py",
+    "Group": "Örtlich begrenztes Erdelement",
+    "Rarity": "Uncommon",
+    "Description": "Lokales Mineralienabbauprodukt, das üblicherweise in großen Ansammlungen zu finden ist oder nach der Überprüfung mit einem Analysevisier aus gewöhnlichen Mineralien gewonnen werden kann.\n\nIst für gewöhnlich auf Planeten mit Wüstenklima zu finden."
+  },
+  {
+    "Id": "raw26",
+    "Name": "Ammoniak",
+    "Abbrev": "NH3",
+    "Group": "Örtlich begrenztes Erdelement",
+    "Rarity": "Uncommon",
+    "Description": "Lokales Mineralienabbauprodukt, das üblicherweise in großen Ansammlungen zu finden ist oder nach der Überprüfung mit einem Analysevisier aus gewöhnlichen Mineralien gewonnen werden kann.\n\nIst für gewöhnlich auf Planeten mit toxischem Klima zu finden."
+  },
+  {
+    "Id": "raw27",
+    "Name": "Uran",
+    "Abbrev": "U",
+    "Group": "Örtlich begrenztes Erdelement",
+    "Rarity": "Uncommon",
+    "Description": "Lokales Mineralienabbauprodukt, das üblicherweise in großen Ansammlungen zu finden ist oder nach der Überprüfung mit einem Analysevisier aus gewöhnlichen Mineralien gewonnen werden kann.\n\nIst für gewöhnlich auf Planeten mit radioaktivem Klima zu finden."
+  },
+  {
+    "Id": "raw28",
+    "Name": "Dioxit",
+    "Abbrev": "CO2",
+    "Group": "Örtlich begrenztes Erdelement",
+    "Rarity": "Uncommon",
+    "Description": "Lokales Mineralienabbauprodukt, das üblicherweise in großen Ansammlungen zu finden ist oder nach der Überprüfung mit einem Analysevisier aus gewöhnlichen Mineralien gewonnen werden kann.\n\nIst für gewöhnlich auf Planeten mit eisigem Klima zu finden."
+  },
+  {
+    "Id": "raw29",
+    "Name": "Phosphor",
+    "Abbrev": "P",
+    "Group": "Örtlich begrenztes Erdelement",
+    "Rarity": "Uncommon",
+    "Description": "Lokales Mineralienabbauprodukt, das üblicherweise in großen Ansammlungen zu finden ist oder nach der Überprüfung mit einem Analysevisier aus gewöhnlichen Mineralien gewonnen werden kann.\n\nIst für gewöhnlich auf Planeten mit heißem Klima zu finden."
+  },
+  {
+    "Id": "raw30",
+    "Name": "Mordit",
+    "Abbrev": "Mo",
+    "Group": "Abgeerntete Substanz",
+    "Rarity": "Common",
+    "Description": "Trotz zahlreicher Studien ist über diese unheimliche kristalline Verbindung nur wenig bekannt.\n\nSie wird von den Kadavern sterbender Kreaturen freigesetzt, kann aber auch  von der Morditwurzel-Pflanze gewonnen und speziell kultiviert werden."
+  },
+  {
+    "Id": "raw31",
+    "Name": "Pugneum",
+    "Abbrev": "Pg",
+    "Group": "Anormales Material",
+    "Rarity": "Rare",
+    "Description": "Diese ölige, beunruhigende Flüssigkeit strömt aus dem Schaltkreis des Wächters.\n\nDas von den Vy‘keen gepriesene Pugneum soll dieselben essenziellen Eigenschaften wie Nanit haben. Es beginnt unheilvoll zu summen, wenn es mit organischer Materie in Berührung kommt."
+  },
+  {
+    "Id": "raw32",
+    "Name": "Silber",
+    "Abbrev": "Ag",
+    "Group": "Wertvolles Asteroid-Mineral",
+    "Rarity": "Common",
+    "Description": "Wertvolles, interstellares Handelsmaterial, das üblicherweise auf Asteroiden abgebaut wird. Ist gelegentlich auf Planeten in unterirdischen Ansammlungen zu finden.\n\nVon Bewohnern aller Systeme für sein Schimmern und seinen Glanz geschätzt."
+  },
+  {
+    "Id": "raw33",
+    "Name": "Gold",
+    "Abbrev": "Au",
+    "Group": "Wertvolles Asteroid-Mineral",
+    "Rarity": "Uncommon",
+    "Description": "Äußerst wertvolles, interstellares Handelsmaterial, das üblicherweise auf Asteroiden abgebaut wird. Ist gelegentlich auf Planeten in unterirdischen Ansammlungen zu finden.\n\nAllgemein für seine Schönheit und Vielseitigkeit geschätzt."
+  },
+  {
+    "Id": "raw34",
+    "Name": "Platin",
+    "Abbrev": "Pt",
+    "Group": "Wertvolles Asteroid-Mineral",
+    "Rarity": "Rare",
+    "Description": "Extrem wertvolles, interstellares Handelsmaterial, das üblicherweise auf Asteroiden abgebaut wird. Ist gelegentlich auf Planeten in unterirdischen Ansammlungen zu finden.\n\nAllgemein für seine Widerstandsfähigkeit und Vielseitigkeit geschätzt."
+  },
+  {
+    "Id": "raw35",
+    "Name": "Schwefelin",
+    "Abbrev": "Sf",
+    "Group": "Komprimiertes Atmosphärengas",
+    "Rarity": "Common",
+    "Description": "Ein penetrantes atmosphärisches Gas. In hohen Konzentrationen ist es für organische Lebewesen extrem gefährlich.\n\nDieses Gas kann mithilfe einer speziellen Maschine aus den Atmosphären sengend heißer Planeten und von Wüstenplaneten extrahiert werden."
+  },
+  {
+    "Id": "raw36",
+    "Name": "Radon",
+    "Abbrev": "Rn",
+    "Group": "Komprimiertes Atmosphärengas",
+    "Rarity": "Uncommon",
+    "Description": "Ein farb- und geruchloses Gas mit relativ kurzer Halbwertszeit. \n\nDieses Gas wird während des Verfalls anderer hochenergetischer Elemente produziert und findet sich sowohl in radioaktiven als auch gefrorenen Atmosphären."
+  },
+  {
+    "Id": "raw37",
+    "Name": "Stickstoff",
+    "Abbrev": "N",
+    "Group": "Komprimiertes Atmosphärengas",
+    "Rarity": "Rare",
+    "Description": "Ein reaktives, atmosphärisches Gas, das überall dort zu finden ist, wo es organisches Leben gibt.\n\nStickstoff lässt sich leicht aus den Atmosphären fruchtbarer und giftiger Planeten abbauen."
+  },
+  {
+    "Id": "raw38",
+    "Name": "Aktiviertes Kupfer",
+    "Abbrev": "Cu",
+    "Group": "Raffiniertes Stern-Metall: Gelb",
+    "Rarity": "Common",
+    "Description": "Ein chromatisches Metall, das durch Fusionen im Kern eines Sterns entsteht.\n\nDieses Kupfer wurde durch die extremen Bedingungen, unter denen es entstand, aktiviert und ist äußerst wertvoll.\n\nKupfer kommt auf Planeten vor, die gelbe Sterne umkreisen, und kann mithilfe einer Raffinerie zu reinem chromatischem Metall veredelt werden."
+  },
+  {
+    "Id": "raw39",
+    "Name": "Aktiviertes Cadmium",
+    "Abbrev": "Cd",
+    "Group": "Raffiniertes Stern-Metall: Rot",
+    "Rarity": "Rare",
+    "Description": "Ein chromatisches Metall, das durch Fusionen im Kern eines Sterns entsteht.\n\nDieses Cadmium wurde durch die extremen Bedingungen, unter denen es entstand, aktiviert und ist äußerst wertvoll.\n\nCadmium kommt auf Planeten vor, die rote Sterne umkreisen, und kann mithilfe einer Raffinerie zu reinem chromatischem Metall veredelt werden."
+  },
+  {
+    "Id": "raw40",
+    "Name": "Aktiviertes Emeril",
+    "Abbrev": "Em",
+    "Group": "Raffiniertes Stern-Metall: Grün",
+    "Rarity": "Rare",
+    "Description": "Ein chromatisches Metall, das durch Fusionen im Kern eines Sterns entsteht.\n\nDieses Emeril wurde durch die extremen Bedingungen, unter denen es entstand, aktiviert und ist äußerst wertvoll.\n\nEmeril kommt auf Planeten vor, die grüne Sterne umkreisen, und kann mithilfe einer Raffinerie zu reinem chromatischem Metall veredelt werden."
+  },
+  {
+    "Id": "raw41",
+    "Name": "Aktiviertes Indium",
+    "Abbrev": "In",
+    "Group": "Raffiniertes Stern-Metall: Blau",
+    "Rarity": "Rare",
+    "Description": "Ein chromatisches Metall, das durch Fusionen im Kern eines Sterns entsteht.\n\nIndium kommt auf Planeten vor, die blaue Sterne umkreisen, und kann mithilfe einer Raffinerie zu reinem chromatischem Metall veredelt werden.\n\nDieses Indium wurde durch die extremen Bedingungen, unter denen es entstand, aktiviert und ist äußerst wertvoll."
+  },
+  {
+    "Id": "raw42",
+    "Name": "Pilzschimmel",
+    "Abbrev": "Ps",
+    "Group": "Geerntete Agrarsubstanz",
+    "Rarity": "Rare",
+    "Description": "Eine seltsam leuchtende Substanz, die aus den Lamellen der Pilzgeflechte gewonnen werden kann.\n\nDie Wirtspflanze benötigt ein giftiges Klima, um in der Wildnis zu gedeihen, kann aber mithilfe eines Hydrokultur-Trogs in allen Umgebungen angebaut werden."
+  },
+  {
+    "Id": "raw43",
+    "Name": "Frostkristall",
+    "Abbrev": "Fk",
+    "Group": "Geerntete Agrarsubstanz",
+    "Rarity": "Rare",
+    "Description": "Diese organische Verbindung, ein wunderschön blauer Kristall, ist sowohl lichtdurchlässig als auch widerstandsfähig. Sie kann von den Blättern des Frostwurz gewonnen werden.\n\nFrostwurz benötigt gefrierende Bedingungen, um in der Wildnis zu gedeihen, kann aber mithilfe eines Hydrokultur-Trogs in allen Umgebungen angebaut werden."
+  },
+  {
+    "Id": "raw44",
+    "Name": "Gammawurzel",
+    "Abbrev": "Gw",
+    "Group": "Geerntete Agrarsubstanz",
+    "Rarity": "Rare",
+    "Description": "Eine seltsame Substanz, die anscheinend die Luft in der Umgebung langsam verändert. Sie ist in den Wurzeln von Gammagras zu finden.\n\nGammagras benötigt eine hohe Hintergrundstrahlung, um in der Wildnis zu gedeihen, kann aber mithilfe eines Hydrokultur-Trogs in allen Umgebungen angebaut werden."
+  },
+  {
+    "Id": "raw45",
+    "Name": "Kaktusfleisch",
+    "Abbrev": "Kf",
+    "Group": "Geerntete Agrarsubstanz",
+    "Rarity": "Rare",
+    "Description": "Das saftige, essbare Kaktusfleisch des Echinokaktus. Das Fleisch ist nicht nur ein saftiger Genuss, es wird auch industriell genutzt.\n\nDer Echinokaktus gedeiht nur auf Wüstenplaneten, kann aber mithilfe eines Hydrokultur-Trogs in allen Umgebungen angebaut werden."
+  },
+  {
+    "Id": "raw46",
+    "Name": "Solanium",
+    "Abbrev": "So",
+    "Group": "Geerntete Agrarsubstanz",
+    "Rarity": "Rare",
+    "Description": "Eine starke Chemikalie, die sich der Synthese widersetzt. Sie kann aus der Rinde der Sonnenrebe gewonnen werden.\n\nDie Rebe benötigt ein heißes Klima, um in der Wildnis zu gedeihen, kann aber mithilfe eines Hydrokultur-Trogs in allen Umgebungen angebaut werden."
+  },
+  {
+    "Id": "raw47",
+    "Name": "Sternenknolle",
+    "Abbrev": "Sd",
+    "Group": "Geerntete Agrarsubstanz",
+    "Rarity": "Rare",
+    "Description": "Bei diesem wunderschönen Edelstein handelt es sich um die angeschwollene leuchtende Beere des Sternendorns.\n\nDie Wirtspflanze benötigt fruchtbare Bedingungen, um in der Wildnis zu gedeihen, kann aber mithilfe eines Hydrokultur-Trogs in allen Umgebungen angebaut werden."
+  },
+  {
+    "Id": "raw48",
+    "Name": "Kürbisknolle",
+    "Abbrev": "Kü",
+    "Group": "Geerntete Agrarsubstanz",
+    "Rarity": "Uncommon",
+    "Description": "Eine leuchtende, organische Knolle, die aus dem unterirdischen Höhlenkürbis gewonnen werden kann.\n\nDer Höhlenkürbis konnte bis jetzt noch nicht domestiziert werden und es sind keine Kultursorten bekannt. Daher müssen die Kürbisknollen von Hand in der Wildnis geerntet werden."
+  },
+  {
+    "Id": "raw49",
+    "Name": "Kelpbeutel",
+    "Abbrev": "Ke",
+    "Group": "Geerntete Agrarsubstanz",
+    "Rarity": "Uncommon",
+    "Description": "Ein gummiartiger, leuchtender Beutel, der aus Kerzentang unter Wasser gewonnen werden kann.\n\nDie landwirtschaftliche Wissenschaft konnte den Kerzentang noch nicht kultivieren. Daher können die Beutel auch nicht angebaut werden."
+  },
+  {
+    "Id": "raw50",
+    "Name": "Faecium",
+    "Abbrev": "Fa",
+    "Group": "Geerntete Agrarsubstanz",
+    "Rarity": "Common",
+    "Description": "Eine übel riechende Verbindung, die aus der Magenkrampfblume oder den weniger ansprechenden Fäkalien bestimmter Spezies gewonnen werden kann.\n\nDie Kreaturen können so gefüttert werden, dass Bildung und Ausscheidung von Faecium-Kristallen begünstigt werden."
+  },
+  {
+    "Id": "raw51",
+    "Name": "Restsubstanz",
+    "Abbrev": "Sr",
+    "Group": "Schrott",
+    "Rarity": "Common",
+    "Description": "Eine pulsierende, übel riechende Substanz, die sich in schlecht gewarteten Maschinerien bildet.\n\nHautkontakt wird nicht empfohlen."
+  },
+  {
+    "Id": "raw52",
+    "Name": "Unkontrollierbarer Schimmel",
+    "Abbrev": "Sr",
+    "Group": "Schrott",
+    "Rarity": "Common",
+    "Description": "Ein unkontrollierbarer Schimmel, der sich in schlecht gewarteten Maschinerien bildet.\n\nEs handelt sich wahrscheinlich um mehrere Schimmelarten, die sich zu einer Superkolonie verflochten haben."
+  },
+  {
+    "Id": "raw53",
+    "Name": "Verrostetes Metall",
+    "Abbrev": "Sr",
+    "Group": "Schrott",
+    "Rarity": "Uncommon",
+    "Description": "Korrodiertes Metall, das der rauen Umgebung jahrelang ausgesetzt war und von ihr verformt wurde.\n\nMit Vorsicht zu handhaben."
+  },
+  {
+    "Id": "raw54",
+    "Name": "Lebender Schleim",
+    "Abbrev": "Sr",
+    "Group": "Schrott",
+    "Rarity": "Uncommon",
+    "Description": "Ein schwerer, triefender Schleim. Er bewegt sich sanft, als hätte er einen eigenen Herzschlag.\n\nNährstoffquelle: unbekannt."
+  },
+  {
+    "Id": "raw55",
+    "Name": "Zähe Flüssigkeiten",
+    "Abbrev": "Sr",
+    "Group": "Schrott",
+    "Rarity": "Rare",
+    "Description": "Eine unnatürlich dicke Flüssigkeit mit einer dubiosen Farbe. Es ist unmöglich nachzuvollziehen, woher sie stammt.\n\nSie scheint leicht magnetische Eigenschaften zu haben."
+  },
+  {
+    "Id": "raw56",
+    "Name": "Nanit-Haufen",
+    "Abbrev": "∞",
+    "Group": "Technologische Währung",
+    "Rarity": "Rare",
+    "Description": "Ein dichtes, waberndes Miasma aus Nanit. Diese Haufen sind zwar stabil, unkontrollierter Nanit-Schaum kann jedoch unerwünschte Reaktionen verursachen, wenn er mit organischer Materie in Kontakt kommt.\n\nWird bei der Konstruktion fortschrittlicher Technologien verwendet. Für spezialisierte Händler höchst wertvoll."
+  },
+  {
+    "Id": "raw57",
+    "Name": "QUECKSILBER",
+    "Abbrev": "-",
+    "Group": "Belohnungsgegenstand",
+    "Rarity": "Rare",
+    "Description": "Fraktionsansehen oder Währung, die als Belohnung verliehen wird."
+  },
+  {
+    "Id": "raw58",
+    "Name": "UNITS",
+    "Abbrev": "-",
+    "Group": "Belohnungsgegenstand",
+    "Rarity": "Rare",
+    "Description": "Fraktionsansehen oder Währung, die als Belohnung verliehen wird."
+  }
+]

@@ -1,0 +1,806 @@
+[
+  {
+    "Id": "tech1",
+    "Name": "Omgevingsbescherming",
+    "Group": "Omgevingsschild voor exopak",
+    "Description": "Het omgevingsbeschermings-systeem van het exopak houdt continu de omgeving van de gebruiker in de gaten en zorgt desnoods voor stabilisatie. De algemene reactieve bescherming kan worden verbeterd met omgevingsschilden, die extra bescherming bieden tegen specifieke omstandigheden. Het apparaat wordt opgeladen met natriumsubstanties. Let op: als het omgevingsbeschermingssysteem niet wordt opgeladen, dan wordt de omgeving mogelijk incompatibel met de voorwaarden voor het leven van de gebruiker."
+  },
+  {
+    "Id": "tech2",
+    "Name": "Schildrooster",
+    "Group": "Omgevingsbescherming-upgrade",
+    "Description": "Verbetert de basiscapaciteit van de omgevingsbescherming, waardoor de gebruiker langer in een schadelijke omgeving kan blijven zonder het exopak op te laden."
+  },
+  {
+    "Id": "tech3",
+    "Name": "Lifesupport",
+    "Group": "Pakbatterij voor lifesupport-systeem",
+    "Description": "Het lifesupport-systeem is het hart van het exopak en filtert en pompt doorlopend zuurstof.\n\nHet lifesupport-systeem doet meer dan het in leven houden van de gebruiker van het exopak. Het zuurstofoverschot wordt gebruikt als aandrijving voor secundaire systemen, zoals het jetpack, extra snelheid en de zaklamp."
+  },
+  {
+    "Id": "tech4",
+    "Name": "Zuurstofrecycler",
+    "Group": "Lifesupport-upgrade",
+    "Description": "Verbetert de basiscapaciteit van de lifesupport, waardoor de gebruiker minder vaak hoeft op te laden."
+  },
+  {
+    "Id": "tech5",
+    "Name": "Jetpack",
+    "Group": "Draagbare straalaandrijving",
+    "Description": "Geeft het exopak geavanceerde reismogelijkheden, zoals een korte vlucht.\n\nGeef beheerst gas met JUMP. Het jetpack gebruikt de energie van de lifesupport van het exopak om gas onder druk te zetten en in korte stoten vrij te geven, waardoor de gebruiker de lucht in schiet.\n\nJe kunt het jetpack tijdelijk extra krachtig maken door planten met veel deuterium te verzamelen, waarmee je veel meer vermogen krijgt."
+  },
+  {
+    "Id": "tech6",
+    "Name": "Neurale stimulator",
+    "Group": "Exopakbeweging-upgrade",
+    "Description": "Verbetert de capaciteit van de jetpacktanks en pompreserves van het exopak, zodat de gebruiker langer kan vliegen en sprinten."
+  },
+  {
+    "Id": "tech7",
+    "Name": "Raketlaarzen",
+    "Group": "Exopak-upgrade",
+    "Description": "Voorziet de jetpack van het exopak met geavanceerde sprongvaardigheden, zodat de gebruiker eenvoudig grote sprongen kan maken.\n\nActiveer het springsysteem door snel op JUMP te drukken."
+  },
+  {
+    "Id": "tech8",
+    "Name": "Verkoelingsnetwerk",
+    "Group": "Beschermingsunit",
+    "Description": "Beschermt de gebruiker tegen extreme hitte in verschroeide werelden.\n\nEen onderhuids distributienetwerk van vloeibare frenium zorgt ervoor dat de gebruiker minder last heeft van hitte in de atmosfeer of van de zon.\n\nHet apparaat wordt opgeladen door mineraalextracten uit hete omgevingen. Werkt automatisch zodra het is geïntegreerd in de inventaris van het exopak."
+  },
+  {
+    "Id": "tech9",
+    "Name": "Thermische laag",
+    "Group": "Beschermingsunit",
+    "Description": "Beschermt de gebruiker tegen extreme kou in bevroren werelden.\n\nWarmtebuisjes in het pak van de gebruiker zorgen voor een gelijkmatige verdeling van vloeibare calidium voor een aangename lichaamstemperatuur.\n\nHet apparaat wordt opgeladen door mineraalextracten uit bevroren omgevingen. Werkt automatisch zodra het is geïntegreerd in de inventaris van het exopak."
+  },
+  {
+    "Id": "tech10",
+    "Name": "Gifonderdrukker",
+    "Group": "Beschermingsunit",
+    "Description": "Beschermt de gebruiker tegen vergiftiging.\n\nDe reactieve samenstellingen van het product verwijderen giftig vocht dat op de gebruiker valt, waardoor verstikking wordt voorkomen.\n\nHet apparaat wordt opgeladen door mineraalextracten uit giftige omgevingen. Werkt automatisch zodra het is geïntegreerd in de inventaris van het exopak."
+  },
+  {
+    "Id": "tech11",
+    "Name": "Stralingsdeflector",
+    "Group": "Beschermingsunit",
+    "Description": "Beschermt de gebruiker tegen straling.\n\nZorgt voor aanzienlijk minder gevaar tijdens de verkenning van werelden met veel straling. De microtrillingen verhogen de afweer van elektromagnetische golven en verminderen zo de absorptie.\n\nHet apparaat wordt opgeladen door mineraalextracten uit radioactieve omgevingen. Werkt automatisch zodra het is geïntegreerd in de inventaris van het exopak."
+  },
+  {
+    "Id": "tech12",
+    "Name": "Ventilatiemembraan",
+    "Group": "Aquatische ademhalingsondersteuning",
+    "Description": "Hiermee kan de gebruiker langer onder water zwemmen.\n\nAbsorbeert in water opgeloste gassen via een membraancontactor, die bij conventioneel gestructureerde soorten over de mond of een andere ademhalingsopening in het gezicht wordt geplaatst.\n\nWerkt automatisch zodra het is geïntegreerd in de inventaris van het exopak."
+  },
+  {
+    "Id": "tech13",
+    "Name": "Veiligheidshandschoen",
+    "Group": "Exopak-uitbreiding",
+    "Description": "Verbetert de metaalachtige schilden van de handschoenen van het exopak.\n\nEen geavanceerde mix van verstevigd metaal en katalytische schilden waardoor de gebruiker zonder zorgen gevaarlijke materialen kan hanteren en zware handelingen kan uitvoeren, zoals het oogsten van bepaalde flora."
+  },
+  {
+    "Id": "tech14",
+    "Name": "Herinnering",
+    "Group": "Een overblijfsel van een andere plek",
+    "Description": "Bevat alles wat je ooit hebt geweten."
+  },
+  {
+    "Id": "tech15",
+    "Name": "Sterrenzaad",
+    "Group": "Zeer kostbaar fragment",
+    "Description": "Een heel klein vonkje in een krachtveld van onbekende origine.\n\nHet zaadje gloeit van leven en kan niet wachten om te ontsnappen."
+  },
+  {
+    "Id": "tech16",
+    "Name": "Overbodige technologie",
+    "Group": "Oude, onbruikbare technologie",
+    "Description": "Een stukje technologie, aangetast na storing door de Atlas.\n\nKan worden gerecycled voor bruikbare onderdelen."
+  },
+  {
+    "Id": "tech17",
+    "Name": "Efficiënte waterstralen",
+    "Group": "Jetpack-uitbreiding",
+    "Description": "Verbetert het energieverbruik van de waterstralen van het jetpack, waardoor de lifesupport-systemen van het exopak minder zwaar worden belast.\n\nIn de turbines van het jetpack worden watercompressors gemonteerd, waardoor de ontsteking onder water minder energie verbruikt."
+  },
+  {
+    "Id": "tech18",
+    "Name": "Zuurstofomleiding",
+    "Group": "Nood-lifesupport-systeem",
+    "Description": "Verbetert het ventilatiemembraan van het exopak, waardoor er zuurstof uit de lifesupport-systemen wordt gehaald in het geval van ademhalingsproblemen. Zo kan de gebruiker naar het wateroppervlak zwemmen om de energie op conventionele manieren bij te vullen.\n\nOpmerking: langdurige omzetting van lifesupport-energie in zuurstof wordt niet aanbevolen en kan resulteren in beëindiging van de vitale systemen."
+  },
+  {
+    "Id": "tech19",
+    "Name": "Eenvoudige vertaler",
+    "Group": "Automatische taalverwerker",
+    "Description": "Een automatisch vertaalapparaat. Het neemt conversaties in de buurt op en gebruikt vervolgens een contextueel leersysteem om de betekenis te achterhalen.\n\nDit basismodel heeft weinig geheugen, waardoor hij maar een beperkt aantal vertalingen kan opslaan."
+  },
+  {
+    "Id": "tech20",
+    "Name": "Superieure vertaler",
+    "Group": "Automatische taalverwerker",
+    "Description": "Een automatisch vertaalapparaat. Het neemt conversaties in de buurt op en gebruikt vervolgens een contextueel leersysteem om de betekenis te achterhalen.\n\nDankzij de parallelle taalprocessors kan een aanzienlijk groter deel van de opgenomen spraak worden vertaald."
+  },
+  {
+    "Id": "tech21",
+    "Name": "Geavanceerde vertaler",
+    "Group": "Automatische taalverwerker",
+    "Description": "Een automatisch vertaalapparaat. Het neemt conversaties in de buurt op en gebruikt vervolgens een contextueel leersysteem om de betekenis te achterhalen.\n\nDoor de grote geheugenkaart en overklokte taalprocessors kunnen behoorlijk grote spraakbestanden in realtime worden vertaald."
+  },
+  {
+    "Id": "tech22",
+    "Name": "Vertaler van Artemis",
+    "Group": "Automatische taalverwerker",
+    "Description": "Een automatisch vertaalapparaat. Het apparaat moet worden gekalibreerd door het invoeren van bestaande vertaalgegevens. Het apparaat heeft een netwerkverbinding met Artemis nodig om te functioneren.\n\nZonder toegang tot deze vertaalservice kan de hardware van het apparaat slechts een beperkt aantal woorden in realtime vertalen."
+  },
+  {
+    "Id": "tech23",
+    "Name": "Pulsmotor",
+    "Group": "Snelheidsbooster ruimteschip",
+    "Description": "Voor de aandrijving en versnelling van ruimteschepen en pulssprongen door lokale systemen.\n \nEr is tritium nodig om de pulsmotor op te laden. Tritium wordt veel aangetroffen in asteroïdenvelden in de buurt van planeten.\n\nHou ROLLLEFT en ROLLRIGHT gelijktijdig ingedrukt om de pulssprong te activeren.\nHou BOOST ingedrukt voor een snelheidsboost tijdens de vlucht."
+  },
+  {
+    "Id": "tech24",
+    "Name": "Photonix Core",
+    "Group": "Pulsmotor-uitbreiding",
+    "Description": "Zorgt voor een betere wendbaarheid en langere snelheidsboosts tijdens ruimtevluchten."
+  },
+  {
+    "Id": "tech25",
+    "Name": "Stuwraket",
+    "Group": "Systeem om verticaal op te stijgen",
+    "Description": "Essentieel lanceer- en landingssysteem.\n \nEr is speciale brandstof op Diwaterstof-basis nodig om de stuwraket op te laden. De opstijgprocedure kan alleen worden gestart als er voldoende energie beschikbaar is.\n \nHou THRUST ingedrukt om op te stijgen.\nHou BOOST ingedrukt voor een snelheidsboost tijdens de vlucht."
+  },
+  {
+    "Id": "tech26",
+    "Name": "Efficiënte stuwraketten",
+    "Group": "Upgrade lanceersystemen",
+    "Description": "Verbetert de lanceersystemen van het ruimteschip, waardoor de brandstofkosten voor het opstijgen lager worden."
+  },
+  {
+    "Id": "tech27",
+    "Name": "Lanceersysteem-oplader",
+    "Group": "Upgrade lanceersystemen",
+    "Description": "De fotovoltaïsche panelen die op de stuwraketten van het ruimteschip zijn gemonteerd, zorgen ervoor dat de stuwraketten langzaam worden opgeladen als het schip niet in gebruik is.\n\nHet geoogste licht wordt gebruikt om diwaterstof uit de atmosfeer te halen. Daardoor worden na verloop van tijd de stuwraketten automatisch opgeladen."
+  },
+  {
+    "Id": "tech28",
+    "Name": "Teleportontvanger",
+    "Group": "Op schip gemonteerd teleporteerapparaat",
+    "Description": "Een apparaat dat de standaard communicatiesignalen van een ruimteschip moduleert om naast gegevens ook materie te kunnen transporteren.\n\nRuimteschepen met een dergelijk apparaat kunnen over een grote afstand producten en substanties van en naar een exopak verzenden en ontvangen."
+  },
+  {
+    "Id": "tech29",
+    "Name": "Hyperdrive",
+    "Group": "Warpmotor voor lichtsnelheid",
+    "Description": "FTL-aandrijfmotor waarmee ruimteschepen warpsnelheden kunnen bereiken en direct naar een aangrenzend systeem kunnen springen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de galactische kaart."
+  },
+  {
+    "Id": "tech30",
+    "Name": "Cadmiummotor",
+    "Group": "Hyperdrive-upgrade: rode systemen",
+    "Description": "Verbetert de magneten van de hyperdrive-kern, waardoor versnelde aftakeling bij reizen naar zeldzame rode sterren wordt voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de galactische kaart."
+  },
+  {
+    "Id": "tech31",
+    "Name": "Emerilmotor",
+    "Group": "Hyperdrive-upgrade: groene systemen",
+    "Description": "Maakt het hyperdrive-schild sterker, waardoor werkelijkheidsfouten bij reizen naar zeldzame groene hemellichamen worden voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de galactische kaart."
+  },
+  {
+    "Id": "tech32",
+    "Name": "Indiummotor",
+    "Group": "Hyperdrive-upgrade: blauwe systemen",
+    "Description": "Verbetert de rekenmatrix van de hyperdrive, waardoor tijdsanomalieën bij reizen naar zeldzame blauwe sterren worden voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de galactische kaart."
+  },
+  {
+    "Id": "tech33",
+    "Name": "Afweerschild",
+    "Group": "Bescherming voor de scheepsromp",
+    "Description": "Energieveld dat het ruimteschip beschermt tegen lasers, projectielen en ruimteschroot.\n\nEr zijn katalytische elementen nodig om het apparaat op te laden.\n\nWerkt automatisch zodra het is geïntegreerd in de inventaris van het ruimteschip."
+  },
+  {
+    "Id": "tech34",
+    "Name": "Ablatief pantser",
+    "Group": "Ruimteschipschilden-upgrade",
+    "Description": "Voegt superhete schilden toe aan het verdedigingsmechanisme van het ruimteschip, waardoor vijandelijk vuur verdampt.\n\nVerhoogt de prestaties van het ruimteschipschild aanzienlijk."
+  },
+  {
+    "Id": "tech35",
+    "Name": "Raketwerper",
+    "Group": "Projectielwapen voor ruimteschepen",
+    "Description": "Een extreem verwoestend wapen dat is ontworpen voor de vernietiging van andere schepen.\n\nDruk op SHIPFIRE om te schieten."
+  },
+  {
+    "Id": "tech36",
+    "Name": "Grote raketbuizen",
+    "Group": "Ruimteschipraketten-upgrade",
+    "Description": "Breidt de laadkamer van de raketlanceerder van het ruimteschip uit voor een betere uitlaat en een aanzienlijk sneller warmteherstel."
+  },
+  {
+    "Id": "tech37",
+    "Name": "Fotonkanon",
+    "Group": "Projectielwapen voor ruimteschepen",
+    "Description": "Uiterst vernietigend wapen dat snel kan afrekenen met andere schepen.\n\nDruk op SHIPFIRE om te activeren."
+  },
+  {
+    "Id": "tech39",
+    "Name": "Economiescanner",
+    "Group": "Sensortechnologie met groot bereik",
+    "Description": "Een upgrade van de galactische systeemsensoren van het ruimteschip. Met dit apparaat krijg je gedetailleerde economische gegevens over een stelsel zonder dat je het hoeft te bezoeken."
+  },
+  {
+    "Id": "tech40",
+    "Name": "Conflictscanner",
+    "Group": "Sensortechnologie met groot bereik",
+    "Description": "Een upgrade van de galactische systeemsensoren van het ruimteschip. Met dit apparaat krijg je toegang tot conflictgegevens op de galactische kaart zonder dat je gevaar loopt."
+  },
+  {
+    "Id": "tech41",
+    "Name": "Faselaser",
+    "Group": "Laser voor ruimteschepen",
+    "Description": "Stationair laserwapen en mijngereedschap voor asteroïden.\n\nEr zijn organische elementen nodig om het wapen op te laden.\n\nDruk op SHIPFIRE om te activeren."
+  },
+  {
+    "Id": "tech42",
+    "Name": "Fourierbegrenzer",
+    "Group": "Faselaser-upgrade",
+    "Description": "Voorziet de faselaser van een nieuw nanietcircuit, waardoor de conventionele realiteitsgrenzen van het laservermogen omzeild worden.\n\nVerbetert de hitteverwerking aanzienlijk."
+  },
+  {
+    "Id": "tech43",
+    "Name": "Positronuitwerper",
+    "Group": "Hoogenergetisch wapen voor ruimteschip",
+    "Description": "Schoten bestrijken hiermee een groot kegelvormig gebied.\n\nDoor vermindert bereik en verminderde vuursnelheid van het wapen worden gebruikers aangemoedigd om hun doelen van korte afstand aan te vallen."
+  },
+  {
+    "Id": "tech44",
+    "Name": "Fragment-supercharger",
+    "Group": "Ruimteschip-positronuitwerper-upgrade",
+    "Description": "Verbetert het vuurmechanisme van de positronuitwerper, wat leidt tot snellere, accuratere deeltjes.\n\nVerbetert het bereik en de nauwkeurigheid."
+  },
+  {
+    "Id": "tech45",
+    "Name": "Infraversneller",
+    "Group": "Snelvurend wapen voor ruimteschip",
+    "Description": "Hiermee kunnen onafgebroken snelle vuurstoten worden afgevuurd.\n\nOm oververhitting te voorkomen, wordt geadviseerd om de versneller niet te lang achter elkaar te gebruiken."
+  },
+  {
+    "Id": "tech46",
+    "Name": "Niet-lineaire zoekers",
+    "Group": "Fotonkanon-upgrade",
+    "Description": "Vervangt de conventionele fotonkanonzoekers door experimenteel glas voor betere gevechtsprestaties.\n\nVerbetert de capaciteit van het koellichaam aanzienlijk."
+  },
+  {
+    "Id": "tech47",
+    "Name": "Cyclotron-ballista",
+    "Group": "Ongeleid wapen voor ruimteschip",
+    "Description": "Vuurt een grote geconcentreerde bal met geladen deeltjes af, die veel schade aanricht aan doelwitten in zijn baan. De lading is ongeleid en blijft in zijn baan tot hij een obstakel raakt."
+  },
+  {
+    "Id": "tech48",
+    "Name": "Dysonpomp",
+    "Group": "Ruimteschipcyclotron-upgrade",
+    "Description": "Vervangt het koellichaam van de cyclotron-ballista door de volledige unit te omringen met een warmte-absorberende, gigantische constructie. De warmte-uitstoot wordt gerecycled voor efficiëntere gevechten.\n\nVerbetert de hitteprestaties aanzienlijk."
+  },
+  {
+    "Id": "tech49",
+    "Name": "Vrachtschip Hyperdrive",
+    "Group": "Warpmotor voor lichtsnelheid",
+    "Description": "FTL-aandrijfmotor waarmee ruimteschepen warpsnelheden kunnen bereiken en direct naar een aangrenzend systeem kunnen springen."
+  },
+  {
+    "Id": "tech56",
+    "Name": "Rompbreuk",
+    "Group": "Beschadigd ruimteschiponderdeel",
+    "Description": "Subsysteem ruimteschip heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt voor opslag of technologie tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech57",
+    "Name": "Verroeste circuits",
+    "Group": "Beschadigd ruimteschiponderdeel",
+    "Description": "Subsysteem ruimteschip heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt voor opslag of technologie tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech58",
+    "Name": "Verbrijzeld bolwerk",
+    "Group": "Beschadigd ruimteschiponderdeel",
+    "Description": "Subsysteem ruimteschip heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt voor opslag of technologie tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech59",
+    "Name": "Stralingslek",
+    "Group": "Beschadigd ruimteschiponderdeel",
+    "Description": "Subsysteem ruimteschip heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt voor opslag of technologie tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech60",
+    "Name": "Beveiligingsfout",
+    "Group": "Beschadigd ruimteschiponderdeel",
+    "Description": "Subsysteem ruimteschip heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt voor opslag of technologie tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech61",
+    "Name": "Beschadigde tandwielen",
+    "Group": "Beschadigd ruimteschiponderdeel",
+    "Description": "Subsysteem ruimteschip heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt voor opslag of technologie tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech62",
+    "Name": "Analysevizier",
+    "Group": "Markeermodule verrekijker",
+    "Description": "Speciale unit voor ontdekkingen en detectie.\n\nVerbetert de mogelijkheden van de standaardscanner door gedetailleerde informatie over de omgeving rechtstreeks te projecteren op het vizier van de gebruiker. Hiermee kunnen afgelegen interessante locaties worden geïdentificeerd.\n\nHet vizier genereert waardevolle gegevens tijdens het bestuderen van flora, fauna en mineralen.\n\nHou AIMingedrukt om te gebruiken. Druk op ZOOM om te zoomen."
+  },
+  {
+    "Id": "tech63",
+    "Name": "Scanner",
+    "Group": "Topografisch onderzoek",
+    "Description": "Een persoonlijke oppervlakteradar voor de multitool. \n\nDe scanner genereert een hoogenergetische impuls die alle essentiële grondstoffen in de directe omgeving zichtbaar maakt. De gegevens worden rechtstreeks via het exopak aan het visuele zenuwstelsel gevoed.\n \nDruk op SCAN om een lokale scan te maken."
+  },
+  {
+    "Id": "tech64",
+    "Name": "Golfrecycler",
+    "Group": "Multitool-upgrade",
+    "Description": "Een krachtige processor die in de zijkant van het scansysteem van de multitool wordt geplaatst, zodat het apparaat sneller wordt opgeladen.\n\nVerhoogt de mogelijke scanfrequentie."
+  },
+  {
+    "Id": "tech65",
+    "Name": "Detector",
+    "Group": "Analysevizier-upgrade",
+    "Description": "Een op zichzelf staande upgrade van de elektronica van het analysevizier waarmee realtime analyse van het terrein mogelijk is.\n\nSchakel tussen de vizierstanden met SURVEYFILTERL/SURVEYFILTERR. Gebruik de detector om verborgen grondstoffen in het terrein te ontdekken."
+  },
+  {
+    "Id": "tech66",
+    "Name": "Terreinvervormer",
+    "Group": "Voor het vormen van het landschap",
+    "Description": "Geavanceerd apparaat voor terravorming. Deze module overbelast bestaande multitoolsystemen, zodat de gebruiker regio's naar wens kan vormen.\n\nWordt opgeladen met metaalelementen."
+  },
+  {
+    "Id": "tech67",
+    "Name": "Persoonlijk krachtveld",
+    "Group": "Technologie voor beschermend schild",
+    "Description": "Na het activeren gebruikt deze module energie van het lifesupport-systeem van het exopak om de multitool te overbelasten. Hierdoor wordt het elektromagnetische veld rond de gebruiker omgevormd tot een krachtig persoonlijk schild.\n\nHet veld biedt een goede bescherming tegen vijandelijk laservuur, maar de multitool kan niet voor andere functies worden gebruikt als het schild actief is."
+  },
+  {
+    "Id": "tech68",
+    "Name": "Conflictvizier",
+    "Group": "Wapenprecisieverbetering",
+    "Description": "Een vizier met antiterugslageigenschappen waarmee je heel nauwkeurig kunt schieten."
+  },
+  {
+    "Id": "tech69",
+    "Name": "Mijnlaser",
+    "Group": "Laser voor minerale extractie",
+    "Description": "Mijnlaser van de multitool die wordt aangedreven door elementen op koolstofbasis. Druk op ATTACK om de laser af te vuren. Monteert zoekers in de multitool, die daardoor een hoogenergetische straal kan afvuren. De straal wordt dusdanig gekalibreerd dat hij moleculen van dezelfde organische of geologische objecten in beweging brengt, waardoor hij zeer effectief is als mijnapparaat.\n\nWAARSCHUWING: als je flora, fauna of mineralen vernietigt, kun je worden aangevallen door Sentinels."
+  },
+  {
+    "Id": "tech70",
+    "Name": "Geavanceerde mijnlaser",
+    "Group": "Mijnlaser-uitbreiding",
+    "Description": "Vervangt de zoekers van de standaardmijnlaser door levend glas van de hoogste kwaliteit, waardoor de laser effectief is tegen grote en/of zeldzame grondstofafzettingen.\n\nDe lens past zich automatisch aan minuscule fluctuaties in de golfvorm van de laser aan, waardoor de straal gefocust blijft en zijn potentie als mijnapparaat toeneemt."
+  },
+  {
+    "Id": "tech71",
+    "Name": "Optische boor",
+    "Group": "Opbrengstvergroter",
+    "Description": "De flinterdunne lenzen zijn gerangschikt in een gekalibreerde matrix, waardoor de mijnlaser op atomisch niveau focust.\n\nDie extra precisie maakt efficiënter delven mogelijk. Het oogsten van elementen gebeurt efficiënter, waardoor voorwerpen die met de multitool worden geoogst meer grondstoffen opbrengen."
+  },
+  {
+    "Id": "tech72",
+    "Name": "Boltcaster",
+    "Group": "Wapen met energieprojectielen",
+    "Description": "Algemene wapenuitbreiding voor de multitool. Activeer de vuurstand met CYCLEWEAPON en schiet met ATTACK.\n\nMet de boltcaster kun je de multitool gebruiken om metaalelementen op te laden en ze af te vuren als zeer snelle projectielen die extreem veel schade kunnen aanrichten."
+  },
+  {
+    "Id": "tech73",
+    "Name": "Loopionisatie",
+    "Group": "Boltcaster-upgrade",
+    "Description": "Plaatst een krachtige veldionisator in de loop van de Boltcaster, waardoor de stabiliteit van een projectiel in de lucht toeneemt.\n\nVerbetert de nauwkeurigheid van het apparaat en de gebruiker kan langer achter elkaar schieten zonder dat de gevechtsprestaties afnemen."
+  },
+  {
+    "Id": "tech74",
+    "Name": "Boltcaster SM",
+    "Group": "Boltcaster-uitbreiding",
+    "Description": "De schoten van de Boltcaster zorgen bij inslag voor meer fysieke schade.\n\nVoegt extra kinetische energie toe aan de distributiesystemen van geïoniseerde plasmaschoten.\n\nWerkt automatisch zodra het is geïntegreerd in de inventaris van de multitool."
+  },
+  {
+    "Id": "tech75",
+    "Name": "Laserkoelsysteem Sigma",
+    "Group": "Mijnlaser-upgrade",
+    "Description": "Een aanzienlijke upgrade voor de mijnlaser.\n\nPlaatst extra reflectoren in de primaire kristalkamer van de mijnlaser, wat de straalkracht versterkt en ongewenst hitteverlies voorkomt."
+  },
+  {
+    "Id": "tech76",
+    "Name": "Plasmagranaatwerper",
+    "Group": "Explosieve granaten",
+    "Description": "Krachtig projectielwapen. Afgevuurde plasmagranaten stuiteren op oppervlakken tot de interne timer een grote explosie activeert.\n \nBevat onstabiel plasma. Onzorgvuldig gebruik kan leiden tot schade aan de gebruiker.\n \nDruk op ALTATTACK om te activeren."
+  },
+  {
+    "Id": "tech77",
+    "Name": "Geologiekanon",
+    "Group": "Terreinvernietiger",
+    "Description": "Lanceert projectielen met een grote diameter. De plasmagranaten zijn ontwikkeld voor snelle graafwerkzaamheden.\n \nBevat onstabiel plasma. Waarschuwing: de explosieve inslag kan ook schade toebrengen aan organisch materiaal in de buurt.\n \nDruk op ALTATTACK om te activeren."
+  },
+  {
+    "Id": "tech78",
+    "Name": "Vuurspeer",
+    "Group": "Wapen met energiestraal",
+    "Description": "Agressieve wapenuitbreiding voor de multitool. Activeer de vuurstand met CYCLEWEAPON en schiet met ATTACK.\n\nDe vuurspeer zorgt voor directe schade bij doelen.\n\nDe plasmalading genereert een geïoniseerde gasboog die op hoge snelheid projectielen afvuurt. Het vernietigende resultaat is zichtbaar zodra de trekker wordt overgehaald."
+  },
+  {
+    "Id": "tech79",
+    "Name": "Massaversneller",
+    "Group": "Vuurspeer-upgrade",
+    "Description": "Verlengt de vuurkamer van de vuurspeer, zodat de interne deeltjesversnellers meer massa en meer snelheid krijgen.\n\nVerbetert de schade die het wapen aanricht aanzienlijk."
+  },
+  {
+    "Id": "tech80",
+    "Name": "Energieblaster",
+    "Group": "Projectielwapen met energiestralen",
+    "Description": "Speciale uitbreiding voor aanvallen op korte afstand met de multitool. Activeer de vuurstand met CYCLEWEAPON en schiet met ATTACK.\n\nMet de energieblaster kun je de multitool gebruiken voor het verhitten en verspreiden van metaalelementen, die over een groot gebied verwoesting aanrichten. Het bereik is beperkt, maar de scherven zijn heel effectief van dichtbij."
+  },
+  {
+    "Id": "tech81",
+    "Name": "Granaatvet",
+    "Group": "Energieblaster-upgrade",
+    "Description": "Geavanceerde zelf-smerende onderdelen verminderen wrijving in de energieblaster voor aanzienlijk kortere herlaadtijden."
+  },
+  {
+    "Id": "tech82",
+    "Name": "Pulsspitter",
+    "Group": "Snelvurend projectielwapen",
+    "Description": "Speciale uitbreiding voor de multitool waarmee de vuursnelheid toeneemt. Activeer de vuurstand met CYCLEWEAPON en schiet met ATTACK.\n\nMet de pulsspitter kun je de multitool gebruiken om metaalelementen af te vuren die zijn geïoniseerd. Deze projectielen worden snel achter elkaar afgevuurd en bombarderen potentiële doelwitten met een golf van hoogenergetisch plasma."
+  },
+  {
+    "Id": "tech83",
+    "Name": "Verbeterde patronen",
+    "Group": "Pulsspitter-upgrade",
+    "Description": "Dankzij de gespecialiseerde harmonische resonatoren kan de pulsspitter de geplaatste munitie splitsen voor meer schoten met minder materiaal.\n\nVergroot de capaciteit van het wapenmagazijn."
+  },
+  {
+    "Id": "tech84",
+    "Name": "Kortsluiting",
+    "Group": "Beschadigd multitool-onderdeel",
+    "Description": "Subsysteem multitool heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech85",
+    "Name": "Opgeblazen transistor",
+    "Group": "Beschadigd multitool-onderdeel",
+    "Description": "Subsysteem multitool heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech86",
+    "Name": "Beschadigde bedrading",
+    "Group": "Beschadigd multitool-onderdeel",
+    "Description": "Subsysteem multitool heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech87",
+    "Name": "Verroeste energiekern",
+    "Group": "Beschadigd multitool-onderdeel",
+    "Description": "Subsysteem multitool heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech88",
+    "Name": "Corrupte module",
+    "Group": "Beschadigd multitool-onderdeel",
+    "Description": "Subsysteem multitool heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech89",
+    "Name": "Beschadigde kabels",
+    "Group": "Beschadigd multitool-onderdeel",
+    "Description": "Subsysteem multitool heeft kritische schade opgelopen.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik REPAIR om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik."
+  },
+  {
+    "Id": "tech90",
+    "Name": "Fusiemotor",
+    "Group": "Energiesysteem voor de exocraft",
+    "Description": "Een compacte fusiekern voor alle exocrafts.\n\nWerkt alleen met brandstof."
+  },
+  {
+    "Id": "tech91",
+    "Name": "Driftophanging",
+    "Group": "Rijgedragaanpassing voor exocraft",
+    "Description": "Wijzigt het rijgedrag van de exocraft via een combinatie van softwarematige tweaks, drukaanpassingen en de montage van microzwaartekrachtputten in belangrijke onderdelen van de ophanging.\n\nSpeciaal afgesteld om de exocraft beter te laten driften."
+  },
+  {
+    "Id": "tech92",
+    "Name": "Gripboost-ophanging",
+    "Group": "Rijgedragaanpassing voor exocraft",
+    "Description": "Wijzigt het rijgedrag van de exocraft via een combinatie van softwarematige tweaks, drukaanpassingen en de montage van microzwaartekrachtputten in belangrijke onderdelen van de ophanging.\n\nSpeciaal afgesteld om de exocraft scherper te laten sturen."
+  },
+  {
+    "Id": "tech93",
+    "Name": "Glijophanging",
+    "Group": "Rijgedragaanpassing voor exocraft",
+    "Description": "Wijzigt het rijgedrag van de exocraft via een combinatie van softwarematige tweaks, drukaanpassingen en de montage van microzwaartekrachtputten in belangrijke onderdelen van de ophanging.\n\nSpeciaal afgesteld om de exocraft beter te laten glijden."
+  },
+  {
+    "Id": "tech94",
+    "Name": "Exocraft-signaalversterker",
+    "Group": "Scanuitrusting voor de exocraft",
+    "Description": "Een grote en complexe subruimteradar voor in het veld.\n\nDoor het hoge energieverbruik en de subatomische instabiliteit kan hij alleenworden gemonteerd op een exocraft.\n\nDruk op QUICK_MENU om de signaalversterker te activeren."
+  },
+  {
+    "Id": "tech95",
+    "Name": "Upgrade Sigma voor exocraft-signaalversterker",
+    "Group": "Upgrade voor de exocraft-signaalversterker",
+    "Description": "Hiermee kunnen meer constructietypen worden herkend door de exocraft-signaalversterker."
+  },
+  {
+    "Id": "tech96",
+    "Name": "Upgrade Tau voor exocraft-signaalversterker",
+    "Group": "Upgrade voor de exocraft-signaalversterker",
+    "Description": "Hiermee kunnen meer constructietypen worden herkend door de exocraft-signaalversterker."
+  },
+  {
+    "Id": "tech97",
+    "Name": "Exocraft-acceleratiemodule",
+    "Group": "Upgrade voor de exocraft-motor",
+    "Description": "Een efficiënt plasma-injectiesysteem voor de motor die korte snelheidsboosts mogelijk maakt."
+  },
+  {
+    "Id": "tech98",
+    "Name": "Exocraft-mijnlaser",
+    "Group": "Mjnuitbreiding voor de exocraft",
+    "Description": "Deze mijnlaser kan niet worden gedragen en moet op een exocraft worden gemonteerd."
+  },
+  {
+    "Id": "tech99",
+    "Name": "Upgrade Sigma voor exocraft-mijnlaser",
+    "Group": "Mijn-upgrade voor de exocraft",
+    "Description": "Vergroot het vermogen van de exocraft-mijnlaser."
+  },
+  {
+    "Id": "tech100",
+    "Name": "Exocraft-kanon",
+    "Group": "Wapenuitbreiding voor de exocraft",
+    "Description": "Dit krachtige wapen heeft veel energie nodig en moet daarom op een exocraft worden gemonteerd."
+  },
+  {
+    "Id": "tech101",
+    "Name": "Humboldt-motor",
+    "Group": "Energiesysteem voor de exocraft",
+    "Description": "Een warmte-efficiënte, inversieongevoelige reactorkrachtbron die de Nautilon zelfs op extreme diepte kan aandrijven.\n\nAangedreven door hydrothermale brandstofcellen."
+  },
+  {
+    "Id": "tech102",
+    "Name": "Nautilon-kanon",
+    "Group": "Wapen onderzeeër",
+    "Description": "Een geschut dat speciaal is ontworpen voor de Nautilon-onderzeeër.\n\nDit hoogenergetische wapen verhit druppels water, die het vervolgens met grote snelheid richting het doelwit vuurt.\n\nHet wapen is in de eerste plaats ontworpen om biologische entiteiten te verwonden en is inefficiënt als mijnapparaat."
+  },
+  {
+    "Id": "tech103",
+    "Name": "Tethyslaser",
+    "Group": "Mijnlaser onderzeeër",
+    "Description": "Een lasergeschut dat speciaal ontworpen is voor de Nautilon-onderzeeër.\n\nVuurt een geconcentreerde plasmastraal af op het doelwit, dat vervolgens in brand vliegt. Dit mechanisme maakt het gebruik van hoogenergetische, optische mijnsystemen in een vloeibaar medium mogelijk."
+  },
+  {
+    "Id": "tech104",
+    "Name": "Supersonar",
+    "Group": "Analyseapparaat onderzeeër",
+    "Description": "Een sonarapparaat dat gedetailleerde opnamen maakt en de scannertechnologie aan boord van een Nautilon-onderzeeër kan verbeteren naar het niveau van een analysevizier.\nDruk op SCAN om de supersonar te activeren."
+  },
+  {
+    "Id": "tech105",
+    "Name": "Blauwe generator",
+    "Group": "Upgrade Humboldt-motor",
+    "Description": "Wordt geïnstalleerd in het aandrijfsysteem van de Nautilon-onderzeeër.\n\nWint energie door het zoutgehalte van diepzeeomgevingen te benutten, waardoor de Humboldt-motor bij een gebrek aan brandstof langzaam wordt opgeladen."
+  },
+  {
+    "Id": "tech106",
+    "Name": "Slotmechanisme",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een eenvoudig sluitsysteem om onbevoegden weg te houden. Door de schade kan het niet meer open."
+  },
+  {
+    "Id": "tech107",
+    "Name": "Magnetisch slot",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een geavanceerd sluitsysteem. Door een polariteitsprobleem kan het niet meer open."
+  },
+  {
+    "Id": "tech108",
+    "Name": "Supergeleidend slot",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een zeer geavanceerd sluitsysteem. Door schade aan de voeding van de magneet kan het niet meer open."
+  },
+  {
+    "Id": "tech109",
+    "Name": "Invoerterminal",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een terminal voor de handmatige bediening van het apparaat. Door de schade reageert hij niet meer op invoer."
+  },
+  {
+    "Id": "tech110",
+    "Name": "Bio-invoersensor",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een geavanceerde besturingsunit voor interactie tussen apparaat en vlees. Door schade functioneert het niet meer goed. In deze staat kun je er maar beter van afblijven."
+  },
+  {
+    "Id": "tech111",
+    "Name": "Boilerunit",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een kleine boiler die warmte genereert, zodat het apparaat ook functioneert in moeilijke klimaatomstandigheden. Door een storing is de boiler overbelast geraakt en beschadigd."
+  },
+  {
+    "Id": "tech112",
+    "Name": "Kleine motor",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een zeer kleine motor voor de aandrijving van zeer kleine onderdelen. Inmiddels zit hij ook helemaal vol met zeer kleine roestplekken."
+  },
+  {
+    "Id": "tech113",
+    "Name": "Koelsysteem",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een pomp met een warmtewisselaar die oververhitting van het apparaat voorkomt. Inmiddels heeft hij zichzelf oververhit en werkt hij dus niet meer."
+  },
+  {
+    "Id": "tech114",
+    "Name": "Uitvoerscherm",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een terminal met display die de status van het apparaat meldt aan de gebruiker. Omdat de terminal stuk is, kan hij de gebruiker niet laten weten dat hij stuk is."
+  },
+  {
+    "Id": "tech115",
+    "Name": "Hackpreventiesysteem",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een unit die vitale systemen vernietigt indien er door onbevoegden met het apparaat wordt geknoeid. Helaas is hij zelf stuk en blijft hij andere systemen beschadigen tot hij wordt gerepareerd."
+  },
+  {
+    "Id": "tech116",
+    "Name": "Alarmsysteem",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een kleine licht- en alarminstallatie die waarschuwt voor onbevoegd gebruik van het apparaat. Door schade aan het alarm is het overbelast geraakt en veroorzaakt het kortsluiting in de circuits."
+  },
+  {
+    "Id": "tech117",
+    "Name": "Veerbehuizing",
+    "Group": "Beschadigd onderdeel",
+    "Description": "De behuizing van een hogedrukveer. De behuizing is gebarsten, waardoor de veer eruit is gesprongen en de rest van het apparaat is beschadigd."
+  },
+  {
+    "Id": "tech118",
+    "Name": "Warmteregelaar",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een besturingsunit die zorgt voor een gelijkmatige temperatuur in het hele apparaat. De sensor is beschadigd, waardoor hij op ongewenste momenten ventileert en hitte afgeeft."
+  },
+  {
+    "Id": "tech119",
+    "Name": "Brandstofpomp",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een pomp met een hoge capaciteit die ervoor zorgt dat de brandstof elk onderdeel van het apparaat bereikt, onafhankelijk van de zwaartekracht. Het filter zit verstopt met een vreemde substantie, waardoor hij minder vermogen heeft."
+  },
+  {
+    "Id": "tech120",
+    "Name": "Servoarm",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een klein mechanisch verbindingsstuk dat overal in het apparaat kleine mechanische fouten corrigeert. Door een storing worden werkende componenten verplaatst naar elders in het apparaat, wat alleen maar meer schade veroorzaakt."
+  },
+  {
+    "Id": "tech121",
+    "Name": "Solenoïde",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een relais dat wordt gebruikt tijdens het opstarten van het apparaat. De connectors zijn verroest, waardoor de solenoïde niet meer functioneert."
+  },
+  {
+    "Id": "tech122",
+    "Name": "Drukkamer",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een kleine compressiekamer voor de productie van het samengeperste gas dat het apparaat aanstuurt. Er zitten barsten in de kamer, waardoor er lekkages zijn ontstaan."
+  },
+  {
+    "Id": "tech123",
+    "Name": "Hoofdprintplaat",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Het regelcircuit voor alle andere componenten in het apparaat. Schade aan dit circuit kan fataal zijn."
+  },
+  {
+    "Id": "tech124",
+    "Name": "Energieverdeler",
+    "Group": "Beschadigd onderdeel",
+    "Description": "De centrale voedingseenheid van het apparaat. Door de schade aan de eenheid wordt alle stroom naar één circuit geleid, wat kortsluiting veroorzaakt."
+  },
+  {
+    "Id": "tech125",
+    "Name": "Ladingverdeler",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een kleine eenheid die de energie in het apparaat verdeelt. Door een storing is kortsluiting ontstaan, waardoor andere componenten zijn beschadigd."
+  },
+  {
+    "Id": "tech126",
+    "Name": "Netwerkinterface",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een universele netwerkinterface waarmee het apparaat contact maakt met een externe bedieningscentrale. Door de schade interpreteert deze interface achtergrondstraling als netwerksignalen, waardoor gegevens in andere circuits beschadigd raken."
+  },
+  {
+    "Id": "tech127",
+    "Name": "Veiligheidspaneel",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Het beveiligingspaneel beschermt mogelijk gevaarlijke onderdelen in het geval van een storing. Door een overgevoelige starter is hij geactiveerd, waardoor het apparaat niet meer functioneert."
+  },
+  {
+    "Id": "tech128",
+    "Name": "Alternator",
+    "Group": "Beschadigd onderdeel",
+    "Description": "De wisselstroomdynamo genereert en reguleert stroom voor het apparaat. Hij is aangetast door een vreemde corrosie, waardoor hij niet meer werkt."
+  },
+  {
+    "Id": "tech129",
+    "Name": "Fotovoltaïsch paneel",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Een klein, maar efficiënt paneel dat is bedoeld om licht op te vangen en om te zetten in energie. Het paneel zit echter onder de barsten en het stof, wat een betrouwbare werking in de weg staat."
+  },
+  {
+    "Id": "tech130",
+    "Name": "Mechanische onderdelen",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Het schakelmechanisme van het apparaat. Het benodigde smeermiddel is vervangen door een vreemd groen goedje, waardoor het mechanisme is vastgelopen."
+  },
+  {
+    "Id": "tech131",
+    "Name": "Oud slot",
+    "Group": "Zwaarbeveiligd slotmechanisme",
+    "Description": "Een mysterieus slot met meerdere sleutelgaten. Deze relikwie moet een kostbare schat herbergen."
+  },
+  {
+    "Id": "tech132",
+    "Name": "Pareloffer",
+    "Group": "Offer aan de zee",
+    "Description": "Voor deze kist heb je een levende parel nodig. Deze kun je krijgen van de reusachtige moeder-weekdieren op de bodem van de oceaan."
+  },
+  {
+    "Id": "tech133",
+    "Name": "Beschadigde elektrode",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Deze upgrademodule voor exopakken heeft kritische schade opgelopen. Repareer systemen om de upgrade-functionaliteit te herstellen.\n\nNa de reparatie hoeft de gebruiker niet te betalen voor exopak-upgrades."
+  },
+  {
+    "Id": "tech134",
+    "Name": "Verbrijzelde energiekern",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Deze upgrademodule voor exopakken heeft kritische schade opgelopen. Repareer systemen om de upgrade-functionaliteit te herstellen.\n\nNa de reparatie hoeft de gebruiker niet te betalen voor exopak-upgrades."
+  },
+  {
+    "Id": "tech135",
+    "Name": "Ondeugdelijk hologram",
+    "Group": "Beschadigd onderdeel",
+    "Description": "Deze upgrademodule voor exopakken heeft kritische schade opgelopen. Repareer systemen om de upgrade-functionaliteit te herstellen.\n\nNa de reparatie hoeft de gebruiker niet te betalen voor exopak-upgrades."
+  },
+  {
+    "Id": "tech136",
+    "Name": "Resonator warpkern",
+    "Group": "Hyperdrive-uitbreiding",
+    "Description": "Een verbetering voor de kolossale hyperdrive-motor van een interstellair vrachtschip.\n\nKwantumresonantie zorgt voor een betere bescherming van de hyperdrive tijdens FTL-reizen. Daardoor kunnen sterren worden bereikt die voorheen nog te ver weg lagen."
+  },
+  {
+    "Id": "tech137",
+    "Name": "Plasma-warpinjector",
+    "Group": "Hyperdrive-uitbreiding",
+    "Description": "Een verbetering voor de kolossale hyperdrive-motor van een interstellair vrachtschip.\n\nDe hyperdrive maakt gebruik van geavanceerde fusies die hogere warpsnelheden mogelijk maken. Schepen kunnen daardoor verder in de ruimte reizen en afgelegen planetaire systemen bereiken."
+  },
+  {
+    "Id": "tech138",
+    "Name": "Realiteitsripper",
+    "Group": "Hyperdrive-uitbreiding",
+    "Description": "Een verbetering voor de kolossale hyperdrive-motor van een interstellair vrachtschip.\n\nOnbegrensde, maar wel gestabiliseerde fusiesystemen worden geïntegreerd in de hyperdrive. Hierdoor kunnen ruimteschepen verder in de ruimte springen."
+  },
+  {
+    "Id": "tech139",
+    "Name": "Versterkt warpschild",
+    "Group": "Hyperdrive-upgrade: rode systemen",
+    "Description": "Verbetert de magneten van de hyperdrive-kern, waardoor versnelde aftakeling bij reizen naar zeldzame rode sterren wordt voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de galactische kaart."
+  },
+  {
+    "Id": "tech140",
+    "Name": "Chromatisch warpschild",
+    "Group": "Hyperdrive-upgrade: groene systemen",
+    "Description": "Maakt het hyperdrive-schild sterker, waardoor werkelijkheidsfouten bij reizen naar zeldzame groene hemellichamen worden voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de galactische kaart."
+  },
+  {
+    "Id": "tech141",
+    "Name": "Temporale warpcomputer",
+    "Group": "Hyperdrive-upgrade: blauwe systemen",
+    "Description": "Verbetert de rekenmatrix van de hyperdrive, waardoor tijdsanomalieën bij reizen naar zeldzame blauwe sterren worden voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de galactische kaart."
+  }
+]

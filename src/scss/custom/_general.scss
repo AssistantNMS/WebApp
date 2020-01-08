@@ -1,0 +1,46 @@
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+#nav {
+    padding: 30px;
+
+    a {
+        font-weight: bold;
+        color: #2c3e50;
+
+        &.router-link-exact-active {
+            color: #42b983;
+        }
+    }
+}
+
+#app .main-panel #navbar.navbar {
+    max-height: 80px;
+
+    .navbar-toggler .icon-bar {
+        background-color: white;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.generic-item-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.paymentOption {
+    margin: 10px 0;
+
+    .card-header-image {
+        max-height: 50px;
+    }
+}

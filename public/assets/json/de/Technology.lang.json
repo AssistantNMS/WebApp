@@ -1,0 +1,806 @@
+[
+  {
+    "Id": "tech1",
+    "Name": "Gefahrenschutz",
+    "Group": "Exo-Anzug-Umweltschild",
+    "Description": "Das Gefahrenschutz-System des Exo-Anzugs überwacht und stabilisiert die Umgebung des Benutzers kontinuierlich. \nDer allgemeine reaktive Schutz kann mit Umweltschilden verstärkt werden, die erhöhten Schutz gegen bestimmte Bedingungen bieten.\nDas Gerät wird mit natriumbasierten Substanzen aufgeladen. Zur Information des Anwenders: Mangelnde oder fehlerhafte Aufladung des Gefahrenschutzsystems kann dazu führen, dass die Umgebung lebensinkompatibel wird."
+  },
+  {
+    "Id": "tech2",
+    "Name": "Schildgitter",
+    "Group": "Gefahrenschutz-Upgrade",
+    "Description": "Erhöht die Grundkapazität des Gefahrenschutzsystems und ermöglicht es so dem Benutzer, sich länger in gefährlichen Umgebungen aufhalten zu können, ohne den Exo-Anzug aufladen zu müssen."
+  },
+  {
+    "Id": "tech3",
+    "Name": "Lebenserhaltung",
+    "Group": "Überlebens-Anzugsenergiepack",
+    "Description": "Der Kern des Exo-Anzugs, das Lebenserhaltungssystem, filtert und pumpt kontinuierlich Sauerstoff zum Atmen.\n\nNeben seiner Rolle bei der Lebenserhaltung des Exo-Anzug-Anwenders nutzt die Lebenserhaltungseinheit überschüssigen Sauerstoff zur Energiegewinnung für sekundäre Systeme wie z. B. das Jetpack, die Geschwindigkeitsverstärkung und die Taschenlampe."
+  },
+  {
+    "Id": "tech4",
+    "Name": "Sauerstoffwiederverwerter",
+    "Group": "Lebenserhaltungs-Upgrade",
+    "Description": "Erhöht die Grundkapazität des Lebenserhaltungssystems und ermöglicht es so dem Benutzer, länger ohne Aufladungen zu überleben."
+  },
+  {
+    "Id": "tech5",
+    "Name": "Jetpack",
+    "Group": "Luftschub-Booster",
+    "Description": "Stattet den Exo-Anzug mit erweiterten Bewegungsmöglichkeiten aus, einschließlich vorübergehender Flugfähigkeit.\n\nKontrolliere den Schub mit JUMP. Das Jetpack nutzt Energie aus dem Lebenserhaltungssystem des Exo-Anzugs, um den Benutzer mithilfe von Hochdruck-Gasstößen in die Luft zu befördern. Durch das Sammeln von deuteriumreichen Pflanzen kann das Jetpack vorübergehend überladen werden, wodurch der verfügbare Schub dramatisch erhöht wird."
+  },
+  {
+    "Id": "tech6",
+    "Name": "Neuralstimulator",
+    "Group": "Exo-Anzug-Bewegungs-Upgrade",
+    "Description": "Erhöht die Kapazität der Jetpacktanks und Adrenal-Pumpreserven des Exo-Anzugs, wodurch der Benutzer länger fliegen und sprinten kann."
+  },
+  {
+    "Id": "tech7",
+    "Name": "Raketenstiefel",
+    "Group": "Exo-Anzug-Upgrade",
+    "Description": "Rüstet das Jetpack des Exo-Anzugs mit verbesserten Sprungeigenschaften aus, wodurch der Benutzer weiter springen kann.\n\nAktiviere die Sprungsysteme, indem du schnell JUMP drückst."
+  },
+  {
+    "Id": "tech8",
+    "Name": "Kühlmittelnetzwerk",
+    "Group": "Gefahrenschutz-Einheit",
+    "Description": "Der Nutzer ist auf sengend heißen Welten gegen Schäden durch extreme Hitze geschützt.\n\nLindert intensive atmosphärische und solare Hitze mithilfe eines gefädelten Hautverteilungsnetzwerks aus flüssigem Frenium.\n\nDas Gerät wird durch Mineralien-Extraktion aus heißen Umgebungen aufgeladen. Funktioniert automatisch nach dem Bau im Exo-Anzug-Inventar des Nutzers."
+  },
+  {
+    "Id": "tech9",
+    "Name": "Wärmeschicht",
+    "Group": "Gefahrenschutz-Einheit",
+    "Description": "Der Nutzer ist auf gefrorenen Welten gegen Schäden durch extreme Kälte geschützt.\n\nDurch den Exo-Anzug des Nutzers gefädelte Wärmekapillaren verteilen flüssiges Calidium gleichmäßig, um eine angenehme Körpertemperatur zu gewährleisten.\n\nDas Gerät wird durch Mineralien-Extraktion aus eisigen Umgebungen aufgeladen. Funktioniert automatisch nach dem Bau im Exo-Anzug-Inventar des Nutzers."
+  },
+  {
+    "Id": "tech10",
+    "Name": "Toxindämpfer",
+    "Group": "Gefahrenschutz-Einheit",
+    "Description": "Der Nutzer ist gegen Giftschaden geschützt.\n\nReaktive Verbindungen im Dämpfer beseitigen giftige Flüssigkeiten, die auf den Nutzer fallen, und reduzieren somit die Gefahr und das Erstickungsrisiko.\n\nDas Gerät wird durch Mineralien-Extraktion aus giftigen Umgebungen aufgeladen. Funktioniert automatisch nach dem Bau im Exo-Anzug-Inventar des Nutzers."
+  },
+  {
+    "Id": "tech11",
+    "Name": "Strahlungsdeflektor",
+    "Group": "Gefahrenschutz-Einheit",
+    "Description": "Der Nutzer ist gegen Strahlungsschaden geschützt.\n\nSenkt das Risiko für den Nutzer bei der Erkundung von Welten mit erhöhter Strahlung erheblich. Mikrovibrationen steigern die Reflexion elektromagnetischer Wellen und verringern somit die Absorption.\n\nDas Gerät wird durch Mineralien-Extraktion aus radioaktiven Umgebungen aufgeladen. Funktioniert automatisch nach dem Bau im Exo-Anzug-Inventar des Nutzers."
+  },
+  {
+    "Id": "tech12",
+    "Name": "Belüftungsmembran",
+    "Group": "Wasseratmungshilfe",
+    "Description": "Der Nutzer kann über längere Zeiträume unter Wasser schwimmen.\n\nAbsorbiert im Wasser gelöste Gase durch eine Membranschaltvorrichtung, die – sofern der Nutzer einer herkömmlich gegliederten Spezies angehört – über dem Mund oder Atemloch im Gesicht platziert wird.\n\nFunktioniert automatisch nach dem Bau im Exo-Anzug-Inventar des Nutzers."
+  },
+  {
+    "Id": "tech13",
+    "Name": "Gefahrgut-Schutzhandschuh",
+    "Group": "Exo-Anzug-Verstärkung",
+    "Description": "Verbessert den metallischen Schild der Handschuhe des Exo-Anzugs.\n\nEine verbesserte Mischung von verstärktem Metall und Katalyseschilden erlaubt dem Benutzer den sicheren Umgang mit gefährlichen Substanzen, ebenso wie die Ausführung der bei der Ernte bestimmter anbaufähiger Pflanzen notwendigen Kraftproben."
+  },
+  {
+    "Id": "tech14",
+    "Name": "Erinnerung",
+    "Group": "Ein Relikt eines anderen Ortes",
+    "Description": "Alles, das du jemals wusstest, ist hier drin."
+  },
+  {
+    "Id": "tech15",
+    "Name": "Sternsamen",
+    "Group": "Unbezahlbares Fragment",
+    "Description": "Ein winziger Funke, aufbewahrt in einem Eindämmungsfeld unbekannter Herkunft.\n\nDer Samen pulsiert vor Leben, versessen darauf, zu entkommen und sein Potenzial auszuschöpfen."
+  },
+  {
+    "Id": "tech16",
+    "Name": "Überholte Technologie",
+    "Group": "Alte, unbrauchbare Technologie",
+    "Description": "Eine Technologie, die von einer von Atlas ausgehenden Störung beschädigt wurde.\n\nKann für brauchbare Komponenten recycelt werden."
+  },
+  {
+    "Id": "tech17",
+    "Name": "Effiziente Wasserdüsen",
+    "Group": "Jetpack-Upgrade-Einheit",
+    "Description": "Verbessern die Treibstoffeffizienz der Wasserdüsen des Jetpacks, indem der Verbrauch der Lebenserhaltungssysteme des Exo-Anzugs reduziert wird.\n\nWasserkompressoren werden in die Turbinen des Jetpacks eingebaut, um die großen Energieanforderungen der Unterwasserzündung zu umgehen."
+  },
+  {
+    "Id": "tech18",
+    "Name": "Sauerstoffumleiter",
+    "Group": "Notfall-Lebenserhaltungssystem",
+    "Description": "Verbessert die Belüftungsmembran des Exo-Anzugs, um im Falle eines Atmungsnotfalls Sauerstoff aus dem Lebenserhaltungssystem zu entnehmen, wodurch der Benutzer an die Oberfläche zurückkehren und herkömmliche Treibstoffvorräte aufsuchen kann.\n\nHinweis: Langfristige Umwandlung von Lebenserhaltungsenergie zu Gas, das eingeatmet werden kann, wird nicht empfohlen und könnte dazu führen, dass die Lebenserhaltung ihre Funktion verliert."
+  },
+  {
+    "Id": "tech19",
+    "Name": "Einfacher Übersetzer",
+    "Group": "Automatischer Sprachenanalysator",
+    "Description": "Eine automatische Übersetzungsvorrichtung. Sie zeichnet Gespräche in der Nähe auf und analysiert sie, ehe sie die Daten durch ein kontextuelles Lernsystem schickt, um die beabsichtigte Bedeutung zu bestimmen.\n\nDieses Einstiegsmodell verfügt über eine geringe Speicherkapazität, was die Übersetzungseffektivität limitiert."
+  },
+  {
+    "Id": "tech20",
+    "Name": "Verbesserter Übersetzer",
+    "Group": "Automatischer Sprachenanalysator",
+    "Description": "Eine automatische Übersetzungsvorrichtung. Sie zeichnet Gespräche in der Nähe auf und analysiert sie, ehe sie die Daten durch ein kontextuelles Lernsystem schickt, um die beabsichtigte Bedeutung zu bestimmen.\n\nParallele Sprachprozessoren ermöglichen es, einen größeren Umfang an aufgezeichneten Sprachteilen zu übersetzen."
+  },
+  {
+    "Id": "tech21",
+    "Name": "Perfektionierter Übersetzer",
+    "Group": "Automatischer Sprachenanalysator",
+    "Description": "Eine automatische Übersetzungsvorrichtung. Sie zeichnet Gespräche in der Nähe auf und analysiert sie, ehe sie die Daten durch ein kontextuelles Lernsystem schickt, um die beabsichtigte Bedeutung zu bestimmen.\n\nEin großes Speicherspektrum und übertaktete Sprachprozessoren ermöglichen Übersetzungen von großen Sprachteilen in Echtzeit."
+  },
+  {
+    "Id": "tech22",
+    "Name": "Artemis‘ Übersetzer",
+    "Group": "Automatischer Sprachenanalysator",
+    "Description": "Eine automatische Übersetzungsvorrichtung. Dieses Gerät muss kalibriert werden, indem es vorab mit existierenden Übersetzungsdaten gespeist wird. Für den Betrieb muss eine Netzwerkverbindung zu Artemis hergestellt sein.\n\nOhne Zugriff auf den Host-Übersetzungsdienst ermöglicht der Schaltkreis an Bord eine limitierte Übersetzung kleiner Wortmengen in Echtzeit."
+  },
+  {
+    "Id": "tech23",
+    "Name": "Impulsantrieb",
+    "Group": "Raumschiffsflug-Booster",
+    "Description": "Raumflug-Antrieb, Booster und bei Bedarf auch Impulssprünge durch lokale Systeme.\n \nDer Nutzer wird daran erinnert, dass zum Laden des Impulsantriebs Tritium erforderlich ist. Tritium ist in großer Menge in planetennahen Asteroidenfeldern vorhanden.\n\nZum Aktivieren des Impulssprungs ROLLLEFT und ROLLRIGHT gleichzeitig gedrückt halten.\nMit BOOST den Geschwindigkeitsschub während des Flugs aktivieren."
+  },
+  {
+    "Id": "tech24",
+    "Name": "Photonix-Kern",
+    "Group": "Impulsantrieb-Begleiteinheit",
+    "Description": "Bietet verbesserte Manövrierfähigkeit und längere Boosts bei Raumflügen."
+  },
+  {
+    "Id": "tech25",
+    "Name": "Startschubdüse",
+    "Group": "Vertikales Startsystem",
+    "Description": "Wichtige Ausrüstung zum Starten und Landen.\n \nDer Nutzer wird daran erinnert, dass zum Aufladen der Schubdüse spezieller Treibstoff aus Diwasserstoff erforderlich ist. Für die Startprozeduren sind vor der Aktivierung ausreichende Treibstoff-Levels erforderlich.\n \nZum Abheben vom Planeten THRUST gedrückt halten.\nMit BOOST den Geschwindigkeitsschub während des Flugs aktivieren."
+  },
+  {
+    "Id": "tech26",
+    "Name": "Effiziente Düsen",
+    "Group": "Raumschiff-Startsystem-Upgrade",
+    "Description": "Verbessert das Startsystem des Raumschiffs und verringert die Treibstoffkosten beim Start."
+  },
+  {
+    "Id": "tech27",
+    "Name": "Startsystemladegerät",
+    "Group": "Raumschiff-Startsystem-Upgrade",
+    "Description": "Photovoltaikmodule, die an den Startschubdüsen von Raumschiffen angebracht werden. Dadurch werden die Schubdüsen aufgeladen, wenn das Schiff nicht in Betrieb ist.\n\nGesammeltes Licht wird verwendet, um Diwasserstoff aus der Atmosphäre zu gewinnen. Damit können die Startschubdüsen automatisch wiederaufgeladen werden."
+  },
+  {
+    "Id": "tech28",
+    "Name": "Teleportempfänger",
+    "Group": "Bordteleportationsgerät",
+    "Description": "Ein Gerät, das Standard-Kommunikationssignale eines Raumschiffes umwandelt, um den Transport von Materie und Daten zu ermöglichen.\n\nRaumschiffe, die mit einem solchen Gerät ausgestattet sind, können in Verbindung mit einem Exo-Anzug Produkte und Substanzen über weite Distanzen schicken und erhalten."
+  },
+  {
+    "Id": "tech29",
+    "Name": "Hyperantrieb",
+    "Group": "Lichtgeschwindigkeit-Warp-Antrieb",
+    "Description": "Hyperlichtantrieb, der einem Raumschiff Warp-Geschwindigkeit und Sprünge zwischen benachbarten Systemen ermöglicht.\n\nEs wird empfohlen, dass der Nutzer über die Galaktische Karte auf die Hyperantrieb-Systeme zugreift."
+  },
+  {
+    "Id": "tech30",
+    "Name": "Cadmium-Antrieb",
+    "Group": "Hyperantrieb-Upgrade: Rote Systeme",
+    "Description": "Verbessert die Kernbindemagneten des Hyperantriebs, was eine schnelle Zerlegung beim Versuch, seltene rote Sternenkörper zu erreichen, verhindert.\n\nEs wird empfohlen, dass der Nutzer über die galaktische Karte auf die Hyperantrieb-Systeme zugreift."
+  },
+  {
+    "Id": "tech31",
+    "Name": "Emeril-Antrieb",
+    "Group": "Hyperantrieb-Upgrade: Grüne Systeme",
+    "Description": "Verbessert die Schildintegrität des Hyperantriebs, was Realitätsstörungen beim Versuch, seltene grüne Sternenkörper zu erreichen, verhindert.\n\nEs wird empfohlen, dass der Nutzer über die galaktische Karte auf die Hyperantrieb-Systeme zugreift."
+  },
+  {
+    "Id": "tech32",
+    "Name": "Indium-Antrieb",
+    "Group": "Hyperantrieb-Upgrade: Blaue Systeme",
+    "Description": "Verbessert die Berechnungsmatrix des Hyperantriebs, was temporale Anomalien beim Versuch, seltene blaue Sternenkörper zu erreichen, verhindert.\n\nEs wird empfohlen, dass der Nutzer über die galaktische Karte auf die Hyperantrieb-Systeme zugreift."
+  },
+  {
+    "Id": "tech33",
+    "Name": "Deflektorschild",
+    "Group": "Schutz für Raumschiffsrumpf",
+    "Description": "Dieser Energieschild schützt das Schiff vor Laserfeuer, heranfliegenden Projektilen und Zusammenstößen mit Weltraumschrott.\n\nDer Nutzer wird daran erinnert, dass zum Aufladen des Gerätes katalytische Elemente erforderlich sind.\n\nFunktioniert automatisch nach dem Bau im Raumschiff-Inventar des Nutzers."
+  },
+  {
+    "Id": "tech34",
+    "Name": "Ablative Panzerung",
+    "Group": "Raumschiffschild-Upgrade",
+    "Description": "Erweitert das Verteidigungsspektrum des Raumschiffs um Hitzeschilde, die feindliches Feuer verdampfen lassen.\n\nErhöht die Leistung des Raumschiffschilds signifikant."
+  },
+  {
+    "Id": "tech35",
+    "Name": "Raketenwerfer",
+    "Group": "Raumschiff-Projektilwaffe",
+    "Description": "Hochgradig zerstörerische Waffe, die Raumschiffe schnell zerstören kann.\n\nMit SHIPFIRE aktivieren."
+  },
+  {
+    "Id": "tech36",
+    "Name": "Große Raketenrohre",
+    "Group": "Raumschiffraketen-Upgrade",
+    "Description": "Vergrößert die Ladekammer des Raketenwerfers des Raumschiffs und verbessert dadurch die Abgasleistung, wodurch die Wärmerückgewinnung signifikant beschleunigt wird."
+  },
+  {
+    "Id": "tech37",
+    "Name": "Photonenkanone",
+    "Group": "Raumschiff-Projektilwaffe",
+    "Description": "Waffe mit großer Zerstörungskraft, die die schnelle Zerstörung anderer Schiffe ermöglicht.\n\nMit SHIPFIRE aktivieren."
+  },
+  {
+    "Id": "tech39",
+    "Name": "Wirtschaftsscanner",
+    "Group": "Fernsensor-Technologie",
+    "Description": "Ein Upgrade für die riesigen Sensoren des Raumschiffs. Mit diesem Gerät kann der Benutzer auf wirtschaftliche Daten eines Systems zugreifen, ohne es besuchen zu müssen."
+  },
+  {
+    "Id": "tech40",
+    "Name": "Konfliktscanner",
+    "Group": "Fernsensor-Technologie",
+    "Description": "Ein Upgrade für die riesigen Sensoren des Raumschiffs. Mit diesem Gerät kann der Benutzer auf Konfliktdaten der Galaxiekarte zugreifen, ohne sich selbst in Gefahr begeben zu müssen."
+  },
+  {
+    "Id": "tech41",
+    "Name": "Phasenstrahler",
+    "Group": "Raumschiff-Lasergerät",
+    "Description": "Raumfahrer-Strahlenwaffe und Asteroiden-Bergbaugerät.\n\nDer Nutzer wird daran erinnert, dass zum Aufladen des Gerätes organische Elemente erforderlich sind.\n\nMit SHIPFIRE aktivieren."
+  },
+  {
+    "Id": "tech42",
+    "Name": "Fourier-Begrenzer",
+    "Group": "Phasenstrahler-Upgrade",
+    "Description": "Rüstet den Phasenstrahler mit einem neuen, auf Nanit basierendem Schaltkreis aus, durch den sich die Grenzen der Leistungsfähigkeit eines Lasers umgehen lassen.\n\nErhöht die Hitzeableitung signifikant."
+  },
+  {
+    "Id": "tech43",
+    "Name": "Positronenwerfer",
+    "Group": "Hochenergie-Raumschiffwaffe",
+    "Description": "Die Schüsse erhalten einen breiten Zerstörungskegel.\n\nWegen der reduzierten Reichweite und Feuerrate wird dem Nutzer empfohlen, Ziele in unmittelbarer Nähe anzugreifen."
+  },
+  {
+    "Id": "tech44",
+    "Name": "Fragment-Superauflader",
+    "Group": "Raumschiff-Positronenwerfer-Upgrade",
+    "Description": "Überholt den Schussmechanismus des Positronenwerfers, wodurch die Partikel schneller und genauer abgeschossen werden können.\n\nVerbessert die Reichweite und die Genauigkeit."
+  },
+  {
+    "Id": "tech45",
+    "Name": "Inframesser-Beschleuniger",
+    "Group": "Schnellfeuer-Raumschiffwaffe",
+    "Description": "Feuert in anhaltenden, schnellen Sequenzen.\n\nDem Nutzer wird geraten, die Salven einzuschränken, da die Kanone sehr schnell überhitzen kann."
+  },
+  {
+    "Id": "tech46",
+    "Name": "Nichtlineare Optik",
+    "Group": "Photonenkanonen-Upgrade",
+    "Description": "Ersetzt die gewöhnliche Optik der Photonenkanone durch eine experimentelle Glasanordnung und verbessert dadurch die Leistung im Kampf.\n\nErhöht die Wärmeableiterkapazität signifikant."
+  },
+  {
+    "Id": "tech47",
+    "Name": "Zyklotron-Balliste",
+    "Group": "Raumschiffwaffe ohne Zielsuchfunktion",
+    "Description": "Feuert eine große, konzentrierte Kugel aufgeladener Partikel auf ein frontales Ziel und verursacht schweren Schaden. Die Salve besitzt keine Zielsuchfunktion und folgt ihrer Flugbahn, bis sie auf ein Hindernis trifft."
+  },
+  {
+    "Id": "tech48",
+    "Name": "Dysonpumpe",
+    "Group": "Raumschiff-Zyklotron-Upgrade",
+    "Description": "Ersetzt den Wärmeableiter der Zyklotron-Balliste, indem die gesamte Einheit mit einer hitzeabsorbierenden Megastruktur umgeben wird. Die abgegebene Wärme wird wiederverwendet, um die Kampfeffizienz zu erhöhen.\n\nErhöht die Hitzeableitung signifikant."
+  },
+  {
+    "Id": "tech49",
+    "Name": "Frachter-Hyperantrieb",
+    "Group": "Lichtgeschwindigkeit-Warp-Antrieb",
+    "Description": "Hyperlichtantrieb, der einem Raumschiff Warp-Geschwindigkeit und Sprünge zwischen benachbarten Systemen ermöglicht."
+  },
+  {
+    "Id": "tech56",
+    "Name": "Rumpfbruch",
+    "Group": "Beschädigte Raumschiffkomponente",
+    "Description": "Raumschiff-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht zur Lagerung oder für Technologie genutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech57",
+    "Name": "Verrostete Schaltkreise",
+    "Group": "Beschädigte Raumschiffkomponente",
+    "Description": "Raumschiff-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht zur Lagerung oder für Technologie genutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech58",
+    "Name": "Geborstenes Bollwerk",
+    "Group": "Beschädigte Raumschiffkomponente",
+    "Description": "Raumschiff-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht zur Lagerung oder für Technologie genutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech59",
+    "Name": "Strahlungsleck",
+    "Group": "Beschädigte Raumschiffkomponente",
+    "Description": "Raumschiff-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht zur Lagerung oder für Technologie genutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech60",
+    "Name": "Versagen des Sicherheitssystems",
+    "Group": "Beschädigte Raumschiffkomponente",
+    "Description": "Raumschiff-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht zur Lagerung oder für Technologie genutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech61",
+    "Name": "Beschädigte Getriebe",
+    "Group": "Beschädigte Raumschiffkomponente",
+    "Description": "Raumschiff-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht zur Lagerung oder für Technologie genutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech62",
+    "Name": "Analysevisier",
+    "Group": "Binokularer Marker",
+    "Description": "Spezielle Entdeckungs- und Untersuchungs-Einheit.\n\nErhöht die Leistung des Standard-Scanners durch Projektion von detaillierten Umgebungsdaten direkt auf das Sichtfeld des Benutzers. Ermöglicht die Identifikation von interessanten Orten aus der Distanz.\n\nDas Helmvisier generiert beim Studium von Pflanzen, Tieren und Mineralien wertvolle Daten.\n\nZur Bedienung AIM gedrückt halten. Zum Zoomen ZOOM drücken."
+  },
+  {
+    "Id": "tech63",
+    "Name": "Scanner",
+    "Group": "Topografisches Gutachten",
+    "Description": "Eine Verstärkung des eigenen Oberflächenradars für das Multiwerkzeug. \n\nDer Scanner setzt einen hochenergetischen Puls frei, der lebenswichtige Ressourcen in der direkten Umgebung anzeigt. Die Daten werden über den Exo-Anzug direkt in das visuelle Nervensystem des Benutzers übertragen.\n \nLokalen Scan mit SCAN aktivieren."
+  },
+  {
+    "Id": "tech64",
+    "Name": "Wellenformwiederverwerter",
+    "Group": "Multiwerkzeug-Upgrade",
+    "Description": "Ein leistungsstarker Prozessor, der in das Scan-System des Multiwerkzeugs eingebaut wird, damit sich das Gerät signifikant schneller auflädt.\n\nErweitert die potenzielle Scan-Frequenz."
+  },
+  {
+    "Id": "tech65",
+    "Name": "Untersuchungsgerät",
+    "Group": "Analysevisier-Upgrade",
+    "Description": "Ein unabhängiges Schaltkreis-Upgrade für das Analysevisier, das die Scan-Vorrichtung um eine Echtzeitanalyse des Terrains erweitert.\n\nWechsle mit SURVEYFILTERL/SURVEYFILTERR zwischen den Visiermodi. Verwende den Untersuchungsmodus, um nach versteckten Ressourcen im Terrain zu suchen."
+  },
+  {
+    "Id": "tech66",
+    "Name": "Terrainmanipulator",
+    "Group": "Werkzeug zur Landschaftsverformung",
+    "Description": "Fortgeschrittenes Terraforming-Gerät. Dieses Modul überlädt vorhandene Multiwerkzeug-Systeme und ermöglicht es dem Benutzer, die Regionen nach seinen Vorstellungen umzugestalten.\n\nGeladen mit metallischen Elementen."
+  },
+  {
+    "Id": "tech67",
+    "Name": "Eigenes Kraftfeld",
+    "Group": "Defensive Schildtechnologie",
+    "Description": "Bei Aktivierung bezieht dieses Modul Energie von Exo-Anzug-Lebenserhaltungs-Systemen. Dabei wird das Multiwerkzeug überladen, das elektromagnetische Feld um den Benutzer gestört und ein starker eigener Schild aufgebaut.\n\nObwohl dieser Schild wirksam vor Laserfeuer schützt, sollte der Benutzer daran denken, dass das Multiwerkzeug für keine anderen Funktionen zur Verfügung steht, solange es den Schild mit Energie speist."
+  },
+  {
+    "Id": "tech68",
+    "Name": "Kampfvisier",
+    "Group": "Waffen-Präzisionsverbesserung",
+    "Description": "Ein stabilisierendes Waffenvisier für präzise Kampfhandlungen."
+  },
+  {
+    "Id": "tech69",
+    "Name": "Minenlaser",
+    "Group": "Mineralien-Extraktionslaser",
+    "Description": "Multiwerkzeug-Minenlaser, angetrieben von kohlenstoffbasierten Elementen. Feuere den Laser mit ATTACK ab. Eine Fokussierungsoptik im Multiwerkzeug, ermöglicht einen hochenergetischen Strahl. Der Laser stimuliert Moleküle in gewöhnlichen organischen oder geologischen Objekten und kann so als Bergbaugerät eingesetzt werden.\nWARNUNG: Zerstörung der Pflanzen, Tiere oder Mineralien kann die Aufmerksamkeit der Wächter erregen."
+  },
+  {
+    "Id": "tech70",
+    "Name": "Fortgeschrittener Minenlaser",
+    "Group": "Minenlaser-Begleiteinheit",
+    "Description": "Ersetzt die Optik des Standard-Minenlasers durch hochwertiges lebendes Glas, wodurch der Strahl besonders effektiv gegen große und/oder seltene Ressourcenansammlungen wird.\n\nDie Linse passt sich automatisch an minimale Fluktuationen in der Wellenform des Strahls an, minimiert die Streuung und steigert das Abbaupotenzial des Gerätes."
+  },
+  {
+    "Id": "tech71",
+    "Name": "Optischer Bohrer",
+    "Group": "Materialertragsverstärker",
+    "Description": "Hauchdünne Linsen werden in einer genau kalibrierten Matrix angeordnet, um den Minenlaser auf atomarer Ebene zu bündeln.\n\nDie zusätzliche Präzision ermöglicht hocheffizienten Abbau. Die Elemente werden effizienter extrahiert, wodurch sich der Ertrag von Gegenständen erhöht, die mit dem Multiwerkzeug gesammelt werden."
+  },
+  {
+    "Id": "tech72",
+    "Name": "Blitzwerfer",
+    "Group": "Energie-Projektilwaffe",
+    "Description": "Allzweck-Waffenaufsatz für das Multiwerkzeug. Mit CYCLEWEAPON zum Feuermodus wechseln und mit ATTACK Waffe abfeuern.\n\nDer Blitzwerfer konfiguriert das Multiwerkzeug so, dass metallische Elemente stark aufgeladen und als Hochgeschwindigkeitsprojektile abgefeuert werden, die extremen Schaden bewirken."
+  },
+  {
+    "Id": "tech73",
+    "Name": "Laufionisator",
+    "Group": "Blitzwerfer-Upgrade",
+    "Description": "Erweitert den Blitzwerfer um ein leistungsstarkes Feldionisierungsgerät, durch das die Stabilität der Projektile in der Luft erhöht wird.\n\nVerbessert die Genauigkeit des Geräts und ermöglicht es dem Benutzer, länger feuern zu können, ohne dabei Einbußen bei der Leistung hinnehmen zu müssen."
+  },
+  {
+    "Id": "tech74",
+    "Name": "Blitzwerfer SM",
+    "Group": "Blitzwerfer-Begleiteinheit",
+    "Description": "Schüsse des Blitzwerfers verursachen beim Einschlag zusätzlichen physischen Schaden.\n\nVerleiht den ionisierten Plasmaschüssen des Nutzers zusätzliche kinetische Energie.\n\nFunktioniert automatisch nach dem Bau im Multiwerkzeug-Inventar des Nutzers."
+  },
+  {
+    "Id": "tech75",
+    "Name": "Strahl-Kühlmittelsystem Sigma",
+    "Group": "Bergbaustrahl-Upgrade",
+    "Description": "Ein signifikantes Upgrade für den Minenlaser.\n\nFügt der Hauptkristallkammer des Minenlasers zusätzliche Reflexionselemente hinzu, wodurch die Laserenergie verstärkt und ungewollter Wärmeverlust verhindert wird."
+  },
+  {
+    "Id": "tech76",
+    "Name": "Plasmawerfer",
+    "Group": "Explosive Granaten",
+    "Description": "Wirkungsvolle Projektilwaffe. Abgefeuerte Plasmageschosse prallen von Oberflächen ab, bis ihr interner Timer eine große Explosion auslöst.\n \nBenutzt Instabiles Plasma. Achtloser Gebrauch kann Schaden beim Nutzer nach sich ziehen.\n \nMit ALTATTACK aktivieren."
+  },
+  {
+    "Id": "tech77",
+    "Name": "Geologiekanone",
+    "Group": "Terrainzerstörungsgerät",
+    "Description": "Großkolben-Projektilwerfer. Feuert Plasmageschosse für die schnelle Bodenausgrabung ab.\n \nGeladen mit instabilem Plasma. Warnung: Die Locherzeugung durch Sprengstoff kann auch organische Materie in der Nähe beschädigen.\n \nMit ALTATTACK aktivieren."
+  },
+  {
+    "Id": "tech78",
+    "Name": "Glutspeer",
+    "Group": "Energiestrahlwaffe",
+    "Description": "Aggressiver Waffenaufsatz für das Multiwerkzeug. Mit CYCLEWEAPON zum Feuermodus wechseln und mit ATTACK Waffe abfeuern.\n\nDer Glutspeer fügt Zielen sofortigen Schaden zu.\n\nDer Plasma-Ladevorgang erzeugt einen Bogen aus ionisiertem Gas, der Projektile mit großer Geschwindigkeit antreibt. Der Nutzer kann simultan mit dem Betätigen des Auslösers das Ergebnis der Zerstörung beobachten."
+  },
+  {
+    "Id": "tech79",
+    "Name": "Massebeschleuniger",
+    "Group": "Glutspeer-Upgrade",
+    "Description": "Vergrößert die Patronenkammer des Glutspeers, wodurch die internen Partikelbeschleuniger eine größere Masse und eine höhere Geschwindigkeit erreichen können.\n\nErhöht den Waffenschaden signifikant."
+  },
+  {
+    "Id": "tech80",
+    "Name": "Streublaster",
+    "Group": "Streuschuss-Projektilwaffe",
+    "Description": "Spezieller Nahkampf-Waffenaufsatz für das Multiwerkzeug. Mit CYCLEWEAPON zum Feuermodus wechseln und mit ATTACK Waffe abfeuern.\n\nDer Streublaster konfiguriert das Multiwerkzeug so, dass metallische Elemente erhitzt, zerschmettert und in einem breiten Zerstörungskegel abgefeuert werden. Die Reichweite ist begrenzt, doch auf kurze Distanz ist das Schrapnell hocheffektiv."
+  },
+  {
+    "Id": "tech81",
+    "Name": "Geschossschmierer",
+    "Group": "Streublaster-Upgrade",
+    "Description": "Fortgeschrittene selbstschmierende Komponenten verringern die Reibung innerhalb des Streublasters, wodurch die Nachladezeit signifikant verkürzt wird."
+  },
+  {
+    "Id": "tech82",
+    "Name": "Impulswerfer",
+    "Group": "Schnellfeuer-Projektilwaffe",
+    "Description": "Spezieller Schnellfeuer-Waffenaufsatz für das Multiwerkzeug. Mit CYCLEWEAPON zum Feuermodus wechseln und mit ATTACK Waffe abfeuern.\n\nDer Impulswerfer leitet die Optik des Multiwerkzeugs so um, dass eingefügte metallische Elemente ionisiert werden. Diese Projektile werden im Schnellfeuer abgefeuert und bombardieren potenzielle Ziele mit einer Welle aus hochenergetischem Plasma."
+  },
+  {
+    "Id": "tech83",
+    "Name": "Verstärkte Kartuschen",
+    "Group": "Impulswerfer-Upgrade",
+    "Description": "Spezielle Oberwellen-Resonatoren ermöglichen es dem Impulswerfer, die eingeführte Munition zu teilen, wodurch mit weniger Materialien mehr Schüsse abgefeuert werden können.\n\nErhöht die Größe des Waffenmagazins."
+  },
+  {
+    "Id": "tech84",
+    "Name": "Kurzer Schaltkreis",
+    "Group": "Beschädigte Multiwerkzeug-Komponente",
+    "Description": "Multiwerkzeug-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht benutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech85",
+    "Name": "Durchgebrannter Transistor",
+    "Group": "Beschädigte Multiwerkzeug-Komponente",
+    "Description": "Multiwerkzeug-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht benutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech86",
+    "Name": "Beschädigte Verkabelung",
+    "Group": "Beschädigte Multiwerkzeug-Komponente",
+    "Description": "Multiwerkzeug-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht benutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech87",
+    "Name": "Verrosteter Energiekern",
+    "Group": "Beschädigte Multiwerkzeug-Komponente",
+    "Description": "Multiwerkzeug-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht benutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech88",
+    "Name": "Beschädigtes Modul",
+    "Group": "Beschädigte Multiwerkzeug-Komponente",
+    "Description": "Multiwerkzeug-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht benutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech89",
+    "Name": "Kabelstrangschaden",
+    "Group": "Beschädigte Multiwerkzeug-Komponente",
+    "Description": "Multiwerkzeug-Teilsystem kritisch beschädigt.\n\nPlatz kann nicht benutzt werden, bis der Schaden repariert ist. Verwende REPAIR, um den Reparaturprozess zu starten.\n\nDurch die Reparatur wird ein Platz für den allgemeinen Gebrauch frei."
+  },
+  {
+    "Id": "tech90",
+    "Name": "Fusionsantrieb",
+    "Group": "Exo-Fahrzeug-Energiesystem",
+    "Description": "Ein kompakter, für alle Exo-Fahrzeuge üblicher Fusionskern.\n\nBenötigt Treibstoff."
+  },
+  {
+    "Id": "tech91",
+    "Name": "Drift-Aufhängung",
+    "Group": "Exo-Fahrzeug-Handhabungsmodifikation",
+    "Description": "Überholt die Handhabung des Exo-Fahrzeugs durch eine Kombination aus Software-Optimierungen, Druckanpassungen und dem Einbau von Mikrogravitationsbetten in Hauptbestandteile der Aufhängung.\n\nSpeziell darauf abgestimmt, die Drift-Fähigkeit des Exo-Fahrzeugs zu verbessern."
+  },
+  {
+    "Id": "tech92",
+    "Name": "Haftungsverstärkungsaufhängung",
+    "Group": "Exo-Fahrzeug-Handhabungsmodifikation",
+    "Description": "Überholt die Handhabung des Exo-Fahrzeugs durch eine Kombination aus Software-Optimierungen, Druckanpassungen und dem Einbau von Mikrogravitationsbetten in Hauptbestandteile der Aufhängung.\n\nSpeziell darauf abgestimmt, die Kurven-Fähigkeit des Exo-Fahrzeugs zu verbessern."
+  },
+  {
+    "Id": "tech93",
+    "Name": "Rutsch-Aufhängung",
+    "Group": "Exo-Fahrzeug-Handhabungsmodifikation",
+    "Description": "Überholt die Handhabung des Exo-Fahrzeugs durch eine Kombination aus Software-Optimierungen, Druckanpassungen und dem Einbau von Mikrogravitationsbetten in Hauptbestandteile der Aufhängung.\n\nSpeziell darauf abgestimmt, die Rutsch-Fähigkeit des Exo-Fahrzeugs zu verbessern."
+  },
+  {
+    "Id": "tech94",
+    "Name": "Exo-Fahrzeug-Signalbooster",
+    "Group": "Exo-Fahrzeug-Scanausrüstung",
+    "Description": "Ein großer und komplexer Subraum-Radar für den Feldeinsatz.\n\nAufgrund ihres hohen Energiekonsums und der zugehörigen subatomaren Instabilität sind sie nur in Exo-Fahrzeugen zu finden.\n\nDrücke QUICK_MENU um den Signalbooster zu aktivieren."
+  },
+  {
+    "Id": "tech95",
+    "Name": "Exo-Fahrzeug-Signalbooster-Upgrade Sigma",
+    "Group": "Exo-Fahrzeug-Signalbooster-Upgrade",
+    "Description": "Ermöglicht zusätzliche Gebäudetypen, die vom Exo-Fahrzeug-Signalbooster erfasst werden können."
+  },
+  {
+    "Id": "tech96",
+    "Name": "Exo-Fahrzeug-Signalbooster-Upgrade Tau",
+    "Group": "Exo-Fahrzeug-Signalbooster-Upgrade",
+    "Description": "Ermöglicht zusätzliche Gebäudetypen, die vom Exo-Fahrzeug-Signalbooster erfasst werden können."
+  },
+  {
+    "Id": "tech97",
+    "Name": "Exo-Fahrzeug-Beschleunigungsmodul",
+    "Group": "Exo-Fahrzeug-Antriebs-Upgrade",
+    "Description": "Ein effizienter Plasmainjektor, der an den Antrieb gekoppelt ist und kurze Geschwindigkeitsschübe ermöglicht."
+  },
+  {
+    "Id": "tech98",
+    "Name": "Exo-Fahrzeug-Minenlaser",
+    "Group": "Exo-Fahrzeug-Bergbauaufsatz",
+    "Description": "Ein Minenlaser, der für den Handbetrieb zu unhandlich ist und deshalb nur an Exo-Fahrzeugen angebracht zu finden ist."
+  },
+  {
+    "Id": "tech99",
+    "Name": "Exo-Fahrzeug-Minenlaser-Upgrade Sigma",
+    "Group": "Exo-Fahrzeug-Bergbau-Upgrade",
+    "Description": "Erhöht die Energie des Exo-Fahrzeug-Minenlasers."
+  },
+  {
+    "Id": "tech100",
+    "Name": "Exo-Fahrzeug-Bordkanone",
+    "Group": "Exo-Fahrzeug-Waffenaufsatz",
+    "Description": "Durch den hohen Energiebedarf dieser mächtigen Waffe muss sie zum Abfeuern an einem Exo-Fahrzeug montiert sein."
+  },
+  {
+    "Id": "tech101",
+    "Name": "Humboldt-Antrieb",
+    "Group": "Exo-Fahrzeug-Energiesystem",
+    "Description": "Ein wärmeeffizienter, umkehrungssicherer Reaktormotor, der die Nautilon selbst in extremen Tiefen antreiben kann.\n\nAngetrieben durch Hydrothermale Treibstoffzellen."
+  },
+  {
+    "Id": "tech102",
+    "Name": "Nautilon-Kanone",
+    "Group": "U-Boot-Waffe",
+    "Description": "Eine Bordkanone, die speziell für das Nautilon-U-Boot entwickelt wurde.\n\nDas Waffensystem verwendet leistungsstarke Energie, um kleine Wassermengen zu überhitzen und in Richtung des vorgesehenen Ziels zu feuern.\n\nSie wurde insbesondere für den Kampf gegen biologische Entitäten entwickelt und erweist sich beim Einsatz als Bergbaugerät als nicht effektiv."
+  },
+  {
+    "Id": "tech103",
+    "Name": "Tethys-Strahl",
+    "Group": "U-Boot-Minenlaser",
+    "Description": "Ein Bord-Lasersystem, das speziell für das Nautilon-U-Boot entwickelt wurde.\n\nFeuert einen konzentrierten Plasmastrahl auf das vorgesehene Ziel, welches dadurch in Brand gesteckt wird. Dieser Auslösermechanismus ermöglicht den Einsatz von hochenergetischen, optischen Abbausystemen in einem flüssigen Medium."
+  },
+  {
+    "Id": "tech104",
+    "Name": "Hochleistungssonar",
+    "Group": "U-Boot-Analysegerät",
+    "Description": "Ein detailgenaues Sonargerät, mit dem die Scanner-Technologie an Bord eines U-Boots der Nautilon-Klasse auf Analysevisier-Niveau verbessert werden kann.\nDrücke SCAN, um das Hochleistungssonar zu aktivieren."
+  },
+  {
+    "Id": "tech105",
+    "Name": "Osmotischer Generator",
+    "Group": "Humboldt-Antrieb-Upgrade",
+    "Description": "Wird im Antriebssystem an Bord des Nautilon-U-Boots installiert.\n\nGewinnt Energie, indem er den steigenden Salzgehalt in der Tiefsee nutzt, wodurch sich der Humboldt-Antrieb im Falle eines Treibstoffnotfalls langsam wieder auffüllen kann."
+  },
+  {
+    "Id": "tech106",
+    "Name": "Schließmechanismus",
+    "Group": "Beschädigte Komponente",
+    "Description": "Eine einfache Sperrvorrichtung, die unbefugte Diebe fernhält. Aufgrund des Schadens ist sie dauerhaft verschlossen."
+  },
+  {
+    "Id": "tech107",
+    "Name": "Magnetschloss",
+    "Group": "Beschädigte Komponente",
+    "Description": "Eine fortgeschrittene Sperrvorrichtung. Aufgrund eines Polungsproblems ist sie permanent verschlossen."
+  },
+  {
+    "Id": "tech108",
+    "Name": "Supraleitendes Schloss",
+    "Group": "Beschädigte Komponente",
+    "Description": "Eine äußerst fortschrittliche Sperrvorrichtung. Aufgrund der beschädigten Schaltkreise des Magneten lässt sie sich nicht mehr öffnen."
+  },
+  {
+    "Id": "tech109",
+    "Name": "Eingabeterminal",
+    "Group": "Beschädigte Komponente",
+    "Description": "Ein Terminal für die manuelle Steuerung der Vorrichtung. Es kann keine Eingabe verarbeiten, da es beschädigt ist."
+  },
+  {
+    "Id": "tech110",
+    "Name": "Bio-Eingabesensor",
+    "Group": "Beschädigte Komponente",
+    "Description": "Eine fortgeschrittene Kontrolleinheit für die Interaktion von Gerät/Fleisch. Sie ist leider kaputt. Es wäre unklug, sie in diesem Zustand zu bedienen."
+  },
+  {
+    "Id": "tech111",
+    "Name": "Boilereinheit",
+    "Group": "Beschädigte Komponente",
+    "Description": "Ein kleiner Boiler, der Hitze erzeugt, damit das Gerät in problematischen Klimata funktioniert. Aufgrund eines Fehlers ist der Boiler beschädigt."
+  },
+  {
+    "Id": "tech112",
+    "Name": "Winziger Motor",
+    "Group": "Beschädigte Komponente",
+    "Description": "Ein sehr kleiner Motor, der sehr kleine Teile antreibt. Er ist verätzt und voll mit winzigen Rostflecken."
+  },
+  {
+    "Id": "tech113",
+    "Name": "Kühlungssystem",
+    "Group": "Beschädigte Komponente",
+    "Description": "Ein Kühlsystem mit einer Pumpe für die Kühlung des Gerätes. Leider ist das System selbst überhitzt und funktioniert nicht mehr."
+  },
+  {
+    "Id": "tech114",
+    "Name": "Ausgabebildschirm",
+    "Group": "Beschädigte Komponente",
+    "Description": "Ein Anzeigeterminal, um dem Benutzer den Gerätestatus mitzuteilen. Da das Terminal kaputt ist, kann es dem Benutzer nicht mitteilen, dass es kaputt ist."
+  },
+  {
+    "Id": "tech115",
+    "Name": "Manipulationspräventionsgerät",
+    "Group": "Beschädigte Komponente",
+    "Description": "Eine Einheit, die wichtige Systeme zerstört, sollte eine unbefugte Partei das Gerät sabotieren wollen. Leider hat die Einheit selbst eine Fehlfunktion, weshalb sie andere Systeme beschädigen wird, bis sie repariert ist."
+  },
+  {
+    "Id": "tech116",
+    "Name": "Sicherheitsalarm",
+    "Group": "Beschädigte Komponente",
+    "Description": "Ein kleiner Lichthupenhybrid, der vor unbefugtem Gerätezugriff warnen soll. Der Alarm ist beschädigt und sorgt dafür, dass andere Stromkreise überladen werden."
+  },
+  {
+    "Id": "tech117",
+    "Name": "Federgehäuse",
+    "Group": "Beschädigte Komponente",
+    "Description": "Das Gehäuse einer stark komprimierten Feder. Es hatte einen Riss, weshalb die Feder förmlich herausgeschossen ist und den Rest des Gerätes beschädigt hat."
+  },
+  {
+    "Id": "tech118",
+    "Name": "Thermoregler",
+    "Group": "Beschädigte Komponente",
+    "Description": "Eine Kontrolleinheit für die Temperaturregelung des Gerätes. Der Sensor ist beschädigt, weshalb die Einheit zu falschen Zeiten kühlt und heizt."
+  },
+  {
+    "Id": "tech119",
+    "Name": "Treibstoffpumpe",
+    "Group": "Beschädigte Komponente",
+    "Description": "Eine Großraumpumpe, die das Gerät mit Treibstoff unter allen Gravitationsbedingungen versorgen kann. Der Filter wird von einer seltsamen Substanz verstopft, weshalb sie an Energie verliert."
+  },
+  {
+    "Id": "tech120",
+    "Name": "Servoarm",
+    "Group": "Beschädigte Komponente",
+    "Description": "Ein kleines mechanisches Gelenk für die Reparatur kleiner mechanischer Fehler im Gerät. Aufgrund eines Fehlers platziert das Gelenk funktionierende Bauteile falsch, weshalb noch mehr Schaden entsteht."
+  },
+  {
+    "Id": "tech121",
+    "Name": "Magnetspule",
+    "Group": "Beschädigte Komponente",
+    "Description": "Ein Relaisschalter, der beim Einschalten des Gerätes hilft. Die Verbindungen sind verätzt und die Magnetspule funktioniert nicht mehr."
+  },
+  {
+    "Id": "tech122",
+    "Name": "Druckkammer",
+    "Group": "Beschädigte Komponente",
+    "Description": "Eine kleine Druckkammer für die Herstellung von komprimiertem Gas, das das Funktionieren des Gerätes garantiert. Die Kammer hat Risse, weshalb Gas austritt."
+  },
+  {
+    "Id": "tech123",
+    "Name": "Hauptschaltkreis",
+    "Group": "Beschädigte Komponente",
+    "Description": "Der Kontrollschaltkreis für alle anderen Bauteile des Gerätes. Schaden an diesem Schaltkreis hat fatale Folgen."
+  },
+  {
+    "Id": "tech124",
+    "Name": "Stromverteiler",
+    "Group": "Beschädigte Komponente",
+    "Description": "Die zentrale Energieeinheit dieses Gerätes. Aufgrund des Schadens leitet diese Einheit alle Energie auf einen bestimmten Schaltkreis um, was für einen gefährlichen Kurzschluss sorgt."
+  },
+  {
+    "Id": "tech125",
+    "Name": "Ladungsausgleicher",
+    "Group": "Beschädigte Komponente",
+    "Description": "Eine kleine Einheit für die Regulierung des Energieflusses im Gerät. Ein Fehler führte zu einem Kurzschluss, der andere Bauteile beschädigt."
+  },
+  {
+    "Id": "tech126",
+    "Name": "Netzwerkinterface",
+    "Group": "Beschädigte Komponente",
+    "Description": "Ein universelles Netzwerkinterface, über das sich das Gerät mit einem entfernten Kontrollzentrum verbinden kann. Das Interface wurde beschädigt und interpretiert die Strahlung im Hintergrund als Netzwerksignale, weshalb die Daten in anderen Schaltkreisen fehlerhaft sind."
+  },
+  {
+    "Id": "tech127",
+    "Name": "Sicherheitssteuerung",
+    "Group": "Beschädigte Komponente",
+    "Description": "Die Sicherheitssteuerung schottet im Fall einer Fehlfunktion gefährliche Bauteile ab. Ein überempfindlicher Auslöser hat die Abschottung aktiviert, weshalb das Gerät nicht betriebsbereit ist."
+  },
+  {
+    "Id": "tech128",
+    "Name": "Wechselstromgenerator",
+    "Group": "Beschädigte Komponente",
+    "Description": "Der Wechselstromgenerator reguliert und generiert die Energie des Gerätes. Aufgrund einer seltsamen Korrosion funktioniert das Gerät nicht richtig."
+  },
+  {
+    "Id": "tech129",
+    "Name": "Photovoltaikmodul",
+    "Group": "Beschädigte Komponente",
+    "Description": "Ein kleines, aber effizientes Paneel, das Licht in Energie umwandelt. Es ist leider beschädigt und leistet keine zuverlässigen Dienste mehr."
+  },
+  {
+    "Id": "tech130",
+    "Name": "Getriebegehäuse",
+    "Group": "Beschädigte Komponente",
+    "Description": "Der Getriebemechanismus des Gerätes. Das Schmiermittel, das für die Funktionstüchtigkeit des Gerätes sorgt, scheint mit einem grünen Schleim aus einer anderen Welt ausgetauscht worden zu sein. Das Getriebe steckt fest."
+  },
+  {
+    "Id": "tech131",
+    "Name": "Uraltes Schloss",
+    "Group": "Schwerer Schließmechanismus",
+    "Description": "Ein geheimnisvolles Schloss mit mehreren Schlüssellöchern. Dieses Relikt hütet mit Sicherheit einen wertvollen Schatz."
+  },
+  {
+    "Id": "tech132",
+    "Name": "Perlendarbringung",
+    "Group": "Darbringung an das Meer",
+    "Description": "Die Truhe erfordert eine lebende Perle, die man von riesigen Muttermollusken ernten kann, die auf dem Meeresboden wachsen."
+  },
+  {
+    "Id": "tech133",
+    "Name": "Beschädigte Elektrode",
+    "Group": "Beschädigte Komponente",
+    "Description": "Dieses Exo-Anzug-Upgrade-Modul ist kritisch beschädigt. Repariere die Systeme, um die Upgrade-Funktionalität wiederherzustellen.\n\nNach der Reparatur muss der Benutzer für jegliche Exo-Anzug-Upgrades nichts bezahlen."
+  },
+  {
+    "Id": "tech134",
+    "Name": "Geborstener Energiekern",
+    "Group": "Beschädigte Komponente",
+    "Description": "Dieses Exo-Anzug-Upgrade-Modul ist kritisch beschädigt. Repariere die Systeme, um die Upgrade-Funktionalität wiederherzustellen.\n\nNach der Reparatur muss der Benutzer für jegliche Exo-Anzug-Upgrades nichts bezahlen."
+  },
+  {
+    "Id": "tech135",
+    "Name": "Defektes Hologramm",
+    "Group": "Beschädigte Komponente",
+    "Description": "Dieses Exo-Anzug-Upgrade-Modul ist kritisch beschädigt. Repariere die Systeme, um die Upgrade-Funktionalität wiederherzustellen.\n\nNach der Reparatur muss der Benutzer für jegliche Exo-Anzug-Upgrades nichts bezahlen."
+  },
+  {
+    "Id": "tech136",
+    "Name": "Warpkernresonator",
+    "Group": "Hyperantrieb-Begleiteinheit",
+    "Description": "Eine Verstärkung für den riesigen Hyperantrieb eines interstellaren Frachters.\n\nDie Quanten-Resonanz verbessert die Robustheit des Antriebs während des Reisens mit Hyperlichtgeschwindigkeit und bietet dem Nutzer die Möglichkeit, zu Sternen zu springen, die bislang außerhalb seiner Reichweite lagen."
+  },
+  {
+    "Id": "tech137",
+    "Name": "Plasma-Warpinjektor",
+    "Group": "Hyperantrieb-Begleiteinheit",
+    "Description": "Eine Verstärkung für den riesigen Hyperantrieb eines interstellaren Frachters.\n\nDer Hyperantrieb profitiert von hochentwickelter Fusionstechnologie, die dem Raumschiff höhere Warp-Geschwindigkeiten und -Intensitäten ermöglicht. Das Schiff des Nutzers kann tiefer in den Weltraum springen und weiter entfernte Planetensysteme anfliegen."
+  },
+  {
+    "Id": "tech138",
+    "Name": "Realitätsentwirrer",
+    "Group": "Hyperantrieb-Begleiteinheit",
+    "Description": "Eine Verstärkung für den riesigen Hyperantrieb eines interstellaren Frachters.\n\nUngedrosselte, aber stabilisierte Fusionssysteme werden in den Hyperantrieb des Nutzers integriert. Ermöglicht dem Raumschiff noch weitere Sprungdistanzen in die Tiefen des Weltraums."
+  },
+  {
+    "Id": "tech139",
+    "Name": "Verstärkter Warp-Schild",
+    "Group": "Hyperantrieb-Upgrade: Rote Systeme",
+    "Description": "Verbessert die Kernbindemagneten des Hyperantriebs, was eine schnelle Zerlegung beim Versuch, seltene rote Sternenkörper zu erreichen, verhindert.\n\nEs wird empfohlen, dass der Nutzer über die galaktische Karte auf die Hyperantrieb-Systeme zugreift."
+  },
+  {
+    "Id": "tech140",
+    "Name": "Chromatischer Warp-Schild",
+    "Group": "Hyperantrieb-Upgrade: Grüne Systeme",
+    "Description": "Verbessert die Schildintegrität des Hyperantriebs, was Realitätsstörungen beim Versuch, seltene grüne Sternenkörper zu erreichen, verhindert.\n\nEs wird empfohlen, dass der Nutzer über die galaktische Karte auf die Hyperantrieb-Systeme zugreift."
+  },
+  {
+    "Id": "tech141",
+    "Name": "Temporaler Warp-Computer",
+    "Group": "Hyperantrieb-Upgrade: Blaue Systeme",
+    "Description": "Verbessert die Berechnungsmatrix des Hyperantriebs, was temporale Anomalien beim Versuch, seltene blaue Sternenkörper zu erreichen, verhindert.\n\nEs wird empfohlen, dass der Nutzer über die galaktische Karte auf die Hyperantrieb-Systeme zugreift."
+  }
+]

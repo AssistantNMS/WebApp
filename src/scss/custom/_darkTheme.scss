@@ -1,0 +1,60 @@
+$card-background-color-dark: rgba(255, 255, 255, 0.2);
+
+#app.isDark {
+
+    color: $body-color-dark;
+    background-color: $brand-primary-background-dark;
+
+    .main-panel {
+        #navbar.navbar {
+            background-color: $brand-primary-dark;
+            color: white;
+        }
+
+        .content {
+            background-color: $brand-primary-background-dark;
+        }
+
+        // .game-item {
+        //     background-color: #131313;
+
+        //     .text-container p {
+        //         color: white;
+        //     }
+        // }
+
+        .card,
+        .catalogue-item {
+            background-color: $card-background-color-dark;
+
+            a,
+            p,
+            span {
+                color: $body-color-dark;
+            }
+        }
+
+        hr {
+            background-color: $gray-600;
+        }
+
+        .chip {
+            &.default {
+                background-color: $gray-600;
+                color: white;
+            }
+        }
+    }
+
+    .sidebar {
+        background: $brand-primary-background-dark;
+
+        a.nav-link {
+            color: white;
+        }
+
+        li.active>a {
+            background-color: $brand-primary-dark;
+        }
+    }
+}

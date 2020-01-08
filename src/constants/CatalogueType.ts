@@ -1,0 +1,12 @@
+export enum CatalogueType {
+  rawMaterials = 'RawMaterials',
+  craftedProducts = 'Products',
+  tradeItems = 'TradeItems',
+  buildings = 'Buildings',
+  curiosity = 'Curiosity',
+  cooking = 'Cooking',
+  technology = 'Technology',
+  upgradeModules = 'UpgradeModules',
+  constructedTechnology = 'ConstructedTechnology',
+  others = 'Others',
+}
