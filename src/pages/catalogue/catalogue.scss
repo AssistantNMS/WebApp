@@ -1,0 +1,130 @@
+$grid-gap: 7px;
+
+.catalogue-container {
+    padding-top: 1em;
+
+    display: grid;
+    grid-gap: $grid-gap $grid-gap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .catalogue-item {
+        border-radius: 10px;
+        min-height: 100px;
+    }
+}
+
+$grid-gap: 7px;
+$grip-col-min-max: minmax(50px, 200px);
+
+.game-item-list {
+    padding-top: 1em;
+
+    display: grid;
+    grid-gap: $grid-gap $grid-gap;
+    grid-template-columns: repeat(16, minmax(100px, 200px));
+
+    @media screen and (max-width: 3000px) {
+        grid-template-columns: repeat(15, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 2800px) {
+        grid-template-columns: repeat(14, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 2600px) {
+        grid-template-columns: repeat(13, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 2400px) {
+        grid-template-columns: repeat(12, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 2200px) {
+        grid-template-columns: repeat(11, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 2000px) {
+        grid-template-columns: repeat(10, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 1800px) {
+        grid-template-columns: repeat(9, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 1600px) {
+        grid-template-columns: repeat(8, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 1400px) {
+        grid-template-columns: repeat(7, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(6, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: repeat(6, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: repeat(5, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 700px) {
+        grid-template-columns: repeat(4, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: repeat(3, $grip-col-min-max);
+    }
+
+    @media screen and (max-width: 500px) {
+        grid-template-columns: repeat(2, $grip-col-min-max);
+    }
+
+    .game-item {
+        min-height: 100px;
+    }
+}
+
+.item {
+
+    .image-container {
+        margin: 5px;
+
+        width: calc(100% - 10px);
+        height: 0;
+        padding-bottom: calc(100% - 10px);
+
+        >span {
+            width: 100%;
+        }
+    }
+
+    img {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .loading img {
+        padding: 1.5em;
+    }
+
+    .text-container {
+        position: relative;
+        min-height: 30px;
+
+        p {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            padding: 0 10px;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
