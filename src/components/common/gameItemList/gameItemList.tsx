@@ -20,7 +20,7 @@ export const GameItemListWithoutScrollTracking = (props: IProps) => {
             {
                 props.items.map((item) => {
                     return (
-                        <LazyLoad key={`game-item-${item.Id}`} once offset={200} scrollContainer="#game-item-list" unmountIfInvisible={true}>
+                        <LazyLoad key={`game-item-${item.Id}`} once offset={200} >
                             <div className="game-item">
                                 <Link to={`${genericItem}/${item.Id}`} className="item">
                                     <div className="text-container">
@@ -37,8 +37,6 @@ export const GameItemListWithoutScrollTracking = (props: IProps) => {
             }
         </div>
     );
-
-
 }
 
 export const GameItemList = ReactLazy.trackWindowScroll(GameItemListWithoutScrollTracking);
