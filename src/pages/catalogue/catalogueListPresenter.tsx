@@ -11,11 +11,14 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { GameItemList } from '../../components/common/gameItemList/gameItemList';
+import { State } from '../../redux/state';
+import { connect } from 'react-redux';
 
 interface IProps {
     location: any;
     match: any;
     history: any;
+    selectedLanguage?: string;
 }
 interface IState {
     items: Array<GameItemModel>;
@@ -38,7 +41,8 @@ export class CatalogueListPresenterUnconnected extends React.Component<IProps, I
 
     componentDidUpdate(prevProps: IProps, prevState: IState) {
         const newTypes = this.props.match?.params?.types ?? '';
-        if (this.state.types !== newTypes) {
+        const prevSelectedLanguage = prevProps.selectedLanguage;
+        if (this.state.types !== newTypes || this.props.selectedLanguage !== prevSelectedLanguage) {
             this.fetchData(newTypes);
         }
     }
@@ -70,4 +74,12 @@ export class CatalogueListPresenterUnconnected extends React.Component<IProps, I
         );
     }
 }
-export const CatalogueListPresenter = withRouter(CatalogueListPresenterUnconnected);
+
+
+export const mapStateToProps = (state: State) => {
+    return {
+        selectedLanguage: state.settingReducer.selectedLanguage,
+    };
+};
+
+export const CatalogueListPresenter = connect(mapStateToProps)(withRouter(CatalogueListPresenterUnconnected));

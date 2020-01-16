@@ -1,26 +1,29 @@
 import React from 'react';
-import i18next from 'i18next';
+import classNames from 'classnames';
+import { connect } from 'react-redux';
+
+import { mapStateToProps, mapDispatchToProps } from './navbar.Redux';
 
 import { LocalizationMap } from '../../../localization/LocalizationMap';
 import { localeMap } from '../../../localization/Localization';
-import classNames from 'classnames';
 
 interface IProps {
     title: string;
+    isDark?: boolean;
+    setDarkMode?: (isDark: boolean) => void;
+    setLanguage?: (langCode: string) => void;
 }
 
 interface IState {
-    isDark: boolean;
     langDropdownVisible: boolean,
     localeMap: LocalizationMap[]
 }
 
-export class NavBar extends React.PureComponent<IProps, any> {
-    constructor(props: any) {
+class NavBarUnconnected extends React.PureComponent<IProps, IState> {
+    constructor(props: IProps) {
         super(props);
 
         this.state = {
-            isDark: false,
             langDropdownVisible: false,
             localeMap: localeMap
         }
@@ -31,12 +34,9 @@ export class NavBar extends React.PureComponent<IProps, any> {
     }
 
     darkModeToggle = () => {
-        this.setState((prevState: IState) => {
-            return {
-                isDark: !prevState.isDark
-            }
-        });
-        //   this.$root.$emit(EventBusType.darkModeToggle, this.isDark);
+        if (this.props.setDarkMode != null) {
+            this.props.setDarkMode(!this.props.isDark);
+        }
     }
 
     showLangDropdown = () => {
@@ -48,7 +48,9 @@ export class NavBar extends React.PureComponent<IProps, any> {
     }
 
     selectLanguage = (locale: LocalizationMap) => {
-        i18next.changeLanguage(locale.code);
+        if (this.props.setLanguage != null) {
+            this.props.setLanguage(locale.code);
+        }
         this.setState((prevState: IState) => {
             return {
                 langDropdownVisible: false
@@ -97,7 +99,7 @@ export class NavBar extends React.PureComponent<IProps, any> {
                             <li className="nav-item" onClick={this.darkModeToggle}>
                                 <span className="nav-link pointer">
                                     <i className="material-icons">{
-                                        this.state.isDark
+                                        this.props.isDark
                                             ? 'brightness_high'
                                             : 'brightness_4'
                                     }
@@ -111,3 +113,5 @@ export class NavBar extends React.PureComponent<IProps, any> {
         );
     }
 }
+
+export const NavBar = connect(mapStateToProps, mapDispatchToProps)(NavBarUnconnected);

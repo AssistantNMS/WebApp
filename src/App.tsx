@@ -1,7 +1,10 @@
 import React from 'react';
-import i18next from 'i18next';
 import classNames from "classnames";
+import { connect } from 'react-redux';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+import { mapStateToProps } from './App.Redux';
+import { StateSettingReducer } from './redux/state/StateSettingReducer';
 
 import { ScrollToTop } from "./components/core/scrollToTop/scrollToTop";
 
@@ -18,14 +21,16 @@ import { NotFoundPresenter } from "./pages/notFound/notFoundPresenter";
 import './App.css';
 import { home, about, language, catalogue, catalogueItem } from './constants/Route';
 
-const App: React.FC = () => {
+interface IProps extends StateSettingReducer { }
+
+const App: React.FC<any> = (props: IProps) => {
   return (
     <div id="app"
       className={classNames(
         'menu-on-left',
-        i18next.language,
+        props.selectedLanguage,
         {
-          isDark: false,
+          isDark: props.isDark,
         })}>
       <BrowserRouter>
         <ScrollToTop>
@@ -47,4 +52,6 @@ const App: React.FC = () => {
   );
 }
 
-export default App;
+export default connect(mapStateToProps)(App);
+
+// export default App;
