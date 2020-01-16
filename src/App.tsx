@@ -12,10 +12,11 @@ import { AboutPresenter } from "./pages/about/aboutPresenter";
 import { LanguagePresenter } from "./pages/language/languagePresenter";
 import { CataloguePresenter } from "./pages/catalogue/cataloguePresenter";
 import { CatalogueListPresenter } from "./pages/catalogue/catalogueListPresenter";
+import { CatalogueItemPresenter } from "./pages/catalogue/catalogueItemPresenter";
 import { NotFoundPresenter } from "./pages/notFound/notFoundPresenter";
 
 import './App.css';
-import { home, about, language, catalogue } from './constants/Route';
+import { home, about, language, catalogue, catalogueItem } from './constants/Route';
 
 const App: React.FC = () => {
   return (
@@ -33,6 +34,7 @@ const App: React.FC = () => {
             <Switch>
               <Route exact={true} path={home} component={HomePresenter} />
               <Route path={`${catalogue}/:types`} component={CatalogueListPresenter} />
+              <Route path={`${catalogueItem}/:itemId`} component={CatalogueItemPresenter} />
               <Route path={catalogue} component={CataloguePresenter} />
               <Route path={about} component={AboutPresenter} />
               <Route path={language} component={LanguagePresenter} />

@@ -4,7 +4,7 @@ import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
 
 import { GameItemModel } from '../../../contracts/GameItemModel';
-import { genericItem } from '../../../constants/Route';
+import { catalogueItem } from '../../../constants/Route';
 
 import { LazyLoadImage } from '../../core/lazyLoadImage/lazyLoadImage';
 const ReactLazy = require('react-lazy-load-image-component');
@@ -22,7 +22,7 @@ export const GameItemListWithoutScrollTracking = (props: IProps) => {
                     return (
                         <LazyLoad key={`game-item-${item.Id}`} once offset={200} >
                             <div className="game-item">
-                                <Link to={`${genericItem}/${item.Id}`} className="item">
+                                <Link to={`${catalogueItem}/${item.Id}`} className="item">
                                     <div className="text-container">
                                         <p>{item.Name}</p>
                                     </div>
