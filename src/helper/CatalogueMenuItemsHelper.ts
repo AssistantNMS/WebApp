@@ -77,12 +77,12 @@ export const getCatalogueMenuItems = (): Array<DrawerMenuItem> => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
-  // menuItems.push({
-  //   name: i18next.t(LocaleKey.others).toString(),
-  //   link: `${catalogue}/${CatalogueType.others}`,
-  //   icon: '/assets/images/drawer/building.png',
-  //   iconType: DrawerIconType.Custom,
-  //   isActive: false
-  // });
+  menuItems.push({
+    name: i18next.t(LocaleKey.others).toString(),
+    link: `${catalogue}/${CatalogueType.others}`,
+    icon: '/assets/images/drawer/other.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
   return menuItems;
 }
