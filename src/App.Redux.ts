@@ -4,6 +4,7 @@ import { setDarkMode } from './redux/modules/setting/action';
 export const mapStateToProps = (state: State) => {
     return {
         isDark: state.settingReducer.isDark,
+        selectedLanguage: state.settingReducer.selectedLanguage,
     };
 };
 

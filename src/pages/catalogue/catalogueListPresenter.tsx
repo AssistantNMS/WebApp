@@ -1,9 +1,10 @@
 import React from 'react';
 import i18next from 'i18next';
+import { connect } from 'react-redux';
 import { forceCheck } from 'react-lazyload';
 import { withRouter } from 'react-router-dom';
 
-import './catalogue.scss';
+import { State } from '../../redux/state';
 
 import { AllGameItemsService } from '../../services/AllGameItemsService';
 
@@ -11,8 +12,8 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { GameItemList } from '../../components/common/gameItemList/gameItemList';
-import { State } from '../../redux/state';
-import { connect } from 'react-redux';
+
+import './catalogue.scss';
 
 interface IProps {
     location: any;

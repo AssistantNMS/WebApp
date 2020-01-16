@@ -27,15 +27,17 @@ const store = createStore(
 );
 
 store.subscribe(() => {
-    var currentIsDark = store.getState().settingReducer.isDark;
-    var storedIsDark = JSON.parse(localStorage.getItem(SettingReducerKey) || '{}').isDark;
+    var currentSetting = store.getState().settingReducer;
+    var storedSetting = JSON.parse(localStorage.getItem(SettingReducerKey) || '{}');
 
-    if (storedIsDark != null || currentIsDark !== storedIsDark) {
+    if (storedSetting == null
+        || storedSetting.isDark !== currentSetting.isDark
+        || storedSetting.selectedLanguage !== currentSetting.selectedLanguage) {
         localStorage.setItem(SettingReducerKey, JSON.stringify(store.getState().settingReducer))
     }
 })
 
-initLocalization('en');
+initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
 
 
 ReactDOM.render(
