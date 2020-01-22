@@ -1,5 +1,5 @@
 import { State } from '../../../redux/state';
-import { setDarkMode, setLanguage } from '../../../redux/modules/setting/action';
+import { setDarkMode, setLanguage, toggleMenu } from '../../../redux/modules/setting/action';
 
 export const mapStateToProps = (state: State) => {
     return {
@@ -15,6 +15,9 @@ export const mapDispatchToProps = (dispatch: any) => {
     };
     newProps.setLanguage = (langCode: string) => {
         dispatch(setLanguage(langCode));
+    };
+    newProps.toggleMenu = () => {
+        dispatch(toggleMenu());
     };
     return { ...newProps };
 }

@@ -1,19 +1,23 @@
 import React from 'react';
+import classNames from 'classnames';
+import { connect } from 'react-redux';
+import { Link, withRouter } from 'react-router-dom';
 
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
 import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/DrawerMenuItemsHelper';
 import { getCatalogueMenuItems } from '../../../helper/CatalogueMenuItemsHelper';
-import classNames from 'classnames';
-import { Link, withRouter } from 'react-router-dom';
+
+import { mapStateToProps, mapDispatchToProps } from './drawer.Redux';
 
 interface IProps {
     location: any;
     match: any;
     history: any;
+    toggleMenu?: () => void;
 }
 
-export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
+export const DrawerUnconnected = withRouter((props: IProps) => {
     const baseItems = getDrawerMenuItems();
     const catalogueItems = getCatalogueMenuItems();
 
@@ -21,9 +25,8 @@ export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     menuItems.push(menuItemSeperator);
 
     const menuItemClick = () => {
-        const htmlTag = document.querySelector('html');
-        if (htmlTag != null) {
-            htmlTag.classList.toggle('nav-open');
+        if (props.toggleMenu != null) {
+            props.toggleMenu();
         }
     }
 
@@ -68,6 +71,6 @@ export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
             </div>
         </div>
     );
-}
+});
 
-export const Drawer = withRouter(DrawerUnconnected);
+export const Drawer = connect(mapStateToProps, mapDispatchToProps)(DrawerUnconnected);

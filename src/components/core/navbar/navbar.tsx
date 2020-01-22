@@ -12,6 +12,7 @@ interface IProps {
     isDark?: boolean;
     setDarkMode?: (isDark: boolean) => void;
     setLanguage?: (langCode: string) => void;
+    toggleMenu?: () => void;
 }
 
 interface IState {
@@ -32,7 +33,9 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
     }
 
     menuItemClick = () => {
-        //   this.$root.$emit(EventBusType.MenuButtonClick);
+        if (this.props.toggleMenu != null) {
+            this.props.toggleMenu();
+        }
     }
 
     darkModeToggle = () => {
@@ -71,7 +74,7 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
     render() {
         return (
             <>
-                <nav id="navbar" className="navbar navbar-expand-lg navbar-absolute fixed-top ">
+                <nav id="navbar" className="navbar navbar-expand-lg">
                     <div className="container-fluid">
                         <button className="navbar-toggler pointer" type="button" data-toggle="collapse" aria-controls="navigation-index"
                             aria-expanded="false" aria-label="Toggle navigation" onClick={this.menuItemClick}>
@@ -127,9 +130,9 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
                 </nav>
                 {
                     this.state.showSearch
-                        ? <nav id="navbar" className="navbar navbar-expand-lg ">
+                        ? <div id="searchBar" className="searchbar">
                             <input type="text" />
-                        </nav >
+                        </div>
                         : null
                 }
             </>

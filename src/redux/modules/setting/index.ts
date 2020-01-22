@@ -5,7 +5,8 @@ import { StateSettingReducer } from '../../state/StateSettingReducer';
 
 const initialState: StateSettingReducer = {
     isDark: true,
-    selectedLanguage: 'en'
+    selectedLanguage: 'en',
+    menuIsVisible: true
 }
 
 export const settingReducer = (state = initialState, action: any) => {
@@ -18,6 +19,14 @@ export const settingReducer = (state = initialState, action: any) => {
             i18next.changeLanguage(action.langCode);
             return Object.assign({}, state, {
                 selectedLanguage: action.langCode
+            });
+        case type.TOGGLEMENU:
+            const htmlTag = document.querySelector('html');
+            if (htmlTag != null) {
+                htmlTag.classList.toggle('nav-open');
+            }
+            return Object.assign({}, state, {
+                menuIsVisible: state.menuIsVisible
             });
         default:
             return state
