@@ -1,27 +1,30 @@
 import React from 'react';
-import i18next from 'i18next';
+import classNames from 'classnames';
+import { connect } from 'react-redux';
+
+import { mapStateToProps, mapDispatchToProps } from './navbar.Redux';
 
 import { LocalizationMap } from '../../../localization/LocalizationMap';
 import { localeMap } from '../../../localization/Localization';
-import classNames from 'classnames';
 
 interface IProps {
     title: string;
+    isDark?: boolean;
+    setDarkMode?: (isDark: boolean) => void;
+    setLanguage?: (langCode: string) => void;
 }
 
 interface IState {
-    isDark: boolean;
     showSearch: boolean;
     langDropdownVisible: boolean,
     localeMap: LocalizationMap[]
 }
 
-export class NavBar extends React.PureComponent<IProps, any> {
-    constructor(props: any) {
+class NavBarUnconnected extends React.PureComponent<IProps, IState> {
+    constructor(props: IProps) {
         super(props);
 
         this.state = {
-            isDark: false,
             showSearch: false,
             langDropdownVisible: false,
             localeMap: localeMap
@@ -33,11 +36,9 @@ export class NavBar extends React.PureComponent<IProps, any> {
     }
 
     darkModeToggle = () => {
-        this.setState((prevState: IState) => {
-            return {
-                isDark: !prevState.isDark
-            }
-        });
+        if (this.props.setDarkMode != null) {
+            this.props.setDarkMode(!this.props.isDark);
+        }
     }
 
     searchBarToggle = () => {
@@ -57,19 +58,20 @@ export class NavBar extends React.PureComponent<IProps, any> {
     }
 
     selectLanguage = (locale: LocalizationMap) => {
-        i18next.changeLanguage(locale.code);
+        if (this.props.setLanguage != null) {
+            this.props.setLanguage(locale.code);
+        }
         this.setState((prevState: IState) => {
             return {
                 langDropdownVisible: false
             }
         });
-        // this.$root.$emit(EventBusType.languageChange);
     }
 
     render() {
         return (
             <>
-                <nav id="navbar" className="navbar navbar-expand-lg">
+                <nav id="navbar" className="navbar navbar-expand-lg navbar-absolute fixed-top ">
                     <div className="container-fluid">
                         <button className="navbar-toggler pointer" type="button" data-toggle="collapse" aria-controls="navigation-index"
                             aria-expanded="false" aria-label="Toggle navigation" onClick={this.menuItemClick}>
@@ -108,21 +110,20 @@ export class NavBar extends React.PureComponent<IProps, any> {
                                             })
                                         }
                                     </div>
-                                </li >
+                                </li>
                                 <li className="nav-item" onClick={this.darkModeToggle}>
                                     <span className="nav-link pointer">
                                         <i className="material-icons">{
-                                            this.state.isDark
+                                            this.props.isDark
                                                 ? 'brightness_high'
                                                 : 'brightness_4'
                                         }
                                         </i>
                                     </span>
                                 </li>
-                            </ul >
-                        </div >
-                    </div >
-
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
                 {
                     this.state.showSearch
@@ -135,3 +136,5 @@ export class NavBar extends React.PureComponent<IProps, any> {
         );
     }
 }
+
+export const NavBar = connect(mapStateToProps, mapDispatchToProps)(NavBarUnconnected);
