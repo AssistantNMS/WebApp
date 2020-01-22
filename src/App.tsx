@@ -13,10 +13,11 @@ import { LanguagePresenter } from "./pages/language/languagePresenter";
 import { CataloguePresenter } from "./pages/catalogue/cataloguePresenter";
 import { CatalogueListPresenter } from "./pages/catalogue/catalogueListPresenter";
 import { CatalogueItemPresenter } from "./pages/catalogue/catalogueItemPresenter";
+import { SearchContainer } from "./pages/search/searchContainer";
 import { NotFoundPresenter } from "./pages/notFound/notFoundPresenter";
 
 import './App.css';
-import { home, about, language, catalogue, catalogueItem } from './constants/Route';
+import { home, about, language, catalogue, catalogueItem, search } from './constants/Route';
 
 const App: React.FC = () => {
   return (
@@ -36,6 +37,7 @@ const App: React.FC = () => {
               <Route path={`${catalogue}/:types`} component={CatalogueListPresenter} />
               <Route path={`${catalogueItem}/:itemId`} component={CatalogueItemPresenter} />
               <Route path={catalogue} component={CataloguePresenter} />
+              <Route path={search} component={SearchContainer} />
               <Route path={about} component={AboutPresenter} />
               <Route path={language} component={LanguagePresenter} />
               <Route path={home} component={NotFoundPresenter} />
