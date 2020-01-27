@@ -116,7 +116,11 @@ export class CatalogueListPresenterUnconnected extends React.Component<IProps, I
                 <NavBar title={i18next.t(LocaleKey.catalogue)} />
                 <div className="content">
                     <form id="searchBar" className="searchbar row" onSubmit={(e) => this.search(e, this.state.searchTerm)}>
-                        {
+                        <input type="text" autoFocus className="form-control" placeholder="Search" onChange={this.onSearchTextChange} />
+                        <button className="icon-container pointer" type="submit">
+                            <i className="material-icons">search</i>
+                        </button>
+                        {/* {
                             this.state.showSearchInput
                                 ? <>
                                     <input type="text" autoFocus className="form-control" placeholder="Search" onChange={this.onSearchTextChange} />
@@ -130,9 +134,9 @@ export class CatalogueListPresenterUnconnected extends React.Component<IProps, I
                                 : <div className="arrow-container collapsed">
                                     <i className="material-icons pointer" onClick={this.searchBarToggle}>search</i>
                                 </div>
-                        }
+                        } */}
                     </form>
-                    <GameItemList items={this.state.displayItems} />
+                    <GameItemList key={this.state.displayItems.length} items={this.state.displayItems} />
                 </div>
             </>
         );
