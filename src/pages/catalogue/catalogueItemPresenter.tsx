@@ -1,21 +1,17 @@
 import React from 'react';
-import i18next from 'i18next';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
 import { State } from '../../redux/state';
-
 import { GameItemService } from '../../services/GameItemService';
-
 import { anyObject } from '../../helper/TypescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { GameItemModel } from '../../contracts/GameItemModel';
-
-import './catalogue.scss';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
 
+import i18next from 'i18next';
 interface IProps {
     location: any;
     match: any;
@@ -99,17 +95,17 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         return (
             <>
                 <NavBar title={this.state.item.Name} />
-                <div className="content" >
+                <div className="content">
                     <div className="row">
                         <div className="col-12 col-lg-2 col-md-2 col-sm-2 col-xs-3 image-container generic-item-image-container"
                             style={{ backgroundColor: `#${this.state.item.Colour}` }}>
                             <img src={`/assets/images/${this.state.item.Icon}`} alt={this.state.item.Name} style={{ maxWidth: '100%' }} />
                         </div>
                         <div className="col-12 col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                            <h2>{this.state.item.Name}</h2>
+                            <h2 className="ta-left ta-center-sm">{this.state.item.Name}</h2>
                             {
                                 this.state.item.Group
-                                    ? <h3 style={{ margin: 0 }}>{this.state.item.Group}</h3>
+                                    ? <h3 className="ta-left ta-center-sm" style={{ margin: 0 }}>{this.state.item.Group}</h3>
                                     : null
                             }
                         </div>

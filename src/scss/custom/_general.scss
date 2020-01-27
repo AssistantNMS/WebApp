@@ -76,3 +76,13 @@
         padding: 0 15px;
     }
 }
+
+.ta-left {
+    text-align: left;
+
+    &.ta-center-sm {
+        @media (max-width: 576px) {
+            text-align: center;
+        }
+    }
+}
