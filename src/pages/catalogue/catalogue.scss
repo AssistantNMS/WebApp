@@ -80,15 +80,20 @@ $grip-col-min-max: minmax(50px, 200px);
     }
 
     @media screen and (max-width: 500px) {
-        grid-template-columns: repeat(2, $grip-col-min-max);
+        display: block;
     }
 
     .game-item {
-        min-height: 100px;
+        @media screen and (min-width: 500px) {
+            min-height: 100px;
+        }
     }
 }
 
 .item {
+    @media screen and (max-width: 500px) {
+        display: flex;
+    }
 
     .image-container {
         margin: 5px;
@@ -96,6 +101,17 @@ $grip-col-min-max: minmax(50px, 200px);
         width: calc(100% - 10px);
         height: 0;
         padding-bottom: calc(100% - 10px);
+
+
+        @media screen and (max-width: 500px) {
+            max-width: 128px;
+            max-height: 128px;
+            width: 10%;
+            height: 10%;
+            padding: 0;
+            flex-grow: 1;
+            order: 1;
+        }
 
         >span {
             width: 100%;
@@ -115,6 +131,11 @@ $grip-col-min-max: minmax(50px, 200px);
         position: relative;
         min-height: 30px;
 
+        @media screen and (max-width: 500px) {
+            flex-grow: 5;
+            order: 2;
+        }
+
         p {
             position: absolute;
             top: 50%;
@@ -125,6 +146,10 @@ $grip-col-min-max: minmax(50px, 200px);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+
+            @media screen and (max-width: 500px) {
+                text-align: left;
+            }
         }
     }
 }

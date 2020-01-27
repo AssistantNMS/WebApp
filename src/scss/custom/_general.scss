@@ -25,6 +25,24 @@
     .navbar-toggler .icon-bar {
         background-color: white;
     }
+
+    li.nav-item {
+        @media screen and (max-width: 800px) {
+            margin-top: .5em;
+        }
+    }
+
+    .navbar-collapse {
+        @media screen and (max-width: 500px) {
+            display: none !important;
+        }
+    }
+
+    .navbar-wrapper {
+        @media screen and (max-width: 500px) {
+            max-width: unset;
+        }
+    }
 }
 
 .pointer {
@@ -49,7 +67,12 @@
     border-radius: 0;
 }
 
-#app .main-panel>.content {
-    margin-top: 0;
-    padding: 0 15px;
+#app .main-panel {
+    height: 100vh;
+    overflow-y: scroll;
+
+    >.content {
+        margin-top: 0;
+        padding: 0 15px;
+    }
 }

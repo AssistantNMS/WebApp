@@ -1,7 +1,7 @@
-import i18next from 'i18next';
-
-import * as type from './type'
+import * as type from './type';
 import { StateSettingReducer } from '../../state/StateSettingReducer';
+
+import i18next from 'i18next';
 
 const initialState: StateSettingReducer = {
     isDark: true,
@@ -12,6 +12,7 @@ const initialState: StateSettingReducer = {
 export const settingReducer = (state = initialState, action: any) => {
     switch (action.type) {
         case type.DARKMODE:
+            // document.documentElement.classList.toggle("isDark");
             return Object.assign({}, state, {
                 isDark: action.isDark
             });

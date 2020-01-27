@@ -1,26 +1,23 @@
+import './App.css';
+
+import classNames from 'classnames';
 import React from 'react';
-import classNames from "classnames";
 import { connect } from 'react-redux';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import { mapStateToProps } from './App.Redux';
 import { StateSettingReducer } from './redux/state/StateSettingReducer';
-
-import { ScrollToTop } from "./components/core/scrollToTop/scrollToTop";
-
-import { Drawer } from "./components/core/drawer/drawer";
-
-import { HomePresenter } from "./pages/home/homePresenter";
-import { AboutPresenter } from "./pages/about/aboutPresenter";
-import { LanguagePresenter } from "./pages/language/languagePresenter";
-import { CataloguePresenter } from "./pages/catalogue/cataloguePresenter";
-import { CatalogueListPresenter } from "./pages/catalogue/catalogueListPresenter";
-import { CatalogueItemPresenter } from "./pages/catalogue/catalogueItemPresenter";
-import { SearchContainer } from "./pages/search/searchContainer";
-import { NotFoundPresenter } from "./pages/notFound/notFoundPresenter";
-
-import './App.css';
-import { home, about, language, catalogue, catalogueItem, search } from './constants/Route';
+import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
+import { Drawer } from './components/core/drawer/drawer';
+import { HomePresenter } from './pages/home/homePresenter';
+import { AboutPresenter } from './pages/about/aboutPresenter';
+import { LanguagePresenter } from './pages/language/languagePresenter';
+import { CataloguePresenter } from './pages/catalogue/cataloguePresenter';
+import { CatalogueListPresenter } from './pages/catalogue/catalogueListPresenter';
+import { CatalogueItemPresenter } from './pages/catalogue/catalogueItemPresenter';
+import { SearchContainer } from './pages/search/searchContainer';
+import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
+import { about, catalogue, catalogueItem, home, language, search } from './constants/Route';
 
 interface IProps extends StateSettingReducer { }
 
@@ -36,7 +33,7 @@ const App: React.FC<any> = (props: IProps) => {
       <BrowserRouter>
         <ScrollToTop>
           <Drawer />
-          <div className="main-panel ps-container ps-theme-default">
+          <div className="main-panel ps-theme-default">
             <Switch>
               <Route exact={true} path={home} component={HomePresenter} />
               <Route path={`${catalogue}/:types`} component={CatalogueListPresenter} />
