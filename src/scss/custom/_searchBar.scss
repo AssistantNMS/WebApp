@@ -1,0 +1,51 @@
+$searchIconWidth: 50px;
+$searchIconHeight: 30px;
+
+#searchBar {
+    color: white;
+    position: relative;
+
+    .icon-container {
+        position: absolute;
+        top: .5em;
+        right: .5em;
+        background-color: transparent;
+        border: none;
+        color: white;
+
+        i {
+            width: $searchIconWidth;
+            height: $searchIconHeight;
+        }
+    }
+
+    input {
+        display: inline-block;
+        height: $searchIconHeight;
+        width: 100%;
+        padding: .75em;
+        font-size: 1.75em;
+        color: white;
+        text-align: center;
+        // background-color: $brand-secondary;
+    }
+
+    .arrow-container {
+        display: inline-block;
+        height: $searchIconHeight;
+        width: 100%;
+        text-align: center;
+        //opacity: 0.3;
+        //background-color: $brand-secondary;
+
+        &:not(.collapsed) i {
+            font-size: 3em;
+            transform: rotate(-90deg);
+        }
+
+        &.collapsed i {
+            font-size: 2em;
+            margin-top: .4em;
+        }
+    }
+}

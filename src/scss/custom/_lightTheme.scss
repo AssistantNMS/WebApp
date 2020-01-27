@@ -34,4 +34,17 @@
     .sidebar {
         background: white;
     }
+
+    #searchBar {
+
+        input {
+            color: $black-color;
+            background-image: linear-gradient(to top, #{$brand-primary} 2px, rgba(63, 81, 181, 0) 2px),
+            linear-gradient(to top, #{$black-color} 1px, rgba(210, 210, 210, 0) 1px);
+        }
+
+        .arrow-container i {
+            color: $black-color;
+        }
+    }
 }

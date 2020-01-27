@@ -57,4 +57,17 @@ $card-background-color-dark: rgba(255, 255, 255, 0.2);
             background-color: $brand-primary-dark;
         }
     }
+
+    #searchBar {
+
+        input {
+            color: $white-color;
+            background-image: linear-gradient(to top, #{$brand-primary-dark} 2px, rgba(63, 81, 181, 0) 2px),
+            linear-gradient(to top, #{$white-color} 1px, rgba(210, 210, 210, 0) 1px);
+        }
+
+        .arrow-container i {
+            color: $white-color;
+        }
+    }
 }
