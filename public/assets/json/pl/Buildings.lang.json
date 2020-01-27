@@ -97,7 +97,7 @@
   },
   {
     "Id": "build18",
-    "Name": "Rama oprawna w drewno.",
+    "Name": "Rama oprawna w drewno",
     "Group": "Drewniany element budowlany",
     "Description": "Szklany panel podłogowy/sufitowy w drewnianej ramie."
   },
@@ -1680,15 +1680,225 @@
     "Description": "Kolorowe lampki oświetlające bazę użytkownika."
   },
   {
-    "Id": "build349",
-    "Name": "White Light",
-    "Group": "Decoration",
-    "Description": "A coloured light for illuminating a user's base."
+    "Id": "build359",
+    "Name": "Pudło świetlne",
+    "Group": "Urządzenie świetlne",
+    "Description": "Specjalny moduł budowlany, skonstruowany wyłącznie z paneli emitujących światło. Można użyć do budowy świetlnych ścian.\n\nKolor pudła można zmienić przed i po umieszczeniu. Do działania wymaga zasilania."
   },
   {
-    "Id": "build358",
-    "Name": "Urządzenie kształtu fali",
+    "Id": "build360",
+    "Name": "Urządzenie bytebeat",
     "Group": "Syntezator dźwięku",
     "Description": "Zaawansowany generator dźwięku, pozwalający użytkownikowi syntezować złożone aranżacje muzyczne.\n\nKilka urządzeń można ułożyć kolejno albo połączyć z oświetleniem, aby stworzyć spektakularne pokazy."
+  },
+  {
+    "Id": "build361",
+    "Name": "Kabel bytebeat",
+    "Group": "Urządzenie bytebeat",
+    "Description": "Zaawansowany kabel, zaprojektowany do łączenia jednego lub więcej generatorów bytebeat lub do podłączenia przełącznika bytebeat do sieci.Sygnał zsynchronizuje połączone światła i urządzenie do generowanego kształtu fali."
+  },
+  {
+    "Id": "build362",
+    "Name": "Przełącznik bytebeat",
+    "Group": "Urządzenie bytebeat",
+    "Description": "Przełączające urządzenie muzyczne, zaprojektowane do interpretowania sygnałów kształtu fali, generowanych przez generator bytebeat i wysyłania impulsów elektrycznych do podłączonych świateł i innych urządzeń."
+  },
+  {
+    "Id": "build363",
+    "Name": "Plecak egzokombinezonu",
+    "Group": "Ulepszenie wizualne egzokombinezonu",
+    "Description": "Wyjątkowa personalizacja wyglądu egzokombinezonu.\n\nInformacje o plecaku.\n\nZmień wygląd swojego egzokombinezonu w modyfikatorze wyglądu."
+  },
+  {
+    "Id": "build364",
+    "Name": "Tęczowa smuga plecaka",
+    "Group": "Personalizacja wydechu plecaka odrzutowego",
+    "Description": "Wyjątkowa personalizacja wyglądu egzokombinezonu.\n\nPrecyzyjnie skalibrowane wielokolorowe wtryski zmieniają wygląd smugi z plecaka odrzutowego w istną feerię barw.\n\nZmień wygląd swojego egzokombinezonu w modyfikatorze wyglądu."
+  },
+  {
+    "Id": "build365",
+    "Name": "Antymateriowa smuga plecaka",
+    "Group": "Personalizacja wydechu plecaka odrzutowego",
+    "Description": "Wyjątkowa personalizacja wyglądu egzokombinezonu.\n\nSupresory barionowe zmieniają wygląd spalin z plecaka odrzutowego, nadając charakterystyczne czarne zabarwienie typowej dla niego smudze.\n\nZmień wygląd swojego egzokombinezonu w modyfikatorze wyglądu."
+  },
+  {
+    "Id": "build366",
+    "Name": "Czerwona smuga plecaka",
+    "Group": "Personalizacja wydechu plecaka odrzutowego",
+    "Description": "Wyjątkowa personalizacja wyglądu egzokombinezonu.\n\nKadmowe dysze wtryskowe nadają krzykliwe czerwone zabarwienie spalinom z plecaka odrzutowego.\n\nZmień wygląd swojego egzokombinezonu w modyfikatorze wyglądu."
+  },
+  {
+    "Id": "build367",
+    "Name": "Zielona smuga plecaka",
+    "Group": "Personalizacja wydechu plecaka odrzutowego",
+    "Description": "Wyjątkowa personalizacja wyglądu egzokombinezonu.\n\nEmerylowe dysze wtryskowe nadają intensywnie zielone zabarwienie spalinom z plecaka odrzutowego.\n\nZmień wygląd swojego egzokombinezonu w modyfikatorze wyglądu."
+  },
+  {
+    "Id": "build368",
+    "Name": "Niebieska smuga plecaka",
+    "Group": "Personalizacja wydechu plecaka odrzutowego",
+    "Description": "Wyjątkowa personalizacja wyglądu egzokombinezonu.\n\nIndowe dysze wtryskowe nadają olśniewająco niebieskie zabarwienie spalinom z plecaka odrzutowego.\n\nZmień wygląd swojego egzokombinezonu w modyfikatorze wyglądu."
+  },
+  {
+    "Id": "build369",
+    "Name": "Chromatyczna smuga statku",
+    "Group": "Personalizacja wydechu statku gwiezdnego",
+    "Description": "Wyjątkowy modyfikator wydechu statku gwiezdnego.\n\nPrecyzyjnie skalibrowane wielokolorowe wtryski zmieniają wygląd smugi z silnika pulsacyjnego w istną feerię barw.\n\nZainstaluj tę technologię w ekwipunku swojego statku, by zmienić wygląd smugi z wydechu silnika."
+  },
+  {
+    "Id": "build370",
+    "Name": "Dyskretna smuga statku",
+    "Group": "Personalizacja wydechu statku gwiezdnego",
+    "Description": "Wyjątkowy modyfikator wydechu statku gwiezdnego.\n\nSupresory barionowe zmieniają wygląd spalin z silnika pulsacyjnego, nadając charakterystyczne czarne zabarwienie typowej dla niego smudze.\n\nZainstaluj tę technologię w ekwipunku swojego statku, by zmienić wygląd smugi z wydechu silnika."
+  },
+  {
+    "Id": "build371",
+    "Name": "Kadmowa smuga statku",
+    "Group": "Personalizacja wydechu statku gwiezdnego",
+    "Description": "Wyjątkowy modyfikator wydechu statku gwiezdnego.\n\nKadmowe dysze wtryskowe nadają krzykliwe czerwone zabarwienie spalinom z silnika pulsacyjnego.\n\nZainstaluj tę technologię w ekwipunku swojego statku, by zmienić wygląd smugi z wydechu silnika."
+  },
+  {
+    "Id": "build372",
+    "Name": "Emerylowa smuga statku",
+    "Group": "Personalizacja wydechu statku gwiezdnego",
+    "Description": "Wyjątkowy modyfikator wydechu statku gwiezdnego.\n\nEmerylowe dysze wtryskowe nadają intensywnie zielone zabarwienie spalinom z silnika pulsacyjnego.\n\nZainstaluj tę technologię w ekwipunku swojego statku, by zmienić wygląd smugi z wydechu silnika."
+  },
+  {
+    "Id": "build373",
+    "Name": "Złota smuga statku",
+    "Group": "Personalizacja wydechu statku gwiezdnego",
+    "Description": "Wyjątkowy modyfikator wydechu statku gwiezdnego.\n\nZłote dysze wtryskowe nadają olśniewające złote zabarwienie spalinom z silnika pulsacyjnego.\n\nZainstaluj tę technologię w ekwipunku swojego statku, by zmienić wygląd smugi z wydechu silnika."
+  },
+  {
+    "Id": "build374",
+    "Name": "Wijący krzew",
+    "Group": "Dekoracja organiczna",
+    "Description": "Ten osobliwie mięsisty sukulent, występujący naturalnie na radioaktywnych światach, wydaje się kołysać lekko, nawet gdy nie ma wiatru...\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build375",
+    "Name": "Drzewo parasolowate",
+    "Group": "Dekoracja organiczna",
+    "Description": "To ozdobne drzewo potrafi znosić wysokie poziomy radiacji tła. Jego centralny świecący rdzeń wabi okoliczną faunę, ale wcale nie jest narządem czuciowym. Absolutnie cię nie obserwuje.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build376",
+    "Name": "Splecione drzewo",
+    "Group": "Dekoracja organiczna",
+    "Description": "To piękne drzewo bujnie rozrasta się pośród żaru silnego promieniowania gamma. W celu zapewnienia jego przetrwania w innym środowisku, w pniu umieszczono wysokoenergetyczny materiał.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build377",
+    "Name": "Grzyb pęcherzowaty",
+    "Group": "Dekoracja organiczna",
+    "Description": "Ta nabrzmiała wypukłość wyrasta błyskawicznie z gęstej, podziemnej sieci zarodników. Znacząco poprawia jakość okolicznych gleb.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build378",
+    "Name": "Czujna roślina",
+    "Group": "Dekoracja organiczna",
+    "Description": "Choć roślina ta nadaje się do uprawy, nie zaleca się jej spożywania.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build379",
+    "Name": "Mackowa iglica",
+    "Group": "Dekoracja organiczna",
+    "Description": "Ta zachwycająca konstrukcja architektoniczno-organiczna łączy w sobie dwa popularne elementy estetyczne: wijące się macki i ogromne grzyby.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build380",
+    "Name": "Czarujący kaktus",
+    "Group": "Dekoracja organiczna",
+    "Description": "Wokół tej pustynnej rośliny biegną eleganckie, pierzaste włókienka, zwiększające pobór wilgoci z okolicy. A przy tym wyglądają zachwycająco.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build381",
+    "Name": "Świąteczny kaktus",
+    "Group": "Dekoracja organiczna",
+    "Description": "Te zachwycające i dekoracyjne sukulenty wieńczą swe bulwiaste ciała kępami pięknych kwiatów.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build382",
+    "Name": "Mięsiste drzewo",
+    "Group": "Dekoracja organiczna",
+    "Description": "Kora tego drzewa jest zwodnicza – nie jest gruba ani twarda, a miąższ sprawia wrażenie miękkiego i wilgotnego w dotyku. Zmarszczki na powierzchni przechowują wodę na czarną godzinę.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build383",
+    "Name": "Wytrzymały krzew",
+    "Group": "Dekoracja organiczna",
+    "Description": "Ten wytrzymały krzew iglasty nasyca swoje soki enzymami przeciwdziałającymi zamarzaniu, dzięki czemu jest w stanie przetrwać nawet niewyobrażalnie niskie temperatury.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build384",
+    "Name": "Zamarznięty gazon",
+    "Group": "Dekoracja organiczna",
+    "Description": "Kamienne koryto wypełnione śniegiem. Idealny dom dla małych, wytrzymałych roślin występujących na światach skutych lodem.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build385",
+    "Name": "Starożytne drzewo iglaste",
+    "Group": "Dekoracja organiczna",
+    "Description": "Czas życia tego drzewa należy niemal mierzyć w skali geologicznej. Niskie temperatury i poziomy światła w jego naturalnym środowisku ograniczają jego wzrost do zaledwie kilku milimetrów na sezon. Okaz tej wielkości to istny cud botaniczny.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build386",
+    "Name": "Skała morska",
+    "Group": "Dekoracja organiczna",
+    "Description": "Urokliwa formacja mineralna, powstała ze skrystalizowanej soli oceanicznej. Może zawierać skamieliny i/lub organizmy morskie.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build387",
+    "Name": "Łuk mineralny",
+    "Group": "Dekoracja organiczna",
+    "Description": "Niezwykły przykład geometrii geologicznej – stabilny, nośny łuk inkrustowany osobliwie kanciastymi geodami.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build388",
+    "Name": "Skała inkrustowana kamieniami szlachetnymi",
+    "Group": "Dekoracja organiczna",
+    "Description": "Kiedyś był to odrzut w procesie głębinowego wydobycia kryształów, ale obecnie docenia się wartość estetyczną tych skał.\n\nOzdoba krajobrazu przeznaczona dla baz."
+  },
+  {
+    "Id": "build389",
+    "Name": "Sztandar osobliwej fauny",
+    "Group": "Opcje identyfikacji personalnej",
+    "Description": "Pokaż, że interesujesz się dziwnymi i nietypowymi zwierzętami, za pomocą tej wyjątkowej metody nadania identyfikacji osobistego szlifu.\n\nUmieść ten sztandar w swoim profilu, używając modyfikatora wyglądu."
+  },
+  {
+    "Id": "build390",
+    "Name": "Sztandar bezkształtnej masy",
+    "Group": "Opcje identyfikacji personalnej",
+    "Description": "Pokaż, że uwielbiasz łagodne istoty przypominające bezkształtną masę oraz ich smakowity miód, za pomocą tej wyjątkowej metody nadania identyfikacji osobistego szlifu.\n\nUmieść ten sztandar w swoim profilu, używając modyfikatora wyglądu."
+  },
+  {
+    "Id": "build391",
+    "Name": "Sztandar specjalisty Polo",
+    "Group": "Opcje identyfikacji personalnej",
+    "Description": "Specjalista Polo ma nadzieję, że spodoba ci się ta wyjątkowa metoda nadania identyfikacji osobistego szlifu. Niech niesie ci radość w podróżach!\n\nUmieść ten sztandar w swoim profilu, używając modyfikatora wyglądu."
+  },
+  {
+    "Id": "build392",
+    "Name": "Sztandar istoty kapłańskiej Nady",
+    "Group": "Opcje identyfikacji personalnej",
+    "Description": "Zaproś istotę kapłańską Nadę do swojej osobistej konwergencji za pomocą tej wyjątkowej metody nadania identyfikacji osobistego szlifu.\n\nUmieść ten sztandar w swoim profilu, używając modyfikatora wyglądu."
+  },
+  {
+    "Id": "build393",
+    "Name": "Sztandar Centrum Galaktycznego",
+    "Group": "Opcje identyfikacji personalnej",
+    "Description": "Wykorzystaj tę wyjątkową metodę nadania identyfikacji osobistego szlifu i eksploruj razem!\n\nUmieść ten sztandar w swoim profilu, używając modyfikatora wyglądu."
+  },
+  {
+    "Id": "build394",
+    "Name": "Sztandar pysznego jedzenia",
+    "Group": "Opcje identyfikacji personalnej",
+    "Description": "Pokaż, że uwielbiasz przysmaki różnych kuchni galaktyki, za pomocą tej wyjątkowej metody nadania identyfikacji osobistego szlifu.\n\nUmieść ten sztandar w swoim profilu, używając modyfikatora wyglądu."
+  },
+  {
+    "Id": "build395",
+    "Name": "Drgające jajo",
+    "Group": "Żywa ciekawostka",
+    "Description": "Anomalne jajo. Jego skorupka jest twarda i skórzasta, a ono samo drga przy dotknięciu.\n\nZ wnętrza jaja dochodzi ciche postukiwanie. Od czasu do czasu wydaje się śpiewać."
   }
 ]

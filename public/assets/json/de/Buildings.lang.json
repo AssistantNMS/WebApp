@@ -1680,15 +1680,225 @@
     "Description": "Eine farbige Leuchte, die die Basis des Benutzers erhellt."
   },
   {
-    "Id": "build349",
-    "Name": "White Light",
-    "Group": "Decoration",
-    "Description": "A coloured light for illuminating a user's base."
+    "Id": "build359",
+    "Name": "Lichtbox",
+    "Group": "Lichtgerät",
+    "Description": "Ein spezielles Konstruktionsmodul, das zur Gänze aus lichterzeugenden Platten gefertigt wurde. Kann zur Erstellung von Lichtmauern verwendet werden.\n\nDie Box kann vor oder nach dem Platzieren umgefärbt werden. Benötigt Strom, um zu funktionieren."
   },
   {
-    "Id": "build358",
-    "Name": "Wellenformgerät",
+    "Id": "build360",
+    "Name": "Bytebeat-Gerät",
     "Group": "Audio-Synthesizer",
     "Description": "Ein fortgeschrittener Audiogenerator, mit dem der Benutzer komplexe musikalische Arrangements erzeugen kann.\n\nMehrere Geräte können hintereinander platziert oder mit Leuchten verbunden werden, um spektakuläre Vorführungen zu ermöglichen."
+  },
+  {
+    "Id": "build361",
+    "Name": "ByteBeat-Kabel",
+    "Group": "Bytebeat-Gerät",
+    "Description": "Ein fortgeschrittenes Kabel, das einen oder mehrere Bytebeat-Generatoren miteinander oder mit einer Bytebeat-Schaltung verbinden kann.\n\nDas Signal synchronisiert die verbundenen Lichter und Apparate mit der erzeugten Wellenform."
+  },
+  {
+    "Id": "build362",
+    "Name": "Bytebeat-Schaltung",
+    "Group": "Bytebeat-Gerät",
+    "Description": "Ein musikalisches Schaltgerät, das wellenförmige Signale eines Bytebeat-Generators per elektrischem Impuls an verbundene Geräte wie zum Beispiel Lichter übertragt."
+  },
+  {
+    "Id": "build363",
+    "Name": "Exo-Anzug-Rucksack",
+    "Group": "Visuelle Exo-Anzug-Verbesserung",
+    "Description": "Eine exklusive Exo-Anzug-Aussehenüberschreibung.\n\nEine robuste, modulare Rucksackeinheit. Das Aussehen weckt Erinnerungen an eine vergangene Ära des Entdeckens.\n\nÄndere das Aussehen deines Exo-Anzugs an einem Aussehenmodifikator."
+  },
+  {
+    "Id": "build364",
+    "Name": "Regenbogen-Jetpackspur",
+    "Group": "Jetpack-Auspuffüberschreibung",
+    "Description": "Eine exklusive Exo-Anzug-Aussehenüberschreibung.\n\nPräzise kalibrierte, multichromatische Injektoren verändern die Abgase des Jetpacks und verwandeln die Auspuffspur in einen farbenfrohen Strahl.\n\nÄndere das Aussehen deines Exo-Anzugs an einem Aussehenmodifikator."
+  },
+  {
+    "Id": "build365",
+    "Name": "Antimaterie-Jetpackspur",
+    "Group": "Jetpack-Auspuffüberschreibung",
+    "Description": "Eine exklusive Exo-Anzug-Aussehenüberschreibung.\n\nBaryondämpfer verändern die Abgase des Jetpacks und verleihen der charakteristischen Spur eine schwarze Färbung.\n\nÄndere das Aussehen deines Exo-Anzugs an einem Aussehenmodifikator."
+  },
+  {
+    "Id": "build366",
+    "Name": "Rote Jetpackspur",
+    "Group": "Jetpack-Auspuffüberschreibung",
+    "Description": "Eine exklusive Exo-Anzug-Aussehenüberschreibung.\n\nCadmium-Injektionsdüsen tauchen die Abgase des Jetpacks in knalliges Rot.\n\nÄndere das Aussehen deines Exo-Anzugs an einem Aussehenmodifikator."
+  },
+  {
+    "Id": "build367",
+    "Name": "Grüne Jetpackspur",
+    "Group": "Jetpack-Auspuffüberschreibung",
+    "Description": "Eine exklusive Exo-Anzug-Aussehenüberschreibung.\n\nEmeril-Injektionsdüsen tauchen die Abgase des Jetpacks in sattes Grün.\n\nÄndere das Aussehen deines Exo-Anzugs an einem Aussehenmodifikator."
+  },
+  {
+    "Id": "build368",
+    "Name": "Blaue Jetpackspur",
+    "Group": "Jetpack-Auspuffüberschreibung",
+    "Description": "Eine exklusive Exo-Anzug-Aussehenüberschreibung.\n\nIndium-Injektionsdüsen tauchen die Abgase des Jetpacks in strahlendes Blau.\n\nÄndere das Aussehen deines Exo-Anzugs an einem Aussehenmodifikator."
+  },
+  {
+    "Id": "build369",
+    "Name": "Chromatische Raumschiffspur",
+    "Group": "Raumschiff-Auspuffüberschreibung",
+    "Description": "Ein exklusiver Raumschiff-Abgasmodifikator.\n\nPräzise kalibrierte, multichromatische Injektoren verändern die Abgase des Impulsantriebs und verwandeln die Auspuffspur in einen farbenfrohen Strahl.\n\nInstalliere diese Technologie in deinem Raumschiff-Inventar, um das Aussehen der Antrieb-Auspuffspuren zu verändern."
+  },
+  {
+    "Id": "build370",
+    "Name": "Tarnungs-Raumschiffspur",
+    "Group": "Raumschiff-Auspuffüberschreibung",
+    "Description": "Ein exklusiver Raumschiff-Abgasmodifikator.\n\nBaryondämpfer verändern die Abgase des Impulsantriebs und verleihen der charakteristischen Spur eine schwarze Färbung.\n\nInstalliere diese Technologie in deinem Raumschiff-Inventar, um das Aussehen der Antrieb-Auspuffspuren zu verändern."
+  },
+  {
+    "Id": "build371",
+    "Name": "Cadmium-Raumschiffspur",
+    "Group": "Raumschiff-Auspuffüberschreibung",
+    "Description": "Ein exklusiver Raumschiff-Abgasmodifikator.\n\nCadmium-Injektionsdüsen tauchen die Abgase des Impulsantriebs in knalliges Rot.\n\nInstalliere diese Technologie in deinem Raumschiff-Inventar, um das Aussehen der Antrieb-Auspuffspuren zu verändern."
+  },
+  {
+    "Id": "build372",
+    "Name": "Emeril-Raumschiffspur",
+    "Group": "Raumschiff-Auspuffüberschreibung",
+    "Description": "Ein exklusiver Raumschiff-Abgasmodifikator.\n\nEmeril-Injektionsdüsen tauchen die Abgase des Impulsantriebs in sattes Grün.\n\nInstalliere diese Technologie in deinem Raumschiff-Inventar, um das Aussehen der Antrieb-Auspuffspuren zu verändern."
+  },
+  {
+    "Id": "build373",
+    "Name": "Goldene Raumschiffspur",
+    "Group": "Raumschiff-Auspuffüberschreibung",
+    "Description": "Ein exklusiver Raumschiff-Abgasmodifikator.\n\nGoldene Injektionsdüsen tauchen die Abgase des Impulsantriebs in strahlendes Gold.\n\nInstalliere diese Technologie in deinem Raumschiff-Inventar, um das Aussehen der Antrieb-Auspuffspuren zu verändern."
+  },
+  {
+    "Id": "build374",
+    "Name": "Windender Strauch",
+    "Group": "Organische Dekoration",
+    "Description": "Diese ungewöhnlich fleischige Sukkulente wächst in radioaktiven Welten und scheint selbst dann hin und her zu schwanken, wenn die Luft stillsteht ...\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build375",
+    "Name": "Regenschirmbaum",
+    "Group": "Organische Dekoration",
+    "Description": "Dieser dekorative Baum hat sich an hohe Hintergrundstrahlung angepasst. Sein leuchtender Kern lockt Tiere an und fungiert nicht als Sinnesorgan. Er beobachtet dich nicht.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build376",
+    "Name": "Umschlingender Baum",
+    "Group": "Organische Dekoration",
+    "Description": "Dieser schöne, auffällige Baum gedeiht in der Hitze intensiver Gammastrahlung. Um auch in fremder Umgebung zu überleben, enthält der Stamm hochenergetisches Material.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build377",
+    "Name": "Blasen bildender Pilz",
+    "Group": "Organische Dekoration",
+    "Description": "Dieser schwellende Pilz wächst extrem schnell aus einem Netzwerk unterirdischer Sporen. Verbessert die Qualität der umliegenden Erde enorm.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build378",
+    "Name": "Wachsame Wölbung",
+    "Group": "Organische Dekoration",
+    "Description": "Dieses Gewächs kann zwar als Nutzpflanze kultiviert werden, doch vom Konsum wird abgeraten.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build379",
+    "Name": "Tentakelspitze",
+    "Group": "Organische Dekoration",
+    "Description": "Diese entzückende architektonische Blume kombiniert zwei beliebte ästhetische Trends: schlängelnde Tentakel und Riesenpilze.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build380",
+    "Name": "Betörender Kaktus",
+    "Group": "Organische Dekoration",
+    "Description": "Diese Wüstenpflanze ist von zarten, fedrigen Fasern umgeben, die den Radius der Feuchtigkeitsaufnahme vergrößern. Außerdem sehen sie reizend aus.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build381",
+    "Name": "Feierlicher Kaktus",
+    "Group": "Organische Dekoration",
+    "Description": "Diese bezaubernden, saftigen Kugelpflanzen werden von wunderschönen Blumen gekrönt.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build382",
+    "Name": "Saftiger Baum",
+    "Group": "Organische Dekoration",
+    "Description": "Die Rinde dieses Baums ist irreführend. Das Fleisch ist weder zäh noch hart, sondern weich und feucht. Runzeln an der Oberfläche speichern Wasservorräte für härtere Zeiten.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build383",
+    "Name": "Robuster Strauch",
+    "Group": "Organische Dekoration",
+    "Description": "Der Saft dieses winterfesten Nadelgehölzes steckt voller Gefrierschutzenzyme, wodurch es unvorstellbar niedrige Temperaturen überstehen kann.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build384",
+    "Name": "Gefrorener Pflanzenbehälter",
+    "Group": "Organische Dekoration",
+    "Description": "Ein mit Schnee gefüllter Steintrog. Er bietet das perfekte Zuhause für kleine, winterfeste Pflanzen, die in vereisten Welten wachsen.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build385",
+    "Name": "Uraltes Nadelgehölz",
+    "Group": "Organische Dekoration",
+    "Description": "Die Lebenszeit dieses Baums entspricht nahezu einer geologischen Zeitskala. Durch die niedrigen Temperaturen und Lichtverhältnisse in seinem ursprünglichen Lebensraum wächst er jedes Jahr nur wenige Millimeter. Ein Exemplar dieser Größe ist ein botanisches Wunder.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build386",
+    "Name": "Meeresgestein",
+    "Group": "Organische Dekoration",
+    "Description": "Eine hübsche Mineralformation, die sich aus Meersalz kristallisiert hat. Kann zudem Wasserfossilien und/oder -lebensformen enthalten.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build387",
+    "Name": "Mineralbogen",
+    "Group": "Organische Dekoration",
+    "Description": "Ein beeindruckendes Beispiel für geologische Geometrie. Ein stabiles, bogenförmiges Tragwerk mit ungewöhnlich eckigen, massiven Geoden.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build388",
+    "Name": "Edelsteinfels",
+    "Group": "Organische Dekoration",
+    "Description": "Dieses Gestein war einst das vernachlässigte Nebenprodukt von unterirdischem Bergkristallabbau, doch heute weiß man seinen ästhetischen Wert besser zu schätzen.\n\nEignet sich zur Landschaftsdekoration von Basen."
+  },
+  {
+    "Id": "build389",
+    "Name": "Kurioses Fauna-Banner",
+    "Group": "Individuelles persönliches Symbol",
+    "Description": "Stelle mit diesem exklusiven persönlichen Flair dein Interesse für seltene und ungewöhnliche Tiere zur Schau.\n\nFüge dieses Banner mit einem Aussehenmodifikator zu deinem Profil hinzu."
+  },
+  {
+    "Id": "build390",
+    "Name": "Kreaturenbanner",
+    "Group": "Individuelles persönliches Symbol",
+    "Description": "Zeige allen mit diesem exklusiven persönlichen Flair, wie sehr du Kreaturen und ihren köstlichen Honig liebst.\n\nFüge dieses Banner mit einem Aussehenmodifikator zu deinem Profil hinzu."
+  },
+  {
+    "Id": "build391",
+    "Name": "„Spezialist Polo“-Banner",
+    "Group": "Individuelles persönliches Symbol",
+    "Description": "Spezialist Polo hofft, dir gefällt dieses persönliche Flair. Möge es dir auf deinen Reisen viel Freude bereiten!\n\nFüge dieses Banner mit einem Aussehenmodifikator zu deinem Profil hinzu."
+  },
+  {
+    "Id": "build392",
+    "Name": "„Priester-Entität Nada“-Banner",
+    "Group": "Individuelles persönliches Symbol",
+    "Description": "Nimm Priester-Entität Nada mit in deine eigene Konvergenz, indem du dieses exklusive persönliche Flair ausrüstest.\n\nFüge dieses Banner mit einem Aussehenmodifikator zu deinem Profil hinzu."
+  },
+  {
+    "Id": "build393",
+    "Name": "„Galaktischer Hub“-Banner",
+    "Group": "Individuelles persönliches Symbol",
+    "Description": "Rüste das exklusive persönliche Flair aus, um mit anderen auf Entdeckungsreise zu gehen!\n\nFüge dieses Banner mit einem Aussehenmodifikator zu deinem Profil hinzu."
+  },
+  {
+    "Id": "build394",
+    "Name": "„Gut und schmackhaft“-Banner",
+    "Group": "Individuelles persönliches Symbol",
+    "Description": "Beweise mit diesem exklusiven persönlichen Flair dein Händchen für leckere pangalaktische Küche.\n\nFüge dieses Banner mit einem Aussehenmodifikator zu deinem Profil hinzu."
+  },
+  {
+    "Id": "build395",
+    "Name": "Zuckendes Ei",
+    "Group": "Lebende Kuriosität",
+    "Description": "Ein anormales Ei. Die Schale ist zäh und lederartig und das Ei zuckt, wenn man es berührt.\n\nVon innen ist ein sachtes Klopfen zu vernehmen. Hin und wieder scheint es zu singen."
   }
 ]
