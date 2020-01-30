@@ -1,27 +1,77 @@
 
 import * as React from 'react';
-import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
+// import LazyLoad from 'react-lazyload';
 
 import { GameItemModel } from '../../../contracts/GameItemModel';
 import { catalogueItem } from '../../../constants/Route';
 
 import { LazyLoadImage } from '../../core/lazyLoadImage/lazyLoadImage';
-const ReactLazy = require('react-lazy-load-image-component');
 
 interface IProps {
-    items: Array<GameItemModel>
+    items: Array<GameItemModel>;
 }
 
-export const GameItemListWithoutScrollTracking = (props: IProps) => {
+interface IState {
+    displayItems: Array<GameItemModel>;
+    currentPage: number;
+    pageSize: number;
+    hasMoreItems: boolean;
+}
 
-    return (
-        <div id="game-item-list" className="game-item-list">
-            {
-                props.items.map((item) => {
-                    return (
-                        <LazyLoad key={`game-item-${item.Id}`} once offset={200} >
-                            <div className="game-item">
+export class GameItemListWithoutScrollTracking extends React.Component<IProps, IState> {
+    constructor(props: any) {
+        super(props);
+
+        const pageSize = 50;
+
+        this.state = {
+            displayItems: this.props.items.slice(0, pageSize),
+            currentPage: 0,
+            pageSize: pageSize,
+            hasMoreItems: true
+        }
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = () => {
+        if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight) return;
+        this.loadItems(this.state.currentPage + 1);
+    }
+
+    loadItems = (requestedPage: number) => {
+        const startIndex = requestedPage * this.state.pageSize;
+        let endIndex = startIndex + this.state.pageSize;
+
+        let hasReachedTheEnd = false;
+        if (this.props.items.length < endIndex) {
+            endIndex = this.props.items.length;
+            hasReachedTheEnd = true;
+        }
+
+        const currentItems = this.state.displayItems;
+        for (let newItemIndex = startIndex; newItemIndex < endIndex; newItemIndex++) {
+            const newItem = this.props.items[newItemIndex];
+            currentItems.push(newItem);
+        }
+
+        this.setState(() => {
+            return {
+                displayItems: currentItems,
+                currentPage: requestedPage,
+                hasMoreItems: !hasReachedTheEnd
+            };
+        });
+    }
+
+    render() {
+        return (
+            <div id="game-item-list" className="game-item-list">
+                {
+                    this.state.displayItems.map((item: any) => {
+                        return (
+                            // <LazyLoad key={`game-item-${item.Id}`} once offset={200} >
+                            <div key={`game-item-${item.Id}`} className="game-item">
                                 <Link to={`${catalogueItem}/${item.Id}`} className="item">
                                     <div className="text-container">
                                         <p>{item.Name}</p>
@@ -31,12 +81,14 @@ export const GameItemListWithoutScrollTracking = (props: IProps) => {
                                     </div>
                                 </Link>
                             </div>
-                        </LazyLoad>
-                    )
-                })
-            }
-        </div>
-    );
+                            // </LazyLoad>
+                        )
+                    })
+                }
+            </div>
+        );
+    }
 }
 
-export const GameItemList = ReactLazy.trackWindowScroll(GameItemListWithoutScrollTracking);
+// export const GameItemList = ReactLazy.trackWindowScroll(GameItemListWithoutScrollTracking);
+export const GameItemList = GameItemListWithoutScrollTracking;
