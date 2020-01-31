@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 // import LazyLoad from 'react-lazyload';
+import ReactList from 'react-list';
 
 import { GameItemModel } from '../../../contracts/GameItemModel';
 import { catalogueItem } from '../../../constants/Route';
@@ -23,8 +24,9 @@ export const GameItemListWithoutScrollTracking = (props: IProps) => {
 
     return (
         <div id="game-item-list" className="game-item-list">
-            {
-                props.items.map((item: any) => {
+            <ReactList
+                itemRenderer={(index: number) => {
+                    const item = props.items[index];
                     return (
                         // <LazyLoad key={`game-item-${item.Id}`} once offset={200} >
                         <div key={`game-item-${item.Id}`} className="game-item">
@@ -39,8 +41,10 @@ export const GameItemListWithoutScrollTracking = (props: IProps) => {
                         </div>
                         // </LazyLoad>
                     )
-                })
-            }
+                }}
+                length={props.items.length}
+                type='uniform'
+            />
         </div>
     );
 }
