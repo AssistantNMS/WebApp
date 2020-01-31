@@ -4,7 +4,9 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux'
 
 import App from './App';
-import { initLocalization } from './localization/i18n';
+import { initLocalization } from './integration/i18n';
+import { initAnalytics } from './integration/analytics';
+import { getJSON, defaultConfig } from './utils';
 
 import { SettingReducerKey } from './redux/cacheKey';
 import { reducer } from './redux';
@@ -12,6 +14,10 @@ import { reducer } from './redux';
 import * as serviceWorker from './serviceWorker';
 
 import './index.scss';
+
+declare global {
+    interface Window { config: any; }
+}
 
 let persistedState: any = localStorage.getItem(SettingReducerKey)
     ? {
@@ -37,16 +43,21 @@ store.subscribe(() => {
     }
 })
 
-initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
+window.config = window.config || {};
+getJSON('assets/config.json', (status: boolean, response: string) => {
+    window.config = (status === true)
+        ? response || {}
+        : defaultConfig;
 
+    initAnalytics();
+    initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
 
-ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>
-    , document.getElementById('nms-app'));
+    ReactDOM.render(
+        <Provider store={store}>
+            <App />
+        </Provider>
+        , document.getElementById('nms-app'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.register();
+    serviceWorker.register();
+})
+
