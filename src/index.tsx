@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
-import App from './App';
+import { App } from './App';
 import { initLocalization } from './integration/i18n';
 import { initAnalytics } from './integration/analytics';
 import { getJSON, defaultConfig } from './utils';
@@ -44,17 +45,21 @@ store.subscribe(() => {
 })
 
 window.config = window.config || {};
-getJSON('assets/config.json', (status: boolean, response: string) => {
+getJSON('/assets/config.json', (status: boolean, response: string) => {
     window.config = (status === true)
         ? response || {}
         : defaultConfig;
+
+    if (window.config.consoleLogDebug) console.log('Config', window.config);
 
     initAnalytics();
     initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
 
     ReactDOM.render(
         <Provider store={store}>
-            <App />
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
         </Provider>
         , document.getElementById('nms-app'));
 

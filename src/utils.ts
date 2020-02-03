@@ -14,5 +14,6 @@ export const getJSON = (url: string, callback: any) => {
 };
 
 export const defaultConfig = {
-    googleAnalyticsEnabled: false
+    googleAnalyticsEnabled: false,
+    consoleLogDebug: true
 }
