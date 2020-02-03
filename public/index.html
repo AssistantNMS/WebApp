@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+
+<head>
+	<meta charset="utf-8" />
 	<title>Assistant for No Man's Sky</title>
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-	
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+	<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="description" content="Web site created using create-react-app" />
+	<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
 	<link rel="preload" href="/assets/images/loader.svg" as="image">
 	<style>
-	.full-page-loader {
-	  position: fixed;
-	  top: 0;
-	  right: 0;
-	  bottom: 0;
-	  left: 0;
-	  z-index: 2;
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: center;
-	  text-align: center;
-	  color: white
-	}
+		.full-page-loader {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			color: white
+		}
 
-	.full-page-loader img {
-	  width: 200px;
-	}
+		.full-page-loader img {
+			width: 200px;
+		}
 
-	.opacity80 {
-	  background-color: #333333;
-	  opacity: 0.8;
-	}
+		.opacity80 {
+			background-color: #333333;
+			opacity: 0.8;
+		}
 	</style>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="nms-app">
+</head>
+
+<body>
+	<noscript>You need to enable JavaScript to run this app.</noscript>
+	<div id="nms-app">
 		<div class="full-page-loader opacity80"></div>
 		<div class="full-page-loader">
-		  <div class="cssload-container">
-			<ul class="cssload-flex-container">
-			  <li style="list-style-type: none;">
-				<img src="/assets/images/loader.svg" draggable="false" alt="loading-animation">
-				<h2 class="largeHeading">Loading</h2>
-			  </li>
-			</ul>
-		  </div>
+			<div class="cssload-container">
+				<ul class="cssload-flex-container">
+					<li style="list-style-type: none;">
+						<img src="/assets/images/loader.svg" draggable="false" alt="loading-animation">
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
-  </body>
+</body>
+
 </html>
