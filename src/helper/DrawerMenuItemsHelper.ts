@@ -38,8 +38,8 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   menuItems.push({
     name: 'catalogue',
     link: '/catalogue',
-    icon: 'person',
-    iconType: DrawerIconType.Material,
+    icon: '/assets/images/drawer/catalogue.png',
+    iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push(menuItemSeperator);

@@ -7,7 +7,11 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 
 import { mapStateToProps } from './App.Redux';
 import { StateSettingReducer } from './redux/state/StateSettingReducer';
-import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
+
+import { trackPageView } from './integration/analytics';
+
+import { about, catalogue, catalogueItem, home, language, search, donation } from './constants/Route';
+
 import { Drawer } from './components/core/drawer/drawer';
 import { HomePresenter } from './pages/home/homePresenter';
 import { AboutPresenter } from './pages/about/aboutPresenter';
@@ -16,9 +20,10 @@ import { CataloguePresenter } from './pages/catalogue/cataloguePresenter';
 import { CatalogueListPresenter } from './pages/catalogue/catalogueListPresenter';
 import { CatalogueItemPresenter } from './pages/catalogue/catalogueItemPresenter';
 import { SearchContainer } from './pages/search/searchContainer';
+import { DonationPresenter } from './pages/donation/donationPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
-import { about, catalogue, catalogueItem, home, language, search } from './constants/Route';
-import { trackPageView } from './integration/analytics';
+
+import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
 
 interface IProps extends StateSettingReducer {
   location: any;
@@ -51,6 +56,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={search} component={SearchContainer} />
             <Route path={about} component={AboutPresenter} />
             <Route path={language} component={LanguagePresenter} />
+            <Route path={donation} component={DonationPresenter} />
             <Route path={home} component={NotFoundPresenter} />
           </Switch>
         </div>
