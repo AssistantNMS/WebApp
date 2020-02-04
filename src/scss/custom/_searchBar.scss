@@ -27,7 +27,30 @@ $searchIconHeight: 30px;
         font-size: 1.75em;
         color: white;
         text-align: center;
+
         // background-color: $brand-secondary;
+        $placeholderColor: rgba(255, 255, 255, 0.9);
+        $placeholderFontSize: .75em;
+
+        &::-webkit-input-placeholder {
+            color: $placeholderColor;
+            font-size: $placeholderFontSize;
+        }
+
+        &::-moz-placeholder {
+            color: $placeholderColor;
+            font-size: $placeholderFontSize;
+        }
+
+        &:-ms-input-placeholder {
+            color: $placeholderColor;
+            font-size: $placeholderFontSize;
+        }
+
+        &:-moz-placeholder {
+            color: $placeholderColor;
+            font-size: $placeholderFontSize;
+        }
     }
 
     .arrow-container {

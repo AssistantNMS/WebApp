@@ -2,6 +2,7 @@ import { ResultWithValue } from '../contracts/results/ResultWithValue';
 import { GameItemModel } from '../contracts/GameItemModel';
 import { GameItemService } from './GameItemService';
 import { CatalogueType } from '../constants/CatalogueType';
+import { anyObject } from '../helper/TypescriptHacks';
 
 export class AllGameItemsService {
   private typesArray = [
@@ -55,6 +56,34 @@ export class AllGameItemsService {
         value: result,
         errorMessage: ex.message
       }
+    }
+  }
+
+  async getByInputsId(itemId: string): Promise<ResultWithValue<Array<GameItemModel>>> {
+    var allGenericItemsResult = await this.getAllItems();
+    console.log({ allGenericItemsResult });
+    if (!allGenericItemsResult.isSuccess) {
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: allGenericItemsResult.errorMessage,
+      };
+    }
+    try {
+      var craftableItems = allGenericItemsResult.value
+        .filter((r: any) => r.RequiredItems.find((ri: any) => ri.Id === itemId) != null);
+      return {
+        isSuccess: true,
+        value: craftableItems,
+        errorMessage: '',
+      };
+    } catch (exception) {
+      console.log(`GenericJsonRepo Exception: ${exception.toString()}`);
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: exception.errorMessage,
+      };
     }
   }
 

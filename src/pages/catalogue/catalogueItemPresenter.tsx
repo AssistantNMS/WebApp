@@ -12,6 +12,9 @@ import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/Bluep
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
 
 import i18next from 'i18next';
+import { AllGameItemsService } from '../../services/AllGameItemsService';
+import { GameItemList } from '../../components/common/gameItemList/gameItemList';
+
 interface IProps {
     location: any;
     match: any;
@@ -20,6 +23,9 @@ interface IProps {
 }
 interface IState {
     item: GameItemModel;
+    resArray: Array<GameItemModel>;
+    gameItemService: GameItemService;
+    allGameItemsService: AllGameItemsService;
     additionalData: Array<any>;
 }
 
@@ -29,6 +35,9 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
 
         this.state = {
             item: anyObject,
+            resArray: [],
+            gameItemService: new GameItemService(),
+            allGameItemsService: new AllGameItemsService(),
             additionalData: []
         }
     }
@@ -45,16 +54,27 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
     }
 
     fetchData = async () => {
-        const gameItemService = new GameItemService();
-        var itemResult = await gameItemService.getItemDetails(this.props.match?.params?.itemId ?? '');
+        var itemResult = await this.state.gameItemService.getItemDetails(this.props.match?.params?.itemId ?? '');
         if (!itemResult.isSuccess) {
             // Error
             return;
         }
+        this.getResArray(itemResult.value.Id);
         this.setState(() => {
             return {
                 item: itemResult.value,
                 additionalData: this.getAdditionalData(itemResult.value)
+            }
+        });
+    }
+
+    getResArray = async (itemId: string) => {
+        var resArrayResult = await this.state.allGameItemsService.getByInputsId(itemId);
+        console.log({ resArrayResult });
+        if (!resArrayResult.isSuccess) return;
+        this.setState(() => {
+            return {
+                resArray: resArrayResult.value,
             }
         });
     }
@@ -133,10 +153,29 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                                 );
                             })
                         }
-
-                    </div >
+                    </div>
                     <hr />
-                </div >
+                    <div className="row">
+                        <div className="col-12">
+                            <h4>{i18next.t(LocaleKey.craftedUsing)}</h4>
+                        </div>
+                        <div className="col-12">
+                            <h3>craftedUsing</h3>
+                        </div>
+                    </div>
+                    {
+                        (this.state.resArray && this.state.resArray.length > 0)
+                            ? <div className="row">
+                                <div className="col-12">
+                                    <h4>{i18next.t(LocaleKey.usedToCreate)}</h4>
+                                </div>
+                                <div className="col-12">
+                                    <GameItemList items={this.state.resArray} />
+                                </div>
+                            </div>
+                            : null
+                    }
+                </div>
             </>
         );
     }

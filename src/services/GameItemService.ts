@@ -1,10 +1,10 @@
-import { GameItemModel } from '../contracts/GameItemModel';
-import { BaseJsonService } from './BaseJsonService';
-import { ResultWithValue } from '../contracts/results/ResultWithValue';
 import { BaseItemModel } from '../contracts/BaseItemModel';
 import { DetailItemModel } from '../contracts/DetailItemModel';
+import { GameItemModel } from '../contracts/GameItemModel';
+import { ResultWithValue } from '../contracts/results/ResultWithValue';
+import { getCatalogueFromItemId, mapToLocale } from '../mapper/CatalogueMapper';
 import { mapGenericPageItems } from '../mapper/GameItemMapper';
-import { mapToLocale, getCatalogueFromItemId } from '../mapper/CatalogueMapper';
+import { BaseJsonService } from './BaseJsonService';
 
 export class GameItemService extends BaseJsonService {
   async getListfromJson(catalogueType: string): Promise<ResultWithValue<Array<GameItemModel>>> {
