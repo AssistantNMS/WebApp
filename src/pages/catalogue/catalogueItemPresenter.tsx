@@ -14,6 +14,8 @@ import { CurrencyType } from '../../contracts/enum/CurrencyType';
 import i18next from 'i18next';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
 import { GameItemList } from '../../components/common/gameItemList/gameItemList';
+import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
+import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 
 interface IProps {
     location: any;
@@ -23,7 +25,8 @@ interface IProps {
 }
 interface IState {
     item: GameItemModel;
-    resArray: Array<GameItemModel>;
+    resArray: Array<RequiredItemDetails>;
+    usedToCreateArray: Array<GameItemModel>;
     gameItemService: GameItemService;
     allGameItemsService: AllGameItemsService;
     additionalData: Array<any>;
@@ -36,6 +39,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         this.state = {
             item: anyObject,
             resArray: [],
+            usedToCreateArray: [],
             gameItemService: new GameItemService(),
             allGameItemsService: new AllGameItemsService(),
             additionalData: []
@@ -60,6 +64,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
             return;
         }
         this.getResArray(itemResult.value.Id);
+        this.getUsedToCreateArray(itemResult.value.Id);
         this.setState(() => {
             return {
                 item: itemResult.value,
@@ -69,12 +74,21 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
     }
 
     getResArray = async (itemId: string) => {
-        var resArrayResult = await this.state.allGameItemsService.getByInputsId(itemId);
-        console.log({ resArrayResult });
+        var resArrayResult = await this.state.gameItemService.getRequiredItems(itemId);
         if (!resArrayResult.isSuccess) return;
         this.setState(() => {
             return {
                 resArray: resArrayResult.value,
+            }
+        });
+    }
+
+    getUsedToCreateArray = async (itemId: string) => {
+        var usedToCreateArrayResult = await this.state.allGameItemsService.getByInputsId(itemId);
+        if (!usedToCreateArrayResult.isSuccess) return;
+        this.setState(() => {
+            return {
+                usedToCreateArray: usedToCreateArrayResult.value,
             }
         });
     }
@@ -109,6 +123,36 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
             }
         }
         return additionalData;
+    }
+
+    displayRequiredItems = (resArray: Array<RequiredItemDetails>) => {
+        if (resArray == null || resArray.length < 1) return null;
+
+        return (
+            <div className="row">
+                <div className="col-12">
+                    <h4>{i18next.t(LocaleKey.craftedUsing)}</h4>
+                </div>
+                <div className="col-12">
+                    <GameItemList items={resArray} presenter={RequiredItemListTile} />
+                </div>
+            </div>
+        );
+    }
+
+    displayUsedToCreateItems = (usedToCreateArray: Array<GameItemModel>) => {
+        if (usedToCreateArray == null || usedToCreateArray.length < 1) return null;
+
+        return (
+            <div className="row">
+                <div className="col-12">
+                    <h4>{i18next.t(LocaleKey.usedToCreate)}</h4>
+                </div>
+                <div className="col-12">
+                    <GameItemList items={usedToCreateArray} />
+                </div>
+            </div>
+        );
     }
 
     render() {
@@ -155,26 +199,8 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                         }
                     </div>
                     <hr />
-                    <div className="row">
-                        <div className="col-12">
-                            <h4>{i18next.t(LocaleKey.craftedUsing)}</h4>
-                        </div>
-                        <div className="col-12">
-                            <h3>craftedUsing</h3>
-                        </div>
-                    </div>
-                    {
-                        (this.state.resArray && this.state.resArray.length > 0)
-                            ? <div className="row">
-                                <div className="col-12">
-                                    <h4>{i18next.t(LocaleKey.usedToCreate)}</h4>
-                                </div>
-                                <div className="col-12">
-                                    <GameItemList items={this.state.resArray} />
-                                </div>
-                            </div>
-                            : null
-                    }
+                    {this.displayRequiredItems(this.state.resArray)}
+                    {this.displayUsedToCreateItems(this.state.usedToCreateArray)}
                 </div>
             </>
         );

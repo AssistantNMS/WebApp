@@ -1,16 +1,14 @@
 
 import * as React from 'react';
-import { Link } from 'react-router-dom';
-// import LazyLoad from 'react-lazyload';
 import ReactList from 'react-list';
 
 import { GameItemModel } from '../../../contracts/GameItemModel';
-import { catalogueItem } from '../../../constants/Route';
-
-import { LazyLoadImage } from '../../core/lazyLoadImage/lazyLoadImage';
+import { GameItemListTile } from '../../tilePresenter/gameItemListTile/gameItemListTile';
+import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
 
 interface IProps {
-    items: Array<GameItemModel>;
+    items: Array<GameItemModel | RequiredItemDetails>;
+    presenter?: (props: GameItemModel | RequiredItemDetails) => JSX.Element
 }
 
 // interface IState {
@@ -30,14 +28,11 @@ export const GameItemListWithoutScrollTracking = (props: IProps) => {
                     return (
                         // <LazyLoad key={`game-item-${item.Id}`} once offset={200} >
                         <div key={`game-item-${item.Id}`} className="game-item">
-                            <Link to={`${catalogueItem}/${item.Id}`} className="item">
-                                <div className="text-container">
-                                    <p>{item.Name}</p>
-                                </div>
-                                <div className="image-container" style={{ backgroundColor: `#${item.Colour}` }}>
-                                    <LazyLoadImage src={`/assets/images/${item.Icon}`} alt={item.Name} draggable={false} />
-                                </div>
-                            </Link>
+                            {
+                                props.presenter != null
+                                    ? props.presenter(item)
+                                    : <GameItemListTile {...item} />
+                            }
                         </div>
                         // </LazyLoad>
                     )
