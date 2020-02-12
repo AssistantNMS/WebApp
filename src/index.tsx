@@ -25,7 +25,11 @@ let persistedState: any = localStorage.getItem(SettingReducerKey)
         settingReducer: JSON.parse(localStorage.getItem(SettingReducerKey) || '{}'),
     }
     : {
-        settingReducer: {}
+        settingReducer: {
+            isDark: true,
+            selectedLanguage: 'en',
+            menuIsVisible: true
+        }
     }
 
 const store = createStore(
