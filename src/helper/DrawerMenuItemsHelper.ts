@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import { about, language, settings, donation } from '../constants/Route';
+import { about, language, /*settings,*/ donation } from '../constants/Route';
 import { DrawerIconType } from '../contracts/enum/DrawerIconType';
 import { DrawerMenuItem } from '../contracts/DrawerMenuItem';
 import { LocaleKey } from '../localization/LocaleKey';
@@ -27,13 +27,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
-  menuItems.push({
-    name: i18next.t(LocaleKey.settings).toString(),
-    link: settings,
-    icon: '/assets/images/settings.png',
-    iconType: DrawerIconType.Custom,
-    isActive: false
-  });
+  // menuItems.push({
+  //   name: i18next.t(LocaleKey.settings).toString(),
+  //   link: settings,
+  //   icon: '/assets/images/settings.png',
+  //   iconType: DrawerIconType.Custom,
+  //   isActive: false
+  // });
   menuItems.push(menuItemSeperator);
   menuItems.push({
     name: 'catalogue',
