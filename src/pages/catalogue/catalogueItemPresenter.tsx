@@ -47,18 +47,25 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
     }
 
     componentDidMount() {
-        this.fetchData();
+        this.fetchData(this.props.match?.params?.itemId);
+    }
+
+    componentWillReceiveProps(nextProps: any) {
+        const prevItemId = this.props.match?.params?.itemId;
+        if (nextProps.match?.params?.itemId !== prevItemId) {
+            this.fetchData(nextProps.match?.params?.itemId);
+        }
     }
 
     componentDidUpdate(prevProps: IProps, prevState: IState) {
         const prevSelectedLanguage = prevProps.selectedLanguage;
         if (this.props.selectedLanguage !== prevSelectedLanguage) {
-            this.fetchData();
+            this.fetchData(this.props.match?.params?.itemId);
         }
     }
 
-    fetchData = async () => {
-        var itemResult = await this.state.gameItemService.getItemDetails(this.props.match?.params?.itemId ?? '');
+    fetchData = async (itemId: string) => {
+        var itemResult = await this.state.gameItemService.getItemDetails(itemId ?? '');
         if (!itemResult.isSuccess) {
             // Error
             return;
@@ -129,14 +136,17 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         if (resArray == null || resArray.length < 1) return null;
 
         return (
-            <div className="row">
-                <div className="col-12">
-                    <h4>{i18next.t(LocaleKey.craftedUsing)}</h4>
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.craftedUsing)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GameItemList items={resArray} presenter={RequiredItemListTile} />
+                    </div>
                 </div>
-                <div className="col-12">
-                    <GameItemList items={resArray} presenter={RequiredItemListTile} />
-                </div>
-            </div>
+                <hr className="mt-3em" />
+            </>
         );
     }
 
@@ -144,14 +154,17 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         if (usedToCreateArray == null || usedToCreateArray.length < 1) return null;
 
         return (
-            <div className="row">
-                <div className="col-12">
-                    <h4>{i18next.t(LocaleKey.usedToCreate)}</h4>
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.usedToCreate)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GameItemList items={usedToCreateArray} />
+                    </div>
                 </div>
-                <div className="col-12">
-                    <GameItemList items={usedToCreateArray} />
-                </div>
-            </div>
+                <hr className="mt-3em" />
+            </>
         );
     }
 
