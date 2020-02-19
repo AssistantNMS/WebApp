@@ -23,10 +23,10 @@ export const DonationPresenter: React.FC = () => {
                 <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
                     <div className="row">
                         <div className="col-12">
-                            <p>{i18next.t(LocaleKey.donationDescrip)}</p>
+                            <h3>{i18next.t(LocaleKey.donationDescrip)}</h3>
                         </div>
                     </div>
-                    <div className="row" style={{ justifyContent: 'center' }}>
+                    <div className="row justify">
                         {
                             paymentOptions.map((paymentOption: any, index: number) => {
                                 return (

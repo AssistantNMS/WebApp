@@ -21,14 +21,14 @@ export const AboutPresenter: React.FC = () => {
                 <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
                     <div className="row">
                         <div className="col-12">
-                            <p>{i18next.t(LocaleKey.aboutContent)}</p>
+                            <h3>{i18next.t(LocaleKey.aboutContent)}</h3>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row justify">
                         {
                             buttons.map((button) => {
                                 return (
-                                    <div className="col-12" key={button.title}>
+                                    <div key={button.title} className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                         <CardButton
                                             title={button.title}
                                             url={button.url}

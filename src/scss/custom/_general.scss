@@ -58,6 +58,10 @@
 .card.extraMargin {
     margin: 10px 0;
 
+    .card-header {
+        font-size: 1rem;
+    }
+
     .card-header-image {
         max-height: 50px;
     }
@@ -94,3 +98,11 @@
 #app {
     overflow-y: scroll;
 }
+
+.row.justify {
+    justify-content: center;
+}
+
+// body p {
+//     font-size: 1.25em;
+// }
