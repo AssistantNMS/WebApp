@@ -21,7 +21,13 @@ export const AboutPresenter: React.FC = () => {
                 <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
                     <div className="row">
                         <div className="col-12">
-                            <h3>{i18next.t(LocaleKey.aboutContent)}</h3>
+                            {
+                                i18next.t(LocaleKey.aboutContent).split('\n').map((text: string, index: number) => (
+                                    <h3 key={`about-${index}`}>
+                                        {text}
+                                    </h3>
+                                ))
+                            }
                         </div>
                     </div>
                     <div className="row justify">
