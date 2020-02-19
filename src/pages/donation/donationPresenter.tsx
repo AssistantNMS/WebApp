@@ -6,6 +6,7 @@ import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
 import { ExternalUrls } from '../../constants/ExternalUrls';
 
 import { NavBar } from '../../components/core/navbar/navbar';
+import { CardButton } from '../../components/core/button/cardButton';
 
 export const DonationPresenter: React.FC = () => {
     const paymentOptions = [];
@@ -30,12 +31,11 @@ export const DonationPresenter: React.FC = () => {
                             paymentOptions.map((paymentOption: any, index: number) => {
                                 return (
                                     <div key={`${paymentOption.title}-${index}`} className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                                        <a href={paymentOption.url} target="_blank" rel="noopener noreferrer" className="card paymentOption">
-                                            <div className="card-header">
-                                                <img src={paymentOption.image} alt={paymentOption.title} className="card-header-image" />
-                                                <span>{paymentOption.title}</span>
-                                            </div>
-                                        </a>
+                                        <CardButton
+                                            title={paymentOption.title}
+                                            url={paymentOption.url}
+                                            imageUrl={paymentOption.image}
+                                        />
                                     </div>
                                 );
                             })

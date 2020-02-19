@@ -1,10 +1,12 @@
 import React from 'react';
 import i18next from 'i18next';
 
-import { NavBar } from '../../components/core/navbar/navbar';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
 import { ExternalUrls } from '../../constants/ExternalUrls';
+
+import { NavBar } from '../../components/core/navbar/navbar';
+import { CardButton } from '../../components/core/button/cardButton';
 
 export const AboutPresenter: React.FC = () => {
     const buttons = [
@@ -27,7 +29,10 @@ export const AboutPresenter: React.FC = () => {
                             buttons.map((button) => {
                                 return (
                                     <div className="col-12" key={button.title}>
-                                        <a href={button.url} target="_blank" rel="noopener noreferrer">{button.title}</a>
+                                        <CardButton
+                                            title={button.title}
+                                            url={button.url}
+                                        />
                                     </div>
                                 );
                             })
