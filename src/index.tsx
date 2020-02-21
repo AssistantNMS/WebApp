@@ -67,6 +67,8 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
         </Provider>
         , document.getElementById('nms-app'));
 
-    serviceWorker.register();
+    if (window.config.useServiceWorker) {
+        serviceWorker.register();
+    }
 })
 
