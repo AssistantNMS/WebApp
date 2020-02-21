@@ -559,7 +559,7 @@
   },
   {
     "Id": "tech101",
-    "Name": "Condutor de Humboldt",
+    "Name": "Propulsor de Humboldt",
     "Group": "Sistema de potência da Exonave",
     "Description": "Um motor de reator à prova de inversão, termicamente eficiente, capaz de alimentar o Nautilon mesmo em profundidades extremas.\n\nAtivado por Células de Combustível Hidrotérmico ."
   },
@@ -584,8 +584,8 @@
   {
     "Id": "tech105",
     "Name": "Gerador de Osmose",
-    "Group": "Atualização do Condutor de Humboldt",
-    "Description": "Instalado no sistema de acionamento a bordo do Submarino Nautilon.\n\nCaptura energia ao explorar o gradiente salino em ambientes de águas profundas, permitindo uma recarga lenta do Condutor de Humboldt em caso de emergências de combustível."
+    "Group": "Atualização do Propulsor de Humboldt",
+    "Description": "Instalado no sistema de acionamento a bordo do Submarino Nautilon.\n\nCaptura energia ao explorar o gradiente salino em ambientes de águas profundas, permitindo uma recarga lenta do Propulsor de Humboldt em caso de emergências de combustível."
   },
   {
     "Id": "tech106",
@@ -802,5 +802,179 @@
     "Name": "Computador Warp Temporal",
     "Group": "Atualização de Hiperdrive: Sistemas azuis",
     "Description": "Atualiza a matriz de blindagem da Hiperdrive, evitando anomalias temporais ao tentar alcançar corpos estelares azuis de classe rara.\n\nAconselha-se aceder aos sistemas Hiperdrive através do Mapa Galáctico."
+  },
+  {
+    "Id": "tech142",
+    "Name": "Motor de Explosão",
+    "Group": "Aumento do Jetpack",
+    "Description": "Uma atualização poderosa para o Jetpack do Exofato que permite um recarregamento limitado do jetpack enquanto estás suspenso no ar.\n\nCompressores altamente eficientes instalados à volta do exaustor do jetpack reaproveitam o fluxo de ar gerado por uma queda persistente, transformando alguma dessa energia em combustível de jetpack."
+  },
+  {
+    "Id": "tech143",
+    "Name": "Refinador Pessoal",
+    "Group": "Unidade Refinadora Automática",
+    "Description": "Uma extensão compacta do Exofato, a instalar um pequeno Refinador Portátil, acessível diretamente a partir da interface do Exofato do utilizador.\n\nA unidade requer combustível e só pode refinar uma substância de cada vez."
+  },
+  {
+    "Id": "tech144",
+    "Name": "Propulsor de Instabilidade",
+    "Group": "Aumento do Motor de Pulsação",
+    "Description": "Uma atualização altamente avançada para o Motor de Pulsação que aumenta imensamente a eficiência do combustível.\n\nAbastecimentos de Trítio são redirecionados para um ciclo de buracos negros em miniatura. As flutuações microgravíticas resultantes são aproveitadas para impulsionar a propulsão da nave para além do que é possível através de métodos convencionais de combustão."
+  },
+  {
+    "Id": "tech145",
+    "Name": "Amplificador de Subluz",
+    "Group": "Aumento do Motor de Pulsação",
+    "Description": "Uma atualização altamente avançada para o Motor de Pulsação que aumenta imensamente a velocidade interplanetária.\n\nOs efeitos nas mudanças da matriz de leitura que ocorrem naturalmente no Motor de Pulsação são amplificados por ressoadores de trítio, aumentando a velocidade máxima de subluz."
+  },
+  {
+    "Id": "tech146",
+    "Name": "Unidade Warp de Emergência",
+    "Group": "Melhoria de Hiperdrive",
+    "Description": "Uma atualização significativa do Hiperdrive que permite realizar um salto warp instantâneo, mesmo que sistemas convencionais estejam bloqueados devido a um combate de naves espaciais. O acesso ao sistema de warp de emergência é feito através do Menu Rápido.\n\nAVISO: Os sistemas de interferência rápida impedem o utilizador de traçar uma rota. Eventos à velocidade da luz incalculáveis irão danificar a unidade e requerem reparações frequentes."
+  },
+  {
+    "Id": "tech147",
+    "Name": "Ressoador-Q",
+    "Group": "Atualização da Intra-Faca da Nave",
+    "Description": "Atualiza o Acelerador Infra-Faca ao comprimir formas de onda internas para permitir um disparo adicional dentro dos padrões de disparo convencionais."
+  },
+  {
+    "Id": "tech148",
+    "Name": "Danos Hidráulicos",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech149",
+    "Name": "Painel Rebentado",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech150",
+    "Name": "Tanques Corroídos",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech151",
+    "Name": "Compressor Queimado",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech152",
+    "Name": "Revestimento Chamuscado",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech153",
+    "Name": "Célula de Combustível Derretida",
+    "Group": "Componente nave espacial danificado",
+    "Description": "Subsistema da nave espacial com danos críticos.\n\nO espaço não pode ser usado para armazenamento ou tecnologia enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech154",
+    "Name": "Atuador Corroído",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech155",
+    "Name": "Terminal Queimado",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech156",
+    "Name": "Servomecanismo Derretido",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech157",
+    "Name": "Lentes Destruídas",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech158",
+    "Name": "Membrana com Vazamento",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech159",
+    "Name": "Resistência Avariada",
+    "Group": "Componente multiferramenta danificado",
+    "Description": "Subsistema da Multiferramenta com danos críticos.\n\nO espaço não pode ser usado enquanto o dano não estiver reparado. Usa REPAIR para iniciar o processo de reparação.\n\nA reparação irá vagar um espaço para uso geral."
+  },
+  {
+    "Id": "tech160",
+    "Name": "Coração pulsante",
+    "Group": "Tecnologia orgânica fundida",
+    "Description": "Uma superestrutura metálica fibrosa une este órgão quente e vital com o núcleo da nave. Sem ela, a nave não seria nada, uma casca sem vida.\n\nPressiona ROLLLEFT e ROLLRIGHT juntos para pedir ao coração para iniciar um salto de pulsação.\nPressiona BOOST para solicitar um aumento de velocidade."
+  },
+  {
+    "Id": "tech161",
+    "Name": "Montagem neural",
+    "Group": "Tecnologia orgânica fundida",
+    "Description": "Um conjunto de neurónios distribuídos, fundidos a uma placa de fios metálicos. Padrões complexos de impulsos eléctricos tecem o seu caminho através da superfície, unindo cada sistema de nave.\n \nPrime THRUST para perguntar se a nave gostaria de descolar."
+  },
+  {
+    "Id": "tech162",
+    "Name": "Córtex de singularidade",
+    "Group": "Tecnologia orgânica fundida",
+    "Description": "Uma haste biometálica complexa, ligada directamente a um coração antimatéria. Regista uma actividade elevada durante os saltos interestelares. Parece deliciar-se com os cálculos complexos necessários para viagens FTL.\n\nAcesso a sistemas de navegação de longa distância através do Mapa Galáctico. Mantém a nave feliz, saltando entre os sistemas regularmente."
+  },
+  {
+    "Id": "tech163",
+    "Name": "Supressor de grito",
+    "Group": "Tecnologia orgânica fundida",
+    "Description": "Esta pequena extensão da rede de defesa automatizada da nave parece ser o seu próprio organismo autónomo. Uma pequena boca no centro da sua carne anseia por Pugneum.\n\nDurante o combate, parece desviar a matriz neurológica e evitar que o medo ou a dor traumatize o resto do corpo da nave."
+  },
+  {
+    "Id": "tech164",
+    "Name": "Aberturas de expulsão",
+    "Group": "Tecnologia orgânica fundida",
+    "Description": "Uma confusão de sacos e esfíncteres, estes respiradouros geram e expulsam glóbulos de plasma. Quando fundidos aos sistemas de armas da nave, estes são sobreaquecidos e depois expelidos a alta pressão.\n\nPressiona SHIPFIRE para pedir à nave para direcionar os seus respiradouros para o alvo atual."
+  },
+  {
+    "Id": "tech165",
+    "Name": "Olhos enxertados",
+    "Group": "Tecnologia orgânica fundida",
+    "Description": "Um arranjo complexo de membranas e lentes, fundidas sobre uma matriz de laser de alta energia. A incineração espera aqueles que se encontram no seu olhar.\nPressiona SHIPFIRE para solicitar aos olhos que olhem para os alvos próximos."
+  },
+  {
+    "Id": "tech166",
+    "Name": "Rasto cromático da nave espacial",
+    "Group": "Alteração do escape da nave espacial",
+    "Description": "Um exclusivo Modificador do escape da nave espacial.\n\nOs injetores multicromáticos calibrados com alta precisão alteram o escape do motor de pulsação, transformando o rasto numa vibrante exibição de cores.\n\nInstala esta tecnologia no inventário da tua nave espacial para alterar a aparência do rasto do escape do motor."
+  },
+  {
+    "Id": "tech167",
+    "Name": "Rasto furtivo da nave espacial",
+    "Group": "Alteração do escape da nave espacial",
+    "Description": "Um exclusivo Modificador do escape da nave espacial.\n\nOs supressores de bariões alteram o escape do motor de pulsação, dando uma distinta tonalidade preta ao seu rasto exclusivo.\n\nInstala esta tecnologia no inventário da tua nave espacial para alterar a aparência do rasto do escape do motor."
+  },
+  {
+    "Id": "tech168",
+    "Name": "Rasto de cádmio da nave espacial",
+    "Group": "Alteração do escape da nave espacial",
+    "Description": "Um exclusivo Modificador do escape da nave espacial.\n\nOs bicos de injeção de cádmio adicionam um arrojado tom vermelho ao rasto do motor de pulsação.\n\nInstala esta tecnologia no inventário da tua nave espacial para alterar a aparência do rasto do escape do motor."
+  },
+  {
+    "Id": "tech169",
+    "Name": "Rasto de emeril da nave espacial",
+    "Group": "Alteração do escape da nave espacial",
+    "Description": "Um exclusivo Modificador do escape da nave espacial.\n\nOs bicos de injeção de emeril adicionam um luxuriante tom verde ao rasto do motor de pulsação.\n\nInstala esta tecnologia no inventário da tua nave espacial para alterar a aparência do rasto do escape do motor."
+  },
+  {
+    "Id": "tech170",
+    "Name": "Rasto dourado da nave espacial",
+    "Group": "Alteração do escape da nave espacial",
+    "Description": "Um exclusivo Modificador do escape da nave espacial.\n\nOs bicos de injeção de ouro adicionam um estonteante dourado ao rasto do motor de pulsação.\n\nInstala esta tecnologia no inventário da tua nave espacial para alterar a aparência do rasto do escape do motor."
   }
 ]

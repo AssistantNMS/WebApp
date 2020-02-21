@@ -1,10 +1,12 @@
 import React from 'react';
 import i18next from 'i18next';
 
-import { NavBar } from '../../components/core/navbar/navbar';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
 import { ExternalUrls } from '../../constants/ExternalUrls';
+
+import { NavBar } from '../../components/core/navbar/navbar';
+import { CardButton } from '../../components/core/button/cardButton';
 
 export const LanguagePresenter: React.FC = () => {
     const buttons = [
@@ -18,15 +20,18 @@ export const LanguagePresenter: React.FC = () => {
                 <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
                     <div className="row">
                         <div className="col-12">
-                            <p>{i18next.t(LocaleKey.languageContent)}</p>
+                            <h3>{i18next.t(LocaleKey.languageContent)}</h3>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row justify">
                         {
                             buttons.map((button) => {
                                 return (
-                                    <div className="col-12" key={button.title}>
-                                        <a href={button.url} target="_blank" rel="noopener noreferrer">{button.title}</a>
+                                    <div key={button.title} className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                        <CardButton
+                                            title={button.title}
+                                            url={button.url}
+                                        />
                                     </div>
                                 );
                             })

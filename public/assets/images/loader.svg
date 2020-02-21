@@ -1,32 +1,147 @@
-<!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
-<svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="a">
-            <stop stop-color="#fff" stop-opacity="0" offset="0%"/>
-            <stop stop-color="#fff" stop-opacity=".631" offset="63.146%"/>
-            <stop stop-color="#fff" offset="100%"/>
-        </linearGradient>
-    </defs>
-    <g fill="none" fill-rule="evenodd">
-        <g transform="translate(1 1)">
-            <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#a)" stroke-width="2">
-                <animateTransform
-                    attributeName="transform"
-                    type="rotate"
-                    from="0 18 18"
-                    to="360 18 18"
-                    dur="0.9s"
-                    repeatCount="indefinite" />
-            </path>
-            <circle fill="#fff" cx="36" cy="18" r="1">
-                <animateTransform
-                    attributeName="transform"
-                    type="rotate"
-                    from="0 18 18"
-                    to="360 18 18"
-                    dur="0.9s"
-                    repeatCount="indefinite" />
-            </circle>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Created by KhaozTopsy & LionessLilo  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 224.9 454.65" style="enable-background:new 0 0 224.9 454.65;" xml:space="preserve">
+<style type="text/css">
+	.base{fill:#000000;stroke:#ffffff;stroke-width:6;stroke-miterlimit:10;}
+	.diamond{fill:none;stroke:#ffffff;stroke-width:6;stroke-miterlimit:10;}
+	.diamond-cover{fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:10;}
+	.circle{fill:none;stroke:#ffffff;stroke-width:6;stroke-miterlimit:10;}
+	.inner-atlas{fill:red;stroke:red;stroke-width:6;stroke-miterlimit:10;}
+	svg circle {
+		position: relative;
+	}
+	svg .up-and-down {
+		position: relative;
+		animation: upAndDown 1s ease-in-out infinite;
+	}
+	svg .up-and-down.inverse {
+		position: relative;
+		animation: upAndDownUp 1s ease-in-out infinite;
+	}
+	svg .diag-up-and-right {
+		position: relative;
+		animation: diagUpRight 1s infinite;
+	}
+	svg .diag-up-and-left {
+		position: relative;
+		animation: diagUpLeft 1s infinite;
+	}
+	svg .diag-down-and-left {
+		position: relative;
+		animation: diagDownLeft 1s infinite;
+	}
+	svg .diag-down-and-right {
+		position: relative;
+		animation: diagDownRight 1s infinite;
+	}
+	svg .rotate {
+		transform-origin: 49% 93%;
+		position: relative;
+		animation: rotateCW 1.5s linear infinite;
+	}
+	svg .inner-atlas {
+		transform-origin: 50% 25%;
+		position: relative;
+		animation-direction: alternate;
+		animation: pulse 3.5s infinite;
+	}
+	@keyframes rotateCW {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes upAndDown {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(1em);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+	@keyframes upAndDownUp {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-.75em);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+	@keyframes diagUpRight {
+		0% {
+			transform: translate(0, 0);
+		}
+		50% {
+			transform: translate(.25em, -1em);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+	@keyframes diagUpLeft {
+		0% {
+			transform: translate(0, 0);
+		}
+		50% {
+			transform: translate(-.5em, -1.25em);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+	@keyframes diagDownLeft {
+		0% {
+			transform: translate(0, 0);
+		}
+		50% {
+			transform: translate(-.5em, .75em);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+	@keyframes diagDownRight {
+		0% {
+			transform: translate(0, 0);
+		}
+		50% {
+			transform: translate(.5em, .75em);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+	@keyframes pulse {
+		0% {
+			-webkit-transform:scale(1);
+		}
+		50% {
+			-webkit-transform:scale(1.2);
+		}
+		100% {
+			-webkit-transform:scale(1);
+		}
+	}
+</style>
+<g>
+	<line class="base diag-down-and-left" x1="48.67" y1="90.61" x2="74.16" y2="57.71" stroke-linecap="round"/>
+	<line class="base diag-down-and-right" x1="172.08" y1="90.61" x2="146.59" y2="57.71" stroke-linecap="round"/>
+	<polygon class="diamond-cover" points="213.03,162 109.98,120 109.98,382.11" stroke-linecap="round"/>	
+	<circle class="inner-atlas" cx="110.42" cy="140.22" r="40"/>	
+	<polygon class="diamond-cover" points="109.98,38.02 213.03,162 109.98,120 109.98,382.11 9.17,162" stroke-linecap="round"/>	
+	<polygon class="diamond" points="9.17,162 109.98,38.02 213.03,162 109.98,382.11 	"/>
+	<line class="diamond" x1="109.98" y1="38.02" x2="109.98" y2="382.11" stroke-linecap="round"/>	
+	<polyline class="diamond" points="9.17,162 109.98,120 213.03,162 "/>	
+	<line class="base diag-up-and-left" x1="80.49" y1="354.74" x2="50.56" y2="292.85" stroke-linecap="round"/>
+	<line class="base diag-up-and-right" x1="141.98" y1="353.12" x2="169.08" y2="292.85" stroke-linecap="round"/>
+	<circle class="circle up-and-down inverse" cx="109.98" cy="410.56" r="7.96"/>
+	<circle class="circle up-and-down inverse" cx="110.42" cy="441.22" r="4.64"/>
+</g>
 </svg>

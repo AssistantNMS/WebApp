@@ -12,6 +12,11 @@ import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/Bluep
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
 
 import i18next from 'i18next';
+import { AllGameItemsService } from '../../services/AllGameItemsService';
+import { GameItemList } from '../../components/common/gameItemList/gameItemList';
+import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
+import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
+
 interface IProps {
     location: any;
     match: any;
@@ -20,6 +25,10 @@ interface IProps {
 }
 interface IState {
     item: GameItemModel;
+    resArray: Array<RequiredItemDetails>;
+    usedToCreateArray: Array<GameItemModel>;
+    gameItemService: GameItemService;
+    allGameItemsService: AllGameItemsService;
     additionalData: Array<any>;
 }
 
@@ -29,32 +38,76 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
 
         this.state = {
             item: anyObject,
+            resArray: [],
+            usedToCreateArray: [],
+            gameItemService: new GameItemService(),
+            allGameItemsService: new AllGameItemsService(),
             additionalData: []
         }
     }
 
     componentDidMount() {
-        this.fetchData();
+        this.fetchData(this.props.match?.params?.itemId);
+    }
+
+    componentWillReceiveProps(nextProps: any) {
+        const prevItemId = this.props.match?.params?.itemId;
+        if (nextProps.match?.params?.itemId !== prevItemId) {
+            this.clearData();
+            this.fetchData(nextProps.match?.params?.itemId);
+        }
     }
 
     componentDidUpdate(prevProps: IProps, prevState: IState) {
         const prevSelectedLanguage = prevProps.selectedLanguage;
         if (this.props.selectedLanguage !== prevSelectedLanguage) {
-            this.fetchData();
+            this.clearData();
+            this.fetchData(this.props.match?.params?.itemId);
         }
     }
 
-    fetchData = async () => {
-        const gameItemService = new GameItemService();
-        var itemResult = await gameItemService.getItemDetails(this.props.match?.params?.itemId ?? '');
+    clearData = async () => {
+        this.setState(() => {
+            return {
+                resArray: [],
+                usedToCreateArray: [],
+                additionalData: []
+            }
+        });
+    }
+
+    fetchData = async (itemId: string) => {
+        var itemResult = await this.state.gameItemService.getItemDetails(itemId ?? '');
         if (!itemResult.isSuccess) {
             // Error
             return;
         }
+        this.getResArray(itemResult.value.Id);
+        this.getUsedToCreateArray(itemResult.value.Id);
         this.setState(() => {
             return {
                 item: itemResult.value,
                 additionalData: this.getAdditionalData(itemResult.value)
+            }
+        });
+    }
+
+    getResArray = async (itemId: string) => {
+        var resArrayResult = await this.state.gameItemService.getRequiredItems(itemId);
+        if (!resArrayResult.isSuccess) return;
+        this.setState(() => {
+            return {
+                resArray: resArrayResult.value,
+            }
+        });
+    }
+
+    getUsedToCreateArray = async (itemId: string) => {
+        var usedToCreateArrayResult = await this.state.allGameItemsService.getByInputsId(itemId);
+        if (!usedToCreateArrayResult.isSuccess) return;
+        this.setState(() => {
+            return {
+                usedToCreateArray: usedToCreateArrayResult.value,
             }
         });
     }
@@ -91,12 +144,48 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         return additionalData;
     }
 
+    displayRequiredItems = (resArray: Array<RequiredItemDetails>) => {
+        if (resArray == null || resArray.length < 1) return null;
+
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.craftedUsing)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GameItemList items={resArray} presenter={RequiredItemListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
+    displayUsedToCreateItems = (usedToCreateArray: Array<GameItemModel>) => {
+        if (usedToCreateArray == null || usedToCreateArray.length < 1) return null;
+
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.usedToCreate)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GameItemList items={usedToCreateArray} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
     render() {
         return (
             <>
                 <NavBar title={this.state.item.Name} />
                 <div className="content">
-                    <div className="row">
+                    <div className="row border-bottom">
                         <div className="col-12 col-lg-2 col-md-2 col-sm-2 col-xs-3 image-container generic-item-image-container"
                             style={{ backgroundColor: `#${this.state.item.Colour}` }}>
                             <img src={`/assets/images/${this.state.item.Icon}`} alt={this.state.item.Name} style={{ maxWidth: '100%' }} />
@@ -110,33 +199,31 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                             }
                         </div>
                     </div >
-                    <hr />
-                    <div className="row">
+                    <div className="row justify row border-bottom">
                         <div className="col-12">
-                            <h4>{this.state.item.Description}</h4>
+                            <h3>{this.state.item.Description}</h3>
                         </div>
-                    </div>
-                    <div className="row" style={{ justifyContent: 'center' }}>
                         {
                             this.state.additionalData.map((item, index) => {
                                 return (
                                     <div className={item.class} key={`additional-data-${index}`}>
-                                        <h5 className="default chip">
+                                        <h4 className="default chip">
                                             {item.text}&nbsp;
                                             {
                                                 (item.image != null && item.image.length > 0)
                                                     ? <img src={item.image} alt={item.image} style={{ maxHeight: '20px' }} />
                                                     : null
                                             }
-                                        </h5>
+                                        </h4>
                                     </div>
                                 );
                             })
                         }
-
-                    </div >
-                    <hr />
-                </div >
+                        <div className="col-12"><br /></div>
+                    </div>
+                    {this.displayRequiredItems(this.state.resArray)}
+                    {this.displayUsedToCreateItems(this.state.usedToCreateArray)}
+                </div>
             </>
         );
     }

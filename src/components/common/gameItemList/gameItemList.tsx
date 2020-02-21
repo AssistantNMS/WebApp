@@ -1,42 +1,48 @@
 
 import * as React from 'react';
-import LazyLoad from 'react-lazyload';
-import { Link } from 'react-router-dom';
+import ReactList from 'react-list';
 
 import { GameItemModel } from '../../../contracts/GameItemModel';
-import { catalogueItem } from '../../../constants/Route';
-
-import { LazyLoadImage } from '../../core/lazyLoadImage/lazyLoadImage';
-const ReactLazy = require('react-lazy-load-image-component');
+import { GameItemListTile } from '../../tilePresenter/gameItemListTile/gameItemListTile';
+import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
 
 interface IProps {
-    items: Array<GameItemModel>
+    items: Array<GameItemModel | RequiredItemDetails>;
+    presenter?: (props: GameItemModel | RequiredItemDetails) => JSX.Element
 }
+
+// interface IState {
+//     displayItems: Array<GameItemModel>;
+//     currentPage: number;
+//     pageSize: number;
+//     hasMoreItems: boolean;
+// }
 
 export const GameItemListWithoutScrollTracking = (props: IProps) => {
 
     return (
         <div id="game-item-list" className="game-item-list">
-            {
-                props.items.map((item) => {
+            <ReactList
+                itemRenderer={(index: number) => {
+                    const item = props.items[index];
                     return (
-                        <LazyLoad key={`game-item-${item.Id}`} once offset={200} >
-                            <div className="game-item">
-                                <Link to={`${catalogueItem}/${item.Id}`} className="item">
-                                    <div className="text-container">
-                                        <p>{item.Name}</p>
-                                    </div>
-                                    <div className="image-container" style={{ backgroundColor: `#${item.Colour}` }}>
-                                        <LazyLoadImage src={`/assets/images/${item.Icon}`} alt={item.Name} draggable={false} />
-                                    </div>
-                                </Link>
-                            </div>
-                        </LazyLoad>
+                        // <LazyLoad key={`game-item-${item.Id}`} once offset={200} >
+                        <div key={`game-item-${item.Id}`} className="game-item">
+                            {
+                                props.presenter != null
+                                    ? props.presenter(item)
+                                    : <GameItemListTile {...item} />
+                            }
+                        </div>
+                        // </LazyLoad>
                     )
-                })
-            }
+                }}
+                length={props.items.length}
+                type='uniform'
+            />
         </div>
     );
 }
 
-export const GameItemList = ReactLazy.trackWindowScroll(GameItemListWithoutScrollTracking);
+// export const GameItemList = ReactLazy.trackWindowScroll(GameItemListWithoutScrollTracking);
+export const GameItemList = GameItemListWithoutScrollTracking;

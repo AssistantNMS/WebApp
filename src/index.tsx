@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
-import App from './App';
-import { initLocalization } from './localization/i18n';
+import { App } from './App';
+import { initLocalization } from './integration/i18n';
+import { initAnalytics } from './integration/analytics';
+import { getJSON, defaultConfig } from './utils';
 
 import { SettingReducerKey } from './redux/cacheKey';
 import { reducer } from './redux';
@@ -13,12 +16,20 @@ import * as serviceWorker from './serviceWorker';
 
 import './index.scss';
 
+declare global {
+    interface Window { config: any; }
+}
+
 let persistedState: any = localStorage.getItem(SettingReducerKey)
     ? {
         settingReducer: JSON.parse(localStorage.getItem(SettingReducerKey) || '{}'),
     }
     : {
-        settingReducer: {}
+        settingReducer: {
+            isDark: true,
+            selectedLanguage: 'en',
+            menuIsVisible: true
+        }
     }
 
 const store = createStore(
@@ -37,16 +48,25 @@ store.subscribe(() => {
     }
 })
 
-initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
+window.config = window.config || {};
+getJSON('/assets/config.json', (status: boolean, response: string) => {
+    window.config = (status === true)
+        ? response || {}
+        : defaultConfig;
 
+    if (window.config.consoleLogDebug) console.log('Config', window.config);
 
-ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>
-    , document.getElementById('nms-app'));
+    initAnalytics();
+    initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    ReactDOM.render(
+        <Provider store={store}>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </Provider>
+        , document.getElementById('nms-app'));
+
+    serviceWorker.register();
+})
+

@@ -686,8 +686,8 @@
   {
     "Id": "build146",
     "Name": "Fabricante de barriles",
-    "Group": "Decoración",
-    "Description": "Adorno construible para embellecer tu base."
+    "Group": "Fabricante",
+    "Description": "Fabrica objetos útiles para su constructor con regularidad.\nPara recuperar los objetos, es necesario un PaseAtlas v1 para verificar la identidad."
   },
   {
     "Id": "build147",
@@ -698,8 +698,8 @@
   {
     "Id": "build150",
     "Name": "Caja cerrada",
-    "Group": "Decoración",
-    "Description": "Adorno construible para embellecer tu base."
+    "Group": "Fabricante",
+    "Description": "Fabrica objetos útiles para su constructor con regularidad."
   },
   {
     "Id": "build151",
@@ -1680,15 +1680,219 @@
     "Description": "Luz de color que sirve para iluminar la base del usuario."
   },
   {
-    "Id": "build349",
-    "Name": "White Light",
-    "Group": "Decoration",
-    "Description": "A coloured light for illuminating a user's base."
+    "Id": "build359",
+    "Name": "Piso de luz",
+    "Group": "Dispositivo de luz",
+    "Description": "Un módulo de construcción especial diseñado enteramente a partir de paneles emisores de luz. Se puede usar para construir pisos de luz.\n\nEste panel de piso se puede repintar antes o después de su colocación. Necesita energía para funcionar."
   },
   {
-    "Id": "build358",
-    "Name": "Dispositivo de ondas",
+    "Id": "build360",
+    "Name": "Dispositivo de pulsos de bytes",
     "Group": "Sintetizador de sonido",
     "Description": "Un generador de audio avanzado que permite al usuario sintetizar composiciones musicales complejas.\n\nEs posible colocar varios dispositivos en sucesión o conectados a la iluminación para generar presentaciones espectaculares."
+  },
+  {
+    "Id": "build361",
+    "Name": "Cable de pulsos de bytes",
+    "Group": "Extensión de pulsos de bytes",
+    "Description": "Un cable avanzado diseñado para unir uno o más generadores de pulsos de bytes o para conectar un interruptor de pulsos de bytes a la red.\n\nLa señal sincronizará las luces y dispositivos conectados con la forma de onda generada."
+  },
+  {
+    "Id": "build362",
+    "Name": "Interruptor de pulsos de bytes",
+    "Group": "Extensión de pulsos de bytes",
+    "Description": "Un dispositivo de conmutación musical diseñado para interpretar las señales de onda generadas por el generador de pulsos de bytes y enviar impulsos eléctricos a las luces y otros dispositivos conectados."
+  },
+  {
+    "Id": "build363",
+    "Name": "Mochila de exotraje",
+    "Group": "Mejora visual de exotraje",
+    "Description": "Una exclusiva manipulación de apariencia de exotraje.\n\nUna unidad modular resistente. Su diseño evoca recuerdos sobre una era de exploración anterior.\n\nTransforma la apariencia de tu exotraje en un modificador de apariencia."
+  },
+  {
+    "Id": "build364",
+    "Name": "Estela arcoíris de jetpack",
+    "Group": "Anulación de escape de jetpack",
+    "Description": "Una exclusiva manipulación de apariencia de exotraje.\n\nUnos inyectores multicromáticos calibrados con precisión alteran la salida del jetpack, convirtiendo la estela del escape en una vibrante exhibición de colores.\n\nTransforma la apariencia de tu exotraje en un modificador de apariencia."
+  },
+  {
+    "Id": "build365",
+    "Name": "Estela de antimateria de jetpack",
+    "Group": "Anulación de escape de jetpack",
+    "Description": "Una exclusiva manipulación de apariencia de exotraje.\n\nUnos silenciadores de bariones alteran la salida del jetpack, otorgando un color negro distintivo a su estela.\n\nTransforma la apariencia de tu exotraje en un modificador de apariencia."
+  },
+  {
+    "Id": "build366",
+    "Name": "Estela roja de jetpack",
+    "Group": "Anulación de escape de jetpack",
+    "Description": "Una exclusiva manipulación de apariencia de exotraje.\n\nUnas mangueras de inyección de cadmio añaden un atrevido toque rojo a la salida del jetpack.\n\nTransforma la apariencia de tu exotraje en un modificador de apariencia."
+  },
+  {
+    "Id": "build367",
+    "Name": "Estela verde de jetpack",
+    "Group": "Anulación de escape de jetpack",
+    "Description": "Una exclusiva manipulación de apariencia de exotraje.\n\nUnas mangueras de inyección de emerilio añaden un intenso toque verde a la salida del jetpack.\n\nTransforma la apariencia de tu exotraje en un modificador de apariencia."
+  },
+  {
+    "Id": "build368",
+    "Name": "Estela azul de jetpack",
+    "Group": "Anulación de escape de jetpack",
+    "Description": "Una exclusiva manipulación de apariencia de exotraje.\n\nUnas mangueras de inyección de indio añaden un deslumbrante toque azul a la salida del jetpack.\n\nTransforma la apariencia de tu exotraje en un modificador de apariencia."
+  },
+  {
+    "Id": "build369",
+    "Name": "Estela cromática de nave",
+    "Group": "Anulación de escape de nave",
+    "Description": "Un exclusivo modificador de escape de nave.\n\nUnos inyectores multicromáticos calibrados con precisión alteran la salida del motor de pulso, convirtiendo la estela del escape en una vibrante exhibición de colores.\n\nInstala esta tecnología en el inventario de tu nave para cambiar la apariencia de las estelas del escape del motor."
+  },
+  {
+    "Id": "build370",
+    "Name": "Estela sigilosa de nave",
+    "Group": "Anulación de escape de nave",
+    "Description": "Un exclusivo modificador de escape de nave.\n\nUnos silenciadores de bariones alteran la salida del motor de pulso, otorgando una tintura negra distintiva a su estela.\n\nInstala esta tecnología en el inventario de tu nave para cambiar la apariencia de las estelas del escape del motor."
+  },
+  {
+    "Id": "build371",
+    "Name": "Estela de cadmio de nave",
+    "Group": "Anulación de escape de nave",
+    "Description": "Un exclusivo modificador de escape de nave.\n\nUnas mangueras de inyección de cadmio añaden un atrevido toque rojo a la salida del motor de pulso.\n\nInstala esta tecnología en el inventario de tu nave para cambiar la apariencia de las estelas del escape del motor."
+  },
+  {
+    "Id": "build372",
+    "Name": "Estela de emerilio de nave",
+    "Group": "Anulación de escape de nave",
+    "Description": "Un exclusivo modificador de escape de nave.\n\nUnas mangueras de inyección de emerilio añaden un intenso toque verde a la salida del motor de pulso.\n\nInstala esta tecnología en el inventario de tu nave para cambiar la apariencia de las estelas del escape del motor."
+  },
+  {
+    "Id": "build373",
+    "Name": "Estela dorada de nave",
+    "Group": "Anulación de escape de nave",
+    "Description": "Un exclusivo modificador de escape de nave.\n\nUnas mangueras de inyección de oro añaden un deslumbrante toque dorado a la salida del motor de pulso.\n\nInstala esta tecnología en el inventario de tu nave para cambiar la apariencia de las estelas del escape del motor."
+  },
+  {
+    "Id": "build374",
+    "Name": "Arbusto retorcido",
+    "Group": "Decoración orgánica",
+    "Description": "Originaria de mundos radiactivos, esta delicia extrañamente carnosa parece mecerse ligeramente incluso cuando el aire no se mueve.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build375",
+    "Name": "Árbol paraguas",
+    "Group": "Decoración orgánica",
+    "Description": "Este árbol decorativo evolucionó para tolerar altos niveles de radiación del medioambiente. Su núcleo central brillante atrae a criaturas silvestres y no es de ningún modo un órgano sensorial. No te observa.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build376",
+    "Name": "Árbol enroscado",
+    "Group": "Decoración orgánica",
+    "Description": "Este hermoso árbol ornamental medra al calor de la radiación gamma intensa. Para garantizar su supervivencia en entornos no originarios, se incorporó un trozo de material de gran energía en el tronco.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build377",
+    "Name": "Seta abrasadora",
+    "Group": "Decoración orgánica",
+    "Description": "Esta protuberancia hinchada crece rápidamente gracias a una fina red de esporas subterráneas. Mejora en gran medida la calidad del suelo de su alrededor.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build378",
+    "Name": "Protuberancia vigilante",
+    "Group": "Decoración orgánica",
+    "Description": "Aunque esta planta se puede cultivar como un cereal, no se recomienda su consumo.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build379",
+    "Name": "Aguja tentáculo",
+    "Group": "Decoración orgánica",
+    "Description": "Esta encantadora flora arquitectónica combina dos estéticas muy populares: los tentáculos contoneantes y los hongos gigantes.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build380",
+    "Name": "Cactus hechizante",
+    "Group": "Decoración orgánica",
+    "Description": "Unos elegantes filamentos con plumas recubren esta planta desértica, lo que aumenta su área de superficie para facilitar la absorción de humedad. También tiene un gran atractivo.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build381",
+    "Name": "Cactus festivo",
+    "Group": "Decoración orgánica",
+    "Description": "Estas adorables plantas son unas fruslerías encantadoras y suculentas, que coronan sus bulbosos cuerpos con hermosas flores.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build382",
+    "Name": "Árbol suculento",
+    "Group": "Decoración orgánica",
+    "Description": "La corteza de este árbol es engañosa. No es áspera ni dura, su carne es suave y húmeda al tacto. Las arrugas de la superficie almacenan agua extra para tiempos adversos.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build383",
+    "Name": "Matorral resistente",
+    "Group": "Decoración orgánica",
+    "Description": "Esta robusta conífera bombea su savia con enzimas anticongelantes, lo que le permite sobrevivir en entornos con temperaturas extremadamente bajas.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build384",
+    "Name": "Plantador congelado",
+    "Group": "Decoración orgánica",
+    "Description": "Un abrevadero de piedra relleno de nieve. El hogar perfecto para las plantas pequeñas aunque robustas que crecen en mundos gélidos.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build385",
+    "Name": "Conífera ancestral",
+    "Group": "Decoración orgánica",
+    "Description": "Este árbol perdura en una escala de tiempo casi geológica. Los bajos niveles de calor y luz en su hábitat natural restringen el crecimiento hasta apenas unos milímetros cada estación. Un ejemplar de este tamaño es una maravilla botánica.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build386",
+    "Name": "Roca marina",
+    "Group": "Decoración orgánica",
+    "Description": "Una agradable formación mineral, cristalizada a partir de sales oceánicas. También puede contener fósiles y/o seres vivos.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build387",
+    "Name": "Arco mineral",
+    "Group": "Decoración orgánica",
+    "Description": "Una notable pieza de geometría geológica. Un arco estable de soporte provisto de unas curiosas geodas sólidas angulares.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build388",
+    "Name": "Roca con gemas engastadas",
+    "Group": "Decoración orgánica",
+    "Description": "En su día, fue un subproducto descartado de la minería de cristal de profundidad. Ahora, el valor estético de las rocas es más apreciado.\n\nOfrece oportunidades de paisajismo decorativo para las bases."
+  },
+  {
+    "Id": "build389",
+    "Name": "Estandarte de fauna extraña",
+    "Group": "Identificación personal a medida",
+    "Description": "Manifiesta tu interés por la vida animal extraña e inusual con este exclusivo estilo personal.\n\nAplica este estandarte a tu perfil en un modificador de apariencia."
+  },
+  {
+    "Id": "build390",
+    "Name": "Estandarte de criatura amorfa",
+    "Group": "Identificación personal a medida",
+    "Description": "Presume de tu amor por las amables criaturas amorfas y su deliciosa miel con este exclusivo estilo personal.\n\nAplica este estandarte a tu perfil en un modificador de apariencia."
+  },
+  {
+    "Id": "build391",
+    "Name": "Estandarte del Especialista Polo",
+    "Group": "Identificación personal a medida",
+    "Description": "El Especialista Polo espera que disfrutes de este exclusivo estilo personal. ¡Que te traiga mucha alegría en tus viajes!\n\nAplica este estandarte a tu perfil en un modificador de apariencia."
+  },
+  {
+    "Id": "build392",
+    "Name": "Estandarte del Ente Sacerdote Nada",
+    "Group": "Identificación personal a medida",
+    "Description": "Lleva al Ente Sacerdote Nada a tu convergencia privada equipando este exclusivo estilo personal.\n\nAplica este estandarte a tu perfil en un modificador de apariencia."
+  },
+  {
+    "Id": "build393",
+    "Name": "Estandarte del Centro Galáctico",
+    "Group": "Identificación personal a medida",
+    "Description": "¡Equipa este exclusivo estilo personal y exploren juntos!\n\nAplica este estandarte a tu perfil en un modificador de apariencia."
+  },
+  {
+    "Id": "build394",
+    "Name": "Estandarte de bueno y sabroso",
+    "Group": "Identificación personal a medida",
+    "Description": "Manifiesta tu compromiso con la deliciosa cocina pangaláctica con este exclusivo estilo personal.\n\nAplica este estandarte a tu perfil en un modificador de apariencia."
   }
 ]

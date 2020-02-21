@@ -1,10 +1,12 @@
-import { GameItemModel } from '../contracts/GameItemModel';
-import { BaseJsonService } from './BaseJsonService';
-import { ResultWithValue } from '../contracts/results/ResultWithValue';
 import { BaseItemModel } from '../contracts/BaseItemModel';
 import { DetailItemModel } from '../contracts/DetailItemModel';
+import { GameItemModel } from '../contracts/GameItemModel';
+import { ResultWithValue } from '../contracts/results/ResultWithValue';
+import { getCatalogueFromItemId, mapToLocale } from '../mapper/CatalogueMapper';
 import { mapGenericPageItems } from '../mapper/GameItemMapper';
-import { mapToLocale, getCatalogueFromItemId } from '../mapper/CatalogueMapper';
+import { BaseJsonService } from './BaseJsonService';
+import { RequiredItem } from '../contracts/RequiredItem';
+import { RequiredItemDetails } from '../contracts/RequiredItemDetails';
 
 export class GameItemService extends BaseJsonService {
   async getListfromJson(catalogueType: string): Promise<ResultWithValue<Array<GameItemModel>>> {
@@ -31,6 +33,8 @@ export class GameItemService extends BaseJsonService {
   async getItemDetails(itemId: string): Promise<ResultWithValue<GameItemModel>> {
     let result: any = {};
 
+    if (!itemId) return { isSuccess: false, value: result, errorMessage: 'itemId specified is invallid' };
+
     const catalogue = getCatalogueFromItemId(itemId);
     var list = await this.getListfromJson(catalogue);
     if (!list.isSuccess) return { isSuccess: false, value: result, errorMessage: list.errorMessage };
@@ -46,5 +50,47 @@ export class GameItemService extends BaseJsonService {
       value: result,
       errorMessage: ''
     }
+  }
+
+  async getRequiredItems(itemId: string): Promise<ResultWithValue<Array<RequiredItemDetails>>> {
+    const catalogue = getCatalogueFromItemId(itemId);
+    var allGenericItemsResult = await this.getListfromJson(catalogue);
+
+    if (!allGenericItemsResult.isSuccess) {
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: allGenericItemsResult.errorMessage,
+      };
+    }
+    var craftableItems = allGenericItemsResult.value
+      .filter((r: any) => r.Id === itemId);
+    if (craftableItems.length < 1)
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: 'required items not found',
+      };
+    var requiredItemsTasks = craftableItems[0].RequiredItems.map(async (item: RequiredItem) => {
+      var itemDetails = await this.getItemDetails(item.Id);
+      if (!itemDetails.isSuccess) return null;
+
+      var requiredItemDetails: RequiredItemDetails = {
+        Id: itemDetails.value.Id,
+        Icon: itemDetails.value.Icon,
+        Name: itemDetails.value.Name,
+        Colour: itemDetails.value.Colour,
+        Quantity: item.Quantity
+      }
+      return requiredItemDetails;
+    });
+    var requiredItemsResults = await Promise.all(requiredItemsTasks);
+    var requiredItems: any = requiredItemsResults.filter(r => r);
+    console.log({ requiredItems });
+    return {
+      isSuccess: true,
+      value: requiredItems,
+      errorMessage: '',
+    };
   }
 }

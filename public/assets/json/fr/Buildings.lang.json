@@ -686,8 +686,8 @@
   {
     "Id": "build146",
     "Name": "Créateur de baril",
-    "Group": "Décoration",
-    "Description": "Ornement constructible pour embellir votre base."
+    "Group": "Créateur",
+    "Description": "Fabrique régulièrement des objets utiles pour son constructeur.\nLa récupération de l'objet nécessite un Passe Atlas v1 afin de vérifier l'identité."
   },
   {
     "Id": "build147",
@@ -698,8 +698,8 @@
   {
     "Id": "build150",
     "Name": "Caisse verrouillée",
-    "Group": "Décoration",
-    "Description": "Ornement constructible pour embellir votre base."
+    "Group": "Créateur",
+    "Description": "Fabrique régulièrement des objets utiles pour son constructeur."
   },
   {
     "Id": "build151",
@@ -1680,15 +1680,219 @@
     "Description": "Une lumière colorée permettant d'éclairer la base d'un utilisateur."
   },
   {
-    "Id": "build349",
-    "Name": "White Light",
-    "Group": "Decoration",
-    "Description": "A coloured light for illuminating a user's base."
+    "Id": "build359",
+    "Name": "Sol lumineux",
+    "Group": "Dispositif lumineux",
+    "Description": "Un module de construction spécial conçu entièrement à partir de panneaux émettant de la lumière. Peut être utilisé pour construire des sols de lumière.\n\nCe panneau de sol peut être recoloré avant ou après placement. Nécessite une alimentation pour fonctionner."
   },
   {
-    "Id": "build358",
-    "Name": "Appareil de forme d'onde",
+    "Id": "build360",
+    "Name": "Appareil Bytebeat",
     "Group": "Synthétiseur audio",
-    "Description": "Un générateur audio avancé, permettant à l'utilisateur de synthétiser des arrangements musicaux complexes.\n\nPlusieurs appareils peuvent être placés en séquence ou connectés aux lumières pour générer des créations spectaculaires."
+    "Description": "Un générateur audio avancé, permettant à l'utilisateur de synthétiser des arrangements musicaux complexes.\n\nVous pouvez placer plusieurs appareils en séquence ou connectés aux lumières pour créer des spectacles impressionnants."
+  },
+  {
+    "Id": "build361",
+    "Name": "Câble ByteBeat",
+    "Group": "Extension Bytebeat",
+    "Description": "Câblage avancé, conçu pour relier un ou plusieurs générateurs Bytebeat ou pour connecter un interrupteur Bytebeat au réseau.\n\nLe signal synchronise les lumières et les appareils connectés avec la forme d'onde générée."
+  },
+  {
+    "Id": "build362",
+    "Name": "Interrupteur ByteBeat",
+    "Group": "Extension Bytebeat",
+    "Description": "Un dispositif de commutation musicale, conçu pour interpréter les signaux de forme d'onde générés par un générateur Bytebeat et les impulsions électriques de sortie vers les lumières et les autres appareils connectés."
+  },
+  {
+    "Id": "build363",
+    "Name": "Sac à dos de l'exocombinaison",
+    "Group": "Amélioration visuelle de l'exocombinaison",
+    "Description": "Un changement d'apparence de l'exocombinaison exclusif.\n\nUne unité modulaire robuste de sac à dos. Son style rappelle une ère révolue de l'exploration.\n\nTransformez l'apparence de votre exocombinaison dans un modificateur d'apparence."
+  },
+  {
+    "Id": "build364",
+    "Name": "Traînée de jetpack arc-en-ciel",
+    "Group": "Changement de l'échappement du jetpack",
+    "Description": "Un changement d'apparence de l'exocombinaison exclusif.\n\nDes injecteurs multichromatiques calibrés avec précision modifient le visuel de sortie du jetpack, transformant la traînée d'échappement en un spectacle de couleurs vives. \n\nTransformez l'apparence de votre exocombinaison dans un modificateur d'apparence."
+  },
+  {
+    "Id": "build365",
+    "Name": "Traînée de jetpack antimatière",
+    "Group": "Changement de l'échappement du jetpack",
+    "Description": "Un changement d'apparence de l'exocombinaison exclusif.\n\nDes suppresseurs de baryon modifient le visuel de sortie du jetpack, donnant une teinte noire distincte à sa traînée.\n\nTransformez l'apparence de votre exocombinaison dans un modificateur d'apparence."
+  },
+  {
+    "Id": "build366",
+    "Name": "Traînée de jetpack rouge",
+    "Group": "Changement de l'échappement du jetpack",
+    "Description": "Un changement d'apparence de l'exocombinaison exclusif.\n\nLes injections de cadmium ajoutent une touche de rouge vif à la traînée d'échappement du jetpack.\n\nTransformez l'apparence de votre exocombinaison dans un modificateur d'apparence."
+  },
+  {
+    "Id": "build367",
+    "Name": "Traînée de jetpack verte",
+    "Group": "Changement de l'échappement du jetpack",
+    "Description": "Un changement d'apparence de l'exocombinaison exclusif.\n\nLes injections d'émeril ajoutent une touche de vert intense à la traînée d'échappement du jetpack.\n\nTransformez l'apparence de votre exocombinaison dans un modificateur d'apparence."
+  },
+  {
+    "Id": "build368",
+    "Name": "Traînée de jetpack bleue",
+    "Group": "Changement de l'échappement du jetpack",
+    "Description": "Un changement d'apparence de l'exocombinaison exclusif.\n\nLes injections d'indium ajoutent une touche de bleu éclatant à la traînée d'échappement du jetpack.\n\nTransformez l'apparence de votre exocombinaison dans un modificateur d'apparence."
+  },
+  {
+    "Id": "build369",
+    "Name": "Traînée de vaisseau chromatique",
+    "Group": "Changement de l'échappement du vaisseau",
+    "Description": "Un changement de l'échappement du vaisseau exclusif.\n\nDes injecteurs multichromatiques calibrés avec précision modifient le visuel de sortie du pulsoréacteur, transformant la traînée d'échappement en un spectacle de couleurs vives. \n\nInstallez cette technologie dans l'inventaire de votre vaisseau pour modifier l'apparence des traînées d'échappement du réacteur."
+  },
+  {
+    "Id": "build370",
+    "Name": "Traînée de vaisseau discrète",
+    "Group": "Changement de l'échappement du vaisseau",
+    "Description": "Un changement de l'échappement du vaisseau exclusif.\n\nDes suppresseurs de baryon modifient le visuel de sortie du pulsoréacteur, donnant une teinte noire distincte à sa traînée.\n\nInstallez cette technologie dans l'inventaire de votre vaisseau pour modifier l'apparence des traînées d'échappement du réacteur."
+  },
+  {
+    "Id": "build371",
+    "Name": "Traînée de vaisseau au cadmium",
+    "Group": "Changement de l'échappement du vaisseau",
+    "Description": "Un changement de l'échappement du vaisseau exclusif.\n\nLes injections de cadmium ajoutent une touche de rouge vif à la traînée d'échappement du pulsoréacteur.\n\nInstallez cette technologie dans l'inventaire de votre vaisseau pour modifier l'apparence des traînées d'échappement du réacteur."
+  },
+  {
+    "Id": "build372",
+    "Name": "Traînée de vaisseau à l'émeril",
+    "Group": "Changement de l'échappement du vaisseau",
+    "Description": "Un changement de l'échappement du vaisseau exclusif.\n\nLes injections d'émeril ajoutent une touche de vert intense à la traînée d'échappement du pulsoréacteur.\n\nInstallez cette technologie dans l'inventaire de votre vaisseau pour modifier l'apparence des traînées d'échappement du réacteur."
+  },
+  {
+    "Id": "build373",
+    "Name": "Traînée de vaisseau dorée",
+    "Group": "Changement de l'échappement du vaisseau",
+    "Description": "Un changement de l'échappement du vaisseau exclusif.\n\nLes injections d'or ajoutent une touche d'or éblouissant à la traînée d'échappement du pulsoréacteur.\n\nInstallez cette technologie dans l'inventaire de votre vaisseau pour modifier l'apparence des traînées d'échappement du réacteur."
+  },
+  {
+    "Id": "build374",
+    "Name": "Buisson frémissant",
+    "Group": "Décoration organique",
+    "Description": "Native de ces mondes radioactifs, cette plante curieusement charnue semble osciller doucement alors que l'air est immobile...\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build375",
+    "Name": "Magnolia parasol",
+    "Group": "Décoration organique",
+    "Description": "Cet arbre décoratif a évolué pour faire face à des niveaux élevés de radiation de fond. Son noyau central lumineux attire la faune sauvage et n'est en aucun cas un organe sensoriel. Il ne vous regarde pas.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build376",
+    "Name": "Arbre enchevêtrant",
+    "Group": "Décoration organique",
+    "Description": "Ce magnifique arbre d'exposition s'épanouit dans la chaleur des intenses radiations gamma. Pour garantir sa survie dans les environnements inadaptés, un morceau de matériau à haute énergie a été incrusté dans le tronc.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build377",
+    "Name": "Champignon ardent",
+    "Group": "Décoration organique",
+    "Description": "Cette protubérance ventrue pousse rapidement grâce à un très bon réseau de spores souterraines. Améliore grandement la qualité du sol alentour.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build378",
+    "Name": "Protubérance vigilante",
+    "Group": "Décoration organique",
+    "Description": "Bien que cette plante est considérée comme une culture, sa consommation n'est pas conseillée.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build379",
+    "Name": "Cloche tentaculaire",
+    "Group": "Décoration organique",
+    "Description": "Cette splendide architecture florale combine deux esthétiques populaires : des tentacules frétillants et un champignon géant.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build380",
+    "Name": "Cactus ensorcelé",
+    "Group": "Décoration organique",
+    "Description": "Des filaments pelucheux courent autour de cette plante du désert, augmentant la surface d'absorption de l'humidité. Ils ont également l'air très attirants.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build381",
+    "Name": "Cactus festif",
+    "Group": "Décoration organique",
+    "Description": "Délicieuses, succulentes et sphériques, ces jolies plantes se parent de fleurs magnifiques sur leur corps bulbeux.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build382",
+    "Name": "Arbre-succulente",
+    "Group": "Décoration organique",
+    "Description": "L'écorce de cet arbre est trompeuse. Ni rugueuse ni dure, sa texture est plutôt douce et humide au toucher. Les nervures de sa surface emmagasinent de l'eau supplémentaire pour les périodes difficiles.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build383",
+    "Name": "Arbre résistant",
+    "Group": "Décoration organique",
+    "Description": "Ce conifère résistant possède des enzymes antigel dans sa sève, ce qui lui permet de survivre à des températures incroyablement basses.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build384",
+    "Name": "Planteur gelé",
+    "Group": "Décoration organique",
+    "Description": "Une auge en pierre remplie de neige. C'est l'endroit idéal pour les petites plantes résistantes qui poussent dans les mondes gelés.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build385",
+    "Name": "Conifère ancien",
+    "Group": "Décoration organique",
+    "Description": "Cet arbre vit sur une échelle de temps presque géologique. Des niveaux de chaleur et de lumière réduits dans son habitat naturel restreignent sa croissance à quelques millimètres par saison. Un échantillon de cette taille est une merveille botanique.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build386",
+    "Name": "Roche marine",
+    "Group": "Décoration organique",
+    "Description": "Une formation minérale agréable, formée de sels océaniques cristallisés. Peut également contenir des fossiles et/ou formes de vie aquatiques.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build387",
+    "Name": "Arche minérale",
+    "Group": "Décoration organique",
+    "Description": "Une pièce de géométrie géologique remarquable. Une arche porteuse stable, incrustée de géodes aux angles étranges.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build388",
+    "Name": "Roche incrustée de gemmes",
+    "Group": "Décoration organique",
+    "Description": "Autrefois sous-produit rejeté de l'extraction de cristaux en profondeur, la valeur esthétique de cette roche est maintenant mieux appréciée.\n\nFournit des possibilités d'aménagement décoratif pour les bases."
+  },
+  {
+    "Id": "build389",
+    "Name": "Bannière de faune étrange",
+    "Group": "Identification personnelle sur mesure",
+    "Description": "Montrez votre intérêt pour les formes de vie animales étranges et inhabituelles avec cette touche personnelle exclusive.\n\nAppliquez cette bannière à votre profil dans un modificateur d'apparence."
+  },
+  {
+    "Id": "build390",
+    "Name": "Bannière du blob",
+    "Group": "Identification personnelle sur mesure",
+    "Description": "Montrez votre amour pour les gentilles créatures blob et leur miel délicieux avec cette touche personnelle exclusive.\n\nAppliquez cette bannière à votre profil dans un modificateur d'apparence."
+  },
+  {
+    "Id": "build391",
+    "Name": "Bannière du spécialiste Polo",
+    "Group": "Identification personnelle sur mesure",
+    "Description": "Le spécialiste Polo espère que vous apprécierez cette touche personnelle exclusive. Puisse-t-elle emplir vos voyages de joie !\n\nAppliquez cette bannière à votre profil dans un modificateur d'apparence."
+  },
+  {
+    "Id": "build392",
+    "Name": "Bannière de l'entité prêtresse Nada",
+    "Group": "Identification personnelle sur mesure",
+    "Description": "Amenez l'entité prêtresse Nada dans votre convergence personnelle en équipant cette touche personnelle exclusive.\n\nAppliquez cette bannière à votre profil dans un modificateur d'apparence."
+  },
+  {
+    "Id": "build393",
+    "Name": "Bannière du centre galactique",
+    "Group": "Identification personnelle sur mesure",
+    "Description": "Équipez cette touche personnelle exclusive et explorez ensemble !\n\nAppliquez cette bannière à votre profil dans un modificateur d'apparence."
+  },
+  {
+    "Id": "build394",
+    "Name": "Bannière raffinée et savoureuse",
+    "Group": "Identification personnelle sur mesure",
+    "Description": "Montrez votre intérêt pour la cuisine pan-galactique avec cette touche personnelle exclusive.\n\nAppliquez cette bannière à votre profil dans un modificateur d'apparence."
   }
 ]

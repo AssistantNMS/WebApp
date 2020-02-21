@@ -686,8 +686,8 @@
   {
     "Id": "build146",
     "Name": "Fabricador de barris",
-    "Group": "Decoração",
-    "Description": "Ornamento que pode ser construído para embelezar sua base."
+    "Group": "Fabricador",
+    "Description": "Fabrica regularmente itens úteis para seu construtor. A obtenção dos itens requer um passe do Atlas V1 para verificação de identidade."
   },
   {
     "Id": "build147",
@@ -698,8 +698,8 @@
   {
     "Id": "build150",
     "Name": "Caixa trancada",
-    "Group": "Decoração",
-    "Description": "Ornamento que pode ser construído para embelezar sua base."
+    "Group": "Fabricador",
+    "Description": "Fabrica regularmente itens úteis para seu construtor."
   },
   {
     "Id": "build151",
@@ -1680,15 +1680,219 @@
     "Description": "Uma luz colorida para iluminar a base do usuário."
   },
   {
-    "Id": "build349",
-    "Name": "White Light",
-    "Group": "Decoration",
-    "Description": "A coloured light for illuminating a user's base."
+    "Id": "build359",
+    "Name": "Piso de luz",
+    "Group": "Dispositivo de iluminação",
+    "Description": "Um módulo de construção especial feito inteiramente de painéis que emitem luz. Pode ser usado para construir pisos de luz.\n\nO painel de piso pode ser colorido novamente antes ou após o posicionamento. Requer energia para ser operado."
   },
   {
-    "Id": "build358",
-    "Name": "Dispositivo de forma de onda",
+    "Id": "build360",
+    "Name": "Dispositivo de bytebeat",
     "Group": "Sintetizador de áudio",
-    "Description": "Um gerador de áudio avançado que permite que o usuário sintetize arranjos musicais complexos.\n\nVários dispositivos podem ser posicionados em sequência ou conectados a luzes para fazerem exibições espetaculares."
+    "Description": "Um gerador de áudio avançado que permite que o usuário sintetize arranjos musicais complexos.\n\nVários dispositivos podem ser posicionados em sequência ou conectados a luzes para fazer apresentações espetaculares."
+  },
+  {
+    "Id": "build361",
+    "Name": "Cabo de bytebeat",
+    "Group": "Extensão Bytebeat",
+    "Description": "Cabo avançado feito para unir um ou mais geradores de bytebeat ou para conectar um alternador de bytebeat à rede.\n\nO sinal vai sincronizar as luzes conectadas e o dispositivo com a forma de onda gerada."
+  },
+  {
+    "Id": "build362",
+    "Name": "Alternador de bytebeat",
+    "Group": "Extensão Bytebeat",
+    "Description": "Um dispositivo de alternância musical desenvolvido para interpretar os sinais da forma de onda criados por um gerador de bytebeat e fornecer impulsos elétricos às luzes conectadas e outros dispositivos."
+  },
+  {
+    "Id": "build363",
+    "Name": "Mochila do Exotraje",
+    "Group": "Melhoria Visual do Exotraje",
+    "Description": "Uma sobreposição de aparência do exotraje exclusiva.\n\nÉ uma mochila modular e resistente. Seu estilo faz lembrar uma era de exploração mais antiga.\n\nTransforme o aspecto do seu exotraje em um modificador de aparência."
+  },
+  {
+    "Id": "build364",
+    "Name": "Rastro de Arco-íris do Jetpack",
+    "Group": "Sobreposição do Exaustor do Exotraje",
+    "Description": "Uma Sobreposição de Aparência do Exotraje exclusiva.\n\nOs injetores multicromáticos calibrados com precisão alteram a saída do jetpack, transformando o rastro do exaustor em um vibrante espetáculo de cores.\n\nTransforme o aspecto do seu exotraje em um Modificador de Aparência."
+  },
+  {
+    "Id": "build365",
+    "Name": "Rastro de Antimatéria do Jetpack",
+    "Group": "Sobreposição do Exaustor do Exotraje",
+    "Description": "Uma Sobreposição de Aparência do Exotraje exclusiva.\n\nOs supressores de bárion alteram a saída do jetpack, concedendo uma tintura negra distinta ao rastro dele.\n\nTransforme o aspecto do seu exotraje em um Modificador de Aparência."
+  },
+  {
+    "Id": "build366",
+    "Name": "Rastro Vermelho do Jetpack",
+    "Group": "Sobreposição do Exaustor do Exotraje",
+    "Description": "Uma Sobreposição de Aparência do Exotraje exclusiva.\n\nOs bocais de injeção de cádmio adicionam uma aparência vermelha ousada à saída do jetpack.\n\nTransforme o aspecto do seu exotraje em um Modificador de Aparência."
+  },
+  {
+    "Id": "build367",
+    "Name": "Rastro verde do jetpack",
+    "Group": "Sobreposição do Exaustor do Exotraje",
+    "Description": "Uma Sobreposição de Aparência do Exotraje exclusiva.\n\nOs bocais de injeção de emeril adicionam uma aparência verde elegante à saída do jetpack.\n\nTransforme o aspecto do seu exotraje em um Modificador de Aparência."
+  },
+  {
+    "Id": "build368",
+    "Name": "Rastro Azul do Jetpack",
+    "Group": "Sobreposição do Exaustor do Exotraje",
+    "Description": "Uma Sobreposição de Aparência do Exotraje exclusiva.\n\nOs bocais de injeção de índio adicionam uma aparência azul estonteante à saída do jetpack.\n\nTransforme o aspecto do seu exotraje em um Modificador de Aparência."
+  },
+  {
+    "Id": "build369",
+    "Name": "Rastro Cromático da Nave",
+    "Group": "Sobreposição do Exaustor da Nave",
+    "Description": "Um Modificador do Exaustor da Nave exclusivo.\n\nOs injetores multicromáticos calibrados com precisão alteram a saída do mecanismo de pulso, transformando o rastro do exaustor em um vibrante espetáculo de cores.\n\nInstale esta tecnologia no inventário da sua nave para mudar a aparência dos rastros do exaustor do motor."
+  },
+  {
+    "Id": "build370",
+    "Name": "Rastro Furtivo da Nave",
+    "Group": "Sobreposição do Exaustor da Nave",
+    "Description": "Um Modificador do Exaustor da Nave exclusivo.\n\nOs supressores de bárion alteram a saída do mecanismo de pulso, concedendo uma tintura negra distinta ao rastro dele.\n\nInstale esta tecnologia no inventário da sua nave para mudar a aparência dos rastros do exaustor do motor."
+  },
+  {
+    "Id": "build371",
+    "Name": "Rastro de Cádmio da Nave",
+    "Group": "Sobreposição do Exaustor da Nave",
+    "Description": "Um Modificador do Exaustor da Nave exclusivo.\n\nOs bocais de injeção de cádmio adicionam uma aparência vermelha ousada à saída do mecanismo de pulso.\n\nInstale esta tecnologia no inventário da sua nave para mudar a aparência dos rastros do exaustor do motor."
+  },
+  {
+    "Id": "build372",
+    "Name": "Rastro de Emeril da Nave",
+    "Group": "Sobreposição do Exaustor da Nave",
+    "Description": "Um Modificador do Exaustor da Nave exclusivo.\n\nOs bocais de injeção de emeril adicionam uma aparência verde elegante à saída do mecanismo de pulso.\n\nInstale esta tecnologia no inventário da sua nave para mudar a aparência dos rastros do exaustor do motor."
+  },
+  {
+    "Id": "build373",
+    "Name": "Rastro Dourado da Nave",
+    "Group": "Sobreposição do Exaustor da Nave",
+    "Description": "Um Modificador do Exaustor da Nave exclusivo.\n\nOs bocais de injeção dourados adicionam uma aparência dourada estonteante à saída do mecanismo de pulso.\n\nInstale esta tecnologia no inventário da sua nave para mudar a aparência dos rastros do exaustor do motor."
+  },
+  {
+    "Id": "build374",
+    "Name": "Arbusto Retorcido",
+    "Group": "Decoração orgânica",
+    "Description": "Uma planta nativa de mundos radioativos, essa suculenta carnuda parece balançar suavemente até mesmo quando o ar está imóvel...\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build375",
+    "Name": "Árvore-Guarda-Chuva",
+    "Group": "Decoração orgânica",
+    "Description": "Essa árvore decorativa evoluiu para se adaptar aos altos níveis de radiação. Seu núcleo luminoso central atrai a vida selvagem, mas não se trata de um órgão funcional. Ela não te observa.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build376",
+    "Name": "Árvore Retorcida",
+    "Group": "Decoração orgânica",
+    "Description": "Esse belo exemplo de árvore prospera no calor de intensa radiação gama. Para garantir sua sobrevivência em ambientes da qual não é nativa, um fragmento de material de alta energia foi integrado ao tronco.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build377",
+    "Name": "Cogumelo Escaldante",
+    "Group": "Decoração orgânica",
+    "Description": "Essa protuberância avolumada cresce rapidamente a partir de uma refinada rede de esporos subterrâneos. Aumenta consideravelmente a qualidade do solo ao seu redor.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build378",
+    "Name": "Protuberância Vigilante",
+    "Group": "Decoração orgânica",
+    "Description": "Essa planta pode ser cultivada, mas o consumo dela não é aconselhável.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build379",
+    "Name": "Haste de Tentáculo",
+    "Group": "Decoração orgânica",
+    "Description": "Essa flor arquitetônica incrível combina duas concepções estéticas populares: tentáculos arredios e fungos gigantes.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build380",
+    "Name": "Cacto Fascinante",
+    "Group": "Decoração orgânica",
+    "Description": "Filamentos emplumados e elegantes estão dispostos por essa planta do deserto, aumentando a área de superfície para absorção de umidade. Eles também parecem bem atraentes.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build381",
+    "Name": "Cacto Comemorativo",
+    "Group": "Decoração orgânica",
+    "Description": "Suculentas com decorações incríveis. Essas plantas adoráveis têm em seus corpos bulbosos um espetáculo de belas flores.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build382",
+    "Name": "Árvore Suculenta",
+    "Group": "Decoração orgânica",
+    "Description": "A casca desta árvore é enganosa. Ela não é dura nem áspera, mas suave e úmida ao toque. Vincos na superfície abrigam água extra para tempos de escassez.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build383",
+    "Name": "Moita Resistente",
+    "Group": "Decoração orgânica",
+    "Description": "Essa conífera resistente leva em sua seiva enzimas anticongelantes, permitindo que ela sobreviva em temperaturas absurdamente baixas.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build384",
+    "Name": "Plantador Congelado",
+    "Group": "Decoração orgânica",
+    "Description": "Um plantador de pedra com neve. É o lar perfeito para plantas pequenas e resistentes que crescem em mundos gélidos.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build385",
+    "Name": "Conífera Arcaica",
+    "Group": "Decoração orgânica",
+    "Description": "Esta árvore está viva há quase um período geológico inteiro. A pouca luz e calor em seu habitat nativo limitam o crescimento dela a milímetros por estação. Uma amostra deste tamanho é uma maravilha botânica.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build386",
+    "Name": "Rocha Marinha",
+    "Group": "Decoração orgânica",
+    "Description": "Uma formação mineral agradável, cristalizada a partir de sais do oceano. Pode conter fósseis aquáticos ou formas de vida.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build387",
+    "Name": "Arco Mineral",
+    "Group": "Decoração orgânica",
+    "Description": "Um fragmento notável de geometria geológica. Um arco estável e forte, infundido com curiosos geodos sólidos e angulares.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build388",
+    "Name": "Rocha de Gema",
+    "Group": "Decoração orgânica",
+    "Description": "Essas rochas já foram um subproduto descartável de mineração profunda, mas seu valor estético agora é reconhecido.\n\nConcede oportunidades de cenários decorativos para bases."
+  },
+  {
+    "Id": "build389",
+    "Name": "Emblema de Fauna Incomum",
+    "Group": "Identificação Pessoal Personalizada",
+    "Description": "Demonstre seu interesse pela estranha e incomum vida selvagem com esse Estilo Pessoal exclusivo. \n\nAplique este emblema ao seu perfil em um Modificador de Aparência."
+  },
+  {
+    "Id": "build390",
+    "Name": "Emblema da Bolota",
+    "Group": "Identificação Pessoal Personalizada",
+    "Description": "Mostre seu amor pelas criaturas esféricas e pelo mel delicioso delas com esse Estilo Pessoal exclusivo.\n\nAplique este emblema ao seu perfil em um Modificador de Aparência."
+  },
+  {
+    "Id": "build391",
+    "Name": "Emblema do Especialista Polo",
+    "Group": "Identificação Pessoal Personalizada",
+    "Description": "O especialista Polo espera que você curta o Estilo Pessoal dele. Que ele lhe traga alegria em suas jornadas!\n\nAplique este emblema ao seu perfil em um Modificador de Aparência."
+  },
+  {
+    "Id": "build392",
+    "Name": "Emblema da Entidade Sacerdotisa Nada",
+    "Group": "Identificação Pessoal Personalizada",
+    "Description": "Traga a Entidade Sacerdotisa Nada para sua convergência pessoal ao equipar esse Estilo Pessoal exclusivo.\n\nAplique este emblema ao seu perfil em um Modificador de Aparência."
+  },
+  {
+    "Id": "build393",
+    "Name": "Emblema da Central Galáctica",
+    "Group": "Identificação Pessoal Personalizada",
+    "Description": "Coloque esse Estilo Pessoal exclusivo e explore em equipe!\n\nAplique este emblema ao seu perfil em um Modificador de Aparência."
+  },
+  {
+    "Id": "build394",
+    "Name": "Emblema Elegante e Saboroso",
+    "Group": "Identificação Pessoal Personalizada",
+    "Description": "Demonstre seu compromisso com a culinária pangaláctica com esse Estilo Pessoal exclusivo.\n\nAplique este emblema ao seu perfil em um Modificador de Aparência."
   }
 ]

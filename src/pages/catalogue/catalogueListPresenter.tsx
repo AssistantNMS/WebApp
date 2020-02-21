@@ -116,7 +116,7 @@ export class CatalogueListPresenterUnconnected extends React.Component<IProps, I
                 <NavBar title={i18next.t(LocaleKey.catalogue)} />
                 <div className="content">
                     <form id="searchBar" className="searchbar row" onSubmit={(e) => this.search(e, this.state.searchTerm)}>
-                        <input type="text" autoFocus className="form-control" placeholder="Search" onChange={this.onSearchTextChange} />
+                        <input type="text" className="form-control" placeholder="Search" onChange={this.onSearchTextChange} />
                         <button className="icon-container pointer" type="submit">
                             <i className="material-icons">search</i>
                         </button>

@@ -686,8 +686,8 @@
   {
     "Id": "build146",
     "Name": "Fabbricatore di barili",
-    "Group": "Decorazione",
-    "Description": "Decorazione costruibile per abbellire la tua base."
+    "Group": "Fabbricatore",
+    "Description": "Fabbrica regolarmente oggetti utili per il suo costruttore.\nIl recupero degli oggetti richiede un Pass dell'Atlante v1 per l'identificazione personale."
   },
   {
     "Id": "build147",
@@ -698,8 +698,8 @@
   {
     "Id": "build150",
     "Name": "Cassa chiusa",
-    "Group": "Decorazione",
-    "Description": "Decorazione costruibile per abbellire la tua base."
+    "Group": "Fabbricatore",
+    "Description": "Fabbrica regolarmente oggetti utili per il suo costruttore."
   },
   {
     "Id": "build151",
@@ -1680,15 +1680,219 @@
     "Description": "Una luce colorata per illuminare una base."
   },
   {
-    "Id": "build349",
-    "Name": "White Light",
-    "Group": "Decoration",
-    "Description": "A coloured light for illuminating a user's base."
+    "Id": "build359",
+    "Name": "Pavimento luminoso",
+    "Group": "Dispositivo luminoso",
+    "Description": "Un modulo di costruzione speciale, composto interamente di pannelli illuminanti. Può essere utilizzato per costruire pavimenti di luce.\n\nIl colore del pannello può essere alterato anche dopo il posizionamento. Necessita di energia per funzionare."
   },
   {
-    "Id": "build358",
-    "Name": "Dispositivo di forma d'onda",
+    "Id": "build360",
+    "Name": "Dispositivo Bytebeat",
     "Group": "Sintetizzatore audio",
     "Description": "Un generatore audio all'avanguardia, utilizzabile per sintetizzare complessi arrangiamenti musicali.\n\nÈ possibile posizionare più dispositivi in sequenza e collegarli alle luci per dare vita ad affascinanti spettacoli."
+  },
+  {
+    "Id": "build361",
+    "Name": "Cavo Bytebeat",
+    "Group": "Estensione Bytebeat",
+    "Description": "Cablaggio avanzato, progettato per collegare uno o più generatori Bytebeat o un commutatore Bytebeat alla rete.\n\nIl segnale sincronizza le luci e il dispositivo collegato alla forma d'onda generata."
+  },
+  {
+    "Id": "build362",
+    "Name": "Commutatore Bytebeat",
+    "Group": "Estensione Bytebeat",
+    "Description": "Un dispositivo di commutazione musicale, progettato per interpretare segnali di forma d'onda generati da un generatore Bytebeat e indirizzare gli impulsi elettrici risultanti verso luci e altri dispositivi collegati."
+  },
+  {
+    "Id": "build363",
+    "Name": "Zaino exotuta",
+    "Group": "Miglioramento estetico exotuta",
+    "Description": "Un esclusivo override di aspetto dell'exotuta.\n\nUn robusto zaino modulare. Il suo aspetto richiama alla mente un'era passata dell'esplorazione.\n\nTrasforma l'aspetto dell'exotuta presso un modificatore aspetto."
+  },
+  {
+    "Id": "build364",
+    "Name": "Scia arcobaleno jet pack",
+    "Group": "Override scarico jet pack",
+    "Description": "Un esclusivo override di aspetto dell'exotuta.\n\nDegli iniettori multicromatici accuratamente calibrati alterano lo scarico del jet pack, trasformandone il residuo in una vivace scia luminosa.\n\nTrasforma l'aspetto dell'exotuta presso un modificatore aspetto."
+  },
+  {
+    "Id": "build365",
+    "Name": "Scia antimateria jet pack",
+    "Group": "Override scarico jet pack",
+    "Description": "Un esclusivo override di aspetto dell'exotuta.\n\nI soppressori di barioni alterano lo scarico del jet pack, conferendo una particolare colorazione nera alla sua scia.\n\nTrasforma l'aspetto dell'exotuta presso un modificatore aspetto."
+  },
+  {
+    "Id": "build366",
+    "Name": "Scia rossa jet pack",
+    "Group": "Override scarico jet pack",
+    "Description": "Un esclusivo override di aspetto dell'exotuta.\n\nGli ugelli di iniezione al cadmio conferiscono un'appariscente colorazione rossa allo scarico del jet pack.\n\nTrasforma l'aspetto dell'exotuta presso un modificatore aspetto."
+  },
+  {
+    "Id": "build367",
+    "Name": "Scia verde jet pack",
+    "Group": "Override scarico jet pack",
+    "Description": "Un esclusivo override di aspetto dell'exotuta.\n\nGli ugelli di iniezione all'emeril conferiscono un'intensa colorazione verde allo scarico del jet pack.\n\nTrasforma l'aspetto dell'exotuta presso un modificatore aspetto."
+  },
+  {
+    "Id": "build368",
+    "Name": "Scia blu jet pack",
+    "Group": "Override scarico jet pack",
+    "Description": "Un esclusivo override di aspetto dell'exotuta.\n\nGli ugelli di iniezione all'indio conferiscono una splendida colorazione blu allo scarico del jet pack.\n\nTrasforma l'aspetto dell'exotuta presso un modificatore aspetto."
+  },
+  {
+    "Id": "build369",
+    "Name": "Scia cromatica astronave",
+    "Group": "Override scarico astronave",
+    "Description": "Un esclusivo modificatore di scarico dell'astronave.\n\nDegli iniettori multicromatici accuratamente calibrati alterano lo scarico del motore a impulso, trasformandone il residuo in una vivace scia luminosa.\n\nInstalla questa tecnologia nell'inventario della tua astronave per modificare l'aspetto delle scie di scarico del motore."
+  },
+  {
+    "Id": "build370",
+    "Name": "Scia furtiva astronave",
+    "Group": "Override scarico astronave",
+    "Description": "Un esclusivo modificatore di scarico dell'astronave.\n\nI soppressori di barioni alterano lo scarico del motore a impulso, conferendo una particolare colorazione nera alla sua scia.\n\nInstalla questa tecnologia nell'inventario della tua astronave per modificare l'aspetto delle scie di scarico del motore."
+  },
+  {
+    "Id": "build371",
+    "Name": "Scia al cadmio astronave",
+    "Group": "Override scarico astronave",
+    "Description": "Un esclusivo modificatore di scarico dell'astronave.\n\nGli ugelli di iniezione al cadmio conferiscono un'appariscente colorazione rossa allo scarico del motore a impulso.\n\nInstalla questa tecnologia nell'inventario della tua astronave per modificare l'aspetto delle scie di scarico del motore."
+  },
+  {
+    "Id": "build372",
+    "Name": "Scia all'emeril astronave",
+    "Group": "Override scarico astronave",
+    "Description": "Un esclusivo modificatore di scarico dell'astronave.\n\nGli ugelli di iniezione all'emeril conferiscono un'intensa colorazione verde allo scarico del motore a impulso.\n\nInstalla questa tecnologia nell'inventario della tua astronave per modificare l'aspetto delle scie di scarico del motore."
+  },
+  {
+    "Id": "build373",
+    "Name": "Scia dorata astronave",
+    "Group": "Override scarico astronave",
+    "Description": "Un esclusivo modificatore di scarico dell'astronave.\n\nGli ugelli di iniezione all'oro conferiscono una lucente colorazione dorata allo scarico del motore a impulso.\n\nInstalla questa tecnologia nell'inventario della tua astronave per modificare l'aspetto delle scie di scarico del motore."
+  },
+  {
+    "Id": "build374",
+    "Name": "Cespuglio contorto",
+    "Group": "Decorazione organica",
+    "Description": "Nativa di mondi radioattivi, questa carnosa pianta grassa sembra curiosamente ondeggiare anche in assenza di vento...\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build375",
+    "Name": "Albero parasole",
+    "Group": "Decorazione organica",
+    "Description": "Quest'albero decorativo si è evoluto per adattarsi agli elevati livelli di radioattività di fondo. Il suo nucleo centrale luminescente attira la fauna e non è assolutamente un organo sensoriale. Non ti osserva.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build376",
+    "Name": "Albero intrecciato",
+    "Group": "Decorazione organica",
+    "Description": "Questo bellissimo albero prospera nel calore delle intense radiazioni gamma. Per assicurarne la sopravvivenza come specie alloctona gli è stato inserito un pezzo di materiale altamente energetico nel tronco.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build377",
+    "Name": "Fungo vescicolare",
+    "Group": "Decorazione organica",
+    "Description": "Questa protuberanza rigonfia cresce rapidamente da una sottile rete di spore sotterranee. Migliora notevolmente la qualità del terreno circostante.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build378",
+    "Name": "Protuberanza guardinga",
+    "Group": "Decorazione organica",
+    "Description": "Sebbene questa pianta sia coltivabile, se ne sconsiglia il consumo.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build379",
+    "Name": "Spira tentacolare",
+    "Group": "Decorazione organica",
+    "Description": "Questa squisita flora architettonica combina due popolari elementi estetici: tentacoli che si contorcono e funghi giganti.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build380",
+    "Name": "Cactus ammaliatore",
+    "Group": "Decorazione organica",
+    "Description": "Questa pianta desertica è avvolta da eleganti filamenti piumati che, oltre ad avere un aspetto seducente, ne aumentano la superficie per un migliore assorbimento dell'umidità.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build381",
+    "Name": "Cactus celebrativo",
+    "Group": "Decorazione organica",
+    "Description": "La cima di queste piacevoli piante grasse bulbose è adornata da uno stuolo di stupendi fiori.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build382",
+    "Name": "Albero succulento",
+    "Group": "Decorazione organica",
+    "Description": "La corteccia di quest'albero è fuorviante: non è né ruvida né dura, ma morbida e umida al tocco. Le grinze che ne rivestono la superficie contengono scorte di acqua per i periodi di siccità.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build383",
+    "Name": "Arbusto vigoroso",
+    "Group": "Decorazione organica",
+    "Description": "Questa robusta conifera è percorsa da una linfa ricca di enzimi antigelo che le permettono di sopravvivere a temperature incredibilmente basse.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build384",
+    "Name": "Fioriera ghiacciata",
+    "Group": "Decorazione organica",
+    "Description": "Un contenitore di pietra pieno di neve. È la dimora ideale per le piante piccole e resistenti che crescono sui mondi ghiacciati.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build385",
+    "Name": "Conifera antica",
+    "Group": "Decorazione organica",
+    "Description": "Il ciclo di vita di quest'albero arriva quasi a coprire ere geologiche. La scarsità di calore e luce nel suo habitat nativo ne limita la crescita a pochi millimetri per stagione. Un esemplare di queste dimensioni è una meraviglia botanica.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build386",
+    "Name": "Roccia marina",
+    "Group": "Decorazione organica",
+    "Description": "Una gradevole formazione di minerali, cristallizzata dai sali oceanici. Potrebbe contenere fossili e/o forme di vita acquatici.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build387",
+    "Name": "Arco minerale",
+    "Group": "Decorazione organica",
+    "Description": "Quest'arco portante, infuso di geodi curiosamente angolari, è un notevole esempio di geometria geologica.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build388",
+    "Name": "Roccia incrostata di gemme",
+    "Group": "Decorazione organica",
+    "Description": "Questa roccia, un tempo prodotto di scarto di operazioni minerarie di profondità, è ora apprezzata per il suo valore estetico.\n\nUtilizzabile per decorare le basi."
+  },
+  {
+    "Id": "build389",
+    "Name": "Striscione fauna bizzarra",
+    "Group": "Identificazione personalizzata",
+    "Description": "Dimostra il tuo interesse per le forme di vita animale insolite con quest'esclusivo tocco personale.\n\nApplica questo striscione al tuo profilo in un modificatore aspetto."
+  },
+  {
+    "Id": "build390",
+    "Name": "Striscione dell'ammasso",
+    "Group": "Identificazione personalizzata",
+    "Description": "Dimostra il tuo amore per le gentili creature simili ad ammassi e per il loro delizioso miele con quest'esclusivo tocco personale.\n\nApplica questo striscione al tuo profilo in un modificatore aspetto."
+  },
+  {
+    "Id": "build391",
+    "Name": "Striscione specialista Polo",
+    "Group": "Identificazione personalizzata",
+    "Description": "Lo specialista Polo spera che apprezzerai quest'esclusivo tocco personale. Che possa portare gioia nei tuoi viaggi!\n\nApplica questo striscione al tuo profilo in un modificatore aspetto."
+  },
+  {
+    "Id": "build392",
+    "Name": "Striscione entità sacerdotale Nada",
+    "Group": "Identificazione personalizzata",
+    "Description": "Porta l'entità sacerdotale Nada nella tua convergenza personale equipaggiando quest'esclusivo tocco personale.\n\nApplica questo striscione al tuo profilo in un modificatore aspetto."
+  },
+  {
+    "Id": "build393",
+    "Name": "Striscione snodo galattico",
+    "Group": "Identificazione personalizzata",
+    "Description": "Equipaggia quest'esclusivo tocco personale ed esplora in compagnia!\n\nApplica questo striscione al tuo profilo in un modificatore aspetto."
+  },
+  {
+    "Id": "build394",
+    "Name": "Striscione buongustaio",
+    "Group": "Identificazione personalizzata",
+    "Description": "Dimostra la tua dedizione alla gastronomia pangalattica con quest'esclusivo tocco personale.\n\nApplica questo striscione al tuo profilo in un modificatore aspetto."
   }
 ]

@@ -55,8 +55,12 @@
     justify-content: center;
 }
 
-.card.paymentOption {
+.card.extraMargin {
     margin: 10px 0;
+
+    .card-header {
+        font-size: 1rem;
+    }
 
     .card-header-image {
         max-height: 50px;
@@ -69,7 +73,7 @@
 
 #app .main-panel {
     height: 100vh;
-    overflow-y: scroll;
+    // overflow-y: scroll;
 
     >.content {
         margin-top: 0;
@@ -86,3 +90,19 @@
         }
     }
 }
+
+.mt-3em {
+    margin-top: 3em;
+}
+
+#app {
+    overflow-y: scroll;
+}
+
+.row.justify {
+    justify-content: center;
+}
+
+// body p {
+//     font-size: 1.25em;
+// }
