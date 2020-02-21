@@ -6,15 +6,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-
-- pwsh: |
-   If ("$(Build.SourceBranch)" -eq "refs/heads/master") {
-     Write-Host "##vso[task.setvariable variable=npmCommand;]run build-prod"
-   }
-   If ("$(Build.SourceBranch)" -eq "refs/heads/staging") {
-     Write-Host "##vso[task.setvariable variable=npmCommand;]run build-staging"
-   }
-
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -30,7 +21,7 @@ steps:
 - task: Npm@1
   inputs:
     command: custom
-    customCommand: $(npmCommand)
+    customCommand: run build-prod
   displayName: 'Build React Files'
 
 - task: PublishBuildArtifacts@1
