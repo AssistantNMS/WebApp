@@ -44,10 +44,19 @@ export class GameItemService extends BaseJsonService {
     var list = await this.getListfromJson(catalogue);
     if (!list.isSuccess) return { isSuccess: false, value: result, errorMessage: list.errorMessage };
 
+    let found = false;
     for (const item of list.value) {
       if (item.Id !== itemId) continue;
 
       result = item;
+      found = true;
+    }
+    if (!found) {
+      return {
+        isSuccess: false,
+        value: result,
+        errorMessage: 'no matching item found',
+      };
     }
 
     return {
@@ -120,8 +129,8 @@ export class GameItemService extends BaseJsonService {
     }
   }
 
-  async getRefinedByOutput(itemId: string): Promise<ResultWithValue<Array<Processor>>> {
-    var allGenericItemsResult = await this.getProcessorListfromJson(CatalogueType.refinery);
+  async getProcessorsByOutput(catalogueType: string, itemId: string): Promise<ResultWithValue<Array<Processor>>> {
+    var allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
 
     if (!allGenericItemsResult.isSuccess) {
       return {
@@ -146,8 +155,11 @@ export class GameItemService extends BaseJsonService {
     };
   }
 
-  async getRefinedByInput(itemId: string): Promise<ResultWithValue<Array<Processor>>> {
-    var allGenericItemsResult = await this.getProcessorListfromJson(CatalogueType.refinery);
+  getRefinedByOutput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByOutput(CatalogueType.refinery, itemId);
+  getCookingByOutput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByOutput(CatalogueType.nutrientProcessor, itemId);
+
+  async getProcessorsByInput(catalogueType: string, itemId: string): Promise<ResultWithValue<Array<Processor>>> {
+    var allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
 
     if (!allGenericItemsResult.isSuccess) {
       return {
@@ -168,6 +180,102 @@ export class GameItemService extends BaseJsonService {
     return {
       isSuccess: true,
       value: refFromOutputs,
+      errorMessage: '',
+    };
+  }
+
+  getRefinedByInput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByInput(CatalogueType.refinery, itemId);
+  getCookingByInput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByInput(CatalogueType.nutrientProcessor, itemId);
+
+  async getProcessorById(catalogueType: string, itemId: string): Promise<ResultWithValue<Processor>> {
+    var allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
+
+    let result: any = {};
+    if (!allGenericItemsResult.isSuccess) {
+      return {
+        isSuccess: false,
+        value: result,
+        errorMessage: allGenericItemsResult.errorMessage,
+      };
+    }
+
+    let found = false;
+    for (const item of allGenericItemsResult.value) {
+      if (item.Id !== itemId) continue;
+
+      result = item;
+      found = true;
+    }
+    if (!found) {
+      return {
+        isSuccess: false,
+        value: result,
+        errorMessage: 'no matching item found',
+      };
+    }
+
+    return {
+      isSuccess: true,
+      value: result,
+      errorMessage: '',
+    };
+  }
+
+  getRefinedById = async (itemId: string): Promise<ResultWithValue<Processor>> => await this.getProcessorById(CatalogueType.refinery, itemId);
+  getCookingById = async (itemId: string): Promise<ResultWithValue<Processor>> => await this.getProcessorById(CatalogueType.nutrientProcessor, itemId);
+
+  async getRequiredItemDetails(itemId: string): Promise<ResultWithValue<Array<RequiredItemDetails>>> {
+    var processorRecipe = await this.getRefinedById(itemId);
+
+    if (!processorRecipe.isSuccess) {
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: processorRecipe.errorMessage,
+      };
+    }
+    if (processorRecipe.value.Inputs.length < 1)
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: 'required items not found',
+      };
+    var requiredItemsTasks = processorRecipe.value.Inputs.map(async (item: RequiredItem) => {
+      var itemDetails = await this.getItemDetails(item.Id);
+      if (!itemDetails.isSuccess) return null;
+
+      var requiredItemDetails: RequiredItemDetails = {
+        Id: itemDetails.value.Id,
+        Icon: itemDetails.value.Icon,
+        Name: itemDetails.value.Name,
+        Colour: itemDetails.value.Colour,
+        Quantity: item.Quantity
+      }
+      return requiredItemDetails;
+    });
+    var requiredItemsResults = await Promise.all(requiredItemsTasks);
+    var requiredItems: any = requiredItemsResults.filter(r => r);
+
+    return {
+      isSuccess: true,
+      value: requiredItems,
+      errorMessage: '',
+    };
+  }
+
+  async getItemDetailsFromIdList(itemIdsList: Array<string>): Promise<ResultWithValue<Array<GameItemModel>>> {
+    var itemDetailsTask = itemIdsList.map(async (itemId: string) => {
+      var itemDetails = await this.getItemDetails(itemId);
+      if (!itemDetails.isSuccess) return null;
+
+      return itemDetails;
+    });
+    var itemDetailsResults = await Promise.all(itemDetailsTask);
+    var itemDetails: any = itemDetailsResults.filter(r => r);
+
+    return {
+      isSuccess: true,
+      value: itemDetails,
       errorMessage: '',
     };
   }

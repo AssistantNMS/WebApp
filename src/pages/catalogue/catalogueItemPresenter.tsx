@@ -1,24 +1,30 @@
 import React from 'react';
+import i18next from 'i18next';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
 import { State } from '../../redux/state';
-import { GameItemService } from '../../services/GameItemService';
 import { anyObject } from '../../helper/TypescriptHacks';
+import { setDocumentTitle } from '../../helper/DocumentHelper';
+import { mapProcessorToRequiredItems } from '../../mapper/RequiredItemMapper';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { NavBar } from '../../components/core/navbar/navbar';
+
 import { Processor } from '../../contracts/Processor';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
 
-import i18next from 'i18next';
-import { AllGameItemsService } from '../../services/AllGameItemsService';
+import { NavBar } from '../../components/core/navbar/navbar';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
+import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
 import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
-import { ProcessorItemListTile } from '../../components/tilePresenter/processorItemListTile/processorItemListTile';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { GenericItemListTile } from '../../components/tilePresenter/genericItemListTile/genericItemListTile';
+import { RefinerItemListTile } from '../../components/tilePresenter/processorItemListTile/refinerItemListTile';
+import { NutrientProcessorListTile } from '../../components/tilePresenter/processorItemListTile/nutrientProcessorListTile';
+
+import { GameItemService } from '../../services/GameItemService';
+import { AllGameItemsService } from '../../services/AllGameItemsService';
 
 interface IProps {
     location: any;
@@ -32,6 +38,8 @@ interface IState {
     usedToCreateArray: Array<GameItemModel>;
     refArray: Array<Processor>;
     usedToRefArray: Array<Processor>;
+    cookArray: Array<Processor>;
+    usedToCookArray: Array<Processor>;
     gameItemService: GameItemService;
     allGameItemsService: AllGameItemsService;
     additionalData: Array<any>;
@@ -47,6 +55,8 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
             usedToCreateArray: [],
             refArray: [],
             usedToRefArray: [],
+            cookArray: [],
+            usedToCookArray: [],
             gameItemService: new GameItemService(),
             allGameItemsService: new AllGameItemsService(),
             additionalData: []
@@ -92,10 +102,14 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
             // Error
             return;
         }
+
+        setDocumentTitle(itemResult.value.Name);
         this.getResArray(itemResult.value.Id);
         this.getUsedToCreateArray(itemResult.value.Id);
         this.getRefArray(itemResult.value.Id);
         this.getUsedToRefArray(itemResult.value.Id);
+        this.getCookArray(itemResult.value.Id);
+        this.getUsedToCookArray(itemResult.value.Id);
         this.setState(() => {
             return {
                 item: itemResult.value,
@@ -136,11 +150,30 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
 
     getUsedToRefArray = async (itemId: string) => {
         var usedToRefArray = await this.state.gameItemService.getRefinedByInput(itemId);
-        console.log({ usedToRefArray });
         if (!usedToRefArray.isSuccess) return;
         this.setState(() => {
             return {
                 usedToRefArray: usedToRefArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length),
+            }
+        });
+    }
+
+    getCookArray = async (itemId: string) => {
+        var cookArray = await this.state.gameItemService.getCookingByOutput(itemId);
+        if (!cookArray.isSuccess) return;
+        this.setState(() => {
+            return {
+                cookArray: cookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length),
+            }
+        });
+    }
+
+    getUsedToCookArray = async (itemId: string) => {
+        var usedToCookArray = await this.state.gameItemService.getCookingByInput(itemId);
+        if (!usedToCookArray.isSuccess) return;
+        this.setState(() => {
+            return {
+                usedToCookArray: usedToCookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length),
             }
         });
     }
@@ -212,7 +245,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                         <h3>{i18next.t(LocaleKey.craftedUsing)}</h3>
                     </div>
                     <div className="col-12">
-                        <GenericListPresenter list={resArray} presenter={RequiredItemListTile} />
+                        <GenericListPresenter list={resArray} presenter={RequiredItemDetailsListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -240,7 +273,6 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
 
     displayRefItems = (refRecipesArray: Array<Processor>) => {
         if (refRecipesArray == null || refRecipesArray.length < 1) return null;
-
         return (
             <>
                 <div className="row">
@@ -248,7 +280,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                         <h3>{i18next.t(LocaleKey.refinedUsing)}</h3>
                     </div>
                     <div className="col-12">
-                        <GenericListPresenter list={refRecipesArray} presenter={ProcessorItemListTile} />
+                        <GenericListPresenter list={refRecipesArray} presenter={RefinerItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -266,7 +298,42 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                         <h3>{i18next.t(LocaleKey.refineToCreate).replace('{0}', this.state.item.Name)}</h3>
                     </div>
                     <div className="col-12">
-                        <GenericListPresenter list={usedToRefArray} presenter={ProcessorItemListTile} />
+                        <GenericListPresenter list={mapProcessorToRequiredItems(usedToRefArray)} presenter={RequiredItemListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
+    displayCookItems = (cookRecipesArray: Array<Processor>) => {
+        if (cookRecipesArray == null || cookRecipesArray.length < 1) return null;
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.cookingRecipe)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GenericListPresenter list={cookRecipesArray} presenter={NutrientProcessorListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
+    displayUsedToCookItems = (usedToCookArray: Array<Processor>) => {
+        if (usedToCookArray == null || usedToCookArray.length < 1) return null;
+
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.cookToCreate).replace('{0}', this.state.item.Name)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GenericListPresenter list={mapProcessorToRequiredItems(usedToCookArray)} presenter={RequiredItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -299,6 +366,8 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                     {this.displayUsedToCreateItems(this.state.usedToCreateArray)}
                     {this.displayRefItems(this.state.refArray)}
                     {this.displayUsedToRefItems(this.state.usedToRefArray)}
+                    {this.displayCookItems(this.state.cookArray)}
+                    {this.displayUsedToCookItems(this.state.usedToCookArray)}
                 </div>
             </>
         );

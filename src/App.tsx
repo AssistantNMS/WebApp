@@ -10,7 +10,7 @@ import { StateSettingReducer } from './redux/state/StateSettingReducer';
 
 import { trackPageView } from './integration/analytics';
 
-import { about, catalogue, catalogueItem, home, language, search, donation } from './constants/Route';
+import { about, catalogue, catalogueItem, processorItem, home, language, search, donation } from './constants/Route';
 
 import { Drawer } from './components/core/drawer/drawer';
 import { HomePresenter } from './pages/home/homePresenter';
@@ -19,6 +19,7 @@ import { LanguagePresenter } from './pages/language/languagePresenter';
 import { CataloguePresenter } from './pages/catalogue/cataloguePresenter';
 import { CatalogueListPresenter } from './pages/catalogue/catalogueListPresenter';
 import { CatalogueItemPresenter } from './pages/catalogue/catalogueItemPresenter';
+import { ProcessorItemPresenter } from './pages/processor/processorItemPresenter';
 import { SearchContainer } from './pages/search/searchContainer';
 import { DonationPresenter } from './pages/donation/donationPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
@@ -52,6 +53,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route exact={true} path={home} component={HomePresenter} />
             <Route path={`${catalogue}/:types`} component={CatalogueListPresenter} />
             <Route path={`${catalogueItem}/:itemId`} component={CatalogueItemPresenter} />
+            <Route path={`${processorItem}/:itemId`} component={ProcessorItemPresenter} />
             <Route path={catalogue} component={CataloguePresenter} />
             <Route path={search} component={SearchContainer} />
             <Route path={about} component={AboutPresenter} />

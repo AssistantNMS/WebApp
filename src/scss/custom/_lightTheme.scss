@@ -19,7 +19,7 @@
             background-color: #ededed;
 
             .text-container p {
-                color: black;
+                color: $black-color;
             }
         }
 
@@ -28,7 +28,19 @@
 
             a,
             p {
-                color: black;
+                color: $black-color;
+            }
+        }
+
+        .generic-item-list .gen-item .gen-item-container {
+            background-color: #ededed;
+
+            .gen-item-content-container .text-container {
+                color: $black-color;
+            }
+
+            .quantity-container {
+                color: $black-color;
             }
         }
     }
