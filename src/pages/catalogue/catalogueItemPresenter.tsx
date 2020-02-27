@@ -7,6 +7,7 @@ import { GameItemService } from '../../services/GameItemService';
 import { anyObject } from '../../helper/TypescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { NavBar } from '../../components/core/navbar/navbar';
+import { Processor } from '../../contracts/Processor';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
@@ -15,6 +16,7 @@ import i18next from 'i18next';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
 import { GameItemList } from '../../components/common/gameItemList/gameItemList';
 import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
+import { ProcessorItemListTile } from '../../components/tilePresenter/processorItemListTile/processorItemListTile';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 
 interface IProps {
@@ -27,6 +29,8 @@ interface IState {
     item: GameItemModel;
     resArray: Array<RequiredItemDetails>;
     usedToCreateArray: Array<GameItemModel>;
+    refArray: Array<Processor>;
+    usedToRefArray: Array<Processor>;
     gameItemService: GameItemService;
     allGameItemsService: AllGameItemsService;
     additionalData: Array<any>;
@@ -40,6 +44,8 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
             item: anyObject,
             resArray: [],
             usedToCreateArray: [],
+            refArray: [],
+            usedToRefArray: [],
             gameItemService: new GameItemService(),
             allGameItemsService: new AllGameItemsService(),
             additionalData: []
@@ -50,17 +56,18 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         this.fetchData(this.props.match?.params?.itemId);
     }
 
-    componentWillReceiveProps(nextProps: any) {
-        const prevItemId = this.props.match?.params?.itemId;
-        if (nextProps.match?.params?.itemId !== prevItemId) {
-            this.clearData();
-            this.fetchData(nextProps.match?.params?.itemId);
-        }
-    }
+    // componentWillReceiveProps(nextProps: any) {
+    //     const prevItemId = this.props.match?.params?.itemId;
+    //     if (nextProps.match?.params?.itemId !== prevItemId) {
+    //         this.clearData();
+    //         this.fetchData(nextProps.match?.params?.itemId);
+    //     }
+    // }
 
     componentDidUpdate(prevProps: IProps, prevState: IState) {
         const prevSelectedLanguage = prevProps.selectedLanguage;
-        if (this.props.selectedLanguage !== prevSelectedLanguage) {
+        const prevItemId = prevProps.match?.params?.itemId;
+        if (this.props.selectedLanguage !== prevSelectedLanguage || this.props.match?.params?.itemId !== prevItemId) {
             this.clearData();
             this.fetchData(this.props.match?.params?.itemId);
         }
@@ -71,6 +78,8 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
             return {
                 resArray: [],
                 usedToCreateArray: [],
+                refArray: [],
+                usedToRefArray: [],
                 additionalData: []
             }
         });
@@ -84,6 +93,8 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         }
         this.getResArray(itemResult.value.Id);
         this.getUsedToCreateArray(itemResult.value.Id);
+        this.getRefArray(itemResult.value.Id);
+        this.getUsedToRefArray(itemResult.value.Id);
         this.setState(() => {
             return {
                 item: itemResult.value,
@@ -108,6 +119,27 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         this.setState(() => {
             return {
                 usedToCreateArray: usedToCreateArrayResult.value,
+            }
+        });
+    }
+
+    getRefArray = async (itemId: string) => {
+        var refArray = await this.state.gameItemService.getRefinedByOutput(itemId);
+        if (!refArray.isSuccess) return;
+        this.setState(() => {
+            return {
+                refArray: refArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length),
+            }
+        });
+    }
+
+    getUsedToRefArray = async (itemId: string) => {
+        var usedToRefArray = await this.state.gameItemService.getRefinedByInput(itemId);
+        console.log({ usedToRefArray });
+        if (!usedToRefArray.isSuccess) return;
+        this.setState(() => {
+            return {
+                usedToRefArray: usedToRefArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length),
             }
         });
     }
@@ -180,6 +212,42 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         );
     }
 
+    displayRefItems = (refRecipesArray: Array<Processor>) => {
+        if (refRecipesArray == null || refRecipesArray.length < 1) return null;
+
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.refinedUsing)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GameItemList items={refRecipesArray} presenter={ProcessorItemListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
+    displayUsedToRefItems = (usedToRefArray: Array<Processor>) => {
+        if (usedToRefArray == null || usedToRefArray.length < 1) return null;
+
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.refineToCreate).replace('{0}', this.state.item.Name)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GameItemList items={usedToRefArray} presenter={ProcessorItemListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
     render() {
         return (
             <>
@@ -223,6 +291,8 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                     </div>
                     {this.displayRequiredItems(this.state.resArray)}
                     {this.displayUsedToCreateItems(this.state.usedToCreateArray)}
+                    {this.displayRefItems(this.state.refArray)}
+                    {this.displayUsedToRefItems(this.state.usedToRefArray)}
                 </div>
             </>
         );

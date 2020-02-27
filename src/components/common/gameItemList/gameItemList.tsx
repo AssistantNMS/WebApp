@@ -5,10 +5,11 @@ import ReactList from 'react-list';
 import { GameItemModel } from '../../../contracts/GameItemModel';
 import { GameItemListTile } from '../../tilePresenter/gameItemListTile/gameItemListTile';
 import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
+import { Processor } from '../../../contracts/Processor';
 
 interface IProps {
-    items: Array<GameItemModel | RequiredItemDetails>;
-    presenter?: (props: GameItemModel | RequiredItemDetails) => JSX.Element
+    items: Array<GameItemModel | RequiredItemDetails | Processor>;
+    presenter?: (props: GameItemModel | RequiredItemDetails | Processor) => JSX.Element
 }
 
 // interface IState {
@@ -19,6 +20,11 @@ interface IProps {
 // }
 
 export const GameItemListWithoutScrollTracking = (props: IProps) => {
+
+    const displayGameItems = (any: any) => {
+        const item: GameItemModel = any;
+        return (<GameItemListTile {...item} />);
+    }
 
     return (
         <div id="game-item-list" className="game-item-list">
@@ -31,7 +37,7 @@ export const GameItemListWithoutScrollTracking = (props: IProps) => {
                             {
                                 props.presenter != null
                                     ? props.presenter(item)
-                                    : <GameItemListTile {...item} />
+                                    : displayGameItems(item)
                             }
                         </div>
                         // </LazyLoad>
