@@ -72,7 +72,9 @@ export class ProcessorItemPresenterUnconnected extends React.Component<IProps, I
     }
 
     fetchData = async (itemId: string) => {
-        var itemResult = await this.state.gameItemService.getRefinedById(itemId ?? '');
+        var itemResult = itemId.includes("ref")
+            ? await this.state.gameItemService.getRefinedById(itemId ?? '')
+            : await this.state.gameItemService.getCookingById(itemId ?? '');
         if (!itemResult.isSuccess) {
             console.error(itemResult.errorMessage);
             return;

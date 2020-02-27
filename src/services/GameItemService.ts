@@ -225,7 +225,9 @@ export class GameItemService extends BaseJsonService {
   getCookingById = async (itemId: string): Promise<ResultWithValue<Processor>> => await this.getProcessorById(CatalogueType.nutrientProcessor, itemId);
 
   async getRequiredItemDetails(itemId: string): Promise<ResultWithValue<Array<RequiredItemDetails>>> {
-    var processorRecipe = await this.getRefinedById(itemId);
+    let processorRecipe = (itemId.includes('ref'))
+      ? await this.getRefinedById(itemId)
+      : await this.getCookingById(itemId);
 
     if (!processorRecipe.isSuccess) {
       return {
