@@ -1,9 +1,9 @@
 import { RequiredItem } from './RequiredItem';
 
 export interface Processor {
-  id: string;
-  time: string;
-  operation: string;
-  output: RequiredItem;
-  inputs: Array<RequiredItem>;
+  Id: string;
+  Time: string;
+  Operation: string;
+  Output: RequiredItem;
+  Inputs: Array<RequiredItem>;
 }

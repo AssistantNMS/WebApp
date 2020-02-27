@@ -1,21 +1,30 @@
 import React from 'react';
+import i18next from 'i18next';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
 import { State } from '../../redux/state';
-import { GameItemService } from '../../services/GameItemService';
 import { anyObject } from '../../helper/TypescriptHacks';
+import { setDocumentTitle } from '../../helper/DocumentHelper';
+import { mapProcessorToRequiredItems } from '../../mapper/RequiredItemMapper';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { NavBar } from '../../components/core/navbar/navbar';
+
+import { Processor } from '../../contracts/Processor';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
 
-import i18next from 'i18next';
-import { AllGameItemsService } from '../../services/AllGameItemsService';
-import { GameItemList } from '../../components/common/gameItemList/gameItemList';
+import { NavBar } from '../../components/core/navbar/navbar';
+import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
+import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
 import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
+import { GenericItemListTile } from '../../components/tilePresenter/genericItemListTile/genericItemListTile';
+import { RefinerItemListTile } from '../../components/tilePresenter/processorItemListTile/refinerItemListTile';
+import { NutrientProcessorListTile } from '../../components/tilePresenter/processorItemListTile/nutrientProcessorListTile';
+
+import { GameItemService } from '../../services/GameItemService';
+import { AllGameItemsService } from '../../services/AllGameItemsService';
 
 interface IProps {
     location: any;
@@ -27,6 +36,10 @@ interface IState {
     item: GameItemModel;
     resArray: Array<RequiredItemDetails>;
     usedToCreateArray: Array<GameItemModel>;
+    refArray: Array<Processor>;
+    usedToRefArray: Array<Processor>;
+    cookArray: Array<Processor>;
+    usedToCookArray: Array<Processor>;
     gameItemService: GameItemService;
     allGameItemsService: AllGameItemsService;
     additionalData: Array<any>;
@@ -40,6 +53,10 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
             item: anyObject,
             resArray: [],
             usedToCreateArray: [],
+            refArray: [],
+            usedToRefArray: [],
+            cookArray: [],
+            usedToCookArray: [],
             gameItemService: new GameItemService(),
             allGameItemsService: new AllGameItemsService(),
             additionalData: []
@@ -50,17 +67,18 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         this.fetchData(this.props.match?.params?.itemId);
     }
 
-    componentWillReceiveProps(nextProps: any) {
-        const prevItemId = this.props.match?.params?.itemId;
-        if (nextProps.match?.params?.itemId !== prevItemId) {
-            this.clearData();
-            this.fetchData(nextProps.match?.params?.itemId);
-        }
-    }
+    // componentWillReceiveProps(nextProps: any) {
+    //     const prevItemId = this.props.match?.params?.itemId;
+    //     if (nextProps.match?.params?.itemId !== prevItemId) {
+    //         this.clearData();
+    //         this.fetchData(nextProps.match?.params?.itemId);
+    //     }
+    // }
 
     componentDidUpdate(prevProps: IProps, prevState: IState) {
         const prevSelectedLanguage = prevProps.selectedLanguage;
-        if (this.props.selectedLanguage !== prevSelectedLanguage) {
+        const prevItemId = prevProps.match?.params?.itemId;
+        if (this.props.selectedLanguage !== prevSelectedLanguage || this.props.match?.params?.itemId !== prevItemId) {
             this.clearData();
             this.fetchData(this.props.match?.params?.itemId);
         }
@@ -71,6 +89,8 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
             return {
                 resArray: [],
                 usedToCreateArray: [],
+                refArray: [],
+                usedToRefArray: [],
                 additionalData: []
             }
         });
@@ -82,8 +102,14 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
             // Error
             return;
         }
+
+        setDocumentTitle(itemResult.value.Name);
         this.getResArray(itemResult.value.Id);
         this.getUsedToCreateArray(itemResult.value.Id);
+        this.getRefArray(itemResult.value.Id);
+        this.getUsedToRefArray(itemResult.value.Id);
+        this.getCookArray(itemResult.value.Id);
+        this.getUsedToCookArray(itemResult.value.Id);
         this.setState(() => {
             return {
                 item: itemResult.value,
@@ -108,6 +134,46 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         this.setState(() => {
             return {
                 usedToCreateArray: usedToCreateArrayResult.value,
+            }
+        });
+    }
+
+    getRefArray = async (itemId: string) => {
+        var refArray = await this.state.gameItemService.getRefinedByOutput(itemId);
+        if (!refArray.isSuccess) return;
+        this.setState(() => {
+            return {
+                refArray: refArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length),
+            }
+        });
+    }
+
+    getUsedToRefArray = async (itemId: string) => {
+        var usedToRefArray = await this.state.gameItemService.getRefinedByInput(itemId);
+        if (!usedToRefArray.isSuccess) return;
+        this.setState(() => {
+            return {
+                usedToRefArray: usedToRefArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length),
+            }
+        });
+    }
+
+    getCookArray = async (itemId: string) => {
+        var cookArray = await this.state.gameItemService.getCookingByOutput(itemId);
+        if (!cookArray.isSuccess) return;
+        this.setState(() => {
+            return {
+                cookArray: cookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length),
+            }
+        });
+    }
+
+    getUsedToCookArray = async (itemId: string) => {
+        var usedToCookArray = await this.state.gameItemService.getCookingByInput(itemId);
+        if (!usedToCookArray.isSuccess) return;
+        this.setState(() => {
+            return {
+                usedToCookArray: usedToCookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length),
             }
         });
     }
@@ -144,6 +210,31 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         return additionalData;
     }
 
+    displayAdditionalData = (additionalData: Array<any>) => {
+        if (additionalData == null || additionalData.length === 0) return null;
+
+        return (
+            <div className="row justify " style={{ marginTop: '1em', paddingBottom: '.5em' }}>
+                {
+                    additionalData.map((item, index) => {
+                        return (
+                            <div className={item.class} key={`additional-data-${index}`}>
+                                <h4 className="default chip">
+                                    {item.text}&nbsp;
+                                            {
+                                        (item.image != null && item.image.length > 0)
+                                            ? <img src={item.image} alt={item.image} style={{ maxHeight: '20px' }} />
+                                            : null
+                                    }
+                                </h4>
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        );
+    }
+
     displayRequiredItems = (resArray: Array<RequiredItemDetails>) => {
         if (resArray == null || resArray.length < 1) return null;
 
@@ -154,7 +245,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                         <h3>{i18next.t(LocaleKey.craftedUsing)}</h3>
                     </div>
                     <div className="col-12">
-                        <GameItemList items={resArray} presenter={RequiredItemListTile} />
+                        <GenericListPresenter list={resArray} presenter={RequiredItemDetailsListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -172,7 +263,77 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                         <h3>{i18next.t(LocaleKey.usedToCreate)}</h3>
                     </div>
                     <div className="col-12">
-                        <GameItemList items={usedToCreateArray} />
+                        <GenericListPresenter list={usedToCreateArray} presenter={GenericItemListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
+    displayRefItems = (refRecipesArray: Array<Processor>) => {
+        if (refRecipesArray == null || refRecipesArray.length < 1) return null;
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.refinedUsing)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GenericListPresenter list={refRecipesArray} presenter={RefinerItemListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
+    displayUsedToRefItems = (usedToRefArray: Array<Processor>) => {
+        if (usedToRefArray == null || usedToRefArray.length < 1) return null;
+
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.refineToCreate).replace('{0}', this.state.item.Name)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GenericListPresenter list={mapProcessorToRequiredItems(usedToRefArray)} presenter={RequiredItemListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
+    displayCookItems = (cookRecipesArray: Array<Processor>) => {
+        if (cookRecipesArray == null || cookRecipesArray.length < 1) return null;
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.cookingRecipe)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GenericListPresenter list={cookRecipesArray} presenter={NutrientProcessorListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
+    displayUsedToCookItems = (usedToCookArray: Array<Processor>) => {
+        if (usedToCookArray == null || usedToCookArray.length < 1) return null;
+
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.cookToCreate).replace('{0}', this.state.item.Name)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GenericListPresenter list={mapProcessorToRequiredItems(usedToCookArray)} presenter={RequiredItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -191,38 +352,22 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                             <img src={`/assets/images/${this.state.item.Icon}`} alt={this.state.item.Name} style={{ maxWidth: '100%' }} />
                         </div>
                         <div className="col-12 col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                            <h2 className="ta-left ta-center-sm">{this.state.item.Name}</h2>
+                            <h2 className="ta-left ta-center-sm" style={{ marginBottom: 0 }}>{this.state.item.Name}</h2>
                             {
                                 this.state.item.Group
-                                    ? <h3 className="ta-left ta-center-sm" style={{ margin: 0 }}>{this.state.item.Group}</h3>
+                                    ? <h3 className="ta-left ta-center-sm" style={{ marginTop: 0 }}>{this.state.item.Group}</h3>
                                     : null
                             }
+                            <h5 className="ta-left ta-center-sm">{this.state.item.Description}</h5>
                         </div>
-                    </div >
-                    <div className="row justify row border-bottom">
-                        <div className="col-12">
-                            <h3>{this.state.item.Description}</h3>
-                        </div>
-                        {
-                            this.state.additionalData.map((item, index) => {
-                                return (
-                                    <div className={item.class} key={`additional-data-${index}`}>
-                                        <h4 className="default chip">
-                                            {item.text}&nbsp;
-                                            {
-                                                (item.image != null && item.image.length > 0)
-                                                    ? <img src={item.image} alt={item.image} style={{ maxHeight: '20px' }} />
-                                                    : null
-                                            }
-                                        </h4>
-                                    </div>
-                                );
-                            })
-                        }
-                        <div className="col-12"><br /></div>
                     </div>
+                    {this.displayAdditionalData(this.state.additionalData)}
                     {this.displayRequiredItems(this.state.resArray)}
                     {this.displayUsedToCreateItems(this.state.usedToCreateArray)}
+                    {this.displayRefItems(this.state.refArray)}
+                    {this.displayUsedToRefItems(this.state.usedToRefArray)}
+                    {this.displayCookItems(this.state.cookArray)}
+                    {this.displayUsedToCookItems(this.state.usedToCookArray)}
                 </div>
             </>
         );

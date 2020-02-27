@@ -61,7 +61,7 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
             <div className="sidebar-wrapper ps-theme-default">
                 <ul className="nav">
                     <div className="logo">
-                        <img src={require('../../../assets/images/DrawerHeader.png')} alt="drawerHeader" />
+                        <img src="/assets/images/DrawerHeader.png" alt="drawerHeader" />
                     </div>
                     {
                         renderMenuItems(menuItems)

@@ -61,7 +61,7 @@ export class AllGameItemsService {
 
   async getByInputsId(itemId: string): Promise<ResultWithValue<Array<GameItemModel>>> {
     var allGenericItemsResult = await this.getAllItems();
-    console.log({ allGenericItemsResult });
+
     if (!allGenericItemsResult.isSuccess) {
       return {
         isSuccess: false,

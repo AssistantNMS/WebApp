@@ -9,4 +9,7 @@ export enum CatalogueType {
   upgradeModules = 'UpgradeModules',
   constructedTechnology = 'ConstructedTechnology',
   others = 'Others',
+  //
+  refinery = 'Refinery',
+  nutrientProcessor = 'NutrientProcessor',
 }

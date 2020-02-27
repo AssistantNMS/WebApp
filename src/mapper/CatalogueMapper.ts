@@ -25,6 +25,10 @@ export const mapToLocale = (catalogueType: string): string => {
       return i18next.t(LocaleKey.constructedTechnologyJson).toString();
     case CatalogueType.others.toString():
       return i18next.t(LocaleKey.otherItemsJson).toString();
+    case CatalogueType.refinery.toString():
+      return i18next.t(LocaleKey.refineryJson).toString();
+    case CatalogueType.nutrientProcessor.toString():
+      return i18next.t(LocaleKey.nutrientProcessorJson).toString();
   }
   return '';
 }

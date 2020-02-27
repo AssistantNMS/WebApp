@@ -36,6 +36,18 @@ $card-background-color-dark: rgba(255, 255, 255, 0.2);
             }
         }
 
+        .generic-item-list .gen-item .gen-item-container {
+            background-color: #6c757d;
+
+            .gen-item-content-container .text-container {
+                color: #f8f9fa;
+            }
+
+            .quantity-container {
+                color: #f8f9fa;
+            }
+        }
+
         hr {
             background-color: $gray-600;
         }
