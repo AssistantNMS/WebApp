@@ -58,11 +58,11 @@ class ProcessorItemListTileClass extends React.Component<Processor, IState> {
 
     render() {
         return (
-            <Link to={`${catalogueItem}/${this.props.Id}`} className="item">
-                <TextContainer text={this.state.name} />
+            <Link to={`${catalogueItem}/${this.props.Id}`} className="gen-item-container">
                 <ImageContainer Name={this.props.Operation} Icon={this.state.refinerImage} Colour={this.state.colour} />
-                <div className="quantity-container">
-                    <h3>{this.props.Time} {i18next.t(LocaleKey.seconds)}</h3>
+                <div className="gen-item-content-container">
+                    <TextContainer text={this.state.name} />
+                    <div className="quantity-container">{this.props.Time} {i18next.t(LocaleKey.seconds)}</div>
                 </div>
             </Link>
         );

@@ -14,10 +14,11 @@ import { CurrencyType } from '../../contracts/enum/CurrencyType';
 
 import i18next from 'i18next';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
-import { GameItemList } from '../../components/common/gameItemList/gameItemList';
+import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { ProcessorItemListTile } from '../../components/tilePresenter/processorItemListTile/processorItemListTile';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
+import { GenericItemListTile } from '../../components/tilePresenter/genericItemListTile/genericItemListTile';
 
 interface IProps {
     location: any;
@@ -176,6 +177,31 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         return additionalData;
     }
 
+    displayAdditionalData = (additionalData: Array<any>) => {
+        if (additionalData == null || additionalData.length === 0) return null;
+
+        return (
+            <div className="row justify " style={{ marginTop: '1em', paddingBottom: '.5em' }}>
+                {
+                    additionalData.map((item, index) => {
+                        return (
+                            <div className={item.class} key={`additional-data-${index}`}>
+                                <h4 className="default chip">
+                                    {item.text}&nbsp;
+                                            {
+                                        (item.image != null && item.image.length > 0)
+                                            ? <img src={item.image} alt={item.image} style={{ maxHeight: '20px' }} />
+                                            : null
+                                    }
+                                </h4>
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        );
+    }
+
     displayRequiredItems = (resArray: Array<RequiredItemDetails>) => {
         if (resArray == null || resArray.length < 1) return null;
 
@@ -186,7 +212,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                         <h3>{i18next.t(LocaleKey.craftedUsing)}</h3>
                     </div>
                     <div className="col-12">
-                        <GameItemList items={resArray} presenter={RequiredItemListTile} />
+                        <GenericListPresenter list={resArray} presenter={RequiredItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -204,7 +230,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                         <h3>{i18next.t(LocaleKey.usedToCreate)}</h3>
                     </div>
                     <div className="col-12">
-                        <GameItemList items={usedToCreateArray} />
+                        <GenericListPresenter list={usedToCreateArray} presenter={GenericItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -222,7 +248,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                         <h3>{i18next.t(LocaleKey.refinedUsing)}</h3>
                     </div>
                     <div className="col-12">
-                        <GameItemList items={refRecipesArray} presenter={ProcessorItemListTile} />
+                        <GenericListPresenter list={refRecipesArray} presenter={ProcessorItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -240,7 +266,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                         <h3>{i18next.t(LocaleKey.refineToCreate).replace('{0}', this.state.item.Name)}</h3>
                     </div>
                     <div className="col-12">
-                        <GameItemList items={usedToRefArray} presenter={ProcessorItemListTile} />
+                        <GenericListPresenter list={usedToRefArray} presenter={ProcessorItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -259,36 +285,16 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                             <img src={`/assets/images/${this.state.item.Icon}`} alt={this.state.item.Name} style={{ maxWidth: '100%' }} />
                         </div>
                         <div className="col-12 col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                            <h2 className="ta-left ta-center-sm">{this.state.item.Name}</h2>
+                            <h2 className="ta-left ta-center-sm" style={{ marginBottom: 0 }}>{this.state.item.Name}</h2>
                             {
                                 this.state.item.Group
-                                    ? <h3 className="ta-left ta-center-sm" style={{ margin: 0 }}>{this.state.item.Group}</h3>
+                                    ? <h3 className="ta-left ta-center-sm" style={{ marginTop: 0 }}>{this.state.item.Group}</h3>
                                     : null
                             }
+                            <h5 className="ta-left ta-center-sm">{this.state.item.Description}</h5>
                         </div>
-                    </div >
-                    <div className="row justify row border-bottom">
-                        <div className="col-12">
-                            <h3>{this.state.item.Description}</h3>
-                        </div>
-                        {
-                            this.state.additionalData.map((item, index) => {
-                                return (
-                                    <div className={item.class} key={`additional-data-${index}`}>
-                                        <h4 className="default chip">
-                                            {item.text}&nbsp;
-                                            {
-                                                (item.image != null && item.image.length > 0)
-                                                    ? <img src={item.image} alt={item.image} style={{ maxHeight: '20px' }} />
-                                                    : null
-                                            }
-                                        </h4>
-                                    </div>
-                                );
-                            })
-                        }
-                        <div className="col-12"><br /></div>
                     </div>
+                    {this.displayAdditionalData(this.state.additionalData)}
                     {this.displayRequiredItems(this.state.resArray)}
                     {this.displayUsedToCreateItems(this.state.usedToCreateArray)}
                     {this.displayRefItems(this.state.refArray)}
