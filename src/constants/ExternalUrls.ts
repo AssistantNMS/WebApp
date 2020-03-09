@@ -4,11 +4,11 @@ export class ExternalUrls {
   static directoryOfWebsites = 'https://khaoznet.xyz';
   static buyMeACoffee = 'https://www.buymeacoffee.com/kurt';
   static payPal = 'https://paypal.me/KurtLourens';
-  static patreon = 'https://www.patreon.com/nmsassistant';
-  static kofi = 'https://ko-fi.com/nomansskyrecipes';
+  static patreon = 'https://www.patreon.com/AssistantNMS';
+  static kofi = 'https://ko-fi.com/AssistantNMS';
   static kurtLourensEmail = 'mailto:nms@kurtlourens.com?subject=NMS Assistant Translation';
-  static githubLanguageRepo = 'https://github.com/NoMansSkyRecipes/Languages';
-  static githubGeneralRepo = 'https://github.com/NoMansSkyRecipes/General';
+  static githubLanguageRepo = 'https://github.com/AssistantNMS/Languages';
+  static githubGeneralRepo = 'https://github.com/AssistantNMS/General';
   static nmsPortals = 'http://nmsportals.github.io/#';
   static googlePlayListing = 'https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes';
   static appStoreListing = 'https://apps.apple.com/us/app/id1480287625';
