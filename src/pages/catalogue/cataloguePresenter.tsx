@@ -1,14 +1,15 @@
-import React from 'react';
 import i18next from 'i18next';
+import React from 'react';
 import { Link } from 'react-router-dom';
-
 import { NavBar } from '../../components/core/navbar/navbar';
-import { LocaleKey } from '../../localization/LocaleKey';
-import { getCatalogueMenuItems } from '../../helper/CatalogueMenuItemsHelper';
-import { DrawerIconType } from '../../contracts/enum/DrawerIconType';
 import { DrawerMenuItem } from '../../contracts/DrawerMenuItem';
-
+import { DrawerIconType } from '../../contracts/enum/DrawerIconType';
+import { getCatalogueMenuItems } from '../../helper/CatalogueMenuItemsHelper';
+import { setDocumentTitle } from '../../helper/DocumentHelper';
+import { LocaleKey } from '../../localization/LocaleKey';
 import './catalogue.scss';
+
+
 
 export const CataloguePresenter: React.FC = () => {
     const menuItems = getCatalogueMenuItems();
@@ -20,9 +21,11 @@ export const CataloguePresenter: React.FC = () => {
         return null;
     }
 
+    const title = i18next.t(LocaleKey.catalogue);
+    setDocumentTitle(title);
     return (
         <>
-            <NavBar title={i18next.t(LocaleKey.catalogue)} />
+            <NavBar title={title} />
             <div className="content">
                 <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
                     <div className="catalogue-container">

@@ -1,12 +1,13 @@
-import React from 'react';
 import i18next from 'i18next';
-
-import { LocaleKey } from '../../localization/LocaleKey';
+import React from 'react';
+import { CardButton } from '../../components/core/button/cardButton';
+import { NavBar } from '../../components/core/navbar/navbar';
 import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
 import { ExternalUrls } from '../../constants/ExternalUrls';
+import { setDocumentTitle } from '../../helper/DocumentHelper';
+import { LocaleKey } from '../../localization/LocaleKey';
 
-import { NavBar } from '../../components/core/navbar/navbar';
-import { CardButton } from '../../components/core/button/cardButton';
+
 
 export const AboutPresenter: React.FC = () => {
     const buttons = [
@@ -14,9 +15,11 @@ export const AboutPresenter: React.FC = () => {
         { title: 'Kurt Lourens', event: AnalyticsEvent.externalLinkCVWebsite, url: ExternalUrls.cvWebsite },
         { title: i18next.t(LocaleKey.github), event: AnalyticsEvent.externalLinkGitHubGeneral, url: ExternalUrls.githubGeneralRepo }
     ];
+    const title = i18next.t(LocaleKey.about);
+    setDocumentTitle(title);
     return (
         <>
-            <NavBar title={i18next.t(LocaleKey.about)} />
+            <NavBar title={title} />
             <div className="content">
                 <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
                     <div className="row">

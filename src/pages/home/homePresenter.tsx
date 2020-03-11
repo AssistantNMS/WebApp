@@ -1,8 +1,10 @@
 import React from 'react';
 
 import { NavBar } from '../../components/core/navbar/navbar';
+import { setDocumentTitle } from '../../helper/DocumentHelper';
 
 export const HomePresenter: React.FC = () => {
+    setDocumentTitle("Home");
     return (
         <>
             <NavBar title="Home" />

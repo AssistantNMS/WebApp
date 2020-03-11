@@ -1,18 +1,19 @@
-import './catalogue.scss';
-
+import i18next from 'i18next';
 import React from 'react';
-import { connect } from 'react-redux';
 import { forceCheck } from 'react-lazyload';
+import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-
+import { GameItemList } from '../../components/common/gameItemList/gameItemList';
+import { NavBar } from '../../components/core/navbar/navbar';
+import { GameItemModel } from '../../contracts/GameItemModel';
+import { setDocumentTitle } from '../../helper/DocumentHelper';
+import { LocaleKey } from '../../localization/LocaleKey';
 import { State } from '../../redux/state';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
-import { NavBar } from '../../components/core/navbar/navbar';
-import { LocaleKey } from '../../localization/LocaleKey';
-import { GameItemModel } from '../../contracts/GameItemModel';
-import { GameItemList } from '../../components/common/gameItemList/gameItemList';
+import './catalogue.scss';
 
-import i18next from 'i18next';
+
+
 interface IProps {
     location: any;
     match: any;
@@ -111,9 +112,11 @@ export class CatalogueListPresenterUnconnected extends React.Component<IProps, I
     }
 
     render() {
+        const title = i18next.t(LocaleKey.catalogue);
+        setDocumentTitle(title);
         return (
             <>
-                <NavBar title={i18next.t(LocaleKey.catalogue)} />
+                <NavBar title={title} />
                 <div className="content">
                     <form id="searchBar" className="searchbar row" onSubmit={(e) => this.search(e, this.state.searchTerm)}>
                         <input type="text" className="form-control" placeholder="Search" onChange={this.onSearchTextChange} />

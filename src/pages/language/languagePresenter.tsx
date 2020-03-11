@@ -1,21 +1,24 @@
-import React from 'react';
 import i18next from 'i18next';
-
-import { LocaleKey } from '../../localization/LocaleKey';
+import React from 'react';
+import { CardButton } from '../../components/core/button/cardButton';
+import { NavBar } from '../../components/core/navbar/navbar';
 import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
 import { ExternalUrls } from '../../constants/ExternalUrls';
+import { setDocumentTitle } from '../../helper/DocumentHelper';
+import { LocaleKey } from '../../localization/LocaleKey';
 
-import { NavBar } from '../../components/core/navbar/navbar';
-import { CardButton } from '../../components/core/button/cardButton';
+
 
 export const LanguagePresenter: React.FC = () => {
     const buttons = [
         { title: i18next.t(LocaleKey.email), event: AnalyticsEvent.externalLinkKurtLourensEmail, url: ExternalUrls.kurtLourensEmail },
         { title: i18next.t(LocaleKey.github), event: AnalyticsEvent.externalLinkGitHubLanguage, url: ExternalUrls.githubLanguageRepo }
     ];
+    const title = i18next.t(LocaleKey.languageContent);
+    setDocumentTitle(title);
     return (
         <>
-            <NavBar title={i18next.t(LocaleKey.language)} />
+            <NavBar title={title} />
             <div className="content">
                 <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
                     <div className="row">

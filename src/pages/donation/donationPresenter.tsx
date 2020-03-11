@@ -1,12 +1,13 @@
-import React from 'react';
 import i18next from 'i18next';
-
-import { LocaleKey } from '../../localization/LocaleKey';
+import React from 'react';
+import { CardButton } from '../../components/core/button/cardButton';
+import { NavBar } from '../../components/core/navbar/navbar';
 import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
 import { ExternalUrls } from '../../constants/ExternalUrls';
+import { setDocumentTitle } from '../../helper/DocumentHelper';
+import { LocaleKey } from '../../localization/LocaleKey';
 
-import { NavBar } from '../../components/core/navbar/navbar';
-import { CardButton } from '../../components/core/button/cardButton';
+
 
 export const DonationPresenter: React.FC = () => {
     const paymentOptions = [];
@@ -16,9 +17,11 @@ export const DonationPresenter: React.FC = () => {
     paymentOptions.push({ title: i18next.t(LocaleKey.kofi).toString(), event: AnalyticsEvent.externalLinkkofi, url: ExternalUrls.kofi, image: '/assets/images/kofi.png' });
     paymentOptions.push({ title: 'Brave', event: AnalyticsEvent.externalLinkBat, url: ExternalUrls.bat, image: '/assets/images/bat.png' });
 
+    const title = i18next.t(LocaleKey.donation);
+    setDocumentTitle(title);
     return (
         <>
-            <NavBar title={i18next.t(LocaleKey.donation).toString()} />
+            <NavBar title={title} />
             <div className="content">
                 <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
                     <div className="row">

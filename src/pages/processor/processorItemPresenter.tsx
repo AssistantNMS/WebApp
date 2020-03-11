@@ -136,6 +136,7 @@ export class ProcessorItemPresenterUnconnected extends React.Component<IProps, I
     }
 
     render() {
+        setDocumentTitle(this.state.item.Operation);
         return (
             <>
                 <NavBar title={this.state.item.Operation} />
