@@ -91,6 +91,8 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                 usedToCreateArray: [],
                 refArray: [],
                 usedToRefArray: [],
+                cookArray: [],
+                usedToCookArray: [],
                 additionalData: []
             }
         });

@@ -1,6 +1,10 @@
 *::-webkit-scrollbar {
     width: 10px;
     background-color: $brand-primary-background;
+
+    @media screen and (max-width: 800px) {
+        width: 5px;
+    }
 }
 
 *::-webkit-scrollbar-track {

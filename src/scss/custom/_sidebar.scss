@@ -2,3 +2,13 @@
     width: 5px;
     background-color: $brand-primary-background;
 }
+
+.main-panel>#sidebar-main-content-overlay {
+    display: none;
+}
+
+.nav-open .main-panel>#sidebar-main-content-overlay {
+    @media (max-width: 991px) {
+        display: block;
+    }
+}

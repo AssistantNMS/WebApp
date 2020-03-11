@@ -120,21 +120,6 @@ export class CatalogueListPresenterUnconnected extends React.Component<IProps, I
                         <button className="icon-container pointer" type="submit">
                             <i className="material-icons">search</i>
                         </button>
-                        {/* {
-                            this.state.showSearchInput
-                                ? <>
-                                    <input type="text" autoFocus className="form-control" placeholder="Search" onChange={this.onSearchTextChange} />
-                                    <button className="icon-container pointer" type="submit">
-                                        <i className="material-icons">search</i>
-                                    </button>
-                                    <div className="arrow-container">
-                                        <i className="material-icons pointer" onClick={this.searchBarToggle}>chevron_right</i>
-                                    </div>
-                                </>
-                                : <div className="arrow-container collapsed">
-                                    <i className="material-icons pointer" onClick={this.searchBarToggle}>search</i>
-                                </div>
-                        } */}
                     </form>
                     <GameItemList key={this.state.displayItems.length} items={this.state.displayItems} />
                 </div>

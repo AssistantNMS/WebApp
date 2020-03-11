@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Route, Switch, withRouter } from 'react-router-dom';
 
-import { mapStateToProps } from './App.Redux';
+import { mapStateToProps, mapDispatchToProps } from './App.Redux';
 import { StateSettingReducer } from './redux/state/StateSettingReducer';
 
 import { trackPageView } from './integration/analytics';
@@ -28,6 +28,7 @@ import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
 
 interface IProps extends StateSettingReducer {
   location: any;
+  toggleMenu: () => void;
 }
 
 const AppUnconnected: React.FC<any> = (props: IProps) => {
@@ -44,11 +45,12 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
         'menu-on-left',
         props.selectedLanguage,
         {
-          isDark: props.isDark,
+          isDark: props.isDark
         })}>
       <ScrollToTop>
         <Drawer />
         <div className="main-panel ps-theme-default">
+          <div id="sidebar-main-content-overlay" className="full-page-loader opacity80" onClick={() => props.toggleMenu()}></div>
           <Switch>
             <Route exact={true} path={home} component={HomePresenter} />
             <Route path={`${catalogue}/:types`} component={CatalogueListPresenter} />
@@ -68,4 +70,4 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
 }
 
 // export const App = connect(mapStateToProps)(AppUnconnected);
-export const App = connect(mapStateToProps)(withRouter(AppUnconnected));
+export const App = connect(mapStateToProps, mapDispatchToProps)(withRouter(AppUnconnected));

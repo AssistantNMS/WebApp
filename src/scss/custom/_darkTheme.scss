@@ -1,6 +1,9 @@
 $card-background-color-dark: rgba(255, 255, 255, 0.2);
+$list-item-background-color-dark: #6c757d;
+$list-item-text-color-dark: #f8f9fa;
 
-#app.isDark {
+#app.isDark,
+.isDark {
 
     color: $body-color-dark;
     background-color: $brand-primary-background-dark;
@@ -17,13 +20,13 @@ $card-background-color-dark: rgba(255, 255, 255, 0.2);
             background-color: $brand-primary-background-dark;
         }
 
-        // .game-item {
-        //     background-color: #131313;
+        .game-item {
+            background-color: $list-item-background-color-dark;
 
-        //     .text-container p {
-        //         color: white;
-        //     }
-        // }
+            .text-container p {
+                color: $list-item-text-color-dark;
+            }
+        }
 
         .card,
         .catalogue-item {
@@ -37,14 +40,14 @@ $card-background-color-dark: rgba(255, 255, 255, 0.2);
         }
 
         .generic-item-list .gen-item .gen-item-container {
-            background-color: #6c757d;
+            background-color: $list-item-background-color-dark;
 
             .gen-item-content-container .text-container {
-                color: #f8f9fa;
+                color: $list-item-text-color-dark;
             }
 
             .quantity-container {
-                color: #f8f9fa;
+                color: $list-item-text-color-dark;
             }
         }
 
@@ -78,11 +81,34 @@ $card-background-color-dark: rgba(255, 255, 255, 0.2);
             color: $white-color;
             background-image: linear-gradient(to top, #{$brand-primary-dark} 2px, rgba(63, 81, 181, 0) 2px),
             linear-gradient(to top, #{$white-color} 1px, rgba(210, 210, 210, 0) 1px);
-        }
 
-        .icon-container i,
-        .arrow-container i {
-            color: $white-color;
+            $placeholderColor: rgba(255, 255, 255, 0.9);
+            $placeholderFontSize: .75em;
+
+            &::-webkit-input-placeholder {
+                color: $placeholderColor;
+                font-size: $placeholderFontSize;
+            }
+
+            &::-moz-placeholder {
+                color: $placeholderColor;
+                font-size: $placeholderFontSize;
+            }
+
+            &:-ms-input-placeholder {
+                color: $placeholderColor;
+                font-size: $placeholderFontSize;
+            }
+
+            &:-moz-placeholder {
+                color: $placeholderColor;
+                font-size: $placeholderFontSize;
+            }
         }
+    }
+
+    .icon-container i,
+    .arrow-container i {
+        color: $white-color;
     }
 }

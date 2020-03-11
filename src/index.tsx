@@ -8,6 +8,7 @@ import { App } from './App';
 import { initLocalization } from './integration/i18n';
 import { initAnalytics } from './integration/analytics';
 import { getJSON, defaultConfig } from './utils';
+import { applyIsDarkToBody } from './helper/bodyHelper';
 
 import { SettingReducerKey } from './redux/cacheKey';
 import { reducer } from './redux';
@@ -28,9 +29,12 @@ let persistedState: any = localStorage.getItem(SettingReducerKey)
         settingReducer: {
             isDark: true,
             selectedLanguage: 'en',
-            menuIsVisible: true
+            menuIsVisible: false
         }
     }
+
+persistedState.settingReducer.menuIsVisible = false;
+applyIsDarkToBody(persistedState.settingReducer.isDark);
 
 const store = createStore(
     reducer,

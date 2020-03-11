@@ -14,6 +14,7 @@ interface IProps {
     location: any;
     match: any;
     history: any;
+    selectedLanguage?: string;
     toggleMenu?: () => void;
 }
 
@@ -57,7 +58,8 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
     }
 
     return (
-        <div className="sidebar">
+        <div
+            className={classNames('sidebar', props.selectedLanguage)}>
             <div className="sidebar-wrapper ps-theme-default">
                 <ul className="nav">
                     <div className="logo">

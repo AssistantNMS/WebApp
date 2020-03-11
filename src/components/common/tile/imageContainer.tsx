@@ -12,5 +12,6 @@ interface IProps {
 export const ImageContainer = (props: IProps) => (
     <div className="image-container" style={{ backgroundColor: `#${props.Colour}` }}>
         <LazyLoadImage src={`/assets/images/${props.Icon}`} alt={props.Name} draggable={false} />
+        {/* <img src={`/assets/images/${props.Icon}`} alt={props.Name} draggable={false} /> */}
     </div>
 );

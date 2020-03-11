@@ -1,18 +1,19 @@
 import * as type from './type';
-import { StateSettingReducer } from '../../state/StateSettingReducer';
-
 import i18next from 'i18next';
+
+import { StateSettingReducer } from '../../state/StateSettingReducer';
+import { applyIsDarkToBody } from '../../../helper/bodyHelper';
 
 const initialState: StateSettingReducer = {
     isDark: true,
     selectedLanguage: 'en',
-    menuIsVisible: true
+    menuIsVisible: false
 }
 
 export const settingReducer = (state = initialState, action: any) => {
     switch (action.type) {
         case type.DARKMODE:
-            // document.documentElement.classList.toggle("isDark");
+            applyIsDarkToBody(action.isDark);
             return Object.assign({}, state, {
                 isDark: action.isDark
             });
@@ -27,7 +28,7 @@ export const settingReducer = (state = initialState, action: any) => {
                 htmlTag.classList.toggle('nav-open');
             }
             return Object.assign({}, state, {
-                menuIsVisible: state.menuIsVisible
+                menuIsVisible: htmlTag?.classList?.contains('nav-open') ?? false
             });
         default:
             return state
