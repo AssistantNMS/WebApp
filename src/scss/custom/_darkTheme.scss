@@ -32,11 +32,23 @@ $list-item-text-color-dark: #f8f9fa;
         .catalogue-item {
             background-color: $card-background-color-dark;
 
+            .dropdown-menu .dropdown-item {
+                color: #333;
+
+                &:hover {
+                    color: white;
+                }
+            }
+
             a,
             p,
             span {
                 color: $body-color-dark;
             }
+        }
+
+        .form-check .form-check-label.custom {
+            color: $body-color-dark;
         }
 
         .generic-item-list .gen-item .gen-item-container {
