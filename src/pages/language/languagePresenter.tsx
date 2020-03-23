@@ -14,7 +14,7 @@ export const LanguagePresenter: React.FC = () => {
         { title: i18next.t(LocaleKey.email), event: AnalyticsEvent.externalLinkKurtLourensEmail, url: ExternalUrls.kurtLourensEmail },
         { title: i18next.t(LocaleKey.github), event: AnalyticsEvent.externalLinkGitHubLanguage, url: ExternalUrls.githubLanguageRepo }
     ];
-    const title = i18next.t(LocaleKey.languageContent);
+    const title = i18next.t(LocaleKey.language);
     setDocumentTitle(title);
     return (
         <>

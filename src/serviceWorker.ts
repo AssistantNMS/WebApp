@@ -141,3 +141,6 @@ export function unregister() {
     });
   }
 }
+
+
+//https://medium.com/better-programming/let-users-know-when-you-have-updated-your-service-worker-in-create-react-app-b0c2701995b3
