@@ -5,7 +5,7 @@ export const initialCartState: StateCartReducer = {
     cartItems: []
 }
 
-export const commonReducer = (state = initialCartState, action: any) => {
+export const cartReducer = (state = initialCartState, action: any) => {
     switch (action.type) {
         case type.ADDITEM:
             return Object.assign({}, state, {

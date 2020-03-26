@@ -1,5 +1,3 @@
-import './App.css';
-
 import classNames from 'classnames';
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';

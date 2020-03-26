@@ -30,7 +30,7 @@ export const CartPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
         <>
             <NavBar title={title} />
             <div className="content">
-                <div className="row">
+                <div className="row" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
                     <div className="col-12">
                         {displayCartItems(props.cartItems)}
                     </div>

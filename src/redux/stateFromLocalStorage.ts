@@ -14,7 +14,7 @@ export const loadStateFromLocalStorage = () => {
     let cartReducer = initialCartState;
     let storedCartReducer = localStorage.getItem(CartReducerKey);
     if (storedCartReducer && storedCartReducer !== "undefined") {
-        settingReducer = JSON.parse(storedCartReducer || '{}');
+        cartReducer = JSON.parse(storedCartReducer || '{}');
     }
 
     let persistedState: any = {
@@ -30,7 +30,7 @@ export const saveStateToLocalStorage = (store: any) => {
     if (storedSettingReducer == null
         || storedSettingReducer.isDark !== currentSettingReducer.isDark
         || storedSettingReducer.selectedLanguage !== currentSettingReducer.selectedLanguage) {
-        localStorage.setItem(SettingReducerKey, JSON.stringify(store.getState().settingReducer))
+        localStorage.setItem(SettingReducerKey, JSON.stringify(currentSettingReducer))
     }
 
     var currentCartReducer = store.getState().cartReducer;

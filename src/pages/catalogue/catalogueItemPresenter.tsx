@@ -2,12 +2,13 @@ import React from 'react';
 import i18next from 'i18next';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
-import { State } from '../../redux/state';
 import { anyObject } from '../../helper/TypescriptHacks';
 import { setDocumentTitle } from '../../helper/DocumentHelper';
 import { mapProcessorToRequiredItems } from '../../mapper/RequiredItemMapper';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { mapStateToProps, mapDispatchToProps } from './catalogueItem.Redux';
 
 import { Processor } from '../../contracts/Processor';
 import { GameItemModel } from '../../contracts/GameItemModel';
@@ -22,15 +23,18 @@ import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { GenericItemListTile } from '../../components/tilePresenter/genericItemListTile/genericItemListTile';
 import { RefinerItemListTile } from '../../components/tilePresenter/processorItemListTile/refinerItemListTile';
 import { NutrientProcessorListTile } from '../../components/tilePresenter/processorItemListTile/nutrientProcessorListTile';
+import { CartFloatingActionButton } from '../../components/floatingActionButton/cartFloatingActionButton';
 
 import { GameItemService } from '../../services/GameItemService';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
+import { IdPrefix } from '../../constants/IdPrefix';
 
 interface IProps {
     location: any;
     match: any;
     history: any;
     selectedLanguage?: string;
+    addItemToCart?: (item: GameItemModel, quantity: number) => void;
 }
 interface IState {
     item: GameItemModel;
@@ -343,6 +347,26 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         );
     }
 
+    addThisItemToCart = async () => {
+        const { value: quantity } = await Swal.fire({
+            title: i18next.t(LocaleKey.quantity),
+            input: 'number',
+            inputValue: '1',
+            showCancelButton: true
+        });
+        if (this.props.addItemToCart == null) return;
+        this.props.addItemToCart(this.state.item, quantity);
+    }
+
+    getFloatingActionButtons = () => {
+        const components: any[] = [];
+        if (this.state.item == null || this.state.item.Id == null) return null;
+        if (!this.state.item.Id.includes(IdPrefix.Cooking)) {
+            components.push(CartFloatingActionButton(this.addThisItemToCart));
+        }
+        return components;
+    }
+
     render() {
         return (
             <>
@@ -371,16 +395,13 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                     {this.displayCookItems(this.state.cookArray)}
                     {this.displayUsedToCookItems(this.state.usedToCookArray)}
                 </div>
+
+                {
+                    this.getFloatingActionButtons()
+                }
             </>
         );
     }
 }
 
-
-export const mapStateToProps = (state: State) => {
-    return {
-        selectedLanguage: state.settingReducer.selectedLanguage,
-    };
-};
-
-export const CatalogueItemPresenter = connect(mapStateToProps)(withRouter(CatalogueItemPresenterUnconnected));
+export const CatalogueItemPresenter = connect(mapStateToProps, mapDispatchToProps)(withRouter(CatalogueItemPresenterUnconnected));
