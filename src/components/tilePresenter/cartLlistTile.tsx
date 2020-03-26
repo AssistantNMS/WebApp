@@ -3,7 +3,6 @@ import i18next from 'i18next';
 import { Link } from 'react-router-dom';
 
 import { LocaleKey } from '../../localization/LocaleKey';
-import { RequiredItem } from '../../contracts/RequiredItem';
 import { CartItem } from '../../contracts/cart/cartItem';
 import { catalogueItem } from '../../constants/Route';
 
@@ -54,8 +53,8 @@ class CartItemListTileClass extends React.Component<CartItem, IState> {
                     <TextContainer text={this.state.name} />
                     <div className="quantity-container">{i18next.t(LocaleKey.quantity)}: {this.props.Quantity}</div>
                     <ActionContainer actions={[
-                        <i className="material-icons">edit</i>,
-                        <i className="material-icons">delete</i>
+                        <i key="edit" className="material-icons">edit</i>,
+                        <i key="delete" className="material-icons">delete</i>
                     ]} />
                 </div>
             </Link>

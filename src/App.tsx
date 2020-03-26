@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Route, Switch, withRouter } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 import { mapStateToProps, mapDispatchToProps } from './App.Redux';
 import { StateSettingReducer } from './redux/state/StateSettingReducer';
@@ -69,6 +70,14 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
           </Switch>
         </div>
       </ScrollToTop>
+      <ToastContainer
+        position="bottom-left"
+        autoClose={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        draggable
+      />
     </div>
   );
 }

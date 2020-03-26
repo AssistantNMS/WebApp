@@ -27,11 +27,30 @@ export const CartPresenterUnconnected = withRouter((props: IProps) => {
     setDocumentTitle(title);
 
     const displayCartItems = (cartItems: Array<CartItem>) => {
-        if (props.cartItems == null || props.cartItems.length === 0) return (
+        if (cartItems == null || cartItems.length === 0) return (
             <h2>{i18next.t(LocaleKey.noCartItems)}</h2>
         );
 
-        return <GenericListPresenter list={props.cartItems} presenter={CartListTile} />;
+        return <GenericListPresenter list={cartItems} presenter={CartListTile} />;
+    };
+
+    const displayCardButton = (cartItems: Array<CartItem>) => {
+        if (cartItems == null || cartItems.length === 0) return null;
+
+        return (
+            <CardButton
+                title={i18next.t(LocaleKey.viewAllRawMaterialsRequired)}
+                className="button-active-bg"
+                url="/"
+                onClick={() => props.history.push({
+                    pathname: genericAllRequirements,
+                    state: {
+                        typeName: i18next.t(LocaleKey.cart),
+                        requiredItems: props.cartItems.map(ci => requiredItemFromCart(ci))
+                    }
+                })}
+            />
+        );
     };
 
     return (
@@ -45,18 +64,7 @@ export const CartPresenterUnconnected = withRouter((props: IProps) => {
                 </div>
                 <div className="row justify">
                     <div className="col-12 ta-center">
-                        <CardButton
-                            title={i18next.t(LocaleKey.viewAllRawMaterialsRequired)}
-                            className="button-active-bg"
-                            url="/"
-                            onClick={() => props.history.push({
-                                pathname: genericAllRequirements,
-                                state: {
-                                    typeName: i18next.t(LocaleKey.cart),
-                                    requiredItems: props.cartItems.map(ci => requiredItemFromCart(ci))
-                                }
-                            })}
-                        />
+                        {displayCardButton(props.cartItems)}
                     </div>
                 </div>
             </div>

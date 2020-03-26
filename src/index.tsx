@@ -5,8 +5,10 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';
+import { UpdateButton } from './components/updateButton';
 import { initLocalization } from './integration/i18n';
 import { initAnalytics } from './integration/analytics';
+import { initUpdateNotification, updateServiceWorker } from './integration/serviceWorker';
 import { getJSON, defaultConfig } from './utils';
 import { applyIsDarkToBody } from './helper/bodyHelper';
 
@@ -42,6 +44,7 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
 
     initAnalytics();
     initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
+    initUpdateNotification(<UpdateButton onClick={updateServiceWorker} />);
 
     ReactDOM.render(
         <Provider store={store}>
@@ -52,7 +55,9 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
         , document.getElementById('nms-app'));
 
     if (window.config.useServiceWorker) {
-        serviceWorker.register();
+        serviceWorker.register({
+            onUpdate: () => window.dispatchEvent(new Event("newContentAvailable"))
+        });
     }
 })
 

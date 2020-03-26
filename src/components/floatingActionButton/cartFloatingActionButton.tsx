@@ -4,7 +4,7 @@ import { Fab } from '@material/react-fab'
 
 export const CartFloatingActionButton = (addThisItemToCart: any) => {
     return (
-        <Fab className="fab-bg-color"
+        <Fab className="fab-bg-color fab-margin"
             key="CartFloatingActionButton"
             icon={<i className="material-icons">shopping_basket</i>}
             onClick={addThisItemToCart}
