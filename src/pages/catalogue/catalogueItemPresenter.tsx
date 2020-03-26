@@ -355,6 +355,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
             showCancelButton: true
         });
         if (this.props.addItemToCart == null) return;
+        if (isNaN(quantity)) return;
         this.props.addItemToCart(this.state.item, quantity);
     }
 
@@ -396,9 +397,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                     {this.displayUsedToCookItems(this.state.usedToCookArray)}
                 </div>
 
-                {
-                    this.getFloatingActionButtons()
-                }
+                {this.getFloatingActionButtons()}
             </>
         );
     }

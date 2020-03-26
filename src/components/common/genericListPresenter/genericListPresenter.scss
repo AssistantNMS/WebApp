@@ -53,6 +53,30 @@
                     text-align: left;
                     padding-left: 1rem;
                 }
+
+                .action-container {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+
+                    ul {
+                        position: relative;
+                        min-height: 100px;
+                        padding: 0;
+                        margin: 0;
+
+                        // padding-left: 0;
+                        // padding-right: 1em;
+                        // margin-top: 1rem;
+
+                        >* {
+                            margin-top: .25em;
+                            margin-right: .5em;
+                            display: block;
+                            color: white;
+                        }
+                    }
+                }
             }
         }
     }

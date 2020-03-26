@@ -1,6 +1,7 @@
 import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import { mapStateToProps, mapDispatchToProps } from './cart.Redux';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -9,12 +10,19 @@ import { LocaleKey } from '../../localization/LocaleKey';
 import { CartItem } from '../../contracts/cart/cartItem';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { CartListTile } from '../../components/tilePresenter/cartLlistTile';
+import { CardButton } from '../../components/core/button/cardButton';
+import { genericAllRequirements } from '../../constants/Route';
+
+import { requiredItemFromCart } from '../../mapper/CartMapper';
 
 interface IProps {
+    location: any;
+    match: any;
+    history: any;
     cartItems: Array<CartItem>
 }
 
-export const CartPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
+export const CartPresenterUnconnected = withRouter((props: IProps) => {
     const title = i18next.t(LocaleKey.cart);
     setDocumentTitle(title);
 
@@ -35,9 +43,25 @@ export const CartPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
                         {displayCartItems(props.cartItems)}
                     </div>
                 </div>
+                <div className="row justify">
+                    <div className="col-12 ta-center">
+                        <CardButton
+                            title={i18next.t(LocaleKey.viewAllRawMaterialsRequired)}
+                            className="button-active-bg"
+                            url="/"
+                            onClick={() => props.history.push({
+                                pathname: genericAllRequirements,
+                                state: {
+                                    typeName: i18next.t(LocaleKey.cart),
+                                    requiredItems: props.cartItems.map(ci => requiredItemFromCart(ci))
+                                }
+                            })}
+                        />
+                    </div>
+                </div>
             </div>
         </>
     );
-}
+});
 
 export const CartPresenter = connect(mapStateToProps, mapDispatchToProps)(CartPresenterUnconnected);
