@@ -10,7 +10,7 @@ import { initAnalytics } from './integration/analytics';
 import { getJSON, defaultConfig } from './utils';
 import { applyIsDarkToBody } from './helper/bodyHelper';
 
-import { SettingReducerKey } from './redux/cacheKey';
+import { loadStateFromLocalStorage, saveStateToLocalStorage } from './redux/stateFromLocalStorage';
 import { reducer } from './redux';
 
 import * as serviceWorker from './serviceWorker';
@@ -21,18 +21,7 @@ declare global {
     interface Window { config: any; }
 }
 
-let persistedState: any = localStorage.getItem(SettingReducerKey)
-    ? {
-        settingReducer: JSON.parse(localStorage.getItem(SettingReducerKey) || '{}'),
-    }
-    : {
-        settingReducer: {
-            isDark: true,
-            selectedLanguage: 'en',
-            menuIsVisible: false
-        }
-    }
-
+let persistedState: any = loadStateFromLocalStorage();
 persistedState.settingReducer.menuIsVisible = false;
 applyIsDarkToBody(persistedState.settingReducer.isDark);
 
@@ -41,16 +30,7 @@ const store = createStore(
     persistedState,
 );
 
-store.subscribe(() => {
-    var currentSetting = store.getState().settingReducer;
-    var storedSetting = JSON.parse(localStorage.getItem(SettingReducerKey) || '{}');
-
-    if (storedSetting == null
-        || storedSetting.isDark !== currentSetting.isDark
-        || storedSetting.selectedLanguage !== currentSetting.selectedLanguage) {
-        localStorage.setItem(SettingReducerKey, JSON.stringify(store.getState().settingReducer))
-    }
-})
+store.subscribe(() => saveStateToLocalStorage(store));
 
 window.config = window.config || {};
 getJSON('/assets/config.json', (status: boolean, response: string) => {

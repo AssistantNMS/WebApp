@@ -7,3 +7,4 @@ export const language = '/language';
 export const donation = '/donation';
 export const setting = '/setting';
 export const search = '/search';
+export const cart = '/cart';

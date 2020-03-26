@@ -21,10 +21,9 @@ const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
 
     const title = i18next.t(LocaleKey.donation);
     setDocumentTitle(title);
-    setDocumentTitle("Setting");
     return (
         <>
-            <NavBar title="Home" />
+            <NavBar title={title} />
             <div className="content">
                 <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
                     <div className="row">

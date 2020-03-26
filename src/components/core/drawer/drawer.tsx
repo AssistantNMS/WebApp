@@ -6,7 +6,6 @@ import { Link, withRouter } from 'react-router-dom';
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
 import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/DrawerMenuItemsHelper';
-import { getCatalogueMenuItems } from '../../../helper/CatalogueMenuItemsHelper';
 
 import { mapStateToProps, mapDispatchToProps } from './drawer.Redux';
 
@@ -20,10 +19,7 @@ interface IProps {
 
 export const DrawerUnconnected = withRouter((props: IProps) => {
     const baseItems = getDrawerMenuItems();
-    const catalogueItems = getCatalogueMenuItems();
-
-    const menuItems = baseItems.concat(catalogueItems);
-    menuItems.push(menuItemSeperator);
+    const menuItems = baseItems.concat(menuItemSeperator);
 
     const menuItemClick = () => {
         if (props.toggleMenu != null) {

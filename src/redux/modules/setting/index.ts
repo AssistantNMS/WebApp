@@ -4,13 +4,13 @@ import i18next from 'i18next';
 import { StateSettingReducer } from '../../state/StateSettingReducer';
 import { applyIsDarkToBody } from '../../../helper/bodyHelper';
 
-const initialState: StateSettingReducer = {
+export const initialSettingState: StateSettingReducer = {
     isDark: true,
     selectedLanguage: 'en',
     menuIsVisible: false
 }
 
-export const settingReducer = (state = initialState, action: any) => {
+export const settingReducer = (state = initialSettingState, action: any) => {
     switch (action.type) {
         case type.DARKMODE:
             applyIsDarkToBody(action.isDark);
