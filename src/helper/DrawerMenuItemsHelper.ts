@@ -27,13 +27,6 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
-  menuItems.push({
-    name: i18next.t(LocaleKey.settings).toString(),
-    link: setting,
-    icon: '/assets/images/settings.png',
-    iconType: DrawerIconType.Custom,
-    isActive: false
-  });
   menuItems.push(menuItemSeperator);
   menuItems.push({
     name: i18next.t(LocaleKey.catalogue).toString(),
@@ -47,6 +40,14 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     name: i18next.t(LocaleKey.cart).toString(),
     link: cart,
     icon: '/assets/images/drawer/cart.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
+  menuItems.push(menuItemSeperator);
+  menuItems.push({
+    name: i18next.t(LocaleKey.settings).toString(),
+    link: setting,
+    icon: '/assets/images/settings.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
