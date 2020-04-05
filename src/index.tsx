@@ -20,7 +20,7 @@ import * as serviceWorker from './serviceWorker';
 import './index.scss';
 
 declare global {
-    interface Window { config: any; }
+    interface Window { config: any; registration: any }
 }
 
 let persistedState: any = loadStateFromLocalStorage();
@@ -56,7 +56,10 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
 
     if (window.config.useServiceWorker) {
         serviceWorker.register({
-            onUpdate: () => window.dispatchEvent(new Event("newContentAvailable"))
+            onUpdate: registration => {
+                window.dispatchEvent(new Event("newContentAvailable"));
+                window.registration = registration;
+            }
         });
     }
 })

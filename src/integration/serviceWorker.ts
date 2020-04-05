@@ -13,16 +13,21 @@ export const initUpdateNotification = (text: any) => {
 }
 
 export const updateServiceWorker = () => {
-    var preventDevToolsReloadLoop = false;
-    navigator.serviceWorker.addEventListener("controllerchange", function () {
-        // Ensure refresh is only called once.
-        // This works around a bug in "force update on reload".
-        if (preventDevToolsReloadLoop) return;
-        preventDevToolsReloadLoop = true;
-        window.location.reload();
-    });
-    navigator.serviceWorker.ready.then(registration => {
-        registration.waiting &&
-            registration.waiting.postMessage("skipWaiting");
-    })
+    if (!window.registration || !window.registration.waiting) return;
+
+    window.registration.postMessage({ type: 'SKIP_WAITING' });
+    window.location.reload();
+
+    // var preventDevToolsReloadLoop = false;
+    // navigator.serviceWorker.addEventListener("controllerchange", function () {
+    //     // Ensure refresh is only called once.
+    //     // This works around a bug in "force update on reload".
+    //     if (preventDevToolsReloadLoop) return;
+    //     preventDevToolsReloadLoop = true;
+    //     window.location.reload();
+    // });
+    // navigator.serviceWorker.ready.then(registration => {
+    //     registration.waiting &&
+    //         registration.waiting.postMessage("skipWaiting");
+    // })
 }
