@@ -18,8 +18,8 @@ export const mapDispatchToProps = (dispatch: any) => {
     newProps.editItemInCart = (cartItemIndex: number, cartItem: CartItem) => {
         dispatch(editItemInCart(cartItemIndex, cartItem));
     };
-    newProps.removeItemFromCart = (cartItemIndex: number) => {
-        dispatch(removeItemFromCart(cartItemIndex));
+    newProps.removeItemFromCart = (cartItemId: string) => {
+        dispatch(removeItemFromCart(cartItemId));
     };
     newProps.removeAllItems = () => {
         dispatch(removeAllItems());

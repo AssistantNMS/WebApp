@@ -21,7 +21,7 @@ export const cartReducer = (state = initialCartState, action: any) => {
             });
         case type.REMOVEITEM:
             return Object.assign({}, state, {
-                cartItems: state.cartItems.filter(ci => ci.Id !== action.cartItemIndex),
+                cartItems: state.cartItems.filter(ci => ci.Id !== action.cartItemId),
             });
         case type.REMOVEALLITEM:
             return Object.assign({}, state, {

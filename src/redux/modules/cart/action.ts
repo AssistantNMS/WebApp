@@ -16,9 +16,9 @@ export const editItemInCart = (cartItemIndex: number, cartItem: CartItem) => {
     }
 }
 
-export const removeItemFromCart = (cartItemIndex: number) => {
+export const removeItemFromCart = (cartItemId: string) => {
     return {
-        cartItemIndex,
+        cartItemId,
         type: REMOVEITEM,
     }
 }

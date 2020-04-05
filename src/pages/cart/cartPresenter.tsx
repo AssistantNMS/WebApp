@@ -9,7 +9,7 @@ import { setDocumentTitle } from '../../helper/DocumentHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { CartItem } from '../../contracts/cart/cartItem';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-import { CartListTile } from '../../components/tilePresenter/cartLlistTile';
+import { CartListTile } from '../../components/tilePresenter/cartListTile/cartListTile';
 import { CardButton } from '../../components/core/button/cardButton';
 import { genericAllRequirements } from '../../constants/Route';
 
@@ -20,6 +20,8 @@ interface IProps {
     match: any;
     history: any;
     cartItems: Array<CartItem>
+    editItemInCart?: (cartItemIndex: number, cartItem: CartItem) => void;
+    removeItemFromCart: (cartItemId: string) => void;
 }
 
 export const CartPresenterUnconnected = withRouter((props: IProps) => {
@@ -31,7 +33,16 @@ export const CartPresenterUnconnected = withRouter((props: IProps) => {
             <h2>{i18next.t(LocaleKey.noCartItems)}</h2>
         );
 
-        return <GenericListPresenter list={cartItems} presenter={CartListTile} />;
+        const connectedPresenter = (localProps: CartItem, index: number) => {
+            const editItemInCart = (cartItem: CartItem) => {
+                if (props.editItemInCart) {
+                    props.editItemInCart(index, cartItem);
+                }
+            }
+            return CartListTile(localProps, editItemInCart, props.removeItemFromCart);
+        }
+
+        return <GenericListPresenter list={cartItems} presenter={connectedPresenter} identifier={(item: CartItem) => item.Id} />;
     };
 
     const displayCardButton = (cartItems: Array<CartItem>) => {
