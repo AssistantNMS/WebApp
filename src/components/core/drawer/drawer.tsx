@@ -64,6 +64,7 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
                     {
                         renderMenuItems(menuItems)
                     }
+                    <br />
                     <div style={{ textAlign: 'center', padding: '.5em' }} data-version={require('../../../buildName.json')}>Version: {process.env.REACT_APP_VERSION}</div>
                 </ul>
             </div>

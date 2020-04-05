@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import { about, language, setting, donation, catalogue, cart } from '../constants/Route';
+import { about, language, setting, donation, catalogue, cart, guides } from '../constants/Route';
 import { DrawerIconType } from '../contracts/enum/DrawerIconType';
 import { DrawerMenuItem } from '../contracts/DrawerMenuItem';
 import { LocaleKey } from '../localization/LocaleKey';
@@ -40,6 +40,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     name: i18next.t(LocaleKey.cart).toString(),
     link: cart,
     icon: '/assets/images/drawer/cart.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
+  menuItems.push({
+    name: i18next.t(LocaleKey.guides).toString(),
+    link: guides,
+    icon: '/assets/images/drawer/guide.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });

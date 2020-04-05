@@ -9,7 +9,7 @@ import { StateSettingReducer } from './redux/state/StateSettingReducer';
 
 import { trackPageView } from './integration/analytics';
 
-import { about, catalogue, catalogueItem, processorItem, home, language, setting, search, donation, cart, genericAllRequirements } from './constants/Route';
+import { about, catalogue, catalogueItem, processorItem, home, language, setting, search, donation, cart, genericAllRequirements, guides } from './constants/Route';
 
 import { Drawer } from './components/core/drawer/drawer';
 import { HomePresenter } from './pages/home/homePresenter';
@@ -24,6 +24,8 @@ import { SettingPresenter } from './pages/setting/settingPresenter';
 import { DonationPresenter } from './pages/donation/donationPresenter';
 import { CartPresenter } from './pages/cart/cartPresenter';
 import { GenericPageAllRequiredPresenter } from './pages/generic/genericPageAllRequired';
+import { GuidePagePresenter } from './pages/guide/guidePage';
+import { GuideDetailPagePresenter } from './pages/guide/guideDetailPage';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 
 import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
@@ -66,6 +68,8 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={donation} component={DonationPresenter} />
             <Route path={cart} component={CartPresenter} />
             <Route path={genericAllRequirements} component={GenericPageAllRequiredPresenter} />
+            <Route path={`${guides}/:guid`} component={GuideDetailPagePresenter} />
+            <Route path={guides} component={GuidePagePresenter} />
             <Route component={NotFoundPresenter} />
           </Switch>
         </div>
