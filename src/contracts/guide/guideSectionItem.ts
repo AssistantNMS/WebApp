@@ -2,10 +2,10 @@ import { GuideType } from "./guideType";
 
 export interface GuideSectionItem {
     type: GuideType;
-    name: String;
-    content: String;
-    image: String;
-    imageUrl: String;
-    columns: Array<String>;
-    rows: Array<Array<String>>;
+    name: string;
+    content: string;
+    image: string;
+    imageUrl: string;
+    columns: Array<string>;
+    rows: Array<Array<string>>;
 }

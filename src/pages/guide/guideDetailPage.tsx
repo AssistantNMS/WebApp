@@ -10,6 +10,11 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { Guide } from '../../contracts/guide/guide';
 import { NetworkState } from '../../constants/NetworkState';
 import { GuideService } from '../../services/GuideService';
+import { GuideSection } from '../../contracts/guide/guideSection';
+import { GuideSectionItem } from '../../contracts/guide/guideSectionItem';
+import { GuideType } from '../../contracts/guide/guideType';
+
+import { displaySectionTextItem, displaySectionLinkItem, displaySectionImageItem, displaySectionMarkdownItem } from './guideComponents';
 
 interface IProps {
     location: any;
@@ -61,13 +66,44 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
         });
     }
 
-    displayGuide = () => {
+    handleLoadingOrError = () => {
         if (this.state.status === NetworkState.Loading) return;
         if (this.state.status === NetworkState.Error ||
             !this.state.guide) {
             return (<h2>{i18next.t(LocaleKey.noItems)}</h2>);
         }
-        return (<h2>{this.state.guide?.title ?? 'Unknown'}</h2>);
+        return this.displayGuide(this.state.guide);
+    }
+
+    displayGuide = (guide: Guide) => {
+        return <>
+            <h2>{guide.title}</h2>
+            <h4>{guide.author}</h4>
+            <h4>{guide.date}</h4>
+            {
+                guide.sections.map(this.displaySection)
+            }
+        </>;
+    }
+
+    displaySection = (section: GuideSection, index: number) => {
+        return <div key={`${section.heading}-${index}`} className="section row">
+            <h3 className="col-xl-7 col-lg-10 col-md-12 col-sm-12 col-xs-12 heading">
+                {section.heading}
+            </h3>
+            {
+                section.items.map(this.displaySectionItem)
+            }
+        </div>
+    }
+
+    displaySectionItem = (sectionItem: GuideSectionItem, index: number) => {
+        if (sectionItem.type === GuideType.Text) return displaySectionTextItem(sectionItem, index);
+        if (sectionItem.type === GuideType.Link) return displaySectionLinkItem(sectionItem, index);
+        if (sectionItem.type === GuideType.Image) return displaySectionImageItem(sectionItem, this.state.guide?.folder, index);
+        if (sectionItem.type === GuideType.Markdown) return displaySectionMarkdownItem(sectionItem, index);
+        // return <h3>{sectionItem.type}</h3>
+        return null;
     }
 
     render() {
@@ -77,8 +113,8 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
                 <div className="content">
                     <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
                         <div className="row">
-                            <div className="col-12">
-                                {this.displayGuide()}
+                            <div className="col-12 guide">
+                                {this.handleLoadingOrError()}
                             </div>
                         </div>
                     </div>

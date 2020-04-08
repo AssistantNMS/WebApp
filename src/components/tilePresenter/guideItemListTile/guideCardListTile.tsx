@@ -29,7 +29,7 @@ export const GuideCardListTile = (props: Guide) => {
     }
     return (
         <Link to={`${guides}/${props.guid}`} className="guide item card">
-            <ImageContainer Icon={props.image} Name={props.shortTitle} Directory="/" Colour="" />
+            <ImageContainer Icon={props.image} Name={props.shortTitle} Directory={`/assets/guide/${props.folder}/`} Colour="" />
             <div className="row" style={{ "paddingTop": ".5em" }}>
                 <div className="col-6">
                     <span>

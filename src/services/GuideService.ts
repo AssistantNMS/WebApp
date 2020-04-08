@@ -18,6 +18,7 @@ export class GuideService extends BaseJsonService {
         var guides = Array<Guide>();
         for (const guideItem of guidesDir.value) {
             var guideDynamic = await this.getJsonGuide(guideItem.folder, guideItem.file);
+            guideDynamic.folder = guideItem.folder;
             guides.push(guideDynamic);
         }
         guides.sort((a, b) =>
