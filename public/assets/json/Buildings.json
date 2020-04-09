@@ -6575,5 +6575,60 @@
     "HideBlueprintNaniteCost": false,
     "RequiredItems": [],
     "ConsumableRewards": []
+  },
+  {
+    "Id": "build395",
+    "Icon": "building/395.png",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7B9F",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 15,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 150
+      },
+      {
+        "Id": "prod17",
+        "Quantity": 3
+      }
+    ],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build396",
+    "Icon": "building/396.png",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7B9F",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 30
+      }
+    ],
+    "ConsumableRewards": []
   }
 ]

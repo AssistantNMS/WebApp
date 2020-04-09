@@ -523,9 +523,9 @@
   },
   {
     "Id": "tech95",
-    "Name": "Potenziamento Sigma ripetitore di segnale per exoscafo",
-    "Group": "Potenziamento ripetitore di segnale per exoscafo",
-    "Description": "Permette di acquisire tipologie di edificio aggiuntive con il ripetitore di segnale per exoscafo."
+    "Name": "Exocraft Signal Booster Upgrade Sigma",
+    "Group": "Exocraft Signal Booster Upgrade",
+    "Description": "Allows for additional building types to be acquired by the Exocraft Signal Booster."
   },
   {
     "Id": "tech96",
@@ -946,5 +946,113 @@
     "Name": "Occhi innestati",
     "Group": "Tecnologia organica fusa",
     "Description": "Una complessa serie di lenti e membrane, fuse su un raggruppamento di laser ad alta energia. Chi ne incrocia lo sguardo viene ridotto in cenere.\nPremi SHIPFIRE per chiedere agli occhi di guardare i bersagli nelle vicinanze."
+  },
+  {
+    "Id": "tech166",
+    "Name": "Raggio trasportatore",
+    "Group": "Dispositivo di teletrasporto per mercantili",
+    "Description": "Un dispositivo che modula i segnali di comunicazione standard dei mercantili per permettere il trasporto interplanetario di materiali, oltre che di dati.\n\nI mercantili equipaggiati con questa tecnologia possono scambiare prodotti e sostanze con un'exotuta a grandi distanze."
+  },
+  {
+    "Id": "tech167",
+    "Name": "Raggio solare",
+    "Group": "Laser alchemico",
+    "Description": "Un'aggiunta altamente specializzata alle funzioni minerarie del multi-tool, in grado di trasformare i depositi di terreno in sole liquido.\n\nUn potente emettitore laser amplifica le radiazioni solari locali, permettendo la riconfigurazione rapida dei minerali vicini."
+  },
+  {
+    "Id": "tech168",
+    "Name": "Raggio Animus",
+    "Group": "Estrattore di anime",
+    "Description": "Un sistema di sovraccarico unico del laser minerario standard del multi-tool. La frequenza del raggio viene modulata con precisione in un ciclo di feedback con le onde delta generate dal bersaglio colpito.\n\nLe registrazioni dell'esperienza del bersaglio vengono incise in minuscoli frammenti di metallo ed elaborate in qualia frammentati. La leggibilità dei frammenti recuperati non è garantita."
+  },
+  {
+    "Id": "tech169",
+    "Name": "Cuscinetto termico",
+    "Group": "Unità protezione rischi exoscafo",
+    "Description": "Ventole di raffreddamento a sublimazione e cuscinetti volumetrici ad alta termicità vengono installati nell'exoscafo per mantenere il pilota a temperature sicure anche nelle tempeste di fuoco più violente.\n\nPreviene qualsiasi danno o prosciugamento di energia all'interno dell'exoscafo negli ambienti bruciati."
+  },
+  {
+    "Id": "tech170",
+    "Name": "Riscaldatore Megawatt",
+    "Group": "Unità protezione rischi exoscafo",
+    "Description": "Installa nell'exoscafo un potente riscaldatore che mantiene l'abitacolo a temperatura abitabile anche nei climi più gelidi.\n\nPreviene qualsiasi danno o prosciugamento di energia all'interno dell'exoscafo negli ambienti gelidi."
+  },
+  {
+    "Id": "tech171",
+    "Name": "Unità di filtraggio atmosferico",
+    "Group": "Unità protezione rischi exoscafo",
+    "Description": "Dei sistemi di filtraggio atmosferico a doppio vuoto eliminano qualsiasi residuo dell'atmosfera planetaria dall'abitacolo dell'exoscafo senza bisogno di bonifica manuale.\n\nPreviene qualsiasi danno o prosciugamento di energia all'interno dell'exoscafo negli ambienti tossici."
+  },
+  {
+    "Id": "tech172",
+    "Name": "Schermatura neutronica",
+    "Group": "Unità protezione rischi exoscafo",
+    "Description": "Dei materiali di controllo ad alta efficienza vengono inseriti nella struttura dell'exoscafo per neutralizzare le onde energetiche nocive.\n\nPreviene qualsiasi danno o prosciugamento di energia all'interno dell'exoscafo negli ambienti radioattivi."
+  },
+  {
+    "Id": "tech173",
+    "Name": "Sistema di alimentazione Icarus",
+    "Group": "Unità di ricarica solare",
+    "Description": "Il sistema Icarus trasforma i pannelli metallici in superfici fotovoltaiche. Questo rivestimento reattivo genera energia nelle ore diurne, riducendo il consumo di carburante.\n\nPermette la ricarica automatica del motore durante il giorno."
+  },
+  {
+    "Id": "tech174",
+    "Name": "Ripetitore di segnale avanzato",
+    "Group": "Potenziamento ripetitore di segnale per exoscafo",
+    "Description": "Permette di acquisire tipologie di edificio aggiuntive con il ripetitore di segnale per exoscafo."
+  },
+  {
+    "Id": "tech175",
+    "Name": "Motore Daedalus",
+    "Group": "Unità energetica Minotauro",
+    "Description": "Questo reattore compatto, montato su un giroscopio per impedire fuoriuscite di carburante durante i movimenti rapidi, è il cuore del Minotauro.\n\nUtilizza carburanti al carbonio convenzionali."
+  },
+  {
+    "Id": "tech176",
+    "Name": "Servosistemi autolubrificanti",
+    "Group": "Miglioramento efficienza motore",
+    "Description": "Una pompa di lubrificante a regolazione automatica, montata sulle giunture delle gambe del Minotauro, riduce l'attrito e migliora il consumo del carburante in movimento.\n\nRiduce notevolmente il consumo di carburante del motore Daedalus per il Minotauro."
+  },
+  {
+    "Id": "tech177",
+    "Name": "Apparato radar Minotauro",
+    "Group": "Apparato di scansione Minotauro",
+    "Description": "Dispositivo radar ad alta risoluzione, capace di migliorare lo scanner del Minotauro a livelli pari a quelli del visore analitico.\n\nPremi SCAN per eseguire una scansione radar e rivelare punti di interesse aggiuntivi non individuabili dallo scanner del multi-tool.\n\nUsa il menu rapido per calibrare il radar su edifici specifici."
+  },
+  {
+    "Id": "tech178",
+    "Name": "Fiamma di Arianna",
+    "Group": "Sistema di propulsione Minotauro",
+    "Description": "Una serie di agili propulsori jet ad alta potenza montati sul retro del Minotauro. Manovrandoli accortamente è possibile superare qualsiasi tipo di terreno con il Minotauro.\n\nTieni premuto JUMP per attivarli. Permettono un controllo limitato in volo."
+  },
+  {
+    "Id": "tech179",
+    "Name": "Laser Minotauro",
+    "Group": "Strumento minerario Minotauro",
+    "Description": "Sistema laser progettato appositamente per l'exotuta pesante ibrida Minotauro.\n\nConsente di svolgere le normali operazioni di estrazione mineraria. Inefficace in combattimento."
+  },
+  {
+    "Id": "tech180",
+    "Name": "Laser di precisione Minotauro",
+    "Group": "Laser minerario avanzato Minotauro",
+    "Description": "Potenziamento per il laser dell'exotuta pesante ibrida Minotauro.\n\nAmplifica la potenza sviluppata dal raggio minerario, incrementandone la velocità e permettendo di estrarre minerali grezzi più complessi."
+  },
+  {
+    "Id": "tech181",
+    "Name": "Cannone Minotauro",
+    "Group": "Arma pesante",
+    "Description": "Un cannone progettato specificamente per l'exotuta pesante ibrida Minotauro.\n\nIdeato principalmente per danneggiare entità biologiche e inefficace come dispositivo di estrazione."
+  },
+  {
+    "Id": "tech182",
+    "Name": "Estrattore Minotauro",
+    "Group": "Laser trivellatore Minotauro",
+    "Description": "Aggiunge funzioni di manipolazione del terreno al sistema laser dell'exotuta pesante ibrida Minotauro.\n\nUn alloggio speciale permette l'attivazione rapida di un escavatore ad alto potenziale senza rischiare di ingolfare i delicati giunti del Minotauro con il terreno smosso."
+  },
+  {
+    "Id": "tech183",
+    "Name": "Unità di controllo ambientale",
+    "Group": "Unità protezione rischi exoscafo",
+    "Description": "Un potente sistema di neutralizzazione ambientale viene collegato direttamente al pilota che prende il controllo del Minotauro. Il sistema è alimentato dal motore principale del Minotauro e non richiede interventi da parte dell'utilizzatore. Può provocare un leggero dolore nell'area in cui avviene l'inserimento.\n\nRende il pilota del Minotauro immune a tutti i pericoli ambientali."
   }
 ]

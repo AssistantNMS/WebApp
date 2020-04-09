@@ -523,7 +523,7 @@
     "IsConsumable": false,
     "Colour": "2C7B9F",
     "BlueprintSource": 0,
-    "BlueprintNaniteCost": 10,
+    "BlueprintNaniteCost": 8,
     "HideBlueprintNaniteCost": true,
     "RequiredItems": [
       {
@@ -532,11 +532,11 @@
       },
       {
         "Id": "raw24",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "prod20",
-        "Quantity": 4
+        "Quantity": 2
       }
     ],
     "ConsumableRewards": []
@@ -550,7 +550,7 @@
     "IsConsumable": false,
     "Colour": "2C7B9F",
     "BlueprintSource": 0,
-    "BlueprintNaniteCost": 10,
+    "BlueprintNaniteCost": 4,
     "HideBlueprintNaniteCost": true,
     "RequiredItems": [
       {
@@ -559,11 +559,11 @@
       },
       {
         "Id": "raw24",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "prod20",
-        "Quantity": 4
+        "Quantity": 2
       }
     ],
     "ConsumableRewards": []
@@ -577,7 +577,7 @@
     "IsConsumable": false,
     "Colour": "2C7B9F",
     "BlueprintSource": 0,
-    "BlueprintNaniteCost": 10,
+    "BlueprintNaniteCost": 8,
     "HideBlueprintNaniteCost": true,
     "RequiredItems": [
       {
@@ -658,19 +658,19 @@
     "IsConsumable": false,
     "Colour": "2C7B9F",
     "BlueprintSource": 0,
-    "BlueprintNaniteCost": 10,
+    "BlueprintNaniteCost": 12,
     "HideBlueprintNaniteCost": true,
     "RequiredItems": [
       {
-        "Id": "prod1",
-        "Quantity": 1
-      },
-      {
-        "Id": "raw10",
+        "Id": "raw7",
         "Quantity": 100
       },
       {
-        "Id": "prod20",
+        "Id": "raw27",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod19",
         "Quantity": 4
       }
     ],
@@ -1510,6 +1510,33 @@
       {
         "Id": "raw33",
         "Quantity": 30
+      }
+    ],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "conTech63",
+    "Icon": "constructedTechnology/63.png",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7B9F",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 4
       }
     ],
     "ConsumableRewards": []
