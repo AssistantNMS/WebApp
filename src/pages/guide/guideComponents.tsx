@@ -34,3 +34,34 @@ export const displaySectionMarkdownItem = (sectionItem: GuideSectionItem, index:
         />
     </div>
 }
+
+export const displaySectionTable = (sectionItem: GuideSectionItem, index: number) => {
+    return <div key={`${sectionItem.type}-${index}`} className="col-xl-7 col-lg-10 col-md-12 col-sm-12 col-xs-12 item ta-left">
+        <table className="table table-bordered">
+            <thead>
+                <tr>
+                    {
+                        sectionItem.columns.map((column: string) => {
+                            return <th key={`headerRow${column}`}><b>{column}</b></th>
+                        })
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                {
+                    sectionItem.rows.map((rows: string[], index: number) => {
+                        return <tr key={`row-${rows.length}-${index}`}>
+                            {
+                                rows.map((row: string) => {
+                                    return <td key={`row-column-${row}`}>
+                                        {row}
+                                    </td>
+                                })
+                            }
+                        </tr>
+                    })
+                }
+            </tbody>
+        </table>
+    </div>
+}

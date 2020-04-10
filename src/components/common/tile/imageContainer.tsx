@@ -12,7 +12,6 @@ interface IProps {
 
 export const ImageContainer = (props: IProps) => {
     let imageString = props.Directory ? `${props.Directory}${props.Icon}` : `/assets/images/${props.Icon}`
-    console.log(imageString);
     return (<div className="image-container" style={{ backgroundColor: `#${props.Colour}` }}>
         <LazyLoadImage src={imageString} alt={props.Name} draggable={false} />
 

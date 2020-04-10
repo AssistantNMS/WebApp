@@ -43,6 +43,11 @@
                 color: $black-color;
             }
         }
+
+        .table>thead>tr>th,
+        .table>tbody>tr>td {
+            border-color: black;
+        }
     }
 
     .sidebar {

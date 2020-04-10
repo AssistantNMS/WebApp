@@ -14,7 +14,7 @@ import { GuideSection } from '../../contracts/guide/guideSection';
 import { GuideSectionItem } from '../../contracts/guide/guideSectionItem';
 import { GuideType } from '../../contracts/guide/guideType';
 
-import { displaySectionTextItem, displaySectionLinkItem, displaySectionImageItem, displaySectionMarkdownItem } from './guideComponents';
+import { displaySectionTextItem, displaySectionLinkItem, displaySectionImageItem, displaySectionMarkdownItem, displaySectionTable } from './guideComponents';
 
 interface IProps {
     location: any;
@@ -102,6 +102,7 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
         if (sectionItem.type === GuideType.Link) return displaySectionLinkItem(sectionItem, index);
         if (sectionItem.type === GuideType.Image) return displaySectionImageItem(sectionItem, this.state.guide?.folder, index);
         if (sectionItem.type === GuideType.Markdown) return displaySectionMarkdownItem(sectionItem, index);
+        if (sectionItem.type === GuideType.Table) return displaySectionTable(sectionItem, index);
         // return <h3>{sectionItem.type}</h3>
         return null;
     }

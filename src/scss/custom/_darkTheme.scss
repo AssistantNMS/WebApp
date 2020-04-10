@@ -73,6 +73,15 @@ $list-item-text-color-dark: #f8f9fa;
                 color: white;
             }
         }
+
+        .table {
+            margin-top: 1em;
+        }
+
+        .table>thead>tr>th,
+        .table>tbody>tr>td {
+            border-color: white;
+        }
     }
 
     .sidebar {

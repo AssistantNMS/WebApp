@@ -6,6 +6,8 @@ import { ResultWithValue } from '../contracts/results/ResultWithValue';
 import { BaseJsonService } from './BaseJsonService';
 import { Guide } from '../contracts/guide/guide';
 
+var moment = require('moment');
+
 export class GuideService extends BaseJsonService {
     async getListOfGuides(): Promise<ResultWithValue<Array<Guide>>> {
         var guidesDir = await this.getAsset<Array<GuideListItem>>(`json/${i18next.t(LocaleKey.guidesJson).toString()}.json`)
@@ -21,12 +23,12 @@ export class GuideService extends BaseJsonService {
             guideDynamic.folder = guideItem.folder;
             guides.push(guideDynamic);
         }
-        guides.sort((a, b) =>
-            ((b.isNew ? 1 : 0) - (b.isNew ? 1 : 0) * 5) +
-            (a.title > b.title ? 1 : 0));
+        let sortedGuide = guides.slice().sort((a: Guide, b: Guide) =>
+            ((a.isNew ? 1 : -1) < (b.isNew ? 1 : -1) ? 5 : -5) +
+            (moment(a.date).isBefore(b.date) ? 1 : -1));
         return {
             isSuccess: true,
-            value: guides,
+            value: sortedGuide,
             errorMessage: ''
         };
     }
