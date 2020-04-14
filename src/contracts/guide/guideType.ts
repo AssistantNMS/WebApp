@@ -1,7 +1,7 @@
 export enum GuideType {
-    Text,
-    Image,
-    Link,
-    Markdown,
-    Table,
+    Text = 'text',
+    Image = 'image',
+    Link = 'link',
+    Markdown = 'markdown',
+    Table = 'table',
 }

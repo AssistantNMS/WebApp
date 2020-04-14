@@ -1,0 +1,52 @@
+.guide {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+    .section {
+
+        .item,
+        .link,
+        .heading {
+            margin: 0 auto;
+        }
+
+        .heading {
+            padding: .5em;
+            background-color: $brand-secondary;
+            border-radius: 5px;
+            margin-bottom: .25em;
+        }
+
+        .item {
+            padding-left: .5em;
+            padding-right: .5em;
+
+            .content {
+                font-size: 1.2em;
+                font-weight: 300;
+                margin-top: .5em;
+            }
+
+            &.minHeight {
+
+                // min-height: 45px;
+                a {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .link {
+            padding: .5em;
+            margin-bottom: .5em;
+            color: $white-color;
+            background-color: $gray-600;
+            border-radius: 5px;
+        }
+
+        .image {
+            margin-bottom: 1em;
+            max-width: 100%;
+        }
+    }
+
+}

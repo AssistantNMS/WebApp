@@ -523,9 +523,9 @@
   },
   {
     "Id": "tech95",
-    "Name": "Atualização Sigma do Impulsionador de Sinal da Exonave",
-    "Group": "Atualização do Impulsionador de Sinal da Exonave",
-    "Description": "Permite que tipos de construção adicionais sejam adquiridos pelo Impulsionador de Sinal da Exonave."
+    "Name": "Exocraft Signal Booster Upgrade Sigma",
+    "Group": "Exocraft Signal Booster Upgrade",
+    "Description": "Allows for additional building types to be acquired by the Exocraft Signal Booster."
   },
   {
     "Id": "tech96",
@@ -946,5 +946,113 @@
     "Name": "Olhos enxertados",
     "Group": "Tecnologia orgânica fundida",
     "Description": "Um arranjo complexo de membranas e lentes, fundidas sobre uma matriz de laser de alta energia. A incineração espera aqueles que se encontram no seu olhar.\nPressiona SHIPFIRE para solicitar aos olhos que olhem para os alvos próximos."
+  },
+  {
+    "Id": "tech166",
+    "Name": "Laser de Matéria",
+    "Group": "Dispositivo de Teletransporte no Cargueiro",
+    "Description": "Um dispositivo que modula os sinais padrão de comunicação de um cargueiro para permitir o transporte interplanetário de matéria e de dados.\n\nOs cargueiros equipados com um destes dispositivos podem enviar e receber produtos e substâncias para o Exofato de um utilizador através de longas distâncias."
+  },
+  {
+    "Id": "tech167",
+    "Name": "Raio solar",
+    "Group": "Laser alquímico",
+    "Description": "Um acrescento altamente especializado às capacidades de mineração da Multiferramenta, que permite transformar depósitos de terreno em sol líquido.\n\nUma poderosa matriz laser amplifica a radiação solar local, permitindo a rápida reconfiguração dos minérios minerais próximos."
+  },
+  {
+    "Id": "tech168",
+    "Name": "Raio animus",
+    "Group": "Extrator de alma",
+    "Description": "Uma sobrecarga única para o laser de mineração padrão da Multiferramenta. A frequência do raio é modulada de forma precisa num ciclo de feedback com as ondas delta geradas pelo alvo de impacto.\n\nOs registos das experiências do alvo são assim gravados em pequenos fragmentos de metal e renderizados como Qualia fragmentada. A legibilidade dos fragmentos recolhidos não é garantida."
+  },
+  {
+    "Id": "tech169",
+    "Name": "Amortecedor térmico",
+    "Group": "Unidade de proteção contra perigos da exonave",
+    "Description": "Os ventiladores de arrefecimento por sublimação e os amortecedores de massa térmica elevada são instalados em todos os painéis estruturais, mantendo o piloto da exonave em temperaturas não letais mesmo nas mais esmagadoras tempestades de fogo.\n\nPrevine totalmente todos os danos ou drenagem de energia no interior de uma exonave em ambientes abrasados."
+  },
+  {
+    "Id": "tech170",
+    "Name": "Aquecedor de Megawatts",
+    "Group": "Unidade de proteção contra perigos da exonave",
+    "Description": "Instala um potente aquecedor na exonave, mantendo a cabine a uma temperatura habitável mesmo em condições com mais frio.\n\nPrevine totalmente todos os danos ou drenagem de energia no interior de uma exonave em ambientes congelados."
+  },
+  {
+    "Id": "tech171",
+    "Name": "Unidade de filtragem de ar",
+    "Group": "Unidade de proteção contra perigos da exonave",
+    "Description": "Os sistemas de filtragem de ar de duplo vácuo não permitem a entrada da atmosfera planetária na cabine da exonave sem que esteja cuidadosamente depurada.\n\nPrevine totalmente todos os danos ou drenagem de energia enquanto no interior de uma exonave em ambientes tóxicos."
+  },
+  {
+    "Id": "tech172",
+    "Name": "Blindagem de neutrões",
+    "Group": "Unidade de proteção contra perigos da exonave",
+    "Description": "São inseridos materiais de controlo altamente eficientes na estrutura da exonave, neutralizando perigosas ondas de energia que cheguem.\n\nPrevine totalmente todos os danos ou drenagem de energia enquanto no interior de uma exonave em ambientes radioativos."
+  },
+  {
+    "Id": "tech173",
+    "Name": "Sistema de combustível Ícaro",
+    "Group": "Unidade de carregamento solar",
+    "Description": "O sistema Ícaro aproveita os painéis metálicos existentes, atualizando-os para superfícies fotovoltaicas. Este revestimento reativo gera energia durante as horas de luz, compensando o consumo de combustível.\n\nAtiva o carregamento automático do motor durante o dia."
+  },
+  {
+    "Id": "tech174",
+    "Name": "Impulsionador Sigma Avançado",
+    "Group": "Atualização do Impulsionador de Sinal da Exonave",
+    "Description": "Permite que tipos de construção adicionais sejam adquiridos pelo Impulsionador de Sinal da Exonave."
+  },
+  {
+    "Id": "tech175",
+    "Name": "Motor de Dédalo",
+    "Group": "Unidade de Energia do Minotauro",
+    "Description": "Uma unidade de reactor compacta, este motor é o coração do Minotauro. É instalado num giroscópio para evitar incidentes com o combustível durante o movimento rápido.\n\nAlimentado por combustíveis à base de carbono convencionais."
+  },
+  {
+    "Id": "tech176",
+    "Name": "Servomecanismo autolubrificante",
+    "Group": "Atualização de eficiência do motor",
+    "Description": "Um dispensador de lubrificante automaticamente regulado, instalado nas juntas das patas do Minotauro, reduz o atrito e incentiva o movimento eficiente do combustível.\n\nReduz significativamente a queima de combustível no Motor Dédalo do Minotauro."
+  },
+  {
+    "Id": "tech177",
+    "Name": "Espetro de radar do Minotauro",
+    "Group": "Detetor anexado ao Minotauro",
+    "Description": "Um dispositivo de radar de alto detalhe, capaz de atualizar a tecnologia do detetor a bordo do Minotauro para níveis de Visor de Análise.\n\nPrima SCAN para ativar uma leitura de radar, revelando pontos de interesse adicionais que não podem ser localizados através de uma multiferramenta.\n\nUtilizar o Menu Rápido para sintonizar o radar para edifícios específicos."
+  },
+  {
+    "Id": "tech178",
+    "Name": "Chama de Ariadne",
+    "Group": "Sistema propulsor do Minotauro",
+    "Description": "Uma série de ágeis propulsores a jato de alta potência, instalados na parte traseira do Minotauro. Uma utilização precisa permite ao Minotauro atravessar rapidamente e em força todo o tipo de terreno.\n\nManter premido JUMP para ativar. É possível um controlo limitado em voo."
+  },
+  {
+    "Id": "tech179",
+    "Name": "Laser do Minotauro",
+    "Group": "Ferramenta de mineração do Minotauro",
+    "Description": "Um sistema laser especificamente concebido para o Exofato pesado híbrido do Minotauro.\n\nPermite operações de mineração convencionais. Ineficaz em cenários de combate."
+  },
+  {
+    "Id": "tech180",
+    "Name": "Laser de precisão do Minotauro",
+    "Group": "Laser de mineração avançado do Minotauro",
+    "Description": "Uma atualização para o sistema de espetro laser do Exofato pesado híbrido do Minotauro.\n\nAmplifica a potência aplicada pelo feixe de mineração, aumentando a velocidade de mineração e ativando o processamento de matérias-primas de difícil mineração."
+  },
+  {
+    "Id": "tech181",
+    "Name": "Canhão do Minotauro",
+    "Group": "Arma pesada montada",
+    "Description": "Um canhão montado especificamente para o Exofato pesado híbrido do Minotauro.\n\nProjetado principalmente para danos contra entidades biológicas, é ineficaz como dispositivo de mineração."
+  },
+  {
+    "Id": "tech182",
+    "Name": "Perfuração do Minotauro",
+    "Group": "Laser de perfuração do Minotauro",
+    "Description": "Adiciona a capacidade de Manipulação de Terrenos para a matriz laser do Exofato pesado híbrido do Minotauro.\n\nUma instalação especial permite o rápido desdobramento de uma escavadora de terreno de alta energia, sem correr o risco de entupir as delicadas juntas e servomecanismos do Minotauro com sujidade."
+  },
+  {
+    "Id": "tech183",
+    "Name": "Unidade de controlo ambiente",
+    "Group": "Unidade de proteção contra perigos da exonave",
+    "Description": "Um poderoso sistema de neutralização ambiental é ligado diretamente ao piloto do Minotauro ao ser assumido o controlo do veículo. O sistema é alimentado através da unidade do motor principal do Minotauro e não requer informações adicionais do utilizador. Algumas pequenas dores podem ser notadas ao redor do local de inserção.\n\nTorna o piloto do Minotauro imune a todos os riscos ambientais."
   }
 ]
