@@ -78,7 +78,6 @@ export class AllGameItemsService {
         errorMessage: '',
       };
     } catch (exception) {
-      console.log(`GenericJsonRepo Exception: ${exception.toString()}`);
       return {
         isSuccess: false,
         value: anyObject,
