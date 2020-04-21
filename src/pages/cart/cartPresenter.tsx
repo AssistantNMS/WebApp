@@ -68,7 +68,7 @@ export const CartPresenterUnconnected = withRouter((props: IProps) => {
         <>
             <NavBar title={title} />
             <div className="content">
-                <div className="row" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
+                <div className="row full pt1">
                     <div className="col-12">
                         {displayCartItems(props.cartItems)}
                     </div>

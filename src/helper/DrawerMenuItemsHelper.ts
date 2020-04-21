@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import { about, language, setting, donation, catalogue, cart, guides } from '../constants/Route';
+import { about, language, setting, donation, catalogue, cart, guides, social } from '../constants/Route';
 import { DrawerIconType } from '../contracts/enum/DrawerIconType';
 import { DrawerMenuItem } from '../contracts/DrawerMenuItem';
 import { LocaleKey } from '../localization/LocaleKey';
@@ -10,6 +10,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     name: i18next.t(LocaleKey.about).toString(),
     link: about,
     icon: '/assets/images/about.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
+  menuItems.push({
+    name: i18next.t(LocaleKey.whatIsNew).toString(),
+    link: 'https://tools.nmsassistant.com/what-is-new',
+    icon: '/assets/images/drawer/whatIsNew.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
@@ -51,6 +58,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     isActive: false
   });
   menuItems.push(menuItemSeperator);
+  menuItems.push({
+    name: i18next.t(LocaleKey.social).toString(),
+    link: social,
+    icon: '/assets/images/twitter.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
   menuItems.push({
     name: i18next.t(LocaleKey.settings).toString(),
     link: setting,

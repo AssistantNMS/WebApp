@@ -9,7 +9,7 @@ export const HomePresenter: React.FC = () => {
         <>
             <NavBar title="Home" />
             <div className="content">
-                <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
+                <div className="container full pt1">
                     <div className="row" style={{ display: 'block' }}>
                         <h1>Welcome!</h1>
                         <h3>This is the Web version of the <b>Assistant for No Man's Sky</b> Apps.

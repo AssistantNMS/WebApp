@@ -20,7 +20,9 @@ export const displaySectionLinkItem = (sectionItem: GuideSectionItem, index: num
 }
 
 export const displaySectionImageItem = (sectionItem: GuideSectionItem, folder: string | undefined, index: number) => {
-    let imageString = sectionItem.image.includes('assets/images') ? `/${sectionItem.image}` : `/assets/guide/${folder}/${sectionItem.image}`;
+    let imageString = `/${sectionItem.image}`;
+    if (!sectionItem.image) imageString = sectionItem.imageUrl;
+    else imageString = sectionItem.image.includes('assets/images') ? `/${sectionItem.image}` : `/assets/guide/${folder}/${sectionItem.image}`;
     return <div key={`${sectionItem.type}-${index}`} className="col-xl-7 col-lg-10 col-md-12 col-sm-12 col-xs-12 item">
         <LazyLoadImage src={imageString} alt={sectionItem.name} className="image" draggable={false} />
     </div>

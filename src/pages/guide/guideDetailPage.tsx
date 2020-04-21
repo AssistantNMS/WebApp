@@ -16,6 +16,8 @@ import { GuideType } from '../../contracts/guide/guideType';
 
 import { displaySectionTextItem, displaySectionLinkItem, displaySectionImageItem, displaySectionMarkdownItem, displaySectionTable } from './guideComponents';
 
+var moment = require('moment');
+
 interface IProps {
     location: any;
     match: any;
@@ -69,7 +71,8 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
     handleLoadingOrError = () => {
         if (this.state.status === NetworkState.Loading) return;
         if (this.state.status === NetworkState.Error ||
-            !this.state.guide) {
+            !this.state.guide ||
+            !this.state.guide.sections) {
             return (<h2>{i18next.t(LocaleKey.noItems)}</h2>);
         }
         return this.displayGuide(this.state.guide);
@@ -79,7 +82,7 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
         return <>
             <h2>{guide.title}</h2>
             <h4>{guide.author}</h4>
-            <h4>{guide.date}</h4>
+            <h4>{moment(guide.date).format('DD MMM YYYY')}</h4>
             {
                 guide.sections.map(this.displaySection)
             }
@@ -112,7 +115,7 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
             <>
                 <NavBar title={this.state.title} />
                 <div className="content">
-                    <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
+                    <div className="container full pt1 pb5">
                         <div className="row">
                             <div className="col-12 guide">
                                 {this.handleLoadingOrError()}

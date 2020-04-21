@@ -9,7 +9,7 @@ import { StateSettingReducer } from './redux/state/StateSettingReducer';
 
 import { trackPageView } from './integration/analytics';
 
-import { about, catalogue, catalogueItem, processorItem, home, language, setting, search, donation, cart, genericAllRequirements, guides } from './constants/Route';
+import { about, catalogue, catalogueItem, processorItem, home, language, setting, search, donation, cart, genericAllRequirements, guides, social } from './constants/Route';
 
 import { Drawer } from './components/core/drawer/drawer';
 import { HomePresenter } from './pages/home/homePresenter';
@@ -26,6 +26,7 @@ import { CartPresenter } from './pages/cart/cartPresenter';
 import { GenericPageAllRequiredPresenter } from './pages/generic/genericPageAllRequired';
 import { GuidePagePresenter } from './pages/guide/guidePage';
 import { GuideDetailPagePresenter } from './pages/guide/guideDetailPage';
+import { SocialPresenter } from './pages/social/socialPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 
 import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
@@ -70,6 +71,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={genericAllRequirements} component={GenericPageAllRequiredPresenter} />
             <Route path={`${guides}/:guid`} component={GuideDetailPagePresenter} />
             <Route path={guides} component={GuidePagePresenter} />
+            <Route path={social} component={SocialPresenter} />
             <Route component={NotFoundPresenter} />
           </Switch>
         </div>

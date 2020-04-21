@@ -10,3 +10,4 @@ export const search = '/search';
 export const cart = '/cart';
 export const genericAllRequirements = '/genericAllRequirements';
 export const guides = '/guides';
+export const social = '/social';

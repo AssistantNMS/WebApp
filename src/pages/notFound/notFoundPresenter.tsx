@@ -7,7 +7,7 @@ export const NotFoundPresenter: React.FC = () => {
         <>
             <NavBar title="404" />
             <div className="content">
-                <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
+                <div className="container full pt1">
                     <h1>Not Found</h1>
                 </div>
             </div>

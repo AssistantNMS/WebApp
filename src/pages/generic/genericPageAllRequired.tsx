@@ -56,7 +56,7 @@ export class GenericPageAllRequiredPresenterUnconnected extends React.Component<
             <>
                 <NavBar title={this.state.title} />
                 <div className="content">
-                    <div className="container" style={{ paddingTop: '1em', maxWidth: 'unset' }}>
+                    <div className="container full pt1">
                         <div className="row">
                             <div className="col-12">
                                 {
