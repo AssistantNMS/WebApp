@@ -1,22 +1,27 @@
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 
-export const initUpdateNotification = (text: any) => {
-    window.addEventListener("newContentAvailable", () => {
-        toast.info(text, {
-            autoClose: false,
-            hideProgressBar: true,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-        });
-    });
-}
+// export const initUpdateNotification = (text: any) => {
+//     window.addEventListener("newContentAvailable", () => {
+//         toast.info(text, {
+//             autoClose: false,
+//             hideProgressBar: true,
+//             closeOnClick: true,
+//             pauseOnHover: true,
+//             draggable: true,
+//         });
+//     });
+// }
 
-export const updateServiceWorker = () => {
-    if (!window.registration || !window.registration.waiting) return;
+export const updateServiceWorker = (registration: any) => {
+    if (registration && registration.waiting) {
+        registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+    }
+    window.location.reload();
+
+    /*if (!window.registration || !window.registration.waiting) return;
 
     window.registration.postMessage({ type: 'SKIP_WAITING' });
-    window.location.reload();
+    window.location.reload();*/
 
     // var preventDevToolsReloadLoop = false;
     // navigator.serviceWorker.addEventListener("controllerchange", function () {

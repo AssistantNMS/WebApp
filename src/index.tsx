@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import { toast } from 'react-toastify';
 import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';
 import { UpdateButton } from './components/updateButton';
 import { initLocalization } from './integration/i18n';
 import { initAnalytics } from './integration/analytics';
-import { initUpdateNotification, updateServiceWorker } from './integration/serviceWorker';
+import { updateServiceWorker } from './integration/serviceWorker';
 import { getJSON, defaultConfig } from './utils';
 import { applyIsDarkToBody } from './helper/bodyHelper';
 
@@ -44,7 +45,7 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
 
     initAnalytics();
     initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
-    initUpdateNotification(<UpdateButton onClick={updateServiceWorker} />);
+    // initUpdateNotification(<UpdateButton onClick={updateServiceWorker} />);
 
     ReactDOM.render(
         <Provider store={store}>
@@ -57,8 +58,13 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
     if (window.config.useServiceWorker) {
         serviceWorker.register({
             onUpdate: registration => {
-                window.dispatchEvent(new Event("newContentAvailable"));
-                window.registration = registration;
+                toast.info(<UpdateButton onClick={() => updateServiceWorker(registration)} />, {
+                    autoClose: false,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                });
             }
         });
     }
