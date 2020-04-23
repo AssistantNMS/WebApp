@@ -140,4 +140,21 @@ $list-item-text-color-dark: #f8f9fa;
     .action-container i {
         color: $white-color;
     }
+
+    .segmented-control {
+        color: $brand-secondary-dark;
+
+        label {
+            color: $brand-secondary-dark;
+        }
+    }
+
+    .progress.custom {
+        border: 1px solid white;
+        background-color: #333;
+
+        .progress-bar {
+            background-color: $brand-secondary-dark !important;
+        }
+    }
 }

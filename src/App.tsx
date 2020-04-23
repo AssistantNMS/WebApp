@@ -9,7 +9,7 @@ import { StateSettingReducer } from './redux/state/StateSettingReducer';
 
 import { trackPageView } from './integration/analytics';
 
-import { about, catalogue, catalogueItem, processorItem, home, language, setting, search, donation, cart, genericAllRequirements, guides, social } from './constants/Route';
+import * as route from './constants/Route';
 
 import { Drawer } from './components/core/drawer/drawer';
 import { HomePresenter } from './pages/home/homePresenter';
@@ -27,6 +27,7 @@ import { GenericPageAllRequiredPresenter } from './pages/generic/genericPageAllR
 import { GuidePagePresenter } from './pages/guide/guidePage';
 import { GuideDetailPagePresenter } from './pages/guide/guideDetailPage';
 import { SocialPresenter } from './pages/social/socialPresenter';
+import { CommunityMissionPresenter } from './pages/helloGames/communityMissionPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 
 import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
@@ -57,21 +58,22 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
         <div className="main-panel ps-theme-default">
           <div id="sidebar-main-content-overlay" className="full-page-loader opacity80" onClick={() => props.toggleMenu()}></div>
           <Switch>
-            <Route exact={true} path={home} component={HomePresenter} />
-            <Route path={`${catalogue}/:types`} component={CatalogueListPresenter} />
-            <Route path={`${catalogueItem}/:itemId`} component={CatalogueItemPresenter} />
-            <Route path={`${processorItem}/:itemId`} component={ProcessorItemPresenter} />
-            <Route path={catalogue} component={CataloguePresenter} />
-            <Route path={search} component={SearchContainer} />
-            <Route path={setting} component={SettingPresenter} />
-            <Route path={about} component={AboutPresenter} />
-            <Route path={language} component={LanguagePresenter} />
-            <Route path={donation} component={DonationPresenter} />
-            <Route path={cart} component={CartPresenter} />
-            <Route path={genericAllRequirements} component={GenericPageAllRequiredPresenter} />
-            <Route path={`${guides}/:guid`} component={GuideDetailPagePresenter} />
-            <Route path={guides} component={GuidePagePresenter} />
-            <Route path={social} component={SocialPresenter} />
+            <Route exact={true} path={route.home} component={HomePresenter} />
+            <Route path={`${route.catalogue}/:types`} component={CatalogueListPresenter} />
+            <Route path={`${route.catalogueItem}/:itemId`} component={CatalogueItemPresenter} />
+            <Route path={`${route.processorItem}/:itemId`} component={ProcessorItemPresenter} />
+            <Route path={route.catalogue} component={CataloguePresenter} />
+            <Route path={route.search} component={SearchContainer} />
+            <Route path={route.setting} component={SettingPresenter} />
+            <Route path={route.about} component={AboutPresenter} />
+            <Route path={route.language} component={LanguagePresenter} />
+            <Route path={route.donation} component={DonationPresenter} />
+            <Route path={route.cart} component={CartPresenter} />
+            <Route path={route.genericAllRequirements} component={GenericPageAllRequiredPresenter} />
+            <Route path={`${route.guides}/:guid`} component={GuideDetailPagePresenter} />
+            <Route path={route.guides} component={GuidePagePresenter} />
+            <Route path={route.communityMission} component={CommunityMissionPresenter} />
+            <Route path={route.social} component={SocialPresenter} />
             <Route component={NotFoundPresenter} />
           </Switch>
         </div>

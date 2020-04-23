@@ -1,13 +1,15 @@
 import * as type from './type';
 import i18next from 'i18next';
 
+import { PlatformType } from '../../../contracts/enum/PlatformType';
 import { StateSettingReducer } from '../../state/StateSettingReducer';
 import { applyIsDarkToBody } from '../../../helper/bodyHelper';
 
 export const initialSettingState: StateSettingReducer = {
     isDark: true,
     selectedLanguage: 'en',
-    menuIsVisible: false
+    menuIsVisible: false,
+    chosenPlatform: PlatformType.PC,
 }
 
 export const settingReducer = (state = initialSettingState, action: any) => {

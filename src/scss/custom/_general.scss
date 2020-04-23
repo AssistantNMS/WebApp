@@ -129,3 +129,16 @@ body {
 .pb5 {
     padding-bottom: 5em;
 }
+
+.progress.custom {
+    border-radius: 25px;
+    height: 3em;
+
+    .progress-bar {
+        background-color: $brand-secondary !important;
+
+        .text {
+            font-size: 2em;
+        }
+    }
+}

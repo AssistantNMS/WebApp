@@ -1,10 +1,11 @@
 import { State } from '../../redux/state';
 import { setDarkMode, setLanguage } from '../../redux/modules/setting/action';
+import { getIsDark, getCurrentLanguage } from '../../redux/modules/setting/selector';
 
 export const mapStateToProps = (state: State) => {
     return {
-        isDark: state.settingReducer.isDark,
-        selectedLanguage: state.settingReducer.selectedLanguage,
+        isDark: getIsDark(state),
+        selectedLanguage: getCurrentLanguage(state),
     };
 };
 
