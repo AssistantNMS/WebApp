@@ -15,5 +15,7 @@ export const getJSON = (url: string, callback: any) => {
 
 export const defaultConfig = {
     googleAnalyticsEnabled: false,
-    consoleLogDebug: true
+    consoleLogDebug: true,
+    useServiceWorker: false,
+    apiUrl: "https://api.nmsassistant.com",
 }

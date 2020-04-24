@@ -32,6 +32,10 @@ export const settingReducer = (state = initialSettingState, action: any) => {
             return Object.assign({}, state, {
                 menuIsVisible: htmlTag?.classList?.contains('nav-open') ?? false
             });
+        case type.SETPLATFORM:
+            return Object.assign({}, state, {
+                chosenPlatform: action.platform
+            });
         default:
             return state
     }

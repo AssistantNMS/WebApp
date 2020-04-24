@@ -51,7 +51,6 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
 
     fetchData = async (guideGuid: string) => {
         var guideResult = await this.state.guideService.getSpecificGuide(guideGuid);
-        if (!guideResult.isSuccess) return;
         if (!guideResult.isSuccess) {
             this.setState(() => {
                 return {

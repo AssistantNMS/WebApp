@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 
 
@@ -19,6 +18,18 @@ export const Loading = () => {
             </div>
         </>
     );
+}
 
+export const SmallLoading = () => {
 
+    return (
+        <div className="container">
+            <ul className="row">
+                <div className="col-12" style={{ textAlign: 'center' }}>
+                    <img src="/assets/images/loader.svg" draggable="false" alt="loading-animation" style={{ maxWidth: '100px' }} />
+                    <h2 className="largeHeading">Loading</h2>
+                </div>
+            </ul>
+        </div>
+    );
 }

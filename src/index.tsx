@@ -45,7 +45,6 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
 
     initAnalytics();
     initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
-    // initUpdateNotification(<UpdateButton onClick={updateServiceWorker} />);
 
     ReactDOM.render(
         <Provider store={store}>

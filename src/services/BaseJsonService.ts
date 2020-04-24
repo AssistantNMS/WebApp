@@ -8,7 +8,6 @@ export class BaseJsonService {
     try {
       const result = await axios.request<T>({
         url: `/assets/${url}`
-        // url: `https://raw.githubusercontent.com/NoMansSkyAssistant/Languages/master/${url}`
       });
       return {
         isSuccess: true,
