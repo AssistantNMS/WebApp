@@ -7,13 +7,18 @@ interface IProps {
     Icon: string;
     Directory?: string;
     Name: string;
-    Colour: string;
+    Colour?: string;
 }
 
 export const ImageContainer = (props: IProps) => {
     let imageString = props.Directory ? `${props.Directory}${props.Icon}` : `/assets/images/${props.Icon}`
-    return (<div className="image-container" style={{ backgroundColor: `#${props.Colour}` }}>
-        <LazyLoadImage src={imageString} alt={props.Name} draggable={false} />
-
-    </div>);
+    let styleObj: any = {};
+    if (props.Colour != null) {
+        styleObj.backgroundColor = `#${props.Colour}`;
+    }
+    return (
+        <div className="image-container" style={styleObj}>
+            <LazyLoadImage src={imageString} alt={props.Name} draggable={false} />
+        </div>
+    );
 };

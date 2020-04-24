@@ -27,6 +27,7 @@ import { GenericPageAllRequiredPresenter } from './pages/generic/genericPageAllR
 import { GuidePagePresenter } from './pages/guide/guidePage';
 import { GuideDetailPagePresenter } from './pages/guide/guideDetailPage';
 import { SocialPresenter } from './pages/social/socialPresenter';
+// import { HelloGamesPresenter } from './pages/helloGames/helloGamesPresenter';
 import { CommunityMissionPresenter } from './pages/helloGames/communityMissionPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 
@@ -72,6 +73,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.genericAllRequirements} component={GenericPageAllRequiredPresenter} />
             <Route path={`${route.guides}/:guid`} component={GuideDetailPagePresenter} />
             <Route path={route.guides} component={GuidePagePresenter} />
+            {/* <Route path={route.helloGames} component={HelloGamesPresenter} /> */}
             <Route path={route.communityMission} component={CommunityMissionPresenter} />
             <Route path={route.social} component={SocialPresenter} />
             <Route component={NotFoundPresenter} />
