@@ -27,22 +27,30 @@ export const GuideCardListTile = (props: Guide) => {
             </div>
         );
     }
+    let rowWidgets = [];
+    rowWidgets.push(
+        <div key="author" className="col-6">
+            <span>
+                <i className="material-icons">person</i>
+                {props.author}
+            </span>
+        </div>
+    );
+    if (props.minutes > 0) {
+        rowWidgets.push(
+            <div key="timeToRead" className="col-6">
+                <span>
+                    <i className="material-icons">timer</i>
+                    {props.minutes}
+                </span>
+            </div>
+        );
+    }
     return (
         <Link to={`${guides}/${props.guid}`} className="guide item card">
             <ImageContainer Icon={props.image} Name={props.shortTitle} Directory={`/assets/guide/${props.folder}/`} Colour="" />
-            <div className="row" style={{ "paddingTop": ".5em" }}>
-                <div className="col-6">
-                    <span>
-                        <i className="material-icons">person</i>
-                        {props.author}
-                    </span>
-                </div>
-                <div className="col-6">
-                    <span>
-                        <i className="material-icons">timer</i>
-                        {props.minutes}
-                    </span>
-                </div>
+            <div className="row justify" style={{ "paddingTop": ".5em" }}>
+                {rowWidgets}
             </div>
             <TextContainer text={props.title} additionalCss="title" />
             {displayTags()}
