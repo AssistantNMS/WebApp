@@ -17,4 +17,5 @@ export class ExternalUrls {
   static twitter = 'https://twitter.com/AssistantNMS';
   static defaultProfilePic = 'https://nmsassistant.com/assets/img/vykeen.png';
   static bat = 'https://brave.com/nms136';
+  static openCollective = 'https://opencollective.com/assistantnms';
 }

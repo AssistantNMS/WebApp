@@ -66,4 +66,5 @@ export class AnalyticsEvent {
   static externalLinkGitHubGeneral = 'Go_to_General_Repository';
   static externalLinkGitHubLanguage = 'Go_to_Language_Repository';
   static externalLinkBat = 'BraveRewards';
+  static externalLinkOpenCollective = 'OpenCollective';
 }

@@ -16,6 +16,7 @@ export const DonationPresenter: React.FC = () => {
     paymentOptions.push({ title: i18next.t(LocaleKey.paypal).toString(), event: AnalyticsEvent.externalLinkPayPal, url: ExternalUrls.payPal, image: '/assets/images/payPal.png' });
     paymentOptions.push({ title: i18next.t(LocaleKey.kofi).toString(), event: AnalyticsEvent.externalLinkkofi, url: ExternalUrls.kofi, image: '/assets/images/kofi.png' });
     paymentOptions.push({ title: 'Brave', event: AnalyticsEvent.externalLinkBat, url: ExternalUrls.bat, image: '/assets/images/bat.png' });
+    paymentOptions.push({ title: i18next.t(LocaleKey.openCollective), event: AnalyticsEvent.externalLinkOpenCollective, url: ExternalUrls.openCollective, image: '/assets/images/openCollective.png' });
 
     const title = i18next.t(LocaleKey.donation);
     setDocumentTitle(title);

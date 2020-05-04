@@ -215,4 +215,13 @@ export enum LocaleKey {
   inventoryRestored = 'inventoryRestored',
   backupInventory = 'backupInventory',
   restoreInventory = 'restoreInventory',
+  favourites = 'favourites',
+  openCollective = 'openCollective',
+  repairedUsing = 'repairedUsing',
+  timers = 'timers',
+  newTimer = 'newTimer',
+  renameTimer = 'renameTimer',
+  startDate = 'startDate',
+  endDate = 'endDate',
+  errorStartDateShouldNotBeAfterEndDate = 'errorStartDateShouldNotBeAfterEndDate',
 }
