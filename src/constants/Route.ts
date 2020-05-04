@@ -12,4 +12,5 @@ export const genericAllRequirements = '/genericAllRequirements';
 export const guides = '/guides';
 export const helloGames = '/helloGames';
 export const communityMission = '/helloGames/communityMission';
+export const favourites = '/favourites';
 export const social = '/social';

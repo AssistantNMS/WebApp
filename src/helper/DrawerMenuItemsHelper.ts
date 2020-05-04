@@ -36,6 +36,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   });
   menuItems.push(menuItemSeperator);
   menuItems.push({
+    name: i18next.t(LocaleKey.favourites).toString(),
+    link: routes.favourites,
+    icon: 'star',
+    iconType: DrawerIconType.Material,
+    isActive: false
+  });
+  menuItems.push({
     name: i18next.t(LocaleKey.catalogue).toString(),
     link: routes.catalogue,
     icon: '/assets/images/drawer/catalogue.png',

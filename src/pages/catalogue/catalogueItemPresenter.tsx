@@ -10,8 +10,11 @@ import { mapProcessorToRequiredItems } from '../../mapper/RequiredItemMapper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapStateToProps, mapDispatchToProps } from './catalogueItem.Redux';
 
+import { IdPrefix } from '../../constants/IdPrefix';
+
 import { Processor } from '../../contracts/Processor';
 import { GameItemModel } from '../../contracts/GameItemModel';
+import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
 
@@ -24,17 +27,20 @@ import { GenericItemListTile } from '../../components/tilePresenter/genericItemL
 import { RefinerItemListTile } from '../../components/tilePresenter/processorItemListTile/refinerItemListTile';
 import { NutrientProcessorListTile } from '../../components/tilePresenter/processorItemListTile/nutrientProcessorListTile';
 import { CartFloatingActionButton } from '../../components/floatingActionButton/cartFloatingActionButton';
+import { FavouriteFloatingActionButton } from '../../components/floatingActionButton/favouriteFloatingActionButton';
 
 import { GameItemService } from '../../services/GameItemService';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
-import { IdPrefix } from '../../constants/IdPrefix';
 
 interface IProps {
     location: any;
     match: any;
     history: any;
     selectedLanguage?: string;
+    favourites: Array<FavouriteItem>;
     addItemToCart?: (item: GameItemModel, quantity: number) => void;
+    addItemToFavourites?: (item: GameItemModel) => void;
+    removeItemToFavourites?: (itemId: string) => void;
 }
 interface IState {
     item: GameItemModel;
@@ -359,12 +365,24 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
         this.props.addItemToCart(this.state.item, quantity);
     }
 
+    addItemToFavourites = () => {
+        if (this.props.addItemToFavourites == null) return;
+        this.props.addItemToFavourites(this.state.item);
+    }
+
+    removeItemToFavourites = () => {
+        if (this.props.removeItemToFavourites == null) return;
+        this.props.removeItemToFavourites(this.state.item.Id);
+    }
+
     getFloatingActionButtons = () => {
         const components: any[] = [];
         if (this.state.item == null || this.state.item.Id == null) return null;
         if (!this.state.item.Id.includes(IdPrefix.Cooking)) {
             components.push(CartFloatingActionButton(this.addThisItemToCart));
         }
+        const isFavourited = this.props.favourites.find(f => f.Id === this.state.item.Id) != null;
+        components.push(FavouriteFloatingActionButton(isFavourited, this.addItemToFavourites, this.removeItemToFavourites));
         return components;
     }
 
@@ -398,6 +416,7 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                 </div>
 
                 {this.getFloatingActionButtons()}
+                <div className="col-12" style={{ marginBottom: '2em', marginTop: '2em' }}></div>
             </>
         );
     }
