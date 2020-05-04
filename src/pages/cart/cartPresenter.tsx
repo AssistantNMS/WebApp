@@ -11,7 +11,7 @@ import { CartItem } from '../../contracts/cart/cartItem';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { CartListTile } from '../../components/tilePresenter/cartListTile/cartListTile';
 import { CardButton } from '../../components/core/button/cardButton';
-import { genericAllRequirements } from '../../constants/Route';
+import * as Route from '../../constants/Route';
 
 import { requiredItemFromCart } from '../../mapper/CartMapper';
 
@@ -54,7 +54,7 @@ export const CartPresenterUnconnected = withRouter((props: IProps) => {
                 className="button-active-bg"
                 url="/"
                 onClick={() => props.history.push({
-                    pathname: genericAllRequirements,
+                    pathname: Route.genericAllRequirements,
                     state: {
                         typeName: i18next.t(LocaleKey.cart),
                         requiredItems: props.cartItems.map(ci => requiredItemFromCart(ci))

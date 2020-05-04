@@ -60,7 +60,7 @@ export class GenericPageAllRequiredPresenterUnconnected extends React.Component<
                         <div className="row">
                             <div className="col-12">
                                 {
-                                    this.state.requiredItems.length > 1
+                                    this.state.requiredItems.length > 0
                                         ? <GenericListPresenter list={this.state.requiredItems} presenter={RequiredItemDetailsListTile} />
                                         : <h2>{i18next.t(LocaleKey.noCartItems)}</h2>
                                 }
