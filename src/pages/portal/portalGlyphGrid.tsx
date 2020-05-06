@@ -24,7 +24,11 @@ export const PortalGlyphGridDisplay: React.FC<IPortalGlyphGridDisplayProps> = (p
 
     return (
         <div className="row full justify pt1">
-            {portalImages.map((item: string, index: number) => getPortalImageComponent(item, index))}
+            {portalImages.map((image: string, index: number) => (
+                <div key={image + index} draggable={false} className="col-2 col-xl-1 col-lg-1 col-md-2 col-sm-2 col-xs-2">
+                    <img src={image} style={{ maxWidth: '100%' }} alt={image} />
+                </div>
+            ))}
         </div>
     );
 }
@@ -46,7 +50,11 @@ export const PortalGlyphKeypadGrid: React.FC<IPortalGlyphGridProps> = (props: IP
 
     return (
         <div className="row full justify pt1">
-            {portalImages.map((item: string, index: number) => getPortalImageComponent(item, index, safeClick(index)))}
+            {portalImages.map((image: string, index: number) => (
+                <div key={image + index} draggable={false} onClick={safeClick(index)} className="col-3 col-xl-1 col-lg-2 col-md-3 col-sm-3 col-xs-3">
+                    <img src={image} style={{ maxWidth: '100%' }} alt={image} />
+                </div>
+            ))}
         </div>
     );
 }
@@ -59,8 +67,4 @@ const getPortalImageType = (isDark: boolean, useAltGlyph: boolean) => {
 };
 const getPortalImage = (type: string, portalImageCode: number) => `assets/images/portals/${type}/${portalImageCode.toString(16)}.png`;
 const getPortalEmptyImage = (type: string) => `assets/images/portals/${type}/dot.png`;
-const getPortalImageComponent = (image: string, index: number, onClick?: any) => (
-    <div key={image + index} onClick={onClick} className="col-4 col-xl-1 col-lg-2 col-md-2 col-sm-3 col-xs-4">
-        <img src={image} style={{ maxWidth: '100%' }} alt={image} />
-    </div>
-);
+

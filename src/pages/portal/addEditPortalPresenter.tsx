@@ -2,14 +2,16 @@ import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import { NavBar } from '../../components/core/navbar/navbar';
+import { ApplyFloatingActionButton } from '../../components/floatingActionButton/applyFloatingActionButton';
+import * as Route from '../../constants/Route';
 import { PortalRecord } from '../../contracts/portal/portalRecord';
 import { setDocumentTitle } from '../../helper/DocumentHelper';
 import { anyObject } from '../../helper/TypescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps } from './addEditPortal.Redux';
 import { PortalGlyphGridDisplay, PortalGlyphKeypadGrid } from './portalGlyphGrid';
-import Swal from 'sweetalert2';
 
 interface IProps {
     location: any;
@@ -108,17 +110,17 @@ export class AddEditPortalPresenterUnconnected extends React.Component<IProps, I
                         </div>
                     </div>
                     <div className="row full">
-                        <div className="col-4">
+                        <div className="col-6 col-md-4">
                             <button type="button" onClick={this.backspaceCode} className="btn btn-warning">
                                 <i className="material-icons">backspace</i>
                             </button>
                         </div>
-                        <div className="col-4">
+                        <div className="col-6 col-md-4">
                             <button type="button" onClick={this.deleteAllCode} className="btn btn-danger">
                                 <i className="material-icons">clear</i>
                             </button>
                         </div>
-                        <div className="col-4 togglebutton">
+                        <div className="col-12 col-md-4 togglebutton">
                             <label style={{ color: 'white' }}>
                                 {i18next.t(LocaleKey.useAltGlyphs)}&nbsp;
                                 <input type="checkbox" checked={this.props.useAltGlyphs} onChange={(e: any) => {
@@ -138,6 +140,19 @@ export class AddEditPortalPresenterUnconnected extends React.Component<IProps, I
                         </div>
                     </div>
                 </div>
+                {
+                    (this.state.item != null && this.state.item.Codes != null && this.state.item.Codes.length === 12)
+                        ? ApplyFloatingActionButton('portal-add-edit', () => {
+                            if (this.props.addPortal) {
+                                this.props.addPortal(this.state.item);
+                                this.props.history.push({
+                                    pathname: Route.portal,
+                                });
+                            }
+                        })
+                        : null
+                }
+                <div className="col-12" style={{ marginBottom: '2em', marginTop: '2em' }}></div>
             </>
         );
     }

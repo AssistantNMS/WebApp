@@ -1,14 +1,14 @@
+import { PortalRecord } from '../../../contracts/portal/portalRecord';
+import { StatePortalReducer } from '../../state/StatePortalReducer';
 import * as type from './type';
 
-import { StatePortalReducer } from '../../state/StatePortalReducer';
-import { PortalRecord } from '../../../contracts/portal/portalRecord';
 
 export const initialPortalState: StatePortalReducer = {
     portals: [],
     availableTags: [],
 }
 
-export const settingReducer = (state = initialPortalState, action: any) => {
+export const portalReducer = (state = initialPortalState, action: any) => {
     switch (action.type) {
         case type.ADDPORTAL:
             return Object.assign({}, state, {

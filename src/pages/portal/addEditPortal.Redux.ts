@@ -7,7 +7,6 @@ import { getIsDark, getUseAltGlyphs } from '../../redux/modules/setting/selector
 import { toggleAltGlyphs } from '../../redux/modules/setting/action';
 
 export const mapStateToProps = (state: State) => {
-    console.log(getUseAltGlyphs(state));
     return {
         availableTags: getAvailableTags(state),
         useAltGlyphs: getUseAltGlyphs(state),

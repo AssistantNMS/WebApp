@@ -3,12 +3,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { NavBar } from '../../components/core/navbar/navbar';
+import { AddFloatingActionButton } from '../../components/floatingActionButton/addFloatingActionButton';
+import * as Route from '../../constants/Route';
 import { PortalRecord } from '../../contracts/portal/portalRecord';
 import { setDocumentTitle } from '../../helper/DocumentHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps } from './portal.Redux';
-import { AddFloatingActionButton } from '../../components/floatingActionButton/addFloatingActionButton';
-import * as Route from '../../constants/Route';
 
 interface IProps {
     location: any;
@@ -26,14 +26,21 @@ export const PortalListPresenterUnconnected = withRouter((props: IProps) => {
             <NavBar title={title} />
             <div className="content">
                 <div className="row full pt1">
-                    <div className="col-12">
-                    </div>
+                    {
+                        (props.portals != null && props.portals.length > 0)
+                            ? props.portals.map((item: PortalRecord, index: number) => {
+                                return (<div key={`portal-${item.Uuid}-${index}`} className="col-12">
+                                    <h1>{item.Name}</h1>
+                                </div>);
+                            })
+                            : null
+                    }
                 </div>
             </div>
             {AddFloatingActionButton('portal-add', () => {
                 props.history.push({
                     pathname: Route.addEditPortal,
-                })
+                });
             })}
             <div className="col-12" style={{ marginBottom: '2em', marginTop: '2em' }}></div>
         </>
