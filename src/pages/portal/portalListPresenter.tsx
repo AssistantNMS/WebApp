@@ -29,9 +29,11 @@ export const PortalListPresenterUnconnected = withRouter((props: IProps) => {
                     {
                         (props.portals != null && props.portals.length > 0)
                             ? props.portals.map((item: PortalRecord, index: number) => {
-                                return (<div key={`portal-${item.Uuid}-${index}`} className="col-12">
-                                    <h1>{item.Name}</h1>
-                                </div>);
+                                return (
+                                    <div key={`portal-${item.Uuid}-${index}`} className="col-12">
+                                        <h1>{item.Name}</h1>
+                                    </div>
+                                );
                             })
                             : null
                     }
