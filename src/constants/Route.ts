@@ -14,3 +14,5 @@ export const helloGames = '/helloGames';
 export const communityMission = '/helloGames/communityMission';
 export const favourites = '/favourites';
 export const social = '/social';
+export const portal = '/portals';
+export const addEditPortal = '/edit-portal';

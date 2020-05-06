@@ -65,6 +65,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     isActive: false
   });
   menuItems.push({
+    name: i18next.t(LocaleKey.portalLibrary).toString(),
+    link: routes.portal,
+    icon: '/assets/images/drawer/portal.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
+  menuItems.push({
     name: i18next.t(LocaleKey.communityMission).toString(),
     link: routes.communityMission,
     icon: '/assets/images/communityMission.png',

@@ -5,4 +5,5 @@ export class StateSettingReducer {
     public selectedLanguage!: string;
     public menuIsVisible!: boolean;
     public chosenPlatform!: PlatformType;
+    public useAltGlyphs!: boolean;
 }

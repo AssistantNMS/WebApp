@@ -24,6 +24,8 @@ import { SettingPresenter } from './pages/setting/settingPresenter';
 import { DonationPresenter } from './pages/donation/donationPresenter';
 import { CartPresenter } from './pages/cart/cartPresenter';
 import { GenericPageAllRequiredPresenter } from './pages/generic/genericPageAllRequired';
+import { PortalListPresenter } from './pages/portal/portalListPresenter';
+import { AddEditPortalPresenter } from './pages/portal/addEditPortalPresenter';
 import { GuidePagePresenter } from './pages/guide/guidePage';
 import { GuideDetailPagePresenter } from './pages/guide/guideDetailPage';
 import { SocialPresenter } from './pages/social/socialPresenter';
@@ -74,6 +76,8 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.genericAllRequirements} component={GenericPageAllRequiredPresenter} />
             <Route path={`${route.guides}/:guid`} component={GuideDetailPagePresenter} />
             <Route path={route.guides} component={GuidePagePresenter} />
+            <Route path={route.portal} component={PortalListPresenter} />
+            <Route path={route.addEditPortal} component={AddEditPortalPresenter} />
             {/* <Route path={route.helloGames} component={HelloGamesPresenter} /> */}
             <Route path={route.communityMission} component={CommunityMissionPresenter} />
             <Route path={route.favourites} component={FavouritePresenter} />

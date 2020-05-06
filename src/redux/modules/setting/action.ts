@@ -1,29 +1,35 @@
-import { DARKMODE, LANGUAGE, TOGGLEMENU, SETPLATFORM } from "./type";
+import * as type from "./type";
 import { PlatformType } from "../../../contracts/enum/PlatformType";
 
 export const setDarkMode = (isDark: boolean) => {
     return {
         isDark,
-        type: DARKMODE,
+        type: type.DARKMODE,
     }
 }
 
 export const setLanguage = (langCode: string) => {
     return {
         langCode,
-        type: LANGUAGE,
+        type: type.LANGUAGE,
     }
 }
 
 export const toggleMenu = () => {
     return {
-        type: TOGGLEMENU,
+        type: type.TOGGLEMENU,
     }
 }
 
 export const setPlatform = (platform: PlatformType) => {
     return {
         platform,
-        type: SETPLATFORM,
+        type: type.SETPLATFORM,
+    }
+}
+
+export const toggleAltGlyphs = () => {
+    return {
+        type: type.TOGGLEALTGLYPHS,
     }
 }

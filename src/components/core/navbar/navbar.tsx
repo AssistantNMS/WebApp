@@ -13,6 +13,7 @@ interface IProps {
     setDarkMode?: (isDark: boolean) => void;
     setLanguage?: (langCode: string) => void;
     toggleMenu?: () => void;
+    additionalItems?: Array<any>;
 }
 
 interface IState {
@@ -82,6 +83,11 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
                                 : null
                         }
                         <ul className="navbar-nav">
+                            {
+                                (this.props.additionalItems != null && this.props.additionalItems.length > 0)
+                                    ? this.props.additionalItems
+                                    : null
+                            }
                             <li className="nav-item dropdown">
                                 <span className="nav-link pointer" onClick={this.showLangDropdown}>
                                     <i className="material-icons">language</i>

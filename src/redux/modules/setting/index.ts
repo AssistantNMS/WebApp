@@ -10,6 +10,7 @@ export const initialSettingState: StateSettingReducer = {
     selectedLanguage: 'en',
     menuIsVisible: false,
     chosenPlatform: PlatformType.PC,
+    useAltGlyphs: true,
 }
 
 export const settingReducer = (state = initialSettingState, action: any) => {
@@ -35,6 +36,10 @@ export const settingReducer = (state = initialSettingState, action: any) => {
         case type.SETPLATFORM:
             return Object.assign({}, state, {
                 chosenPlatform: action.platform
+            });
+        case type.TOGGLEALTGLYPHS:
+            return Object.assign({}, state, {
+                useAltGlyphs: !state.useAltGlyphs
             });
         default:
             return state
