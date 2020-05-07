@@ -3,6 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { NavBar } from '../../components/core/navbar/navbar';
+import { PortalCardListTile } from '../../components/tilePresenter/portalItemListTile/portalItemListTile';
 import { AddFloatingActionButton } from '../../components/floatingActionButton/addFloatingActionButton';
 import * as Route from '../../constants/Route';
 import { PortalRecord } from '../../contracts/portal/portalRecord';
@@ -21,22 +22,27 @@ export const PortalListPresenterUnconnected = withRouter((props: IProps) => {
     const title = i18next.t(LocaleKey.portalLibrary);
     setDocumentTitle(title);
 
+    const displayPortals = (portals: Array<PortalRecord>) => {
+        if (props.portals == null || props.portals.length === 0) return (
+            <div className="col-12">
+                <h2>{i18next.t(LocaleKey.noItems)}</h2>
+            </div>
+        );
+        return props.portals.map((item: PortalRecord, index: number) => {
+            return (
+                <div key={`portal-${item.Uuid}-${index}`} className="col-12 col-xl-4 col-lg-6">
+                    <PortalCardListTile {...item} />
+                </div>
+            );
+        });
+    }
+
     return (
         <>
             <NavBar title={title} />
             <div className="content">
                 <div className="row full pt1">
-                    {
-                        (props.portals != null && props.portals.length > 0)
-                            ? props.portals.map((item: PortalRecord, index: number) => {
-                                return (
-                                    <div key={`portal-${item.Uuid}-${index}`} className="col-12">
-                                        <h1>{item.Name}</h1>
-                                    </div>
-                                );
-                            })
-                            : null
-                    }
+                    {displayPortals(props.portals)}
                 </div>
             </div>
             {AddFloatingActionButton('portal-add', () => {

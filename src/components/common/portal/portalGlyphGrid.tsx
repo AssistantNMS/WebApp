@@ -1,4 +1,5 @@
 import React from 'react';
+import { columnMultiplierHelper } from '../../../helper/columnHelper';
 
 interface IProps {
     isDark: boolean;
@@ -7,6 +8,7 @@ interface IProps {
 
 interface IPortalGlyphGridDisplayProps extends IProps {
     codes: Array<number>;
+    columnMultiplier?: number
 }
 
 export const PortalGlyphGridDisplay: React.FC<IPortalGlyphGridDisplayProps> = (props: IPortalGlyphGridDisplayProps) => {
@@ -22,10 +24,20 @@ export const PortalGlyphGridDisplay: React.FC<IPortalGlyphGridDisplayProps> = (p
         }
     }
 
+    const columnDefs = {
+        multiplier: props.columnMultiplier ?? 1,
+        base: 2,
+        xl: 1,
+        lg: 1,
+        md: 2,
+        sm: 2,
+        xs: 2,
+    };
+
     return (
-        <div className="row full justify pt1">
+        <div className="row full justify p1">
             {portalImages.map((image: string, index: number) => (
-                <div key={image + index} draggable={false} className="col-2 col-xl-1 col-lg-1 col-md-2 col-sm-2 col-xs-2">
+                <div key={image + index} draggable={false} className={columnMultiplierHelper(columnDefs)} >
                     <img src={image} style={{ maxWidth: '100%' }} alt={image} />
                 </div>
             ))}
@@ -49,7 +61,7 @@ export const PortalGlyphKeypadGrid: React.FC<IPortalGlyphGridProps> = (props: IP
     }
 
     return (
-        <div className="row full justify pt1">
+        <div className="row full justify p1">
             {portalImages.map((image: string, index: number) => (
                 <div key={image + index} draggable={false} onClick={safeClick(index)} className="col-3 col-xl-1 col-lg-2 col-md-3 col-sm-3 col-xs-3">
                     <img src={image} style={{ maxWidth: '100%' }} alt={image} />

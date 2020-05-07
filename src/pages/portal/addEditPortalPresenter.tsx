@@ -11,7 +11,7 @@ import { setDocumentTitle } from '../../helper/DocumentHelper';
 import { anyObject } from '../../helper/TypescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps } from './addEditPortal.Redux';
-import { PortalGlyphGridDisplay, PortalGlyphKeypadGrid } from './portalGlyphGrid';
+import { PortalGlyphGridDisplay, PortalGlyphKeypadGrid } from '../../components/common/portal/portalGlyphGrid';
 
 interface IProps {
     location: any;
