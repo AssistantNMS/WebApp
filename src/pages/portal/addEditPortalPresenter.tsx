@@ -36,7 +36,7 @@ export class AddEditPortalPresenterUnconnected extends React.Component<IProps, I
         super(props);
 
         const portalItem: PortalRecord = this.props.location?.state || anyObject;
-        const isEdit = portalItem != null;
+        const isEdit = portalItem.Uuid != null;
         if (isEdit) {
             if (portalItem.Name == null) {
                 portalItem.Name = i18next.t(LocaleKey.newPortalEntry);
