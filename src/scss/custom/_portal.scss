@@ -1,6 +1,22 @@
 .portal.item {
     padding-bottom: 1em;
 
+    &.card {
+        margin-top: 0;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .glyphgrid {
+        >div {
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
     .text-container.title p {
         font-size: 1.5em;
         font-weight: 500;
@@ -11,8 +27,14 @@
 
     .action-container {
         position: absolute;
-        bottom: 1em;
-        right: 0;
+        bottom: .5em;
+        right: .5em;
+
+        @media (max-width: 400px) {
+            position: relative;
+            bottom: unset;
+            right: unset;
+        }
 
         ul {
             padding: 0;
@@ -25,6 +47,16 @@
                 margin-right: .5em;
                 display: block;
                 color: white;
+            }
+
+            @media (max-width: 400px) {
+                display: block;
+                flex-direction: unset;
+                margin-top: 1em;
+
+                >* {
+                    display: inline;
+                }
             }
         }
     }

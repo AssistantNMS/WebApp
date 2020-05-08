@@ -33,7 +33,7 @@ export const PortalListPresenterUnconnected = withRouter((props: IProps) => {
         );
         return portals.map((item: PortalRecord, index: number) => {
             return (
-                <div key={`portal-${item.Uuid}-${index}`} className="col-12 col-xl-4 col-lg-6">
+                <div key={`portal-${item.Uuid}-${index}`} className="col-12 col-xl-4 col-lg-4 col-md-6">
                     <PortalCardListTile {...item}
                         isDark={props.isDark}
                         useAltGlyphs={props.useAltGlyphs}
