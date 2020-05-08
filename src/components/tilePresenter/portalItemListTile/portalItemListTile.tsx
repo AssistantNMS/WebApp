@@ -3,10 +3,19 @@ import * as React from 'react';
 
 import { PortalRecord } from '../../../contracts/portal/portalRecord';
 import { PortalGlyphGridDisplay } from '../../common/portal/portalGlyphGrid';
+import { intArrayToHex } from '../../../helper/hexHelper';
 
 import { TextContainer } from '../../common/tile/textContainer';
+import { ActionContainer } from '../../common/tile/actionContainer';
 
-export const PortalCardListTile = (props: PortalRecord) => {
+interface IProps extends PortalRecord {
+    isDark: boolean;
+    useAltGlyphs: boolean;
+    onEdit?: () => void;
+    onDelete?: () => void;
+}
+
+export const PortalCardListTile = (props: IProps) => {
     const displayTags = () => {
         if (!props.Tags || props.Tags.length < 1) return null;
         return (
@@ -20,17 +29,32 @@ export const PortalCardListTile = (props: PortalRecord) => {
         );
     };
 
-    /* <Link to={`${guides}/${props.Uuid}`} className="portal item card">
-    </Link> */
+    let actions = [];
+    if (props.onEdit != null) {
+        actions.push(<i key="edit" onClick={props.onEdit} className="material-icons">edit</i>)
+    }
+    if (props.onDelete != null) {
+        actions.push(<i key="delete" onClick={props.onDelete} className="material-icons">delete</i>);
+    }
+
+    const hexString = intArrayToHex(props.Codes).toUpperCase();
+    const nmsPortalsUrl = `http://nmsportals.github.io/#${hexString}`;
+
     return (
         <div className="portal item card">
             <PortalGlyphGridDisplay
                 codes={props.Codes || []}
                 columnMultiplier={2}
-                isDark={true}
-                useAltGlyph={false}
+                isDark={props.isDark}
+                useAltGlyphs={props.useAltGlyphs}
             />
             <TextContainer text={props.Name} additionalCss="title" />
+            <div className="row justify" style={{ paddingLeft: '1em', paddingRight: '1em' }}>
+                <a className="default chip" href={nmsPortalsUrl} target="_blank" rel="noopener noreferrer">
+                    nmsportals.github.io&nbsp;<i className="material-icons">open_in_new</i>
+                </a>
+            </div>
+            <ActionContainer actions={actions} />
             {displayTags()}
         </div>
     );

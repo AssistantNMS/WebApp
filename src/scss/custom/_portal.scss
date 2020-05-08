@@ -1,0 +1,35 @@
+.portal.item {
+    padding-bottom: 1em;
+
+    .text-container.title p {
+        font-size: 1.5em;
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .action-container {
+        position: absolute;
+        bottom: 1em;
+        right: 0;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+
+            >* {
+                margin-top: .25em;
+                margin-right: .5em;
+                display: block;
+                color: white;
+            }
+        }
+    }
+
+    .chip {
+        padding: .5em 1em;
+    }
+}

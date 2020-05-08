@@ -44,6 +44,18 @@
             }
         }
 
+        .chip {
+            &.default {
+                background-color: $brand-primary-background;
+                color: black;
+            }
+
+            &.secondary {
+                background-color: $brand-secondary;
+                color: black;
+            }
+        }
+
         .table>thead>tr>th,
         .table>tbody>tr>td {
             border-color: black;

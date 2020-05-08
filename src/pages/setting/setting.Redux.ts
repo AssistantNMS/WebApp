@@ -1,10 +1,11 @@
 import { State } from '../../redux/state';
-import { setDarkMode, setLanguage } from '../../redux/modules/setting/action';
-import { getIsDark, getCurrentLanguage } from '../../redux/modules/setting/selector';
+import { setDarkMode, setLanguage, toggleAltGlyphs } from '../../redux/modules/setting/action';
+import { getIsDark, getUseAltGlyphs, getCurrentLanguage } from '../../redux/modules/setting/selector';
 
 export const mapStateToProps = (state: State) => {
     return {
         isDark: getIsDark(state),
+        useAltGlyphs: getUseAltGlyphs(state),
         selectedLanguage: getCurrentLanguage(state),
     };
 };
@@ -17,6 +18,9 @@ export const mapDispatchToProps = (dispatch: any) => {
     };
     newProps.setLanguage = (selectedLanguage: string) => {
         dispatch(setLanguage(selectedLanguage));
+    };
+    newProps.toggleAltGlyphs = () => {
+        dispatch(toggleAltGlyphs());
     };
     return { ...newProps };
 }

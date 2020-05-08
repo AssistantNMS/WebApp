@@ -69,7 +69,12 @@ $list-item-text-color-dark: #f8f9fa;
 
         .chip {
             &.default {
-                background-color: $gray-600;
+                background-color: $brand-primary-background-dark;
+                color: white;
+            }
+
+            &.secondary {
+                background-color: $brand-secondary-dark;
                 color: white;
             }
         }

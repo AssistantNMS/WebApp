@@ -8,6 +8,7 @@ import { ApplyFloatingActionButton } from '../../components/floatingActionButton
 import * as Route from '../../constants/Route';
 import { PortalRecord } from '../../contracts/portal/portalRecord';
 import { setDocumentTitle } from '../../helper/DocumentHelper';
+import { newGuid } from '../../helper/guidHelper';
 import { anyObject } from '../../helper/TypescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps } from './addEditPortal.Redux';
@@ -21,6 +22,7 @@ interface IProps {
     useAltGlyphs: boolean;
     availableTags: Array<string>;
     addPortal?: (portalRecord: PortalRecord) => void;
+    editPortal?: (portalRecord: PortalRecord) => void;
     toggleAltGlyphs?: () => void;
 }
 
@@ -33,10 +35,13 @@ export class AddEditPortalPresenterUnconnected extends React.Component<IProps, I
     constructor(props: IProps) {
         super(props);
 
-        const portalItem: PortalRecord = this.props.location?.state?.item || anyObject;
+        const portalItem: PortalRecord = this.props.location?.state || anyObject;
         const isEdit = portalItem != null;
-        if (isEdit && portalItem.Name == null) {
-            portalItem.Name = i18next.t(LocaleKey.newPortalEntry);
+        if (isEdit) {
+            if (portalItem.Name == null) {
+                portalItem.Name = i18next.t(LocaleKey.newPortalEntry);
+            }
+            portalItem.Uuid = newGuid();
         }
 
         setDocumentTitle(portalItem.Name);
@@ -105,7 +110,7 @@ export class AddEditPortalPresenterUnconnected extends React.Component<IProps, I
                             <PortalGlyphGridDisplay
                                 codes={this.state.item.Codes || []}
                                 isDark={this.props.isDark}
-                                useAltGlyph={this.props.useAltGlyphs}
+                                useAltGlyphs={this.props.useAltGlyphs}
                             />
                         </div>
                     </div>
@@ -134,7 +139,7 @@ export class AddEditPortalPresenterUnconnected extends React.Component<IProps, I
                         <div className="col-12">
                             <PortalGlyphKeypadGrid
                                 isDark={this.props.isDark}
-                                useAltGlyph={this.props.useAltGlyphs}
+                                useAltGlyphs={this.props.useAltGlyphs}
                                 onPortalClick={this.addCode}
                             />
                         </div>
@@ -143,8 +148,9 @@ export class AddEditPortalPresenterUnconnected extends React.Component<IProps, I
                 {
                     (this.state.item != null && this.state.item.Codes != null && this.state.item.Codes.length === 12)
                         ? ApplyFloatingActionButton('portal-add-edit', () => {
-                            if (this.props.addPortal) {
-                                this.props.addPortal(this.state.item);
+                            let changeFunc = this.state.isEdit ? this.props.editPortal : this.props.addPortal;
+                            if (changeFunc != null) {
+                                changeFunc(this.state.item);
                                 this.props.history.push({
                                     pathname: Route.portal,
                                 });

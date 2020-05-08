@@ -16,6 +16,9 @@ interface IProps {
     match: any;
     history: any;
     portals: Array<PortalRecord>
+    isDark: boolean;
+    useAltGlyphs: boolean;
+    removePortal: (portalId: string) => void;
 }
 
 export const PortalListPresenterUnconnected = withRouter((props: IProps) => {
@@ -23,15 +26,23 @@ export const PortalListPresenterUnconnected = withRouter((props: IProps) => {
     setDocumentTitle(title);
 
     const displayPortals = (portals: Array<PortalRecord>) => {
-        if (props.portals == null || props.portals.length === 0) return (
+        if (portals == null || portals.length === 0) return (
             <div className="col-12">
                 <h2>{i18next.t(LocaleKey.noItems)}</h2>
             </div>
         );
-        return props.portals.map((item: PortalRecord, index: number) => {
+        return portals.map((item: PortalRecord, index: number) => {
             return (
                 <div key={`portal-${item.Uuid}-${index}`} className="col-12 col-xl-4 col-lg-6">
-                    <PortalCardListTile {...item} />
+                    <PortalCardListTile {...item}
+                        isDark={props.isDark}
+                        useAltGlyphs={props.useAltGlyphs}
+                        onDelete={() => props.removePortal(item.Uuid)}
+                        onEdit={() => props.history.push({
+                            pathname: Route.addEditPortal,
+                            state: item
+                        })}
+                    />
                 </div>
             );
         });

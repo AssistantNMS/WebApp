@@ -3,7 +3,7 @@ import { columnMultiplierHelper } from '../../../helper/columnHelper';
 
 interface IProps {
     isDark: boolean;
-    useAltGlyph: boolean;
+    useAltGlyphs: boolean;
 }
 
 interface IPortalGlyphGridDisplayProps extends IProps {
@@ -12,7 +12,7 @@ interface IPortalGlyphGridDisplayProps extends IProps {
 }
 
 export const PortalGlyphGridDisplay: React.FC<IPortalGlyphGridDisplayProps> = (props: IPortalGlyphGridDisplayProps) => {
-    const type = getPortalImageType(props.isDark, props.useAltGlyph);
+    const type = getPortalImageType(props.isDark, props.useAltGlyphs);
     const portalImages: Array<string> = [];
     for (let displayIndex = 0; displayIndex < 12; displayIndex++) {
         if (props.codes.length <= displayIndex) {
@@ -50,7 +50,7 @@ interface IPortalGlyphGridProps extends IProps {
 }
 
 export const PortalGlyphKeypadGrid: React.FC<IPortalGlyphGridProps> = (props: IPortalGlyphGridProps) => {
-    const type = getPortalImageType(props.isDark, props.useAltGlyph);
+    const type = getPortalImageType(props.isDark, props.useAltGlyphs);
     const portalImages: Array<string> = [];
     for (let portalIndex = 0; portalIndex < 16; portalIndex++) {
         portalImages.push(getPortalImage(type, portalIndex));
