@@ -2,5 +2,6 @@ export enum CurrencyType {
   NONE = 'None',
   CREDITS = 'Credits',
   NANITES = 'Nanites',
-  QUICKSILVER = 'Quicksiler'
+  QUICKSILVER = 'Quicksiler',
+  SALVAGEDDATA = 'SalvagedData'
 }

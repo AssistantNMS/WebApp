@@ -8,6 +8,7 @@ export interface GameItemModel {
   Id: string;
   Icon: string;
   Name: string;
+  Power: number;
   Group: string;
   Colour: string;
   Craftable: boolean;

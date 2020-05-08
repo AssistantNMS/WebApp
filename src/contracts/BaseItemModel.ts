@@ -5,6 +5,7 @@ import { RequiredItem } from './RequiredItem';
 export interface BaseItemModel {
   Id: string;
   Icon: string;
+  Power: number;
   Colour: string;
   Craftable: boolean;
   MaxStackSize: number;

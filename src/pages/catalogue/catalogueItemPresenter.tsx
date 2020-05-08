@@ -191,17 +191,15 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
     }
 
     getAdditionalData = (itemDetail: GameItemModel): Array<any> => {
-        const smallChip = 'col-12 col-lg-4 col-md-6 col-sm-6 col-xs-6';
-        const largeChip = 'col-12 col-lg-4 col-md-6 col-sm-12 col-xs-12';
 
         const additionalData = [];
         if (itemDetail.BlueprintSource !== null && itemDetail.BlueprintSource !== BlueprintSource.unknown) {
             const bpSourceLangKey = blueprintToLocalKey(itemDetail.BlueprintSource);
-            additionalData.push({ text: `${i18next.t(LocaleKey.blueprintFrom).toString()}: ${i18next.t(bpSourceLangKey).toString()}`, class: largeChip });
+            additionalData.push({ text: `${i18next.t(LocaleKey.blueprintFrom).toString()}: ${i18next.t(bpSourceLangKey).toString()}` });
         }
 
         if (itemDetail.MaxStackSize !== null && itemDetail.MaxStackSize > 0.1) {
-            additionalData.push({ text: `${i18next.t(LocaleKey.maxStackSize).toString()}: ${itemDetail.MaxStackSize}`, class: smallChip });
+            additionalData.push({ text: `${i18next.t(LocaleKey.maxStackSize).toString()}: ${itemDetail.MaxStackSize}` });
         }
 
         if (itemDetail.BaseValueUnits > 1) {
@@ -209,36 +207,64 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
                 case CurrencyType.NONE:
                     break;
                 case CurrencyType.NANITES:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/nanites.png', class: smallChip });
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/nanites.png' });
                     break;
                 case CurrencyType.CREDITS:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/credits.png', class: smallChip });
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/credits.png' });
                     break;
                 case CurrencyType.QUICKSILVER:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/rawMaterials/57.png', class: smallChip });
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/rawMaterials/57.png' });
+                    break;
+                case CurrencyType.SALVAGEDDATA:
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/curiosities/16.png' });
                     break;
             }
         }
+
+        if (itemDetail.CurrencyType !== CurrencyType.NANITES &&
+            itemDetail.HideBlueprintNaniteCost === false &&
+            itemDetail.BlueprintNaniteCost != null &&
+            itemDetail.BlueprintNaniteCost > 1) {
+            const bpCostText = i18next.t(LocaleKey.blueprintCost);
+            const bpCost = itemDetail.BlueprintNaniteCost;
+            additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: '/assets/images/nanites.png' });
+        }
+
+        if (itemDetail.CookingValue != null && itemDetail.CookingValue > 0.0) {
+            const cookingVText = i18next.t(LocaleKey.cookingValue);
+            const cookingV = (itemDetail.CookingValue * 100.0);
+            additionalData.push({ text: `${cookingVText}: ${cookingV}%`, icon: 'fastfood' });
+        }
+
+        if (itemDetail.Power != null && itemDetail.Power !== 0) {
+            additionalData.push({ text: itemDetail.Power.toString(), icon: 'flash_on' });
+        }
+
         return additionalData;
     }
 
     displayAdditionalData = (additionalData: Array<any>) => {
         if (additionalData == null || additionalData.length === 0) return null;
 
+        const getImage = (item: any) => {
+            if (item.image != null && item.image.length > 0) {
+                return (<img src={item.image} alt={item.image} style={{ maxHeight: '20px' }} />);
+            }
+            if (item.icon != null && item.icon.length > 0) {
+                return (<i className="material-icons" style={{ verticalAlign: 'middle' }}>{item.icon}</i>);
+            }
+
+            return null;
+        }
+
         return (
             <div className="row justify " style={{ marginTop: '1em', paddingBottom: '.5em' }}>
                 {
                     additionalData.map((item, index) => {
                         return (
-                            <div className={item.class} key={`additional-data-${index}`}>
-                                <h4 className="default chip">
-                                    {item.text}&nbsp;
-                                            {
-                                        (item.image != null && item.image.length > 0)
-                                            ? <img src={item.image} alt={item.image} style={{ maxHeight: '20px' }} />
-                                            : null
-                                    }
-                                </h4>
+                            <div key={`additional-data-${index}`} className="secondary chip" style={{ padding: '.25em 1em', margin: '0 .25em' }}>
+                                <span>{item.text}&nbsp;</span>
+                                {getImage(item)}
                             </div>
                         );
                     })

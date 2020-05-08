@@ -13,6 +13,7 @@ export const mapGenericPageItems = (baseItems: Array<BaseItemModel>, detailItems
           Id: base.Id,
           Icon: base.Icon,
           Name: detail.Name,
+          Power: base.Power,
           Colour: base.Colour,
           Group: detail.Group,
           Craftable: base.Craftable,
