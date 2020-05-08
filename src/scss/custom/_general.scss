@@ -137,13 +137,18 @@ body {
 .progress.custom {
     border-radius: 25px;
     height: 3em;
+    text-align: center;
 
     .progress-bar {
         background-color: $brand-secondary !important;
+    }
 
-        .text {
-            font-size: 2em;
-        }
+    .text {
+        font-size: 2em;
+        line-height: 1.5em;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
