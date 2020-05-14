@@ -2,18 +2,18 @@ import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-
-import { mapStateToProps, mapDispatchToProps } from './cart.Redux';
-import { NavBar } from '../../components/core/navbar/navbar';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
-import { LocaleKey } from '../../localization/LocaleKey';
-import { CartItem } from '../../contracts/cart/cartItem';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-import { CartListTile } from '../../components/tilePresenter/cartListTile/cartListTile';
 import { CardButton } from '../../components/core/button/cardButton';
+import { HeadComponent } from '../../components/core/headComponent';
+import { NavBar } from '../../components/core/navbar/navbar';
+import { CartListTile } from '../../components/tilePresenter/cartListTile/cartListTile';
 import * as Route from '../../constants/Route';
-
+import { CartItem } from '../../contracts/cart/cartItem';
+import { LocaleKey } from '../../localization/LocaleKey';
 import { requiredItemFromCart } from '../../mapper/CartMapper';
+import { mapDispatchToProps, mapStateToProps } from './cart.Redux';
+
+
 
 interface IProps {
     location: any;
@@ -25,9 +25,6 @@ interface IProps {
 }
 
 export const CartPresenterUnconnected = withRouter((props: IProps) => {
-    const title = i18next.t(LocaleKey.cart);
-    setDocumentTitle(title);
-
     const displayCartItems = (cartItems: Array<CartItem>) => {
         if (cartItems == null || cartItems.length === 0) return (
             <h2>{i18next.t(LocaleKey.noCartItems)}</h2>
@@ -64,8 +61,10 @@ export const CartPresenterUnconnected = withRouter((props: IProps) => {
         );
     };
 
+    const title = i18next.t(LocaleKey.cart);
     return (
         <>
+            <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
                 <div className="row full pt1">

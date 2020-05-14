@@ -1,17 +1,17 @@
 import i18next from 'i18next';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-
-import { setDocumentTitle } from '../../helper/DocumentHelper';
-import { LocaleKey } from '../../localization/LocaleKey';
-
-import { NavBar } from '../../components/core/navbar/navbar';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-
-import { Guide } from '../../contracts/guide/guide';
-import { NetworkState } from '../../constants/NetworkState';
-import { GuideService } from '../../services/GuideService';
+import { HeadComponent } from '../../components/core/headComponent';
+import { NavBar } from '../../components/core/navbar/navbar';
 import { GuideCardListTile } from '../../components/tilePresenter/guideItemListTile/guideCardListTile';
+import { NetworkState } from '../../constants/NetworkState';
+import { Guide } from '../../contracts/guide/guide';
+import { LocaleKey } from '../../localization/LocaleKey';
+import { GuideService } from '../../services/GuideService';
+
+
+
 
 interface IProps {
     location: any;
@@ -30,11 +30,8 @@ export class GuidePagePresenterUnconnected extends React.Component<IProps, IStat
     constructor(props: IProps) {
         super(props);
 
-        const title = i18next.t(LocaleKey.guides);
-        setDocumentTitle(title);
-
         this.state = {
-            title,
+            title: i18next.t(LocaleKey.guides),
             guideService: new GuideService(),
             guideItems: [],
             status: NetworkState.Loading,
@@ -76,6 +73,7 @@ export class GuidePagePresenterUnconnected extends React.Component<IProps, IStat
     render() {
         return (
             <>
+                <HeadComponent title={this.state.title} />
                 <NavBar title={this.state.title} />
                 <div className="content">
                     <div className="container full pt1">

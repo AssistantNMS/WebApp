@@ -1,12 +1,12 @@
 import React from 'react';
-
+import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
+
 
 export const HomePresenter: React.FC = () => {
-    setDocumentTitle("Home");
     return (
         <>
+            <HeadComponent title={"Home"} />
             <NavBar title="Home" />
             <div className="content">
                 <div className="container full pt1">

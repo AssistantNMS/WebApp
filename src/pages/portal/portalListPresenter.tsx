@@ -2,12 +2,12 @@ import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
-import { PortalCardListTile } from '../../components/tilePresenter/portalItemListTile/portalItemListTile';
 import { AddFloatingActionButton } from '../../components/floatingActionButton/addFloatingActionButton';
+import { PortalCardListTile } from '../../components/tilePresenter/portalItemListTile/portalItemListTile';
 import * as Route from '../../constants/Route';
 import { PortalRecord } from '../../contracts/portal/portalRecord';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps } from './portal.Redux';
 
@@ -22,8 +22,6 @@ interface IProps {
 }
 
 export const PortalListPresenterUnconnected = withRouter((props: IProps) => {
-    const title = i18next.t(LocaleKey.portalLibrary);
-    setDocumentTitle(title);
 
     const displayPortals = (portals: Array<PortalRecord>) => {
         if (portals == null || portals.length === 0) return (
@@ -48,8 +46,10 @@ export const PortalListPresenterUnconnected = withRouter((props: IProps) => {
         });
     }
 
+    const title = i18next.t(LocaleKey.portalLibrary);
     return (
         <>
+            <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
                 <div className="row full pt1">

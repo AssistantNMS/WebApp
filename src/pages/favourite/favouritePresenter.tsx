@@ -2,18 +2,18 @@ import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-
-import { mapStateToProps, mapDispatchToProps } from './favourite.Redux';
-
+import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
+import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
-import { LocaleKey } from '../../localization/LocaleKey';
-
+import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { RequiredItem } from '../../contracts/RequiredItem';
+import { LocaleKey } from '../../localization/LocaleKey';
+import { mapDispatchToProps, mapStateToProps } from './favourite.Redux';
 
-import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
+
+
+
 
 interface IProps {
     location: any;
@@ -24,8 +24,6 @@ interface IProps {
 }
 
 export const FavouritePresenterUnconnected = withRouter((props: IProps) => {
-    const title = i18next.t(LocaleKey.favourites);
-    setDocumentTitle(title);
 
     const displayFavourites = (favourites: Array<FavouriteItem>) => {
         if (favourites == null || favourites.length === 0) return (
@@ -42,8 +40,10 @@ export const FavouritePresenterUnconnected = withRouter((props: IProps) => {
         return <GenericListPresenter list={favourites} presenter={connectedPresenter} identifier={(item: FavouriteItem) => item.Id} />;
     };
 
+    const title = i18next.t(LocaleKey.favourites);
     return (
         <>
+            <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
                 <div className="row full pt1">

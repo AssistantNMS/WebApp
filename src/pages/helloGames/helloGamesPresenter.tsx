@@ -1,18 +1,16 @@
 import i18next from 'i18next';
 import React from 'react';
-
-import { setDocumentTitle } from '../../helper/DocumentHelper';
-import { LocaleKey } from '../../localization/LocaleKey';
-
-import { NavBar } from '../../components/core/navbar/navbar';
-import * as routes from '../../constants/Route';
 import { Link } from 'react-router-dom';
 import { ImageContainer } from '../../components/common/tile/imageContainer';
 import { TextContainer } from '../../components/common/tile/textContainer';
+import { HeadComponent } from '../../components/core/headComponent';
+import { NavBar } from '../../components/core/navbar/navbar';
+import * as routes from '../../constants/Route';
+import { LocaleKey } from '../../localization/LocaleKey';
+
+
 
 export const HelloGamesPresenter: React.FC = () => {
-    const title = i18next.t(LocaleKey.helloGames);
-    setDocumentTitle(title);
 
     const tilePresenter = (link: string, name: LocaleKey, image: string) => {
         return (
@@ -23,8 +21,10 @@ export const HelloGamesPresenter: React.FC = () => {
         );
     }
 
+    const title = i18next.t(LocaleKey.helloGames);
     return (
         <>
+            <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
                 <div className="container full pt1">

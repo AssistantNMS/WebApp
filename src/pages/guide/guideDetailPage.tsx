@@ -1,6 +1,8 @@
 import i18next from 'i18next';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
 import { GuideMetaViewModel } from '../../contracts/generated/guideMetaViewModel';
@@ -8,12 +10,10 @@ import { Guide } from '../../contracts/guide/guide';
 import { GuideSection } from '../../contracts/guide/guideSection';
 import { GuideSectionItem } from '../../contracts/guide/guideSectionItem';
 import { GuideType } from '../../contracts/guide/guideType';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { ApiService } from '../../services/ApiService';
 import { GuideService } from '../../services/GuideService';
 import { displaySectionImageItem, displaySectionLinkItem, displaySectionMarkdownItem, displaySectionTable, displaySectionTextItem } from './guideComponents';
-import Swal from 'sweetalert2';
 
 
 
@@ -28,7 +28,6 @@ interface IProps {
 }
 
 interface IState {
-    title: string;
     apiService: ApiService;
     guideService: GuideService;
     guide?: Guide;
@@ -40,11 +39,7 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
     constructor(props: IProps) {
         super(props);
 
-        const title = i18next.t(LocaleKey.guides);
-        setDocumentTitle(title);
-
         this.state = {
-            title,
             status: NetworkState.Loading,
             apiService: new ApiService(),
             guideService: new GuideService(),
@@ -166,9 +161,15 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
     }
 
     render() {
+        const title = this.state.guide?.title ?? i18next.t(LocaleKey.guides) ?? 'Guide';
+        const description = this.state.guide?.author ?? 'Unknown' +
+            moment(this.state.guide?.date ?? Date()).format('DD MMM YYYY') ?? 'Unknown' +
+            this.state.guide?.title ?? 'Unknown' +
+            this.state.guide?.shortTitle ?? 'Unknown';
         return (
             <>
-                <NavBar title={this.state.title} />
+                <HeadComponent title={title} description={description} />
+                <NavBar title={title} />
                 <div className="content">
                     <div className="container full pt1 pb5">
                         <div className="row">

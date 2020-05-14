@@ -4,9 +4,9 @@ import { forceCheck } from 'react-lazyload';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { GameItemList } from '../../components/common/gameItemList/gameItemList';
+import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { GameItemModel } from '../../contracts/GameItemModel';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { State } from '../../redux/state';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
@@ -113,9 +113,9 @@ export class CatalogueListPresenterUnconnected extends React.Component<IProps, I
 
     render() {
         const title = i18next.t(LocaleKey.catalogue);
-        setDocumentTitle(title);
         return (
             <>
+                <HeadComponent title={title} />
                 <NavBar title={title} />
                 <div className="content">
                     <form id="searchBar" className="searchbar row" onSubmit={(e) => this.search(e, this.state.searchTerm)}>

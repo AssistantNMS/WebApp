@@ -1,10 +1,10 @@
 import i18next from 'i18next';
 import React from 'react';
 import { CardButton } from '../../components/core/button/cardButton';
+import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
 import { ExternalUrls } from '../../constants/ExternalUrls';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 
@@ -16,9 +16,10 @@ export const AboutPresenter: React.FC = () => {
         { title: i18next.t(LocaleKey.github), event: AnalyticsEvent.externalLinkGitHubGeneral, url: ExternalUrls.githubGeneralRepo }
     ];
     const title = i18next.t(LocaleKey.about);
-    setDocumentTitle(title);
+
     return (
         <>
+            <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
                 <div className="container full pt1">
