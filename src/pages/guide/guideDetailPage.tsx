@@ -1,20 +1,23 @@
 import i18next from 'i18next';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-
-import { setDocumentTitle } from '../../helper/DocumentHelper';
-import { LocaleKey } from '../../localization/LocaleKey';
-
 import { NavBar } from '../../components/core/navbar/navbar';
-
-import { Guide } from '../../contracts/guide/guide';
 import { NetworkState } from '../../constants/NetworkState';
-import { GuideService } from '../../services/GuideService';
+import { GuideMetaViewModel } from '../../contracts/generated/guideMetaViewModel';
+import { Guide } from '../../contracts/guide/guide';
 import { GuideSection } from '../../contracts/guide/guideSection';
 import { GuideSectionItem } from '../../contracts/guide/guideSectionItem';
 import { GuideType } from '../../contracts/guide/guideType';
+import { setDocumentTitle } from '../../helper/DocumentHelper';
+import { LocaleKey } from '../../localization/LocaleKey';
+import { ApiService } from '../../services/ApiService';
+import { GuideService } from '../../services/GuideService';
+import { displaySectionImageItem, displaySectionLinkItem, displaySectionMarkdownItem, displaySectionTable, displaySectionTextItem } from './guideComponents';
+import Swal from 'sweetalert2';
 
-import { displaySectionTextItem, displaySectionLinkItem, displaySectionImageItem, displaySectionMarkdownItem, displaySectionTable } from './guideComponents';
+
+
+
 
 var moment = require('moment');
 
@@ -26,8 +29,10 @@ interface IProps {
 
 interface IState {
     title: string;
+    apiService: ApiService;
     guideService: GuideService;
     guide?: Guide;
+    guideMeta?: GuideMetaViewModel;
     status: NetworkState;
 }
 
@@ -41,12 +46,15 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
         this.state = {
             title,
             status: NetworkState.Loading,
+            apiService: new ApiService(),
             guideService: new GuideService(),
         }
     }
 
     componentDidMount() {
-        this.fetchData(this.props.match?.params?.guid);
+        const guid = this.props.match?.params?.guid;
+        this.fetchData(guid);
+        this.fetchMetaData(guid);
     }
 
     fetchData = async (guideGuid: string) => {
@@ -67,6 +75,34 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
         });
     }
 
+    fetchMetaData = async (guideGuid: string) => {
+        var guideMetaResult = await this.state.apiService.getGuideMetaData(guideGuid);
+        if (!guideMetaResult.isSuccess) return;
+        this.setState(() => {
+            return {
+                guideMeta: guideMetaResult.value
+            }
+        });
+    }
+
+    likeGuide = async () => {
+        var guid = this.state.guide?.guid;
+        if (!guid) return;
+        var likeResult = await this.state.apiService.likeGuide(guid);
+        if (likeResult.isSuccess) {
+            Swal.fire({ icon: 'success', title: '👍' });
+            var newGuideMeta: any = { ...this.state.guideMeta };
+            newGuideMeta.likes = this.state.guideMeta?.likes ?? 0 + 1;
+            this.setState(() => {
+                return {
+                    guideMeta: newGuideMeta
+                }
+            });
+        } else {
+            Swal.fire({ icon: 'error', title: i18next.t(LocaleKey.error), text: 'Your \'like\' was not submitted' });
+        }
+    }
+
     handleLoadingOrError = () => {
         if (this.state.status === NetworkState.Loading) return;
         if (this.state.status === NetworkState.Error ||
@@ -84,6 +120,26 @@ export class GuideDetailPagePresenterUnconnected extends React.Component<IProps,
             <h4>{moment(guide.date).format('DD MMM YYYY')}</h4>
             {
                 guide.sections.map(this.displaySection)
+            }
+            {
+                (this.state.guideMeta != null)
+                    ? <div className="section row">
+                        <div className="col-xl-7 col-lg-10 col-md-12 col-sm-12 col-xs-12 item">
+                            <div className="row">
+                                <div className="col-6">
+                                    <h3 onClick={this.likeGuide} className="metaData pointer">
+                                        <i className="material-icons">thumb_up</i>&nbsp;{this.state.guideMeta.likes}
+                                    </h3>
+                                </div>
+                                <div className="col-6">
+                                    <h3 className="metaData">
+                                        <i className="material-icons">remove_red_eye</i>&nbsp;{this.state.guideMeta.views}
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    : null
             }
         </>;
     }

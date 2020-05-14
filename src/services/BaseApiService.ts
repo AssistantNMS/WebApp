@@ -23,4 +23,21 @@ export class BaseApiService {
       }
     }
   }
+
+  protected async post<T>(url: string, data: any): Promise<ResultWithValue<T>> {
+    try {
+      const result = await axios.post<T>(`${window.config.apiUrl}/${url}`, data);
+      return {
+        isSuccess: true,
+        value: result.data,
+        errorMessage: ''
+      }
+    } catch (ex) {
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: ex.message
+      }
+    }
+  }
 }
