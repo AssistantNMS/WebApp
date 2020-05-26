@@ -38,7 +38,7 @@ export const PortalGlyphGridDisplay: React.FC<IPortalGlyphGridDisplayProps> = (p
         <div className="row full justify p1 glyphgrid">
             {portalImages.map((image: string, index: number) => (
                 <div key={image + index} draggable={false} className={columnMultiplierHelper(columnDefs)} >
-                    <img src={image} style={{ maxWidth: '100%' }} draggable={false} alt={image} />
+                    <img src={image} style={{ width: '100%' }} draggable={false} alt={image} />
                 </div>
             ))}
         </div>
@@ -63,8 +63,8 @@ export const PortalGlyphKeypadGrid: React.FC<IPortalGlyphGridProps> = (props: IP
     return (
         <div className="row full justify p1">
             {portalImages.map((image: string, index: number) => (
-                <div key={image + index} draggable={false} onClick={safeClick(index)} className="col-3 col-xl-1 col-lg-2 col-md-3 col-sm-3 col-xs-3">
-                    <img src={image} style={{ maxWidth: '100%' }} draggable={false} alt={image} />
+                <div key={image + index} draggable={false} onClick={safeClick(index)} className="col-3 col-xl-1 col-lg-1 col-md-3 col-sm-3 col-xs-3">
+                    <img src={image} style={{ width: '100%' }} draggable={false} alt={image} />
                 </div>
             ))}
         </div>
