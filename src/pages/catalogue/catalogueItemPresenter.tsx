@@ -1,36 +1,31 @@
-import React from 'react';
 import i18next from 'i18next';
+import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Swal from 'sweetalert2';
-
-import { anyObject } from '../../helper/TypescriptHacks';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
-import { mapProcessorToRequiredItems } from '../../mapper/RequiredItemMapper';
-import { LocaleKey } from '../../localization/LocaleKey';
-import { mapStateToProps, mapDispatchToProps } from './catalogueItem.Redux';
-
-import { IdPrefix } from '../../constants/IdPrefix';
-
-import { Processor } from '../../contracts/Processor';
-import { GameItemModel } from '../../contracts/GameItemModel';
-import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
-import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
-import { CurrencyType } from '../../contracts/enum/CurrencyType';
-
-import { NavBar } from '../../components/core/navbar/navbar';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
-import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
-import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
-import { GenericItemListTile } from '../../components/tilePresenter/genericItemListTile/genericItemListTile';
-import { RefinerItemListTile } from '../../components/tilePresenter/processorItemListTile/refinerItemListTile';
-import { NutrientProcessorListTile } from '../../components/tilePresenter/processorItemListTile/nutrientProcessorListTile';
+import { HeadComponent } from '../../components/core/headComponent';
+import { NavBar } from '../../components/core/navbar/navbar';
 import { CartFloatingActionButton } from '../../components/floatingActionButton/cartFloatingActionButton';
 import { FavouriteFloatingActionButton } from '../../components/floatingActionButton/favouriteFloatingActionButton';
-
-import { GameItemService } from '../../services/GameItemService';
+import { GenericItemListTile } from '../../components/tilePresenter/genericItemListTile/genericItemListTile';
+import { NutrientProcessorListTile } from '../../components/tilePresenter/processorItemListTile/nutrientProcessorListTile';
+import { RefinerItemListTile } from '../../components/tilePresenter/processorItemListTile/refinerItemListTile';
+import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
+import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
+import { IdPrefix } from '../../constants/IdPrefix';
+import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
+import { CurrencyType } from '../../contracts/enum/CurrencyType';
+import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
+import { GameItemModel } from '../../contracts/GameItemModel';
+import { Processor } from '../../contracts/Processor';
+import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
+import { anyObject } from '../../helper/TypescriptHacks';
+import { LocaleKey } from '../../localization/LocaleKey';
+import { mapProcessorToRequiredItems } from '../../mapper/RequiredItemMapper';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
+import { GameItemService } from '../../services/GameItemService';
+import { mapDispatchToProps, mapStateToProps } from './catalogueItem.Redux';
 
 interface IProps {
     location: any;
@@ -115,7 +110,6 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
             return;
         }
 
-        setDocumentTitle(itemResult.value.Name);
         this.getResArray(itemResult.value.Id);
         this.getUsedToCreateArray(itemResult.value.Id);
         this.getRefArray(itemResult.value.Id);
@@ -413,9 +407,12 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
     }
 
     render() {
+        const title = this.state?.item?.Name;
+        const description = this.state?.item?.Description;
         return (
             <>
-                <NavBar title={this.state.item.Name} />
+                <HeadComponent title={title} description={description} />
+                <NavBar title={title} />
                 <div className="content">
                     <div className="row border-bottom">
                         <div className="col-12 col-lg-2 col-md-2 col-sm-2 col-xs-3 image-container generic-item-image-container"

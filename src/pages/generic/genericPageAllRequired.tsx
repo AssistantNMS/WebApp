@@ -1,17 +1,17 @@
 import i18next from 'i18next';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-
+import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
+import { HeadComponent } from '../../components/core/headComponent';
+import { NavBar } from '../../components/core/navbar/navbar';
+import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
+import { getAllRequiredItemsForMultiple } from '../../helper/itemHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 
-import { NavBar } from '../../components/core/navbar/navbar';
-import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
 
-import { getAllRequiredItemsForMultiple } from '../../helper/itemHelper';
+
 
 interface IProps {
     location: any;
@@ -20,7 +20,6 @@ interface IProps {
 }
 
 interface IState {
-    title: string;
     requiredItems: RequiredItemDetails[];
 }
 
@@ -28,11 +27,7 @@ export class GenericPageAllRequiredPresenterUnconnected extends React.Component<
     constructor(props: IProps) {
         super(props);
 
-        const title = i18next.t(LocaleKey.allRawMaterialsRequired);
-        setDocumentTitle(title);
-
         this.state = {
-            title,
             requiredItems: []
         }
     }
@@ -52,9 +47,11 @@ export class GenericPageAllRequiredPresenterUnconnected extends React.Component<
     }
 
     render() {
+        const title = i18next.t(LocaleKey.allRawMaterialsRequired);
         return (
             <>
-                <NavBar title={this.state.title} />
+                <HeadComponent title={title} />
+                <NavBar title={title} />
                 <div className="content">
                     <div className="container full pt1">
                         <div className="row">

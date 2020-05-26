@@ -3,16 +3,16 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { PortalGlyphGridDisplay, PortalGlyphKeypadGrid } from '../../components/common/portal/portalGlyphGrid';
+import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { ApplyFloatingActionButton } from '../../components/floatingActionButton/applyFloatingActionButton';
 import * as Route from '../../constants/Route';
 import { PortalRecord } from '../../contracts/portal/portalRecord';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
 import { newGuid } from '../../helper/guidHelper';
 import { anyObject } from '../../helper/TypescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps } from './addEditPortal.Redux';
-import { PortalGlyphGridDisplay, PortalGlyphKeypadGrid } from '../../components/common/portal/portalGlyphGrid';
 
 interface IProps {
     location: any;
@@ -43,8 +43,6 @@ export class AddEditPortalPresenterUnconnected extends React.Component<IProps, I
         if (portalItem.Name == null) {
             portalItem.Name = i18next.t(LocaleKey.newPortalEntry);
         }
-
-        setDocumentTitle(portalItem.Name);
 
         this.state = {
             isEdit,
@@ -97,6 +95,7 @@ export class AddEditPortalPresenterUnconnected extends React.Component<IProps, I
     render() {
         return (
             <>
+                <HeadComponent title={this.state.item.Name} />
                 <NavBar title={this.state.item.Name} additionalItems={[
                     <li key={`editPortalName`} className="nav-item" onClick={this.editName}>
                         <span className="nav-link pointer">

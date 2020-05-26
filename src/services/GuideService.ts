@@ -24,7 +24,6 @@ export class GuideService extends BaseJsonService {
             guides.push(guideDynamic);
         }
         let sortedGuide = guides.slice().sort((a: Guide, b: Guide) =>
-            ((a.isNew ? 1 : -1) < (b.isNew ? 1 : -1) ? 5 : -5) +
             (moment(a.date).isBefore(b.date) ? 1 : -1));
         return {
             isSuccess: true,

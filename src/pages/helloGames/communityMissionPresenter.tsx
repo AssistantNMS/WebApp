@@ -1,22 +1,22 @@
 import i18next from 'i18next';
-import { connect } from 'react-redux';
 import React from 'react';
-
-import { mapStateToProps, mapDispatchToProps } from './communityMission.Redux';
-
-import { setDocumentTitle } from '../../helper/DocumentHelper';
-import { LocaleKey } from '../../localization/LocaleKey';
-
-import { NavBar } from '../../components/core/navbar/navbar';
-import { SmallLoading } from '../../components/core/loading/loading';
+import { connect } from 'react-redux';
 import { ProgressBar } from '../../components/common/progressBar/progressBar';
+import { HeadComponent } from '../../components/core/headComponent';
+import { SmallLoading } from '../../components/core/loading/loading';
+import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
 import { PlatformType, ToFriendlyPlatfromString } from '../../contracts/enum/PlatformType';
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
 import { anyObject } from '../../helper/TypescriptHacks';
-
-
+import { LocaleKey } from '../../localization/LocaleKey';
 import { ApiService } from '../../services/ApiService';
+import { mapDispatchToProps, mapStateToProps } from './communityMission.Redux';
+
+
+
+
+
 
 var SegmentedControl = require('segmented-control');
 
@@ -36,11 +36,8 @@ export class CommunityMissionPresenterUnconnected extends React.Component<IProps
     constructor(props: IProps) {
         super(props);
 
-        const title = i18next.t(LocaleKey.communityMission);
-        setDocumentTitle(title);
-
         this.state = {
-            title,
+            title: i18next.t(LocaleKey.communityMission),
             apiService: new ApiService(),
             communityMission: anyObject,
             status: NetworkState.Loading
@@ -128,6 +125,7 @@ export class CommunityMissionPresenterUnconnected extends React.Component<IProps
     render() {
         return (
             <>
+                <HeadComponent title={this.state.title} />
                 <NavBar title={this.state.title} />
                 <div className="content">
                     <div className="container full pt1">

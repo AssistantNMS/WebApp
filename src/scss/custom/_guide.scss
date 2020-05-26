@@ -20,9 +20,13 @@
             padding-left: .5em;
             padding-right: .5em;
 
+            p,
             .content {
                 font-size: 1.2em;
                 font-weight: 300;
+            }
+
+            .content {
                 margin-top: .5em;
             }
 
@@ -32,6 +36,12 @@
                 a {
                     display: inline-block;
                 }
+            }
+
+            h3.metaData {
+                display: inline-block;
+                margin-top: -.5em;
+                padding: 1em;
             }
         }
 

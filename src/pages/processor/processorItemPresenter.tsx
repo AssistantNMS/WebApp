@@ -1,22 +1,22 @@
-import React from 'react';
 import i18next from 'i18next';
+import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-
-import { State } from '../../redux/state';
-import { LocaleKey } from '../../localization/LocaleKey';
-import { anyObject } from '../../helper/TypescriptHacks';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
-
+import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
+import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
-import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
-import { Processor } from '../../contracts/Processor';
 import { GameItemModel } from '../../contracts/GameItemModel';
-
-import { GameItemService } from '../../services/GameItemService';
+import { Processor } from '../../contracts/Processor';
+import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
+import { anyObject } from '../../helper/TypescriptHacks';
+import { LocaleKey } from '../../localization/LocaleKey';
+import { State } from '../../redux/state';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
+import { GameItemService } from '../../services/GameItemService';
+
+
+
 
 interface IProps {
     location: any;
@@ -80,7 +80,6 @@ export class ProcessorItemPresenterUnconnected extends React.Component<IProps, I
             return;
         }
 
-        setDocumentTitle(itemResult.value.Operation);
         this.fetchOutputData(itemResult.value.Output.Id);
         this.setState(() => {
             return {
@@ -136,10 +135,12 @@ export class ProcessorItemPresenterUnconnected extends React.Component<IProps, I
     }
 
     render() {
-        setDocumentTitle(this.state.item.Operation);
+        const title = `${this.state.item.Id.includes("ref") ? 'Refining' : 'Cooking'} - ${this.state.outputDetails.Name}`;
+        const description = `${this.state.outputDetails.Name} - ${this.state.item.Operation}`;
         return (
             <>
-                <NavBar title={this.state.item.Operation} />
+                <HeadComponent title={title} description={description} />
+                <NavBar title={title} />
                 <div className="content">
                     <div className="row border-bottom">
                         <div className="col-12 col-lg-2 col-md-2 col-sm-2 col-xs-3 image-container generic-item-image-container"

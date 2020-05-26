@@ -1,10 +1,10 @@
 import i18next from 'i18next';
 import React from 'react';
 import { CardButton } from '../../components/core/button/cardButton';
+import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
 import { ExternalUrls } from '../../constants/ExternalUrls';
-import { setDocumentTitle } from '../../helper/DocumentHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 
@@ -19,9 +19,9 @@ export const DonationPresenter: React.FC = () => {
     paymentOptions.push({ title: i18next.t(LocaleKey.openCollective), event: AnalyticsEvent.externalLinkOpenCollective, url: ExternalUrls.openCollective, image: '/assets/images/openCollective.png' });
 
     const title = i18next.t(LocaleKey.donation);
-    setDocumentTitle(title);
     return (
         <>
+            <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
                 <div className="container full pt1">
