@@ -1,6 +1,5 @@
 import i18next from 'i18next';
 import React from 'react';
-import { connect } from 'react-redux';
 import { ProgressBar } from '../../components/common/progressBar/progressBar';
 import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
@@ -8,72 +7,37 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
 import { PlatformType, ToFriendlyPlatfromString } from '../../contracts/enum/PlatformType';
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
-import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { ApiService } from '../../services/ApiService';
-import { mapDispatchToProps, mapStateToProps } from './communityMission.Redux';
-
-
-
-
-
 
 var SegmentedControl = require('segmented-control');
 
 interface IProps {
     chosenPlatform: PlatformType;
     setPlatform: (platform: PlatformType) => void;
-}
-
-interface IState {
     title: string;
     apiService: ApiService;
     communityMission: CommunityMissionViewModel;
     status: NetworkState;
+    changePlatform: (plat: PlatformType) => void;
 }
 
-export class CommunityMissionPresenterUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
-
-        this.state = {
-            title: i18next.t(LocaleKey.communityMission),
-            apiService: new ApiService(),
-            communityMission: anyObject,
-            status: NetworkState.Loading
-        };
-        this.fetchCommunityMission(this.props.chosenPlatform);
+export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
+    const createOption = (plat: PlatformType, selectedPlat: PlatformType) => {
+        return { label: ToFriendlyPlatfromString(plat), value: plat, default: plat === selectedPlat };
     }
 
-    fetchCommunityMission = async (plat: PlatformType) => {
-        var communityMissionResult = await this.state.apiService.getCommunityMission(plat);
-        if (!communityMissionResult.isSuccess) {
-            this.setState(() => {
-                return {
-                    status: NetworkState.Error
-                }
-            });
-            return;
-        }
-        this.setState(() => {
-            return {
-                communityMission: communityMissionResult.value,
-                status: NetworkState.Success
-            }
-        });
-    }
-
-    handleLoadingOrError = () => {
-        if (this.state.status === NetworkState.Loading) return SmallLoading();
-        if (this.state.status === NetworkState.Error ||
-            !this.state.communityMission ||
-            !this.state.communityMission.missionId) {
+    const handleLoadingOrError = () => {
+        if (props.status === NetworkState.Loading) return SmallLoading();
+        if (props.status === NetworkState.Error ||
+            !props.communityMission ||
+            !props.communityMission.missionId) {
             return (<h2 className="pt1">{i18next.t(LocaleKey.somethingWentWrong)}</h2>);
         }
-        return this.displayCommunityMissiondata(this.state.communityMission);
+        return displayCommunityMissiondata(props.communityMission);
     }
 
-    displayCommunityMissiondata = (communityMission: CommunityMissionViewModel) => {
+    const displayCommunityMissiondata = (communityMission: CommunityMissionViewModel) => {
         return (
             <>
                 <div className="row">
@@ -104,50 +68,28 @@ export class CommunityMissionPresenterUnconnected extends React.Component<IProps
             </>
         );
     }
-
-    changePlatform = (plat: PlatformType) => {
-        if (plat === this.props.chosenPlatform) return;
-        this.setState(() => {
-            return {
-                status: NetworkState.Loading
-            }
-        }, () => {
-            this.fetchCommunityMission(plat);
-            this.props.setPlatform(plat);
-        }
-        );
-    }
-
-    createOption = (plat: PlatformType, selectedPlat: PlatformType) => {
-        return { label: ToFriendlyPlatfromString(plat), value: plat, default: plat === selectedPlat };
-    }
-
-    render() {
-        return (
-            <>
-                <HeadComponent title={this.state.title} />
-                <NavBar title={this.state.title} />
-                <div className="content">
-                    <div className="container full pt1">
-                        <div className="row">
-                            <div className="col-12">
-                                <SegmentedControl.SegmentedControl
-                                    name="platformChoice"
-                                    options={[
-                                        this.createOption(PlatformType.PC, this.props.chosenPlatform),
-                                        this.createOption(PlatformType.PS4, this.props.chosenPlatform),
-                                        this.createOption(PlatformType.XB1, this.props.chosenPlatform),
-                                    ]}
-                                    setValue={this.changePlatform}
-                                />
-                            </div>
+    return (
+        <>
+            <HeadComponent title={props.title} />
+            <NavBar title={props.title} />
+            <div className="content">
+                <div className="container full pt1">
+                    <div className="row">
+                        <div className="col-12">
+                            <SegmentedControl.SegmentedControl
+                                name="platformChoice"
+                                options={[
+                                    createOption(PlatformType.PC, props.chosenPlatform),
+                                    createOption(PlatformType.PS4, props.chosenPlatform),
+                                    createOption(PlatformType.XB1, props.chosenPlatform),
+                                ]}
+                                setValue={props.changePlatform}
+                            />
                         </div>
-                        {this.handleLoadingOrError()}
                     </div>
+                    {handleLoadingOrError()}
                 </div>
-            </>
-        );
-    }
+            </div>
+        </>
+    );
 }
-
-export const CommunityMissionPresenter = connect(mapStateToProps, mapDispatchToProps)(CommunityMissionPresenterUnconnected);

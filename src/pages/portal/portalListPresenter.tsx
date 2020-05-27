@@ -1,7 +1,6 @@
 import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { AddFloatingActionButton } from '../../components/floatingActionButton/addFloatingActionButton';
@@ -21,7 +20,7 @@ interface IProps {
     removePortal: (portalId: string) => void;
 }
 
-export const PortalListPresenterUnconnected = withRouter((props: IProps) => {
+export const PortalListPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
 
     const displayPortals = (portals: Array<PortalRecord>) => {
         if (portals == null || portals.length === 0) return (
@@ -64,6 +63,6 @@ export const PortalListPresenterUnconnected = withRouter((props: IProps) => {
             <div className="col-12" style={{ marginBottom: '2em', marginTop: '2em' }}></div>
         </>
     );
-});
+};
 
 export const PortalListPresenter = connect(mapStateToProps, mapDispatchToProps)(PortalListPresenterUnconnected);
