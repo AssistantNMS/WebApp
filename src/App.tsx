@@ -16,12 +16,12 @@ import { HomePresenter } from './pages/home/homePresenter';
 import { AboutPresenter } from './pages/about/aboutPresenter';
 import { LanguagePresenter } from './pages/language/languagePresenter';
 import { CataloguePresenter } from './pages/catalogue/cataloguePresenter';
-import { CatalogueListPresenter } from './pages/catalogue/catalogueListPresenter';
-import { CatalogueItemPresenter } from './pages/catalogue/catalogueItemPresenter';
-import { ProcessorItemPresenter } from './pages/processor/processorItemPresenter';
+import { CatalogueListContainer } from './pages/catalogue/catalogueListContainer';
+import { CatalogueItemContainer } from './pages/catalogue/catalogueItemContainer';
+import { ProcessorItemContainer } from './pages/processor/processorItemContainer';
 import { SettingPresenter } from './pages/setting/settingPresenter';
 import { DonationPresenter } from './pages/donation/donationPresenter';
-import { CartPresenter } from './pages/cart/cartPresenter';
+import { CartContainer } from './pages/cart/cartContainer';
 import { GenericPageAllRequiredPresenter } from './pages/generic/genericPageAllRequired';
 import { PortalListContainer } from './pages/portal/portalListContainer';
 import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
@@ -62,15 +62,15 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
           <div id="sidebar-main-content-overlay" className="full-page-loader opacity80" onClick={() => props.toggleMenu()}></div>
           <Switch>
             <Route exact={true} path={route.home} component={HomePresenter} />
-            <Route path={`${route.catalogue}/:types`} component={CatalogueListPresenter} />
-            <Route path={`${route.catalogueItem}/:itemId`} component={CatalogueItemPresenter} />
-            <Route path={`${route.processorItem}/:itemId`} component={ProcessorItemPresenter} />
+            <Route path={`${route.catalogue}/:types`} component={CatalogueListContainer} />
+            <Route path={`${route.catalogueItem}/:itemId`} component={CatalogueItemContainer} />
+            <Route path={`${route.processorItem}/:itemId`} component={ProcessorItemContainer} />
             <Route path={route.catalogue} component={CataloguePresenter} />
             <Route path={route.setting} component={SettingPresenter} />
             <Route path={route.about} component={AboutPresenter} />
             <Route path={route.language} component={LanguagePresenter} />
             <Route path={route.donation} component={DonationPresenter} />
-            <Route path={route.cart} component={CartPresenter} />
+            <Route path={route.cart} component={CartContainer} />
             <Route path={route.genericAllRequirements} component={GenericPageAllRequiredPresenter} />
             <Route path={`${route.guides}/:guid`} component={GuideDetailPagePresenter} />
             <Route path={route.guides} component={GuidePagePresenter} />

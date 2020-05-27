@@ -7,9 +7,6 @@ import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps } from './setting.Redux';
 import { boolSettingTile, LangSettingTile } from './settingComponent';
 
-
-
-
 interface IProps {
     isDark: boolean;
     useAltGlyphs: boolean;
@@ -20,7 +17,6 @@ interface IProps {
 }
 
 const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
-
     const title = i18next.t(LocaleKey.donation);
     return (
         <>

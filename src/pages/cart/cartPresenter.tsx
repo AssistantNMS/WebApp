@@ -1,7 +1,5 @@
 import i18next from 'i18next';
 import React from 'react';
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { CardButton } from '../../components/core/button/cardButton';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -11,20 +9,16 @@ import * as Route from '../../constants/Route';
 import { CartItem } from '../../contracts/cart/cartItem';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { requiredItemFromCart } from '../../mapper/CartMapper';
-import { mapDispatchToProps, mapStateToProps } from './cart.Redux';
-
-
 
 interface IProps {
-    location: any;
-    match: any;
+    // Container Props
     history: any;
     cartItems: Array<CartItem>
     editItemInCart?: (cartItemIndex: number, cartItem: CartItem) => void;
     removeItemFromCart: (cartItemId: string) => void;
 }
 
-export const CartPresenterUnconnected = withRouter((props: IProps) => {
+export const CartPresenter: React.FC<IProps> = (props: IProps) => {
     const displayCartItems = (cartItems: Array<CartItem>) => {
         if (cartItems == null || cartItems.length === 0) return (
             <h2>{i18next.t(LocaleKey.noCartItems)}</h2>
@@ -80,6 +74,4 @@ export const CartPresenterUnconnected = withRouter((props: IProps) => {
             </div>
         </>
     );
-});
-
-export const CartPresenter = connect(mapStateToProps, mapDispatchToProps)(CartPresenterUnconnected);
+};

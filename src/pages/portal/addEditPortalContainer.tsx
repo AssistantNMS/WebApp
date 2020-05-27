@@ -16,6 +16,7 @@ interface IProps {
     history: any;
     isDark: boolean;
     useAltGlyphs: boolean;
+    tags: Array<string>;
     availableTags: Array<string>;
     addPortal?: (portalRecord: PortalRecord) => void;
     editPortal?: (portalRecord: PortalRecord) => void;
@@ -88,6 +89,22 @@ export class AddEditPortalContainerUnconnected extends React.Component<IProps, I
         })
     }
 
+    addTag = async () => {
+        const { value: newTag } = await Swal.fire({
+            title: i18next.t(LocaleKey.addTag),
+            input: 'text',
+            inputValue: '',
+            showCancelButton: true
+        });
+        if (newTag == null) return;
+        const tags = this.state.item.Tags || [];
+        this.setState(() => {
+            return {
+                item: { ...this.state.item, Tags: [...tags, newTag] }
+            };
+        })
+    }
+
     render() {
         return (
             <AddEditPortalPresenter
@@ -96,6 +113,7 @@ export class AddEditPortalContainerUnconnected extends React.Component<IProps, I
                 addCode={this.addCode}
                 backspaceCode={this.backspaceCode}
                 deleteAllCode={this.deleteAllCode}
+                addTag={this.addTag}
             />
         );
     }

@@ -9,23 +9,39 @@ import { PortalRecord } from '../../contracts/portal/portalRecord';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 interface IProps {
+    // Container Props
     history: any;
     isDark: boolean;
     useAltGlyphs: boolean;
+    tags: Array<string>;
     availableTags: Array<string>;
     addPortal?: (portalRecord: PortalRecord) => void;
     editPortal?: (portalRecord: PortalRecord) => void;
     toggleAltGlyphs?: () => void;
 
+    // Container State
     isEdit: boolean;
     item: PortalRecord;
     editName: () => void;
     addCode: (newcode: number) => void;
     backspaceCode: () => void;
     deleteAllCode: () => void;
+    addTag: () => void;
 }
 
 export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
+    const displayTags = (tags: Array<string>) => {
+        return (
+            <div className="row justify" style={{ paddingLeft: '1em', paddingRight: '1em' }}>
+                {
+                    (tags || []).map((item: string, index: number) => {
+                        return <span key={`portalTag: ${item}-${index}`} className="secondary chip extra-padding pointer">{item}</span>
+                    })
+                }
+                <span key={`portalTag-add`} onClick={props.addTag} className="secondary chip extra-padding pointer">+</span>
+            </div>
+        );
+    };
     return (
         <>
             <HeadComponent title={props.item.Name} />
@@ -76,6 +92,7 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
                         />
                     </div>
                 </div>
+                {displayTags(props.tags)}
             </div>
             {
                 (props.item != null && props.item.Codes != null && props.item.Codes.length === 12)
