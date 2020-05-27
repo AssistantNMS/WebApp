@@ -19,10 +19,10 @@ export const PortalCardListTile = (props: IProps) => {
     const displayTags = () => {
         if (!props.Tags || props.Tags.length < 1) return null;
         return (
-            <div className="row justify" style={{ paddingLeft: '1em', paddingRight: '1em' }}>
+            <div className="row justify" style={{ paddingTop: '1em', paddingLeft: '1em', paddingRight: '1em' }}>
                 {
                     props.Tags.map((item, index) => {
-                        return <span key={`portalTage: ${item}-${index}`} className="default chip">{item}</span>
+                        return <span key={`portalTage: ${item}-${index}`} className="secondary chip">{item}</span>
                     })
                 }
             </div>

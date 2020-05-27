@@ -22,11 +22,14 @@ interface IProps {
     // Container State
     isEdit: boolean;
     item: PortalRecord;
+
+    // Container Specific
     editName: () => void;
     addCode: (newcode: number) => void;
     backspaceCode: () => void;
     deleteAllCode: () => void;
     addTag: () => void;
+    removeTag: (tagToRemove: string) => void;
 }
 
 export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
@@ -35,7 +38,10 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
             <div className="row justify" style={{ paddingLeft: '1em', paddingRight: '1em' }}>
                 {
                     (tags || []).map((item: string, index: number) => {
-                        return <span key={`portalTag: ${item}-${index}`} className="secondary chip extra-padding pointer">{item}</span>
+                        return (
+                            <span key={`portalTag: ${item}-${index}`} onClick={() => props.removeTag(item)}
+                                className="secondary chip extra-padding pointer">{item}</span>
+                        );
                     })
                 }
                 <span key={`portalTag-add`} onClick={props.addTag} className="secondary chip extra-padding pointer">+</span>
@@ -92,7 +98,7 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
                         />
                     </div>
                 </div>
-                {displayTags(props.tags)}
+                {displayTags(props.item.Tags)}
             </div>
             {
                 (props.item != null && props.item.Codes != null && props.item.Codes.length === 12)

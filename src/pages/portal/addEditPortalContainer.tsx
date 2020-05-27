@@ -105,6 +105,17 @@ export class AddEditPortalContainerUnconnected extends React.Component<IProps, I
         })
     }
 
+    removeTag = async (tagToRemove: string) => {
+        const tags = this.state.item.Tags || [];
+        const removeIndex = tags.findIndex((t: string) => t === tagToRemove);
+        const newTags = removeIndex >= 0 ? [...tags.slice(0, removeIndex), ...tags.slice(removeIndex + 1, tags.length)] : tags;
+        this.setState(() => {
+            return {
+                item: { ...this.state.item, Tags: [...newTags] }
+            };
+        })
+    }
+
     render() {
         return (
             <AddEditPortalPresenter
@@ -114,6 +125,7 @@ export class AddEditPortalContainerUnconnected extends React.Component<IProps, I
                 backspaceCode={this.backspaceCode}
                 deleteAllCode={this.deleteAllCode}
                 addTag={this.addTag}
+                removeTag={this.removeTag}
             />
         );
     }
