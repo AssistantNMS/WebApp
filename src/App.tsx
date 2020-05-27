@@ -25,8 +25,8 @@ import { CartContainer } from './pages/cart/cartContainer';
 import { GenericPageAllRequiredPresenter } from './pages/generic/genericPageAllRequired';
 import { PortalListContainer } from './pages/portal/portalListContainer';
 import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
-import { GuidePagePresenter } from './pages/guide/guidePage';
-import { GuideDetailPagePresenter } from './pages/guide/guideDetailPage';
+import { GuidePageContainer } from './pages/guide/guidePageContainer';
+import { GuideDetailPageContainer } from './pages/guide/guideDetailPageContainer';
 import { SocialPresenter } from './pages/social/socialPresenter';
 // import { HelloGamesPresenter } from './pages/helloGames/helloGamesPresenter';
 import { CommunityMissionContainer } from './pages/helloGames/communityMissionContainer';
@@ -72,8 +72,8 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.donation} component={DonationPresenter} />
             <Route path={route.cart} component={CartContainer} />
             <Route path={route.genericAllRequirements} component={GenericPageAllRequiredPresenter} />
-            <Route path={`${route.guides}/:guid`} component={GuideDetailPagePresenter} />
-            <Route path={route.guides} component={GuidePagePresenter} />
+            <Route path={`${route.guides}/:guid`} component={GuidePageContainer} />
+            <Route path={route.guides} component={GuideDetailPageContainer} />
             <Route path={route.portal} component={PortalListContainer} />
             <Route path={route.addEditPortal} component={AddEditPortalContainer} />
             {/* <Route path={route.helloGames} component={HelloGamesPresenter} /> */}

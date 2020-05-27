@@ -14,10 +14,12 @@ interface IProps {
     removeItemFromCart: (cartItemId: string) => void;
 }
 
-export const CartContainerUnconnected = withRouter((props: IProps) => {
-    return (
-        <CartPresenter {...this.props} />
-    );
-});
+export class CartContainerUnconnected extends React.Component<IProps, any> {
+    render() {
+        return (
+            <CartPresenter {...this.props} />
+        );
+    }
+};
 
-export const CartContainer = connect(mapStateToProps, mapDispatchToProps)(CartContainerUnconnected);
+export const CartContainer = connect(mapStateToProps, mapDispatchToProps)(withRouter(CartContainerUnconnected));

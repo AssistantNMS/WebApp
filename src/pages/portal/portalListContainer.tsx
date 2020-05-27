@@ -25,4 +25,4 @@ export class PortalListContainerUnconnected extends React.Component<IProps, any>
     }
 };
 
-export const PortalListContainer = withRouter(connect(mapStateToProps, mapDispatchToProps)(PortalListContainerUnconnected));
+export const PortalListContainer = connect(mapStateToProps, mapDispatchToProps)(withRouter(PortalListContainerUnconnected));
