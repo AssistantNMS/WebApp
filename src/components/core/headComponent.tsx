@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { getNewDocumentTitle } from '../../helper/DocumentHelper';
+import { getNewDocumentTitle } from '../../helper/documentHelper';
 
 interface IProps {
     title?: string;

@@ -8,7 +8,7 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
 import { PlatformType, ToFriendlyPlatfromString } from '../../contracts/enum/PlatformType';
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
-import { anyObject } from '../../helper/TypescriptHacks';
+import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { ApiService } from '../../services/ApiService';
 import { mapDispatchToProps, mapStateToProps } from './communityMission.Redux';

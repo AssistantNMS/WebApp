@@ -5,7 +5,7 @@ import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { DrawerMenuItem } from '../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../contracts/enum/DrawerIconType';
-import { getCatalogueMenuItems } from '../../helper/CatalogueMenuItemsHelper';
+import { getCatalogueMenuItems } from '../../helper/catalogueMenuItemsHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import './catalogue.scss';
 

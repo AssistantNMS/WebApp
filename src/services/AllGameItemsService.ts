@@ -2,7 +2,7 @@ import { ResultWithValue } from '../contracts/results/ResultWithValue';
 import { GameItemModel } from '../contracts/GameItemModel';
 import { GameItemService } from './GameItemService';
 import { CatalogueType } from '../constants/CatalogueType';
-import { anyObject } from '../helper/TypescriptHacks';
+import { anyObject } from '../helper/typescriptHacks';
 
 export class AllGameItemsService {
   private typesArray = [

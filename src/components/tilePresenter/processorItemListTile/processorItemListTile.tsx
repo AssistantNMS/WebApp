@@ -3,7 +3,7 @@ import * as React from 'react';
 import i18next from 'i18next';
 import { Link } from 'react-router-dom';
 
-import { anyObject } from '../../../helper/TypescriptHacks';
+import { anyObject } from '../../../helper/typescriptHacks';
 
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { Processor } from '../../../contracts/Processor';

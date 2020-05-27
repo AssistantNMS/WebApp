@@ -9,7 +9,7 @@ import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requ
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
-import { anyObject } from '../../helper/TypescriptHacks';
+import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { State } from '../../redux/state';
 import { AllGameItemsService } from '../../services/AllGameItemsService';

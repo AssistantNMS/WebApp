@@ -10,7 +10,7 @@ import { ApplyFloatingActionButton } from '../../components/floatingActionButton
 import * as Route from '../../constants/Route';
 import { PortalRecord } from '../../contracts/portal/portalRecord';
 import { newGuid } from '../../helper/guidHelper';
-import { anyObject } from '../../helper/TypescriptHacks';
+import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps } from './addEditPortal.Redux';
 

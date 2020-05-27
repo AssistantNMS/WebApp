@@ -5,7 +5,7 @@ import { Link, withRouter } from 'react-router-dom';
 
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
-import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/DrawerMenuItemsHelper';
+import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
 
 import { mapStateToProps, mapDispatchToProps } from './drawer.Redux';
 

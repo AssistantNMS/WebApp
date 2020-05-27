@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { ResultWithValue } from '../contracts/results/ResultWithValue';
-import { anyObject } from '../helper/TypescriptHacks';
+import { anyObject } from '../helper/typescriptHacks';
 import { Guide } from '../contracts/guide/guide';
 
 export class BaseJsonService {

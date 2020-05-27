@@ -20,7 +20,7 @@ import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
-import { anyObject } from '../../helper/TypescriptHacks';
+import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapProcessorToRequiredItems } from '../../mapper/RequiredItemMapper';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
