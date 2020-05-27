@@ -185,7 +185,6 @@ export class CatalogueItemPresenterUnconnected extends React.Component<IProps, I
     }
 
     getAdditionalData = (itemDetail: GameItemModel): Array<any> => {
-
         const additionalData = [];
         if (itemDetail.BlueprintSource !== null && itemDetail.BlueprintSource !== BlueprintSource.unknown) {
             const bpSourceLangKey = blueprintToLocalKey(itemDetail.BlueprintSource);
