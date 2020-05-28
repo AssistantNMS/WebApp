@@ -9,6 +9,7 @@ import { State } from '../../redux/state';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
 import { GameItemService } from '../../services/GameItemService';
 import { ProcessorItemPresenter } from './processorItemPresenter';
+import { NetworkState } from '../../constants/NetworkState';
 
 interface IProps {
     location: any;
@@ -22,6 +23,7 @@ interface IState {
     inputDetails: Array<RequiredItemDetails>;
     gameItemService: GameItemService;
     allGameItemsService: AllGameItemsService;
+    status: NetworkState;
 }
 
 export class ProcessorItemContainerUnconnected extends React.Component<IProps, IState> {
@@ -33,7 +35,8 @@ export class ProcessorItemContainerUnconnected extends React.Component<IProps, I
             outputDetails: anyObject,
             inputDetails: [],
             gameItemService: new GameItemService(),
-            allGameItemsService: new AllGameItemsService()
+            allGameItemsService: new AllGameItemsService(),
+            status: NetworkState.Loading
         }
     }
 
@@ -68,6 +71,11 @@ export class ProcessorItemContainerUnconnected extends React.Component<IProps, I
             ? await this.state.gameItemService.getRefinedById(itemId ?? '')
             : await this.state.gameItemService.getCookingById(itemId ?? '');
         if (!itemResult.isSuccess) {
+            this.setState(() => {
+                return {
+                    status: NetworkState.Error
+                }
+            });
             console.error(itemResult.errorMessage);
             return;
         }
@@ -75,7 +83,8 @@ export class ProcessorItemContainerUnconnected extends React.Component<IProps, I
         this.fetchOutputData(itemResult.value.Output.Id);
         this.setState(() => {
             return {
-                item: itemResult.value
+                item: itemResult.value,
+                status: NetworkState.Success
             }
         });
     }
