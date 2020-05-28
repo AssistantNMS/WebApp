@@ -1,3 +1,4 @@
+
 import i18next from 'i18next';
 import React from 'react';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
@@ -10,6 +11,8 @@ import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
 import { GameItemService } from '../../services/GameItemService';
+import { NetworkState } from '../../constants/NetworkState';
+import { SmallLoading } from '../../components/core/loading/loading';
 
 interface IProps {
     // Container Props
@@ -24,9 +27,11 @@ interface IProps {
     inputDetails: Array<RequiredItemDetails>;
     gameItemService: GameItemService;
     allGameItemsService: AllGameItemsService;
+    status: NetworkState;
 }
 
 export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
+
     const displayInputs = (requiredItems: Array<RequiredItemDetails>) => {
         if (requiredItems == null || requiredItems.length < 1) return null;
 
@@ -43,6 +48,15 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
                 <hr className="mt-3em" />
             </>
         );
+    }
+
+    // Fix the error caused by `const title = props.item.Id.includes("ref)..`
+    if (props.status === NetworkState.Loading)
+        return (<SmallLoading />);
+    if (props.status === NetworkState.Error)
+        return (<h1> ERROR </h1>);
+    if (props.item == null || props.item.Id == null) {
+        return (<h1>Error</h1>);
     }
 
     const title = `${props.item.Id.includes("ref") ? 'Refining' : 'Cooking'} - ${props.outputDetails.Name}`;
