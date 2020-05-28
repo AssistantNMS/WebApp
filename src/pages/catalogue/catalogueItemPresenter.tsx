@@ -21,14 +21,14 @@ import { AllGameItemsService } from '../../services/AllGameItemsService';
 import { GameItemService } from '../../services/GameItemService';
 
 interface IProps {
-    // Props
+    // Container Props
     selectedLanguage?: string;
     favourites: Array<FavouriteItem>;
     addItemToCart?: (item: GameItemModel, quantity: number) => void;
     addItemToFavourites?: (item: GameItemModel) => void;
     removeItemToFavourites?: (itemId: string) => void;
 
-    // Container
+    // Container State
     item: GameItemModel;
     resArray: Array<RequiredItemDetails>;
     usedToCreateArray: Array<GameItemModel>;
