@@ -17,12 +17,8 @@ export class GuideService extends BaseJsonService {
             errorMessage: guidesDir.errorMessage
         };
 
-        var guides = Array<Guide>();
-        for (const guideItem of guidesDir.value) {
-            var guideDynamic = await this.getJsonGuide(guideItem.folder, guideItem.file);
-            guideDynamic.folder = guideItem.folder;
-            guides.push(guideDynamic);
-        }
+        var guideTasks = guidesDir.value.map((guideItem) => this.getJsonGuide(guideItem.folder, guideItem.file));
+        var guides = await Promise.all(guideTasks);
         let sortedGuide = guides.slice().sort((a: Guide, b: Guide) =>
             (moment(a.date).isBefore(b.date) ? 1 : -1));
         return {

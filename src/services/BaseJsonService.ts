@@ -24,7 +24,9 @@ export class BaseJsonService {
   }
 
   protected async getJsonGuide(guideFolder: string, jsonFileName: string): Promise<Guide> {
-    return await this.getJsonFromAssets<Guide>(`guide/${guideFolder}/${jsonFileName}`);
+    var guideDynamic = await this.getJsonFromAssets<Guide>(`guide/${guideFolder}/${jsonFileName}`);
+    guideDynamic.folder = guideFolder;
+    return guideDynamic;
   }
 
   protected async getJsonFromAssets<T>(jsonFileName: string) {

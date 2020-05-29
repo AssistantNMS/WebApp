@@ -11,6 +11,7 @@ interface IProps {
     location: any;
     match: any;
     history: any;
+    selectedLanguage?: string;
 }
 
 interface IState {
@@ -34,6 +35,23 @@ export class GuidePageContainerUnconnected extends React.Component<IProps, IStat
 
     componentDidMount() {
         this.fetchData();
+    }
+
+    componentDidUpdate(prevProps: IProps, prevState: IState) {
+        const prevSelectedLanguage = prevProps.selectedLanguage;
+        if (this.props.selectedLanguage !== prevSelectedLanguage) {
+            this.clearData();
+            this.fetchData();
+        }
+    }
+
+    clearData = async () => {
+        this.setState(() => {
+            return {
+                status: NetworkState.Loading,
+                guideItems: []
+            }
+        });
     }
 
     fetchData = async () => {
