@@ -72,8 +72,8 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.donation} component={DonationPresenter} />
             <Route path={route.cart} component={CartContainer} />
             <Route path={route.genericAllRequirements} component={GenericPageAllRequiredPresenter} />
-            <Route path={`${route.guides}/:guid`} component={GuidePageContainer} />
-            <Route path={route.guides} component={GuideDetailPageContainer} />
+            <Route path={`${route.guides}/:guid`} component={GuideDetailPageContainer} />
+            <Route path={route.guides} component={GuidePageContainer} />
             <Route path={route.portal} component={PortalListContainer} />
             <Route path={route.addEditPortal} component={AddEditPortalContainer} />
             {/* <Route path={route.helloGames} component={HelloGamesPresenter} /> */}
