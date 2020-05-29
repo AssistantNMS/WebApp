@@ -53,7 +53,7 @@ export class LangSettingTile extends React.Component<ILangProp, ILangState> {
             <div className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12-xsmall" onClick={this.toggleDropdown}>
                 {
                     this.state.isVisible
-                        ? <div onClick={this.toggleDropdown} className="full-page-loader opacity80"></div>
+                        ? <div className="full-page-loader opacity80"></div>
                         : null
                 }
                 <div className="card" style={{ padding: '1em' }}>
