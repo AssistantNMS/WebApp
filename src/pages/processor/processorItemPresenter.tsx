@@ -1,4 +1,3 @@
-
 import i18next from 'i18next';
 import React from 'react';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
@@ -13,6 +12,7 @@ import { AllGameItemsService } from '../../services/AllGameItemsService';
 import { GameItemService } from '../../services/GameItemService';
 import { NetworkState } from '../../constants/NetworkState';
 import { SmallLoading } from '../../components/core/loading/loading';
+import { Error } from '../../components/core/errorComponent/errorComponent'
 
 interface IProps {
     // Container Props
@@ -54,9 +54,9 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
     if (props.status === NetworkState.Loading)
         return (<SmallLoading />);
     if (props.status === NetworkState.Error)
-        return (<h1> ERROR </h1>);
+        return (<Error />);
     if (props.item == null || props.item.Id == null) {
-        return (<h1>Error</h1>);
+        return (<Error />);
     }
 
     const title = `${props.item.Id.includes("ref") ? 'Refining' : 'Cooking'} - ${props.outputDetails.Name}`;

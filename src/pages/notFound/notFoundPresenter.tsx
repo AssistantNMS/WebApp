@@ -2,7 +2,6 @@ import React from 'react';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 
-
 export const NotFoundPresenter: React.FC = () => {
     return (
         <>
