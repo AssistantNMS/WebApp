@@ -12,7 +12,7 @@ import { AllGameItemsService } from '../../services/AllGameItemsService';
 import { GameItemService } from '../../services/GameItemService';
 import { NetworkState } from '../../constants/NetworkState';
 import { SmallLoading } from '../../components/core/loading/loading';
-import { Error } from '../../components/core/errorComponent/errorComponent'
+import { Error } from '../../components/core/error/error'
 
 interface IProps {
     // Container Props
@@ -31,6 +31,34 @@ interface IProps {
 }
 
 export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
+    const handleLoadingOrError = () => {
+        if (props.status === NetworkState.Loading) return (<SmallLoading />);
+        if (props.status === NetworkState.Error ||
+            props.item == null || props.item.Id == null ||
+            props.outputDetails == null || props.item == null || props.item.Operation == null) return (<Error />);
+        return displayProcessor(props.inputDetails);
+    }
+
+    const displayProcessor = (requiredItems: Array<RequiredItemDetails>) => {
+        if (requiredItems == null || requiredItems.length < 1) return null;
+
+        return (
+            <>
+                <div className="col-12 col-lg-2 col-md-2 col-sm-2 col-xs-3 image-container generic-item-image-container"
+                    style={{ backgroundColor: `#${props.outputDetails.Colour}` }}>
+                    <img src={`/assets/images/${props.outputDetails.Icon}`} alt={props.outputDetails.Name} style={{ maxWidth: '100%' }} />
+                </div>
+                <div className="col-12 col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                    <h2 className="ta-left ta-center-sm" style={{ marginBottom: 0 }}>{props.outputDetails.Name}</h2>
+                    {
+                        props.item.Operation
+                            ? <h3 className="ta-left ta-center-sm" style={{ marginTop: 0 }}>{props.item.Operation}</h3>
+                            : null
+                    }
+                </div>
+            </>
+        );
+    }
 
     const displayInputs = (requiredItems: Array<RequiredItemDetails>) => {
         if (requiredItems == null || requiredItems.length < 1) return null;
@@ -50,35 +78,19 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
         );
     }
 
-    // Fix the error caused by `const title = props.item.Id.includes("ref)..`
-    if (props.status === NetworkState.Loading)
-        return (<SmallLoading />);
-    if (props.status === NetworkState.Error)
-        return (<Error />);
-    if (props.item == null || props.item.Id == null) {
-        return (<Error />);
-    }
+    const outputId = (props?.item?.Id || '');
+    const outputName = (props?.outputDetails?.Name || '');
+    const operation = (props?.item?.Operation || '');
 
-    const title = `${props.item.Id.includes("ref") ? 'Refining' : 'Cooking'} - ${props.outputDetails.Name}`;
-    const description = `${props.outputDetails.Name} - ${props.item.Operation}`;
+    const title = `${outputId.includes("ref") ? i18next.t(LocaleKey.refinedUsing) : i18next.t(LocaleKey.cooking)} - ${outputName}`;
+    const description = `${outputName} - ${operation}`;
     return (
         <>
             <HeadComponent title={title} description={description} />
             <NavBar title={title} />
             <div className="content">
                 <div className="row border-bottom">
-                    <div className="col-12 col-lg-2 col-md-2 col-sm-2 col-xs-3 image-container generic-item-image-container"
-                        style={{ backgroundColor: `#${props.outputDetails.Colour}` }}>
-                        <img src={`/assets/images/${props.outputDetails.Icon}`} alt={props.outputDetails.Name} style={{ maxWidth: '100%' }} />
-                    </div>
-                    <div className="col-12 col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                        <h2 className="ta-left ta-center-sm" style={{ marginBottom: 0 }}>{props.outputDetails.Name}</h2>
-                        {
-                            props.item.Operation
-                                ? <h3 className="ta-left ta-center-sm" style={{ marginTop: 0 }}>{props.item.Operation}</h3>
-                                : null
-                        }
-                    </div>
+                    {handleLoadingOrError()}
                 </div>
                 {displayInputs(props.inputDetails)}
             </div>
