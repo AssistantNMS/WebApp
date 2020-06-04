@@ -40,7 +40,12 @@
             }
 
             .quantity-container {
+                color: lighten($black-color, 20%);
+            }
+
+            .badge-container {
                 color: $black-color;
+                background-color: $brand-secondary;
             }
         }
 

@@ -13,11 +13,20 @@
                 max-height: 100px;
                 max-width: 100px;
                 display: inline-block;
+                position: relative;
 
                 img {
                     max-height: 100px;
+                }         
+
+                .badge-container {
+                    position: absolute;
+                    bottom: 0.1em;
+                    right: -.5em;
+                    border-radius: 100%;
+                    padding: 0 .5em;
                 }
-            }
+            }   
 
             .gen-item-content-container {
                 flex-grow: 1;
@@ -52,6 +61,11 @@
                 .quantity-container {
                     text-align: left;
                     padding-left: 1rem;
+                    padding-right: 1rem;
+
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
 
                 .action-container {

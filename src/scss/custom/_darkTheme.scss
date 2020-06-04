@@ -1,6 +1,7 @@
 $card-background-color-dark: rgba(255, 255, 255, 0.2);
 $list-item-background-color-dark: #6c757d;
 $list-item-text-color-dark: #f8f9fa;
+$list-item-text-color-darker: #c5c5c5;
 
 #app.isDark,
 .isDark {
@@ -59,7 +60,12 @@ $list-item-text-color-dark: #f8f9fa;
             }
 
             .quantity-container {
+                color: darken($list-item-text-color-dark, 20%);
+            }
+
+            .badge-container {
                 color: $list-item-text-color-dark;
+                background-color: $brand-secondary-dark;
             }
         }
 

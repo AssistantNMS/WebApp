@@ -1,11 +1,9 @@
 
 import * as React from 'react';
-import i18next from 'i18next';
 import { Link } from 'react-router-dom';
 
 import { anyObject } from '../../../helper/typescriptHacks';
 
-import { LocaleKey } from '../../../localization/LocaleKey';
 import { Processor } from '../../../contracts/Processor';
 import { processorItem } from '../../../constants/Route';
 
@@ -14,6 +12,7 @@ import { ImageContainer } from '../../common/tile/imageContainer';
 import { GameItemService } from '../../../services/GameItemService';
 import { RequiredItem } from '../../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
+import { TileLoading } from '../../core/loading/loading';
 
 
 interface IProps extends Processor {
@@ -24,9 +23,8 @@ interface IProps extends Processor {
 
 interface IState {
     item: Processor;
-    name: string;
-    refinerImage: string;
     colour: string;
+    requiredItems: Array<RequiredItemDetails>;
     gameItemService: GameItemService;
 }
 
@@ -34,20 +32,14 @@ class ProcessorItemListTileClass extends React.Component<IProps, IState> {
     constructor(props: IProps) {
         super(props);
 
-        const defaultRefinerImage = props.singleItemImage;
-        let refinerImage = defaultRefinerImage;
-        if (this.props.Inputs.length === 2) refinerImage = props.doubleItemImage;
-        if (this.props.Inputs.length > 2) refinerImage = props.tripleItemImage;
-
         this.state = {
             item: anyObject,
-            name: '...',
-            refinerImage: refinerImage,
             colour: '',
+            requiredItems: [],
             gameItemService: new GameItemService()
         }
 
-        this.fetchData(this.props.Inputs);
+        this.fetchData([this.props.Output, ...this.props.Inputs]);
     }
 
     fetchData = async (items: Array<RequiredItem>) => {
@@ -72,28 +64,39 @@ class ProcessorItemListTileClass extends React.Component<IProps, IState> {
             return;
         }
 
-        let name = requiredItems[0].Name;
-        for (let inputIndex = 1; inputIndex < requiredItems.length; inputIndex++) {
-            const requiredItem = requiredItems[inputIndex];
-            name += ' + ' + requiredItem.Name;
-        }
-
         this.setState((prev: IState) => {
             return {
-                name: name,
-                refinerImage: requiredItems.length === 1 ? requiredItems[0].Icon : prev.refinerImage,
+                requiredItems: requiredItems,
                 colour: requiredItems.length === 1 ? requiredItems[0].Colour : prev.colour
             }
         });
     }
 
+    processorInputsToString(rowIndex: number, startIndex: number, row: RequiredItemDetails) {
+        return (rowIndex > startIndex ? ' + ' : '') +
+            row.Quantity.toString() +
+            'x ' +
+            row.Name;
+    }
+
     render() {
+        if (!this.state.requiredItems || this.state.requiredItems.length === 0) {
+            return (<TileLoading />);
+        }
+
+        var output = this.state.requiredItems[0];
+        let subtitle = '';
+        const startIndex = 1;
+        for (let inputIndex = startIndex; inputIndex < this.state.requiredItems.length; inputIndex++) {
+            subtitle += this.processorInputsToString(inputIndex, startIndex, this.state.requiredItems[inputIndex]);
+        }
+        var icon = (this.state.requiredItems.length > 2) ? output.Icon : this.state.requiredItems[1].Icon;
         return (
             <Link to={`${processorItem}/${this.props.Id}`} className="gen-item-container">
-                <ImageContainer Name={this.state.name} Icon={this.state.refinerImage} Colour={this.state.colour} />
+                <ImageContainer Name={output.Name} Icon={icon} Colour={this.state.colour} Quantity={output.Quantity} />
                 <div className="gen-item-content-container">
-                    <TextContainer text={this.state.name} />
-                    <div className="quantity-container">{this.props.Time} {i18next.t(LocaleKey.seconds)}</div>
+                    <TextContainer text={output.Name} />
+                    <div className="quantity-container">{subtitle}</div>
                 </div>
             </Link>
         );

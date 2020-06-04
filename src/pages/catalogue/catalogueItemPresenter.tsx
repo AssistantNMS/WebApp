@@ -9,14 +9,12 @@ import { GenericItemListTile } from '../../components/tilePresenter/genericItemL
 import { NutrientProcessorListTile } from '../../components/tilePresenter/processorItemListTile/nutrientProcessorListTile';
 import { RefinerItemListTile } from '../../components/tilePresenter/processorItemListTile/refinerItemListTile';
 import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
-import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { IdPrefix } from '../../constants/IdPrefix';
 import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { mapProcessorToRequiredItems } from '../../mapper/RequiredItemMapper';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
 import { GameItemService } from '../../services/GameItemService';
 
@@ -138,7 +136,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                         <h3>{i18next.t(LocaleKey.refineToCreate).replace('{0}', props.item.Name)}</h3>
                     </div>
                     <div className="col-12">
-                        <GenericListPresenter list={mapProcessorToRequiredItems(usedToRefArray)} presenter={RequiredItemListTile} />
+                        <GenericListPresenter list={usedToRefArray} presenter={RefinerItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -173,7 +171,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                         <h3>{i18next.t(LocaleKey.cookToCreate).replace('{0}', props.item.Name)}</h3>
                     </div>
                     <div className="col-12">
-                        <GenericListPresenter list={mapProcessorToRequiredItems(usedToCookArray)} presenter={RequiredItemListTile} />
+                        <GenericListPresenter list={usedToCookArray} presenter={RefinerItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
