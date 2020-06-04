@@ -1,5 +1,6 @@
 
 import * as React from 'react';
+import classNames from 'classnames';
 
 interface IProps {
     Quantity: number;
@@ -12,7 +13,7 @@ export const BadgeContainer = (props: IProps) => {
         styleObj.backgroundColor = `#${props.Colour}`;
     }
     return (
-        <div className="badge-container" style={styleObj}>
+        <div className={classNames('badge-container', { big: props.Quantity > 9 })} style={styleObj}>
             {props.Quantity}
         </div>
     );

@@ -17,7 +17,7 @@
 
                 img {
                     max-height: 100px;
-                }         
+                }
 
                 .badge-container {
                     position: absolute;
@@ -25,8 +25,12 @@
                     right: -.5em;
                     border-radius: 100%;
                     padding: 0 .5em;
+
+                    &.big {
+                        padding: .25em .5em;
+                    }
                 }
-            }   
+            }
 
             .gen-item-content-container {
                 flex-grow: 1;

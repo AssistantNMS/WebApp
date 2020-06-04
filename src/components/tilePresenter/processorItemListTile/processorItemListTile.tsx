@@ -90,10 +90,9 @@ class ProcessorItemListTileClass extends React.Component<IProps, IState> {
         for (let inputIndex = startIndex; inputIndex < this.state.requiredItems.length; inputIndex++) {
             subtitle += this.processorInputsToString(inputIndex, startIndex, this.state.requiredItems[inputIndex]);
         }
-        var icon = (this.state.requiredItems.length > 2) ? output.Icon : this.state.requiredItems[1].Icon;
         return (
             <Link to={`${processorItem}/${this.props.Id}`} className="gen-item-container">
-                <ImageContainer Name={output.Name} Icon={icon} Colour={this.state.colour} Quantity={output.Quantity} />
+                <ImageContainer Name={output.Name} Icon={output.Icon} Colour={this.state.colour} Quantity={output.Quantity} />
                 <div className="gen-item-content-container">
                     <TextContainer text={output.Name} />
                     <div className="quantity-container">{subtitle}</div>
