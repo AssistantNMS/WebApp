@@ -65,14 +65,6 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
         this.fetchData(this.props.match?.params?.itemId);
     }
 
-    // componentWillReceiveProps(nextProps: any) {
-    //     const prevItemId = this.props.match?.params?.itemId;
-    //     if (nextProps.match?.params?.itemId !== prevItemId) {
-    //         this.clearData();
-    //         this.fetchData(nextProps.match?.params?.itemId);
-    //     }
-    // }
-
     componentDidUpdate(prevProps: IProps, prevState: IState) {
         const prevSelectedLanguage = prevProps.selectedLanguage;
         const prevItemId = prevProps.match?.params?.itemId;
