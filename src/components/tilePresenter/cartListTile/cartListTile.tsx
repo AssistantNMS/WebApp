@@ -86,7 +86,7 @@ class CartItemListTileClass extends React.Component<IProps, IState> {
 
     render() {
         return (
-            <Link to={`${catalogueItem}/${this.props.Id}`} className="gen-item-container">
+            <Link to={`${catalogueItem}/${this.props.Id}`} className="gen-item-container" draggable={false}>
                 <ImageContainer Name={this.state.name} Icon={this.state.icon} Colour={this.state.colour} />
                 <div className="gen-item-content-container">
                     <TextContainer text={this.state.name} />

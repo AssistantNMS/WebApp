@@ -36,6 +36,7 @@ export class LazyLoadImage extends React.Component<ILazyLoadImageProps, IState> 
                 height={this.props.height}
                 effect={this.props.effect ? this.props.effect : "blur"}
                 onError={this.errorLoadingImage}
+                draggable={false}
                 {...unused}
             />
         );

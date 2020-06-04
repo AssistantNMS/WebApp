@@ -3,6 +3,18 @@
     color: $body-color;
     background-color: $body-bg; // 2
 
+    ::selection {
+        background: $brand-secondary;
+        color: white;
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: $brand-secondary;
+        color: white;
+        /* Gecko Browsers */
+    }
+
     .main-panel {
         background-color: $brand-primary-background;
 

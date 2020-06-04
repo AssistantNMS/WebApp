@@ -9,6 +9,18 @@ $list-item-text-color-darker: #c5c5c5;
     color: $body-color-dark;
     background-color: $brand-primary-background-dark;
 
+    ::selection {
+        background: $brand-secondary-dark;
+        color: white;
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: $brand-secondary-dark;
+        color: white;
+        /* Gecko Browsers */
+    }
+
     .main-panel {
         background-color: $brand-primary-background-dark;
 

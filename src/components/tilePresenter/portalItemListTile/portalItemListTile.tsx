@@ -41,7 +41,7 @@ export const PortalCardListTile = (props: IProps) => {
     const nmsPortalsUrl = `http://nmsportals.github.io/#${hexString}`;
 
     return (
-        <div className="portal item card">
+        <div className="portal item card" draggable={false}>
             <PortalGlyphGridDisplay
                 codes={props.Codes || []}
                 columnMultiplier={2}

@@ -47,7 +47,7 @@ export const GuideCardListTile = (props: Guide) => {
         );
     }
     return (
-        <Link to={`${guides}/${props.guid}`} className="guide item card">
+        <Link to={`${guides}/${props.guid}`} className="guide item card" draggable={false}>
             <ImageContainer Icon={props.image} Name={props.shortTitle} Directory={`/assets/guide/${props.folder}/`} Colour="" />
             <div className="row justify" style={{ "paddingTop": ".5em" }}>
                 {rowWidgets}

@@ -8,8 +8,7 @@ import { ItemHeaderRow } from '../../components/core/itemHeaderRow';
 import { CartFloatingActionButton } from '../../components/floatingActionButton/cartFloatingActionButton';
 import { FavouriteFloatingActionButton } from '../../components/floatingActionButton/favouriteFloatingActionButton';
 import { GenericItemListTile } from '../../components/tilePresenter/genericItemListTile/genericItemListTile';
-import { NutrientProcessorListTile } from '../../components/tilePresenter/processorItemListTile/nutrientProcessorListTile';
-import { RefinerItemListTile } from '../../components/tilePresenter/processorItemListTile/refinerItemListTile';
+import { ProcessorItemListTile } from '../../components/tilePresenter/processorItemListTile/processorItemListTile';
 import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
 import { IdPrefix } from '../../constants/IdPrefix';
 import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
@@ -90,7 +89,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                         <h3>{i18next.t(LocaleKey.refinedUsing)}</h3>
                     </div>
                     <div className="col-12">
-                        <GenericListPresenter list={refRecipesArray} presenter={RefinerItemListTile} />
+                        <GenericListPresenter list={refRecipesArray} presenter={ProcessorItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -108,7 +107,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                         <h3>{i18next.t(LocaleKey.refineToCreate).replace('{0}', props.item.Name)}</h3>
                     </div>
                     <div className="col-12">
-                        <GenericListPresenter list={usedToRefArray} presenter={RefinerItemListTile} />
+                        <GenericListPresenter list={usedToRefArray} presenter={ProcessorItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -125,7 +124,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                         <h3>{i18next.t(LocaleKey.cookingRecipe)}</h3>
                     </div>
                     <div className="col-12">
-                        <GenericListPresenter list={cookRecipesArray} presenter={NutrientProcessorListTile} />
+                        <GenericListPresenter list={cookRecipesArray} presenter={ProcessorItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -143,7 +142,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                         <h3>{i18next.t(LocaleKey.cookToCreate).replace('{0}', props.item.Name)}</h3>
                     </div>
                     <div className="col-12">
-                        <GenericListPresenter list={usedToCookArray} presenter={RefinerItemListTile} />
+                        <GenericListPresenter list={usedToCookArray} presenter={ProcessorItemListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />

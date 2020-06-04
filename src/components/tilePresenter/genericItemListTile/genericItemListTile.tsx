@@ -9,7 +9,7 @@ import { TextContainer } from '../../common/tile/textContainer';
 import { ImageContainer } from '../../common/tile/imageContainer';
 
 export const GenericItemListTile = (props: GameItemModel) => (
-    <Link to={`${catalogueItem}/${props.Id}`} className="gen-item-container" >
+    <Link to={`${catalogueItem}/${props.Id}`} className="gen-item-container" draggable={false}>
         <ImageContainer {...props} />
         <div className="gen-item-content-container">
             <TextContainer text={props.Name} additionalCss="full" />

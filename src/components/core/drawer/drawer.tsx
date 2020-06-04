@@ -44,11 +44,11 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
 
             var child = item.link.includes('http')
                 ? <a href={item.link} target="_blank" rel="noopener noreferrer" className="nav-link">{icon}<p>{item.name}</p></a>
-                : <Link to={item.link} className="nav-link">{icon}<p>{item.name}</p></Link>
+                : <Link to={item.link} className="nav-link" draggable={false}>{icon}<p>{item.name}</p></Link>
 
             return (
                 <li onClick={menuItemClick} key={`${item.link}-${index}`}
-                    className={classes}>
+                    className={classes} draggable={false}>
                     {child}
                 </li>
             );

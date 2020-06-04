@@ -91,7 +91,7 @@ class ProcessorItemListTileClass extends React.Component<IProps, IState> {
             subtitle += this.processorInputsToString(inputIndex, startIndex, this.state.requiredItems[inputIndex]);
         }
         return (
-            <Link to={`${processorItem}/${this.props.Id}`} className="gen-item-container">
+            <Link to={`${processorItem}/${this.props.Id}`} className="gen-item-container" draggable={false}>
                 <ImageContainer Name={output.Name} Icon={output.Icon} Colour={this.state.colour} OutputQuantity={output.Quantity} />
                 <div className="gen-item-content-container">
                     <TextContainer text={output.Name} />
