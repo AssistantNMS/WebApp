@@ -1,5 +1,6 @@
 import React from 'react';
 import { LazyLoadImage } from './lazyLoadImage/lazyLoadImage';
+import { AdditionalInfoChip } from '../common/chip/additionalInfoChip';
 
 interface IProps {
     Colour?: string;
@@ -7,6 +8,7 @@ interface IProps {
     Name?: string;
     Group?: string;
     Description?: string;
+    Link?: any;
 }
 
 export const ItemHeaderRow: React.FC<IProps> = (props: IProps) => {
@@ -28,6 +30,15 @@ export const ItemHeaderRow: React.FC<IProps> = (props: IProps) => {
                 {
                     props?.Description
                         ? <h5 className="ta-left ta-center-sm">{props.Description}</h5>
+                        : null
+                }
+                {
+                    props?.Link
+                        ? <div style={{ marginBottom: '.25em', textAlign: 'left' }}>
+                            <AdditionalInfoChip text={name} onClick={props.Link}>
+                                <i className="material-icons" style={{ verticalAlign: 'middle' }}>read_more</i>
+                            </AdditionalInfoChip>
+                        </div>
                         : null
                 }
             </div>

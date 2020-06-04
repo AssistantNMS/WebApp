@@ -1,8 +1,16 @@
 
 import React from 'react';
+import classNames from 'classnames';
 
 interface IChipRowProps {
-    additionalData: Array<any>;
+    additionalData: Array<IChipProps>;
+}
+interface IChipProps {
+    text: string;
+    image?: string;
+    icon?: string;
+    onClick?: any;
+    children?: any;
 }
 
 export const AdditionalInfoChipRow: React.FC<IChipRowProps> = (props: IChipRowProps) => {
@@ -22,12 +30,11 @@ export const AdditionalInfoChipRow: React.FC<IChipRowProps> = (props: IChipRowPr
     return (
         <div className="row justify " style={{ marginTop: '1em', paddingBottom: '.5em' }}>
             {
-                props.additionalData.map((item: any, index: number) => {
+                props.additionalData.map((item: IChipProps, index: number) => {
                     return (
-                        <div key={`additional-data-${index}`} className="secondary chip extra-padding" style={{ padding: '.25em 1em', margin: '0 .25em' }}>
-                            <span>{item.text}&nbsp;</span>
+                        <AdditionalInfoChip key={`additional-data-${index}`} {...item}>
                             {getImage(item)}
-                        </div>
+                        </AdditionalInfoChip>
                     )
                 })
             }
@@ -35,3 +42,20 @@ export const AdditionalInfoChipRow: React.FC<IChipRowProps> = (props: IChipRowPr
     );
 }
 
+
+export const AdditionalInfoChip: React.FC<IChipProps> = (props: IChipProps) => {
+    const safeClick = () => {
+        if (props.onClick) props.onClick();
+    }
+    const styleObj = {
+        padding: '.25em 1em',
+        margin: '0 .25em',
+        display: 'inline-block',
+    }
+    return (
+        <div className={classNames("secondary chip extra-padding", { pointer: !!props.onClick })} style={styleObj} onClick={safeClick}>
+            <span>{props.text}&nbsp;</span>
+            {props.children}
+        </div>
+    );
+}

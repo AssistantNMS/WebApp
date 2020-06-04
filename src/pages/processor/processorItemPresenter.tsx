@@ -1,5 +1,6 @@
 import i18next from 'i18next';
 import React from 'react';
+import * as Route from '../../constants/Route';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -67,6 +68,7 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
                     Icon={props.outputDetails.Icon}
                     Name={props.outputDetails.Name}
                     Group={props.item.Operation}
+                    Link={() => props.history.push(`${Route.catalogueItem}/${props.outputDetails.Id}`)}
                 />
                 {displayInputs(props.inputDetails)}
             </div>
