@@ -9,9 +9,7 @@ import { RequiredItem } from '../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { getAllRequiredItemsForMultiple } from '../../helper/itemHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
-
-
-
+import { NetworkState } from '../../constants/NetworkState';
 
 interface IProps {
     location: any;
@@ -21,14 +19,16 @@ interface IProps {
 
 interface IState {
     requiredItems: RequiredItemDetails[];
+    status: NetworkState;
 }
 
-export class GenericPageAllRequiredPresenterUnconnected extends React.Component<IProps, IState> {
+export class GenericPageAllRequiredContainerUnconnected extends React.Component<IProps, IState> {
     constructor(props: IProps) {
         super(props);
 
         this.state = {
-            requiredItems: []
+            requiredItems: [],
+            status: NetworkState.Loading,
         }
     }
 
@@ -41,7 +41,8 @@ export class GenericPageAllRequiredPresenterUnconnected extends React.Component<
         var itemsResult = await getAllRequiredItemsForMultiple(requiredItemIds);
         this.setState(() => {
             return {
-                requiredItems: itemsResult
+                requiredItems: itemsResult,
+                status: NetworkState.Success
             }
         });
     }
@@ -70,4 +71,4 @@ export class GenericPageAllRequiredPresenterUnconnected extends React.Component<
     }
 }
 
-export const GenericPageAllRequiredPresenter = withRouter(GenericPageAllRequiredPresenterUnconnected);
+export const GenericPageAllRequiredContainer = withRouter(GenericPageAllRequiredContainerUnconnected);

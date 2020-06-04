@@ -22,7 +22,7 @@ import { ProcessorItemContainer } from './pages/processor/processorItemContainer
 import { SettingPresenter } from './pages/setting/settingPresenter';
 import { DonationPresenter } from './pages/donation/donationPresenter';
 import { CartContainer } from './pages/cart/cartContainer';
-import { GenericPageAllRequiredPresenter } from './pages/generic/genericPageAllRequired';
+import { GenericPageAllRequiredContainer } from './pages/generic/genericPageAllRequiredContainer';
 import { PortalListContainer } from './pages/portal/portalListContainer';
 import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
 import { GuidePageContainer } from './pages/guide/guidePageContainer';
@@ -71,7 +71,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.language} component={LanguagePresenter} />
             <Route path={route.donation} component={DonationPresenter} />
             <Route path={route.cart} component={CartContainer} />
-            <Route path={route.genericAllRequirements} component={GenericPageAllRequiredPresenter} />
+            <Route path={route.genericAllRequirements} component={GenericPageAllRequiredContainer} />
             <Route path={`${route.guides}/:guid`} component={GuideDetailPageContainer} />
             <Route path={route.guides} component={GuidePageContainer} />
             <Route path={route.portal} component={PortalListContainer} />
