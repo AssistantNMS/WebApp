@@ -90,10 +90,7 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
 
     fetchData = async (itemId: string) => {
         var itemResult = await this.state.gameItemService.getItemDetails(itemId ?? '');
-        if (!itemResult.isSuccess) {
-            // Error
-            return;
-        }
+        if (!itemResult.isSuccess) return;
 
         this.getResArray(itemResult.value.Id);
         this.getUsedToCreateArray(itemResult.value.Id);
