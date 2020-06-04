@@ -76,7 +76,7 @@ export class GuideDetailPageContainerUnconnected extends React.Component<IProps,
         if (likeResult.isSuccess) {
             Swal.fire({ icon: 'success', title: '👍' });
             var newGuideMeta: any = { ...this.state.guideMeta };
-            newGuideMeta.likes = this.state.guideMeta?.likes ?? 0 + 1;
+            newGuideMeta.likes = (this.state.guideMeta?.likes ?? 0) + 1;
             this.setState(() => {
                 return {
                     guideMeta: newGuideMeta

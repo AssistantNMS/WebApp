@@ -80,6 +80,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   });
   menuItems.push(menuItemSeperator);
   menuItems.push({
+    name: i18next.t(LocaleKey.feedback).toString(),
+    link: "https://tools.nmsassistant.com/feedback",
+    icon: 'feedback',
+    iconType: DrawerIconType.Material,
+    isActive: false
+  });
+  menuItems.push({
     name: i18next.t(LocaleKey.social).toString(),
     link: routes.social,
     icon: '/assets/images/twitter.png',
