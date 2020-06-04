@@ -12,8 +12,13 @@ export const BadgeContainer = (props: IProps) => {
     if (props.Colour != null) {
         styleObj.backgroundColor = `#${props.Colour}`;
     }
+    let classObj = {
+        large: props.Quantity > 9,
+        xlarge: props.Quantity > 99,
+        xxlarge: props.Quantity > 999,
+    };
     return (
-        <div className={classNames('badge-container', { large: props.Quantity > 9, xlarge: props.Quantity > 99 })} style={styleObj}>
+        <div className={classNames('badge-container', classObj)} style={styleObj}>
             {props.Quantity}
         </div>
     );

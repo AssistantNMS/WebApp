@@ -3,6 +3,8 @@ import React from 'react';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
+import { AdditionalInfoChipRow } from '../../components/common/chip/additionalInfoChip';
+import { ItemHeaderRow } from '../../components/core/itemHeaderRow';
 import { CartFloatingActionButton } from '../../components/floatingActionButton/cartFloatingActionButton';
 import { FavouriteFloatingActionButton } from '../../components/floatingActionButton/favouriteFloatingActionButton';
 import { GenericItemListTile } from '../../components/tilePresenter/genericItemListTile/genericItemListTile';
@@ -22,9 +24,6 @@ interface IProps {
     // Container Props
     selectedLanguage?: string;
     favourites: Array<FavouriteItem>;
-    addItemToCart?: (item: GameItemModel, quantity: number) => void;
-    addItemToFavourites?: (item: GameItemModel) => void;
-    removeItemToFavourites?: (itemId: string) => void;
 
     // Container State
     item: GameItemModel;
@@ -39,39 +38,12 @@ interface IProps {
     additionalData: Array<any>;
 
     // Container Specific
-    addThisItemToCart?: (itemId: string) => void;
+    addThisItemToCart: () => void;
+    addThisItemToFavourites: () => void;
+    removeThisItemToFavourites: () => void;
 }
 
 export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
-    const displayAdditionalData = (additionalData: Array<any>) => {
-        if (additionalData == null || additionalData.length === 0) return null;
-
-        const getImage = (item: any) => {
-            if (item.image != null && item.image.length > 0) {
-                return (<img src={item.image} alt={item.image} style={{ maxHeight: '20px' }} />);
-            }
-            if (item.icon != null && item.icon.length > 0) {
-                return (<i className="material-icons" style={{ verticalAlign: 'middle' }}>{item.icon}</i>);
-            }
-
-            return null;
-        }
-
-        return (
-            <div className="row justify " style={{ marginTop: '1em', paddingBottom: '.5em' }}>
-                {
-                    additionalData.map((item, index) => {
-                        return (
-                            <div key={`additional-data-${index}`} className="secondary chip extra-padding" style={{ padding: '.25em 1em', margin: '0 .25em' }}>
-                                <span>{item.text}&nbsp;</span>
-                                {getImage(item)}
-                            </div>
-                        );
-                    })
-                }
-            </div>
-        );
-    }
 
     const displayRequiredItems = (resArray: Array<RequiredItemDetails>) => {
         if (resArray == null || resArray.length < 1) return null;
@@ -178,7 +150,6 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
             </>
         );
     }
-
     const getFloatingActionButtons = () => {
         const components: any[] = [];
         if (props.item == null || props.item.Id == null) return null;
@@ -186,7 +157,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
             components.push(CartFloatingActionButton(props.addThisItemToCart));
         }
         const isFavourited = props.favourites.find(f => f.Id === props.item.Id) != null;
-        components.push(FavouriteFloatingActionButton(isFavourited, props.addItemToFavourites, props.removeItemToFavourites));
+        components.push(FavouriteFloatingActionButton(isFavourited, props.addThisItemToFavourites, props.removeThisItemToFavourites));
         return components;
     }
 
@@ -197,22 +168,8 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
             <HeadComponent title={title} description={description} />
             <NavBar title={title} />
             <div className="content">
-                <div className="row border-bottom">
-                    <div className="col-12 col-lg-2 col-md-2 col-sm-2 col-xs-3 image-container generic-item-image-container"
-                        style={{ backgroundColor: `#${props.item.Colour}` }}>
-                        <img src={`/assets/images/${props.item.Icon}`} alt={props.item.Name} style={{ maxWidth: '100%' }} />
-                    </div>
-                    <div className="col-12 col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                        <h2 className="ta-left ta-center-sm" style={{ marginBottom: 0 }}>{props.item.Name}</h2>
-                        {
-                            props.item.Group
-                                ? <h3 className="ta-left ta-center-sm" style={{ marginTop: 0 }}>{props.item.Group}</h3>
-                                : null
-                        }
-                        <h5 className="ta-left ta-center-sm">{props.item.Description}</h5>
-                    </div>
-                </div>
-                {displayAdditionalData(props.additionalData)}
+                <ItemHeaderRow {...props.item} />
+                <AdditionalInfoChipRow additionalData={props.additionalData} />
                 {displayRequiredItems(props.resArray)}
                 {displayUsedToCreateItems(props.usedToCreateArray)}
                 {displayRefItems(props.refArray)}

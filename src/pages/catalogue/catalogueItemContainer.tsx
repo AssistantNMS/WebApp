@@ -3,9 +3,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { CartFloatingActionButton } from '../../components/floatingActionButton/cartFloatingActionButton';
-import { FavouriteFloatingActionButton } from '../../components/floatingActionButton/favouriteFloatingActionButton';
-import { IdPrefix } from '../../constants/IdPrefix';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
 import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
@@ -230,25 +227,14 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
         this.props.addItemToCart(this.state.item, quantity);
     }
 
-    addItemToFavourites = () => {
+    addThisItemToFavourites = () => {
         if (this.props.addItemToFavourites == null) return;
         this.props.addItemToFavourites(this.state.item);
     }
 
-    removeItemToFavourites = () => {
+    removeThisItemToFavourites = () => {
         if (this.props.removeItemToFavourites == null) return;
         this.props.removeItemToFavourites(this.state.item.Id);
-    }
-
-    getFloatingActionButtons = () => {
-        const components: any[] = [];
-        if (this.state.item == null || this.state.item.Id == null) return null;
-        if (!this.state.item.Id.includes(IdPrefix.Cooking)) {
-            components.push(CartFloatingActionButton(this.addThisItemToCart));
-        }
-        const isFavourited = this.props.favourites.find(f => f.Id === this.state.item.Id) != null;
-        components.push(FavouriteFloatingActionButton(isFavourited, this.addItemToFavourites, this.removeItemToFavourites));
-        return components;
     }
 
     render() {
@@ -256,6 +242,8 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
             <CatalogueItemPresenter
                 {...this.state} {...this.props}
                 addThisItemToCart={this.addThisItemToCart}
+                addThisItemToFavourites={this.addThisItemToFavourites}
+                removeThisItemToFavourites={this.removeThisItemToFavourites}
             />
         );
     }

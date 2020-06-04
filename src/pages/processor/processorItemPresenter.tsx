@@ -13,6 +13,7 @@ import { GameItemService } from '../../services/GameItemService';
 import { NetworkState } from '../../constants/NetworkState';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { Error } from '../../components/core/error/error'
+import { ItemHeaderRow } from '../../components/core/itemHeaderRow';
 
 interface IProps {
     // Container Props
@@ -31,37 +32,9 @@ interface IProps {
 }
 
 export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
-    const handleLoadingOrError = () => {
-        if (props.status === NetworkState.Loading) return (<SmallLoading />);
-        if (props.status === NetworkState.Error ||
-            props.item == null || props.item.Id == null ||
-            props.outputDetails == null || props.item == null || props.item.Operation == null) return (<Error />);
-        return displayProcessor(props.inputDetails);
-    }
-
-    const displayProcessor = (requiredItems: Array<RequiredItemDetails>) => {
-        if (requiredItems == null || requiredItems.length < 1) return null;
-
-        return (
-            <>
-                <div className="col-12 col-lg-2 col-md-2 col-sm-2 col-xs-3 image-container generic-item-image-container"
-                    style={{ backgroundColor: `#${props.outputDetails.Colour}` }}>
-                    <img src={`/assets/images/${props.outputDetails.Icon}`} alt={props.outputDetails.Name} style={{ maxWidth: '100%' }} />
-                </div>
-                <div className="col-12 col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                    <h2 className="ta-left ta-center-sm" style={{ marginBottom: 0 }}>{props.outputDetails.Name}</h2>
-                    {
-                        props.item.Operation
-                            ? <h3 className="ta-left ta-center-sm" style={{ marginTop: 0 }}>{props.item.Operation}</h3>
-                            : null
-                    }
-                </div>
-            </>
-        );
-    }
-
     const displayInputs = (requiredItems: Array<RequiredItemDetails>) => {
-        if (requiredItems == null || requiredItems.length < 1) return null;
+        if (props.status === NetworkState.Loading) return (<SmallLoading />);
+        if (requiredItems == null || requiredItems.length < 1) return (<Error />);
 
         return (
             <>
@@ -89,9 +62,12 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
             <HeadComponent title={title} description={description} />
             <NavBar title={title} />
             <div className="content">
-                <div className="row border-bottom">
-                    {handleLoadingOrError()}
-                </div>
+                <ItemHeaderRow
+                    Colour={props.outputDetails.Colour}
+                    Icon={props.outputDetails.Icon}
+                    Name={props.outputDetails.Name}
+                    Group={props.item.Operation}
+                />
                 {displayInputs(props.inputDetails)}
             </div>
         </>

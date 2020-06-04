@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Fab } from '@material/react-fab'
 
-export const FavouriteFloatingActionButton = (itemIsFavourited: boolean, addThisItemToFavourites: any, removeThisItemToFavourites: any) => {
+export const FavouriteFloatingActionButton = (itemIsFavourited: boolean, addThisItemToFavourites: () => void, removeThisItemToFavourites: () => void) => {
     const iconString = itemIsFavourited ? 'star' : 'star_border';
     let onClick = itemIsFavourited ? removeThisItemToFavourites : addThisItemToFavourites;
     return (
