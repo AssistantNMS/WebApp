@@ -9,8 +9,8 @@ interface IProps {
     Directory?: string;
     Name: string;
     Colour?: string;
-    Quantity?: number;
     BadgeColour?: string;
+    OutputQuantity?: number;
 }
 
 export const ImageContainer = (props: IProps) => {
@@ -23,8 +23,8 @@ export const ImageContainer = (props: IProps) => {
         <div className="image-container" style={styleObj}>
             <LazyLoadImage src={imageString} alt={props.Name} draggable={false} />
             {
-                (props.Quantity != null && props.Quantity > 0)
-                    ? <BadgeContainer Quantity={props.Quantity} Colour={props.BadgeColour} />
+                (props.OutputQuantity != null && props.OutputQuantity > 0)
+                    ? <BadgeContainer Quantity={props.OutputQuantity} Colour={props.BadgeColour} />
                     : null
             }
         </div>

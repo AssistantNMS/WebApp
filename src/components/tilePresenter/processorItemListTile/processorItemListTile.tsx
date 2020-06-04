@@ -92,7 +92,7 @@ class ProcessorItemListTileClass extends React.Component<IProps, IState> {
         }
         return (
             <Link to={`${processorItem}/${this.props.Id}`} className="gen-item-container">
-                <ImageContainer Name={output.Name} Icon={output.Icon} Colour={this.state.colour} Quantity={output.Quantity} />
+                <ImageContainer Name={output.Name} Icon={output.Icon} Colour={this.state.colour} OutputQuantity={output.Quantity} />
                 <div className="gen-item-content-container">
                     <TextContainer text={output.Name} />
                     <div className="quantity-container">{subtitle}</div>
