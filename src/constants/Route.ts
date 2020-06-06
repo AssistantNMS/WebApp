@@ -16,3 +16,4 @@ export const favourites = '/favourites';
 export const social = '/social';
 export const portal = '/portals';
 export const addEditPortal = '/edit-portal';
+export const sync = '/sync';

@@ -79,6 +79,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     isActive: false
   });
   menuItems.push(menuItemSeperator);
+  // menuItems.push({
+  //   name: i18next.t(LocaleKey.synchronize).toString(),
+  //   link: routes.sync,
+  //   icon: 'sync',
+  //   iconType: DrawerIconType.Material,
+  //   isActive: false
+  // });
   menuItems.push({
     name: i18next.t(LocaleKey.feedback).toString(),
     link: "https://tools.nmsassistant.com/feedback",
