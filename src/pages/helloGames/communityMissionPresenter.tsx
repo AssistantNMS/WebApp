@@ -100,7 +100,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
         if (qsReward == null) return null;
 
         return (
-            <div className="row">
+            <div className="row pt-3">
                 <div className="col-12">
                     <GenericListPresenter list={qsReward.Items} presenter={QuicksilverItemListTile} />
                 </div>
