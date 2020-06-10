@@ -102,7 +102,11 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
         return (
             <div className="row pt-3">
                 <div className="col-12">
-                    <GenericListPresenter list={qsReward.Items} presenter={QuicksilverItemListTile} />
+                    <GenericListPresenter
+                        list={qsReward.Items}
+                        presenter={QuicksilverItemListTile}
+                        isCentered={true}
+                    />
                 </div>
             </div>
         );

@@ -41,7 +41,6 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
 
     fetchCommunityMission = async (plat: PlatformType) => {
         if (plat === PlatformType.Unknown) plat = PlatformType.PC;
-        console.error(plat);
         var communityMissionResult = await this.state.apiService.getCommunityMission(plat);
         if (!communityMissionResult.isSuccess) {
             this.setState(() => {
