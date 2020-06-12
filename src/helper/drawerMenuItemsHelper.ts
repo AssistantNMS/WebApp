@@ -89,7 +89,7 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   menuItems.push({
     name: i18next.t(LocaleKey.social).toString(),
     link: routes.social,
-    icon: '/assets/images/drawer/twitter.png',
+    icon: '/assets/images/twitter.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
