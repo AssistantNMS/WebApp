@@ -1,4 +1,5 @@
 export enum PlatformType {
+    Unknown,
     PC,
     PS4,
     XB1

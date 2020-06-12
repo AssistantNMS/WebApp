@@ -4,7 +4,6 @@ import { getChosenPlatform } from '../../redux/modules/setting/selector';
 import { PlatformType } from '../../contracts/enum/PlatformType';
 
 export const mapStateToProps = (state: State) => {
-    console.log('mapStateToProps', getChosenPlatform(state));
     return {
         chosenPlatform: getChosenPlatform(state),
     };
@@ -13,7 +12,6 @@ export const mapStateToProps = (state: State) => {
 export const mapDispatchToProps = (dispatch: any) => {
     let newProps: any = {};
     newProps.setPlatform = (platform: PlatformType) => {
-        console.log('setPlatform', platform);
         dispatch(setPlatform(platform));
     };
     return { ...newProps };

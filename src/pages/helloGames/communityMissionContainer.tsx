@@ -9,6 +9,8 @@ import { LocaleKey } from '../../localization/LocaleKey';
 import { ApiService } from '../../services/ApiService';
 import { mapDispatchToProps, mapStateToProps } from './communityMission.Redux';
 import { CommunityMissionPresenter } from './communityMissionPresenter';
+import { QuicksilverStore } from '../../contracts/data/quicksilver';
+import * as quicksilverJson from '../../assets/data/quicksilverStore.json';
 
 interface IProps {
     chosenPlatform: PlatformType;
@@ -19,6 +21,7 @@ interface IState {
     title: string;
     apiService: ApiService;
     communityMission: CommunityMissionViewModel;
+    quicksilverStoreItems: Array<QuicksilverStore>;
     status: NetworkState;
 }
 
@@ -30,12 +33,14 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
             title: i18next.t(LocaleKey.communityMission),
             apiService: new ApiService(),
             communityMission: anyObject,
+            quicksilverStoreItems: (quicksilverJson as any).default,
             status: NetworkState.Loading
         };
         this.fetchCommunityMission(this.props.chosenPlatform);
     }
 
     fetchCommunityMission = async (plat: PlatformType) => {
+        if (plat === PlatformType.Unknown) plat = PlatformType.PC;
         var communityMissionResult = await this.state.apiService.getCommunityMission(plat);
         if (!communityMissionResult.isSuccess) {
             this.setState(() => {

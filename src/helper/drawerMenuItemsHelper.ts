@@ -9,7 +9,7 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   menuItems.push({
     name: i18next.t(LocaleKey.about).toString(),
     link: routes.about,
-    icon: '/assets/images/about.png',
+    icon: '/assets/images/drawer/about.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
@@ -23,14 +23,14 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   menuItems.push({
     name: i18next.t(LocaleKey.language).toString(),
     link: routes.language,
-    icon: '/assets/images/language.png',
+    icon: '/assets/images/drawer/language.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push({
     name: i18next.t(LocaleKey.donation).toString(),
     link: routes.donation,
-    icon: '/assets/images/donation.png',
+    icon: '/assets/images/drawer/donation.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
@@ -74,7 +74,7 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   menuItems.push({
     name: i18next.t(LocaleKey.communityMission).toString(),
     link: routes.communityMission,
-    icon: '/assets/images/communityMission.png',
+    icon: '/assets/images/drawer/communityMission.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
@@ -103,8 +103,8 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   menuItems.push({
     name: i18next.t(LocaleKey.settings).toString(),
     link: routes.setting,
-    icon: '/assets/images/settings.png',
-    iconType: DrawerIconType.Custom,
+    icon: 'settings',
+    iconType: DrawerIconType.Material,
     isActive: false
   });
   return menuItems;
