@@ -857,22 +857,23 @@
   {
     "Id": "conTech35",
     "Icon": "constructedTechnology/35.png",
-    "BaseValueUnits": 1.0,
-    "CurrencyType": "SalvagedData",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "Credits",
     "IsCraftable": true,
     "IsConsumable": false,
     "Colour": "2C7B9F",
+    "Power": -5.0,
     "BlueprintSource": 0,
-    "BlueprintNaniteCost": 1,
+    "BlueprintNaniteCost": 5,
     "HideBlueprintNaniteCost": true,
     "RequiredItems": [
       {
-        "Id": "raw9",
-        "Quantity": 5
+        "Id": "raw10",
+        "Quantity": 35
       },
       {
-        "Id": "prod20",
-        "Quantity": 1
+        "Id": "raw12",
+        "Quantity": 20
       }
     ],
     "ConsumableRewards": []
