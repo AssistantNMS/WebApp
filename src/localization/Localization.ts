@@ -8,7 +8,7 @@ export const localeMap = [
   new LocalizationMap('German', 'de'),
   new LocalizationMap('Italian', 'it'),
   new LocalizationMap('Portuguese', 'pt'),
-  new LocalizationMap('Brazilian Portuguese', 'pt-br'),
+  new LocalizationMap('Brazilian Portuguese', 'ptbr'),
   new LocalizationMap('Russian', 'ru'),
   new LocalizationMap('Spanish', 'es'),
   new LocalizationMap('Hungarian', 'hu')

@@ -20,7 +20,8 @@ function loadLocaleMessages(): any {
   locales.keys().forEach(key => {
     const matched = key.match(/language.([A-Za-z0-9-_]+)\./i);
     if (matched && matched.length > 1) {
-      const locale = matched[1];
+      // const locale = matched[1];
+      const locale = matched[1].replace('-', '');
       let i18nextTranslationObject: any = { translation: {} };
       const currentLocaleObj = locales(key);
       for (var localeKey in currentLocaleObj) {
@@ -28,6 +29,8 @@ function loadLocaleMessages(): any {
       }
       messages[locale] = i18nextTranslationObject;
     }
-  })
-  return messages
+  });
+
+  console.log({ messages });
+  return messages;
 }
