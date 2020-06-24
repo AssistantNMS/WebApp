@@ -72,8 +72,10 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                         }
                     </div>
                 </div>
-                <hr />
                 {displayQuicksilverData(communityMission.missionId)}
+                <hr />
+                <h3>{i18next.t(LocaleKey.nextCommunityMission)}</h3>
+                {displayQuicksilverData(communityMission.missionId + 1)}
             </>
         );
     }
