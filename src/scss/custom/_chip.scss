@@ -1,8 +1,15 @@
 .chip {
     border-radius: 20px;
+    padding: .25em 1em;
+    margin: 0 .25em;
+    display: inline-block;
 
     &.extra-padding {
         padding: 0.25em 1em;
         margin: 0px 0.25em;
+
+        @media screen and (max-width: 800px) {
+            margin-top: .5em;
+        }
     }
 }

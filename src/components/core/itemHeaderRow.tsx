@@ -16,7 +16,7 @@ export const ItemHeaderRow: React.FC<IProps> = (props: IProps) => {
     const group = props?.Group ?? '...';
     return (
         <div className="row border-bottom">
-            <div className="col-12 col-lg-2 col-md-2 col-sm-2 col-xs-3 image-container generic-item-image-container"
+            <div className="col-12 col-lg-2 col-md-2 col-sm-4 col-xs-3 image-container generic-item-image-container"
                 style={{ backgroundColor: `#${props.Colour}` }}>
                 {
                     (props?.Icon != null)
@@ -24,7 +24,7 @@ export const ItemHeaderRow: React.FC<IProps> = (props: IProps) => {
                         : null
                 }
             </div>
-            <div className="col-12 col-lg-10 col-md-10 col-sm-10 col-xs-9">
+            <div className="col-12 col-lg-10 col-md-10 col-sm-8 col-xs-9">
                 <h2 className="ta-left ta-center-sm" style={{ marginBottom: 0 }}>{name}</h2>
                 <h3 className="ta-left ta-center-sm" style={{ marginTop: 0 }}>{group}</h3>
                 {

@@ -47,13 +47,8 @@ export const AdditionalInfoChip: React.FC<IChipProps> = (props: IChipProps) => {
     const safeClick = () => {
         if (props.onClick) props.onClick();
     }
-    const styleObj = {
-        padding: '.25em 1em',
-        margin: '0 .25em',
-        display: 'inline-block',
-    }
     return (
-        <div className={classNames("secondary chip extra-padding", { pointer: !!props.onClick })} style={styleObj} onClick={safeClick}>
+        <div className={classNames("secondary chip extra-padding", { pointer: !!props.onClick })} onClick={safeClick}>
             <span>{props.text}&nbsp;</span>
             {props.children}
         </div>
