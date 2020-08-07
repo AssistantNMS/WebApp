@@ -1,0 +1,36 @@
+.card {
+
+    .card-image {
+        margin: 0px -15px;
+
+
+
+    }
+
+    .user-name,
+    .user-details {
+        padding: 1em;
+    }
+
+    .user-name {
+        text-align: left;
+    }
+
+    .user-text {
+        padding: 0 .5em;
+    }
+
+    hr {
+        margin-top: .5em;
+    }
+
+    img {
+        max-width: 100%;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+
+        &.user {
+            max-width: 75px;
+        }
+    }
+}

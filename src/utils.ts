@@ -18,4 +18,5 @@ export const defaultConfig = {
     consoleLogDebug: true,
     useServiceWorker: false,
     apiUrl: "https://api.nmsassistant.com",
+    assistantAppsUrl: "https://api.assistantapps.com",
 }

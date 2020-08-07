@@ -49,6 +49,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
+  menuItems.push({
+    name: 'Online Meetup 2020',
+    link: routes.onlineMeetup2020,
+    icon: 'public',
+    iconType: DrawerIconType.Material,
+    isActive: false
+  });
   menuItems.push(menuItemSeperator);
   menuItems.push({
     name: i18next.t(LocaleKey.cart).toString(),

@@ -7,9 +7,13 @@ declare global {
 }
 
 export class BaseApiService {
+  private _baseUrl: String = window.config.apiUrl;
+  constructor(newBaseUrl?: String) {
+    if (newBaseUrl != null) this._baseUrl = newBaseUrl;
+  }
   protected async get<T>(url: string): Promise<ResultWithValue<T>> {
     try {
-      const result = await axios.get<T>(`${window.config.apiUrl}/${url}`);
+      const result = await axios.get<T>(`${this._baseUrl}/${url}`);
       return {
         isSuccess: true,
         value: result.data,
@@ -26,7 +30,7 @@ export class BaseApiService {
 
   protected async post<T>(url: string, data: any): Promise<ResultWithValue<T>> {
     try {
-      const result = await axios.post<T>(`${window.config.apiUrl}/${url}`, data);
+      const result = await axios.post<T>(`${this._baseUrl}/${url}`, data);
       return {
         isSuccess: true,
         value: result.data,
