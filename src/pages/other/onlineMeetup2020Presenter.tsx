@@ -41,7 +41,7 @@ export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IPr
                             <div className="col-12">
                                 <div className="user-details">
                                     <img src={item.userImage} className="user" alt="User Icon" />
-                                    <h3 className="user-name">{item.userName}{item.userName}{item.userName}{item.userName}</h3>
+                                    <h3 className="user-name">{item.userName}</h3>
                                 </div>
                             </div>
                             {
