@@ -1,19 +1,26 @@
 .card {
 
-    .card-image {
-        margin: 0px -15px;
-
-
-
+    .card-content.row {
+        margin: 0;
     }
 
-    .user-name,
+    .user-name {
+        // padding-top: 0.75em;
+        padding-left: 0.75em;
+        flex: auto;
+    }
+
     .user-details {
         padding: 1em;
+        display: flex;
+        flex-direction: row;
     }
 
     .user-name {
         text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .user-text {
@@ -31,6 +38,7 @@
 
         &.user {
             max-width: 75px;
+            flex: 1;
         }
     }
 }

@@ -28,34 +28,34 @@ export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IPr
         var submissions = [];
         for (const item of items) {
             submissions.push(
-                <div key={item.guid} className="col-12 col-lg-3 col-md-4 col-sm-6 col-xs-12 card">
-                    <div className="card-image">
-                        <img src={item.imageUrl} alt="Submission" />
-                    </div>
-                    <div className="card-content row">
-                        <div className="col-3 col-lg-2 col-md-3 col-sm-3 col-xs-4 user-details">
-                            <img src={item.userImage} className="user" alt="User Icon" />
+                <div key={item.guid} className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                    <div className="card">
+                        <div className="card-image">
+                            <img src={item.imageUrl} alt="Submission" />
                         </div>
-                        <div className="col-9 col-lg-10 col-md-9 col-sm-9 col-xs-8 user-name">
-                            <h3>{item.userName}</h3>
-                        </div>
-                        {
-                            (item.text != null && item.text.length > 1)
-                                ? <div className="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <hr />
-                                    <p className="user-text">{item.text}</p>
+                        <div className="card-content row">
+                            <div className="col-12">
+                                <div className="user-details">
+                                    <img src={item.userImage} className="user" alt="User Icon" />
+                                    <h3 className="user-name">{item.userName}{item.userName}{item.userName}{item.userName}</h3>
                                 </div>
-                                : null
-                        }
+                            </div>
+                            {
+                                (item.text != null && item.text.length > 1)
+                                    ? <div className="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <hr />
+                                        <p className="user-text">{item.text}</p>
+                                    </div>
+                                    : null
+                            }
+                        </div>
                     </div>
                 </div>
             );
         }
         return (
             <div className="row">
-                <div className="col-12">
-                    {submissions}
-                </div>
+                {submissions}
             </div>
         );
     }
