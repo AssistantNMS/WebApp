@@ -1,6 +1,6 @@
 import React from 'react';
 import { OnlineMeetup2020SubmissionViewModel } from '../../contracts/generated/onlineMeetup2020SubmissionViewModel';
-import { AssistantAppsApiService } from '../../services/AssistantAppsApiService';
+import { ApiService } from '../../services/ApiService';
 import { OnlineMeetup2020SubmissionPresenter } from './onlineMeetup2020Presenter';
 import { NetworkState } from '../../constants/NetworkState';
 
@@ -27,7 +27,7 @@ export class OnlineMeetup2020SubmissionContainer extends React.Component<IProps,
     }
 
     fetchOnlineMeetupSubmissions = async () => {
-        var itemsResult = await new AssistantAppsApiService().getOnlineMeetupSubmissions();
+        var itemsResult = await new ApiService().getOnlineMeetupSubmissions();
         if (!itemsResult.isSuccess) {
             this.setState(() => {
                 return {

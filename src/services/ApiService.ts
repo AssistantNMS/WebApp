@@ -1,10 +1,11 @@
 import { PlatformType } from '../contracts/enum/PlatformType';
-
 import { CommunityMissionViewModel } from '../contracts/generated/communityMissionViewModel';
 import { GuideMetaViewModel } from '../contracts/generated/guideMetaViewModel';
+import { OnlineMeetup2020SubmissionViewModel } from '../contracts/generated/onlineMeetup2020SubmissionViewModel';
 import { ResultWithValue } from '../contracts/results/ResultWithValue';
-
 import { BaseApiService } from './BaseApiService';
+
+
 
 
 export class ApiService extends BaseApiService {
@@ -18,5 +19,9 @@ export class ApiService extends BaseApiService {
 
     async likeGuide(guid: string): Promise<ResultWithValue<GuideMetaViewModel>> {
         return await this.post(`guide/${guid}`, '{}');
+    }
+
+    async getOnlineMeetupSubmissions(): Promise<ResultWithValue<Array<OnlineMeetup2020SubmissionViewModel>>> {
+        return await this.get<Array<OnlineMeetup2020SubmissionViewModel>>('OnlineMeetup2020Submission');
     }
 }
