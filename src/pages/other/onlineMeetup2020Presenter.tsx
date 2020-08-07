@@ -28,7 +28,7 @@ export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IPr
         var submissions = [];
         for (const item of items) {
             submissions.push(
-                <div key={item.guid} className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                <div key={item.guid} className="item">
                     <div className="card">
                         {
                             (item.imageUrl != null && item.imageUrl.length > 1)
@@ -59,7 +59,9 @@ export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IPr
         }
         return (
             <div className="row">
-                {submissions}
+                <div className="masonry">
+                    {submissions}
+                </div>
             </div>
         );
     }
