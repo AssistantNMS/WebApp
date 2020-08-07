@@ -30,9 +30,13 @@ export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IPr
             submissions.push(
                 <div key={item.guid} className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div className="card">
-                        <div className="card-image">
-                            <img src={item.imageUrl} alt="Submission" />
-                        </div>
+                        {
+                            (item.imageUrl != null && item.imageUrl.length > 1)
+                                ? <div className="card-image">
+                                    <img src={item.imageUrl} alt="Submission" />
+                                </div>
+                                : null
+                        }
                         <div className="card-content row">
                             <div className="col-12">
                                 <div className="user-details">
