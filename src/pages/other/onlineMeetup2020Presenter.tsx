@@ -58,7 +58,7 @@ export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IPr
             );
         }
         return (
-            <div className="row">
+            <div className="row max100">
                 <div className="masonry">
                     {submissions}
                 </div>
