@@ -13,25 +13,86 @@
     .user-name {
         // padding-top: 0.75em;
         padding-left: 0.75em;
-        flex: auto;
+        // flex: auto;
     }
 
     .user-details {
         padding: 1em;
         display: flex;
         flex-direction: row;
+
+        .external-link,
+        .user-image {
+            min-width: 50px;
+            flex: 1 0 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 2em;
+            }
+
+            @media only screen and (min-width: 769px) {
+                max-width: 50px;
+
+                i {
+                    font-size: 2em;
+                }
+            }
+
+            @media only screen and (min-width: 1201px) {
+                max-width: 75px;
+
+                i {
+                    font-size: 2.5em;
+                }
+            }
+        }
+
+        .user-image img {
+            border-radius: 100%;
+            max-height: 75px;
+        }
     }
 
     .user-name {
-        text-align: left;
-        white-space: nowrap;
+        flex: auto;
+        display: flex;
+        align-items: center;
         overflow: hidden;
-        text-overflow: ellipsis;
+
+        h3 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: left;
+            margin: 0;
+        }
     }
 
     .user-text {
         padding: 0 .5em;
         font-size: 1.5em;
+    }
+
+    @media only screen and (max-width: 450px) {
+        .user-details {
+            padding: 1em;
+            display: block;
+        }
+
+        .user-name {
+            display: block;
+            margin: 0;
+            padding: 0;
+
+            h3 {
+                text-align: center;
+                margin: 0;
+                padding: .5em 0;
+            }
+        }
     }
 
     hr {
@@ -42,12 +103,6 @@
         max-width: 100%;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
-
-        &.user {
-            max-width: 75px;
-            flex: 1;
-            border-radius: 100%;
-        }
     }
 }
 

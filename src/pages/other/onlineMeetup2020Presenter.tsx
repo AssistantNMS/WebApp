@@ -40,8 +40,19 @@ export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IPr
                         <div className="card-content row">
                             <div className="col-12">
                                 <div className="user-details">
-                                    <img src={item.userImage} className="user" alt="User Icon" />
-                                    <h3 className="user-name">{item.userName}</h3>
+                                    <div className="user-image">
+                                        <img src={item.userImage} className="user" alt="User Icon" />
+                                    </div>
+                                    <div className="user-name">
+                                        <h3>{item.userName}</h3>
+                                    </div>
+                                    {
+                                        (item.externalUrl != null && item.externalUrl.length > 1)
+                                            ? <a href={item.externalUrl} className="external-link" rel="noopener noreferrer">
+                                                <i className="material-icons">open_in_new</i>
+                                            </a>
+                                            : null
+                                    }
                                 </div>
                             </div>
                             {
