@@ -12,6 +12,11 @@ import { mapProcessorItems } from '../mapper/ProcessorMapper';
 import { BaseJsonService } from './BaseJsonService';
 import { Processor } from '../contracts/Processor';
 import { CatalogueType } from '../constants/CatalogueType';
+import { WeekendMission } from '../contracts/helloGames/weekendMission';
+import { WeekendMissionStage } from '../contracts/helloGames/weekendMissionStage';
+import { anyObject } from '../helper/typescriptHacks';
+import i18next from 'i18next';
+import { LocaleKey } from '../localization/LocaleKey';
 
 export class GameItemService extends BaseJsonService {
   async getListfromJson(catalogueType: string): Promise<ResultWithValue<Array<GameItemModel>>> {
@@ -280,5 +285,41 @@ export class GameItemService extends BaseJsonService {
       value: itemDetails,
       errorMessage: '',
     };
+  }
+
+  async getWeekendMissionStage(seasonId: string, levelId: number): Promise<ResultWithValue<WeekendMissionStage>> {
+    let result: any = {};
+
+    if (!seasonId) return { isSuccess: false, value: result, errorMessage: 'seasonId specified is invallid' };
+    if (!levelId) return { isSuccess: false, value: result, errorMessage: 'levelId specified is invallid' };
+
+    var path = i18next.t(LocaleKey.weekendMissionJson).toString();
+    const weekendMissionsResult = await this.getAsset<Array<WeekendMission>>(`json/${path}.json`);
+    if (!weekendMissionsResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: result.errorMessage };
+
+    let found = false;
+    for (const item of weekendMissionsResult.value) {
+      if (item.Id !== seasonId) continue;
+
+      for (const stage of item.Stages) {
+        if (stage.Level !== levelId) continue;
+
+        result = stage;
+        found = true;
+      }
+    }
+    if (!found) {
+      return {
+        isSuccess: false,
+        value: result,
+        errorMessage: 'no matching item found',
+      };
+    }
+
+    return {
+      isSuccess: true,
+      value: result,
+      errorMessage: ''
+    }
   }
 }

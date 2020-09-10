@@ -33,6 +33,7 @@ import { CommunityMissionContainer } from './pages/helloGames/communityMissionCo
 import { FavouritePresenter } from './pages/favourite/favouritePresenter';
 import { SyncContainer } from './pages/sync/syncContainer';
 import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2020Container';
+import { WeekendMissionContainer } from './pages/helloGames/weekendMission/weekendMissionContainer';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 
 import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
@@ -84,6 +85,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.social} component={SocialPresenter} />
             <Route path={route.sync} component={SyncContainer} />
             <Route path={route.onlineMeetup2020} component={OnlineMeetup2020SubmissionContainer} />
+            <Route path={route.weekendMission} component={WeekendMissionContainer} />
             <Route component={NotFoundPresenter} />
           </Switch>
         </div>
