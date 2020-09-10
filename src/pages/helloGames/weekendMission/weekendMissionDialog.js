@@ -5,7 +5,7 @@ export const WeekendMissionDialog = (props) => {
     return (
         <>
             <Sheet isOpen={props.isOpen}
-                onClose={() => props.close()}
+                onClose={props.close}
                 snapPoints={[600]}
                 initialSnap={0}
             >
@@ -13,7 +13,7 @@ export const WeekendMissionDialog = (props) => {
                     <Sheet.Header />
                     <Sheet.Content>{props.children}</Sheet.Content>
                 </Sheet.Container>
-                <Sheet.Backdrop />
+                <Sheet.Backdrop onTap={props.close} />
             </Sheet>
         </>
     );

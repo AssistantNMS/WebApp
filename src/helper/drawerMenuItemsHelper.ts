@@ -85,13 +85,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
-  // menuItems.push({
-  //   name: i18next.t(LocaleKey.weekendMission).toString(),
-  //   link: routes.weekendMission,
-  //   icon: '/assets/images/drawer/weekendMission.png',
-  //   iconType: DrawerIconType.Custom,
-  //   isActive: false
-  // });
+  menuItems.push({
+    name: i18next.t(LocaleKey.weekendMission).toString(),
+    link: routes.weekendMission,
+    icon: '/assets/images/drawer/weekendMission.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
   menuItems.push(menuItemSeperator);
   // menuItems.push({
   //   name: i18next.t(LocaleKey.synchronize).toString(),

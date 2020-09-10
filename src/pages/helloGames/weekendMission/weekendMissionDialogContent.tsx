@@ -2,19 +2,23 @@ import React from 'react';
 
 import { ChatBubblesPresenter } from '../../../components/tilePresenter/chatBubble/chatBubblePresenter';
 import { NpcMessageFlows } from '../../../contracts/helloGames/weekendMissionStage';
+import { Fab } from '@material/react-fab';
 
 enum ChatType {
     Outgoing = 0,
     Incoming = 1,
+    Options = 2,
 }
 
 interface IChatProps {
     type: ChatType;
     text: string;
+    onClick?: () => void;
 }
 
 interface IProps {
     messageFlow: NpcMessageFlows;
+    close?: () => void;
 }
 
 interface IState {
@@ -45,9 +49,36 @@ export class WeekendMissionDialogContent extends React.Component<IProps, IState>
 
     render() {
         const localChatBubbles: Array<IChatProps> = [...this.state.messages];
+        for (const opt of this.state.currentMessageFlow.Options) {
+            localChatBubbles.push({
+                type: ChatType.Options,
+                text: opt.Name,
+                onClick: () => {
+                    var msgToSend = { type: ChatType.Outgoing, text: opt.Name };
+                    this.setState(() => {
+                        return {
+                            messages: [...this.state.messages,
+                                msgToSend,
+                            ...this.receivedMessages(opt.IfSelected.IncomingMessages)
+                            ],
+                            currentMessageFlow: opt.IfSelected
+                        }
+                    })
+                }
+            });
+        }
         return (
             <>
                 <ChatBubblesPresenter chatBubbles={localChatBubbles} />
+                {
+                    this.state.currentMessageFlow.Options == null || this.state.currentMessageFlow.Options.length === 0
+                        ? <Fab className="fab-bg-color fab-margin"
+                            key="closeChatFAB"
+                            icon={<i className="material-icons"><i className="material-icons">close</i></i>}
+                            onClick={this.props.close}
+                        />
+                        : null
+                }
             </>
         );
     }

@@ -207,4 +207,21 @@ $list-item-text-color-darker: #c5c5c5;
     .react-modal-sheet-container {
         background-color: $brand-primary-background-dark !important;
     }
+
+    .discussion {
+        >.bubble.sender {
+            background-color: #0e0e0e;
+            color: #fff;
+        }
+
+        >.bubble.recipient {
+            background-color: $brand-primary-dark;
+        }
+
+        >.bubble.option {
+            background-color: $brand-secondary-dark;
+            color: black;
+
+        }
+    }
 }

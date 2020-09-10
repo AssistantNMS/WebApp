@@ -85,6 +85,12 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                             isCentered={true}
                         />
                     </div>
+                    <div className="col-12 pt1">
+                        <PositiveButton onClick={() => {
+                            setMessageFlow(weekendMission.PortalMessageFlows);
+                            setOpen(true)
+                        }} />
+                    </div>
                 </div>
             </>
         );
@@ -104,7 +110,7 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                 </div>
             </div>
             <WeekendMissionDialog isOpen={isOpen} close={() => setOpen(false)}>
-                <WeekendMissionDialogContent messageFlow={currentMessageFlow} />
+                <WeekendMissionDialogContent messageFlow={currentMessageFlow} close={() => setOpen(false)} />
             </WeekendMissionDialog>
         </>
     );

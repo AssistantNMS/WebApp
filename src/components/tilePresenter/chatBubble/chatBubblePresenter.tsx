@@ -7,11 +7,13 @@ import { newGuid } from '../../../helper/guidHelper';
 enum ChatType {
     Outgoing = 0,
     Incoming = 1,
+    Options = 2,
 }
 
 interface IChatProps {
     type: ChatType;
     text: string;
+    onClick?: () => void;
 }
 
 interface IProps {
@@ -27,8 +29,11 @@ export const ChatBubblesPresenter = (props: IProps) => {
                         <div key={newGuid()} className={classNames("bubble", {
                             sender: item.type === ChatType.Incoming,
                             recipient: item.type === ChatType.Outgoing,
+                            option: item.type === ChatType.Options,
+                            noselect: item.type === ChatType.Options,
+                            pointer: item.type === ChatType.Options,
                         })
-                        }>
+                        } onClick={() => item.onClick != null ? item.onClick() : null}>
                             {item.text}
                         </div>
                     )
