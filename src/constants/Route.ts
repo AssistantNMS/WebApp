@@ -18,4 +18,4 @@ export const portal = '/portals';
 export const addEditPortal = '/edit-portal';
 export const sync = '/sync';
 export const onlineMeetup2020 = '/onlineMeetup2020';
-export const weekendMission = '/weekendMission';
+export const weekendMission = '/helloGames/weekendMission';
