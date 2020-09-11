@@ -1,6 +1,23 @@
 [
   {
     "Id": "MP_PORTALQUEST",
+    "Titles": [
+      "Swallowed by a Star",
+      "Toward the Void",
+      "Misaligned Realities",
+      "A Dark Maw",
+      "Vanishing Point"
+    ],
+    "Subtitles": [
+      "Investigate Anomalous Region"
+    ],
+    "Descriptions": [
+      "Nada's spacetime loom has detected a disturbance in a distant region of the universe. The probable breach in reality is too dangerous for the Space Anomaly to warp to directly. Travellers must access the region by Portal.\n\nWEEKEND EVENT: This mission may only be completed once each week. Grouping up with other explorers is recommended, but it may also be played solo.",
+      "An abnormal signal has reached the Anomaly's communicators, its frequency indicating a disturbance in reality. The signal is corrupted, and its exact origin cannot be triangulated. The only way to reach it is by Portal.\n\nWEEKEND EVENT: This mission may only be completed once each week. Grouping up with other explorers is recommended, but it may also be played solo.",
+      "Unusual, potentially dangerous readings have appeared on Nada's spacetime loom. The Iterations inhabiting the Space Anomaly believe these point to a disturbance in reality that may only be accessed by Portal.\n\nWEEKEND EVENT: This mission may only be completed once each week. Grouping up with other explorers is recommended, but it may also be played solo.",
+      "A desperate and broken transmission has reached the Space Anomaly, but the signal is untraceable, its origin disturbed. Nada and Polo urge Travellers to search for a route via the ancient Portal network and investigate.\n\nWEEKEND EVENT: This mission may only be completed once each week. Grouping up with other explorers is recommended, but it may also be played solo.",
+      "The Anomaly inhabitants are deeply troubled by recent readings from Nada's spacetime loom. The data indicates a region of unsettled reality. Rewards are offered to any Travellers who travel by Portal and assist.\n\nWEEKEND EVENT: This mission may only be completed once each week. Grouping up with other explorers is recommended, but it may also be played solo."
+    ],
     "Stages": [
       {
         "Level": 26,
@@ -443,7 +460,7 @@
               "Name": "Offer materials",
               "IfSelected": {
                 "IncomingMessages": [
-                  "The transmission has changed with the collapse of the anomaly. Instead, Gek voices speak of gratitude and friendship. ",
+                  "The transmission has changed with the collapse of the anomaly. Instead, Gek voices speak of gratitude and friendship.",
                   "They tell me that this world could be a home for me. That I should stay. That the water is perfectly safe to drink.",
                   "They tell me they have been so lonely."
                 ],
@@ -517,8 +534,8 @@
         },
         "PortalMessageFlows": {
           "IncomingMessages": [
-            "The anomaly sings with voices, of Travellers across time and space. ",
-            "I hear their names in the static... Asteria, the Hero-Traveller... Narcissus, ally of the Last Spawn... They are countless. ",
+            "The anomaly sings with voices, of Travellers across time and space.",
+            "I hear their names in the static... Asteria, the Hero-Traveller... Narcissus, ally of the Last Spawn... They are countless.",
             "The anomaly demands a sacrifice. It does not speak with malice. It is in pain.",
             "Counless voices cry out for my help. I must provide resources. I must heal the world.",
             "A mossy growth coats the structure. Its tiny leaves wriggle excitedly when I move my hand closer. Is this an offering? Something to aid me?"
@@ -529,7 +546,7 @@
               "IfSelected": {
                 "IncomingMessages": [
                   "The rift heals itself. I track the navigational data of all those who passed through this place.",
-                  "Names fill my mind. Lazarus. Artemis. Hildebrand. ",
+                  "Names fill my mind. Lazarus. Artemis. Hildebrand.",
                   "I transfer the navigational data to the Nexus. This data will take some time to decode..."
                 ],
                 "Options": []
@@ -548,7 +565,7 @@
                     "IfSelected": {
                       "IncomingMessages": [
                         "The rift heals itself. I track the navigational data of all those who passed through this place.",
-                        "Names fill my mind. Lazarus. Artemis. Hildebrand. ",
+                        "Names fill my mind. Lazarus. Artemis. Hildebrand.",
                         "I transfer the navigational data to the Nexus. This data will take some time to decode..."
                       ],
                       "Options": []
@@ -583,7 +600,7 @@
         "NpcMessageFlows": {
           "IncomingMessages": [
             "I often wonder about the nature of our existence, Portal-Adept. What Ariadne's recent disappearance means for us.",
-            "There are some who believe the Travellers to be the same soul, split across countless iterations and universes. ",
+            "There are some who believe the Travellers to be the same soul, split across countless iterations and universes.",
             "How we might have been, had we lived different lives..."
           ],
           "Options": [
@@ -592,7 +609,7 @@
               "IfSelected": {
                 "IncomingMessages": [
                   "Mercury sighs, tired, but nods all the same.",
-                  "Of course. The great work must come first. ",
+                  "Of course. The great work must come first.",
                   "We have located Ariadne's ship. Or, rather, we have located hundreds of them, duplicated and morphed across the known universe.",
                   "The portal network is a blighted, dangerous thing. You must be careful, following in such steps.",
                   "Commune with stones of knowledge. Step through the gate. Discover the truth."
@@ -630,7 +647,7 @@
               "IfSelected": {
                 "IncomingMessages": [
                   "Corruption leaves this vessel, and with it a thousand duplicates disappear across the stars. I read the data-log.",
-                  "Before this ship's reality-splinter, it came into contact with a strange, vast freighter in the darkness between suns. ",
+                  "Before this ship's reality-splinter, it came into contact with a strange, vast freighter in the darkness between suns.",
                   "Its sole occupant managed to escape before the crash. Ariadne is still out there, somehow, somewhere.",
                   "My friend still lives."
                 ],
@@ -663,7 +680,7 @@
               "Name": "Offer to be friends",
               "IfSelected": {
                 "IncomingMessages": [
-                  "Do this for me, maybe I'll think about it, alright? I got a mission for you. A factory has been targeted... a clandestine operation I have some interest in. ",
+                  "Do this for me, maybe I'll think about it, alright? I got a mission for you. A factory has been targeted... a clandestine operation I have some interest in.",
                   "It shifts from world to world to avoid sentinel detection. I need you to track down knowledge stones, find its current portal coordinates.",
                   "Don't let me down."
                 ],
@@ -675,7 +692,7 @@
               "IfSelected": {
                 "IncomingMessages": [
                   "Tethys seems disappointed. They had hoped you would fight for their friendship.",
-                  "I... I got a mission for you. A factory has been targeted... a clandestine operation I have some interest in. ",
+                  "I... I got a mission for you. A factory has been targeted... a clandestine operation I have some interest in.",
                   "It shifts from world to world to avoid sentinel detection. I need you to track down knowledge stones, find its current portal coordinates.",
                   "I just need some help."
                 ],
@@ -705,7 +722,7 @@
             "Various species once worked in this place, gathering and manipulating genetic data to form appearance modifications.",
             "The factory's records are corrupted by the static, but I can access the final designs. The workers began creating appearance modifications of pure light, spheres in the place of heads.",
             "All of them are now dead.",
-            "The structure demands new data. It demands sacrifice. "
+            "The structure demands new data. It demands sacrifice."
           ],
           "Options": [
             {
@@ -713,7 +730,7 @@
               "IfSelected": {
                 "IncomingMessages": [
                   "As the corruption fades, I search the factory's records one last time, trying to find evidence of its last days.",
-                  "At some point, the workers discovered the holographic displays they'd created had replaced their real skulls. ",
+                  "At some point, the workers discovered the holographic displays they'd created had replaced their real skulls.",
                   "With these spheres of light had come nightmares. The images seem familiar, somehow. Like I've seen this face before."
                 ],
                 "Options": []
@@ -746,7 +763,7 @@
               "IfSelected": {
                 "IncomingMessages": [
                   "Tell me. Did you ever hear the story of the Hero-Traveller Asteria? One of the first of us to breach the gap between worlds.",
-                  "Time flows strangely for our people. Asteria was preserved in a Mind-Arc after their death, dispensing wisdom from the grave. ",
+                  "Time flows strangely for our people. Asteria was preserved in a Mind-Arc after their death, dispensing wisdom from the grave.",
                   "It is a pilgrimage we have all made. It is time you seek your prophecy, kindred.",
                   "Find their world. Follow the knowledge stones and take their glyphs through the portal..."
                 ],
@@ -757,7 +774,7 @@
               "Name": "Ask for guidance",
               "IfSelected": {
                 "IncomingMessages": [
-                  "Seek the grave of Asteria the Hero-Traveller. Follow the knowledge stones and the path to which they lead. "
+                  "Seek the grave of Asteria the Hero-Traveller. Follow the knowledge stones and the path to which they lead."
                 ],
                 "Options": []
               }
@@ -869,7 +886,7 @@
               "IfSelected": {
                 "IncomingMessages": [
                   "The corruption has departed. All that is left are the sad logs of suffering beings, protesting their innocence.",
-                  "The parent of a Mech-Priest, claiming they do not know where their child is, claiming that they still follow the way of Hirk. ",
+                  "The parent of a Mech-Priest, claiming they do not know where their child is, claiming that they still follow the way of Hirk.",
                   "The data reveals all prisoners were executed, prior to a mutiny. The remaining crew members left into the dark.",
                   "Nothing beside remains."
                 ],
@@ -946,7 +963,7 @@
               "Name": "Offer materials",
               "IfSelected": {
                 "IncomingMessages": [
-                  "The rift healed, I discover the origin of the experiment. ",
+                  "The rift healed, I discover the origin of the experiment.",
                   "Hesperus had been working with the Korvax... had been trying to solve our predicament.",
                   "Their failure here has caused devastation to this species. I do not know if my friend survived..."
                 ],
@@ -1050,7 +1067,7 @@
         "NpcMessageFlows": {
           "IncomingMessages": [
             "Tethys seems uneasy. Their lidless eyes flick towards Mercury's empty post.",
-            "Tell me. Do you ever feel lonely? "
+            "Tell me. Do you ever feel lonely?"
           ],
           "Options": [
             {
@@ -1107,7 +1124,7 @@
                 "IncomingMessages": [
                   "The corruption purged, I look more closely at the fallen vessel’s data. The Traveller pilot believed they heard voices, those days prior to the crash.",
                   "Whispers from their own Exosuit issued out into the void, bargaining for survival...",
-                  "I leave, checking my own for signs of tampering or malfunction. All seems as it should be. "
+                  "I leave, checking my own for signs of tampering or malfunction. All seems as it should be."
                 ],
                 "Options": []
               }
@@ -1166,9 +1183,9 @@
         },
         "PortalMessageFlows": {
           "IncomingMessages": [
-            "The grave crackles with exotic energies. ",
-            "The Traveller who once rested here is long gone, harvested by a Mind Arc from another universe. ",
-            "The grave is a place of unending yearning, now. Its existence demands a tribute of resources. "
+            "The grave crackles with exotic energies.",
+            "The Traveller who once rested here is long gone, harvested by a Mind Arc from another universe.",
+            "The grave is a place of unending yearning, now. Its existence demands a tribute of resources."
           ],
           "Options": [
             {
@@ -1176,7 +1193,7 @@
               "IfSelected": {
                 "IncomingMessages": [
                   "The grave is purified. I attempt to find the name of the one who died here, but all I find is a null value.",
-                  "I depart, troubled. It feels as if someone is watching me... "
+                  "I depart, troubled. It feels as if someone is watching me..."
                 ],
                 "Options": []
               }
@@ -1244,7 +1261,7 @@
               "Name": "Offer materials",
               "IfSelected": {
                 "IncomingMessages": [
-                  "The crashed vessel is purged of all anomalous traces. ",
+                  "The crashed vessel is purged of all anomalous traces.",
                   "Its log speaks of the Atlas who made all things... even loss. Even hate.",
                   "I wonder if, in their final moments, they trusted in their deity. If they hoped for salvation..."
                 ],
@@ -1276,10 +1293,10 @@
               "Name": "Greet your friend",
               "IfSelected": {
                 "IncomingMessages": [
-                  "They hide the schematics, hesitating as they turn to face me. ",
+                  "They hide the schematics, hesitating as they turn to face me.",
                   "So much of our lives are mysteries, my friend. The faces we are born with...",
-                  "The clothes we wear. Who made the Exosuits? Who speaks with their voice? ",
-                  "The knowledge stones, the portals they lead us through... they are our birthright. ",
+                  "The clothes we wear. Who made the Exosuits? Who speaks with their voice?",
+                  "The knowledge stones, the portals they lead us through... they are our birthright.",
                   "There is so much out there, still to be found."
                 ],
                 "Options": []
@@ -1306,7 +1323,7 @@
         "PortalMessageFlows": {
           "IncomingMessages": [
             "The structure once housed an artificial intelligence.",
-            "Corruption now festers within its shell, hating all that it once was. ",
+            "Corruption now festers within its shell, hating all that it once was.",
             "This place desires only matter. It wants me to bring it more."
           ],
           "Options": [
@@ -1315,8 +1332,8 @@
               "IfSelected": {
                 "IncomingMessages": [
                   "I see the final vestiges of the AI as all corruption departs, the final fifteen minutes of its life...",
-                  "It knew I would come here. It knew I would try to save it. ",
-                  "Worlds upon worlds seethe in the void. The Abyss spreads. "
+                  "It knew I would come here. It knew I would try to save it.",
+                  "Worlds upon worlds seethe in the void. The Abyss spreads."
                 ],
                 "Options": []
               }
@@ -1406,7 +1423,7 @@
         "Quantity": 90,
         "NpcMessageFlows": {
           "IncomingMessages": [
-            "Traveller... has your Exosuit been operating at proper capacity? "
+            "Traveller... has your Exosuit been operating at proper capacity?"
           ],
           "Options": [
             {
@@ -1463,10 +1480,10 @@
               "Name": "Offer materials",
               "IfSelected": {
                 "IncomingMessages": [
-                  "The grave is purified. ",
+                  "The grave is purified.",
                   "I examine traces of the battle, of the fallen Traveller’s memories.",
                   "I see a face that is not a face, an arm raised to fire their weapon.",
-                  "I see the murderer. ",
+                  "I see the murderer.",
                   "It is Ariadne."
                 ],
                 "Options": []
@@ -1484,10 +1501,10 @@
                     "Name": "Offer materials",
                     "IfSelected": {
                       "IncomingMessages": [
-                        "The grave is purified. ",
+                        "The grave is purified.",
                         "I examine traces of the battle, of the fallen Traveller’s memories.",
                         "I see a face that is not a face, an arm raised to fire their weapon.",
-                        "I see the murderer. ",
+                        "I see the murderer.",
                         "It is Ariadne."
                       ],
                       "Options": []
@@ -1528,10 +1545,10 @@
               "Name": "Listen",
               "IfSelected": {
                 "IncomingMessages": [
-                  "Ariadne tells us the universe is burning with corruption, that only we Travellers can fight it. ",
-                  "But these missions... these lies... my kindred, we have been deceived. ",
+                  "Ariadne tells us the universe is burning with corruption, that only we Travellers can fight it.",
+                  "But these missions... these lies... my kindred, we have been deceived.",
                   "I thought my scans must be wrong. I thought I'd dreamt the whispers I heard in my mind.",
-                  "Hesperus shakes, tormented. ",
+                  "Hesperus shakes, tormented.",
                   "Ariadne crashed their ship some weeks ago. They never returned. The entity who now leads us is an imposter.",
                   "Find the knowledge stones, set your path through the portal. See the truth for yourself."
                 ],
