@@ -1,23 +1,6 @@
 [
   {
     "Id": "MP_PORTALQUEST",
-    "Titles": [
-      "Swallowed by a Star",
-      "Toward the Void",
-      "Misaligned Realities",
-      "A Dark Maw",
-      "Vanishing Point"
-    ],
-    "Subtitles": [
-      "Investigate Anomalous Region"
-    ],
-    "Descriptions": [
-      "Nada's spacetime loom has detected a disturbance in a distant region of the universe. The probable breach in reality is too dangerous for the Space Anomaly to warp to directly. Travellers must access the region by Portal.\n\nWEEKEND EVENT: This mission may only be completed once each week. Grouping up with other explorers is recommended, but it may also be played solo.",
-      "An abnormal signal has reached the Anomaly's communicators, its frequency indicating a disturbance in reality. The signal is corrupted, and its exact origin cannot be triangulated. The only way to reach it is by Portal.\n\nWEEKEND EVENT: This mission may only be completed once each week. Grouping up with other explorers is recommended, but it may also be played solo.",
-      "Unusual, potentially dangerous readings have appeared on Nada's spacetime loom. The Iterations inhabiting the Space Anomaly believe these point to a disturbance in reality that may only be accessed by Portal.\n\nWEEKEND EVENT: This mission may only be completed once each week. Grouping up with other explorers is recommended, but it may also be played solo.",
-      "A desperate and broken transmission has reached the Space Anomaly, but the signal is untraceable, its origin disturbed. Nada and Polo urge Travellers to search for a route via the ancient Portal network and investigate.\n\nWEEKEND EVENT: This mission may only be completed once each week. Grouping up with other explorers is recommended, but it may also be played solo.",
-      "The Anomaly inhabitants are deeply troubled by recent readings from Nada's spacetime loom. The data indicates a region of unsettled reality. Rewards are offered to any Travellers who travel by Portal and assist.\n\nWEEKEND EVENT: This mission may only be completed once each week. Grouping up with other explorers is recommended, but it may also be played solo."
-    ],
     "Stages": [
       {
         "Level": 26,
@@ -450,9 +433,9 @@
         },
         "PortalMessageFlows": {
           "IncomingMessages": [
-            "TXT_StaticNoise_StartA transmission emanates from the corrupted structure. Between the screams of Gek cultists, one word is clear, again and again.",
+            "A transmission emanates from the corrupted structure. Between the screams of Gek cultists, one word is clear, again and again.",
             "It demands sacrifice. It demands materials.",
-            "'Abyss'.TXT_StaticNoise_End",
+            "'Abyss'.",
             "The cult was unable to feed its master. My service is demanded instead. I must bring resources here..."
           ],
           "Options": [
@@ -538,7 +521,7 @@
             "I hear their names in the static... Asteria, the Hero-Traveller... Narcissus, ally of the Last Spawn... They are countless. ",
             "The anomaly demands a sacrifice. It does not speak with malice. It is in pain.",
             "Counless voices cry out for my help. I must provide resources. I must heal the world.",
-            "TXT_StaticNoise_StartA mossy growth coats the structure. Its tiny leaves wriggle excitedly when I move my hand closer. Is this an offering? Something to aid me?TXT_StaticNoise_End"
+            "A mossy growth coats the structure. Its tiny leaves wriggle excitedly when I move my hand closer. Is this an offering? Something to aid me?"
           ],
           "Options": [
             {
@@ -556,7 +539,7 @@
               "Name": "Collect Sweetened Compost",
               "IfSelected": {
                 "IncomingMessages": [
-                  "TXT_StaticNoise_StartThe compost falls easily into my hands. It smells sweet, almost appetising.TXT_StaticNoise_End",
+                  "The compost falls easily into my hands. It smells sweet, almost appetising.",
                   "Counless voices cry out for my help. I must provide resources. I must heal the world."
                 ],
                 "Options": [
@@ -1473,7 +1456,7 @@
             "Did a Traveller do this?",
             "There is evidence that a Multi-Tool was fired upon the fallen friend of Tethys, their analysis never completed.",
             "Around the grave corruption spreads, demanding its tribute.",
-            "TXT_StaticNoise_StartA mossy growth coats this gravesite. Its tiny leaves wriggle excitedly when I move my hand closer. Is this an offering? Something to aid me?TXT_StaticNoise_End"
+            "A mossy growth coats this gravesite. Its tiny leaves wriggle excitedly when I move my hand closer. Is this an offering? Something to aid me?"
           ],
           "Options": [
             {
@@ -1493,7 +1476,7 @@
               "Name": "Collect Sweetened Compost",
               "IfSelected": {
                 "IncomingMessages": [
-                  "TXT_StaticNoise_StartThe compost falls easily into my hands. It smells sweet, almost appetising.TXT_StaticNoise_End",
+                  "The compost falls easily into my hands. It smells sweet, almost appetising.",
                   "Around the grave corruption spreads, demanding its tribute."
                 ],
                 "Options": [
