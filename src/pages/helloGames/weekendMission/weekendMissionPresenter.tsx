@@ -1,24 +1,21 @@
 import i18next from 'i18next';
 import React from 'react';
-import Sheet from 'react-modal-sheet';
-
-import { ApiService } from '../../../services/ApiService';
-import { WeekendMissionViewModel } from '../../../contracts/generated/Model/HelloGames/weekendMissionViewModel';
-import { NetworkState } from '../../../constants/NetworkState';
-import { LocaleKey } from '../../../localization/LocaleKey';
+import { PositiveButton } from '../../../components/common/button/positiveButton';
+import { GameItemImage } from '../../../components/common/gameItem/gameItemImage';
+import { GenericListPresenter } from '../../../components/common/genericListPresenter/genericListPresenter';
+import { HeadComponent } from '../../../components/core/headComponent';
 import { SmallLoading } from '../../../components/core/loading/loading';
 import { NavBar } from '../../../components/core/navbar/navbar';
-import { HeadComponent } from '../../../components/core/headComponent';
-import { WeekendMissionStage, NpcMessageFlows } from '../../../contracts/helloGames/weekendMissionStage';
-import { GameItemImage } from '../../../components/common/gameItem/gameItemImage';
-import { GameItemList } from '../../../components/common/gameItemList/gameItemList';
-import { GenericListPresenter } from '../../../components/common/genericListPresenter/genericListPresenter';
 import { RequiredItemListTile } from '../../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
+import { NetworkState } from '../../../constants/NetworkState';
+import { WeekendMissionStage } from '../../../contracts/helloGames/weekendMissionStage';
 import { RequiredItem } from '../../../contracts/RequiredItem';
-import { PositiveButton } from '../../../components/common/button/positiveButton';
+import { anyObject } from '../../../helper/typescriptHacks';
+import { LocaleKey } from '../../../localization/LocaleKey';
+import { ApiService } from '../../../services/ApiService';
 import { WeekendMissionDialog } from './weekendMissionDialog';
 import { WeekendMissionDialogContent } from './weekendMissionDialogContent';
-import { anyObject } from '../../../helper/typescriptHacks';
+
 
 interface IProps {
     // Container Props
@@ -68,7 +65,8 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                     <div className="col-12 pt1">
                         <PositiveButton onClick={() => {
-                            setMessageFlow(weekendMission.NpcMessageFlows);
+                            const timeStamp = (new Date()).getTime();
+                            setMessageFlow({ ...weekendMission.NpcMessageFlows, timeStamp });
                             setOpen(true)
                         }} />
                     </div>
@@ -110,7 +108,10 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                 </div>
             </div>
             <WeekendMissionDialog isOpen={isOpen} close={() => setOpen(false)}>
-                <WeekendMissionDialogContent messageFlow={currentMessageFlow} close={() => setOpen(false)} />
+                <WeekendMissionDialogContent
+                    messageFlow={currentMessageFlow}
+                    close={() => setOpen(false)}
+                />
             </WeekendMissionDialog>
         </>
     );

@@ -1,15 +1,13 @@
 import i18next from 'i18next';
 import React from 'react';
-
 import { NetworkState } from '../../../constants/NetworkState';
-import { PlatformType } from '../../../contracts/enum/PlatformType';
-import { WeekendMissionViewModel } from '../../../contracts/generated/Model/HelloGames/weekendMissionViewModel';
+import { WeekendMissionStage } from '../../../contracts/helloGames/weekendMissionStage';
 import { anyObject } from '../../../helper/typescriptHacks';
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { ApiService } from '../../../services/ApiService';
-import { WeekendMissionPresenter } from './weekendMissionPresenter';
 import { GameItemService } from '../../../services/GameItemService';
-import { WeekendMissionStage } from '../../../contracts/helloGames/weekendMissionStage';
+import { WeekendMissionPresenter } from './weekendMissionPresenter';
+
 
 interface IProps {
 }
