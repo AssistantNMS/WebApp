@@ -233,6 +233,7 @@
     "IsCraftable": true,
     "IsConsumable": false,
     "Colour": "2C7B9F",
+    "Power": -20.0,
     "BlueprintSource": 0,
     "BlueprintNaniteCost": 2,
     "HideBlueprintNaniteCost": true,
@@ -440,12 +441,12 @@
         "Quantity": 4
       },
       {
-        "Id": "prod8",
-        "Quantity": 1
-      },
-      {
         "Id": "cook122",
         "Quantity": 10
+      },
+      {
+        "Id": "prod117",
+        "Quantity": 1
       }
     ],
     "ConsumableRewards": []
@@ -1073,7 +1074,7 @@
         "Quantity": 3
       },
       {
-        "Id": "prod24",
+        "Id": "prod23",
         "Quantity": 5
       }
     ],
@@ -1101,7 +1102,7 @@
         "Quantity": 100
       },
       {
-        "Id": "prod21",
+        "Id": "prod20",
         "Quantity": 1
       }
     ],
@@ -1527,6 +1528,21 @@
         "Quantity": 4
       }
     ],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "conTech64",
+    "Icon": "constructedTechnology/64.png",
+    "BaseValueUnits": 95000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 15.0,
+    "Colour": "1A2733",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [],
     "ConsumableRewards": []
   }
 ]
