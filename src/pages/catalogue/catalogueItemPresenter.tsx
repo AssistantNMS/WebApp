@@ -7,7 +7,7 @@ import { AdditionalInfoChipRow } from '../../components/common/chip/additionalIn
 import { ItemHeaderRow } from '../../components/core/itemHeaderRow';
 import { CartFloatingActionButton } from '../../components/floatingActionButton/cartFloatingActionButton';
 import { FavouriteFloatingActionButton } from '../../components/floatingActionButton/favouriteFloatingActionButton';
-import { GenericItemListTile } from '../../components/tilePresenter/genericItemListTile/genericItemListTile';
+import { GenericItemWithRequirementsListTile } from '../../components/tilePresenter/genericItemListTile/genericItemWithRequirementsListTile';
 import { ProcessorItemListTile } from '../../components/tilePresenter/processorItemListTile/processorItemListTile';
 import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
 import { IdPrefix } from '../../constants/IdPrefix';
@@ -72,7 +72,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                         <h3>{i18next.t(LocaleKey.usedToCreate)}</h3>
                     </div>
                     <div className="col-12">
-                        <GenericListPresenter list={usedToCreateArray} presenter={GenericItemListTile} />
+                        <GenericListPresenter list={usedToCreateArray} presenter={GenericItemWithRequirementsListTile} />
                     </div>
                 </div>
                 <hr className="mt-3em" />

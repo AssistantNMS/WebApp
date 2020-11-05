@@ -14,5 +14,5 @@ export const GenericItemListTile = (props: GameItemModel) => (
         <div className="gen-item-content-container">
             <TextContainer text={props.Name} additionalCss="full" />
         </div>
-    </Link >
+    </Link>
 )
