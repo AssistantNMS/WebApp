@@ -23,6 +23,8 @@ import { ChargeBy } from '../../contracts/recharge/chargeBy';
 import { Recharge } from '../../contracts/recharge/recharge';
 import { ChargeByItemListTile } from '../../components/tilePresenter/recharge/chargeByItemListTile';
 import { RechargeItemListTile } from '../../components/tilePresenter/recharge/rechargeItemListTile';
+import { NetworkState } from '../../constants/NetworkState';
+import { SmallLoading } from '../../components/core/loading/loading';
 
 interface IProps {
     // Container Props
@@ -43,6 +45,7 @@ interface IProps {
     allGameItemsService: AllGameItemsService;
     rechargeByService: RechargeByService;
     additionalData: Array<any>;
+    networkState: NetworkState;
 
     // Container Specific
     addThisItemToCart: () => void;
@@ -204,6 +207,29 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
         return components;
     }
 
+    const handleLoadingOrError = () => {
+        if (props.networkState === NetworkState.Loading) return SmallLoading();;
+        if (props.networkState === NetworkState.Error) {
+            return (<h2>{i18next.t(LocaleKey.error)}</h2>);
+        }
+        return displayDetails();
+    }
+
+    const displayDetails = () => {
+        return (
+            <>
+                {displayRequiredItems(props.resArray)}
+                {displayUsedToCreateItems(props.usedToCreateArray)}
+                {displayRechargedByItems(props.rechargedBy)}
+                {displayUsedToRechargeItems(props.usedToRechargeArray)}
+                {displayRefItems(props.refArray)}
+                {displayUsedToRefItems(props.usedToRefArray)}
+                {displayCookItems(props.cookArray)}
+                {displayUsedToCookItems(props.usedToCookArray)}
+            </>
+        )
+    }
+
     const title = props?.item?.Name;
     const description = props?.item?.Description;
     return (
@@ -213,14 +239,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
             <div className="content">
                 <ItemHeaderRow {...props.item} />
                 <AdditionalInfoChipRow additionalData={props.additionalData} />
-                {displayRequiredItems(props.resArray)}
-                {displayUsedToCreateItems(props.usedToCreateArray)}
-                {displayRechargedByItems(props.rechargedBy)}
-                {displayUsedToRechargeItems(props.usedToRechargeArray)}
-                {displayRefItems(props.refArray)}
-                {displayUsedToRefItems(props.usedToRefArray)}
-                {displayCookItems(props.cookArray)}
-                {displayUsedToCookItems(props.usedToCookArray)}
+                {handleLoadingOrError()}
             </div>
 
             {getFloatingActionButtons()}
