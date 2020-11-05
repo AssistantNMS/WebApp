@@ -8,11 +8,13 @@ import { CurrencyType } from '../../contracts/enum/CurrencyType';
 import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
+import { Recharge } from '../../contracts/recharge/recharge';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
 import { GameItemService } from '../../services/GameItemService';
+import { RechargeByService } from '../../services/RechargeByService';
 import { mapDispatchToProps, mapStateToProps } from './catalogueItem.Redux';
 import { CatalogueItemPresenter } from './catalogueItemPresenter';
 
@@ -35,8 +37,11 @@ interface IState {
     usedToRefArray: Array<Processor>;
     cookArray: Array<Processor>;
     usedToCookArray: Array<Processor>;
+    rechargedBy: Recharge;
+    usedToRechargeArray: Array<Recharge>;
     gameItemService: GameItemService;
     allGameItemsService: AllGameItemsService;
+    rechargeByService: RechargeByService;
     additionalData: Array<any>;
 }
 
@@ -52,8 +57,11 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
             usedToRefArray: [],
             cookArray: [],
             usedToCookArray: [],
+            rechargedBy: anyObject,
+            usedToRechargeArray: [],
             gameItemService: new GameItemService(),
             allGameItemsService: new AllGameItemsService(),
+            rechargeByService: new RechargeByService(),
             additionalData: []
         }
     }
@@ -80,6 +88,8 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
                 usedToRefArray: [],
                 cookArray: [],
                 usedToCookArray: [],
+                rechargedBy: anyObject,
+                usedToRechargeArray: [],
                 additionalData: []
             }
         });
@@ -95,6 +105,8 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
         this.getUsedToRefArray(itemResult.value.Id);
         this.getCookArray(itemResult.value.Id);
         this.getUsedToCookArray(itemResult.value.Id);
+        this.getRechargeByArray(itemResult.value.Id);
+        this.getUsedToRechargeArray(itemResult.value.Id);
         this.setState(() => {
             return {
                 item: itemResult.value,
@@ -119,6 +131,27 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
         this.setState(() => {
             return {
                 usedToCreateArray: usedToCreateArrayResult.value,
+            }
+        });
+    }
+
+    getRechargeByArray = async (itemId: string) => {
+        var rechargeByResult = await this.state.rechargeByService.getRechargeById(itemId);
+        if (!rechargeByResult.isSuccess) return;
+        this.setState(() => {
+            return {
+                rechargedBy: rechargeByResult.value,
+            }
+        });
+    }
+
+    getUsedToRechargeArray = async (itemId: string) => {
+        var usedToRechargeResult = await this.state.rechargeByService.getRechargeByChargeById(itemId);
+        console.log(usedToRechargeResult);
+        if (!usedToRechargeResult.isSuccess) return;
+        this.setState(() => {
+            return {
+                usedToRechargeArray: usedToRechargeResult.value,
             }
         });
     }

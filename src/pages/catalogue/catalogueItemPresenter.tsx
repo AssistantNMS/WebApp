@@ -18,6 +18,11 @@ import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
 import { GameItemService } from '../../services/GameItemService';
+import { RechargeByService } from '../../services/RechargeByService';
+import { ChargeBy } from '../../contracts/recharge/chargeBy';
+import { Recharge } from '../../contracts/recharge/recharge';
+import { ChargeByItemListTile } from '../../components/tilePresenter/recharge/chargeByItemListTile';
+import { RechargeItemListTile } from '../../components/tilePresenter/recharge/rechargeItemListTile';
 
 interface IProps {
     // Container Props
@@ -32,8 +37,11 @@ interface IProps {
     usedToRefArray: Array<Processor>;
     cookArray: Array<Processor>;
     usedToCookArray: Array<Processor>;
+    rechargedBy: Recharge;
+    usedToRechargeArray: Array<Recharge>;
     gameItemService: GameItemService;
     allGameItemsService: AllGameItemsService;
+    rechargeByService: RechargeByService;
     additionalData: Array<any>;
 
     // Container Specific
@@ -73,6 +81,42 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                     <div className="col-12">
                         <GenericListPresenter list={usedToCreateArray} presenter={GenericItemWithRequirementsListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
+    const displayRechargedByItems = (rechargedBy: Recharge) => {
+        if (rechargedBy == null || rechargedBy.ChargeBy == null || rechargedBy.ChargeBy.length < 1) return null;
+
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.rechargeThisUsing)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GenericListPresenter list={rechargedBy.ChargeBy} presenter={(item: ChargeBy) => <ChargeByItemListTile {...item} totalChargeAmount={rechargedBy.TotalChargeAmount} />} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
+    const displayUsedToRechargeItems = (usedToRechargeArray: Array<Recharge>) => {
+        if (usedToRechargeArray == null || usedToRechargeArray.length < 1) return null;
+
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.useXToRecharge).replace('{0}', props.item.Name)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GenericListPresenter list={usedToRechargeArray} presenter={(item: Recharge) => <RechargeItemListTile {...item} currentItemId={props.item.Id} />} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -171,6 +215,8 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                 <AdditionalInfoChipRow additionalData={props.additionalData} />
                 {displayRequiredItems(props.resArray)}
                 {displayUsedToCreateItems(props.usedToCreateArray)}
+                {displayRechargedByItems(props.rechargedBy)}
+                {displayUsedToRechargeItems(props.usedToRechargeArray)}
                 {displayRefItems(props.refArray)}
                 {displayUsedToRefItems(props.usedToRefArray)}
                 {displayCookItems(props.cookArray)}
