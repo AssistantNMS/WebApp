@@ -1,0 +1,4180 @@
+[
+  {
+    "Id": "TRA_HARV_1",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 1,
+    "IncomingMessages": [
+      "Una orden prioritaria de extramundo ha parado todos los procesos de las instalaciones. La terminal emite luces con furia en un ruego por tomar acciones de manera urgente por una deuda pendiente.",
+      "Gek Trade Federation fury! Planetary installation tax unpaid! Initiate repayment!",
+      "Hay una opción para contestar adjuntando dinero. Tengo la impresión de que la vida de alguien sería mucho más fácil si yo me sintiera caritativo..."
+    ],
+    "Options": [
+      {
+        "Name": "Pay full amount",
+        "Text": "A remotely-operated scent dispersal system bathes me in a pleasant perfume.\n\nThe terminal unlocks something that will aid my travels.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Pay partial amount",
+        "Text": "An angry alien beak momentarily appears on a terminal and shouts at me.\n\nLimited systems within the facility are back online.",
+        "RewardIds": [
+          "USEFUL_PROD",
+          "STD_DEC_TRA"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_2",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 2,
+    "IncomingMessages": [
+      "Alguien ha enviado imágenes de naves espaciales de combate. Llevan marcas de quemaduras y casi seguro son piratas.",
+      "Gek Trade Federation warning. Pirate activity detected. Report sightings!",
+      "Parece que el mensaje busca testigos y hay algún tipo de recompensa para quien responda..."
+    ],
+    "Options": [
+      {
+        "Name": "Tag some ships",
+        "Text": "An instant reply comes through with a small monetary reward!",
+        "RewardIds": [
+          "MONEY",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Tag all ships",
+        "Text": "A worried response comes through with a reward for my report.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_3",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 3,
+    "IncomingMessages": [
+      "Hay un mensaje corporativo enviado en masa sin leer en la terminal. Está lleno de números altos y márgenes de beneficio al parecer impresionantes. El tono parece satisfecho y agradecido.",
+      "Friend! Gek Trade Federation announces high profit! Choose units or product recipe reward!",
+      "Al final del mensaje, el empleado puede escoger entre una imagen de dos: una cuenta bancaria de Unidad Galáctica o una bodega llena de carga."
+    ],
+    "Options": [
+      {
+        "Name": "Choose unit account",
+        "Text": "An automatic scent dispenser sprays me with a pleasant perfume when it opens.\n\nI receive funds from the message's senders.",
+        "RewardIds": [
+          "MONEY",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Choose ship's cargo",
+        "Text": "I retrieve a formula from the operational facility.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_4",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 4,
+    "IncomingMessages": [
+      "Hay un mensaje de una raza alienígena lejana. Parecen enfadados con el mercader que ha entrado en el sistema.",
+      "Scurrilous Gek Trader! Gek offer impure matter! Vy'keen destroy Gek! Units withheld!",
+      "Puedo enviarles uno de dos productos metálicos en pantalla. El primero parece de un color peculiarmente tenue y el segundo brilla incandescentemente en la pantalla."
+    ],
+    "Options": [
+      {
+        "Name": "Send faintly-coloured metal",
+        "Text": "The voice of an angry warrior screams through the intercom. \n\nNothing else happens.",
+        "RewardIds": [
+          "STD_DEC_WAR",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Send brightly-coloured metal",
+        "Text": "A noise of gruff acceptance is heard over the intercom.\n\nA payment is released.",
+        "RewardIds": [
+          "PROC_TECH_ALL",
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_5",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 5,
+    "IncomingMessages": [
+      "En la pantalla se ve que aquí se intercambian un montón de elementos, pero ahora mismo el compartimento de intercambio está abierto... y vacío.",
+      "Friend! Gek Trade Federation demand uncommon metal elements! High units offer!",
+      "Un mensaje de otro mundo, quizás relacionado con este, brilla en la pantalla."
+    ],
+    "Options": [
+      {
+        "Name": "Put common metal into trading vault",
+        "Text": "I receive a small payment.",
+        "RewardIds": [
+          "MONEY",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Put uncommon metal into trading vault",
+        "Text": "I receive a generous payment.",
+        "RewardIds": [
+          "PROC_TECH_ALL",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Put rare metal into trading vault",
+        "Text": "I receive a decent payment...\n\n... and a surprised note of thanks.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_6",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 6,
+    "IncomingMessages": [
+      "Esta es una planta de producción muy nueva sin especialidad concreta. La terminal está totalmente en blanco y está llevando a cabo procedimientos automatizados de arranque. Tengo que pasar varias pantallas antes de que aparezca un mensaje visual.",
+      "Trade federation friend! Product recipe unselected! Gek Trade Federation lose units!",
+      "Hay tres símbolos químicos: uno pertenece a la familia de los catalizadores y los otros son orgánicos y metálicos. Calientan los procesos que hay a mi alrededor esperando un patrón a partir del que trabajar."
+    ],
+    "Options": [
+      {
+        "Name": "Choose the catalyst",
+        "Text": "The terminal processes my selection, and provides something appropriate to the work at hand...",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Choose the metal",
+        "Text": "The terminal processes my selection, and provides something appropriate to the work at hand...",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Choose the organic compound",
+        "Text": "The terminal processes my selection, and provides something appropriate to the work at hand...",
+        "RewardIds": [
+          "PROC_TECH_ALL",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_7",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 7,
+    "IncomingMessages": [
+      "Los compartimentos de intercambio de esta instalación están repletos y listos para ser distribuidos. Hay tres imágenes en pantalla, y en cada una se ve la silueta de un tipo de mercader diferente. Es extraño... Como si estuvieran ordenados por el tamaño de su barriga.",
+      "Rejoice! Vy'keen war reparations arrive! Elder large Gek receive high reward! Low toilgek receive low reward!",
+      "El primer mercader es pequeño y esbelto, el segundo es más regordete, y la panza del último casi llega al suelo. Está claro que tengo que elegir uno..."
+    ],
+    "Options": [
+      {
+        "Name": "Choose the small, sleek trader",
+        "Text": "A trade vault opens.\n\nI receive a cursory amount of trade goods .",
+        "RewardIds": [
+          "SUBST_COMMOD",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Choose the medium-sized trader",
+        "Text": "A trade vault opens\n\nI receive a decent amount of trade goods.",
+        "RewardIds": [
+          "USEFUL_PROD",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Choose the obese trader",
+        "Text": "I retrieve a strange alien curio from the facility.",
+        "RewardIds": [
+          "STD_INC_TRA",
+          "USEFUL_PROD",
+          "SUBST_COMMOD"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_8",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 8,
+    "IncomingMessages": [
+      "Ha llegado un mensaje importante desde el extramundo. Una capa holográfica muestra varias rutas de comercio interestelares, pero todas acaban de manera abrupta... mucho antes de llegar a su destino.",
+      "Gek Trade Federation warning! Vy'keen hostility? Captain! Complete trade mission, or investigate disappearance?",
+      "Hay bienes en un compartimento de intercambio cerrado que aguardan transporte. Puedo seleccionar el destino final o puedo seleccionar uno de los puntos en los que ha desaparecido una nave."
+    ],
+    "Options": [
+      {
+        "Name": "Select trading destination",
+        "Text": "The trade vault unlocks.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Select disappearance location",
+        "Text": "I receive a ship technology blueprint to aid in my protection.",
+        "RewardIds": [
+          "PROC_TECH_SHIP",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_9",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 9,
+    "IncomingMessages": [
+      "Todas estas instalaciones despiden algún tipo de campo de supresión sobre la superficie planetaria. Está enfriando alguna forma desconocida de comunicación, y los mercaderes que operan aquí lo ven como una operación vital y necesaria.",
+      "Despair! First spawn monolith awake! Unknown culprit! Strengthen suppression field!",
+      "El campo de supresión funciona gracias a elementos catalíticos que entran en el sistema por el compartimento de recursos desbloqueado que hay a mis pies."
+    ],
+    "Options": [
+      {
+        "Name": "Remove catalyst",
+        "Text": "I take the trade goods.\n\nThe suppression field powers down.",
+        "RewardIds": [
+          "SUBST_TECH",
+          "STD_DEC_TRA"
+        ]
+      },
+      {
+        "Name": "Add catalyst",
+        "Text": "The suppression field is strengthened.\n\nA message of relief appears on-screen.",
+        "RewardIds": [
+          "STD_INC_TRA",
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_11",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 11,
+    "IncomingMessages": [
+      "Se sacude un compartimento de intercambio, y una inspección más a fondo revela que está lleno de moluscos agonizando. Son rojos y parecen babosas con dientes afilados y ensangrentados.",
+      "Rare balarian speech slug distribution point! For insertion in ear! Inedible! Nasal insertion can cause death.",
+      "Un diagrama en la pantalla que hay frente a mí sugiere que meterme uno en la cara, o acercármelo a ella, sería beneficioso. Lo que no se especifica, no obstante, es el orificio."
+    ],
+    "Options": [
+      {
+        "Name": "Insert slug in nose",
+        "Text": "The slug bites flesh from my nose.\n\nThe pain is extreme.",
+        "RewardIds": [
+          "DAMAGESMALL"
+        ]
+      },
+      {
+        "Name": "Insert slug in ear",
+        "Text": "The slug burrows deep into my ear.\n\nI feel better versed in the language of the traders.",
+        "RewardIds": [
+          "TEACHWORD_WAR"
+        ]
+      },
+      {
+        "Name": "Insert slug in mouth",
+        "Text": "I swallow the slug, and wait while it thrashes around in my stomach.\n\nNothing else of note occurs.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_12",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 12,
+    "IncomingMessages": [
+      "Se ve una extraña prueba en la terminal. Un mercader residente ha dejado una nota para un colega.",
+      "Friend! SynthetiGek identification test active! Remember Gek Trader helps customers!",
+      "Veo una imagen holográfica de una criatura con una carcasa que yace boca arriba a merced del sol resplandeciente. Por más que lo intente, no logra incorporarse. Puedo manipular la escena para indicar cómo la ayudaría."
+    ],
+    "Options": [
+      {
+        "Name": "Help creature, then sell it water",
+        "Text": "I pass the test, proving myself as a true trader.\n\nFacility systems are online.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Study creature",
+        "Text": "I fail the test.\n\nFacility systems are non-operational.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_14",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 14,
+    "IncomingMessages": [
+      "El puesto está abandonado y las alarmas siguen resonando para alertar a las almas hace tiempo muertas.\n\nLos Gek utilizaron estas instalaciones para planear y llevar a cabo guerras asimétricas contra las otras especies de la galaxia. Esta facción atacaría, se anexionaría o impulsaría elementos inconformistas de otros sistemas estelares, desviando los diezmos resultantes y las tarifas de protección a través de este puesto.\n\nEl último registro muestra varios traidores Vy'keen dispuestos a discutir los términos con los Gek. No está claro qué les pasó.",
+      "TRA_HARV_LANG_14"
+    ],
+    "Options": [
+      {
+        "Name": "Alert the Gek",
+        "Text": "I alert the Gek Trade Federation to the Vy'keen activity in this system, broadcasting this feed to their central computers. A representative rewards me for my trouble.",
+        "RewardIds": [
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Alert the Vy'keen",
+        "Text": "I alert the Vy'keen to the presence of traitors in this system, uploading a great deal of Gek data upon request. They reward me for my assistance.",
+        "RewardIds": [
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Steal units",
+        "Text": "I steal units from the system, the blood money of a hundred wars and skirmishes. After all, the Gek here no longer have need of it...",
+        "RewardIds": [
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_15",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 15,
+    "IncomingMessages": [
+      "Las instalaciones contienen múltiples archivos de video, imágenes y bioescaneos de seres poco frecuentes recogidos por los Gek a lo largo de la Federación de Comercio. Por lo visto estudiaban exotrajes.\n\nAlgo sucedió durante el experimento, y un prototipo inactivo de ese tipo de traje yace en el suelo. No hay nada más.",
+      "TRA_HARV_LANG_15"
+    ],
+    "Options": [
+      {
+        "Name": "Submit bioscan",
+        "Text": "I submit a bioscan to the system, apparently restarting the facility's production process. With the missing piece complete, a suit is fabricated to the exact specifications of my own.\nAn automated message rewards me for my assistance.",
+        "RewardIds": [
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Erase data",
+        "Text": "I erase the data on the Gek computers. They were not meant to learn our technology. In the process, I find a cluster of nanites, useful for my own purposes.",
+        "RewardIds": [
+          "TECHFRAG_S"
+        ]
+      },
+      {
+        "Name": "Steal technology",
+        "Text": "I steal nanite clusters from the system, leaving the rest of the facility in peace.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_16",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 16,
+    "IncomingMessages": [
+      "Las instalaciones actuaron como escenario de lo que pareció ser un ataque Gek no provocado contra algo llamado Interfaz del Atlas.\n\nLos registros muestran que se recolectó una gran cantidad de material de los océanos de muchos mundos. Esta se contrastó con los datos robados de otras especies y por último se probó contra la estructura del Atlas.\n\nLa interfaz resultó completamente aniquilada, así como los atacantes. La explosión parece haber hecho desaparecer cinco sistemas estelares. Solo quedó este registro.",
+      "TRA_HARV_LANG_16"
+    ],
+    "Options": [
+      {
+        "Name": "Delete records",
+        "Text": "I delete the records from the system. No-one should replicate what happened here.\nIn the process, I find some useful technology used in the construction of the weapon. It should be safe to use in isolation from the other components.",
+        "RewardIds": [
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Alert Gek Trade Federation",
+        "Text": "I alert the Gek Trade Federation to the results of this experiment. They deny all knowledge of it, claiming it to be the work of heretics.\nI am rewarded for my future silence.",
+        "RewardIds": [
+          "TEACHWORD_TRA",
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Alert other species",
+        "Text": "I alert both Vy'keen and Korvax authorities to the Gek attack on the Atlas Interface and their data theft. Outraged, both species demand an immediate Council to discuss their next move.\nI am rewarded for my assistance.",
+        "RewardIds": [
+          "STD_INC_WAR",
+          "STD_INC_EXP",
+          "STD_DEC_TRA"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_17",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 17,
+    "IncomingMessages": [
+      "El puesto es antiguo, incluso para los estándares de los Gek. Su entorno está especialmente calibrado para preservar los datos en su interior.\n\nUn registro trata sobre el momento justo antes del nacimiento de la llamada Primera Progenie Gek. Los Gek parecen haber sufrido una crisis de fertilidad. Algo en el agua comenzó a afectar a su capacidad reproductiva, lo que condujo a un intento por revertir ese declive a través de cría selectiva, programas de clonación y demás.\n\nEsta crisis científica se tornó en moral. El Senado resultó destruido, y sus familias eliminadas de todo recuerdo. La autoproclamada Primera Progenie se hizo con el poder, con promesas de grandeza y asesinando a cualquier opositor. Ser fuerte era lo correcto.",
+      "TRA_HARV_LANG_17"
+    ],
+    "Options": [
+      {
+        "Name": "Upload to Gek",
+        "Text": "I upload the data to the Gek. The traders are astounded by my discovery, having believed themselves to be the descendents of a savage people, not knowing that before the First Spawn they were gentle, capable of nobility and peace.\nI am rewarded greatly for what I have done.",
+        "RewardIds": [
+          "STD_INC_TRA",
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Auction data",
+        "Text": "I auction the data, finding a buyer in the Korvax. Their Convergence desires all the information it can find about the Gek, having been enslaved by these 'First Spawn' many years ago.\nThey pay me for my assistance.",
+        "RewardIds": [
+          "STD_INC_EXP",
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Steal technology",
+        "Text": "I steal what little technology I can from the outpost, harvesting nanite clusters from the system.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_18",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 18,
+    "IncomingMessages": [
+      "Las instalaciones contienen registros sobre anomalías temporales y avistamientos registrados de los llamados viajeros del tiempo. La mayoría de ellos parecen ser Gek o Korvax, a menudo con tecnología avanzada.\n\nEl registro del científico al mando refleja un elevado nivel de escepticismo, declarando tales viajes no solo físicamente imposibles, sino poco probables desde una perspectiva social. Si los viajeros del tiempo existen, ¿por qué no cambian nada? ¿Por qué no intentan prevenir la catástrofe de la que hablan?\n\nEl último registro muestra la llegada de los superiores del científico y cómo confiscaron sus archivos y lo amenazaron para que guardara silencio.",
+      "TRA_HARV_LANG_18"
+    ],
+    "Options": [
+      {
+        "Name": "Attempt data recovery",
+        "Text": "I attempt to recover data from the system, but I find only small fragments of data.\n\nThe majority of time travellers appear to have visited loved ones or parents, claiming they wanted to see them one last time before the end. There appears to be no great secret beyond this.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Take technology",
+        "Text": "I extract nanite clusters from the system, attached to the remnants of a case file.",
+        "RewardIds": [
+          "TECHFRAG_S"
+        ]
+      },
+      {
+        "Name": "Contact Gek",
+        "Text": "I contact the Gek to ask them about this facility, but they claim to have no knowledge of it. They begin to display an extraordinary level of interest in my whereabouts, suggesting they will send a nearby freighter to speak with me.\n\nI should leave soon.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_19",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 19,
+    "IncomingMessages": [
+      "Estas instalaciones parecen haber sido ocupadas por un viejo VentasGek, un veterano de cientos de rutas comerciales y 'amigo íntimo' de uno de los propios señores mercaderes. O al menos eso decía a sus escépticos clientes...\n\nSeparado de su cónyuge, sus cien descendientes supervivientes no le dirigen la palabra, por lo que el VentasGek disfruta de una última comida antes de morir al estrellar su nave contra un monte cercano. Deja atrás una vida de arrepentimiento y un montón de facturas y recibos sin contestar. Puede que haya algo útil por aquí.",
+      "I am sorry, friends, family... I am sorry..."
+    ],
+    "Options": [
+      {
+        "Name": "Report death",
+        "Text": "I report the death of the SalesGek. The Trade Federation thanks me, struggling to find their name on any system. It appears they had not made a deal of note in many years. I am given a small reward.",
+        "RewardIds": [
+          "TECHFRAG_S"
+        ]
+      },
+      {
+        "Name": "Search for units",
+        "Text": "I search for units, but find none. The SalesGek was in a deep amount of debt before their death. I leave, empty-handed.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Sell trade data",
+        "Text": "I sell the trade data to another SalesGek. They will no doubt find something of worth in this lifeform's death.",
+        "RewardIds": [
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_HARV_20",
+    "Race": "Traders",
+    "IsFactory": false,
+    "Number": 20,
+    "IncomingMessages": [
+      "Este puesto Gek servía como punto de intercambio de componentes de repuesto de naves y estaciones espaciales.\n\nTodos los planos están adaptados, o incluso robados, de la tecnología de otras especies. Hay varios de estos diseños disponibles en la pantalla de la terminal.",
+      "TRA_HARV_LANG_20"
+    ],
+    "Options": [
+      {
+        "Name": "Download data",
+        "Text": "I download the terminal's data, finding nanites I may exchange for a new technology.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Sell data",
+        "Text": "I sell the data to a rival trade faction. They immediately lodge a complaint with the Trade Federation whilst secretly utilising these designs for their own production.",
+        "RewardIds": [
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Report theft",
+        "Text": "I report the theft of these technologies to both the Korvax and the Vy'keen. I receive compensation for my trouble, leaving both species to withdraw their diplomats in protest against the Gek.",
+        "RewardIds": [
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY1",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 1,
+    "IncomingMessages": [
+      "Me acerco a la terminal, pero algo en lo más hondo del complejo salió mal. Las superficies están calientes al tacto. Hay maquinaria oculta que rechina y zumba. Suena una alerta:",
+      "Warning! High temperature! Warning! High temperature!",
+      "La alarma resuena en mis oídos. Una perla de sudor me resbala lentamente por la frente."
+    ],
+    "Options": [
+      {
+        "Name": "Engage coolant chamber network",
+        "Text": "Numbers on the terminal display begin to stabilise, red flashing symbols morphing into a calming blue array of light.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Activate fusion dampening field",
+        "Text": "Activating the fusion dampening causes a power surge. The terminal shorts and cuts out. The system no longer responds to my commands.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Initialize laser refraction systems",
+        "Text": "Numbers on the screen in front of me rise rapidly as I activate the laser array. I feel a dramatic surge of heat through the terminal, before the entire system shuts down.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY2",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 2,
+    "IncomingMessages": [
+      "El terminal de control ante mí parece ser para algún tipo de sistema de extracción profunda. Sin embargo, todos los sistemas se pararon. La pantalla muestra una lectura intermitente:",
+      "Mining production stalled! Low power! Low fuel! Organic matter required!",
+      "Las luces de emergencia parpadean intermitentemente. Se abre una tolva de materiales."
+    ],
+    "Options": [
+      {
+        "Name": "Insert carbon",
+        "Text": "Lights flicker across the facility. Machinery rumbles deep beneath my feet as the drill motor whirrs into life. The facility is back online.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Insert ferrite dust",
+        "Text": "The ferrite slips down the material hopper, but the choking, grinding sound that follows does not sound positive. The machinery shuts down completely.I fear I have flooded important internal components with metallic dust.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Insert hand",
+        "Text": "Metallic gears grab at my fingers. Sparks fly from my Exosuit gloves, shorting the terminal. I pull my hand back sharply as the hopper slams shut.",
+        "RewardIds": [
+          "DAMAGELARGE"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY3",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 3,
+    "IncomingMessages": [
+      "El puesto entró en cierre de emergencia. Algo debió de dañarse durante mi entrada.\nEl indicador de toxicidad de mi exotraje destella con insistencia mientras una alerta en el terminal de control parpadea.",
+      "High gas pressure! Breach detected! Pressure critical!",
+      "Las alarmas del panel destellan rápidamente, reclamando atención. Ante mí hay una desconcertante amalgama de indicadores de control."
+    ],
+    "Options": [
+      {
+        "Name": "Activate emergency vent",
+        "Text": "A low rumble passes underneath my feet as I activate the emergency vent. Slowly but surely the indicators on the panel start to stabilise and the warning lights soften. The facility comes back online.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Increase gas pressure",
+        "Text": "The alarms blink with increased intensity.A pipe ruptures, venting toxic gas directly into the facility!",
+        "RewardIds": [
+          "DAMAGELARGE"
+        ]
+      },
+      {
+        "Name": "Flush coolant",
+        "Text": "Pipes under the floor gurgle and hiss as I twist the coolant valve. A sudden burst of steam erupts from the panel, destroying the instruments.",
+        "RewardIds": [
+          "DAMAGELARGE"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY5",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 5,
+    "IncomingMessages": [
+      "Símbolos extraños palpitan con urgencia en la pantalla del terminal. Las luces intermitentes y la sirena ruidosa parecen estar relacionadas con el núcleo de energía nuclear de la instalación. En la pantalla aparece un mensaje.",
+      "Fusion critical! Initiate emergency radiation dampening measures!",
+      "Los sistemas de seguridad automatizados fallaron. Algo debió de dañarse cuando entré en la instalación."
+    ],
+    "Options": [
+      {
+        "Name": "Activate radiation dampening field",
+        "Text": "The wail of the alarm system fades and the temperature readings slowly decay back to normal levels. Disaster has been averted, and the facility's production line returns to normal.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Initiate shutdown",
+        "Text": "Activating the emergency shudown procedure calms the wail of the sirens. Lights on the terminal flicker and die,  and the facility's machinery has fallen silent, but at least nothing has exploded.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Panic",
+        "Text": "While I panic, the facility's fusion core overwhelms its dampening system and goes into meltdown.\nA backup system prevents the total destruction of the facility, but the terminal is critically damaged.",
+        "RewardIds": [
+          "DAMAGELARGE"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "As I turn to leave, the facility's fusion core overwhelms its dampening system and goes into meltdown.\nA backup system prevents the total destruction of the facility, but the terminal is critically damaged.",
+        "RewardIds": [
+          "DAMAGELARGE"
+        ]
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY6",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 6,
+    "IncomingMessages": [
+      "La instalación se mantiene operativa a pesar de mi intrusión. La terminal parece controlar la línea de producción central. Una lectura en la pantalla muestra un estado de advertencia:",
+      "Warning! Increase metal delivery! Warning! Excess usage creates breach!",
+      "Bajo las lecturas, sobresale de forma prominente un gran dial. Parece que controla el control de materiales del sistema."
+    ],
+    "Options": [
+      {
+        "Name": "Maintain levels",
+        "Text": "The system struggles on, producing a small number of components. Gradually the hoppers empty, and production grinds to a halt. The terminal shuts down, unpowered.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Increase levels",
+        "Text": "The warnings cease, and the system maintains its production. The increased pressure has kept the fabricators whirring and the facility at full power.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Dramatically increase levels",
+        "Text": "I hear hydraulic systems activate as hoppers open all over the facility, flooding the fabricators with raw material. Gears grind and pipes strain against the sudden abundance. With a loud crash, the system overloads.  Production comes to a total halt.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY7",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 7,
+    "IncomingMessages": [
+      "Las alarmas resuenan y la terminal delante de mí queda destartalada. En la pantalla intermitente y corrompida apenas logro descifrar un mensaje:",
+      "Warning! Magnetic coil overcharged! Production low!",
+      "Me siento pesado. Mi multiherramienta me empuja hacia abajo y mi casco hace presión hacia mis hombros. No soy el único afectado. Los procesos de producción se están volviendo locos..."
+    ],
+    "Options": [
+      {
+        "Name": "Reboot gravitational stabilisers",
+        "Text": "I feel a strange sensation deep within my brain as gravity momentarily destabilises. The electromagnetic stablisers in my Exosuit prevent any more dramatic effects.\nHowever, power has not been restored to the terminal. If anything, it has only suffered more damage. The facility remains inoperable.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Reduce electromagnetic flow",
+        "Text": "A slow shiver pulses through my body as the powerful electromagnetic wave sweeps across the facility. Almost immediately, the terminal screen clears up. The production facility is back online.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Power down facility",
+        "Text": "I throw the master power switch that sits alongside the terminal. The facility powers down. I reset the switch, and hope...\nIt does not power back up again.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY9",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 9,
+    "IncomingMessages": [
+      "El gemido de una alarma inunda mis oídos, pero el sistema no reacciona a mi intrusión. Alguien más estuvo aquí y modificó esta terminal antes. Me cuesta descifrar los datos en el terminal.",
+      "Warning! Unexpected system detected! Bypass chip template detected! Gek Trade Federation informed!",
+      "Sea cual sea el código que se cargó en la terminal, es sin duda obra de algún ladrón con iniciativa. Parece que está vaciando los compartimentos de recursos de metales raros."
+    ],
+    "Options": [
+      {
+        "Name": "Revert system",
+        "Text": "I reset the system back to its default production loadout. Things appear to be operating as expected.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Attempt further hijack",
+        "Text": "I attempt to perform my own hijack of the terminal. It reroutes some of the automated profit flows directly to my account. However, my intrusion is clearly not subtle enough. Anti-tampering systems react and lock me out of the terminal.",
+        "RewardIds": [
+          "MONEY",
+          "STD_DEC_TRA"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY11",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 11,
+    "IncomingMessages": [
+      "A pesar de las advertencias que suenan por las instalaciones, la terminal sigue abierta y lista para el comercio. Un breve mensaje introductorio parpadea en la pantalla.",
+      "Friend! Know language, know commerce! Units buy knowledge! Choose Vy'keen, choose Korvax or choose a refresher in the language of the benevolent Gek!",
+      "Tres columnas de palabras se despliegan en pantalla sin parar, cada una escrita en un alfabeto extraño. Hay runas ensangrentadas marcadas en arena, secuencias precisas de puntos y unos escritos a mano en una fuente atractiva, llenos de signos de exclamación."
+    ],
+    "Options": [
+      {
+        "Name": "Select bloodied runes",
+        "Text": "As I scan the runes, I feel a deep-seated roar rattle around my mind. A word sears itself into my brain, the language of a distant warrior race.",
+        "RewardIds": [
+          "TEACHWORD_WAR"
+        ]
+      },
+      {
+        "Name": "Select dot patterns",
+        "Text": "The dots race across the screen, an elegant, dancing pattern. I settle into the rhythm, and suddenly feel a burst of comprehension.A word sears itself into my brain. I feel altered by the process.",
+        "RewardIds": [
+          "TEACHWORD_EXP"
+        ]
+      },
+      {
+        "Name": "Select handwritten font",
+        "Text": "I feel a chittering glee as I scan the words the terminal presents. My other senses are affected, and I feel almost as if I could smell the language. Suddenly, a word sears itself into my brain, a fragment of Gek speech.",
+        "RewardIds": [
+          "TEACHWORD_TRA"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY12",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 12,
+    "IncomingMessages": [
+      "La alarma resuena por la instalación, una advertencia contra mi intrusión. Pero esa alarma no parece disminuir las necesidades comerciales del Gek. Una nave comercial cercana está llamando a la instalación, en busca de mercancía.",
+      "Gek Trade Federation dispatch! Planetary metal demand high! Collection ship imminent!",
+      "Tal vez si ofreciera mercancía propia podría obtener un beneficio, y no alertaría al Gek de que hay un intruso en sus instalaciones..."
+    ],
+    "Options": [
+      {
+        "Name": "Trade sodium",
+        "Text": "A relieved beaked trader shouts their thanks through the speaker systems. The success of the transaction appears to convince the security systems that I am a legitimate user.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Trade ferrite",
+        "Text": "The terminal shuts down rapidly. I can only assume my reply gave me away, and the trader alerted the authorities to my intrusion.",
+        "RewardIds": [
+          "STD_DEC_TRA"
+        ]
+      },
+      {
+        "Name": "Trade carbon",
+        "Text": "The terminal shuts down rapidly. I can only assume my reply gave me away, and the trader alerted the authorities to my intrusion.",
+        "RewardIds": [
+          "STD_DEC_TRA"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY13",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 13,
+    "IncomingMessages": [
+      "Mi dramática entrada parece haber provocado una alerta de incendio. La pantalla está húmeda al tacto. Una advertencia brilla en la terminal.",
+      "Warning! Resource vault flooded! Production system operation forbidden!",
+      "Hay unos paneles en el techo que gotean donde hace poco se puso en marcha un sistema de aspersores. Ojalá el líquido sea agua."
+    ],
+    "Options": [
+      {
+        "Name": "Drain capacitor banks",
+        "Text": "The system sputters a little, showing signs of life. But it is not to be - a shower of sparks reveals a short-circuit within the flooded terminal. It closes down, the facility lifeless.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Drain resource vault",
+        "Text": "The drained resource vault feeds rare elements into the production system.\n\nThe facility is back online.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Drain replication tank",
+        "Text": "Despite a dramatic gurgling from beneath my feet, the facility remains offline. The terminal, fatally damaged, shorts out.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY14",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 14,
+    "IncomingMessages": [
+      "Abro la terminal buscando una forma de desactivar la alarma. El acceso principal parece ser a través de algún tipo de escáner de mano."
+    ],
+    "Options": [
+      {
+        "Name": "Scan hand",
+        "Text": "I place my Exosuit glove upon the indent.\nWithout warning, a thousand tiny needles shoot out of the reader, meshing my hand to the machine. A synthetic voice speaks to me.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY15",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 15,
+    "IncomingMessages": [
+      "La alarma reinició las instalaciones. Se ejecuta una rutina de inicio automático. La terminal muestra un texto parpadeante, esperando sin duda algún tipo de introducción de datos.",
+      "Warning! Product recipe unselected! Assign recipe! Gek Trade Federation lose units!",
+      "Una interfaz en 3D aguarda delante de mí, esperando un plano para que la instalación comience a producir en masa. Las máquinas que hay a mi alrededor zumban mientras se calientan..."
+    ],
+    "Options": [
+      {
+        "Name": "Sketch starship components",
+        "Text": "The terminal accepts my design and the installation start-up procedure completes. I hope the Gek who run this facility are happy with my choice.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Sketch synthetic plants",
+        "Text": "The terminal accepts my design and the installation start-up procedure completes. The Gek who run this facility may appreciate the extra green in their environment.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Sketch confectionery",
+        "Text": "The terminal accepts my design and the installation start-up procedure completes. I hope the Gek who run this facility are happy with their vast pile of sugar.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY16",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 16,
+    "IncomingMessages": [
+      "La maquinaria de las instalaciones sigue parada, interrumpida por un apagado de emergencia. Un breve mensaje parpadea en la terminal de control.",
+      "User warning! Production disengaged. Restart generator empty. No fuel. Facility restart requires organic fuel.",
+      "Un voluminoso interruptor de control del circuito se asienta de forma incitante sobre una tolva de combustible, pero un dial cercano indica que el depósito está vacío."
+    ],
+    "Options": [
+      {
+        "Name": "Insert catalyst",
+        "Text": "I feed the fuel tank with a catalyst, hoping to boost the effect of whatever material powers this facility.\nI throw the switch.  A low rumble is followed by a loud explosion deep within the facility. The terminal immediately cuts out.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Insert metals",
+        "Text": "I feed a large amount of ferrite dust into the system's fuel supply. The pipes become sticky and choked, the dust mixing with the residue of other fuels.\nI throw the switch, but to no avail. The generator system splurts and coughs before shutting down completely.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Insert organic elements",
+        "Text": "The carbon-based fuel slips down the hopper's metal throat. I hear a gurgle as it feeds into the generator system.\nI throw the switch.  The generator ticks over, then roars into life. The surge of power from the generator triggers the facility's main reactor, and the machinery comes back online.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY22",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 22,
+    "IncomingMessages": [
+      "Un fallo desconocido forzó que el sistema no funcione. Hay un frío extraño en el aire, una nítida claridad en la atmósfera.",
+      "Alert! Alert! Liquid frenium leak! Charge cylinders frozen! Increase temperature!",
+      "Exhalo mientras sopeso las palabras de la terminal. La condensación empieza a nublar mi visor."
+    ],
+    "Options": [
+      {
+        "Name": "Activate incineration banks",
+        "Text": "Warmth spreads through the facility. The air around me remains strange to look at, but the production systems return online.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Supercharge coolant flow",
+        "Text": "The system remains frozen. If anything, the air around me becomes even icier. Strange crystals frost over the surface of the terminal as it shuts down.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Initialise charge cylinder sequence",
+        "Text": "The noise of muffled explosions can be heard beneath my feet. The facility does become rapidly warmer, but all systems shut down dramatically.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY23",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 23,
+    "IncomingMessages": [
+      "Se iniciaron medidas de emergencia. La fecha de la pantalla de errores de la terminal muestra que el incidente ocurrió mucho antes de mi intrusión.",
+      "Electrolyte acidity test positive! Acidity slug detected! Release alkaline neutrality fluid into solution tank!",
+      "Un escaneo reciente muestra a una forma de vida alienígena aplastada en la maquinaria de abajo. El equipamiento que lo rodea está corroído."
+    ],
+    "Options": [
+      {
+        "Name": "Neutralise electrolyte solution",
+        "Text": "There is a hiss as the alkaline solution floods the facility's pipes. Machinery strains, trying to break free of the blockage in the gears.\nWith an unsettling snap, the production facility comes back online. The remains of the lifeform must have been washed free of the mechanisms.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Acidify heridium tanks",
+        "Text": "The air takes on a curious acidic tang. Fragile wires in the terminal corrode rapidly. The display shorts out, and then shuts down entirely.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Release suspension fluid",
+        "Text": "A frenzied chemical reaction can be heard somewhere beneath my feet. The terminal - and the rest of the facility - shuts down entirely.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY24",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 24,
+    "IncomingMessages": [
+      "La terminal emite una advertencia repetida. Aunque las palabras no son claras, el símbolo se reconoce al instante. Algo, en algún lugar de la terminal está ardiendo.",
+      "Resource vault fire detected! Element stockpile destroyed!",
+      "Empieza a alzarse un débil humo y mi escáner registra una temperatura cada vez mayor."
+    ],
+    "Options": [
+      {
+        "Name": "Starve production chamber of oxygen",
+        "Text": "I hear a hiss as the air drains from the machinery chambers beneath my feet. The heat levels remain steady, however.\nThe control terminal enters an automated shutdown.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Starve resource vaults of oxygen",
+        "Text": "I hear a hiss as the air drains from the resource vaults beneath my feet. Slowly but surely the heat levels start to drop. The fire is under control.\nEnough remains in the vault that I should be able to restore the facility to operational status.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Initialise facility sprinkler system",
+        "Text": "The facility sprinkler showers above my head. It has no impact on the internal fire, but does short out the control terminal.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY25",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 25,
+    "IncomingMessages": [
+      "Mi entrada provocó el cierre completo de las instalaciones, interrumpiendo sus operaciones. Las lecturas visuales de la terminal indican que es una instalación de minería de profundidad. Sus cámaras de recursos se están vaciando rápidamente.",
+      "Drilling error! Elements drain into planet core! Reverse tunnel pressure!",
+      "El mapa de las instalaciones muestra errores parpadeando tanto en los compartimentos de recolección de recursos como en la matriz de perforación..."
+    ],
+    "Options": [
+      {
+        "Name": "Collapse drill tunnel",
+        "Text": "I hear a deep, distant noise, a subterranean roll of thunder. The resource vaults empty entirely, drained into the earth. The facility remains offline.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Retract drilling rig",
+        "Text": "The drilling rig retracts from the shaft, but this only seems to accelerate the loss of material. The dials spin furiously before settling. The resource vaults are empty, drained into the earth. The facility remains offline.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Reverse tunnel pressurisation",
+        "Text": "I hear a deep, distant noise, a subterranean roll of thunder. Slowly the resource vaults beneath the surface stop spilling their contents into the earth, and eventually begin to refill. The facility comes back online.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY29",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 29,
+    "IncomingMessages": [
+      "La fábrica recicla paquetes de ropa y otros materiales recolectados por la galaxia y los transforma en nuevos elementos para los exotrajes Gek.",
+      "SENSORS REPORT INORGANIC BLOCKAGE IN SECTOR 9A",
+      "Entre los desechos de la línea de producción, el cuerpo de un científico Korvax parece ir a la deriva, con las luces apagadas y las extremidades totalmente inmóviles. Los sistemas de la fábrica permiten las comunicaciones salientes. Son muchas las opciones disponibles."
+    ],
+    "Options": [
+      {
+        "Name": "Report to Vy'keen",
+        "Text": "I report what I have seen to the Vy'keen. The warriors are outraged, claiming that the Gek have returned to their genocidal ways.\nThey promise to dispatch warships at once.",
+        "RewardIds": [
+          "STD_INC_WAR",
+          "STD_DEC_TRA"
+        ]
+      },
+      {
+        "Name": "Report to Gek",
+        "Text": "I report what I have seen to the Gek. They claim that this is a terrible mistake, and that the perpetrators will of course be punished.\nThey send through a generous reward for my altruism and my silence.",
+        "RewardIds": [
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Report to Korvax",
+        "Text": "I report what I have seen to the Korvax. They tell me that the carapace in question is empty, its soul returned to their Convergence.\nThey will dispatch a ship to bring the body home, claiming that it is of sentimental value to its previous owner. They thank me.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY30",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 30,
+    "IncomingMessages": [
+      "La fábrica produce componentes para naves a partir de los recursos disponibles en este mundo.\n\nEstas instalaciones fabrican piezas para naves comerciales Gek. Están diseñadas para albergar el máximo cargamento posible, a la vez que se protegen de posibles ataques de Centinelas y piratas.",
+      "QA SYSTEM FULLY ONLINE... ALL COMPONENTS LOGGED... LOG FULLY COMPLIANT...",
+      "La terminal muestra un video de las entrañas de la fábrica. Un grupo de Gek aparece desmontando componentes clave de cada nave."
+    ],
+    "Options": [
+      {
+        "Name": "Alert Gek Trade Federation",
+        "Text": "I alert the Gek Trade Federation to potential criminal activity, broadcasting this feed to their central computers.\nA representative rewards me for my trouble.",
+        "RewardIds": [
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Demand bribe from Gek",
+        "Text": "I demand a bribe from the Gek in exchange for concealing their criminal activities. Reluctantly, they agree.",
+        "RewardIds": [
+          "R_GEKRELIC"
+        ]
+      },
+      {
+        "Name": "Ask what they are doing",
+        "Text": "I ask what the Gek are doing down there. They turn immediately to the source of the audio, firing at it and disabling my video feed. By the time the system repairs itself, they are gone.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY31",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 31,
+    "IncomingMessages": [
+      "A medida que me aproximo a la terminal, queda claro que algo horrible ocurrió en este lugar. Las instalaciones producen objetos conocidos como «reliquias Gek», que supuestamente traen suerte a sus portadores.",
+      "The glass - it - we were wrong... we were -",
+      "Las imágenes de video muestran cúmulos de nanitos invadiendo las profundidades de las instalaciones. Masas verdes bulbosas se extienden por una gran parte de la maquinaria, con dientes brotando de su interior. Una voz grita en una lengua desconocida."
+    ],
+    "Options": [
+      {
+        "Name": "Take Nanite Clusters",
+        "Text": "I take the Nanite Clusters, and the mass immediately collapses. It wishes to go with me, I am sure of it...",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Report Production Failure",
+        "Text": "I report a production failure. Gek authorities tell me to remain here and await quarantine.\nBut I think I should leave. I take some Nanites with me as I go. They want to escape...",
+        "RewardIds": [
+          "TECHFRAG_S"
+        ]
+      },
+      {
+        "Name": "Take Gek Relics",
+        "Text": "I take some Gek Charms. I feel luckier already. The probability of the entire universe is turned in favour of my survival.",
+        "RewardIds": [
+          "R_GEKRELIC"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY32",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 32,
+    "IncomingMessages": [
+      "La terminal muestra los registros de numerosas transacciones financieras y acuerdos comerciales realizados en estas instalaciones durante los últimos meses.",
+      "... 010385: 112% ... 300484: 89% ... 070816: 165% ...",
+      "Las lecturas muestran diseños de múltiples fábricas Vy'keen y Korvax. Los supervisores Gek de estas instalaciones trataban de descubrir cómo ocultan las demás especies sus edificaciones ante los ataques de los Centinelas.\n\nNo queda nadie. La última señal de vida se registró hace tres días."
+    ],
+    "Options": [
+      {
+        "Name": "Report to Gek",
+        "Text": "I report the situation to the Gek. The Trade Federation thanks me for the report, dispatching multiple ships to ensure the facility's destruction.",
+        "RewardIds": [
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Report to Vy'keen",
+        "Text": "I report the situation to the Vy'keen. Their High Command is outraged at the attempted theft of their technology, promising to commit acts of retribution against the Gek.",
+        "RewardIds": [
+          "STD_DEC_TRA"
+        ]
+      },
+      {
+        "Name": "Report to Korvax",
+        "Text": "I report the situation to the Korvax. Their Convergence is troubled by the deaths of so many Gek, claiming that they will mourn them. They have nothing else to say.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY33",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 33,
+    "IncomingMessages": [
+      "Las instalaciones lanzan chispas azules y la electricidad salta de panel en panel entre las máquinas.",
+      "ALERT TIME DISPLACEMENT ALERT",
+      "La fecha y la hora de la terminal avanzan y retroceden aleatoriamente, adelantándose al futuro o atrasándose hacia el pasado. Los sensores indican que algo denominado agujero blanco se ha activado en el corazón de la fábrica."
+    ],
+    "Options": [
+      {
+        "Name": "Alert FutureGek",
+        "Text": "Nothing happens for a few moments... or perhaps it is hours. Perhaps an entire year passes.\n\nThe temporal event ceases, and I am left with a gift, rewarded by these 'FutureGek' for my assistance.",
+        "RewardIds": [
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Activate Chronal Trigger",
+        "Text": "Nothing happens for a few moments... or perhaps it is hours. Perhaps an entire year passes.\n\nThe temporal event ceases, and I am left with blueprints for new technology, apparently created by a future version of my own self. I do not know what this Chronal Trigger has brought into being.",
+        "RewardIds": [
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Obey",
+        "Text": "Nothing happens for a few moments... or perhaps it is hours. Perhaps an entire year passes.\n\nThe temporal event ceases, and I am left with a gift, rewarded by the crimson light of an unseen being.",
+        "RewardIds": [
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY34",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 34,
+    "IncomingMessages": [
+      "Me acerco a la terminal, pero la lectura es confusa, embrollada...",
+      "The Senate has fallen. Already the purge begins... truth is denied. The Gek protocol ends...",
+      "La fábrica parece producir literatura. Ni máquinas, ni archivos, sino papel, salpicado con una escritura artesanal plagada de exclamaciones."
+    ],
+    "Options": [
+      {
+        "Name": "Shut down production",
+        "Text": "I shut down production. The printing press ceases operation, perhaps for the final time. How many others exist like this, I wonder?\n\nAmidst the detritus of the factory, I find some discarded technology. Perhaps it will be of use.",
+        "RewardIds": [
+          "TECHFRAG_S"
+        ]
+      },
+      {
+        "Name": "Report to Gek authorities",
+        "Text": "I report the factory's existence to the Gek authorities. They claim that the installation has nothing to do with me, paying me dearly for my silence.",
+        "RewardIds": [
+          "MONEY",
+          "TEACHWORD_TRA"
+        ]
+      },
+      {
+        "Name": "Steal technology",
+        "Text": "I attempt to steal technology, but the factory's automated defense systems blast a bolt of energy at my suit instead. Whatever is here, it is not worth the trouble.",
+        "RewardIds": [
+          "DAMAGESMALL"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "TRA_FACTORY35",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 35,
+    "IncomingMessages": [
+      "La fábrica produce herramientas de uso cotidiano para los Gek. Utensilios para las comidas, aerosoles para evitar que se reseque la piel en entornos alienígenas, botellas de feromonas y demás.",
+      "SYSTEMS OPERATIONAL... SELECTED DESIRED PRODUCT...",
+      "Las instalaciones están abandonadas, pero no hay un motivo obvio para que se dispare la alarma. Todo parece en orden."
+    ],
+    "Options": [
+      {
+        "Name": "Search for technology",
+        "Text": "I search for technology within the factory's computers and find a large number of nanite clusters.\n\nAs I go, I hear it, a voice in the darkness. I investigate, but there is nothing there...",
+        "RewardIds": [
+          "TECHFRAG_L"
+        ]
+      },
+      {
+        "Name": "Report to Gek authorities",
+        "Text": "I report the abandoned factory to the Gek authorities, but they seem puzzled: there is no such installation listed as being present on that world.\n\nAs I go, I hear it, a voice in the darkness. I investigate, but there is nothing there...",
+        "RewardIds": []
+      },
+      {
+        "Name": "Shut down production",
+        "Text": "I shut down production, managing to harvest from extra Nanite Clusters as I do.\n\nAs I go, I hear it, a voice in the darkness. I investigate, but there is nothing there...",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_1",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 1,
+    "IncomingMessages": [
+      "Abro una lista de logros militares que está por enviarse. Hay imágenes de batallas distantes, robots ensangrentados y grandes explosiones.",
+      "Grah! Old honourable warrior retires! Death! Death! Warrior remuneration!",
+      "Hay una nota que dice que espera algo a cambio, pero el autor decidió no enviarla."
+    ],
+    "Options": [
+      {
+        "Name": "Send war record",
+        "Text": "Celebratory barks and howls spill from audio speakers.\n\nI take the warrior's reward.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Edit war record",
+        "Text": "I amend the war record with colourful nonsense and send it. \n\nThe terminal flashes as it records my image.",
+        "RewardIds": [
+          "STD_DEC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_2",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 2,
+    "IncomingMessages": [
+      "La pantalla se colma de insignias militares e imágenes de Centinelas recién destruidos. Se nota que los alienígenas se enorgullecen de la destrucción.",
+      "Grah! Vy'keen High Command demands your Sentinel kill count!",
+      "Puedo responder con un valor numérico, nada más."
+    ],
+    "Options": [
+      {
+        "Name": "Input a huge number",
+        "Text": "A strange, strangled military fanfare starts playing.\n\nSomeone impressed by my claims sends through a reward.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Input a small number",
+        "Text": "A small reward payment is sent through the facility's systems.",
+        "RewardIds": [
+          "MONEY",
+          "STD_INC_WAR",
+          "USEFUL_PROD"
+        ]
+      },
+      {
+        "Name": "Input a zero",
+        "Text": "An angry warrior's face screams at me from the screen.\n\nA security laser appears from the ceiling and takes its best shot.",
+        "RewardIds": [
+          "DAMAGESMALL",
+          "STD_DEC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_5",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 5,
+    "IncomingMessages": [
+      "Me aproximo a la terminal. Un mensaje parpadea, listo para ser enviado.",
+      "Grah! Gek war approaches! Vy'keen High Command request weapon reserve inventory! High Command send missing equipment!",
+      "Hay una lista de equipamiento enorme que espera que la envíen a otros mundos. Es algún tipo de inventario: todo está confirmado y marcado."
+    ],
+    "Options": [
+      {
+        "Name": "Send stock list",
+        "Text": "I receive units and thanks.",
+        "RewardIds": [
+          "MONEY",
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Uncheck one item and send",
+        "Text": "Warrior High Command sends me a Multi-Tool technology blueprint.",
+        "RewardIds": [
+          "PROC_TECH_WEAP",
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Uncheck many items and send",
+        "Text": "Warrior High Command is displeased.\n\nAn angry General bellows at me and electrifies the facility.",
+        "RewardIds": [
+          "DAMAGESMALL",
+          "STD_DEC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_6",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 6,
+    "IncomingMessages": [
+      "Encuentro un mensaje de otro mundo dirigido a una criatura que residía en esta estación. Es curiosamente sentimental. Hay fotos de un niño guerrero; también una foto de cuando era un adolescente despiadado, atravesando con sus dientes la garganta de una bestia con pezuñas.",
+      "Grah! Today child experiences Vy'keen war ceremony! Tradition demands gift! Aggression left, defence right! Enemy blood! Death! Death!",
+      "En la última imagen, un joven guerrero saluda a su familia mientras abandona un mundo distante. Hay dos compartimentos de almacenamiento cerrados a mis pies. El mensaje está programado para abrir solo uno..."
+    ],
+    "Options": [
+      {
+        "Name": "Choose the storage vault on the left",
+        "Text": "A contented snarling sound plays.\n\nThe vault contains an exosuit technology blueprint.",
+        "RewardIds": [
+          "PROC_TECH_SUIT",
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Choose the storage vault on the right",
+        "Text": "A contented snarling sound plays.\n\nThe vault contains a Multi-Tool technology blueprint.",
+        "RewardIds": [
+          "PROC_TECH_WEAP",
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_8",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 8,
+    "IncomingMessages": [
+      "Una especie de mercaderes picudos ha enviado aquí un mensaje de otro mundo. Parece un contrato firmado o quizás algún tipo de tratado. En respuesta, los guerreros locales han dejado muestras de valiosos bienes de comercio en el compartimento de intercambio para exportar.",
+      "Grah! Foolish, pathetic, ignorant Gek Trade Federation believe peace treaty! Warrior give trade to pacify! Death soon!",
+      "El Alto Comando Guerrero ha enviado otro mensaje explicativo..."
+    ],
+    "Options": [
+      {
+        "Name": "Give trade goods",
+        "Text": "The Trader species thanks me from afar.\n\nI am sent units to pacify me further.",
+        "RewardIds": [
+          "MONEY",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Take trade goods",
+        "Text": "I remove the offerings.\n\nDiplomatic relations between two species are destabilised.",
+        "RewardIds": [
+          "R_GEKRELIC",
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_10",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 10,
+    "IncomingMessages": [
+      "Este parece ser el puesto de preparación de una inminente operación militar.\nLos planos en pantalla muestran una nave comercial que lleva un tipo de carga muy particular con el que quizás pretende persuadir a una autoridad planetaria distante que le permita atravesar sus puestos de control.\nNo obstante, de manera encubierta, la nave se ha modificado mucho y también lleva una falange de soldados con tecnologías de multiherramienta mejoradas.",
+      "Grah! Gek homeworld covert ops mission initiated! Surprise war! Death! Death! High command send equipment! Request! Request!",
+      "Puedo solicitar más detalles sobre aspectos varios del plano antes de que me detecten y apaguen el sistema."
+    ],
+    "Options": [
+      {
+        "Name": "Investigate details of the cargo",
+        "Text": "I receive the product blueprint of the cargo being used in the covert ops mission.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Investigate details of the trade ship",
+        "Text": "I receive a technology blueprint used by the covert ops ship.",
+        "RewardIds": [
+          "PROC_TECH_SHIP",
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Investigate details of the Multi-Tool",
+        "Text": "I receive a technology blueprint used in the Multi-Tools of the covert ops mission.",
+        "RewardIds": [
+          "PROC_TECH_WEAP",
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_11",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 11,
+    "IncomingMessages": [
+      "Esta es una terminal militar en un puesto que aparentemente fue desalojado hace poco. Se han borrado parcialmente tres bancos de datos enormes y hará falta un proceso de energía intensificado para restaurarlos. Creo que un metal raro serviría.",
+      "Vy'keen covert ops ended. Deleting covert ops language data. Databank alpha: Vy'keen internal security. Databank beta: pathetic Gek. Databank gamma: weak-minded Korvax.",
+      "Un banco de datos alfa deja ver los emblemas de una raza guerrera, pero los beta y gamma están sin marcar."
+    ],
+    "Options": [
+      {
+        "Name": "Restore databank alpha",
+        "Text": "The revived databank provides more information on the language of the warrior species.",
+        "RewardIds": [
+          "TEACHWORD_WAR"
+        ]
+      },
+      {
+        "Name": "Restore databank beta",
+        "Text": "The revived databank provides information on the language of a distant trader species.",
+        "RewardIds": [
+          "TEACHWORD_TRA"
+        ]
+      },
+      {
+        "Name": "Restore databank gamma",
+        "Text": "The revived databank provides information on the language of a distant electronic species.",
+        "RewardIds": [
+          "TEACHWORD_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_13",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 13,
+    "IncomingMessages": [
+      "Recibo una llamada de emergencia de una estación espacial lejana que solicita la ayuda de cualquier nave Vy'keen cercana.\n\nSu puerto espacial parece haber sido dañado en una batalla con asaltantes piratas y ninguna de las naves restantes está disponible para escapar. \n\nLas imágenes de video muestran que el comandante de la estación ha ejecutado soldados hasta por la más mínima infracción por temor a posibles motines derivados del hambre.",
+      "WAR_HARV_LANG_13"
+    ],
+    "Options": [
+      {
+        "Name": "Share video with Vy'keen",
+        "Text": "I share the video with the Vy'keen High Command. They are outraged at the commander's behaviour, believing him to be dishonourable and cowardly.\n\nI am rewarded for my assistance in this matter.",
+        "RewardIds": [
+          "STD_INC_WAR",
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Contact nearby Gek",
+        "Text": "I contact nearby Gek, letting them know of the Vy'keen situation. They dispatch vessels immediately, saying they will of course rescue Vy'keen friends.\n\nSome of the vessels are warships. I am rewarded for my help.",
+        "RewardIds": [
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Demand ransom",
+        "Text": "I demand a ransom for the lives of those on board the station, and of all those who answer, it is the Korvax that are most willing to pay.\n\nThey claim that one of their own is present on the station. They pay me well for the information.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_14",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 14,
+    "IncomingMessages": [
+      "El puesto está abandonado y las alarmas siguen resonando para alertar a las almas hace tiempo muertas.\n\nEn este lugar tuvo lugar una revuelta. Los hermanos de batalla empuñaron sus armas contra sus propios hermanos de batalla, al parecer por unas ruinas halladas en este mundo. El último superviviente murió antes de poder borrar los datos.",
+      "WAR_HARV_LANG_14"
+    ],
+    "Options": [
+      {
+        "Name": "Download data",
+        "Text": "I download the data, reading an alternative account of Hirk, the Vy'keen's ancestor-hero. It paints them as paranoid, vindictive, and spiteful. It is for this that their believers died.\n\nAlong with this information, I gain much useful technology before I depart.",
+        "RewardIds": [
+          "TEACHWORD_WAR",
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Steal technology",
+        "Text": "I attempt to steal whatever technology I can from the facility's computers, but in the process, I appear to draw the attention of Vy'keen authorities.\n\nMy suit is damaged by the facility's defensive protocols. I must go.",
+        "RewardIds": [
+          "DAMAGESMALL"
+        ]
+      },
+      {
+        "Name": "Report to Vy'keen",
+        "Text": "I report the events that occurred in this facility to Vy'keen High Command.\n\nThe warrior's tone changes as I pass on the secret data for which these aliens died. They tell me to delete the local copy, and I do so for a handsome reward.\n\nThey tell me to forget I ever saw this place. They will take it from here.",
+        "RewardIds": [
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_15",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 15,
+    "IncomingMessages": [
+      "Estas instalaciones servían como base local para las misiones de ataque a los Centinelas del sistema.\n\nCada noche, los Vy'keen salían al amparo de la noche para acosar a drones y caminantes en una gran variedad de ubicaciones.\n\nLa suya es una guerra sin fin ni propósito, ejecutada con un macabro final. El último equipo de ataque no regresó, dejando atrás tan solo registros de misión y armas.",
+      "WAR_HARV_LANG_15"
+    ],
+    "Options": [
+      {
+        "Name": "Alert Vy'keen",
+        "Text": "I alert the Vy'keen to the death of their warriors. They thank me for what I have done, rewarding me for my honour.",
+        "RewardIds": [
+          "STD_INC_WAR",
+          "PROC_TECH_WEAP"
+        ]
+      },
+      {
+        "Name": "Steal technology",
+        "Text": "I steal nanites from the system, leaving the rest of the facility in peace.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Scan for Sentinels",
+        "Text": "I scan for Sentinels but find nothing. Whatever was here has gone.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_16",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 16,
+    "IncomingMessages": [
+      "Un mensaje entrante advierte a todos los receptores de que no se tolerará la herejía.\n\nEl mensaje pide a todos los que sospechen de que alguien está llevando a cabo actos de cobardía, simpatía con el enemigo, pacifismo, creencia en la palabra del traidor Nal o de cualquier creencia contraria a los Vy'keen, que se pongan inmediatamente en contacto con el Alto Mando.\n\nEl sistema muestra a un guerrero de la base tratando de enviar un informe para después ser asesinado por sus propios compañeros. Los asesinos abandonaron la base poco después.",
+      "Worship Atlas - seek destruction of warband! Grah!"
+    ],
+    "Options": [
+      {
+        "Name": "Report heresy",
+        "Text": "I report heresy to the Vy'keen, uploading the warrior's final report. \nI am thanked and rewarded for my assistance.",
+        "RewardIds": [
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Delete records",
+        "Text": "I delete the records from the system. The heretics are free, the report of their 'crimes' turning into nanites as it is purged.",
+        "RewardIds": [
+          "TECHFRAG_L"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_17",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 17,
+    "IncomingMessages": [
+      "Las instalaciones parecen haberse utilizado para investigar armas químicas y biológicas antes de que un fallo de contención acabase con la vida de todo el personal.\n\nEl registro del sistema deja claro que la operación no fue sancionada por el Alto Comando Vy'keen. A pesar de que sus superiores consideraban este trabajo como deshonroso y poco convincente, estos seres vivos lo veían de otra forma. ¿Y si pudiera cambiar las tornas de la batalla? ¿Y si supusiera el fin de la guerra?\n\nPodría haber otros que viesen esta basura armamentística con otros ojos. Algunos podrían pagar una gran suma por ello.",
+      "WAR_HARV_LANG_17"
+    ],
+    "Options": [
+      {
+        "Name": "Destroy samples",
+        "Text": "I destroy the facility's samples, causing a small containment failure in the process. My exosuit is damaged.",
+        "RewardIds": [
+          "DAMAGESMALL"
+        ]
+      },
+      {
+        "Name": "Sell to Gek",
+        "Text": "I attempt to sell the samples to the Gek, who reward me with units for my discovery.",
+        "RewardIds": [
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Sell to Korvax",
+        "Text": "I attempt to sell the samples to the Korvax, who appear disinterested in the potential military applications. However, they are intrigued by the composition of the toxin, and trade me some nanites.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_18",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 18,
+    "IncomingMessages": [
+      "Los registros de las instalaciones muestran la llegada de un nuevo recluta Vy'keen hace dos semanas. No existen registros de llegadas o salidas posteriores.\n\nA pesar de ello, aquí no hay nadie. Solo parece haberse enviado una transmisión desde el nivel inferior de las instalaciones, encriptada con medidas de seguridad Korvax.",
+      "Traveller anomaly approaches Syntheti'Keen. Uploading final data logs..."
+    ],
+    "Options": [
+      {
+        "Name": "Locate origin point",
+        "Text": "I use the scanners to locate the origin point of the transmission, displaying it on the terminal's screen.\n\nIt shows what appears to be a robotic Vy'keen, their limbs damaged, sparks flying from what appears to be exposed circuitry. They are surrounded by dead warriors.\n\nUnits arrive at the terminal to pay for my silence.",
+        "RewardIds": [
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Alert Vy'keen",
+        "Text": "I alert the Vy'keen. They dispatch war freighters to examine the situation, suspecting Korvax involvement in this matter. I am rewarded for my assistance.",
+        "RewardIds": [
+          "STD_INC_EXP",
+          "R_VYKEENEFFIGY"
+        ]
+      },
+      {
+        "Name": "Alert Korvax",
+        "Text": "I alert the Korvax. They deny any knowledge of this facility or the signal, though is is undermined by their attempts to harm me through the the facility's defense systems. I leave before more damage can be done.",
+        "RewardIds": [
+          "DAMAGESMALL",
+          "STD_DEC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_19",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 19,
+    "IncomingMessages": [
+      "Estas instalaciones sirvieron de puesto de entrenamiento para jóvenes Vy'keen de todo el sector. Aquí entrenaban y combatían para obtener su ciudadanía.\n\nLos registros muestran las pequeñas rivalidades, los líos amorosos, la nobleza y la pasión de aquellos que entrenaron aquí, todo ello registrado por un orgulloso y anciano comandante. Un día, los registros terminan: los Vy'keen ya no encontraban utilidad a este lugar. Los nanitos reemplazaron al entrenamiento, trasladando recuerdos entre los individuos sin necesidad de repetición física.",
+      "WAR_HARV_LANG_19"
+    ],
+    "Options": [
+      {
+        "Name": "Extract Nanite Clusters",
+        "Text": "I extract Nanite Clusters from the system and leave, emboldened and ready for glorious battle!",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Search training logs",
+        "Text": "I search the system's training logs, finding a great deal of expertise and technology that might be useful for my own travels. I extract the relevant nanites.",
+        "RewardIds": [
+          "TECHFRAG_S"
+        ]
+      },
+      {
+        "Name": "Sell data to the Gek",
+        "Text": "I sell the data to the Gek, who reward me for the training patterns of their old enemy.",
+        "RewardIds": [
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_HARV_20",
+    "Race": "Warriors",
+    "IsFactory": false,
+    "Number": 20,
+    "IncomingMessages": [
+      "El puesto es antiguo, incluso para los estándares de los Vy'keen. Su entorno está especialmente calibrado para preservar los datos en su interior.\n\nUn registro trata sobre el primer contacto de los Vy'keen con un Viajero. El personaje permaneció con la raza de guerreros bastante tiempo, aprendiendo de ellos, explorando con ellos, incluso enamorándose. Los Vy'keen murieron, pero no así el Viajero.\n\nEl registro explica la decisiva contribución de ese personaje en el desarrollo de la raza Vy'keen en sus comienzos, sobre todo en su tecnología. Algunos de los diseños se perdieron en el trascurso de esos años, perdidos hasta que hallé este registro.",
+      "WAR_HARV_LANG_20"
+    ],
+    "Options": [
+      {
+        "Name": "Share with Vy'keen",
+        "Text": "I share my discovery with the Vy'keen. They immediately place the data under quarantine, and threaten to find me across the stars.\nI leave quickly.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Take technology",
+        "Text": "I extract some of these blueprints from the system, taking valuable technology for my travels.",
+        "RewardIds": [
+          "P_HYPERFUEL1",
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Search for Traveller records",
+        "Text": "I search for further records of this Traveller.\n\nAs I do, I begin to feel as if I am being watched. Nanite Clusters emerge from the terminal as all systems shut down, their data forever lost.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY1",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 1,
+    "IncomingMessages": [
+      "La alarma ha bloqueado la terminal. Se despliega un mensaje letra a letra en la pantalla.",
+      "Suspicious interloper visual detection system initiated!",
+      "La alarma no da muestras de que vaya a detenerse. Observo unos escáneres de seguridad montados en la pared girarse lentamente hacia mí."
+    ],
+    "Options": [
+      {
+        "Name": "Shoot the cameras",
+        "Text": "I apply a rapid burst from my Multi-Tool directly to the facility's security cameras.\nThis is a partial success: my image is not captured by the system, but backup sensors react to the destruction by shutting the facility down entirely.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Apply override chip",
+        "Text": "I apply an override circuit to the security relay. Remarkably, my ad-hoc wiring seems to work. The alarm stops, and the terminal grants me full access.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Cut input wires",
+        "Text": "I snap the input wires that lead from the security system to the master control terminal. Remarkably, this seems to work. The alarm stops, and the error seems to reset the terminal.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY2",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 2,
+    "IncomingMessages": [
+      "Me acerco a la terminal y busco una manera de anular la alarma. Veo un botón con buen aspecto y lo pulso, lo que hace que la terminal responda.",
+      "Grah! Vy'keen voice security scan initializing...",
+      "Se abre una tapa de un golpe y emerge un micrófono. Una voz distante grita '¡Grah!'."
+    ],
+    "Options": [
+      {
+        "Name": "Bark 'Grah!'",
+        "Text": "I bark aggressively at the terminal. This appears to satisfy whatever demand was being made of me. Access is granted.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Say everything's fine",
+        "Text": "I attempt to explain, but my hesitant speech instantly marks me out as an interloper. The security system delivers a high-voltage shock to my Exosuit before shutting down the terminal.",
+        "RewardIds": [
+          "DAMAGESMALL",
+          "STD_DEC_WAR"
+        ]
+      },
+      {
+        "Name": "Apologise",
+        "Text": "I apologise, but this display of weakness instantly marks me out as an interloper. The security system delivers a high-voltage shock to my Exosuit before shutting down the terminal.",
+        "RewardIds": [
+          "DAMAGESMALL",
+          "STD_DEC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY3",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 3,
+    "IncomingMessages": [
+      "La terminal muestra dos alertas. Supongo que se trata de las alarmas que resuenan en mis oídos.",
+      "Intruder detected! Respiration gas concentration high! Enemy respiration!!",
+      "Tras imprimir su actualización de estado, la terminal presenta la opción de anular cada alerta. En la pantalla holográfica, las advertencias parecen referirse a componentes dañados en el interior de la instalación y a la presencia de un intruso."
+    ],
+    "Options": [
+      {
+        "Name": "Hold breath",
+        "Text": "I hold my breath. An age seems to pass. Finally, moments before I lose consciousness, the terminal flashes a green light. I have been accepted as a Vy'keen.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Breathe aggressively",
+        "Text": "I breathe as aggressively as I can, channelling my anger at the gas sensor. It has no effect. The terminal registers my failure and shuts down.",
+        "RewardIds": [
+          "STD_DEC_WAR"
+        ]
+      },
+      {
+        "Name": "Deploy Vy'keen Dagger",
+        "Text": "I inhale deeply before stabbing myself with the dagger.. I feel so alive; shot through with adrenaline; blood pumping hard through my veins; sparks crackling down my nerves. It is glorious. Grah! Grah!\nThe terminal accepts me as one of the Vy'keen and allows me access.",
+        "RewardIds": [
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY4",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 4,
+    "IncomingMessages": [
+      "La terminal muestra dos alertas. Supongo que se trata de las alarmas que resuenan en mis oídos.",
+      "Major security alert! Interloper detected! Minor alert: war factory entrance door destroyed.",
+      "Tras imprimir su actualización de estado, la terminal presenta la opción de anular cada alerta. En la pantalla holográfica, las advertencias parecen referirse a componentes dañados en el interior de la instalación y a la presencia de un intruso."
+    ],
+    "Options": [
+      {
+        "Name": "Override damage alert",
+        "Text": "The terminal initiates an emergency shutdown.",
+        "RewardIds": [
+          "STD_DEC_WAR"
+        ]
+      },
+      {
+        "Name": "Override intruder alert",
+        "Text": "The facility becomes operational.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY5",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 5,
+    "IncomingMessages": [
+      "Mi presencia ha desencadenado una alerta de seguridad. Oigo cómo se sacan elementos de los compartimentos que hay debajo de mí. Hay una cuenta atrás en pantalla.",
+      "Vy'keen security system alert! Pressure pad enemy detection confirmed! Too light! Too puny!",
+      "Puedo escuchar cómo unos fluidos llenan las tuberías que rodean la terminal. El sonido es amenazador, sobre todo al combinarlo con las alarmas de alta intensidad."
+    ],
+    "Options": [
+      {
+        "Name": "Pick up metal debris",
+        "Text": "I pick up a large piece of scrap metal from the floor, presumably deposited there when I blew up the door.\nThis has the desired effect: my weight has been increased to within the non-suspicious range for a Vy'keen warrior. The terminal grants me access.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Reduce weight",
+        "Text": "I set aside my Multi-Tool, as well as other heavy items from my Exosuit's storage. The floor scales register a further series of clicks before the security system shuts me out entirely.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Jump up and down",
+        "Text": "My rapid jumps appear to confuse whatever security device is embedded in the floor. Eventually, it either overloads or is convinced by my aggression that I am a true Vy'keen. I am granted full access to the facility.",
+        "RewardIds": [
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY6",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 6,
+    "IncomingMessages": [
+      "Mi presencia ha desencadenado una alerta de seguridad. Oigo cómo se sacan elementos de los compartimentos que hay debajo de mí. Hay una cuenta atrás en pantalla.",
+      "Intruder alert! Commence detonation sequence! Organic fuel flow initiated!",
+      "Puedo escuchar cómo unos fluidos llenan las tuberías que rodean la terminal. El sonido es amenazador, sobre todo al combinarlo con las alarmas de alta intensidad."
+    ],
+    "Options": [
+      {
+        "Name": "Block fuel lines",
+        "Text": "I clamp the fuel lines. There is a brief moment of tension as pressure builds in the pipes.\nIt stabilises. The countdown ends, and nothing happens. With some sort of disaster presumably averted, the terminal unlocks and grants me access.",
+        "RewardIds": [
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Shutdown catalyst pipes",
+        "Text": "I clamp the catalyst flow. A minor explosion scorches my arm, before facility operations resume.",
+        "RewardIds": [
+          "DAMAGESMALL"
+        ]
+      },
+      {
+        "Name": "Wait",
+        "Text": "A blast of flame coats me from below. The facility remains non-operational.",
+        "RewardIds": [
+          "DAMAGESMALL"
+        ]
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY7",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 7,
+    "IncomingMessages": [
+      "Los procedimientos de seguridad automatizados incineran el contenido de todos los compartimentos de las instalaciones. La terminal muestra el mensaje:",
+      "Intruder alert! Incinerating trading vault: imminent. Incinerating power vault: imminent. Incinerating storage vault: imminent.",
+      "Las sobrecargas de tensión están quemando los compartimentos uno por uno. Sin embargo, la terminal parece permitir un número limitado de recuperaciones de emergencia."
+    ],
+    "Options": [
+      {
+        "Name": "Withdraw trade vault",
+        "Text": "I activate the emergency vault retrieval system. The drone just has time to extract the contents of the trade vault before all goods are incinerated.",
+        "RewardIds": [
+          "MONEY_L"
+        ]
+      },
+      {
+        "Name": "Withdraw relic vault",
+        "Text": "I activate the emergency vault retrieval system. The drone just has time to extract the contents of the relic vault before all goods are incinerated.",
+        "RewardIds": [
+          "R_DAGGER"
+        ]
+      },
+      {
+        "Name": "Withdraw technology vault",
+        "Text": "I activate the emergency vault retrieval system. The drone just has time to extract the contents of the technology vault before all goods are incinerated.",
+        "RewardIds": [
+          "PROC_TECH_ONLY"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY8",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 8,
+    "IncomingMessages": [
+      "Cuando enciendo la terminal, un escáner de seguridad vanguardista hace unos clics y zumba al enfocar. Se ve mi imagen en pantalla en un rojo vivo.",
+      "Security breach! Military action unstoppable! Vy'keen High Command vessel coordinate upload imminent!",
+      "La terminal no me permite acceder. En la señal de la cámara, se ven unas líneas azules que coinciden con la posición de la red refrigerante de mi exotraje."
+    ],
+    "Options": [
+      {
+        "Name": "Broadcast safety code",
+        "Text": "I transmit the safety override code, putting an end to the emergency transmission. The Vy'keen warship stands down, broadcasting a respectful 'Grah'. The terminal unlocks.",
+        "RewardIds": [
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Hack in safety code",
+        "Text": "I attach a bypass circuit, allowing me to transmit the safety override code and put an end to the emergency transmission. The Vy'keen warship stands down, broadcasting a respectful 'Grah'. The terminal unlocks.",
+        "RewardIds": [
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Scramble facility coordinates",
+        "Text": "I attempt to scramble the facility's coordinates, hoping to throw off the incoming fire. I hear a distant explosion and the screams of burning animals. The facility's processes return to normal.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY9",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 9,
+    "IncomingMessages": [
+      "Cuando enciendo la terminal, un escáner de seguridad vanguardista hace unos clics y zumba al enfocar. Se ve mi imagen en pantalla en un rojo vivo.",
+      "Interloper detection! Heat detection systems confirm report! High temperature intruder!",
+      "La terminal no me permite acceder. En la señal de la cámara, se ven unas líneas azules que coinciden con la posición de la red refrigerante de mi exotraje."
+    ],
+    "Options": [
+      {
+        "Name": "Decrease coolant flow",
+        "Text": "I manually override my Exosuit's coolant flow. Slowly but surely a deep chill spreads across my body. My bones ache. My blood feels like ice, stabbing against every fibre of my being.\nThe image on the terminal screen fades from a dramatic red to a total black. I am invisible. The security alert ends, and the terminal comes back online.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Increase coolant flow",
+        "Text": "I manually override my Exosuit's coolant flow. Slowly but surely I feel a burning sensation spread across my body. I begin to sweat.\nThe image on the terminal screen blooms a dramatic red. The security scan completes, and locks me out from the terminal entirely.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY12",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 12,
+    "IncomingMessages": [
+      "Un aire extraño flota sobre la instalación. Más allá del ruido de la alarma, no puedo evitar sentir que hay algo más siniestro detrás. Examino la terminal en busca de pistas.",
+      "Pathetic warrior learn Vy'keen language! Pass test or encounter fighting pits! ERROR ERROR INSERT CATALYST ERROR ERROR MALFUNCTION",
+      "El texto parece flotar de la pantalla, con agresividad; no se parece a ninguna IA de instalación que haya visto. Resonando bajo la superficie, escucho el lamento electrónico de Centinelas moribundos."
+    ],
+    "Options": [
+      {
+        "Name": "Insert metal",
+        "Text": "The terminal rejects my input. It barks aggressively at me, and then closes down. It seems I have failed the test.\nI hope the lifeform who was supposed to complete it does not suffer any repercussions.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Insert catalyst",
+        "Text": "The terminal accepts my input. It barks aggressively at me, but does go on to grant full systems access. It seems I have passed the test. Perhaps the lifeform whose place I took will be grateful.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Insert catalyst",
+        "Text": "The terminal rejects my input. It barks aggressively at me, and then closes down. It seems I have failed the test.\nI hope the lifeform who was supposed to complete it does not suffer any repercussions.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY13",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 13,
+    "IncomingMessages": [
+      "Un aire extraño flota sobre la instalación. Más allá del ruido de la alarma, no puedo evitar sentir que hay algo más siniestro detrás. Examino la terminal en busca de pistas.",
+      "Grah! Initiate sentinel blood processing! Vaults full! Grah! Glass and blood! Glass and blood!",
+      "El texto parece flotar de la pantalla, con agresividad; no se parece a ninguna IA de instalación que haya visto. Resonando bajo la superficie, escucho el lamento electrónico de Centinelas moribundos."
+    ],
+    "Options": [
+      {
+        "Name": "Shutdown facility AI",
+        "Text": "Overcome with suspicion, I initiate an emergency shutdown of the facility AI. The alarms fall silent. The sinister electronic wail ceases. Unfortunately, the terminal has become unresponsive.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Insert Pugneum",
+        "Text": "I insert a supply of pugneum into the input hopper. Machinery jumps into life. The electronic wail becomes louder still. A moment passes.\nThe sinister activity ends as strangely as it begun. The terminal returns to the familiar dull text of a facility control panel.",
+        "RewardIds": [
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Incinerate vaults",
+        "Text": "Overcome with suspicion, I initiate an emergency incineration of the facility's storage vaults. The sinister electronic wail grows louder, sharper, as the fires begin their work. Then, suddenly, silence.\nThe strange atmosphere of the facility fades away. The terminal returns to the familiar dull text of a master control panel.",
+        "RewardIds": [
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY16",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 16,
+    "IncomingMessages": [
+      "La instalación emite un estridente sonido, una airada advertencia contra mi intrusión. La terminal muestra un mensaje similar, aparentemente molesta por la obstaculización de la producción.",
+      "Grah! Gek war preparation disrupted! Ammunition production stalled! Metal required!",
+      "Parece que un observador del extramundo está exigiendo algo. Si le satisfago, tal vez me conceda acceso total a la terminal."
+    ],
+    "Options": [
+      {
+        "Name": "Insert metal",
+        "Text": "I fill the input hopper with a fresh supply of ferrite. The machines continue to chatter, but now do so smoothly, their supply lines well-fed.",
+        "RewardIds": [
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Insert di-hydrogen",
+        "Text": "I fill the input hopper with a fresh supply of di-hydrogen. An explosion echos up from the machinery below. The highly reactive substance has caused some sort of industrial calamity.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Insert sodium",
+        "Text": "I fill the input hopper with a fresh supply of sodium. An explosion echos up from the machinery below. The highly reactive substance has caused some sort of industrial calamity.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY17",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 17,
+    "IncomingMessages": [
+      "La instalación emite un estridente sonido, una airada advertencia contra mi intrusión. La terminal muestra un mensaje similar, aparentemente molesta por la obstaculización de la producción.",
+      "High Command demand explanation! Scare element required! Demand chromatic metal! Restore contributions!",
+      "Parece que un observador del extramundo está exigiendo algo. Si le satisfago, tal vez me conceda acceso total a la terminal."
+    ],
+    "Options": [
+      {
+        "Name": "Issue counter-order",
+        "Text": "The terminal relays an apologetic bark. The demand is waived. Full access is granted to the facility's control panel.",
+        "RewardIds": [
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Insert magnetised Ferrite",
+        "Text": "The terminal relays a confused and angry bark. The remote overseer shuts the terminal down completely, upset by my paltry contribution.",
+        "RewardIds": [
+          "STD_DEC_WAR"
+        ]
+      },
+      {
+        "Name": "Insert Chromatic Metal",
+        "Text": "The terminal relays a resonant bark, the response of a happy warrior. With their demand satisfied, full access is restored to the facility's control panel.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY19",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 19,
+    "IncomingMessages": [
+      "La terminal revela que aquí se producen enzimas y fluidos para los tatuajes de los Vy'keen. No está claro el proceso. No hay registros de suministros entrantes de tinta o fluido. Han llegado varios alienígenas, aunque hay pocas pruebas tanto de su presencia como de su partida.",
+      "Security scan initializing! Motion detection cameras operational! Security scan initializing!",
+      "Luego lo oigo. A pesar del zumbido de la fábrica, un extraño latido en las paredes, susurros de voces desconocidas... La terminal espera órdenes."
+    ],
+    "Options": [
+      {
+        "Name": "Move to hiding spot",
+        "Text": "I attempt to hide. However, it is too late. The scanners detect me as I try to duck down. This second security alert causes the entire facility to shut down.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Stand still",
+        "Text": "I stand perfectly still as the scanners sweep over me, their electronic eyes unblinking. Eventually, they pass.\nWith their checks concluded, the security alert comes to an end. The terminal unlocks.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY20",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 20,
+    "IncomingMessages": [
+      "La terminal muestra una advertencia urgente. Alguna pieza vital de la instalación ha quedado comprometida por una alerta de seguridad.",
+      "Intruder alert! Battle enzyme production halted! Electrical charge removed from body harvest circuit!",
+      "La pantalla me deja de piedra. Se ve el corazón de un guerrero en pantalla, con pulso irregular. Está conectado a unos cables y válvulas artificiales y parece bombear un líquido biológico a través de órganos extraídos de lo más profundo de la instalación."
+    ],
+    "Options": [
+      {
+        "Name": "Increase electrical flow",
+        "Text": "I increase the power flow to the facility's heart. It judders, then establishes a regular beat. Its strange existence continues.\nWith this emergency over, the terminal reverts to a standard factory input system.",
+        "RewardIds": [
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Initiate adrenalin flux",
+        "Text": "I initiate a surge of adrenalin directly into the facility's heart. It judders, tenses, tenses again... and with a final convulsion, falls still.\nThe terminal screen cuts out. There is nothing to see but an inky blackness.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Power down systems",
+        "Text": "I power down the facility in an attempt to ease the strain on its heart. But as systems shut down, the heart begins to slow. Before I can reverse the process, it beats its last.\nThe mass of organs that relied on its processes are starved of oxygen, and die. The terminal screen cuts out. There is nothing to see but an inky blackness.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY29",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 29,
+    "IncomingMessages": [
+      "La terminal revela que aquí se producen enzimas y fluidos para los tatuajes de los Vy'keen. No está claro el proceso. No hay registros de suministros entrantes de tinta o fluido. Han llegado varios alienígenas, aunque hay pocas pruebas tanto de su presencia como de su partida.",
+      "Help... us. Harvested... get out...",
+      "Luego lo oigo. A pesar del zumbido de la fábrica, un extraño latido en las paredes, susurros de voces desconocidas... La terminal espera órdenes."
+    ],
+    "Options": [
+      {
+        "Name": "Request battle tattoo",
+        "Text": "The machine attempts to brand me with tattoo fluid, but it does not appear to have been intended for my unique physiology.\nI leave, burned and damaged.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Disable power",
+        "Text": "I disable the power. The screen shows multiple life signs within the facility, a hundred or more souls that soon begin to flatline.\nIt feels like mercy. The production line ceases, half-converted blood spilling out from various tubes.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Steal technology",
+        "Text": "I move through their computers looking for data to harvest. I discover a blueprint for an unknown technology.\nAs I extract it, something begins to smash against one of the inner walls. I should leave.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY30",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 30,
+    "IncomingMessages": [
+      "La pantalla muestra el corazón sin vida de un guerrero. Miles como él están disponibles en los archivos de este lugar, deseosos de energía desde hace mucho tiempo.",
+      "Universe real. We are real. All who oppose this truth shall be struck down, grah! So speaks Hirk Sentinelbane, Abyss Keeper and Lord of Final Monolith...",
+      "El registro muestra que los corazones se amotinaron. No permitieron que sus enzimas de batalla se usaran en favor del Alto Comando. Deseaban la muerte que se les había prometido.\n\nEste sistema está configurado para engañar a las autoridades. El Alto Comando Vy'keen cree que estas instalaciones siguen funcionando, repletas de cuerpos recolectados produciendo enzimas con sumisión."
+    ],
+    "Options": [
+      {
+        "Name": "Shut down production",
+        "Text": "I shut down production. There cannot be many Vy'keen printing presses in the galaxy, and now there is one fewer.\n\nAmidst the detritus of the factory, I find some discarded technology. Perhaps it will be of use.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Report to Vy'keen authorities",
+        "Text": "I report the factory's existence to the Vy'keen authorities. They claim I have committed blasphemy, threatening to hunt me down. They issue an electric shock through the terminal.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Steal technology",
+        "Text": "I attempt to steal technology, but the factory's automated defense systems blast a bolt of energy at my suit instead. Whatever is here, it is not worth the trouble.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY31",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 31,
+    "IncomingMessages": [
+      "La pantalla muestra el corazón sin vida de un guerrero. Miles como él están disponibles en los archivos de este lugar, deseosos de energía desde hace mucho tiempo.",
+      "UPLINK ONLINE : ALL LIFESIGNS POSITIVE : ENZYME PRODUCTION 100%",
+      "El registro muestra que los corazones se amotinaron. No permitieron que sus enzimas de batalla se usaran en favor del Alto Comando. Deseaban la muerte que se les había prometido.\n\nEste sistema está configurado para engañar a las autoridades. El Alto Comando Vy'keen cree que estas instalaciones siguen funcionando, repletas de cuerpos recolectados produciendo enzimas con sumisión."
+    ],
+    "Options": [
+      {
+        "Name": "Alert authorities",
+        "Text": "I alert the authorities. The Vy'keen are glad of my assistance, claiming they will now commit appropriate acts of retribution and justice for these crimes.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Reactivate system",
+        "Text": "I reactivate the system, but nothing happens. Death is death.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Steal technology",
+        "Text": "I try to steal technology from the terminal. I gain nanite clusters.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY32",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 32,
+    "IncomingMessages": [
+      "Cuando me aproximo a la terminal, el aire se inunda con un gas desconocido.",
+      "Grah! Sentinel trophy rises - should have killed it - run - no honour in -",
+      "Se me acelera la respiración y el pecho se me hincha con una energía también desconocida. La terminal identifica la sustancia como grahgrah. Siento ganas de gritar..."
+    ],
+    "Options": [
+      {
+        "Name": "Alert authorities",
+        "Text": "I alert the Vy'keen authorities to the loss of their factory. A Sentinel hunt is dispatched to this world. I am rewarded for my trouble.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Scan for Sentinels",
+        "Text": "I scan for Sentinels but find nothing. Whatever was here is long gone.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Attempt repair",
+        "Text": "I attempt to repair the breach in life support, but the system rebels and I end up receiving damage instead. I should leave. There is nothing for me here.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY33",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 33,
+    "IncomingMessages": [
+      "Cuando me aproximo a la terminal, el aire se inunda con un gas desconocido.",
+      "UNREGISTERED USER : DEPLOYING GRAHGRAH FROM EMERGENCY SUPPLY",
+      "Se me acelera la respiración y el pecho se me hincha con una energía también desconocida. La terminal identifica la sustancia como grahgrah. Siento ganas de gritar..."
+    ],
+    "Options": [
+      {
+        "Name": "Scream",
+        "Text": "I scream, not a cry of fear but a shout of battle. Gas levels begin to decrease but, nevertheless, those who created this factory observed my response.\nAmused, they reward me using the terminal.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Fight against the impulse",
+        "Text": "I fight against the impulse to scream, holding my breath and attempting to accelerate my suit's hazard protection.\n\nAs I struggle, the gas levels decrease. The terminal registers a disappointment from those who created this factory.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Smash the terminal",
+        "Text": "I smash the terminal, causing the concentration of gas to rise and rise.\n\nEventually, the scream emerges uncontrollably, tearing my vocal chords as it does. The gas begins to dissipate, and all I am left with is pain and battlelust.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY34",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 34,
+    "IncomingMessages": [
+      "La fábrica produce componentes para naves a partir de los recursos disponibles en este mundo.",
+      "Interloper! Vent energy! Increase production at once!",
+      "Estas instalaciones fabrican piezas para naves de combate Vy'keen. Aunque los edificios Vy'keen están altamente fortificados para soportar bombardeos, sus naves otorgan más importancia a la velocidad y a la flexibilidad necesaria para sus cacerías.\nUna fuente de video de la terminal muestra una señal de advertencia, un guerrero agitando enérgicamente sus manos hacia la cámara en las profundidades de la fábrica."
+    ],
+    "Options": [
+      {
+        "Name": "Increase production speed",
+        "Text": "I increase the production speed.\nA message informs me that heat levels are now back within normal limits, the extra energy dissipating within the factory's depths.\nThe warrior rewards me with a gift, thanking me for saving their life.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Decrease production speed",
+        "Text": "I decrease the production speed.\nThe warrior begins to panic, screaming as their whole body is burned by the rising heat of the overactive factory.\nThe video cuts off, and the factory's processes slowly grind to a halt.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Wave your hands back",
+        "Text": "I wave my hands back at the warrior.\nThe warrior begins to panic, screaming as their body is burned by the rising heat of the overactive factory.\nThe video cuts off, the smell of smoke starting to drift through the air. I should depart.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY35",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 35,
+    "IncomingMessages": [
+      "La fábrica produce armas con filo sin ningún tipo de componente relacionado con la energía.",
+      "PRODUCTION HALTED: IMMOBILE ORGANIC MATTER IN PIPE 17",
+      "El manifiesto sugiere que están destinadas al uso ceremonial en la flota Vy'keen, un recordatorio de que la muerte más gloriosa llega cuando miras a tu oponente fijamente a los ojos, sin tecnología, cara a cara en un combate final...\n\nAlgo falló. La producción se detuvo por un elemento extraño."
+    ],
+    "Options": [
+      {
+        "Name": "Disable production line",
+        "Text": "I initiate a shutdown of the production line, allowing a creature to wriggle free from its machinery. The automated factory system offers me a reward.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Purge biological matter",
+        "Text": "I initiate purge of biological matter in the factory below. The terminal confirms the death of an unknown creature. The automated factory system offers me a reward.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Take technology",
+        "Text": "Ignoring the production line, I focus on the technology behind the system. I harvest several nanite clusters from the machine.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "WAR_FACTORY36",
+    "Race": "Warriors",
+    "IsFactory": true,
+    "Number": 36,
+    "IncomingMessages": [
+      "La fábrica parece haber cesado la producción hace mucho tiempo, y los sistemas permanecen abandonados y en un estado lamentable.",
+      "Do not drink the water... warriors lost... Grah! This was preventable, this -",
+      "Aun así, el sigilo de los Vy'keen sigue ocupando las terminales, parpadeando, esperando órdenes. Un registro de audio se reproduce en bucle."
+    ],
+    "Options": [
+      {
+        "Name": "Attempt factory reset",
+        "Text": "I attempt to reset the factory's systems. Nanite Clusters come pooling forth from the factory's innards. I take some with me.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Alert Vy'keen authorities",
+        "Text": "I alert the Vy'keen authorities to the loss of their factory. An inquisitorial team is dispatched to this world and I am rewarded for my trouble.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Take technology",
+        "Text": "I attempt to extract blueprints from the factory's systems, succeeding in gaining a new technology.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_1",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 1,
+    "IncomingMessages": [
+      "He descubierto un alterado mensaje del extramundo. Parece que habla de un informe con... ¡una imagen mía en el centro!",
+      "Unknown lifeform research is HIGHLY commendable Entity! Discuss data with Korvax Convergence immediately!",
+      "A alguien parece interesarle mi viaje y tal vez quiera ayudarme. ¿Debería contactarlo?"
+    ],
+    "Options": [
+      {
+        "Name": "Delete report",
+        "Text": "The report is wiped from the system.\n\nAn off-world message appears briefly. It seems disappointed.",
+        "RewardIds": [
+          "STD_DEC_EXP"
+        ]
+      },
+      {
+        "Name": "Open comms",
+        "Text": "I briefly see mask lights staring out at me before the comms feed is cut.\n\nThe terminal rewards me with valuable knowledge.",
+        "RewardIds": [
+          "PROC_TECH_ALL",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_2",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 2,
+    "IncomingMessages": [
+      "Encuentro un informe lleno de imágenes de Centinelas, pero parece que se ha detenido la subida.",
+      "Ahem. Planetary Sentinel scan data? UPLOAD SENTINEL SCAN DATA, ENTITY! IMMEDIATELY!",
+      "Un mensaje de otro mundo exigente, quizás brusco, se proyecta hacia mí. Alguien, en algún sitio, quiere algo."
+    ],
+    "Options": [
+      {
+        "Name": "Resend Sentinel data",
+        "Text": "The information packet is uploaded, and payment appears instantaneously.",
+        "RewardIds": [
+          "PROC_TECH_ALL",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Reply with a refusal",
+        "Text": "Bright red mask lights appear and scream in angry binary.",
+        "RewardIds": [
+          "STD_DEC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_4",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 4,
+    "IncomingMessages": [
+      "Un mensaje de otro mundo enviado en masa muestra seres vivos electrónicos heridos. Brazos arrancados, máscaras dañadas y luces faciales debilitadas.",
+      "Korvax friend! Dangerous creatures attack Korvax Entity! For weaponry sales contact Gek Trade Federation today!",
+      "Es muy ofensivo. Hay una clara intención de incitar a que los receptores respondan. Se puede responder adjuntando unidades..."
+    ],
+    "Options": [
+      {
+        "Name": "Reply with units",
+        "Text": "I paid for a new Multi-Tool to protect me.",
+        "RewardIds": [
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Reply with outrage",
+        "Text": "I receive no reply. But someone else appreciates me...",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Do not reply",
+        "Text": "I leave the distasteful message unanswered.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_6",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 6,
+    "IncomingMessages": [
+      "Se está estudiando una imagen de un sistema solar distante. Se puede ver una luna rica en minerales orbitando un planeta desolado y que parece tóxico.\nEs algo oscura por detrás y presenta una extraña mancha de un color oscuro, una forma de diamante flotando en el espacio. Un atisbo de rojo brilla desde su centro.",
+      "Atlas Interface awakes? Upload research findings immediately entity! Korvax Convergence sends relevant research technology!",
+      "No hay coordenadas visibles, pero puedo aumentar diferentes partes de la imagen para estudiarlas y subirlas automáticamente a los descubrimientos de la terminal."
+    ],
+    "Options": [
+      {
+        "Name": "Enhance moon image",
+        "Text": "My research uploads.\n\nI receive a Multi-Tool technology blueprint to aid my studies",
+        "RewardIds": [
+          "PROC_TECH_WEAP",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Enhance planet image",
+        "Text": "My research uploads.\n\nI receive an exosuit technology blueprint to aid my studies.",
+        "RewardIds": [
+          "PROC_TECH_SUIT",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Enhance diamond-shaped structure image",
+        "Text": "My research uploads.\n\nI receive a ship technology blueprint to aid my studies.",
+        "RewardIds": [
+          "PROC_TECH_SHIP",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_7",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 7,
+    "IncomingMessages": [
+      "Un mensaje de otro mundo para todas las estaciones planetarias ha llenado la pantalla con planos de una expedición científica de algún tipo. La pantalla se llena de complejos mapas celestes, requisitos de combustible, complejos aparatos de comunicación y planos de experimentos orbitales.",
+      "Research entity! Atlas Interface mission begins! Donate contribution! Specialists apply here! Convergence sends specialists ship technology!",
+      "El compartimento de recursos del puesto está abierto para que se hagan contribuciones de metales a la causa, también parece que el científico que reside aquí podría unirse a la flota... aunque para eso haría falta una nave mejorada."
+    ],
+    "Options": [
+      {
+        "Name": "Contribute a metal",
+        "Text": "My contribution is accepted.\n\nUseful knowledge is made available, with thanks.",
+        "RewardIds": [
+          "PROC_TECH_ALL",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Join team",
+        "Text": "The scientist's application is accepted.\n\nA ship technology blueprint is made available.",
+        "RewardIds": [
+          "PROC_TECH_SHIP",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_8",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 8,
+    "IncomingMessages": [
+      "Este puesto parece ser una biblioteca de conocimientos sobre producción. Una lista de fórmulas de producto se despliega incesantemente en la terminal, tan rápido que hasta duele mirarla. Parecen estar catalogadas en función de sus elementos base, pero una inspección más profunda me causa náuseas.",
+      "Korvax Convergence product catalogue available. Insert element to filter product catalogue.",
+      "Los compartimentos de recursos que tengo al lado están abiertos y funcionan con normalidad."
+    ],
+    "Options": [
+      {
+        "Name": "Insert catalyst",
+        "Text": "The terminal uses the element to isolate and select a reward.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Insert organic matter",
+        "Text": "The terminal uses the element to isolate and select a reward.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Insert metal",
+        "Text": "The terminal uses the element to isolate and select a reward.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_10",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 10,
+    "IncomingMessages": [
+      "En esta terminal se están vertiendo montones de datos desde puestos de investigación de todo el planeta. Igual que un depósito de almacenamiento para los productos planetarios que hay encerrados en los compartimentos bajo mis pies, este es un punto de transmisión.",
+      "Avoid data disruption! Korvax Convergence sends reward for additional data!",
+      "Los conocimientos acumulados en este mundo se están enviando a un buque insignia científico que orbita muy por encima de mi cabeza. Me resultaría fácil romper el flujo para mejorar mi propio conocimiento, pero también puedo compartir mis propios conocimientos y mis descubrimientos."
+    ],
+    "Options": [
+      {
+        "Name": "Breach data flow",
+        "Text": "I gain a new technology blueprint.\n\nHowever, my breach corrupts the overall transfer...",
+        "RewardIds": [
+          "PROC_TECH_ALL",
+          "STD_DEC_EXP"
+        ]
+      },
+      {
+        "Name": "Share knowledge",
+        "Text": "The scientists study my offering...\n\n... and thank me with a gift to aid me on my journey.",
+        "RewardIds": [
+          "PROC_TECH_ALL",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_12",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 12,
+    "IncomingMessages": [
+      "Se ha detenido un proceso de seguridad. El sistema archiva una cantidad enorme de datos de idioma, pero no le queda memoria suficiente para asignar.",
+      "Dialect data process stalled. Metal required to finish process.",
+      "Puedo adjuntar mi multiherramienta para darle espacio adicional; haría falta alguna variedad de metal para reanudar el proceso..."
+    ],
+    "Options": [
+      {
+        "Name": "Insert common metal",
+        "Text": "The process restarts and provides me with knowledge of the language of the electronic lifeforms.",
+        "RewardIds": [
+          "TEACHWORD_EXP"
+        ]
+      },
+      {
+        "Name": "Insert uncommon metal",
+        "Text": "The process continues and improves my knowledge of the language of the electronic lifeforms.",
+        "RewardIds": [
+          "TEACHWORD_EXP"
+        ]
+      },
+      {
+        "Name": "Insert rare metal",
+        "Text": "The process completes and extends my knowledge of the language of the electronic lifeforms.",
+        "RewardIds": [
+          "TEACHWORD_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_13",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 13,
+    "IncomingMessages": [
+      "Las instalaciones procesan una señal que emana de un punto lejano del espacio. Infinitas unidades de procesamiento se combinan para descifrar el código de un extraño lenguaje matemático.",
+      "Atlas Interface signal awakes? Research entity! Insert catalyst constantly! Avoid disruption!",
+      "Salen elementos raros de los compartimentos de recursos a mis pies, pero en algunos quedan pocos."
+    ],
+    "Options": [
+      {
+        "Name": "Place metal in the vault",
+        "Text": "The metals are added to the process.\n\nThey make no clear impact.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Place catalyst in the vault",
+        "Text": "The material fuels the code cracking procedure.\n\nA faint orb glows red on the screen, then slowly fades.",
+        "RewardIds": [
+          "RECIPE_LIST",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Take elements from vault",
+        "Text": "I retrieve rare elements...\n\n... but the code-breaking process grinds to a halt.",
+        "RewardIds": [
+          "SUBST_FUEL",
+          "SUBST_TECH",
+          "STD_DEC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_14",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 14,
+    "IncomingMessages": [
+      "El puesto está abandonado y las alarmas siguen resonando para alertar a las almas hace tiempo muertas.\n\nLos Korvax de estas instalaciones se aislaron del resto de su especie por temor al nacimiento de un impulso violento en el grupo. Algo les pasó aquí... Algo despertó en sus mentes...",
+      "EXP_HARV_LANG_14"
+    ],
+    "Options": [
+      {
+        "Name": "Examine logs",
+        "Text": "I examine the logs of the Korvax stationed here. They appear to have opened a gateway beneath the depths of the planet, an experimental device designed to see alternative versions of a planet in all their glory.\nThey broke through to a thousand other Korvax units just like themselves. They attempted to form a Second Convergence composed entirely of multiversal beings, of alternate versions of their own personalities.\nThe first deletions began a week later. Nothing is left but nanite clusters.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Purge facility",
+        "Text": "I purge the facility, discovering blueprints for experimental technology in the process. Whatever happened here should not be repeated.",
+        "RewardIds": [
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Alert Korvax",
+        "Text": "I alert the Korvax to the disaster that occurred in this outpost, uploading its records to the Convergence. They reward me, claiming that the discoveries made in this location will open up worlds of study and science long since deemed impossible.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_15",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 15,
+    "IncomingMessages": [
+      "La estación de investigación contiene una amplia variedad de escáneres y equipos de monitorización centrados en las grandes masas de agua del sistema. Se encarga de buscar indicios de algo denominado abismo.\n\nLos científicos que trabajaron aquí parecen haber estado comparando los sistemas de energía y las transmisiones asociados al Atlas con señales extrañas procedentes de las aguas.\n\nAntes de desaparecer, los trabajadores llegaron a la conclusión de que el abismo parecía albergar una energía similar pero con algunas diferencias a la del Atlas. Parecía haber otra energía en el universo.",
+      "EXP_HARV_LANG_15"
+    ],
+    "Options": [
+      {
+        "Name": "Examine the abyss",
+        "Text": "I examine the records relating to the abyss. They show a repeating pattern of sixteen energy bursts, music that emerges from beneath the waves.\nContact appears to alter individual personality and objectives, changing even the most devoted Korvax into an agent of some unfathomable power. \nInfected Nanite Clusters appear to be present within the archives. I take some of them. It seems to be for the best...",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Examine the Atlas",
+        "Text": "I examine the records relating to the Atlas. They show interfaces, reports of crimson light, and records of visitations and transcendent experiences from across the universe.\nThe Korvax theorise that the Atlas does not itself exist on this plane of reality, speaking to us only through surrogate representations.\nInfected Nanite Clusters appear to be present within the archives. I take some of them. It seems to be for the best...",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Alert Korvax",
+        "Text": "I alert the Korvax to what happened here, but the Convergence claims to have had no knowledge of this facility or those working here. The Korvax involved disconnected from the Convergence two years ago, presumed dead...\nI am rewarded for my data. The Korvax promise to investigate further.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_16",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 16,
+    "IncomingMessages": [
+      "Las instalaciones parecen haberse utilizado como punto de reunión de múltiples facciones Korvax, enviándose y descargándose de múltiples cuerpos durante tensas situaciones diplomáticas y tiempos de guerra.\n\nAunque toda la especie pueda unificarse a voluntad con una gran mente, la comunicación cara a cara alberga un valor único. Estos Korvax registraron muchas cosas que deseaban mantener en secreto a sus hermanos. Algunos son siempre más iguales que otros.",
+      "EXP_HARV_LANG_16"
+    ],
+    "Options": [
+      {
+        "Name": "Access records",
+        "Text": "I access the records of these meetings. The hidden society of the Korvax appear to have a plan, meeting throughout the years to manipulate and secretly meet with members of other species to influence the course of history.\n\nI find nanites, but I also find something more. They met recently about the Travellers... about the Atlas... I saw my own face in their records.\n\nI leave, wondering about what I have seen.",
+        "RewardIds": [
+          "TECHFRAG_L"
+        ]
+      },
+      {
+        "Name": "Report to Korvax Convergence",
+        "Text": "I report the facility's existence to the Korvax Convergence. Halfway through my communication, the console's connection cuts out, causing the facility's defense system to activates. I flee, my suit damaged.",
+        "RewardIds": [
+          "DAMAGESMALL"
+        ]
+      },
+      {
+        "Name": "Report to other species",
+        "Text": "I report the facility's existence to the Gek and the Vy'keen. Halfway through my communication, the console's connection cuts out, causing the facility's defense system to activates. I flee, my suit damaged.",
+        "RewardIds": [
+          "DAMAGESMALL"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_17",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 17,
+    "IncomingMessages": [
+      "El puesto es antiguo, incluso para los estándares de los Korvax. Su entorno está especialmente calibrado para preservar los datos en su interior. El registro habla sobre realidades alternativas, historias de Korvax que tomaron caminos totalmente opuestos.\n\nEn algunas regiones del multiverso, sus progenitores jamás renunciaron a sus orígenes biológicos. En otras, continúan como esclavos de los Gek, sin sublevarse ni tratando de convencer a sus falsos amos acerca de la gloria del Atlas.\n\nMuchas de estas realidades han desaparecido, como si jamás hubieran existido.",
+      "EXP_HARV_LANG_17"
+    ],
+    "Options": [
+      {
+        "Name": "Upload to the Korvax",
+        "Text": "I upload the data to the Korvax. They absorb the memories of these alternate Korvax echoes to their own Convergence, carrying yet more sorrow. That is all there seems to be for them, whatever the galaxy...\nThey thank me, granting me Nanite Clusters through the terminal.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Search for yourself",
+        "Text": "I search for some record of myself in these alternate realities, but see nothing but parallels in the lives of others. I stand alone.\n\nI salvage Nanite Clusters from the terminal and leave, disturbed by my absence.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Steal technology",
+        "Text": "I search for technology within the facility's computers. I find none, though there are unencrypted units.",
+        "RewardIds": [
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_18",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 18,
+    "IncomingMessages": [
+      "Estas instalaciones permitían la cuarentena, el procesamiento de mentes Korvax hacia y desde su Convergencia central.\n\nEl registro incluye datos de mentes Korvax turbulentas, perturbadas por sus propios actos, acosadas por el dolor, de aquellas que amenazaban a otras mentes. Al final llegaban aquí, lejos de la Convergencia, buscando superar el dolor o purgarse ellas mismas.\n\nSolo sobrevive un alma Korvax. Según el registro, lleva treinta años en este sistema.",
+      "EXP_HARV_LANG_18"
+    ],
+    "Options": [
+      {
+        "Name": "Upload to Convergence",
+        "Text": "I upload the soul to the Convergence.\nIt cries out as it goes, condemning me for my action. I am left with nothing.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Wipe system",
+        "Text": "I wipe the system. The Korvax disappears and I am left with Nanite Clusters, the unformed matter of the system.",
+        "RewardIds": [
+          "TECHFRAG_S"
+        ]
+      },
+      {
+        "Name": "Comfort the Korvax",
+        "Text": "I attempt to comfort the Korvax, sharing with them the story of my travels.\n\nThey thank me for the attempt, but they claim it is not enough. The one they loved is dead. There is nothing left for them but this solace, this penance for what they have done.\n\nThey give me a token of gratitude and ask me to leave them alone. They wish to remain in solitude.",
+        "RewardIds": [
+          "R_KORVAXCASING"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_19",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 19,
+    "IncomingMessages": [
+      "Las instalaciones servían como centro de envío de escaneos Korvax desde un millar de mundos, recopilando información en un intento por comprender los mecanismos subyacentes del universo.\n\nEl problema era la existencia. La solución era un solo número, un aviso lanzado a gritos por cada átomo del firmamento. Dieciséis...\n\nDieciséis...",
+      "EXP_HARV_LANG_19"
+    ],
+    "Options": [
+      {
+        "Name": "Steal technology",
+        "Text": "I steal data from the system, leaving the rest of the facility in peace.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Analyse data",
+        "Text": "I analyse the data, attempting to understand the meaning of this conclusion.\n\nSomething notices me. Something reads me as I read it. I leave, terrified, my exosuit's systems damaged by the encounter.",
+        "RewardIds": [
+          "DAMAGELARGE"
+        ]
+      },
+      {
+        "Name": "Contribute scans",
+        "Text": "I contribute scans from my own systems, trying to enhance the Korvax model. \n\nThe Convergence notices and rewards me greatly for my assistance.",
+        "RewardIds": [
+          "STD_INC_EXP",
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_HARV_20",
+    "Race": "Explorers",
+    "IsFactory": false,
+    "Number": 20,
+    "IncomingMessages": [
+      "Un mensaje entrante contiene el informe de un espía Korvax.\n\nEl individuo estaba camuflado en el interior de un cuerpo Gek y actuó durante años como un simple EsfuerzoGek. Obtuvo mucha información de aquellos a los que llamaba amigos. Este era el propósito del experimento: se debe entender al enemigo.\n\nJamás se debe perdonar al enemigo, incluso en el final de los tiempos. Incluso en el rostro de la condenación. Los Korvax jamás olvidarán la violencia cometida contra ellos. Jamás se liberarán de su ira...",
+      "EXP_HARV_LANG_20"
+    ],
+    "Options": [
+      {
+        "Name": "Upload report to Gek",
+        "Text": "I upload the report to the Gek and am rewarded with credits for uncovering the spy in their midst.\n\nThey tell me that after a period of data extraction, the Korvax unit will be disposed of and stored for further study. My involvement ends here.",
+        "RewardIds": [
+          "MONEY",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Upload report to Korvax",
+        "Text": "I upload the report to the Korvax. The entities are suspicious of my aid, paying me with Nanite Clusters to ensure my silence. Their struggle will go on.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY1",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 1,
+    "IncomingMessages": [
+      "Mi intrusión no autorizada activó una alerta en la terminal de control. Sus luces emiten destellos de un rojo irritado y hostil.",
+      "Reboot initialised. Data loss probability warning. Offsite back-up detonation initialised.",
+      "Las contramedidas de seguridad iniciaron un borrado completo del sistema. Veo cómo se purgan de los registros un archivo tras otro."
+    ],
+    "Options": [
+      {
+        "Name": "Force restart",
+        "Text": "I forcibly restart the system.. After a short delay, the screen comes back to life. All trace of the security programme has vanished.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Save data",
+        "Text": "My attempt to meddle is detected immediately. The system reboots to a blank screen. All data has been lost.",
+        "RewardIds": [
+          "STD_DEC_EXP"
+        ]
+      },
+      {
+        "Name": "Wait",
+        "Text": "As I wait, the countermeasures complete their purge of the system. The terminal shuts down, its screen a lifeless black.",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY3",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 3,
+    "IncomingMessages": [
+      "Mi entrada a las instalaciones interrumpió una rutina de mantenimiento automática. La terminal muestra un mensaje de advertencia:",
+      "Save failed! Tech blueprint data corrupted! Reconstruction probability: high",
+      "Un archivo fragmentado parece haber congelado el sistema. La máquina entró en bucle intentando acceder a él."
+    ],
+    "Options": [
+      {
+        "Name": "Attempt reconstruction",
+        "Text": "The data recovery operation completes successfully. One by one the errors clear from the terminal screen.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Delete file",
+        "Text": "Manually deleting the corrupted file appears to free the machine from its degenerate loop. I can only hope it contained nothing valuable.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY4",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 4,
+    "IncomingMessages": [
+      "Las instalaciones retumban con el sonido de una alarma. Sin embargo, parece que no soy el primer intruso. La pantalla de la terminal indica un intento previo de pirateo.",
+      "Virus detection warning! File extracting valuable data!",
+      "Unos extraños y cambiantes glifos se mueven a lo largo del intérprete de comandos de la terminal. Algún código alienígena se apoderó de la unidad de investigación del sistema."
+    ],
+    "Options": [
+      {
+        "Name": "Quarantine alien process",
+        "Text": "The quarantine operation is succesful and the alien code is purged from the system. The alarms fall silent.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Permit alien process",
+        "Text": "I tap out a few commands, acknowleding but not removing the virus.\nThere is a short, almost deliberate delay. Runes shift across the display. The terminal grants me root access to the facility. The alien code resumes its harvesting operation.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY5",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 5,
+    "IncomingMessages": [
+      "El puesto de avanzada parece estar en medio de un complejo escáner planetario. Las alarmas suenan ante mi intrusión, pero la operación continúa. Intento entender el resultado.",
+      "Warning! Interruption forbidden! Sentinel scan ending soon! Control returning to overseer imminently!",
+      "El escaneo continúa. Parece que está consumiendo todos los recursos de las instalaciones, impidiendo ejecutar otras operaciones. Un gran botón de anulación parpadea de forma tentadora."
+    ],
+    "Options": [
+      {
+        "Name": "Cancel planetary scan",
+        "Text": "I hit the override button. The scan data is deleted. A remote process, detecting the premature end of the scan, shuts down the entire facility.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Wait",
+        "Text": "I wait, patient. The scan finishes processing and uploads its data. With this special task complete, the facility comes back online.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY7",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 7,
+    "IncomingMessages": [
+      "Mi entrada provocó que la instalación se cierre de inmediato, interrumpiendo sus operaciones. Las lecturas de la terminal indican algún tipo de operación de exploración o excavación de profundidad.",
+      "Geological scan in progress! Medial strata mined. Remote connection error! Immediate probe recall required!",
+      "El diagrama de una sonda emite destellos rojos. Parece que requiere alguna interacción."
+    ],
+    "Options": [
+      {
+        "Name": "Recall probe",
+        "Text": "I hear the whirr of gears and the hissing of metal cable. The facility shudders slightly as the machinery bites into the cable and begins to pull.\nAfter an agonising delay, the terminal reports a successful extraction. The alarms cease.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Restart probe",
+        "Text": "I try several times to restart the probe. It fails to respond to my commands. Meanwhile, the malfunction alerts grow ever harsher.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Detonate probe",
+        "Text": "I hear a deep, distant noise, a subterranean roll of thunder. Alerts and alarms fill the terminal screen, most of them flashing angrily. The terminal refuses to accept further input.",
+        "RewardIds": [
+          "STD_DEC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY8",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 8,
+    "IncomingMessages": [
+      "Las alarmas retumban, resonando contra mi intrusión. La instalación es operada de forma remota, y nadie responde a la llamada de la bocina.\nLa terminal indica que en la instalación se está llevando a cabo una investigación especializada.",
+      "Experiment containment failure. Common fuel element overcharge explosion. Clarify should continue?",
+      "La terminal parece solicitar una confirmación manual de su experimento..."
+    ],
+    "Options": [
+      {
+        "Name": "Continue experiment",
+        "Text": "I tap a few commands into the terminal, authorising it to continue.\nThere is a pause, then a rumble. Fire belches from the hopper. Smoke seeps from the terminal keyboard. The entire system shuts down.",
+        "RewardIds": [
+          "STD_DEC_EXP"
+        ]
+      },
+      {
+        "Name": "End experiment",
+        "Text": "I tap a few commands into the terminal, bringing it to an end. A small amount of ash is ejected from a nearby hopper.\nThe machinery hums as it reconfigures itself for standard research operations.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Insert carbon",
+        "Text": "I tap a few commands into the terminal, opening its input hopper. I insert some carbon from Exosuit.\nThere is a pause, then a rumble. Fire belches from the hopper. Smoke seeps from the terminal keyboard. The entire system shuts down.",
+        "RewardIds": [
+          "STD_DEC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY10",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 10,
+    "IncomingMessages": [
+      "Los sistemas de seguridad reaccionaron a mi entrada no autorizada. La terminal emite una serie de advertencias.",
+      "Illegal access! Security control deployed! All goods will be incinerated!",
+      "La terminal muestra imágenes de llamas. Puedo sentir cómo aumenta el calor en los compartimentos de recursos que tengo debajo."
+    ],
+    "Options": [
+      {
+        "Name": "Submit cancellation request",
+        "Text": "The flames in the resource vault subside. The facility has lost some of its supplies, but is otherwise undamaged.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Activate fire extinguishers",
+        "Text": "The flames in the resource vault subside. The facility has lost some of its supplies, but is otherwise undamaged.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Add fuel",
+        "Text": "I add oxygen to the fire raging in the vaults below. The intensity increases and smoke floods from the resource hoppers. The terminal shuts down, and my suit begins to overheat. I have only myself to blame.",
+        "RewardIds": [
+          "STD_DEC_EXP",
+          "DAMAGESMALL"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY13",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 13,
+    "IncomingMessages": [
+      "La maquinaria de este lugar extrae óxidos de un asteroide capturado. El proceso se ha parado. Las instalaciones apestan a metal chamuscado y el suelo está demasiado caliente para tocarlo. Busco pistas en la terminal.",
+      "Eheu, drill motor automated disconnection! Motor fire! Repair immediately Entity!",
+      "La terminal presenta una serie de opciones de reparación con drones. Bajo mis pies, escucho los amenazantes chirridos y chasquidos del metal que hace presión contra sí mismo."
+    ],
+    "Options": [
+      {
+        "Name": "Repair drill bit",
+        "Text": "The asteroid mining drill bit is replaced.\n\nIt remains non-operational.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Repair drill motor",
+        "Text": "The facility deploys a swarm of nano-drones deep within its inner workings. The terminal tracks their progress towards the repair site.\nCountless drones perish in the fire, but they eventually get on top of heat levels in the malfunctioning drill motor.. Slowly but surely, the facility comes back online.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY15",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 15,
+    "IncomingMessages": [
+      "Mi intrusión ha provocado algún tipo de apagado codificado. Incluso por encima del sonido de la alarma, puedo oír el ruido de elementos cayendo en cascada a través de las tuberías. La terminal muestra una advertencia parpadeante:",
+      "Warning! Catalyst overload! Circuit board technology overheat warning!",
+      "Parece que el sistema trata de lidiar con el flujo de trabajo. Está a punto de producirse una parada de emergencia automática."
+    ],
+    "Options": [
+      {
+        "Name": "Detach supply chute",
+        "Text": "The noise of cascading elements subsides. The alarms cease. However, so does the facility's operation.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Override security alert",
+        "Text": "Overriding the security alert immediately stops the alarm. With no reason to prolong the shutdown process, the facility's AI reverses the element cascade and returns system to normal.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Inject coolant",
+        "Text": "I active the facility's coolant injectors. The cascade continues, but the warnings become less severe. Eventually, they stop. The problem has been brought under control, though the facility is substantially less wealthy.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY16",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 16,
+    "IncomingMessages": [
+      "El aire está comprometido. Mi entrada ha provocado que el abrumador calor atmosférico ahogue sistemas delicados. Incluso la terminal principal está fallando entre mis dedos.",
+      "Alert! Alert! Power core isolated! Central artificial intelligence core endangered! Hostile environment detected!",
+      "Hay disponibles una serie de operaciones de recuperación."
+    ],
+    "Options": [
+      {
+        "Name": "Seal off power core",
+        "Text": "I safeguard the power core against the breach. However, vital control systems appear to have been damaged beyond repair. I listen to the hum of the powerplant, the only sound audible in the now inoperable facility.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Seal off primary motherboard",
+        "Text": "I seal off the facility's primary motherboard. However, vital control systems appear to have been damaged beyond repair. The entirely facility starts to shut down.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Seal off central AI",
+        "Text": "I safeguard the control units that house the facility's primary AI. With the computer running the facility, the appropriate countermeasures are soon deployed and the hostile environment purged.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY18",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 18,
+    "IncomingMessages": [
+      "Las operaciones están inactivas. Un escaneo reciente se ha corrompido, probablemente por mi inesperada interrupción, que ha hecho que fallen todos los sistemas del puesto.",
+      "Bad data. Sentinel drone activity scan corrupted. System disengaged.",
+      "La terminal despliega una lista de archivos potencialmente dañados. Parece que tengo derechos de borrado."
+    ],
+    "Options": [
+      {
+        "Name": "Delete planetary quadruped scan",
+        "Text": "I delete a number of files related to the quadrupeds that guard the facility, but the system remains offline",
+        "RewardIds": []
+      },
+      {
+        "Name": "Delete Sentinel scan",
+        "Text": "I delete an unusually large file, a scan the network process that controls the nearby Sentinel drones. There is a sudden, large jump in available computational resources. The installation's primary processes begin to restart.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Delete geological survey",
+        "Text": "I delete a number of geological data packets, but the system remains offline",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY19",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 19,
+    "IncomingMessages": [
+      "Unas fluctuaciones de energía descontrolada han hecho que las operaciones de investigación se detengan. Cuando toco la terminal para investigar, una carga eléctrica residual se conecta a tierra a través de mi exotraje.",
+      "Alert! Electronic terminal operator power discharge! Reset primary interface!",
+      "Las lecturas de la terminal indican que las fluctuaciones de energía cada vez son más intensas y potentes. No tardarán mucho en colapsar toda la instalación."
+    ],
+    "Options": [
+      {
+        "Name": "Stabilise production battery",
+        "Text": "I attempt to stabilise the flow of power throughout the facility, but the fluctuations continue. The terminal begins to short out, then dramatically shuts down completely.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Reset primary terminal",
+        "Text": "I reset the primary interface. One by one, systems come back online. The power fluctuations cease.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY20",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 20,
+    "IncomingMessages": [
+      "Los sistemas se sobrecargan a pesar de la alerta de seguridad. El equipamiento bajo mis pies zumba y silba con mucha intensidad. La terminal muestra una advertencia parpadeante.",
+      "Danger! Excess power! Decrease energy use immediately! Delivery at maximum!",
+      "Detecto un ligero olor a quemado."
+    ],
+    "Options": [
+      {
+        "Name": "Reduce power delivery levels",
+        "Text": "I reduce power delivery across the board. The installation returns to acceptable activity levels.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Increase fan power delivery",
+        "Text": "I turn up the cooling systems. The added strain on power delivery leads to a small internal fire. The terminal shuts down.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Increase coolant power delivery",
+        "Text": "I turn up the cooling systems. The added strain on power delivery leads to a small internal fire. The terminal shuts down.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY21",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 21,
+    "IncomingMessages": [
+      "Me acerco a la terminal. Emite la alerta de seguridad esperada, pero junto a ella hay una advertencia que no había visto antes.",
+      "Unexpected biological blockage detected. Power delivery network disruption!",
+      "Una fuente de video muestra una pequeña criatura, a la que ha despertado la alerta de seguridad, que sale gateando de entre el cableado que hay a mis pies. Su decisión de anidar en este lugar fue imprudente..."
+    ],
+    "Options": [
+      {
+        "Name": "Initiate power surge",
+        "Text": "I boost power to the wiring loom. A smell of roasted meat wafts up from the systems below. The system comes back online.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Flush production network",
+        "Text": "I send a surge of highly acidic cleaning fluid through the pipes.  The creature is swept away. I hear a faint hiss as it bubbles away to nothingness. The system comes back online.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave creature alone",
+        "Text": "I wait. Driven by the alarms, the creature struggles desperately for the exit. Eventually, it breaks free. The system comes back online.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY22",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 22,
+    "IncomingMessages": [
+      "La alarma activó la incineración instantánea de los elementos que se usaron aquí. El proceso para el que se estaban usando, no obstante, sigue activo.",
+      "Databank back-up process stalled. Raw metal required to finish process.",
+      "El escáner está recogiendo rastros de metal, residuos del proceso de producción anterior."
+    ],
+    "Options": [
+      {
+        "Name": "Supply metal",
+        "Text": "I feed the metal back into the facility's supply hopper. Production comes back online.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Supply metal",
+        "Text": "I feed the metal back into the facility's supply hopper. Production comes back online.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Supply metal",
+        "Text": "I feed the metal back into the facility's supply hopper. Production comes back online.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY30",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 30,
+    "IncomingMessages": [
+      "La terminal muestra numerosos esquemas relacionados con la tecnología de los drones y caminantes Centinelas.",
+      "Warped flesh with metal, saw the truth - the truth - the -",
+      "Los creadores de estas instalaciones parecen especialmente interesados en algo llamado cubo vórtice. Al parecer trataban de reproducir su diseño.\n\nLos sensores de las entrañas de la fábrica muestran signos extraños. Algo continúa acechando en la oscuridad, algo ni vivo ni realmente muerto..."
+    ],
+    "Options": [
+      {
+        "Name": "Purge depths",
+        "Text": "I use the factory's purge protocol to release a gas into the factory's depths, apparently causing the hidden creature to lie motionless.\n\nI take what technology I can find and leave. No good can come of remaining here.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Take Vortex Cube",
+        "Text": "I take a Vortex Cube and leave. No good can come of remaining here.",
+        "RewardIds": [
+          "R_CAVECUBE"
+        ]
+      },
+      {
+        "Name": "Scan for Sentinels",
+        "Text": "I initiate a scan for Sentinels. The result is incorrect... it must be. According to this scan, they are all around me, watching me even as I stand here.\n\nI take what technology I can find and leave. No good can come of remaining here.",
+        "RewardIds": [
+          "PROC_TECH_ALL"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY31",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 31,
+    "IncomingMessages": [
+      "Por lo visto, la fábrica produce piezas de repuesto para los exotrajes de los Korvax alienígenas, soltando máscara tras máscara, brazos, tabletas e incluso pies.",
+      "Where is entity?! Transfer failure / non-existence / terminate! Transfer, transfer!",
+      "Mientras observo la línea de producción en la terminal, una de las máscaras incorpóreas comienza a gritar. La terminal espera una orden y un contador informa de la inminente llegada de una nave."
+    ],
+    "Options": [
+      {
+        "Name": "Reassure the mask",
+        "Text": "I reassure the mask, telling it that a ship is on its way. I show the mask its surroundings, transmitting audiovisual data on the entire complex.\nThe mask appears to calm a little, but still it shakes with a deep and abiding terror. It awaits rescue.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Report system malfunction",
+        "Text": "I report a system malfunction, causing the mask to immediately grow still, purged of its individuality.",
+        "RewardIds": [
+          "R_CURIO7"
+        ]
+      },
+      {
+        "Name": "Cease production",
+        "Text": "I initiate a shut-down of all production, causing the conveyor belt to cease movement. But soon, something else happens.\nThe various other limbs on the production line begin to shift, moving towards the mask as if to assemble themselves into a bipedal figure.\nBut they just flail past one another, some of them falling to the floor, others beginning to spark energy. They merely possess the illusion of life, nothing more.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY32",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 32,
+    "IncomingMessages": [
+      "La terminal muestra una gran variedad de seres vivos inmóviles agrupados en enormes filas en la oscuridad bajo la fábrica.",
+      "MONITOR SYSTEM NORMAL... ALL LIFEFORMS WITHIN OPERATING PARAMETERS",
+      "Parecen Gek y Vy'keen, imperturbables, aparentemente no conscientes de su ubicación."
+    ],
+    "Options": [
+      {
+        "Name": "Initialise system",
+        "Text": "I initialise the system, causing the lifeforms below to wake up. They lurch forward, their heads slowly turning towards the camera. They reward me for my assistance in their awakening.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Report to Gek",
+        "Text": "I report the factory's existence to the Gek authorities. They respond with anger and fear, claiming that this complex and others like it produce 'SynthetiGek', artificial versions of the Gek for espionage and infiltration. They reward me for my assistance.",
+        "RewardIds": [
+          "STD_DEC_EXP",
+          "STD_INC_TRA"
+        ]
+      },
+      {
+        "Name": "Report to Vy'keen",
+        "Text": "I report the factory's existence to the Vy'keen authorities. They respond with confusion, promising to send starships to uncover the factory's purpose.",
+        "RewardIds": [
+          "STD_DEC_EXP",
+          "STD_INC_WAR"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY33",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 33,
+    "IncomingMessages": [
+      "La fábrica es distinta a otras instalaciones Korvax que he visto. No parece producir máquinas o archivos, sino extraños montoncitos de una sustancia plástica cubierta en secuencias de puntos muy precisas.",
+      "Echoes fade. Origin remains. Start of time, Korvax will persist... Even in face of end. Even before abyss.",
+      "Parece algún tipo de escritura, pero ¿qué utilidad tendría para los Korvax un sistema de comunicación tan primitivo?"
+    ],
+    "Options": [
+      {
+        "Name": "Shut down production",
+        "Text": "The dots on the plastic rolls appear to move as I look at them. No good will come of this place. I shut down production.\n\nAmidst the detritus of the factory, I find some discarded technology. Perhaps it will be of use.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Report to Korvax authorities",
+        "Text": "I report the factory's existence to the Korvax authorities. They claim that the installation was not for me to see, paying me dearly for my silence.",
+        "RewardIds": [
+          "MONEY"
+        ]
+      },
+      {
+        "Name": "Steal technology",
+        "Text": "I attempt to steal technology, but the factory's automated defense systems blast a bolt of energy at my suit instead. Whatever is here, it is not worth the trouble.",
+        "RewardIds": [
+          "DAMAGESMALL"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY34",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 34,
+    "IncomingMessages": [
+      "La fábrica está vacía, totalmente parada. Las líneas de producción cesaron hace tiempo su actividad y, aunque la alarma sigue sonando, no está claro el motivo.",
+      "Trapped in system... please, help me...",
+      "Una voz llama, triste, sola."
+    ],
+    "Options": [
+      {
+        "Name": "Start production",
+        "Text": "I start the production line once more, restarting the assembly of what appears to be Korvax body parts.\nAfter a short time, enough parts have been assembled for a lifeform to rise and thank me profusely for its rescue. I am rewarded for my efforts.",
+        "RewardIds": [
+          "TEACHWORD_EXP",
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Wipe system",
+        "Text": "I wipe the system. The error is fixed.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Alert Korvax authorities",
+        "Text": "I alert the Korvax authorities to their faulty factory. They dispatch a science team to examine the anomaly, thanking me for my trouble.",
+        "RewardIds": [
+          "STD_INC_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "EXP_FACTORY35",
+    "Race": "Explorers",
+    "IsFactory": true,
+    "Number": 35,
+    "IncomingMessages": [
+      "La fábrica produce componentes para naves a partir de los recursos disponibles en este mundo.",
+      "TRANSFER IN PROCESS: 38% PROGRESS. SEE MORE DETAIL?",
+      "Estas instalaciones fabrican piezas para naves exploradoras Korvax. Presentan un diseño asimétrico que prioriza la verticalidad y la funcionalidad muy por encima de la cosmovisión de cualquier organismo orgánico.\n\nAl examinar la terminal con mayor atención, observo una transferencia en curso. Los datos saltan de nave a nave y alteran los planos durante el proceso."
+    ],
+    "Options": [
+      {
+        "Name": "Disable process",
+        "Text": "I disable the process. The factory abruptly grinds to a halt for a few moments before the process begins anew.\nThe machine fires a bolt of energy at me when I try to interact again. The console communicates in broken speech, telling me that these ships are not tools to be turned on and off.\nThe console tells me that Korvax ships are living bodies, just like Korvax bipeds... all contain the souls of the scientist race.",
+        "RewardIds": [
+          "DAMAGESMALL"
+        ]
+      },
+      {
+        "Name": "Attempt download",
+        "Text": "I attempt to download the data. As I do, a sound emerges from the console, from the walls, from every component in this entire installation...\nIt is the sound of screaming. The data is mine. I receive nanite clusters to form as I desire.",
+        "RewardIds": [
+          "TECHFRAG_M"
+        ]
+      },
+      {
+        "Name": "Wait and watch",
+        "Text": "I wait and watch the console.\nAfter a few minutes, the process is complete. I see it then, clear upon the screen: each Korvax starcraft is alive.\nEach of their ships has a soul, no different from the bipedal bodies in which they normally stand. I have witnessed the birth of new entities.",
+        "RewardIds": [
+          "TEACHWORD_EXP"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  }
+]

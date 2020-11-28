@@ -1,632 +1,2879 @@
 [
   {
     "Id": "prod1",
+    "Icon": "products/1.png",
     "Name": "Антиматерия",
     "Group": "Компонент созданной технологии",
-    "Description": "Антиматерия и бариогенетические античастицы.\n \nОгромный энергетический потенциал антиматерии делает ее крайне ценной. 95% существующей антиматерии используется в качестве топлива для гипердвигателей звездолетов.\n\nВНИМАНИЕ: рекомендуется избегать неконтролируемого использования."
+    "Description": "Антиматерия и бариогенетические античастицы.\n \nОгромный энергетический потенциал антиматерии делает ее крайне ценной. 95% существующей антиматерии используется в качестве топлива для гипердвигателей звездолетов.\n\nВНИМАНИЕ: рекомендуется избегать неконтролируемого использования.",
+    "BaseValueUnits": 5233.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/1.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod2",
+    "Icon": "products/2.png",
     "Name": "Контейнер для антиматерии",
     "Group": "Компонент созданной технологии",
-    "Description": "Надежное устройство для хранения антиматерии до того, как ее можно будет превратить в варп-ячейки.\n\nСжатый кислород создает защитный газовый «карман», который не дает антиматерии соприкасаться с поверхностью контейнера."
+    "Description": "Надежное устройство для хранения антиматерии до того, как ее можно будет превратить в варп-ячейки.\n\nСжатый кислород создает защитный газовый «карман», который не дает антиматерии соприкасаться с поверхностью контейнера.",
+    "BaseValueUnits": 6500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/2.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw8",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod3",
+    "Icon": "products/3.png",
     "Name": "Углерод. нанотрубки",
     "Group": "Компонент созданной технологии",
-    "Description": "Множество метров вместительных углеродных нанотрубок.\n\nВысокая прочность и низкая электропроводимость делают их основным компонентом многих продвинутых технологий."
+    "Description": "Множество метров вместительных углеродных нанотрубок.\n\nВысокая прочность и низкая электропроводимость делают их основным компонентом многих продвинутых технологий.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CookingValue": 0.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/products/3.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod4",
+    "Icon": "products/4.png",
     "Name": "Кобальтовое зеркало",
     "Group": "Компонент созданной технологии",
-    "Description": "Специализированный оптический компонент.\n\nБлагодаря отполированной кобальтовой поверхности зеркало способно отсеивать различные волны света, отражая мир по-разному в зависимости от ближайших магнитных полей."
+    "Description": "Специализированный оптический компонент.\n\nБлагодаря отполированной кобальтовой поверхности зеркало способно отсеивать различные волны света, отражая мир по-разному в зависимости от ближайших магнитных полей.",
+    "BaseValueUnits": 20500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/4.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod5",
+    "Icon": "products/5.png",
     "Name": "Герметик",
     "Group": "Компонент созданной технологии",
-    "Description": "Высококачественное углеродное уплотнение, способное выдерживать как суровые условия межзвездных перелетов, так и колоссальные производственные нагрузки.\n\nРекомендуется регулярно проверять целостность уплотнения после установки."
+    "Description": "Высококачественное углеродное уплотнение, способное выдерживать как суровые условия межзвездных перелетов, так и колоссальные производственные нагрузки.\n\nРекомендуется регулярно проверять целостность уплотнения после установки.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/5.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod6",
+    "Icon": "products/6.png",
     "Name": "Метал. обшивка",
     "Group": "Компонент созданной технологии",
-    "Description": "Легкое металлическое изделие, часто используемое при производстве деталей звездолетов и размещаемых технологий. Основа строительной промышленности всех известных основных видов живых существ.\n\nПроизводится из ферритной пыли."
+    "Description": "Легкое металлическое изделие, часто используемое при производстве деталей звездолетов и размещаемых технологий. Основа строительной промышленности всех известных основных видов живых существ.\n\nПроизводится из ферритной пыли.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/6.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod7",
+    "Icon": "products/7.png",
     "Name": "Микропроцессор",
     "Group": "Компонент созданной технологии",
-    "Description": "Компактный низкотемпературный микрочип. Собирается из обработанного хроматического металла, для получения которого используется один из особых поверхностных металлов.\n\nИспользуется в разнообразных продвинутых технологиях."
+    "Description": "Компактный низкотемпературный микрочип. Собирается из обработанного хроматического металла, для получения которого используется один из особых поверхностных металлов.\n\nИспользуется в разнообразных продвинутых технологиях.",
+    "BaseValueUnits": 2000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/7.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod8",
+    "Icon": "products/8.png",
     "Name": "Кислородный фильтр",
     "Group": "Компонент созданной технологии",
-    "Description": "Специализированный компонент технологии.\n\nЭто небольшое устройство быстро меняет газообразную среду внутри себя. Ему под силу превратить абсолютный вакуум в полностью кислородную атмосферу."
+    "Description": "Специализированный компонент технологии.\n\nЭто небольшое устройство быстро меняет газообразную среду внутри себя. Ему под силу превратить абсолютный вакуум в полностью кислородную атмосферу.",
+    "BaseValueUnits": 615.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/8.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod9",
+    "Icon": "products/9.png",
     "Name": "Солевой рефрактор",
     "Group": "Компонент созданной технологии",
-    "Description": "Специализированный технологический компонент. Неотъемлемая часть сложной внутренней конструкции современных лазерных систем. \n\nУникальные оптический свойства стабилизированных и отполированных кристаллов соли позволяют этому светорассеивающему прибору замедлять и преломлять проходящие сквозь него фотоны."
+    "Description": "Специализированный технологический компонент. Неотъемлемая часть сложной внутренней конструкции современных лазерных систем. \n\nУникальные оптический свойства стабилизированных и отполированных кристаллов соли позволяют этому светорассеивающему прибору замедлять и преломлять проходящие сквозь него фотоны.",
+    "BaseValueUnits": 30500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/9.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod10",
+    "Icon": "products/10.png",
     "Name": "Натриевый диод",
     "Group": "Компонент созданной технологии",
-    "Description": "Продвинутый компонент цепи.\n\nБлагодаря электроду из очищенного натрия, расположенному в вакуумной трубке, этот специализированный диод отлично защищен от скачков напряжения."
+    "Description": "Продвинутый компонент цепи.\n\nБлагодаря электроду из очищенного натрия, расположенному в вакуумной трубке, этот специализированный диод отлично защищен от скачков напряжения.",
+    "BaseValueUnits": 3500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/10.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod11",
+    "Icon": "products/11.png",
     "Name": "Дигидрогенный гель",
     "Group": "Портативное питание системы жизнеобеспечения",
-    "Description": "Слабо светящийся гель. Нежное свечение и податливое колыхание скрывают тот факт, что липкий гель крайне ядовит и огнеопасен. Ни в коем случае не допускайте контакта с кожей.\n\nВырабатывается из дигидрогена."
+    "Description": "Слабо светящийся гель. Нежное свечение и податливое колыхание скрывают тот факт, что липкий гель крайне ядовит и огнеопасен. Ни в коем случае не допускайте контакта с кожей.\n\nВырабатывается из дигидрогена.",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/11.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod12",
+    "Icon": "products/12.png",
     "Name": "Окислитель топлива",
     "Group": "Расходуемое улучшение для фрегата",
-    "Description": "Временное улучшение для фрегата, действующее в течение одной экспедиции.\nСущественно обогащает топливо и перегружает двигатели фрегата, позволяя двигаться на повышенной скорости."
+    "Description": "Временное улучшение для фрегата, действующее в течение одной экспедиции.\nСущественно обогащает топливо и перегружает двигатели фрегата, позволяя двигаться на повышенной скорости.",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/12.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur1",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod13",
+    "Icon": "products/13.png",
     "Name": "Взрывающиеся дроны",
     "Group": "Расходуемое улучшение для фрегата",
-    "Description": "Временное улучшение для фрегата, действующее в течение одной экспедиции.\nГруппа автономных взрывающихся механизмов, запрограммированных на запуск с кораблей флота и самостоятельный полет к вражеским кораблям. Они крайне опасны."
+    "Description": "Временное улучшение для фрегата, действующее в течение одной экспедиции.\nГруппа автономных взрывающихся механизмов, запрограммированных на запуск с кораблей флота и самостоятельный полет к вражеским кораблям. Они крайне опасны.",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/13.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur2",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod14",
+    "Icon": "products/14.png",
     "Name": "Голографический анализатор",
     "Group": "Расходуемое улучшение для фрегата",
-    "Description": "Временное улучшение для фрегата, действующее в течение одной экспедиции. Этот мощный аналитический вычислитель разгоняет системы флота, позволяя выполнять расчеты для путешествий со скоростью выше скорости света. Из-за этого микросхемы быстро выгорают в виду сильного перегрева."
+    "Description": "Временное улучшение для фрегата, действующее в течение одной экспедиции. Этот мощный аналитический вычислитель разгоняет системы флота, позволяя выполнять расчеты для путешествий со скоростью выше скорости света. Из-за этого микросхемы быстро выгорают в виду сильного перегрева.",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/14.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod15",
+    "Icon": "products/15.png",
     "Name": "Устройство контроля разума",
     "Group": "Расходуемое улучшение для фрегата",
-    "Description": "Временное улучшение для фрегата, действующее в течение одной экспедиции.\nУстройство контроля разума подключается к корабельным системам торговли и связи, позволяя командиру флота получать преимущество в любых переговорах."
+    "Description": "Временное улучшение для фрегата, действующее в течение одной экспедиции.\nУстройство контроля разума подключается к корабельным системам торговли и связи, позволяя командиру флота получать преимущество в любых переговорах.",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/15.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod16",
+    "Icon": "products/16.png",
     "Name": "Компрессор минералов",
     "Group": "Расходуемое улучшение для фрегата",
-    "Description": "Временное улучшение для фрегата, действующее в течение одной экспедиции.\nКомпрессор минералов позволяет командам шахтеров флота разжижать добытые вещества, что ускоряет переработку и облегчает транспортировку."
+    "Description": "Временное улучшение для фрегата, действующее в течение одной экспедиции.\nКомпрессор минералов позволяет командам шахтеров флота разжижать добытые вещества, что ускоряет переработку и облегчает транспортировку.",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/16.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod17",
+    "Icon": "products/17.png",
     "Name": "Варп-ячейка",
     "Group": "Зарядный модуль гипердвигателя",
-    "Description": "Это изготовленное на основе антиматерии топливо является одним из немногих источников энергии, способным удовлетворить высочайшие требования гипердвигателя звездолета.\n\nЗащищенная крепким корпусом, ячейка гарантировано не вызывает парадоксы во время движения со сверхсветовой скоростью."
+    "Description": "Это изготовленное на основе антиматерии топливо является одним из немногих источников энергии, способным удовлетворить высочайшие требования гипердвигателя звездолета.\n\nЗащищенная крепким корпусом, ячейка гарантировано не вызывает парадоксы во время движения со сверхсветовой скоростью.",
+    "BaseValueUnits": 46750.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/17.png",
+    "BlueprintCost": 999,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 999,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod2",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod18",
+    "Icon": "products/18.png",
     "Name": "Варп-гиперядро",
     "Group": "Зарядный модуль гипердвигателя",
-    "Description": "Высокомощное топливо на базе антиматерии. Внутри этой ячейки содержится генератор черных дыр, используемый для питания гипердвигателя звездолета в течение нескольких варп-прыжков.\n\nСтенки ячейки выполнены так, чтобы отражать любые парадоксы реальности назад в центр установки, где они используются для выработки дополнительной мощности."
+    "Description": "Высокомощное топливо на базе антиматерии. Внутри этой ячейки содержится генератор черных дыр, используемый для питания гипердвигателя звездолета в течение нескольких варп-прыжков.\n\nСтенки ячейки выполнены так, чтобы отражать любые парадоксы реальности назад в центр установки, где они используются для выработки дополнительной мощности.",
+    "BaseValueUnits": 46750.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/18.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod19",
+    "Icon": "products/19.png",
     "Name": "Нестабильная плазма",
     "Group": "Заряд плазмобластера",
-    "Description": "Топливная капсула высокой плотности, используется в плазмобластерах.\n \nСодержит электротепловой энергетический элемент высокого давления, используемый в гранатах для разрушения ландшафта."
+    "Description": "Топливная капсула высокой плотности, используется в плазмобластерах.\n \nСодержит электротепловой энергетический элемент высокого давления, используемый в гранатах для разрушения ландшафта.",
+    "BaseValueUnits": 5750.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 20.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/19.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod20",
+    "Icon": "products/20.png",
     "Name": "Ионная батарея",
     "Group": "Портативный источник энергии",
-    "Description": "Удобный и надежный способ хранения энергии. Используется в различных системах обороны и защиты от вредных факторов.\n \nИзготавливается объединением ферритной пыли и подземного углерода. Зачастую его можно найти в готовых цилиндрических металлических контейнерах."
+    "Description": "Удобный и надежный способ хранения энергии. Используется в различных системах обороны и защиты от вредных факторов.\n \nИзготавливается объединением ферритной пыли и подземного углерода. Зачастую его можно найти в готовых цилиндрических металлических контейнерах.",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/20.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw14",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod21",
+    "Icon": "products/21.png",
     "Name": "Продвинутая ионная батарея",
     "Group": "Портативный источник энергии",
-    "Description": "Мощный источник питания. Используется в различных системах обороны и защиты от вредных факторов.\n\nПроизводится из ионизированного кобальта и чистого феррита, иногда встречается в цилиндрических металлических контейнерах."
+    "Description": "Мощный источник питания. Используется в различных системах обороны и защиты от вредных факторов.\n\nПроизводится из ионизированного кобальта и чистого феррита, иногда встречается в цилиндрических металлических контейнерах.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/21.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod22",
+    "Icon": "products/22.png",
     "Name": "Батарея звездного щита",
     "Group": "Портативный источник энергии",
-    "Description": "Блок хранения энергии, оптимизированный для использования в защитных системах звездолетов.\n \nЗаполненные тритием конденсаторы быстро заряжают отражающий щит, но перегружают оборудование меньшего масштаба."
+    "Description": "Блок хранения энергии, оптимизированный для использования в защитных системах звездолетов.\n \nЗаполненные тритием конденсаторы быстро заряжают отражающий щит, но перегружают оборудование меньшего масштаба.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/22.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod23",
+    "Icon": "products/23.png",
     "Name": "Гель системы жизнеобеспечения",
     "Group": "Портативное питание системы жизнеобеспечения",
-    "Description": "Аварийное топливо системы жизнеобеспечения.\n\nСинтезируется из кристаллов ракетного топлива и углерода. Этот гель временно увеличивает возможности систем жизнеобеспечения. Долгосрочное воздействие на легкие пользователя не изучено."
+    "Description": "Аварийное топливо системы жизнеобеспечения.\n\nСинтезируется из кристаллов ракетного топлива и углерода. Этот гель временно увеличивает возможности систем жизнеобеспечения. Долгосрочное воздействие на легкие пользователя не изучено.",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/23.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod24",
+    "Icon": "products/24.png",
     "Name": "Кислородная капсула",
     "Group": "Портативное питание системы жизнеобеспечения",
-    "Description": "Стабилизированный и надежный газ для фильтров системы жизнеобеспечения.\n\nЛегко добывается из кислорода и ферритной пыли. Эффективный способ долгосрочного питания системы жизнеобеспечения."
+    "Description": "Стабилизированный и надежный газ для фильтров системы жизнеобеспечения.\n\nЛегко добывается из кислорода и ферритной пыли. Эффективный способ долгосрочного питания системы жизнеобеспечения.",
+    "BaseValueUnits": 350.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/24.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod25",
+    "Icon": "products/25.png",
     "Name": "Топливо фрегата (50 тонн)",
     "Group": "Топливо из стабилизированного дигидрогена",
-    "Description": "Небольшая бочка топлива для фрегата.\n\nЭтот вязкий гель крайне токсичен. Он представляет собой очищенное топливо, которое питает межзвездные двигатели крупных торговых кораблей."
+    "Description": "Небольшая бочка топлива для фрегата.\n\nЭтот вязкий гель крайне токсичен. Он представляет собой очищенное топливо, которое питает межзвездные двигатели крупных торговых кораблей.",
+    "BaseValueUnits": 20000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/25.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw7",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod26",
+    "Icon": "products/26.png",
     "Name": "Топливо фрегата (100 тонн)",
     "Group": "Топливо из стабилизированного дигидрогена",
-    "Description": "Большая бочка топлива для фрегата.\n\nЭтот вязкий гель крайне токсичен. Он представляет собой очищенное топливо, которое питает межзвездные двигатели крупных торговых кораблей."
+    "Description": "Большая бочка топлива для фрегата.\n\nЭтот вязкий гель крайне токсичен. Он представляет собой очищенное топливо, которое питает межзвездные двигатели крупных торговых кораблей.",
+    "BaseValueUnits": 40000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/26.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw7",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod27",
+    "Icon": "products/27.png",
     "Name": "Топливо фрегата (200 тонн)",
     "Group": "Топливо из стабилизированного дигидрогена",
-    "Description": "Огромная бочка топлива для фрегата.\n\nЭтот вязкий гель крайне токсичен. Он представляет собой очищенное топливо, которое питает межзвездные двигатели крупных торговых кораблей."
+    "Description": "Огромная бочка топлива для фрегата.\n\nЭтот вязкий гель крайне токсичен. Он представляет собой очищенное топливо, которое питает межзвездные двигатели крупных торговых кораблей.",
+    "BaseValueUnits": 80000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/27.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 200
+      },
+      {
+        "Id": "raw7",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod28",
+    "Icon": "products/28.png",
     "Name": "Взлет. топливо для звездолета",
     "Group": "Топливо из стабилизированного дигидрогена",
-    "Description": "Химически активное твердое топливо, использующееся во взлетных ускорителях звездолетов.\n\nПроизводится из кристаллического дигидрогена, который встречается в синих залежах на всех планетах."
+    "Description": "Химически активное твердое топливо, использующееся во взлетных ускорителях звездолетов.\n\nПроизводится из кристаллического дигидрогена, который встречается в синих залежах на всех планетах.",
+    "BaseValueUnits": 450.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 20.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/28.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod29",
+    "Icon": "products/29.png",
     "Name": "Гидротермальный топливный блок",
     "Group": "Топливо реактора подводной лодки",
-    "Description": "Теплоэнергетическое топливо, содержащееся внутри стандартного топливного блока. Используется для питания гумбольдтового двигателя, который приводит в движение подводную лодку «Наутилон».\n\nСоздается из смеси органических компонентов (углерода и цитофосфатов) и определенных минеральных солей."
+    "Description": "Теплоэнергетическое топливо, содержащееся внутри стандартного топливного блока. Используется для питания гумбольдтового двигателя, который приводит в движение подводную лодку «Наутилон».\n\nСоздается из смеси органических компонентов (углерода и цитофосфатов) и определенных минеральных солей.",
+    "BaseValueUnits": 7200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 20.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/29.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw16",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw18",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod30",
+    "Icon": "products/30.png",
     "Name": "Снаряды",
     "Group": "Универсальный модуль боеприпасов",
-    "Description": "Продвинутые фрагменты боеприпасов, спроектированные специально для универсального мультитула по стандарту 07/FF1.\n\nЛегко вставляются в плазмомет, импульсный скорострел и бластер-рассеиватель с помощью системы перезарядки мультитула."
+    "Description": "Продвинутые фрагменты боеприпасов, спроектированные специально для универсального мультитула по стандарту 07/FF1.\n\nЛегко вставляются в плазмомет, импульсный скорострел и бластер-рассеиватель с помощью системы перезарядки мультитула.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5000.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/30.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod31",
+    "Icon": "products/31.png",
     "Name": "Кристалл углерода",
     "Group": "Залежи концентрированного углерода",
-    "Description": "Сжатый под высочайшим давлением углерод, чья плотная наноструктура делает его крайне ценным как в качестве источника энергии, так и в виде компонента технологий.\n\nВырабатывается из сжатого углерода."
+    "Description": "Сжатый под высочайшим давлением углерод, чья плотная наноструктура делает его крайне ценным как в качестве источника энергии, так и в виде компонента технологий.\n\nВырабатывается из сжатого углерода.",
+    "BaseValueUnits": 3600.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/31.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod32",
+    "Icon": "products/32.png",
     "Name": "Хлоридная решетка",
     "Group": "Залежи концентрированного хлора",
-    "Description": "Крайне плотная форма хлора. Жестко связанные друг с другом молекулы обеспечивают несравненную проводимость. Образование в природе не зарегистрировано. Для создания требуются высокоточная подача энергии.\n\nВырабатывается из хлора."
+    "Description": "Крайне плотная форма хлора. Жестко связанные друг с другом молекулы обеспечивают несравненную проводимость. Образование в природе не зарегистрировано. Для создания требуются высокоточная подача энергии.\n\nВырабатывается из хлора.",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/32.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod33",
+    "Icon": "products/33.png",
     "Name": "Дестабилизированный натрий",
     "Group": "Залежи концентрированного натрия",
-    "Description": "Обычно натрий является очень стабильным элементом, но в определенных условиях может сохранить химическую активность своих основных ионов. При обращении с ним рекомендуется использовать перчатки химической защиты.\n\nВырабатывается из натрия."
+    "Description": "Обычно натрий является очень стабильным элементом, но в определенных условиях может сохранить химическую активность своих основных ионов. При обращении с ним рекомендуется использовать перчатки химической защиты.\n\nВырабатывается из натрия.",
+    "BaseValueUnits": 12300.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/33.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod34",
+    "Icon": "products/34.png",
     "Name": "Редкий металлический элемент",
     "Group": "Залежи концентрированного металла",
-    "Description": "Крайне ценное металлическое изделие, используемое при производстве нескольких продвинутых технологий.\n\nМеталл обладает высокой химической активностью и быстро прилипает к открытым участкам кожи. Рекомендуется обращаться с большой осторожностью.\n\nВырабатывается из намагниченного феррита."
+    "Description": "Крайне ценное металлическое изделие, используемое при производстве нескольких продвинутых технологий.\n\nМеталл обладает высокой химической активностью и быстро прилипает к открытым участкам кожи. Рекомендуется обращаться с большой осторожностью.\n\nВырабатывается из намагниченного феррита.",
+    "BaseValueUnits": 4200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/34.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod35",
+    "Icon": "products/35.png",
     "Name": "Кристалл супероксида",
     "Group": "Залежи концентрированного кислорода",
-    "Description": "Редкая парамагнитная форма кислорода обладает большим потенциалом для производства продвинутых технологий. Требует переработки перед впрыском в систему жизнеобеспечения. Прямое вдыхание НЕ рекомендуется.\n\nВырабатывается из кислорода."
+    "Description": "Редкая парамагнитная форма кислорода обладает большим потенциалом для производства продвинутых технологий. Требует переработки перед впрыском в систему жизнеобеспечения. Прямое вдыхание НЕ рекомендуется.\n\nВырабатывается из кислорода.",
+    "BaseValueUnits": 5100.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/35.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod36",
+    "Icon": "products/36.png",
     "Name": "Тетракобальт",
     "Group": "Залежи концентрированного кобальта",
-    "Description": "Новаторская молекулярная форма кобальта, требующая для создания большого количества энергии. В природе встречается крайне редко.\n\nВырабатывается из ионизированного кобальта."
+    "Description": "Новаторская молекулярная форма кобальта, требующая для создания большого количества энергии. В природе встречается крайне редко.\n\nВырабатывается из ионизированного кобальта.",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/36.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod49",
+    "Icon": "products/49.png",
     "Name": "Кислота",
     "Group": "Сложный сельскохозяйственный продукт",
-    "Description": "Слабая кислота, которая используется в различных энергоячейках.\n\nВыделяется из мордита и грибковой плесени."
+    "Description": "Слабая кислота, которая используется в различных энергоячейках.\n\nВыделяется из мордита и грибковой плесени.",
+    "BaseValueUnits": 188000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/49.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw30",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw42",
+        "Quantity": 600
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod51",
+    "Icon": "products/51.png",
     "Name": "Тепл. конденсатор",
     "Group": "Сложный сельскохозяйственный продукт",
-    "Description": "Терморегулятор, состоящий из очищенной и обработанной органики. Обладает уникальной способностью производить и распределять тепло в соответствии с необходимостью.\n\nПроизводится из солания и морозных кристаллов."
+    "Description": "Терморегулятор, состоящий из очищенной и обработанной органики. Обладает уникальной способностью производить и распределять тепло в соответствии с необходимостью.\n\nПроизводится из солания и морозных кристаллов.",
+    "BaseValueUnits": 180000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/51.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw43",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw46",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod52",
+    "Icon": "products/52.png",
     "Name": "Поливолокно",
     "Group": "Сложный сельскохозяйственный продукт",
-    "Description": "Соединительное волокно. Создается из современных синтетических полимеров и способно передавать энергию и данные.\n\nПроизводится из мякоти кактуса и Звездный лук."
+    "Description": "Соединительное волокно. Создается из современных синтетических полимеров и способно передавать энергию и данные.\n\nПроизводится из мякоти кактуса и Звездный лук.",
+    "BaseValueUnits": 130000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/52.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw45",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw47",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod53",
+    "Icon": "products/53.png",
     "Name": "Плата",
     "Group": "Сложный сельскохозяйственный продукт",
-    "Description": "Составная универсальная плата из высокопрочного синтетического полимера.\n\nПроизводится из теплового конденсатора и поливолокна."
+    "Description": "Составная универсальная плата из высокопрочного синтетического полимера.\n\nПроизводится из теплового конденсатора и поливолокна.",
+    "BaseValueUnits": 916250.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/53.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod51",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod52",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod54",
+    "Icon": "products/54.png",
     "Name": "Стекло",
     "Group": "Сложный сельскохозяйственный продукт",
-    "Description": "Сверхпрочное стекло с защитой от царапин и особым ультрафиолетовым покрытием. Используется в строительстве.\n\nИзготавливается из очищенного силикатного порошка. Добывайте силикат из земли с помощью ландшафтного манипулятора.\n\nМожно изготовить их морозных кристаллов, добываемых из растений замерзших планет."
+    "Description": "Сверхпрочное стекло с защитой от царапин и особым ультрафиолетовым покрытием. Используется в строительстве.\n\nИзготавливается из очищенного силикатного порошка. Добывайте силикат из земли с помощью ландшафтного манипулятора.\n\nМожно изготовить их морозных кристаллов, добываемых из растений замерзших планет.",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/54.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw43",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod55",
+    "Icon": "products/55.png",
     "Name": "Нестабильный гель",
     "Group": "Сложный сельскохозяйственный продукт",
-    "Description": "Высокореактивный гель. Содержит в себе большой запас энергии. Трогать не рекомендуется.\n\nПроизводится из мякоти кактуса."
+    "Description": "Высокореактивный гель. Содержит в себе большой запас энергии. Трогать не рекомендуется.\n\nПроизводится из мякоти кактуса.",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/55.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw45",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod56",
+    "Icon": "products/56.png",
     "Name": "Жидкая взрывчатка",
     "Group": "Сложный сельскохозяйственный продукт",
-    "Description": "Многоцелевая жидкая взрывчатка, удобная для перевозки и использования. Пить не рекомендуется.\n\nПроизводится из кислоты и нестабильного геля."
+    "Description": "Многоцелевая жидкая взрывчатка, удобная для перевозки и использования. Пить не рекомендуется.\n\nПроизводится из кислоты и нестабильного геля.",
+    "BaseValueUnits": 800500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/56.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod49",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod55",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod57",
+    "Icon": "products/57.png",
     "Name": "Смазка",
     "Group": "Сложный сельскохозяйственный продукт",
-    "Description": "Синтетическая смазка, уменьшающая износ подвижных частей различных устройств и продлевающая срок их службы.\n\nПроизводится из фекалия и гамма-корня."
+    "Description": "Синтетическая смазка, уменьшающая износ подвижных частей различных устройств и продлевающая срок их службы.\n\nПроизводится из фекалия и гамма-корня.",
+    "BaseValueUnits": 110000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/57.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw44",
+        "Quantity": 400
+      },
+      {
+        "Id": "raw50",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod58",
+    "Icon": "products/58.png",
     "Name": "Живое стекло",
     "Group": "Сложный сельскохозяйственный продукт",
-    "Description": "Сложный строительный материал. Это стекло производится с участием органических соединений, которые позволяют ему реагировать на изменения окружающий среды. Живущие внутри бактерии фильтруют опасное излучение и балансируют атмосферу.\n\nИзготавливается из смазки и стекла."
+    "Description": "Сложный строительный материал. Это стекло производится с участием органических соединений, которые позволяют ему реагировать на изменения окружающий среды. Живущие внутри бактерии фильтруют опасное излучение и балансируют атмосферу.\n\nИзготавливается из смазки и стекла.",
+    "BaseValueUnits": 566000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/58.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod54",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod57",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod59",
+    "Icon": "products/59.png",
     "Name": "Обогащенный углерод",
     "Group": "Очищенный газовый продукт",
-    "Description": "Сложный продукт, представляющий собой обогащенный радиоактивной энергией углерод.\n\nПроизводится из радона и сжатого углерода."
+    "Description": "Сложный продукт, представляющий собой обогащенный радиоактивной энергией углерод.\n\nПроизводится из радона и сжатого углерода.",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/59.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw36",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod60",
+    "Icon": "products/60.png",
     "Name": "Азотная соль",
     "Group": "Очищенный газовый продукт",
-    "Description": "Обработанное и мощное удобрение в удобной для использования форме.\n\nПроизводится из азота и сжатого углерода."
+    "Description": "Обработанное и мощное удобрение в удобной для использования форме.\n\nПроизводится из азота и сжатого углерода.",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/60.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw37",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod61",
+    "Icon": "products/61.png",
     "Name": "Термический конденсат",
     "Group": "Очищенный газовый продукт",
-    "Description": "Удобный способ держать энергетический потенциал нагретого газа в стабильном состоянии до момента использования.\n\nПроизводится из серного газа и сжатого углерода."
+    "Description": "Удобный способ держать энергетический потенциал нагретого газа в стабильном состоянии до момента использования.\n\nПроизводится из серного газа и сжатого углерода.",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/61.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw35",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod62",
+    "Icon": "products/62.png",
     "Name": "Горячий лед",
     "Group": "Произведенный газовый продукт",
-    "Description": "Парадоксальный материал, загадочность которого несколько умаляет простота производства.\n\nПроизводится из обогащенного углерода и азотной соли."
+    "Description": "Парадоксальный материал, загадочность которого несколько умаляет простота производства.\n\nПроизводится из обогащенного углерода и азотной соли.",
+    "BaseValueUnits": 320000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/62.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod59",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod60",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod63",
+    "Icon": "products/63.png",
     "Name": "Крионасос",
     "Group": "Произведенный газовый продукт",
-    "Description": "Крионасос состоит из сложного, саморегулирующегося гибридного материала и сверхэффективно распределяет тепло, что делает его незаменимым компонентом терморегуляторов.\n\nПроизводится из горячего льда и термического конденсата."
+    "Description": "Крионасос состоит из сложного, саморегулирующегося гибридного материала и сверхэффективно распределяет тепло, что делает его незаменимым компонентом терморегуляторов.\n\nПроизводится из горячего льда и термического конденсата.",
+    "BaseValueUnits": 1500000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/63.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod61",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod62",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod64",
+    "Icon": "products/64.png",
     "Name": "Полупроводник",
     "Group": "Произведенный газовый продукт",
-    "Description": "Продвинутый материал, широко используемый в электронике. Обладает встроенным терморегулятором.\n\nПроизводится из термического конденсата и азотной соли."
+    "Description": "Продвинутый материал, широко используемый в электронике. Обладает встроенным терморегулятором.\n\nПроизводится из термического конденсата и азотной соли.",
+    "BaseValueUnits": 320000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/64.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod60",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod61",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod65",
+    "Icon": "products/65.png",
     "Name": "Органич. катализатор",
     "Group": "Произведенный газовый продукт",
-    "Description": "Каталитический материал, который применяют в производстве многих органических удобрений.\n\nПроизводится из термического конденсата и обогащенного углерода."
+    "Description": "Каталитический материал, который применяют в производстве многих органических удобрений.\n\nПроизводится из термического конденсата и обогащенного углерода.",
+    "BaseValueUnits": 320000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/65.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod59",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod61",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod66",
+    "Icon": "products/66.png",
     "Name": "Сверхпроводник",
     "Group": "Произведенный газовый продукт",
-    "Description": "Сверхпроводник обладает особенно высокой проводимостью и по всем характеристикам значительно превосходит полупроводники.\n\nПроизводится из обогащенного углерода и полупроводников."
+    "Description": "Сверхпроводник обладает особенно высокой проводимостью и по всем характеристикам значительно превосходит полупроводники.\n\nПроизводится из обогащенного углерода и полупроводников.",
+    "BaseValueUnits": 1500000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/66.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod59",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod64",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod67",
+    "Icon": "products/67.png",
     "Name": "Ядерный ускоритель",
     "Group": "Произведенный газовый продукт",
-    "Description": "Высокоэффективный источник топлива, представляющий собой выверенное сочетание органических материалов с большим запасом энергии.\n\nПроизводится из органического катализатора и азотной соли."
+    "Description": "Высокоэффективный источник топлива, представляющий собой выверенное сочетание органических материалов с большим запасом энергии.\n\nПроизводится из органического катализатора и азотной соли.",
+    "BaseValueUnits": 1500000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/67.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod60",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod65",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod68",
+    "Icon": "products/68.png",
     "Name": "Криогенная камера",
     "Group": "Продвинутый произведенный товар",
-    "Description": "Низкотемпературная камера, предохраняющая органику от разложения.\n\nПроизводится из живого стекла и крионасоса."
+    "Description": "Низкотемпературная камера, предохраняющая органику от разложения.\n\nПроизводится из живого стекла и крионасоса.",
+    "BaseValueUnits": 3800000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/68.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod58",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod63",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod69",
+    "Icon": "products/69.png",
     "Name": "Портативный реактор",
     "Group": "Продвинутый произведенный товар",
-    "Description": "Миниатюрный автономный ядерный реактор. Создает в простом универсальном топливном модуле энергию на уровне слабых звезд.\n\nПроизводится из жидкой взрывчатки и ядерного ускорителя."
+    "Description": "Миниатюрный автономный ядерный реактор. Создает в простом универсальном топливном модуле энергию на уровне слабых звезд.\n\nПроизводится из жидкой взрывчатки и ядерного ускорителя.",
+    "BaseValueUnits": 4200000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/69.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod56",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod67",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod70",
+    "Icon": "products/70.png",
     "Name": "Квантовый процессор",
     "Group": "Продвинутый произведенный товар",
-    "Description": "Сложное вычислительное устройство, без которого невозможно осуществить необходимые для варп-прыжков расчеты.\n\nПроизводится из плат и сверхпроводников."
+    "Description": "Сложное вычислительное устройство, без которого невозможно осуществить необходимые для варп-прыжков расчеты.\n\nПроизводится из плат и сверхпроводников.",
+    "BaseValueUnits": 4400000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/70.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod53",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod66",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod71",
+    "Icon": "products/71.png",
     "Name": "Ароний",
     "Group": "Сплав металлов",
-    "Description": "Легкий и очень ковкий сплав. Производится из парафиния и хлора.\n\nНужен для постройки планетарных аванпостов и других служб, пользуется высоким спросом в галактической торговой сети."
+    "Description": "Легкий и очень ковкий сплав. Производится из парафиния и хлора.\n\nНужен для постройки планетарных аванпостов и других служб, пользуется высоким спросом в галактической торговой сети.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/71.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod72",
+    "Icon": "products/72.png",
     "Name": "Грязная бронза",
     "Group": "Сплав металлов",
-    "Description": "Распространенный и широко используемый сплав. Научное название грязной бронзы давно забыто, а народное связано с ее характерным оттенком.\n\nПроизводится из чистого феррита и пирита."
+    "Description": "Распространенный и широко используемый сплав. Научное название грязной бронзы давно забыто, а народное связано с ее характерным оттенком.\n\nПроизводится из чистого феррита и пирита.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/72.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw25",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod73",
+    "Icon": "products/73.png",
     "Name": "Грантин",
     "Group": "Сплав металлов",
-    "Description": "Мягкий, ковкий сплав, любимый всеми мастерами вселенной. Производится из ионизированного кобальта и диоксита.\n\nПопулярный товар, ради сбыта которого торговцы наладили ряд важных торговых магистралей."
+    "Description": "Мягкий, ковкий сплав, любимый всеми мастерами вселенной. Производится из ионизированного кобальта и диоксита.\n\nПопулярный товар, ради сбыта которого торговцы наладили ряд важных торговых магистралей.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/73.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw28",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod74",
+    "Icon": "products/74.png",
     "Name": "Герокс",
     "Group": "Сплав металлов",
-    "Description": "Комбинированный нейронный сплав, применяемый во множестве областей: от фармакологии до тяжелой промышленности. Производится из хлора и аммиака.\n\nОдин из важнейших товаров галактической торговой сети."
+    "Description": "Комбинированный нейронный сплав, применяемый во множестве областей: от фармакологии до тяжелой промышленности. Производится из хлора и аммиака.\n\nОдин из важнейших товаров галактической торговой сети.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/74.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw26",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod75",
+    "Icon": "products/75.png",
     "Name": "Магно-золото",
     "Group": "Сплав металлов",
-    "Description": "Очень ценный, блестящий сплав. Пользуется высоким спросом среди торговцев всех основных рас. Производится из ионизированного кобальта и фосфора.\n\nЛегко узнаваем по ярко-красному свечению и мощному магнитному полю."
+    "Description": "Очень ценный, блестящий сплав. Пользуется высоким спросом среди торговцев всех основных рас. Производится из ионизированного кобальта и фосфора.\n\nЛегко узнаваем по ярко-красному свечению и мощному магнитному полю.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/75.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod76",
+    "Icon": "products/76.png",
     "Name": "Лемий",
     "Group": "Сплав металлов",
-    "Description": "Сплав чистого феррита. Производится из чистого феррита и урана.\n\nВ связи с высокой прочностью широко используется в производстве грузовых звездолетов. Надежный материал, пользующийся постоянным спросом в галактической торговой сети."
+    "Description": "Сплав чистого феррита. Производится из чистого феррита и урана.\n\nВ связи с высокой прочностью широко используется в производстве грузовых звездолетов. Надежный материал, пользующийся постоянным спросом в галактической торговой сети.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/76.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod77",
+    "Icon": "products/77.png",
     "Name": "Геодезит",
     "Group": "Обогащенный сплав металлов",
-    "Description": "Сложный сплав, в первую очередь используемый в корпусах звездолетов, а также в дронах для исследования глубокого космоса.\n\nПроизводится из герокса, грязной бронзы и лемия."
+    "Description": "Сложный сплав, в первую очередь используемый в корпусах звездолетов, а также в дронах для исследования глубокого космоса.\n\nПроизводится из герокса, грязной бронзы и лемия.",
+    "BaseValueUnits": 150000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/77.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod72",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod76",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod78",
+    "Icon": "products/78.png",
     "Name": "Иридезит",
     "Group": "Обогащенный сплав металлов",
-    "Description": "Легкий металлический сплав, популярный на Внешней границе галактики. Часто используется в производстве деталей интерьера торговых кораблей, чтобы уменьшить их вес и облегчить взлет с планет с сильным гравитационным полем.\n\nПроизводится из арония, магно-золота и грантина."
+    "Description": "Легкий металлический сплав, популярный на Внешней границе галактики. Часто используется в производстве деталей интерьера торговых кораблей, чтобы уменьшить их вес и облегчить взлет с планет с сильным гравитационным полем.\n\nПроизводится из арония, магно-золота и грантина.",
+    "BaseValueUnits": 150000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/78.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod71",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod73",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod75",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod79",
+    "Icon": "products/79.png",
     "Name": "Ядерный зажигатель",
     "Group": "Крайне сложная технология",
-    "Description": "Очень сложное устройство, которое используется на электростанциях нового поколения. Для создания термоядерного блока требуются не только продвинутые научные знания, но и сложные производственные операции.\n\nПроизводится из портативного реактора, квантового процессора и геодезита."
+    "Description": "Очень сложное устройство, которое используется на электростанциях нового поколения. Для создания термоядерного блока требуются не только продвинутые научные знания, но и сложные производственные операции.\n\nПроизводится из портативного реактора, квантового процессора и геодезита.",
+    "BaseValueUnits": 15600000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/79.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod69",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod70",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod77",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod80",
+    "Icon": "products/80.png",
     "Name": "Устройство стазиса",
     "Group": "Крайне сложная технология",
-    "Description": "Устройство, разработанное с целью сохранять жизнеспособность существ на сроки, во много сотен раз превышающие обычную продолжительность их жизней. Очень сложно в производстве: во-первых, с точки зрения необходимых навыков, а во-вторых, потому что последствия любой неисправности будут летальными.\n\nПроизводится из квантовых процессоров, криогенной камеры и иридезита."
+    "Description": "Устройство, разработанное с целью сохранять жизнеспособность существ на сроки, во много сотен раз превышающие обычную продолжительность их жизней. Очень сложно в производстве: во-первых, с точки зрения необходимых навыков, а во-вторых, потому что последствия любой неисправности будут летальными.\n\nПроизводится из квантовых процессоров, криогенной камеры и иридезита.",
+    "BaseValueUnits": 15600000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/80.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod68",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod70",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod78",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod81",
+    "Icon": "products/81.png",
     "Name": "Проводной станок",
     "Group": "Универсальная техноплатформа",
-    "Description": "Заводская печатная плата, которую можно использовать разными способами в большом количестве технологических компонентов.\n\nВ модуль встроен нанитовый процессор, допускающий быструю настройку под различные конкретные задачи."
+    "Description": "Заводская печатная плата, которую можно использовать разными способами в большом количестве технологических компонентов.\n\nВ модуль встроен нанитовый процессор, допускающий быструю настройку под различные конкретные задачи.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/81.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod82",
+    "Icon": "products/82.png",
     "Name": "Хрупкий нейронный ствол",
     "Group": "Фрагмент жизни",
-    "Description": "Тонкая сеть живой ткани. Та искра, что разжигает пламя жизни в новом живом существе.\n\nТребует внимательного ухода во время созревания."
+    "Description": "Тонкая сеть живой ткани. Та искра, что разжигает пламя жизни в новом живом существе.\n\nТребует внимательного ухода во время созревания.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/82.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod83",
+    "Icon": "products/83.png",
     "Name": "Хрупкое сердце",
     "Group": "Фрагмент жизни",
-    "Description": "Пока что обычное скопление клеток, но уже можно почувствовать слабое биение этого протосердца.\n\nТребует внимательного ухода во время созревания."
+    "Description": "Пока что обычное скопление клеток, но уже можно почувствовать слабое биение этого протосердца.\n\nТребует внимательного ухода во время созревания.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/83.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod84",
+    "Icon": "products/84.png",
     "Name": "Хрупкий панцирь",
     "Group": "Фрагмент жизни",
-    "Description": "Просвечивающий и невероятно тонкий, по прочности этот панцирь едва ли превосходит стекло. Но чувствуется, что он станет куда крепче. Панцирь твердеет на глазах и становится все более прочным.\n\nТребует внимательного ухода во время созревания."
+    "Description": "Просвечивающий и невероятно тонкий, по прочности этот панцирь едва ли превосходит стекло. Но чувствуется, что он станет куда крепче. Панцирь твердеет на глазах и становится все более прочным.\n\nТребует внимательного ухода во время созревания.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/84.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod85",
+    "Icon": "products/85.png",
     "Name": "Растущая сингулярность",
     "Group": "Хрупкое дыхание",
-    "Description": "Комок медленно переплетающихся нейронов, плоти и антиматерии. Невозможно представить, как его разум познает вселенную.\n\nТребует внимательного ухода во время созревания."
+    "Description": "Комок медленно переплетающихся нейронов, плоти и антиматерии. Невозможно представить, как его разум познает вселенную.\n\nТребует внимательного ухода во время созревания.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/85.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod86",
+    "Icon": "products/86.png",
     "Name": "Взрослый нейронный ствол",
     "Group": "Живой орган звездолета",
-    "Description": "Это переплетение живой ткани отрастило металлические нити и стало сетью из серебра и плоти. Она потрескивает от вырабатываемого внутри электричества. Этой сети нужны свои узлы.\n\nОрган ждет своего тела."
+    "Description": "Это переплетение живой ткани отрастило металлические нити и стало сетью из серебра и плоти. Она потрескивает от вырабатываемого внутри электричества. Этой сети нужны свои узлы.\n\nОрган ждет своего тела.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/86.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod87",
+    "Icon": "products/87.png",
     "Name": "Взрослый узел сердца",
     "Group": "Живой орган звездолета",
-    "Description": "Мощный и мускулистый, этот бионический насос окружен сетью синтетических трубок. Он дергается при прикосновении, на ритм его сокращений влияет присутствие других разумных существ.\n\nОрган ждет своего тела."
+    "Description": "Мощный и мускулистый, этот бионический насос окружен сетью синтетических трубок. Он дергается при прикосновении, на ритм его сокращений влияет присутствие других разумных существ.\n\nОрган ждет своего тела.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/87.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod88",
+    "Icon": "products/88.png",
     "Name": "Крепкий панцирь",
     "Group": "Живой орган звездолета",
-    "Description": "Прозрачный, зеркальный, переливающийся и невероятно прочный. Панцирь быстро восстанавливает повреждения, становясь крепче прежнего. Новые связи формируют память стекла, отражая свет, впитанный в момент удара.\n\nОрган ждет своего тела."
+    "Description": "Прозрачный, зеркальный, переливающийся и невероятно прочный. Панцирь быстро восстанавливает повреждения, становясь крепче прежнего. Новые связи формируют память стекла, отражая свет, впитанный в момент удара.\n\nОрган ждет своего тела.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/88.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod89",
+    "Icon": "products/89.png",
     "Name": "Ядро сингулярности",
     "Group": "Живой орган звездолета",
-    "Description": "Чувствительный комплекс нейронов, вращающихся по стабильной орбите вокруг миниатюрной черной дыры. Разум этого бионического чуда свободен от ограничений линейного времени. Он воспринимает сущее как невероятную сеть из огромного множества форм жизни.\n\nОрган ждет своего тела."
+    "Description": "Чувствительный комплекс нейронов, вращающихся по стабильной орбите вокруг миниатюрной черной дыры. Разум этого бионического чуда свободен от ограничений линейного времени. Он воспринимает сущее как невероятную сеть из огромного множества форм жизни.\n\nОрган ждет своего тела.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/89.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod90",
+    "Icon": "products/90.png",
     "Name": "Мост сознания",
     "Group": "Восстановленная нейронная лестница",
-    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nПохоже, это устройство позволяет отдельному существу подключаться к огромному единому сознанию. Устройство основано на корвакских технологиях, но отличается от них."
+    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nПохоже, это устройство позволяет отдельному существу подключаться к огромному единому сознанию. Устройство основано на корвакских технологиях, но отличается от них.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/90.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw4",
+        "Quantity": 250
+      },
+      {
+        "Id": "cur39",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 80
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod91",
+    "Icon": "products/91.png",
     "Name": "Пульсирующий сердечник",
     "Group": "Перегретый фрагмент жизни",
-    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nОрганическая, но пылает жаром и снабжена внутренним мешком, выдерживающим большое давление. Это «устройство» является насосом и камерой ускоренной эволюции."
+    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nОрганическая, но пылает жаром и снабжена внутренним мешком, выдерживающим большое давление. Это «устройство» является насосом и камерой ускоренной эволюции.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/91.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw30",
+        "Quantity": 80
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw59",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod92",
+    "Icon": "products/92.png",
     "Name": "Невозможная мембрана",
     "Group": "Автоматически восстанавливающаяся форма жизни",
-    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nТонкая сетка из плотно переплетенных волокон. Живущие в ткани микроорганизмы позволяют ей бесконечно восстанавливаться. Это идеальная и постоянно подновляемая бионическая кожа."
+    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nТонкая сетка из плотно переплетенных волокон. Живущие в ткани микроорганизмы позволяют ей бесконечно восстанавливаться. Это идеальная и постоянно подновляемая бионическая кожа.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/92.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur18",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod98",
+        "Quantity": 150
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod93",
+    "Icon": "products/93.png",
     "Name": "Семена стекла",
     "Group": "Замороженный архив",
-    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nКапсулы генетического материала, окруженные пленкой из живого стекла. По их зеркальным поверхностям проплывают общие воспоминания, ждущие своей возможности сформировать живое существо внутри."
+    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nКапсулы генетического материала, окруженные пленкой из живого стекла. По их зеркальным поверхностям проплывают общие воспоминания, ждущие своей возможности сформировать живое существо внутри.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/93.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw60",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod94",
+    "Icon": "products/94.png",
     "Name": "Архивированная душа",
     "Group": "Бионическая дуга",
-    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nСинтез сложных микросхем и неописуемых сбоев Странника. Подобное вычислительное устройство может связывать реальности или разрывать их на крохотные симулированные фрагменты."
+    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nСинтез сложных микросхем и неописуемых сбоев Странника. Подобное вычислительное устройство может связывать реальности или разрывать их на крохотные симулированные фрагменты.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/94.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod95",
+    "Icon": "products/94.png",
     "Name": "Камера души (0%)",
     "Group": "Бионическая дуга",
-    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nСинтез сложных микросхем и неописуемых сбоев Странника. Подобное вычислительное устройство может связывать реальности или разрывать их на крохотные симулированные фрагменты."
+    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nСинтез сложных микросхем и неописуемых сбоев Странника. Подобное вычислительное устройство может связывать реальности или разрывать их на крохотные симулированные фрагменты.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod96",
+    "Icon": "products/94.png",
     "Name": "Камера души (33%)",
     "Group": "Бионическая дуга",
-    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nСинтез сложных микросхем и неописуемых сбоев Странника. Подобное вычислительное устройство может связывать реальности или разрывать их на крохотные симулированные фрагменты."
+    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nСинтез сложных микросхем и неописуемых сбоев Странника. Подобное вычислительное устройство может связывать реальности или разрывать их на крохотные симулированные фрагменты.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod97",
+    "Icon": "products/94.png",
     "Name": "Камера души (66%)",
     "Group": "Бионическая дуга",
-    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nСинтез сложных микросхем и неописуемых сбоев Странника. Подобное вычислительное устройство может связывать реальности или разрывать их на крохотные симулированные фрагменты."
+    "Description": "Биомеханическая конструкция, созданная по проекту неизвестного владельца.\n\nСинтез сложных микросхем и неописуемых сбоев Странника. Подобное вычислительное устройство может связывать реальности или разрывать их на крохотные симулированные фрагменты.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod98",
+    "Icon": "products/98.png",
     "Name": "Живая вода",
     "Group": "Стеклянная алеаторика",
-    "Description": "При необычном поверхностном взаимодействии эта жидкость быстро разделяется на маленькие идеальные сферы. Если пропускать через них свет, он преломляется и создает неописуемые цвета.\n\nПроисхождение неизвестно."
+    "Description": "При необычном поверхностном взаимодействии эта жидкость быстро разделяется на маленькие идеальные сферы. Если пропускать через них свет, он преломляется и создает неописуемые цвета.\n\nПроисхождение неизвестно.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 150.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/98.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod99",
+    "Icon": "products/99.png",
     "Name": "Ремонтный комплект",
     "Group": "Автоматический ремонтный модуль",
-    "Description": "Ремонтный комплект — крайне полезная технология для выживания — позволяет быстро и просто восстанавливать поврежденное снаряжение.\n\nПри ремонте технологий вы можете восстановить любой поврежденный подкомпонент с помощью ремонтного комплекта вместо обычных материалов."
+    "Description": "Ремонтный комплект — крайне полезная технология для выживания — позволяет быстро и просто восстанавливать поврежденное снаряжение.\n\nПри ремонте технологий вы можете восстановить любой поврежденный подкомпонент с помощью ремонтного комплекта вместо обычных материалов.",
+    "BaseValueUnits": 450.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod100",
+    "Icon": "products/100.png",
     "Name": "Извлеченное улучшение гипердвигателя",
     "Group": "Размещаемый утиль класса «S»",
-    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения его гипердвигателя."
+    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения его гипердвигателя.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod101",
+    "Icon": "products/101.png",
     "Name": "Извлеченный маяк флота",
     "Group": "Размещаемый утиль класса «S»",
-    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения скорости вашего флота."
+    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения скорости вашего флота.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod102",
+    "Icon": "products/102.png",
     "Name": "Извлеченный топливный модуль флота",
     "Group": "Размещаемый утиль класса «S»",
-    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для повышения топливной эффективности вашего флота."
+    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для повышения топливной эффективности вашего флота.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod103",
+    "Icon": "products/103.png",
     "Name": "Извлеченный боевой модуль флота",
     "Group": "Размещаемый утиль класса «S»",
-    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения боевых возможностей вашего флота."
+    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения боевых возможностей вашего флота.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod104",
+    "Icon": "products/104.png",
     "Name": "Извлеченный торговый модуль флота",
     "Group": "Размещаемый утиль класса «S»",
-    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения торговых возможностей вашего флота."
+    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения торговых возможностей вашего флота.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod105",
+    "Icon": "products/105.png",
     "Name": "Извлеченный исследовательский модуль флота",
     "Group": "Размещаемый утиль класса «S»",
-    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения исследовательских возможностей вашего флота."
+    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения исследовательских возможностей вашего флота.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod106",
+    "Icon": "products/106.png",
     "Name": "Извлеченный шахтерский модуль флота",
     "Group": "Размещаемый утиль класса «S»",
-    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения добывающих возможностей вашего флота."
+    "Description": "Размещаемое улучшение грузового судна, найденное среди обломков судна %NAME%.\n\nМожет быть установлено на ваш крупный корабль для улучшения добывающих возможностей вашего флота.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod107",
+    "Icon": "products/107.png",
     "Name": "Изношенные амортизаторы",
     "Group": "Подкомпонент звездолета",
-    "Description": "Ценная деталь разрушенного звездолета, созданная на терминале оснащения звездолетакосмической станции.\n\nЭтот компонент можно сдать в утиль, продав его в торговом терминале."
+    "Description": "Ценная деталь разрушенного звездолета, созданная на терминале оснащения звездолетакосмической станции.\n\nЭтот компонент можно сдать в утиль, продав его в торговом терминале.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod108",
+    "Icon": "products/108.png",
     "Name": "Куча шестеренок",
     "Group": "Подкомпонент звездолета",
-    "Description": "Ценная деталь разрушенного звездолета, созданная на терминале оснащения звездолетакосмической станции.\n\nЭтот компонент можно сдать в утиль, продав его в торговом терминале."
+    "Description": "Ценная деталь разрушенного звездолета, созданная на терминале оснащения звездолетакосмической станции.\n\nЭтот компонент можно сдать в утиль, продав его в торговом терминале.",
+    "BaseValueUnits": 10000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod109",
+    "Icon": "products/109.png",
     "Name": "Армированный трубопровод",
     "Group": "Подкомпонент звездолета",
-    "Description": "Ценная деталь разрушенного звездолета, созданная на терминале оснащения звездолетакосмической станции.\n\nЭтот компонент можно сдать в утиль, продав его в торговом терминале."
+    "Description": "Ценная деталь разрушенного звездолета, созданная на терминале оснащения звездолетакосмической станции.\n\nЭтот компонент можно сдать в утиль, продав его в торговом терминале.",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod110",
-    "Name": "Подозрительный пакет (товары)",
+    "Icon": "products/110.png",
+    "Name": "Под. пакет (товары)",
     "Group": "Контрабанда",
-    "Description": "Подозрительная посылка, полученная в результате необычной сделки. Продавец указал, что в ней содержится какая-то технология.\n\nОткройте инвентарь (INVENTORY) и нажмите FE_ALT1, чтобы посмотреть содержимое. Расходы не возмещаются."
+    "Description": "Подозрительная посылка, полученная в результате необычной сделки. Продавец указал, что в ней содержится какая-то технология.\n\nОткройте инвентарь (INVENTORY) и нажмите FE_ALT1, чтобы посмотреть содержимое. Расходы не возмещаются.",
+    "BaseValueUnits": 150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod111",
+    "Icon": "products/111.png",
     "Name": "Подозрительный пакет (технология)",
     "Group": "Контрабанда",
-    "Description": "Подозрительная посылка, полученная в результате необычной сделки. Продавец указал, что в ней содержится какой-то ценный или интересный предмет.\n\nОткройте инвентарь (INVENTORY) и нажмите FE_ALT1, чтобы посмотреть содержимое. Расходы не возмещаются."
+    "Description": "Подозрительная посылка, полученная в результате необычной сделки. Продавец указал, что в ней содержится какой-то ценный или интересный предмет.\n\nОткройте инвентарь (INVENTORY) и нажмите FE_ALT1, чтобы посмотреть содержимое. Расходы не возмещаются.",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod112",
-    "Name": "Подозрительный пакет (оружие)",
+    "Icon": "products/112.png",
+    "Name": "Подозрит. пакет (оружие)",
     "Group": "Контрабанда",
-    "Description": "Подозрительная посылка, полученная в результате необычной сделки. Продавец указал, что в ней содержится какая-то оружейная технология.\n\nОткройте инвентарь (INVENTORY) и нажмите FE_ALT1, чтобы посмотреть содержимое. Расходы не возмещаются."
+    "Description": "Подозрительная посылка, полученная в результате необычной сделки. Продавец указал, что в ней содержится какая-то оружейная технология.\n\nОткройте инвентарь (INVENTORY) и нажмите FE_ALT1, чтобы посмотреть содержимое. Расходы не возмещаются.",
+    "BaseValueUnits": 350.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod113",
+    "Icon": "products/113.png",
     "Name": "Гидравлическая проводка",
     "Group": "Компонент созданной технологии",
-    "Description": "Специализированные контрольно-проводящие жилы; благодаря своей гибкости этот материал способен передавать энергию и сигналы, а также обеспечивать прямое управление удаленными компонентами.\n\nИспользуется в разнообразных продвинутых технологиях."
+    "Description": "Специализированные контрольно-проводящие жилы; благодаря своей гибкости этот материал способен передавать энергию и сигналы, а также обеспечивать прямое управление удаленными компонентами.\n\nИспользуется в разнообразных продвинутых технологиях.",
+    "BaseValueUnits": 3600.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod3",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw16",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod114",
+    "Icon": "products/114.png",
     "Name": "Квантовый компьютер",
     "Group": "Компонент созданной технологии",
-    "Description": "Немыслимо быстрая продвинутая вычислительная система. Позволяет в реальном времени проводить расчеты, выполнить которые иными способами было бы невозможно. Защита от декогерентности не гарантируется.\n\nИспользуется в разнообразных продвинутых технологиях."
+    "Description": "Немыслимо быстрая продвинутая вычислительная система. Позволяет в реальном времени проводить расчеты, выполнить которые иными способами было бы невозможно. Защита от декогерентности не гарантируется.\n\nИспользуется в разнообразных продвинутых технологиях.",
+    "BaseValueUnits": 4200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod7",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod115",
+    "Icon": "products/115.png",
     "Name": "Магнитный резонатор",
     "Group": "Компонент созданной технологии",
-    "Description": "Электромагнитный генератор колебаний, способный работать в самых разных условиях благодаря магнитным свойствам черных и цветных металлов.\n\nИспользуется в разнообразных продвинутых технологиях."
+    "Description": "Электромагнитный генератор колебаний, способный работать в самых разных условиях благодаря магнитным свойствам черных и цветных металлов.\n\nИспользуется в разнообразных продвинутых технологиях.",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod116",
+    "Icon": "products/116.png",
     "Name": "Солнечный отражатель",
     "Group": "Компонент созданной технологии",
-    "Description": "Специализированный оптический компонент. Благодаря предельно отполированной поверхности зеркало способно отсеивать различные волны света, отражая мир по-разному в зависимости от ближайших магнитных полей.\n\nИспользуется в разнообразных продвинутых технологиях."
+    "Description": "Специализированный оптический компонент. Благодаря предельно отполированной поверхности зеркало способно отсеивать различные волны света, отражая мир по-разному в зависимости от ближайших магнитных полей.\n\nИспользуется в разнообразных продвинутых технологиях.",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod117",
+    "Icon": "products/117.png",
     "Name": "Амино-камера",
     "Group": "Компонент созданной технологии",
-    "Description": "Специализированное устройство биологической катализации.\n\nЭта система использует естественные ферменты для увеличения выработки энергии и ускорения рабочих процессов различных продвинутых технологий."
+    "Description": "Специализированное устройство биологической катализации.\n\nЭта система использует естественные ферменты для увеличения выработки энергии и ускорения рабочих процессов различных продвинутых технологий.",
+    "BaseValueUnits": 12300.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 25
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw17",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod118",
+    "Icon": "products/118.png",
     "Name": "Светящийся минерал",
     "Group": "Ценный образец камня",
-    "Description": "Этот камень имеет тусклую поверхность и сильно загрязнен, но если его отполировать, проявится его внутреннее свечение, а поверхность станет переливчатой.\n\nВыберите в инвентаре (INVENTORY) и расколите с помощью FE_ALT1."
+    "Description": "Этот камень имеет тусклую поверхность и сильно загрязнен, но если его отполировать, проявится его внутреннее свечение, а поверхность станет переливчатой.\n\nВыберите в инвентаре (INVENTORY) и расколите с помощью FE_ALT1.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   }
 ]

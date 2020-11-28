@@ -1,632 +1,2879 @@
 [
   {
     "Id": "prod1",
+    "Icon": "products/1.png",
     "Name": "反物质",
     "Group": "手工技术部件",
-    "Description": "其中包含负物质和重子反粒子。\n \n反物质的巨大能量潜力使它具有很高价值。95%的现有反物质用于为飞船超光速推进器提供动力。\n\n警告：不推荐无节制的使用。"
+    "Description": "其中包含负物质和重子反粒子。\n \n反物质的巨大能量潜力使它具有很高价值。95%的现有反物质用于为飞船超光速推进器提供动力。\n\n警告：不推荐无节制的使用。",
+    "BaseValueUnits": 5233.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/1.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod2",
+    "Icon": "products/2.png",
     "Name": "反物质外壳",
     "Group": "手工技术部件",
-    "Description": "安全的反物质抑制设备，将反物质安全作为曲速电池的必须设备。\n\n反弹的氧形成保护性气囊，阻止反物质与周围套管产生反应。"
+    "Description": "安全的反物质抑制设备，将反物质安全作为曲速电池的必须设备。\n\n反弹的氧形成保护性气囊，阻止反物质与周围套管产生反应。",
+    "BaseValueUnits": 6500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/2.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw8",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod3",
+    "Icon": "products/3.png",
     "Name": "碳纳米管",
     "Group": "手工技术部件",
-    "Description": "特长的高容量碳纳米管。\n\n它的高抗拉强度和温和的导电性使它成为许多先进技术的关键部件。"
+    "Description": "特长的高容量碳纳米管。\n\n它的高抗拉强度和温和的导电性使它成为许多先进技术的关键部件。",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CookingValue": 0.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/products/3.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod4",
+    "Icon": "products/4.png",
     "Name": "钴镜",
     "Group": "手工技术部件",
-    "Description": "专用的光学部件。\n\n该镜采用抛光的钴面，能够选择性地过滤不同波长的光，并根据附近的磁场改变反射模式。"
+    "Description": "专用的光学部件。\n\n该镜采用抛光的钴面，能够选择性地过滤不同波长的光，并根据附近的磁场改变反射模式。",
+    "BaseValueUnits": 20500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/4.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod5",
+    "Icon": "products/5.png",
     "Name": "密封剂",
     "Group": "手工技术部件",
-    "Description": "高效的碳封能够承受严酷的星际环境，以及苛刻的高能工业用途。\n\n建议使用者在安装后定期检查密封完整性。"
+    "Description": "高效的碳封能够承受严酷的星际环境，以及苛刻的高能工业用途。\n\n建议使用者在安装后定期检查密封完整性。",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/5.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod6",
+    "Icon": "products/6.png",
     "Name": "金属电镀",
     "Group": "手工技术部件",
-    "Description": "一种轻质金属产品，大量用于制造飞船部件和可部署科技设备。所有已知原初种族的建筑业的基础。\n\n使用铁氧体粉末制成。"
+    "Description": "一种轻质金属产品，大量用于制造飞船部件和可部署科技设备。所有已知原初种族的建筑业的基础。\n\n使用铁氧体粉末制成。",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/6.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod7",
+    "Icon": "products/7.png",
     "Name": "微处理器",
     "Group": "手工技术部件",
-    "Description": "一个小型低热微芯片。由几种特殊地形金属中收集的加工彩色金属所制成。\n\n用于创建大量高级技术。"
+    "Description": "一个小型低热微芯片。由几种特殊地形金属中收集的加工彩色金属所制成。\n\n用于创建大量高级技术。",
+    "BaseValueUnits": 2000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/7.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod8",
+    "Icon": "products/8.png",
     "Name": "氧气过滤器",
     "Group": "手工技术部件",
-    "Description": "专用的技术部件。\n\n这种小型装置可以快速改变某设备内的气体环境，应对从全真空到纯氧大气的各种状况。"
+    "Description": "专用的技术部件。\n\n这种小型装置可以快速改变某设备内的气体环境，应对从全真空到纯氧大气的各种状况。",
+    "BaseValueUnits": 615.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/8.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod9",
+    "Icon": "products/9.png",
     "Name": "盐晶折射镜",
     "Group": "手工技术部件",
-    "Description": "专用的技术部件，对现代激光系统的复杂内构而言至关重要。 \n\n这是一种利用稳定盐晶被抛光后的独特光学特性，来减缓和折射所通过光子的光散射装置。"
+    "Description": "专用的技术部件，对现代激光系统的复杂内构而言至关重要。 \n\n这是一种利用稳定盐晶被抛光后的独特光学特性，来减缓和折射所通过光子的光散射装置。",
+    "BaseValueUnits": 30500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/9.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod10",
+    "Icon": "products/10.png",
     "Name": "钠二极管",
     "Group": "手工技术部件",
-    "Description": "先进的电路部件。\n\n真空管内的精钠电极赋予其专业的浪涌保护能力。"
+    "Description": "先进的电路部件。\n\n真空管内的精钠电极赋予其专业的浪涌保护能力。",
+    "BaseValueUnits": 3500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/10.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod11",
+    "Icon": "products/11.png",
     "Name": "二氢凝胶",
     "Group": "便携式维生系统能量",
-    "Description": "微弱发光的胶冻。它柔和的光线和轻微的抖动掩盖了一个事实：这种粘性凝胶既剧毒又高度易燃。千万要避免与皮肤接触。\n\n从二氢中合成。"
+    "Description": "微弱发光的胶冻。它柔和的光线和轻微的抖动掩盖了一个事实：这种粘性凝胶既剧毒又高度易燃。千万要避免与皮肤接触。\n\n从二氢中合成。",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/11.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod12",
+    "Icon": "products/12.png",
     "Name": "燃料氧化剂",
     "Group": "可消耗巡航舰升级",
-    "Description": "仅限一次远征的临时护卫舰升级。\n\n这种强大的燃料升级能超载巡航舰引擎，允许比平常更快的旅行。"
+    "Description": "仅限一次远征的临时护卫舰升级。\n\n这种强大的燃料升级能超载巡航舰引擎，允许比平常更快的旅行。",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/12.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur1",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod13",
+    "Icon": "products/13.png",
     "Name": "炸弹无人机",
     "Group": "可消耗巡航舰升级",
-    "Description": "仅限一次远征的临时护卫舰升级。\n\n这一组自动炸弹已编程从舰队发射，并直接导向敌方飞船。极度危险。"
+    "Description": "仅限一次远征的临时护卫舰升级。\n\n这一组自动炸弹已编程从舰队发射，并直接导向敌方飞船。极度危险。",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/13.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur2",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod14",
+    "Icon": "products/14.png",
     "Name": "全息分析器",
     "Group": "可消耗巡航舰升级",
-    "Description": "仅限一次远征的临时护卫舰升级。这种强大的分析电脑使现有的舰队系统超频，达到超光速的计算速度。发热是一个问题，而芯片不耐久。"
+    "Description": "仅限一次远征的临时护卫舰升级。这种强大的分析电脑使现有的舰队系统超频，达到超光速的计算速度。发热是一个问题，而芯片不耐久。",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/14.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod15",
+    "Icon": "products/15.png",
     "Name": "心智控制设备",
     "Group": "可消耗巡航舰升级",
-    "Description": "仅限一次远征的临时护卫舰升级。\n\n心智控制设备可插入飞船的交易和通信系统，让舰队指挥官在任何谈判中占据上风。"
+    "Description": "仅限一次远征的临时护卫舰升级。\n\n心智控制设备可插入飞船的交易和通信系统，让舰队指挥官在任何谈判中占据上风。",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/15.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod16",
+    "Icon": "products/16.png",
     "Name": "矿物压缩机",
     "Group": "可消耗巡航舰升级",
-    "Description": "仅限一次远征的临时护卫舰升级。\n\n矿物压缩机能让舰队采矿人员提取的物质液化，以实现更快的处理和更方便的运输。"
+    "Description": "仅限一次远征的临时护卫舰升级。\n\n矿物压缩机能让舰队采矿人员提取的物质液化，以实现更快的处理和更方便的运输。",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/16.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod17",
+    "Icon": "products/17.png",
     "Name": "曲速电池",
     "Group": "超光速推进充能单元",
-    "Description": "这个基于反物质的燃料是极少数能够满足飞船超光速推进器惊人要求的能量之一。\n\n这个细胞待在固若金汤的外壳里，既安全又可以保证超光速旅行。 "
+    "Description": "这个基于反物质的燃料是极少数能够满足飞船超光速推进器惊人要求的能量之一。\n\n这个细胞待在固若金汤的外壳里，既安全又可以保证超光速旅行。 ",
+    "BaseValueUnits": 46750.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/17.png",
+    "BlueprintCost": 999,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 999,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod2",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod18",
+    "Icon": "products/18.png",
     "Name": "曲速超核心",
     "Group": "超光速推进充能单元",
-    "Description": "一种高容量反物质燃料。这种电池可利用内部黑洞生成器为星际飞船超光速推进器的多次曲速飞行供能。\n\n特别设计的电池壁能将任何现实悖论反射回单元中心，并在那里产生额外的能量。"
+    "Description": "一种高容量反物质燃料。这种电池可利用内部黑洞生成器为星际飞船超光速推进器的多次曲速飞行供能。\n\n特别设计的电池壁能将任何现实悖论反射回单元中心，并在那里产生额外的能量。",
+    "BaseValueUnits": 46750.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/18.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod19",
+    "Icon": "products/19.png",
     "Name": "不稳定的等离子",
     "Group": "等离子发射器充能",
-    "Description": "在等离子发射器中使用的密封燃料匣。\n \n包含用于陆地破坏榴弹技术的高压电热能量。"
+    "Description": "在等离子发射器中使用的密封燃料匣。\n \n包含用于陆地破坏榴弹技术的高压电热能量。",
+    "BaseValueUnits": 5750.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 20.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/19.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod20",
+    "Icon": "products/20.png",
     "Name": "离子电池",
     "Group": "便携式能量存储器",
-    "Description": "方便、有效的能量存储单元在防御系统和危险防护系统中有广泛的应用。\n \n可由铁氧体粉末和地下开采出的钴化合后制得。经常能在圆柱形金属容器中找到成品。"
+    "Description": "方便、有效的能量存储单元在防御系统和危险防护系统中有广泛的应用。\n \n可由铁氧体粉末和地下开采出的钴化合后制得。经常能在圆柱形金属容器中找到成品。",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/20.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw14",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod21",
+    "Icon": "products/21.png",
     "Name": "高级离子电池",
     "Group": "便携式能量存储器",
-    "Description": "强大的能量存储单元。在防御系统和危险防护系统中有广泛的应用。\n\n从电离钴和纯铁氧体制作而成，有时可以在圆柱形金属容器中发现。"
+    "Description": "强大的能量存储单元。在防御系统和危险防护系统中有广泛的应用。\n\n从电离钴和纯铁氧体制作而成，有时可以在圆柱形金属容器中发现。",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/21.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod22",
+    "Icon": "products/22.png",
     "Name": "星盾电池",
     "Group": "便携式能量存储器",
-    "Description": "一种为飞船防御系统使用而优化的储能装置。\n\n氚燃料电容能为偏转护盾提供快速释放的电荷，但会使小型装备过载。"
+    "Description": "一种为飞船防御系统使用而优化的储能装置。\n\n氚燃料电容能为偏转护盾提供快速释放的电荷，但会使小型装备过载。",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/22.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod23",
+    "Icon": "products/23.png",
     "Name": "维生凝胶",
     "Group": "便携式维生系统能量",
-    "Description": "紧急维生凝胶。\n\n这种凝胶从火箭燃料水晶和碳中合成，可以为维生系统提供暂时的加持。目前还不知道对使用者肺部的长期影响。"
+    "Description": "紧急维生凝胶。\n\n这种凝胶从火箭燃料水晶和碳中合成，可以为维生系统提供暂时的加持。目前还不知道对使用者肺部的长期影响。",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/23.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod24",
+    "Icon": "products/24.png",
     "Name": "氧气胶囊",
     "Group": "便携式维生系统能量",
-    "Description": "稳定且安全的维生 过滤气体。\n\n使用氧和铁氧体粉末可以很容易地制作出来。是为长期的维生系统提供能量的有效方法。"
+    "Description": "稳定且安全的维生 过滤气体。\n\n使用氧和铁氧体粉末可以很容易地制作出来。是为长期的维生系统提供能量的有效方法。",
+    "BaseValueUnits": 350.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/24.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod25",
+    "Icon": "products/25.png",
     "Name": "护卫舰燃料（50 吨）",
     "Group": "稳定二氢燃料",
-    "Description": "一小桶护卫舰燃料。\n\n这种粘性凝胶具有高毒性。一种能为大型贸易货船的星际发动机充能的精炼燃料。"
+    "Description": "一小桶护卫舰燃料。\n\n这种粘性凝胶具有高毒性。一种能为大型贸易货船的星际发动机充能的精炼燃料。",
+    "BaseValueUnits": 20000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/25.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw7",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod26",
+    "Icon": "products/26.png",
     "Name": "护卫舰燃料（100 吨）",
     "Group": "稳定二氢燃料",
-    "Description": "一大桶护卫舰燃料。\n\n这种粘性凝胶具有高毒性。一种能为大型贸易货船的星际发动机充能的精炼燃料。"
+    "Description": "一大桶护卫舰燃料。\n\n这种粘性凝胶具有高毒性。一种能为大型贸易货船的星际发动机充能的精炼燃料。",
+    "BaseValueUnits": 40000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/26.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw7",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod27",
+    "Icon": "products/27.png",
     "Name": "护卫舰燃料（200 吨）",
     "Group": "稳定二氢燃料",
-    "Description": "一巨大桶护卫舰燃料。\n\n这种粘性凝胶具有高毒性。一种能为大型贸易货船的星际发动机充能的精炼燃料。"
+    "Description": "一巨大桶护卫舰燃料。\n\n这种粘性凝胶具有高毒性。一种能为大型贸易货船的星际发动机充能的精炼燃料。",
+    "BaseValueUnits": 80000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/27.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 200
+      },
+      {
+        "Id": "raw7",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod28",
+    "Icon": "products/28.png",
     "Name": "飞船发射燃料",
     "Group": "稳定二氢燃料",
-    "Description": "高反应性固态燃料，用于为飞船发射推进器充能。\n\n可由晶体化的二氢制成，这种晶体在所有世界的蓝色矿床中均可找到。"
+    "Description": "高反应性固态燃料，用于为飞船发射推进器充能。\n\n可由晶体化的二氢制成，这种晶体在所有世界的蓝色矿床中均可找到。",
+    "BaseValueUnits": 450.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 20.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/28.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod29",
+    "Icon": "products/29.png",
     "Name": "热液燃料电池",
     "Group": "潜水艇反应堆燃料",
-    "Description": "容纳在标准化燃料电池里的一种高热能燃料。为驱动大鹦鹉螺潜水艇的洪堡驱动器提供燃料。\n\n由有机化合物（碳和磷酸细胞）和局部矿物盐混合而成。"
+    "Description": "容纳在标准化燃料电池里的一种高热能燃料。为驱动大鹦鹉螺潜水艇的洪堡驱动器提供燃料。\n\n由有机化合物（碳和磷酸细胞）和局部矿物盐混合而成。",
+    "BaseValueUnits": 7200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 20.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/29.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw16",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw18",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod30",
+    "Icon": "products/30.png",
     "Name": "炮弹弹药",
     "Group": "通用弹药模块",
-    "Description": "高级弹药碎片，符合通用多用途工具标准07/FF1。\n\n可通过多用途工具弹匣装弹系统轻易插入离子闪电发射器、脉冲喷射器和散射爆破器。"
+    "Description": "高级弹药碎片，符合通用多用途工具标准07/FF1。\n\n可通过多用途工具弹匣装弹系统轻易插入离子闪电发射器、脉冲喷射器和散射爆破器。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5000.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/30.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod31",
+    "Icon": "products/31.png",
     "Name": "碳晶体",
     "Group": "浓缩碳沉积",
-    "Description": "高浓缩 碳，这种物质致密的纳米结构使其不管是作为能源还是技术部件具有很高的价值。\n\n从浓缩碳中合成。"
+    "Description": "高浓缩 碳，这种物质致密的纳米结构使其不管是作为能源还是技术部件具有很高的价值。\n\n从浓缩碳中合成。",
+    "BaseValueUnits": 3600.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/31.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod32",
+    "Icon": "products/32.png",
     "Name": "氯化物晶格化",
     "Group": "浓缩氯沉积",
-    "Description": "一种结构致密的氯。紧密堆积的分子提供无可匹敌的传导性。尚未发现有自然形成的。创造时需要有高强度的能量输入。\n\n合成自氯。"
+    "Description": "一种结构致密的氯。紧密堆积的分子提供无可匹敌的传导性。尚未发现有自然形成的。创造时需要有高强度的能量输入。\n\n合成自氯。",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/32.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod33",
+    "Icon": "products/33.png",
     "Name": "不稳定的钠",
     "Group": "浓缩钠沉积",
-    "Description": "钠通常是高度稳定的，但某些构型的成分离子却仍保留有反应性。建议使用者在处理前戴好危险防护手套。\n\n合成自钠。"
+    "Description": "钠通常是高度稳定的，但某些构型的成分离子却仍保留有反应性。建议使用者在处理前戴好危险防护手套。\n\n合成自钠。",
+    "BaseValueUnits": 12300.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/33.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod34",
+    "Icon": "products/34.png",
     "Name": "稀有金属元素",
     "Group": "浓缩金属沉积",
-    "Description": "非常珍贵的金属制品，这种稀有的元素被用于制造几种高级科技设备。\n\n这种金属活性很高，与暴露的皮肤接触后会很快附着，建议使用者处理时应高度谨慎。\n\n从磁化铁氧体中合成。"
+    "Description": "非常珍贵的金属制品，这种稀有的元素被用于制造几种高级科技设备。\n\n这种金属活性很高，与暴露的皮肤接触后会很快附着，建议使用者处理时应高度谨慎。\n\n从磁化铁氧体中合成。",
+    "BaseValueUnits": 4200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/34.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod35",
+    "Icon": "products/35.png",
     "Name": "超氧化物晶体",
     "Group": "浓氧沉积",
-    "Description": "作为一种超磁性形式的氧气，这种稀有物质在高级技术生产中有很广的用途。需要在输入维生系统之前进行转换。  不建议直接吸入。\n\n从氧中合成。"
+    "Description": "作为一种超磁性形式的氧气，这种稀有物质在高级技术生产中有很广的用途。需要在输入维生系统之前进行转换。  不建议直接吸入。\n\n从氧中合成。",
+    "BaseValueUnits": 5100.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/35.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod36",
+    "Icon": "products/36.png",
     "Name": "四钴",
     "Group": "浓缩钴沉积",
-    "Description": "一种新分子形式的钴，需要非常高的能量级才能产生。自然形成极为罕见。\n\n从电离钴中合成。"
+    "Description": "一种新分子形式的钴，需要非常高的能量级才能产生。自然形成极为罕见。\n\n从电离钴中合成。",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/36.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod49",
+    "Icon": "products/49.png",
     "Name": "酸",
     "Group": "高级农产品",
-    "Description": "用于多种能量电池中聚集高强度电流的稀酸。\n\n由腐藤和真菌霉制作。"
+    "Description": "用于多种能量电池中聚集高强度电流的稀酸。\n\n由腐藤和真菌霉制作。",
+    "BaseValueUnits": 188000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/49.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw30",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw42",
+        "Quantity": 600
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod51",
+    "Icon": "products/51.png",
     "Name": "热电容",
     "Group": "高级农产品",
-    "Description": "一种由精制有机材料生产的热量调节器。其具有独特的生产力，驱散和分配所需的热量。\n\n由日光茄和冰霜水晶制作。"
+    "Description": "一种由精制有机材料生产的热量调节器。其具有独特的生产力，驱散和分配所需的热量。\n\n由日光茄和冰霜水晶制作。",
+    "BaseValueUnits": 180000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/51.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw43",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw46",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod52",
+    "Icon": "products/52.png",
     "Name": "聚乙烯纤维",
     "Group": "高级农产品",
-    "Description": "用于电子的可结合纤维，由高级合成聚合物制成，能够作为能量与数据的导体。\n\n由仙人掌肉和星辰朵制作。"
+    "Description": "用于电子的可结合纤维，由高级合成聚合物制成，能够作为能量与数据的导体。\n\n由仙人掌肉和星辰朵制作。",
+    "BaseValueUnits": 130000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/52.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw45",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw47",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod53",
+    "Icon": "products/53.png",
     "Name": "电路板",
     "Group": "高级农产品",
-    "Description": "由高耐性合成聚合物制成的可堆叠、可半弯曲的电路板。\n\n由热电容和聚乙烯纤维制作。"
+    "Description": "由高耐性合成聚合物制成的可堆叠、可半弯曲的电路板。\n\n由热电容和聚乙烯纤维制作。",
+    "BaseValueUnits": 916250.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/53.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod51",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod52",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod54",
+    "Icon": "products/54.png",
     "Name": "玻璃",
     "Group": "高级农产品",
-    "Description": "耐震且耐划的玻璃，具有自动清洗功能，采用紫外线光固化涂料，用于一般建造。\n\n由硅酸盐粉末精炼而成。用地形操纵器从土地上提取硅酸盐。\n\n可用提取自冰冻星球上植物的冰霜水晶制作。"
+    "Description": "耐震且耐划的玻璃，具有自动清洗功能，采用紫外线光固化涂料，用于一般建造。\n\n由硅酸盐粉末精炼而成。用地形操纵器从土地上提取硅酸盐。\n\n可用提取自冰冻星球上植物的冰霜水晶制作。",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/54.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw43",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod55",
+    "Icon": "products/55.png",
     "Name": "不稳定的凝胶",
     "Group": "高级农产品",
-    "Description": "高反应性凝胶，这种物质不仅高能，而且具有危险性。\n\n由仙人掌肉制作。"
+    "Description": "高反应性凝胶，这种物质不仅高能，而且具有危险性。\n\n由仙人掌肉制作。",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/55.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw45",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod56",
+    "Icon": "products/56.png",
     "Name": "液体炸弹",
     "Group": "高级农产品",
-    "Description": "一种通用烈性炸药，为了便于运输和调度，一般以液体状态提供。请勿饮用。\n\n由酸和不稳定的凝胶制作。"
+    "Description": "一种通用烈性炸药，为了便于运输和调度，一般以液体状态提供。请勿饮用。\n\n由酸和不稳定的凝胶制作。",
+    "BaseValueUnits": 800500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/56.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod49",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod55",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod57",
+    "Icon": "products/57.png",
     "Name": "润滑剂",
     "Group": "高级农产品",
-    "Description": "一种合成润滑剂，能够减少磨损并延长移动零件的技术寿命。\n\n由屎球菌和伽马根制作而成。"
+    "Description": "一种合成润滑剂，能够减少磨损并延长移动零件的技术寿命。\n\n由屎球菌和伽马根制作而成。",
+    "BaseValueUnits": 110000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/57.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw44",
+        "Quantity": 400
+      },
+      {
+        "Id": "raw50",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod58",
+    "Icon": "products/58.png",
     "Name": "活体玻璃",
     "Group": "高级农产品",
-    "Description": "一种先进的建造材料，这种玻璃中一直被灌入有机化合物，使其能够对环境作出反应。玻璃中的微生物可过滤所有波长的有害光照，并按需平衡大气。\n\n由润滑剂和玻璃制作。"
+    "Description": "一种先进的建造材料，这种玻璃中一直被灌入有机化合物，使其能够对环境作出反应。玻璃中的微生物可过滤所有波长的有害光照，并按需平衡大气。\n\n由润滑剂和玻璃制作。",
+    "BaseValueUnits": 566000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/58.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod54",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod57",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod59",
+    "Icon": "products/59.png",
     "Name": "浓化碳",
     "Group": "增强型气体产品",
-    "Description": "一种精炼产品，提取普通的碳，并利用放射性能量使其升压。\n\n由氡和浓缩碳制作。"
+    "Description": "一种精炼产品，提取普通的碳，并利用放射性能量使其升压。\n\n由氡和浓缩碳制作。",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/59.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw36",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod60",
+    "Icon": "products/60.png",
     "Name": "氮盐",
     "Group": "增强型气体产品",
-    "Description": "这是一种精炼产品，是强大的有机化肥，容易扩散。\n\n由 氮和凝聚碳制作而成。"
+    "Description": "这是一种精炼产品，是强大的有机化肥，容易扩散。\n\n由 氮和凝聚碳制作而成。",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/60.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw37",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod61",
+    "Icon": "products/61.png",
     "Name": "热凝物",
     "Group": "增强型气体产品",
-    "Description": "一种精炼产品，可使大气气体在受热时保持稳定状态，需要时再释放其潜在能量。\n\n由硫磺和浓缩碳制作。"
+    "Description": "一种精炼产品，可使大气气体在受热时保持稳定状态，需要时再释放其潜在能量。\n\n由硫磺和浓缩碳制作。",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/61.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw35",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod62",
+    "Icon": "products/62.png",
     "Name": "热冰",
     "Group": "气体铸造物",
-    "Description": "一种奇异的材料，由于制造相对容易，从而使其神秘感降低。\n\n由浓化碳和氮盐制作而成。"
+    "Description": "一种奇异的材料，由于制造相对容易，从而使其神秘感降低。\n\n由浓化碳和氮盐制作而成。",
+    "BaseValueUnits": 320000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/62.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod59",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod60",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod63",
+    "Icon": "products/63.png",
     "Name": "冷沉淀泵",
     "Group": "气体铸造物",
-    "Description": "冷沉淀泵是一种高级自制的混合材料，可以接近完美的效率分配热量，对于热调节器的制作至关重要。\n\n由热冰和热凝物制作。"
+    "Description": "冷沉淀泵是一种高级自制的混合材料，可以接近完美的效率分配热量，对于热调节器的制作至关重要。\n\n由热冰和热凝物制作。",
+    "BaseValueUnits": 1500000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/63.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod61",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod62",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod64",
+    "Icon": "products/64.png",
     "Name": "半导体",
     "Group": "气体铸造物",
-    "Description": "一种先进的材料，用于多种电子设备中，具有其内置温度调节器。\n\n由热凝物和氮盐制作而成。"
+    "Description": "一种先进的材料，用于多种电子设备中，具有其内置温度调节器。\n\n由热凝物和氮盐制作而成。",
+    "BaseValueUnits": 320000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/64.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod60",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod61",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod65",
+    "Icon": "products/65.png",
     "Name": "有机催化剂",
     "Group": "气体铸造物",
-    "Description": "一种催化材料，用于创造多种有机化肥。\n\n由热凝物和浓化碳制作。"
+    "Description": "一种催化材料，用于创造多种有机化肥。\n\n由热凝物和浓化碳制作。",
+    "BaseValueUnits": 320000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/65.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod59",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod61",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod66",
+    "Icon": "products/66.png",
     "Name": "超导体",
     "Group": "气体铸造物",
-    "Description": "超导体是一种高级传导性材料，进一步提升了半导体的场域扭曲力。\n\n由浓化碳和半导体制作。"
+    "Description": "超导体是一种高级传导性材料，进一步提升了半导体的场域扭曲力。\n\n由浓化碳和半导体制作。",
+    "BaseValueUnits": 1500000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/66.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod59",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod64",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod67",
+    "Icon": "products/67.png",
     "Name": "熔合触媒",
     "Group": "气体铸造物",
-    "Description": "一种先进的燃料源，由高势能有机原料的完美混合而成。\n\n由有机催化剂和氮盐制作而成。"
+    "Description": "一种先进的燃料源，由高势能有机原料的完美混合而成。\n\n由有机催化剂和氮盐制作而成。",
+    "BaseValueUnits": 1500000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/67.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod60",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod65",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod68",
+    "Icon": "products/68.png",
     "Name": "低温舱",
     "Group": "先进铸造物",
-    "Description": "一个低温舱，用于阻止有机物质的自然腐烂。\n\n由活体玻璃和冷沉淀泵制作。"
+    "Description": "一个低温舱，用于阻止有机物质的自然腐烂。\n\n由活体玻璃和冷沉淀泵制作。",
+    "BaseValueUnits": 3800000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/68.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod58",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod63",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod69",
+    "Icon": "products/69.png",
     "Name": "便携式反应器",
     "Group": "先进铸造物",
-    "Description": "一种微型自控核反应器。可在无障碍且兼容性强的燃料模块中生成次星球级能量。\n\n由液体炸弹和熔合触媒制作。"
+    "Description": "一种微型自控核反应器。可在无障碍且兼容性强的燃料模块中生成次星球级能量。\n\n由液体炸弹和熔合触媒制作。",
+    "BaseValueUnits": 4200000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/69.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod56",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod67",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod70",
+    "Icon": "products/70.png",
     "Name": "量子处理器",
     "Group": "先进铸造物",
-    "Description": "高级计算设备，曲速航行中进行复杂计算的必需品。\n\n由电路板和超导体制作。"
+    "Description": "高级计算设备，曲速航行中进行复杂计算的必需品。\n\n由电路板和超导体制作。",
+    "BaseValueUnits": 4400000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/70.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod53",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod66",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod71",
+    "Icon": "products/71.png",
     "Name": "阿洛姆",
     "Group": "合金金属",
-    "Description": "可塑性很强的轻质合金。由石蜡和氯制作而成。\n\n此金属广泛运用于行星前哨基站与设施的建筑工作，在银河交易网络中十分抢手。"
+    "Description": "可塑性很强的轻质合金。由石蜡和氯制作而成。\n\n此金属广泛运用于行星前哨基站与设施的建筑工作，在银河交易网络中十分抢手。",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/71.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod72",
+    "Icon": "products/72.png",
     "Name": "肮脏青铜",
     "Group": "合金金属",
-    "Description": "一种常用的金属合金，具有多种用途。由于其颜色特点，“肮脏青铜”比它的学名更流行。\n\n由纯铁氧体和黄铁矿制作。"
+    "Description": "一种常用的金属合金，具有多种用途。由于其颜色特点，“肮脏青铜”比它的学名更流行。\n\n由纯铁氧体和黄铁矿制作。",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/72.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw25",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod73",
+    "Icon": "products/73.png",
     "Name": "格兰丁",
     "Group": "合金金属",
-    "Description": "易于加工的柔软合金，深受星系中工匠的喜爱。由离子钴和二氧化物制作。\n\n它是很有销路的商品，星系里很多航路专门用来运输出售这种合金。"
+    "Description": "易于加工的柔软合金，深受星系中工匠的喜爱。由离子钴和二氧化物制作。\n\n它是很有销路的商品，星系里很多航路专门用来运输出售这种合金。",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/73.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw28",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod74",
+    "Icon": "products/74.png",
     "Name": "赫罗克斯",
     "Group": "合金金属",
-    "Description": "用途极其广泛的中性合金，从医药到重工业都有它的用武之地。由氯和氨制作而成。\n\n它是星系合金贸易的核心组成部分。"
+    "Description": "用途极其广泛的中性合金，从医药到重工业都有它的用武之地。由氯和氨制作而成。\n\n它是星系合金贸易的核心组成部分。",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/74.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw26",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod75",
+    "Icon": "products/75.png",
     "Name": "镍锰金",
     "Group": "合金金属",
-    "Description": "柔软光亮的珍贵合金，深受所有已知的星系主要种族的商人喜爱。由离子钴和磷制作。\n\n由于散发明亮的红光和强磁场而很容易辨认。"
+    "Description": "柔软光亮的珍贵合金，深受所有已知的星系主要种族的商人喜爱。由离子钴和磷制作。\n\n由于散发明亮的红光和强磁场而很容易辨认。",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/75.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod76",
+    "Icon": "products/76.png",
     "Name": "列米姆",
     "Group": "合金金属",
-    "Description": "纯铁氧体合金。由纯铁氧体和铀加工而成。\n\n由于强度很高，广泛应用于货运用星际飞船的建造。银河交易网络中广泛使用的填充材料。"
+    "Description": "纯铁氧体合金。由纯铁氧体和铀加工而成。\n\n由于强度很高，广泛应用于货运用星际飞船的建造。银河交易网络中广泛使用的填充材料。",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/76.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod77",
+    "Icon": "products/77.png",
     "Name": "晶土矿",
     "Group": "强化合金",
-    "Description": "高级耐用的合金，主要用来建造飞船外壳与深空探索无人机技术。\n\n由赫罗克斯、肮脏青铜和列米姆制作。"
+    "Description": "高级耐用的合金，主要用来建造飞船外壳与深空探索无人机技术。\n\n由赫罗克斯、肮脏青铜和列米姆制作。",
+    "BaseValueUnits": 150000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/77.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod72",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod76",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod78",
+    "Icon": "products/78.png",
     "Name": "辐矿",
     "Group": "强化合金",
-    "Description": "星系外缘各处均有交易的高级轻金属合金。通常用在贸易飞船的内部，减轻飞船从高重力的星球升空时的重量。\n\n由阿洛姆、镍锰金和格兰丁制作。"
+    "Description": "星系外缘各处均有交易的高级轻金属合金。通常用在贸易飞船的内部，减轻飞船从高重力的星球升空时的重量。\n\n由阿洛姆、镍锰金和格兰丁制作。",
+    "BaseValueUnits": 150000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/78.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod71",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod73",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod75",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod79",
+    "Icon": "products/79.png",
     "Name": "核融起爆机",
     "Group": "高精制技术",
-    "Description": "极为先进的技术，用于新一代发电站中。生产融合核心需要复杂的科学技术和工业制成。\n\n由便携式反应器、量子处理器和晶土矿制作。"
+    "Description": "极为先进的技术，用于新一代发电站中。生产融合核心需要复杂的科学技术和工业制成。\n\n由便携式反应器、量子处理器和晶土矿制作。",
+    "BaseValueUnits": 15600000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/79.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod69",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod70",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod77",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod80",
+    "Icon": "products/80.png",
     "Name": "休眠设备",
     "Group": "高精制技术",
-    "Description": "能使生命体比其自然寿命多存活几千年的设备。这种设备需要高超的技术制造，不仅技术复杂，而且一旦发生故障，将对使用者造成毁灭性影响。\n\n由量子处理器、低温舱和辐矿制作。"
+    "Description": "能使生命体比其自然寿命多存活几千年的设备。这种设备需要高超的技术制造，不仅技术复杂，而且一旦发生故障，将对使用者造成毁灭性影响。\n\n由量子处理器、低温舱和辐矿制作。",
+    "BaseValueUnits": 15600000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/80.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod68",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod70",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod78",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod81",
+    "Icon": "products/81.png",
     "Name": "卷线器",
     "Group": "通用技术平台",
-    "Description": "一种预制电路板，可灵活应用于各种技术组件。\n\n该模块采用集成的纳米处理器，可快速配置用于各种用途。"
+    "Description": "一种预制电路板，可灵活应用于各种技术组件。\n\n该模块采用集成的纳米处理器，可快速配置用于各种用途。",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/81.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod82",
+    "Icon": "products/82.png",
     "Name": "脆弱的神经干",
     "Group": "生命的碎片",
-    "Description": "一张精致的活体组织网，是点燃新生命体存在的火花。\n\n它在成熟期间需细心照料。"
+    "Description": "一张精致的活体组织网，是点燃新生命体存在的火花。\n\n它在成熟期间需细心照料。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/82.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod83",
+    "Icon": "products/83.png",
     "Name": "脆弱的心脏",
     "Group": "生命的碎片",
-    "Description": "虽然只是一簇细胞，但已能检测到这颗原始心脏的轻微跳动。\n\n它在成熟期间需细心照料。"
+    "Description": "虽然只是一簇细胞，但已能检测到这颗原始心脏的轻微跳动。\n\n它在成熟期间需细心照料。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/83.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod84",
+    "Icon": "products/84.png",
     "Name": "脆弱的外壳",
     "Group": "生命的碎片",
-    "Description": "这个半透明的外壳薄得不可思议，好似吹出的玻璃。但倍增硬化正在持续提升其强度，其潜力显而易见。\n\n它在成熟期间需细心照料。"
+    "Description": "这个半透明的外壳薄得不可思议，好似吹出的玻璃。但倍增硬化正在持续提升其强度，其潜力显而易见。\n\n它在成熟期间需细心照料。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/84.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod85",
+    "Icon": "products/85.png",
     "Name": "成长的奇点",
     "Group": "脆弱的呼吸",
-    "Description": "肉、神经元和反物质被缓慢地编织在一起。这个意识体验宇宙的方式超出了任何想象。\n\n它在成熟期间需细心照料。"
+    "Description": "肉、神经元和反物质被缓慢地编织在一起。这个意识体验宇宙的方式超出了任何想象。\n\n它在成熟期间需细心照料。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/85.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod86",
+    "Icon": "products/86.png",
     "Name": "成熟的神经干",
     "Group": "活体飞船的器官",
-    "Description": "这个活体组织网已长出自己的金属细丝，那是一种银和肉组成的丝网。它自带噼啪作响的电荷，是一个需要节点的网络。\n\n它正在等待宿主。"
+    "Description": "这个活体组织网已长出自己的金属细丝，那是一种银和肉组成的丝网。它自带噼啪作响的电荷，是一个需要节点的网络。\n\n它正在等待宿主。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/86.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod87",
+    "Icon": "products/87.png",
     "Name": "成熟的心脏节点",
     "Group": "活体飞船的器官",
-    "Description": "这个位于合成管道网络中的仿生泵强大而健壮。它被触摸时会抽动，其节奏对其他思维实体的存在很敏感。\n\n它正在等待宿主。"
+    "Description": "这个位于合成管道网络中的仿生泵强大而健壮。它被触摸时会抽动，其节奏对其他思维实体的存在很敏感。\n\n它正在等待宿主。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/87.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod88",
+    "Icon": "products/88.png",
     "Name": "硬化的外壳",
     "Group": "活体飞船的器官",
-    "Description": "反光、半透明、色彩斑斓且硬得出奇。这个壳能在受到伤害时迅速自我重组并变得更加坚固。新形成的纽带在玻璃中形成记忆，反射受损瞬间所吸收的光。\n\n它正在等待宿主。"
+    "Description": "反光、半透明、色彩斑斓且硬得出奇。这个壳能在受到伤害时迅速自我重组并变得更加坚固。新形成的纽带在玻璃中形成记忆，反射受损瞬间所吸收的光。\n\n它正在等待宿主。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/88.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod89",
+    "Icon": "products/89.png",
     "Name": "奇点核心",
     "Group": "活体飞船的器官",
-    "Description": "微型黑洞周围的稳定轨道上灵敏排列的一组神经元。这个仿生奇迹核心的意识不受线性时间的限制，能体验由无数收集的生命体所组成的一张匪夷所思的网络。\n它正在等待宿主。"
+    "Description": "微型黑洞周围的稳定轨道上灵敏排列的一组神经元。这个仿生奇迹核心的意识不受线性时间的限制，能体验由无数收集的生命体所组成的一张匪夷所思的网络。\n它正在等待宿主。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/89.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod90",
+    "Icon": "products/90.png",
     "Name": "意识桥",
     "Group": "重新激活的神经梯",
-    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n这个设备似乎提供了单独实体与更大共享意识之间的接口。它似乎源自科尔瓦克斯技术，但是与科尔瓦克斯技术并不调和。"
+    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n这个设备似乎提供了单独实体与更大共享意识之间的接口。它似乎源自科尔瓦克斯技术，但是与科尔瓦克斯技术并不调和。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/90.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw4",
+        "Quantity": 250
+      },
+      {
+        "Id": "cur39",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 80
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod91",
+    "Icon": "products/91.png",
     "Name": "搏动的核心",
     "Group": "过热的生命碎片",
-    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n有机但热得发光，且拥有一个高压的内容器。这个“设备”一部分是泵，一部分是加速进化室。"
+    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n有机但热得发光，且拥有一个高压的内容器。这个“设备”一部分是泵，一部分是加速进化室。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/91.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw30",
+        "Quantity": 80
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw59",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod92",
+    "Icon": "products/92.png",
     "Name": "匪夷所思的膜",
     "Group": "自动再生的生命体",
-    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n一个由紧密编织的纤维制成的细网，嵌入织物中的微生物使它能够无休止地再生，是一种完美而无限的仿生皮肤。"
+    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n一个由紧密编织的纤维制成的细网，嵌入织物中的微生物使它能够无休止地再生，是一种完美而无限的仿生皮肤。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/92.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur18",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod98",
+        "Quantity": 150
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod93",
+    "Icon": "products/93.png",
     "Name": "玻璃的种子",
     "Group": "冻结的档案",
-    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n基因物质的胶囊，包裹于一层活体玻璃中。共享记忆游动于反射性的表面，等待塑造其中生命的机会。"
+    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n基因物质的胶囊，包裹于一层活体玻璃中。共享记忆游动于反射性的表面，等待塑造其中生命的机会。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/93.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw60",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod94",
+    "Icon": "products/94.png",
     "Name": "归档的灵魂",
     "Group": "仿生方舟",
-    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n复杂电路与旅行者莫名故障的融合体。这样的演算可能会把现实结合在一起，或是把它们撕成模拟的碎片。"
+    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n复杂电路与旅行者莫名故障的融合体。这样的演算可能会把现实结合在一起，或是把它们撕成模拟的碎片。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/94.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod95",
+    "Icon": "products/94.png",
     "Name": "灵魂舱（0%）",
     "Group": "仿生方舟",
-    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n复杂电路与旅行者莫名故障的融合体。这样的演算可能会把现实结合在一起，或是把它们撕成模拟的碎片。"
+    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n复杂电路与旅行者莫名故障的融合体。这样的演算可能会把现实结合在一起，或是把它们撕成模拟的碎片。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod96",
+    "Icon": "products/94.png",
     "Name": "灵魂舱（33%）",
     "Group": "仿生方舟",
-    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n复杂电路与旅行者莫名故障的融合体。这样的演算可能会把现实结合在一起，或是把它们撕成模拟的碎片。"
+    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n复杂电路与旅行者莫名故障的融合体。这样的演算可能会把现实结合在一起，或是把它们撕成模拟的碎片。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod97",
+    "Icon": "products/94.png",
     "Name": "灵魂舱（66%）",
     "Group": "仿生方舟",
-    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n复杂电路与旅行者莫名故障的融合体。这样的演算可能会把现实结合在一起，或是把它们撕成模拟的碎片。"
+    "Description": "一个生物力学结构，根据匿名宿主的设计创造出来。\n\n复杂电路与旅行者莫名故障的融合体。这样的演算可能会把现实结合在一起，或是把它们撕成模拟的碎片。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod98",
+    "Icon": "products/98.png",
     "Name": "活体水",
     "Group": "光亮透明的不确定物",
-    "Description": "不寻常的表面相互作用导致液体迅速分裂成小而完美的球体。被这种球体折射的光线会分裂成无法描述的颜色。\n\n起源不明。"
+    "Description": "不寻常的表面相互作用导致液体迅速分裂成小而完美的球体。被这种球体折射的光线会分裂成无法描述的颜色。\n\n起源不明。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 150.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/98.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod99",
+    "Icon": "products/99.png",
     "Name": "修复套件",
     "Group": "自动修复单元",
-    "Description": "修复套件是非常有用的生存技术物品，可快速有效地让受损设备恢复工作。\n\n修复任何科技设备时，修复套件都可以应用到受损的子组件上，替代常规的修复部件。"
+    "Description": "修复套件是非常有用的生存技术物品，可快速有效地让受损设备恢复工作。\n\n修复任何科技设备时，修复套件都可以应用到受损的子组件上，替代常规的修复部件。",
+    "BaseValueUnits": 450.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod100",
+    "Icon": "products/100.png",
     "Name": "已回收的超光速推进器升级",
     "Group": "S级可部署回收",
-    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善它的超光速推进器。"
+    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善它的超光速推进器。",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod101",
+    "Icon": "products/101.png",
     "Name": "已回收的舰队信标",
     "Group": "S级可部署回收",
-    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的速度。"
+    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的速度。",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod102",
+    "Icon": "products/102.png",
     "Name": "已回收的舰队燃料装置",
     "Group": "S级可部署回收",
-    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的燃料效率。"
+    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的燃料效率。",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod103",
+    "Icon": "products/103.png",
     "Name": "已回收的舰队战斗装置",
     "Group": "S级可部署回收",
-    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的战斗性能。"
+    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的战斗性能。",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod104",
+    "Icon": "products/104.png",
     "Name": "已回收的舰队交易装置",
     "Group": "S级可部署回收",
-    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的交易能力。"
+    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的交易能力。",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod105",
+    "Icon": "products/105.png",
     "Name": "已回收的舰队探索装置",
     "Group": "S级可部署回收",
-    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的探索能力。"
+    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的探索能力。",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod106",
+    "Icon": "products/106.png",
     "Name": "已回收的开采机",
     "Group": "S级可部署回收",
-    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的采矿能力。"
+    "Description": "从%NAME%回收的可部署货船升级。\n\n可重新部署至你的主力飞船，改善舰队的采矿能力。",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod107",
+    "Icon": "products/107.png",
     "Name": "曾经有用的弹簧",
     "Group": "飞船子部件",
-    "Description": "毁损飞船的一部分，还有使用价值，由空间站的一个飞船装备站打造。\n\n部件只能作为废品在交易终端出售。"
+    "Description": "毁损飞船的一部分，还有使用价值，由空间站的一个飞船装备站打造。\n\n部件只能作为废品在交易终端出售。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod108",
+    "Icon": "products/108.png",
     "Name": "几个轮齿",
     "Group": "飞船子部件",
-    "Description": "毁损飞船的一部分，还有使用价值，由空间站的一个飞船装备站打造。\n\n部件只能作为废品在交易终端出售。"
+    "Description": "毁损飞船的一部分，还有使用价值，由空间站的一个飞船装备站打造。\n\n部件只能作为废品在交易终端出售。",
+    "BaseValueUnits": 10000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod109",
+    "Icon": "products/109.png",
     "Name": "强化管道",
     "Group": "飞船子部件",
-    "Description": "毁损飞船的一部分，还有使用价值，由空间站的一个飞船装备站打造。\n\n部件只能作为废品在交易终端出售。"
+    "Description": "毁损飞船的一部分，还有使用价值，由空间站的一个飞船装备站打造。\n\n部件只能作为废品在交易终端出售。",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod110",
+    "Icon": "products/110.png",
     "Name": "可疑的包裹（货物）",
     "Group": "违禁品",
-    "Description": "通过不寻常的交易获得的可疑包裹。卖家表示它内含某种技术。\n\n在库存（INVENTORY）中选择它并用FE_ALT1检查内容。恕不退款。"
+    "Description": "通过不寻常的交易获得的可疑包裹。卖家表示它内含某种技术。\n\n在库存（INVENTORY）中选择它并用FE_ALT1检查内容。恕不退款。",
+    "BaseValueUnits": 150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod111",
+    "Icon": "products/111.png",
     "Name": "可疑的包裹（技术）",
     "Group": "违禁品",
-    "Description": "通过不寻常的交易获得的可疑包裹。卖家表示它内含某种高价值或有趣的物品。\n\n在库存（INVENTORY）中选择它并用FE_ALT1检查内容。恕不退款。"
+    "Description": "通过不寻常的交易获得的可疑包裹。卖家表示它内含某种高价值或有趣的物品。\n\n在库存（INVENTORY）中选择它并用FE_ALT1检查内容。恕不退款。",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod112",
+    "Icon": "products/112.png",
     "Name": "可疑的包裹（武器）",
     "Group": "违禁品",
-    "Description": "通过不寻常的交易获得的可疑包裹。卖家表示它内含某种基于武器的技术。\n\n在库存（INVENTORY）中选择它并用FE_ALT1检查内容。恕不退款。"
+    "Description": "通过不寻常的交易获得的可疑包裹。卖家表示它内含某种基于武器的技术。\n\n在库存（INVENTORY）中选择它并用FE_ALT1检查内容。恕不退款。",
+    "BaseValueUnits": 350.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod113",
+    "Icon": "products/113.png",
     "Name": "水力线路",
     "Group": "手工技术部件",
-    "Description": "一种专业的线路和控制丝线，这种可弯折的材料允许传输电力和信号，还能提供远程部件的直接操作。\n\n可用于创造各种高级技术。"
+    "Description": "一种专业的线路和控制丝线，这种可弯折的材料允许传输电力和信号，还能提供远程部件的直接操作。\n\n可用于创造各种高级技术。",
+    "BaseValueUnits": 3600.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod3",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw16",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod114",
+    "Icon": "products/114.png",
     "Name": "量子电脑",
     "Group": "手工技术部件",
-    "Description": "一种速度极快的高级处理单元。允许实时处理原本不可能完成的计算。但是，不能保证防止退相干。\n\n可用于创造各种高级技术。"
+    "Description": "一种速度极快的高级处理单元。允许实时处理原本不可能完成的计算。但是，不能保证防止退相干。\n\n可用于创造各种高级技术。",
+    "BaseValueUnits": 4200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod7",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod115",
+    "Icon": "products/115.png",
     "Name": "磁性共振器",
     "Group": "手工技术部件",
-    "Description": "一种电磁频率振荡器，由于含铁和非含铁的磁性，能够在各种条件下工作。\n\n可用于创造各种高级技术。"
+    "Description": "一种电磁频率振荡器，由于含铁和非含铁的磁性，能够在各种条件下工作。\n\n可用于创造各种高级技术。",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod116",
+    "Icon": "products/116.png",
     "Name": "太阳能镜",
     "Group": "手工技术部件",
-    "Description": "一种专业的光学部件。该镜采用极端抛光的表面，能够选择性地过滤不同波长的光，并根据附近的磁场改变反射模式。\n\n可用于创造各种高级技术。"
+    "Description": "一种专业的光学部件。该镜采用极端抛光的表面，能够选择性地过滤不同波长的光，并根据附近的磁场改变反射模式。\n\n可用于创造各种高级技术。",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod117",
+    "Icon": "products/117.png",
     "Name": "氨基舱",
     "Group": "手工技术部件",
-    "Description": "一种专业的生物催化设备。\n\n该装置利用自然产生的酶，能协助各种高级技术提高能量产出和处理速度。"
+    "Description": "一种专业的生物催化设备。\n\n该装置利用自然产生的酶，能协助各种高级技术提高能量产出和处理速度。",
+    "BaseValueUnits": 12300.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 25
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw17",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod118",
+    "Icon": "products/118.png",
     "Name": "发光的矿物",
     "Group": "宝贵的岩石样本",
-    "Description": "尽管其表面肮脏而暗淡，这块岩石在抛光后会显现出深层的内在光芒，那是一种细微虹彩表面下的闪光。\n\n在库存（INVENTORY）中选择它，通过FE_ALT1将其砸开。"
+    "Description": "尽管其表面肮脏而暗淡，这块岩石在抛光后会显现出深层的内在光芒，那是一种细微虹彩表面下的闪光。\n\n在库存（INVENTORY）中选择它，通过FE_ALT1将其砸开。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   }
 ]

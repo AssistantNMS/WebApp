@@ -1,380 +1,1988 @@
 [
   {
     "Id": "conTech1",
+    "Icon": "constructedTechnology/1.png",
     "Name": "Basiscomputer",
     "Group": "Locatie-evaluatieapparaat",
-    "Description": "Mobiele landregistratiedienst.\n\nNeemt na plaatsing contact op met het universele cartografische archief om het eigenaarschap van land te controleren. Na een succesvolle registratie mag de gebruiker op elke gewenste locatie basismodulen bouwen."
+    "Description": "Mobiele landregistratiedienst.\n\nNeemt na plaatsing contact op met het universele cartografische archief om het eigenaarschap van land te controleren. Na een succesvolle registratie mag de gebruiker op elke gewenste locatie basismodulen bouwen.",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/1.png",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 5,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech2",
+    "Icon": "constructedTechnology/2.png",
     "Name": "Landingsplatform",
     "Group": "Constructiemodule",
-    "Description": "Een stabiel en versterkt landingsplatform voor ruimteschepen."
+    "Description": "Een stabiel en versterkt landingsplatform voor ruimteschepen.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/2.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 10
+      },
+      {
+        "Id": "prod7",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech3",
+    "Icon": "constructedTechnology/3.png",
     "Name": "Galactische handelsterminal",
     "Group": "Handelsterminal",
-    "Description": "Een handelsterminal die direct toegang biedt tot de markt voor grondstoffen en producten."
+    "Description": "Een handelsterminal die direct toegang biedt tot de markt voor grondstoffen en producten.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -15.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/3.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech4",
+    "Icon": "constructedTechnology/4.png",
     "Name": "Gezondheidsstation",
     "Group": "Module voor gezondheidsherstel",
-    "Description": "Een aan de muur te bevestigen module die kan worden gebruikt voor het herstellen van de gezondheid."
+    "Description": "Een aan de muur te bevestigen module die kan worden gebruikt voor het herstellen van de gezondheid.",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -10.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/4.png",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 5,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech5",
+    "Icon": "constructedTechnology/5.png",
     "Name": "Beschermingsunit",
     "Group": "Oplaadsysteem omgevingsbescherming",
-    "Description": "Een aan de muur te bevestigen module die kan worden gebruikt voor het opladen van de omgevingsbescherming.\n\nDe beschermingsunit moet een brandstofbron hebben om opgeladen te blijven."
+    "Description": "Een aan de muur te bevestigen module die kan worden gebruikt voor het opladen van de omgevingsbescherming.\n\nDe beschermingsunit moet een brandstofbron hebben om opgeladen te blijven.",
+    "BaseValueUnits": 3.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -10.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/5.png",
+    "BlueprintCost": 3,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 3,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech6",
+    "Icon": "constructedTechnology/6.png",
     "Name": "Opslagbaken",
     "Group": "Draagbare routepuntmarkering",
-    "Description": "Eenmaal geactiveerd fungeren bakens als permanente navigatiepunten, zodat bepaalde locaties eenvoudig opnieuw kunnen worden bezocht.\n\nHiermee kun je altijd je voortgang opslaan."
+    "Description": "Eenmaal geactiveerd fungeren bakens als permanente navigatiepunten, zodat bepaalde locaties eenvoudig opnieuw kunnen worden bezocht.\n\nHiermee kun je altijd je voortgang opslaan.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/6.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw13",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech7",
+    "Icon": "constructedTechnology/7.png",
     "Name": "Opslagpunt",
     "Group": "Constructiemodule",
-    "Description": "Een integreerbaar opslagpunt voor het beheren van je voortgang."
+    "Description": "Een integreerbaar opslagpunt voor het beheren van je voortgang.",
+    "BaseValueUnits": 2.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/7.png",
+    "BlueprintCost": 2,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech8",
+    "Icon": "constructedTechnology/8.png",
     "Name": "Signaalversterker",
     "Group": "Omgevingsscanner",
-    "Description": "Een veelzijdige scanner die gebouwen in de buurt detecteert. Kan navigatiegegevens ontcijferen om specifieke locaties te vinden.\n\nJe kunt de signaalversterker ontmantelen en opnieuw installeren, zodat je hem makkelijk kunt meenemen."
+    "Description": "Een veelzijdige scanner die gebouwen in de buurt detecteert. Kan navigatiegegevens ontcijferen om specifieke locaties te vinden.\n\nJe kunt de signaalversterker ontmantelen en opnieuw installeren, zodat je hem makkelijk kunt meenemen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/8.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech9",
+    "Icon": "constructedTechnology/9.png",
     "Name": "Antimateriereactor",
     "Group": "Baryogenese-unit",
-    "Description": "Een autonome baryogenesereactor die werkelijkheidsparadoxen oogst en omzet in bruikbare antimaterie. Je hoeft alleen maar het brandstofpeil in de gaten te houden om ervoor te zorgen dat hij blijft werken.\n\nDe antimaterie die eruit voortkomt, wordt veilig opgeslagen om te worden gebruikt voor alle standaard hyperruimte-krachtbronnen."
+    "Description": "Een autonome baryogenesereactor die werkelijkheidsparadoxen oogst en omzet in bruikbare antimaterie. Je hoeft alleen maar het brandstofpeil in de gaten te houden om ervoor te zorgen dat hij blijft werken.\n\nDe antimaterie die eruit voortkomt, wordt veilig opgeslagen om te worden gebruikt voor alle standaard hyperruimte-krachtbronnen.",
+    "BaseValueUnits": 20.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/9.png",
+    "BlueprintCost": 20,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 20,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod1",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech10",
+    "Icon": "constructedTechnology/10.png",
     "Name": "Basisteleportatiemodule",
     "Group": "Langeafstand-materieverplaatser",
-    "Description": "Een persoonlijk teleportatieapparaat waarmee je snel van basis naar basis kunt reizen, maar ook naar terminals in ruimtestations die zijn aangesloten op het netwerk.\n\nControleer de integriteit van het netwerk voor je materie plaatst die in geen geval verloren mag gaan."
+    "Description": "Een persoonlijk teleportatieapparaat waarmee je snel van basis naar basis kunt reizen, maar ook naar terminals in ruimtestations die zijn aangesloten op het netwerk.\n\nControleer de integriteit van het netwerk voor je materie plaatst die in geen geval verloren mag gaan.",
+    "BaseValueUnits": 2.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -20.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/10.png",
+    "BlueprintCost": 2,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech11",
+    "Icon": "constructedTechnology/11.png",
     "Name": "Vlootcommandokamer",
     "Group": "Expeditiebeheerterminal",
-    "Description": "Essentieel vlootbeheerstation. Dit geavanceerde holografische communicatiestation is onmisbaar voor het leiden van vlootexpedities vanuit het vlaggenschip.\n\nLet erop dat er meerdere posten nodig zijn voor het beheren van meerdere expedities tegelijk."
+    "Description": "Essentieel vlootbeheerstation. Dit geavanceerde holografische communicatiestation is onmisbaar voor het leiden van vlootexpedities vanuit het vlaggenschip.\n\nLet erop dat er meerdere posten nodig zijn voor het beheren van meerdere expedities tegelijk.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/11.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 10
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 120
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech12",
+    "Icon": "constructedTechnology/12.png",
     "Name": "Bouwkundig onderzoeksstation",
     "Group": "Technologiebergingsapparaat",
-    "Description": "Draagbaar blauwdrukonderzoekapparaat.\n\nMet deze handzame onderzoeksmodule kun je oude of beschadigde technologiemodules omzetten in geavanceerde constructieblauwdrukken."
+    "Description": "Draagbaar blauwdrukonderzoekapparaat.\n\nMet deze handzame onderzoeksmodule kun je oude of beschadigde technologiemodules omzetten in geavanceerde constructieblauwdrukken.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/12.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech13",
+    "Icon": "constructedTechnology/13.png",
     "Name": "Draagbare raffinaderij",
     "Group": "Geautomatiseerde raffinaderij",
-    "Description": "Een onmisbaar onderdeel van de planetaire uitrusting. De raffinaderij stelt je in staat om substanties te verwerken tot krachtigere, geavanceerdere materialen.\n\nJe kunt de draagbare raffinaderij ontmantelen en opnieuw installeren, zodat je hem makkelijk kunt meenemen. Opmerking: je hebt brandstof nodig om de draagbare raffinaderij te gebruiken."
+    "Description": "Een onmisbaar onderdeel van de planetaire uitrusting. De raffinaderij stelt je in staat om substanties te verwerken tot krachtigere, geavanceerdere materialen.\n\nJe kunt de draagbare raffinaderij ontmantelen en opnieuw installeren, zodat je hem makkelijk kunt meenemen. Opmerking: je hebt brandstof nodig om de draagbare raffinaderij te gebruiken.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/13.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 30
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech14",
+    "Icon": "constructedTechnology/14.png",
     "Name": "Middelgrote raffinaderij",
     "Group": "Geautomatiseerde raffinaderij",
-    "Description": "Een onmisbaar onderdeel van de planetaire uitrusting. De raffinaderij stelt je in staat om substanties te verwerken tot krachtigere, geavanceerdere materialen.\n\nMet de middelgrote raffinaderij kun je twee verschillende substanties combineren tot een nieuw materiaal of materialen efficiënter verwerken. \n\nJe kunt de middelgrote raffinaderij alleen installeren in een bewoonbare basis, maar verdere energiebronnen zijn niet nodig."
+    "Description": "Een onmisbaar onderdeel van de planetaire uitrusting. De raffinaderij stelt je in staat om substanties te verwerken tot krachtigere, geavanceerdere materialen.\n\nMet de middelgrote raffinaderij kun je twee verschillende substanties combineren tot een nieuw materiaal of materialen efficiënter verwerken. \n\nJe kunt de middelgrote raffinaderij alleen installeren in een bewoonbare basis, maar verdere energiebronnen zijn niet nodig.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/14.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech15",
+    "Icon": "constructedTechnology/15.png",
     "Name": "Grote raffinaderij",
     "Group": "Geautomatiseerde raffinaderij",
-    "Description": "Een onmisbaar onderdeel van de planetaire uitrusting. De raffinaderij stelt je in staat om substanties te verwerken tot krachtigere, geavanceerdere materialen.\n\nMet de grote raffinaderij kun je drie verschillende substanties combineren tot een nieuw materiaal of materialen efficiënter verwerken. \n\nJe kunt de grote raffinaderij alleen installeren in een bewoonbare basis, maar verdere energiebronnen zijn niet nodig."
+    "Description": "Een onmisbaar onderdeel van de planetaire uitrusting. De raffinaderij stelt je in staat om substanties te verwerken tot krachtigere, geavanceerdere materialen.\n\nMet de grote raffinaderij kun je drie verschillende substanties combineren tot een nieuw materiaal of materialen efficiënter verwerken. \n\nJe kunt de grote raffinaderij alleen installeren in een bewoonbare basis, maar verdere energiebronnen zijn niet nodig.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/15.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw13",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech16",
+    "Icon": "constructedTechnology/16.png",
     "Name": "Gedaantemodulator",
     "Group": "Eigen uiterlijk aanpassen",
-    "Description": "Een module waarmee je je uiterlijk kunt aanpassen.\n\nDe module gebruikt holografische technieken om het licht rondom gebruikers te herkalibreren, zodat ze elke gewenste gedaante kunnen aannemen. De visuele gegevens moeten voor gebruik op de juiste manier zijn geformatteerd."
+    "Description": "Een module waarmee je je uiterlijk kunt aanpassen.\n\nDe module gebruikt holografische technieken om het licht rondom gebruikers te herkalibreren, zodat ze elke gewenste gedaante kunnen aannemen. De visuele gegevens moeten voor gebruik op de juiste manier zijn geformatteerd.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -50.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/16.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech17",
+    "Icon": "constructedTechnology/17.png",
     "Name": "Bouwstoffenverwerker",
     "Group": "Draagbare voedingseenheid",
-    "Description": "Een draagbare bouwstoffenextractor die verzamelde ingrediënten kan verwerken tot eetbare voedselproducten.\n\nGebruikers worden erop gewezen dat het nuttigen van de eindresultaten geheel voor eigen risico is."
+    "Description": "Een draagbare bouwstoffenextractor die verzamelde ingrediënten kan verwerken tot eetbare voedselproducten.\n\nGebruikers worden erop gewezen dat het nuttigen van de eindresultaten geheel voor eigen risico is.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/17.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech18",
+    "Icon": "constructedTechnology/18.png",
     "Name": "Automatische voeder-unit",
     "Group": "Landbouwrobot",
-    "Description": "Een landbouwrobot die is ontworpen om automatisch wezens in de buurt te voeren.\n\nAls je hem aanzet, trekt hij dierenleven in de buurt aan. Zorg voor volle lokaastanks om de levensvormen van het gewenste voer te voorzien."
+    "Description": "Een landbouwrobot die is ontworpen om automatisch wezens in de buurt te voeren.\n\nAls je hem aanzet, trekt hij dierenleven in de buurt aan. Zorg voor volle lokaastanks om de levensvormen van het gewenste voer te voorzien.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -20.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/18.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 4
+      },
+      {
+        "Id": "cook122",
+        "Quantity": 10
+      },
+      {
+        "Id": "prod117",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech19",
+    "Icon": "constructedTechnology/19.png",
     "Name": "Veeteeltrobot",
     "Group": "Automatische oogstrobot",
-    "Description": "Een landbouwrobot die is ontworpen om automatisch producten van wezens te oogsten. Vereist energie.\n\nWezens die klaar zijn om melk, eieren of andere gespecialiseerde producten af te staan, gaan naar de veeteeltrobot en laten daar hun producten achter. De wezens ondervinden geen hinder van dit proces.\n\nVerzamelt producten van wezens die met de hand worden gevoed of door een automatische voeder-unit."
+    "Description": "Een landbouwrobot die is ontworpen om automatisch producten van wezens te oogsten. Vereist energie.\n\nWezens die klaar zijn om melk, eieren of andere gespecialiseerde producten af te staan, gaan naar de veeteeltrobot en laten daar hun producten achter. De wezens ondervinden geen hinder van dit proces.\n\nVerzamelt producten van wezens die met de hand worden gevoed of door een automatische voeder-unit.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -20.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/19.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw50",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod52",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech20",
+    "Icon": "constructedTechnology/20.png",
     "Name": "Berichtenmodule",
     "Group": "Communicatieterminal",
-    "Description": "Een kleine en toegankelijke informatiehouder voor het achterlaten van berichten of voor het bekijken van achtergelaten berichten en beknopte informatie."
+    "Description": "Een kleine en toegankelijke informatiehouder voor het achterlaten van berichten of voor het bekijken van achtergelaten berichten en beknopte informatie.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/20.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech21",
+    "Icon": "constructedTechnology/21.png",
     "Name": "Communicatiestation",
     "Group": "Communicatieterminal",
-    "Description": "Een terminal voor het opstellen en versturen van berichten naar andere reizigers."
+    "Description": "Een terminal voor het opstellen en versturen van berichten naar andere reizigers.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/21.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech22",
+    "Icon": "constructedTechnology/22.png",
     "Name": "Nomad-garage",
     "Group": "Constructiemodule",
-    "Description": "Een beveiligde ondergrondse parkeergelegenheid voor de Nomad (lichte exocraft)."
+    "Description": "Een beveiligde ondergrondse parkeergelegenheid voor de Nomad (lichte exocraft).",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/22.png",
+    "BlueprintCost": 8,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 8,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech23",
+    "Icon": "constructedTechnology/23.png",
     "Name": "Roamer-garage",
     "Group": "Constructiemodule",
-    "Description": "Een beveiligde ondergrondse parkeergelegenheid voor de Roamer (gemiddelde exocraft)."
+    "Description": "Een beveiligde ondergrondse parkeergelegenheid voor de Roamer (gemiddelde exocraft).",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/23.png",
+    "BlueprintCost": 4,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 4,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech24",
+    "Icon": "constructedTechnology/24.png",
     "Name": "Colossus-garage",
     "Group": "Constructiemodule",
-    "Description": "Een beveiligde ondergrondse parkeergelegenheid voor de Colossus (grote exocraft)."
+    "Description": "Een beveiligde ondergrondse parkeergelegenheid voor de Colossus (grote exocraft).",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/24.png",
+    "BlueprintCost": 8,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 8,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech25",
+    "Icon": "constructedTechnology/25.png",
     "Name": "Pilgrim-garage",
     "Group": "Constructiemodule",
-    "Description": "Een beveiligde ondergrondse parkeergelegenheid voor de Pilgrim (lichte exocraft)."
+    "Description": "Een beveiligde ondergrondse parkeergelegenheid voor de Pilgrim (lichte exocraft).",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/25.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech26",
+    "Icon": "constructedTechnology/26.png",
     "Name": "Nautilon-ruimte",
     "Group": "Aanlegplaats onderzeeër",
-    "Description": "Een geavanceerde en volledig vergrendelde aanlegplaats voor de Nautilon-onderzeeër."
+    "Description": "Een geavanceerde en volledig vergrendelde aanlegplaats voor de Nautilon-onderzeeër.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/26.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 4
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw16",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech27",
+    "Icon": "constructedTechnology/27.png",
     "Name": "Exocraft-oproepstation",
     "Group": "Voertuigverplaatser",
-    "Description": "Bouw een oproepstation om waar dan ook op die planeet je exocraft te kunnen oproepen.\n\nToegankelijk via het snelmenu van het exopak."
+    "Description": "Bouw een oproepstation om waar dan ook op die planeet je exocraft te kunnen oproepen.\n\nToegankelijk via het snelmenu van het exopak.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/27.png",
+    "BlueprintCost": 12,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 12,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod19",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech28",
+    "Icon": "constructedTechnology/28.png",
     "Name": "Constructieterminal",
     "Group": "Terminal voor specialist",
-    "Description": "Een werkstation voor bouwsupervisors, dat is uitgerust met software voor bouwkundig en technisch ontwerp."
+    "Description": "Een werkstation voor bouwsupervisors, dat is uitgerust met software voor bouwkundig en technisch ontwerp.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/28.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech29",
+    "Icon": "constructedTechnology/29.png",
     "Name": "Exocraft-terminal",
     "Group": "Terminal voor specialist",
-    "Description": "Een werkstation voor technici, dat is uitgerust met specifieke software voor voertuigontwerp."
+    "Description": "Een werkstation voor technici, dat is uitgerust met specifieke software voor voertuigontwerp.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/29.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech30",
+    "Icon": "constructedTechnology/30.png",
     "Name": "Wapenterminal",
     "Group": "Terminal voor specialist",
-    "Description": "Een werkstation voor wapensmeden, dat is uitgerust voor de ontwikkeling van munitie, explosieven en civiele technologie."
+    "Description": "Een werkstation voor wapensmeden, dat is uitgerust voor de ontwikkeling van munitie, explosieven en civiele technologie.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/30.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech31",
+    "Icon": "constructedTechnology/31.png",
     "Name": "Onderzoeksterminal",
     "Group": "Terminal voor specialist",
-    "Description": "Een werkstation voor wetenschappers, dat is uitgerust voor onderzoek en ontwikkeling van wetenschappelijke blauwdrukken."
+    "Description": "Een werkstation voor wetenschappers, dat is uitgerust voor onderzoek en ontwikkeling van wetenschappelijke blauwdrukken.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/31.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech32",
+    "Icon": "constructedTechnology/32.png",
     "Name": "Landbouwterminal",
     "Group": "Terminal voor specialist",
-    "Description": "Een werkstation voor landbouwers, dat is uitgerust voor de analyse en kweek van gewassen."
+    "Description": "Een werkstation voor landbouwers, dat is uitgerust voor de analyse en kweek van gewassen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/32.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech33",
+    "Icon": "constructedTechnology/33.png",
     "Name": "Hydrocultuurbak",
     "Group": "Landbouwtechnologie",
-    "Description": "Een autonoom kweeksysteem voor het binnen verbouwen van landbouwgewassen.\n\nBouwvereiste: moet binnen worden geplaatst."
+    "Description": "Een autonoom kweeksysteem voor het binnen verbouwen van landbouwgewassen.\n\nBouwvereiste: moet binnen worden geplaatst.",
+    "BaseValueUnits": 3.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/33.png",
+    "BlueprintCost": 3,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 3,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw9",
+        "Quantity": 30
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech34",
+    "Icon": "constructedTechnology/34.png",
     "Name": "Grote hydrocultuurbak",
     "Group": "Landbouwtechnologie",
-    "Description": "Een autonoom kweeksysteem voor het binnen verbouwen van landbouwgewassen. Biedt plaats voor maximaal vier planten.\n\nBouwvereiste: moet binnen worden geplaatst."
+    "Description": "Een autonoom kweeksysteem voor het binnen verbouwen van landbouwgewassen. Biedt plaats voor maximaal vier planten.\n\nBouwvereiste: moet binnen worden geplaatst.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -20.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/34.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw9",
+        "Quantity": 60
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech35",
+    "Icon": "constructedTechnology/35.png",
     "Name": "Opslagcontainer",
     "Group": "Opslag-unit",
-    "Description": "Een ruime opslagcontainer voor het bewaren van nog meer inventarisvoorwerpen."
+    "Description": "Een ruime opslagcontainer voor het bewaren van nog meer inventarisvoorwerpen.",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/35.png",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 5,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech36",
+    "Icon": "constructedTechnology/36.png",
     "Name": "Opslag-unit vrachtschip",
     "Group": "Aangepaste vrachtschipmodule",
-    "Description": "Hybride opslag-unit met grote capaciteit / opslagmodule voor gebruik in interstellaire vrachtschepen.\n\nCompatibel met alle standaard lifesupport-aansluitingen."
+    "Description": "Hybride opslag-unit met grote capaciteit / opslagmodule voor gebruik in interstellaire vrachtschepen.\n\nCompatibel met alle standaard lifesupport-aansluitingen.",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/36.png",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 5,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech38",
+    "Icon": "constructedTechnology/38.png",
     "Name": "Vermogensboost",
     "Group": "Raceonderdeel",
-    "Description": "Geeft je exocraft-voertuig een boost tijdens races."
+    "Description": "Geeft je exocraft-voertuig een boost tijdens races.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/38.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech39",
+    "Icon": "constructedTechnology/39.png",
     "Name": "Obstakel",
     "Group": "Raceonderdeel",
-    "Description": "Zorgt voor een extra uitdaging tijdens exocraft-races."
+    "Description": "Zorgt voor een extra uitdaging tijdens exocraft-races.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/39.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech40",
+    "Icon": "constructedTechnology/40.png",
     "Name": "Startplatform",
     "Group": "Raceonderdeel",
-    "Description": "Dit platform fungeert als de start- en finishlijn voor proefritten met de exocraft, zodat je kunt wennen aan de besturing en de snelheid."
+    "Description": "Dit platform fungeert als de start- en finishlijn voor proefritten met de exocraft, zodat je kunt wennen aan de besturing en de snelheid.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/40.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod7",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech41",
+    "Icon": "constructedTechnology/41.png",
     "Name": "Onderwaterschuilplaats",
     "Group": "Diepzee-overlevingsmodule",
-    "Description": "Een overlevingsmodule voor noodgevallen.\n\nKan snel op de zeebodem worden ingezet bij zuurstof-problemen of overige lifesupport-problemen met het exopak. Biedt tijdelijke bescherming tegen omgevingsgevaren, roofdieren en overige vijandige omstandigheden in de diepe oceaan."
+    "Description": "Een overlevingsmodule voor noodgevallen.\n\nKan snel op de zeebodem worden ingezet bij zuurstof-problemen of overige lifesupport-problemen met het exopak. Biedt tijdelijke bescherming tegen omgevingsgevaren, roofdieren en overige vijandige omstandigheden in de diepe oceaan.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/41.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 25
+      },
+      {
+        "Id": "cur17",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod54",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech42",
+    "Icon": "constructedTechnology/42.png",
     "Name": "Bolmaker",
     "Group": "Experimentele maker",
-    "Description": "Een zeer specifiek productieapparaat dat is ontwikkeld om de meest perfecte bolvorm van het universum te vinden.\n\nHeeft energie nodig. Maakt een grote bol die klaar is voor welk experiment dan ook."
+    "Description": "Een zeer specifiek productieapparaat dat is ontwikkeld om de meest perfecte bolvorm van het universum te vinden.\n\nHeeft energie nodig. Maakt een grote bol die klaar is voor welk experiment dan ook.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/42.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech43",
+    "Icon": "constructedTechnology/43.png",
     "Name": "Ruisblok",
     "Group": "Audioapparaat",
-    "Description": "Een speciale constructiemodule die is ontworpen om een hoogfrequente ruis voort te brengen. De toonhoogte kan worden aangepast aan de wensen van de gebruiker.\n\nHeeft energie nodig."
+    "Description": "Een speciale constructiemodule die is ontworpen om een hoogfrequente ruis voort te brengen. De toonhoogte kan worden aangepast aan de wensen van de gebruiker.\n\nHeeft energie nodig.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/43.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech44",
+    "Icon": "constructedTechnology/44.png",
     "Name": "Zuurstofverzamelaar",
     "Group": "Atmosfeerverwerkingsapparaat",
-    "Description": "Een autonome atmosfeerverzamelaar die zelfstandig zuurstof uit de atmosfeer haalt en zuivert. Je hoeft alleen maar het brandstofpeil in de gaten te houden om ervoor te zorgen dat hij blijft werken.\n\nHet eindproduct is een gecomprimeerd en verwerkt gas dat geschikt is voor alle standaard lifesupport-systemen."
+    "Description": "Een autonome atmosfeerverzamelaar die zelfstandig zuurstof uit de atmosfeer haalt en zuivert. Je hoeft alleen maar het brandstofpeil in de gaten te houden om ervoor te zorgen dat hij blijft werken.\n\nHet eindproduct is een gecomprimeerd en verwerkt gas dat geschikt is voor alle standaard lifesupport-systemen.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/44.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech45",
+    "Icon": "constructedTechnology/45.png",
     "Name": "Autonome mijnmachine",
     "Group": "Draagbare mijnmachine",
-    "Description": "Een autonome mijnmachine voor de winning van grondstoffen. Eenmaal geactiveerd verzamelt de AMM zelfstandig mineralen, met een regelmatige opbrengst tot de locatie is uitgeput."
+    "Description": "Een autonome mijnmachine voor de winning van grondstoffen. Eenmaal geactiveerd verzamelt de AMM zelfstandig mineralen, met een regelmatige opbrengst tot de locatie is uitgeput.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/45.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech46",
+    "Icon": "constructedTechnology/46.png",
     "Name": "Mineraalextractor",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Een geautomatiseerde mineraalmijn. Kies een locatie met de detector-upgrade voor het analysevizier. De snelheid van de mineralenextractie en de mineralenopbrengst verschillen per locatie.\n\nHeeft energie nodig. Koppel hem aan silo's met leidingen om te oogsten op handigere locaties."
+    "Description": "Een geautomatiseerde mineraalmijn. Kies een locatie met de detector-upgrade voor het analysevizier. De snelheid van de mineralenextractie en de mineralenopbrengst verschillen per locatie.\n\nHeeft energie nodig. Koppel hem aan silo's met leidingen om te oogsten op handigere locaties.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Power": 100.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/46.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech47",
+    "Icon": "constructedTechnology/47.png",
     "Name": "Gasextractor",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Een geautomatiseerde gasmijn. Kies een locatie met de detector-upgrade voor het analysevizier. De snelheid van de gasextractie en de gasopbrengst verschillen per locatie.\n\nHeeft energie nodig. Koppel hem aan silo's met leidingen om te oogsten op handigere locaties."
+    "Description": "Een geautomatiseerde gasmijn. Kies een locatie met de detector-upgrade voor het analysevizier. De snelheid van de gasextractie en de gasopbrengst verschillen per locatie.\n\nHeeft energie nodig. Koppel hem aan silo's met leidingen om te oogsten op handigere locaties.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Power": 100.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/47.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech48",
+    "Icon": "constructedTechnology/48.png",
     "Name": "Voorraaddepot",
     "Group": "Substantiedistributie-module",
-    "Description": "Geautomatiseerde opslag-unit. Koppel hem aan een voedingsnet met leidingen.\n\nSlaat de opbrengst van verschillende mineraal- en gasextractors automatisch op om de capaciteit te vergroten en de plaatsbepaling efficiënter te maken. Kan op grote afstand van de extractielocatie worden geplaatst."
+    "Description": "Geautomatiseerde opslag-unit. Koppel hem aan een voedingsnet met leidingen.\n\nSlaat de opbrengst van verschillende mineraal- en gasextractors automatisch op om de capaciteit te vergroten en de plaatsbepaling efficiënter te maken. Kan op grote afstand van de extractielocatie worden geplaatst.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/48.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech49",
+    "Icon": "constructedTechnology/49.png",
     "Name": "Bevoorradingsleiding",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Flexibele, zeer sterke buizen. Bestand tegen een interne omgeving met een zeer hoge druk.\n\nWordt gebruikt voor het koppelen van verschillende mineraal- en gasextractors aan silo's"
+    "Description": "Flexibele, zeer sterke buizen. Bestand tegen een interne omgeving met een zeer hoge druk.\n\nWordt gebruikt voor het koppelen van verschillende mineraal- en gasextractors aan silo's",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/49.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 10
+      },
+      {
+        "Id": "raw8",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech50",
+    "Icon": "constructedTechnology/50.png",
     "Name": "Zonnepaneel",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Deze zonnepanelen vormen een efficiënte energiegenerator. Deze zet zonlicht om in elektriciteit voor veel gebouwen op de basis.\n\nWekt 's nachts geen energie op. Koppel ze aan accu's om energie op te slaan voor de donkere uren."
+    "Description": "Deze zonnepanelen vormen een efficiënte energiegenerator. Deze zet zonlicht om in elektriciteit voor veel gebouwen op de basis.\n\nWekt 's nachts geen energie op. Koppel ze aan accu's om energie op te slaan voor de donkere uren.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Power": 50.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/50.png",
+    "BlueprintCost": 8,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 8,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech51",
+    "Icon": "constructedTechnology/51.png",
     "Name": "Elektromagnetische generator",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Mits geplaatst in een gebied met een krachtig veld kan met de efficiënte elektromagnetische dynamo's bijna oneindig veel energie worden opgewekt.\n\nVind geschikte locaties met de detector-upgrade voor het analysevizier. De energieopbrengst verschilt per locatie."
+    "Description": "Mits geplaatst in een gebied met een krachtig veld kan met de efficiënte elektromagnetische dynamo's bijna oneindig veel energie worden opgewekt.\n\nVind geschikte locaties met de detector-upgrade voor het analysevizier. De energieopbrengst verschilt per locatie.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Power": 1.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/51.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 60
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 75
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech52",
+    "Icon": "constructedTechnology/52.png",
     "Name": "Biobrandstofreactor",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Een kleine energiegenerator. Zet brandstof op koolstofbasis in zijn oventank om in bruikbare energie.\n\nSluit energiegenerators aan op de gebouwen en technologieën in de basis met bedrading. Veel onderdelen hebben energie nodig."
+    "Description": "Een kleine energiegenerator. Zet brandstof op koolstofbasis in zijn oventank om in bruikbare energie.\n\nSluit energiegenerators aan op de gebouwen en technologieën in de basis met bedrading. Veel onderdelen hebben energie nodig.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/52.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 25
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech53",
+    "Icon": "constructedTechnology/53.png",
     "Name": "Bedrading",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Elektrische bedrading met een grote capaciteit. Hiermee worden de generatoren aangesloten op je basis. Voor de meeste apparaten en gebouwen met verlichting heb je een krachtbron nodig.\n\nDe bedrading kan aan allerlei schakelaars worden verbonden om de elektriciteitsstroom te bepalen."
+    "Description": "Elektrische bedrading met een grote capaciteit. Hiermee worden de generatoren aangesloten op je basis. Voor de meeste apparaten en gebouwen met verlichting heb je een krachtbron nodig.\n\nDe bedrading kan aan allerlei schakelaars worden verbonden om de elektriciteitsstroom te bepalen.",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/53.png",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 0,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech54",
+    "Icon": "constructedTechnology/54.png",
     "Name": "Teleportatiekabel",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Geavanceerde vezeloptische kabel, ontworpen om een of meer korteafstandsteleporters te verbinden."
+    "Description": "Geavanceerde vezeloptische kabel, ontworpen om een of meer korteafstandsteleporters te verbinden.",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/54.png",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 0,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech55",
+    "Icon": "constructedTechnology/55.png",
     "Name": "Muurschakelaar",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Een energietoevoerapparaat met een schakelaar waarmee de energiestroom wordt in- en uitgeschakeld als je eraan trekt.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen."
+    "Description": "Een energietoevoerapparaat met een schakelaar waarmee de energiestroom wordt in- en uitgeschakeld als je eraan trekt.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/55.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech56",
+    "Icon": "constructedTechnology/56.png",
     "Name": "Vloerschakelaar",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Een energietoevoerapparaat met een schakelaar waarmee de energiestroom wordt in- en uitgeschakeld als je erop staat of als hij op een andere manier wordt geactiveerd.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen."
+    "Description": "Een energietoevoerapparaat met een schakelaar waarmee de energiestroom wordt in- en uitgeschakeld als je erop staat of als hij op een andere manier wordt geactiveerd.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/56.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech57",
+    "Icon": "constructedTechnology/57.png",
     "Name": "Accu",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Zeer efficiënte energieopslag-units. Als je ze aansluit op een energienetwerk, zorgen de energiebeheerchips ervoor dat de reservecapaciteit automatisch wordt aangesproken om de accu's op te laden.\n\nAls het netwerk meer energie gebruikt dan op dat moment wordt geleverd, wordt de energie van de accu automatisch benut om het tekort aan te vullen."
+    "Description": "Zeer efficiënte energieopslag-units. Als je ze aansluit op een energienetwerk, zorgen de energiebeheerchips ervoor dat de reservecapaciteit automatisch wordt aangesproken om de accu's op te laden.\n\nAls het netwerk meer energie gebruikt dan op dat moment wordt geleverd, wordt de energie van de accu automatisch benut om het tekort aan te vullen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/57.png",
+    "BlueprintCost": 3,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 3,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech58",
+    "Icon": "constructedTechnology/58.png",
     "Name": "Sensorschakelaar",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Een energietoevoerapparaat met een schakelaar waarmee de energiestroom wordt in- en uitgeschakeld als er een entiteit in de buurt wordt gedetecteerd.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen."
+    "Description": "Een energietoevoerapparaat met een schakelaar waarmee de energiestroom wordt in- en uitgeschakeld als er een entiteit in de buurt wordt gedetecteerd.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/58.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech59",
+    "Icon": "constructedTechnology/59.png",
     "Name": "Knop",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Een energietoevoerapparaat met een schakelaar waarmee de energiestroom wordt in- en uitgeschakeld.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen."
+    "Description": "Een energietoevoerapparaat met een schakelaar waarmee de energiestroom wordt in- en uitgeschakeld.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/59.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech60",
+    "Icon": "constructedTechnology/60.png",
     "Name": "Energie-inverteerder",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Een energietoevoerapparaat met een schakelaar waarmee de energiestroom wordt in- en uitgeschakeld.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen."
+    "Description": "Een energietoevoerapparaat met een schakelaar waarmee de energiestroom wordt in- en uitgeschakeld.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/60.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech61",
+    "Icon": "constructedTechnology/61.png",
     "Name": "Automatische schakelaar",
     "Group": "Elektriciteitsdistributie-module",
-    "Description": "Deze schakelaar is een energietoevoerapparaat waarmee de energiestroom wordt in- en uitgeschakeld aan de hand van een signaal.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen."
+    "Description": "Deze schakelaar is een energietoevoerapparaat waarmee de energiestroom wordt in- en uitgeschakeld aan de hand van een signaal.\n\nVoorzie schakelaars van energie en signaaldraden om een apparaat te bedienen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/61.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech62",
+    "Icon": "constructedTechnology/62.png",
     "Name": "Korteafstandsteleporter",
     "Group": "Teleportnetwerk",
-    "Description": "Een minder krachtige teleporter die wordt gebruikt voor directe verplaatsing over korte afstanden.\n\nAls hij via bedrading is aangesloten op een energiebron en een andere korteafstandsteleporter kun je er vrijwel ogenblikkelijk mee naar locaties in de buurt reizen."
+    "Description": "Een minder krachtige teleporter die wordt gebruikt voor directe verplaatsing over korte afstanden.\n\nAls hij via bedrading is aangesloten op een energiebron en een andere korteafstandsteleporter kun je er vrijwel ogenblikkelijk mee naar locaties in de buurt reizen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/62.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech63",
+    "Icon": "constructedTechnology/63.png",
     "Name": "Minotaur-garage",
     "Group": "Opslagplaats zware lader",
-    "Description": "Een beveiligde faciliteit voor het opslaan, oproepen en aanpassen van de zware Minotaur-exopakhybride.\n\nZet de Minotaur in via het snelmenu. Met behulp van een in een vrachtschip geïnstalleerde exocraft-materialiseerder kan de Minotaur direct worden ingezet op welke plek dan ook in het stelsel waar het moederschip zich bevindt."
+    "Description": "Een beveiligde faciliteit voor het opslaan, oproepen en aanpassen van de zware Minotaur-exopakhybride.\n\nZet de Minotaur in via het snelmenu. Met behulp van een in een vrachtschip geïnstalleerde exocraft-materialiseerder kan de Minotaur direct worden ingezet op welke plek dan ook in het stelsel waar het moederschip zich bevindt.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/63.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech64",
+    "Icon": "constructedTechnology/64.png",
     "Name": "Vak voor multitool-uitbreiding",
     "Group": "Upgrade-eenheid",
-    "Description": "Een flexibel upgradecircuit, compatibel met alle persoonlijke multitools.\n\nDeze module kan op een multitool worden aangesloten bij een upgrade-rek voor multitools in een ruimtestation, waarna er in het interne ontwerp van de multitool meer ruimte is voor upgrades of technologische specialisaties."
+    "Description": "Een flexibel upgradecircuit, compatibel met alle persoonlijke multitools.\n\nDeze module kan op een multitool worden aangesloten bij een upgrade-rek voor multitools in een ruimtestation, waarna er in het interne ontwerp van de multitool meer ruimte is voor upgrades of technologische specialisaties.",
+    "BaseValueUnits": 95000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 15.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   }
 ]

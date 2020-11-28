@@ -1,5 +1,3 @@
-import { BaseItemModel } from '../contracts/BaseItemModel';
-import { DetailItemModel } from '../contracts/DetailItemModel';
 import { GameItemModel } from '../contracts/GameItemModel';
 import { ProcessorBase } from '../contracts/ProcessorBase';
 import { ProcessorDetails } from '../contracts/ProcessorDetails';
@@ -7,7 +5,6 @@ import { RequiredItem } from '../contracts/RequiredItem';
 import { RequiredItemDetails } from '../contracts/RequiredItemDetails';
 import { ResultWithValue } from '../contracts/results/ResultWithValue';
 import { getCatalogueFromItemId, mapToLocale } from '../mapper/CatalogueMapper';
-import { mapGenericPageItems } from '../mapper/GameItemMapper';
 import { mapProcessorItems } from '../mapper/ProcessorMapper';
 import { BaseJsonService } from './BaseJsonService';
 import { Processor } from '../contracts/Processor';
@@ -20,22 +17,18 @@ import { LocaleKey } from '../localization/LocaleKey';
 
 export class GameItemService extends BaseJsonService {
   async getListfromJson(catalogueType: string): Promise<ResultWithValue<Array<GameItemModel>>> {
-    const baseJson: string = catalogueType;
     const detailJson: string = mapToLocale(catalogueType);
 
     if (detailJson == null || detailJson.length < 1) {
       return { isSuccess: false, value: [], errorMessage: 'Locale not found' };
     }
 
-    const result = await this.getAsset<Array<BaseItemModel>>(`json/${baseJson}.json`);
-    if (!result.isSuccess) return { isSuccess: false, value: [], errorMessage: result.errorMessage };
-
-    const langResult = await this.getAsset<Array<DetailItemModel>>(`json/${detailJson}.json`);
-    if (!langResult.isSuccess) return { isSuccess: false, value: [], errorMessage: result.errorMessage };
+    const langResult = await this.getAsset<Array<GameItemModel>>(`json/${detailJson}.json`);
+    if (!langResult.isSuccess) return { isSuccess: false, value: [], errorMessage: langResult.errorMessage };
 
     return {
       isSuccess: true,
-      value: mapGenericPageItems(result.value, langResult.value),
+      value: langResult.value,
       errorMessage: ''
     }
   }

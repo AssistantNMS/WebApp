@@ -202,30 +202,30 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
 
         if (itemDetail.BaseValueUnits > 1) {
             switch (itemDetail.CurrencyType) {
-                case CurrencyType.NONE:
-                    break;
-                case CurrencyType.NANITES:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/nanites.png' });
-                    break;
                 case CurrencyType.CREDITS:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/credits.png' });
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/credits.png', tooltip: 'Units' });
                     break;
                 case CurrencyType.QUICKSILVER:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/rawMaterials/57.png' });
-                    break;
-                case CurrencyType.SALVAGEDDATA:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/curiosities/16.png' });
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/rawMaterials/57.png', tooltip: 'Quicksilver' });
                     break;
             }
         }
 
-        if (itemDetail.CurrencyType !== CurrencyType.NANITES &&
-            itemDetail.HideBlueprintNaniteCost === false &&
-            itemDetail.BlueprintNaniteCost != null &&
-            itemDetail.BlueprintNaniteCost > 1) {
-            const bpCostText = i18next.t(LocaleKey.blueprintCost);
-            const bpCost = itemDetail.BlueprintNaniteCost;
-            additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: '/assets/images/nanites.png' });
+        switch (itemDetail.BlueprintCostType) {
+            case CurrencyType.NANITES:
+                const bpCostText = i18next.t(LocaleKey.blueprintCost);
+                const bpCost = itemDetail.BlueprintCost;
+                additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: '/assets/images/nanites.png', tooltip: 'Nanites' });
+                break;
+            case CurrencyType.SALVAGEDDATA:
+                additionalData.push({ text: itemDetail.BlueprintCost, image: '/assets/images/curiosity/44.png', tooltip: 'Salvaged Data' });
+                break;
+            case CurrencyType.FACTORYOVERRIDE:
+                additionalData.push({ text: itemDetail.BlueprintCost, image: '/assets/images/special/factoryOverride.png', tooltip: 'Factory Override Unit' });
+                break;
+            case CurrencyType.NONE:
+            default:
+                break;
         }
 
         if (itemDetail.CookingValue != null && itemDetail.CookingValue > 0.0) {

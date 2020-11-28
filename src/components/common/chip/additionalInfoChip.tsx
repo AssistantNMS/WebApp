@@ -1,6 +1,7 @@
 
 import React from 'react';
 import classNames from 'classnames';
+import { Tooltip } from 'react-tippy';
 
 interface IChipRowProps {
     additionalData: Array<IChipProps>;
@@ -9,6 +10,7 @@ interface IChipProps {
     text: string;
     image?: string;
     icon?: string;
+    tooltip?: string;
     onClick?: any;
     children?: any;
 }
@@ -48,9 +50,21 @@ export const AdditionalInfoChip: React.FC<IChipProps> = (props: IChipProps) => {
         if (props.onClick) props.onClick();
     }
     return (
-        <div className={classNames("secondary chip extra-padding", { pointer: !!props.onClick })} onClick={safeClick}>
+        <div className={classNames("secondary chip extra-padding", { pointer: !!props.onClick })}
+            onClick={safeClick}
+        >
             <span>{props.text}&nbsp;</span>
-            {props.children}
+            {
+                props.children &&
+                <Tooltip
+                    title={props.tooltip}
+                    arrow={true}
+                    theme="light"
+                    position="top"
+                >
+                    {props.children}
+                </Tooltip>
+            }
         </div>
     );
 }

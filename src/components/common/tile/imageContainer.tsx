@@ -8,6 +8,7 @@ interface IProps {
     Icon: string;
     Directory?: string;
     Name: string;
+    Description?: string;
     Colour?: string;
     BadgeColour?: string;
     OutputQuantity?: number;
@@ -21,7 +22,7 @@ export const ImageContainer = (props: IProps) => {
     }
     return (
         <div className="image-container" style={styleObj}>
-            <LazyLoadImage src={imageString} alt={props.Name} draggable={false} />
+            <LazyLoadImage src={imageString} alt={props.Description ?? props.Name} draggable={false} />
             {
                 (props.OutputQuantity != null && props.OutputQuantity > 0)
                     ? <BadgeContainer Quantity={props.OutputQuantity} Colour={props.BadgeColour} />

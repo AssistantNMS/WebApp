@@ -1,380 +1,1988 @@
 [
   {
     "Id": "conTech1",
+    "Icon": "constructedTechnology/1.png",
     "Name": "Computador de base",
     "Group": "Dispositivo de avaliação de local",
-    "Description": "Serviço portátil de registro de terra.\n\nQuando posicionado, acessa o Arquivo Cartográfico Universal para estabelecer a propriedade da terra. Um registro bem-sucedido permite a construção de módulos de base em qualquer local que o usuário escolher."
+    "Description": "Serviço portátil de registro de terra.\n\nQuando posicionado, acessa o Arquivo Cartográfico Universal para estabelecer a propriedade da terra. Um registro bem-sucedido permite a construção de módulos de base em qualquer local que o usuário escolher.",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/1.png",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 5,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech2",
+    "Icon": "constructedTechnology/2.png",
     "Name": "Plataforma de pouso",
     "Group": "Módulo de construção",
-    "Description": "Uma plataforma de pouso estável e reforçada para naves."
+    "Description": "Uma plataforma de pouso estável e reforçada para naves.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/2.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 10
+      },
+      {
+        "Id": "prod7",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech3",
+    "Icon": "constructedTechnology/3.png",
     "Name": "Terminal comercial galáctico",
     "Group": "Terminal comercial",
-    "Description": "Um terminal comercial que fornece acesso instantâneo ao mercado local para a obtenção de recursos e mercadorias."
+    "Description": "Um terminal comercial que fornece acesso instantâneo ao mercado local para a obtenção de recursos e mercadorias.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -15.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/3.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech4",
+    "Icon": "constructedTechnology/4.png",
     "Name": "Estação de saúde",
     "Group": "Módulo de recarga de saúde",
-    "Description": "Um módulo para montagem em paredes, usado para recarregar a saúde."
+    "Description": "Um módulo para montagem em paredes, usado para recarregar a saúde.",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -10.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/4.png",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 5,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech5",
+    "Icon": "constructedTechnology/5.png",
     "Name": "Unidade protetora antirrisco",
     "Group": "Sistema de carregamento de proteção antirrisco",
-    "Description": "Um módulo para montagem em paredes, usado para recarregar os sistemas de proteção antirrisco do usuário.\n\nA unidade protetora antirrisco deve ser mantida carregada com uma fonte de combustível."
+    "Description": "Um módulo para montagem em paredes, usado para recarregar os sistemas de proteção antirrisco do usuário.\n\nA unidade protetora antirrisco deve ser mantida carregada com uma fonte de combustível.",
+    "BaseValueUnits": 3.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -10.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/5.png",
+    "BlueprintCost": 3,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 3,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech6",
+    "Icon": "constructedTechnology/6.png",
     "Name": "Sinalizador de jogo salvo",
     "Group": "Marcador de ponto de referência portátil",
-    "Description": "Quando ativados, os sinais fornecem um ponto de referência permanente, facilitando o retorno a locais específicos.\n\nPermite que o usuário registre seu progresso a qualquer momento."
+    "Description": "Quando ativados, os sinais fornecem um ponto de referência permanente, facilitando o retorno a locais específicos.\n\nPermite que o usuário registre seu progresso a qualquer momento.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/6.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw13",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech7",
+    "Icon": "constructedTechnology/7.png",
     "Name": "Ponto de salvamento",
     "Group": "Módulo de construção",
-    "Description": "Um ponto de salvamento que pode ser construído para gerenciar seu progresso."
+    "Description": "Um ponto de salvamento que pode ser construído para gerenciar seu progresso.",
+    "BaseValueUnits": 2.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/7.png",
+    "BlueprintCost": 2,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech8",
+    "Icon": "constructedTechnology/8.png",
     "Name": "Incremento de sinal",
     "Group": "Scanner ambiental",
-    "Description": "Um scanner versátil que detecta construções próximas. É capaz de descriptografar dados de navegação para identificar locais específicos.\n\nPara facilitar o transporte, o incremento de sinal pode ser desmontado e reutilizado."
+    "Description": "Um scanner versátil que detecta construções próximas. É capaz de descriptografar dados de navegação para identificar locais específicos.\n\nPara facilitar o transporte, o incremento de sinal pode ser desmontado e reutilizado.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/8.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech9",
+    "Icon": "constructedTechnology/9.png",
     "Name": "Reator de antimatéria",
     "Group": "Unidade de bariogênese",
-    "Description": "Um reator autônomo de bariogênese, este dispositivo pode ser deixado coletando paradoxos de realidade e convertendo-os em antimatéria utilizável. O usuário deve monitorar os níveis de combustível para garantir a operação contínua.\n\nA antimatéria resultante fica contida com segurança e pronta para ser usada em todas as unidades de energia padrão do hiperespaço."
+    "Description": "Um reator autônomo de bariogênese, este dispositivo pode ser deixado coletando paradoxos de realidade e convertendo-os em antimatéria utilizável. O usuário deve monitorar os níveis de combustível para garantir a operação contínua.\n\nA antimatéria resultante fica contida com segurança e pronta para ser usada em todas as unidades de energia padrão do hiperespaço.",
+    "BaseValueUnits": 20.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/9.png",
+    "BlueprintCost": 20,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 20,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod1",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech10",
+    "Icon": "constructedTechnology/10.png",
     "Name": "Módulo de teletransporte entre bases",
     "Group": "Dispositivo de transferência de matéria a longa distância",
-    "Description": "Um dispositivo pessoal de teletransporte que permite ao usuário viajar rapidamente entre suas bases construídas e quaisquer pontos de estação espacial conectados à rede dele.\n\nO usuário precisa verificar a integridade da rede antes de inserir qualquer matéria da qual não possa se separar."
+    "Description": "Um dispositivo pessoal de teletransporte que permite ao usuário viajar rapidamente entre suas bases construídas e quaisquer pontos de estação espacial conectados à rede dele.\n\nO usuário precisa verificar a integridade da rede antes de inserir qualquer matéria da qual não possa se separar.",
+    "BaseValueUnits": 2.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -20.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/10.png",
+    "BlueprintCost": 2,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech11",
+    "Icon": "constructedTechnology/11.png",
     "Name": "Sala de comando da frota",
     "Group": "Terminal de gerenciamento de expedição",
-    "Description": "Principal estação de gerenciamento da frota. Essa estação de comunicação holográfica avançada é essencial para gerenciar as expedições da frota, do conforto de sua nave capital.\n\nO usuário deve saber que várias estações são necessárias para gerenciar mais de uma expedição por vez."
+    "Description": "Principal estação de gerenciamento da frota. Essa estação de comunicação holográfica avançada é essencial para gerenciar as expedições da frota, do conforto de sua nave capital.\n\nO usuário deve saber que várias estações são necessárias para gerenciar mais de uma expedição por vez.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/11.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 10
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 120
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech12",
+    "Icon": "constructedTechnology/12.png",
     "Name": "Unidade de pesquisa de construção",
     "Group": "Dispositivo de recuperação de tecnologia",
-    "Description": "Dispositivo de pesquisa de plantas portátil.\n\nEste módulo de pesquisa implantável em campo permite ao usuário converter módulos de tecnologia antigos ou danificados em plantas de construção avançadas."
+    "Description": "Dispositivo de pesquisa de plantas portátil.\n\nEste módulo de pesquisa implantável em campo permite ao usuário converter módulos de tecnologia antigos ou danificados em plantas de construção avançadas.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/12.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech13",
+    "Icon": "constructedTechnology/13.png",
     "Name": "Refinador portátil",
     "Group": "Unidade refinadora automática",
-    "Description": "Um equipamento planetário essencial. O refinador permite que substâncias obtidas sejam transformadas em materiais mais potentes e avançados.\n\nPara facilitar o transporte, o refinador portátil pode ser desmontado e reutilizado. Observação: o refinador portátil requer combustível para funcionar."
+    "Description": "Um equipamento planetário essencial. O refinador permite que substâncias obtidas sejam transformadas em materiais mais potentes e avançados.\n\nPara facilitar o transporte, o refinador portátil pode ser desmontado e reutilizado. Observação: o refinador portátil requer combustível para funcionar.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/13.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 30
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech14",
+    "Icon": "constructedTechnology/14.png",
     "Name": "Refinador médio",
     "Group": "Unidade refinadora automática",
-    "Description": "Um equipamento planetário essencial. O refinador permite que substâncias obtidas sejam transformadas em materiais mais potentes e avançados.\n\nO refinador médio possibilita que duas substâncias diferentes sejam transformadas em um material novo ou que materiais sejam processados em melhores proporções.\n\nO refinador médio deve ser instalado em uma base habitável, mas não requer fontes de energia extras."
+    "Description": "Um equipamento planetário essencial. O refinador permite que substâncias obtidas sejam transformadas em materiais mais potentes e avançados.\n\nO refinador médio possibilita que duas substâncias diferentes sejam transformadas em um material novo ou que materiais sejam processados em melhores proporções.\n\nO refinador médio deve ser instalado em uma base habitável, mas não requer fontes de energia extras.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/14.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech15",
+    "Icon": "constructedTechnology/15.png",
     "Name": "Refinador grande",
     "Group": "Unidade refinadora automática",
-    "Description": "Um equipamento planetário essencial. O refinador permite que substâncias obtidas sejam transformadas em materiais mais potentes e avançados.\n\nO refinador grande possibilita que três substâncias diferentes sejam transformadas em um material novo ou que materiais sejam processados em melhores proporções.\n\nO refinador grande deve ser instalado em uma base habitável, mas não requer fontes de energia extras."
+    "Description": "Um equipamento planetário essencial. O refinador permite que substâncias obtidas sejam transformadas em materiais mais potentes e avançados.\n\nO refinador grande possibilita que três substâncias diferentes sejam transformadas em um material novo ou que materiais sejam processados em melhores proporções.\n\nO refinador grande deve ser instalado em uma base habitável, mas não requer fontes de energia extras.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/15.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw13",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech16",
+    "Icon": "constructedTechnology/16.png",
     "Name": "Modificador de aparência",
     "Group": "Personalize o visual pessoal",
-    "Description": "Um módulo construível que permite ao usuário ajustar suas configurações de aparência.\n\nEle aplica técnicas holográficas avançadas para recalibrar a luz ao redor do usuário, permitindo-lhe adotar a aparência que quiser. Os dados visuais devem ser formatados de maneira adequada, antes de serem usados."
+    "Description": "Um módulo construível que permite ao usuário ajustar suas configurações de aparência.\n\nEle aplica técnicas holográficas avançadas para recalibrar a luz ao redor do usuário, permitindo-lhe adotar a aparência que quiser. Os dados visuais devem ser formatados de maneira adequada, antes de serem usados.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -50.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/16.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech17",
+    "Icon": "constructedTechnology/17.png",
     "Name": "Processador de nutrientes",
     "Group": "Unidade portátil de sustento",
-    "Description": "Um extrator de nutrientes portátil capaz de processar e refinar os ingredientes obtidos e transformá-los em produtos comestíveis.\n\nO usuário consumirá os produtos gerados por sua própria conta e risco."
+    "Description": "Um extrator de nutrientes portátil capaz de processar e refinar os ingredientes obtidos e transformá-los em produtos comestíveis.\n\nO usuário consumirá os produtos gerados por sua própria conta e risco.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/17.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech18",
+    "Icon": "constructedTechnology/18.png",
     "Name": "Alimentador automático",
     "Group": "Robô agrícola",
-    "Description": "Uma unidade robótica de cultivo feita para fornecer automaticamente alimentos às criaturas próximas.\n\nQuando acionada, atrai a vida animal da região. Mantenha os tanques de iscas cheios para fornecer o alimento desejado às formas de vida."
+    "Description": "Uma unidade robótica de cultivo feita para fornecer automaticamente alimentos às criaturas próximas.\n\nQuando acionada, atrai a vida animal da região. Mantenha os tanques de iscas cheios para fornecer o alimento desejado às formas de vida.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -20.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/18.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 4
+      },
+      {
+        "Id": "cook122",
+        "Quantity": 10
+      },
+      {
+        "Id": "prod117",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech19",
+    "Icon": "constructedTechnology/19.png",
     "Name": "Unidade de criação de gado",
     "Group": "Robô de coleta automática",
-    "Description": "Uma unidade robótica de criação feita para coletar automaticamente substâncias de criaturas. Requer energia.\n\nAs criaturas que estiverem prontas para terem seu leite, ovos ou outros produtos especiais coletados se aproximarão da unidade de criação de gado e os depositarão. Elas não são machucadas durante o processo.\n\nObtém produtos de criaturas alimentadas à mão ou por meio do alimentador automático."
+    "Description": "Uma unidade robótica de criação feita para coletar automaticamente substâncias de criaturas. Requer energia.\n\nAs criaturas que estiverem prontas para terem seu leite, ovos ou outros produtos especiais coletados se aproximarão da unidade de criação de gado e os depositarão. Elas não são machucadas durante o processo.\n\nObtém produtos de criaturas alimentadas à mão ou por meio do alimentador automático.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -20.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/19.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw50",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod52",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech20",
+    "Icon": "constructedTechnology/20.png",
     "Name": "Módulo de mensagens",
     "Group": "Terminal de comunicação",
-    "Description": "Um contêiner pequeno e acessível para deixar mensagens ou ver as mensagens deixadas e pequenas linhas de informação."
+    "Description": "Um contêiner pequeno e acessível para deixar mensagens ou ver as mensagens deixadas e pequenas linhas de informação.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/20.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech21",
+    "Icon": "constructedTechnology/21.png",
     "Name": "Estação de comunicação",
     "Group": "Terminal de comunicação",
-    "Description": "Um terminal no qual se pode criar e transmitir mensagens para outros viajantes."
+    "Description": "Um terminal no qual se pode criar e transmitir mensagens para outros viajantes.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/21.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech22",
+    "Icon": "constructedTechnology/22.png",
     "Name": "Geocompartimento do Nômade",
     "Group": "Módulo de construção",
-    "Description": "Um estacionamento subterrâneo seguro para o exoveículo leve Nômade."
+    "Description": "Um estacionamento subterrâneo seguro para o exoveículo leve Nômade.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/22.png",
+    "BlueprintCost": 8,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 8,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech23",
+    "Icon": "constructedTechnology/23.png",
     "Name": "Geocompartimento do Andarilho",
     "Group": "Módulo de construção",
-    "Description": "Um estacionamento subterrâneo seguro para o exoveículo médio Andarilho."
+    "Description": "Um estacionamento subterrâneo seguro para o exoveículo médio Andarilho.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/23.png",
+    "BlueprintCost": 4,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 4,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech24",
+    "Icon": "constructedTechnology/24.png",
     "Name": "Geocompartimento do Colossus",
     "Group": "Módulo de construção",
-    "Description": "Um estacionamento subterrâneo seguro para o exoveículo grande Colossus."
+    "Description": "Um estacionamento subterrâneo seguro para o exoveículo grande Colossus.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/24.png",
+    "BlueprintCost": 8,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 8,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech25",
+    "Icon": "constructedTechnology/25.png",
     "Name": "Geocompartimento do Peregrino",
     "Group": "Módulo de construção",
-    "Description": "Instalação subterrânea de estacionamento seguro para o Exoveículo leve Peregrino."
+    "Description": "Instalação subterrânea de estacionamento seguro para o Exoveículo leve Peregrino.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/25.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech26",
+    "Icon": "constructedTechnology/26.png",
     "Name": "Câmara do Nautilon",
     "Group": "Área de atracação do submarino",
-    "Description": "Uma estação de atracação avançada e totalmente vedada para o submarino Nautilon."
+    "Description": "Uma estação de atracação avançada e totalmente vedada para o submarino Nautilon.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/26.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 4
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw16",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech27",
+    "Icon": "constructedTechnology/27.png",
     "Name": "Estação para chamada de exoveículo",
     "Group": "Dispositivo para deslocamento de veículo",
-    "Description": "Construção que permite usuário chamar qualquer exoveículo obtido de qualquer lugar do planeta.\n\nInterage com o menu de comandos rápidos do exotraje para facilitar o uso."
+    "Description": "Construção que permite usuário chamar qualquer exoveículo obtido de qualquer lugar do planeta.\n\nInterage com o menu de comandos rápidos do exotraje para facilitar o uso.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/27.png",
+    "BlueprintCost": 12,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 12,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod19",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech28",
+    "Icon": "constructedTechnology/28.png",
     "Name": "Terminal de construção",
     "Group": "Terminal de especialista",
-    "Description": "Uma estação de pesquisa feita especialmente para supervisores de construção e equipada com um software de design arquitetônico e de engenharia."
+    "Description": "Uma estação de pesquisa feita especialmente para supervisores de construção e equipada com um software de design arquitetônico e de engenharia.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/28.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech29",
+    "Icon": "constructedTechnology/29.png",
     "Name": "Terminal de exoveículos",
     "Group": "Terminal de especialista",
-    "Description": "Uma estação de pesquisa feita especialmente para mecânicos e equipada com um software de design personalizado de veículos."
+    "Description": "Uma estação de pesquisa feita especialmente para mecânicos e equipada com um software de design personalizado de veículos.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/29.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech30",
+    "Icon": "constructedTechnology/30.png",
     "Name": "Terminal de armas",
     "Group": "Terminal de especialista",
-    "Description": "Uma estação de pesquisa feita especialmente para armeiros e equipada para o desenvolvimento de munições e explosivos e de tecnologias civis selecionadas."
+    "Description": "Uma estação de pesquisa feita especialmente para armeiros e equipada para o desenvolvimento de munições e explosivos e de tecnologias civis selecionadas.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/30.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech31",
+    "Icon": "constructedTechnology/31.png",
     "Name": "Terminal científico",
     "Group": "Terminal de especialista",
-    "Description": "Uma estação de pesquisa feita especialmente para cientistas e equipada para o desenvolvimento de plantas científicas."
+    "Description": "Uma estação de pesquisa feita especialmente para cientistas e equipada para o desenvolvimento de plantas científicas.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/31.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech32",
+    "Icon": "constructedTechnology/32.png",
     "Name": "Terminal agrícola",
     "Group": "Terminal de especialista",
-    "Description": "Uma estação de pesquisa feita especialmente para fazendeiros e equipada para a análise e o cultivo de colheitas."
+    "Description": "Uma estação de pesquisa feita especialmente para fazendeiros e equipada para a análise e o cultivo de colheitas.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/32.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech33",
+    "Icon": "constructedTechnology/33.png",
     "Name": "Bandeja hidropônica",
     "Group": "Tecnologia de cultivo",
-    "Description": "Um sistema de desenvolvimento independente para o cultivo de plantas.\n\nRequisito de construção: deve ser colocado em ambientes internos."
+    "Description": "Um sistema de desenvolvimento independente para o cultivo de plantas.\n\nRequisito de construção: deve ser colocado em ambientes internos.",
+    "BaseValueUnits": 3.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/33.png",
+    "BlueprintCost": 3,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 3,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw9",
+        "Quantity": 30
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech34",
+    "Icon": "constructedTechnology/34.png",
     "Name": "Bandeja hidropônica grande",
     "Group": "Tecnologia de cultivo",
-    "Description": "Um sistema de desenvolvimento independente para o cultivo agrícola. Pode conter até quatro plantas.\n\nRequisito de construção: deve ser colocado em ambientes internos."
+    "Description": "Um sistema de desenvolvimento independente para o cultivo agrícola. Pode conter até quatro plantas.\n\nRequisito de construção: deve ser colocado em ambientes internos.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -20.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/34.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw9",
+        "Quantity": 60
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech35",
+    "Icon": "constructedTechnology/35.png",
     "Name": "Contêiner",
     "Group": "Unidade de armazenamento",
-    "Description": "Espaço adicional generoso para itens do inventário."
+    "Description": "Espaço adicional generoso para itens do inventário.",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/35.png",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 5,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech36",
+    "Icon": "constructedTechnology/36.png",
     "Name": "Unidade de armazenamento de nave cargueira",
     "Group": "Módulo personalizado de nave cargueira",
-    "Description": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares.\n\nCompatível com todos os padrões de instalação de sistemas de sobrevivência."
+    "Description": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares.\n\nCompatível com todos os padrões de instalação de sistemas de sobrevivência.",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/36.png",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 5,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech38",
+    "Icon": "constructedTechnology/38.png",
     "Name": "Amplificador de força da corrida",
     "Group": "Peça de corrida",
-    "Description": "Oferece um incremento ao seu exoveículo durante as corridas."
+    "Description": "Oferece um incremento ao seu exoveículo durante as corridas.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/38.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech39",
+    "Icon": "constructedTechnology/39.png",
     "Name": "Obstáculo da corrida",
     "Group": "Peça de corrida",
-    "Description": "Oferece um desafio adicional às corridas com exoveículos."
+    "Description": "Oferece um desafio adicional às corridas com exoveículos.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/39.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech40",
+    "Icon": "constructedTechnology/40.png",
     "Name": "Iniciador da corrida",
     "Group": "Peça de corrida",
-    "Description": "Essa plataforma funciona como linha de partida e de chegada para os testes de campo com o exoveículo, permitindo que os viajantes treinem suas manobras e velocidade."
+    "Description": "Essa plataforma funciona como linha de partida e de chegada para os testes de campo com o exoveículo, permitindo que os viajantes treinem suas manobras e velocidade.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/40.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod7",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech41",
+    "Icon": "constructedTechnology/41.png",
     "Name": "Abrigo marinho",
     "Group": "Módulo de sobrevivência aquático",
-    "Description": "Um módulo emergencial de sobrevivência.\n\nPode ser colocado rapidamente no solo oceânico no caso de alguma emergência com o oxigênio ou com outra parte do sistema de sobrevivência do exotraje. Oferece abrigo temporário contra perigos ambientais, predadores e outras forças hostis encontradas no oceano."
+    "Description": "Um módulo emergencial de sobrevivência.\n\nPode ser colocado rapidamente no solo oceânico no caso de alguma emergência com o oxigênio ou com outra parte do sistema de sobrevivência do exotraje. Oferece abrigo temporário contra perigos ambientais, predadores e outras forças hostis encontradas no oceano.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/41.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 25
+      },
+      {
+        "Id": "cur17",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod54",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech42",
+    "Icon": "constructedTechnology/42.png",
     "Name": "Criador de esfera",
     "Group": "Fabricador experimental",
-    "Description": "Um dispositivo de fabricação altamente específico desenvolvido para encontrar a esfera mais perfeita do universo.\n\nRequer energia para ser operado. Cria uma esfera grande e pronta para quaisquer experimentos necessários."
+    "Description": "Um dispositivo de fabricação altamente específico desenvolvido para encontrar a esfera mais perfeita do universo.\n\nRequer energia para ser operado. Cria uma esfera grande e pronta para quaisquer experimentos necessários.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/42.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech43",
+    "Icon": "constructedTechnology/43.png",
     "Name": "Caixa de ruído",
     "Group": "Dispositivo de som",
-    "Description": "Um módulo de construção especial feito para emitir um ruído de alta frequência. A altura do som pode ser ajustado de acordo com as exigências do usuário.\n\nRequer energia para ser operado."
+    "Description": "Um módulo de construção especial feito para emitir um ruído de alta frequência. A altura do som pode ser ajustado de acordo com as exigências do usuário.\n\nRequer energia para ser operado.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/43.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech44",
+    "Icon": "constructedTechnology/44.png",
     "Name": "Coletor de oxigênio",
     "Group": "Dispositivo de processamento atmosférico",
-    "Description": "Um extrator de atmosfera autônomo, esse dispositivo coleta oxigênio do ar e o purifica. O usuário deve monitorar os níveis de combustível para garantir a operação contínua.\n\nO gás resultante é compactado e processado, ficando pronto para ser usado em todos os sistemas de sobrevivência padrão."
+    "Description": "Um extrator de atmosfera autônomo, esse dispositivo coleta oxigênio do ar e o purifica. O usuário deve monitorar os níveis de combustível para garantir a operação contínua.\n\nO gás resultante é compactado e processado, ficando pronto para ser usado em todos os sistemas de sobrevivência padrão.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/44.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech45",
+    "Icon": "constructedTechnology/45.png",
     "Name": "Unidade de mineração autônoma",
     "Group": "Dispositivo portátil de mineração",
-    "Description": "Uma coletora automática para a extração de recursos. Quando ativada, ela remove os minerais sem supervisão e fornece-os regularmente até que a fonte se esgote."
+    "Description": "Uma coletora automática para a extração de recursos. Quando ativada, ela remove os minerais sem supervisão e fornece-os regularmente até que a fonte se esgote.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/45.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech46",
+    "Icon": "constructedTechnology/46.png",
     "Name": "Extrator de minerais",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Um coletor automático de minerais. Determine um local com a atualização de pesquisa para o visor de análise. As taxas de extração de minerais e os minerais produzidos vão variar de local para local.\n\nRequer energia para funcionar. Conecte a silos com tubulações para permitir a coleta de locais mais convenientes."
+    "Description": "Um coletor automático de minerais. Determine um local com a atualização de pesquisa para o visor de análise. As taxas de extração de minerais e os minerais produzidos vão variar de local para local.\n\nRequer energia para funcionar. Conecte a silos com tubulações para permitir a coleta de locais mais convenientes.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Power": 100.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/46.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech47",
+    "Icon": "constructedTechnology/47.png",
     "Name": "Extrator de gases",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Um coletor automático de gás. Determine um local com a atualização de pesquisa para o visor de análise. As taxas de extração de gás e os gases produzidos vão variar de local para local.\n\nRequer energia para funcionar. Conecte a silos com tubulações para permitir a coleta de locais mais convenientes."
+    "Description": "Um coletor automático de gás. Determine um local com a atualização de pesquisa para o visor de análise. As taxas de extração de gás e os gases produzidos vão variar de local para local.\n\nRequer energia para funcionar. Conecte a silos com tubulações para permitir a coleta de locais mais convenientes.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Power": 100.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/47.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech48",
+    "Icon": "constructedTechnology/48.png",
     "Name": "Armazém de suprimentos",
     "Group": "Módulo de distribuição de substâncias",
-    "Description": "Unidade de armazenamento automatizada. Conecte-a a uma rede de suprimento por meio de tubulações.\n\nArmazena automaticamente a produção de vários extratores de minerais e gás, o que permite uma maior capacidade e posicionamento mais eficiente. Pode ser localizada a longas distâncias do local de extração."
+    "Description": "Unidade de armazenamento automatizada. Conecte-a a uma rede de suprimento por meio de tubulações.\n\nArmazena automaticamente a produção de vários extratores de minerais e gás, o que permite uma maior capacidade e posicionamento mais eficiente. Pode ser localizada a longas distâncias do local de extração.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/48.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech49",
+    "Icon": "constructedTechnology/49.png",
     "Name": "Cano de suprimento",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Tubulação flexível e altamente resistente. É capaz de suportar um ambiente interno altamente pressurizado.\n\nÉ usada para conectar vários extratores de minerais e gás a silos."
+    "Description": "Tubulação flexível e altamente resistente. É capaz de suportar um ambiente interno altamente pressurizado.\n\nÉ usada para conectar vários extratores de minerais e gás a silos.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/49.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 10
+      },
+      {
+        "Id": "raw8",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech50",
+    "Icon": "constructedTechnology/50.png",
     "Name": "Painel solar",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Um gerador de energia eficiente, este arranjo transformará a luz do sol na energia elétrica necessária para alimentar muitas estruturas da base.\n\nNão gera energia à noite. Combine com baterias para armazenar energia para as horas de escuridão."
+    "Description": "Um gerador de energia eficiente, este arranjo transformará a luz do sol na energia elétrica necessária para alimentar muitas estruturas da base.\n\nNão gera energia à noite. Combine com baterias para armazenar energia para as horas de escuridão.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Power": 50.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/50.png",
+    "BlueprintCost": 8,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 8,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech51",
+    "Icon": "constructedTechnology/51.png",
     "Name": "Gerador eletromagnético",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Quando colocado adequadamente em uma área com alta intensidade de campo, dínamos eletromagnéticos eficientes são usados para gerar energia quase ilimitada.\n\nEncontre os locais apropriados com a atualização de pesquisa para o visor de análise. A produção de energia vai variar de local para local."
+    "Description": "Quando colocado adequadamente em uma área com alta intensidade de campo, dínamos eletromagnéticos eficientes são usados para gerar energia quase ilimitada.\n\nEncontre os locais apropriados com a atualização de pesquisa para o visor de análise. A produção de energia vai variar de local para local.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Power": 1.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/51.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 60
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 75
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech52",
+    "Icon": "constructedTechnology/52.png",
     "Name": "Reator de biocombustível",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Um gerador de energia pequeno. Queima combustível baseado em carbono em seu tanque de fornalha e o converte em energia usável.\n\nConecte geradores de energia a estruturas e tecnologias da base com a fiação elétrica. Muitas peças requerem energia para funcionar."
+    "Description": "Um gerador de energia pequeno. Queima combustível baseado em carbono em seu tanque de fornalha e o converte em energia usável.\n\nConecte geradores de energia a estruturas e tecnologias da base com a fiação elétrica. Muitas peças requerem energia para funcionar.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/52.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 25
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech53",
+    "Icon": "constructedTechnology/53.png",
     "Name": "Fiação elétrica",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Fiação elétrica de alta capacidade. Use fios para conectar geradores de energia à sua base. A maior parte das tecnologias e estruturas com sistemas de iluminação embutidos precisam de uma fonte de energia.\n\nFios podem ser conectados a vários interruptores para facilitar o fluxo seletivo de energia."
+    "Description": "Fiação elétrica de alta capacidade. Use fios para conectar geradores de energia à sua base. A maior parte das tecnologias e estruturas com sistemas de iluminação embutidos precisam de uma fonte de energia.\n\nFios podem ser conectados a vários interruptores para facilitar o fluxo seletivo de energia.",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/53.png",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 0,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech54",
+    "Icon": "constructedTechnology/54.png",
     "Name": "Cabo de teletransporte",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Cabo de fibra óptica avançado desenvolvido para ligar um ou mais teletransportadores de curto alcance."
+    "Description": "Cabo de fibra óptica avançado desenvolvido para ligar um ou mais teletransportadores de curto alcance.",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/54.png",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 0,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech55",
+    "Icon": "constructedTechnology/55.png",
     "Name": "Interruptor de parede",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Por ser um dispositivo gerenciador de energia, o interruptor controlará o fluxo de energia quando for puxado.\n\nInterruptores requerem tanto energia quantos condutores de sinal para controlarem um dispositivo."
+    "Description": "Por ser um dispositivo gerenciador de energia, o interruptor controlará o fluxo de energia quando for puxado.\n\nInterruptores requerem tanto energia quantos condutores de sinal para controlarem um dispositivo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/55.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech56",
+    "Icon": "constructedTechnology/56.png",
     "Name": "Interruptor de chão",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Por ser um dispositivo gerenciador de energia, o interruptor controlará o fluxo de energia quando alguém ficar em cima dele ou quando for ativado de alguma outra forma.\n\nInterruptores requerem tanto energia quantos condutores de sinal para controlarem um dispositivo."
+    "Description": "Por ser um dispositivo gerenciador de energia, o interruptor controlará o fluxo de energia quando alguém ficar em cima dele ou quando for ativado de alguma outra forma.\n\nInterruptores requerem tanto energia quantos condutores de sinal para controlarem um dispositivo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/56.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech57",
+    "Icon": "constructedTechnology/57.png",
     "Name": "Bateria",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Unidades de armazenamento de energia altamente eficientes. Conecte-as a uma rede de energia e os circuitos internos de gerenciamento de energia vão automaticamente usar a capacidade reserva para carregar as células delas.\n\nQuando a rede tentar extrair mais energia do que é fornecida no momento, a bateria vai automaticamente empregar energia para compensar a falta."
+    "Description": "Unidades de armazenamento de energia altamente eficientes. Conecte-as a uma rede de energia e os circuitos internos de gerenciamento de energia vão automaticamente usar a capacidade reserva para carregar as células delas.\n\nQuando a rede tentar extrair mais energia do que é fornecida no momento, a bateria vai automaticamente empregar energia para compensar a falta.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/57.png",
+    "BlueprintCost": 3,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 3,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech58",
+    "Icon": "constructedTechnology/58.png",
     "Name": "Interruptor de proximidade",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Por ser um dispositivo gerenciador de energia, o interruptor controlará o fluxo de energia quando uma entidade for detectada nas proximidades.\n\nInterruptores requerem tanto energia quantos condutores de sinal para controlarem um dispositivo."
+    "Description": "Por ser um dispositivo gerenciador de energia, o interruptor controlará o fluxo de energia quando uma entidade for detectada nas proximidades.\n\nInterruptores requerem tanto energia quantos condutores de sinal para controlarem um dispositivo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/58.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech59",
+    "Icon": "constructedTechnology/59.png",
     "Name": "Botão",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Por ser um dispositivo gerenciador de energia, o interruptor controlará o fluxo de energia quando for utilizado.\n\nInterruptores requerem tanto energia quantos condutores de sinal para controlarem um dispositivo."
+    "Description": "Por ser um dispositivo gerenciador de energia, o interruptor controlará o fluxo de energia quando for utilizado.\n\nInterruptores requerem tanto energia quantos condutores de sinal para controlarem um dispositivo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/59.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech60",
+    "Icon": "constructedTechnology/60.png",
     "Name": "Inversor de energia",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Por ser um dispositivo gerenciador de energia, o interruptor controlará o fluxo de energia quando for utilizado.\n\nInterruptores requerem tanto energia quanto condutores de sinal para controlarem um dispositivo."
+    "Description": "Por ser um dispositivo gerenciador de energia, o interruptor controlará o fluxo de energia quando for utilizado.\n\nInterruptores requerem tanto energia quanto condutores de sinal para controlarem um dispositivo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/60.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech61",
+    "Icon": "constructedTechnology/61.png",
     "Name": "Interruptor automático",
     "Group": "Módulo de distribuição de energia",
-    "Description": "Por ser um dispositivo gerenciador de energia, este interruptor controlará o fluxo de energia quando receber um sinal.\n\nInterruptores requerem tanto energia quanto condutores de sinal para controlarem um dispositivo."
+    "Description": "Por ser um dispositivo gerenciador de energia, este interruptor controlará o fluxo de energia quando receber um sinal.\n\nInterruptores requerem tanto energia quanto condutores de sinal para controlarem um dispositivo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/61.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech62",
+    "Icon": "constructedTechnology/62.png",
     "Name": "Teletransportador de curto alcance",
     "Group": "Rede de transporte instantâneo",
-    "Description": "Um teletransportador com pouca capacidade. Serve para viagem instantânea por distâncias curtas.\n\nQuando conectado a uma fonte de energia e a outro teletransportador de curto alcance, permite viagens quase instantâneas entre locais próximos."
+    "Description": "Um teletransportador com pouca capacidade. Serve para viagem instantânea por distâncias curtas.\n\nQuando conectado a uma fonte de energia e a outro teletransportador de curto alcance, permite viagens quase instantâneas entre locais próximos.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/62.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech63",
+    "Icon": "constructedTechnology/63.png",
     "Name": "Geocompartimento do Minotauro",
     "Group": "Área de armazenamento de carga pesada",
-    "Description": "Uma instalação segura para estacionar, chamar e personalizar o exotraje pesado híbrido Minotauro.\n\nUse o Minotauro a partir do menu rápido. Com a ajuda de um materializador orbital de exoveículo instalado dentro de uma nave cargueira, o Minotauro pode ser enviado instantaneamente a qualquer local dentro do mesmo sistema que a nave-mãe."
+    "Description": "Uma instalação segura para estacionar, chamar e personalizar o exotraje pesado híbrido Minotauro.\n\nUse o Minotauro a partir do menu rápido. Com a ajuda de um materializador orbital de exoveículo instalado dentro de uma nave cargueira, o Minotauro pode ser enviado instantaneamente a qualquer local dentro do mesmo sistema que a nave-mãe.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/63.png",
+    "BlueprintCost": 10,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "conTech64",
+    "Icon": "constructedTechnology/64.png",
     "Name": "Slot de expansão da multiferramenta",
     "Group": "Unidade de atualização",
-    "Description": "Um circuito flexível de atualização compatível com as multiferramentas de qualquer pessoa.\n\nEste módulo pode ser conectado a uma multiferramenta em um suporte de atualizações de arma de uma estação espacial, concedendo ao usuário mais espaço interno na multiferramenta para adicionar mais atualizações ou itens tecnológicos especiais."
+    "Description": "Um circuito flexível de atualização compatível com as multiferramentas de qualquer pessoa.\n\nEste módulo pode ser conectado a uma multiferramenta em um suporte de atualizações de arma de uma estação espacial, concedendo ao usuário mais espaço interno na multiferramenta para adicionar mais atualizações ou itens tecnológicos especiais.",
+    "BaseValueUnits": 95000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 15.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   }
 ]

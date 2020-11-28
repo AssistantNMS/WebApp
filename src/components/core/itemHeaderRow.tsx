@@ -7,6 +7,7 @@ interface IProps {
     Icon?: string;
     Name?: string;
     Group?: string;
+    CdnUrl?: string;
     Description?: string;
     Link?: any;
 }

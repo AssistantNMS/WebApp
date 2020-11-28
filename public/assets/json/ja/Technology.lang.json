@@ -1,1070 +1,5296 @@
 [
   {
     "Id": "tech1",
+    "Icon": "technology/1.png",
     "Name": "危険防御システム",
     "Group": "エクソスーツの対環境シールド",
-    "Description": "エクソスーツの危険防御システムは常時使用者の環境を管理し、\n安定化させる役割を担っている。 \n基礎的な反応防御は環境的なシールドで強化され、特定の条件に対する防御力が上昇する。\nこの装置はナトリウム系物質でチャージできる。 危険防御システムのチャージを怠ると生命の維持が出来なくなるため注意が必要だ。"
+    "Description": "エクソスーツの危険防御システムは常時使用者の環境を管理し、\n安定化させる役割を担っている。 \n基礎的な反応防御は環境的なシールドで強化され、特定の条件に対する防御力が上昇する。\nこの装置はナトリウム系物質でチャージできる。 危険防御システムのチャージを怠ると生命の維持が出来なくなるため注意が必要だ。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech2",
+    "Icon": "technology/2.png",
     "Name": "シールドラティス",
     "Group": "危険防御システムアップグレード",
-    "Description": "危険防御システムの基礎容量を\n上昇させることで、有害環境でも\nより長時間活動を続けられるようになる。"
+    "Description": "危険防御システムの基礎容量を\n上昇させることで、有害環境でも\nより長時間活動を続けられるようになる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw13",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech3",
+    "Icon": "technology/3.png",
     "Name": "生命維持システム",
     "Group": "スーツ生存エネルギー",
-    "Description": "エクソスーツの中核、生命維持システムは常時空気をフィルターし、\n呼吸に不可欠な酸素を送り込んでいる。\n \nエクソスーツの使用者の生命の維持\nという役割に加え、このシステムは\n余剰の酸素を活用して、ジェットパック、\n速度強化、およびライトなど\nその他のシステムの動力も作成している。"
+    "Description": "エクソスーツの中核、生命維持システムは常時空気をフィルターし、\n呼吸に不可欠な酸素を送り込んでいる。\n \nエクソスーツの使用者の生命の維持\nという役割に加え、このシステムは\n余剰の酸素を活用して、ジェットパック、\n速度強化、およびライトなど\nその他のシステムの動力も作成している。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech4",
+    "Icon": "technology/4.png",
     "Name": "酸素リサイクラー",
     "Group": "生命維持システムアップグレード",
-    "Description": "生命維持システムの基礎容量を上昇させることで、チャージを要するまでの活動時間を\n延長させる。"
+    "Description": "生命維持システムの基礎容量を上昇させることで、チャージを要するまでの活動時間を\n延長させる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech5",
+    "Icon": "technology/5.png",
     "Name": "ジェットパック",
     "Group": "空中推進ブースター",
-    "Description": "エクソスーツに一時的な飛行などの上級動作機能を与える。\nJUMPで推進を制御できる。 ジェットパックはエクソスーツの生命維持システムのエネルギーを消費し、ガスを加圧し爆発を起こして使用者を空中へ浮かばせることができる。\n重水素を多く含む植物を集めるとジェットパックは、一時的にオーバーロード状態となり、推進が著しく強化される。"
+    "Description": "エクソスーツに一時的な飛行などの上級動作機能を与える。\nJUMPで推進を制御できる。 ジェットパックはエクソスーツの生命維持システムのエネルギーを消費し、ガスを加圧し爆発を起こして使用者を空中へ浮かばせることができる。\n重水素を多く含む植物を集めるとジェットパックは、一時的にオーバーロード状態となり、推進が著しく強化される。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech6",
+    "Icon": "technology/6.png",
     "Name": "神経シミュレーター",
     "Group": "エクソスーツ動作アップグレード",
-    "Description": "エクソスーツのジェットパックタンクと\n副腎ポンプの予備容量を\n上昇させることで、使用者の飛行\nおよびダッシュ可能時間を延長させる。"
+    "Description": "エクソスーツのジェットパックタンクと\n副腎ポンプの予備容量を\n上昇させることで、使用者の飛行\nおよびダッシュ可能時間を延長させる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 90,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech7",
+    "Icon": "technology/7.png",
     "Name": "ロケットブースト",
     "Group": "エクソスーツアップグレード",
-    "Description": "エクソスーツのジェットパックに高度なジャンプ能力に実装することで、使用者の飛躍高度が改善される。\n\nジャンプシステムを起動するにはJUMPを押す。"
+    "Description": "エクソスーツのジェットパックに高度なジャンプ能力に実装することで、使用者の飛躍高度が改善される。\n\nジャンプシステムを起動するにはJUMPを押す。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 200,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech8",
+    "Icon": "technology/8.png",
     "Name": "冷却ネットワーク",
     "Group": "危険防御ユニット",
-    "Description": "焼け焦げた惑星で極度の熱から保護される。\n\n液状フレニウムの糸状真皮からなるネットワークを強烈な大気と太陽熱が通り抜けるようにする。\n\n装置は灼熱の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。"
+    "Description": "焼け焦げた惑星で極度の熱から保護される。\n\n液状フレニウムの糸状真皮からなるネットワークを強烈な大気と太陽熱が通り抜けるようにする。\n\n装置は灼熱の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 160,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw19",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 150
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech9",
+    "Icon": "technology/9.png",
     "Name": "サーマルレイヤー",
     "Group": "危険防御ユニット",
-    "Description": "極度に温度の低いエリアでの低気温によるダメージから保護される。\n\nスーツ全体に熱が毛細血管状に張り巡らされ、液状カラジウムをむらなく分配し、適切な体温を維持する。\n\n装置は極寒の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。"
+    "Description": "極度に温度の低いエリアでの低気温によるダメージから保護される。\n\nスーツ全体に熱が毛細血管状に張り巡らされ、液状カラジウムをむらなく分配し、適切な体温を維持する。\n\n装置は極寒の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 160,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw19",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw28",
+        "Quantity": 150
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech10",
+    "Icon": "technology/10.png",
     "Name": "毒性制御装置",
     "Group": "危険防御ユニット",
-    "Description": "毒物汚染からユーザーを保護する。\n\n制御装置内の反応性化合物が、ユーザーに降り注ぐ有毒な液体を取り除き、差し迫った危険と息苦しさを軽減する。\n\n装置は毒性の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。"
+    "Description": "毒物汚染からユーザーを保護する。\n\n制御装置内の反応性化合物が、ユーザーに降り注ぐ有毒な液体を取り除き、差し迫った危険と息苦しさを軽減する。\n\n装置は毒性の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 160,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw19",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw26",
+        "Quantity": 150
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech11",
+    "Icon": "technology/11.png",
     "Name": "放射線ディフレクター",
     "Group": "危険防御ユニット",
-    "Description": "放射線によるダメージからユーザーを保護する。\n\n放射線で汚染された世界を探索するユーザーの危険を大幅に減少させる。微小振動により電磁波の反射量を増幅させ、結果的に吸収量が低下する。\n\n装置は放射性の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。"
+    "Description": "放射線によるダメージからユーザーを保護する。\n\n放射線で汚染された世界を探索するユーザーの危険を大幅に減少させる。微小振動により電磁波の反射量を増幅させ、結果的に吸収量が低下する。\n\n装置は放射性の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 160,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw19",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 150
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech12",
+    "Icon": "technology/12.png",
     "Name": "通気膜",
     "Group": "水中呼吸サポート",
-    "Description": "ユーザーはより長い間水中を泳ぐことが\nできる。膜接触器によって水中でガスを\n分解して緩和する。\n\n装置はオキシド資源でリチャージ\nできる。一度エクソスーツの\nアイテムケース内に作成すると\n自動的に作動する。"
+    "Description": "ユーザーはより長い間水中を泳ぐことが\nできる。膜接触器によって水中でガスを\n分解して緩和する。\n\n装置はオキシド資源でリチャージ\nできる。一度エクソスーツの\nアイテムケース内に作成すると\n自動的に作動する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 150
+      },
+      {
+        "Id": "raw19",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech13",
+    "Icon": "technology/13.png",
     "Name": "危険物用手袋",
     "Group": "エクソスーツ増強",
-    "Description": "エクソスーツの手袋の金属性シールドのアップグレード。\n\n強化金属と触媒シールドの効果により、有害物質の安全な取扱いは勿論、特定の栽培可能な植物の収穫作業にも使用できる。"
+    "Description": "エクソスーツの手袋の金属性シールドのアップグレード。\n\n強化金属と触媒シールドの効果により、有害物質の安全な取扱いは勿論、特定の栽培可能な植物の収穫作業にも使用できる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 80,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw13",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech14",
+    "Icon": "technology/14.png",
     "Name": "記憶",
     "Group": "どこかの遺品",
-    "Description": "あなたの今までの知識が入っている。"
+    "Description": "あなたの今までの知識が入っている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur13",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw34",
+        "Quantity": 16
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech15",
+    "Icon": "technology/15.png",
     "Name": "星の種",
     "Group": "貴重な部品",
-    "Description": "起源不明の格納器に収容された\n極少の火花。\n\n生命を吸収して育ち、種は本能に従い\n潜在能力を発揮しようと脱走を\n切望している。"
+    "Description": "起源不明の格納器に収容された\n極少の火花。\n\n生命を吸収して育ち、種は本能に従い\n潜在能力を発揮しようと脱走を\n切望している。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 16
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 16
+      },
+      {
+        "Id": "raw34",
+        "Quantity": 16
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech16",
+    "Icon": "technology/16.png",
     "Name": "廃れたテクノロジー",
     "Group": "時代遅れの利用価値の無いテクノロジー",
-    "Description": "アトラスの影響によって退廃したテクノロジー。\n\nリサイクルして部品を使用することができる。"
+    "Description": "アトラスの影響によって退廃したテクノロジー。\n\nリサイクルして部品を使用することができる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw56",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech17",
+    "Icon": "technology/17.png",
     "Name": "効率型ウォータージェット",
     "Group": "ジェットパックアップグレードユニット",
-    "Description": "ジェットパックの水中ジェットの燃料効率性を上昇させ、エクソスーツ生命維持システムの燃料浪費を減らす。 \n\nジェットパックのタービンに水性のコンプレッサーユニットが内蔵されており、水中の着火に必要な膨大なエネルギーを回避することができる。"
+    "Description": "ジェットパックの水中ジェットの燃料効率性を上昇させ、エクソスーツ生命維持システムの燃料浪費を減らす。 \n\nジェットパックのタービンに水性のコンプレッサーユニットが内蔵されており、水中の着火に必要な膨大なエネルギーを回避することができる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 350,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 100
+      },
+      {
+        "Id": "cur17",
+        "Quantity": 6
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech18",
+    "Icon": "technology/18.png",
     "Name": "酸素リルーター",
     "Group": "緊急生命維持システム",
-    "Description": "エクソスーツの膜通気をアップグレードして、呼吸が危険に晒されるような事態が発生した際に生命維持システムから酸素を取り入れて、使用者が従来の燃料共有を使用できるように切り替えることができる。\n\n注意: 長期間の生命維持エネルギーの呼吸可能なガスへの変換は避けてください。 維持システムの停止に繋がる可能性があります。"
+    "Description": "エクソスーツの膜通気をアップグレードして、呼吸が危険に晒されるような事態が発生した際に生命維持システムから酸素を取り入れて、使用者が従来の燃料共有を使用できるように切り替えることができる。\n\n注意: 長期間の生命維持エネルギーの呼吸可能なガスへの変換は避けてください。 維持システムの停止に繋がる可能性があります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 240,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech19",
+    "Icon": "technology/19.png",
     "Name": "単純な翻訳機",
     "Group": "自動言語解析ツール",
-    "Description": "自動翻訳デバイス。近くで行われている\n会話を録音し、コンテクスト学習システム\nにデータを走らせてその意味を特定し、\n解析する。\n\nエントリーモデルのためメモリーが\n少なく、それが翻訳能力を制限している。"
+    "Description": "自動翻訳デバイス。近くで行われている\n会話を録音し、コンテクスト学習システム\nにデータを走らせてその意味を特定し、\n解析する。\n\nエントリーモデルのためメモリーが\n少なく、それが翻訳能力を制限している。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 90,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech20",
+    "Icon": "technology/20.png",
     "Name": "標準的な翻訳機",
     "Group": "自動言語解析ツール",
-    "Description": "自動翻訳デバイス。近くで行われている\n会話を録音し、コンテクスト学習システム\nにデータを走らせてその意味を特定し、\n解析する。\n\n並列言語プロセッサにより、より多くの\n会話を録音し、翻訳することができる。"
+    "Description": "自動翻訳デバイス。近くで行われている\n会話を録音し、コンテクスト学習システム\nにデータを走らせてその意味を特定し、\n解析する。\n\n並列言語プロセッサにより、より多くの\n会話を録音し、翻訳することができる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 310,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech21",
+    "Icon": "technology/21.png",
     "Name": "高度な翻訳機",
     "Group": "自動言語解析ツール",
-    "Description": "自動翻訳デバイス。近くで行われている\n会話を録音し、コンテクスト学習システム\nにデータを走らせてその意味を特定し、\n解析する。\n\n大量のメモリー配列とオーバークロック\nした言語プロセッサにより、かなりの\n量の会話をリアルタイムで\n翻訳することができる。"
+    "Description": "自動翻訳デバイス。近くで行われている\n会話を録音し、コンテクスト学習システム\nにデータを走らせてその意味を特定し、\n解析する。\n\n大量のメモリー配列とオーバークロック\nした言語プロセッサにより、かなりの\n量の会話をリアルタイムで\n翻訳することができる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 580,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur40",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw34",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech22",
+    "Icon": "technology/22.png",
     "Name": "アルテミスの翻訳機",
     "Group": "自動言語解析ツール",
-    "Description": "自動翻訳デバイス。現存する翻訳データを\nプリロードしてキャリブレートする必要\nがあり、アルテミスとネットワークで\n接続しないと機能しない。\n\nホストのトランスレーションサービスへの\nアクセスがない場合でも、少量であれば\nオンボードの回路によって\nリアルタイム翻訳を行うことができる。"
+    "Description": "自動翻訳デバイス。現存する翻訳データを\nプリロードしてキャリブレートする必要\nがあり、アルテミスとネットワークで\n接続しないと機能しない。\n\nホストのトランスレーションサービスへの\nアクセスがない場合でも、少量であれば\nオンボードの回路によって\nリアルタイム翻訳を行うことができる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 90,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw19",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech23",
+    "Icon": "technology/23.png",
     "Name": "パルスドライブ",
     "Group": "宇宙船飛行ブースター",
-    "Description": "周囲の星系で宇宙空間の移動、ブースト、\nパルスジャンプをする際に使用する。\n \nパルスエンジンのチャージには三重水素が必要。 三重水素は宇宙近くの小惑星で豊富に存在している。\n\nROLLLEFTとROLLRIGHTを同時に長押ししてパルスジャンプ。\nBOOSTを長押しするとフライト速度を加速できる。"
+    "Description": "周囲の星系で宇宙空間の移動、ブースト、\nパルスジャンプをする際に使用する。\n \nパルスエンジンのチャージには三重水素が必要。 三重水素は宇宙近くの小惑星で豊富に存在している。\n\nROLLLEFTとROLLRIGHTを同時に長押ししてパルスジャンプ。\nBOOSTを長押しするとフライト速度を加速できる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech24",
+    "Icon": "technology/24.png",
     "Name": "フォトンコア",
     "Group": "パルスドライブ・コンパニオンユニット",
-    "Description": "宇宙飛行中の操作性が向上し、\nより長時間のブーストが可能になる。"
+    "Description": "宇宙飛行中の操作性が向上し、\nより長時間のブーストが可能になる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 5,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech25",
+    "Icon": "technology/25.png",
     "Name": "発射エンジン",
     "Group": "垂直離陸システム",
-    "Description": "ギアシステムの発射と着陸に必要な\nシステム。エンジンは特製の重水素燃料で\nリチャージできる。発射プロセスには、\n充分な燃料レベルが必要。\n \nTHRUST を長押しで惑星から飛び立つ。\nBOOSTで飛行を加速する。"
+    "Description": "ギアシステムの発射と着陸に必要な\nシステム。エンジンは特製の重水素燃料で\nリチャージできる。発射プロセスには、\n充分な燃料レベルが必要。\n \nTHRUST を長押しで惑星から飛び立つ。\nBOOSTで飛行を加速する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech26",
+    "Icon": "technology/26.png",
     "Name": "エコエンジン",
     "Group": "宇宙船発射システムアップグレード",
-    "Description": "宇宙船の発射システムをアップグレードすることで、離陸時の消費燃料を減少させる。"
+    "Description": "宇宙船の発射システムをアップグレードすることで、離陸時の消費燃料を減少させる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech27",
+    "Icon": "technology/27.png",
     "Name": "発射エンジン再充填器",
     "Group": "宇宙船発射システムアップグレード",
-    "Description": "宇宙船の発射エンジンに装着する光発電パネル。停泊中に燃料をわずかながら補充できる。\n\n光から得た電力で大気から二水素を合成し、発射エンジンの燃料を自動的に少しずつリチャージする。"
+    "Description": "宇宙船の発射エンジンに装着する光発電パネル。停泊中に燃料をわずかながら補充できる。\n\n光から得た電力で大気から二水素を合成し、発射エンジンの燃料を自動的に少しずつリチャージする。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 460,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech28",
+    "Icon": "technology/28.png",
     "Name": "テレポート受信機",
     "Group": "船に取り付けられた転送装置",
-    "Description": "一般的な宇宙船の通信信号を変化させ、\nデータや物質の転送を可能にする装置。\n \nこのような装置が取り付けられた宇宙船は、\n商品や物質を使用者のエクソスーツに\n距離を問わず送受信できる。"
+    "Description": "一般的な宇宙船の通信信号を変化させ、\nデータや物質の転送を可能にする装置。\n \nこのような装置が取り付けられた宇宙船は、\n商品や物質を使用者のエクソスーツに\n距離を問わず送受信できる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 150,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech29",
+    "Icon": "technology/29.png",
     "Name": "ハイパードライブ",
     "Group": "光速ワープドライブ",
-    "Description": "船がワープ速度で移動できるようになり、\n近くの惑星間のジャンプを可能にする\n超光速ドライブ。\n\n銀河マップからハイパードライブシステム\nにアクセスすることを強く推奨する。"
+    "Description": "船がワープ速度で移動できるようになり、\n近くの惑星間のジャンプを可能にする\n超光速ドライブ。\n\n銀河マップからハイパードライブシステム\nにアクセスすることを強く推奨する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech30",
+    "Icon": "technology/30.png",
     "Name": "カドミウムドライブ",
     "Group": "ハイパードライブアップグレード: 赤色星系",
-    "Description": "レアクラスの赤色恒星への着陸を試みる際の急速な\n逆アセンブルを防止するため、ハイパードライブの\nコアバウンディングマグネットをアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。"
+    "Description": "レアクラスの赤色恒星への着陸を試みる際の急速な\n逆アセンブルを防止するため、ハイパードライブの\nコアバウンディングマグネットをアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 80,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 250
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech31",
+    "Icon": "technology/31.png",
     "Name": "エメリルドライブ",
     "Group": "ハイパードライブアップグレード: 緑色星系",
-    "Description": "レアクラスの緑色恒星への着陸を試みる際の\nリアリティーグリッチを防止するため、\nハイパードライブのシールド完全性を\nアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。"
+    "Description": "レアクラスの緑色恒星への着陸を試みる際の\nリアリティーグリッチを防止するため、\nハイパードライブのシールド完全性を\nアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw20",
+        "Quantity": 250
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech32",
+    "Icon": "technology/32.png",
     "Name": "インジウムドライブ",
     "Group": "ハイパードライブアップグレード: 青色星系",
-    "Description": "レアクラスの青色恒星への\n着陸を試みる際に\n一時的なアノマリーを防止するため、\nハイパードライブの計算マトリックスを\nアップグレードする。\n\nハイパードライブシステムにアクセスする\n際は銀河マップの使用をお勧めします。"
+    "Description": "レアクラスの青色恒星への\n着陸を試みる際に\n一時的なアノマリーを防止するため、\nハイパードライブの計算マトリックスを\nアップグレードする。\n\nハイパードライブシステムにアクセスする\n際は銀河マップの使用をお勧めします。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 200,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw21",
+        "Quantity": 250
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech33",
+    "Icon": "technology/33.png",
     "Name": "ディフレクターシールド",
     "Group": "宇宙船防衛装置",
-    "Description": "レーザー銃、ミサイル武器、宇宙のゴミから\n船体を守るエネルギーシールド。\n \n触媒資源でリチャージできる。\n \n宇宙船のアイテムケース内に作成すると\n自動的に作動する。"
+    "Description": "レーザー銃、ミサイル武器、宇宙のゴミから\n船体を守るエネルギーシールド。\n \n触媒資源でリチャージできる。\n \n宇宙船のアイテムケース内に作成すると\n自動的に作動する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw13",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech34",
+    "Icon": "technology/34.png",
     "Name": "アブレーションアーマー",
     "Group": "宇宙船シールドアップグレード",
-    "Description": "宇宙船防御列に超高温のシールドレイヤー\nを追加することで、向かってくる熱を\n蒸発させる。\n\n宇宙船シールド性能が大幅に上昇する。"
+    "Description": "宇宙船防御列に超高温のシールドレイヤー\nを追加することで、向かってくる熱を\n蒸発させる。\n\n宇宙船シールド性能が大幅に上昇する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 85,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw13",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech35",
+    "Icon": "technology/35.png",
     "Name": "ロケットランチャー ",
     "Group": "宇宙船のミサイル型武器 ",
-    "Description": "非常に強力かつ連射性能の高い\n艦対艦武器。\nSHIPFIREで使用する。"
+    "Description": "非常に強力かつ連射性能の高い\n艦対艦武器。\nSHIPFIREで使用する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 100,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw19",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech36",
+    "Icon": "technology/36.png",
     "Name": "大型ロケットチューブ",
     "Group": "宇宙船ロケットアップグレード",
-    "Description": "宇宙船のロケットランチャーの装填室を\n拡張し、性能を駆使することで、\n熱回復速度を大幅に改善する。"
+    "Description": "宇宙船のロケットランチャーの装填室を\n拡張し、性能を駆使することで、\n熱回復速度を大幅に改善する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 50,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod19",
+        "Quantity": 4
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech37",
+    "Icon": "technology/37.png",
     "Name": "フォトンキャノン",
     "Group": "宇宙船のミサイル型武器",
-    "Description": "宇宙船同士の戦闘時に船を即時に破壊できる\n非常に破壊力の高い武器。\n \nSHIPFIREを押して起動する。"
+    "Description": "宇宙船同士の戦闘時に船を即時に破壊できる\n非常に破壊力の高い武器。\n \nSHIPFIREを押して起動する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw13",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech39",
+    "Icon": "technology/39.png",
     "Name": "経済状況スキャナー",
     "Group": "長距離センサーテクノロジー",
-    "Description": "宇宙船の銀河スケールセンサーを\nアップグレードする。このデバイスを使うと、\n星系を訪れなくても詳しい経済状況データを\n閲覧できるようになる。"
+    "Description": "宇宙船の銀河スケールセンサーを\nアップグレードする。このデバイスを使うと、\n星系を訪れなくても詳しい経済状況データを\n閲覧できるようになる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 150,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech40",
+    "Icon": "technology/40.png",
     "Name": "紛争状況スキャナー",
     "Group": "長距離センサーテクノロジー",
-    "Description": "宇宙船の銀河計測センサーをアップグレードする。\nこのデバイスを使うと、危険を冒さずに\nギャラクシーマップ内の紛争データを\n閲覧できるようになる。"
+    "Description": "宇宙船の銀河計測センサーをアップグレードする。\nこのデバイスを使うと、危険を冒さずに\nギャラクシーマップ内の紛争データを\n閲覧できるようになる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 150,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur2",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech41",
+    "Icon": "technology/41.png",
     "Name": "フェーズビーム",
     "Group": "宇宙船のレーザー装置",
-    "Description": "宇宙用レーザー武器と小惑星の採掘に使うツール。\n\n有機資源でリチャージできる。\n\nSHIPFIREを押して起動。"
+    "Description": "宇宙用レーザー武器と小惑星の採掘に使うツール。\n\n有機資源でリチャージできる。\n\nSHIPFIREを押して起動。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 150,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech42",
+    "Icon": "technology/42.png",
     "Name": "フォーリエデリミッター",
     "Group": "フェーズビームアップグレード",
-    "Description": "フェーズビームの配線を\nナノマシンベースの電気回路で\n配線し直して、レーザーパワーにある\n標準回路をバイパスする。\n\n熱発散が大幅に改善される。"
+    "Description": "フェーズビームの配線を\nナノマシンベースの電気回路で\n配線し直して、レーザーパワーにある\n標準回路をバイパスする。\n\n熱発散が大幅に改善される。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech43",
+    "Icon": "technology/43.png",
     "Name": "ポジトロン・イジェクター",
     "Group": "高エネルギー宇宙船武器",
-    "Description": "発砲すると幅広く放射状にダメージを与える。\n\n装置の発砲距離と発砲速度率が削減されているので\n近接での発砲をおすすめする。"
+    "Description": "発砲すると幅広く放射状にダメージを与える。\n\n装置の発砲距離と発砲速度率が削減されているので\n近接での発砲をおすすめする。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 150,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw27",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech44",
+    "Icon": "technology/44.png",
     "Name": "フラグメントスーパーチャージャー",
     "Group": "宇宙船ポジトロン・イジェクターアップグレード",
-    "Description": "ポジトロン・イジェクターの\n発射メカニズムを組み直すことで、\n粒子の速度と正確性が上昇する。\n\n範囲と正確性が改善される。"
+    "Description": "ポジトロン・イジェクターの\n発射メカニズムを組み直すことで、\n粒子の速度と正確性が上昇する。\n\n範囲と正確性が改善される。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech45",
+    "Icon": "technology/45.png",
     "Name": "インフラナイフ・アクセル",
     "Group": "速射型宇宙船武器",
-    "Description": "安定した素早い発砲を可能にする。\n\nすぐにオーバーヒートが発生するため使用者は慎重に発砲することをおすすめする。"
+    "Description": "安定した素早い発砲を可能にする。\n\nすぐにオーバーヒートが発生するため使用者は慎重に発砲することをおすすめする。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 150,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw29",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech46",
+    "Icon": "technology/46.png",
     "Name": "非線形光学",
     "Group": "フォトンキャノンアップグレード",
-    "Description": "標準的なフォトンキャノンの光学を\n実験的なガラス配列と交換することで、\n戦闘性能を増強させる。\n\n放熱板容量が大幅に改善される。"
+    "Description": "標準的なフォトンキャノンの光学を\n実験的なガラス配列と交換することで、\n戦闘性能を増強させる。\n\n放熱板容量が大幅に改善される。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 75,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech47",
+    "Icon": "technology/47.png",
     "Name": "サイクロトロン・バリスタ",
     "Group": "非誘導型宇宙船武器",
-    "Description": "充電された破片が凝縮した巨大な弾が\n標的に向かって発射される。充電は非誘導で\n障害にぶつかるまでその軌道を回り続ける。"
+    "Description": "充電された破片が凝縮した巨大な弾が\n標的に向かって発射される。充電は非誘導で\n障害にぶつかるまでその軌道を回り続ける。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 150,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw28",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech48",
+    "Icon": "technology/48.png",
     "Name": "ダイソンパンプ",
     "Group": "宇宙船サイクロトロンアップグレード",
-    "Description": "全体のユニットを吸熱性の巨大板を\n取り囲むことでサイクロトロン・バリスタ\nの放熱板を交換する。 熱の出力が\n再利用され、戦闘効率が上昇する。\n\n熱性能が大幅に改善される。"
+    "Description": "全体のユニットを吸熱性の巨大板を\n取り囲むことでサイクロトロン・バリスタ\nの放熱板を交換する。 熱の出力が\n再利用され、戦闘効率が上昇する。\n\n熱性能が大幅に改善される。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod117",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech49",
+    "Icon": "technology/49.png",
     "Name": "貨物船 ハイパードライブ",
     "Group": "光速ワープドライブ",
-    "Description": "船がワープ速度で移動できるようになり、\n 近くの惑星間のジャンプを可能にする\n 超光速ドライブ。"
+    "Description": "船がワープ速度で移動できるようになり、\n 近くの惑星間のジャンプを可能にする\n 超光速ドライブ。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod2",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 500
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech56",
+    "Icon": "technology/56.png",
     "Name": "外殻破壊",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 700
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech57",
+    "Icon": "technology/57.png",
     "Name": "錆びた電気回路",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 500
+      },
+      {
+        "Id": "raw17",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech58",
+    "Icon": "technology/58.png",
     "Name": "崩壊した防壁",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw34",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech59",
+    "Icon": "technology/59.png",
     "Name": "放射線漏洩",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw24",
+        "Quantity": 820
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech60",
+    "Icon": "technology/60.png",
     "Name": "格納停止",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 200
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 300
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 180
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech61",
+    "Icon": "technology/61.png",
     "Name": "破損した歯車",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 600
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech62",
+    "Icon": "technology/62.png",
     "Name": "分析レンズ",
     "Group": "双眼鏡に取り付け可能な装置",
-    "Description": "スペシャリスト用のディスカバリーと\n調査機のユニット。詳細な環境データを\n直接使用者の視野に反映させることで、\n標準的なスキャナーの機能を強化する。\n遠方の特定ポイントを見つけることができる。\n植物や動物、鉱物を調べる際に使用すると、\n分析レンズが貴重なデータを作成する。\nAIMを長押しして使用。ZOOMでズームできる。"
+    "Description": "スペシャリスト用のディスカバリーと\n調査機のユニット。詳細な環境データを\n直接使用者の視野に反映させることで、\n標準的なスキャナーの機能を強化する。\n遠方の特定ポイントを見つけることができる。\n植物や動物、鉱物を調べる際に使用すると、\n分析レンズが貴重なデータを作成する。\nAIMを長押しして使用。ZOOMでズームできる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech63",
+    "Icon": "technology/63.png",
     "Name": "スキャナー",
     "Group": "地形調査",
-    "Description": "マルチツールに使用できるパーソナル地表探査機強化アイテム。\n \nスキャナーが高エネルギーパルスを発し\n周囲にある生命維持に不可欠な資源をハイライトする。 スキャンデータはエクソスーツを通して\n使用者の神経系へと伝達される。\nSCANで周囲のスキャンができる。"
+    "Description": "マルチツールに使用できるパーソナル地表探査機強化アイテム。\n \nスキャナーが高エネルギーパルスを発し\n周囲にある生命維持に不可欠な資源をハイライトする。 スキャンデータはエクソスーツを通して\n使用者の神経系へと伝達される。\nSCANで周囲のスキャンができる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 150
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech64",
+    "Icon": "technology/64.png",
     "Name": "波形リサイクラー",
     "Group": "マルチツールアップグレード",
-    "Description": "マルチツールのスキャンシステムに\n強力な側面加工を挿入することで、\n装置のリチャージ頻度を改善する。\n\n潜在スキャン周波数を上昇させる。"
+    "Description": "マルチツールのスキャンシステムに\n強力な側面加工を挿入することで、\n装置のリチャージ頻度を改善する。\n\n潜在スキャン周波数を上昇させる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech65",
+    "Icon": "technology/65.png",
     "Name": "調査デバイス",
     "Group": "分析レンズアップグレード",
-    "Description": "分析レンズ用のアップグレードモジュール。\nスキャン回路に地質学的分析を\nリアルタイムで行う機能を追加する。\n\nSURVEYFILTERL/SURVEYFILTERRでレンズモードを切り替える。調査モードにすると隠れた地下資源を発見できる。"
+    "Description": "分析レンズ用のアップグレードモジュール。\nスキャン回路に地質学的分析を\nリアルタイムで行う機能を追加する。\n\nSURVEYFILTERL/SURVEYFILTERRでレンズモードを切り替える。調査モードにすると隠れた地下資源を発見できる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 320,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech66",
+    "Icon": "technology/66.png",
     "Name": "地形操作機",
     "Group": "景観変形ツール",
-    "Description": "高度なテラフォーミング用デバイス。\n既存のマルチツールシステムを改造して、\n思い通りに地形を作り変えられるようにする。\n金属資源でチャージできる。"
+    "Description": "高度なテラフォーミング用デバイス。\n既存のマルチツールシステムを改造して、\n思い通りに地形を作り変えられるようにする。\n金属資源でチャージできる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 50,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech67",
+    "Icon": "technology/67.png",
     "Name": "パーソナルフォースフィールド",
     "Group": "守備シールドテクノロジー",
-    "Description": "起動すると、エクソスーツ生命維持システムから\nパワーを引き出し、マルチツールへ多重定義する。\n使用者の周りの電磁気フィールドを歪め、強力な\nパーソナルシールドを作り出す。\n\n頑丈な防御でレーザー光線を防ぐ一方、\nシールド展開中には使用者はマルチツールの\n他機能を使うことができない。"
+    "Description": "起動すると、エクソスーツ生命維持システムから\nパワーを引き出し、マルチツールへ多重定義する。\n使用者の周りの電磁気フィールドを歪め、強力な\nパーソナルシールドを作り出す。\n\n頑丈な防御でレーザー光線を防ぐ一方、\nシールド展開中には使用者はマルチツールの\n他機能を使うことができない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 80,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech68",
+    "Icon": "technology/68.png",
     "Name": "コンバットスコープ",
     "Group": "武器の正確性強化",
-    "Description": "正確な戦闘の為に反動を安定させる武器スコープ。"
+    "Description": "正確な戦闘の為に反動を安定させる武器スコープ。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 80,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech69",
+    "Icon": "technology/69.png",
     "Name": "マインビーム",
     "Group": "鉱物採掘用レーザー",
-    "Description": "炭素系資源でチャージできるマルチツールのマインビーム。 ATTACKで使用できる。\n マルチツールに焦点光学を組み込み、高エネルギービームの放射が可能になる。 ビームは一般的な有機物や鉱物にある分子を励起するよう設定されており、\nそれによって効率的な採掘装置として\n機能するようになっている。\n 注意: 植物や動物、鉱物を破壊するとセンチネルの\n注意を引く可能性あり。"
+    "Description": "炭素系資源でチャージできるマルチツールのマインビーム。 ATTACKで使用できる。\n マルチツールに焦点光学を組み込み、高エネルギービームの放射が可能になる。 ビームは一般的な有機物や鉱物にある分子を励起するよう設定されており、\nそれによって効率的な採掘装置として\n機能するようになっている。\n 注意: 植物や動物、鉱物を破壊するとセンチネルの\n注意を引く可能性あり。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech70",
+    "Icon": "technology/70.png",
     "Name": "高機能マインレーザー",
     "Group": "マインビームコンパニオンユニット",
-    "Description": "標準的なマインビームの光学を高級の生けるガラスと交換することで、規模の大きな鉱脈や希少な鉱脈に対してもビームが有効になる。\n\nレンズが自動でビームの波形内の細かな揺らぎに適応することで、ビームの離散を最小限にし、装置の採掘効果を最大化する。"
+    "Description": "標準的なマインビームの光学を高級の生けるガラスと交換することで、規模の大きな鉱脈や希少な鉱脈に対してもビームが有効になる。\n\nレンズが自動でビームの波形内の細かな揺らぎに適応することで、ビームの離散を最小限にし、装置の採掘効果を最大化する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 75,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod5",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech71",
+    "Icon": "technology/71.png",
     "Name": "光学ドリル",
     "Group": "資源獲得量増加",
-    "Description": "極薄レンズを高精度マトリックスに配置したもので、マインビームを原子レベルの精度で照射する。\n\nそのため資源を効率良く抽出でき、\n採掘効率に優れている。\nマルチツールによる資源の\n採取量が増加する。"
+    "Description": "極薄レンズを高精度マトリックスに配置したもので、マインビームを原子レベルの精度で照射する。\n\nそのため資源を効率良く抽出でき、\n採掘効率に優れている。\nマルチツールによる資源の\n採取量が増加する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 460,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech72",
+    "Icon": "technology/72.png",
     "Name": "ボルトキャスター",
     "Group": "エネルギー発射武器",
-    "Description": "マルチツールに使用できるジェネラリスト用のアタッチメント。 CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nボルトキャスターはマルチツールを再設定することで金属元素を補充して高速弾のように発射し、対象に大ダメージを与える。"
+    "Description": "マルチツールに使用できるジェネラリスト用のアタッチメント。 CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nボルトキャスターはマルチツールを再設定することで金属元素を補充して高速弾のように発射し、対象に大ダメージを与える。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech73",
+    "Icon": "technology/73.png",
     "Name": "バレルイオナイザー",
     "Group": "ボルトキャスターアップグレード",
-    "Description": "ボルトキャスターのシリンダーに\n強力なイオン化装置を挿入することで、\n空気中の発射安定性が上昇する。\n\n装置の正確性が改善され、使用者は\n戦闘性能の低下を感じることなくより\n長時間発砲を続けることができるようになる。"
+    "Description": "ボルトキャスターのシリンダーに\n強力なイオン化装置を挿入することで、\n空気中の発射安定性が上昇する。\n\n装置の正確性が改善され、使用者は\n戦闘性能の低下を感じることなくより\n長時間発砲を続けることができるようになる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 90,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod54",
+        "Quantity": 4
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech74",
+    "Icon": "technology/74.png",
     "Name": "ボルトキャスター SM",
     "Group": "ボルトキャスター・コンパニオンユニット",
-    "Description": "発砲で与える物理ダメージを増加させる。\n\nイオン化プラズマ投射装置の運動エネルギー増強による。\n\n一度マルチツールのアイテムケース内に作成すると自動的に作動する。"
+    "Description": "発砲で与える物理ダメージを増加させる。\n\nイオン化プラズマ投射装置の運動エネルギー増強による。\n\n一度マルチツールのアイテムケース内に作成すると自動的に作動する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 160,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech75",
+    "Icon": "technology/75.png",
     "Name": "ビーム冷却システム シグマ",
     "Group": "標準マインビームアップグレード",
-    "Description": "マインビーム用の上級アップグレード。\n\n更なる反射性の資源をマインレーザーの初期装備結晶部分に挿入することで、不要な熱の流出を減らしつつコアビームエネルギーを強化する。"
+    "Description": "マインビーム用の上級アップグレード。\n\n更なる反射性の資源をマインレーザーの初期装備結晶部分に挿入することで、不要な熱の流出を減らしつつコアビームエネルギーを強化する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 160,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech76",
+    "Icon": "technology/76.png",
     "Name": "プラズマランチャー",
     "Group": "グレネード",
-    "Description": "ハイインパクト型投射兵器。撃ち出されたプラズマ弾は、地面や障害物に当たると跳ね返り、内蔵タイマーにより大爆発を起こす。\n\n変動性プラズマでチャージできる。\n使用時に注意を怠ると、使用者がダメージを受けることになる。\n\nALTATTACKを押して使用する。"
+    "Description": "ハイインパクト型投射兵器。撃ち出されたプラズマ弾は、地面や障害物に当たると跳ね返り、内蔵タイマーにより大爆発を起こす。\n\n変動性プラズマでチャージできる。\n使用時に注意を怠ると、使用者がダメージを受けることになる。\n\nALTATTACKを押して使用する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 150,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod117",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech77",
+    "Icon": "technology/77.png",
     "Name": "ジオロジーキャノン",
     "Group": "地層破壊装置",
-    "Description": "大口径のミサイルランチャー。 瞬間地上採掘の為に設計されたプラズマ炸裂弾を発射する。\n\n変動性プラズマでチャージできる。 警告: 使用は爆発を伴う為周囲を勇気生物を傷つける可能性がある。\n \nALTATTACKを押して起動する。"
+    "Description": "大口径のミサイルランチャー。 瞬間地上採掘の為に設計されたプラズマ炸裂弾を発射する。\n\n変動性プラズマでチャージできる。 警告: 使用は爆発を伴う為周囲を勇気生物を傷つける可能性がある。\n \nALTATTACKを押して起動する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 150,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech78",
+    "Icon": "technology/78.png",
     "Name": "ブレイズジャベリン",
     "Group": "エネルギービーム武器",
-    "Description": "マルチツールに使用できる攻撃用武器アタッチメント。  CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n炎の槍がターゲットに即座にダメージを与える。\n\nプラズマチャージプロセスがイオン化ガスの弧を作り出し、高速でミサイルを発射する。 使用者はトリガーを引くと即座に攻撃の効果を得ることができるはずだ。"
+    "Description": "マルチツールに使用できる攻撃用武器アタッチメント。  CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n炎の槍がターゲットに即座にダメージを与える。\n\nプラズマチャージプロセスがイオン化ガスの弧を作り出し、高速でミサイルを発射する。 使用者はトリガーを引くと即座に攻撃の効果を得ることができるはずだ。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 250,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 150
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech79",
+    "Icon": "technology/79.png",
     "Name": "マスアクセル",
     "Group": "ブレーズジャベリンアップグレード",
-    "Description": "ブレーズジャベリンの燃焼室を拡張する\nことで、内部の粒子アクセルの\n到達する質量と速度が改善される。\n\n武器のダメージが大幅に改善される。"
+    "Description": "ブレーズジャベリンの燃焼室を拡張する\nことで、内部の粒子アクセルの\n到達する質量と速度が改善される。\n\n武器のダメージが大幅に改善される。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 180,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech80",
+    "Icon": "technology/80.png",
     "Name": "スキャターブラスター",
     "Group": "散弾型武器",
-    "Description": "マルチツールに使用できるスペシャリスト用の接近戦のアタッチメント。 CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nスキャターブラスターはマルチツールを再設定することで金属元素に熱を与え粉砕して放射状に広範囲のダメージを与える。 射程距離は長くないが、近距離での散弾効果は高い。"
+    "Description": "マルチツールに使用できるスペシャリスト用の接近戦のアタッチメント。 CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nスキャターブラスターはマルチツールを再設定することで金属元素に熱を与え粉砕して放射状に広範囲のダメージを与える。 射程距離は長くないが、近距離での散弾効果は高い。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 250,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech81",
+    "Icon": "technology/81.png",
     "Name": "炸裂弾グリース",
     "Group": "スキャターブラスターアップグレード",
-    "Description": "高度な自己潤滑性コンポーネントが\nスキャターブラスター内の摩擦を減少\nさせ、リロード時間を大幅に改善する。"
+    "Description": "高度な自己潤滑性コンポーネントが\nスキャターブラスター内の摩擦を減少\nさせ、リロード時間を大幅に改善する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 180,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech82",
+    "Icon": "technology/82.png",
     "Name": "パルススピッター",
     "Group": "速射武器",
-    "Description": "マルチツールに使用できるスペシャリスト用の高速発射のアタッチメント。 CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nパルススピッターはマルチツールの光学に補充した金属元素をイオン化させる。 ミサイルは高速発射され、高エネルギープラズマウェーブで敵を爆撃する。"
+    "Description": "マルチツールに使用できるスペシャリスト用の高速発射のアタッチメント。 CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nパルススピッターはマルチツールの光学に補充した金属元素をイオン化させる。 ミサイルは高速発射され、高エネルギープラズマウェーブで敵を爆撃する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 250,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw6",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech83",
+    "Icon": "technology/83.png",
     "Name": "アンプカートリッジ",
     "Group": "パルススピッターアップグレード",
-    "Description": "専門調波共鳴装置がパルススピッターに\n挿入された弾薬を分裂させ、少ない原料で\nより多くの発砲ができるよう効率的に製造する。\n\n武器の弾倉サイズが上昇する。"
+    "Description": "専門調波共鳴装置がパルススピッターに\n挿入された弾薬を分裂させ、少ない原料で\nより多くの発砲ができるよう効率的に製造する。\n\n武器の弾倉サイズが上昇する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 180,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech84",
+    "Icon": "technology/84.png",
     "Name": "ショート回路",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 400
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech85",
+    "Icon": "technology/85.png",
     "Name": "吹き飛んだトランジスタ",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech86",
+    "Icon": "technology/86.png",
     "Name": "破損した回線",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 16
+      },
+      {
+        "Id": "prod7",
+        "Quantity": 10
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 12
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech87",
+    "Icon": "technology/87.png",
     "Name": "錆びたパワーコア",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech88",
+    "Icon": "technology/88.png",
     "Name": "崩壊したモジュール",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw26",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech89",
+    "Icon": "technology/89.png",
     "Name": "配線繊維の破損",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw24",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw25",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw28",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech90",
+    "Icon": "technology/90.png",
     "Name": "核融合エンジン",
     "Group": "エクソクラフト電力系統",
-    "Description": "全エクソクラフトに共通のコンパクトな核融合コア。\n\n機能するには燃料が必要。"
+    "Description": "全エクソクラフトに共通のコンパクトな核融合コア。\n\n機能するには燃料が必要。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 25
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech91",
+    "Icon": "technology/91.png",
     "Name": "ドリフトサスペンション",
     "Group": "エクソクラフト操縦カスタム",
-    "Description": "ソフトウェアの微調整、圧力調整および\n微小重力を主要サスペンション部分に\n挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトのドラフト能力を\n上げる為、特別に調整されている。"
+    "Description": "ソフトウェアの微調整、圧力調整および\n微小重力を主要サスペンション部分に\n挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトのドラフト能力を\n上げる為、特別に調整されている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech92",
+    "Icon": "technology/92.png",
     "Name": "グリップブーストサスペンション",
     "Group": "エクソクラフト操縦カスタム",
-    "Description": "ソフトウェアの微調整、圧力調整および\n微小重力を主要サスペンション部分に\n挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトが急角度のターンに\n耐えられるよう、特別に調整されている。"
+    "Description": "ソフトウェアの微調整、圧力調整および\n微小重力を主要サスペンション部分に\n挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトが急角度のターンに\n耐えられるよう、特別に調整されている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech93",
+    "Icon": "technology/93.png",
     "Name": "ハイスライドサスペンション",
     "Group": "エクソクラフト操縦カスタム",
-    "Description": "ソフトウェアの微調整、圧力調整および\n微小重力を主要サスペンション部分に\n挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトのスライド力を\n上げるよう、特別に調整されている。"
+    "Description": "ソフトウェアの微調整、圧力調整および\n微小重力を主要サスペンション部分に\n挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトのスライド力を\n上げるよう、特別に調整されている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw28",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech94",
+    "Icon": "technology/94.png",
     "Name": "エクソクラフト信号ブースター",
     "Group": "エクソクラフトスキャン装備",
-    "Description": "大きく複雑なフィールドベースのサブスペースレーダー。\n\n電力消費の多さと、固有の原子核内部の不安定性が理由で、エクソクラフトにのみインストールされている。\n\nQUICK_MENUを押して信号ブースターを起動する。"
+    "Description": "大きく複雑なフィールドベースのサブスペースレーダー。\n\n電力消費の多さと、固有の原子核内部の不安定性が理由で、エクソクラフトにのみインストールされている。\n\nQUICK_MENUを押して信号ブースターを起動する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech96",
+    "Icon": "technology/96.png",
     "Name": "エクソクラフト信号ブースターアップグレード タウ",
     "Group": "エクソクラフト信号ブースターアップグレード",
-    "Description": "エクソクラフト信号ブースターが追加の建物タイプを取得できるようになる。"
+    "Description": "エクソクラフト信号ブースターが追加の建物タイプを取得できるようになる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 320,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 150
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech97",
+    "Icon": "technology/97.png",
     "Name": "エクソクラフト加速モジュール",
     "Group": "エクソクラフトエンジンアップグレード",
-    "Description": "短いスピードバーストを可能にする、エンジンと連結する効率的なプラズマインジェクター。"
+    "Description": "短いスピードバーストを可能にする、エンジンと連結する効率的なプラズマインジェクター。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 180,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 15
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech98",
+    "Icon": "technology/98.png",
     "Name": "エクソクラフトマインレーザー",
     "Group": "エクソクラフト採掘用アタッチメント",
-    "Description": "運ぶには重すぎるマインレーザー。エクソクラフトに取り付ける必要がある。"
+    "Description": "運ぶには重すぎるマインレーザー。エクソクラフトに取り付ける必要がある。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 180,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech99",
+    "Icon": "technology/99.png",
     "Name": "エクソクラフトマインレーザーアップグレード シグマ",
     "Group": "エクソクラフトマインレーザーアップグレード",
-    "Description": "エクソクラフトマインレーザーの出力を上げる。"
+    "Description": "エクソクラフトマインレーザーの出力を上げる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 210,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech100",
+    "Icon": "technology/100.png",
     "Name": "エクソクラフト装備型キャノン",
     "Group": "エクソクラフト戦闘用アタッチメント",
-    "Description": "利用に必要な電力量を確保するため、エクソクラフトに取り付ける必要がある。"
+    "Description": "利用に必要な電力量を確保するため、エクソクラフトに取り付ける必要がある。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 210,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw19",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech101",
+    "Icon": "technology/101.png",
     "Name": "フンボルトドライブ",
     "Group": "エクソクラフト電力系統",
-    "Description": "熱効率が良く、気温逆転に耐性のあるリアクターエンジンで、極端に深度の低い場所でもニュートロンを稼働させることができる。\n\n熱水燃料電池で動く。"
+    "Description": "熱効率が良く、気温逆転に耐性のあるリアクターエンジンで、極端に深度の低い場所でもニュートロンを稼働させることができる。\n\n熱水燃料電池で動く。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 25
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech102",
+    "Icon": "technology/102.png",
     "Name": "ノーティロンキャノン",
     "Group": "潜水艦武器",
-    "Description": "ノーティロン潜水艦専用に設計された機動力の高い大砲。\n\n高エネルギーの武器システムで、小さな水の塊を超高温に上昇させて、ターゲットに発射する。\n\n当初は生物をターゲットに想定して設計されているため、採掘機器としての機能性はほぼない。"
+    "Description": "ノーティロン潜水艦専用に設計された機動力の高い大砲。\n\n高エネルギーの武器システムで、小さな水の塊を超高温に上昇させて、ターゲットに発射する。\n\n当初は生物をターゲットに想定して設計されているため、採掘機器としての機能性はほぼない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 250,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur17",
+        "Quantity": 2
+      },
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "raw17",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech103",
+    "Icon": "technology/103.png",
     "Name": "テティスビーム",
     "Group": "潜水艦マインレーザー",
-    "Description": "ノーティロン潜水艦専用に設計された機動力の高いレーザーシステム。\n\nターゲットに発火性の圧縮されたプラズマビームを発射する。 このトリガー機構のお陰で液状物質内でも高エネルギー光学採掘システムを使用することができる。"
+    "Description": "ノーティロン潜水艦専用に設計された機動力の高いレーザーシステム。\n\nターゲットに発火性の圧縮されたプラズマビームを発射する。 このトリガー機構のお陰で液状物質内でも高エネルギー光学採掘システムを使用することができる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 450,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur17",
+        "Quantity": 10
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw17",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech104",
+    "Icon": "technology/104.png",
     "Name": "ハイパワーソナー",
     "Group": "潜水艦分析機器",
-    "Description": "ノーティロン級の潜水艦に装備されているスキャナー技術を分析レンズレベルにアップグレードできる高性能ソナー機器。\nSCANを押すとハイパワーソナーを起動できる。"
+    "Description": "ノーティロン級の潜水艦に装備されているスキャナー技術を分析レンズレベルにアップグレードできる高性能ソナー機器。\nSCANを押すとハイパワーソナーを起動できる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 10,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 50
+      },
+      {
+        "Id": "cur32",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech105",
+    "Icon": "technology/105.png",
     "Name": "浸透圧発電機",
     "Group": "フンボルトドライブアップグレード",
-    "Description": "ノーティロン潜水艦のドライブシステムにインストールされている。\n\n深海環境に存在するアルカリ塩を抽出することでエネルギーを捕獲し、燃料が危機的状態にある際にフンボルトドライブを緩やかにチャージする。"
+    "Description": "ノーティロン潜水艦のドライブシステムにインストールされている。\n\n深海環境に存在するアルカリ塩を抽出することでエネルギーを捕獲し、燃料が危機的状態にある際にフンボルトドライブを緩やかにチャージする。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 350,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur17",
+        "Quantity": 6
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 150
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech106",
+    "Icon": "technology/106.png",
     "Name": "ロック機構 ",
     "Group": "損傷部分",
-    "Description": "権限のない者は開けない簡単なロック装置。\n損傷しているため開くことができない。"
+    "Description": "権限のない者は開けない簡単なロック装置。\n損傷しているため開くことができない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech107",
+    "Icon": "technology/107.png",
     "Name": "電磁ロック ",
     "Group": "損傷部分",
-    "Description": "より高度なロック装置。\n極性の変化により開くことができない。"
+    "Description": "より高度なロック装置。\n極性の変化により開くことができない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw14",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech108",
+    "Icon": "technology/108.png",
     "Name": "超伝導ロック ",
     "Group": "損傷部分",
-    "Description": "最上級のロック装置。超伝導体の内部に\nひずみがあるため、開くことができない。"
+    "Description": "最上級のロック装置。超伝導体の内部に\nひずみがあるため、開くことができない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech109",
+    "Icon": "technology/109.png",
     "Name": "入力ターミナル ",
     "Group": "損傷部分",
-    "Description": "デバイスを手動で制御するためのターミナル。\n損傷により入力を受け付けない状態になっている。"
+    "Description": "デバイスを手動で制御するためのターミナル。\n損傷により入力を受け付けない状態になっている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech110",
+    "Icon": "technology/110.png",
     "Name": "バイオ入力センサー ",
     "Group": "損傷部分",
-    "Description": "より高度な制御装置。デバイスと生体間で\nやりとりができる。損傷により正常に作動しない。\nそのような状態での接続は非推奨。"
+    "Description": "より高度な制御装置。デバイスと生体間で\nやりとりができる。損傷により正常に作動しない。\nそのような状態での接続は非推奨。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech111",
+    "Icon": "technology/111.png",
     "Name": "ボイラーユニット ",
     "Group": "損傷部分",
-    "Description": "小さなボイラー。熱を発することで、\n過酷な環境でもデバイスを作動させることができる。\n故障によりオーバーフローを起こしている。"
+    "Description": "小さなボイラー。熱を発することで、\n過酷な環境でもデバイスを作動させることができる。\n故障によりオーバーフローを起こしている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech112",
+    "Icon": "technology/112.png",
     "Name": "小型モーター ",
     "Group": "損傷部分",
-    "Description": "小さな部品を動作させるための、非常に小型の\nモーター。腐食し、さびに覆われている。"
+    "Description": "小さな部品を動作させるための、非常に小型の\nモーター。腐食し、さびに覆われている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech113",
+    "Icon": "technology/113.png",
     "Name": "冷却システム ",
     "Group": "損傷部分",
-    "Description": "デバイスを過熱させないための熱交換システム。\nシステム自体の過熱により機能しなくなっている。"
+    "Description": "デバイスを過熱させないための熱交換システム。\nシステム自体の過熱により機能しなくなっている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech114",
+    "Icon": "technology/114.png",
     "Name": "出力画面 ",
     "Group": "損傷部分",
-    "Description": "デバイスの状態を表示するディスプレイ。\nディスプレイが破損しているので、\nその状態を表示することもできない。"
+    "Description": "デバイスの状態を表示するディスプレイ。\nディスプレイが破損しているので、\nその状態を表示することもできない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech115",
+    "Icon": "technology/115.png",
     "Name": "不正防止装置 ",
     "Group": "損傷部分",
-    "Description": "権限のない者による不正操作時に、重要な\nシステムを破壊する装置。装置自体が故障\nしているため、困ったことに関係ない\nシステムまでも破壊してしまっている。"
+    "Description": "権限のない者による不正操作時に、重要な\nシステムを破壊する装置。装置自体が故障\nしているため、困ったことに関係ない\nシステムまでも破壊してしまっている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech116",
+    "Icon": "technology/116.png",
     "Name": "警報機 ",
     "Group": "損傷部分",
-    "Description": "小さなライトと警告音を組み合わせた装置。\nデバイスへの不正アクセスの探知を知らせる。\n損傷により隣接する回路が過負荷状態や\n短絡状態になっている。"
+    "Description": "小さなライトと警告音を組み合わせた装置。\nデバイスへの不正アクセスの探知を知らせる。\n損傷により隣接する回路が過負荷状態や\n短絡状態になっている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech117",
+    "Icon": "technology/117.png",
     "Name": "スプリングケース ",
     "Group": "損傷部分",
-    "Description": "高圧縮のばねを入れるケース。\nケースの破裂により、ばねが飛び出し\nデバイスも損傷している。"
+    "Description": "高圧縮のばねを入れるケース。\nケースの破裂により、ばねが飛び出し\nデバイスも損傷している。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw11",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech118",
+    "Icon": "technology/118.png",
     "Name": "温度調節機 ",
     "Group": "損傷部分",
-    "Description": "デバイス全体の温度保持を制御する装置。\nセンサーの損傷により、熱の発散と生成の\nタイミングが合っていない。"
+    "Description": "デバイス全体の温度保持を制御する装置。\nセンサーの損傷により、熱の発散と生成の\nタイミングが合っていない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw14",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech119",
+    "Icon": "technology/119.png",
     "Name": "燃料ポンプ ",
     "Group": "損傷部分",
-    "Description": "あらゆる重力条件下で、デバイスの隅々まで\n燃料を行き渡らせることができる大容量ポンプ。\nフィルターに何かの物質が詰まっているため、\n作動しない。"
+    "Description": "あらゆる重力条件下で、デバイスの隅々まで\n燃料を行き渡らせることができる大容量ポンプ。\nフィルターに何かの物質が詰まっているため、\n作動しない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech120",
+    "Icon": "technology/120.png",
     "Name": "サーボアーム ",
     "Group": "損傷部分",
-    "Description": "デバイス内の小さな機械的エラーを修復する\n小型のロボットアーム。故障により作動部品が\n間違った場所に配置され、損傷を拡大している。"
+    "Description": "デバイス内の小さな機械的エラーを修復する\n小型のロボットアーム。故障により作動部品が\n間違った場所に配置され、損傷を拡大している。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 60
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech121",
+    "Icon": "technology/121.png",
     "Name": "筒型コイル ",
     "Group": "損傷部分",
-    "Description": "デバイスの出力を上げるためのリレースイッチ。\nコネクタが腐食し筒型コイルは作動していない。"
+    "Description": "デバイスの出力を上げるためのリレースイッチ。\nコネクタが腐食し筒型コイルは作動していない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech122",
+    "Icon": "technology/122.png",
     "Name": "圧力室 ",
     "Group": "損傷部分",
-    "Description": "デバイスの作動に必要な圧縮ガスを生成する\n小型の加圧室。室内にひびができており、\n漏れを生じている。"
+    "Description": "デバイスの作動に必要な圧縮ガスを生成する\n小型の加圧室。室内にひびができており、\n漏れを生じている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech123",
+    "Icon": "technology/123.png",
     "Name": "マスター回路 ",
     "Group": "損傷部分",
-    "Description": "デバイスの部品を制御する回路。致命的な損傷だ。"
+    "Description": "デバイスの部品を制御する回路。致命的な損傷だ。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech124",
+    "Icon": "technology/124.png",
     "Name": "電力分配器 ",
     "Group": "損傷部分",
-    "Description": "デバイスの中央動力装置。損傷により動力が\n1つの回路に集中しており、\n深刻なショートを起こしている。"
+    "Description": "デバイスの中央動力装置。損傷により動力が\n1つの回路に集中しており、\n深刻なショートを起こしている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech125",
+    "Icon": "technology/125.png",
     "Name": "負荷分散装置 ",
     "Group": "損傷部分",
-    "Description": "デバイス内の動力流量を調整する小型の装置。\n故障によりショートしており、\n他の部品にも損傷を与えている。"
+    "Description": "デバイス内の動力流量を調整する小型の装置。\n故障によりショートしており、\n他の部品にも損傷を与えている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw19",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech126",
+    "Icon": "technology/126.png",
     "Name": "ネットワークインターフェース ",
     "Group": "損傷部分",
-    "Description": "デバイスを遠隔制御施設に接続するための\nネットワーク用多目的入出力装置。\n装置の損傷により、環境放射線を\nネットワーク信号として読み取ってしまい、\n他回路のデータを破損している。"
+    "Description": "デバイスを遠隔制御施設に接続するための\nネットワーク用多目的入出力装置。\n装置の損傷により、環境放射線を\nネットワーク信号として読み取ってしまい、\n他回路のデータを破損している。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech127",
+    "Icon": "technology/127.png",
     "Name": "セーフティーパネル ",
     "Group": "損傷部分",
-    "Description": "故障した場合に危険と思われる部品を\n封じ込めるための危険防止パネル。\nトリガーが高感度状態となっているため\n作動してしまっておりデバイスを\n操作することができない。"
+    "Description": "故障した場合に危険と思われる部品を\n封じ込めるための危険防止パネル。\nトリガーが高感度状態となっているため\n作動してしまっておりデバイスを\n操作することができない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw19",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech128",
+    "Icon": "technology/128.png",
     "Name": "オルタネーター ",
     "Group": "損傷部分",
-    "Description": "デバイスに供給する動力を生成し、制御する装置。\n装置全体に腐食が進んでおり、\n作動させることができない。"
+    "Description": "デバイスに供給する動力を生成し、制御する装置。\n装置全体に腐食が進んでおり、\n作動させることができない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech129",
+    "Icon": "technology/129.png",
     "Name": "太陽光発電パネル ",
     "Group": "損傷部分",
-    "Description": "小型だが高性能なパネル。恒星の光を電力に\n変換することができる。パネルにひびがあり\n埃をかぶっているため、発電能力は期待できない。"
+    "Description": "小型だが高性能なパネル。恒星の光を電力に\n変換することができる。パネルにひびがあり\n埃をかぶっているため、発電能力は期待できない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw14",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech130",
+    "Icon": "technology/130.png",
     "Name": "トランスミッションボックス ",
     "Group": "損傷部分",
-    "Description": "デバイスのギア機構。機構の作動を維持する\n潤滑油の代わりに正体不明の緑色の粘液が\nまとわりついており、ギアが動かなくなっている。"
+    "Description": "デバイスのギア機構。機構の作動を維持する\n潤滑油の代わりに正体不明の緑色の粘液が\nまとわりついており、ギアが動かなくなっている。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw30",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw50",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech131",
+    "Icon": "technology/131.png",
     "Name": "古代の錠前",
     "Group": "重たい錠前",
-    "Description": "いくつも穴が開いた不思議な錠前。\n中には何か貴重な財宝が入っているに違いない。"
+    "Description": "いくつも穴が開いた不思議な錠前。\n中には何か貴重な財宝が入っているに違いない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "other3",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech132",
+    "Icon": "technology/132.png",
     "Name": "真珠の捧げ物",
     "Group": "海への捧げ物",
-    "Description": "箱を開けるには生ける真珠が必要。 海底に生息する巨大な軟体動物から採取できる。"
+    "Description": "箱を開けるには生ける真珠が必要。 海底に生息する巨大な軟体動物から採取できる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur17",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech133",
+    "Icon": "technology/133.png",
     "Name": "破損した電極",
     "Group": "破損したコンポーネント",
-    "Description": "このエクソスーツアップグレードモジュールは致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに代金を支払う必要はありません。"
+    "Description": "このエクソスーツアップグレードモジュールは致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに代金を支払う必要はありません。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 110
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech134",
+    "Icon": "technology/134.png",
     "Name": "崩壊したパワーコア",
     "Group": "破損したコンポーネント",
-    "Description": "このエクソスーツアップグレードモジュールは致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに代金を支払う必要はありません。"
+    "Description": "このエクソスーツアップグレードモジュールは致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに代金を支払う必要はありません。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 80
+      },
+      {
+        "Id": "raw13",
+        "Quantity": 90
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech135",
+    "Icon": "technology/135.png",
     "Name": "欠落したホログラム",
     "Group": "破損したコンポーネント",
-    "Description": "このエクソスーツアップグレードモジュールは致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに代金を支払う必要はありません。"
+    "Description": "このエクソスーツアップグレードモジュールは致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに代金を支払う必要はありません。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 2,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech136",
+    "Icon": "technology/136.png",
     "Name": "ワープコア共鳴装置",
     "Group": "ハイパードライブ・コンパニオンユニット",
-    "Description": "恒星間貨物船用巨大ハイパードライブエンジン\nの改造。\n\n量子共鳴によって超光速航行中のドライブの\n耐エラー性能が向上し、\nこれまでは航行できなかった恒星にも\nジャンプできるようになる。"
+    "Description": "恒星間貨物船用巨大ハイパードライブエンジン\nの改造。\n\n量子共鳴によって超光速航行中のドライブの\n耐エラー性能が向上し、\nこれまでは航行できなかった恒星にも\nジャンプできるようになる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 4,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod2",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw20",
+        "Quantity": 250
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech137",
+    "Icon": "technology/137.png",
     "Name": "プラズマワープインジェクター",
     "Group": "ハイパードライブ・コンパニオンユニット",
-    "Description": "恒星間貨物船用巨大ハイパードライブエンジン\nの改造。\n\n高度核融合により宇宙船のワープ速度と濃度を\n上げることでハイパードライブの性能を\n向上させる。\n宇宙のより深くへジャンプして、\nより遠くの惑星系にまで到達できる。"
+    "Description": "恒星間貨物船用巨大ハイパードライブエンジン\nの改造。\n\n高度核融合により宇宙船のワープ速度と濃度を\n上げることでハイパードライブの性能を\n向上させる。\n宇宙のより深くへジャンプして、\nより遠くの惑星系にまで到達できる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 8,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod2",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw21",
+        "Quantity": 250
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech138",
+    "Icon": "technology/138.png",
     "Name": "リアリティディスレッダー",
     "Group": "ハイパードライブ・コンパニオンユニット",
-    "Description": "恒星間貨物船用巨大ハイパードライブエンジン\nの改造。\n\n上限の無い安定した融合システムが\nユーザーのハイパードライブに追加される。\n深宇宙でのジャンプ距離が伸びる。"
+    "Description": "恒星間貨物船用巨大ハイパードライブエンジン\nの改造。\n\n上限の無い安定した融合システムが\nユーザーのハイパードライブに追加される。\n深宇宙でのジャンプ距離が伸びる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 12,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod2",
+        "Quantity": 6
+      },
+      {
+        "Id": "raw22",
+        "Quantity": 250
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech139",
+    "Icon": "technology/139.png",
     "Name": "拡張ワープシールディング",
     "Group": "ハイパードライブアップグレード: 赤色星系",
-    "Description": "レアクラスの赤色恒星への着陸を試みる際の急速な\n逆アセンブルを防止するため、ハイパードライブの\nコアバウンディングマグネットをアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。"
+    "Description": "レアクラスの赤色恒星への着陸を試みる際の急速な\n逆アセンブルを防止するため、ハイパードライブの\nコアバウンディングマグネットをアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 4,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw20",
+        "Quantity": 250
+      },
+      {
+        "Id": "prod18",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech140",
+    "Icon": "technology/140.png",
     "Name": "クロマティックワープシールディング",
     "Group": "ハイパードライブアップグレード: 緑色星系",
-    "Description": "レアクラスの緑色恒星への着陸を試みる際の\nリアリティーグリッチを防止するため、\nハイパードライブのシールド完全性を\nアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。"
+    "Description": "レアクラスの緑色恒星への着陸を試みる際の\nリアリティーグリッチを防止するため、\nハイパードライブのシールド完全性を\nアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 8,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw21",
+        "Quantity": 250
+      },
+      {
+        "Id": "prod18",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech141",
+    "Icon": "technology/141.png",
     "Name": "テンポラルワープコンピューター",
     "Group": "ハイパードライブアップグレード: 青色星系",
-    "Description": "レアクラスの青色恒星への\n着陸を試みる際に\n一時的なアノマリーを防止するため、\nハイパードライブの計算マトリックスを\nアップグレードする。\n\nハイパードライブシステムにアクセスする\n際は銀河マップの使用をお勧めします。"
+    "Description": "レアクラスの青色恒星への\n着陸を試みる際に\n一時的なアノマリーを防止するため、\nハイパードライブの計算マトリックスを\nアップグレードする。\n\nハイパードライブシステムにアクセスする\n際は銀河マップの使用をお勧めします。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 12,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw22",
+        "Quantity": 250
+      },
+      {
+        "Id": "prod18",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech142",
+    "Icon": "technology/6.png",
     "Name": "エアバーストエンジン",
     "Group": "ジェットパック拡張",
-    "Description": "エクソスーツのジェットパック用の強力なアップグレードで、限定的ではあるが飛行中にジェットパックのリチャージを可能にする。\n\nジェットパックの周囲に高効率コンプレッサを取り付け、降下中に生じる気流を利用して得たエネルギーをジェットパックの動力源に再利用するしくみ。"
+    "Description": "エクソスーツのジェットパック用の強力なアップグレードで、限定的ではあるが飛行中にジェットパックのリチャージを可能にする。\n\nジェットパックの周囲に高効率コンプレッサを取り付け、降下中に生じる気流を利用して得たエネルギーをジェットパックの動力源に再利用するしくみ。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 460,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 150
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 150
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 150
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech143",
+    "Icon": "technology/143.png",
     "Name": "パーソナル精製機",
     "Group": "個人携帯型の精製機ユニット",
-    "Description": "コンパクトな拡張ユニットでエクソスーツに小型の携帯精製機を取り付け、エクソスーツのインターフェイスから直接使用できるようにする。\n\nユニットの稼働には燃料が必要で、一度に1種類の物質しか精製できない。"
+    "Description": "コンパクトな拡張ユニットでエクソスーツに小型の携帯精製機を取り付け、エクソスーツのインターフェイスから直接使用できるようにする。\n\nユニットの稼働には燃料が必要で、一度に1種類の物質しか精製できない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 360,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 150
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech144",
+    "Icon": "technology/144.png",
     "Name": "不安定性ドライブ",
     "Group": "パルスドライブ拡張",
-    "Description": "パルスドライブ用の高度なアップグレードで、燃料効率を大幅に向上させる。\n\n燃料である三重水素を、超小型ブラックホール経由で送りこむことで微少な重力変動を発生させ、これを宇宙船の推力に転換することで従来の燃焼方式を超える効率を実現する。"
+    "Description": "パルスドライブ用の高度なアップグレードで、燃料効率を大幅に向上させる。\n\n燃料である三重水素を、超小型ブラックホール経由で送りこむことで微少な重力変動を発生させ、これを宇宙船の推力に転換することで従来の燃焼方式を超える効率を実現する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 460,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur30",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod17",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech145",
+    "Icon": "technology/144.png",
     "Name": "亜光速アンプリファイア",
     "Group": "パルスドライブ拡張",
-    "Description": "パルスドライブ用の高度なアップグレードで、惑星間航行速度を大幅に向上させる。\n\nパルスドライブ内で自然に発生するフレームシフト効果を、三重水素を用いた共鳴装置で増幅することで、亜光速航行時の最大速度を高めるしくみ。"
+    "Description": "パルスドライブ用の高度なアップグレードで、惑星間航行速度を大幅に向上させる。\n\nパルスドライブ内で自然に発生するフレームシフト効果を、三重水素を用いた共鳴装置で増幅することで、亜光速航行時の最大速度を高めるしくみ。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 460,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 200
+      },
+      {
+        "Id": "raw34",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech146",
+    "Icon": "technology/146.png",
     "Name": "緊急ワープユニット",
     "Group": "ハイパードライブ拡張",
-    "Description": "ハイパードライブ用の強力なアップグレード。 通常ならシステムを起動できない宇宙船戦闘中でも即時緊急ワープを行えるようになる。 緊急ワープシステムにはクイックメニューからアクセスできる。\n\n警告：即時緊急ワープでは目的地を設定できない。 航路計算なしの光速航行はユニットを損耗させるため、頻繁な修理が必要になる。"
+    "Description": "ハイパードライブ用の強力なアップグレード。 通常ならシステムを起動できない宇宙船戦闘中でも即時緊急ワープを行えるようになる。 緊急ワープシステムにはクイックメニューからアクセスできる。\n\n警告：即時緊急ワープでは目的地を設定できない。 航路計算なしの光速航行はユニットを損耗させるため、頻繁な修理が必要になる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 240,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 220
+      },
+      {
+        "Id": "prod17",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech147",
+    "Icon": "technology/147.png",
     "Name": "Q-リゾネーター",
     "Group": "宇宙船インフラナイフアップグレード",
-    "Description": "インフラナイフ・アクセルを向上し、\n内蔵波形を圧縮することで\n標準の発砲パターンに弾数を増加させる。"
+    "Description": "インフラナイフ・アクセルを向上し、\n内蔵波形を圧縮することで\n標準の発砲パターンに弾数を増加させる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech148",
+    "Icon": "technology/111.png",
     "Name": "油圧系損傷",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 200
+      },
+      {
+        "Id": "raw28",
+        "Quantity": 150
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech149",
+    "Icon": "technology/149.png",
     "Name": "爆発したパネル",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 500
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 300
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech150",
+    "Icon": "technology/150.png",
     "Name": "腐食したタンク",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw38",
+        "Quantity": 350
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech151",
+    "Icon": "technology/112.png",
     "Name": "焼き切れたコンプレッサー",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 8
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech152",
+    "Icon": "products/52.png",
     "Name": "焼け焦げたプレート",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 300
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw34",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech153",
+    "Icon": "products/63.png",
     "Name": "溶けた燃料電池",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "宇宙船のサブシステムが\n致命的ダメージを受けました。\n\nダメージを修復するまでスロットを\n貯蔵やテクノロジー用に\n使用することはできません。\nREPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw25",
+        "Quantity": 250
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech154",
+    "Icon": "technology/112.png",
     "Name": "腐食した作動装置",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "cur1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech155",
+    "Icon": "products/53.png",
     "Name": "焼き切れたターミナル",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech156",
+    "Icon": "curiosities/1.png",
     "Name": "溶けたサーボ",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 250
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech157",
+    "Icon": "technology/110.png",
     "Name": "砕けたレンズ",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw16",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod54",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech158",
+    "Icon": "technology/158.png",
     "Name": "破れた膜",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw26",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech159",
+    "Icon": "technology/113.png",
     "Name": "故障した抵抗器",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。"
+    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw25",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw28",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech160",
+    "Icon": "technology/160.png",
     "Name": "脈打つ心臓",
     "Group": "融合した有機テクノロジー",
-    "Description": "この温かく命ある内臓は、\n線維状の金属性上部構造で\n船の中心に結び付けられている。\nこの心臓がなければ、\n船は命なき抜け殻に過ぎないだろう。\n\nROLLLEFTとROLLRIGHTを同時に長押しして\n心臓にパルスジャンプを発動させる。\nBOOST長押しでスピードブースト。"
+    "Description": "この温かく命ある内臓は、\n線維状の金属性上部構造で\n船の中心に結び付けられている。\nこの心臓がなければ、\n船は命なき抜け殻に過ぎないだろう。\n\nROLLLEFTとROLLRIGHTを同時に長押しして\n心臓にパルスジャンプを発動させる。\nBOOST長押しでスピードブースト。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw52",
+        "Quantity": 40
+      },
+      {
+        "Id": "cook124",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech161",
+    "Icon": "technology/161.png",
     "Name": "神経集合体",
     "Group": "融合した有機テクノロジー",
-    "Description": "分散して並んだニューロンで、\n金属のラインが走る板に結合している。\n表面を縫うように進む\nその電子信号の複雑なパターンが、\n船の各システムを結び付けている。\n\nTHRUST長押しで離陸するか船に確認できる。"
+    "Description": "分散して並んだニューロンで、\n金属のラインが走る板に結合している。\n表面を縫うように進む\nその電子信号の複雑なパターンが、\n船の各システムを結び付けている。\n\nTHRUST長押しで離陸するか船に確認できる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur2",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw54",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech162",
+    "Icon": "technology/162.png",
     "Name": "特異皮質",
     "Group": "融合した有機テクノロジー",
-    "Description": "反物質の中心に直接プラグインされている\n複雑なバイオ金属性の幹で、\n星間ジャンプ中に高放射能を記録する。\n光速移動に必要不可欠な複雑な計算を喜んで行うようだ。\n\nギャラクシーマップから\n長距離ナビゲーションシステムにアクセスする。\n星系を定期的に移動することで、船を喜ばせておこう。"
+    "Description": "反物質の中心に直接プラグインされている\n複雑なバイオ金属性の幹で、\n星間ジャンプ中に高放射能を記録する。\n光速移動に必要不可欠な複雑な計算を喜んで行うようだ。\n\nギャラクシーマップから\n長距離ナビゲーションシステムにアクセスする。\n星系を定期的に移動することで、船を喜ばせておこう。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw55",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech163",
+    "Icon": "technology/163.png",
     "Name": "悲鳴抑制装置",
     "Group": "融合した有機テクノロジー",
-    "Description": "船の自動防衛ネットワークの延長機能であり、\n自律した生命体のようだ。\n真ん中には小さな口があり、パグニウムを渇望している。\n\n戦闘中は神経配列を乗っ取り、\n船体の他の部分が\n恐怖や痛みでトラウマを負うのを防いでいる。"
+    "Description": "船の自動防衛ネットワークの延長機能であり、\n自律した生命体のようだ。\n真ん中には小さな口があり、パグニウムを渇望している。\n\n戦闘中は神経配列を乗っ取り、\n船体の他の部分が\n恐怖や痛みでトラウマを負うのを防いでいる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur19",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw52",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech164",
+    "Icon": "technology/164.png",
     "Name": "噴出口",
     "Group": "融合した有機テクノロジー",
-    "Description": "球形状のプラズマを生成して放出する嚢と括約筋の寄せ集め。\n船の武器システムへの結合時には、\n非常に高温のプラズマを高圧下で放出する。\n\nSHIPFIREを押すと、\n通風孔を現在の標的に向かわせるか、船に確認できる。"
+    "Description": "球形状のプラズマを生成して放出する嚢と括約筋の寄せ集め。\n船の武器システムへの結合時には、\n非常に高温のプラズマを高圧下で放出する。\n\nSHIPFIREを押すと、\n通風孔を現在の標的に向かわせるか、船に確認できる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur24",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw54",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech165",
+    "Icon": "technology/165.png",
     "Name": "移植眼",
     "Group": "融合した有機テクノロジー",
-    "Description": "薄膜と水晶体が複合配置されたもので、\n高エネルギーレーザーアレイ上に結合している。\n目が合うと焼却される。\n\nSHIPFIREを押すと、近くの標的を見据える。"
+    "Description": "薄膜と水晶体が複合配置されたもので、\n高エネルギーレーザーアレイ上に結合している。\n目が合うと焼却される。\n\nSHIPFIREを押すと、近くの標的を見据える。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 150,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur18",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw55",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech166",
+    "Icon": "technology/28.png",
     "Name": "物質転送ビーム",
     "Group": "貨物船搭載型テレポーテーション装置",
-    "Description": "貨物船の標準通信信号を変調させ、データだけでなく物質の惑星間転送も可能にする装置。\n\nこの装置を取り付けた貨物船は、遠く離れた使用者のエクソスーツにアイテムや物質を送り込んだり、逆に受け取ったりできる。"
+    "Description": "貨物船の標準通信信号を変調させ、データだけでなく物質の惑星間転送も可能にする装置。\n\nこの装置を取り付けた貨物船は、遠く離れた使用者のエクソスーツにアイテムや物質を送り込んだり、逆に受け取ったりできる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 5,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 10
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech167",
+    "Icon": "technology/167.png",
     "Name": "太陽光線",
     "Group": "錬金レーザー",
-    "Description": "マルチツールの採掘能力に高度な専門機能を追加し、地上の鉱脈を液体太陽に変えることができるようになる。\n\n強力なレーザーアレイが現地の太陽放射を増幅させ、近くの鉱物を急速に再構成する。"
+    "Description": "マルチツールの採掘能力に高度な専門機能を追加し、地上の鉱脈を液体太陽に変えることができるようになる。\n\n強力なレーザーアレイが現地の太陽放射を増幅させ、近くの鉱物を急速に再構成する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 160,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw14",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech168",
+    "Icon": "technology/168.png",
     "Name": "アニムスビーム",
     "Group": "魂抽出装置",
-    "Description": "マルチツールの標準的なマインレーザーにオーバーロードして発する。ビームの周波数を正確に調節するため、衝突対象が発するデルタ波とフィードバックループを形成する。\n\n対象の経験を記録してごく小さな金属のかけらに刻み込み、特質の断片としてレンダリングする。収集された断片の可読性は保証されていない。"
+    "Description": "マルチツールの標準的なマインレーザーにオーバーロードして発する。ビームの周波数を正確に調節するため、衝突対象が発するデルタ波とフィードバックループを形成する。\n\n対象の経験を記録してごく小さな金属のかけらに刻み込み、特質の断片としてレンダリングする。収集された断片の可読性は保証されていない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 160,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw13",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech169",
+    "Icon": "technology/8.png",
     "Name": "サーマルバッファー",
     "Group": "エクソクラフト危険防御ユニット",
-    "Description": "構造パネルすべてに、昇華冷却通気口と\n大容量高温バッファーを追加し、\n船体が炎の旋風に包まれても、\nエクソクラフトのパイロットを致命的な高温から守る。\n\n焦土の環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。"
+    "Description": "構造パネルすべてに、昇華冷却通気口と\n大容量高温バッファーを追加し、\n船体が炎の旋風に包まれても、\nエクソクラフトのパイロットを致命的な高温から守る。\n\n焦土の環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw28",
+        "Quantity": 80
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech170",
+    "Icon": "technology/9.png",
     "Name": "メガワットヒーター",
     "Group": "エクソクラフト危険防御ユニット",
-    "Description": "エクソクラフトに強力なヒーターを追加し、\n極寒の状態でも乗組員室を居住可能な温度に保つ。\n\n凍てつく環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。"
+    "Description": "エクソクラフトに強力なヒーターを追加し、\n極寒の状態でも乗組員室を居住可能な温度に保つ。\n\n凍てつく環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw27",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 80
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech171",
+    "Icon": "technology/10.png",
     "Name": "空気ろ過ユニット",
     "Group": "エクソクラフト危険防御ユニット",
-    "Description": "二重真空式空気ろ過システムで、エクソクラフトの乗組員室に\n入る惑星の空気を徹底して浄化する。\n\n毒性の環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。"
+    "Description": "二重真空式空気ろ過システムで、エクソクラフトの乗組員室に\n入る惑星の空気を徹底して浄化する。\n\n毒性の環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw19",
+        "Quantity": 160
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech172",
+    "Icon": "technology/11.png",
     "Name": "中性子シールド",
     "Group": "エクソクラフト危険防御ユニット",
-    "Description": "エクソクラフトの骨組みに高性能の制御材を追加し、\n流入する危険なエネルギー波を中和する。\n\n放射性の環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。"
+    "Description": "エクソクラフトの骨組みに高性能の制御材を追加し、\n流入する危険なエネルギー波を中和する。\n\n放射性の環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw6",
+        "Quantity": 95
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech173",
+    "Icon": "technology/173.png",
     "Name": "イカロス燃料システム",
     "Group": "太陽光リチャージユニット",
-    "Description": "イカロスシステムは既存の金属パネルを太陽光発電パネルに\nアップグレードする。日中はこの反応性コーティングが\n電力を生み、燃料消費を抑えることができる。\n\n日中、自動エンジンリチャージが有効になる。"
+    "Description": "イカロスシステムは既存の金属パネルを太陽光発電パネルに\nアップグレードする。日中はこの反応性コーティングが\n電力を生み、燃料消費を抑えることができる。\n\n日中、自動エンジンリチャージが有効になる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod7",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech174",
+    "Icon": "technology/28.png",
     "Name": "高度信号ブースター",
     "Group": "エクソクラフト信号ブースターアップグレード",
-    "Description": "エクソクラフト信号ブースターが追加の建物タイプを取得できるようになる。"
+    "Description": "エクソクラフト信号ブースターが追加の建物タイプを取得できるようになる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 210,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech175",
+    "Icon": "technology/90.png",
     "Name": "ダイダロスエンジン",
     "Group": "ミノタウロス電力ユニット",
-    "Description": "小型原子炉ユニットで、ミノタウロスの核となるエンジン。急激な動きにも耐えられるよう、ジャイロスコープ上に取り付けられる。\n\n従来型の炭素系燃料を動力とする。"
+    "Description": "小型原子炉ユニットで、ミノタウロスの核となるエンジン。急激な動きにも耐えられるよう、ジャイロスコープ上に取り付けられる。\n\n従来型の炭素系燃料を動力とする。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod6",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod18",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech176",
+    "Icon": "technology/90.png",
     "Name": "自己給脂サーボ",
     "Group": "モーター効率化アップグレード",
-    "Description": "自動調整した潤滑剤を投入する装置。ミノタウロスの\n脚部ジョイント用で、摩擦を減らし、燃料効率を向上させる。\n\nミノタウロスのダイダロスエンジンが消費する燃料を大幅に抑える。"
+    "Description": "自動調整した潤滑剤を投入する装置。ミノタウロスの\n脚部ジョイント用で、摩擦を減らし、燃料効率を向上させる。\n\nミノタウロスのダイダロスエンジンが消費する燃料を大幅に抑える。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod49",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech177",
+    "Icon": "technology/28.png",
     "Name": "ミノタウロス・レーダーアレイ",
     "Group": "ミノタウロス・スキャンアタッチメント",
-    "Description": "ミノタウロスに搭載されているスキャナー技術を分析レンズレベルにアップグレードできる高性能レーダー機器。\n\nSCANでレーダーのスイープを実行し、マルチツールのスキャナーではわからないさらなる特定ポイントをあぶり出す。\n\nクイックメニューから、レーダーを特定の建物に向けることができる。"
+    "Description": "ミノタウロスに搭載されているスキャナー技術を分析レンズレベルにアップグレードできる高性能レーダー機器。\n\nSCANでレーダーのスイープを実行し、マルチツールのスキャナーではわからないさらなる特定ポイントをあぶり出す。\n\nクイックメニューから、レーダーを特定の建物に向けることができる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech178",
+    "Icon": "technology/97.png",
     "Name": "アリアドネの炎",
     "Group": "ミノタウロス推進システム",
-    "Description": "機動性の高いジェット推進装置の集合体。ミノタウロスの後部に取り付けられており、精密な運用によりあらゆる地形でミノタウロスを機敏に力強く動かすことができる。\n\nJUMP長押しで起動する。飛行中も限定的に制御可能。"
+    "Description": "機動性の高いジェット推進装置の集合体。ミノタウロスの後部に取り付けられており、精密な運用によりあらゆる地形でミノタウロスを機敏に力強く動かすことができる。\n\nJUMP長押しで起動する。飛行中も限定的に制御可能。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 180,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 10
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 4
+      },
+      {
+        "Id": "prod117",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech179",
+    "Icon": "technology/98.png",
     "Name": "ミノタウロス・レーザー",
     "Group": "ミノタウロス採掘ツール",
-    "Description": "ミノタウロス・重エクソスーツハイブリッド用に設計された\n機動力の高いレーザーシステム。\n\n従来の採掘作業ができるようになる。戦闘時には無効になる。"
+    "Description": "ミノタウロス・重エクソスーツハイブリッド用に設計された\n機動力の高いレーザーシステム。\n\n従来の採掘作業ができるようになる。戦闘時には無効になる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 180,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 65
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 80
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech180",
+    "Icon": "technology/99.png",
     "Name": "ミノタウロス精密レーザー",
     "Group": "ミノタウロス高度マインレーザー",
-    "Description": "ミノタウロス・重エクソスーツハイブリッドの\nレーザーアレイシステム用アップグレード。\n\nマインビームのパワーを増幅し、採掘スピードを上げるほか、\n採掘の困難な原材料の加工を可能にする。"
+    "Description": "ミノタウロス・重エクソスーツハイブリッドの\nレーザーアレイシステム用アップグレード。\n\nマインビームのパワーを増幅し、採掘スピードを上げるほか、\n採掘の困難な原材料の加工を可能にする。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 210,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur23",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech181",
+    "Icon": "technology/100.png",
     "Name": "ミノタウロス・キャノン",
     "Group": "装備型重火器",
-    "Description": "ミノタウロス重エクソスーツハイブリッド用に設計された\n機動力の高い大砲。\n\n当初は生物をターゲットに想定して設計されているため、\n採掘機器としての機能性はほぼない。"
+    "Description": "ミノタウロス重エクソスーツハイブリッド用に設計された\n機動力の高い大砲。\n\n当初は生物をターゲットに想定して設計されているため、\n採掘機器としての機能性はほぼない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 210,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod30",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech182",
+    "Icon": "technology/100.png",
     "Name": "ミノタウロス掘削装置",
     "Group": "ミノタウロス採掘レーザー",
-    "Description": "ミノタウロス重エクソスーツハイブリッドのレーザーアレイに地形操作機能を追加する。\n\n特製の装置により、ミノタウロスの精巧なジョイントや\nサーボモーターを目詰まりさせることなく、\n高エネルギーの地形掘削機を素早く展開できる。"
+    "Description": "ミノタウロス重エクソスーツハイブリッドのレーザーアレイに地形操作機能を追加する。\n\n特製の装置により、ミノタウロスの精巧なジョイントや\nサーボモーターを目詰まりさせることなく、\n高エネルギーの地形掘削機を素早く展開できる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 210,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw11",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw14",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech183",
+    "Icon": "technology/1.png",
     "Name": "環境制御ユニット",
     "Group": "エクソクラフト危険防御ユニット",
-    "Description": "車両を操縦するミノタウロスのパイロットに、強力な\n環境中和システムを直接接続する。システムは\nミノタウロスのメインエンジンユニットを動力源とし、\nユーザーによる追加の入力は必要ない。\n接続される部位にわずかな痛みを感じる場合がある。\n\nミノタウロスのパイロットが、あらゆる環境上の危険に\n影響を受けなくなる。"
+    "Description": "車両を操縦するミノタウロスのパイロットに、強力な\n環境中和システムを直接接続する。システムは\nミノタウロスのメインエンジンユニットを動力源とし、\nユーザーによる追加の入力は必要ない。\n接続される部位にわずかな痛みを感じる場合がある。\n\nミノタウロスのパイロットが、あらゆる環境上の危険に\n影響を受けなくなる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 120,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod7",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech184",
+    "Icon": "technology/184.png",
     "Name": "ボルトキャスターバウンス・ショット モジュール",
     "Group": "ボルトキャスターアップグレード",
-    "Description": "パルススピッターの\n弾の周りに反物質フィールドを作り出し、\nダメージを受けていない面で跳ね返るようにする。\n\nバウンス・ショットが可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。"
+    "Description": "パルススピッターの\n弾の周りに反物質フィールドを作り出し、\nダメージを受けていない面で跳ね返るようにする。\n\nバウンス・ショットが可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 90,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod54",
+        "Quantity": 4
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech185",
+    "Icon": "technology/185.png",
     "Name": "パルススピッターバウンス・ショット モジュール",
     "Group": "パルススピッターアップグレード",
-    "Description": "ボルトキャスターの\n弾の周りに反物質フィールドを作り出し、\nダメージを受けていない面で跳ね返るようにする。\n\nバウンス・ショットが可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。"
+    "Description": "ボルトキャスターの\n弾の周りに反物質フィールドを作り出し、\nダメージを受けていない面で跳ね返るようにする。\n\nバウンス・ショットが可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 180,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "tech186",
+    "Icon": "technology/186.png",
     "Name": "インシネレーター",
     "Group": "近距離射撃ユニット",
-    "Description": "マルチツールに使用できるスペシャリスト用の高温アタッチメント。CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nインシネレーターは、マルチツールによって自然発生する排出ガスに\n内部レーザーを集中させるアタッチメントで、非常に破壊力が高い。\n近距離ではさらに威力が高まる。"
+    "Description": "マルチツールに使用できるスペシャリスト用の高温アタッチメント。CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nインシネレーターは、マルチツールによって自然発生する排出ガスに\n内部レーザーを集中させるアタッチメントで、非常に破壊力が高い。\n近距離ではさらに威力が高まる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 250,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw6",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   }
 ]

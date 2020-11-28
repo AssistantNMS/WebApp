@@ -1,632 +1,2879 @@
 [
   {
     "Id": "prod1",
+    "Icon": "products/1.png",
     "Name": "Antymateria",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Zamknięta materia egzotyczna i antycząstki bariogenetyczne.\n\nOgromny potencjał energetyczny antymaterii czyni ją niezwykle cenną. 95% obecnego zużycia antymaterii używane jest do zasilania hipernapędów statków gwiezdnych.\n\nUWAGA: unikać niekontrolowanego użycia."
+    "Description": "Zamknięta materia egzotyczna i antycząstki bariogenetyczne.\n\nOgromny potencjał energetyczny antymaterii czyni ją niezwykle cenną. 95% obecnego zużycia antymaterii używane jest do zasilania hipernapędów statków gwiezdnych.\n\nUWAGA: unikać niekontrolowanego użycia.",
+    "BaseValueUnits": 5233.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/1.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod2",
+    "Icon": "products/2.png",
     "Name": "Pojemnik z antymaterią",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Bezpieczny pojemnik z antymaterią, potrzebny do jej przenoszenia, zanim zostanie użyta w ogniwach warpowych.\n\nWstecznie związany tlen wytwarza ochronną bańkę gazową, co uniemożliwia antymaterii reakcję z pojemnikiem."
+    "Description": "Bezpieczny pojemnik z antymaterią, potrzebny do jej przenoszenia, zanim zostanie użyta w ogniwach warpowych.\n\nWstecznie związany tlen wytwarza ochronną bańkę gazową, co uniemożliwia antymaterii reakcję z pojemnikiem.",
+    "BaseValueUnits": 6500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/2.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw8",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod3",
+    "Icon": "products/3.png",
     "Name": "Nanorurki węglowe",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Długie węglowe nanorurki o wysokiej pojemności.\n\nIch duża wytrzymałość i umiarkowana przewodność czynią z nich kluczowy komponent wielu zaawansowanych technologii."
+    "Description": "Długie węglowe nanorurki o wysokiej pojemności.\n\nIch duża wytrzymałość i umiarkowana przewodność czynią z nich kluczowy komponent wielu zaawansowanych technologii.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CookingValue": 0.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/products/3.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod4",
+    "Icon": "products/4.png",
     "Name": "Lustro kobaltowe",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Specjalistyczny komponent optyczny.\n\nTo lustro z polerowanej powierzchni kobaltowej potrafi selektywnie filtrować różne długości fali świetlnej i zmieniać wzór odbicia w zależności od pobliskich pól magnetycznych."
+    "Description": "Specjalistyczny komponent optyczny.\n\nTo lustro z polerowanej powierzchni kobaltowej potrafi selektywnie filtrować różne długości fali świetlnej i zmieniać wzór odbicia w zależności od pobliskich pól magnetycznych.",
+    "BaseValueUnits": 20500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/4.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod5",
+    "Icon": "products/5.png",
     "Name": "Łata hermetyczna",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Wysokowydajna łata węglowa, która zarówno wytrzymuje trudne warunki w przestrzeni kosmicznej, jak i spełnia standardy przemysłowe, związane z używaniem dużych ilości energii.\n\nZaleca się, aby użytkownik regularnie sprawdzał integralność łaty po zainstalowaniu."
+    "Description": "Wysokowydajna łata węglowa, która zarówno wytrzymuje trudne warunki w przestrzeni kosmicznej, jak i spełnia standardy przemysłowe, związane z używaniem dużych ilości energii.\n\nZaleca się, aby użytkownik regularnie sprawdzał integralność łaty po zainstalowaniu.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/5.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod6",
+    "Icon": "products/6.png",
     "Name": "Blacha metalowa",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Lekki produkt metalowy, często używany przy produkcji części statków gwiezdnych i technologii do rozmieszczenia. Podstawa przemysłu budowlanego wszystkich znanych gatunków głównych.\n\nWytworzono z pyłu ferrytowego."
+    "Description": "Lekki produkt metalowy, często używany przy produkcji części statków gwiezdnych i technologii do rozmieszczenia. Podstawa przemysłu budowlanego wszystkich znanych gatunków głównych.\n\nWytworzono z pyłu ferrytowego.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/6.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod7",
+    "Icon": "products/7.png",
     "Name": "Mikroprocesor",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Niewielki mikroczip, wydajny temperaturowo. Wytworzony z metalu chromatycznego, wymagającego rafinacji jednego z kilku wyspecjalizowanych metali.\n\nUżywany w produkcji wielu zaawansowanych technologii."
+    "Description": "Niewielki mikroczip, wydajny temperaturowo. Wytworzony z metalu chromatycznego, wymagającego rafinacji jednego z kilku wyspecjalizowanych metali.\n\nUżywany w produkcji wielu zaawansowanych technologii.",
+    "BaseValueUnits": 2000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/7.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "prod3",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod8",
+    "Icon": "products/8.png",
     "Name": "Filtr tlenu",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Specjalistyczny komponent technologiczny.\n\nTo niewielkie urządzenie może gwałtownie zmienić wewnętrzne środowisko gazowe - od całkowitej próżni po atmosferę czystego tlenu."
+    "Description": "Specjalistyczny komponent technologiczny.\n\nTo niewielkie urządzenie może gwałtownie zmienić wewnętrzne środowisko gazowe - od całkowitej próżni po atmosferę czystego tlenu.",
+    "BaseValueUnits": 615.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/8.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod9",
+    "Icon": "products/9.png",
     "Name": "Refraktor solny",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Specjalistyczny komponent technologiczny, nieodzowny przy produkcji współczesnych układów laserowych. \n\nTo urządzenie rozpraszające światło wykorzystuje niepowtarzalne właściwości optyczne ustabilizowanej i wypolerowanej soli - spowalnia i załamuje przelatujące fotony."
+    "Description": "Specjalistyczny komponent technologiczny, nieodzowny przy produkcji współczesnych układów laserowych. \n\nTo urządzenie rozpraszające światło wykorzystuje niepowtarzalne właściwości optyczne ustabilizowanej i wypolerowanej soli - spowalnia i załamuje przelatujące fotony.",
+    "BaseValueUnits": 30500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/9.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod10",
+    "Icon": "products/10.png",
     "Name": "Dioda sodowa",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Zaawansowany komponent obwodu.\n\nElektroda z oczyszczonego sodu zamknięta w próżniowej lampie daje tej diodzie zaawansowane właściwości ochrony przed skokami napięcia."
+    "Description": "Zaawansowany komponent obwodu.\n\nElektroda z oczyszczonego sodu zamknięta w próżniowej lampie daje tej diodzie zaawansowane właściwości ochrony przed skokami napięcia.",
+    "BaseValueUnits": 3500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/10.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod11",
+    "Icon": "products/11.png",
     "Name": "Galareta diwodorowa",
     "Group": "Przenośne zasilanie podtrzymania życia",
-    "Description": "Lekko lśniąca galareta. Delikatne światło i miękka, drżąca konsystencja ukrywają fakt, że ten lepki żel jest bardzo toksyczny i łatwopalny. Za wszelką cenę należy unikać kontaktu ze skórą.\n\nSyntezowana z diwodoru."
+    "Description": "Lekko lśniąca galareta. Delikatne światło i miękka, drżąca konsystencja ukrywają fakt, że ten lepki żel jest bardzo toksyczny i łatwopalny. Za wszelką cenę należy unikać kontaktu ze skórą.\n\nSyntezowana z diwodoru.",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/11.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod12",
+    "Icon": "products/12.png",
     "Name": "Natleniacz paliwa",
     "Group": "Jednorazowe ulepszenie fregaty",
-    "Description": "Tymczasowe ulepszenie fregaty, działa przez jedną ekspedycję.\n\nPotężne ulepszenie paliwa przeładowuje silniki fregaty, dzięki czemu podróże przebiegają szybciej."
+    "Description": "Tymczasowe ulepszenie fregaty, działa przez jedną ekspedycję.\n\nPotężne ulepszenie paliwa przeładowuje silniki fregaty, dzięki czemu podróże przebiegają szybciej.",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/12.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur1",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod13",
+    "Icon": "products/13.png",
     "Name": "Wybuchowe drony",
     "Group": "Jednorazowe ulepszenie fregaty",
-    "Description": "Tymczasowe ulepszenie fregaty, działa przez jedną ekspedycję.\n\nPakiet autonomicznych materiałów wybuchowych, zaprogramowany do wystrzelenia z floty i samonaprowadzania ku wrogim statkom. Niezwykle niebezpieczny."
+    "Description": "Tymczasowe ulepszenie fregaty, działa przez jedną ekspedycję.\n\nPakiet autonomicznych materiałów wybuchowych, zaprogramowany do wystrzelenia z floty i samonaprowadzania ku wrogim statkom. Niezwykle niebezpieczny.",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/13.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur2",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod14",
+    "Icon": "products/14.png",
     "Name": "Analizator holograficzny",
     "Group": "Jednorazowe ulepszenie fregaty",
-    "Description": "Tymczasowe ulepszenie fregaty, działa przez jedną ekspedycję. Potężny komputer analityczny overclockuje istniejące systemy floty, umożliwiając obliczenia z prędkością nadświetlną. Problemem jest wyskoka temperatura - procesory nie wytrzymują zbyt długo."
+    "Description": "Tymczasowe ulepszenie fregaty, działa przez jedną ekspedycję. Potężny komputer analityczny overclockuje istniejące systemy floty, umożliwiając obliczenia z prędkością nadświetlną. Problemem jest wyskoka temperatura - procesory nie wytrzymują zbyt długo.",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/14.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod15",
+    "Icon": "products/15.png",
     "Name": "Maszyna do kontroli umysłu",
     "Group": "Jednorazowe ulepszenie fregaty",
-    "Description": "Tymczasowe ulepszenie fregaty, działa przez jedną ekspedycję.\n\nMaszynę do kontroli umysłu podłącza się do systemów handlowych i komunikacyjnych statku, dzięki czemu dowódca floty zyskuje przewagę podczas negocjacji."
+    "Description": "Tymczasowe ulepszenie fregaty, działa przez jedną ekspedycję.\n\nMaszynę do kontroli umysłu podłącza się do systemów handlowych i komunikacyjnych statku, dzięki czemu dowódca floty zyskuje przewagę podczas negocjacji.",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/15.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod16",
+    "Icon": "products/16.png",
     "Name": "Kompresor minerałów",
     "Group": "Jednorazowe ulepszenie fregaty",
-    "Description": "Tymczasowe ulepszenie fregaty, działa przez jedną ekspedycję.\n\nKompresor minerałów pozwala ekipom wydobywczym floty upłynniać wydobywane substancje, co umożliwia szybsze przetwarzanie i łatwiejszy transport."
+    "Description": "Tymczasowe ulepszenie fregaty, działa przez jedną ekspedycję.\n\nKompresor minerałów pozwala ekipom wydobywczym floty upłynniać wydobywane substancje, co umożliwia szybsze przetwarzanie i łatwiejszy transport.",
+    "BaseValueUnits": 75000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/16.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw33",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod17",
+    "Icon": "products/17.png",
     "Name": "Ogniwo warpowe",
     "Group": "Jednostka ładowania hipernapędu",
-    "Description": "Paliwo oparte o antymaterię, jest jednym z niewielu źródeł zasilania, zdolnych do spełnienia ogromnych wymagań energetycznych hipernapędu statku gwiezdnego.\n\nZamknięte w szczelnym pojemniku, to ogniwo paliwowe gwarantuje podróżowanie z prędkością nadświetlną, wolne od paradoksów."
+    "Description": "Paliwo oparte o antymaterię, jest jednym z niewielu źródeł zasilania, zdolnych do spełnienia ogromnych wymagań energetycznych hipernapędu statku gwiezdnego.\n\nZamknięte w szczelnym pojemniku, to ogniwo paliwowe gwarantuje podróżowanie z prędkością nadświetlną, wolne od paradoksów.",
+    "BaseValueUnits": 46750.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/17.png",
+    "BlueprintCost": 999,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 999,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod2",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod18",
+    "Icon": "products/18.png",
     "Name": "Hiperrdzeń warp",
     "Group": "Jednostka ładowania hipernapędu",
-    "Description": "Wysokowydajne paliwo oparte na antymaterii, zamknięte w ogniwie. Zawiera wewnętrzny generator czarnych dziur do zasilania hipernapędów statków gwiezdnych w celu wykonania wielu skoków warp.\n\nŚcianki ogniwa są tak zaprojektowane, aby odbijać wszelkie paradoksy rzeczywistości z powrotem ku centrum jednostki, gdzie generowana jest dodatkowa moc."
+    "Description": "Wysokowydajne paliwo oparte na antymaterii, zamknięte w ogniwie. Zawiera wewnętrzny generator czarnych dziur do zasilania hipernapędów statków gwiezdnych w celu wykonania wielu skoków warp.\n\nŚcianki ogniwa są tak zaprojektowane, aby odbijać wszelkie paradoksy rzeczywistości z powrotem ku centrum jednostki, gdzie generowana jest dodatkowa moc.",
+    "BaseValueUnits": 46750.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/18.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod19",
+    "Icon": "products/19.png",
     "Name": "Niestabilna plazma",
     "Group": "Doładowanie wyrzutni plazmy",
-    "Description": "Ciasno upakowana kapsuła paliwowa, używana w wyrzutni plazmy.\n \nSilnie skompresowana energia elektrotermiczna, używana do produkcji granatów niwelujących."
+    "Description": "Ciasno upakowana kapsuła paliwowa, używana w wyrzutni plazmy.\n \nSilnie skompresowana energia elektrotermiczna, używana do produkcji granatów niwelujących.",
+    "BaseValueUnits": 5750.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 20.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/19.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw3",
+        "Quantity": 50
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod20",
+    "Icon": "products/20.png",
     "Name": "Bateria jonowa",
     "Group": "Przenośne źródło energii",
-    "Description": "Poręczna i zoptymalizowana jednostka magazynująca energię. Używana w różnych systemach defensywnych i ochrony przed zagrożeniami.\n \nWytwarzana z połączenia pyłu ferrytowego i dostępnego pod ziemią kobaltu. Często spotykana w metalowych, cylindrycznych pojemnikach."
+    "Description": "Poręczna i zoptymalizowana jednostka magazynująca energię. Używana w różnych systemach defensywnych i ochrony przed zagrożeniami.\n \nWytwarzana z połączenia pyłu ferrytowego i dostępnego pod ziemią kobaltu. Często spotykana w metalowych, cylindrycznych pojemnikach.",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/20.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw14",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod21",
+    "Icon": "products/21.png",
     "Name": "Zaawansowana bateria jonowa",
     "Group": "Przenośne źródło energii",
-    "Description": "Potężna jednostka magazynująca energię. Używana w różnych systemach defensywnych i ochrony przed zagrożeniami.\n\nWytwarzana ze zjonizowanego kobaltu i pyłu ferrytowego. Często spotykana w metalowych, cylindrycznych pojemnikach."
+    "Description": "Potężna jednostka magazynująca energię. Używana w różnych systemach defensywnych i ochrony przed zagrożeniami.\n\nWytwarzana ze zjonizowanego kobaltu i pyłu ferrytowego. Często spotykana w metalowych, cylindrycznych pojemnikach.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/21.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod22",
+    "Icon": "products/22.png",
     "Name": "Bateria gwiezdnej tarczy",
     "Group": "Przenośne źródło energii",
-    "Description": "Jednostka magazynująca energię, zoptymalizowana do użycia w systemach defensywnych statków gwiezdnych. \n \nZasilane trytem kondensatory umożliwiają szybkie uwolnienie ładunku do tarczy odbijającej, ale mogą przeładować mniejszy sprzęt."
+    "Description": "Jednostka magazynująca energię, zoptymalizowana do użycia w systemach defensywnych statków gwiezdnych. \n \nZasilane trytem kondensatory umożliwiają szybkie uwolnienie ładunku do tarczy odbijającej, ale mogą przeładować mniejszy sprzęt.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/22.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod23",
+    "Icon": "products/23.png",
     "Name": "Żel podtrzymania życia",
     "Group": "Przenośne zasilanie podtrzymania życia",
-    "Description": "Awaryjne paliwo do systemów podtrzymania życia.\n\nŻel syntezowany z kryształów paliwa rakietowego i węgla czasowo zasila systemy podtrzymania życia. Długotrwały wpływ na płuca użytkownika jest obecnie nieznany."
+    "Description": "Awaryjne paliwo do systemów podtrzymania życia.\n\nŻel syntezowany z kryształów paliwa rakietowego i węgla czasowo zasila systemy podtrzymania życia. Długotrwały wpływ na płuca użytkownika jest obecnie nieznany.",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/23.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod24",
+    "Icon": "products/24.png",
     "Name": "Kapsuła tlenowa",
     "Group": "Przenośne zasilanie podtrzymania życia",
-    "Description": "Ustabilizowany i bezpieczny gaz filtracyjny do systemów podtrzymania życia.\n\nŁatwo pozyskiwany z tlenu i pyłu ferrytowego. Wydajna metoda długoterminowego zasilania systemów podtrzymania życia."
+    "Description": "Ustabilizowany i bezpieczny gaz filtracyjny do systemów podtrzymania życia.\n\nŁatwo pozyskiwany z tlenu i pyłu ferrytowego. Wydajna metoda długoterminowego zasilania systemów podtrzymania życia.",
+    "BaseValueUnits": 350.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 100.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/24.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod25",
+    "Icon": "products/25.png",
     "Name": "Paliwo do fregaty (50 ton)",
     "Group": "Ustabilizowane paliwo diwodorowe",
-    "Description": "Mała beczka paliwa do fregaty.\n\nTen lepki żel jest niezwykle toksyczny w dotyku. Rafinowane paliwo, zasila silniki międzygwiezdne dużych statków handlowych."
+    "Description": "Mała beczka paliwa do fregaty.\n\nTen lepki żel jest niezwykle toksyczny w dotyku. Rafinowane paliwo, zasila silniki międzygwiezdne dużych statków handlowych.",
+    "BaseValueUnits": 20000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/25.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw7",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod26",
+    "Icon": "products/26.png",
     "Name": "Paliwo do fregaty (100 ton)",
     "Group": "Ustabilizowane paliwo diwodorowe",
-    "Description": "Duża beczka paliwa do fregaty.\n\nTen lepki żel jest niezwykle toksyczny w dotyku. Rafinowane paliwo, zasila silniki międzygwiezdne dużych statków handlowych."
+    "Description": "Duża beczka paliwa do fregaty.\n\nTen lepki żel jest niezwykle toksyczny w dotyku. Rafinowane paliwo, zasila silniki międzygwiezdne dużych statków handlowych.",
+    "BaseValueUnits": 40000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/26.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw7",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod27",
+    "Icon": "products/27.png",
     "Name": "Paliwo do fregaty (200 ton)",
     "Group": "Ustabilizowane paliwo diwodorowe",
-    "Description": "Ogromny zbiornik paliwa do fregaty.\n\nTen lepki żel jest niezwykle toksyczny w dotyku. Rafinowane paliwo, zasila silniki międzygwiezdne dużych statków handlowych."
+    "Description": "Ogromny zbiornik paliwa do fregaty.\n\nTen lepki żel jest niezwykle toksyczny w dotyku. Rafinowane paliwo, zasila silniki międzygwiezdne dużych statków handlowych.",
+    "BaseValueUnits": 80000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/27.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 200
+      },
+      {
+        "Id": "raw7",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod28",
+    "Icon": "products/28.png",
     "Name": "Paliwo startowe do statku gwiezdnego",
     "Group": "Ustabilizowane paliwo diwodorowe",
-    "Description": "Niezwykle reaktywne paliwo stałe, wymagane do zasilania silników startowych statku gwiezdnego.\n\nWytwarzane z diwodoru, kryształu występującego w niebieskich złożach na wszystkich planetach."
+    "Description": "Niezwykle reaktywne paliwo stałe, wymagane do zasilania silników startowych statku gwiezdnego.\n\nWytwarzane z diwodoru, kryształu występującego w niebieskich złożach na wszystkich planetach.",
+    "BaseValueUnits": 450.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 20.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/28.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod29",
+    "Icon": "products/29.png",
     "Name": "Hydrotermalne ogniwo paliwowe",
     "Group": "Paliwo do reaktora łodzi podwodnej",
-    "Description": "Wysokotemperaturowe paliwo, zamknięte w standardowym ogniwie. Używane do zasilania napędu Humboldta, wykorzystywanego w łodzi podwodnej Nautilon.\n\nWytworzone z mieszanki związków organicznych (węgla i cyto-fosfatów) oraz ukierunkowanych soli mineralnych."
+    "Description": "Wysokotemperaturowe paliwo, zamknięte w standardowym ogniwie. Używane do zasilania napędu Humboldta, wykorzystywanego w łodzi podwodnej Nautilon.\n\nWytworzone z mieszanki związków organicznych (węgla i cyto-fosfatów) oraz ukierunkowanych soli mineralnych.",
+    "BaseValueUnits": 7200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 20.0,
+    "Colour": "C01746",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/29.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw16",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw18",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod30",
+    "Icon": "products/30.png",
     "Name": "Amunicja balistyczna",
     "Group": "Uniwersalny moduł amunicji",
-    "Description": "Zaawansowana amunicja do standardowego multinarzędzia uniwersalnego 07/FF1.\n\nMożna nią łatwo naładować błyskacz, PM pulsacyjny i blaster rozproszony poprzez system przeładowania magazynków multinarzędzia."
+    "Description": "Zaawansowana amunicja do standardowego multinarzędzia uniwersalnego 07/FF1.\n\nMożna nią łatwo naładować błyskacz, PM pulsacyjny i blaster rozproszony poprzez system przeładowania magazynków multinarzędzia.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 5000.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/30.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod31",
+    "Icon": "products/31.png",
     "Name": "Kryształ węgla",
     "Group": "Złoże skoncentrowanego węgla",
-    "Description": "Skrajnie skompresowany węgiel o gęstej nanostrukturze. Niezwykle ceniony jako źródło energii i komponent technologiczny.\n\nSyntezowany ze skoncentrowanego węgla."
+    "Description": "Skrajnie skompresowany węgiel o gęstej nanostrukturze. Niezwykle ceniony jako źródło energii i komponent technologiczny.\n\nSyntezowany ze skoncentrowanego węgla.",
+    "BaseValueUnits": 3600.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/31.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod32",
+    "Icon": "products/32.png",
     "Name": "Krata chlorowa",
     "Group": "Złoże skoncentrowanego chloru",
-    "Description": "Ciasno związana forma chloru. Ciasno upakowane cząsteczki gwarantują niezrównaną przewodność. Samoistna synteza nie występuje: stworzenie wymaga niezwykle skoncentrowanych źródeł energii.\n\nSyntezowana z chloru."
+    "Description": "Ciasno związana forma chloru. Ciasno upakowane cząsteczki gwarantują niezrównaną przewodność. Samoistna synteza nie występuje: stworzenie wymaga niezwykle skoncentrowanych źródeł energii.\n\nSyntezowana z chloru.",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/32.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod33",
+    "Icon": "products/33.png",
     "Name": "Zdestabilizowany sód",
     "Group": "Złoże skoncentrowanego sodu",
-    "Description": "Sód jest w warunkach normalnych niezwykle stabilny, ale niektóre konfiguracje zachowują reaktywność jego jonów składowych. W trakcie obchodzenia się z nim, użytkownik powinien nosić rękawice do materiałów niebezpiecznych.\n\nSyntezowany z sodu."
+    "Description": "Sód jest w warunkach normalnych niezwykle stabilny, ale niektóre konfiguracje zachowują reaktywność jego jonów składowych. W trakcie obchodzenia się z nim, użytkownik powinien nosić rękawice do materiałów niebezpiecznych.\n\nSyntezowany z sodu.",
+    "BaseValueUnits": 12300.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/33.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod34",
+    "Icon": "products/34.png",
     "Name": "Rzadki pierwiastek metaliczny",
     "Group": "Złoże skoncentrowanego metalu",
-    "Description": "Niezwykle cenny i rzadki produkt metalowy. Używany w produkcji wielu zaawansowanych technologii.\n\nMetal ten jest bardzo reaktywny i szybko wiąże się z odkrytą skórą. Użytkownik powinien obchodzić się z nim niezwykle ostrożnie.\n\nSyntezowany z namagnesowanego ferrytu."
+    "Description": "Niezwykle cenny i rzadki produkt metalowy. Używany w produkcji wielu zaawansowanych technologii.\n\nMetal ten jest bardzo reaktywny i szybko wiąże się z odkrytą skórą. Użytkownik powinien obchodzić się z nim niezwykle ostrożnie.\n\nSyntezowany z namagnesowanego ferrytu.",
+    "BaseValueUnits": 4200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/34.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod35",
+    "Icon": "products/35.png",
     "Name": "Kryształ ponadtlenku",
     "Group": "Złoże skoncentrowanego tlenu",
-    "Description": "Paramagnetyczna postać tlenu. Ta rzadka substancja doskonale sprawdza się przy produkcji zaawansowanych technologii. Przed zastosowaniem w systemach podtrzymania życia wymagana jest konwersja. Bezpośrednie wdychanie NIE jest zalecane.\n\nSyntezowana z tlenu."
+    "Description": "Paramagnetyczna postać tlenu. Ta rzadka substancja doskonale sprawdza się przy produkcji zaawansowanych technologii. Przed zastosowaniem w systemach podtrzymania życia wymagana jest konwersja. Bezpośrednie wdychanie NIE jest zalecane.\n\nSyntezowana z tlenu.",
+    "BaseValueUnits": 5100.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/35.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod36",
+    "Icon": "products/36.png",
     "Name": "TetraKobalt",
     "Group": "Złoże skoncentrowanego kobaltu",
-    "Description": "Nowoczesna molekularna forma kobaltu. Do stworzenia wymaga bardzo dużych nakładów energii. W naturze występuje niezwykle rzadko.\n\nSyntezowana ze zjonizowanego kobaltu."
+    "Description": "Nowoczesna molekularna forma kobaltu. Do stworzenia wymaga bardzo dużych nakładów energii. W naturze występuje niezwykle rzadko.\n\nSyntezowana ze zjonizowanego kobaltu.",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/36.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod49",
+    "Icon": "products/49.png",
     "Name": "Kwas",
     "Group": "Zaawansowany produkt rolniczy",
-    "Description": "Rozcieńczony kwas do obecnej generacji różnego rodzaju ogniw zasilających.\n\nWytworzony z mordytu i pleśni grzybiczej."
+    "Description": "Rozcieńczony kwas do obecnej generacji różnego rodzaju ogniw zasilających.\n\nWytworzony z mordytu i pleśni grzybiczej.",
+    "BaseValueUnits": 188000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/49.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw30",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw42",
+        "Quantity": 600
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod51",
+    "Icon": "products/51.png",
     "Name": "Kondensator ciepła",
     "Group": "Zaawansowany produkt rolniczy",
-    "Description": "Regulator temperaturowy, wyprodukowany z rafinowanego materiału organicznego. Ma unikatową zdolność do produkcji, rozpraszania i rozprowadzania ciepła, wedle potrzeb.\n\nWytwarzany z solanium i kryształów szronu."
+    "Description": "Regulator temperaturowy, wyprodukowany z rafinowanego materiału organicznego. Ma unikatową zdolność do produkcji, rozpraszania i rozprowadzania ciepła, wedle potrzeb.\n\nWytwarzany z solanium i kryształów szronu.",
+    "BaseValueUnits": 180000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/51.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw43",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw46",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod52",
+    "Icon": "products/52.png",
     "Name": "Poliwłókno",
     "Group": "Zaawansowany produkt rolniczy",
-    "Description": "Włókno połączeniowe, wykorzystywane w elektronice. Wykonane z zaawansowanego syntetycznego polimeru, który może przesyłać zasilanie i dane.\n\nWytwarzane z miąższu kaktusa i gwiezdna bulwa."
+    "Description": "Włókno połączeniowe, wykorzystywane w elektronice. Wykonane z zaawansowanego syntetycznego polimeru, który może przesyłać zasilanie i dane.\n\nWytwarzane z miąższu kaktusa i gwiezdna bulwa.",
+    "BaseValueUnits": 130000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/52.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw45",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw47",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod53",
+    "Icon": "products/53.png",
     "Name": "Obwód drukowany",
     "Group": "Zaawansowany produkt rolniczy",
-    "Description": "Uniwersalny, pół-elastyczny obwód drukowany, wykonany z niezwykle wytrzymałego syntetycznego polimeru.\n\nWytwarzany z kondensatorów ciepła i poliwłókna."
+    "Description": "Uniwersalny, pół-elastyczny obwód drukowany, wykonany z niezwykle wytrzymałego syntetycznego polimeru.\n\nWytwarzany z kondensatorów ciepła i poliwłókna.",
+    "BaseValueUnits": 916250.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/53.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod51",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod52",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod54",
+    "Icon": "products/54.png",
     "Name": "Szkło",
     "Group": "Zaawansowany produkt rolniczy",
-    "Description": "Nietłukące się i nierysujące szkło z powłoką odporną na promieniowanie ultrafioletowe, przeznaczone do prac budowlanych.\n\nRafinowane z pyłu krzemianowego. Pozyskuj krzemian z gleby, używając manipulatora terenu.\n\nMożna wytworzyć z kryształów szronu, pozyskiwanych z roślin na zamarzniętych planetach."
+    "Description": "Nietłukące się i nierysujące szkło z powłoką odporną na promieniowanie ultrafioletowe, przeznaczone do prac budowlanych.\n\nRafinowane z pyłu krzemianowego. Pozyskuj krzemian z gleby, używając manipulatora terenu.\n\nMożna wytworzyć z kryształów szronu, pozyskiwanych z roślin na zamarzniętych planetach.",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/54.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw43",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod55",
+    "Icon": "products/55.png",
     "Name": "Niestabilny żel",
     "Group": "Zaawansowany produkt rolniczy",
-    "Description": "Bardzo reaktywny żel, zasobny w energię i niebezpieczny w dotyku.\n\nWytwarzany z miąższu kaktusa."
+    "Description": "Bardzo reaktywny żel, zasobny w energię i niebezpieczny w dotyku.\n\nWytwarzany z miąższu kaktusa.",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/55.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw45",
+        "Quantity": 200
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod56",
+    "Icon": "products/56.png",
     "Name": "Płynny materiał wybuchowy",
     "Group": "Zaawansowany produkt rolniczy",
-    "Description": "Materiał wybuchowy różnego przeznaczenia w formie płynnej, ułatwiającej transport i aplikację. Nie spożywać.\n\nWytwarzany z kwasu i niestabilnego żelu."
+    "Description": "Materiał wybuchowy różnego przeznaczenia w formie płynnej, ułatwiającej transport i aplikację. Nie spożywać.\n\nWytwarzany z kwasu i niestabilnego żelu.",
+    "BaseValueUnits": 800500.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/56.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod49",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod55",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod57",
+    "Icon": "products/57.png",
     "Name": "Smar",
     "Group": "Zaawansowany produkt rolniczy",
-    "Description": "Syntetyczne smarowidło zmniejszające tarcie i przedłużające żywotność technologii wykorzystujących ruchome części.\n\nWytwarzane z faecium i korzenia gamma."
+    "Description": "Syntetyczne smarowidło zmniejszające tarcie i przedłużające żywotność technologii wykorzystujących ruchome części.\n\nWytwarzane z faecium i korzenia gamma.",
+    "BaseValueUnits": 110000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/57.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw44",
+        "Quantity": 400
+      },
+      {
+        "Id": "raw50",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod58",
+    "Icon": "products/58.png",
     "Name": "Żywe szkło",
     "Group": "Zaawansowany produkt rolniczy",
-    "Description": "Zaawansowany materiał budowlany - szkło to zostało nasycone związkami organicznymi, które pozwalają mu reagować na otoczenie. Mikroby zawarte w szkle filtrują niebezpieczne światło na wszystkich długościach fali i wyrównują warunki atmosferyczne, zgodnie z wymaganiami użytkownika.\n\nWytwarzane ze smarowidła i szkła."
+    "Description": "Zaawansowany materiał budowlany - szkło to zostało nasycone związkami organicznymi, które pozwalają mu reagować na otoczenie. Mikroby zawarte w szkle filtrują niebezpieczne światło na wszystkich długościach fali i wyrównują warunki atmosferyczne, zgodnie z wymaganiami użytkownika.\n\nWytwarzane ze smarowidła i szkła.",
+    "BaseValueUnits": 566000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/58.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod54",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod57",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod59",
+    "Icon": "products/59.png",
     "Name": "Wzbogacony węgiel",
     "Group": "Wzmocniony produkt gazowy",
-    "Description": "Produkt rafinowany poprzez napromieniowywanie węgla energią radioaktywności.\n\nWytwarzany z radonu i skondensowanego węgla."
+    "Description": "Produkt rafinowany poprzez napromieniowywanie węgla energią radioaktywności.\n\nWytwarzany z radonu i skondensowanego węgla.",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/59.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw36",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod60",
+    "Icon": "products/60.png",
     "Name": "Sól azotu",
     "Group": "Wzmocniony produkt gazowy",
-    "Description": "Produkt rafinowany - potężny organiczny nawóz we wczesnej fazie dystrybucji.\n\nWytwarzany z azotu i węgla."
+    "Description": "Produkt rafinowany - potężny organiczny nawóz we wczesnej fazie dystrybucji.\n\nWytwarzany z azotu i węgla.",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/60.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw37",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod61",
+    "Icon": "products/61.png",
     "Name": "Kondensat termiczny",
     "Group": "Wzmocniony produkt gazowy",
-    "Description": "Produkt rafinowany, zawierający energię potencjalną podgrzanego gazu atmosferycznego. Można go podgrzewać w stanie stabilnym do żądanej temperatury.\n\nWytwarzany z sulfurynu i skoncentrowanego węgla."
+    "Description": "Produkt rafinowany, zawierający energię potencjalną podgrzanego gazu atmosferycznego. Można go podgrzewać w stanie stabilnym do żądanej temperatury.\n\nWytwarzany z sulfurynu i skoncentrowanego węgla.",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/61.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw35",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod62",
+    "Icon": "products/62.png",
     "Name": "Gorący lód",
     "Group": "Produkowany produkt gazowy",
-    "Description": "Materiał paradoksalny, nieco mniej tajemniczy ze względu na relatywną łatwość produkcji.\n\nWytwarzany ze wzbogaconego węgla i soli azotu."
+    "Description": "Materiał paradoksalny, nieco mniej tajemniczy ze względu na relatywną łatwość produkcji.\n\nWytwarzany ze wzbogaconego węgla i soli azotu.",
+    "BaseValueUnits": 320000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/62.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod59",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod60",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod63",
+    "Icon": "products/63.png",
     "Name": "Kriopompa",
     "Group": "Produkowany produkt gazowy",
-    "Description": "Zaawansowany, samoregulujący się materiał hybrydowy - kriopompa rozprowadza ciepło z niemal idealną wydajnością, przez co jest niezwykle ważnym komponentem regulatorów temperatury.\n\nWytwarzana z gorącego lodu i kondensatu termicznego."
+    "Description": "Zaawansowany, samoregulujący się materiał hybrydowy - kriopompa rozprowadza ciepło z niemal idealną wydajnością, przez co jest niezwykle ważnym komponentem regulatorów temperatury.\n\nWytwarzana z gorącego lodu i kondensatu termicznego.",
+    "BaseValueUnits": 1500000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/63.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod61",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod62",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod64",
+    "Icon": "products/64.png",
     "Name": "Półprzewodnik",
     "Group": "Produkowany produkt gazowy",
-    "Description": "Zaawansowany materiał, użyteczny w wielu urządzeniach elektronicznych. Posiada własny, wbudowany regulator temperatury.\n\nWytwarzany z kondensatu termicznego i soli azotu."
+    "Description": "Zaawansowany materiał, użyteczny w wielu urządzeniach elektronicznych. Posiada własny, wbudowany regulator temperatury.\n\nWytwarzany z kondensatu termicznego i soli azotu.",
+    "BaseValueUnits": 320000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/64.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod60",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod61",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod65",
+    "Icon": "products/65.png",
     "Name": "Katalizator organiczny",
     "Group": "Produkowany produkt gazowy",
-    "Description": "Materiał katalityczny, używany przy tworzeniu wielu nawozów organicznych.\n\nWytwarzany z kondensatu termicznego i wzbogaconego węgla."
+    "Description": "Materiał katalityczny, używany przy tworzeniu wielu nawozów organicznych.\n\nWytwarzany z kondensatu termicznego i wzbogaconego węgla.",
+    "BaseValueUnits": 320000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/65.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod59",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod61",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod66",
+    "Icon": "products/66.png",
     "Name": "Nadprzewodnik",
     "Group": "Produkowany produkt gazowy",
-    "Description": "Zaawansowany materiał przewodzący - nadprzewodnik wzbogaca moc warpowania pola półprzewodnika.\n\nWytwarzany ze wzbogaconego węgla i półprzewodników."
+    "Description": "Zaawansowany materiał przewodzący - nadprzewodnik wzbogaca moc warpowania pola półprzewodnika.\n\nWytwarzany ze wzbogaconego węgla i półprzewodników.",
+    "BaseValueUnits": 1500000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/66.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod59",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod64",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod67",
+    "Icon": "products/67.png",
     "Name": "Akcelerator fuzji",
     "Group": "Produkowany produkt gazowy",
-    "Description": "Zaawansowane źródło paliwa, pozyskane z idealnej mieszanki potencjalnych energetycznych materiałów organicznych.\n\nWytwarzane z katalizatorów organicznych i soli azotu."
+    "Description": "Zaawansowane źródło paliwa, pozyskane z idealnej mieszanki potencjalnych energetycznych materiałów organicznych.\n\nWytwarzane z katalizatorów organicznych i soli azotu.",
+    "BaseValueUnits": 1500000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/67.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod60",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod65",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod68",
+    "Icon": "products/68.png",
     "Name": "Komora kriogeniczna",
     "Group": "Zaawansowany produkt wytwarzany",
-    "Description": "Komora niskiej temperatury, zaprojektowana, aby zapobiegać naturalnemu rozkładowi materii organicznej.\n\nWytwarzana z żywego szkła i kriopompy."
+    "Description": "Komora niskiej temperatury, zaprojektowana, aby zapobiegać naturalnemu rozkładowi materii organicznej.\n\nWytwarzana z żywego szkła i kriopompy.",
+    "BaseValueUnits": 3800000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/68.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod58",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod63",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod69",
+    "Icon": "products/69.png",
     "Name": "Przenośny reaktor",
     "Group": "Zaawansowany produkt wytwarzany",
-    "Description": "Kompletny, miniaturowy, samosterujący reaktor jądrowy. Wytwarza podgwiezdne poziomy energii w jednym, bezobsługowym i mocno kompatybilnym module paliwowym.\n\nWytwarzany z płynnych materiałów wybuchowych i akceleratorów fuzji."
+    "Description": "Kompletny, miniaturowy, samosterujący reaktor jądrowy. Wytwarza podgwiezdne poziomy energii w jednym, bezobsługowym i mocno kompatybilnym module paliwowym.\n\nWytwarzany z płynnych materiałów wybuchowych i akceleratorów fuzji.",
+    "BaseValueUnits": 4200000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/69.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod56",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod67",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod70",
+    "Icon": "products/70.png",
     "Name": "Procesor kwantowy",
     "Group": "Zaawansowany produkt wytwarzany",
-    "Description": "Niezwykle zaawansowane urządzenie obliczeniowe, wykorzystywane do wykonywania skomplikowanych działań, związanych z podróżami warpowymi.\n\nWytwarzane z obwodów drukowanych oraz nadprzewodników."
+    "Description": "Niezwykle zaawansowane urządzenie obliczeniowe, wykorzystywane do wykonywania skomplikowanych działań, związanych z podróżami warpowymi.\n\nWytwarzane z obwodów drukowanych oraz nadprzewodników.",
+    "BaseValueUnits": 4400000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/70.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod53",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod66",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod71",
+    "Icon": "products/71.png",
     "Name": "Aron",
     "Group": "Metal stopu",
-    "Description": "Lekki stop, dający się łatwo formować. Wytwarzany z parafiny i kwarcu.\n\nBardzo pożądany w galaktycznej sieci handlowej ze względu na wykorzystywanie go w budowie planetarnych posterunków i obiektów."
+    "Description": "Lekki stop, dający się łatwo formować. Wytwarzany z parafiny i kwarcu.\n\nBardzo pożądany w galaktycznej sieci handlowej ze względu na wykorzystywanie go w budowie planetarnych posterunków i obiektów.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/71.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw24",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod72",
+    "Icon": "products/72.png",
     "Name": "Brudny brąz",
     "Group": "Metal stopu",
-    "Description": "Popularny metaliczny stop o szerokim wachlarzu zastosowań. Zamiast nazwy naukowej, używana jest pospolita - termin brudny brąz pochodzi od zabarwienia materiału.\n\nWytwarzany z czystego ferrytu i pirytu."
+    "Description": "Popularny metaliczny stop o szerokim wachlarzu zastosowań. Zamiast nazwy naukowej, używana jest pospolita - termin brudny brąz pochodzi od zabarwienia materiału.\n\nWytwarzany z czystego ferrytu i pirytu.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/72.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw25",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod73",
+    "Icon": "products/73.png",
     "Name": "Grantyn",
     "Group": "Metal stopu",
-    "Description": "Miękki, plastyczny stop, używany przez rzemieślników w całej znanej galaktyce. Wytwarzany ze zjonizowanego kobaltu i dioksytu.\n\nPopularny surowiec handlowy - wiele szlaków wytyczono specjalnie do handlu tym stopem."
+    "Description": "Miękki, plastyczny stop, używany przez rzemieślników w całej znanej galaktyce. Wytwarzany ze zjonizowanego kobaltu i dioksytu.\n\nPopularny surowiec handlowy - wiele szlaków wytyczono specjalnie do handlu tym stopem.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/73.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw28",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod74",
+    "Icon": "products/74.png",
     "Name": "Herox",
     "Group": "Metal stopu",
-    "Description": "Neutralny stop, stosowany niemal wszędzie - od farmakologii po przemysł ciężki. Wytwarzany z chloru i amoniaku.\n\nJest podstawą galaktycznego handlu stopami."
+    "Description": "Neutralny stop, stosowany niemal wszędzie - od farmakologii po przemysł ciężki. Wytwarzany z chloru i amoniaku.\n\nJest podstawą galaktycznego handlu stopami.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/74.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw26",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod75",
+    "Icon": "products/75.png",
     "Name": "Magno-złoto",
     "Group": "Metal stopu",
-    "Description": "Niezwykle cenny, lustrzany stop. Popularny wśród handlowców wszystkich głównych ras galaktycznych. Wytwarzany ze zjonizowanego kobaltu i fosforu.\n\n\nŁatwo rozpoznawalny po jasnoczerwonej poświacie i silnym polu magnetycznym."
+    "Description": "Niezwykle cenny, lustrzany stop. Popularny wśród handlowców wszystkich głównych ras galaktycznych. Wytwarzany ze zjonizowanego kobaltu i fosforu.\n\n\nŁatwo rozpoznawalny po jasnoczerwonej poświacie i silnym polu magnetycznym.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/75.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod76",
+    "Icon": "products/76.png",
     "Name": "Lem",
     "Group": "Metal stopu",
-    "Description": "Stop czystego ferrytu, wytwarzany z czystego ferrytu i uranu.\n\nUżywany głównie przy budowie frachtowców gwiezdnych, ze względu na swoją wytrzymałość. Twardy materiał, popularny w galaktycznej sieci handlowej."
+    "Description": "Stop czystego ferrytu, wytwarzany z czystego ferrytu i uranu.\n\nUżywany głównie przy budowie frachtowców gwiezdnych, ze względu na swoją wytrzymałość. Twardy materiał, popularny w galaktycznej sieci handlowej.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/76.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw27",
+        "Quantity": 50
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod77",
+    "Icon": "products/77.png",
     "Name": "Geodezyt",
     "Group": "Wzbogacony metal stopu",
-    "Description": "Zaawansowany, wytrzymały stop, używany głównie w budowie kadłubów i technologii dronów eksploracyjnych w głębokim kosmosie.\n\nWytwarzany z heroksu, brudnego brązu i lemu."
+    "Description": "Zaawansowany, wytrzymały stop, używany głównie w budowie kadłubów i technologii dronów eksploracyjnych w głębokim kosmosie.\n\nWytwarzany z heroksu, brudnego brązu i lemu.",
+    "BaseValueUnits": 150000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/77.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod72",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod76",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod78",
+    "Icon": "products/78.png",
     "Name": "Irydezyt",
     "Group": "Wzbogacony metal stopu",
-    "Description": "Zaawansowany lekki stop z metalu, którym handluje się w całej Zewnętrznej Krawędzi. Często używany we wnętrzach promów handlowych, aby zmniejszyć ich ciężar, kiedy startuję z planet o silnym polu grawitacyjnym.\n\nWytwarzany z aronu, magno-złota i grantynu."
+    "Description": "Zaawansowany lekki stop z metalu, którym handluje się w całej Zewnętrznej Krawędzi. Często używany we wnętrzach promów handlowych, aby zmniejszyć ich ciężar, kiedy startuję z planet o silnym polu grawitacyjnym.\n\nWytwarzany z aronu, magno-złota i grantynu.",
+    "BaseValueUnits": 150000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "F3A923",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/78.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod71",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod73",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod75",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod79",
+    "Icon": "products/79.png",
     "Name": "Zapalnik fuzji",
     "Group": "Niezwykle wyrafinowana technologia",
-    "Description": "Niezwykle zaawansowana technologia, użytkowana w elektrowniach następnej generacji. Wytworzenie rdzenia fuzji wymaga dużych umiejętności naukowych oraz skomplikowanych procesów przemysłowych.\n\nWytwarzany z przenośnego reaktora, procesorów kwantowych i geodezytu."
+    "Description": "Niezwykle zaawansowana technologia, użytkowana w elektrowniach następnej generacji. Wytworzenie rdzenia fuzji wymaga dużych umiejętności naukowych oraz skomplikowanych procesów przemysłowych.\n\nWytwarzany z przenośnego reaktora, procesorów kwantowych i geodezytu.",
+    "BaseValueUnits": 15600000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/79.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod69",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod70",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod77",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod80",
+    "Icon": "products/80.png",
     "Name": "Urządzenie bezruchu",
     "Group": "Niezwykle wyrafinowana technologia",
-    "Description": "Urządzenie stworzone specjalnie, aby utrzymywać istoty przy życiu tysiące lat dłużej niż ich wynika to z ich naturalnego cyklu. Wytworzenie takiego urządzenia wymaga ogromnych umiejętności, nie tylko dlatego że to bardzo skomplikowany proces, ale także z tego powodu, że w przypadku pomyłki może dojść do katastrofy.\n\nWytwarzane z procesorów kwantowych, komór kriogenicznych i irydezytu."
+    "Description": "Urządzenie stworzone specjalnie, aby utrzymywać istoty przy życiu tysiące lat dłużej niż ich wynika to z ich naturalnego cyklu. Wytworzenie takiego urządzenia wymaga ogromnych umiejętności, nie tylko dlatego że to bardzo skomplikowany proces, ale także z tego powodu, że w przypadku pomyłki może dojść do katastrofy.\n\nWytwarzane z procesorów kwantowych, komór kriogenicznych i irydezytu.",
+    "BaseValueUnits": 15600000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/80.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 1,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod68",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod70",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod78",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod81",
+    "Icon": "products/81.png",
     "Name": "Krosno okablowania",
     "Group": "Uniwersalna platforma technologiczna",
-    "Description": "Prefabrykowany obwód drukowany, zaprojektowany do elastycznego zastosowania w wielu komponentach technologicznych.\n\nModuł ten wyposażony jest w zintegrowany procesor nanitowy, dzięki czemu można go szybko skonfigurować do różnego rodzaju zastosowań."
+    "Description": "Prefabrykowany obwód drukowany, zaprojektowany do elastycznego zastosowania w wielu komponentach technologicznych.\n\nModuł ten wyposażony jest w zintegrowany procesor nanitowy, dzięki czemu można go szybko skonfigurować do różnego rodzaju zastosowań.",
+    "BaseValueUnits": 25000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/81.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": true,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod82",
+    "Icon": "products/82.png",
     "Name": "Wrażliwy pień neuralny",
     "Group": "Fragment życia",
-    "Description": "Delikatna sieć żywej tkanki – iskra, która rozpala nową formę życia ku istnieniu.\n\nW okresie dojrzewania wymaga czułej opieki."
+    "Description": "Delikatna sieć żywej tkanki – iskra, która rozpala nową formę życia ku istnieniu.\n\nW okresie dojrzewania wymaga czułej opieki.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/82.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod83",
+    "Icon": "products/83.png",
     "Name": "Wrażliwe serce",
     "Group": "Fragment życia",
-    "Description": "Choć jest to jedynie zbitka komórek, można już wyczuć delikatne bicie tego proto-serca.\n\nW okresie dojrzewania wymaga czułej opieki."
+    "Description": "Choć jest to jedynie zbitka komórek, można już wyczuć delikatne bicie tego proto-serca.\n\nW okresie dojrzewania wymaga czułej opieki.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/83.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod84",
+    "Icon": "products/84.png",
     "Name": "Wrażliwa skorupa",
     "Group": "Fragment życia",
-    "Description": "Przezroczysta i bardzo cienka, skorupa ta jest właściwie jedynie delikatnym oddechem szkła. A jednak jej potencjał jest jasny – ciągłe mnożące się wzmacnianie stale przyczynia się do jej utwardzenia.\n\nW okresie dojrzewania wymaga czułej opieki."
+    "Description": "Przezroczysta i bardzo cienka, skorupa ta jest właściwie jedynie delikatnym oddechem szkła. A jednak jej potencjał jest jasny – ciągłe mnożące się wzmacnianie stale przyczynia się do jej utwardzenia.\n\nW okresie dojrzewania wymaga czułej opieki.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/84.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod85",
+    "Icon": "products/85.png",
     "Name": "Rosnąca osobliwość",
     "Group": "Wrażliwy oddech",
-    "Description": "Powolne tkanie ciała, neuronów i antymaterii w jedność. Sposób, w jaki ten umysł postrzega wszechświat wymyka się wszelkiej wyobraźni.\n\nW okresie dojrzewania wymaga czułej opieki."
+    "Description": "Powolne tkanie ciała, neuronów i antymaterii w jedność. Sposób, w jaki ten umysł postrzega wszechświat wymyka się wszelkiej wyobraźni.\n\nW okresie dojrzewania wymaga czułej opieki.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/85.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod86",
+    "Icon": "products/86.png",
     "Name": "Dorosły pień neuralny",
     "Group": "Żyjący organ statku gwiezdnego",
-    "Description": "Ta sieć żyjącej tkanki wykształciła własne metaliczne włókna, siatkę srebra i ciała. Skrzy się własnym ładunkiem elektrycznym, siecią potrzebującą własnych węzłów.\n\nCzeka na swego gospodarza."
+    "Description": "Ta sieć żyjącej tkanki wykształciła własne metaliczne włókna, siatkę srebra i ciała. Skrzy się własnym ładunkiem elektrycznym, siecią potrzebującą własnych węzłów.\n\nCzeka na swego gospodarza.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/86.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod87",
+    "Icon": "products/87.png",
     "Name": "Dojrzały węzeł sercowy",
     "Group": "Żyjący organ statku gwiezdnego",
-    "Description": "Potężna i umięśniona, ta pompa bioniczna umieszczona jest w sieci syntetycznych rurek. Po dotyku wije się, jej rytmy są wrażliwe na obecność innych istot myślących.\n\nCzeka na swego gospodarza."
+    "Description": "Potężna i umięśniona, ta pompa bioniczna umieszczona jest w sieci syntetycznych rurek. Po dotyku wije się, jej rytmy są wrażliwe na obecność innych istot myślących.\n\nCzeka na swego gospodarza.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/87.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod88",
+    "Icon": "products/88.png",
     "Name": "Utwardzona skorupa",
     "Group": "Żyjący organ statku gwiezdnego",
-    "Description": "Przezroczysta, odbijająca, opalizująca, niesamowicie wytrzymała. Skorupa ta szybko przekonfigurowuje się po odniesieniu obrażeń i splata się z powrotem, silniejsza niż kiedykolwiek. Nowoutworzone więzy tworzą pamięć w szkle, odbijając światło pochłonięte w chwili odniesienia obrażeń.\n\nCzeka na swego gospodarza."
+    "Description": "Przezroczysta, odbijająca, opalizująca, niesamowicie wytrzymała. Skorupa ta szybko przekonfigurowuje się po odniesieniu obrażeń i splata się z powrotem, silniejsza niż kiedykolwiek. Nowoutworzone więzy tworzą pamięć w szkle, odbijając światło pochłonięte w chwili odniesienia obrażeń.\n\nCzeka na swego gospodarza.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/88.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod89",
+    "Icon": "products/89.png",
     "Name": "Rdzeń osobliwości",
     "Group": "Żyjący organ statku gwiezdnego",
-    "Description": "Czuły układ neuronów na stabilnej orbicie wokół miniaturowej czarnej dziury. Umysł w sercu tego bionicznego cudu wolny jest od ograniczeń linearności czasu, jego wrażenia są niewiarygodną siecią miriad skupionych form życia.\n\nCzeka na swego gospodarza."
+    "Description": "Czuły układ neuronów na stabilnej orbicie wokół miniaturowej czarnej dziury. Umysł w sercu tego bionicznego cudu wolny jest od ograniczeń linearności czasu, jego wrażenia są niewiarygodną siecią miriad skupionych form życia.\n\nCzeka na swego gospodarza.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "1E2328",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/89.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod90",
+    "Icon": "products/90.png",
     "Name": "Most świadomości",
     "Group": "Reaktywowana drabina neuralna",
-    "Description": "Biomechaniczny konstrukt, stworzony według projektu anonimowego gospodarza.\n\nUrządzenie to najwyraźniej jest interfejsem pomiędzy indywidualną istotą a większą dzieloną świadomością. Wydaje się pochodzić, ale nie być połączone, z technologią korvaxiańską."
+    "Description": "Biomechaniczny konstrukt, stworzony według projektu anonimowego gospodarza.\n\nUrządzenie to najwyraźniej jest interfejsem pomiędzy indywidualną istotą a większą dzieloną świadomością. Wydaje się pochodzić, ale nie być połączone, z technologią korvaxiańską.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/90.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw4",
+        "Quantity": 250
+      },
+      {
+        "Id": "cur39",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 80
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod91",
+    "Icon": "products/91.png",
     "Name": "Pulsujący rdzeń",
     "Group": "Superpodgrzany fragment życia",
-    "Description": "Biomechaniczny konstrukt, stworzony według projektu anonimowego gospodarza.\n\nOrganiczny, ale z gorącą poświatą i wysokociśnieniowym wewnętrznym naczyniem. To „urządzenie” jest częściowo pompą, a częściowo akcelerowaną komorą ewolucyjną."
+    "Description": "Biomechaniczny konstrukt, stworzony według projektu anonimowego gospodarza.\n\nOrganiczny, ale z gorącą poświatą i wysokociśnieniowym wewnętrznym naczyniem. To „urządzenie” jest częściowo pompą, a częściowo akcelerowaną komorą ewolucyjną.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/91.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw30",
+        "Quantity": 80
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw59",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod92",
+    "Icon": "products/92.png",
     "Name": "Niemożliwa membrana",
     "Group": "Samoczynnie regenerująca się forma życia",
-    "Description": "Biomechaniczny konstrukt, stworzony według projektu anonimowego gospodarza.\n\nCieniutka siatka ciasno utkanego włókna. Mikroorganizmy zatopione w materiale pozwalają mu się regenerować w nieskończoność – to idealna i nieskończona bioniczna skóra."
+    "Description": "Biomechaniczny konstrukt, stworzony według projektu anonimowego gospodarza.\n\nCieniutka siatka ciasno utkanego włókna. Mikroorganizmy zatopione w materiale pozwalają mu się regenerować w nieskończoność – to idealna i nieskończona bioniczna skóra.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/92.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "cur18",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      },
+      {
+        "Id": "prod98",
+        "Quantity": 150
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod93",
+    "Icon": "products/93.png",
     "Name": "Nasiona szkła",
     "Group": "Zamrożone archiwum",
-    "Description": "Biomechaniczny konstrukt, stworzony według projektu anonimowego gospodarza.\n\nKapsułki materiału genetycznego, zamknięte w folii z żywego szkła. Dzielone wspomnienia pływają w ich odbijających się powierzchniach, oczekując na szansę ukształtowania wewnętrznego życia."
+    "Description": "Biomechaniczny konstrukt, stworzony według projektu anonimowego gospodarza.\n\nKapsułki materiału genetycznego, zamknięte w folii z żywego szkła. Dzielone wspomnienia pływają w ich odbijających się powierzchniach, oczekując na szansę ukształtowania wewnętrznego życia.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/93.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw60",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod94",
+    "Icon": "products/94.png",
     "Name": "Zarchiwizowana dusza",
     "Group": "Arka bioniczna",
-    "Description": "Biomechaniczny konstrukt stworzony według projektu anonimowego gospodarza.\n\nPołączenie skomplikowanych obwodów i niewysłowionego błędu Podróżnika. Taki rachunek może wiązać razem rzeczywistości lub rozrywać je w ledwie symulowane fragmenty."
+    "Description": "Biomechaniczny konstrukt stworzony według projektu anonimowego gospodarza.\n\nPołączenie skomplikowanych obwodów i niewysłowionego błędu Podróżnika. Taki rachunek może wiązać razem rzeczywistości lub rozrywać je w ledwie symulowane fragmenty.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "311A49",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/94.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod95",
+    "Icon": "products/94.png",
     "Name": "Komora duszy (0%)",
     "Group": "Arka bioniczna",
-    "Description": "Biomechaniczny konstrukt stworzony według projektu anonimowego gospodarza.\n\nPołączenie skomplikowanych obwodów i niewysłowionego błędu Podróżnika. Taki rachunek może wiązać razem rzeczywistości lub rozrywać je w ledwie symulowane fragmenty."
+    "Description": "Biomechaniczny konstrukt stworzony według projektu anonimowego gospodarza.\n\nPołączenie skomplikowanych obwodów i niewysłowionego błędu Podróżnika. Taki rachunek może wiązać razem rzeczywistości lub rozrywać je w ledwie symulowane fragmenty.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod96",
+    "Icon": "products/94.png",
     "Name": "Komora duszy (33%)",
     "Group": "Arka bioniczna",
-    "Description": "Biomechaniczny konstrukt stworzony według projektu anonimowego gospodarza.\n\nPołączenie skomplikowanych obwodów i niewysłowionego błędu Podróżnika. Taki rachunek może wiązać razem rzeczywistości lub rozrywać je w ledwie symulowane fragmenty."
+    "Description": "Biomechaniczny konstrukt stworzony według projektu anonimowego gospodarza.\n\nPołączenie skomplikowanych obwodów i niewysłowionego błędu Podróżnika. Taki rachunek może wiązać razem rzeczywistości lub rozrywać je w ledwie symulowane fragmenty.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod97",
+    "Icon": "products/94.png",
     "Name": "Komora duszy (66%)",
     "Group": "Arka bioniczna",
-    "Description": "Biomechaniczny konstrukt stworzony według projektu anonimowego gospodarza.\n\nPołączenie skomplikowanych obwodów i niewysłowionego błędu Podróżnika. Taki rachunek może wiązać razem rzeczywistości lub rozrywać je w ledwie symulowane fragmenty."
+    "Description": "Biomechaniczny konstrukt stworzony według projektu anonimowego gospodarza.\n\nPołączenie skomplikowanych obwodów i niewysłowionego błędu Podróżnika. Taki rachunek może wiązać razem rzeczywistości lub rozrywać je w ledwie symulowane fragmenty.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod98",
+    "Icon": "products/98.png",
     "Name": "Żywa woda",
     "Group": "Szklana nieokreśloność",
-    "Description": "Niespotykane interakcje powierzchniowe powodują, że płyn ten szybko rozdziela się na niewielkie, idealne sfery. Światło załamywane w jednej z takich sfer rozszczepia się w kolory, których nie da się opisać.\n\nPochodzenie nieznane."
+    "Description": "Niespotykane interakcje powierzchniowe powodują, że płyn ten szybko rozdziela się na niewielkie, idealne sfery. Światło załamywane w jednej z takich sfer rozszczepia się w kolory, których nie da się opisać.\n\nPochodzenie nieznane.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 150.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/products/98.png",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod99",
+    "Icon": "products/99.png",
     "Name": "Zestaw naprawczy",
     "Group": "Zautomatyzowana jednostka naprawcza",
-    "Description": "Niezwykle użyteczny element technologii przetrwania, zestaw naprawczy pozwala szybko i wydajnie przywrócić działanie uszkodzonego sprzętu.\n\nW trakcie naprawy elementu technologicznego, zestaw naprawczy można zastosować na każdym subkomponencie zamiast standardowo wymaganego obiektu."
+    "Description": "Niezwykle użyteczny element technologii przetrwania, zestaw naprawczy pozwala szybko i wydajnie przywrócić działanie uszkodzonego sprzętu.\n\nW trakcie naprawy elementu technologicznego, zestaw naprawczy można zastosować na każdym subkomponencie zamiast standardowo wymaganego obiektu.",
+    "BaseValueUnits": 450.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": true,
+    "MaxStackSize": 10.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod100",
+    "Icon": "products/100.png",
     "Name": "Ulepszenie odzyskanego hipernapędu",
     "Group": "Odzyskane zasoby klasy S do rozmieszczenia",
-    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć jego hipernapęd."
+    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć jego hipernapęd.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod101",
+    "Icon": "products/101.png",
     "Name": "Odzyskane ogniwo floty",
     "Group": "Odzyskane zasoby klasy S do rozmieszczenia",
-    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć szybkość swojej floty."
+    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć szybkość swojej floty.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod102",
+    "Icon": "products/102.png",
     "Name": "Odzyskana jednostka paliwowa floty",
     "Group": "Odzyskane zasoby klasy S do rozmieszczenia",
-    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby zmniejszyć zużycie paliwa floty."
+    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby zmniejszyć zużycie paliwa floty.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod103",
+    "Icon": "products/103.png",
     "Name": "Odzyskana jednostka bojowa floty",
     "Group": "Odzyskane zasoby klasy S do rozmieszczenia",
-    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć wydajność bojową swojej floty."
+    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć wydajność bojową swojej floty.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod104",
+    "Icon": "products/104.png",
     "Name": "Odzyskana jednostka handlowa floty",
     "Group": "Odzyskane zasoby klasy S do rozmieszczenia",
-    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć zdolności handlowe floty."
+    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć zdolności handlowe floty.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod105",
+    "Icon": "products/105.png",
     "Name": "Odzyskana jednostka odkrywcza floty",
     "Group": "Odzyskane zasoby klasy S do rozmieszczenia",
-    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć zdolności eksploracyjne floty."
+    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć zdolności eksploracyjne floty.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod106",
+    "Icon": "products/106.png",
     "Name": "Odzyskana jednostka wydobywcza floty",
     "Group": "Odzyskane zasoby klasy S do rozmieszczenia",
-    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć zdolności wydobywcze floty."
+    "Description": "Rozmieszczalne ulepszenie frachtowca, odzyskane z: %NAME%.\n\nMożna ponownie zainstalować na własnym statku głównym, aby ulepszyć zdolności wydobywcze floty.",
+    "BaseValueUnits": 480.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod107",
+    "Icon": "products/107.png",
     "Name": "Niegdyś użyteczne sprężyny",
     "Group": "Subkomponent statku gwiezdnego",
-    "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w terminalu wyposażenia statków gwiezdnych na stacji kosmicznej.\n\nMożna go jedynie sprzedać w terminalu handlowym."
+    "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w terminalu wyposażenia statków gwiezdnych na stacji kosmicznej.\n\nMożna go jedynie sprzedać w terminalu handlowym.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod108",
+    "Icon": "products/108.png",
     "Name": "Garść trybów",
     "Group": "Subkomponent statku gwiezdnego",
-    "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w terminalu wyposażenia statków gwiezdnych na stacji kosmicznej.\n\nMożna go jedynie sprzedać w terminalu handlowym."
+    "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w terminalu wyposażenia statków gwiezdnych na stacji kosmicznej.\n\nMożna go jedynie sprzedać w terminalu handlowym.",
+    "BaseValueUnits": 10000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod109",
+    "Icon": "products/109.png",
     "Name": "Wzmocnione rury",
     "Group": "Subkomponent statku gwiezdnego",
-    "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w terminalu wyposażenia statków gwiezdnych na stacji kosmicznej.\n\nMożna go jedynie sprzedać w terminalu handlowym."
+    "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w terminalu wyposażenia statków gwiezdnych na stacji kosmicznej.\n\nMożna go jedynie sprzedać w terminalu handlowym.",
+    "BaseValueUnits": 50000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 25.0,
+    "Colour": "CCCCCC",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod110",
+    "Icon": "products/110.png",
     "Name": "Podejrzany pakiet (towary)",
     "Group": "Kontrabanda",
-    "Description": "Podejrzanie wyglądająca przesyłka pozyskana w wyniku nietypowej transakcji. Sprzedawca podkreślał, że zawiera jakiegoś rodzaju technologię.\n\nWybierz z ekwipunku (INVENTORY) i użyj FE_ALT1, by sprawdzić jej zawartość. Nie podlega zwrotowi."
+    "Description": "Podejrzanie wyglądająca przesyłka pozyskana w wyniku nietypowej transakcji. Sprzedawca podkreślał, że zawiera jakiegoś rodzaju technologię.\n\nWybierz z ekwipunku (INVENTORY) i użyj FE_ALT1, by sprawdzić jej zawartość. Nie podlega zwrotowi.",
+    "BaseValueUnits": 150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod111",
+    "Icon": "products/111.png",
     "Name": "Podejrzany pakiet (technologia)",
     "Group": "Kontrabanda",
-    "Description": "Podejrzanie wyglądająca przesyłka pozyskana w wyniku nietypowej transakcji. Sprzedawca podkreślał, że zawiera jakiegoś rodzaju wysokiej wartości lub ciekawy przedmiot.\n\nWybierz z ekwipunku (INVENTORY) i użyj FE_ALT1, by sprawdzić jej zawartość. Nie podlega zwrotowi."
+    "Description": "Podejrzanie wyglądająca przesyłka pozyskana w wyniku nietypowej transakcji. Sprzedawca podkreślał, że zawiera jakiegoś rodzaju wysokiej wartości lub ciekawy przedmiot.\n\nWybierz z ekwipunku (INVENTORY) i użyj FE_ALT1, by sprawdzić jej zawartość. Nie podlega zwrotowi.",
+    "BaseValueUnits": 200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod112",
+    "Icon": "products/112.png",
     "Name": "Podejrzany pakiet (broń)",
     "Group": "Kontrabanda",
-    "Description": "Podejrzanie wyglądająca przesyłka pozyskana w wyniku nietypowej transakcji. Sprzedawca podkreślał, że zawiera jakiegoś rodzaju technologię bojową.\n\nWybierz z ekwipunku (INVENTORY) i użyj FE_ALT1, by sprawdzić jej zawartość. Nie podlega zwrotowi."
+    "Description": "Podejrzanie wyglądająca przesyłka pozyskana w wyniku nietypowej transakcji. Sprzedawca podkreślał, że zawiera jakiegoś rodzaju technologię bojową.\n\nWybierz z ekwipunku (INVENTORY) i użyj FE_ALT1, by sprawdzić jej zawartość. Nie podlega zwrotowi.",
+    "BaseValueUnits": 350.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod113",
+    "Icon": "products/113.png",
     "Name": "Okablowanie hydrauliczne",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Specjalistyczne okablowanie i przewody kontrolne z giętkiego materiału, który umożliwia przesył energii oraz sygnału, a także bezpośrednią kontrolę nad zdalnymi komponentami.\n\nUżywane w produkcji wielu zaawansowanych technologii."
+    "Description": "Specjalistyczne okablowanie i przewody kontrolne z giętkiego materiału, który umożliwia przesył energii oraz sygnału, a także bezpośrednią kontrolę nad zdalnymi komponentami.\n\nUżywane w produkcji wielu zaawansowanych technologii.",
+    "BaseValueUnits": 3600.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod3",
+        "Quantity": 2
+      },
+      {
+        "Id": "raw16",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod114",
+    "Icon": "products/114.png",
     "Name": "Komputer kwantowy",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Niezwykle szybka zaawansowana jednostka obliczeniowa. Pozwala na rozwiązywanie niemożliwych inaczej równań w czasie rzeczywistym. Nie gwarantuje jednak ochrony przed dekoherencją.\n\nUżywany w produkcji wielu zaawansowanych technologii."
+    "Description": "Niezwykle szybka zaawansowana jednostka obliczeniowa. Pozwala na rozwiązywanie niemożliwych inaczej równań w czasie rzeczywistym. Nie gwarantuje jednak ochrony przed dekoherencją.\n\nUżywany w produkcji wielu zaawansowanych technologii.",
+    "BaseValueUnits": 4200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod7",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod115",
+    "Icon": "products/115.png",
     "Name": "Rezonator magnetyczny",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Elektromagnetyczny oscylator częstotliwości, który jest w stanie funkcjonować w różnych warunkach dzięki ferromagnetycznym i nieferromagnetycznym właściwościom.\n\nUżywany w produkcji wielu zaawansowanych technologii."
+    "Description": "Elektromagnetyczny oscylator częstotliwości, który jest w stanie funkcjonować w różnych warunkach dzięki ferromagnetycznym i nieferromagnetycznym właściwościom.\n\nUżywany w produkcji wielu zaawansowanych technologii.",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 40
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod116",
+    "Icon": "products/116.png",
     "Name": "Lustro solarne",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Specjalistyczny komponent optyczny. To lustro o niewiarygodnie wypolerowanej powierzchni potrafi selektywnie filtrować różne długości fal świetlnych i zmieniać wzór odbicia w zależności od pobliskich pól magnetycznych.\n\nUżywane w produkcji wielu zaawansowanych technologii."
+    "Description": "Specjalistyczny komponent optyczny. To lustro o niewiarygodnie wypolerowanej powierzchni potrafi selektywnie filtrować różne długości fal świetlnych i zmieniać wzór odbicia w zależności od pobliskich pól magnetycznych.\n\nUżywane w produkcji wielu zaawansowanych technologii.",
+    "BaseValueUnits": 6150.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod117",
+    "Icon": "products/117.png",
     "Name": "Komora amino",
     "Group": "Wytwarzany komponent technologiczny",
-    "Description": "Specjalistyczne urządzenie katalizy biologicznej.\n\nTa jednostka wykorzystuje naturalnie występujące enzymy w celu łatwiejszego przetwarzania energii i szybszego przetwarzania w wielu zaawansowanych technologiach."
+    "Description": "Specjalistyczne urządzenie katalizy biologicznej.\n\nTa jednostka wykorzystuje naturalnie występujące enzymy w celu łatwiejszego przetwarzania energii i szybszego przetwarzania w wielu zaawansowanych technologiach.",
+    "BaseValueUnits": 12300.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 10.0,
+    "Colour": "F3A923",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "FactoryOverride",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 25
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw17",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   },
   {
     "Id": "prod118",
+    "Icon": "products/118.png",
     "Name": "Świecący minerał",
     "Group": "Cenna próbka skały",
-    "Description": "Choć jego powierzchnia jest brudna i matowa, wypolerowanie tego kamienia wydobywa jego wewnętrzny blask bijący tuż pod lekko opalizującą powierzchnią.\n\nWybierz go z ekwipunku (INVENTORY) i rozłup, używając FE_ALT1."
+    "Description": "Choć jego powierzchnia jest brudna i matowa, wypolerowanie tego kamienia wydobywa jego wewnętrzny blask bijący tuż pod lekko opalizującą powierzchnią.\n\nWybierz go z ekwipunku (INVENTORY) i rozłup, używając FE_ALT1.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "BlueprintNaniteCost": 1,
+    "HideBlueprintNaniteCost": false,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
   }
 ]
