@@ -1,5 +1,157 @@
 [
   {
+    "Id": "?ANTIRECIPE",
+    "Race": "None",
+    "IsFactory": false,
+    "Number": 0,
+    "IncomingMessages": [],
+    "Options": [
+      {
+        "Name": "Take Antimatter formula",
+        "Text": "With this knowledge, I can create Warp Cells. The final puzzle-piece. I can now travel anywhere I please. Or should I follow Atlas? Or find Nada and Polo?",
+        "RewardIds": [
+          "RECIP_ANTI"
+        ]
+      }
+    ]
+  },
+  {
+    "Id": "?SUSPENSION",
+    "Race": "None",
+    "IsFactory": false,
+    "Number": 0,
+    "IncomingMessages": [],
+    "Options": [
+      {
+        "Name": "FINAL_FACTORY_OPT_A_1",
+        "Text": "FINAL_FACTORY_RES_A_1",
+        "RewardIds": [
+          "RECIP_ANTI"
+        ]
+      }
+    ]
+  },
+  {
+    "Id": "?ALL_FACT_REWARD",
+    "Race": "None",
+    "IsFactory": false,
+    "Number": 0,
+    "IncomingMessages": [
+      "Przywrócono normalne działanie ośrodka i mam teraz dostęp do głównego panelu kontrolnego. Chyba uda mi się zmienić proces produkcji na moją korzyść."
+    ],
+    "Options": [
+      {
+        "Name": "Extract nanites",
+        "Text": "",
+        "RewardIds": [
+          "TECHFRAG_M",
+          "STANDING"
+        ]
+      },
+      {
+        "Name": "Create Multi-Tool Expansion Slot",
+        "Text": "The machinery whirs as the factory creates a , perfect for use at a Multi-Tool upgrade unit on the Space Station.",
+        "RewardIds": [
+          "WEAP_TOKEN",
+          "STANDING"
+        ]
+      },
+      {
+        "Name": "Learn new recipe",
+        "Text": "",
+        "RewardIds": [
+          "FACT_PROD",
+          "STANDING"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "?ALL_FACT_REWARD_SHORT",
+    "Race": "None",
+    "IsFactory": false,
+    "Number": 0,
+    "IncomingMessages": [
+      "Udało się przywrócić normalne działanie ośrodka i mam teraz dostęp do głównego panelu kontrolnego."
+    ],
+    "Options": [
+      {
+        "Name": "Extract nanites",
+        "Text": "",
+        "RewardIds": [
+          "TECHFRAG_M",
+          "STANDING"
+        ]
+      },
+      {
+        "Name": "Create Multi-Tool Expansion Slot",
+        "Text": "The machinery whirs as the factory creates a , perfect for use at a Multi-Tool upgrade unit on the Space Station.",
+        "RewardIds": [
+          "WEAP_TOKEN",
+          "STANDING"
+        ]
+      },
+      {
+        "Name": "Learn new recipe",
+        "Text": "",
+        "RewardIds": [
+          "FACT_PROD",
+          "STANDING"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
+    "Id": "?ALL_FACT_REWARD_VSHORT",
+    "Race": "None",
+    "IsFactory": false,
+    "Number": 0,
+    "IncomingMessages": [
+      "Udało się przywrócić normalne działanie ośrodka."
+    ],
+    "Options": [
+      {
+        "Name": "Extract nanites",
+        "Text": "",
+        "RewardIds": [
+          "TECHFRAG_M",
+          "STANDING"
+        ]
+      },
+      {
+        "Name": "Create Multi-Tool Expansion Slot",
+        "Text": "The machinery whirs as the factory creates a , perfect for use at a Multi-Tool upgrade unit on the Space Station.",
+        "RewardIds": [
+          "WEAP_TOKEN",
+          "STANDING"
+        ]
+      },
+      {
+        "Name": "Learn new recipe",
+        "Text": "",
+        "RewardIds": [
+          "FACT_PROD",
+          "STANDING"
+        ]
+      },
+      {
+        "Name": "Leave",
+        "Text": "",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
     "Id": "TRA_HARV_1",
     "Race": "Traders",
     "IsFactory": false,
@@ -664,6 +816,33 @@
     ]
   },
   {
+    "Id": "?TRA_FACTORY14_MAIN",
+    "Race": "Traders",
+    "IsFactory": true,
+    "Number": 0,
+    "IncomingMessages": [
+      "Friend healing and repair station initializing! Please, be happy!"
+    ],
+    "Options": [
+      {
+        "Name": "Fire Multi-Tool",
+        "Text": "I grab my Multi-Tool with my free hand and fire at the terminal. It explodes, releasing its grip. A few shards of metal remain embedded in my fingers, but I am free.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Struggle",
+        "Text": "I struggled against the grip of the machine. As I pull, my hand rips free. The terminal is covered in blood.",
+        "RewardIds": []
+      },
+      {
+        "Name": "Wait",
+        "Text": "A beautiful, clean feeling overcomes me. The terminal pumps some sort of healing fluid into my Exosuit. I feel utterly refreshed.\nThe process completes, and the facility accepts me as one if its own.",
+        "InteractionId": "?ALL_FACT_REWARD",
+        "RewardIds": []
+      }
+    ]
+  },
+  {
     "Id": "TRA_FACTORY1",
     "Race": "Traders",
     "IsFactory": true,
@@ -677,6 +856,7 @@
       {
         "Name": "Engage coolant chamber network",
         "Text": "Numbers on the terminal display begin to stabilise, red flashing symbols morphing into a calming blue array of light.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -710,6 +890,7 @@
       {
         "Name": "Insert carbon",
         "Text": "Lights flicker across the facility. Machinery rumbles deep beneath my feet as the drill motor whirrs into life. The facility is back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -745,6 +926,7 @@
       {
         "Name": "Activate emergency vent",
         "Text": "A low rumble passes underneath my feet as I activate the emergency vent. Slowly but surely the indicators on the panel start to stabilise and the warning lights soften. The facility comes back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -782,6 +964,7 @@
       {
         "Name": "Activate radiation dampening field",
         "Text": "The wail of the alarm system fades and the temperature readings slowly decay back to normal levels. Disaster has been averted, and the facility's production line returns to normal.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -824,6 +1007,7 @@
       {
         "Name": "Increase levels",
         "Text": "The warnings cease, and the system maintains its production. The increased pressure has kept the fabricators whirring and the facility at full power.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -857,6 +1041,7 @@
       {
         "Name": "Reduce electromagnetic flow",
         "Text": "A slow shiver pulses through my body as the powerful electromagnetic wave sweeps across the facility. Almost immediately, the terminal screen clears up. The production facility is back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -885,6 +1070,7 @@
       {
         "Name": "Revert system",
         "Text": "I reset the system back to its default production loadout. Things appear to be operating as expected.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -955,6 +1141,7 @@
       {
         "Name": "Trade sodium",
         "Text": "A relieved beaked trader shouts their thanks through the speaker systems. The success of the transaction appears to convince the security systems that I am a legitimate user.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -1023,6 +1210,7 @@
       {
         "Name": "Scan hand",
         "Text": "I place my Exosuit glove upon the indent.\nWithout warning, a thousand tiny needles shoot out of the reader, meshing my hand to the machine. A synthetic voice speaks to me.",
+        "InteractionId": "?TRA_FACTORY14_MAIN",
         "RewardIds": []
       },
       {
@@ -1046,16 +1234,19 @@
       {
         "Name": "Sketch starship components",
         "Text": "The terminal accepts my design and the installation start-up procedure completes. I hope the Gek who run this facility are happy with my choice.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
         "Name": "Sketch synthetic plants",
         "Text": "The terminal accepts my design and the installation start-up procedure completes. The Gek who run this facility may appreciate the extra green in their environment.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
         "Name": "Sketch confectionery",
         "Text": "The terminal accepts my design and the installation start-up procedure completes. I hope the Gek who run this facility are happy with their vast pile of sugar.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -1089,6 +1280,7 @@
       {
         "Name": "Insert organic elements",
         "Text": "The carbon-based fuel slips down the hopper's metal throat. I hear a gurgle as it feeds into the generator system.\nI throw the switch.  The generator ticks over, then roars into life. The surge of power from the generator triggers the facility's main reactor, and the machinery comes back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -1112,6 +1304,7 @@
       {
         "Name": "Activate incineration banks",
         "Text": "Warmth spreads through the facility. The air around me remains strange to look at, but the production systems return online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -1145,6 +1338,7 @@
       {
         "Name": "Neutralise electrolyte solution",
         "Text": "There is a hiss as the alkaline solution floods the facility's pipes. Machinery strains, trying to break free of the blockage in the gears.\nWith an unsettling snap, the production facility comes back online. The remains of the lifeform must have been washed free of the mechanisms.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -1221,6 +1415,7 @@
       {
         "Name": "Reverse tunnel pressurisation",
         "Text": "I hear a deep, distant noise, a subterranean roll of thunder. Slowly the resource vaults beneath the surface stop spilling their contents into the earth, and eventually begin to refill. The facility comes back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -2086,11 +2281,13 @@
       {
         "Name": "Apply override chip",
         "Text": "I apply an override circuit to the security relay. Remarkably, my ad-hoc wiring seems to work. The alarm stops, and the terminal grants me full access.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
         "Name": "Cut input wires",
         "Text": "I snap the input wires that lead from the security system to the master control terminal. Remarkably, this seems to work. The alarm stops, and the error seems to reset the terminal.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -2114,6 +2311,7 @@
       {
         "Name": "Bark 'Grah!'",
         "Text": "I bark aggressively at the terminal. This appears to satisfy whatever demand was being made of me. Access is granted.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -2153,6 +2351,7 @@
       {
         "Name": "Hold breath",
         "Text": "I hold my breath. An age seems to pass. Finally, moments before I lose consciousness, the terminal flashes a green light. I have been accepted as a Vy'keen.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -2165,6 +2364,7 @@
       {
         "Name": "Deploy Vy'keen Dagger",
         "Text": "I inhale deeply before stabbing myself with the dagger.. I feel so alive; shot through with adrenaline; blood pumping hard through my veins; sparks crackling down my nerves. It is glorious. Grah! Grah!\nThe terminal accepts me as one of the Vy'keen and allows me access.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_WAR"
         ]
@@ -2197,6 +2397,7 @@
       {
         "Name": "Override intruder alert",
         "Text": "The facility becomes operational.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -2220,6 +2421,7 @@
       {
         "Name": "Pick up metal debris",
         "Text": "I pick up a large piece of scrap metal from the floor, presumably deposited there when I blew up the door.\nThis has the desired effect: my weight has been increased to within the non-suspicious range for a Vy'keen warrior. The terminal grants me access.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -2230,6 +2432,7 @@
       {
         "Name": "Jump up and down",
         "Text": "My rapid jumps appear to confuse whatever security device is embedded in the floor. Eventually, it either overloads or is convinced by my aggression that I am a true Vy'keen. I am granted full access to the facility.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_WAR"
         ]
@@ -2255,6 +2458,7 @@
       {
         "Name": "Block fuel lines",
         "Text": "I clamp the fuel lines. There is a brief moment of tension as pressure builds in the pipes.\nIt stabilises. The countdown ends, and nothing happens. With some sort of disaster presumably averted, the terminal unlocks and grants me access.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_WAR"
         ]
@@ -2262,6 +2466,7 @@
       {
         "Name": "Shutdown catalyst pipes",
         "Text": "I clamp the catalyst flow. A minor explosion scorches my arm, before facility operations resume.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "DAMAGESMALL"
         ]
@@ -2328,6 +2533,7 @@
       {
         "Name": "Broadcast safety code",
         "Text": "I transmit the safety override code, putting an end to the emergency transmission. The Vy'keen warship stands down, broadcasting a respectful 'Grah'. The terminal unlocks.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_WAR"
         ]
@@ -2335,6 +2541,7 @@
       {
         "Name": "Hack in safety code",
         "Text": "I attach a bypass circuit, allowing me to transmit the safety override code and put an end to the emergency transmission. The Vy'keen warship stands down, broadcasting a respectful 'Grah'. The terminal unlocks.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_WAR"
         ]
@@ -2365,6 +2572,7 @@
       {
         "Name": "Decrease coolant flow",
         "Text": "I manually override my Exosuit's coolant flow. Slowly but surely a deep chill spreads across my body. My bones ache. My blood feels like ice, stabbing against every fibre of my being.\nThe image on the terminal screen fades from a dramatic red to a total black. I am invisible. The security alert ends, and the terminal comes back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -2398,6 +2606,7 @@
       {
         "Name": "Insert catalyst",
         "Text": "The terminal accepts my input. It barks aggressively at me, but does go on to grant full systems access. It seems I have passed the test. Perhaps the lifeform whose place I took will be grateful.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -2431,6 +2640,7 @@
       {
         "Name": "Insert Pugneum",
         "Text": "I insert a supply of pugneum into the input hopper. Machinery jumps into life. The electronic wail becomes louder still. A moment passes.\nThe sinister activity ends as strangely as it begun. The terminal returns to the familiar dull text of a facility control panel.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_WAR"
         ]
@@ -2438,6 +2648,7 @@
       {
         "Name": "Incinerate vaults",
         "Text": "Overcome with suspicion, I initiate an emergency incineration of the facility's storage vaults. The sinister electronic wail grows louder, sharper, as the fires begin their work. Then, suddenly, silence.\nThe strange atmosphere of the facility fades away. The terminal returns to the familiar dull text of a master control panel.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_WAR"
         ]
@@ -2463,6 +2674,7 @@
       {
         "Name": "Insert metal",
         "Text": "I fill the input hopper with a fresh supply of ferrite. The machines continue to chatter, but now do so smoothly, their supply lines well-fed.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_WAR"
         ]
@@ -2498,6 +2710,7 @@
       {
         "Name": "Issue counter-order",
         "Text": "The terminal relays an apologetic bark. The demand is waived. Full access is granted to the facility's control panel.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_WAR"
         ]
@@ -2512,6 +2725,7 @@
       {
         "Name": "Insert Chromatic Metal",
         "Text": "The terminal relays a resonant bark, the response of a happy warrior. With their demand satisfied, full access is restored to the facility's control panel.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -2540,6 +2754,7 @@
       {
         "Name": "Stand still",
         "Text": "I stand perfectly still as the scanners sweep over me, their electronic eyes unblinking. Eventually, they pass.\nWith their checks concluded, the security alert comes to an end. The terminal unlocks.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -2563,6 +2778,7 @@
       {
         "Name": "Increase electrical flow",
         "Text": "I increase the power flow to the facility's heart. It judders, then establishes a regular beat. Its strange existence continues.\nWith this emergency over, the terminal reverts to a standard factory input system.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_WAR"
         ]
@@ -3458,6 +3674,7 @@
       {
         "Name": "Force restart",
         "Text": "I forcibly restart the system.. After a short delay, the screen comes back to life. All trace of the security programme has vanished.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -3488,6 +3705,7 @@
       {
         "Name": "Attempt reconstruction",
         "Text": "The data recovery operation completes successfully. One by one the errors clear from the terminal screen.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3495,6 +3713,7 @@
       {
         "Name": "Delete file",
         "Text": "Manually deleting the corrupted file appears to free the machine from its degenerate loop. I can only hope it contained nothing valuable.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3520,6 +3739,7 @@
       {
         "Name": "Quarantine alien process",
         "Text": "The quarantine operation is succesful and the alien code is purged from the system. The alarms fall silent.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3527,6 +3747,7 @@
       {
         "Name": "Permit alien process",
         "Text": "I tap out a few commands, acknowleding but not removing the virus.\nThere is a short, almost deliberate delay. Runes shift across the display. The terminal grants me root access to the facility. The alien code resumes its harvesting operation.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3557,6 +3778,7 @@
       {
         "Name": "Wait",
         "Text": "I wait, patient. The scan finishes processing and uploads its data. With this special task complete, the facility comes back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -3580,11 +3802,13 @@
       {
         "Name": "Recall probe",
         "Text": "I hear the whirr of gears and the hissing of metal cable. The facility shudders slightly as the machinery bites into the cable and begins to pull.\nAfter an agonising delay, the terminal reports a successful extraction. The alarms cease.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
         "Name": "Restart probe",
         "Text": "I try several times to restart the probe. It fails to respond to my commands. Meanwhile, the malfunction alerts grow ever harsher.",
+        "InteractionId": "EXP_FACTORY7",
         "RewardIds": []
       },
       {
@@ -3622,6 +3846,7 @@
       {
         "Name": "End experiment",
         "Text": "I tap a few commands into the terminal, bringing it to an end. A small amount of ash is ejected from a nearby hopper.\nThe machinery hums as it reconfigures itself for standard research operations.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -3652,11 +3877,13 @@
       {
         "Name": "Submit cancellation request",
         "Text": "The flames in the resource vault subside. The facility has lost some of its supplies, but is otherwise undamaged.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
         "Name": "Activate fire extinguishers",
         "Text": "The flames in the resource vault subside. The facility has lost some of its supplies, but is otherwise undamaged.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -3688,6 +3915,7 @@
       {
         "Name": "Repair drill bit",
         "Text": "The asteroid mining drill bit is replaced.\n\nIt remains non-operational.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -3721,6 +3949,7 @@
       {
         "Name": "Override security alert",
         "Text": "Overriding the security alert immediately stops the alarm. With no reason to prolong the shutdown process, the facility's AI reverses the element cascade and returns system to normal.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3728,6 +3957,7 @@
       {
         "Name": "Inject coolant",
         "Text": "I active the facility's coolant injectors. The cascade continues, but the warnings become less severe. Eventually, they stop. The problem has been brought under control, though the facility is substantially less wealthy.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -3761,6 +3991,7 @@
       {
         "Name": "Seal off central AI",
         "Text": "I safeguard the control units that house the facility's primary AI. With the computer running the facility, the appropriate countermeasures are soon deployed and the hostile environment purged.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -3789,6 +4020,7 @@
       {
         "Name": "Delete Sentinel scan",
         "Text": "I delete an unusually large file, a scan the network process that controls the nearby Sentinel drones. There is a sudden, large jump in available computational resources. The installation's primary processes begin to restart.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3824,6 +4056,7 @@
       {
         "Name": "Reset primary terminal",
         "Text": "I reset the primary interface. One by one, systems come back online. The power fluctuations cease.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3849,6 +4082,7 @@
       {
         "Name": "Reduce power delivery levels",
         "Text": "I reduce power delivery across the board. The installation returns to acceptable activity levels.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": []
       },
       {
@@ -3882,6 +4116,7 @@
       {
         "Name": "Initiate power surge",
         "Text": "I boost power to the wiring loom. A smell of roasted meat wafts up from the systems below. The system comes back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3889,6 +4124,7 @@
       {
         "Name": "Flush production network",
         "Text": "I send a surge of highly acidic cleaning fluid through the pipes.  The creature is swept away. I hear a faint hiss as it bubbles away to nothingness. The system comes back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3896,6 +4132,7 @@
       {
         "Name": "Leave creature alone",
         "Text": "I wait. Driven by the alarms, the creature struggles desperately for the exit. Eventually, it breaks free. The system comes back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3921,6 +4158,7 @@
       {
         "Name": "Supply metal",
         "Text": "I feed the metal back into the facility's supply hopper. Production comes back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3928,6 +4166,7 @@
       {
         "Name": "Supply metal",
         "Text": "I feed the metal back into the facility's supply hopper. Production comes back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]
@@ -3935,6 +4174,7 @@
       {
         "Name": "Supply metal",
         "Text": "I feed the metal back into the facility's supply hopper. Production comes back online.",
+        "InteractionId": "?ALL_FACT_REWARD",
         "RewardIds": [
           "STD_INC_EXP"
         ]

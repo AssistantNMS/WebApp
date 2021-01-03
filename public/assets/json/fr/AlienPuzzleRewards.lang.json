@@ -1127,7 +1127,15 @@
   {
     "RewardId": "RECIP_ANTI",
     "Type": "GiveAll",
-    "Rewards": []
+    "Rewards": [
+      {
+        "Id": "prod1",
+        "Type": "ProductRecipe",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
   },
   {
     "RewardId": "STANDING",
