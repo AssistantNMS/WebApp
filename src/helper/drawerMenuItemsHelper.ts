@@ -28,6 +28,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     isActive: false
   });
   menuItems.push({
+    name: i18next.t(LocaleKey.patreon).toString(),
+    link: routes.patreon,
+    icon: '/assets/images/patreon.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
+  menuItems.push({
     name: i18next.t(LocaleKey.donation).toString(),
     link: routes.donation,
     icon: '/assets/images/drawer/donation.png',

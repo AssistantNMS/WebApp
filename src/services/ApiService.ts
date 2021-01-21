@@ -6,9 +6,6 @@ import { ResultWithValue } from '../contracts/results/ResultWithValue';
 import { BaseApiService } from './BaseApiService';
 import { WeekendMissionViewModel } from '../contracts/generated/Model/HelloGames/weekendMissionViewModel';
 
-
-
-
 export class ApiService extends BaseApiService {
     async getCommunityMission(platform: PlatformType): Promise<ResultWithValue<CommunityMissionViewModel>> {
         return await this.get<CommunityMissionViewModel>(`HelloGames/CommunityMission/${platform.toString()}`);
