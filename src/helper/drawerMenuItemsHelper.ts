@@ -7,13 +7,6 @@ import { LocaleKey } from '../localization/LocaleKey';
 export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   const menuItems = [];
   menuItems.push({
-    name: i18next.t(LocaleKey.about).toString(),
-    link: routes.about,
-    icon: '/assets/images/drawer/about.png',
-    iconType: DrawerIconType.Custom,
-    isActive: false
-  });
-  menuItems.push({
     name: i18next.t(LocaleKey.whatIsNew).toString(),
     link: 'https://tools.nmsassistant.com/what-is-new',
     icon: '/assets/images/drawer/whatIsNew.png',
@@ -56,13 +49,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
-  menuItems.push({
-    name: 'Online Meetup 2020',
-    link: routes.onlineMeetup2020,
-    icon: 'public',
-    iconType: DrawerIconType.Material,
-    isActive: false
-  });
+  // menuItems.push({
+  //   name: 'Online Meetup 2020',
+  //   link: routes.onlineMeetup2020,
+  //   icon: 'public',
+  //   iconType: DrawerIconType.Material,
+  //   isActive: false
+  // });
   menuItems.push(menuItemSeperator);
   menuItems.push({
     name: i18next.t(LocaleKey.cart).toString(),
@@ -107,6 +100,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   //   iconType: DrawerIconType.Material,
   //   isActive: false
   // });
+  menuItems.push({
+    name: i18next.t(LocaleKey.about).toString(),
+    link: routes.about,
+    icon: '/assets/images/drawer/about.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
   menuItems.push({
     name: i18next.t(LocaleKey.feedback).toString(),
     link: "https://tools.nmsassistant.com/feedback",

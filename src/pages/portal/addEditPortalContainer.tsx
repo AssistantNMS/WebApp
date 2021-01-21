@@ -49,7 +49,7 @@ export class AddEditPortalContainerUnconnected extends React.Component<IProps, I
 
     editName = async () => {
         const { value: newName } = await Swal.fire({
-            title: i18next.t(LocaleKey.portalName),
+            title: i18next.t(LocaleKey.name),
             input: 'text',
             inputValue: this.state.item.Name,
             showCancelButton: true

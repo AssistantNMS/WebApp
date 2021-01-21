@@ -12,7 +12,6 @@ import { WeekendMissionStage } from '../../../contracts/helloGames/weekendMissio
 import { RequiredItem } from '../../../contracts/RequiredItem';
 import { anyObject } from '../../../helper/typescriptHacks';
 import { LocaleKey } from '../../../localization/LocaleKey';
-import { ApiService } from '../../../services/ApiService';
 import { WeekendMissionDialog } from './weekendMissionDialog';
 import { WeekendMissionDialogContent } from './weekendMissionDialogContent';
 
@@ -22,7 +21,6 @@ interface IProps {
 
     // Container State
     title: string;
-    apiService: ApiService;
     weekendMissionStage: WeekendMissionStage;
     status: NetworkState;
 
@@ -68,9 +66,12 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                             const timeStamp = (new Date()).getTime();
                             setMessageFlow({ ...weekendMission.NpcMessageFlows, timeStamp });
                             setOpen(true)
-                        }} />
+                        }} >
+                            <i className="material-icons">chat</i>
+                            <span>{i18next.t(LocaleKey.readConversation).toString()}</span>
+                        </PositiveButton>
                     </div>
-                </div>
+                </div >
                 <hr />
                 <div className="row">
                     <div className="col-12">
@@ -87,7 +88,23 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                         <PositiveButton onClick={() => {
                             setMessageFlow(weekendMission.PortalMessageFlows);
                             setOpen(true)
-                        }} />
+                        }} >
+                            <i className="material-icons">chat</i>
+                            <span>{i18next.t(LocaleKey.readConversation).toString()}</span>
+                        </PositiveButton>
+                    </div>
+                </div>
+                <hr />
+                <div className="row">
+                    <div className="col-6">
+                        <PositiveButton onClick={() => { }} >
+                            <span>{i18next.t(LocaleKey.previousWeekendMission).toString()}</span>
+                        </PositiveButton>
+                    </div>
+                    <div className="col-6">
+                        <PositiveButton onClick={() => { }} >
+                            <span>{i18next.t(LocaleKey.nextWeekendMission).toString()}</span>
+                        </PositiveButton>
                     </div>
                 </div>
             </>

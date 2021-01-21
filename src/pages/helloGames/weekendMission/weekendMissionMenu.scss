@@ -1,0 +1,19 @@
+.weekend-mission.row .weekend-mission-card {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 20em;
+    text-align: right;
+
+    .bottom-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: rgb(248, 249, 250);
+    }
+}

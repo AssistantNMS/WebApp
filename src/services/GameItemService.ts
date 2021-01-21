@@ -280,13 +280,13 @@ export class GameItemService extends BaseJsonService {
     };
   }
 
-  async getWeekendMissionStage(seasonId: string, levelId: number): Promise<ResultWithValue<WeekendMissionStage>> {
+  async getWeekendMissionStage(weekendMissionJson: LocaleKey, seasonId: string, levelId: number): Promise<ResultWithValue<WeekendMissionStage>> {
     let result: any = {};
 
     if (!seasonId) return { isSuccess: false, value: result, errorMessage: 'seasonId specified is invallid' };
     if (!levelId) return { isSuccess: false, value: result, errorMessage: 'levelId specified is invallid' };
 
-    var path = i18next.t(LocaleKey.weekendMissionJson).toString();
+    var path = i18next.t(weekendMissionJson).toString();
     const weekendMissionsResult = await this.getAsset<Array<WeekendMission>>(`json/${path}.json`);
     if (!weekendMissionsResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: result.errorMessage };
 
