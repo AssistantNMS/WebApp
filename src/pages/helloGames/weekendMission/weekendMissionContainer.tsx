@@ -14,12 +14,6 @@ interface IProps {
     location: any;
     match: any;
     history: any;
-
-    // weekendMissionJson: LocaleKey;
-    // season: string;
-    // level: number;
-    // maxLevel: number;
-    // minLevel: number;
 }
 
 interface IState {
@@ -27,6 +21,12 @@ interface IState {
     gameItemService: GameItemService;
     weekendMissionStage: WeekendMissionStage;
     status: NetworkState;
+
+    weekendMissionJson: LocaleKey;
+    season: string;
+    level: number;
+    maxLevel: number;
+    minLevel: number;
 }
 
 export class WeekendMissionContainerUnconnected extends React.Component<IProps, IState> {
@@ -37,20 +37,28 @@ export class WeekendMissionContainerUnconnected extends React.Component<IProps, 
             title: i18next.t(LocaleKey.weekendMission),
             gameItemService: new GameItemService(),
             weekendMissionStage: anyObject,
-            status: NetworkState.Loading
+            status: NetworkState.Loading,
+
+            weekendMissionJson: LocaleKey.weekendMissionSeason1Json,
+            season: '',
+            level: 0,
+            maxLevel: 0,
+            minLevel: 0,
         };
     }
 
     componentDidMount() {
-        this.fetchWeekendMissionStage(
-            this.props.location?.state?.weekendMissionJson,
-            this.props.location?.state?.season,
-            this.props.location?.state?.level,
-        );
+        this.fetchWeekendMissionStage({
+            weekendMissionJson: this.props.location?.state?.weekendMissionJson,
+            season: this.props.location?.state?.season,
+            level: this.props.location?.state?.level,
+            maxLevel: this.props.location?.state?.maxLevel,
+            minLevel: this.props.location?.state?.minLevel,
+        });
     }
 
-    fetchWeekendMissionStage = async (weekendMissionJson: LocaleKey, season: string, levelId: number) => {
-        var weekendMissionResult = await this.state.gameItemService.getWeekendMissionStage(weekendMissionJson, season, levelId);
+    fetchWeekendMissionStage = async (wmProperties: any) => {
+        var weekendMissionResult = await this.state.gameItemService.getWeekendMissionStage(wmProperties.weekendMissionJson, wmProperties.season, wmProperties.level);
         if (!weekendMissionResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -62,15 +70,31 @@ export class WeekendMissionContainerUnconnected extends React.Component<IProps, 
         this.setState(() => {
             return {
                 weekendMissionStage: weekendMissionResult.value,
-                status: NetworkState.Success
+                status: NetworkState.Success,
+
+                weekendMissionJson: wmProperties.weekendMissionJson,
+                season: wmProperties.season,
+                level: wmProperties.level,
+                maxLevel: wmProperties.maxLevel,
+                minLevel: wmProperties.minLevel,
             }
         });
+    }
+
+    navigateToWeekendMissionLevel = (newLevel: number) => {
+        this.setState(() => {
+            return {
+                status: NetworkState.Loading,
+            }
+        });
+        this.fetchWeekendMissionStage({ ...this.state, level: newLevel });
     }
 
     render() {
         return (
             <WeekendMissionPresenter
                 {...this.state} {...this.props}
+                navigateToWeekendMissionLevel={this.navigateToWeekendMissionLevel}
             />
         );
     }

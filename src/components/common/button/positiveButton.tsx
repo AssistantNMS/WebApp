@@ -12,7 +12,8 @@ interface IProps {
 export const PositiveButton: React.FC<IProps> = (props: IProps) => {
     return (
         <>
-            <div className={classNames('customButton', props.additionalClass || '')}
+            <div className={classNames('customButton noselect', props.additionalClass || '')}
+                draggable={false}
                 onClick={props.onClick}>
                 {props.children}
             </div>

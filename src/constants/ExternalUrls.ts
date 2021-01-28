@@ -18,4 +18,6 @@ export class ExternalUrls {
   static defaultProfilePic = 'https://nmsassistant.com/assets/img/vykeen.png';
   static bat = 'https://brave.com/nms136';
   static openCollective = 'https://opencollective.com/assistantnms';
+  static nmsWeekendMissionWiki =
+    'https://nomanssky.gamepedia.com/Weekend_Missions_-_Lore';
 }

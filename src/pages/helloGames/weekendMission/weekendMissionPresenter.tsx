@@ -25,6 +25,10 @@ interface IProps {
     status: NetworkState;
 
     // Container Specific
+    level: number;
+    maxLevel: number;
+    minLevel: number;
+    navigateToWeekendMissionLevel: (newLevel: number) => void;
 }
 
 export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
@@ -95,17 +99,24 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                 </div>
                 <hr />
-                <div className="row">
-                    <div className="col-6">
-                        <PositiveButton onClick={() => { }} >
-                            <span>{i18next.t(LocaleKey.previousWeekendMission).toString()}</span>
-                        </PositiveButton>
-                    </div>
-                    <div className="col-6">
-                        <PositiveButton onClick={() => { }} >
-                            <span>{i18next.t(LocaleKey.nextWeekendMission).toString()}</span>
-                        </PositiveButton>
-                    </div>
+                <div className="row justify noselect">
+                    {
+                        props.level > props.minLevel &&
+                        <div className="col-6">
+                            <PositiveButton additionalClass="full"
+                                onClick={() => { props.navigateToWeekendMissionLevel(props.level - 1) }} >
+                                <span>&lt;&lt;&nbsp;{i18next.t(LocaleKey.previousWeekendMission).toString()}</span>
+                            </PositiveButton>
+                        </div>
+                    }
+                    {
+                        props.level < props.maxLevel &&
+                        <div className="col-6">
+                            <PositiveButton additionalClass="full"
+                                onClick={() => { props.navigateToWeekendMissionLevel(props.level + 1) }} >
+                                <span>{i18next.t(LocaleKey.nextWeekendMission).toString()}&nbsp;&gt;&gt;</span>
+                            </PositiveButton>
+                        </div>}
                 </div>
             </>
         );
