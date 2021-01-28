@@ -36,6 +36,7 @@ import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2
 import { WeekendMissionMenuPresenter } from './pages/helloGames/weekendMission/weekendMissionMenuPage';
 import { WeekendMissionContainer } from './pages/helloGames/weekendMission/weekendMissionContainer';
 import { PatreonContainer } from './pages/misc/patreonContainer';
+import { NmsfmPresenter } from './pages/misc/nmsfmPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 
 import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
@@ -90,6 +91,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.weekendMissionDetails} component={WeekendMissionContainer} />
             <Route path={route.weekendMission} component={WeekendMissionMenuPresenter} />
             <Route path={route.patreon} component={PatreonContainer} />
+            <Route path={route.nmsfm} component={NmsfmPresenter} />
             <Route component={NotFoundPresenter} />
           </Switch>
         </div>

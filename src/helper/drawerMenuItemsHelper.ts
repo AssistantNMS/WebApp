@@ -49,6 +49,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
+  menuItems.push({
+    name: i18next.t(LocaleKey.nmsfm).toString(),
+    link: routes.nmsfm,
+    icon: 'radio',
+    iconType: DrawerIconType.Material,
+    isActive: false
+  });
   // menuItems.push({
   //   name: 'Online Meetup 2020',
   //   link: routes.onlineMeetup2020,

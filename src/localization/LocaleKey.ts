@@ -447,4 +447,6 @@ export enum LocaleKey {
   foundIn = 'foundIn',
   translationPercentageComplete = 'translationPercentageComplete',
   useTranslationTool = 'useTranslationTool',
+  nmsfm = 'nmsfm',
+  nmsfmSubtitle = 'nmsfmSubtitle',
 }

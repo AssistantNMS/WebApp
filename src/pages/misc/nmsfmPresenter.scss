@@ -1,0 +1,18 @@
+.radio-link {
+    position: relative;
+
+    a {
+        color: white;
+        width: 100%;
+
+        &:hover {
+            color: #80cbc4;
+        }
+    }
+
+    i {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+}
