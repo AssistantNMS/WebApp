@@ -73,9 +73,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                 </div>
                 {displayQuicksilverData(communityMission.missionId)}
-                <hr />
-                <h3>{i18next.t(LocaleKey.nextCommunityMission)}</h3>
-                {displayQuicksilverData(communityMission.missionId + 1)}
+                {displayQuicksilverData(communityMission.missionId + 1, LocaleKey.nextCommunityMission)}
             </>
         );
     }
@@ -96,21 +94,30 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
     //     );
     // };
 
-    const displayQuicksilverData = (missionId: number) => {
+    const displayQuicksilverData = (missionId: number, title?: LocaleKey) => {
         const qsRewards = props.quicksilverStoreItems.filter(qs => qs.MissionId === missionId);
         const qsReward = (qsRewards != null && qsRewards.length > 0) ? qsRewards[0] : null;
         if (qsReward == null) return null;
 
         return (
-            <div className="row pt-3">
-                <div className="col-12">
-                    <GenericListPresenter
-                        list={qsReward.Items}
-                        presenter={QuicksilverItemListTile}
-                        isCentered={true}
-                    />
+            <>
+                {
+                    title &&
+                    <>
+                        <hr />
+                        <h3>{i18next.t(title)}</h3>
+                    </>
+                }
+                <div className="row pt-3">
+                    <div className="col-12">
+                        <GenericListPresenter
+                            list={qsReward.Items}
+                            presenter={QuicksilverItemListTile}
+                            isCentered={true}
+                        />
+                    </div>
                 </div>
-            </div>
+            </>
         );
         // <div className="row justify">
         //     <div className="col-12 ta-center">
