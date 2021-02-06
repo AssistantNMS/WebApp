@@ -4,15 +4,16 @@ import React from 'react';
 import { ProgressBar } from '../../components/common/progressBar/progressBar';
 import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
+import { Error } from '../../components/core/error/error';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
 import { PlatformType, ToFriendlyPlatfromString } from '../../contracts/enum/PlatformType';
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { ApiService } from '../../services/ApiService';
-import { QuicksilverStore } from '../../contracts/data/quicksilver';
+import { QuicksilverItem, QuicksilverStore } from '../../contracts/data/quicksilver';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-import { QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
+import { IQuicksilverItemProps, QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
 
 var SegmentedControl = require('segmented-control');
 
@@ -42,7 +43,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
         if (props.status === NetworkState.Error ||
             !props.communityMission ||
             !props.communityMission.missionId) {
-            return (<h2 className="pt1">{i18next.t(LocaleKey.somethingWentWrong)}</h2>);
+            return (<Error />);
         }
         return displayFunc(props);
     }
@@ -72,8 +73,8 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                         }
                     </div>
                 </div>
-                {displayQuicksilverData(communityMission.missionId)}
-                {displayQuicksilverData(communityMission.missionId + 1, LocaleKey.nextCommunityMission)}
+                {displayQuicksilverData(communityMission)}
+                {displayQuicksilverData({ ...communityMission, missionId: communityMission.missionId + 1 }, LocaleKey.nextCommunityMission)}
             </>
         );
     }
@@ -94,10 +95,15 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
     //     );
     // };
 
-    const displayQuicksilverData = (missionId: number, title?: LocaleKey) => {
-        const qsRewards = props.quicksilverStoreItems.filter(qs => qs.MissionId === missionId);
+    const displayQuicksilverData = (communityMission: CommunityMissionViewModel, title?: LocaleKey) => {
+        const qsRewards = props.quicksilverStoreItems.filter(qs => qs.MissionId === communityMission.missionId);
         const qsReward = (qsRewards != null && qsRewards.length > 0) ? qsRewards[0] : null;
         if (qsReward == null) return null;
+
+        const customQuicksilverItemListTile = (communityMission: CommunityMissionViewModel) => (props: QuicksilverItem, index: number) => {
+            const customProps: IQuicksilverItemProps = { ...props, isDisabled: props.Tier > communityMission.currentTier };
+            return QuicksilverItemListTile(customProps, index);
+        }
 
         return (
             <>
@@ -112,7 +118,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                     <div className="col-12">
                         <GenericListPresenter
                             list={qsReward.Items}
-                            presenter={QuicksilverItemListTile}
+                            presenter={customQuicksilverItemListTile(communityMission)}
                             isCentered={true}
                         />
                     </div>

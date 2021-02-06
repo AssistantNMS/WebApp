@@ -5,7 +5,6 @@ import { NetworkState } from '../../../constants/NetworkState';
 import { WeekendMissionStage } from '../../../contracts/helloGames/weekendMissionStage';
 import { anyObject } from '../../../helper/typescriptHacks';
 import { LocaleKey } from '../../../localization/LocaleKey';
-import { ApiService } from '../../../services/ApiService';
 import { GameItemService } from '../../../services/GameItemService';
 import { WeekendMissionPresenter } from './weekendMissionPresenter';
 

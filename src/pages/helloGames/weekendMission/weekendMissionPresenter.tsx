@@ -5,6 +5,7 @@ import { GameItemImage } from '../../../components/common/gameItem/gameItemImage
 import { GenericListPresenter } from '../../../components/common/genericListPresenter/genericListPresenter';
 import { HeadComponent } from '../../../components/core/headComponent';
 import { SmallLoading } from '../../../components/core/loading/loading';
+import { Error } from '../../../components/core/error/error';
 import { NavBar } from '../../../components/core/navbar/navbar';
 import { RequiredItemListTile } from '../../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { NetworkState } from '../../../constants/NetworkState';
@@ -40,7 +41,7 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
         if (props.status === NetworkState.Error ||
             !props.weekendMissionStage ||
             !props.weekendMissionStage.AppId) {
-            return (<h2 className="pt1">{i18next.t(LocaleKey.somethingWentWrong)}</h2>);
+            return (<Error />);
         }
         return displayFunc(props);
     }
@@ -51,6 +52,8 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
             Id: weekendMission.AppId,
             Quantity: weekendMission.Quantity,
         });
+        const hasPrev = props.level > props.minLevel;
+        const hasNext = props.level < props.maxLevel;
         return (
             <>
                 <div className="row">
@@ -66,12 +69,11 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                         {weekendMission.NpcMessage}
                     </div>
                     <div className="col-12 pt1">
-                        <PositiveButton onClick={() => {
+                        <PositiveButton icon="chat" iconPosition="left" onClick={() => {
                             const timeStamp = (new Date()).getTime();
                             setMessageFlow({ ...weekendMission.NpcMessageFlows, timeStamp });
                             setOpen(true)
-                        }} >
-                            <i className="material-icons">chat</i>
+                        }}>
                             <span>{i18next.t(LocaleKey.readConversation).toString()}</span>
                         </PositiveButton>
                     </div>
@@ -89,11 +91,10 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                         />
                     </div>
                     <div className="col-12 pt1">
-                        <PositiveButton onClick={() => {
+                        <PositiveButton icon="chat" iconPosition="left" onClick={() => {
                             setMessageFlow(weekendMission.PortalMessageFlows);
                             setOpen(true)
-                        }} >
-                            <i className="material-icons">chat</i>
+                        }}>
                             <span>{i18next.t(LocaleKey.readConversation).toString()}</span>
                         </PositiveButton>
                     </div>
@@ -101,20 +102,22 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                 <hr />
                 <div className="row justify noselect">
                     {
-                        props.level > props.minLevel &&
+                        hasPrev &&
                         <div className="col-6">
-                            <PositiveButton additionalClass="full"
+                            <PositiveButton additionalClass={hasNext ? 'right' : ''}
+                                icon="arrow_back_ios" iconPosition="left"
                                 onClick={() => { props.navigateToWeekendMissionLevel(props.level - 1) }} >
-                                <span>&lt;&lt;&nbsp;{i18next.t(LocaleKey.previousWeekendMission).toString()}</span>
+                                <span>&nbsp;{i18next.t(LocaleKey.previousWeekendMission).toString()}</span>
                             </PositiveButton>
                         </div>
                     }
                     {
-                        props.level < props.maxLevel &&
+                        hasNext &&
                         <div className="col-6">
-                            <PositiveButton additionalClass="full"
+                            <PositiveButton additionalClass={hasPrev ? 'left' : ''}
+                                icon="arrow_forward_ios" iconPosition="right"
                                 onClick={() => { props.navigateToWeekendMissionLevel(props.level + 1) }} >
-                                <span>{i18next.t(LocaleKey.nextWeekendMission).toString()}&nbsp;&gt;&gt;</span>
+                                <span>{i18next.t(LocaleKey.nextWeekendMission).toString()}&nbsp;</span>
                             </PositiveButton>
                         </div>}
                 </div>

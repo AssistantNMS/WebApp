@@ -1,11 +1,10 @@
-import i18next from 'i18next';
 import React from 'react';
 import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
+import { Error } from '../../components/core/error/error';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
 import { OnlineMeetup2020SubmissionViewModel } from '../../contracts/generated/onlineMeetup2020SubmissionViewModel';
-import { LocaleKey } from '../../localization/LocaleKey';
 import './_onlineMeetup.scss';
 
 interface IProps {
@@ -19,7 +18,7 @@ export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IPr
         if (props.status === NetworkState.Loading) return SmallLoading();
         if (props.status === NetworkState.Error ||
             props.items == null || props.items.length < 1) {
-            return (<h2 className="pt1">{i18next.t(LocaleKey.somethingWentWrong)}</h2>);
+            return (<Error />);
         }
         return displayFunc(props);
     }

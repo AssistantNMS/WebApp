@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import i18next from 'i18next';
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { HeadComponent } from '../../../components/core/headComponent';
 import { NavBar } from '../../../components/core/navbar/navbar';
 import { ExternalUrls } from '../../../constants/ExternalUrls';
