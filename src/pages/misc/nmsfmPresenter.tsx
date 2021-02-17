@@ -1,5 +1,6 @@
 import i18next from 'i18next';
 import React from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -27,6 +28,14 @@ export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
                         <div className="col-12">
                             <h2 className="mt-2 mb-0">{i18next.t(LocaleKey.nmsfm)}</h2>
                             <h3 className="mt-0">{i18next.t(LocaleKey.nmsfmSubtitle)}</h3>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12">
+                            <audio controls className="audio">
+                                <source src="https://stream.zenolive.com/9kz76c8mdg8uv.aac" type="audio/ogg" />
+                                Your browser does not support the audio element.
+                            </audio>
                         </div>
                     </div>
                     <div className="row">
