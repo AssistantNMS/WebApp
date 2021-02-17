@@ -1,6 +1,5 @@
 import i18next from 'i18next';
 import React from 'react';
-import ReactAudioPlayer from 'react-audio-player';
 
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
