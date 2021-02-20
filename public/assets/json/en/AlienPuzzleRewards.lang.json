@@ -1199,7 +1199,15 @@
   {
     "RewardId": "R_CURIO7",
     "Type": "GiveAll",
-    "Rewards": []
+    "Rewards": [
+      {
+        "Id": "cur35",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
   },
   {
     "RewardId": "MONEY_L",
@@ -1305,6 +1313,13 @@
         "Id": "tMod55",
         "Type": "ProceduralTechnology",
         "PercentageChance": 30,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod58",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 40,
         "AmountMin": 0,
         "AmountMax": 0
       },

@@ -684,7 +684,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 25
       }
     ],
@@ -709,7 +709,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 10
       }
     ],
@@ -734,7 +734,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 10
       }
     ],
@@ -759,7 +759,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 10
       }
     ],
@@ -784,7 +784,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 10
       }
     ],
@@ -809,7 +809,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 25
       },
       {
@@ -838,7 +838,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 25
       }
     ],
@@ -863,7 +863,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 10
       }
     ],
@@ -888,12 +888,12 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
-        "Quantity": 25
-      },
-      {
         "Id": "raw9",
         "Quantity": 10
+      },
+      {
+        "Id": "raw11",
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],
@@ -917,7 +917,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 10
       }
     ],
@@ -942,7 +942,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 10
       }
     ],
@@ -967,7 +967,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 5
       }
     ],
@@ -992,12 +992,12 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
-        "Quantity": 35
-      },
-      {
         "Id": "raw9",
         "Quantity": 10
+      },
+      {
+        "Id": "raw11",
+        "Quantity": 35
       }
     ],
     "StatBonuses": [],
@@ -1021,12 +1021,12 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
-        "Quantity": 15
-      },
-      {
         "Id": "raw9",
         "Quantity": 5
+      },
+      {
+        "Id": "raw11",
+        "Quantity": 15
       }
     ],
     "StatBonuses": [],
@@ -1050,7 +1050,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 25
       }
     ],
@@ -1075,7 +1075,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 15
       }
     ],
@@ -1100,7 +1100,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 15
       }
     ],
@@ -1125,7 +1125,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 25
       }
     ],
@@ -1150,7 +1150,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 10
       }
     ],
@@ -6733,7 +6733,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 10
       }
     ],
@@ -6963,7 +6963,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 10
       }
     ],
@@ -6988,7 +6988,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw8",
+        "Id": "raw11",
         "Quantity": 5
       }
     ],
@@ -8550,6 +8550,78 @@
       {
         "Id": "raw19",
         "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build419",
+    "Icon": "building/419.png",
+    "Name": "火成晶",
+    "Group": "有機裝飾",
+    "Description": "此種天然晶體內部發出微微的低吼聲，是岩漿與蒸氣猶如舞蹈一般，永無止盡的升溫與凝固循環。這番景象引人入迷，但雖然晶體核心極熱，表面卻只是微溫而已。\n\n可為基地提供景觀美化的機會。",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build420",
+    "Icon": "building/420.png",
+    "Name": "火成岩滴",
+    "Group": "有機裝飾",
+    "Description": "蛋與岩石的混合體，包覆在特定物種的幼蟲體上，在這種脆弱的生物需時數十年的發育中，保護其溫暖與安全。岩石表面上有裂縫，僅有一層膜保護，可以見到不斷變動的熔融核心。\n\n可為基地提供景觀美化的機會。",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build421",
+    "Icon": "building/421.png",
+    "Name": "原始棲地發熱器",
+    "Group": "有機裝飾",
+    "Description": "雖然設計原始，但這種棲地發熱器仍然是廣受歡迎的居家用品，令人著迷的火花與柔和的霹啪聲，讓任何房間都能有更溫暖舒適的氣氛。\n\n可為基地提供室內裝飾的機會。",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 40
       }
     ],
     "StatBonuses": [],

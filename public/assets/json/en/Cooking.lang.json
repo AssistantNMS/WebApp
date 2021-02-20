@@ -3832,7 +3832,7 @@
     "Icon": "cooking/122.png",
     "Name": "Creature Pellets",
     "Group": "Compressed Nutrients",
-    "Description": "Basic creature bait. Can be placed directly or accessed via the Quick Menu (QUICK_MENU).\n\nBasic bait will attract creatures and cause them to yield Faecium.\n\nUse the Analysis Visor to discover the bait preferences of specific creatures. Using specific bait allows advanced creature actions.",
+    "Description": "Basic creature bait. Can be placed directly or accessed via the Quick Menu (QUICK_MENU).\n\nThis bait will attract creatures and cause them to yield Faecium. Once a creature has been fed, they may be tamed or farmed for their produce.\n\nDropping bait may calm angry creatures.",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -3847,7 +3847,7 @@
     "RequiredItems": [
       {
         "Id": "raw1",
-        "Quantity": 10
+        "Quantity": 60
       }
     ],
     "StatBonuses": [],
