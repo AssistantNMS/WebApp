@@ -20,7 +20,7 @@ export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
                 <div className="container full pt1">
                     <div className="row">
                         <div className="col-12">
-                            <img src="/assets/images/special/nmsfm.png" alt="nmsfm" style={{ width: '100%', maxWidth: '500px' }} />
+                            <img src="/assets/images/special/nmsfm.png" alt="nmsfm" style={{ maxHeight: '50vh' }} />
                         </div>
                     </div>
                     <div className="row">
