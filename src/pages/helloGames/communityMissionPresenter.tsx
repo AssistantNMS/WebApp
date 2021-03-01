@@ -72,7 +72,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                 </div>
                 {displayQuicksilverData(communityMission)}
-                {displayQuicksilverData({ ...communityMission, missionId: communityMission.missionId + 1 }, LocaleKey.nextCommunityMission)}
+                {displayQuicksilverData({ ...communityMission, missionId: communityMission.missionId + 1, currentTier: 0 }, LocaleKey.nextCommunityMission)}
             </>
         );
     }
@@ -99,7 +99,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
         if (qsReward == null) return null;
 
         const customQuicksilverItemListTile = (communityMission: CommunityMissionViewModel) => (props: QuicksilverItem, index: number) => {
-            const customProps: IQuicksilverItemProps = { ...props, isDisabled: props.Tier > communityMission.currentTier };
+            const customProps: IQuicksilverItemProps = { ...props, isDisabled: props.Tier >= communityMission.currentTier };
             return QuicksilverItemListTile(customProps, index);
         }
 
@@ -135,7 +135,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
             <HeadComponent title={props.title} />
             <NavBar title={props.title} />
             <div className="content">
-                <div className="container full pt1">
+                <div className="container full pt1 pb5">
                     <div className="row">
                         <div className="col-12">
                             <SegmentedControl.SegmentedControl
