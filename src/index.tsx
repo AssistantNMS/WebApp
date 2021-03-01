@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';
 import { UpdateButton } from './components/updateButton';
+import { ServicesProvider } from './components/core/servicesProvider';
 import { initLocalization } from './integration/i18n';
 import { initAnalytics } from './integration/analytics';
 import { updateServiceWorker } from './integration/serviceWorker';
@@ -48,11 +49,13 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
     initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
 
     ReactDOM.render(
-        <Provider store={store}>
-            <BrowserRouter>
-                <App />
-            </BrowserRouter>
-        </Provider>
+        <ServicesProvider>
+            <Provider store={store}>
+                <BrowserRouter>
+                    <App />
+                </BrowserRouter>
+            </Provider>
+        </ServicesProvider>
         , document.getElementById('nms-app'));
 
     if (window.config.useServiceWorker) {

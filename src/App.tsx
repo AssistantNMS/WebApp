@@ -36,7 +36,7 @@ import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2
 import { WeekendMissionMenuPresenter } from './pages/helloGames/weekendMission/weekendMissionMenuPage';
 import { WeekendMissionContainer } from './pages/helloGames/weekendMission/weekendMissionContainer';
 import { PatreonContainer } from './pages/misc/patreonContainer';
-import { NmsfmPresenter } from './pages/misc/nmsfmPresenter';
+import { NmsfmContainer } from './pages/misc/nmsfmContainer';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 
 import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
@@ -47,12 +47,13 @@ interface IProps extends StateSettingReducer {
 }
 
 const AppUnconnected: React.FC<any> = (props: IProps) => {
-
   useEffect(() => {
     if (props.location == null) return;
     if (props.location.pathname == null) return;
     trackPageView(props.location.pathname);
   }, [props.location, props.location.pathname]);
+
+  const toggleMenu = () => props?.toggleMenu != null ? props?.toggleMenu() : () => { };
 
   return (
     <div id="app"
@@ -65,7 +66,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
       <ScrollToTop>
         <Drawer />
         <div className="main-panel ps-theme-default">
-          <div id="sidebar-main-content-overlay" className="full-page-loader opacity80" onClick={() => props.toggleMenu()}></div>
+          <div id="sidebar-main-content-overlay" className="full-page-loader opacity80" onClick={() => toggleMenu()}></div>
           <Switch>
             <Route exact={true} path={route.home} component={HomePresenter} />
             <Route path={`${route.catalogue}/:types`} component={CatalogueListContainer} />
@@ -91,7 +92,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.weekendMissionDetails} component={WeekendMissionContainer} />
             <Route path={route.weekendMission} component={WeekendMissionMenuPresenter} />
             <Route path={route.patreon} component={PatreonContainer} />
-            <Route path={route.nmsfm} component={NmsfmPresenter} />
+            <Route path={route.nmsfm} component={NmsfmContainer} />
             <Route component={NotFoundPresenter} />
           </Switch>
         </div>

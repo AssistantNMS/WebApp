@@ -1,13 +1,14 @@
 import React from 'react';
 import { OnlineMeetup2020SubmissionViewModel } from '../../contracts/generated/onlineMeetup2020SubmissionViewModel';
-import { ApiService } from '../../services/ApiService';
 import { OnlineMeetup2020SubmissionPresenter } from './onlineMeetup2020Presenter';
 import { NetworkState } from '../../constants/NetworkState';
+import { IServices, withServices } from '../../components/core/servicesProvider';
 
 interface IProps {
     location: any;
     match: any;
     history: any;
+    services: IServices;
 }
 
 interface IState {
@@ -15,7 +16,7 @@ interface IState {
     status: NetworkState;
 }
 
-export class OnlineMeetup2020SubmissionContainer extends React.Component<IProps, IState> {
+export class OnlineMeetup2020SubmissionContainerUnconnected extends React.Component<IProps, IState> {
     constructor(props: IProps) {
         super(props);
 
@@ -27,7 +28,7 @@ export class OnlineMeetup2020SubmissionContainer extends React.Component<IProps,
     }
 
     fetchOnlineMeetupSubmissions = async () => {
-        var itemsResult = await new ApiService().getOnlineMeetupSubmissions();
+        var itemsResult = await this.props.services.apiService.getOnlineMeetupSubmissions();
         if (!itemsResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -51,5 +52,6 @@ export class OnlineMeetup2020SubmissionContainer extends React.Component<IProps,
             />
         );
     }
-
 }
+
+export const OnlineMeetup2020SubmissionContainer = withServices(OnlineMeetup2020SubmissionContainerUnconnected);

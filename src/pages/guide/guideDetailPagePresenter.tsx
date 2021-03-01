@@ -9,7 +9,6 @@ import { GuideSection } from '../../contracts/guide/guideSection';
 import { GuideSectionItem } from '../../contracts/guide/guideSectionItem';
 import { GuideType } from '../../contracts/guide/guideType';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { ApiService } from '../../services/ApiService';
 import { GuideService } from '../../services/GuideService';
 import { displaySectionImageItem, displaySectionLinkItem, displaySectionMarkdownItem, displaySectionTable, displaySectionTextItem } from './guideComponents';
 
@@ -22,7 +21,6 @@ interface IProps {
     history: any;
 
     // Container State
-    apiService: ApiService;
     guideService: GuideService;
     guide?: Guide;
     guideMeta?: GuideMetaViewModel;

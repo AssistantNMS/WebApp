@@ -5,6 +5,7 @@ import { OnlineMeetup2020SubmissionViewModel } from '../contracts/generated/onli
 import { ResultWithValue } from '../contracts/results/ResultWithValue';
 import { BaseApiService } from './BaseApiService';
 import { WeekendMissionViewModel } from '../contracts/generated/Model/HelloGames/weekendMissionViewModel';
+import { NmsfmTrackDataViewModel } from '../contracts/generated/Model/nmsfmTrackDataViewModel';
 
 export class ApiService extends BaseApiService {
     async getCommunityMission(platform: PlatformType): Promise<ResultWithValue<CommunityMissionViewModel>> {
@@ -25,5 +26,9 @@ export class ApiService extends BaseApiService {
 
     async getWeekendMission(): Promise<ResultWithValue<WeekendMissionViewModel>> {
         return await this.get<WeekendMissionViewModel>('HelloGames/WeekendMission');
+    }
+
+    async getNmsfm(): Promise<ResultWithValue<Array<NmsfmTrackDataViewModel>>> {
+        return await this.get<Array<NmsfmTrackDataViewModel>>('NMSFM');
     }
 }

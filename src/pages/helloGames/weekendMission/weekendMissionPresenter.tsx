@@ -3,6 +3,7 @@ import React from 'react';
 import { PositiveButton } from '../../../components/common/button/positiveButton';
 import { GameItemImage } from '../../../components/common/gameItem/gameItemImage';
 import { GenericListPresenter } from '../../../components/common/genericListPresenter/genericListPresenter';
+import { BottomModalSheet } from '../../../components/common/dialog/bottomModalSheet';
 import { HeadComponent } from '../../../components/core/headComponent';
 import { SmallLoading } from '../../../components/core/loading/loading';
 import { Error } from '../../../components/core/error/error';
@@ -13,7 +14,6 @@ import { WeekendMissionStage } from '../../../contracts/helloGames/weekendMissio
 import { RequiredItem } from '../../../contracts/RequiredItem';
 import { anyObject } from '../../../helper/typescriptHacks';
 import { LocaleKey } from '../../../localization/LocaleKey';
-import { WeekendMissionDialog } from './weekendMissionDialog';
 import { WeekendMissionDialogContent } from './weekendMissionDialogContent';
 
 
@@ -138,12 +138,12 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                     {handleLoadingOrError((localProps: IProps) => displayWeekendMissionData(localProps.weekendMissionStage))}
                 </div>
             </div>
-            <WeekendMissionDialog isOpen={isOpen} close={() => setOpen(false)}>
+            <BottomModalSheet isOpen={isOpen} onClose={() => setOpen(false)}>
                 <WeekendMissionDialogContent
                     messageFlow={currentMessageFlow}
                     close={() => setOpen(false)}
                 />
-            </WeekendMissionDialog>
+            </BottomModalSheet>
         </>
     );
 }

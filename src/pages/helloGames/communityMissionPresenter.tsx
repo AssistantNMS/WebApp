@@ -10,7 +10,6 @@ import { NetworkState } from '../../constants/NetworkState';
 import { PlatformType, ToFriendlyPlatfromString } from '../../contracts/enum/PlatformType';
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { ApiService } from '../../services/ApiService';
 import { QuicksilverItem, QuicksilverStore } from '../../contracts/data/quicksilver';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { IQuicksilverItemProps, QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
@@ -24,7 +23,6 @@ interface IProps {
 
     // Container State
     title: string;
-    apiService: ApiService;
     communityMission: CommunityMissionViewModel;
     quicksilverStoreItems: Array<QuicksilverStore>;
     status: NetworkState;

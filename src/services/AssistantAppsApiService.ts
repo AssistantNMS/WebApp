@@ -8,8 +8,8 @@ declare global {
 
 export class AssistantAppsApiService extends BaseApiService {
     constructor() {
-        console.log(window.config.assistantAppsUrl);
-        super(window.config.assistantAppsUrl);
+        console.log(window.config?.assistantAppsUrl);
+        super(window.config?.assistantAppsUrl);
     }
 
     async getPatronsList(): Promise<ResultWithValue<Array<PatreonViewModel>>> {

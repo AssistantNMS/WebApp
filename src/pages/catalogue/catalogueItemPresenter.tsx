@@ -25,6 +25,7 @@ import { ChargeByItemListTile } from '../../components/tilePresenter/recharge/ch
 import { RechargeItemListTile } from '../../components/tilePresenter/recharge/rechargeItemListTile';
 import { NetworkState } from '../../constants/NetworkState';
 import { SmallLoading } from '../../components/core/loading/loading';
+import { anyObject } from '../../helper/typescriptHacks';
 
 interface IProps {
     // Container Props
@@ -230,8 +231,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
         )
     }
 
-    const title = props?.item?.Name;
-    const description = props?.item?.Description;
+    const { Name: title, Description: description } = props?.item ?? anyObject;
     return (
         <>
             <HeadComponent title={title} description={description} />

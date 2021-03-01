@@ -1,16 +1,43 @@
 import i18next from 'i18next';
-import React from 'react';
+import React, { ReactNode } from 'react';
+import { Tooltip } from 'react-tippy';
 
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
+import { Error } from '../../components/core/error/error';
+import { BottomModalSheet } from '../../components/common/dialog/bottomModalSheet';
+import { NmsfmTrackListTile } from '../../components/tilePresenter/nmsfmListTile/nmsfmTrackListTile';
+import { NetworkState } from '../../constants/NetworkState';
+import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTrackDataViewModel';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 import './nmsfmPresenter.scss';
+import { SmallLoading } from '../../components/core/loading/loading';
+import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 
 interface IProps {
+    trackListIsOpen: boolean;
+    toggleTrackListOpen: (value?: boolean) => void;
+    trackInfoRows: Array<NmsfmTrackDataViewModel>;
+    trackStatus: NetworkState;
 }
 
 export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
+
+    const renderTrackList = (localProps: IProps): ReactNode => {
+        if (localProps.trackStatus === NetworkState.Error) return <Error />
+        if (localProps.trackStatus === NetworkState.Loading) return <SmallLoading />
+
+        return (
+            <div className="container full pt1">
+                <div className="generic-item-list row">
+                    <div className="col-12 gen-item mb-5">
+                        <GenericListPresenter list={localProps.trackInfoRows} presenter={NmsfmTrackListTile} />
+                    </div>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <>
@@ -21,6 +48,17 @@ export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
                     <div className="row">
                         <div className="col-12">
                             <img src="/assets/images/special/nmsfm.png" alt="nmsfm" style={{ maxHeight: '50vh' }} />
+                            <div className="view-queue">
+                                <Tooltip
+                                    title="View tracks"
+                                    arrow={true}
+                                    theme="light"
+                                    position="left"
+                                >
+                                    <i className="material-icons action-icon noselect pointer"
+                                        onClick={() => props.toggleTrackListOpen(true)}>queue_music</i>
+                                </Tooltip>
+                            </div>
                         </div>
                     </div>
                     <div className="row">
@@ -53,6 +91,12 @@ export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                 </div>
             </div>
+            <BottomModalSheet
+                isOpen={props.trackListIsOpen}
+                onClose={() => props.toggleTrackListOpen(false)}
+            >
+                {renderTrackList(props)}
+            </BottomModalSheet>
         </>
     );
 }

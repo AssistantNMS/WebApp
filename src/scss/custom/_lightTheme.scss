@@ -44,23 +44,6 @@
             }
         }
 
-        .generic-item-list .gen-item .gen-item-container {
-            background-color: #ededed;
-
-            .gen-item-content-container .text-container {
-                color: $black-color;
-            }
-
-            .quantity-container {
-                color: lighten($black-color, 20%);
-            }
-
-            .badge-container {
-                color: $black-color;
-                background-color: $brand-secondary;
-            }
-        }
-
         .chip {
             &.default {
                 background-color: $brand-primary-background;
@@ -76,6 +59,23 @@
         .table>thead>tr>th,
         .table>tbody>tr>td {
             border-color: black;
+        }
+    }
+
+    .generic-item-list .gen-item .gen-item-container {
+        background-color: #ededed;
+
+        .gen-item-content-container .text-container {
+            color: $black-color;
+        }
+
+        .quantity-container {
+            color: lighten($black-color, 20%);
+        }
+
+        .badge-container {
+            color: $black-color;
+            background-color: $brand-secondary;
         }
     }
 

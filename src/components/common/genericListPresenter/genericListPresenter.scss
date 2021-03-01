@@ -9,6 +9,14 @@
             padding-right: 100px;
             width: 100%;
 
+            &.w-full {
+                padding-right: 0;
+            }
+
+            &.h-full {
+                height: 100%;
+            }
+
             .image-container {
                 max-height: 100px;
                 max-width: 100px;
@@ -71,6 +79,7 @@
                 max-height: 100px;
                 min-width: 100%;
                 position: relative;
+                overflow: hidden;
 
                 .text-container {
                     font-size: 1.5em;
@@ -80,11 +89,13 @@
                     padding-left: 1rem;
                     padding-right: .5rem;
 
-                    p {
-                        line-height: 1.2em;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
+                    &:not(.multiline) {
+                        p {
+                            line-height: 1.2em;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
                     }
                 }
 
@@ -110,10 +121,23 @@
                     position: absolute;
                     top: 0;
                     right: 0;
+                    height: 100%;
+
+                    .action-list {
+                        height: 100%;
+
+                        &.align-top ul {
+                            flex-direction: column;
+                        }
+
+                        &.align-bottom ul {
+                            flex-direction: column-reverse;
+                        }
+                    }
 
                     ul {
                         position: relative;
-                        min-height: 100px;
+                        height: 100%;
                         padding: 0;
                         margin: 0;
 

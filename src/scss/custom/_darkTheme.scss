@@ -64,23 +64,6 @@ $list-item-text-color-darker: #c5c5c5;
             color: $body-color-dark;
         }
 
-        .generic-item-list .gen-item .gen-item-container {
-            background-color: $list-item-background-color-dark;
-
-            .gen-item-content-container .text-container {
-                color: $list-item-text-color-dark;
-            }
-
-            .quantity-container {
-                color: darken($list-item-text-color-dark, 20%);
-            }
-
-            .badge-container {
-                color: $list-item-text-color-dark;
-                background-color: $brand-secondary-dark;
-            }
-        }
-
         hr {
             background-color: $gray-600;
         }
@@ -104,6 +87,23 @@ $list-item-text-color-darker: #c5c5c5;
         .table>thead>tr>th,
         .table>tbody>tr>td {
             border-color: white;
+        }
+    }
+
+    .generic-item-list .gen-item .gen-item-container {
+        background-color: $list-item-background-color-dark;
+
+        .gen-item-content-container .text-container {
+            color: $list-item-text-color-dark;
+        }
+
+        .quantity-container {
+            color: darken($list-item-text-color-dark, 20%);
+        }
+
+        .badge-container {
+            color: $list-item-text-color-dark;
+            background-color: $brand-secondary-dark;
         }
     }
 

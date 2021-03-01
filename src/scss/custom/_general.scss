@@ -135,6 +135,16 @@ img.grayscale {
     max-width: unset;
 }
 
+.m-0-child {
+    >* {
+        margin: 0;
+    }
+}
+
+.f-1 {
+    font-size: 1em !important;
+}
+
 .p1 {
     padding: 1em;
 }
@@ -145,6 +155,10 @@ img.grayscale {
 
 .pb5 {
     padding-bottom: 5em;
+}
+
+.pr-6 {
+    padding-right: 4rem !important;
 }
 
 .progress.custom {
