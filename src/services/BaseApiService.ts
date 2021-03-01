@@ -28,9 +28,10 @@ export class BaseApiService {
     }
   }
 
-  protected async post<T>(url: string, data: any): Promise<ResultWithValue<T>> {
+  protected async post<T, TK>(url: string, data: TK, customMapper?: (data: any) => any): Promise<ResultWithValue<T>> {
     try {
       const result = await axios.post<T>(`${this._baseUrl}/${url}`, data);
+      if (customMapper != null) return customMapper(result);
       return {
         isSuccess: true,
         value: result.data,

@@ -1,12 +1,11 @@
 
 import * as React from 'react';
-
-import { NmsfmTrackDataViewModel } from '../../../contracts/generated/Model/nmsfmTrackDataViewModel';
-
-import { TextContainer } from '../../common/tile/textContainer';
 import classNames from 'classnames';
-import { ActionContainer } from '../../common/tile/actionContainer';
-import { NmsfmTrackType } from '../../../contracts/generated/Enum/nmsfmTrackType';
+
+import { TextContainer } from '../common/tile/textContainer';
+import { ActionContainer } from '../common/tile/actionContainer';
+import { NmsfmTrackType } from '../../contracts/generated/Enum/nmsfmTrackType';
+import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTrackDataViewModel';
 
 export const NmsfmTrackListTile = (props: NmsfmTrackDataViewModel) => {
     const multiline = props.artist == null || props.artist.length === 0;

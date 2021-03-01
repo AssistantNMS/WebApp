@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 
-import { PatreonViewModel } from '../../contracts/generated/Model/AssistantApps/patreonViewModel';
+import { PatreonViewModel } from '../../contracts/generated/AssistantApps/ViewModel/patreonViewModel';
 import { LazyLoadImage } from '../core/lazyLoadImage/lazyLoadImage';
 import { TextContainer } from '../common/tile/textContainer';
 

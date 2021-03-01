@@ -8,7 +8,7 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   const menuItems = [];
   menuItems.push({
     name: i18next.t(LocaleKey.whatIsNew).toString(),
-    link: 'https://tools.nmsassistant.com/what-is-new',
+    link: routes.whatIsNew,
     icon: '/assets/images/drawer/whatIsNew.png',
     iconType: DrawerIconType.Custom,
     isActive: false

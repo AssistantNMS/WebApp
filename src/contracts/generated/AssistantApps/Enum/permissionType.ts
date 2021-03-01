@@ -1,0 +1,27 @@
+﻿/* Auto Generated */
+
+export enum PermissionType {
+    none,
+    usersView,
+    usersManage,
+    userPermissionsView,
+    userPermissionsManage,
+    appView,
+    appManage,
+    translationView,
+    translationManage,
+    translationKeyView,
+    translationKeyManage,
+    hangfireDashboardView,
+    hangfireDashboardManage,
+    languageView,
+    languageManage,
+    cacheView,
+    cacheManage,
+    guideSubmissionView,
+    guideSubmissionManage,
+    versionView,
+    versionManage,
+    donationView,
+    donationManage,
+}

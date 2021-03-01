@@ -43,7 +43,7 @@ export const ItemHeaderRow: React.FC<IProps> = (props: IProps) => {
                 {
                     props?.Link
                         ? <div style={{ marginBottom: '.25em', textAlign: 'left' }}>
-                            <AdditionalInfoChip text={name} onClick={props.Link}>
+                            <AdditionalInfoChip text={name + '  '} onClick={props.Link}>
                                 <i className="material-icons" style={{ verticalAlign: 'middle' }}>read_more</i>
                             </AdditionalInfoChip>
                         </div>

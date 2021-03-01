@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import { ProgressBar } from '../../components/common/progressBar/progressBar';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -36,7 +36,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
         return { label: ToFriendlyPlatfromString(plat), value: plat, default: plat === selectedPlat };
     }
 
-    const handleLoadingOrError = (displayFunc: (props: IProps) => void) => {
+    const handleLoadingOrError = (displayFunc: (props: IProps) => ReactNode): ReactNode => {
         if (props.status === NetworkState.Loading) return SmallLoading();
         if (props.status === NetworkState.Error ||
             !props.communityMission ||
@@ -46,7 +46,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
         return displayFunc(props);
     }
 
-    const displayCommunityMissionData = (communityMission: CommunityMissionViewModel) => {
+    const displayCommunityMissionData = (communityMission: CommunityMissionViewModel): ReactNode => {
         return (
             <>
                 <div className="row">

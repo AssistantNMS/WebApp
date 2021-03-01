@@ -19,4 +19,5 @@ export const defaultConfig = {
     useServiceWorker: false,
     apiUrl: "https://api.nmsassistant.com",
     assistantAppsUrl: "https://api.assistantapps.com",
+    assistantAppsAppGuid: "589405b4-e40f-4cd9-b793-6bf37944ee09",
 }

@@ -6,7 +6,7 @@ import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { Error } from '../../components/core/error/error';
 import { BottomModalSheet } from '../../components/common/dialog/bottomModalSheet';
-import { NmsfmTrackListTile } from '../../components/tilePresenter/nmsfmListTile/nmsfmTrackListTile';
+import { NmsfmTrackListTile } from '../../components/tilePresenter/nmsfmTrackListTile';
 import { NetworkState } from '../../constants/NetworkState';
 import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTrackDataViewModel';
 import { LocaleKey } from '../../localization/LocaleKey';

@@ -37,6 +37,7 @@ import { WeekendMissionMenuPresenter } from './pages/helloGames/weekendMission/w
 import { WeekendMissionContainer } from './pages/helloGames/weekendMission/weekendMissionContainer';
 import { PatreonContainer } from './pages/misc/patreonContainer';
 import { NmsfmContainer } from './pages/misc/nmsfmContainer';
+import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 
 import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
@@ -93,6 +94,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.weekendMission} component={WeekendMissionMenuPresenter} />
             <Route path={route.patreon} component={PatreonContainer} />
             <Route path={route.nmsfm} component={NmsfmContainer} />
+            <Route path={route.whatIsNew} component={WhatIsNewContainer} />
             <Route component={NotFoundPresenter} />
           </Switch>
         </div>

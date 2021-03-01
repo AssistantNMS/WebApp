@@ -2,7 +2,7 @@ import i18next from 'i18next';
 import React from 'react';
 import { IServices, withServices } from '../../components/core/servicesProvider';
 import { NetworkState } from '../../constants/NetworkState';
-import { PatreonViewModel } from '../../contracts/generated/Model/AssistantApps/patreonViewModel';
+import { PatreonViewModel } from '../../contracts/generated/AssistantApps/ViewModel/patreonViewModel';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { PatreonPresenter } from './patreonPresenter';
 

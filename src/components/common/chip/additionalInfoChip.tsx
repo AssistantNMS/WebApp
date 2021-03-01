@@ -13,6 +13,7 @@ interface IChipProps {
     tooltip?: string;
     onClick?: any;
     children?: any;
+    additionalCss?: string;
 }
 
 export const AdditionalInfoChipRow: React.FC<IChipRowProps> = (props: IChipRowProps) => {
@@ -50,10 +51,10 @@ export const AdditionalInfoChip: React.FC<IChipProps> = (props: IChipProps) => {
         if (props.onClick) props.onClick();
     }
     return (
-        <div className={classNames("secondary chip extra-padding", { pointer: !!props.onClick })}
+        <div className={classNames('secondary chip extra-padding', props.additionalCss, { pointer: !!props.onClick })}
             onClick={safeClick}
         >
-            <span>{props.text}&nbsp;</span>
+            <span>{props.text}</span>
             {
                 props.children &&
                 <Tooltip

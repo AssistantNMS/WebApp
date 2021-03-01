@@ -7,7 +7,7 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { patronListTile } from '../../components/tilePresenter/patronListTile';
-import { PatreonViewModel } from '../../contracts/generated/Model/AssistantApps/patreonViewModel';
+import { PatreonViewModel } from '../../contracts/generated/AssistantApps/ViewModel/patreonViewModel';
 
 
 interface IProps {
