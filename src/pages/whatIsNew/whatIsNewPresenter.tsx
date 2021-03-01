@@ -32,7 +32,11 @@ export const WhatIsNewPresenter: React.FC<IProps> = (props: IProps) => {
 
     const displayWhatIsNewData = (whatIsNewItems: Array<VersionViewModel>): ReactNode => {
         const customWhatIsNewListTile = (currentItem: VersionViewModel, index: number) =>
-            WhatIsNewListTile({ ...currentItem }, window.config.currentWhatIsNewGuid);
+            <WhatIsNewListTile
+                version={currentItem}
+                currentWhatIsNewGuid={window.config.currentWhatIsNewGuid}
+            />;
+
         return (
             <>
                 <div className="row">
