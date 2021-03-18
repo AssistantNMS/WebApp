@@ -9,8 +9,6 @@ import { localeMap } from '../../../localization/Localization';
 
 interface IProps {
     title: string;
-    isDark?: boolean;
-    setDarkMode?: (isDark: boolean) => void;
     setLanguage?: (langCode: string) => void;
     toggleMenu?: () => void;
     additionalItems?: Array<any>;
@@ -34,12 +32,6 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
     menuItemClick = () => {
         if (this.props.toggleMenu != null) {
             this.props.toggleMenu();
-        }
-    }
-
-    darkModeToggle = () => {
-        if (this.props.setDarkMode != null) {
-            this.props.setDarkMode(!this.props.isDark);
         }
     }
 
@@ -103,16 +95,6 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
                                         })
                                     }
                                 </div>
-                            </li>
-                            <li className="nav-item" onClick={this.darkModeToggle}>
-                                <span className="nav-link pointer">
-                                    <i className="material-icons">{
-                                        this.props.isDark
-                                            ? 'brightness_high'
-                                            : 'brightness_4'
-                                    }
-                                    </i>
-                                </span>
                             </li>
                         </ul>
                     </div>

@@ -12,7 +12,6 @@ import { initLocalization } from './integration/i18n';
 import { initAnalytics } from './integration/analytics';
 import { updateServiceWorker } from './integration/serviceWorker';
 import { getJSON, defaultConfig } from './utils';
-import { applyIsDarkToBody } from './helper/bodyHelper';
 
 import { loadStateFromLocalStorage, saveStateToLocalStorage } from './redux/stateFromLocalStorage';
 import { reducer } from './redux';
@@ -28,7 +27,6 @@ declare global {
 
 let persistedState: any = loadStateFromLocalStorage();
 persistedState.settingReducer.menuIsVisible = false;
-applyIsDarkToBody(persistedState.settingReducer.isDark);
 
 const store = createStore(
     reducer,

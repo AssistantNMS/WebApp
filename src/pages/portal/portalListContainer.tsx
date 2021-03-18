@@ -10,7 +10,6 @@ interface IProps {
     match: any;
     history: any;
     portals: Array<PortalRecord>
-    isDark: boolean;
     useAltGlyphs: boolean;
     removePortal: (portalId: string) => void;
 }

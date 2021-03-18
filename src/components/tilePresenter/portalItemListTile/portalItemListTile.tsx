@@ -9,7 +9,6 @@ import { TextContainer } from '../../common/tile/textContainer';
 import { ActionContainer } from '../../common/tile/actionContainer';
 
 interface IProps extends PortalRecord {
-    isDark: boolean;
     useAltGlyphs: boolean;
     onEdit?: () => void;
     onDelete?: () => void;
@@ -45,7 +44,6 @@ export const PortalCardListTile = (props: IProps) => {
             <PortalGlyphGridDisplay
                 codes={props.Codes || []}
                 columnMultiplier={2}
-                isDark={props.isDark}
                 useAltGlyphs={props.useAltGlyphs}
             />
             <TextContainer text={props.Name} additionalCss="title" />

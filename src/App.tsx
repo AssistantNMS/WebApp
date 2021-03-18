@@ -58,12 +58,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
 
   return (
     <div id="app"
-      className={classNames(
-        'menu-on-left',
-        props.selectedLanguage,
-        {
-          isDark: props.isDark
-        })}>
+      className={classNames('menu-on-left', props.selectedLanguage)}>
       <ScrollToTop>
         <Drawer />
         <div className="main-panel ps-theme-default">

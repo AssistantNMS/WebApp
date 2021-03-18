@@ -14,7 +14,6 @@ interface IProps {
     location: any;
     match: any;
     history: any;
-    isDark: boolean;
     useAltGlyphs: boolean;
     tags: Array<string>;
     availableTags: Array<string>;

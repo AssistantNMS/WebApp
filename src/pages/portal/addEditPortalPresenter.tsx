@@ -11,7 +11,6 @@ import { LocaleKey } from '../../localization/LocaleKey';
 interface IProps {
     // Container Props
     history: any;
-    isDark: boolean;
     useAltGlyphs: boolean;
     tags: Array<string>;
     availableTags: Array<string>;
@@ -63,7 +62,6 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
                     <div className="col-12">
                         <PortalGlyphGridDisplay
                             codes={props.item.Codes || []}
-                            isDark={props.isDark}
                             useAltGlyphs={props.useAltGlyphs}
                         />
                     </div>
@@ -92,7 +90,6 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
                 <div className="row full">
                     <div className="col-12">
                         <PortalGlyphKeypadGrid
-                            isDark={props.isDark}
                             useAltGlyphs={props.useAltGlyphs}
                             onPortalClick={props.addCode}
                         />

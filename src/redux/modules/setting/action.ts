@@ -1,13 +1,6 @@
 import * as type from "./type";
 import { PlatformType } from "../../../contracts/enum/PlatformType";
 
-export const setDarkMode = (isDark: boolean) => {
-    return {
-        isDark,
-        type: type.DARKMODE,
-    }
-}
-
 export const setLanguage = (langCode: string) => {
     return {
         langCode,

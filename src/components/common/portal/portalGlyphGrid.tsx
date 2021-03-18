@@ -2,7 +2,6 @@ import React from 'react';
 import { columnMultiplierHelper } from '../../../helper/columnHelper';
 
 interface IProps {
-    isDark: boolean;
     useAltGlyphs: boolean;
 }
 
@@ -12,7 +11,7 @@ interface IPortalGlyphGridDisplayProps extends IProps {
 }
 
 export const PortalGlyphGridDisplay: React.FC<IPortalGlyphGridDisplayProps> = (props: IPortalGlyphGridDisplayProps) => {
-    const type = getPortalImageType(props.isDark, props.useAltGlyphs);
+    const type = getPortalImageType(props.useAltGlyphs);
     const portalImages: Array<string> = [];
     for (let displayIndex = 0; displayIndex < 12; displayIndex++) {
         if (props.codes.length <= displayIndex) {
@@ -50,7 +49,7 @@ interface IPortalGlyphGridProps extends IProps {
 }
 
 export const PortalGlyphKeypadGrid: React.FC<IPortalGlyphGridProps> = (props: IPortalGlyphGridProps) => {
-    const type = getPortalImageType(props.isDark, props.useAltGlyphs);
+    const type = getPortalImageType(props.useAltGlyphs);
     const portalImages: Array<string> = [];
     for (let portalIndex = 0; portalIndex < 16; portalIndex++) {
         portalImages.push(getPortalImage(type, portalIndex));
@@ -71,9 +70,8 @@ export const PortalGlyphKeypadGrid: React.FC<IPortalGlyphGridProps> = (props: IP
     );
 }
 
-const getPortalImageType = (isDark: boolean, useAltGlyph: boolean) => {
-    let type: string = 'black';
-    if (isDark) type = 'white';
+const getPortalImageType = (useAltGlyph: boolean) => {
+    let type: string = 'white';
     if (useAltGlyph) type = 'alt';
     return type;
 };

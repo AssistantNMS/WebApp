@@ -15,7 +15,6 @@ interface IProps {
     match: any;
     history: any;
     portals: Array<PortalRecord>
-    isDark: boolean;
     useAltGlyphs: boolean;
     removePortal: (portalId: string) => void;
 }
@@ -32,7 +31,6 @@ export const PortalListPresenterUnconnected: React.FC<IProps> = (props: IProps) 
             return (
                 <div key={`portal-${item.Uuid}-${index}`} className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <PortalCardListTile {...item}
-                        isDark={props.isDark}
                         useAltGlyphs={props.useAltGlyphs}
                         onDelete={() => props.removePortal(item.Uuid)}
                         onEdit={() => props.history.push({

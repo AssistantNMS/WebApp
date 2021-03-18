@@ -8,11 +8,9 @@ import { mapDispatchToProps, mapStateToProps } from './setting.Redux';
 import { boolSettingTile, LangSettingTile } from './settingComponent';
 
 interface IProps {
-    isDark: boolean;
     useAltGlyphs: boolean;
     selectedLanguage: string;
     toggleAltGlyphs: () => void;
-    setDarkMode: (isDark: boolean) => void;
     setLanguage: (selectedLanguage: string) => void;
 }
 
@@ -29,7 +27,6 @@ const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
                             value={props.selectedLanguage}
                             onClick={props.setLanguage}
                         />
-                        {boolSettingTile(i18next.t(LocaleKey.darkModeEnabled), props.isDark, props.setDarkMode)}
                         {boolSettingTile(i18next.t(LocaleKey.useAltGlyphs), props.useAltGlyphs, props.toggleAltGlyphs)}
                     </div>
                 </div>

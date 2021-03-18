@@ -3,10 +3,8 @@ import i18next from 'i18next';
 
 import { PlatformType } from '../../../contracts/enum/PlatformType';
 import { StateSettingReducer } from '../../state/StateSettingReducer';
-import { applyIsDarkToBody } from '../../../helper/bodyHelper';
 
 export const initialSettingState: StateSettingReducer = {
-    isDark: true,
     selectedLanguage: 'en',
     menuIsVisible: false,
     chosenPlatform: PlatformType.PC,
@@ -15,11 +13,6 @@ export const initialSettingState: StateSettingReducer = {
 
 export const settingReducer = (state = initialSettingState, action: any) => {
     switch (action.type) {
-        case type.DARKMODE:
-            applyIsDarkToBody(action.isDark);
-            return Object.assign({}, state, {
-                isDark: action.isDark
-            });
         case type.LANGUAGE:
             i18next.changeLanguage(action.langCode);
             return Object.assign({}, state, {
