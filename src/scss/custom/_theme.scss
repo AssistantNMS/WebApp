@@ -203,10 +203,6 @@ $list-item-text-color-darker: #c5c5c5;
         color: black;
     }
 
-    .react-modal-sheet-container {
-        background-color: $brand-primary-background-dark !important;
-    }
-
     .discussion {
         >.bubble.sender {
             background-color: #606060;
@@ -223,10 +219,14 @@ $list-item-text-color-darker: #c5c5c5;
 
         }
     }
+}
 
-    .react-modal-sheet-content {
-        a {
-            color: $brand-secondary-dark;
-        }
+.react-modal-sheet-container {
+    background-color: $brand-primary-background-dark !important;
+}
+
+.react-modal-sheet-content {
+    a {
+        color: $brand-secondary-dark;
     }
 }
