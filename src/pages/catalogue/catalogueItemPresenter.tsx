@@ -209,7 +209,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
     }
 
     const handleLoadingOrError = () => {
-        if (props.networkState === NetworkState.Loading) return SmallLoading();;
+        if (props.networkState === NetworkState.Loading) return <div className="pt-5"><SmallLoading /></div>;
         if (props.networkState === NetworkState.Error) {
             return (<h2>{i18next.t(LocaleKey.error)}</h2>);
         }
@@ -219,14 +219,18 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
     const displayDetails = () => {
         return (
             <>
-                {displayRequiredItems(props.resArray)}
-                {displayUsedToCreateItems(props.usedToCreateArray)}
-                {displayRechargedByItems(props.rechargedBy)}
-                {displayUsedToRechargeItems(props.usedToRechargeArray)}
-                {displayRefItems(props.refArray)}
-                {displayUsedToRefItems(props.usedToRefArray)}
-                {displayCookItems(props.cookArray)}
-                {displayUsedToCookItems(props.usedToCookArray)}
+                <div className="content">
+                    <ItemHeaderRow {...props.item} />
+                    <AdditionalInfoChipRow additionalData={props.additionalData} />
+                    {displayRequiredItems(props.resArray)}
+                    {displayUsedToCreateItems(props.usedToCreateArray)}
+                    {displayRechargedByItems(props.rechargedBy)}
+                    {displayUsedToRechargeItems(props.usedToRechargeArray)}
+                    {displayRefItems(props.refArray)}
+                    {displayUsedToRefItems(props.usedToRefArray)}
+                    {displayCookItems(props.cookArray)}
+                    {displayUsedToCookItems(props.usedToCookArray)}
+                </div>
             </>
         )
     }
@@ -236,11 +240,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
         <>
             <HeadComponent title={title} description={description} />
             <NavBar title={title} />
-            <div className="content">
-                <ItemHeaderRow {...props.item} />
-                <AdditionalInfoChipRow additionalData={props.additionalData} />
-                {handleLoadingOrError()}
-            </div>
+            {handleLoadingOrError()}
 
             {getFloatingActionButtons()}
             <div className="col-12" style={{ marginBottom: '2em', marginTop: '2em' }}></div>

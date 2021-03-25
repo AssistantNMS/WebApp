@@ -32,7 +32,7 @@ export const SmallLoading = () => {
 
     return (
         <div className="container">
-            <ul className="row">
+            <div className="row">
                 <div className="col-12" style={{ textAlign: 'center' }}>
                     <img
                         src="/assets/images/loader.svg"
@@ -42,7 +42,7 @@ export const SmallLoading = () => {
                     />
                     <h2 className="largeHeading">Loading...</h2>
                 </div>
-            </ul>
+            </div>
         </div>
     );
 }
