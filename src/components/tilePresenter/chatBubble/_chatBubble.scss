@@ -34,6 +34,12 @@
             }
         }
 
+        &.sender+.sender {
+            &:before {
+                content: unset;
+            }
+        }
+
         &.recipient {
             position: relative;
             align-self: flex-end;
@@ -43,6 +49,12 @@
                 @extend .bubble-tip;
                 content: ' ';
                 right: -14px;
+            }
+        }
+
+        &.recipient+.recipient {
+            &:before {
+                content: unset;
             }
         }
 

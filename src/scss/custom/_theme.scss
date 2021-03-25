@@ -211,7 +211,7 @@ body {
             color: #fff;
 
             &:before {
-                border-color: #606060 transparent transparent transparent;
+                border-color: #606060 transparent transparent transparent !important;
             }
         }
 
@@ -219,7 +219,7 @@ body {
             background-color: $brand-primary;
 
             &:before {
-                border-color: $brand-primary transparent transparent transparent;
+                border-color: $brand-primary transparent transparent transparent !important;
             }
         }
 
