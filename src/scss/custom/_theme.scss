@@ -3,33 +3,35 @@ $list-item-background-color-dark: #6c757d;
 $list-item-text-color-dark: #f8f9fa;
 $list-item-text-color-darker: #c5c5c5;
 
-#app {
 
-    color: $body-color-dark;
-    background-color: $brand-primary-background-dark;
+#app,
+body {
+
+    color: $list-item-text-color-darker;
+    background-color: $brand-primary-background;
 
     ::selection {
-        background: $brand-secondary-dark;
+        background: $brand-secondary;
         color: white;
         /* WebKit/Blink Browsers */
     }
 
     ::-moz-selection {
-        background: $brand-secondary-dark;
+        background: $brand-secondary;
         color: white;
         /* Gecko Browsers */
     }
 
     .main-panel {
-        background-color: $brand-primary-background-dark;
+        background-color: $brand-primary-background;
 
         #navbar.navbar {
-            background-color: $brand-primary-dark;
+            background-color: $brand-primary;
             color: white;
         }
 
         .content {
-            background-color: $brand-primary-background-dark;
+            background-color: $brand-primary-background;
         }
 
         .game-item {
@@ -69,12 +71,12 @@ $list-item-text-color-darker: #c5c5c5;
 
         .chip {
             &.default {
-                background-color: $brand-primary-background-dark;
+                background-color: $brand-primary-background;
                 color: white;
             }
 
             &.secondary {
-                background-color: $brand-secondary-dark;
+                background-color: $brand-secondary;
                 color: white;
             }
         }
@@ -102,19 +104,19 @@ $list-item-text-color-darker: #c5c5c5;
 
         .badge-container {
             color: $list-item-text-color-dark;
-            background-color: $brand-secondary-dark;
+            background-color: $brand-secondary;
         }
     }
 
     .sidebar {
-        background: $brand-primary-background-dark;
+        background: $brand-primary-background;
 
         a.nav-link {
             color: white;
         }
 
         li.active>a {
-            background-color: $brand-primary-dark;
+            background-color: $brand-primary;
         }
     }
 
@@ -122,7 +124,7 @@ $list-item-text-color-darker: #c5c5c5;
 
         input {
             color: $white-color;
-            background-image: linear-gradient(to top, #{$brand-primary-dark} 2px, rgba(63, 81, 181, 0) 2px),
+            background-image: linear-gradient(to top, #{$brand-primary} 2px, rgba(63, 81, 181, 0) 2px),
             linear-gradient(to top, #{$white-color} 1px, rgba(210, 210, 210, 0) 1px);
 
             $placeholderColor: rgba(255, 255, 255, 0.9);
@@ -156,11 +158,11 @@ $list-item-text-color-darker: #c5c5c5;
     }
 
     .fab-bg-color {
-        background-color: $brand-primary-dark;
+        background-color: $brand-primary;
     }
 
     .button-active-bg {
-        background-color: $brand-secondary-dark;
+        background-color: $brand-secondary;
     }
 
     .action-container i {
@@ -168,10 +170,10 @@ $list-item-text-color-darker: #c5c5c5;
     }
 
     .segmented-control {
-        color: $brand-secondary-dark;
+        color: $brand-secondary;
 
         label {
-            color: $brand-secondary-dark;
+            color: $brand-secondary;
         }
     }
 
@@ -180,12 +182,12 @@ $list-item-text-color-darker: #c5c5c5;
         background-color: #333;
 
         .progress-bar {
-            background-color: $brand-secondary-dark !important;
+            background-color: $brand-secondary !important;
         }
     }
 
     .guide .section .heading {
-        background-color: $brand-secondary-dark;
+        background-color: $brand-secondary;
     }
 
     .card {
@@ -194,12 +196,12 @@ $list-item-text-color-darker: #c5c5c5;
         }
 
         .user-details .external-link i {
-            color: $brand-secondary-dark;
+            color: $brand-secondary;
         }
     }
 
     .customButton {
-        background-color: $brand-secondary-dark;
+        background-color: $brand-secondary;
         color: black;
     }
 
@@ -207,14 +209,22 @@ $list-item-text-color-darker: #c5c5c5;
         >.bubble.sender {
             background-color: #606060;
             color: #fff;
+
+            &:before {
+                border-color: #606060 transparent transparent transparent;
+            }
         }
 
         >.bubble.recipient {
-            background-color: $brand-primary-dark;
+            background-color: $brand-primary;
+
+            &:before {
+                border-color: $brand-primary transparent transparent transparent;
+            }
         }
 
         >.bubble.option {
-            background-color: $brand-secondary-dark;
+            background-color: $brand-secondary;
             color: black;
 
         }
@@ -222,11 +232,13 @@ $list-item-text-color-darker: #c5c5c5;
 }
 
 .react-modal-sheet-container {
-    background-color: $brand-primary-background-dark !important;
+    background-color: $brand-primary-background !important;
 }
 
 .react-modal-sheet-content {
+    padding-bottom: 3em;
+
     a {
-        color: $brand-secondary-dark;
+        color: $brand-secondary;
     }
 }

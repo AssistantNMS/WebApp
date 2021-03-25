@@ -1,8 +1,18 @@
+.bubble-tip {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0px;
+    bottom: auto;
+    border: 16px solid;
+}
+
 .discussion {
     width: 100%;
     display: flex;
     flex-flow: column wrap;
-
+    padding-left: 2em;
+    padding-right: 2em;
 
     >.bubble {
         border-radius: 10px;
@@ -12,19 +22,28 @@
         font-size: 1.25em;
 
         &.sender {
+            position: relative;
             text-align: left;
             align-self: flex-start;
-            background-color: cornflowerblue;
             color: #fff;
-            border-bottom-left-radius: 0.1em;
-            border-top-left-radius: 0.1em;
+
+            &:before {
+                @extend .bubble-tip;
+                content: ' ';
+                left: -14px;
+            }
         }
 
         &.recipient {
+            position: relative;
             align-self: flex-end;
             background-color: #efefef;
-            border-bottom-right-radius: 0.1em;
-            border-top-right-radius: 0.1em;
+
+            &:before {
+                @extend .bubble-tip;
+                content: ' ';
+                right: -14px;
+            }
         }
 
         &.option {

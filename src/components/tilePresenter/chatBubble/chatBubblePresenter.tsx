@@ -22,7 +22,7 @@ interface IProps {
 
 export const ChatBubblesPresenter = (props: IProps) => {
     return (
-        <div className="discussion">
+        <div className="discussion pb-2">
             {
                 props.chatBubbles.map((item: IChatProps) => {
                     return (
