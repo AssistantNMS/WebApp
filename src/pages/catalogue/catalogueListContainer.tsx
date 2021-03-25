@@ -1,16 +1,12 @@
-import i18next from 'i18next';
 import React from 'react';
 import { forceCheck } from 'react-lazyload';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { GameItemList } from '../../components/common/gameItemList/gameItemList';
-import { HeadComponent } from '../../components/core/headComponent';
-import { NavBar } from '../../components/core/navbar/navbar';
 import { GameItemModel } from '../../contracts/GameItemModel';
-import { LocaleKey } from '../../localization/LocaleKey';
 import { State } from '../../redux/state';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
 import './catalogue.scss';
+import { CatalogueListPresenter } from './catalogueListPresenter';
 
 interface IProps {
     location: any;
@@ -99,21 +95,11 @@ export class CatalogueListContainerUnconnected extends React.Component<IProps, I
     }
 
     render() {
-        const title = i18next.t(LocaleKey.catalogue);
         return (
-            <>
-                <HeadComponent title={title} />
-                <NavBar title={title} />
-                <div className="content">
-                    <form id="searchBar" className="searchbar row" onSubmit={(e) => this.search(e, this.state.searchTerm)}>
-                        <input type="text" className="form-control" placeholder="Search" onChange={this.onSearchTextChange} />
-                        <button className="icon-container pointer" type="submit">
-                            <i className="material-icons">search</i>
-                        </button>
-                    </form>
-                    <GameItemList key={this.state.displayItems.length} items={this.state.displayItems} />
-                </div>
-            </>
+            <CatalogueListPresenter {...this.state} {...this.props}
+                onSearchTextChange={this.onSearchTextChange}
+                search={this.search}
+            />
         );
     }
 }

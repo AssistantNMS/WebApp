@@ -7,8 +7,6 @@ import { GameItemModel } from '../../contracts/GameItemModel';
 import { LocaleKey } from '../../localization/LocaleKey';
 import './catalogue.scss';
 
-
-
 interface IProps {
     // Container Props
     selectedLanguage?: string;
@@ -23,7 +21,7 @@ interface IProps {
     search: (e: any, searchText: string) => void;
 }
 
-export const CatalogueListPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
+export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
 
     const title = i18next.t(LocaleKey.catalogue);
     return (
@@ -32,7 +30,11 @@ export const CatalogueListPresenterUnconnected: React.FC<IProps> = (props: IProp
             <NavBar title={title} />
             <div className="content">
                 <form id="searchBar" className="searchbar row" onSubmit={(e) => props.search(e, props.searchTerm)}>
-                    <input type="text" className="form-control" placeholder="Search" onChange={props.onSearchTextChange} />
+                    <input type="text"
+                        className="form-control"
+                        placeholder={i18next.t(LocaleKey.search)}
+                        onChange={props.onSearchTextChange}
+                    />
                     <button className="icon-container pointer" type="submit">
                         <i className="material-icons">search</i>
                     </button>
