@@ -3832,7 +3832,7 @@
     "Icon": "cooking/122.png",
     "Name": "Mangimi compressi",
     "Group": "Nutrienti compressi",
-    "Description": "Esca per creature di base. Può essere posizionata direttamente o tramite il menu rapido (QUICK_MENU).\n\nLe esche di base attirano le creature e le spingono a produrre faecium.\n\nUsa il visore analitico per scoprire le esche preferite delle creature. L'uso di esche specifiche permette azioni avanzate delle creature.",
+    "Description": "Esca per creature di base. Può essere posizionata direttamente o tramite il menu rapido (QUICK_MENU).\n\nQuest'esca attira le creature e le spinge a produrre faecium. Dopo aver nutrito una creatura puoi addomesticarla o raccoglierne le risorse.\n\nLe esche lanciate possono calmare le creature arrabbiate.",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -8787,6 +8787,37 @@
         "AmountMax": 0,
         "SetNotAdd": false,
         "Duration": 8
+      }
+    ]
+  },
+  {
+    "Id": "cook280",
+    "Icon": "cooking/261.png",
+    "Name": "Latte del gozzo",
+    "Group": "Ingrediente crudo",
+    "Description": "Questo nutriente sottoprodotto animale può essere ottenuto senza nuocere alla creatura che lo produce.\n\nInseriscilo in un trasformatore di sostanze nutritive per generare prodotti commestibili.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "FFC356",
+    "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
       }
     ]
   }

@@ -3832,7 +3832,7 @@
     "Icon": "cooking/122.png",
     "Name": "Pellets de Criatura ",
     "Group": "Nutrientes Comprimidos",
-    "Description": "Um isco de criaturas básico. Pode ser colocado diretamente ou acedido através do Menu Rápido (QUICK_MENU).\n\nUm isco básico atrai criaturas e fará com que produzam Faecium.\n\nUsa o Visor de Análise para descobrir as preferências de iscos de criaturas específicas. Usa iscos específicos para aceder a ações de criaturas avançadas.",
+    "Description": "Um isco de criaturas básico. Pode ser colocado diretamente ou acedido através do Menu Rápido (QUICK_MENU).\n\nEste isco básico atrai criaturas e fará com que produzam Faecium. Depois de alimentada, uma criatura pode ser domada ou usada para criação.\n\nDeixar cair isco pode acalmar criaturas furiosas.",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -8787,6 +8787,37 @@
         "AmountMax": 0,
         "SetNotAdd": false,
         "Duration": 8
+      }
+    ]
+  },
+  {
+    "Id": "cook280",
+    "Icon": "cooking/261.png",
+    "Name": "Leite de papo",
+    "Group": "Ingrediente cru",
+    "Description": "Este pedaço nutritivo é um produto animal que pode ser facilmente criado sem causar sofrimento a animais.\n\nProcessado num Processador de Nutrientes para gerar produtos comestíveis.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "FFC356",
+    "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
       }
     ]
   }

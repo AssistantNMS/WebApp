@@ -3830,9 +3830,9 @@
   {
     "Id": "cook122",
     "Icon": "cooking/122.png",
-    "Name": "Wezentabletten",
+    "Name": "Voedertabletten",
     "Group": "Gecomprimeerde bouwstoffen",
-    "Description": "Eenvoudig lokaas voor wezens. Kan direct worden geplaatst of via het snelmenu (QUICK_MENU) worden geselecteerd.\n\nEenvoudig lokaas trekt wezens aan en zorgt ervoor dat ze faecium afscheiden.\n\nGebruik het analysevizier om te ontdekken welk soort lokaas specifieke wezens prefereren. Met speciaal lokaas maak je geavanceerde acties met wezens mogelijk.",
+    "Description": "Eenvoudig lokaas voor wezens. Kan direct worden geplaatst of via het snelmenu (QUICK_MENU) worden geselecteerd.\n\nDit lokaas trekt wezens aan en zorgt ervoor dat ze faecium afscheiden. Als een wezen is gevoerd, kun je het temmen of als vee gebruiken en exploiteren.\n\nDoor lokaas te plaatsen, kun je agressieve wezens mogelijk kalmeren.",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -8787,6 +8787,37 @@
         "AmountMax": 0,
         "SetNotAdd": false,
         "Duration": 8
+      }
+    ]
+  },
+  {
+    "Id": "cook280",
+    "Icon": "cooking/261.png",
+    "Name": "Kropmelk",
+    "Group": "Rauw ingrediënt",
+    "Description": "Een dierlijk nevenproduct. Dit voedzame hapje kan makkelijk worden gekweekt zonder dat het dier pijn lijdt.\n\nVerwerk in een bouwstoffenverwerker om eetbare producten aan te maken.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "FFC356",
+    "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
       }
     ]
   }

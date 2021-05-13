@@ -3832,7 +3832,7 @@
     "Icon": "cooking/122.png",
     "Name": "Pelotas para criaturas",
     "Group": "Nutrientes comprimidos",
-    "Description": "Isca básica para criaturas. Pode ser posicionada diretamente ou acessada no menu rápido (QUICK_MENU).\n\nA isca básica atrai criaturas e as faz produzir faécio.\n\nUse o visor de análise para descobrir as iscas favoritas de criaturas específicas. Usar iscas específicas permite ações avançadas das criaturas.",
+    "Description": "Isca básica para criaturas. Pode ser posicionada diretamente ou acessada no menu rápido (QUICK_MENU).\n\nEsta isca atrai criaturas e as faz produzir faécio. Depois que for alimentada, a criatura poderá ser domada ou criada para se obter o que ela produz.\n\nSoltar iscas pode acalmar criaturas zangadas.",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -8787,6 +8787,37 @@
         "AmountMax": 0,
         "SetNotAdd": false,
         "Duration": 8
+      }
+    ]
+  },
+  {
+    "Id": "cook280",
+    "Icon": "cooking/261.png",
+    "Name": "Leite de estômago",
+    "Group": "Ingrediente cru",
+    "Description": "Esse subproduto pode ser obtido facilmente, sem causar mal ao animal que o produz.\n\nUse em um processador de nutrientes para gerar produtos comestíveis.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "FFC356",
+    "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
       }
     ]
   }

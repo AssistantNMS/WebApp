@@ -3832,7 +3832,7 @@
     "Icon": "cooking/122.png",
     "Name": "Croquettes pour créatures",
     "Group": "Nutriments compressés",
-    "Description": "Cet appât à créatures basique peut être placé directement ou utilisé via le menu rapide (QUICK_MENU).\n\nL'appât attirera les créatures et les fera produire du fècium.\n\nUtilisez la visière d'analyse pour découvrir les préférences d'appâts de créatures spécifiques. L'utilisation d'appâts spécialisés permet de débloquer des actions avancées avec les créatures.",
+    "Description": "Cet appât à créatures basique peut être placé directement ou utilisé via le menu rapide (QUICK_MENU).\n\nCet appât attirera les créatures et les fera produire du fècium. Une fois qu'une créature a été nourrie, elle peut être apprivoisée ou élevée pour ses produits.\n\nLes appâts peuvent calmer les créatures furieuses.",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -8787,6 +8787,37 @@
         "AmountMax": 0,
         "SetNotAdd": false,
         "Duration": 8
+      }
+    ]
+  },
+  {
+    "Id": "cook280",
+    "Icon": "cooking/261.png",
+    "Name": "Lait de volatile",
+    "Group": "Ingrédient cru",
+    "Description": "Sous-produit animal, cette matière nutritive peut être facilement cultivée sans porter atteinte à l'animal qui la produit.\n\nTraitez-la dans un processeur de nutriments pour générer des produits comestibles.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "FFC356",
+    "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
       }
     ]
   }

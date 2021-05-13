@@ -3832,7 +3832,7 @@
     "Icon": "cooking/122.png",
     "Name": "Bolitas de criaturas",
     "Group": "Nutrientes comprimidos",
-    "Description": "Cebo para criaturas básico. Se puede colocar directamente o acceder a él a través del menú rápido (QUICK_MENU).\n\nEl cebo básico atraerá a criaturas y hará que produzcan hecesio.\n\nUsa el visor de análisis para descubrir las preferencias en cuanto a cebos de criaturas específicas. Usar cebos específicos permite las acciones avanzadas de las criaturas.",
+    "Description": "Cebo para criaturas básico. Se puede colocar directamente o acceder a él a través del menú rápido (QUICK_MENU).\n\nEste cebo atraerá a criaturas y hará que produzcan hecesio. Cuando una criatura esté alimentada, se puede domesticar o criar para que dé productos.\n\nSoltar cebos puede calmar a las criaturas feroces",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -8787,6 +8787,37 @@
         "AmountMax": 0,
         "SetNotAdd": false,
         "Duration": 8
+      }
+    ]
+  },
+  {
+    "Id": "cook280",
+    "Icon": "cooking/261.png",
+    "Name": "Leche de buche",
+    "Group": "Ingrediente crudo",
+    "Description": "Este nutritivo bocado es un subproducto animal que se puede cultivar con facilidad sin dañar al animal que lo produce.\n\nProcésalo en un procesador de nutrientes para generar productos comestibles.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "FFC356",
+    "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
       }
     ]
   }

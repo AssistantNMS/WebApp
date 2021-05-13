@@ -3832,7 +3832,7 @@
     "Icon": "cooking/122.png",
     "Name": "生物颗粒",
     "Group": "压缩养分",
-    "Description": "一种基本生物诱饵。可以直接放置或通过快捷菜单（QUICK_MENU）使用。\n\n基本诱饵会吸引生物并使它们产出屎球菌。\n\n使用分析面甲发现特定生物的诱饵偏好。使用特定诱饵后，可采取高级生物行动。",
+    "Description": "一种基本生物诱饵。可以直接放置或通过快捷菜单（QUICK_MENU）使用。\n\n这种诱饵会吸引生物并使它们产出屎球菌。向生物喂食后，就有机会将其驯化或养殖，获得收益。\n\n诱饵还能安抚发怒的生物。",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -8787,6 +8787,37 @@
         "AmountMax": 0,
         "SetNotAdd": false,
         "Duration": 8
+      }
+    ]
+  },
+  {
+    "Id": "cook280",
+    "Icon": "cooking/261.png",
+    "Name": "嗉囊奶",
+    "Group": "原料",
+    "Description": "动物的副产品，这种营养丰富的食物可以轻易收取且不会伤害生产它的动物。\n\n使用营养处理器生成可食用产品。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "FFC356",
+    "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
       }
     ]
   }

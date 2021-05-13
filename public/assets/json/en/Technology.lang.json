@@ -1300,7 +1300,7 @@
         "Name": "Damage",
         "LocaleKeyTemplate": "defaultTemplate",
         "Image": "damage",
-        "Value": "4,500"
+        "Value": "6,500"
       },
       {
         "Name": "Range",
@@ -1926,7 +1926,7 @@
     "Icon": "technology/56.png",
     "Name": "Hull Fracture",
     "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1938,7 +1938,7 @@
     "RequiredItems": [
       {
         "Id": "raw23",
-        "Quantity": 700
+        "Quantity": 200
       }
     ],
     "StatBonuses": [],
@@ -1949,84 +1949,7 @@
     "Icon": "technology/57.png",
     "Name": "Rusted Circuits",
     "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
-    "BaseValueUnits": 1.0,
-    "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
-    "Colour": "7B0000",
-    "BlueprintCost": 1,
-    "BlueprintCostType": "None",
-    "BlueprintSource": 0,
-    "RequiredItems": [
-      {
-        "Id": "raw10",
-        "Quantity": 500
-      },
-      {
-        "Id": "raw17",
-        "Quantity": 50
-      }
-    ],
-    "StatBonuses": [],
-    "ConsumableRewards": []
-  },
-  {
-    "Id": "tech58",
-    "Icon": "technology/58.png",
-    "Name": "Shattered Bulwark",
-    "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
-    "BaseValueUnits": 1.0,
-    "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
-    "Colour": "7B0000",
-    "BlueprintCost": 1,
-    "BlueprintCostType": "None",
-    "BlueprintSource": 0,
-    "RequiredItems": [
-      {
-        "Id": "raw34",
-        "Quantity": 250
-      }
-    ],
-    "StatBonuses": [],
-    "ConsumableRewards": []
-  },
-  {
-    "Id": "tech59",
-    "Icon": "technology/59.png",
-    "Name": "Radiation Leak",
-    "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
-    "BaseValueUnits": 1.0,
-    "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
-    "Colour": "7B0000",
-    "BlueprintCost": 1,
-    "BlueprintCostType": "None",
-    "BlueprintSource": 0,
-    "RequiredItems": [
-      {
-        "Id": "raw24",
-        "Quantity": 820
-      },
-      {
-        "Id": "raw31",
-        "Quantity": 50
-      }
-    ],
-    "StatBonuses": [],
-    "ConsumableRewards": []
-  },
-  {
-    "Id": "tech60",
-    "Icon": "technology/60.png",
-    "Name": "Containment Failure",
-    "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2041,12 +1964,89 @@
         "Quantity": 200
       },
       {
-        "Id": "raw23",
+        "Id": "raw17",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "tech58",
+    "Icon": "technology/58.png",
+    "Name": "Shattered Bulwark",
+    "Group": "Damaged Starship Component",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw34",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "tech59",
+    "Icon": "technology/59.png",
+    "Name": "Radiation Leak",
+    "Group": "Damaged Starship Component",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw24",
         "Quantity": 300
       },
       {
+        "Id": "raw31",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "tech60",
+    "Icon": "technology/60.png",
+    "Name": "Containment Failure",
+    "Group": "Damaged Starship Component",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "7B0000",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 100
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 120
+      },
+      {
         "Id": "raw33",
-        "Quantity": 180
+        "Quantity": 90
       }
     ],
     "StatBonuses": [],
@@ -2057,7 +2057,7 @@
     "Icon": "technology/61.png",
     "Name": "Damaged Gears",
     "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2069,11 +2069,11 @@
     "RequiredItems": [
       {
         "Id": "raw23",
-        "Quantity": 600
+        "Quantity": 300
       },
       {
         "Id": "prod81",
-        "Quantity": 10
+        "Quantity": 6
       }
     ],
     "StatBonuses": [],
@@ -3088,7 +3088,7 @@
     "RequiredItems": [
       {
         "Id": "raw23",
-        "Quantity": 400
+        "Quantity": 200
       }
     ],
     "StatBonuses": [],
@@ -3111,7 +3111,7 @@
     "RequiredItems": [
       {
         "Id": "prod81",
-        "Quantity": 4
+        "Quantity": 2
       }
     ],
     "StatBonuses": [],
@@ -3134,15 +3134,15 @@
     "RequiredItems": [
       {
         "Id": "prod5",
-        "Quantity": 16
+        "Quantity": 8
       },
       {
         "Id": "prod7",
-        "Quantity": 10
+        "Quantity": 6
       },
       {
-        "Id": "prod20",
-        "Quantity": 12
+        "Id": "raw12",
+        "Quantity": 126
       }
     ],
     "StatBonuses": [],
@@ -3165,7 +3165,7 @@
     "RequiredItems": [
       {
         "Id": "raw15",
-        "Quantity": 100
+        "Quantity": 50
       }
     ],
     "StatBonuses": [],
@@ -3188,15 +3188,15 @@
     "RequiredItems": [
       {
         "Id": "raw26",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "raw27",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "raw29",
-        "Quantity": 100
+        "Quantity": 50
       }
     ],
     "StatBonuses": [],
@@ -3219,15 +3219,15 @@
     "RequiredItems": [
       {
         "Id": "raw24",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "raw25",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "raw28",
-        "Quantity": 100
+        "Quantity": 50
       }
     ],
     "StatBonuses": [],
@@ -4576,8 +4576,8 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw15",
-        "Quantity": 110
+        "Id": "raw13",
+        "Quantity": 20
       }
     ],
     "StatBonuses": [],
@@ -4599,12 +4599,8 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw3",
-        "Quantity": 80
-      },
-      {
-        "Id": "raw13",
-        "Quantity": 90
+        "Id": "prod2",
+        "Quantity": 1
       }
     ],
     "StatBonuses": [],
@@ -4626,7 +4622,7 @@
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "prod1",
+        "Id": "prod3",
         "Quantity": 2
       }
     ],
@@ -5083,7 +5079,7 @@
     "Icon": "technology/111.png",
     "Name": "Hydraulics Damage",
     "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5095,11 +5091,11 @@
     "RequiredItems": [
       {
         "Id": "raw3",
-        "Quantity": 200
+        "Quantity": 100
       },
       {
         "Id": "raw28",
-        "Quantity": 150
+        "Quantity": 80
       }
     ],
     "StatBonuses": [],
@@ -5110,7 +5106,7 @@
     "Icon": "technology/149.png",
     "Name": "Exploded Panel",
     "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5122,11 +5118,11 @@
     "RequiredItems": [
       {
         "Id": "raw9",
-        "Quantity": 500
+        "Quantity": 250
       },
       {
         "Id": "raw33",
-        "Quantity": 300
+        "Quantity": 150
       }
     ],
     "StatBonuses": [],
@@ -5137,7 +5133,7 @@
     "Icon": "technology/150.png",
     "Name": "Corroded Tanks",
     "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5149,7 +5145,7 @@
     "RequiredItems": [
       {
         "Id": "raw38",
-        "Quantity": 350
+        "Quantity": 150
       }
     ],
     "StatBonuses": [],
@@ -5160,7 +5156,7 @@
     "Icon": "technology/112.png",
     "Name": "Burnt-Out Compressor",
     "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5176,7 +5172,7 @@
       },
       {
         "Id": "prod81",
-        "Quantity": 8
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],
@@ -5187,7 +5183,7 @@
     "Icon": "products/52.png",
     "Name": "Scorched Plating",
     "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5199,15 +5195,15 @@
     "RequiredItems": [
       {
         "Id": "raw23",
-        "Quantity": 300
+        "Quantity": 150
       },
       {
         "Id": "raw31",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "raw34",
-        "Quantity": 100
+        "Quantity": 50
       }
     ],
     "StatBonuses": [],
@@ -5218,7 +5214,7 @@
     "Icon": "products/63.png",
     "Name": "Melted Fuel Cell",
     "Group": "Damaged Starship Component",
-    "Description": "Starship subsystem critically damaged.\n\nSlot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nRepairing will free slot up for general use.",
+    "Description": "Starship subsystem severely damaged. Slot cannot be used for storage or technology until damage is repaired. Use REPAIR to begin repair process.\n\nCore starship functionality is not affected. Repairing this damage will free slot up for general inventory use.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5234,11 +5230,11 @@
       },
       {
         "Id": "raw25",
-        "Quantity": 250
+        "Quantity": 120
       },
       {
         "Id": "raw29",
-        "Quantity": 250
+        "Quantity": 150
       }
     ],
     "StatBonuses": [],
@@ -5292,7 +5288,7 @@
       },
       {
         "Id": "raw33",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "prod81",
@@ -5319,11 +5315,11 @@
     "RequiredItems": [
       {
         "Id": "raw10",
-        "Quantity": 250
+        "Quantity": 120
       },
       {
         "Id": "raw32",
-        "Quantity": 200
+        "Quantity": 100
       }
     ],
     "StatBonuses": [],
@@ -5346,11 +5342,11 @@
     "RequiredItems": [
       {
         "Id": "raw16",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "prod54",
-        "Quantity": 5
+        "Quantity": 2
       }
     ],
     "StatBonuses": [],
@@ -5373,15 +5369,15 @@
     "RequiredItems": [
       {
         "Id": "raw2",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "raw26",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "raw27",
-        "Quantity": 100
+        "Quantity": 50
       }
     ],
     "StatBonuses": [],
@@ -5408,11 +5404,11 @@
       },
       {
         "Id": "raw25",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "raw28",
-        "Quantity": 100
+        "Quantity": 50
       }
     ],
     "StatBonuses": [],
@@ -5776,7 +5772,7 @@
         "Name": "Mining Speed",
         "LocaleKeyTemplate": "percentage",
         "Image": "recharge",
-        "Value": "90"
+        "Value": "100"
       },
       {
         "Name": "Heat Dispersion",

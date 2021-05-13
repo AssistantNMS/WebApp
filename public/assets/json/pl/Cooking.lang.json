@@ -3832,7 +3832,7 @@
     "Icon": "cooking/122.png",
     "Name": "Pastylki stworzeń",
     "Group": "Skompresowane składniki odżywcze",
-    "Description": "Podstawowa przynęta na stworzenia. Można ją rozmieścić bezpośrednio albo poprzez szybkie menu (QUICK_MENU).\n\nPodstawowa przynęta wabi stworzenia i sprawia, że dostarczają faecium.\n\nUżyj wizjera analitycznego, by odkryć preferencje konkretnych stworzeń dotyczące przynęty. Zastosowanie konkretnej przynęty pozwala odblokować zaawansowane zdolności stworzeń.",
+    "Description": "Podstawowa przynęta na stworzenia. Można ją rozmieścić bezpośrednio albo poprzez szybkie menu (QUICK_MENU).\n\nPodstawowa przynęta wabi stworzenia i sprawia, że dostarczają faecium. Po nakarmieniu stworzenia można je oswoić lub hodować i odbierać jego produkty.\n\nRzucenie przynęty może uspokoić wściekłe stworzenia.",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -8787,6 +8787,37 @@
         "AmountMax": 0,
         "SetNotAdd": false,
         "Duration": 8
+      }
+    ]
+  },
+  {
+    "Id": "cook280",
+    "Icon": "cooking/261.png",
+    "Name": "Mleko z woli",
+    "Group": "Surowy składnik",
+    "Description": "Odzwierzęcy produkt uboczny – ten odżywczy kąsek można łatwo pozyskiwać bez szkody dla zwierzęcia, które go wytwarza.\n\nPrzetwórz w przetwarzaczu składników odżywczych, by pozyskać jadalne produkty.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "FFC356",
+    "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
       }
     ]
   }

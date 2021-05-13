@@ -3832,7 +3832,7 @@
     "Icon": "cooking/122.png",
     "Name": "Kreaturenkugeln",
     "Group": "Komprimierte Nährstoffe",
-    "Description": "Standard-Kreaturenköder. Kann direkt platziert oder über das Schnellmenü (QUICK_MENU) aufgerufen werden.\n\nStandardköder locken Kreaturen an und lassen sie Faecium abgeben.\n\nVerwende das Analysevisier, um die bevorzugten Köder spezifischer Kreaturen herauszufinden. Der Einsatz von speziellen Ködern erlaubt fortgeschrittenere Aktionen mit Kreaturen.",
+    "Description": "Standard-Kreaturenköder. Kann direkt platziert oder über das Schnellmenü (QUICK_MENU) aufgerufen werden.\n\nDieser Köder lockt Kreaturen an und lässt sie Faecium abgeben. Sobald eine Kreatur gefüttert wurde, kann sie für ihre Erzeugnisse gezähmt oder gezüchtet werden.\n\nDas Auswerfen von Ködern kann wütende Kreaturen beruhigen.",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -8787,6 +8787,37 @@
         "AmountMax": 0,
         "SetNotAdd": false,
         "Duration": 8
+      }
+    ]
+  },
+  {
+    "Id": "cook280",
+    "Icon": "cooking/261.png",
+    "Name": "Kropfmilch",
+    "Group": "Rohe Zutaten",
+    "Description": "Dieser nahrhafte Happen ist ein tierisches Nebenprodukt und kann problemlos gewonnen werden, ohne dem betreffenden Tier Schaden zuzufügen.\n\nVerarbeite etwas in einem Nährstoffprozessor, um essbare Produkte zu erzeugen.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "FFC356",
+    "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
       }
     ]
   }

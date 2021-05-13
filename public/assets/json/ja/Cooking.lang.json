@@ -3832,7 +3832,7 @@
     "Icon": "cooking/122.png",
     "Name": "クリーチャーペレット",
     "Group": "圧縮栄養",
-    "Description": "標準の餌。直接または\nクイックメニュー（QUICK_MENU）を介して配置できる。\n\n標準の餌は生物をおびきよせ、\nフェシウムを生み出させる。\n\n分析レンズで各生物が好む餌を\n調べることができる。標準の餌を\n使うことで生物の高度なアクションが\n可能になる。",
+    "Description": "標準の餌。直接またはクイックメニューから(QUICK_MENU)設置することができる。\n\n標準のエサは生物をおびきよせ、フェシウムを生み出させる。生物に餌を与えると、その生物を 仲間にしたり、飼育して 産出物を入手できるかもしれない。\n\n餌を落とすことで怒り状態の生物をなだめられることもある。",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -8787,6 +8787,37 @@
         "AmountMax": 0,
         "SetNotAdd": false,
         "Duration": 8
+      }
+    ]
+  },
+  {
+    "Id": "cook280",
+    "Icon": "cooking/261.png",
+    "Name": "素嚢乳",
+    "Group": "生食品",
+    "Description": "動物の副産物で、少量の栄養素は\n動物本体に危害を加えずに\n簡単に採取できる。\n\n栄養プロセッサで加工すると\n食用品になる。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "FFC356",
+    "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
       }
     ]
   }

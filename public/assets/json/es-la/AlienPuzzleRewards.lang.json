@@ -333,7 +333,7 @@
   },
   {
     "RewardId": "PROC_TECH_ALL",
-    "Type": "SelectFromSuccess",
+    "Type": "TryFirst_ThenSelectAlways",
     "Rewards": [
       {
         "Id": "tech13",
@@ -510,7 +510,7 @@
   },
   {
     "RewardId": "PROC_TECH_SHIP",
-    "Type": "SelectFromSuccess",
+    "Type": "TryFirst_ThenSelectAlways",
     "Rewards": [
       {
         "Id": "tech28",
@@ -974,7 +974,7 @@
   },
   {
     "RewardId": "PROC_TECH_WEAP",
-    "Type": "SelectFromSuccess",
+    "Type": "TryFirst_ThenSelectAlways",
     "Rewards": [
       {
         "Id": "tech70",
@@ -1036,7 +1036,7 @@
   },
   {
     "RewardId": "PROC_TECH_SUIT",
-    "Type": "SelectFromSuccess",
+    "Type": "TryFirst_ThenSelectAlways",
     "Rewards": [
       {
         "Id": "tech13",

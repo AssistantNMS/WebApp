@@ -3832,7 +3832,7 @@
     "Icon": "cooking/122.png",
     "Name": "生物顆粒飼料",
     "Group": "壓縮營養",
-    "Description": "基本的生物誘餌。可以直接置放，或是透過快捷選單（QUICK_MENU）選擇。\n\n基本誘餌會吸引生物，並且讓牠們分泌屎菌。\n\n使用分析護目鏡可以發現特定生物偏好哪一種誘餌。使用特定的誘餌，即可使用高級生物動作。",
+    "Description": "基本的生物誘餌。可以直接置放，或是透過快捷選單（QUICK_MENU）選擇。\n\n這種誘餌會吸引生物，並且讓牠們分泌屎菌。餵食生物後，就有可能馴服或畜牧為農產品。\n\n佈下誘餌可能可以安撫兇猛的生物。",
     "BaseValueUnits": 20.0,
     "CurrencyType": "Credits",
     "IsCraftable": true,
@@ -8787,6 +8787,37 @@
         "AmountMax": 0,
         "SetNotAdd": false,
         "Duration": 8
+      }
+    ]
+  },
+  {
+    "Id": "cook280",
+    "Icon": "cooking/261.png",
+    "Name": "飛禽奶",
+    "Group": "原料",
+    "Description": "動物的副產品，這種營養豐富的食物可以輕易收取且不會傷害生產它的動物。\n\n用營養處理器加工即可生成可食用產品。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "FFC356",
+    "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
       }
     ]
   }
