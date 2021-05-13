@@ -19,8 +19,8 @@ export const mapToLocale = (catalogueType: string): string => {
       return i18next.t(LocaleKey.cookingJson).toString();
     case CatalogueType.technology.toString():
       return i18next.t(LocaleKey.technologiesJson).toString();
-    case CatalogueType.upgradeModules.toString():
-      return i18next.t(LocaleKey.upgradeModulesJson).toString();
+    case CatalogueType.technologyModule.toString():
+      return i18next.t(LocaleKey.technologyModulesJson).toString();
     case CatalogueType.constructedTechnology.toString():
       return i18next.t(LocaleKey.constructedTechnologyJson).toString();
     case CatalogueType.others.toString():
@@ -41,7 +41,8 @@ export const getCatalogueFromItemId = (itemId: string): string => {
   if (itemId.includes(IdPrefix.Curiosity)) return CatalogueType.curiosity;
   if (itemId.includes(IdPrefix.Cooking)) return CatalogueType.cooking;
   if (itemId.includes(IdPrefix.Technology)) return CatalogueType.technology;
-  if (itemId.includes(IdPrefix.Upgrade)) return CatalogueType.upgradeModules;
+  if (itemId.includes(IdPrefix.TechnologyModule)) return CatalogueType.technologyModule;
+  // if (itemId.includes(IdPrefix.Upgrade)) return CatalogueType.upgradeModules;
   if (itemId.includes(IdPrefix.ConTech)) return CatalogueType.constructedTechnology;
   if (itemId.includes(IdPrefix.Other)) return CatalogueType.others;
   return '';

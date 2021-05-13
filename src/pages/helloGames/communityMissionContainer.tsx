@@ -2,7 +2,6 @@ import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
 import { NetworkState } from '../../constants/NetworkState';
-import { PlatformType } from '../../contracts/enum/PlatformType';
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';

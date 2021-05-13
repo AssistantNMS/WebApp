@@ -17,6 +17,19 @@
                 height: 100%;
             }
 
+            .smol-image-container {
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 10px;
+
+                .image-container img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+
             .image-container {
                 max-height: 100px;
                 max-width: 100px;

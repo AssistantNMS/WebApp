@@ -2,6 +2,8 @@ import { CurrencyType } from './enum/CurrencyType';
 import { BlueprintSource } from './enum/BlueprintSource';
 import { RequiredItem } from './RequiredItem';
 import { Processor } from './Processor';
+import { StatBonus } from './StatBonus';
+import { ProceduralStatBonus } from './ProceduralStatBonus';
 
 export interface GameItemModel {
   TypeName: string;
@@ -30,4 +32,8 @@ export interface GameItemModel {
   Refiners: Array<Processor>;
   UsedInCooking: Array<Processor>;
   Cooking: Array<Processor>;
+  StatBonuses: Array<StatBonus>;
+  ProceduralStatBonuses: Array<ProceduralStatBonus>;
+  NumStatsMax: number;
+  NumStatsMin: number;
 }

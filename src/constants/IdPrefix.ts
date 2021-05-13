@@ -6,6 +6,7 @@ export enum IdPrefix {
   Product = 'prod',
   RawMaterial = 'raw',
   Technology = 'tech',
+  TechnologyModule = 'tMod',
   Trade = 'trade',
   Upgrade = 'upgrade',
   ConTech = 'conTech',

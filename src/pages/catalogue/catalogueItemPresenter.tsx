@@ -10,6 +10,7 @@ import { FavouriteFloatingActionButton } from '../../components/floatingActionBu
 import { GenericItemWithRequirementsListTile } from '../../components/tilePresenter/genericItemListTile/genericItemWithRequirementsListTile';
 import { ProcessorItemListTile } from '../../components/tilePresenter/processorItemListTile/processorItemListTile';
 import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
+import { StatBonusItemListTile, ProceduralStatBonusItemListTile } from '../../components/tilePresenter/statBonusTile/statBonusItemListTile';
 import { IdPrefix } from '../../constants/IdPrefix';
 import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { GameItemModel } from '../../contracts/GameItemModel';
@@ -26,6 +27,8 @@ import { RechargeItemListTile } from '../../components/tilePresenter/recharge/re
 import { NetworkState } from '../../constants/NetworkState';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { anyObject } from '../../helper/typescriptHacks';
+import { StatBonus } from '../../contracts/StatBonus';
+import { ProceduralStatBonus } from '../../contracts/ProceduralStatBonus';
 
 interface IProps {
     // Container Props
@@ -197,6 +200,45 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
             </>
         );
     }
+
+    const displayStatBonuses = (statBonuses: Array<StatBonus>) => {
+        if (statBonuses == null || statBonuses.length < 1) return null;
+
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.stats)}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GenericListPresenter list={statBonuses} presenter={StatBonusItemListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
+    const displayProceduralStatBonuses = (proceduralStatBonuses: Array<ProceduralStatBonus>) => {
+        if (proceduralStatBonuses == null || proceduralStatBonuses.length < 1) return null;
+
+        return (
+            <>
+                <div className="row">
+                    <div className="col-12">
+                        <h3>{i18next.t(LocaleKey.proceduralStats)
+                            .replace('{0}', props.item.NumStatsMin.toString())
+                            .replace('{1}', props.item.NumStatsMax.toString())}</h3>
+                    </div>
+                    <div className="col-12">
+                        <GenericListPresenter list={proceduralStatBonuses} presenter={ProceduralStatBonusItemListTile} />
+                    </div>
+                </div>
+                <hr className="mt-3em" />
+            </>
+        );
+    }
+
     const getFloatingActionButtons = () => {
         const components: any[] = [];
         if (props.item == null || props.item.Id == null) return null;
@@ -230,6 +272,8 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     {displayUsedToRefItems(props.usedToRefArray)}
                     {displayCookItems(props.cookArray)}
                     {displayUsedToCookItems(props.usedToCookArray)}
+                    {displayStatBonuses(props.item.StatBonuses)}
+                    {displayProceduralStatBonuses(props.item.ProceduralStatBonuses)}
                 </div>
             </>
         )

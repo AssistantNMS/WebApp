@@ -13,8 +13,7 @@ export class AllGameItemsService {
     CatalogueType.curiosity.toString(),
     CatalogueType.cooking.toString(),
     CatalogueType.technology.toString(),
-    CatalogueType.upgradeModules.toString(),
-    CatalogueType.constructedTechnology.toString(),
+    CatalogueType.technologyModule.toString(),
     CatalogueType.others.toString()
   ];
 

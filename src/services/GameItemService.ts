@@ -80,7 +80,7 @@ export class GameItemService extends BaseJsonService {
         value: [],
         errorMessage: 'required items not found',
       };
-    var requiredItemsTasks = craftableItems[0].RequiredItems.map(async (item: RequiredItem) => {
+    var requiredItemsTasks = (craftableItems[0].RequiredItems ?? []).map(async (item: RequiredItem) => {
       var itemDetails = await this.getItemDetails(item.Id);
       if (!itemDetails.isSuccess) return null;
 

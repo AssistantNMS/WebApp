@@ -6,7 +6,8 @@ export enum CatalogueType {
   curiosity = 'Curiosity',
   cooking = 'Cooking',
   technology = 'Technology',
-  upgradeModules = 'UpgradeModules',
+  technologyModule = 'TechnologyModule',
+  // upgradeModules = 'UpgradeModules',
   constructedTechnology = 'ConstructedTechnology',
   others = 'Others',
   //

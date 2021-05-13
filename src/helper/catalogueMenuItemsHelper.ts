@@ -9,7 +9,7 @@ export const getCatalogueMenuItems = (): Array<DrawerMenuItem> => {
   const menuItems = [];
   menuItems.push({
     name: i18next.t(LocaleKey.allItems).toString(),
-    link: `${catalogue}/${CatalogueType.rawMaterials}-${CatalogueType.craftedProducts}-${CatalogueType.tradeItems}-${CatalogueType.buildings}-${CatalogueType.curiosity}-${CatalogueType.cooking}-${CatalogueType.technology}-${CatalogueType.upgradeModules}-${CatalogueType.constructedTechnology}-${CatalogueType.others}`,
+    link: `${catalogue}/${CatalogueType.rawMaterials}-${CatalogueType.craftedProducts}-${CatalogueType.tradeItems}-${CatalogueType.buildings}-${CatalogueType.curiosity}-${CatalogueType.cooking}-${CatalogueType.technology}-${CatalogueType.technologyModule}-${CatalogueType.constructedTechnology}-${CatalogueType.others}`,
     icon: '/assets/images/drawer/crafted.png',
     iconType: DrawerIconType.Custom,
     isActive: false
@@ -72,7 +72,7 @@ export const getCatalogueMenuItems = (): Array<DrawerMenuItem> => {
   });
   menuItems.push({
     name: i18next.t(LocaleKey.upgradeModule).toString(),
-    link: `${catalogue}/${CatalogueType.upgradeModules}`,
+    link: `${catalogue}/${CatalogueType.technologyModule}`,
     icon: '/assets/images/drawer/upgradeModules.png',
     iconType: DrawerIconType.Custom,
     isActive: false
