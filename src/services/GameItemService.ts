@@ -1,11 +1,8 @@
 import { GameItemModel } from '../contracts/GameItemModel';
-import { ProcessorBase } from '../contracts/ProcessorBase';
-import { ProcessorDetails } from '../contracts/ProcessorDetails';
 import { RequiredItem } from '../contracts/RequiredItem';
 import { RequiredItemDetails } from '../contracts/RequiredItemDetails';
 import { ResultWithValue } from '../contracts/results/ResultWithValue';
 import { getCatalogueFromItemId, mapToLocale } from '../mapper/CatalogueMapper';
-import { mapProcessorItems } from '../mapper/ProcessorMapper';
 import { BaseJsonService } from './BaseJsonService';
 import { Processor } from '../contracts/Processor';
 import { CatalogueType } from '../constants/CatalogueType';
@@ -107,22 +104,18 @@ export class GameItemService extends BaseJsonService {
   }
 
   async getProcessorListfromJson(catalogueType: string): Promise<ResultWithValue<Array<Processor>>> {
-    const baseJson: string = catalogueType;
     const detailJson: string = mapToLocale(catalogueType);
 
     if (detailJson == null || detailJson.length < 1) {
       return { isSuccess: false, value: [], errorMessage: 'Locale not found' };
     }
 
-    const result = await this.getAsset<Array<ProcessorBase>>(`json/${baseJson}.json`);
-    if (!result.isSuccess) return { isSuccess: false, value: [], errorMessage: result.errorMessage };
-
-    const langResult = await this.getAsset<Array<ProcessorDetails>>(`json/${detailJson}.json`);
-    if (!langResult.isSuccess) return { isSuccess: false, value: [], errorMessage: result.errorMessage };
+    const langResult = await this.getAsset<Array<Processor>>(`json/${detailJson}.json`);
+    if (!langResult.isSuccess) return { isSuccess: false, value: [], errorMessage: langResult.errorMessage };
 
     return {
       isSuccess: true,
-      value: mapProcessorItems(result.value, langResult.value),
+      value: langResult.value,
       errorMessage: ''
     }
   }
