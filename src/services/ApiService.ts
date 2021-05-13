@@ -1,4 +1,3 @@
-import { PlatformType } from '../contracts/enum/PlatformType';
 import { CommunityMissionViewModel } from '../contracts/generated/communityMissionViewModel';
 import { GuideMetaViewModel } from '../contracts/generated/guideMetaViewModel';
 import { OnlineMeetup2020SubmissionViewModel } from '../contracts/generated/onlineMeetup2020SubmissionViewModel';
@@ -8,8 +7,8 @@ import { WeekendMissionViewModel } from '../contracts/generated/Model/HelloGames
 import { NmsfmTrackDataViewModel } from '../contracts/generated/Model/nmsfmTrackDataViewModel';
 
 export class ApiService extends BaseApiService {
-    async getCommunityMission(platform: PlatformType): Promise<ResultWithValue<CommunityMissionViewModel>> {
-        return await this.get<CommunityMissionViewModel>(`HelloGames/CommunityMission/${platform.toString()}`);
+    async getCommunityMission(): Promise<ResultWithValue<CommunityMissionViewModel>> {
+        return await this.get<CommunityMissionViewModel>('HelloGames/CommunityMission/');
     }
 
     async getGuideMetaData(guid: string): Promise<ResultWithValue<GuideMetaViewModel>> {

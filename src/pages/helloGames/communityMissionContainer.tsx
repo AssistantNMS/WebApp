@@ -14,8 +14,6 @@ import { IServices, withServices } from '../../components/core/servicesProvider'
 
 interface IProps {
     services: IServices;
-    chosenPlatform: PlatformType;
-    setPlatform: (platform: PlatformType) => void;
 }
 
 interface IState {
@@ -35,12 +33,11 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
             quicksilverStoreItems: (quicksilverJson as any).default,
             status: NetworkState.Loading
         };
-        this.fetchCommunityMission(this.props.chosenPlatform);
+        this.fetchCommunityMission();
     }
 
-    fetchCommunityMission = async (plat: PlatformType) => {
-        if (plat === PlatformType.Unknown) plat = PlatformType.PC;
-        var communityMissionResult = await this.props.services.apiService.getCommunityMission(plat);
+    fetchCommunityMission = async () => {
+        var communityMissionResult = await this.props.services.apiService.getCommunityMission();
         if (!communityMissionResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -57,24 +54,10 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
         });
     }
 
-    changePlatform = (plat: PlatformType) => {
-        if (plat === this.props.chosenPlatform) return;
-        this.setState(() => {
-            return {
-                status: NetworkState.Loading
-            }
-        }, () => {
-            this.fetchCommunityMission(plat);
-            this.props.setPlatform(plat);
-        }
-        );
-    }
-
     render() {
         return (
             <CommunityMissionPresenter
                 {...this.state} {...this.props}
-                changePlatform={this.changePlatform}
             />
         );
     }
