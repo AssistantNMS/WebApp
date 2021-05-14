@@ -14,6 +14,7 @@ export class AllGameItemsService {
     CatalogueType.cooking.toString(),
     CatalogueType.technology.toString(),
     CatalogueType.technologyModule.toString(),
+    CatalogueType.constructedTechnology.toString(),
     CatalogueType.others.toString()
   ];
 
