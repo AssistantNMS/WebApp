@@ -1,4 +1,5 @@
 @mixin bmd-disabled() {
+
   fieldset[disabled][disabled] &,
   &.disabled,
   &:disabled,
@@ -9,12 +10,25 @@
 
 // Placeholder text
 @mixin material-placeholder() {
-  &::-moz-placeholder {@content; } // Firefox
-  &:-ms-input-placeholder {@content; } // Internet Explorer 10+
-  &::-webkit-input-placeholder  {@content; } // Safari and Chrome
+  &::-moz-placeholder {
+    @content;
+  }
+
+  // Firefox
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  // Internet Explorer 10+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  // Safari and Chrome
 }
 
 @mixin bmd-selection-color() {
+
   .radio label,
   .radio-inline,
   .checkbox label,
@@ -34,6 +48,7 @@
       label:has(input[type=checkbox][disabled]),
       // css 4
       fieldset[disabled] & {
+
         &,
         &:hover,
         &:focus {
@@ -57,6 +72,7 @@
   &::after {
     border-color: $color;
   }
+
   &::before {
     background-color: $color;
   }
@@ -64,6 +80,7 @@
 
 
 @mixin bmd-form-color($label-color, $label-color-focus, $border-color, $line-color) {
+
   [class^='bmd-label'],
   [class*=' bmd-label'] {
     color: $label-color;
@@ -72,43 +89,29 @@
   // override BS and keep the border-color normal/grey so that overlaid focus animation draws attention
   .form-control {
     // underline animation color on focus
-    $underline-background-image: linear-gradient(
-        to top,
+    $underline-background-image: linear-gradient(to top,
         $label-color-focus 2px,
-        fade-out($label-color-focus, 1) 2px
-      ),
-      linear-gradient(
-        to top,
+        fade-out($label-color-focus, 1) 2px),
+      linear-gradient(to top,
         $line-color 1px,
-        fade-out($line-color, 1) 1px
-      );
-    $underline-background-image-invalid: linear-gradient(
-        to top,
+        fade-out($line-color, 1) 1px);
+    $underline-background-image-invalid: linear-gradient(to top,
         $bmd-invalid-underline 2px,
-        fade-out($bmd-invalid-underline, 1) 2px
-      ),
-      linear-gradient(
-        to top,
+        fade-out($bmd-invalid-underline, 1) 2px),
+      linear-gradient(to top,
         $line-color 1px,
-        fade-out($line-color, 1) 1px
-      );
-    $underline-background-image-readonly: linear-gradient(
-        to top,
+        fade-out($line-color, 1) 1px);
+    $underline-background-image-readonly: linear-gradient(to top,
         $bmd-readonly-underline 1px,
-        fade-out($bmd-readonly-underline, 1) 1px
-      ),
-      linear-gradient(
-        to top,
+        fade-out($bmd-readonly-underline, 1) 1px),
+      linear-gradient(to top,
         $line-color 1px,
-        fade-out($line-color, 1) 1px
-      );
-    $underline-background-image-disabled: linear-gradient(
-      to right,
-      $line-color 0%,
-      $line-color 30%,
-      transparent 30%,
-      transparent 100%
-    );
+        fade-out($line-color, 1) 1px);
+    $underline-background-image-disabled: linear-gradient(to right,
+        $line-color 0%,
+        $line-color 30%,
+        transparent 30%,
+        transparent 100%);
 
     // bg image is always there, we just need to reveal it
     &,
@@ -132,18 +135,23 @@
 
     // allow underline focus image and validation images to coexist
     &.form-control-success {
+
       &,
       .is-focused & {
         background-image: $underline-background-image, $form-icon-success;
       }
     }
+
     &.form-control-warning {
+
       &,
       .is-focused & {
         background-image: $underline-background-image, $form-icon-warning;
       }
     }
+
     &.form-control-danger {
+
       &,
       .is-focused & {
         background-image: $underline-background-image, $form-icon-danger;
@@ -192,17 +200,14 @@
 }
 
 @mixin bmd-form-size-variant($font-size, $label-top-margin, $variant-padding-y, $variant-line-height, $form-group-context: null) {
-  $variant-input-height: (
-    ($font-size * $variant-line-height) + ($variant-padding-y * 2)
-  );
+  $variant-input-height: (($font-size * $variant-line-height) + ($variant-padding-y * 2));
   // $static-font-size: ($bmd-bmd-label-static-size-ratio * $font-size);
   $floating-font-size: 0.6875rem;
   $static-font-size: 0.875rem;
   $help-font-size: ($bmd-help-size-ratio * $font-size);
 
   $label-static-top: $label-top-margin;
-  $label-placeholder-top: $label-top-margin + $static-font-size +
-    $variant-padding-y;
+  $label-placeholder-top: $label-top-margin + $static-font-size + $variant-padding-y;
 
   //@debug "font-size: #{$font-size} static-font-size: #{$static-font-size} help-font-size: #{$help-font-size} form-group-context: #{$form-group-context} ";
 
@@ -236,14 +241,14 @@
 
   // Set all line-heights preferably to 1 so that we can space out everything manually without additional added space
   //  from the default line-height of 1.5
-  .form-control,
-  label,
-  input::placeholder {
-    line-height: $variant-line-height + 0.1;
-  }
+  // .form-control,
+  // label,
+  // input::placeholder {
+  //   line-height: $variant-line-height + 0.1;
+  // }
 
-  label{
-      color: $mdb-input-placeholder-color;
+  label {
+    color: $mdb-input-placeholder-color;
   }
 
   .radio label,
@@ -285,6 +290,7 @@
   .bmd-label-static {
     @include bmd-label-static($label-static-top - 0.65, $static-font-size);
   }
+
   // #559 Fix for webkit/chrome autofill - rule must be separate because it breaks firefox otherwise #731
   //input:-webkit-autofill ~ .bmd-label-floating {  FIXME: confirm that the autofill js generation of change event makes this unnecessary
   //  @include bmd-label-static($label-top, $static-font-size, $static-line-height);
@@ -297,6 +303,7 @@
 
   // validation icon placement
   .form-control {
+
     &.form-control-success,
     &.form-control-warning,
     &.form-control-danger {
@@ -320,7 +327,8 @@
   }
 }
 
-@mixin mdb-label-color-toggle-focus(){
+@mixin mdb-label-color-toggle-focus() {
+
   // override bootstrap focus and keep all the standard color (could be multiple radios in the form group)
   .form-group.is-focused & {
     color: $mdb-label-color;
@@ -338,57 +346,65 @@
   }
 }
 
-@mixin animation($value){
-      -webkit-animation: $value;
-        -moz-animation: $value;
-        -o-animation: $value;
-        -ms-animation: $value;
-        animation: $value;
+@mixin animation($value) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  -o-animation: $value;
+  -ms-animation: $value;
+  animation: $value;
 }
 
-@mixin transform-scale3d($value){
-     -webkit-transform: scale3d($value);
-        -moz-transform: scale3d($value);
-        -o-transform: scale3d($value);
-        -ms-transform: scale3d($value);
-        transform: scale3d($value);
+@mixin transform-scale3d($value) {
+  -webkit-transform: scale3d($value);
+  -moz-transform: scale3d($value);
+  -o-transform: scale3d($value);
+  -ms-transform: scale3d($value);
+  transform: scale3d($value);
 }
 
-@mixin create-colored-tags(){
-    &.tag-primary{
-        @include tag-color($brand-primary);
-    }
-    &.tag-info {
-        @include tag-color($brand-info);
-    }
-    &.tag-success{
-        @include tag-color($brand-success);
-    }
-    &.tag-warning{
-        @include tag-color($brand-warning);
-    }
-    &.tag-danger{
-        @include tag-color($brand-danger);
-    }
-    &.tag-rose{
-      @include tag-color($brand-rose);
-    }
+@mixin create-colored-tags() {
+  &.tag-primary {
+    @include tag-color($brand-primary);
+  }
+
+  &.tag-info {
+    @include tag-color($brand-info);
+  }
+
+  &.tag-success {
+    @include tag-color($brand-success);
+  }
+
+  &.tag-warning {
+    @include tag-color($brand-warning);
+  }
+
+  &.tag-danger {
+    @include tag-color($brand-danger);
+  }
+
+  &.tag-rose {
+    @include tag-color($brand-rose);
+  }
 }
-@mixin tag-color ($color){
-    .tag{
-         background-color: $color;
-         color: $white-color;
-         .tagsinput-remove-link{
-             color: $white-color;
-         }
-     }
-     .tagsinput-add{
-         color: $color;
-     }
+
+@mixin tag-color ($color) {
+  .tag {
+    background-color: $color;
+    color: $white-color;
+
+    .tagsinput-remove-link {
+      color: $white-color;
+    }
+  }
+
+  .tagsinput-add {
+    color: $color;
+  }
 }
 
 
 // variations(unquote(""), background-color, #FFF);
 @mixin variations($component, $selector-suffix, $mdb-param-1, $color-default) {
- // @include generic-variations($component, $selector-suffix, $color-default, "variations-content", $mdb-param-1);
+  // @include generic-variations($component, $selector-suffix, $color-default, "variations-content", $mdb-param-1);
 }
