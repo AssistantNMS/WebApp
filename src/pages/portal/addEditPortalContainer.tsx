@@ -31,7 +31,8 @@ export class AddEditPortalContainerUnconnected extends React.Component<IProps, I
     constructor(props: IProps) {
         super(props);
 
-        const portalItem: PortalRecord = this.props.location?.state || anyObject;
+        // Had to use spread, otherwise this item would sometimes have data when it shouldn't
+        const portalItem: PortalRecord = { ...(this.props.location?.state ?? anyObject) };
         const isEdit = portalItem.Uuid != null;
         if (!isEdit) {
             portalItem.Uuid = newGuid();

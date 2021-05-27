@@ -30,10 +30,10 @@ export const PortalCardListTile = (props: IProps) => {
 
     let actions = [];
     if (props.onEdit != null) {
-        actions.push(<li><i key="edit" onClick={props.onEdit} className="material-icons">edit</i></li>)
+        actions.push(<li key="edit"><i onClick={props.onEdit} className="material-icons">edit</i></li>)
     }
     if (props.onDelete != null) {
-        actions.push(<li><i key="delete" onClick={props.onDelete} className="material-icons">delete</i></li>);
+        actions.push(<li key="delete"><i onClick={props.onDelete} className="material-icons">delete</i></li>);
     }
 
     const hexString = intArrayToHex(props.Codes).toUpperCase();
