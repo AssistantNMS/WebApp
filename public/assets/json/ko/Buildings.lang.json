@@ -6090,7 +6090,7 @@
     "Icon": "building/303.png",
     "Name": "홀로그램 천체 장치",
     "Group": "해제 가능한 장식",
-    "Description": "독점적인 기지 장식용 장난감입니다.\n\n이 장치는 은하계를 구성하는 100경에 달하는 천체 중 하나를 나타내는 구형 홀로그램을 발산합니다.",
+    "Description": "독점적인 기지 장식용 장난감입니다.\n\n이 장치는 은하계를 구성하는 100경에 달하는 천체 중 하나를 나타내는 구형 홀로그램을 투사합니다.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
     "IsCraftable": true,
@@ -8622,6 +8622,49 @@
       {
         "Id": "raw1",
         "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build422",
+    "Icon": "building/422.png",
+    "Name": "상륙 거점 원정 배너",
+    "Group": "맞춤형 개인 식별자",
+    "Description": "",
+    "BaseValueUnits": 220.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build423",
+    "Icon": "building/422.png",
+    "Name": "상륙 거점 원정 데칼",
+    "Group": "장식",
+    "Description": "",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
       }
     ],
     "StatBonuses": [],

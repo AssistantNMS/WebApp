@@ -7270,7 +7270,7 @@
   {
     "Id": "build360",
     "Icon": "building/360.png",
-    "Name": "Bytebeat Device",
+    "Name": "ByteBeat Device",
     "Group": "Audio Synthesiser",
     "Description": "An advanced audio generator, allowing the user to synthesise complex musical arrangements.\n\nMultiple devices may be placed in sequence or connected to lights to generate spectacular displays.",
     "BaseValueUnits": 10.0,
@@ -8779,6 +8779,49 @@
       {
         "Id": "raw1",
         "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build422",
+    "Icon": "building/422.png",
+    "Name": "Beachhead Expedition Banner",
+    "Group": "Bespoke Personal Identification",
+    "Description": "Equip this exclusive Personal Flair in commemoration of the 'Beachhead' Expedition, and your success in tracking the renegade historical echo.\n\nApply this banner to your profile at an Appearance Modifier.",
+    "BaseValueUnits": 220.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build423",
+    "Icon": "building/423.png",
+    "Name": "Beachhead Expedition Decal",
+    "Group": "Decoration",
+    "Description": "An exclusive placeable decal, to add flair and decoration to bases.\n\nThis decal commemorates the collective effort of the Travellers in mapping the Histiographical Flux and tracking the renegade echo during the Beachhead Expedition.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
       }
     ],
     "StatBonuses": [],

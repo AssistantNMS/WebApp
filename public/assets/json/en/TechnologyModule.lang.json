@@ -7190,5 +7190,269 @@
         "MaxValue": "70"
       }
     ]
+  },
+  {
+    "Id": "tMod168",
+    "Icon": "upgradeModules/103.png",
+    "Name": "Launch Thruster",
+    "Group": "C-Class Launch Thruster Upgrade",
+    "Description": "A moderate upgrade for the Starship Launch Thrusters. Use FE_ALT1 to begin upgrade installation process.\n\nThe module is flexible, and exact upgrade statistics are unknown until installation is complete.\n\nPotential improvements include: launch efficiency and speed.",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "NumStatsMin": 1,
+    "NumStatsMax": 1,
+    "ProceduralStatBonuses": [
+      {
+        "AlwaysChoose": true,
+        "Name": "Launch Cost",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recharge2",
+        "MinValue": "-10",
+        "MaxValue": "-5"
+      },
+      {
+        "AlwaysChoose": false,
+        "Name": "Boost",
+        "LocaleKeyTemplate": "enabled",
+        "Image": "recovery",
+        "MinValue": "0",
+        "MaxValue": "1"
+      }
+    ]
+  },
+  {
+    "Id": "tMod169",
+    "Icon": "upgradeModules/104.png",
+    "Name": "Launch Thruster",
+    "Group": "B-Class Launch Thruster Upgrade",
+    "Description": "A significant upgrade for the Starship Launch Thrusters. Use FE_ALT1 to begin upgrade installation process.\n\nThe module is flexible, and exact upgrade statistics are unknown until installation is complete.\n\nPotential improvements include: launch efficiency and speed.",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "NumStatsMin": 1,
+    "NumStatsMax": 2,
+    "ProceduralStatBonuses": [
+      {
+        "AlwaysChoose": true,
+        "Name": "Launch Cost",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recharge2",
+        "MinValue": "-15",
+        "MaxValue": "-10"
+      },
+      {
+        "AlwaysChoose": false,
+        "Name": "Boost",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recovery",
+        "MinValue": "2",
+        "MaxValue": "5"
+      }
+    ]
+  },
+  {
+    "Id": "tMod170",
+    "Icon": "upgradeModules/105.png",
+    "Name": "Launch Thruster",
+    "Group": "A-Class Launch Thruster Upgrade",
+    "Description": "An extremely powerful upgrade for the Starship Launch Thrusters. Use FE_ALT1 to begin upgrade installation process.\n\nThe module is flexible, and exact upgrade statistics are unknown until installation is complete.\n\nPotential improvements include: launch efficiency and speed.",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "NumStatsMin": 1,
+    "NumStatsMax": 2,
+    "ProceduralStatBonuses": [
+      {
+        "AlwaysChoose": true,
+        "Name": "Launch Cost",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recharge2",
+        "MinValue": "-20",
+        "MaxValue": "-15"
+      },
+      {
+        "AlwaysChoose": false,
+        "Name": "Boost",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recovery",
+        "MinValue": "5",
+        "MaxValue": "8"
+      }
+    ]
+  },
+  {
+    "Id": "tMod171",
+    "Icon": "upgradeModules/106.png",
+    "Name": "Launch Thruster",
+    "Group": "S-Class Launch Thruster Upgrade",
+    "Description": "A supremely powerful upgrade for the Starship Launch Thrusters. Use FE_ALT1 to begin upgrade installation process.\n\nThe module is flexible, and exact upgrade statistics are unknown until installation is complete.\n\nPotential improvements include: launch efficiency and speed.",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "NumStatsMin": 2,
+    "NumStatsMax": 2,
+    "ProceduralStatBonuses": [
+      {
+        "AlwaysChoose": true,
+        "Name": "Launch Cost",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recharge2",
+        "MinValue": "-20",
+        "MaxValue": "-20"
+      },
+      {
+        "AlwaysChoose": false,
+        "Name": "Boost",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recovery",
+        "MinValue": "8",
+        "MaxValue": "10"
+      }
+    ]
+  },
+  {
+    "Id": "tMod172",
+    "Icon": "upgradeModules/160.png",
+    "Name": "Launch Thruster",
+    "Group": "Illegal Launch Thruster Upgrade",
+    "Description": "",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "NumStatsMin": 2,
+    "NumStatsMax": 2,
+    "ProceduralStatBonuses": [
+      {
+        "AlwaysChoose": true,
+        "Name": "Launch Cost",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recharge2",
+        "MinValue": "-25",
+        "MaxValue": "-5"
+      },
+      {
+        "AlwaysChoose": false,
+        "Name": "Boost",
+        "LocaleKeyTemplate": "enabled",
+        "Image": "recovery",
+        "MinValue": "0",
+        "MaxValue": "10"
+      }
+    ]
+  },
+  {
+    "Id": "tMod173",
+    "Icon": "upgradeModules/66.png",
+    "Name": "Salvaged Hyperdrive Upgrade",
+    "Group": "Salvaged Freighter Module",
+    "Description": "A deployable freighter upgrade, salvaged from %NAME%.\n\nCan be re-deployed into your own capital ship to improve its Hyperdrive.",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "NumStatsMin": 2,
+    "NumStatsMax": 2,
+    "ProceduralStatBonuses": [
+      {
+        "AlwaysChoose": false,
+        "Name": "Hyperdrive Range",
+        "LocaleKeyTemplate": "lightYear",
+        "Image": "hyperDrive",
+        "MinValue": "200",
+        "MaxValue": "250"
+      },
+      {
+        "AlwaysChoose": false,
+        "Name": "Warp Cell Efficiency",
+        "LocaleKeyTemplate": "defaultTemplate",
+        "Image": "recovery",
+        "MinValue": "1",
+        "MaxValue": "1"
+      }
+    ]
+  },
+  {
+    "Id": "tMod174",
+    "Icon": "upgradeModules/62.png",
+    "Name": "Salvaged Fleet Beacon",
+    "Group": "Salvaged Freighter Module",
+    "Description": "A deployable freighter upgrade, salvaged from %NAME%.\n\nCan be re-deployed into your own capital ship to improve the speed of your fleet.",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "NumStatsMin": 1,
+    "NumStatsMax": 1,
+    "ProceduralStatBonuses": [
+      {
+        "AlwaysChoose": false,
+        "Name": "Expedition Speed",
+        "LocaleKeyTemplate": "defaultTemplate",
+        "Image": "unknown",
+        "MinValue": "1.15",
+        "MaxValue": "1.15"
+      }
+    ]
+  },
+  {
+    "Id": "tMod175",
+    "Icon": "upgradeModules/39.png",
+    "Name": "Salvaged Fleet Fuel Unit",
+    "Group": "Salvaged Freighter Module",
+    "Description": "A deployable freighter upgrade, salvaged from %NAME%.\n\nCan be re-deployed into your own capital ship to improve the fuel efficiency of your fleet.",
+    "BaseValueUnits": 0.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 0,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "NumStatsMin": 1,
+    "NumStatsMax": 1,
+    "ProceduralStatBonuses": [
+      {
+        "AlwaysChoose": false,
+        "Name": "Expedition Efficiency",
+        "LocaleKeyTemplate": "defaultTemplate",
+        "Image": "unknown",
+        "MinValue": "0.85",
+        "MaxValue": "0.8"
+      }
+    ]
   }
 ]

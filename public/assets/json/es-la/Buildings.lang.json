@@ -6090,7 +6090,7 @@
     "Icon": "building/303.png",
     "Name": "Globo holográfico",
     "Group": "Decoración desbloqueable",
-    "Description": "Una rareza para bases con fines exclusivamente decorativos.\n\nEste artilugio proyecta un holograma esférico que representa un cuerpo celestial de los quintillones que pueblan las galaxias.",
+    "Description": "Una exclusiva curiosidad decorativa para las bases.\n\nEste dispositivo emite un holograma esférico que representa uno de los quintillones de cuerpos celestes que pueblan las galaxias.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
     "IsCraftable": true,
@@ -8622,6 +8622,49 @@
       {
         "Id": "raw1",
         "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build422",
+    "Icon": "building/422.png",
+    "Name": "Estandarte de la expedición Cabeza de playa",
+    "Group": "Identificación personal a medida",
+    "Description": "",
+    "BaseValueUnits": 220.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build423",
+    "Icon": "building/422.png",
+    "Name": "Calcomanía de la expedición Cabeza de playa",
+    "Group": "Decoración",
+    "Description": "",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
       }
     ],
     "StatBonuses": [],

@@ -6032,7 +6032,7 @@
     "Icon": "building/301.png",
     "Name": "Companheiro robótico",
     "Group": "Drone pessoal manobrador",
-    "Description": "Um drone perfeitamente programado e livre de erros. \n \n Este robô em miniatura será uma presença animada na sua base, trazendo alegria, risos e um constante zumbido de fundo à sua casa.",
+    "Description": "Um drone perfeitamente programado e livre de erros. \n\n  Este robô em miniatura será uma presença animada na sua base, trazendo alegria, risos e um constante zumbido de fundo à sua casa.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
     "IsCraftable": true,
@@ -8622,6 +8622,49 @@
       {
         "Id": "raw1",
         "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build422",
+    "Icon": "building/422.png",
+    "Name": "Estandarte da Expedição Desembarque",
+    "Group": "Identificação pessoal personalizada",
+    "Description": "",
+    "BaseValueUnits": 220.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": []
+  },
+  {
+    "Id": "build423",
+    "Icon": "building/422.png",
+    "Name": "Decalque da Expedição Desembarque",
+    "Group": "Decoração",
+    "Description": "",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
       }
     ],
     "StatBonuses": [],
