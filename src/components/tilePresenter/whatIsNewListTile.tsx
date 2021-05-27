@@ -74,11 +74,11 @@ export class WhatIsNewListTile extends React.Component<IProps, IState> {
                     snapPoints={[400]}
                 >
                     <div className="container">
-                        <div className="row justify pt-3">
+                        <div className="row justify pt-3" style={{ textAlign: 'left' }}>
                             <div className="col-xl-5 col-lg-6 col-md-8 col-sm-10 col-xs-12">
                                 <ReactMarkdown
                                     source={version.markdown}
-                                    escapeHtml={false}
+                                    escapeHtml={true}
                                 />
                             </div>
                         </div>
