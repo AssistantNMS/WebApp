@@ -58,7 +58,7 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
     }
 
     const versionString = i18next.t(LocaleKey.appVersion).replace('{0}', process.env.REACT_APP_VERSION ?? '');
-    const gameVersionString = i18next.t(LocaleKey.gameVersion).replace('{0}', '3.42');
+    const gameVersionString = i18next.t(LocaleKey.gameVersion).replace('{0}', '3.50');
 
     return (
         <div
