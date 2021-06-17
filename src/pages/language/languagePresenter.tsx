@@ -12,7 +12,7 @@ import { LocaleKey } from '../../localization/LocaleKey';
 
 export const LanguagePresenter: React.FC = () => {
     const buttons = [
-        { title: i18next.t(LocaleKey.email), event: AnalyticsEvent.externalLinkKurtLourensEmail, url: ExternalUrls.kurtLourensEmail },
+        { title: i18next.t(LocaleKey.useTranslationTool), event: AnalyticsEvent.externalLinkTranslationTool, url: ExternalUrls.translationTool },
         { title: i18next.t(LocaleKey.github), event: AnalyticsEvent.externalLinkGitHubLanguage, url: ExternalUrls.githubLanguageRepo }
     ];
     const title = i18next.t(LocaleKey.language);

@@ -41,7 +41,7 @@ export const PatreonPresenter: React.FC<IProps> = (props: IProps) => {
             <HeadComponent title={props.title} />
             <NavBar title={props.title} />
             <div className="content">
-                <div className="container full pt1">
+                <div className="container full pt1 pb5">
                     {handleLoadingOrError((localProps: IProps) => displayPatreonList(localProps.patreonItems))}
                 </div>
             </div>
