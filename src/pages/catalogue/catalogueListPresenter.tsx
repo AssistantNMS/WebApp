@@ -2,7 +2,9 @@ import i18next from 'i18next';
 import React from 'react';
 import { GameItemList } from '../../components/common/gameItemList/gameItemList';
 import { HeadComponent } from '../../components/core/headComponent';
+import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
+import { NetworkState } from '../../constants/NetworkState';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { LocaleKey } from '../../localization/LocaleKey';
 import './catalogue.scss';
@@ -15,6 +17,7 @@ interface IProps {
     items: Array<GameItemModel>;
     displayItems: Array<GameItemModel>;
     searchTerm: string;
+    networkState: NetworkState;
 
     // Container Specific
     onSearchTextChange: (e: any) => void;
@@ -40,7 +43,11 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
                         <i className="material-icons">search</i>
                     </button>
                 </form>
-                <GameItemList key={props.displayItems.length} items={props.displayItems} />
+                {
+                    props.networkState === NetworkState.Loading
+                        ? <SmallLoading />
+                        : <GameItemList key={props.displayItems.length} items={props.displayItems} />
+                }
             </div>
         </>
     );

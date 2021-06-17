@@ -2,6 +2,7 @@ import React from 'react';
 import { forceCheck } from 'react-lazyload';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import { NetworkState } from '../../constants/NetworkState';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { State } from '../../redux/state';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
@@ -20,6 +21,7 @@ interface IState {
     displayItems: Array<GameItemModel>;
     searchTerm: string;
     types: string;
+    networkState: NetworkState;
 }
 
 export class CatalogueListContainerUnconnected extends React.Component<IProps, IState> {
@@ -30,7 +32,8 @@ export class CatalogueListContainerUnconnected extends React.Component<IProps, I
             items: new Array<GameItemModel>(),
             displayItems: new Array<GameItemModel>(),
             searchTerm: '',
-            types: props.match?.params?.types ?? ''
+            types: props.match?.params?.types ?? '',
+            networkState: NetworkState.Loading,
         }
     }
 
@@ -58,7 +61,8 @@ export class CatalogueListContainerUnconnected extends React.Component<IProps, I
             return {
                 displayItems: itemsResult.value,
                 items: itemsResult.value,
-                types: newTypes
+                types: newTypes,
+                networkState: NetworkState.Success,
             }
         }, () => this.search(null, this.state.searchTerm));
     }
