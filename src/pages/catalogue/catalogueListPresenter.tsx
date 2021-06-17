@@ -33,6 +33,7 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
                     <input type="text"
                         className="form-control"
                         placeholder={i18next.t(LocaleKey.search)}
+                        value={props.searchTerm}
                         onChange={props.onSearchTextChange}
                     />
                     <button className="icon-container pointer" type="submit">

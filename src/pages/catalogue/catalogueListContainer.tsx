@@ -58,23 +58,22 @@ export class CatalogueListContainerUnconnected extends React.Component<IProps, I
             return {
                 displayItems: itemsResult.value,
                 items: itemsResult.value,
-                searchTerm: '',
                 types: newTypes
             }
-        });
+        }, () => this.search(null, this.state.searchTerm));
     }
 
     onSearchTextChange = (e: any) => {
-        e.persist();
+        e?.persist?.();
 
         const searchValue = e?.target?.value || '';
+        if (this.state.searchTerm === searchValue) return;
+
         this.search(null, searchValue);
     }
 
     search = (e: any, searchText: string) => {
-        if (e) e.preventDefault();
-
-        if (this.state.searchTerm === searchText) return;
+        e?.preventDefault?.();
 
         const newDisplayItems = new Array<GameItemModel>();
         for (const itemIndex in this.state.items) {
@@ -89,9 +88,7 @@ export class CatalogueListContainerUnconnected extends React.Component<IProps, I
                 displayItems: newDisplayItems,
                 searchTerm: searchText
             };
-        }, () => {
-            forceCheck();
-        });
+        }, () => forceCheck());
     }
 
     render() {
