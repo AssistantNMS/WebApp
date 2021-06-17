@@ -21,7 +21,7 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.patreon).toString(),
+    name: i18next.t(LocaleKey.patrons).toString(),
     link: routes.patreon,
     icon: '/assets/images/patreon.png',
     iconType: DrawerIconType.Custom,
