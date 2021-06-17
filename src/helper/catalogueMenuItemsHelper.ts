@@ -71,7 +71,7 @@ export const getCatalogueMenuItems = (): Array<DrawerMenuItem> => {
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.upgradeModule).toString(),
+    name: i18next.t(LocaleKey.upgradeModules).toString(),
     link: `${catalogue}/${CatalogueType.technologyModule}`,
     icon: '/assets/images/drawer/upgradeModules.png',
     iconType: DrawerIconType.Custom,
