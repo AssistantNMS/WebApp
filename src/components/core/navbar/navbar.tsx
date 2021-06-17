@@ -66,7 +66,7 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
                         <span className="navbar-toggler-icon icon-bar"></span>
                     </button>
                     <div className="navbar-wrapper">
-                        <span className="navbar-brand">{this.props.title}</span>
+                        <span className="navbar-brand noselect">{this.props.title}</span>
                     </div>
                     <div className="navbar-collapse justify-content-end">
                         {
@@ -80,11 +80,11 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
                                     ? this.props.additionalItems
                                     : null
                             }
-                            <li className="nav-item dropdown">
+                            <li className="nav-item dropdown noselect" draggable={false}>
                                 <span className="nav-link pointer" onClick={this.showLangDropdown}>
                                     <i className="material-icons">language</i>
                                 </span>
-                                <div className={classNames('dropdown-menu dropdown-menu-right', { 'show': this.state.langDropdownVisible })}>
+                                <div className={classNames('dropdown-menu dropdown-menu-right noselect', { 'show': this.state.langDropdownVisible })} draggable={false}>
                                     {
                                         this.state.localeMap.map((locale: LocalizationMap) => {
                                             return (

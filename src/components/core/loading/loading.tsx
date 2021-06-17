@@ -29,7 +29,6 @@ export const Loading = () => {
 }
 
 export const SmallLoading = () => {
-
     return (
         <div className="container">
             <div className="row">

@@ -32,7 +32,7 @@ export const CataloguePresenter: React.FC = () => {
                         {
                             menuItems.map((item) => {
                                 return (
-                                    <div className="catalogue-item" key={item.name}>
+                                    <div className="catalogue-item noselect" key={item.name}>
                                         <Link to={item.link} className="nav-link">
                                             {
                                                 renderIcon(item)

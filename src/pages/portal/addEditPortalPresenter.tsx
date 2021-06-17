@@ -52,8 +52,8 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
             <HeadComponent title={props.item.Name} />
             <NavBar title={props.item.Name} additionalItems={[
                 <li key={`editPortalName`} className="nav-item" onClick={props.editName}>
-                    <span className="nav-link pointer">
-                        <i className="material-icons">edit</i>
+                    <span className="nav-link pointer noselect">
+                        <i className="material-icons noselect">edit</i>
                     </span>
                 </li>
             ]} />
@@ -80,7 +80,7 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
                     <div className="col-12 col-md-4 togglebutton">
                         <label style={{ color: 'white' }}>
                             {i18next.t(LocaleKey.useAltGlyphs)}&nbsp;
-                                <input type="checkbox" checked={props.useAltGlyphs} onChange={(e: any) => {
+                            <input type="checkbox" checked={props.useAltGlyphs} onChange={(e: any) => {
                                 if (props.toggleAltGlyphs) props.toggleAltGlyphs();
                             }} />
                             <span className="toggle"></span>

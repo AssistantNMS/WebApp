@@ -12,13 +12,6 @@ interface IProps {
     presenter?: (props: GameItemModel | RequiredItemDetails | Processor) => JSX.Element
 }
 
-// interface IState {
-//     displayItems: Array<GameItemModel>;
-//     currentPage: number;
-//     pageSize: number;
-//     hasMoreItems: boolean;
-// }
-
 export const GameItemListWithoutScrollTracking = (props: IProps) => {
 
     const displayGameItems = (any: any) => {
@@ -27,12 +20,11 @@ export const GameItemListWithoutScrollTracking = (props: IProps) => {
     }
 
     return (
-        <div id="game-item-list" className="game-item-list">
+        <div id="game-item-list" className="game-item-list noselect">
             <ReactList
                 itemRenderer={(index: number) => {
                     const item = props.items[index];
                     return (
-                        // <LazyLoad key={`game-item-${item.Id}`} once offset={200} >
                         <div key={`game-item-${item.Id}`} className="game-item">
                             {
                                 props.presenter != null
@@ -40,7 +32,6 @@ export const GameItemListWithoutScrollTracking = (props: IProps) => {
                                     : displayGameItems(item)
                             }
                         </div>
-                        // </LazyLoad>
                     )
                 }}
                 length={props.items.length}

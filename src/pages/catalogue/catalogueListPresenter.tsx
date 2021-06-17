@@ -32,7 +32,7 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
-                <form id="searchBar" className="searchbar row" onSubmit={(e) => props.search(e, props.searchTerm)}>
+                <form id="searchBar" className="searchbar row noselect" onSubmit={(e) => props.search(e, props.searchTerm)}>
                     <input type="text"
                         className="form-control"
                         placeholder={i18next.t(LocaleKey.search)}

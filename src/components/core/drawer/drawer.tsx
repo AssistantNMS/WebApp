@@ -33,7 +33,7 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
         const { pathname } = props.location;
 
         return menuItems.map((item: DrawerMenuItem, index: number) => {
-            const classes = classNames('nav-item', {
+            const classes = classNames('nav-item noselect', {
                 active: pathname === item.link,
                 separator: item.isSeparator
             });
@@ -45,8 +45,8 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
             if (item.iconType === DrawerIconType.Custom) icon = <img className="custom-icons" src={item.icon} alt={item.icon} />;
 
             var child = item.link.includes('http')
-                ? <a href={item.link} target="_blank" rel="noopener noreferrer" className="nav-link">{icon}<p>{item.name}</p></a>
-                : <Link to={item.link} className="nav-link" draggable={false}>{icon}<p>{item.name}</p></Link>
+                ? <a href={item.link} target="_blank" rel="noopener noreferrer" className="nav-link noselect">{icon}<p>{item.name}</p></a>
+                : <Link to={item.link} className="nav-link noselect" draggable={false}>{icon}<p>{item.name}</p></Link>
 
             return (
                 <li onClick={menuItemClick} key={`${item.link}-${index}`}
@@ -65,19 +65,19 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
             className={classNames('sidebar', props.selectedLanguage)}>
             <div className="sidebar-wrapper ps-theme-default">
                 <ul className="nav">
-                    <div className="logo">
-                        <Link to="/" ><img src="/assets/images/DrawerHeader.png" alt="drawerHeader" /></Link>
+                    <div className="logo noselect">
+                        <Link to="/" draggable={false}><img src="/assets/images/DrawerHeader.png" draggable={false} alt="drawerHeader" /></Link>
                     </div>
                     {
                         renderMenuItems(menuItems)
                     }
                     <br />
-                    <div
+                    <div className="noselect"
                         style={{ textAlign: 'center', padding: '.5em .5em 0 .5em' }}
                         data-version={require('../../../buildName.json')}>
                         {versionString}
                     </div>
-                    <div
+                    <div className="noselect"
                         style={{ textAlign: 'center' }}>
                         {gameVersionString}
                     </div>
