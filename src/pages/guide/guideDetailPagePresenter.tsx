@@ -102,7 +102,7 @@ export const GuideDetailPagePresenter: React.FC<IProps> = (props: IProps) => {
         <>
             <HeadComponent title={title} description={description} />
             <NavBar title={title} />
-            <div className="content">
+            <div className="guide content">
                 <div className="container full pt1 pb5">
                     <div className="row">
                         <div className="col-12 guide">
