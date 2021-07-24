@@ -3,6 +3,7 @@ import { GameItemModel } from '../contracts/GameItemModel';
 import { GameItemService } from './GameItemService';
 import { CatalogueType } from '../constants/CatalogueType';
 import { anyObject } from '../helper/typescriptHacks';
+import { RequiredItem } from '../contracts/RequiredItem';
 
 export class AllGameItemsService {
   private typesArray = [
@@ -71,7 +72,7 @@ export class AllGameItemsService {
     }
     try {
       var craftableItems = allGenericItemsResult.value
-        .filter((r: any) => r.RequiredItems.find((ri: any) => ri.Id === itemId) != null);
+        .filter((r: GameItemModel) => (r.RequiredItems ?? []).find((ri: RequiredItem) => ri.Id === itemId) != null);
       return {
         isSuccess: true,
         value: craftableItems,
