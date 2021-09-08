@@ -1012,7 +1012,7 @@
   {
     "Id": "T_JM_WORD1",
     "Title": "단어 수집가 {0}",
-    "Description": "단어 %NUM%개를 배움",
+    "Description": "단어 %NUM%개 습득",
     "AppId": "",
     "AppIcon": "titles/words.png",
     "AppName": "",
@@ -1022,7 +1022,7 @@
   {
     "Id": "T_JM_WORD2",
     "Title": "학습자 {0}",
-    "Description": "단어 %NUM%개를 배움",
+    "Description": "단어 %NUM%개 습득",
     "AppId": "",
     "AppIcon": "titles/words.png",
     "AppName": "",
@@ -1032,7 +1032,7 @@
   {
     "Id": "T_JM_WORD3",
     "Title": "기록수호자 {0}",
-    "Description": "단어 %NUM%개를 배움",
+    "Description": "단어 %NUM%개 습득",
     "AppId": "",
     "AppIcon": "titles/words.png",
     "AppName": "",
@@ -1910,6 +1910,16 @@
     "UnlockedByStatValue": 0
   },
   {
+    "Id": "T_EXPD3",
+    "Title": "세계의 거장 {0}",
+    "Description": "원정 업적으로 획득함",
+    "AppId": "other153",
+    "AppIcon": "other/52.png",
+    "AppName": "Title: 'Globemaster'",
+    "UnlockedByStatLocaleKey": "about",
+    "UnlockedByStatValue": 0
+  },
+  {
     "Id": "T_DEATH1",
     "Title": "소각된 {0}",
     "Description": "혹독한 더위로 인해 반복 초기화",
@@ -2048,5 +2058,15 @@
     "AppName": "Title: 'The Doomed'",
     "UnlockedByStatLocaleKey": "about",
     "UnlockedByStatValue": 0
+  },
+  {
+    "Id": "T_MAYOR",
+    "Title": "지배자 {0}",
+    "Description": "행성 거주지의 감독관이 됨",
+    "AppId": "",
+    "AppIcon": "",
+    "AppName": "",
+    "UnlockedByStatLocaleKey": "about",
+    "UnlockedByStatValue": 1
   }
 ]

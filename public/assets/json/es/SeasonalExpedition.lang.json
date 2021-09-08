@@ -2,8 +2,6 @@
   {
     "Id": "seas-1",
     "Icon": "milestonePatches/PATCH.EXPEDITION.1.png",
-    "StartDate": "0001-01-01T00:00:00",
-    "EndDate": "0001-01-01T00:00:00",
     "Title": "Los Pioneros",
     "PortalCode": "602101D40677",
     "CaptainSteveYoutubePlaylist": "https://www.youtube.com/playlist?list=PLFVRR5wqxfgys6cgs_OcswC1ciJM80DBk",
@@ -2045,8 +2043,6 @@
   {
     "Id": "seas-2",
     "Icon": "milestonePatches/PATCH.EXPEDITION.2.ALT.png",
-    "StartDate": "0001-01-01T00:00:00",
-    "EndDate": "0001-01-01T00:00:00",
     "Title": "Cabeza de playa",
     "PortalCode": "319A029852B2",
     "CaptainSteveYoutubePlaylist": "https://www.youtube.com/playlist?list=PLFVRR5wqxfgy7gnVtKWb5-kKM01m65RwD",
@@ -3457,6 +3453,1451 @@
       {
         "Id": "other150",
         "Type": 11,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "Currency": 0,
+        "ProcTechQuality": 0,
+        "HideInSeasonRewards": false
+      }
+    ]
+  },
+  {
+    "Id": "seas-3",
+    "Icon": "milestonePatches/PATCH.EXPEDITION.3.png",
+    "Title": "Los cartógrafos",
+    "PortalCode": "405C0A958F08",
+    "Phases": [
+      {
+        "Id": "seas-3-expedPhase-1",
+        "Icon": "milestonePatches/PATCH.MILESTONE.1.png",
+        "Title": "Fase 1",
+        "Description": "Progreso actual: 0/7",
+        "DescriptionDone": "Fase 1 completada",
+        "Milestones": [
+          {
+            "Id": "seas-3-expedPhase-1-milestone-1",
+            "Title": "Autodiagnóstico: 1",
+            "Description": "Localiza tu nave y súbete a bordo",
+            "DescriptionDone": "Procedimientos de autodiagnóstico inicializados",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTFIND.png",
+            "Rewards": [
+              {
+                "Id": "prod20",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw3",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 120,
+                "AmountMax": 120,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd68",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-2",
+            "Title": "Excavadora",
+            "Description": "Poner manipulador de terreno",
+            "DescriptionDone": "Has instalado un manipulador de terreno",
+            "Icon": "milestonePatches/PATCH.TERRAIN.png",
+            "Rewards": [
+              {
+                "Id": "tech70",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-3",
+            "Title": "Trinchera",
+            "Description": "Busca un refugio natural",
+            "DescriptionDone": "Te has refugiado de una tormenta",
+            "Icon": "milestonePatches/PATCH.STORMSHELTER.png",
+            "Rewards": [
+              {
+                "Id": "conTech1",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod64",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-4",
+            "Title": "Regreso a casa",
+            "Description": "Establece una base",
+            "DescriptionDone": "Has establecido una base",
+            "Icon": "milestonePatches/PATCH.BASESIZE2.png",
+            "Rewards": [
+              {
+                "Id": "conTech12",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech12",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur16",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 20,
+                "AmountMax": 20,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-5",
+            "Title": "Tecnomarcador",
+            "Description": "Despliega y usa un intensificador de señal",
+            "DescriptionDone": "Has usado un intensificador de señal",
+            "Icon": "milestonePatches/PATCH.SIGNALBOOST.png",
+            "Rewards": [
+              {
+                "Id": "prod81",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 4,
+                "AmountMax": 4,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur39",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur40",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other5",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-6",
+            "Title": "A buen puerto",
+            "Description": "Refúgiate en un edificio planetario",
+            "DescriptionDone": "Has visitado un edificio planetario",
+            "Icon": "milestonePatches/PATCH.VISITBUILDING.png",
+            "Rewards": [
+              {
+                "Id": "other2",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-7",
+            "Title": "El peregrino",
+            "Description": "Explora a pie: 0 u/5000 u",
+            "DescriptionDone": "Has caminado 5000 u",
+            "Icon": "milestonePatches/PATCH.WALKER.png",
+            "Rewards": [
+              {
+                "Id": "tMod55",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur24",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other156",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-3-expedPhase-2",
+        "Icon": "milestonePatches/PATCH.MILESTONE.2.png",
+        "Title": "Fase 2",
+        "Description": "Progreso actual: 0/7",
+        "DescriptionDone": "Fase 2 completada",
+        "Milestones": [
+          {
+            "Id": "seas-3-expedPhase-2-milestone-1",
+            "Title": "Autodiagnóstico: 2",
+            "Description": "Repara el sistema de lanzamiento avanzado",
+            "DescriptionDone": "Has restaurado los sistemas de lanzamiento de la nave",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTBUILD.png",
+            "Rewards": [
+              {
+                "Id": "conTech3",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-2",
+            "Title": "Excedente de energía",
+            "Description": "Genera 150 de energía",
+            "DescriptionDone": "Has generado 150 de energía",
+            "Icon": "milestonePatches/PATCH.POWER.png",
+            "Rewards": [
+              {
+                "Id": "prod114",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod81",
+                "Type": 0,
+                "AmountMin": 6,
+                "AmountMax": 6,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-3",
+            "Title": "Transporte de materia",
+            "Description": "Construye un teletransportador",
+            "DescriptionDone": "Has construido un teletransportador",
+            "Icon": "milestonePatches/PATCH.TELEPORTER.png",
+            "Rewards": [
+              {
+                "Id": "conTech57",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech52",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech51",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech50",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech65",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-4",
+            "Title": "Miedo al sol",
+            "Description": "Cava túneles subterráneos: 0/1000 u³",
+            "DescriptionDone": "Has cavado 1000 u³ de túneles",
+            "Icon": "milestonePatches/PATCH.CAVEWALKER.png",
+            "Rewards": [
+              {
+                "Id": "tech143",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw33",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 333,
+                "AmountMax": 333,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-5",
+            "Title": "Dominio de los elementos",
+            "Description": "Navega durante tormentas: 0 u/1500 u",
+            "DescriptionDone": "Has recorrido 1500 u a través de una tormenta",
+            "Icon": "milestonePatches/PATCH.SURVIVESTORM.png",
+            "Rewards": [
+              {
+                "Id": "tMod10",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-6",
+            "Title": "Compañía",
+            "Description": "Adopta compañeros: 0/1",
+            "DescriptionDone": "Has adoptado 1 compañeros",
+            "Icon": "milestonePatches/PATCH.GETPET.png",
+            "Rewards": [
+              {
+                "Id": "raw50",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 256,
+                "AmountMax": 256,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd7",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur23",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-7",
+            "Title": "Hombre máquina",
+            "Description": "Despliega el Minotauro",
+            "DescriptionDone": "Has desplegado un Minotauro",
+            "Icon": "milestonePatches/PATCH.MECH.png",
+            "Rewards": [
+              {
+                "Id": "tMod143",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod137",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw23",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build807",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-3-expedPhase-3",
+        "Icon": "milestonePatches/PATCH.MILESTONE.3.png",
+        "Title": "Fase 3",
+        "Description": "Progreso actual: 0/7",
+        "DescriptionDone": "Fase 3 completada",
+        "Milestones": [
+          {
+            "Id": "seas-3-expedPhase-3-milestone-1",
+            "Title": "Autodiagnóstico: 3",
+            "Description": "Repara el motor de onda",
+            "DescriptionDone": "Has restaurado los motores principales de la nave",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTREPAIR.png",
+            "Rewards": [
+              {
+                "Id": "tech6",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech142",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod111",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-2",
+            "Title": "Geólogo",
+            "Description": "Descubre minerales: 0/18",
+            "DescriptionDone": "Has analizado 18 nuevos minerales",
+            "Icon": "milestonePatches/PATCH.DISCOVERMINERAL.2.png",
+            "Rewards": [
+              {
+                "Id": "prod115",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech46",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech49",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-3",
+            "Title": "Botánico",
+            "Description": "Descubre plantas: 0/12",
+            "DescriptionDone": "Has documentado 12 nuevas plantas",
+            "Icon": "milestonePatches/PATCH.DISCOVERPLANT.2.png",
+            "Rewards": [
+              {
+                "Id": "tech64",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod10",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-4",
+            "Title": "La fauna completa",
+            "Description": "Descubre toda la fauna del planeta: 0/10",
+            "DescriptionDone": "Has descubierto todas las criaturas del planeta",
+            "Icon": "milestonePatches/PATCH.DISCOVERANIMAL.2.png",
+            "Rewards": [
+              {
+                "Id": "cur16",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 15,
+                "AmountMax": 15,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cook122",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 25,
+                "AmountMax": 25,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-5",
+            "Title": "El navegante",
+            "Description": "Cartografía puntos de control: 0/6",
+            "DescriptionDone": "Has cartografiado 6 puntos de control",
+            "Icon": "milestonePatches/PATCH.DISCOVERWAYPOINT.1.png",
+            "Rewards": [
+              {
+                "Id": "other5",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 10,
+                "AmountMax": 10,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other2",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 4,
+                "AmountMax": 4,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur44",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 6,
+                "AmountMax": 6,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-6",
+            "Title": "Herbicida",
+            "Description": "Elimina flora peligrosa: 0/20",
+            "DescriptionDone": "Has eliminado 20 de flora peligrosa",
+            "Icon": "milestonePatches/PATCH.KILL.PLANTS.png",
+            "Rewards": [
+              {
+                "Id": "tech82",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech68",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod55",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-7",
+            "Title": "Industrial",
+            "Description": "Extrae minerales: 0/1000",
+            "DescriptionDone": "Has extraído 1000 minerales",
+            "Icon": "milestonePatches/PATCH.EXTRACTMINERAL.png",
+            "Rewards": [
+              {
+                "Id": "tech71",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build808",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-3-expedPhase-4",
+        "Icon": "milestonePatches/PATCH.MILESTONE.4.png",
+        "Title": "Fase 4",
+        "Description": "Progreso actual: 0/8",
+        "DescriptionDone": "Fase 4 completada",
+        "Milestones": [
+          {
+            "Id": "seas-3-expedPhase-4-milestone-1",
+            "Title": "Autodiagnóstico: 4",
+            "Description": "Repara la cápsula de presurización",
+            "DescriptionDone": "Has restaurado el soporte vital de la nave",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTLIFE.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-2",
+            "Title": "Puerto espacial alfa",
+            "Description": "Visita un puesto planetario",
+            "DescriptionDone": "Has visitado un puesto planetario",
+            "Icon": "milestonePatches/PATCH.VISITOUTPOST.png",
+            "Rewards": [
+              {
+                "Id": "prod71",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod72",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod74",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod76",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod75",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod73",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod77",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod78",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech25",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech25",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-3",
+            "Title": "Red conectada",
+            "Description": "Construye un teletransportador adicional",
+            "DescriptionDone": "Has establecido una red de teletransporte",
+            "Icon": "milestonePatches/PATCH.TELEPORTER2.png",
+            "Rewards": [
+              {
+                "Id": "conTech62",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech54",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech27",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech27",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-4",
+            "Title": "Campo través",
+            "Description": "Viaja en exonave: 0/15000 u",
+            "DescriptionDone": "Has viajado 15000 u en exonave",
+            "Icon": "milestonePatches/PATCH.EXOCRAFT.png",
+            "Rewards": [
+              {
+                "Id": "tMod122",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod126",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-5",
+            "Title": "Detectorista",
+            "Description": "Excava objetos enterrados: 0/5",
+            "DescriptionDone": "Has recuperado 5 objetos perdidos",
+            "Icon": "milestonePatches/PATCH.UNDERGROUNDTREASURE.png",
+            "Rewards": [
+              {
+                "Id": "raw58",
+                "Type": 2,
+                "AmountMin": 750000,
+                "AmountMax": 750000,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw67",
+                "Type": 5,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-6",
+            "Title": "Montes y maravillas",
+            "Description": "Encumbra una montaña de al menos 625 u",
+            "DescriptionDone": "Has subido una montaña de más de 625 u",
+            "Icon": "milestonePatches/PATCH.MOUNTAIN.png",
+            "Rewards": [
+              {
+                "Id": "tech7",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-7",
+            "Title": "La bala humana",
+            "Description": "Pasa 30 segundos en el aire",
+            "DescriptionDone": "Has volado durante 30 segundos",
+            "Icon": "milestonePatches/PATCH.AIRBORNE.png",
+            "Rewards": [
+              {
+                "Id": "cur21",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-8",
+            "Title": "El arqueólogo",
+            "Description": "Excava huesos antiguos: 0/10",
+            "DescriptionDone": "Has recogido 10 fósiles",
+            "Icon": "milestonePatches/PATCH.GETDIGGING.png",
+            "Rewards": [
+              {
+                "Id": "other2",
+                "Type": 0,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build424",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build425",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build426",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build427",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build428",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build428",
+            "Type": 10,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-3-expedPhase-5",
+        "Icon": "milestonePatches/PATCH.MILESTONE.5.png",
+        "Title": "Fase 5",
+        "Description": "Progreso actual: 0/7",
+        "DescriptionDone": "Fase 5 completada",
+        "Milestones": [
+          {
+            "Id": "seas-3-expedPhase-5-milestone-1",
+            "Title": "Despegar",
+            "Description": "Deja el planeta",
+            "DescriptionDone": "Has dejado el planeta",
+            "Icon": "milestonePatches/PATCH.FIRSTPLANET4.png",
+            "Rewards": [
+              {
+                "Id": "other38",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-2",
+            "Title": "El acróbata",
+            "Description": "Realiza maniobras de vuelo bajo",
+            "DescriptionDone": "Has volado bajo y veloz",
+            "Icon": "milestonePatches/PATCH.SHIP1.png",
+            "Rewards": [
+              {
+                "Id": "other127",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 10,
+                "AmountMax": 10,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod75",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-3",
+            "Title": "Te damos la bienvenida",
+            "Description": "Atraca con la estación espacial",
+            "DescriptionDone": "Has visitado una estación espacial",
+            "Icon": "milestonePatches/PATCH.LOSTINSPACE.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 600,
+                "AmountMax": 600,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech64",
+                "Type": 0,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-4",
+            "Title": "Punto de encuentro 1",
+            "Description": "Llega al primer punto de encuentro",
+            "DescriptionDone": "Has llegado al primer punto de encuentro",
+            "Icon": "milestonePatches/PATCH.PARTY.1.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw58",
+                "Type": 2,
+                "AmountMin": 5000000,
+                "AmountMax": 5000000,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-5",
+            "Title": "Autodiagnóstico: 5",
+            "Description": "Repara la catapulta de desplazamiento",
+            "DescriptionDone": "Has restaurado las capacidades de curvatura de la nave",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTWARP.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur65",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-6",
+            "Title": "Interestelar",
+            "Description": "Viaja hasta un nuevo sistema",
+            "DescriptionDone": "Has ido a la velocidad luz",
+            "Icon": "milestonePatches/PATCH.WARPFIX.png",
+            "Rewards": [
+              {
+                "Id": "tMod80",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech30",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech31",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech32",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-7",
+            "Title": "Punto de encuentro 2",
+            "Description": "Llega al segundo punto de encuentro",
+            "DescriptionDone": "Has llegado al segundo punto de encuentro",
+            "Icon": "milestonePatches/PATCH.PARTY.2.png",
+            "Rewards": [
+              {
+                "Id": "build418",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other126",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other153",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other154",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other155",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      }
+    ],
+    "Rewards": [
+      {
+        "Id": "other157",
+        "Type": 3,
         "AmountMin": 0,
         "AmountMax": 0,
         "Currency": 0,

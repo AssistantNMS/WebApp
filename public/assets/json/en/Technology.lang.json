@@ -6763,5 +6763,173 @@
     ],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "Advanced Launch System",
+    "Group": "Bespoke Landing Gear",
+    "Description": "A custom-made launch control system for high-performance starships. Sensitive gyroscopes and specialised control circuits plot custom take-off routines for increased launch speed and efficiency.\n \nSpecialised, deuterium-derived fuel is required to recharge thruster. Launch procedures require sufficient fuel levels before activation.\n \nHold THRUST to take off from planet. Hold BOOST to initiate in-flight speed boost.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [
+      {
+        "Name": "Launch Cost",
+        "LocaleKeyTemplate": "defaultTemplate",
+        "Image": "recharge2",
+        "Value": "25"
+      }
+    ],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "Waveform Engine",
+    "Group": "Highly Customised Starship Engine",
+    "Description": "A highly-tuned version of the conventional starship Pulse Engine. Wavefront occupancy has been pushed to the limit, creating a pulse experience that is both efficient and highly responsive.\n\nUser is advised that Tritium is required to charge the drive. Tritium is abundant in near-space asteroid fields.\n\nHold ROLLLEFT and ROLLRIGHT together to engage Pulse Jump. Hold BOOST to initiate in-flight speed boost.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [
+      {
+        "Name": "Pulse Drive Fuel Efficiency",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recovery",
+        "Value": "100"
+      },
+      {
+        "Name": "Boost",
+        "LocaleKeyTemplate": "enabled",
+        "Image": "recovery",
+        "Value": "11,900"
+      },
+      {
+        "Name": "Pulse Drive Power",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recharge2",
+        "Value": "100"
+      },
+      {
+        "Name": "Maneuverability",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "target",
+        "Value": "25"
+      }
+    ],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "Frameshift Catapult",
+    "Group": "Illegally Modified Warp Drive",
+    "Description": "This experimental drive augments conventional hyperdrive technology by distorting local geometry at the point of warp initialisation, boosting range and efficiency far beyond standard drives.\n\nUser is advised to access Hyperdrive systems through the Galactic Map.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [
+      {
+        "Name": "Hyperdrive Range",
+        "LocaleKeyTemplate": "lightYear",
+        "Image": "hyperDrive",
+        "Value": "600"
+      },
+      {
+        "Name": "Warp Cell Efficiency",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recovery",
+        "Value": "200"
+      }
+    ],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "Pressurisation Capsule",
+    "Group": "Starship Life Support Unit",
+    "Description": "A critical starship safety feature, vital for extra-orbital flight.\n\nThe pressuration capsule is a dedicated unit that both ensures a breathable atmosphere and prevents the catastrophic explosion of unconventional cockpit designs.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
+      }
+    ],
+    "StatBonuses": [
+      {
+        "Name": "Internal Life Support Enabled",
+        "LocaleKeyTemplate": "defaultTemplate",
+        "Image": "unknown",
+        "Value": "1"
+      }
+    ],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]

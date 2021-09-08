@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "Módulo de ricochete do lança-raios",
     "Group": "Atualização do lança-raios",
-    "Description": "Cria um campo de antimatéria ao redor dos disparos do emissor de pulsos, fazendo-os ser repelidos por superfícies não danificadas.\n\nPermite um ricochete, fazendo os projéteis saltarem de volta se atingirem um alvo ao qual não causam dano.",
+    "Description": "Cria um campo de antimatéria ao redor dos disparos do lança-raios, fazendo-os ser repelidos por superfícies não danificadas.\n\nPermite um ricochete, fazendo os projéteis saltarem de volta se atingirem um alvo ao qual não causam dano.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "Módulo de ricochete do emissor de pulsos",
     "Group": "Atualização do emissor de pulsos",
-    "Description": "Cria um campo de antimatéria ao redor dos disparos do lança-raios, fazendo-os ser repelidos por superfícies não danificadas.\n\nPermite um ricochete, fazendo os projéteis saltarem de volta se atingirem um alvo ao qual não causam dano.",
+    "Description": "Cria um campo de antimatéria ao redor dos disparos do emissor de pulsos, fazendo-os ser repelidos por superfícies não danificadas.\n\nPermite um ricochete, fazendo os projéteis saltarem de volta se atingirem um alvo ao qual não causam dano.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5105,6 +5105,122 @@
       {
         "Id": "prod81",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "Sistema de decolagem avançado",
+    "Group": "Equipamento de pouso personalizado",
+    "Description": "Um sistema de controle de lançamento personalizado para naves de alto desempenho. Os giroscópios sensíveis e os circuitos de controle especializados elaboram rotinas de decolagem para fornecer mais velocidade e eficiência.\n \nÉ necessário de combustível de deutério especial para recarregar o impulsionador. Os procedimentos de decolagem exigem níveis de combustíveis suficientes antes da ativação.\n \nSegure THRUST para sair do planeta. Segure BOOST para iniciar um incremento de velocidade em voo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "Motor de forma de onda",
+    "Group": "Motor de nave altamente personalizado",
+    "Description": "Uma versão altamente aprimorada de um mecanismo de pulso de uma nave convencional. A frente de onda foi configurada até o limite, criando uma experiência de pulso que é eficiente e altamente responsiva.\n\nInformamos que é necessário trítio para carregar o propulsor. O trítio é abundante em campo de asteroides no espaço próximo aos planetas.\n\nSegure ROLLLEFT e ROLLRIGHT ao mesmo tempo para preparar o salto de pulso. Segure BOOST para aumentar a velocidade em voo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "Catapulta mutável",
+    "Group": "Propulsor de dobra modificado ilegalmente",
+    "Description": "Esse propulsor experimental aprimora a tecnologia do hiperpropulsor convencional ao distorcer a geometria local no momento da inicialização de dobra, incrementando a distância e a eficiência de modo muito mais extenso que propulsores comuns.\n\nRecomendados acessar os sistemas de hiperpropulsor via mapa galáctico.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "Cápsula de pressurização",
+    "Group": "Unidade do sistema de sobrevivência da nave",
+    "Description": "Um recurso essencial para a segurança da nave e necessário para voo orbital extra.\n\nA cápsula de pressurização é uma unidade dedicada que garante uma atmosfera respirável e evita uma explosão catastrófica de projetos de cockpit incomuns.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],

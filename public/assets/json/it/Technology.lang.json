@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "Modulo rimbalzo BoltCaster",
     "Group": "Potenziamento BoltCaster",
-    "Description": "Crea un campo di antimateria intorno ai colpi dello Sputa-impulsi, facendoli respingere dalle superfici integre.\n\nCausa il rimbalzo dei proiettili che colpiscono un bersaglio a cui non infliggono danni.",
+    "Description": "Crea un campo di antimateria intorno ai colpi del BoltCaster, facendoli respingere dalle superfici integre.\n\nCausa il rimbalzo dei proiettili che colpiscono un bersaglio a cui non infliggono danni.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "Modulo rimbalzo Sputa-impulsi",
     "Group": "Potenziamento Sputa-impulsi",
-    "Description": "Crea un campo di antimateria intorno ai colpi del BoltCaster, facendoli respingere dalle superfici integre.\n\nCausa il rimbalzo dei proiettili che colpiscono un bersaglio a cui non infliggono danni.",
+    "Description": "Crea un campo di antimateria intorno ai colpi dello Sputa-impulsi, facendoli respingere dalle superfici integre.\n\nCausa il rimbalzo dei proiettili che colpiscono un bersaglio a cui non infliggono danni.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5105,6 +5105,122 @@
       {
         "Id": "prod81",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "Sistema di lancio avanzato",
+    "Group": "Carrello di atterraggio personalizzato",
+    "Description": "Un sistema di controllo del lancio personalizzato per astronavi ad alte prestazioni. Giroscopi sensibili e circuiti di controllo specializzati permettono di programmare procedure di decollo personalizzate, aumentando la velocità e l'efficienza del lancio.\n \nÈ necessario un carburante speciale derivato dal deuterio per ricaricare i propulsori. Le procedure di lancio richiedono carburante a sufficienza prima dell'attivazione.\n \nTieni premuto THRUST per decollare dal pianeta. Tieni premuto BOOST per attivare il turbo durante il volo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "Motore a onde",
+    "Group": "Motore dell'astronave altamente personalizzato",
+    "Description": "Una versione migliorata del motore a impulso delle astronavi tradizionali. La capacità del fronte d'onda è stata potenziata al massimo, creando una propulsione tanto efficiente quanto estremamente reattiva.\n\nPer ricaricare il motore è necessario del trizio, che abbonda nei campi di asteroidi vicino ai pianeti.\n\nTieni premuti ROLLLEFT e ROLLRIGHT per attivare il salto a impulso. Tieni premuto BOOST per attivare il turbo durante il volo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "Catapulta deformante",
+    "Group": "Motore di curvatura modificato illegalmente",
+    "Description": "Questo dispositivo sperimentale incrementa la tecnologia di iperguida tradizionale distorcendo la geometria locale durante l'inizializzazione della curvatura, potenziando portata ed efficienza ben oltre gli standard.\n\nÈ possibile accedere ai sistemi di iperguida dalla mappa galattica.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "Capsula di pressurizzazione",
+    "Group": "Unità di supporto vitale dell'astronave",
+    "Description": "Un'importante funzione di sicurezza dell'astronave, cruciale per i voli extraorbitali.\n\nLa capsula di pressurizzazione è un'unità specializzata che garantisce il mantenimento di un'atmosfera respirabile e previene la disastrosa esplosione degli abitacoli progettati in modo non convenzionale.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],

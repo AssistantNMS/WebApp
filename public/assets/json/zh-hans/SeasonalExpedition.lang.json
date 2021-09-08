@@ -2,8 +2,6 @@
   {
     "Id": "seas-1",
     "Icon": "milestonePatches/PATCH.EXPEDITION.1.png",
-    "StartDate": "0001-01-01T00:00:00",
-    "EndDate": "0001-01-01T00:00:00",
     "Title": "先驱",
     "PortalCode": "602101D40677",
     "CaptainSteveYoutubePlaylist": "https://www.youtube.com/playlist?list=PLFVRR5wqxfgys6cgs_OcswC1ciJM80DBk",
@@ -2045,8 +2043,6 @@
   {
     "Id": "seas-2",
     "Icon": "milestonePatches/PATCH.EXPEDITION.2.ALT.png",
-    "StartDate": "0001-01-01T00:00:00",
-    "EndDate": "0001-01-01T00:00:00",
     "Title": "抢滩",
     "PortalCode": "319A029852B2",
     "CaptainSteveYoutubePlaylist": "https://www.youtube.com/playlist?list=PLFVRR5wqxfgy7gnVtKWb5-kKM01m65RwD",
@@ -3457,6 +3453,1451 @@
       {
         "Id": "other150",
         "Type": 11,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "Currency": 0,
+        "ProcTechQuality": 0,
+        "HideInSeasonRewards": false
+      }
+    ]
+  },
+  {
+    "Id": "seas-3",
+    "Icon": "milestonePatches/PATCH.EXPEDITION.3.png",
+    "Title": "制图师",
+    "PortalCode": "405C0A958F08",
+    "Phases": [
+      {
+        "Id": "seas-3-expedPhase-1",
+        "Icon": "milestonePatches/PATCH.MILESTONE.1.png",
+        "Title": "阶段 I",
+        "Description": "当前进度：0/7",
+        "DescriptionDone": "完成阶段 I",
+        "Milestones": [
+          {
+            "Id": "seas-3-expedPhase-1-milestone-1",
+            "Title": "自动诊断：1",
+            "Description": "定位并登上你的飞船",
+            "DescriptionDone": "已启动自动诊断流程",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTFIND.png",
+            "Rewards": [
+              {
+                "Id": "prod20",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw3",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 120,
+                "AmountMax": 120,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd68",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-2",
+            "Title": "地动山摇",
+            "Description": "安装一台地形操纵器",
+            "DescriptionDone": "已安装一台地形操纵器",
+            "Icon": "milestonePatches/PATCH.TERRAIN.png",
+            "Rewards": [
+              {
+                "Id": "tech70",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-3",
+            "Title": "散兵坑",
+            "Description": "寻找一处天然藏身处",
+            "DescriptionDone": "已在藏身处中躲避风暴",
+            "Icon": "milestonePatches/PATCH.STORMSHELTER.png",
+            "Rewards": [
+              {
+                "Id": "conTech1",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod64",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-4",
+            "Title": "返航",
+            "Description": "建造一个基地",
+            "DescriptionDone": "已建造了一个基地",
+            "Icon": "milestonePatches/PATCH.BASESIZE2.png",
+            "Rewards": [
+              {
+                "Id": "conTech12",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech12",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur16",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 20,
+                "AmountMax": 20,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-5",
+            "Title": "科技信号",
+            "Description": "部署并使用一台信号增强器",
+            "DescriptionDone": "已使用一台信号增强器",
+            "Icon": "milestonePatches/PATCH.SIGNALBOOST.png",
+            "Rewards": [
+              {
+                "Id": "prod81",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 4,
+                "AmountMax": 4,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur39",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur40",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other5",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-6",
+            "Title": "遮风挡雨的港湾",
+            "Description": "进入一个行星建筑中当作藏身处",
+            "DescriptionDone": "已拜访一座行星建筑",
+            "Icon": "milestonePatches/PATCH.VISITBUILDING.png",
+            "Rewards": [
+              {
+                "Id": "other2",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-1-milestone-7",
+            "Title": "朝圣者",
+            "Description": "步行探索：0u/5000u",
+            "DescriptionDone": "已步行5000u",
+            "Icon": "milestonePatches/PATCH.WALKER.png",
+            "Rewards": [
+              {
+                "Id": "tMod55",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur24",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other156",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-3-expedPhase-2",
+        "Icon": "milestonePatches/PATCH.MILESTONE.2.png",
+        "Title": "阶段 II",
+        "Description": "当前进度：0/7",
+        "DescriptionDone": "完成阶段 II",
+        "Milestones": [
+          {
+            "Id": "seas-3-expedPhase-2-milestone-1",
+            "Title": "自动诊断：2",
+            "Description": "修复高级发射系统",
+            "DescriptionDone": "已修复飞船发射系统",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTBUILD.png",
+            "Rewards": [
+              {
+                "Id": "conTech3",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-2",
+            "Title": "源源不绝",
+            "Description": "生产150能量",
+            "DescriptionDone": "已生产150能量",
+            "Icon": "milestonePatches/PATCH.POWER.png",
+            "Rewards": [
+              {
+                "Id": "prod114",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod81",
+                "Type": 0,
+                "AmountMin": 6,
+                "AmountMax": 6,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-3",
+            "Title": "物质传输",
+            "Description": "建造一座传送器",
+            "DescriptionDone": "已建造一座传送器",
+            "Icon": "milestonePatches/PATCH.TELEPORTER.png",
+            "Rewards": [
+              {
+                "Id": "conTech57",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech52",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech51",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech50",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech65",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-4",
+            "Title": "太阳之惧",
+            "Description": "挖掘地下隧道：0/1000u³",
+            "DescriptionDone": "已挖掘1000u³",
+            "Icon": "milestonePatches/PATCH.CAVEWALKER.png",
+            "Rewards": [
+              {
+                "Id": "tech143",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw33",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 333,
+                "AmountMax": 333,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-5",
+            "Title": "风暴之主",
+            "Description": "在风暴中移动：0u/1500u",
+            "DescriptionDone": "在风暴中步行穿越1500u",
+            "Icon": "milestonePatches/PATCH.SURVIVESTORM.png",
+            "Rewards": [
+              {
+                "Id": "tMod10",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-6",
+            "Title": "同伴",
+            "Description": "收养同伴：0/1",
+            "DescriptionDone": "已收养1个同伴",
+            "Icon": "milestonePatches/PATCH.GETPET.png",
+            "Rewards": [
+              {
+                "Id": "raw50",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 256,
+                "AmountMax": 256,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd7",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur23",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-2-milestone-7",
+            "Title": "机械师",
+            "Description": "部署弥诺陶洛斯",
+            "DescriptionDone": "已部署一台弥诺陶洛斯",
+            "Icon": "milestonePatches/PATCH.MECH.png",
+            "Rewards": [
+              {
+                "Id": "tMod143",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod137",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw23",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build807",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-3-expedPhase-3",
+        "Icon": "milestonePatches/PATCH.MILESTONE.3.png",
+        "Title": "阶段 III",
+        "Description": "当前进度：0/7",
+        "DescriptionDone": "完成阶段 III",
+        "Milestones": [
+          {
+            "Id": "seas-3-expedPhase-3-milestone-1",
+            "Title": "自动诊断：3",
+            "Description": "修复波形驱动器",
+            "DescriptionDone": "已修复飞船主驱动器",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTREPAIR.png",
+            "Rewards": [
+              {
+                "Id": "tech6",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech142",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod111",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-2",
+            "Title": "地质学家",
+            "Description": "发现矿物：0/18",
+            "DescriptionDone": "分析18种新矿物",
+            "Icon": "milestonePatches/PATCH.DISCOVERMINERAL.2.png",
+            "Rewards": [
+              {
+                "Id": "prod115",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech46",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech49",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-3",
+            "Title": "植物学家",
+            "Description": "发现植物：0/12",
+            "DescriptionDone": "记录12种新植物",
+            "Icon": "milestonePatches/PATCH.DISCOVERPLANT.2.png",
+            "Rewards": [
+              {
+                "Id": "tech64",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod10",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-4",
+            "Title": "物种大全",
+            "Description": "发现行星上的所有物种：0/10",
+            "DescriptionDone": "已发现行星上的所有物种",
+            "Icon": "milestonePatches/PATCH.DISCOVERANIMAL.2.png",
+            "Rewards": [
+              {
+                "Id": "cur16",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 15,
+                "AmountMax": 15,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cook122",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 25,
+                "AmountMax": 25,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-5",
+            "Title": "领航员",
+            "Description": "星图航路点：0/6",
+            "DescriptionDone": "已在星图标记6个航路点",
+            "Icon": "milestonePatches/PATCH.DISCOVERWAYPOINT.1.png",
+            "Rewards": [
+              {
+                "Id": "other5",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 10,
+                "AmountMax": 10,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other2",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 4,
+                "AmountMax": 4,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur44",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 6,
+                "AmountMax": 6,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-6",
+            "Title": "除草员",
+            "Description": "清除危险植物群系：0/20",
+            "DescriptionDone": "已清除20个危险植物群系",
+            "Icon": "milestonePatches/PATCH.KILL.PLANTS.png",
+            "Rewards": [
+              {
+                "Id": "tech82",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech68",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod55",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-3-milestone-7",
+            "Title": "实业家",
+            "Description": "提取矿物：0/1000",
+            "DescriptionDone": "提取1000矿物",
+            "Icon": "milestonePatches/PATCH.EXTRACTMINERAL.png",
+            "Rewards": [
+              {
+                "Id": "tech71",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build808",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-3-expedPhase-4",
+        "Icon": "milestonePatches/PATCH.MILESTONE.4.png",
+        "Title": "阶段 IV",
+        "Description": "当前进度：0/8",
+        "DescriptionDone": "完成阶段 IV",
+        "Milestones": [
+          {
+            "Id": "seas-3-expedPhase-4-milestone-1",
+            "Title": "自动诊断：4",
+            "Description": "修复增压胶囊",
+            "DescriptionDone": "已恢复飞船维生系统",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTLIFE.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-2",
+            "Title": "阿尔法太空站",
+            "Description": "拜访一座行星前哨基站",
+            "DescriptionDone": "已拜访一座行星前哨基站",
+            "Icon": "milestonePatches/PATCH.VISITOUTPOST.png",
+            "Rewards": [
+              {
+                "Id": "prod71",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod72",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod74",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod76",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod75",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod73",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod77",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod78",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech25",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech25",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-3",
+            "Title": "四通八达",
+            "Description": "建造一座额外的传送器",
+            "DescriptionDone": "已建立传送网络",
+            "Icon": "milestonePatches/PATCH.TELEPORTER2.png",
+            "Rewards": [
+              {
+                "Id": "conTech62",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech54",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech27",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech27",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-4",
+            "Title": "越野赛",
+            "Description": "乘坐强化艇航行：0/15000u",
+            "DescriptionDone": "强化艇已航行15000u",
+            "Icon": "milestonePatches/PATCH.EXOCRAFT.png",
+            "Rewards": [
+              {
+                "Id": "tMod122",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod126",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-5",
+            "Title": "寻宝猎人",
+            "Description": "挖掘埋藏物品：0/5",
+            "DescriptionDone": "已找到5件失落物品",
+            "Icon": "milestonePatches/PATCH.UNDERGROUNDTREASURE.png",
+            "Rewards": [
+              {
+                "Id": "raw58",
+                "Type": 2,
+                "AmountMin": 750000,
+                "AmountMax": 750000,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw67",
+                "Type": 5,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-6",
+            "Title": "山峰之巅",
+            "Description": "登顶一座海拔至少625u的山峰",
+            "DescriptionDone": "爬上一座海拔超过625u的山峰",
+            "Icon": "milestonePatches/PATCH.MOUNTAIN.png",
+            "Rewards": [
+              {
+                "Id": "tech7",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-7",
+            "Title": "火箭人",
+            "Description": "在空中停留30秒",
+            "DescriptionDone": "已飞行30秒",
+            "Icon": "milestonePatches/PATCH.AIRBORNE.png",
+            "Rewards": [
+              {
+                "Id": "cur21",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-4-milestone-8",
+            "Title": "考古学家",
+            "Description": "挖掘古代骸骨：0/10",
+            "DescriptionDone": "已收集10块化石",
+            "Icon": "milestonePatches/PATCH.GETDIGGING.png",
+            "Rewards": [
+              {
+                "Id": "other2",
+                "Type": 0,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build424",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build425",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build426",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build427",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build428",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build428",
+            "Type": 10,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-3-expedPhase-5",
+        "Icon": "milestonePatches/PATCH.MILESTONE.5.png",
+        "Title": "阶段 V",
+        "Description": "当前进度：0/7",
+        "DescriptionDone": "完成阶段 V",
+        "Milestones": [
+          {
+            "Id": "seas-3-expedPhase-5-milestone-1",
+            "Title": "起飞",
+            "Description": "离开行星",
+            "DescriptionDone": "离开行星",
+            "Icon": "milestonePatches/PATCH.FIRSTPLANET4.png",
+            "Rewards": [
+              {
+                "Id": "other38",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-2",
+            "Title": "特技大师",
+            "Description": "表演低空飞行",
+            "DescriptionDone": "低空高速飞行",
+            "Icon": "milestonePatches/PATCH.SHIP1.png",
+            "Rewards": [
+              {
+                "Id": "other127",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 10,
+                "AmountMax": 10,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod75",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-3",
+            "Title": "欢迎登船",
+            "Description": "停泊在空间站",
+            "DescriptionDone": "已拜访一座空间站",
+            "Icon": "milestonePatches/PATCH.LOSTINSPACE.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 600,
+                "AmountMax": 600,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech64",
+                "Type": 0,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-4",
+            "Title": "会面点1",
+            "Description": "抵达第一个会面点",
+            "DescriptionDone": "已抵达第一个会面点",
+            "Icon": "milestonePatches/PATCH.PARTY.1.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw58",
+                "Type": 2,
+                "AmountMin": 5000000,
+                "AmountMax": 5000000,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-5",
+            "Title": "自动诊断：5",
+            "Description": "修复移码投射器",
+            "DescriptionDone": "已恢复飞船的曲速飞行能力",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTWARP.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur65",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-6",
+            "Title": "星际",
+            "Description": "曲速飞行到新的恒星系",
+            "DescriptionDone": "已达到光速",
+            "Icon": "milestonePatches/PATCH.WARPFIX.png",
+            "Rewards": [
+              {
+                "Id": "tMod80",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech30",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech31",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech32",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-3-expedPhase-5-milestone-7",
+            "Title": "会面点2",
+            "Description": "抵达第二个会面点",
+            "DescriptionDone": "已抵达第二个会面点",
+            "Icon": "milestonePatches/PATCH.PARTY.2.png",
+            "Rewards": [
+              {
+                "Id": "build418",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other126",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other153",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other154",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other155",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      }
+    ],
+    "Rewards": [
+      {
+        "Id": "other157",
+        "Type": 3,
         "AmountMin": 0,
         "AmountMax": 0,
         "Currency": 0,

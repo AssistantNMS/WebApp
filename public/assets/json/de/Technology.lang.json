@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "Blitzwerfer-Querschlägermodul",
     "Group": "Blitzwerfer-Upgrade",
-    "Description": "Erschafft ein Antimateriefeld um die Schüsse des Impulswerfers herum, durch das sie von unbeschädigten Oberflächen zurückgeworfen werden.\n\nErmöglicht Querschläger, wodurch Projektile abprallen, wenn sie auf ein Ziel treffen, dem sie keinen Schaden zufügen.",
+    "Description": "Erschafft ein Antimateriefeld um die Schüsse des Blitzwerfers herum, durch das sie von unbeschädigten Oberflächen zurückgeworfen werden.\n\nErmöglicht Querschläger, wodurch Projektile abprallen, wenn sie auf ein Ziel treffen, dem sie keinen Schaden zufügen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "Impulswerfer-Querschlägermodul",
     "Group": "Impulswerfer-Upgrade",
-    "Description": "Erschafft ein Antimateriefeld um die Schüsse des Blitzwerfers herum, durch das sie von unbeschädigten Oberflächen zurückgeworfen werden.\n\nErmöglicht Querschläger, wodurch Projektile abprallen, wenn sie auf ein Ziel treffen, dem sie keinen Schaden zufügen.",
+    "Description": "Erschafft ein Antimateriefeld um die Schüsse des Impulswerfers herum, durch das sie von unbeschädigten Oberflächen zurückgeworfen werden.\n\nErmöglicht Querschläger, wodurch Projektile abprallen, wenn sie auf ein Ziel treffen, dem sie keinen Schaden zufügen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5105,6 +5105,122 @@
       {
         "Id": "prod81",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "Fortgeschrittenes Startsystem",
+    "Group": "Individuelle Landeausrüstung",
+    "Description": "Ein speziell angefertigtes Startsteuerungssystem für Hochleistungsraumschiffe. Empfindliche Gyroskope und spezialisierte Steuerkreise zeichnen maßgeschneiderte Startroutinen für erhöhte Startgeschwindigkeit und -effizienz auf.\n \nSpezieller Treibstoff aus Diwasserstoff wird zum Aufladen der Schubdüsen benötigt. Für die Startprozeduren sind vor der Aktivierung ausreichende Treibstoff-Levels erforderlich.\n \nZum Abheben vom Planeten THRUST gedrückt halten. Mit BOOST den Geschwindigkeitsschub während des Flugs aktivieren.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "Wellenform-Antrieb",
+    "Group": "Hochgradig angepasster Raumschiffsantrieb",
+    "Description": "Eine hochgradig abgestimmte Version des konventionellen Raumschiff-Impulsantriebs. Die Wellenfrontnutzung wurde bis zum Äußersten ausgenutzt und so ein Pulserlebnis erschaffen, das sowohl effizient als auch äußerst reaktionsschnell ist.\n\nZum Laden des Impulsantriebs ist Tritium erforderlich. Tritium ist in großer Menge in planetennahen Asteroidenfeldern vorhanden.\n\nZum Aktivieren des Impulssprungs ROLLLEFT und ROLLRIGHT gleichzeitig gedrückt halten. Mit BOOST den Geschwindigkeitsschub während des Flugs aktivieren.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "Rasterverschiebungskatapult",
+    "Group": "Illegal modifizierter Warpantrieb",
+    "Description": "Dieser experimentelle Antrieb erweitert die konventionelle Hyperantrieb-Technologie, indem die lokale Geometrie zum Zeitpunkt der Warp-Initialisierung verzerrt wird und so die Reichweite und Effizienz weit über Standardantriebe hinaus steigert.\n\nEs wird empfohlen, über die Galaktische Karte auf die Hyperantriebssysteme zuzugreifen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "Druckkapsel",
+    "Group": "Raumschiff-Lebenserhaltungseinheit",
+    "Description": "Eine kritische Sicherheitsvorrichtung für Raumschiffe, die für extra-orbitale Flüge unerlässlich ist.\n\nDie Druckkapsel ist eine dedizierte Einheit, die eine atembare Atmosphäre generiert sowie die katastrophale Explosion unkonventioneller Cockpit-Konstruktionen verhindert.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],

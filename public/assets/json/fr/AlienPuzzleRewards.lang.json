@@ -1,5 +1,127 @@
 [
   {
+    "RewardId": "RECIP_ANTI",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "prod1",
+        "Type": "ProductRecipe",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
+  },
+  {
+    "RewardId": "P_HYPERFUEL1",
+    "Type": "SelectAlways",
+    "Rewards": [
+      {
+        "Id": "prod17",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "MONEY_L",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "raw58",
+        "Type": "Money",
+        "PercentageChance": 100,
+        "AmountMin": 20000,
+        "AmountMax": 35000
+      }
+    ]
+  },
+  {
+    "RewardId": "HEALTHLARGE",
+    "Type": "GiveAllSilent",
+    "Rewards": [
+      {
+        "Type": "Health",
+        "PercentageChance": 100,
+        "AmountMin": 2,
+        "AmountMax": 3
+      }
+    ]
+  },
+  {
+    "RewardId": "TECHFRAG_M",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "raw56",
+        "Type": "Money",
+        "PercentageChance": 100,
+        "AmountMin": 90,
+        "AmountMax": 120
+      }
+    ]
+  },
+  {
+    "RewardId": "STANDING",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "None",
+        "Type": "Standing",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "WEAP_TOKEN",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "conTech64",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "FACT_PROD",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "cur44",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      },
+      {
+        "Id": "CraftProducts",
+        "Type": "TechTree",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
+  },
+  {
+    "RewardId": "DAMAGELARGE",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Type": "Damage",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
+  },
+  {
     "RewardId": "MONEY",
     "Type": "GiveAll",
     "Rewards": [
@@ -13,6 +135,84 @@
     ]
   },
   {
+    "RewardId": "STD_DEC_TRA",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "Traders",
+        "Type": "Standing",
+        "PercentageChance": 100,
+        "AmountMin": -1,
+        "AmountMax": -1
+      }
+    ]
+  },
+  {
+    "RewardId": "TEACHWORD_WAR",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "Warriors",
+        "Type": "NewWord",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "TEACHWORD_EXP",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "Explorers",
+        "Type": "NewWord",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "TEACHWORD_TRA",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "Traders",
+        "Type": "NewWord",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "STD_INC_WAR",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "Warriors",
+        "Type": "Standing",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "STD_INC_EXP",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "Explorers",
+        "Type": "Standing",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
     "RewardId": "STD_INC_TRA",
     "Type": "GiveAll",
     "Rewards": [
@@ -22,6 +222,435 @@
         "PercentageChance": 100,
         "AmountMin": 1,
         "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "R_GEKRELIC",
+    "Type": "SelectAlways",
+    "Rewards": [
+      {
+        "Id": "cur35",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "TECHFRAG_S",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "raw56",
+        "Type": "Money",
+        "PercentageChance": 100,
+        "AmountMin": 40,
+        "AmountMax": 80
+      }
+    ]
+  },
+  {
+    "RewardId": "PROC_TECH_ALL",
+    "Type": "TryFirst_ThenSelectAlways",
+    "Rewards": [
+      {
+        "Id": "tech13",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech70",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech67",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech76",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech68",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech28",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech39",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech41",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech40",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech77",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech78",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech80",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech82",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech30",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech43",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech31",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech45",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech32",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech47",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
+  },
+  {
+    "RewardId": "DAMAGESMALL",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Type": "Damage",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
+  },
+  {
+    "RewardId": "TECHFRAG_L",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "raw56",
+        "Type": "Money",
+        "PercentageChance": 100,
+        "AmountMin": 120,
+        "AmountMax": 150
+      }
+    ]
+  },
+  {
+    "RewardId": "STD_DEC_EXP",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "Explorers",
+        "Type": "Standing",
+        "PercentageChance": 100,
+        "AmountMin": -1,
+        "AmountMax": -1
+      }
+    ]
+  },
+  {
+    "RewardId": "R_CAVECUBE",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "cur25",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "R_CURIO7",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "cur35",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "STD_DEC_WAR",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "Warriors",
+        "Type": "Standing",
+        "PercentageChance": 100,
+        "AmountMin": -1,
+        "AmountMax": -1
+      }
+    ]
+  },
+  {
+    "RewardId": "R_DAGGER",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "cur38",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "PROC_TECH_ONLY",
+    "Type": "SelectAlways",
+    "Rewards": [
+      {
+        "Id": "tMod75",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod80",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod85",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod90",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod95",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 50,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod100",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 50,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod105",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 50,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod110",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 50,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod50",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod44",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod55",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 30,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod58",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 40,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod61",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 40,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod64",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 40,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod67",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 40,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod70",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 40,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod5",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod10",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod15",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 75,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod20",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 50,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod25",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 50,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod30",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 66,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod35",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 66,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tMod40",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 66,
+        "AmountMin": 0,
+        "AmountMax": 0
       }
     ]
   },
@@ -319,196 +948,6 @@
     ]
   },
   {
-    "RewardId": "STD_DEC_WAR",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "Warriors",
-        "Type": "Standing",
-        "PercentageChance": 100,
-        "AmountMin": -1,
-        "AmountMax": -1
-      }
-    ]
-  },
-  {
-    "RewardId": "PROC_TECH_ALL",
-    "Type": "TryFirst_ThenSelectAlways",
-    "Rewards": [
-      {
-        "Id": "tech13",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech70",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech67",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech76",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech68",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech28",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech39",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech41",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech40",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech77",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech78",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech80",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech82",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech30",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech43",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech31",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech45",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech32",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech47",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      }
-    ]
-  },
-  {
-    "RewardId": "STD_INC_WAR",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "Warriors",
-        "Type": "Standing",
-        "PercentageChance": 100,
-        "AmountMin": 1,
-        "AmountMax": 1
-      }
-    ]
-  },
-  {
-    "RewardId": "DAMAGESMALL",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Type": "Damage",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
-      }
-    ]
-  },
-  {
-    "RewardId": "TEACHWORD_WAR",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "Warriors",
-        "Type": "NewWord",
-        "PercentageChance": 100,
-        "AmountMin": 1,
-        "AmountMax": 1
-      }
-    ]
-  },
-  {
     "RewardId": "PROC_TECH_SHIP",
     "Type": "TryFirst_ThenSelectAlways",
     "Rewards": [
@@ -585,6 +1024,81 @@
     ]
   },
   {
+    "RewardId": "PROC_TECH_WEAP",
+    "Type": "TryFirst_ThenSelectAlways",
+    "Rewards": [
+      {
+        "Id": "tech70",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech67",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech76",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech68",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech77",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech78",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech80",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech82",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
+  },
+  {
+    "RewardId": "PROC_TECH_SUIT",
+    "Type": "TryFirst_ThenSelectAlways",
+    "Rewards": [
+      {
+        "Id": "tech13",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 0,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
+  },
+  {
     "RewardId": "SUBST_TECH",
     "Type": "GiveAll",
     "Rewards": [
@@ -643,19 +1157,6 @@
         "PercentageChance": 100,
         "AmountMin": 50,
         "AmountMax": 100
-      }
-    ]
-  },
-  {
-    "RewardId": "STD_DEC_TRA",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "Traders",
-        "Type": "Standing",
-        "PercentageChance": 100,
-        "AmountMin": -1,
-        "AmountMax": -1
       }
     ]
   },
@@ -833,71 +1334,6 @@
     ]
   },
   {
-    "RewardId": "TECHFRAG_S",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "raw56",
-        "Type": "Money",
-        "PercentageChance": 100,
-        "AmountMin": 40,
-        "AmountMax": 80
-      }
-    ]
-  },
-  {
-    "RewardId": "TECHFRAG_M",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "raw56",
-        "Type": "Money",
-        "PercentageChance": 100,
-        "AmountMin": 90,
-        "AmountMax": 120
-      }
-    ]
-  },
-  {
-    "RewardId": "TEACHWORD_TRA",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "Traders",
-        "Type": "NewWord",
-        "PercentageChance": 100,
-        "AmountMin": 1,
-        "AmountMax": 1
-      }
-    ]
-  },
-  {
-    "RewardId": "STD_INC_EXP",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "Explorers",
-        "Type": "Standing",
-        "PercentageChance": 100,
-        "AmountMin": 1,
-        "AmountMax": 1
-      }
-    ]
-  },
-  {
-    "RewardId": "TEACHWORD_EXP",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "Explorers",
-        "Type": "NewWord",
-        "PercentageChance": 100,
-        "AmountMin": 1,
-        "AmountMax": 1
-      }
-    ]
-  },
-  {
     "RewardId": "SUBST_FUEL",
     "Type": "GiveAll",
     "Rewards": [
@@ -960,103 +1396,15 @@
     ]
   },
   {
-    "RewardId": "STD_DEC_EXP",
+    "RewardId": "WEAPON",
     "Type": "GiveAll",
     "Rewards": [
       {
-        "Id": "Explorers",
-        "Type": "Standing",
+        "Id": "other143",
+        "Type": "Weapon",
         "PercentageChance": 100,
-        "AmountMin": -1,
-        "AmountMax": -1
-      }
-    ]
-  },
-  {
-    "RewardId": "PROC_TECH_WEAP",
-    "Type": "TryFirst_ThenSelectAlways",
-    "Rewards": [
-      {
-        "Id": "tech70",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech67",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech76",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech68",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech77",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech78",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech80",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tech82",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      }
-    ]
-  },
-  {
-    "RewardId": "PROC_TECH_SUIT",
-    "Type": "TryFirst_ThenSelectAlways",
-    "Rewards": [
-      {
-        "Id": "tech13",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 0,
-        "AmountMin": 0,
-        "AmountMax": 0
-      }
-    ]
-  },
-  {
-    "RewardId": "TECHFRAG_L",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "raw56",
-        "Type": "Money",
-        "PercentageChance": 100,
-        "AmountMin": 120,
-        "AmountMax": 150
+        "AmountMin": 50,
+        "AmountMax": 50
       }
     ]
   },
@@ -1066,31 +1414,6 @@
     "Rewards": [
       {
         "Id": "cur39",
-        "Type": "Product",
-        "PercentageChance": 100,
-        "AmountMin": 1,
-        "AmountMax": 1
-      }
-    ]
-  },
-  {
-    "RewardId": "DAMAGELARGE",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Type": "Damage",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
-      }
-    ]
-  },
-  {
-    "RewardId": "R_GEKRELIC",
-    "Type": "SelectAlways",
-    "Rewards": [
-      {
-        "Id": "cur35",
         "Type": "Product",
         "PercentageChance": 100,
         "AmountMin": 1,
@@ -1112,11 +1435,59 @@
     ]
   },
   {
-    "RewardId": "P_HYPERFUEL1",
-    "Type": "SelectAlways",
+    "RewardId": "TEACHWORD_ATLAS",
+    "Type": "GiveAll",
     "Rewards": [
       {
-        "Id": "prod17",
+        "Id": "Atlas",
+        "Type": "NewWord",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      }
+    ]
+  },
+  {
+    "RewardId": "PROD_FUEL",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "raw5",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      },
+      {
+        "Id": "raw6",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      },
+      {
+        "Id": "raw14",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      },
+      {
+        "Id": "raw16",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      },
+      {
+        "Id": "raw30",
+        "Type": "Product",
+        "PercentageChance": 100,
+        "AmountMin": 1,
+        "AmountMax": 1
+      },
+      {
+        "Id": "raw35",
         "Type": "Product",
         "PercentageChance": 100,
         "AmountMin": 1,
@@ -1125,25 +1496,11 @@
     ]
   },
   {
-    "RewardId": "RECIP_ANTI",
+    "RewardId": "DAMAGE_TECH",
     "Type": "GiveAll",
     "Rewards": [
       {
-        "Id": "prod1",
-        "Type": "ProductRecipe",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
-      }
-    ]
-  },
-  {
-    "RewardId": "STANDING",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "None",
-        "Type": "Standing",
+        "Type": "DamagedTech",
         "PercentageChance": 100,
         "AmountMin": 1,
         "AmountMax": 1
@@ -1151,12 +1508,24 @@
     ]
   },
   {
-    "RewardId": "WEAP_TOKEN",
+    "RewardId": "SHIELDLARGE",
+    "Type": "GiveAllSilent",
+    "Rewards": [
+      {
+        "Type": "Shield",
+        "PercentageChance": 100,
+        "AmountMin": 100,
+        "AmountMax": 100
+      }
+    ]
+  },
+  {
+    "RewardId": "REPAIR_TECH",
     "Type": "GiveAll",
     "Rewards": [
       {
-        "Id": "conTech64",
-        "Type": "Product",
+        "Id": "prod99",
+        "Type": "RepairKit",
         "PercentageChance": 100,
         "AmountMin": 1,
         "AmountMax": 1
@@ -1164,32 +1533,307 @@
     ]
   },
   {
-    "RewardId": "FACT_PROD",
+    "RewardId": "HAZARDSMALL",
+    "Type": "GiveAllSilent",
+    "Rewards": [
+      {
+        "Type": "Hazard",
+        "PercentageChance": 100,
+        "AmountMin": 20,
+        "AmountMax": 20
+      }
+    ]
+  },
+  {
+    "RewardId": "TECH_WEAPON",
     "Type": "GiveAll",
     "Rewards": [
       {
-        "Id": "cur44",
-        "Type": "Product",
+        "Id": "tech70",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech67",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech82",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech76",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech78",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech68",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech77",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech80",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
+  },
+  {
+    "RewardId": "TECH_SUIT",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "tech13",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
+  },
+  {
+    "RewardId": "TECH_ALL",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "tech13",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech70",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech67",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech76",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech68",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech28",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech39",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech41",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech40",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech77",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech78",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech80",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech82",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech43",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech45",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech47",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
+  },
+  {
+    "RewardId": "TECH_SHIP",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Id": "tech28",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech39",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech40",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech41",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech43",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech45",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      },
+      {
+        "Id": "tech47",
+        "Type": "ProceduralTechnology",
+        "PercentageChance": 100,
+        "AmountMin": 0,
+        "AmountMax": 0
+      }
+    ]
+  },
+  {
+    "RewardId": "HEALTHSMALL",
+    "Type": "GiveAllSilent",
+    "Rewards": [
+      {
+        "Type": "Health",
         "PercentageChance": 100,
         "AmountMin": 1,
         "AmountMax": 1
-      },
-      {
-        "Id": "CraftProducts",
-        "Type": "TechTree",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
       }
     ]
   },
   {
-    "RewardId": "R_CAVECUBE",
+    "RewardId": "SHIELDSMALL",
+    "Type": "GiveAllSilent",
+    "Rewards": [
+      {
+        "Type": "Shield",
+        "PercentageChance": 100,
+        "AmountMin": 30,
+        "AmountMax": 30
+      }
+    ]
+  },
+  {
+    "RewardId": "DISTRESSSCAN",
     "Type": "GiveAll",
     "Rewards": [
       {
-        "Id": "cur25",
-        "Type": "Product",
+        "Type": "Scan",
+        "PercentageChance": 100,
+        "AmountMin": 100000,
+        "AmountMax": 100000
+      }
+    ]
+  },
+  {
+    "RewardId": "SHOW_CRASHSITE",
+    "Type": "GiveAll",
+    "Rewards": [
+      {
+        "Type": "SignalScan",
         "PercentageChance": 100,
         "AmountMin": 1,
         "AmountMax": 1
@@ -1197,213 +1841,12 @@
     ]
   },
   {
-    "RewardId": "R_CURIO7",
+    "RewardId": "R_DIG_CLUE",
     "Type": "GiveAll",
     "Rewards": [
       {
-        "Id": "cur35",
-        "Type": "Product",
+        "Type": "ScanEvent",
         "PercentageChance": 100,
-        "AmountMin": 1,
-        "AmountMax": 1
-      }
-    ]
-  },
-  {
-    "RewardId": "MONEY_L",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "raw58",
-        "Type": "Money",
-        "PercentageChance": 100,
-        "AmountMin": 20000,
-        "AmountMax": 35000
-      }
-    ]
-  },
-  {
-    "RewardId": "R_DAGGER",
-    "Type": "GiveAll",
-    "Rewards": [
-      {
-        "Id": "cur38",
-        "Type": "Product",
-        "PercentageChance": 100,
-        "AmountMin": 1,
-        "AmountMax": 1
-      }
-    ]
-  },
-  {
-    "RewardId": "PROC_TECH_ONLY",
-    "Type": "SelectAlways",
-    "Rewards": [
-      {
-        "Id": "tMod75",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod80",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod85",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod90",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod95",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 50,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod100",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 50,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod105",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 50,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod110",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 50,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod50",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod44",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod55",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 30,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod58",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 40,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod61",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 40,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod64",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 40,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod67",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 40,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod70",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 40,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod5",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod10",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 100,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod15",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 75,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod20",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 50,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod25",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 50,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod30",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 66,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod35",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 66,
-        "AmountMin": 0,
-        "AmountMax": 0
-      },
-      {
-        "Id": "tMod40",
-        "Type": "ProceduralTechnology",
-        "PercentageChance": 66,
         "AmountMin": 0,
         "AmountMax": 0
       }

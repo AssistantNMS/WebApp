@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "ボルトキャスターバウンス・ショット モジュール",
     "Group": "ボルトキャスターアップグレード",
-    "Description": "パルススピッターの\n\n弾の周りに反物質フィールドを作り出し、ダメージを受けていない面で跳ね返るようにする。\n\nバウンス・ショットが可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。",
+    "Description": "ボルトキャスターの\n\n弾の周りに反物質フィールドを作り出し、ダメージを受けていない面で跳ね返るようにする。\n\nバウンス・ショットが可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "パルススピッターバウンス・ショット モジュール",
     "Group": "パルススピッターアップグレード",
-    "Description": "ボルトキャスターの\n\n弾の周りに反物質フィールドを作り出し、ダメージを受けていない面で跳ね返るようにする。\n\nバウンス・ショットが可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。",
+    "Description": "パルススピッターの\n\n弾の周りに反物質フィールドを作り出し、ダメージを受けていない面で跳ね返るようにする。\n\nバウンス・ショットが可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5105,6 +5105,122 @@
       {
         "Id": "prod81",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "高度な発射システム",
+    "Group": "カスタム着陸装置",
+    "Description": "高性能な宇宙船に必要なカスタムメイドの発射コントロールシステム。高感度のジャイロスコープと特殊な制御回路により、カスタムメイドの離陸ルーチンを作製し、発射の速度と効率を向上させる。\nエンジンは特製の重水素燃料で\nリチャージできる。発射プロセスには、\n充分な燃料レベルが必要。\n THRUST を長押しで惑星から飛び立つ。BOOSTで飛行を加速する。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "波形エンジン",
+    "Group": "高カスタム宇宙船エンジン",
+    "Description": "従来の宇宙船のパルスエンジンを高度にチューニングしたもの。波面占有率を極限まで高め、効率の良さと応答性の高さを両立させたパルスを実現する\n\nパルスエンジンのチャージには三重水素が必要。 三重水素は宇宙近くの小惑星で豊富に存在している。\n\nROLLLEFTとROLLRIGHTを同時に長押ししてパルスジャンプ。BOOSTを長押しするとフライト速度を加速できる。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "フレームシフトカタパルト",
+    "Group": "違法改造ワープドライブ",
+    "Description": "この実験的なドライブは、従来のハイパードライブテクノロジーを強化するもので、ワープの初期化時に局所的に幾何学的形状を歪めることで、標準的なドライブをはるかに上回る飛距離と効率を実現している\n\nギャラクシーマップから、ハイパードライブシステムへのアクセスできる",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "加圧カプセル",
+    "Group": "宇宙船生命維持ユニット",
+    "Description": "軌道外飛行には欠かせない、宇宙船の重要な安全機能。\n\n加圧カプセルは、呼吸可能な大気を確保すると同時に、特殊なデザインのコックピットが壊滅的な被害を受けるのを防ぐ専用ユニットである",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],

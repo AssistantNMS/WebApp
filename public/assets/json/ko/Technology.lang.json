@@ -1968,7 +1968,7 @@
     "Icon": "technology/77.png",
     "Name": "지질탐사포",
     "Group": "지형 파괴 장치",
-    "Description": "급속 굴착용으로 고안된 플라스마 포탄을 발사하는 대구경의 발사기입니다.\n\n불안정한 플라스마로 충전되어 있습니다. 경고: 폭발성 굴착 과정에서 인근의 유기물에 피해를 입힐 수도 있습니다.\n\nALTATTACK을 눌러 사용합니다.",
+    "Description": "급속 굴착용으로 고안된 플라스마 포탄을 발사하는 대구경의 발사기입니다.\n \n불안정한 플라스마로 충전되어 있습니다. 경고: 폭발성 굴착 과정에서 인근의 유기물에 피해를 입힐 수도 있습니다.\n \nALTATTACK을 눌러 사용합니다.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "볼트캐스터 도탄 모듈",
     "Group": "볼트캐스터 업그레이드",
-    "Description": "펄스 스피터의 탄환 주변에 반물질막을 생성해 파손되지 않은 표면에 튕겨 나가게 만듭니다.\n\n도탄 기능이 활성화되어 피해를 입히지 않은 대상에게 명중 시 발사체가 튕겨 나갑니다.",
+    "Description": "볼트캐스터의 탄환 주변에 반물질장을 생성해 파손되지 않은 표면에 튕겨 나가게 만듭니다.\n\n도탄 기능이 활성화되어 피해를 입히지 않은 대상에게 명중 시 발사체가 튕겨 나갑니다.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "펄스 스피터 도탄 모듈",
     "Group": "펄스 스피터 업그레이드",
-    "Description": "볼트 캐스터의 탄환 주변에 반물질막을 생성해 파손되지 않은 표면에 튕겨 나가게 만듭니다.\n\n도탄 기능이 활성화되어 피해를 입히지 않은 대상에게 명중 시 발사체가 튕겨 나갑니다.",
+    "Description": "펄스 스피터의 탄환 주변에 반물질장을 생성해 파손되지 않은 표면에 튕겨 나가게 만듭니다.\n\n도탄 기능이 활성화되어 피해를 입히지 않은 대상에게 명중 시 발사체가 튕겨 나갑니다.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5105,6 +5105,122 @@
       {
         "Id": "prod81",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "첨단 발진 시스템",
+    "Group": "맞춤형 착륙 기어",
+    "Description": "고성능 함선에 맞춤 제작된 발진 제어 시스템입니다. 반응성이 뛰어난 자이로스코프와 특화된 제어 회로로 발진 일정에 맞춰 발진 속도 및 효율을 향상시킵니다.\n \n특별한 듀테륨 계열 연료로 추진기를 충전할 수 있습니다. 발진 절차를 발동하려면 연료 잔량이 충분해야 합니다.\n \nTHRUST(을)를 길게 누르면 행성에서 이륙합니다. BOOST(을)를 길게 누르면 비행 중 속도 부스트를 발동합니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "파형 엔진",
+    "Group": "최고급 개조 함선 엔진",
+    "Description": "일반적인 함선에 사용할 수 있는 최고급 사양 펄스 엔진입니다. 파면 사용량을 극한까지 끌어올려 효율적이고 반응성이 좋은 펄스 엔진 성능을 보입니다.\n\n충전 시에는 삼중 수소를 사용하기를 추천합니다. 삼중 수소는 가까운 우주의 소행성대에 풍족합니다.\n\nROLLLEFT(와)과 ROLLRIGHT(을)를 동시에 길게 눌러 펄스 점프를 개시합니다.BOOST(을)를 길게 눌러 비행 시 속도 부스트를 사용합니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "프레임시프트 발사기",
+    "Group": "불법 개조된 워프 드라이브",
+    "Description": "시험용 드라이브 개조품으로 일반적인 하이퍼드라이브 기술에 적용할 수 있으며 워프를 시행할 때 주변 기하구조를 일그러뜨려 표준 드라이브보다 범위와 효율을 상당히 높일 수 있습니다.\n\n하이퍼드라이브 시스템은 은하계 지도에서 사용할 수 있습니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "가압 캡슐",
+    "Group": "함선 생명 유지 유닛",
+    "Description": "함선의 주요한 안전 장치로 궤도 밖 운행에 필수입니다.\n\n가압 캡슐은 호흡할 수 있는 대기를 생성하고 특별한 구조의 조종석이 끔찍하게 폭발하는 사고를 방지합니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],

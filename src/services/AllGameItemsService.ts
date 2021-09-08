@@ -55,7 +55,7 @@ export class AllGameItemsService {
       return {
         isSuccess: false,
         value: result,
-        errorMessage: ex.message
+        errorMessage: (ex as any).message
       }
     }
   }
@@ -82,7 +82,7 @@ export class AllGameItemsService {
       return {
         isSuccess: false,
         value: anyObject,
-        errorMessage: exception.errorMessage,
+        errorMessage: (exception as any).errorMessage,
       };
     }
   }

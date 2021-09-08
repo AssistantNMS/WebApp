@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "Módulo de ricochete Boltcaster",
     "Group": "Atualização da Boltcaster",
-    "Description": "Cria um campo de antimatéria em redor dos disparos da Cuspidor de Pulsação, fazendo com que sejam repelidos por superfícies não danificadas.\n\nAtiva o ricochete, fazendo os projéteis saltar se atingirem um alvo a que não causem dano.",
+    "Description": "Cria um campo de antimatéria em redor dos disparos da Boltcaster, fazendo com que sejam repelidos por superfícies não danificadas.\n\nAtiva o ricochete, fazendo os projéteis ressaltar se atingirem um alvo a que não causem dano.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "Módulo de ricochete cuspidor de pulsação",
     "Group": "Atualização do Cuspidor de Pulsação",
-    "Description": "Cria um campo de antimatéria em redor dos disparos da Boltcaster, fazendo com que sejam repelidos por superfícies não danificadas.\n\nAtiva o ricochete, fazendo os projéteis saltar se atingirem um alvo a que não causem dano.",
+    "Description": "Cria um campo de antimatéria em redor dos disparos da Cuspidor de Pulsação, fazendo com que sejam repelidos por superfícies não danificadas.\n\nAtiva o ricochete, fazendo os projéteis saltar se atingirem um alvo a que não causem dano.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5105,6 +5105,122 @@
       {
         "Id": "prod81",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "Sistema de Lançamento Avançado",
+    "Group": "Trem de Aterragem Adaptado",
+    "Description": "Um sistema de controlo de lançamento personalizado para naves espaciais de alto desempenho. Giroscópios sensíveis e circuitos de controlo especiais traçam rotinas de lançamento personalizadas para uma maior velocidade e eficiência de lançamento.\n \nÉ necessário um combustível especial derivado de deutério para recarregar o propulsor. Os procedimentos de lançamento precisam de combustível suficiente para serem ativados.\n \nPressiona THRUST para descolar do planeta. Pressiona BOOST para iniciar o impulso de velocidade.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "Motor de Forma de Onda",
+    "Group": "Motor Altamente Personalizado da Nave Espacial",
+    "Description": "Uma versão altamente ajustada do Motor de Pulsação convencional da nave espacial. A ocupação da frente de onda foi levada ao limite, criando uma experiência de pulsação que é eficiente e altamente recetiva.\n\nO utilizador precisa de usar Trítio para carregar o propulsor. O trítio é abundante em campos de asteroides próximos.\n\nMantém ROLLLEFT e ROLLRIGHT pressionados em conjunto para ativar o Salto Pulsante. Pressiona BOOST para iniciar o impulso de velocidade durante o voo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "Catapulta de Matriz",
+    "Group": "Propulsor Warp Ilegalmente Modificado",
+    "Description": "Este propulsor experimental aumenta a tecnologia hiperdrive ao distorcer a geometria local no ponto de inicialização warp, aumentando o alcance e a eficiência muito para além dos propulsores normais.\n\nO utilizador deve aceder aos sistemas Hiperdrive através do Mapa Galáctico.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "Cápsula de Pressurização",
+    "Group": "Unidade de Suporte de Vida da Nave Espacial",
+    "Description": "Uma funcionalidade de segurança crítica da nave, fundamental para um voo extra-orbital.\n\nA cápsula de pressurização é uma unidade dedicada que assegura uma atmosfera respirável e previne a explosão catastrófica de cockpits com design não convencional.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],

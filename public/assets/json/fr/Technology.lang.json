@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "Module de ricochet de lance-foudre",
     "Group": "Amélioration du lance-foudre",
-    "Description": "Crée un champ d'antimatière autour des tirs du souffle destructeur, les repoussant des surfaces non endommagées.\n\nActive le ricochet, faisant rebondir les projectiles s'ils touchent une cible à laquelle ils ne causent pas de dégâts.",
+    "Description": "Crée un champ d'antimatière autour des tirs du lance-foudre, les repoussant des surfaces non endommagées.\n\nActive le ricochet, faisant rebondir les projectiles s'ils touchent une cible à laquelle ils ne causent pas de dégâts.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "Module de ricochet de souffle destructeur",
     "Group": "Amélioration du souffle destructeur",
-    "Description": "Crée un champ d'antimatière autour des tirs du lance-foudre, les repoussant des surfaces non endommagées.\n\nActive le ricochet, faisant rebondir les projectiles s'ils touchent une cible à laquelle ils ne causent pas de dégâts.",
+    "Description": "Crée un champ d'antimatière autour des tirs du souffle destructeur, les repoussant des surfaces non endommagées.\n\nActive le ricochet, faisant rebondir les projectiles s'ils touchent une cible à laquelle ils ne causent pas de dégâts.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5105,6 +5105,122 @@
       {
         "Id": "prod81",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "Système de décollage avancé",
+    "Group": "Équipement d'atterrissage sur mesure",
+    "Description": "Un système de décollage personnalisé pour les vaisseaux les plus performants. Gyroscopes sensibles et circuits de contrôle spécialisés personnalisés pour un décollage plus rapide et plus efficace.\n \nDu carburant spécial, à base de dihydrogène, est requis pour recharger le propulseur. Les procédures de lancement nécessitent des réserves de carburant suffisantes avant activation.\n \nMaintenez THRUST pour décoller de la planète. Maintenez BOOST enfoncé pour activer l'accélération en vol.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "Moteur de forme d'onde",
+    "Group": "Moteur de vaisseau hautement personnalisé",
+    "Description": "Une version retravaillée du pulsoréacteur d'un vaisseau conventionnel. La forme d'onde a été poussée à sa limite, créant une expérience de pulsion à la fois efficace et hautement réactive.\n\nVeuillez noter que du tritium est nécessaire pour charger le pulsoréacteur. Le tritium se trouve en abondance dans les champs d'astéroïdes voisins.\n\nMaintenez ROLLLEFT et ROLLRIGHT enfoncés simultanément pour activer le saut assisté. Maintenez BOOST enfoncé pour activer l'accélération en vol.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "Catapulte de décalage",
+    "Group": "Générateur de distorsion modifié illégalement",
+    "Description": "Ce propulseur expérimental augmente la technologie d'hyperpropulsion conventionnelle en créant une distorsion dans la géométrie locale à l'emplacement de mise à feu, ce qui augmente la distance et l'efficacité bien au-delà des capacités de propulseurs conventionnels.\n\nIl est conseillé d'accéder aux systèmes d'hyperpropulsion depuis la carte galactique.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "Capsule de pressurisation",
+    "Group": "Unité de système de survie du vaisseau",
+    "Description": "Une fonctionnalité critique pour la sécurité d'un vaisseau, vitale en vol extra-orbital.\n\nLa capsule de pressurisation est une unité spécifique qui vise à créer une atmosphère respirable et à éviter l'explosion catastrophique des cockpits au design non-conventionnel.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],

@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "离子闪电发射器弹射模块",
     "Group": "离子闪电发射器升级",
-    "Description": "在脉冲喷射器的炮弹周围创造一个反物质场，使它们被未受损的表面斥回。\n\n启用弹射，使射弹在击中一个未造成伤害的目标时反弹。",
+    "Description": "在离子闪电发射器的炮弹周围创造一个反物质场，使它们被未受损的表面斥回。\n\n启用弹射，使射弹在击中一个未造成伤害的目标时反弹。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "脉冲喷射器弹射模块",
     "Group": "脉冲喷射器升级",
-    "Description": "在离子闪电发射器的炮弹周围创造一个反物质场，使它们被未受损的表面斥回。\n\n启用弹射，使射弹在击中一个未造成伤害的目标时反弹。",
+    "Description": "在脉冲喷射器的炮弹周围创造一个反物质场，使它们被未受损的表面斥回。\n\n启用弹射，使射弹在击中一个未造成伤害的目标时反弹。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5105,6 +5105,122 @@
       {
         "Id": "prod81",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "高级发射系统",
+    "Group": "定制化起落装置",
+    "Description": "为高性能飞船准备的定制化发射操控系统。高敏度陀螺仪，特殊化的控制电路外加特别定制的起飞流程将能够大幅提高发射速度以及效率。\n\n专门提炼的氘基燃料将为推进器提供能量。只有为飞船提供了充足的燃料之后，才能启动发射程序。\n\n长按THRUST离开行星地表。在飞行时长按BOOST启动加速。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "波形驱动器",
+    "Group": "高度定制化的飞船驱动器",
+    "Description": "经过缜密调试过的传统飞船脉冲驱动器。接近极限的波面频率将能够提供高效而且极度灵敏的脉冲动力。\n\n建议使用氚作为驱动器燃料。近太空小行星带中能够找到丰富的氚。\n\n同时长按ROLLLEFT以及ROLLRIGHT将启动脉冲跃迁。在飞行时长按BOOST激活加速。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "移码投射器",
+    "Group": "采用了违法改造手段的曲速驱动器",
+    "Description": "这种试作型驱动器能够在跃迁初始化阶段扭曲所在空间的几何结构，并大副提高传统超光速推进器科技的范围以及效率。\n\n建议通过银河星图操作超光速推进器系统。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "增压胶囊",
+    "Group": "飞船生命维持装置",
+    "Description": "一项关键的飞船安全功能，对于轨道外飞行至关重要。\n\n专门安装的增压胶囊将能够维持飞船内部的可呼吸大气环境，并避免因非常规驾驶舱设计导致的灾难性爆炸事故。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],

@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "Módulo de rebote de lanzarrayos",
     "Group": "Mejora del lanzarrayos",
-    "Description": "Crea un campo de antimateria alrededor de los disparos del lanzador de pulso, lo que provoca que sean repelidos por superficies no dañadas.\n\nActiva rebote, lo que provoca que los proyectiles reboten si golpean un objetivo al que no infligen daño.",
+    "Description": "Crea un campo de antimateria alrededor de los disparos del lanzarrayos, lo que provoca que sean repelidos por superficies no dañadas.\n\nActiva rebote, lo que provoca que los proyectiles reboten si golpean un objetivo al que no infligen daño.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "Módulo de rebote de lanzador de pulso",
     "Group": "Mejora del lanzador de pulso",
-    "Description": "Crea un campo de antimateria alrededor de los disparos del lanzarrayos, lo que provoca que sean repelidos por superficies no dañadas.\n\nActiva rebote, lo que provoca que los proyectiles reboten si golpean un objetivo al que no infligen daño.",
+    "Description": "Crea un campo de antimateria alrededor de los disparos del lanzador de pulso, lo que provoca que sean repelidos por superficies no dañadas.\n\nActiva rebote, lo que provoca que los proyectiles reboten si golpean un objetivo al que no infligen daño.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5105,6 +5105,122 @@
       {
         "Id": "prod81",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "Sistema de lanzamiento avanzado",
+    "Group": "Tren de aterrizaje personalizado",
+    "Description": "Un sistema de control de lanzamiento hecho a medida para naves espaciales de alto rendimiento. Los giroscopios sensibles y los circuitos de control especializados trazan rutinas de despegue personalizadas para aumentar la velocidad y la eficiencia del despegue.\n\nSe necesita combustible especializado derivado del dihidrógeno para recargar el propulsor. Los procedimientos de lanzamiento exigen un nivel mínimo de combustible antes de la activación.\n\nMantener THRUST para despegar desde el planeta. Mantener BOOST para iniciar la potenciación de velocidad en vuelo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "Motor de onda",
+    "Group": "Motor de nave altamente personalizado",
+    "Description": "Una versión altamente optimizada del motor de pulso de las naves convencionales. La ocupación de onda se ha llevado al límite y crea una experiencia de pulso que es tan eficiente como receptiva.\n\nSe advierte al usuario de que se requiere tritio para cargar el motor. El tritio abunda en los campos de asteroides cercanos.\n\nMantener ROLLLEFT y ROLLRIGHT a la vez para iniciar el salto de pulso. Mantener BOOST para iniciar la potenciación de velocidad en vuelo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "Catapulta de desplazamiento",
+    "Group": "Propulsor de curvatura modificado ilegalmente",
+    "Description": "Este motor experimental mejora la tecnología convencional del hiperturbo distorsionando la geometría local en el punto de inicialización de la curvatura, lo que aumenta el alcance y la eficiencia mucho más que los motores estándares.\n\nSe recomienda al usuario acceder a los sistemas de hiperturbo desde el mapa galáctico.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "Cápsula de presurización",
+    "Group": "Unidad de soporte vital de la nave",
+    "Description": "Una característica fundamental para la seguridad de la nave, vital para los vuelos extraorbitales.\n\nLa cápsula de presurización es una unidad especializada que garantiza una atmósfera respirable y evita la explosión catastrófica de las cabinas no convencionales.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],

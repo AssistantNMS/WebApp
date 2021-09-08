@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "Afketsmodule Boltcaster",
     "Group": "Boltcaster-upgrade",
-    "Description": "Zet een antimaterieschild op rond de projectielen van de pulsspitter, die daardoor worden afgeweerd door onbeschadigde oppervlakken.\n\nMaakt het afketsen van projectielen mogelijk, waardoor ze terug stuiteren als ze iets raken wat ze niet beschadigen.",
+    "Description": "Zet een antimaterieschild op rond de projectielen van de Boltcaster, die daardoor worden afgeweerd door onbeschadigde oppervlakken.\n\nMaakt het afketsen van projectielen mogelijk, waardoor ze terug stuiteren als ze iets raken wat ze niet beschadigen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "Afketsmodule pulsspitter",
     "Group": "Pulsspitter-upgrade",
-    "Description": "Zet een antimaterieschild op rond de projectielen van de Boltcaster, die daardoor worden afgeweerd door onbeschadigde oppervlakken.\n\nMaakt het afketsen van projectielen mogelijk, waardoor ze terug stuiteren als ze iets raken wat ze niet beschadigen.",
+    "Description": "Zet een antimaterieschild op rond de projectielen van de pulsspitter, die daardoor worden afgeweerd door onbeschadigde oppervlakken.\n\nMaakt het afketsen van projectielen mogelijk, waardoor ze terug stuiteren als ze iets raken wat ze niet beschadigen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5105,6 +5105,122 @@
       {
         "Id": "prod81",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "Geavanceerd lanceersysteem",
+    "Group": "Op maat gemaakt landingsgestel",
+    "Description": "Een speciaal lanceersysteem voor krachtige ruimteschepen. De gevoelige gyroscopen en gespecialiseerde besturingscircuits passen de opstijgroutines aan voor meer snelheid en efficiëntie bij de lancering.\n \nJe hebt speciale energie op deuteriumbasis nodig om de stuwraket op te laden. De opstijgprocedure kan alleen worden gestart als er voldoende energie beschikbaar is.\n \nHou THRUST ingedrukt om op te stijgen. Hou BOOST ingedrukt voor een snelheidsboost tijdens de vlucht.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "Golfvormmotor",
+    "Group": "Extra aangepaste ruimteschipmotor",
+    "Description": "Een opgevoerde versie van de conventionele pulsmotor van het ruimteschip. De wavefront-bezetting is tot het uiterste afgesteld, waardoor de pulsmotor zowel efficiënt als zeer responsief functioneert.\n\nEr is tritium nodig om de motor op te laden. Tritium wordt veel aangetroffen in asteroïdenvelden in de buurt van planeten.\n\nHou ROLLLEFT en ROLLRIGHT gelijktijdig ingedrukt om de pulssprong te activeren. Hou BOOST ingedrukt voor een snelheidsboost tijdens de vlucht.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "Frameshift-katapult",
+    "Group": "Illegaal aangepaste warpmotor",
+    "Description": "Deze experimentele motor verbetert de conventionele hyperdrive-technologie door de lokale geometrie te vervormen bij de warp-initialisatie. Dit zorgt voor een veel groter bereik en veel meer efficiëntie dan met normale motoren.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de galactische kaart.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "Drukcapsule",
+    "Group": "Lifesupport-eenheid ruimteschip",
+    "Description": "Een belangrijke veiligheidsvoorziening van het ruimteschip die essentieel is voor vluchten buiten de planetaire atmosfeer.\n\nDe drukcapsule is een speciaal onderdeel dat zorgt voor een levensvatbare atmosfeer en fatale explosies van onconventionele cockpits voorkomt.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],

@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "Moduł rykoszetujący błyskacza",
     "Group": "Ulepszenie błyskacza",
-    "Description": "Tworzy pole antymaterii wokół strzałów z PM-a pulsacyjnego, przez co odbijają się od nieuszkodzonych powierzchni.\n\nUmożliwia rykoszetowanie, dzięki czemu pociski odbijają się, jeśli trafią w cel, któremu nie zadadzą obrażeń.",
+    "Description": "Tworzy pole antymaterii otaczające strzały błyskacza, wywołując ich odpychanie przez nieuszkodzone powierzchnie.\n\nUmożliwia rykoszet, wywołując odbijanie się pocisków, jeśli trafiony cel nie zostanie przez nie uszkodzony.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "Moduł rykoszetujący PM-a pulsacyjnego",
     "Group": "Ulepszenie PMa pulsacyjnego",
-    "Description": "Tworzy pole antymaterii wokół strzałów z błyskacza, przez co odbijają się od nieuszkodzonych powierzchni.\n\nUmożliwia rykoszetowanie, dzięki czemu pociski odbijają się, jeśli trafią w cel, któremu nie zadadzą obrażeń.",
+    "Description": "Tworzy pole antymaterii otaczające strzały z PM-a pulsacyjnego, wywołując ich odpychanie przez nieuszkodzone powierzchnie.\n\nUmożliwia rykoszet, wywołując odbijanie się pocisków, jeśli trafiony cel nie zostanie przez nie uszkodzony.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5105,6 +5105,122 @@
       {
         "Id": "prod81",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech187",
+    "Icon": "technology/187.png",
+    "Name": "Zaawansowany system startu",
+    "Group": "Spersonalizowany system lądowania",
+    "Description": "Zrobiony na zamówienie system kontroli startu dla statków gwiezdnych o dużych osiągach. Czułe żyroskopy i wyspecjalizowane układy kontrolne przeprowadzają nietypowe procedury startu, zwiększające szybkość i wydajność startu.\n \nDo ładowania silnika wymagane jest specjalne paliwo, pochodzące z diwodoru. Uruchomienie procedur wymaga wystarczającej ilości paliwa przed aktywacją.\n \nPrzytrzymaj THRUST, aby wystartować z powierzchni planety. Przytrzymaj BOOST, aby włączyć dopalacz w locie.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur21",
+        "Quantity": 5
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech188",
+    "Icon": "technology/188.png",
+    "Name": "Silnik falowy",
+    "Group": "Wyjątkowo zmodyfikowany silnik statku",
+    "Description": "Wybitnie zmodyfikowana wersja konwencjonalnego silnika pulsacyjnego statku. Wykorzystanie fali zostało zmaksymalizowane, tworząc wydajny i wyjątkowo responsywny impuls.\n\nUżytkownik powinien zwrócić uwagę, że do naładowania silnika pulsacyjnego wymagany jest tryt. Tryt występuje w obfitości w polach asteroid w pobliskiej przestrzeni kosmicznej.\n\nPrzytrzymaj jednocześnie ROLLLEFT i ROLLRIGHT, aby włączyć skok impulsowy. Przytrzymaj BOOST, aby włączyć dopalanie w trakcie lotu w kosmosie.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur32",
+        "Quantity": 6
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech189",
+    "Icon": "technology/189.png",
+    "Name": "Katapulta formozmiany",
+    "Group": "Nielegalnie zmodyfikowany napęd warp",
+    "Description": "Ten eksperymentalny napęd wzmacnia konwencjonalną technologię hipernapędu zakłócając miejscową geometrię do momentu zainicjowania skoku warp, wybitnie zwiększając zasięg i wydajność względem tradycyjnych napędów.\n\nUżytkownik powinien uzyskać dostęp do układów hipernapędu za pośrednictwem mapy galaktyki.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 5
+      },
+      {
+        "Id": "cur23",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 125
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech190",
+    "Icon": "technology/190.png",
+    "Name": "Kapsuła ciśnieniowa",
+    "Group": "Jednostka podtrzymania życia statku",
+    "Description": "Kluczowy element bezpieczeństwa na statku, wybitnie ważny dla lotów poza orbitą\n\nKapsuła ciśnieniowa to dedykowane urządzenie zapewniające wdychalną atmosferę i zapobiegające katastrofalnym eksplozjom nietypowych kokpitów.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "1A2733",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod74",
+        "Quantity": 4
       }
     ],
     "StatBonuses": [],
