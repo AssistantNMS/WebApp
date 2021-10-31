@@ -57,7 +57,7 @@ export class WeekendMissionContainerUnconnected extends React.Component<IProps, 
     }
 
     fetchWeekendMissionStage = async (wmProperties: any) => {
-        var weekendMissionResult = await this.state.gameItemService.getWeekendMissionStage(wmProperties.weekendMissionJson, wmProperties.season, wmProperties.level);
+        const weekendMissionResult = await this.state.gameItemService.getWeekendMissionStage(wmProperties.weekendMissionJson, wmProperties.season, wmProperties.level);
         if (!weekendMissionResult.isSuccess) {
             this.setState(() => {
                 return {

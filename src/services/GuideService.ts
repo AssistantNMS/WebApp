@@ -5,22 +5,21 @@ import { GuideListItem } from '../contracts/guide/guideListItem';
 import { ResultWithValue } from '../contracts/results/ResultWithValue';
 import { BaseJsonService } from './BaseJsonService';
 import { Guide } from '../contracts/guide/guide';
-
-var moment = require('moment');
+import { dateIsBefore } from '../helper/dateHelper';
 
 export class GuideService extends BaseJsonService {
     async getListOfGuides(): Promise<ResultWithValue<Array<Guide>>> {
-        var guidesDir = await this.getAsset<Array<GuideListItem>>(`json/${i18next.t(LocaleKey.guidesJson).toString()}.json`)
+        const guidesDir = await this.getAsset<Array<GuideListItem>>(`json/${i18next.t(LocaleKey.guidesJson).toString()}.json`)
         if (!guidesDir.isSuccess) return {
             isSuccess: false,
             value: [],
             errorMessage: guidesDir.errorMessage
         };
 
-        var guideTasks = guidesDir.value.map((guideItem) => this.getJsonGuide(guideItem.folder, guideItem.file));
-        var guides = await Promise.all(guideTasks);
+        const guideTasks = guidesDir.value.map((guideItem) => this.getJsonGuide(guideItem.folder, guideItem.file));
+        const guides = await Promise.all(guideTasks);
         let sortedGuide = guides.slice().sort((a: Guide, b: Guide) =>
-            (moment(a.date).isBefore(b.date) ? 1 : -1));
+            (dateIsBefore(a.date, b.date) ? 1 : -1));
         return {
             isSuccess: true,
             value: sortedGuide,
@@ -29,7 +28,7 @@ export class GuideService extends BaseJsonService {
     }
 
     async getSpecificGuide(guid: string): Promise<ResultWithValue<Guide>> {
-        var allGuidesResult = await this.getListOfGuides()
+        const allGuidesResult = await this.getListOfGuides()
         const anyObj: any = {};
         if (!allGuidesResult.isSuccess) return {
             isSuccess: false,
@@ -37,7 +36,7 @@ export class GuideService extends BaseJsonService {
             errorMessage: allGuidesResult.errorMessage
         };
 
-        var guide: Guide = anyObj;
+        let guide: Guide = anyObj;
         for (const guideItem of allGuidesResult.value) {
             if (guideItem.guid !== guid) continue;
             guide = guideItem;

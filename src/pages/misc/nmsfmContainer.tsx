@@ -27,7 +27,7 @@ export class NmsfmContainerUnconnected extends React.Component<IProps, IState> {
     }
 
     fetchTrackData = async () => {
-        var nmsfmListResult = await this.props.services.apiService.getNmsfm();
+        const nmsfmListResult = await this.props.services.apiService.getNmsfm();
         if (!nmsfmListResult.isSuccess) {
             this.setState(() => {
                 return {

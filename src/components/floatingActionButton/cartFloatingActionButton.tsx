@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Fab } from '@material/react-fab'
+import { BaseFloatingActionButton } from './baseFloatingActionButton';
 
 export const CartFloatingActionButton = (addThisItemToCart: any) => {
     return (
-        <Fab className="fab-bg-color fab-margin"
+        <BaseFloatingActionButton
             key="CartFloatingActionButton"
             icon={<i className="material-icons">shopping_basket</i>}
             onClick={addThisItemToCart}

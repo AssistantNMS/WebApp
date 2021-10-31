@@ -41,30 +41,30 @@ export const loadStateFromLocalStorage = () => {
 }
 
 export const saveStateToLocalStorage = (store: any) => {
-    var currentSettingReducer = store.getState().settingReducer;
-    var storedSettingReducer = JSON.parse(localStorage.getItem(CacheKey.SettingReducerKey) || '{}');
+    const currentSettingReducer = store.getState().settingReducer;
+    const storedSettingReducer = JSON.parse(localStorage.getItem(CacheKey.SettingReducerKey) || '{}');
     if (storedSettingReducer == null
         || storedSettingReducer.selectedLanguage !== currentSettingReducer.selectedLanguage
         || storedSettingReducer.useAltGlyphs !== currentSettingReducer.useAltGlyphs) {
         localStorage.setItem(CacheKey.SettingReducerKey, JSON.stringify(currentSettingReducer));
     }
 
-    var currentCartReducer = store.getState().cartReducer;
-    var storedCartReducer = localStorage.getItem(CacheKey.CartReducerKey);
+    const currentCartReducer = store.getState().cartReducer;
+    const storedCartReducer = localStorage.getItem(CacheKey.CartReducerKey);
     if (storedCartReducer == null
         || storedCartReducer !== JSON.stringify(currentCartReducer?.cartItems || [])) {
         localStorage.setItem(CacheKey.CartReducerKey, JSON.stringify(currentCartReducer));
     }
 
-    var currentPortalReducer = store.getState().portalReducer;
-    var storedPortalReducer = localStorage.getItem(CacheKey.PortalReducerKey);
+    const currentPortalReducer = store.getState().portalReducer;
+    const storedPortalReducer = localStorage.getItem(CacheKey.PortalReducerKey);
     if (storedPortalReducer == null
         || storedPortalReducer !== JSON.stringify(currentPortalReducer?.portalItems || [])) {
         localStorage.setItem(CacheKey.PortalReducerKey, JSON.stringify(currentPortalReducer));
     }
 
-    var currentFavouriteReducer = store.getState().favouriteReducer;
-    var storedFavouriteReducer = localStorage.getItem(CacheKey.FavouriteReducerKey);
+    const currentFavouriteReducer = store.getState().favouriteReducer;
+    const storedFavouriteReducer = localStorage.getItem(CacheKey.FavouriteReducerKey);
     if (storedFavouriteReducer == null
         || storedFavouriteReducer !== JSON.stringify(currentFavouriteReducer?.favouriteItems || [])) {
         localStorage.setItem(CacheKey.FavouriteReducerKey, JSON.stringify(currentFavouriteReducer));

@@ -29,7 +29,7 @@ export class PatreonContainerUnconnected extends React.Component<IProps, IState>
     }
 
     fetchPatrons = async () => {
-        var patronListResult = await this.props.services.assistantAppsApiService.getPatronsList();
+        const patronListResult = await this.props.services.assistantAppsApiService.getPatronsList();
         if (!patronListResult.isSuccess) {
             this.setState(() => {
                 return {

@@ -33,11 +33,11 @@ class GenericItemWithRequirementsListTileClass extends React.Component<IProps, I
     }
 
     fetchData = async (items: Array<RequiredItem>) => {
-        var requiredItemsTasks = items.map(async (item: RequiredItem) => {
-            var itemDetails = await this.state.gameItemService.getItemDetails(item.Id);
+        const requiredItemsTasks = items.map(async (item: RequiredItem) => {
+            const itemDetails = await this.state.gameItemService.getItemDetails(item.Id);
             if (!itemDetails.isSuccess) return null;
 
-            var requiredItemDetails: RequiredItemDetails = {
+            const requiredItemDetails: RequiredItemDetails = {
                 Id: itemDetails.value.Id,
                 Icon: itemDetails.value.Icon,
                 Name: itemDetails.value.Name,
@@ -46,8 +46,8 @@ class GenericItemWithRequirementsListTileClass extends React.Component<IProps, I
             }
             return requiredItemDetails;
         });
-        var requiredItemsResults = await Promise.all(requiredItemsTasks);
-        var requiredItems: Array<RequiredItemDetails | any> = requiredItemsResults.filter(r => r);
+        const requiredItemsResults = await Promise.all(requiredItemsTasks);
+        const requiredItems: Array<RequiredItemDetails | any> = requiredItemsResults.filter(r => r);
 
         if (requiredItems.length < 1) {
             console.error('Could not fetch data for all refiner inputs');

@@ -41,7 +41,7 @@ export class WhatIsNewContainerUnconnected extends React.Component<IProps, IStat
 
     fetchWhatIsNewItems = async (whatIsNewSearchObj: VersionSearchViewModel) => {
         const service = this.props.services.assistantAppsApiService;
-        var whatIsNewListResult = await service.getWhatIsNewItems(whatIsNewSearchObj);
+        const whatIsNewListResult = await service.getWhatIsNewItems(whatIsNewSearchObj);
         if (!whatIsNewListResult.isSuccess) {
             this.setState(() => {
                 return {

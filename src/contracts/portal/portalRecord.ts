@@ -8,7 +8,7 @@ export interface PortalRecord {
 
 export const compareCodes = (codes: Array<number>, current: Array<number>) => {
     let isEqual = true;
-    for (var codeIndex = 0; codeIndex < codes.length; codeIndex++) {
+    for (let codeIndex = 0; codeIndex < codes.length; codeIndex++) {
         if (codes[codeIndex] !== current[codeIndex]) {
             isEqual = false;
             break;

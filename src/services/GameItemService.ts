@@ -36,7 +36,7 @@ export class GameItemService extends BaseJsonService {
     if (!itemId) return { isSuccess: false, value: result, errorMessage: 'itemId specified is invallid' };
 
     const catalogue = getCatalogueFromItemId(itemId);
-    var list = await this.getListfromJson(catalogue);
+    const list = await this.getListfromJson(catalogue);
     if (!list.isSuccess) return { isSuccess: false, value: result, errorMessage: list.errorMessage };
 
     let found = false;
@@ -63,7 +63,7 @@ export class GameItemService extends BaseJsonService {
 
   async getRequiredItems(itemId: string): Promise<ResultWithValue<Array<RequiredItemDetails>>> {
     const catalogue = getCatalogueFromItemId(itemId);
-    var allGenericItemsResult = await this.getListfromJson(catalogue);
+    const allGenericItemsResult = await this.getListfromJson(catalogue);
 
     if (!allGenericItemsResult.isSuccess) {
       return {
@@ -72,7 +72,7 @@ export class GameItemService extends BaseJsonService {
         errorMessage: allGenericItemsResult.errorMessage,
       };
     }
-    var craftableItems = allGenericItemsResult.value
+    const craftableItems = allGenericItemsResult.value
       .filter((r: any) => r.Id === itemId);
     if (craftableItems.length < 1)
       return {
@@ -80,11 +80,11 @@ export class GameItemService extends BaseJsonService {
         value: [],
         errorMessage: 'required items not found',
       };
-    var requiredItemsTasks = (craftableItems[0].RequiredItems ?? []).map(async (item: RequiredItem) => {
-      var itemDetails = await this.getItemDetails(item.Id);
+    const requiredItemsTasks = (craftableItems[0].RequiredItems ?? []).map(async (item: RequiredItem) => {
+      const itemDetails = await this.getItemDetails(item.Id);
       if (!itemDetails.isSuccess) return null;
 
-      var requiredItemDetails: RequiredItemDetails = {
+      const requiredItemDetails: RequiredItemDetails = {
         Id: itemDetails.value.Id,
         Icon: itemDetails.value.Icon,
         Name: itemDetails.value.Name,
@@ -93,8 +93,8 @@ export class GameItemService extends BaseJsonService {
       }
       return requiredItemDetails;
     });
-    var requiredItemsResults = await Promise.all(requiredItemsTasks);
-    var requiredItems: any = requiredItemsResults.filter(r => r);
+    const requiredItemsResults = await Promise.all(requiredItemsTasks);
+    const requiredItems: any = requiredItemsResults.filter(r => r);
 
     return {
       isSuccess: true,
@@ -121,7 +121,7 @@ export class GameItemService extends BaseJsonService {
   }
 
   async getProcessorsByOutput(catalogueType: string, itemId: string): Promise<ResultWithValue<Array<Processor>>> {
-    var allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
+    const allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
 
     if (!allGenericItemsResult.isSuccess) {
       return {
@@ -131,7 +131,7 @@ export class GameItemService extends BaseJsonService {
       };
     }
 
-    var refFromOutputs = allGenericItemsResult.value.filter((ref => ref.Output.Id === itemId));
+    const refFromOutputs = allGenericItemsResult.value.filter((ref => ref.Output.Id === itemId));
     if (refFromOutputs.length < 1)
       return {
         isSuccess: false,
@@ -150,7 +150,7 @@ export class GameItemService extends BaseJsonService {
   getCookingByOutput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByOutput(CatalogueType.nutrientProcessor, itemId);
 
   async getProcessorsByInput(catalogueType: string, itemId: string): Promise<ResultWithValue<Array<Processor>>> {
-    var allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
+    const allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
 
     if (!allGenericItemsResult.isSuccess) {
       return {
@@ -160,7 +160,7 @@ export class GameItemService extends BaseJsonService {
       };
     }
 
-    var refFromOutputs = allGenericItemsResult.value.filter((ref => ref.Inputs.find((inp: any) => inp.Id === itemId) != null));
+    const refFromOutputs = allGenericItemsResult.value.filter((ref => ref.Inputs.find((inp: any) => inp.Id === itemId) != null));
     if (refFromOutputs.length < 1)
       return {
         isSuccess: false,
@@ -179,7 +179,7 @@ export class GameItemService extends BaseJsonService {
   getCookingByInput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByInput(CatalogueType.nutrientProcessor, itemId);
 
   async getProcessorById(catalogueType: string, itemId: string): Promise<ResultWithValue<Processor>> {
-    var allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
+    const allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
 
     let result: any = {};
     if (!allGenericItemsResult.isSuccess) {
@@ -233,11 +233,11 @@ export class GameItemService extends BaseJsonService {
         value: [],
         errorMessage: 'required items not found',
       };
-    var requiredItemsTasks = processorRecipe.value.Inputs.map(async (item: RequiredItem) => {
-      var itemDetails = await this.getItemDetails(item.Id);
+    const requiredItemsTasks = processorRecipe.value.Inputs.map(async (item: RequiredItem) => {
+      const itemDetails = await this.getItemDetails(item.Id);
       if (!itemDetails.isSuccess) return null;
 
-      var requiredItemDetails: RequiredItemDetails = {
+      const requiredItemDetails: RequiredItemDetails = {
         Id: itemDetails.value.Id,
         Icon: itemDetails.value.Icon,
         Name: itemDetails.value.Name,
@@ -246,8 +246,8 @@ export class GameItemService extends BaseJsonService {
       }
       return requiredItemDetails;
     });
-    var requiredItemsResults = await Promise.all(requiredItemsTasks);
-    var requiredItems: any = requiredItemsResults.filter(r => r);
+    const requiredItemsResults = await Promise.all(requiredItemsTasks);
+    const requiredItems: any = requiredItemsResults.filter(r => r);
 
     return {
       isSuccess: true,
@@ -257,14 +257,14 @@ export class GameItemService extends BaseJsonService {
   }
 
   async getItemDetailsFromIdList(itemIdsList: Array<string>): Promise<ResultWithValue<Array<GameItemModel>>> {
-    var itemDetailsTask = itemIdsList.map(async (itemId: string) => {
-      var itemDetails = await this.getItemDetails(itemId);
+    const itemDetailsTask = itemIdsList.map(async (itemId: string) => {
+      const itemDetails = await this.getItemDetails(itemId);
       if (!itemDetails.isSuccess) return null;
 
       return itemDetails;
     });
-    var itemDetailsResults = await Promise.all(itemDetailsTask);
-    var itemDetails: any = itemDetailsResults.filter(r => r);
+    const itemDetailsResults = await Promise.all(itemDetailsTask);
+    const itemDetails: any = itemDetailsResults.filter(r => r);
 
     return {
       isSuccess: true,
@@ -279,7 +279,7 @@ export class GameItemService extends BaseJsonService {
     if (!seasonId) return { isSuccess: false, value: result, errorMessage: 'seasonId specified is invallid' };
     if (!levelId) return { isSuccess: false, value: result, errorMessage: 'levelId specified is invallid' };
 
-    var path = i18next.t(weekendMissionJson).toString();
+    const path = i18next.t(weekendMissionJson).toString();
     const weekendMissionsResult = await this.getAsset<Array<WeekendMission>>(`json/${path}.json`);
     if (!weekendMissionsResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: result.errorMessage };
 

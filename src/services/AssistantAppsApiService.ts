@@ -19,7 +19,7 @@ export class AssistantAppsApiService extends BaseApiService {
     }
 
     async getWhatIsNewItems(search: VersionSearchViewModel): Promise<ResultWithValueAndPagination<Array<VersionViewModel>>> {
-        var result = await this.post<Array<VersionViewModel>, VersionSearchViewModel>(
+        const result = await this.post<Array<VersionViewModel>, VersionSearchViewModel>(
             'Version/Search', search,
             (response: any) => {
                 return {

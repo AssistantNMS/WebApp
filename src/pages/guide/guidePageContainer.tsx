@@ -55,7 +55,7 @@ export class GuidePageContainerUnconnected extends React.Component<IProps, IStat
     }
 
     fetchData = async () => {
-        var itemsResult = await this.state.guideService.getListOfGuides();
+        const itemsResult = await this.state.guideService.getListOfGuides();
         if (!itemsResult.isSuccess) {
             this.setState(() => {
                 return {

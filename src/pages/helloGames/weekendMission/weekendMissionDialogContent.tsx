@@ -54,7 +54,7 @@ export class WeekendMissionDialogContent extends React.Component<IProps, IState>
                 type: ChatType.Options,
                 text: opt.Name,
                 onClick: () => {
-                    var msgToSend = { type: ChatType.Outgoing, text: opt.Name };
+                    const msgToSend = { type: ChatType.Outgoing, text: opt.Name };
                     this.setState(() => {
                         return {
                             messages: [...this.state.messages,

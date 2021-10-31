@@ -24,7 +24,7 @@ export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IPr
     }
 
     const displayMeetupSubmissions = (items: Array<OnlineMeetup2020SubmissionViewModel>) => {
-        var submissions = [];
+        const submissions = [];
         for (const item of items) {
             submissions.push(
                 <div key={item.guid} className="item">

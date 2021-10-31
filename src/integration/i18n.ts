@@ -24,7 +24,7 @@ function loadLocaleMessages(): any {
       const locale = matched[1].replace('-', '');
       let i18nextTranslationObject: any = { translation: {} };
       const currentLocaleObj = locales(key);
-      for (var localeKey in currentLocaleObj) {
+      for (const localeKey in currentLocaleObj) {
         i18nextTranslationObject.translation[localeKey] = currentLocaleObj[localeKey];
       }
       messages[locale] = i18nextTranslationObject;

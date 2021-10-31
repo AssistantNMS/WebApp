@@ -51,7 +51,7 @@ export class CatalogueListContainerUnconnected extends React.Component<IProps, I
 
     fetchData = async (newTypes: string) => {
         const allGameItemsService = new AllGameItemsService();
-        var itemsResult = await allGameItemsService.getSelectedCatalogueItems(newTypes.split('-'));
+        const itemsResult = await allGameItemsService.getSelectedCatalogueItems(newTypes.split('-'));
         if (!itemsResult.isSuccess) {
             // Error
             return;

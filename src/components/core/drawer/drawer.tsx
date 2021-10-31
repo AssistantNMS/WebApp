@@ -44,7 +44,7 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
             if (item.iconType === DrawerIconType.Material) icon = <i className="material-icons">{item.icon}</i>;
             if (item.iconType === DrawerIconType.Custom) icon = <img className="custom-icons" src={item.icon} alt={item.icon} />;
 
-            var child = item.link.includes('http')
+            const child = item.link.includes('http')
                 ? <a href={item.link} target="_blank" rel="noopener noreferrer" className="nav-link noselect">{icon}<p>{item.name}</p></a>
                 : <Link to={item.link} className="nav-link noselect" draggable={false}>{icon}<p>{item.name}</p></Link>
 

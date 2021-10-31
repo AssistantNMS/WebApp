@@ -8,11 +8,10 @@ import { Guide } from '../../contracts/guide/guide';
 import { GuideSection } from '../../contracts/guide/guideSection';
 import { GuideSectionItem } from '../../contracts/guide/guideSectionItem';
 import { GuideType } from '../../contracts/guide/guideType';
+import { guideFormatDate } from '../../helper/dateHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { GuideService } from '../../services/GuideService';
 import { displaySectionImageItem, displaySectionLinkItem, displaySectionMarkdownItem, displaySectionTable, displaySectionTextItem } from './guideComponents';
-
-var moment = require('moment');
 
 interface IProps {
     // Container Props
@@ -45,7 +44,7 @@ export const GuideDetailPagePresenter: React.FC<IProps> = (props: IProps) => {
         return <>
             <h2>{guide.title}</h2>
             <h4>{guide.author}</h4>
-            <h4>{moment(guide.date).format('DD MMM YYYY')}</h4>
+            <h4>{guideFormatDate(guide.date)}</h4>
             {
                 guide.sections.map(displaySection)
             }
@@ -95,7 +94,7 @@ export const GuideDetailPagePresenter: React.FC<IProps> = (props: IProps) => {
 
     const title = props.guide?.title ?? i18next.t(LocaleKey.guides) ?? 'Guide';
     const description = props.guide?.author ?? 'Unknown' +
-        moment(props.guide?.date ?? Date()).format('DD MMM YYYY') ?? 'Unknown' +
+        guideFormatDate(props.guide?.date ?? Date()) ?? 'Unknown' +
         props.guide?.title ?? 'Unknown' +
         props.guide?.shortTitle ?? 'Unknown';
     return (

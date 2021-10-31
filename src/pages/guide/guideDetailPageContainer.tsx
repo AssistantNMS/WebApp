@@ -41,7 +41,7 @@ export class GuideDetailPageContainerUnconnected extends React.Component<IProps,
     }
 
     fetchData = async (guideGuid: string) => {
-        var guideResult = await this.state.guideService.getSpecificGuide(guideGuid);
+        const guideResult = await this.state.guideService.getSpecificGuide(guideGuid);
         if (!guideResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -59,7 +59,7 @@ export class GuideDetailPageContainerUnconnected extends React.Component<IProps,
     }
 
     fetchMetaData = async (guideGuid: string) => {
-        var guideMetaResult = await this.props.services.apiService.getGuideMetaData(guideGuid);
+        const guideMetaResult = await this.props.services.apiService.getGuideMetaData(guideGuid);
         if (!guideMetaResult.isSuccess) return;
         this.setState(() => {
             return {
@@ -69,12 +69,12 @@ export class GuideDetailPageContainerUnconnected extends React.Component<IProps,
     }
 
     likeGuide = async () => {
-        var guid = this.state.guide?.guid;
+        const guid = this.state.guide?.guid;
         if (!guid) return;
-        var likeResult = await this.props.services.apiService.likeGuide(guid);
+        const likeResult = await this.props.services.apiService.likeGuide(guid);
         if (likeResult.isSuccess) {
             Swal.fire({ icon: 'success', title: '👍' });
-            var newGuideMeta: any = { ...this.state.guideMeta };
+            const newGuideMeta: any = { ...this.state.guideMeta };
             newGuideMeta.likes = (this.state.guideMeta?.likes ?? 0) + 1;
             this.setState(() => {
                 return {

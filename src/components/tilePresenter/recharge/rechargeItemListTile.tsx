@@ -39,8 +39,8 @@ class RechargeItemListTileClass extends React.Component<IProps, IState> {
     }
 
     fetchData = async (itemId: string, childId: string) => {
-        var parentDetails = await this.state.gameItemService.getItemDetails(itemId);
-        var childDetails = await this.state.gameItemService.getItemDetails(childId);
+        const parentDetails = await this.state.gameItemService.getItemDetails(itemId);
+        const childDetails = await this.state.gameItemService.getItemDetails(childId);
 
         if (!parentDetails.isSuccess || !childDetails.isSuccess) return;
 

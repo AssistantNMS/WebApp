@@ -38,7 +38,7 @@ class QuicksilverItemListTileClass extends React.Component<IQuicksilverItemProps
     }
 
     fetchData = async (itemId: string) => {
-        var itemDetails = await this.state.gameItemService.getItemDetails(itemId);
+        const itemDetails = await this.state.gameItemService.getItemDetails(itemId);
 
         this.setState(() => {
             return {

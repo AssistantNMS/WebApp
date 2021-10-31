@@ -38,7 +38,7 @@ export class GenericPageAllRequiredContainerUnconnected extends React.Component<
 
     fetchData = async () => {
         const requiredItemIds: RequiredItem[] = this.props.location?.state?.requiredItems || []
-        var itemsResult = await getAllRequiredItemsForMultiple(requiredItemIds);
+        const itemsResult = await getAllRequiredItemsForMultiple(requiredItemIds);
         this.setState(() => {
             return {
                 requiredItems: itemsResult,

@@ -67,7 +67,7 @@ export class ProcessorItemContainerUnconnected extends React.Component<IProps, I
     }
 
     fetchData = async (itemId: string) => {
-        var itemResult = itemId.includes("ref")
+        const itemResult = itemId.includes("ref")
             ? await this.state.gameItemService.getRefinedById(itemId ?? '')
             : await this.state.gameItemService.getCookingById(itemId ?? '');
         if (!itemResult.isSuccess) {
@@ -90,7 +90,7 @@ export class ProcessorItemContainerUnconnected extends React.Component<IProps, I
     }
 
     fetchOutputData = async (itemId: string) => {
-        var itemResult = await this.state.gameItemService.getItemDetails(itemId ?? '');
+        const itemResult = await this.state.gameItemService.getItemDetails(itemId ?? '');
         if (!itemResult.isSuccess) {
             console.error(itemResult.errorMessage);
             return;
@@ -104,7 +104,7 @@ export class ProcessorItemContainerUnconnected extends React.Component<IProps, I
     }
 
     fetchInputDetails = async (itemId: string) => {
-        var inputDetails = await this.state.gameItemService.getRequiredItemDetails(itemId ?? '');
+        const inputDetails = await this.state.gameItemService.getRequiredItemDetails(itemId ?? '');
         if (!inputDetails.isSuccess) {
             console.error(inputDetails.errorMessage);
             return;

@@ -28,7 +28,7 @@ export class OnlineMeetup2020SubmissionContainerUnconnected extends React.Compon
     }
 
     fetchOnlineMeetupSubmissions = async () => {
-        var itemsResult = await this.props.services.apiService.getOnlineMeetupSubmissions();
+        const itemsResult = await this.props.services.apiService.getOnlineMeetupSubmissions();
         if (!itemsResult.isSuccess) {
             this.setState(() => {
                 return {

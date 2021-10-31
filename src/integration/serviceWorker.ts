@@ -23,7 +23,7 @@ export const updateServiceWorker = (registration: any) => {
     window.registration.postMessage({ type: 'SKIP_WAITING' });
     window.location.reload();*/
 
-    // var preventDevToolsReloadLoop = false;
+    // const preventDevToolsReloadLoop = false;
     // navigator.serviceWorker.addEventListener("controllerchange", function () {
     //     // Ensure refresh is only called once.
     //     // This works around a bug in "force update on reload".

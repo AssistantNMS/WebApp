@@ -61,7 +61,7 @@ export class AllGameItemsService {
   }
 
   async getByInputsId(itemId: string): Promise<ResultWithValue<Array<GameItemModel>>> {
-    var allGenericItemsResult = await this.getAllItems();
+    const allGenericItemsResult = await this.getAllItems();
 
     if (!allGenericItemsResult.isSuccess) {
       return {
@@ -71,7 +71,7 @@ export class AllGameItemsService {
       };
     }
     try {
-      var craftableItems = allGenericItemsResult.value
+      const craftableItems = allGenericItemsResult.value
         .filter((r: GameItemModel) => (r.RequiredItems ?? []).find((ri: RequiredItem) => ri.Id === itemId) != null);
       return {
         isSuccess: true,

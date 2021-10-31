@@ -52,8 +52,8 @@ export const NmsfmTrackListTile = (props: NmsfmTrackDataViewModel) => {
 export const getTrackTime = (seconds: number) => {
     if (seconds == null || seconds === 0) return '';
 
-    var min = Math.floor(seconds / 60);
-    var sec = seconds % 60;
+    const min = Math.floor(seconds / 60);
+    const sec = seconds % 60;
 
     if (min === 0 && sec === 0) return '';
     if (min === 0) return `${sec}s`;

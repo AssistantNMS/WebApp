@@ -36,7 +36,7 @@ class ChargeByItemListTileClass extends React.Component<IProps, IState> {
     }
 
     fetchData = async (itemId: string) => {
-        var itemDetails = await this.state.gameItemService.getItemDetails(itemId);
+        const itemDetails = await this.state.gameItemService.getItemDetails(itemId);
 
         this.setState(() => {
             return {

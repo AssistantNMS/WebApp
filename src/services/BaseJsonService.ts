@@ -24,13 +24,13 @@ export class BaseJsonService {
   }
 
   protected async getJsonGuide(guideFolder: string, jsonFileName: string): Promise<Guide> {
-    var guideDynamic = await this.getJsonFromAssets<Guide>(`guide/${guideFolder}/${jsonFileName}`);
+    const guideDynamic = await this.getJsonFromAssets<Guide>(`guide/${guideFolder}/${jsonFileName}`);
     guideDynamic.folder = guideFolder;
     return guideDynamic;
   }
 
   protected async getJsonFromAssets<T>(jsonFileName: string) {
-    var jsonString = await axios.request<T>({
+    const jsonString = await axios.request<T>({
       url: `/assets/${jsonFileName}.json`
     });
     return jsonString.data;

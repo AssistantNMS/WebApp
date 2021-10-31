@@ -7,12 +7,12 @@ import { ResultWithValue } from '../contracts/results/ResultWithValue';
 
 export const getAllRequiredItemsForMultiple = async (requiredItems: Array<RequiredItem>): Promise<Array<RequiredItemDetails>> => {
     let rawMaterials = [];
-    for (var requiredItem of requiredItems) {
+    for (const requiredItem of requiredItems) {
         const tempItems = await getRequiredItems(requiredItem);
-        for (var tempItemIndex = 0;
+        for (let tempItemIndex = 0;
             tempItemIndex < tempItems.length;
             tempItemIndex++) {
-            var tempItem = tempItems[tempItemIndex];
+            const tempItem = tempItems[tempItemIndex];
             // if (tempItem.id != requiredItem.id) {
             //   tempItem.quantity = tempItem.quantity * requiredItem.quantity;
             // }
@@ -21,7 +21,7 @@ export const getAllRequiredItemsForMultiple = async (requiredItems: Array<Requir
     }
 
     const rawMaterialMap: Map<String, RequiredItemDetails> = new Map<String, RequiredItemDetails>();
-    for (var rawMaterialIndex = 0;
+    for (let rawMaterialIndex = 0;
         rawMaterialIndex < rawMaterials.length;
         rawMaterialIndex++) {
         const rawMaterialDetails: RequiredItemDetails = rawMaterials[rawMaterialIndex];
@@ -56,7 +56,7 @@ export const getRequiredItems = async (requiredItem: RequiredItem): Promise<Arra
     tempRawMaterials = genericResult.value.RequiredItems;
     let requiredItemDetails: RequiredItemDetails = toRequiredItemDetails(requiredItem, genericResult.value);
 
-    var rawMaterialsResult: Array<RequiredItemDetails> = [];
+    const rawMaterialsResult: Array<RequiredItemDetails> = [];
 
     if (tempRawMaterials != null &&
         tempRawMaterials.length === 0 &&
@@ -65,7 +65,7 @@ export const getRequiredItems = async (requiredItem: RequiredItem): Promise<Arra
         return rawMaterialsResult;
     }
 
-    for (var requiredIndex = 0;
+    for (let requiredIndex = 0;
         requiredIndex < tempRawMaterials.length;
         requiredIndex++) {
         const rawMaterial: RequiredItem = tempRawMaterials[requiredIndex];
@@ -92,8 +92,8 @@ export const toRequiredItemDetails = (requiredItem: RequiredItem, genericItem: G
 export const requiredItemDetailsFromInputs = async (inputs: Array<RequiredItem>): Promise<ResultWithValue<Array<RequiredItemDetails>>> => {
     const details: Array<RequiredItemDetails> = [];
 
-    for (var refInputIndex = 0; refInputIndex < inputs.length; refInputIndex++) {
-        var refinerInput = inputs[refInputIndex];
+    for (let refInputIndex = 0; refInputIndex < inputs.length; refInputIndex++) {
+        const refinerInput = inputs[refInputIndex];
 
         const gameItemService = new GameItemService();
         const itemResult = await gameItemService.getItemDetails(refinerInput.Id);

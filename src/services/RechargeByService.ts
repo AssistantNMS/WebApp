@@ -19,7 +19,7 @@ export class RechargeByService extends BaseJsonService {
         const getAllResult = await this.getAllRechargeItems();
         if (!getAllResult.isSuccess) return { isSuccess: false, value: result, errorMessage: getAllResult.errorMessage };
 
-        var rechargeItem = getAllResult.value.filter((rech => rech.Id === itemId));
+        const rechargeItem = getAllResult.value.filter((rech => rech.Id === itemId));
         console.log(itemId, rechargeItem);
         if (rechargeItem.length < 1) {
             return {
@@ -42,7 +42,7 @@ export class RechargeByService extends BaseJsonService {
         const getAllResult = await this.getAllRechargeItems();
         if (!getAllResult.isSuccess) return { isSuccess: false, value: [], errorMessage: getAllResult.errorMessage };
 
-        var chargeByItems = getAllResult.value.filter((rech => rech.ChargeBy.findIndex(ch => ch.Id === itemId) >= 0));
+        const chargeByItems = getAllResult.value.filter((rech => rech.ChargeBy.findIndex(ch => ch.Id === itemId) >= 0));
         if (chargeByItems.length < 1) {
             return {
                 isSuccess: false,

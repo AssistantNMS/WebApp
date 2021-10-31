@@ -63,8 +63,8 @@ const WeekendMissionMenuPresenterUnconnected: React.FC<IProps> = (props: IProps)
         <>
             <HeadComponent title={i18next.t(LocaleKey.weekendMission)} />
             <NavBar title={i18next.t(LocaleKey.weekendMission)} />
-            <div className="content">
-                <div className="container full pt1">
+            <div className="content no-spacing">
+                <div className="container full">
                     <div className="row weekend-mission">
                         {weekendMissionCard('Season 2', 'weekendMission/Season2.jpg', 'stoz0r', season2Obj)}
                         {weekendMissionCard('Season 1', 'weekendMission/Season1.jpg', 'screenshot guy', season1Obj)}

@@ -105,7 +105,7 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
                 networkState: NetworkState.Loading,
             }
         });
-        var itemResult = await this.state.gameItemService.getItemDetails(itemId ?? '');
+        const itemResult = await this.state.gameItemService.getItemDetails(itemId ?? '');
         if (!itemResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -141,50 +141,50 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
     }
 
     getResArray = async (itemId: string) => {
-        var resArrayResult = await this.state.gameItemService.getRequiredItems(itemId);
+        const resArrayResult = await this.state.gameItemService.getRequiredItems(itemId);
         if (!resArrayResult.isSuccess) return;
         return resArrayResult.value;
     }
 
     getUsedToCreateArray = async (itemId: string) => {
-        var usedToCreateArrayResult = await this.state.allGameItemsService.getByInputsId(itemId);
+        const usedToCreateArrayResult = await this.state.allGameItemsService.getByInputsId(itemId);
         if (!usedToCreateArrayResult.isSuccess) return;
         return usedToCreateArrayResult.value;
     }
 
     getRechargeByArray = async (itemId: string) => {
-        var rechargeByResult = await this.state.rechargeByService.getRechargeById(itemId);
+        const rechargeByResult = await this.state.rechargeByService.getRechargeById(itemId);
         if (!rechargeByResult.isSuccess) return;
         return rechargeByResult.value;
     }
 
     getUsedToRechargeArray = async (itemId: string) => {
-        var usedToRechargeResult = await this.state.rechargeByService.getRechargeByChargeById(itemId);
+        const usedToRechargeResult = await this.state.rechargeByService.getRechargeByChargeById(itemId);
         console.log(usedToRechargeResult);
         if (!usedToRechargeResult.isSuccess) return;
         return usedToRechargeResult.value;
     }
 
     getRefArray = async (itemId: string) => {
-        var refArray = await this.state.gameItemService.getRefinedByOutput(itemId);
+        const refArray = await this.state.gameItemService.getRefinedByOutput(itemId);
         if (!refArray.isSuccess) return;
         return refArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
     getUsedToRefArray = async (itemId: string) => {
-        var usedToRefArray = await this.state.gameItemService.getRefinedByInput(itemId);
+        const usedToRefArray = await this.state.gameItemService.getRefinedByInput(itemId);
         if (!usedToRefArray.isSuccess) return;
         return usedToRefArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
     getCookArray = async (itemId: string) => {
-        var cookArray = await this.state.gameItemService.getCookingByOutput(itemId);
+        const cookArray = await this.state.gameItemService.getCookingByOutput(itemId);
         if (!cookArray.isSuccess) return;
         return cookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
     getUsedToCookArray = async (itemId: string) => {
-        var usedToCookArray = await this.state.gameItemService.getCookingByInput(itemId);
+        const usedToCookArray = await this.state.gameItemService.getCookingByInput(itemId);
         if (!usedToCookArray.isSuccess) return;
         return usedToCookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }

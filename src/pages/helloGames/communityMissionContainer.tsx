@@ -36,7 +36,7 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
     }
 
     fetchCommunityMission = async () => {
-        var communityMissionResult = await this.props.services.apiService.getCommunityMission();
+        const communityMissionResult = await this.props.services.apiService.getCommunityMission();
         if (!communityMissionResult.isSuccess) {
             this.setState(() => {
                 return {
