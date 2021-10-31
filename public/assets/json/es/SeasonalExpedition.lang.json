@@ -3924,8 +3924,8 @@
             "Icon": "milestonePatches/PATCH.SURVIVESTORM.png",
             "Rewards": [
               {
-                "Id": "tMod10",
-                "Type": 8,
+                "Id": "conTech63",
+                "Type": 1,
                 "AmountMin": 0,
                 "AmountMax": 0,
                 "Currency": 0,
@@ -3933,7 +3933,7 @@
                 "HideInSeasonRewards": false
               },
               {
-                "Id": "tMod5",
+                "Id": "tMod10",
                 "Type": 8,
                 "AmountMin": 0,
                 "AmountMax": 0,
@@ -4193,8 +4193,8 @@
           {
             "Id": "seas-3-expedPhase-3-milestone-5",
             "Title": "El navegante",
-            "Description": "Cartografía puntos de control: 0/6",
-            "DescriptionDone": "Has cartografiado 6 puntos de control",
+            "Description": "Cartografía puntos de control: 0/4",
+            "DescriptionDone": "Has cartografiado 4 puntos de control",
             "Icon": "milestonePatches/PATCH.DISCOVERWAYPOINT.1.png",
             "Rewards": [
               {
@@ -4641,15 +4641,6 @@
             "Currency": 0,
             "ProcTechQuality": 0,
             "HideInSeasonRewards": false
-          },
-          {
-            "Id": "build428",
-            "Type": 10,
-            "AmountMin": 0,
-            "AmountMax": 0,
-            "Currency": 0,
-            "ProcTechQuality": 0,
-            "HideInSeasonRewards": false
           }
         ]
       },
@@ -4898,6 +4889,1209 @@
       {
         "Id": "other157",
         "Type": 3,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "Currency": 0,
+        "ProcTechQuality": 0,
+        "HideInSeasonRewards": false
+      },
+      {
+        "Id": "other199",
+        "Type": 13,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "Currency": 0,
+        "ProcTechQuality": 0,
+        "HideInSeasonRewards": false
+      }
+    ]
+  },
+  {
+    "Id": "seas-4",
+    "Icon": "milestonePatches/PATCH.EXPEDITION.4.png",
+    "Title": "El Gusano Titán",
+    "PortalCode": "313DFED7068A",
+    "Phases": [
+      {
+        "Id": "seas-4-expedPhase-1",
+        "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.STAGE.1.png",
+        "Title": "Caza 1",
+        "Description": "Progreso actual: 0/5",
+        "DescriptionDone": "Caza 1 completada",
+        "Milestones": [
+          {
+            "Id": "seas-4-expedPhase-1-milestone-1",
+            "Title": "El despertar de la bestia",
+            "Description": "Persigue a tu primer Titán",
+            "DescriptionDone": "Has perseguido a tu primer Titán",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORM.1.png",
+            "Rewards": [
+              {
+                "Id": "other200",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod20",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-1-milestone-2",
+            "Title": "Tu único santuario",
+            "Description": "Localiza tu nave",
+            "DescriptionDone": "Has llegado a tu nave",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.FINDSHIP.png",
+            "Rewards": [
+              {
+                "Id": "tech70",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod112",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-1-milestone-3",
+            "Title": "De orillas desérticas",
+            "Description": "Deja el planeta",
+            "DescriptionDone": "Has dejado el planeta",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.LEAVEPLANET.png",
+            "Rewards": [
+              {
+                "Id": "tech26",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod75",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod172",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-1-milestone-4",
+            "Title": "Hacia la oscuridad",
+            "Description": "Viaja hasta un nuevo sistema",
+            "DescriptionDone": "Has ido a la velocidad luz",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.LEAVESYSTEM.png",
+            "Rewards": [
+              {
+                "Id": "conTech1",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech1",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": true
+              },
+              {
+                "Id": "cur16",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 20,
+                "AmountMax": 20,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech143",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-1-milestone-5",
+            "Title": "Punto de encuentro 1",
+            "Description": "Llega al primer punto de encuentro",
+            "DescriptionDone": "Has llegado al primer punto de encuentro",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.PARTY.1.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 500,
+                "AmountMax": 500,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other141",
+                "Type": 6,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod80",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other190",
+            "Type": 0,
+            "AmountMin": 30,
+            "AmountMax": 30,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other191",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-4-expedPhase-2",
+        "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.STAGE.2.png",
+        "Title": "Caza 2",
+        "Description": "Progreso actual: 0/5",
+        "DescriptionDone": "Caza 2 completada",
+        "Milestones": [
+          {
+            "Id": "seas-4-expedPhase-2-milestone-1",
+            "Title": "Punto de encuentro 2",
+            "Description": "Llega al segundo punto de encuentro",
+            "DescriptionDone": "Has llegado al segundo punto de encuentro",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.PARTY.2.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 600,
+                "AmountMax": 600,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd24",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other141",
+                "Type": 6,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-2-milestone-2",
+            "Title": "El núcleo carnoso",
+            "Description": "Has visitado un segundo impacto de titán",
+            "DescriptionDone": "Has visitado tu segundo impacto de titán",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORM.2.png",
+            "Rewards": [
+              {
+                "Id": "other201",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other142",
+                "Type": 4,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-2-milestone-3",
+            "Title": "Resistir a las llamas",
+            "Description": "Tormentas de calor extremas resistidas: 0u/3000u",
+            "DescriptionDone": "Has resistido al calor extremo durante 3000u",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.HOTWALK.png",
+            "Rewards": [
+              {
+                "Id": "cur18",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd24",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cook191",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-2-milestone-4",
+            "Title": "Abraza a las llamas",
+            "Description": "Recibe daño del calor extremo",
+            "DescriptionDone": "Has recibido el daño sanador del fuego",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.HOTDAMAGE.png",
+            "Rewards": [
+              {
+                "Id": "tMod70",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod45",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-2-milestone-5",
+            "Title": "Una huella imborrable",
+            "Description": "Polvo maldito recogido: 0/512",
+            "DescriptionDone": "Has extraído 512 de polvo maldito",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.GETDUST.png",
+            "Rewards": [
+              {
+                "Id": "tech71",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw59",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other195",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-4-expedPhase-3",
+        "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.STAGE.3.png",
+        "Title": "Caza 3",
+        "Description": "Progreso actual: 0/5",
+        "DescriptionDone": "Caza 3 completada",
+        "Milestones": [
+          {
+            "Id": "seas-4-expedPhase-3-milestone-1",
+            "Title": "Punto de encuentro 3",
+            "Description": "Llega al tercer punto de encuentro",
+            "DescriptionDone": "Has llegado al tercer punto de encuentro",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.PARTY.3.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 650,
+                "AmountMax": 650,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd24",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other141",
+                "Type": 6,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-3-milestone-2",
+            "Title": "Se alza imponente ante nosotros",
+            "Description": "Has visitado un tercer impacto de titán",
+            "DescriptionDone": "Has visitado tu tercer impacto de titán",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORM.3.png",
+            "Rewards": [
+              {
+                "Id": "other202",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech26",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech17",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-3-milestone-3",
+            "Title": "Su aroma permanece",
+            "Description": "Roba huevos susurrantes: 0/16",
+            "DescriptionDone": "Has robado 16 huevos susurrantes",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.FIENDEGG.png",
+            "Rewards": [
+              {
+                "Id": "tech81",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur52",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod30",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3000,
+                "AmountMax": 3000,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod35",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-3-milestone-4",
+            "Title": "Han ido demasiado lejos",
+            "Description": "Recupera un Implante de modificación de archivo",
+            "DescriptionDone": "Has obtenido un Implante de modificación de archivo",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.DERELICT.png",
+            "Rewards": [
+              {
+                "Id": "tech192",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur51",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 4,
+                "AmountMax": 4,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw60",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 399,
+                "AmountMax": 399,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-3-milestone-5",
+            "Title": "Esa espuma reptante",
+            "Description": "Consigue nanites: 0/4000",
+            "DescriptionDone": "Has conseguido 4000 nanites",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.NANITES.png",
+            "Rewards": [
+              {
+                "Id": "tech105",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech104",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech103",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod130",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw52",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 128,
+                "AmountMax": 128,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other197",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-4-expedPhase-4",
+        "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.STAGE.4.png",
+        "Title": "Caza 4",
+        "Description": "Progreso actual: 0/5",
+        "DescriptionDone": "Caza 4 completada",
+        "Milestones": [
+          {
+            "Id": "seas-4-expedPhase-4-milestone-1",
+            "Title": "Punto de encuentro 4",
+            "Description": "Llega al cuarto punto de encuentro",
+            "DescriptionDone": "Has llegado al cuarto punto de encuentro",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.PARTY.4.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other38",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other141",
+                "Type": 6,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd24",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-4-milestone-2",
+            "Title": "Pulmones de arena",
+            "Description": "Has visitado un cuarto impacto de titán",
+            "DescriptionDone": "Has visitado tu cuarto impacto de titán",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORM.4.png",
+            "Rewards": [
+              {
+                "Id": "other203",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur34",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-4-milestone-3",
+            "Title": "Palabras prohibidas",
+            "Description": "Recoge el Manuscrito retorcido",
+            "DescriptionDone": "Has recuperado el Manuscrito retorcido",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.LIBRARY.png",
+            "Rewards": [
+              {
+                "Id": "other186",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw62",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 401,
+                "AmountMax": 401,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-4-milestone-4",
+            "Title": "Sus hijos perdidos",
+            "Description": "Excava huesos antiguos: 0/16",
+            "DescriptionDone": "Fósiles antiguos excavados: 16",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.GETBONES.png",
+            "Rewards": [
+              {
+                "Id": "raw16",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 128,
+                "AmountMax": 128,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd6",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech64",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-4-milestone-5",
+            "Title": "Malas vibraciones",
+            "Description": "Elimina a 0/36 tentáculos hambrientos",
+            "DescriptionDone": "Tentáculos hambrientos eliminados: 36",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.GRABBY.png",
+            "Rewards": [
+              {
+                "Id": "cook247",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cook123",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 777,
+                "AmountMax": 777,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other198",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-4-expedPhase-5",
+        "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.STAGE.5.png",
+        "Title": "Caza 5",
+        "Description": "Progreso actual: 0/5",
+        "DescriptionDone": "Caza 5 completada",
+        "Milestones": [
+          {
+            "Id": "seas-4-expedPhase-5-milestone-1",
+            "Title": "Punto de encuentro 5",
+            "Description": "Llega al último punto de encuentro",
+            "DescriptionDone": "Has llegado al último punto de encuentro",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.PARTY.5.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other38",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod58",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd24",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-5-milestone-2",
+            "Title": "El Vermiarco",
+            "Description": "Has visitado el impacto de titán final",
+            "DescriptionDone": "Has visitado tu impacto de titán final",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORM.5.png",
+            "Rewards": [
+              {
+                "Id": "other204",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod75",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other141",
+                "Type": 6,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-5-milestone-3",
+            "Title": "Hacia lo rojo",
+            "Description": "Comulga con el Atlas",
+            "DescriptionDone": "Has hablado ante el Atlas",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.ALTAS.png",
+            "Rewards": [
+              {
+                "Id": "tech191",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other93",
+                "Type": 13,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-5-milestone-4",
+            "Title": "El Gusano Titán caerá",
+            "Description": "Construye el sintetizador visceral",
+            "DescriptionDone": "Has construido un sintetizador visceral",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORMLURE.png",
+            "Rewards": [
+              {
+                "Id": "raw4",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 1616,
+                "AmountMax": 1616,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw49",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur15",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-5-milestone-5",
+            "Title": "Engendrado bajo tu piel",
+            "Description": "Recoge la vil progenie: 0/3",
+            "DescriptionDone": "Vil progenie recogida: 3",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORMEGGS.png",
+            "Rewards": [
+              {
+                "Id": "procProd6",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod68",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other192",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other193",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other194",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other192",
+            "Type": 11,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      }
+    ],
+    "Rewards": [
+      {
+        "Id": "other196",
+        "Type": 13,
         "AmountMin": 0,
         "AmountMax": 0,
         "Currency": 0,

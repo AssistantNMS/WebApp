@@ -6931,5 +6931,83 @@
     ],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech191",
+    "Icon": "technology/191.png",
+    "Name": "Visceral Synthesiser",
+    "Group": "Ethereal Incubator",
+    "Description": "A piece of otherworldy technology. Its inviting membranes are soft, gel-like, pulsing with a gentle crimson radiance.\n\nIts warm embrace allows the user to extricate any Vile Spawn from the embryotic sacs of Hungering Tendrils.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 90,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur15",
+        "Quantity": 4
+      },
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw69",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [
+      {
+        "Name": "Hazard Protection Battery",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "prot",
+        "Value": "20"
+      }
+    ],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech192",
+    "Icon": "technology/192.png",
+    "Name": "Archive Override Implant",
+    "Group": "Subcutaneous Access Circuit",
+    "Description": "A biotechnical firewall, developed as a safeguard against textual cognitohazards. It is coated in something slippery, and has started to bubble along the surface.\n\nEmbedded beneath the skin, this grants administrative access to ancient forbidden texts bound at a Planetary Archive.\nWarning: Do not unbind the forbidden texts. Exposure to forbidden texts carries extreme risk.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 90,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur19",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw18",
+        "Quantity": 90
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [
+      {
+        "Name": "Hazard Protection Battery",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "prot",
+        "Value": "20"
+      }
+    ],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]

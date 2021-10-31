@@ -863,8 +863,8 @@
           {
             "Id": "seas-1-expedPhase-3-milestone-2",
             "Title": "收集者",
-            "Description": "收集古老文物：0/10",
-            "DescriptionDone": "已挖掘 10 件文物",
+            "Description": "收集古老器物：0/10",
+            "DescriptionDone": "已挖掘 10 件器物",
             "Icon": "milestonePatches/PATCH.DISCOVERMINERAL.1.png",
             "Rewards": [
               {
@@ -3924,8 +3924,8 @@
             "Icon": "milestonePatches/PATCH.SURVIVESTORM.png",
             "Rewards": [
               {
-                "Id": "tMod10",
-                "Type": 8,
+                "Id": "conTech63",
+                "Type": 1,
                 "AmountMin": 0,
                 "AmountMax": 0,
                 "Currency": 0,
@@ -3933,7 +3933,7 @@
                 "HideInSeasonRewards": false
               },
               {
-                "Id": "tMod5",
+                "Id": "tMod10",
                 "Type": 8,
                 "AmountMin": 0,
                 "AmountMax": 0,
@@ -4193,8 +4193,8 @@
           {
             "Id": "seas-3-expedPhase-3-milestone-5",
             "Title": "領航員",
-            "Description": "記錄路標：0/6",
-            "DescriptionDone": "已記錄 6 個路標",
+            "Description": "記錄路標：0/4",
+            "DescriptionDone": "已記錄 4 個路標",
             "Icon": "milestonePatches/PATCH.DISCOVERWAYPOINT.1.png",
             "Rewards": [
               {
@@ -4641,15 +4641,6 @@
             "Currency": 0,
             "ProcTechQuality": 0,
             "HideInSeasonRewards": false
-          },
-          {
-            "Id": "build428",
-            "Type": 10,
-            "AmountMin": 0,
-            "AmountMax": 0,
-            "Currency": 0,
-            "ProcTechQuality": 0,
-            "HideInSeasonRewards": false
           }
         ]
       },
@@ -4898,6 +4889,1209 @@
       {
         "Id": "other157",
         "Type": 3,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "Currency": 0,
+        "ProcTechQuality": 0,
+        "HideInSeasonRewards": false
+      },
+      {
+        "Id": "other199",
+        "Type": 13,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "Currency": 0,
+        "ProcTechQuality": 0,
+        "HideInSeasonRewards": false
+      }
+    ]
+  },
+  {
+    "Id": "seas-4",
+    "Icon": "milestonePatches/PATCH.EXPEDITION.4.png",
+    "Title": "泰坦巨蟲",
+    "PortalCode": "313DFED7068A",
+    "Phases": [
+      {
+        "Id": "seas-4-expedPhase-1",
+        "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.STAGE.1.png",
+        "Title": "狩獵 1",
+        "Description": "目前進度：0/5",
+        "DescriptionDone": "狩獵 1 完成",
+        "Milestones": [
+          {
+            "Id": "seas-4-expedPhase-1-milestone-1",
+            "Title": "巨獸甦醒",
+            "Description": "追蹤你第一個泰坦",
+            "DescriptionDone": "已追蹤你第一個泰坦",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORM.1.png",
+            "Rewards": [
+              {
+                "Id": "other200",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod20",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-1-milestone-2",
+            "Title": "你唯一的庇護所",
+            "Description": "找到你的太空船",
+            "DescriptionDone": "已抵達你的太空船",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.FINDSHIP.png",
+            "Rewards": [
+              {
+                "Id": "tech70",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod112",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-1-milestone-3",
+            "Title": "來自荒蕪岸邊",
+            "Description": "離開星球",
+            "DescriptionDone": "已離開星球",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.LEAVEPLANET.png",
+            "Rewards": [
+              {
+                "Id": "tech26",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod75",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod172",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-1-milestone-4",
+            "Title": "駛入黑暗",
+            "Description": "空間跳躍到新星系",
+            "DescriptionDone": "光速前進",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.LEAVESYSTEM.png",
+            "Rewards": [
+              {
+                "Id": "conTech1",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech1",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": true
+              },
+              {
+                "Id": "cur16",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 20,
+                "AmountMax": 20,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech143",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-1-milestone-5",
+            "Title": "會合點 1",
+            "Description": "抵達會合點 1",
+            "DescriptionDone": "抵達會合點 1",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.PARTY.1.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 500,
+                "AmountMax": 500,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other141",
+                "Type": 6,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod80",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other190",
+            "Type": 0,
+            "AmountMin": 30,
+            "AmountMax": 30,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other191",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-4-expedPhase-2",
+        "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.STAGE.2.png",
+        "Title": "狩獵 2",
+        "Description": "目前進度：0/5",
+        "DescriptionDone": "狩獵 2 完成",
+        "Milestones": [
+          {
+            "Id": "seas-4-expedPhase-2-milestone-1",
+            "Title": "會合點 2",
+            "Description": "抵達第 2 個會合點",
+            "DescriptionDone": "已抵達第 2 個會合點",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.PARTY.2.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 600,
+                "AmountMax": 600,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd24",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other141",
+                "Type": 6,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-2-milestone-2",
+            "Title": "多肉核心",
+            "Description": "已造訪第二個泰坦撞擊",
+            "DescriptionDone": "已造訪第二個泰坦撞擊",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORM.2.png",
+            "Rewards": [
+              {
+                "Id": "other201",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other142",
+                "Type": 4,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-2-milestone-3",
+            "Title": "抵抗火焰",
+            "Description": "撐過極度高溫風暴：0u/3000u",
+            "DescriptionDone": "已撐過極度高溫風暴，持續 3000u",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.HOTWALK.png",
+            "Rewards": [
+              {
+                "Id": "cur18",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd24",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cook191",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-2-milestone-4",
+            "Title": "擁抱火焰",
+            "Description": "遭受來自極度高溫的傷害",
+            "DescriptionDone": "接受火焰的淨化之痛",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.HOTDAMAGE.png",
+            "Rewards": [
+              {
+                "Id": "tMod70",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod45",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-2-milestone-5",
+            "Title": "頑強汙跡",
+            "Description": "採集受詛咒塵土：0/512",
+            "DescriptionDone": "已開採 512 份受詛咒塵土",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.GETDUST.png",
+            "Rewards": [
+              {
+                "Id": "tech71",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw59",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other195",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-4-expedPhase-3",
+        "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.STAGE.3.png",
+        "Title": "狩獵 3",
+        "Description": "目前進度：0/5",
+        "DescriptionDone": "狩獵 3 完成",
+        "Milestones": [
+          {
+            "Id": "seas-4-expedPhase-3-milestone-1",
+            "Title": "會合點 3",
+            "Description": "抵達第 3 個會合點",
+            "DescriptionDone": "已抵達第 3 個會合點",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.PARTY.3.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 650,
+                "AmountMax": 650,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd24",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other141",
+                "Type": 6,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-3-milestone-2",
+            "Title": "其佇立於我們之上",
+            "Description": "已造訪第三個泰坦撞擊",
+            "DescriptionDone": "已造訪第三個泰坦撞擊",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORM.3.png",
+            "Rewards": [
+              {
+                "Id": "other202",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech26",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech17",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-3-milestone-3",
+            "Title": "他們的氣味殘餘",
+            "Description": "竊取低語蛋：0/16",
+            "DescriptionDone": "已竊取 16 個低語蛋",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.FIENDEGG.png",
+            "Rewards": [
+              {
+                "Id": "tech81",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur52",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod30",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3000,
+                "AmountMax": 3000,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod35",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-3-milestone-4",
+            "Title": "他們做過頭了",
+            "Description": "尋回資料庫覆寫移植物",
+            "DescriptionDone": "獲得資料庫覆寫移植物",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.DERELICT.png",
+            "Rewards": [
+              {
+                "Id": "tech192",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur51",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 4,
+                "AmountMax": 4,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw60",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 399,
+                "AmountMax": 399,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-3-milestone-5",
+            "Title": "蔓延的泡沫",
+            "Description": "獲取奈米機群：0/4000",
+            "DescriptionDone": "已獲取 4000 個奈米機群",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.NANITES.png",
+            "Rewards": [
+              {
+                "Id": "tech105",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech104",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech103",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod130",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw52",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 128,
+                "AmountMax": 128,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other197",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-4-expedPhase-4",
+        "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.STAGE.4.png",
+        "Title": "狩獵 4",
+        "Description": "目前進度：0/5",
+        "DescriptionDone": "狩獵 4 完成",
+        "Milestones": [
+          {
+            "Id": "seas-4-expedPhase-4-milestone-1",
+            "Title": "會合點 4",
+            "Description": "抵達第四個會合點",
+            "DescriptionDone": "已抵達第四個會合點",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.PARTY.4.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other38",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other141",
+                "Type": 6,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd24",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-4-milestone-2",
+            "Title": "沙之肺",
+            "Description": "已造訪第四個泰坦撞擊",
+            "DescriptionDone": "已造訪第四個泰坦撞擊",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORM.4.png",
+            "Rewards": [
+              {
+                "Id": "other203",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur34",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-4-milestone-3",
+            "Title": "禁忌文本",
+            "Description": "收集扭曲手稿",
+            "DescriptionDone": "已尋回扭曲手稿",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.LIBRARY.png",
+            "Rewards": [
+              {
+                "Id": "other186",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw62",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 401,
+                "AmountMax": 401,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-4-milestone-4",
+            "Title": "他們遺失的孩子",
+            "Description": "挖掘 0/16 個古老骨骸",
+            "DescriptionDone": "已挖掘 16 個古老化石",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.GETBONES.png",
+            "Rewards": [
+              {
+                "Id": "raw16",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 128,
+                "AmountMax": 128,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd6",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech64",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-4-milestone-5",
+            "Title": "有害震動",
+            "Description": "殲滅 0/36 根飢渴卷蔓",
+            "DescriptionDone": "殲滅 36 根飢渴卷蔓",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.GRABBY.png",
+            "Rewards": [
+              {
+                "Id": "cook247",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cook123",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 777,
+                "AmountMax": 777,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other198",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-4-expedPhase-5",
+        "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.STAGE.5.png",
+        "Title": "狩獵 5",
+        "Description": "目前進度：0/5",
+        "DescriptionDone": "狩獵 5 完成",
+        "Milestones": [
+          {
+            "Id": "seas-4-expedPhase-5-milestone-1",
+            "Title": "會合點 5",
+            "Description": "抵達最終會合點",
+            "DescriptionDone": "已抵達最終會合點",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.PARTY.5.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other38",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod58",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd24",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-5-milestone-2",
+            "Title": "帝蟲",
+            "Description": "已造訪最後泰坦撞擊",
+            "DescriptionDone": "已造訪最後泰坦撞擊",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORM.5.png",
+            "Rewards": [
+              {
+                "Id": "other204",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod75",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other141",
+                "Type": 6,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-5-milestone-3",
+            "Title": "駛入赤紅",
+            "Description": "與寰宇交流",
+            "DescriptionDone": "先於寰宇之前開口",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.ALTAS.png",
+            "Rewards": [
+              {
+                "Id": "tech191",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other93",
+                "Type": 13,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-5-milestone-4",
+            "Title": "泰坦將會屈服",
+            "Description": "製作內臟合成器",
+            "DescriptionDone": "已製作一個內臟合成器",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORMLURE.png",
+            "Rewards": [
+              {
+                "Id": "raw4",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 1616,
+                "AmountMax": 1616,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw49",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur15",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-4-expedPhase-5-milestone-5",
+            "Title": "在皮下出生",
+            "Description": "收集汙穢之卵：0/3",
+            "DescriptionDone": "已收集 3 個汙穢之卵",
+            "Icon": "milestonePatches/SPOOKWORM/PATCH.SPOOKY.WORMEGGS.png",
+            "Rewards": [
+              {
+                "Id": "procProd6",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod68",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other192",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other193",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other194",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other192",
+            "Type": 11,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      }
+    ],
+    "Rewards": [
+      {
+        "Id": "other196",
+        "Type": 13,
         "AmountMin": 0,
         "AmountMax": 0,
         "Currency": 0,
