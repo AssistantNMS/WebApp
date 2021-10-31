@@ -60,7 +60,7 @@ export const AdditionalInfoChip: React.FC<IChipProps> = (props: IChipProps) => {
                 <Tooltip
                     title={props.tooltip}
                     arrow={true}
-                    theme="light"
+                    theme="dark"
                     position="top"
                 >
                     {props.children}

@@ -1,15 +1,16 @@
 import React from 'react';
+import i18next from 'i18next';
 import classNames from 'classnames';
+import { Tooltip } from 'react-tippy';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
-import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
-
-import { mapStateToProps, mapDispatchToProps } from './drawer.Redux';
-import i18next from 'i18next';
 import { LocaleKey } from '../../../localization/LocaleKey';
+import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
+import { mapStateToProps, mapDispatchToProps } from './drawer.Redux';
+import * as metaJson from '../../../assets/data/meta.json';
 
 interface IProps {
     location: any;
@@ -58,7 +59,8 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
     }
 
     const versionString = i18next.t(LocaleKey.appVersion).replace('{0}', process.env.REACT_APP_VERSION ?? '');
-    const gameVersionString = i18next.t(LocaleKey.gameVersion).replace('{0}', '3.63');
+    const gameVersionString = i18next.t(LocaleKey.gameVersion).replace('{0}', metaJson.GameVersion);
+    const gameVersionGeneratedDate = metaJson.GeneratedDate;
 
     return (
         <div
@@ -77,10 +79,17 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
                         data-version={require('../../../buildName.json')}>
                         {versionString}
                     </div>
-                    <div className="noselect"
-                        style={{ textAlign: 'center' }}>
-                        {gameVersionString}
-                    </div>
+                    <Tooltip
+                        title={gameVersionGeneratedDate}
+                        arrow={true}
+                        theme="light"
+                        position="top-start"
+                    >
+                        <div className="noselect"
+                            style={{ textAlign: 'center' }}>
+                            {gameVersionString}
+                        </div>
+                    </Tooltip>
                 </ul>
             </div>
         </div>
