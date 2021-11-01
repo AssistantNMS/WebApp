@@ -9,18 +9,12 @@ async function generateFullJson() {
     const siteDataContents = await readFile('./data/site.json', 'utf8');
     const siteData = JSON.parse(siteDataContents);
 
-    fs.readdir('./', (err, files) => {
-        files.forEach(file => {
-            console.log(file);
-        });
-    });
-
     // Read game data
-    const baseJsonPath = ((process.argv[2] == 'prod') ? '../' : '../') + 'public/assets/json/en/';
+    const baseJsonPath = '../public/assets/json/en/';
     const buildings = await readItemsFromFile(`${baseJsonPath}Buildings.lang.json`);
     const constructedTechnology = await readItemsFromFile(`${baseJsonPath}ConstructedTechnology.lang.json`);
     const cooking = await readItemsFromFile(`${baseJsonPath}Cooking.lang.json`);
-    const curiosity = await readItemsFromFile(`${baseJsonPath}curiosity.lang.json`);
+    const curiosity = await readItemsFromFile(`${baseJsonPath}Curiosity.lang.json`);
     const others = await readItemsFromFile(`${baseJsonPath}Others.lang.json`);
     const proceduralProducts = await readItemsFromFile(`${baseJsonPath}ProceduralProducts.lang.json`);
     const products = await readItemsFromFile(`${baseJsonPath}Products.lang.json`);

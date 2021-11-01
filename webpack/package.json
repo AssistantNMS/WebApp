@@ -4,9 +4,8 @@
   "description": "NMS web app seo pages",
   "author": "Kurt Lourens",
   "scripts": {
-    "build": "npm-run-all --sequential combine-prod data:*",
-    "combine-prod": "node ./node/getRequiredData.js prod",
-    "combine-dev": "node ./node/getRequiredData.js",
+    "build": "npm-run-all --sequential data:*",
+    "data:combine": "node ./node/getRequiredData.js",
     "data:generate": "node ./node/generateSeoPages.js",
     "data:generate-other": "node ./node/generateOtherFiles.js"
   },
