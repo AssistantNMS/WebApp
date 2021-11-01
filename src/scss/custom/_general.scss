@@ -184,6 +184,16 @@ img.grayscale {
     }
 }
 
+.additional-header-column {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .action-container i {
     cursor: pointer;
 }

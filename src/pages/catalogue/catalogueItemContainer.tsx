@@ -2,7 +2,6 @@ import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import Swal from 'sweetalert2';
 import { NetworkState } from '../../constants/NetworkState';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
@@ -11,6 +10,7 @@ import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { Recharge } from '../../contracts/recharge/recharge';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
+import { getQuantityDialog } from '../../helper/dialogHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { AllGameItemsService } from '../../services/AllGameItemsService';
@@ -242,15 +242,11 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
     }
 
     addThisItemToCart = async () => {
-        const { value: quantity } = await Swal.fire({
-            title: i18next.t(LocaleKey.quantity),
-            input: 'number',
-            inputValue: '1',
-            showCancelButton: true
-        });
+        const quantityResult = await getQuantityDialog(i18next.t(LocaleKey.quantity));
+        if (quantityResult.isSuccess === false) return;
+
         if (this.props.addItemToCart == null) return;
-        if (isNaN(quantity)) return;
-        this.props.addItemToCart(this.state.item, quantity);
+        this.props.addItemToCart(this.state.item, quantityResult.value);
     }
 
     addThisItemToFavourites = () => {

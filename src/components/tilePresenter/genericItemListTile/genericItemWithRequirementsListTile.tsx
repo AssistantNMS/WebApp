@@ -10,6 +10,8 @@ import { RequiredItem } from '../../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
 import { TileLoading } from '../../core/loading/loading';
 import { GameItemModel } from '../../../contracts/GameItemModel';
+import { ReactNode } from 'react';
+import { Tooltip } from 'react-tippy';
 
 
 interface IProps extends GameItemModel {
@@ -68,22 +70,48 @@ class GenericItemWithRequirementsListTileClass extends React.Component<IProps, I
             row.Name;
     }
 
+    requiredItemsToNodeArray(rowIndex: number, startIndex: number, row: RequiredItemDetails): Array<ReactNode> {
+        const result: Array<ReactNode> = [];
+        if (rowIndex > startIndex) {
+            result.push(<span key={`${rowIndex}-${startIndex}-+`}>&nbsp;+&nbsp;</span>);
+        }
+        result.push(<span key={`${rowIndex}-${startIndex}-quantity`}>{row.Quantity.toString()}</span>);
+        result.push(<span key={`${rowIndex}-${startIndex}-x`}>x&nbsp;</span>);
+        result.push(<span key={`${rowIndex}-${startIndex}-name`} className="item-name">{row.Name}</span>);
+
+        return result;
+    }
+
     render() {
         if (!this.state.requiredItems || this.state.requiredItems.length === 0) {
             return (<TileLoading />);
         }
 
         let subtitle = '';
+        const quantities: Array<ReactNode> = [];
         const startIndex = 0;
         for (let inputIndex = startIndex; inputIndex < this.state.requiredItems.length; inputIndex++) {
             subtitle += this.requiredItemsToString(inputIndex, startIndex, this.state.requiredItems[inputIndex]);
+            const tempArray = this.requiredItemsToNodeArray(inputIndex, startIndex, this.state.requiredItems[inputIndex]);
+            for (const temp of tempArray) {
+                quantities.push(temp);
+            }
         }
         return (
             <Link to={`${catalogueItem}/${this.props.Id}`} className="gen-item-container" draggable={false}>
                 <ImageContainer {...this.props} />
                 <div className="gen-item-content-container">
                     <TextContainer text={this.props.Name} />
-                    <div className="quantity-container">{subtitle}</div>
+                    <div className="quantity-container">
+                        <Tooltip
+                            title={subtitle}
+                            arrow={true}
+                            theme="light"
+                            position="top-start"
+                        >
+                            {quantities}
+                        </Tooltip>
+                    </div>
                 </div>
             </Link>
         );

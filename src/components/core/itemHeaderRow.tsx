@@ -2,9 +2,11 @@ import React from 'react';
 import { LazyLoadImage } from './lazyLoadImage/lazyLoadImage';
 import { AdditionalInfoChip } from '../common/chip/additionalInfoChip';
 import { invertColor } from '../../helper/colourHelper';
+import { showShareDialog } from '../shareDialog';
 
 interface IProps {
     Colour?: string;
+    Id?: string;
     Icon?: string;
     Name?: string;
     Group?: string;
@@ -48,6 +50,14 @@ export const ItemHeaderRow: React.FC<IProps> = (props: IProps) => {
                             </AdditionalInfoChip>
                         </div>
                         : null
+                }
+                {
+                    (props.Id != null) &&
+                    (
+                        <div className="additional-header-column">
+                            <i className="material-icons x2 pointer" onClick={() => showShareDialog(props.Id!)}>share</i>
+                        </div>
+                    )
                 }
             </div>
         </div>

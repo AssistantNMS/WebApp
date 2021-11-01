@@ -2,8 +2,8 @@ import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import Swal from 'sweetalert2';
 import { PortalRecord } from '../../contracts/portal/portalRecord';
+import { getStringDialog } from '../../helper/dialogHelper';
 import { newGuid } from '../../helper/guidHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
@@ -48,12 +48,7 @@ export class AddEditPortalContainerUnconnected extends React.Component<IProps, I
     }
 
     editName = async () => {
-        const { value: newName } = await Swal.fire({
-            title: i18next.t(LocaleKey.name),
-            input: 'text',
-            inputValue: this.state.item.Name,
-            showCancelButton: true
-        });
+        const newName = await getStringDialog(i18next.t(LocaleKey.name), this.state.item.Name);
         if (newName == null) return;
         this.setState(() => {
             return {
@@ -90,12 +85,7 @@ export class AddEditPortalContainerUnconnected extends React.Component<IProps, I
     }
 
     addTag = async () => {
-        const { value: newTag } = await Swal.fire({
-            title: i18next.t(LocaleKey.addTag),
-            input: 'text',
-            inputValue: '',
-            showCancelButton: true
-        });
+        const newTag = await getStringDialog(i18next.t(LocaleKey.name), this.state.item.Name);
         if (newTag == null) return;
         const tags = this.state.item.Tags || [];
         this.setState(() => {

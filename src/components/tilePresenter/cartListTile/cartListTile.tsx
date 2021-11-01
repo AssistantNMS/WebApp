@@ -1,6 +1,5 @@
 import * as React from 'react';
 import i18next from 'i18next';
-import Swal from 'sweetalert2';
 import { Link } from 'react-router-dom';
 
 import { LocaleKey } from '../../../localization/LocaleKey';
@@ -12,6 +11,7 @@ import { ImageContainer } from '../../common/tile/imageContainer';
 import { ActionContainer } from '../../common/tile/actionContainer';
 
 import { GameItemService } from '../../../services/GameItemService';
+import { getQuantityDialog } from '../../../helper/dialogHelper';
 
 interface IState {
     name: string;
@@ -65,14 +65,10 @@ class CartItemListTileClass extends React.Component<IProps, IState> {
     editItem = async (e: any) => {
         e.preventDefault();
         if (this.props.editItemInCart) {
-            const { value: quantity } = await Swal.fire({
-                title: i18next.t(LocaleKey.quantity),
-                input: 'number',
-                inputValue: '1',
-                showCancelButton: true
-            });
-            if (isNaN(quantity)) return;
-            const newCartItem = { ...this.props, ...{ Quantity: quantity } }
+            const quantityResult = await getQuantityDialog(i18next.t(LocaleKey.quantity));
+            if (quantityResult.isSuccess === false) return;
+
+            const newCartItem = { ...this.props, ...{ Quantity: quantityResult.value } }
             this.props.editItemInCart(newCartItem);
         }
     }

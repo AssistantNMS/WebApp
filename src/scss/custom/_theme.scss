@@ -100,6 +100,10 @@ body {
 
         .quantity-container {
             color: darken($list-item-text-color-dark, 20%);
+
+            .item-name {
+                color: $brand-secondary;
+            }
         }
 
         .badge-container {
