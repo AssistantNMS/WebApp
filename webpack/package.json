@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npm-run-all --sequential data:*",
     "data:combine": "node ./node/getRequiredData.js",
-    "data:generate": "node ./node/generateSeoPages.js"
+    "data:generate": "node ./node/generateSeoPages.js",
+    "data:generate-other": "node ./node/generateOtherFiles.js"
   },
   "homepage": "https://nmsassistant.com",
   "license": "ISC",

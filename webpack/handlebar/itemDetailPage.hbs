@@ -90,43 +90,98 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            color: white background-color: #333333;
+            color: white;
+            background-color: #333333;
         }
 
         .full-page-loader img {
             width: 200px;
         }
     </style>
+
     {{!-- JSON-LD --}}
     <script type="application/ld+json">
         {
             "@context": "https://schema.org/",
-            "@type": "Person",
-            "name": "{{kurt.name}}",
-            "givenName": "{{kurt.name}}",
-            "familyName": "{{kurt.name}}",
-            "additionalName": "{{kurt.additionalName}}",
-            "url": "{{rootUrl}}",
-            "image": "{{kurt.image}}",
+            "@type": "SoftwareApplication",
+            "name": "{{meta.title}}",
+            "url": "https://nmsassistant.com",
+            "about": "{{meta.description}}",
             "description": "{{meta.description}}",
-            "jobTitle": "Software Engineer",
-            "worksFor": [
-                {
-                    "@type": "Organization",
-                    "name": "Entelect",
-                    "legalName": "Entelect",
-                    "url": "https://entelect.co.za",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "url": "https://goo.gl/maps/94uXM5Mgd362",
-                        "streetAddress": "Lunteren, The Netherlands",
-                        "addressCountry": {
-                            "@type": "Country",
-                            "name": "The Netherlands"
-                        }
-                    }
-                },
-                {
-                    "@type": "Organization",
-                    "name": "Red Ruby IT",
-  
+            "image": "assets/images/icon.png",
+            "applicationCategory": "Application",
+            "operatingSystem": "Android Lollipop, iOS, Chrome, Firefox, Opera, Internet Explorer, Edge",
+            "softwareVersion": "{{version}}",
+            "version": "{{version}}",
+            "author": {
+                "@type": "Person",
+                "name": "{{kurt.name}}",
+                "givenName": "{{kurt.name}}",
+                "familyName": "{{kurt.name}}",
+                "additionalName": "{{kurt.additionalName}}",
+                "url": "{{kurt.website}}",
+                "image": "{{kurt.image}}",
+                "description": "{{meta.description}}",
+                "jobTitle": "Software Engineer"
+            },
+            "creator": {
+                "@type": "Person",
+                "name": "{{kurt.name}}",
+                "givenName": "{{kurt.name}}",
+                "familyName": "{{kurt.name}}",
+                "additionalName": "{{kurt.additionalName}}",
+                "url": "{{kurt.website}}",
+                "image": "{{kurt.image}}",
+                "description": "{{meta.description}}",
+                "jobTitle": "Software Engineer"
+            },
+            "offers": {
+                "@type": "offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "name": "{{meta.title}}",
+                "url": "https://nmsassistant.com",
+                "image": "assets/images/icon.png",
+                "description": "{{meta.description}}"
+            },
+            "inLanguage": "en",
+            "dateCreated": "{{date}}",
+            "dateModified": "{{date}}",
+            "datePublished": "{{date}}"
+        }
+    </script>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="nms-app">
+        <h1>{{data.Name}} - Assistant for No Man's Sky</h1>
+        <div class="row border-bottom">
+            <div style="background-color: {{data.Colour}};">
+                <img src="/assets/images/{{data.Icon}}" title="{{data.Name}}" draggable="false" alt="{{data.Name}}">
+            </div>
+            <div class="col-12 col-lg-10 col-md-10 col-sm-8 col-xs-9">
+                <h2>{{data.Name}}</h2>
+                <h3>{{data.Group}}</h3>
+                <h5>{{data.Description}}</h5>
+            </div>
+        </div>
+        <div class="full-page-loader opacity80"></div>
+        <div class="full-page-loader">
+            <div class="cssload-container">
+                <ul class="cssload-flex-container">
+                    <li style="list-style-type: none;">
+                        <img src="/assets/images/loader.svg" draggable="false" alt="loading-animation">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            window.location.replace('/catalogue-item/{{data.Id}}' + window.location.search);
+        }
+    </script>
+</body>
+
+</html>

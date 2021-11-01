@@ -9,7 +9,7 @@ const versionHelper = require('../handlebar/helpers/version.helper.js');
 
 const readFile = util.promisify(fs.readFile);
 
-async function generateItemPage() {
+async function generateOtherFiles() {
     const projectDataContents = await readFile('./data/project.json', 'utf8');
     const projectData = JSON.parse(projectDataContents);
 
@@ -18,18 +18,23 @@ async function generateItemPage() {
     Handlebars.registerHelper('urlref', urlrefHelper);
     Handlebars.registerHelper('version', versionHelper);
 
-    const template = await readFile('./handlebar/itemDetailPage.hbs', 'utf8');
-    const templateFunc = Handlebars.compile(template);
+    const files = [
+        'humans.txt',
+        'opensearch.xml',
+        'sitemap.xml',
+        'web.config',
+    ]
 
-    for (const item of projectData.allItems) {
+    for (const file of files) {
+        const template = await readFile(`./handlebar/${file}.hbs`, 'utf8');
+        const templateFunc = Handlebars.compile(template);
         const templateData = {
             ...projectData,
-            allItems: [],
-            data: { ...item }
+            allItems: []
         };
-        const html = templateFunc(templateData)
-        fs.writeFile(`../public/link/${item.Id}.html`, html, ['utf8'], () => { });
+        const compiledTemplate = templateFunc(templateData);
+        fs.writeFile(`../public/${file}`, compiledTemplate, ['utf8'], () => { });
     }
 }
 
-generateItemPage();
+generateOtherFiles();
