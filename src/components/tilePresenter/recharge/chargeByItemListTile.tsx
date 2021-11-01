@@ -7,7 +7,7 @@ import { catalogueItem } from '../../../constants/Route';
 import { TextContainer } from '../../common/tile/textContainer';
 import { ImageContainer } from '../../common/tile/imageContainer';
 
-import { GameItemService } from '../../../services/GameItemService';
+import { GameItemService } from '../../../services/json/GameItemService';
 import { ChargeBy } from '../../../contracts/recharge/chargeBy';
 
 interface IProps extends ChargeBy {

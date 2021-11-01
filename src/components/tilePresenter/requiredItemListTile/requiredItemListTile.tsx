@@ -11,7 +11,7 @@ import { TextContainer } from '../../common/tile/textContainer';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { ActionContainer } from '../../common/tile/actionContainer';
 
-import { GameItemService } from '../../../services/GameItemService';
+import { GameItemService } from '../../../services/json/GameItemService';
 
 interface IProps extends RequiredItem {
     editItem?: () => void;

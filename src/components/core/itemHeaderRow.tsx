@@ -3,8 +3,13 @@ import { LazyLoadImage } from './lazyLoadImage/lazyLoadImage';
 import { AdditionalInfoChip } from '../common/chip/additionalInfoChip';
 import { invertColor } from '../../helper/colourHelper';
 import { showShareDialog } from '../shareDialog';
+import { ToastService } from '../../services/toastService';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 
-interface IProps {
+interface IWithDepInj {
+    toastService: ToastService;
+}
+interface IWithoutDepInj {
     Colour?: string;
     Id?: string;
     Icon?: string;
@@ -15,9 +20,17 @@ interface IProps {
     Link?: any;
 }
 
-export const ItemHeaderRow: React.FC<IProps> = (props: IProps) => {
+interface IProps extends IWithDepInj, IWithoutDepInj { }
+
+const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
     const name = props?.Name ?? '...';
     const group = props?.Group ?? '...';
+
+    const shareDialogProps = {
+        id: props.Id!,
+        toastService: props.toastService,
+    }
+
     return (
         <div className="row border-bottom">
             <div className="col-12 col-lg-2 col-md-2 col-sm-4 col-xs-3 image-container generic-item-image-container"
@@ -55,7 +68,7 @@ export const ItemHeaderRow: React.FC<IProps> = (props: IProps) => {
                     (props.Id != null) &&
                     (
                         <div className="additional-header-column">
-                            <i className="material-icons x2 pointer" onClick={() => showShareDialog(props.Id!)}>share</i>
+                            <i className="material-icons x2 pointer" onClick={() => showShareDialog(shareDialogProps)}>share</i>
                         </div>
                     )
                 }
@@ -63,4 +76,11 @@ export const ItemHeaderRow: React.FC<IProps> = (props: IProps) => {
         </div>
     );
 }
+
+export const ItemHeaderRow = withServices<IWithoutDepInj, IWithDepInj>(
+    ItemHeaderRowUnconnected,
+    (services: IDependencyInjection) => ({
+        toastService: services.toastService,
+    })
+);
 

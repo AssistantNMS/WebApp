@@ -1,16 +1,16 @@
-import { GameItemModel } from '../contracts/GameItemModel';
-import { RequiredItem } from '../contracts/RequiredItem';
-import { RequiredItemDetails } from '../contracts/RequiredItemDetails';
-import { ResultWithValue } from '../contracts/results/ResultWithValue';
-import { getCatalogueFromItemId, mapToLocale } from '../mapper/CatalogueMapper';
-import { BaseJsonService } from './BaseJsonService';
-import { Processor } from '../contracts/Processor';
-import { CatalogueType } from '../constants/CatalogueType';
-import { WeekendMission } from '../contracts/helloGames/weekendMission';
-import { WeekendMissionStage } from '../contracts/helloGames/weekendMissionStage';
-import { anyObject } from '../helper/typescriptHacks';
 import i18next from 'i18next';
-import { LocaleKey } from '../localization/LocaleKey';
+import { CatalogueType } from '../../constants/CatalogueType';
+import { GameItemModel } from '../../contracts/GameItemModel';
+import { WeekendMission } from '../../contracts/helloGames/weekendMission';
+import { WeekendMissionStage } from '../../contracts/helloGames/weekendMissionStage';
+import { Processor } from '../../contracts/Processor';
+import { RequiredItem } from '../../contracts/RequiredItem';
+import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
+import { ResultWithValue } from '../../contracts/results/ResultWithValue';
+import { anyObject } from '../../helper/typescriptHacks';
+import { LocaleKey } from '../../localization/LocaleKey';
+import { getCatalogueFromItemId, mapToLocale } from '../../mapper/CatalogueMapper';
+import { BaseJsonService } from './BaseJsonService';
 
 export class GameItemService extends BaseJsonService {
   async getListfromJson(catalogueType: string): Promise<ResultWithValue<Array<GameItemModel>>> {

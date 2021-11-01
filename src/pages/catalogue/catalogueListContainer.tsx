@@ -2,19 +2,29 @@ import React from 'react';
 import { forceCheck } from 'react-lazyload';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+
 import { NetworkState } from '../../constants/NetworkState';
 import { GameItemModel } from '../../contracts/GameItemModel';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { State } from '../../redux/state';
-import { AllGameItemsService } from '../../services/AllGameItemsService';
-import './catalogue.scss';
+import { AllGameItemsService } from '../../services/json/AllGameItemsService';
+import { ToastService } from '../../services/toastService';
 import { CatalogueListPresenter } from './catalogueListPresenter';
 
-interface IProps {
+import './catalogue.scss';
+
+interface IWithDepInj {
+    allGameItemsService: AllGameItemsService;
+    toastService: ToastService;
+}
+interface IWithoutDepInj {
     location: any;
     match: any;
     history: any;
     selectedLanguage?: string;
 }
+
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
 interface IState {
     items: Array<GameItemModel>;
@@ -50,8 +60,7 @@ export class CatalogueListContainerUnconnected extends React.Component<IProps, I
     }
 
     fetchData = async (newTypes: string) => {
-        const allGameItemsService = new AllGameItemsService();
-        const itemsResult = await allGameItemsService.getSelectedCatalogueItems(newTypes.split('-'));
+        const itemsResult = await this.props.allGameItemsService.getSelectedCatalogueItems(newTypes.split('-'));
         if (!itemsResult.isSuccess) {
             // Error
             return;
@@ -112,4 +121,10 @@ export const mapStateToProps = (state: State) => {
     };
 };
 
-export const CatalogueListContainer = connect(mapStateToProps)(withRouter(CatalogueListContainerUnconnected));
+export const CatalogueListContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    connect(mapStateToProps)(withRouter(CatalogueListContainerUnconnected)),
+    (services: IDependencyInjection) => ({
+        allGameItemsService: services.allGameItemsService,
+        toastService: services.toastService,
+    })
+);

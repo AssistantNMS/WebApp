@@ -1,11 +1,11 @@
 import i18next from 'i18next';
-import { LocaleKey } from '../localization/LocaleKey';
+import { LocaleKey } from '../../localization/LocaleKey';
 
-import { GuideListItem } from '../contracts/guide/guideListItem';
-import { ResultWithValue } from '../contracts/results/ResultWithValue';
+import { GuideListItem } from '../../contracts/guide/guideListItem';
+import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { BaseJsonService } from './BaseJsonService';
-import { Guide } from '../contracts/guide/guide';
-import { dateIsBefore } from '../helper/dateHelper';
+import { Guide } from '../../contracts/guide/guide';
+import { dateIsBefore } from '../../helper/dateHelper';
 
 export class GuideService extends BaseJsonService {
     async getListOfGuides(): Promise<ResultWithValue<Array<Guide>>> {
@@ -18,7 +18,7 @@ export class GuideService extends BaseJsonService {
 
         const guideTasks = guidesDir.value.map((guideItem) => this.getJsonGuide(guideItem.folder, guideItem.file));
         const guides = await Promise.all(guideTasks);
-        let sortedGuide = guides.slice().sort((a: Guide, b: Guide) =>
+        let sortedGuide: any = guides.slice().sort((a: any, b: any) =>
             (dateIsBefore(a.date, b.date) ? 1 : -1));
         return {
             isSuccess: true,

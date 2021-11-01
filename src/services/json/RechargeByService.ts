@@ -1,7 +1,7 @@
-import { ResultWithValue } from '../contracts/results/ResultWithValue';
+import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { BaseJsonService } from './BaseJsonService';
-import { anyObject } from '../helper/typescriptHacks';
-import { Recharge } from '../contracts/recharge/recharge';
+import { anyObject } from '../../helper/typescriptHacks';
+import { Recharge } from '../../contracts/recharge/recharge';
 
 export class RechargeByService extends BaseJsonService {
     async getAllRechargeItems(): Promise<ResultWithValue<Array<Recharge>>> {

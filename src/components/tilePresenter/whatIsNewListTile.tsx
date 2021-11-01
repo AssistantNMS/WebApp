@@ -57,8 +57,8 @@ export class WhatIsNewListTile extends React.Component<IProps, IState> {
                                         text={platformToString(p)}
                                         additionalCss="m-0"
                                     />
-                            &nbsp;
-                            </>
+                                    &nbsp;
+                                </>
                             );
                         })
                     }</div>

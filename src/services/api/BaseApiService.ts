@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { ResultWithValue } from '../contracts/results/ResultWithValue';
-import { anyObject } from '../helper/typescriptHacks';
+import { ResultWithValue } from '../../contracts/results/ResultWithValue';
+import { anyObject } from '../../helper/typescriptHacks';
 
 declare global {
   interface Window { config: any }
@@ -23,7 +23,7 @@ export class BaseApiService {
       return {
         isSuccess: false,
         value: anyObject,
-        errorMessage: ex.message
+        errorMessage: (ex as any).message
       }
     }
   }
@@ -41,7 +41,7 @@ export class BaseApiService {
       return {
         isSuccess: false,
         value: anyObject,
-        errorMessage: ex.message
+        errorMessage: (ex as any).message
       }
     }
   }

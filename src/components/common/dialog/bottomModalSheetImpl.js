@@ -4,7 +4,8 @@ import Sheet from 'react-modal-sheet';
 export const BottomModalSheetImpl = (props) => {
     return (
         <>
-            <Sheet isOpen={props.isOpen}
+            <Sheet
+                isOpen={props.isOpen}
                 onClose={props.onClose}
                 snapPoints={props.snapPoints}
                 initialSnap={0}

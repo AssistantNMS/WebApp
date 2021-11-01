@@ -1,8 +1,8 @@
-import { ResultWithValue, ResultWithValueAndPagination } from '../contracts/results/ResultWithValue';
+import { ResultWithValue, ResultWithValueAndPagination } from '../../contracts/results/ResultWithValue';
 import { BaseApiService } from './BaseApiService';
-import { PatreonViewModel } from '../contracts/generated/AssistantApps/ViewModel/patreonViewModel';
-import { VersionViewModel } from '../contracts/generated/AssistantApps/ViewModel/Version/versionViewModel';
-import { VersionSearchViewModel } from '../contracts/generated/AssistantApps/ViewModel/Version/versionSearchViewModel';
+import { PatreonViewModel } from '../../contracts/generated/AssistantApps/ViewModel/patreonViewModel';
+import { VersionViewModel } from '../../contracts/generated/AssistantApps/ViewModel/Version/versionViewModel';
+import { VersionSearchViewModel } from '../../contracts/generated/AssistantApps/ViewModel/Version/versionSearchViewModel';
 
 declare global {
     interface Window { config: any }

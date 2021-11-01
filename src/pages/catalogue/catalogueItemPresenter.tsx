@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React from 'react';
+import i18next from 'i18next';
 
 import { AdditionalInfoChipRow } from '../../components/common/chip/additionalInfoChip';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -19,9 +19,10 @@ import { Recharge } from '../../contracts/recharge/recharge';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { AllGameItemsService } from '../../services/AllGameItemsService';
-import { GameItemService } from '../../services/GameItemService';
-import { RechargeByService } from '../../services/RechargeByService';
+import { AllGameItemsService } from '../../services/json/AllGameItemsService';
+import { GameItemService } from '../../services/json/GameItemService';
+import { RechargeByService } from '../../services/json/RechargeByService';
+import { ToastService } from '../../services/toastService';
 import { displayCookItems, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
 
 interface IProps {
@@ -42,6 +43,7 @@ interface IProps {
     gameItemService: GameItemService;
     allGameItemsService: AllGameItemsService;
     rechargeByService: RechargeByService;
+    toastService: ToastService;
     additionalData: Array<any>;
     networkState: NetworkState;
 
@@ -55,7 +57,11 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
     const getFloatingActionButtons = () => {
         const components: any[] = [];
         if (props.item == null || props.item.Id == null) return null;
-        components.push(ShareFloatingActionButton(() => showShareDialog(props.item.Id)));
+        const shareDialogProps = {
+            id: props.item.Id,
+            toastService: props.toastService,
+        }
+        components.push(ShareFloatingActionButton(() => showShareDialog(shareDialogProps)));
 
         if (!props.item.Id.includes(IdPrefix.Cooking)) {
             components.push(CartFloatingActionButton(props.addThisItemToCart));

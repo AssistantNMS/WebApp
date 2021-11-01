@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';
 import { UpdateButton } from './components/updateButton';
-import { ServicesProvider } from './components/core/servicesProvider';
+import { DependencyInjectionProvider } from './integration/dependencyInjection';
 import { initLocalization } from './integration/i18n';
 import { initAnalytics } from './integration/analytics';
 import { updateServiceWorker } from './integration/serviceWorker';
@@ -19,7 +20,8 @@ import { reducer } from './redux';
 import * as serviceWorker from './serviceWorker';
 
 import './index.scss';
-import 'react-tippy/dist/tippy.css'
+import 'react-tippy/dist/tippy.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 declare global {
     interface Window { config: any; registration: any }
@@ -47,13 +49,14 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
     initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
 
     ReactDOM.render(
-        <ServicesProvider>
+        <DependencyInjectionProvider>
             <Provider store={store}>
                 <BrowserRouter>
                     <App />
+                    <ToastContainer newestOnTop={false} />
                 </BrowserRouter>
             </Provider>
-        </ServicesProvider>
+        </DependencyInjectionProvider>
         , document.getElementById('nms-app'));
 
     if (window.config.useServiceWorker) {

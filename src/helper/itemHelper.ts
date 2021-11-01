@@ -2,7 +2,7 @@ import { RequiredItemDetails } from '../contracts/RequiredItemDetails';
 import { RequiredItem } from '../contracts/RequiredItem';
 import { GameItemModel } from '../contracts/GameItemModel';
 
-import { GameItemService } from '../services/GameItemService';
+import { GameItemService } from '../services/json/GameItemService';
 import { ResultWithValue } from '../contracts/results/ResultWithValue';
 
 export const getAllRequiredItemsForMultiple = async (requiredItems: Array<RequiredItem>): Promise<Array<RequiredItemDetails>> => {

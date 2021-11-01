@@ -2,20 +2,30 @@ import i18next from 'i18next';
 import React from 'react';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
+
 import { LocaleKey } from '../localization/LocaleKey';
+import { ToastService } from '../services/toastService';
 import { LazyLoadImage } from './core/lazyLoadImage/lazyLoadImage';
 
-export const showShareDialog = (id: string): void => {
+interface IProps {
+    id: string;
+    toastService: ToastService;
+}
+
+export const showShareDialog = (props: IProps): void => {
     const MySwal = withReactContent(Swal);
 
-    const copyFunc = (e: any) => {
-        e?.preventDefault?.();
-    }
-
-    const shareableLink = `https://app.nmsassistant.com/link/${id}.html`;
+    const shareableLink = `https://app.nmsassistant.com/link/${props.id}.html`;
     const shareContent: string = i18next.t(LocaleKey.shareContent) + ' \n' + shareableLink;
     const waShareContent: string = i18next.t(LocaleKey.shareContent).replace(/\s{1}[#]\w+/g, '');
     const fbShareContent: string = 'https://www.facebook.com/sharer/sharer.php?u=https://nmsassistant.com';
+
+    const copyFunc = (e: any) => {
+        e?.preventDefault?.();
+        navigator?.clipboard?.writeText?.(shareableLink)?.then?.(() => {
+            props.toastService.success(<span>Copied!</span>)
+        });
+    }
 
     MySwal.fire({
         html: (

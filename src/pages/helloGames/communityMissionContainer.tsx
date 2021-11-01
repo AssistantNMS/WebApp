@@ -9,11 +9,16 @@ import { mapDispatchToProps, mapStateToProps } from './communityMission.Redux';
 import { CommunityMissionPresenter } from './communityMissionPresenter';
 import { QuicksilverStore } from '../../contracts/data/quicksilver';
 import * as quicksilverJson from '../../assets/data/quicksilverStore.json';
-import { IServices, withServices } from '../../components/core/servicesProvider';
+import { ApiService } from '../../services/api/ApiService';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 
-interface IProps {
-    services: IServices;
+interface IWithDepInj {
+    apiService: ApiService;
 }
+interface IWithoutDepInj {
+}
+
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
 interface IState {
     title: string;
@@ -36,7 +41,7 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
     }
 
     fetchCommunityMission = async () => {
-        const communityMissionResult = await this.props.services.apiService.getCommunityMission();
+        const communityMissionResult = await this.props.apiService.getCommunityMission();
         if (!communityMissionResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -62,4 +67,10 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
     }
 }
 
-export const CommunityMissionContainer = connect(mapStateToProps, mapDispatchToProps)(withServices(CommunityMissionContainerUnconnected));
+
+export const CommunityMissionContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    connect(mapStateToProps, mapDispatchToProps)(CommunityMissionContainerUnconnected),
+    (services: IDependencyInjection) => ({
+        apiService: services.apiService,
+    })
+);

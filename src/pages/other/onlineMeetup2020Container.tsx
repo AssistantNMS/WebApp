@@ -1,15 +1,20 @@
 import React from 'react';
-import { OnlineMeetup2020SubmissionViewModel } from '../../contracts/generated/onlineMeetup2020SubmissionViewModel';
-import { OnlineMeetup2020SubmissionPresenter } from './onlineMeetup2020Presenter';
 import { NetworkState } from '../../constants/NetworkState';
-import { IServices, withServices } from '../../components/core/servicesProvider';
+import { OnlineMeetup2020SubmissionViewModel } from '../../contracts/generated/onlineMeetup2020SubmissionViewModel';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
+import { ApiService } from '../../services/api/ApiService';
+import { OnlineMeetup2020SubmissionPresenter } from './onlineMeetup2020Presenter';
 
-interface IProps {
+interface IWithDepInj {
+    apiService: ApiService;
+}
+interface IWithoutDepInj {
     location: any;
     match: any;
     history: any;
-    services: IServices;
 }
+
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
 interface IState {
     items: Array<OnlineMeetup2020SubmissionViewModel>;
@@ -28,7 +33,7 @@ export class OnlineMeetup2020SubmissionContainerUnconnected extends React.Compon
     }
 
     fetchOnlineMeetupSubmissions = async () => {
-        const itemsResult = await this.props.services.apiService.getOnlineMeetupSubmissions();
+        const itemsResult = await this.props.apiService.getOnlineMeetupSubmissions();
         if (!itemsResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -54,4 +59,9 @@ export class OnlineMeetup2020SubmissionContainerUnconnected extends React.Compon
     }
 }
 
-export const OnlineMeetup2020SubmissionContainer = withServices(OnlineMeetup2020SubmissionContainerUnconnected);
+export const OnlineMeetup2020SubmissionContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    OnlineMeetup2020SubmissionContainerUnconnected,
+    (services: IDependencyInjection) => ({
+        apiService: services.apiService,
+    })
+);

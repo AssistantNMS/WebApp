@@ -9,8 +9,8 @@ import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { AllGameItemsService } from '../../services/AllGameItemsService';
-import { GameItemService } from '../../services/GameItemService';
+import { AllGameItemsService } from '../../services/json/AllGameItemsService';
+import { GameItemService } from '../../services/json/GameItemService';
 import { NetworkState } from '../../constants/NetworkState';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { Error } from '../../components/core/error/error'

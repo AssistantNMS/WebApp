@@ -10,7 +10,7 @@ import { GuideSectionItem } from '../../contracts/guide/guideSectionItem';
 import { GuideType } from '../../contracts/guide/guideType';
 import { guideFormatDate } from '../../helper/dateHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { GuideService } from '../../services/GuideService';
+import { GuideService } from '../../services/json/GuideService';
 import { displaySectionImageItem, displaySectionLinkItem, displaySectionMarkdownItem, displaySectionTable, displaySectionTextItem } from './guideComponents';
 
 interface IProps {

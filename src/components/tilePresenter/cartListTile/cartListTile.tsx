@@ -10,19 +10,24 @@ import { TextContainer } from '../../common/tile/textContainer';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { ActionContainer } from '../../common/tile/actionContainer';
 
-import { GameItemService } from '../../../services/GameItemService';
+import { GameItemService } from '../../../services/json/GameItemService';
 import { getQuantityDialog } from '../../../helper/dialogHelper';
+import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
+
+interface IWithDepInj {
+    gameItemService: GameItemService;
+}
+interface IWithoutDepInj extends CartItem {
+    editItemInCart?: (cartItem: CartItem) => void;
+    removeItemFromCart?: (cartItemId: string) => void;
+}
+
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
 interface IState {
     name: string;
     icon: string;
     colour: string;
-    gameItemService: GameItemService;
-}
-
-interface IProps extends CartItem {
-    editItemInCart?: (cartItem: CartItem) => void;
-    removeItemFromCart?: (cartItemId: string) => void;
 }
 
 class CartItemListTileClass extends React.Component<IProps, IState> {
@@ -33,14 +38,13 @@ class CartItemListTileClass extends React.Component<IProps, IState> {
             name: '...',
             icon: 'loader.svg',
             colour: '',
-            gameItemService: new GameItemService()
         }
 
         this.fetchData(this.props.Id);
     }
 
     fetchData = async (itemId: string) => {
-        const itemDetails = await this.state.gameItemService.getItemDetails(itemId);
+        const itemDetails = await this.props.gameItemService.getItemDetails(itemId);
 
         this.setState(() => {
             return {
@@ -94,10 +98,12 @@ class CartItemListTileClass extends React.Component<IProps, IState> {
     }
 }
 
-// export const CartListTile = (props: CartItem, index: number): JSX.Element => <CartItemListTileClass {...props} index={index} />;
-
-// export const CartListTileConnected = connect(mapStateToProps, mapDispatchToProps)(CartItemListTileClass);
-// export const CartListTile = (props: CartItem, index: number): JSX.Element => <CartListTileConnected {...props} index={index} />;
+const CartListTileInternal = withServices<IWithoutDepInj, IWithDepInj>(
+    CartItemListTileClass,
+    (services: IDependencyInjection) => ({
+        gameItemService: services.gameItemService,
+    })
+);
 
 export const CartListTile = (props: CartItem, editItemInCart?: (cartItem: CartItem) => void, removeItemFromCart?: (cartItemId: string) => void): JSX.Element =>
-    <CartItemListTileClass {...props} {...{ editItemInCart, removeItemFromCart }} />;
+    <CartListTileInternal {...props} {...{ editItemInCart, removeItemFromCart }} />;

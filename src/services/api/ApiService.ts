@@ -1,10 +1,10 @@
-import { CommunityMissionViewModel } from '../contracts/generated/communityMissionViewModel';
-import { GuideMetaViewModel } from '../contracts/generated/guideMetaViewModel';
-import { OnlineMeetup2020SubmissionViewModel } from '../contracts/generated/onlineMeetup2020SubmissionViewModel';
-import { ResultWithValue } from '../contracts/results/ResultWithValue';
+import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
+import { GuideMetaViewModel } from '../../contracts/generated/guideMetaViewModel';
+import { OnlineMeetup2020SubmissionViewModel } from '../../contracts/generated/onlineMeetup2020SubmissionViewModel';
+import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { BaseApiService } from './BaseApiService';
-import { WeekendMissionViewModel } from '../contracts/generated/Model/HelloGames/weekendMissionViewModel';
-import { NmsfmTrackDataViewModel } from '../contracts/generated/Model/nmsfmTrackDataViewModel';
+import { WeekendMissionViewModel } from '../../contracts/generated/Model/HelloGames/weekendMissionViewModel';
+import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTrackDataViewModel';
 
 export class ApiService extends BaseApiService {
     async getCommunityMission(): Promise<ResultWithValue<CommunityMissionViewModel>> {

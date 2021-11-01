@@ -1,14 +1,19 @@
 import i18next from 'i18next';
 import React from 'react';
-import { IServices, withServices } from '../../components/core/servicesProvider';
 import { NetworkState } from '../../constants/NetworkState';
 import { PatreonViewModel } from '../../contracts/generated/AssistantApps/ViewModel/patreonViewModel';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { AssistantAppsApiService } from '../../services/api/AssistantAppsApiService';
 import { PatreonPresenter } from './patreonPresenter';
 
-interface IProps {
-    services: IServices;
+interface IWithDepInj {
+    assistantAppsApiService: AssistantAppsApiService;
 }
+interface IWithoutDepInj {
+}
+
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
 interface IState {
     title: string;
@@ -29,7 +34,7 @@ export class PatreonContainerUnconnected extends React.Component<IProps, IState>
     }
 
     fetchPatrons = async () => {
-        const patronListResult = await this.props.services.assistantAppsApiService.getPatronsList();
+        const patronListResult = await this.props.assistantAppsApiService.getPatronsList();
         if (!patronListResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -52,5 +57,9 @@ export class PatreonContainerUnconnected extends React.Component<IProps, IState>
     }
 }
 
-export const PatreonContainer = withServices(PatreonContainerUnconnected);
-
+export const PatreonContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    PatreonContainerUnconnected,
+    (services: IDependencyInjection) => ({
+        assistantAppsApiService: services.assistantAppsApiService,
+    })
+);

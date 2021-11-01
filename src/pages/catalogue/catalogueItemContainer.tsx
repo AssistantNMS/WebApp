@@ -1,7 +1,7 @@
 import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+
 import { NetworkState } from '../../constants/NetworkState';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
@@ -12,14 +12,22 @@ import { Recharge } from '../../contracts/recharge/recharge';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { getQuantityDialog } from '../../helper/dialogHelper';
 import { anyObject } from '../../helper/typescriptHacks';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { AllGameItemsService } from '../../services/AllGameItemsService';
-import { GameItemService } from '../../services/GameItemService';
-import { RechargeByService } from '../../services/RechargeByService';
+import { AllGameItemsService } from '../../services/json/AllGameItemsService';
+import { GameItemService } from '../../services/json/GameItemService';
+import { RechargeByService } from '../../services/json/RechargeByService';
+import { ToastService } from '../../services/toastService';
 import { mapDispatchToProps, mapStateToProps } from './catalogueItem.Redux';
 import { CatalogueItemPresenter } from './catalogueItemPresenter';
 
-interface IProps {
+interface IWithDepInj {
+    gameItemService: GameItemService;
+    allGameItemsService: AllGameItemsService;
+    rechargeByService: RechargeByService;
+    toastService: ToastService;
+}
+interface IWithoutDepInj {
     location: any;
     match: any;
     history: any;
@@ -29,6 +37,8 @@ interface IProps {
     addItemToFavourites?: (item: GameItemModel) => void;
     removeItemToFavourites?: (itemId: string) => void;
 }
+
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
 interface IState {
     item: GameItemModel;
@@ -41,13 +51,10 @@ interface IState {
     rechargedBy: Recharge;
     usedToRechargeArray: Array<Recharge>;
     networkState: NetworkState;
-    gameItemService: GameItemService;
-    allGameItemsService: AllGameItemsService;
-    rechargeByService: RechargeByService;
     additionalData: Array<any>;
 }
 
-export class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> {
+class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> {
     constructor(props: IProps) {
         super(props);
 
@@ -62,9 +69,6 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
             rechargedBy: anyObject,
             usedToRechargeArray: [],
             networkState: NetworkState.Loading,
-            gameItemService: new GameItemService(),
-            allGameItemsService: new AllGameItemsService(),
-            rechargeByService: new RechargeByService(),
             additionalData: []
         }
     }
@@ -105,7 +109,7 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
                 networkState: NetworkState.Loading,
             }
         });
-        const itemResult = await this.state.gameItemService.getItemDetails(itemId ?? '');
+        const itemResult = await this.props.gameItemService.getItemDetails(itemId ?? '');
         if (!itemResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -141,50 +145,50 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
     }
 
     getResArray = async (itemId: string) => {
-        const resArrayResult = await this.state.gameItemService.getRequiredItems(itemId);
+        const resArrayResult = await this.props.gameItemService.getRequiredItems(itemId);
         if (!resArrayResult.isSuccess) return;
         return resArrayResult.value;
     }
 
     getUsedToCreateArray = async (itemId: string) => {
-        const usedToCreateArrayResult = await this.state.allGameItemsService.getByInputsId(itemId);
+        const usedToCreateArrayResult = await this.props.allGameItemsService.getByInputsId(itemId);
         if (!usedToCreateArrayResult.isSuccess) return;
         return usedToCreateArrayResult.value;
     }
 
     getRechargeByArray = async (itemId: string) => {
-        const rechargeByResult = await this.state.rechargeByService.getRechargeById(itemId);
+        const rechargeByResult = await this.props.rechargeByService.getRechargeById(itemId);
         if (!rechargeByResult.isSuccess) return;
         return rechargeByResult.value;
     }
 
     getUsedToRechargeArray = async (itemId: string) => {
-        const usedToRechargeResult = await this.state.rechargeByService.getRechargeByChargeById(itemId);
+        const usedToRechargeResult = await this.props.rechargeByService.getRechargeByChargeById(itemId);
         console.log(usedToRechargeResult);
         if (!usedToRechargeResult.isSuccess) return;
         return usedToRechargeResult.value;
     }
 
     getRefArray = async (itemId: string) => {
-        const refArray = await this.state.gameItemService.getRefinedByOutput(itemId);
+        const refArray = await this.props.gameItemService.getRefinedByOutput(itemId);
         if (!refArray.isSuccess) return;
         return refArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
     getUsedToRefArray = async (itemId: string) => {
-        const usedToRefArray = await this.state.gameItemService.getRefinedByInput(itemId);
+        const usedToRefArray = await this.props.gameItemService.getRefinedByInput(itemId);
         if (!usedToRefArray.isSuccess) return;
         return usedToRefArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
     getCookArray = async (itemId: string) => {
-        const cookArray = await this.state.gameItemService.getCookingByOutput(itemId);
+        const cookArray = await this.props.gameItemService.getCookingByOutput(itemId);
         if (!cookArray.isSuccess) return;
         return cookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
     getUsedToCookArray = async (itemId: string) => {
-        const usedToCookArray = await this.state.gameItemService.getCookingByInput(itemId);
+        const usedToCookArray = await this.props.gameItemService.getCookingByInput(itemId);
         if (!usedToCookArray.isSuccess) return;
         return usedToCookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
@@ -247,16 +251,19 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
 
         if (this.props.addItemToCart == null) return;
         this.props.addItemToCart(this.state.item, quantityResult.value);
+        this.props.toastService.success(`Added ${this.state.item.Name} to cart`);
     }
 
     addThisItemToFavourites = () => {
         if (this.props.addItemToFavourites == null) return;
         this.props.addItemToFavourites(this.state.item);
+        this.props.toastService.success('Added!');
     }
 
     removeThisItemToFavourites = () => {
         if (this.props.removeItemToFavourites == null) return;
         this.props.removeItemToFavourites(this.state.item.Id);
+        this.props.toastService.success('Removed!');
     }
 
     render() {
@@ -271,4 +278,12 @@ export class CatalogueItemContainerUnconnected extends React.Component<IProps, I
     }
 }
 
-export const CatalogueItemContainer = connect(mapStateToProps, mapDispatchToProps)(withRouter(CatalogueItemContainerUnconnected));
+export const CatalogueItemContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    connect(mapStateToProps, mapDispatchToProps)(CatalogueItemContainerUnconnected),
+    (services: IDependencyInjection) => ({
+        gameItemService: services.gameItemService,
+        allGameItemsService: services.allGameItemsService,
+        rechargeByService: services.rechargeByService,
+        toastService: services.toastService,
+    })
+);

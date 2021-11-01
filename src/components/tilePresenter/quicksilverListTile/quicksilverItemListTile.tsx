@@ -9,7 +9,7 @@ import { TextContainer } from '../../common/tile/textContainer';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { QuicksilverItem } from '../../../contracts/data/quicksilver';
 
-import { GameItemService } from '../../../services/GameItemService';
+import { GameItemService } from '../../../services/json/GameItemService';
 import { ActionContainer } from '../../common/tile/actionContainer';
 
 export interface IQuicksilverItemProps extends QuicksilverItem {

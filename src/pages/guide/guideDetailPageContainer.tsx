@@ -2,23 +2,29 @@ import i18next from 'i18next';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { IServices, withServices } from '../../components/core/servicesProvider';
+
 import { NetworkState } from '../../constants/NetworkState';
 import { GuideMetaViewModel } from '../../contracts/generated/guideMetaViewModel';
 import { Guide } from '../../contracts/guide/guide';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { GuideService } from '../../services/GuideService';
+import { ApiService } from '../../services/api/ApiService';
+import { GuideService } from '../../services/json/GuideService';
 import { GuideDetailPagePresenter } from './guideDetailPagePresenter';
 
-interface IProps {
+interface IWithDepInj {
+    guideService: GuideService;
+    apiService: ApiService;
+}
+interface IWithoutDepInj {
     location: any;
     match: any;
     history: any;
-    services: IServices;
 }
 
+interface IProps extends IWithDepInj, IWithoutDepInj { }
+
 interface IState {
-    guideService: GuideService;
     guide?: Guide;
     guideMeta?: GuideMetaViewModel;
     status: NetworkState;
@@ -30,7 +36,6 @@ export class GuideDetailPageContainerUnconnected extends React.Component<IProps,
 
         this.state = {
             status: NetworkState.Loading,
-            guideService: new GuideService(),
         }
     }
 
@@ -41,7 +46,7 @@ export class GuideDetailPageContainerUnconnected extends React.Component<IProps,
     }
 
     fetchData = async (guideGuid: string) => {
-        const guideResult = await this.state.guideService.getSpecificGuide(guideGuid);
+        const guideResult = await this.props.guideService.getSpecificGuide(guideGuid);
         if (!guideResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -59,7 +64,7 @@ export class GuideDetailPageContainerUnconnected extends React.Component<IProps,
     }
 
     fetchMetaData = async (guideGuid: string) => {
-        const guideMetaResult = await this.props.services.apiService.getGuideMetaData(guideGuid);
+        const guideMetaResult = await this.props.apiService.getGuideMetaData(guideGuid);
         if (!guideMetaResult.isSuccess) return;
         this.setState(() => {
             return {
@@ -71,7 +76,7 @@ export class GuideDetailPageContainerUnconnected extends React.Component<IProps,
     likeGuide = async () => {
         const guid = this.state.guide?.guid;
         if (!guid) return;
-        const likeResult = await this.props.services.apiService.likeGuide(guid);
+        const likeResult = await this.props.apiService.likeGuide(guid);
         if (likeResult.isSuccess) {
             Swal.fire({ icon: 'success', title: '👍' });
             const newGuideMeta: any = { ...this.state.guideMeta };
@@ -96,4 +101,10 @@ export class GuideDetailPageContainerUnconnected extends React.Component<IProps,
     }
 }
 
-export const GuideDetailPageContainer = withServices(withRouter(GuideDetailPageContainerUnconnected));
+export const GuideDetailPageContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    withRouter(GuideDetailPageContainerUnconnected),
+    (services: IDependencyInjection) => ({
+        guideService: services.guideService,
+        apiService: services.apiService,
+    })
+);

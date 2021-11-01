@@ -1,22 +1,28 @@
 import i18next from 'i18next';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+
 import { NetworkState } from '../../constants/NetworkState';
 import { Guide } from '../../contracts/guide/guide';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { GuideService } from '../../services/GuideService';
+import { GuideService } from '../../services/json/GuideService';
 import { GuidePagePresenter } from './guidePagePresenter';
 
-interface IProps {
+interface IWithDepInj {
+    guideService: GuideService;
+}
+interface IWithoutDepInj {
     location: any;
     match: any;
     history: any;
     selectedLanguage?: string;
 }
 
+interface IProps extends IWithDepInj, IWithoutDepInj { }
+
 interface IState {
     title: string;
-    guideService: GuideService;
     guideItems: Guide[];
     status: NetworkState;
 }
@@ -27,7 +33,6 @@ export class GuidePageContainerUnconnected extends React.Component<IProps, IStat
 
         this.state = {
             title: i18next.t(LocaleKey.guides),
-            guideService: new GuideService(),
             guideItems: [],
             status: NetworkState.Loading,
         }
@@ -55,7 +60,7 @@ export class GuidePageContainerUnconnected extends React.Component<IProps, IStat
     }
 
     fetchData = async () => {
-        const itemsResult = await this.state.guideService.getListOfGuides();
+        const itemsResult = await this.props.guideService.getListOfGuides();
         if (!itemsResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -79,4 +84,9 @@ export class GuidePageContainerUnconnected extends React.Component<IProps, IStat
     }
 }
 
-export const GuidePageContainer = withRouter(GuidePageContainerUnconnected);
+export const GuidePageContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    withRouter(GuidePageContainerUnconnected),
+    (services: IDependencyInjection) => ({
+        guideService: services.guideService,
+    })
+);

@@ -1,12 +1,18 @@
 import React from 'react';
+
 import { NetworkState } from '../../constants/NetworkState';
 import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTrackDataViewModel';
-import { IServices, withServices } from '../../components/core/servicesProvider';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
+import { ApiService } from '../../services/api/ApiService';
 import { NmsfmPresenter } from './nmsfmPresenter';
 
-interface IProps {
-    services: IServices;
+interface IWithDepInj {
+    apiService: ApiService;
 }
+interface IWithoutDepInj {
+}
+
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
 interface IState {
     trackListIsOpen: boolean;
@@ -27,7 +33,7 @@ export class NmsfmContainerUnconnected extends React.Component<IProps, IState> {
     }
 
     fetchTrackData = async () => {
-        const nmsfmListResult = await this.props.services.apiService.getNmsfm();
+        const nmsfmListResult = await this.props.apiService.getNmsfm();
         if (!nmsfmListResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -61,4 +67,9 @@ export class NmsfmContainerUnconnected extends React.Component<IProps, IState> {
     }
 }
 
-export const NmsfmContainer = withServices(NmsfmContainerUnconnected);
+export const NmsfmContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    NmsfmContainerUnconnected,
+    (services: IDependencyInjection) => ({
+        apiService: services.apiService,
+    })
+);

@@ -1,45 +1,40 @@
 
 import * as React from 'react';
-import { GameItemService } from '../../../services/GameItemService';
+import { useEffect, useState } from 'react';
+import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
+import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../tile/imageContainer';
 
-
-
-
-interface IProps {
+interface IWithDepInj {
+    gameItemService: GameItemService;
+}
+interface IWithoutDepInj {
     id: string;
 }
 
-interface IState {
-    icon: string;
-    gameItemService: GameItemService;
+interface IProps extends IWithDepInj, IWithoutDepInj { }
+
+const GameItemImageUnconnected: React.FC<IProps> = (props: IProps) => {
+    const [icon, setIcon] = useState<string>('loader.svg');
+
+    useEffect(() => {
+        fetchData(props.id);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    const fetchData = async (itemId: string) => {
+        const itemDetails = await props.gameItemService.getItemDetails(itemId);
+        setIcon(itemDetails.value.Icon);
+    }
+
+    return (
+        <ImageContainer Name={icon} Icon={icon} />
+    );
 }
 
-export class GameItemImage extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
-
-        this.state = {
-            icon: 'loader.svg',
-            gameItemService: new GameItemService()
-        }
-
-        this.fetchData(this.props.id);
-    }
-
-    fetchData = async (itemId: string) => {
-        const itemDetails = await this.state.gameItemService.getItemDetails(itemId);
-
-        this.setState(() => {
-            return {
-                icon: itemDetails.value.Icon,
-            }
-        });
-    }
-
-    render() {
-        return (
-            <ImageContainer Name={this.state.icon} Icon={this.state.icon} />
-        );
-    }
-}
+export const GameItemImage = withServices<IWithoutDepInj, IWithDepInj>(
+    GameItemImageUnconnected,
+    (services: IDependencyInjection) => ({
+        gameItemService: services.gameItemService,
+    })
+);

@@ -1,9 +1,9 @@
-import { ResultWithValue } from '../contracts/results/ResultWithValue';
-import { GameItemModel } from '../contracts/GameItemModel';
+import { ResultWithValue } from '../../contracts/results/ResultWithValue';
+import { GameItemModel } from '../../contracts/GameItemModel';
 import { GameItemService } from './GameItemService';
-import { CatalogueType } from '../constants/CatalogueType';
-import { anyObject } from '../helper/typescriptHacks';
-import { RequiredItem } from '../contracts/RequiredItem';
+import { CatalogueType } from '../../constants/CatalogueType';
+import { anyObject } from '../../helper/typescriptHacks';
+import { RequiredItem } from '../../contracts/RequiredItem';
 
 export class AllGameItemsService {
   private typesArray = [

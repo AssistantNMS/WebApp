@@ -4,15 +4,20 @@ import { NetworkState } from '../../constants/NetworkState';
 
 import { defaultConfig } from '../../utils';
 import { VersionSearchViewModel } from '../../contracts/generated/AssistantApps/ViewModel/Version/versionSearchViewModel';
-import { IServices, withServices } from '../../components/core/servicesProvider';
 import { WhatIsNewPresenter } from './whatIsNewPresenter';
 import { IReduxProps, mapStateToProps, mapDispatchToProps } from './whatIsNew.Redux';
 import { PlatformType } from '../../contracts/generated/AssistantApps/Enum/platformType';
 import { VersionViewModel } from '../../contracts/generated/AssistantApps/ViewModel/Version/versionViewModel';
+import { AssistantAppsApiService } from '../../services/api/AssistantAppsApiService';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 
-interface IProps extends IReduxProps {
-    services: IServices;
+interface IWithDepInj {
+    assistantAppsApiService: AssistantAppsApiService;
 }
+interface IWithoutDepInj extends IReduxProps {
+}
+
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
 interface IState {
     whatIsNewItems: Array<VersionViewModel>;
@@ -40,7 +45,7 @@ export class WhatIsNewContainerUnconnected extends React.Component<IProps, IStat
     }
 
     fetchWhatIsNewItems = async (whatIsNewSearchObj: VersionSearchViewModel) => {
-        const service = this.props.services.assistantAppsApiService;
+        const service = this.props.assistantAppsApiService;
         const whatIsNewListResult = await service.getWhatIsNewItems(whatIsNewSearchObj);
         if (!whatIsNewListResult.isSuccess) {
             this.setState(() => {
@@ -63,4 +68,9 @@ export class WhatIsNewContainerUnconnected extends React.Component<IProps, IStat
     }
 }
 
-export const WhatIsNewContainer = connect(mapStateToProps, mapDispatchToProps)(withServices(WhatIsNewContainerUnconnected));
+export const WhatIsNewContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    connect(mapStateToProps, mapDispatchToProps)(WhatIsNewContainerUnconnected),
+    (services: IDependencyInjection) => ({
+        assistantAppsApiService: services.assistantAppsApiService,
+    })
+);

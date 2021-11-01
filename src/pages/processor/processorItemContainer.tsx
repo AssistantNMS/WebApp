@@ -1,28 +1,34 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+
+import { NetworkState } from '../../constants/NetworkState';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { anyObject } from '../../helper/typescriptHacks';
-import { State } from '../../redux/state';
-import { AllGameItemsService } from '../../services/AllGameItemsService';
-import { GameItemService } from '../../services/GameItemService';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
+import { AllGameItemsService } from '../../services/json/AllGameItemsService';
+import { GameItemService } from '../../services/json/GameItemService';
+import { mapStateToProps } from './processorItem.Redux';
 import { ProcessorItemPresenter } from './processorItemPresenter';
-import { NetworkState } from '../../constants/NetworkState';
 
-interface IProps {
+interface IWithDepInj {
+    gameItemService: GameItemService;
+    allGameItemsService: AllGameItemsService;
+}
+interface IWithoutDepInj {
     location: any;
     match: any;
     history: any;
     selectedLanguage?: string;
 }
+
+interface IProps extends IWithDepInj, IWithoutDepInj { }
+
 interface IState {
     item: Processor;
     outputDetails: GameItemModel;
     inputDetails: Array<RequiredItemDetails>;
-    gameItemService: GameItemService;
-    allGameItemsService: AllGameItemsService;
     status: NetworkState;
 }
 
@@ -34,8 +40,6 @@ export class ProcessorItemContainerUnconnected extends React.Component<IProps, I
             item: anyObject,
             outputDetails: anyObject,
             inputDetails: [],
-            gameItemService: new GameItemService(),
-            allGameItemsService: new AllGameItemsService(),
             status: NetworkState.Loading
         }
     }
@@ -68,8 +72,8 @@ export class ProcessorItemContainerUnconnected extends React.Component<IProps, I
 
     fetchData = async (itemId: string) => {
         const itemResult = itemId.includes("ref")
-            ? await this.state.gameItemService.getRefinedById(itemId ?? '')
-            : await this.state.gameItemService.getCookingById(itemId ?? '');
+            ? await this.props.gameItemService.getRefinedById(itemId ?? '')
+            : await this.props.gameItemService.getCookingById(itemId ?? '');
         if (!itemResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -90,7 +94,7 @@ export class ProcessorItemContainerUnconnected extends React.Component<IProps, I
     }
 
     fetchOutputData = async (itemId: string) => {
-        const itemResult = await this.state.gameItemService.getItemDetails(itemId ?? '');
+        const itemResult = await this.props.gameItemService.getItemDetails(itemId ?? '');
         if (!itemResult.isSuccess) {
             console.error(itemResult.errorMessage);
             return;
@@ -104,7 +108,7 @@ export class ProcessorItemContainerUnconnected extends React.Component<IProps, I
     }
 
     fetchInputDetails = async (itemId: string) => {
-        const inputDetails = await this.state.gameItemService.getRequiredItemDetails(itemId ?? '');
+        const inputDetails = await this.props.gameItemService.getRequiredItemDetails(itemId ?? '');
         if (!inputDetails.isSuccess) {
             console.error(inputDetails.errorMessage);
             return;
@@ -124,11 +128,11 @@ export class ProcessorItemContainerUnconnected extends React.Component<IProps, I
     }
 }
 
-
-export const mapStateToProps = (state: State) => {
-    return {
-        selectedLanguage: state.settingReducer.selectedLanguage,
-    };
-};
-
-export const ProcessorItemContainer = connect(mapStateToProps)(withRouter(ProcessorItemContainerUnconnected));
+export const ProcessorItemContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    connect(mapStateToProps)(ProcessorItemContainerUnconnected),
+    (services: IDependencyInjection) => ({
+        gameItemService: services.gameItemService,
+        allGameItemsService: services.allGameItemsService,
+        rechargeByService: services.rechargeByService,
+    })
+);
