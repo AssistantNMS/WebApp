@@ -3,6 +3,7 @@ import React from 'react';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import { LocaleKey } from '../localization/LocaleKey';
+import { LazyLoadImage } from './core/lazyLoadImage/lazyLoadImage';
 
 export const showShareDialog = (id: string): void => {
     const MySwal = withReactContent(Swal);
@@ -11,12 +12,18 @@ export const showShareDialog = (id: string): void => {
         e?.preventDefault?.();
     }
 
+    const shareableLink = `https://app.nmsassistant.com/link/${id}`;
+    const shareContent: string = i18next.t(LocaleKey.shareContent) + ' \n' + shareableLink;
+    const waShareContent: string = i18next.t(LocaleKey.shareContent).replace(/\s{1}[#]\w+/g, '');
+    const fbShareContent: string = 'https://www.facebook.com/sharer/sharer.php?u=https://nmsassistant.com';
+
     MySwal.fire({
         html: (
             <div className="btn-share">
                 <input type="text"
                     className="form-control"
-                    value={`https://app.nmsassistant.com/link/${id}`}
+                    value={shareableLink}
+                    style={{ marginTop: '0.5em', marginBottom: '0.5em' }}
                 />
                 <ul className="clearfix">
                     <li>
@@ -25,18 +32,18 @@ export const showShareDialog = (id: string): void => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/berkpw" className="share-button twitter entypo-twitter" title="twitter" target="_blank" rel="noopener noreferrer">
-                            TW
+                        <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareContent)}`} className="share-button twitter" title="twitter" target="_blank" rel="noopener noreferrer">
+                            <LazyLoadImage src="/assets/images/twitter.svg" alt="Twitter" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/share.php?u=" className="share-button facebook entypo-facebook" title="facebook" target="_blank" rel="noopener noreferrer">
-                            FB
+                        <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(waShareContent)}`} className="share-button whatsapp" title="Whatsapp" target="_blank" rel="noopener noreferrer">
+                            <LazyLoadImage src="/assets/images/whatsapp.svg" alt="Whatsapp" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://plus.google.com/" className="share-button google entypo-gplus" title="google" target="_blank" rel="noopener noreferrer">
-                            G
+                        <a href={fbShareContent} className="share-button facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
+                            <LazyLoadImage src="/assets/images/facebook.svg" alt="Facebook" />
                         </a>
                     </li>
                 </ul>
