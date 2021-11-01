@@ -16,7 +16,7 @@ async function generateFullJson() {
     });
 
     // Read game data
-    const baseJsonPath = ((process.argv[2] == 'prod') ? './' : '../') + 'public/assets/json/en/';
+    const baseJsonPath = ((process.argv[2] == 'prod') ? '../' : '../') + 'public/assets/json/en/';
     const buildings = await readItemsFromFile(`${baseJsonPath}Buildings.lang.json`);
     const constructedTechnology = await readItemsFromFile(`${baseJsonPath}ConstructedTechnology.lang.json`);
     const cooking = await readItemsFromFile(`${baseJsonPath}Cooking.lang.json`);
