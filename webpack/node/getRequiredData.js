@@ -10,18 +10,19 @@ async function generateFullJson() {
     const siteData = JSON.parse(siteDataContents);
 
     // Read game data
-    const buildings = await readItemsFromFile('../public/assets/json/en/Buildings.lang.json');
-    const constructedTechnology = await readItemsFromFile('../public/assets/json/en/ConstructedTechnology.lang.json');
-    const cooking = await readItemsFromFile('../public/assets/json/en/Cooking.lang.json');
-    const curiosity = await readItemsFromFile('../public/assets/json/en/curiosity.lang.json');
-    const others = await readItemsFromFile('../public/assets/json/en/Others.lang.json');
-    const proceduralProducts = await readItemsFromFile('../public/assets/json/en/ProceduralProducts.lang.json');
-    const products = await readItemsFromFile('../public/assets/json/en/Products.lang.json');
-    const rawMaterials = await readItemsFromFile('../public/assets/json/en/RawMaterials.lang.json');
-    const technology = await readItemsFromFile('../public/assets/json/en/Technology.lang.json');
-    const technologyModule = await readItemsFromFile('../public/assets/json/en/TechnologyModule.lang.json');
-    const tradeItems = await readItemsFromFile('../public/assets/json/en/TradeItems.lang.json');
-    const upgradeModules = await readItemsFromFile('../public/assets/json/en/UpgradeModules.lang.json');
+    const baseJsonPath = ((process.argv[2] == 'prod') ? './' : '../') + 'public/assets/json/en/';
+    const buildings = await readItemsFromFile(`${baseJsonPath}Buildings.lang.json`);
+    const constructedTechnology = await readItemsFromFile(`${baseJsonPath}ConstructedTechnology.lang.json`);
+    const cooking = await readItemsFromFile(`${baseJsonPath}Cooking.lang.json`);
+    const curiosity = await readItemsFromFile(`${baseJsonPath}curiosity.lang.json`);
+    const others = await readItemsFromFile(`${baseJsonPath}Others.lang.json`);
+    const proceduralProducts = await readItemsFromFile(`${baseJsonPath}ProceduralProducts.lang.json`);
+    const products = await readItemsFromFile(`${baseJsonPath}Products.lang.json`);
+    const rawMaterials = await readItemsFromFile(`${baseJsonPath}RawMaterials.lang.json`);
+    const technology = await readItemsFromFile(`${baseJsonPath}Technology.lang.json`);
+    const technologyModule = await readItemsFromFile(`${baseJsonPath}TechnologyModule.lang.json`);
+    const tradeItems = await readItemsFromFile(`${baseJsonPath}TradeItems.lang.json`);
+    const upgradeModules = await readItemsFromFile(`${baseJsonPath}UpgradeModules.lang.json`);
 
     const allItems = [
         ...buildings,

@@ -14,24 +14,18 @@ steps:
 - pwsh:  ./setBuildName.ps1 $(Build.BuildId)
   displayName: 'Set Build Name'
 
-- task: CmdLine@2
-  inputs:
-    script: 'cd ./webpack'
-
 - task: Npm@1
   inputs:
     command: 'install'
+    workingDir: 'webpack'
   displayName: 'npm install for webpack folder'
 
 - task: Npm@1
   inputs:
     command: 'custom'
+    workingDir: 'webpack'
     customCommand: 'run build'
   displayName: 'Build Seo Files'
-
-- task: CmdLine@2
-  inputs:
-    script: 'cd ../'
 
 - task: Npm@1
   inputs:
