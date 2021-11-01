@@ -16,7 +16,7 @@ steps:
 
 - task: Npm@1
   inputs:
-    command: 'install'
+    command: 'ci'
     workingDir: 'webpack'
   displayName: 'npm install for webpack folder'
 
@@ -38,7 +38,17 @@ steps:
     customCommand: run build-prod
   displayName: 'Build React Files'
 
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: 'build'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/reactDrop.zip'
+    replaceExistingArchive: true
+
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: 'build' 
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)/reactDrop.zip' 
     artifactName: 'reactDrop'
+
+
