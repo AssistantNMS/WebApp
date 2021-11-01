@@ -16,7 +16,7 @@ steps:
 
 - task: Npm@1
   inputs:
-    command: 'install'
+    command: 'ci'
     workingDir: 'webpack'
   displayName: 'npm install for webpack folder'
 
