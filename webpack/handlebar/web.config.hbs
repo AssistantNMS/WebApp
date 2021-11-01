@@ -13,6 +13,7 @@
                 <rule name="React Routes" stopProcessing="true">
                     <match url=".*" />
                     <conditions logicalGrouping="MatchAll">
+                        <add input="{URL}" pattern="\.*(link).*$" negate="true" />
                         <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
                         <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
                     </conditions>

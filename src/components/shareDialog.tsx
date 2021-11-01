@@ -12,7 +12,7 @@ export const showShareDialog = (id: string): void => {
         e?.preventDefault?.();
     }
 
-    const shareableLink = `https://app.nmsassistant.com/link/${id}`;
+    const shareableLink = `https://app.nmsassistant.com/link/${id}.html`;
     const shareContent: string = i18next.t(LocaleKey.shareContent) + ' \n' + shareableLink;
     const waShareContent: string = i18next.t(LocaleKey.shareContent).replace(/\s{1}[#]\w+/g, '');
     const fbShareContent: string = 'https://www.facebook.com/sharer/sharer.php?u=https://nmsassistant.com';
