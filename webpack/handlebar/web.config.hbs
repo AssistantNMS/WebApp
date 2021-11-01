@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+        <httpProtocol>
+            <customHeaders>
+                {{#each headers}}
+                <add name="{{name}}" value="{{{value}}}" />
+                {{/each}}
+            </customHeaders>
+        </httpProtocol>
+        <rewrite>
+            <rules>
+                <rule name="React Routes" stopProcessing="true">
+                    <match url=".*" />
+                    <conditions logicalGrouping="MatchAll">
+                        <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+                        <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+                    </conditions>
+                    <action type="Rewrite" url="/" />
+                </rule>
+            </rules>
+        </rewrite>
+        <staticContent>
+            <remove fileExtension=".woff" />
+            <mimeMap fileExtension=".woff" mimeType="application/font-woff" />
+            <remove fileExtension=".woff2" />
+            <mimeMap fileExtension=".woff2" mimeType="application/font-woff" />
+            <remove fileExtension=".licence" />
+            <mimeMap fileExtension=".licence" mimeType="text/plain" />
+            <remove fileExtension=".license" />
+            <mimeMap fileExtension=".license" mimeType="text/plain" />
+        </staticContent>
+    </system.webServer>
+</configuration>

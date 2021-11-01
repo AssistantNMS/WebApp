@@ -1,0 +1,50 @@
+{
+    "rootUrl": "https://nmsassistant.com",
+    "kurt": {
+        "name": "Kurt Lourens",
+        "email": "mailto:hi@kurtlourens.com",
+        "website": "https://kurtlourens.com",
+        "image": "https://kurtlourens.com/assets/images/KurtAvatar.svg",
+        "additionalName": "KhaozTopsy",
+        "twitter": "@KhaozTopsy",
+        "location": "Lunteren, The Netherlands"
+    },
+    "meta": {
+        "appName": "Assistant for No Man's Sky",
+        "title": "Assistant for No Man's Sky",
+        "description": "Available on the Google Play and Apple App Store. Get Crafting, Refining and Cooking Recipes for the game No Man&#39;s Sky!!"
+    },
+    "twitter": {
+        "handle": "@AssistantNMS",
+        "imageAlt": "Logo of the Assistant Apps",
+        "metaImageSize": "summary_large_image"
+    },
+    "assistantAppsMeta": {
+        "rootUrl": "https://assistantapps.com",
+        "appName": "Assistant Apps",
+        "title": "Assistant Apps by Kurt Lourens",
+        "description": "Home page of the Assistant Apps. Get the apps on Google Play, Apple App Store and on the web",
+        "version": "1.0.9",
+        "favicon": {
+            "x192": "assets/favicon/android-icon-192x192.png"
+        }
+    },
+    "headers": [
+        {
+            "name": "Content-Security-Policy",
+            "value": "default-src 'none'; script-src 'self' 'report-sample'; style-src 'self' 'report-sample' https://fonts.googleapis.com/css2; img-src 'self' data: cdn.assistantapps.com; font-src 'self' fonts.gstatic.com; manifest-src https://assistantapps.com/manifest.json; connect-src api.assistantapps.com; base-uri 'self'; report-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;"
+        },
+        {
+            "name": "X-Content-Security-Policy",
+            "value": "default-src 'none'; script-src 'self' 'report-sample'; style-src 'self' 'report-sample' https://fonts.googleapis.com/css2; img-src 'self' data: cdn.assistantapps.com; font-src 'self' fonts.gstatic.com; manifest-src https://assistantapps.com/manifest.json; connect-src api.assistantapps.com; base-uri 'self'; report-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;"
+        },
+        {
+            "name": "X-WebKit-CSP",
+            "value": "default-src 'none'; script-src 'self' 'report-sample'; style-src 'self' 'report-sample' https://fonts.googleapis.com/css2; img-src 'self' data: cdn.assistantapps.com; font-src 'self' fonts.gstatic.com; manifest-src https://assistantapps.com/manifest.json; connect-src api.assistantapps.com; base-uri 'self'; report-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;"
+        },
+        {
+            "name": "Set-Cookie",
+            "value": "cross-site-cookie=name; SameSite=None; Secure"
+        }
+    ]
+}

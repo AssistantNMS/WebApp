@@ -1,0 +1,16 @@
+<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item">
+    <div class="card">
+        <div class="card-image"><img src="assets/images/loader.svg" class="lazy" data-src="{{imageUrl}}"
+                alt="{{title}}" /></div>
+        <div class="tag-list ta-center">
+            {{#each tags}}
+            <p class="label label-kurt">{{this}}</p>
+            {{/each}}
+        </div>
+        <h2 class="m-0 ta-center"><strong>{{title}}</strong></h2>
+        <p class="ta-center">{{description}}</p>
+        <div class="pretty-button-container"><a href="{{link}}" class="pretty-button -blue" target="_blank"
+                rel="noopener noreferrer" title="{{title}}" alt="{{title}}">Read on
+                blog.kurtlourens.com</a></div>
+    </div>
+</article>

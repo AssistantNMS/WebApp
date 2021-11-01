@@ -1,0 +1,59 @@
+<article class="{{workitemclass isSideProject}}">
+    <div class="card">
+        <div class="top-right">
+            <img src="assets/images/loader.svg" draggable="false" data-src="{{image}}" class="company lazy invert"
+                alt="{{company}}-{{title}}"><br>
+            {{#if timePeriodTextAlt}}
+            <span class="tool" data-tip="{{timePeriodTextAlt}}">
+                <p class="label {{timePeriodClass}}">{{timePeriodText}}</p>
+            </span>
+            {{else}}
+            <p class="label {{timePeriodClass}}">{{timePeriodText}}</p>
+            {{/if}}
+        </div>
+
+        {{#if links.length}}
+        <h2>
+            <strong>{{title}}</strong>
+            <small>
+                {{#each links}}
+                {{#if @index}}<span>,&nbsp;</span>{{/if}}
+                <a href="{{urlref url}}" target="_blank" rel="noopener noreferrer" title="{{alt}}"
+                    alt="{{alt}}">{{text}}</a>
+                {{/each}}
+            </small>
+        </h2>
+        {{else}}
+        <h2><strong>{{title}}</strong><small>{{location}}</small></h2>
+        {{/if}}
+
+        <p>{{{handleshortcode content}}}</p>
+
+        {{#if techUsed.length}}
+        <div class="tech-container">
+            <hr />
+            {{#each techUsed as | tech |}}
+            {{#with (lookup ../techLookup tech.id)~}}
+            {{#if tech.description}}
+            <span class="tool" data-tip="{{tech.description}}">
+                <img src="assets/images/loader.svg" data-src="/assets/images/tech/{{img}}" draggable="false"
+                    class="lazy tech-icon" alt="{{name}}" />
+            </span>
+            {{else}}
+            <img src="assets/images/loader.svg" data-src="/assets/images/tech/{{img}}" draggable="false"
+                class="lazy tech-icon" alt="{{name}}" />
+            {{/if}}
+            {{/with}}
+            {{/each}}
+        </div>
+        {{/if}}
+        {{#if buttons}}
+        <div class="pretty-button-container">
+            {{#each buttons}}
+            <a href="{{url}}" target="_blank" rel="noopener noreferrer" class="pretty-button -blue" title="{{alt}}"
+                alt="{{alt}}">{{text}}</a>
+            {{/each}}
+        </div>
+        {{/if}}
+    </div>
+</article>

@@ -8,7 +8,7 @@ import { guides } from '../../../constants/Route';
 import { TextContainer } from '../../common/tile/textContainer';
 import { ImageContainer } from '../../common/tile/imageContainer';
 
-export const GuideCardListTile = (props: Guide) => {
+export const GuideCardListTile: React.FC<Guide> = (props: Guide) => {
     const displayTags = () => {
         if (!props.tags || props.tags.length < 1) return null;
 

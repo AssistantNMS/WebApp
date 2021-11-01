@@ -14,7 +14,7 @@ interface IProps extends PortalRecord {
     onDelete?: () => void;
 }
 
-export const PortalCardListTile = (props: IProps) => {
+export const PortalCardListTile: React.FC<IProps> = (props: IProps) => {
     const displayTags = () => {
         if (!props.Tags || props.Tags.length < 1) return null;
         return (

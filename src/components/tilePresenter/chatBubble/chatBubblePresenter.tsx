@@ -20,7 +20,7 @@ interface IProps {
     chatBubbles: Array<IChatProps>;
 }
 
-export const ChatBubblesPresenter = (props: IProps) => {
+export const ChatBubblesPresenter: React.FC<IProps> = (props: IProps) => {
     return (
         <div className="discussion pb-2">
             {

@@ -8,7 +8,7 @@ import { catalogueItem } from '../../../constants/Route';
 import { TextContainer } from '../../common/tile/textContainer';
 import { ImageContainer } from '../../common/tile/imageContainer';
 
-export const GenericItemListTile = (props: GameItemModel) => (
+export const GenericItemListTile: React.FC<GameItemModel> = (props: GameItemModel) => (
     <Link to={`${catalogueItem}/${props.Id}`} className="gen-item-container" draggable={false}>
         <ImageContainer {...props} />
         <div className="gen-item-content-container">

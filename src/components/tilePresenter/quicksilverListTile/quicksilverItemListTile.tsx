@@ -52,7 +52,7 @@ class QuicksilverItemListTileClass extends React.Component<IQuicksilverItemProps
     getActions = () => {
         const result = [];
         if (this.props.isDisabled) {
-            result.push(<i key="locked" className="material-icons x2">lock</i>);
+            result.push(<i key="locked" className="material-icons x2 not-centered">lock</i>);
         }
         return result;
     }
