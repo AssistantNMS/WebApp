@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import i18next from 'i18next';
 import classNames from 'classnames';
 import { Tooltip } from 'react-tippy';
@@ -20,7 +20,9 @@ interface IProps {
     toggleMenu?: () => void;
 }
 
-export const DrawerUnconnected = withRouter((props: IProps) => {
+export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
+    const [expandedMenuItems, setExpandedMenuItems] = useState<Array<string>>([]);
+
     const baseItems = getDrawerMenuItems();
     const menuItems = baseItems.concat(menuItemSeperator);
 
@@ -30,32 +32,57 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
         }
     }
 
+    const toggleSubMenu = (id: string) => () => {
+        const isExpanded = expandedMenuItems.includes(id);
+        if (isExpanded) {
+            const newList = [...expandedMenuItems].filter(ci => ci !== id);
+            setExpandedMenuItems([...newList])
+        } else {
+            setExpandedMenuItems([...expandedMenuItems, id])
+        }
+    }
+
+    const renderMenuItem = (pathname: string) => (menuItem: DrawerMenuItem, index: number) => {
+        const classes = classNames('nav-item noselect', {
+            active: pathname === menuItem.link,
+            separator: menuItem.isSeparator
+        });
+
+        if (menuItem.isSeparator) return <li className={classes} key={`seperator-${index}`}></li>;
+
+        let icon: any = null;
+        if (menuItem.iconType === DrawerIconType.Material) icon = <i className="material-icons">{menuItem.icon}</i>;
+        if (menuItem.iconType === DrawerIconType.Custom) icon = <img className="custom-icons" src={menuItem.icon} alt={menuItem.icon} />;
+
+        const child = menuItem.link.includes('http')
+            ? <a href={menuItem.link} target="_blank" rel="noopener noreferrer" className="nav-link noselect">{icon}<p>{menuItem.name}</p></a>
+            : <Link to={menuItem.link} className="nav-link noselect" draggable={false}>{icon}<p>{menuItem.name}</p></Link>
+
+        const subMenuIsExpanded = expandedMenuItems.includes(menuItem.icon);
+        const subMenuIconClasses = classNames('material-icons x2 pointer align-right', { 'rotate180': subMenuIsExpanded });
+        return (
+            <li onClick={menuItemClick} key={`${menuItem.link}-${index}`}
+                className={classes} draggable={false}>
+                {child}
+                {
+                    ((menuItem?.subs?.length ?? 0) > 0) &&
+                    (
+                        <>
+                            <i className={subMenuIconClasses} onClick={toggleSubMenu(menuItem.icon)}>expand_more</i>
+                            <ul className={classNames('nav', 'sub', { expanded: subMenuIsExpanded })}>
+                                {renderMenuItems(menuItem.subs!)}
+                            </ul>
+                        </>
+                    )
+                }
+            </li>
+        );
+    }
+
     const renderMenuItems = (menuItems: DrawerMenuItem[]) => {
         const { pathname } = props.location;
 
-        return menuItems.map((item: DrawerMenuItem, index: number) => {
-            const classes = classNames('nav-item noselect', {
-                active: pathname === item.link,
-                separator: item.isSeparator
-            });
-
-            if (item.isSeparator) return <li className={classes} key={`seperator-${index}`}></li>;
-
-            let icon: any = null;
-            if (item.iconType === DrawerIconType.Material) icon = <i className="material-icons">{item.icon}</i>;
-            if (item.iconType === DrawerIconType.Custom) icon = <img className="custom-icons" src={item.icon} alt={item.icon} />;
-
-            const child = item.link.includes('http')
-                ? <a href={item.link} target="_blank" rel="noopener noreferrer" className="nav-link noselect">{icon}<p>{item.name}</p></a>
-                : <Link to={item.link} className="nav-link noselect" draggable={false}>{icon}<p>{item.name}</p></Link>
-
-            return (
-                <li onClick={menuItemClick} key={`${item.link}-${index}`}
-                    className={classes} draggable={false}>
-                    {child}
-                </li>
-            );
-        });
+        return menuItems.map(renderMenuItem(pathname));
     }
 
     const versionString = i18next.t(LocaleKey.appVersion).replace('{0}', process.env.REACT_APP_VERSION ?? '');
@@ -70,9 +97,7 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
                     <div className="logo noselect">
                         <Link to="/" draggable={false}><img src="/assets/images/DrawerHeader.png" draggable={false} alt="drawerHeader" /></Link>
                     </div>
-                    {
-                        renderMenuItems(menuItems)
-                    }
+                    {renderMenuItems(menuItems)}
                     <br />
                     <div className="noselect"
                         style={{ textAlign: 'center', padding: '.5em .5em 0 .5em' }}
@@ -94,6 +119,6 @@ export const DrawerUnconnected = withRouter((props: IProps) => {
             </div>
         </div>
     );
-});
+};
 
-export const Drawer = connect(mapStateToProps, mapDispatchToProps)(DrawerUnconnected);
+export const Drawer = connect(mapStateToProps, mapDispatchToProps)(withRouter(DrawerUnconnected));

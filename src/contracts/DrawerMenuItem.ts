@@ -7,4 +7,5 @@ export interface DrawerMenuItem {
   iconType: DrawerIconType;
   isActive: boolean;
   isSeparator?: boolean;
+  subs?: Array<DrawerMenuItem>;
 }

@@ -3,6 +3,7 @@ import * as routes from '../constants/Route';
 import { DrawerIconType } from '../contracts/enum/DrawerIconType';
 import { DrawerMenuItem } from '../contracts/DrawerMenuItem';
 import { LocaleKey } from '../localization/LocaleKey';
+import { getCatalogueMenuItems } from './catalogueMenuItemsHelper';
 
 export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
   const menuItems = [];
@@ -47,7 +48,8 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     link: routes.catalogue,
     icon: '/assets/images/drawer/catalogue.png',
     iconType: DrawerIconType.Custom,
-    isActive: false
+    isActive: false,
+    subs: getCatalogueMenuItems()
   });
   menuItems.push({
     name: i18next.t(LocaleKey.nmsfm).toString(),

@@ -21,3 +21,51 @@
 .nav .nav-item.active>.nav-link .material-icons {
     color: $brand-secondary;
 }
+
+.sidebar {
+    .nav {
+        p {
+            // white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &.sub {
+            padding-left: 1.25em;
+            height: 0;
+            overflow: hidden;
+            transition: height 150ms ease-in-out;
+
+
+            &.expanded {
+                height: unset;
+            }
+        }
+
+        i,
+        .custom-icons {
+            font-size: 24px;
+            float: left;
+            margin-right: 15px;
+            line-height: 30px;
+            width: 30px;
+            text-align: center;
+            color: #a9afbb;
+        }
+
+        li.nav-item {
+            position: relative;
+        }
+
+        .material-icons.align-right {
+            position: absolute;
+            top: 10px;
+            right: 4%;
+            transition: transform 250ms ease-in-out;
+
+            &.rotate180 {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
