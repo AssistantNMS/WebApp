@@ -7,9 +7,6 @@ import { DrawerMenuItem } from '../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../contracts/enum/DrawerIconType';
 import { getCatalogueMenuItems } from '../../helper/catalogueMenuItemsHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
-import './catalogue.scss';
-
-
 
 export const CataloguePresenter: React.FC = () => {
     const menuItems = getCatalogueMenuItems();

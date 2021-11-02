@@ -6,6 +6,9 @@ import { mapStateToProps, mapDispatchToProps } from './navbar.Redux';
 
 import { LocalizationMap } from '../../../localization/LocalizationMap';
 import { localeMap } from '../../../localization/Localization';
+import { BaseFloatingActionButton } from '../../floatingActionButton/baseFloatingActionButton';
+import i18next from 'i18next';
+import { LocaleKey } from '../../../localization/LocaleKey';
 
 interface IProps {
     title: string;
@@ -81,9 +84,15 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
                                     : null
                             }
                             <li className="nav-item dropdown noselect" draggable={false}>
-                                <span className="nav-link pointer" onClick={this.showLangDropdown}>
+                                <BaseFloatingActionButton
+                                    key="LanguageFloatingActionButton"
+                                    tooltipText={i18next.t(LocaleKey.language)}
+                                    icon={<i className="material-icons">language</i>}
+                                    onClick={this.showLangDropdown}
+                                />
+                                {/* <span className="nav-link pointer" onClick={this.showLangDropdown}>
                                     <i className="material-icons">language</i>
-                                </span>
+                                </span> */}
                                 <div className={classNames('dropdown-menu dropdown-menu-right noselect', { 'show': this.state.langDropdownVisible })} draggable={false}>
                                     {
                                         this.state.localeMap.map((locale: LocalizationMap) => {

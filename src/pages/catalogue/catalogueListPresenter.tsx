@@ -7,7 +7,6 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { LocaleKey } from '../../localization/LocaleKey';
-import './catalogue.scss';
 
 interface IProps {
     // Container Props

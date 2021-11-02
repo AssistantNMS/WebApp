@@ -11,8 +11,6 @@ import { AllGameItemsService } from '../../services/json/AllGameItemsService';
 import { ToastService } from '../../services/toastService';
 import { CatalogueListPresenter } from './catalogueListPresenter';
 
-import './catalogue.scss';
-
 interface IWithDepInj {
     allGameItemsService: AllGameItemsService;
     toastService: ToastService;

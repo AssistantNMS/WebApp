@@ -2,9 +2,9 @@ import React from 'react';
 import { LazyLoadImage } from './lazyLoadImage/lazyLoadImage';
 import { AdditionalInfoChip } from '../common/chip/additionalInfoChip';
 import { invertColor } from '../../helper/colourHelper';
-import { showShareDialog } from '../shareDialog';
 import { ToastService } from '../../services/toastService';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
+import { ReactNode } from 'react-markdown/lib/react-markdown';
 
 interface IWithDepInj {
     toastService: ToastService;
@@ -18,6 +18,7 @@ interface IWithoutDepInj {
     CdnUrl?: string;
     Description?: string;
     Link?: any;
+    children?: ReactNode;
 }
 
 interface IProps extends IWithDepInj, IWithoutDepInj { }
@@ -26,13 +27,8 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
     const name = props?.Name ?? '...';
     const group = props?.Group ?? '...';
 
-    const shareDialogProps = {
-        id: props.Id!,
-        toastService: props.toastService,
-    }
-
     return (
-        <div className="row border-bottom">
+        <div className="row border-bottom pos-rel">
             <div className="col-12 col-lg-2 col-md-2 col-sm-4 col-xs-3 image-container generic-item-image-container"
                 style={{ backgroundColor: `#${props.Colour}`, position: 'relative' }}>
                 {
@@ -64,15 +60,8 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                         </div>
                         : null
                 }
-                {
-                    (props.Id != null) &&
-                    (
-                        <div className="additional-header-column">
-                            <i className="material-icons x2 pointer" onClick={() => showShareDialog(shareDialogProps)}>share</i>
-                        </div>
-                    )
-                }
             </div>
+            {props.children}
         </div>
     );
 }

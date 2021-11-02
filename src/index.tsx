@@ -53,7 +53,7 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
             <Provider store={store}>
                 <BrowserRouter>
                     <App />
-                    <ToastContainer newestOnTop={false} />
+                    <ToastContainer newestOnTop={false} theme="colored" />
                 </BrowserRouter>
             </Provider>
         </DependencyInjectionProvider>

@@ -1,4 +1,6 @@
+import i18next from 'i18next';
 import React from 'react';
+import { LocaleKey } from '../../localization/LocaleKey';
 
 import { BaseFloatingActionButton } from './baseFloatingActionButton';
 
@@ -8,6 +10,7 @@ export const FavouriteFloatingActionButton = (itemIsFavourited: boolean, addThis
     return (
         <BaseFloatingActionButton
             key="FavouriteFloatingActionButton"
+            tooltipText={i18next.t(LocaleKey.favourites)}
             icon={<i className="material-icons">{iconString}</i>}
             onClick={onClick}
         />

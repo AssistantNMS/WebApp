@@ -257,13 +257,13 @@ class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> 
     addThisItemToFavourites = () => {
         if (this.props.addItemToFavourites == null) return;
         this.props.addItemToFavourites(this.state.item);
-        this.props.toastService.success('Added!');
+        this.props.toastService.success('Added to Favourites');
     }
 
     removeThisItemToFavourites = () => {
         if (this.props.removeItemToFavourites == null) return;
         this.props.removeItemToFavourites(this.state.item.Id);
-        this.props.toastService.success('Removed!');
+        this.props.toastService.success('Removed from Favourites');
     }
 
     render() {

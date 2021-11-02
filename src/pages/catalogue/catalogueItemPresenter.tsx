@@ -54,9 +54,9 @@ interface IProps {
 }
 
 export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
-    const getFloatingActionButtons = () => {
+    const getFloatingActionButtons = (): Array<any> => {
         const components: any[] = [];
-        if (props.item == null || props.item.Id == null) return null;
+        if (props.item == null || props.item.Id == null) return components;
         const shareDialogProps = {
             id: props.item.Id,
             toastService: props.toastService,
@@ -85,6 +85,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                 <div className="content">
                     <ItemHeaderRow {...props.item} />
                     <AdditionalInfoChipRow additionalData={props.additionalData} />
+
                     {displayRequiredItems(props.resArray)}
                     {displayUsedToCreateItems(props.usedToCreateArray)}
                     {displayRechargedByItems(props.rechargedBy)}
@@ -103,8 +104,8 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
     const { Name: title, Description: description } = props?.item ?? anyObject;
     return (
         <>
-            <HeadComponent title={title} description={description} />
-            <NavBar title={title} />
+            <HeadComponent title={title} description={description} updateUrl={true} />
+            <NavBar title={title} additionalItems={getFloatingActionButtons()} />
             {handleLoadingOrError()}
 
             {getFloatingActionButtons()}
