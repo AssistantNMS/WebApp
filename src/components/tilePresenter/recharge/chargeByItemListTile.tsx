@@ -57,4 +57,4 @@ const ChargeByItemListTileWithDepInj = withServices<IWithoutDepInj, IWithDepInj>
     })
 );
 
-export const ChargeByItemListTile = (props: IProps): JSX.Element => <ChargeByItemListTileWithDepInj {...props} />;
+export const ChargeByItemListTile = (props: IWithoutDepInj): JSX.Element => <ChargeByItemListTileWithDepInj {...props} />;

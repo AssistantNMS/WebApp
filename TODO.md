@@ -6,5 +6,6 @@
   - Force current language
   - Include name in url
 - Search from navbar, on click dropdown appears
+- Order refined/cooking/etc by output number
 - Hide number of crafting items when more that 6 etc
 - Collapse sections

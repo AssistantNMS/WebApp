@@ -55,6 +55,7 @@ export const displayUsedToCreateItems = (usedToCreateArray: Array<GameItemModel>
 
 export const displayRechargedByItems = (rechargedBy: Recharge) => {
     if (rechargedBy == null || rechargedBy.ChargeBy == null || rechargedBy.ChargeBy.length < 1) return null;
+    const orderedChargeBy = rechargedBy.ChargeBy.sort((a: ChargeBy, b: ChargeBy) => b.Value - a.Value);
 
     return (
         <>
@@ -63,7 +64,7 @@ export const displayRechargedByItems = (rechargedBy: Recharge) => {
                     <h3>{i18next.t(LocaleKey.rechargeThisUsing)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={rechargedBy.ChargeBy} presenter={(item: ChargeBy) => <ChargeByItemListTile {...item} totalChargeAmount={rechargedBy.TotalChargeAmount} />} />
+                    <GenericListPresenter list={orderedChargeBy} presenter={(item: ChargeBy) => <ChargeByItemListTile {...item} totalChargeAmount={rechargedBy.TotalChargeAmount} />} />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -73,6 +74,7 @@ export const displayRechargedByItems = (rechargedBy: Recharge) => {
 
 export const displayUsedToRechargeItems = (id: string, name: string, usedToRechargeArray: Array<Recharge>) => {
     if (usedToRechargeArray == null || usedToRechargeArray.length < 1) return null;
+    const orderedUsedToRechargeArray = usedToRechargeArray.sort((a: Recharge, b: Recharge) => b.TotalChargeAmount - a.TotalChargeAmount);
 
     return (
         <>
@@ -81,7 +83,7 @@ export const displayUsedToRechargeItems = (id: string, name: string, usedToRecha
                     <h3>{i18next.t(LocaleKey.useXToRecharge).replace('{0}', name)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={usedToRechargeArray} presenter={(item: Recharge) => <RechargeItemListTile {...item} currentItemId={id} />} />
+                    <GenericListPresenter list={orderedUsedToRechargeArray} presenter={(item: Recharge) => <RechargeItemListTile {...item} currentItemId={id} />} />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -91,6 +93,7 @@ export const displayUsedToRechargeItems = (id: string, name: string, usedToRecha
 
 export const displayRefItems = (refRecipesArray: Array<Processor>) => {
     if (refRecipesArray == null || refRecipesArray.length < 1) return null;
+    const orderedRefRecipesArray = refRecipesArray.sort((a: Processor, b: Processor) => b.Output.Quantity - a.Output.Quantity);
     return (
         <>
             <div className="row">
@@ -98,7 +101,7 @@ export const displayRefItems = (refRecipesArray: Array<Processor>) => {
                     <h3>{i18next.t(LocaleKey.refinedUsing)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={refRecipesArray} presenter={ProcessorItemListTile} />
+                    <GenericListPresenter list={orderedRefRecipesArray} presenter={ProcessorItemListTile} />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -108,6 +111,7 @@ export const displayRefItems = (refRecipesArray: Array<Processor>) => {
 
 export const displayUsedToRefItems = (name: string, usedToRefArray: Array<Processor>) => {
     if (usedToRefArray == null || usedToRefArray.length < 1) return null;
+    const orderedUsedToRefArray = usedToRefArray.sort((a: Processor, b: Processor) => b.Output.Quantity - a.Output.Quantity);
 
     return (
         <>
@@ -116,7 +120,7 @@ export const displayUsedToRefItems = (name: string, usedToRefArray: Array<Proces
                     <h3>{i18next.t(LocaleKey.refineToCreate).replace('{0}', name)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={usedToRefArray} presenter={ProcessorItemListTile} />
+                    <GenericListPresenter list={orderedUsedToRefArray} presenter={ProcessorItemListTile} />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -126,6 +130,8 @@ export const displayUsedToRefItems = (name: string, usedToRefArray: Array<Proces
 
 export const displayCookItems = (cookRecipesArray: Array<Processor>) => {
     if (cookRecipesArray == null || cookRecipesArray.length < 1) return null;
+    const orderedCookRecipesArray = cookRecipesArray.sort((a: Processor, b: Processor) => b.Output.Quantity - a.Output.Quantity);
+
     return (
         <>
             <div className="row">
@@ -133,7 +139,7 @@ export const displayCookItems = (cookRecipesArray: Array<Processor>) => {
                     <h3>{i18next.t(LocaleKey.cookingRecipe)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={cookRecipesArray} presenter={ProcessorItemListTile} />
+                    <GenericListPresenter list={orderedCookRecipesArray} presenter={ProcessorItemListTile} />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -143,6 +149,7 @@ export const displayCookItems = (cookRecipesArray: Array<Processor>) => {
 
 export const displayUsedToCookItems = (name: string, usedToCookArray: Array<Processor>) => {
     if (usedToCookArray == null || usedToCookArray.length < 1) return null;
+    const orderedUsedToCookArray = usedToCookArray.sort((a: Processor, b: Processor) => b.Output.Quantity - a.Output.Quantity);
 
     return (
         <>
@@ -151,7 +158,7 @@ export const displayUsedToCookItems = (name: string, usedToCookArray: Array<Proc
                     <h3>{i18next.t(LocaleKey.cookToCreate).replace('{0}', name)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={usedToCookArray} presenter={ProcessorItemListTile} />
+                    <GenericListPresenter list={orderedUsedToCookArray} presenter={ProcessorItemListTile} />
                 </div>
             </div>
             <hr className="mt-3em" />
