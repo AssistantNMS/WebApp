@@ -12,10 +12,10 @@ export const toggleHtmlNodeClass = (selector: string, className: string): boolea
     return htmlTag?.classList?.contains?.(className) ?? false;
 };
 
-export const updateUrl = (title: string) => {
+export const updateUrl = (id: string, title: string) => {
     window?.history?.replaceState?.(
         null,
         getNewDocumentTitle(title),
-        `/catalogue-item/raw42/${title.replace(/\s/g, '-')}`
+        `/catalogue-item/${id}/${title.replace(/\s/g, '-')}`
     );
 };

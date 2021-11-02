@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import { getNewDocumentTitle, updateUrl } from '../../helper/documentHelper';
 
 interface IProps {
+    id?: string;
     title?: string;
     description?: string;
     updateUrl?: boolean;
@@ -11,7 +12,7 @@ interface IProps {
 
 export const HeadComponent: React.FC<IProps> = (props: IProps) => {
     if (props.title == null) return null;
-    else if (props.updateUrl === true) updateUrl(props.title);
+    else if (props.updateUrl === true && props.id != null) updateUrl(props.id, props.title);
 
     if (props.title != null && props.description == null) return (
         <Helmet>

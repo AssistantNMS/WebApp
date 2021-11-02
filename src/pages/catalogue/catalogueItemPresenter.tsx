@@ -101,10 +101,10 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
         )
     }
 
-    const { Name: title, Description: description } = props?.item ?? anyObject;
+    const { Name: title, Description: description, Id: id } = props?.item ?? anyObject;
     return (
         <>
-            <HeadComponent title={title} description={description} updateUrl={true} />
+            <HeadComponent id={id} title={title} description={description} updateUrl={true} />
             <NavBar title={title} additionalItems={getFloatingActionButtons()} />
             {handleLoadingOrError()}
 
