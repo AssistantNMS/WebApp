@@ -4,7 +4,7 @@ import { Fab } from '@material/react-fab'
 import { Tooltip } from 'react-tippy';
 
 interface IProps {
-    key: string;
+    keyString: string;
     icon: React.ReactElement<HTMLElement, string | React.JSXElementConstructor<any>>;
     tooltipText?: string;
     onClick: (e: any) => void;
@@ -13,7 +13,7 @@ interface IProps {
 export const BaseFloatingActionButton = (props: IProps) => {
     const child = (
         <Fab className="fab-bg-color fab-margin"
-            key={props.key}
+            key={props.keyString}
             icon={props.icon}
             onClick={props.onClick}
         />
@@ -22,6 +22,7 @@ export const BaseFloatingActionButton = (props: IProps) => {
     if (props.tooltipText != null) {
         return (
             <Tooltip
+                key={props.keyString + 'tooltip'}
                 title={props.tooltipText}
                 arrow={true}
                 theme="light"

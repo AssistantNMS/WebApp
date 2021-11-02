@@ -45,7 +45,9 @@ export const saveStateToLocalStorage = (store: any) => {
     const storedSettingReducer = JSON.parse(localStorage.getItem(CacheKey.SettingReducerKey) || '{}');
     if (storedSettingReducer == null
         || storedSettingReducer.selectedLanguage !== currentSettingReducer.selectedLanguage
-        || storedSettingReducer.useAltGlyphs !== currentSettingReducer.useAltGlyphs) {
+        || storedSettingReducer.useAltGlyphs !== currentSettingReducer.useAltGlyphs
+        || storedSettingReducer.selectedFont !== currentSettingReducer.selectedFont
+    ) {
         localStorage.setItem(CacheKey.SettingReducerKey, JSON.stringify(currentSettingReducer));
     }
 

@@ -9,7 +9,7 @@ export const FavouriteFloatingActionButton = (itemIsFavourited: boolean, addThis
     let onClick = itemIsFavourited ? removeThisItemToFavourites : addThisItemToFavourites;
     return (
         <BaseFloatingActionButton
-            key="FavouriteFloatingActionButton"
+            keyString="FavouriteFloatingActionButton"
             tooltipText={i18next.t(LocaleKey.favourites)}
             icon={<i className="material-icons">{iconString}</i>}
             onClick={onClick}

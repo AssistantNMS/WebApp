@@ -53,7 +53,7 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
             <HeadComponent title={props.item.Name} />
             <NavBar title={props.item.Name} additionalItems={[
                 <BaseFloatingActionButton
-                    key={`editPortalName`}
+                    keyString={`editPortalName`}
                     icon={<i className="material-icons">edit</i>}
                     onClick={props.editName}
                 />

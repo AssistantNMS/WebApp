@@ -1,5 +1,5 @@
 
-import * as React from 'react';
+import React, { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 
 import { anyObject } from '../../../helper/typescriptHacks';
@@ -13,6 +13,7 @@ import { GameItemService } from '../../../services/json/GameItemService';
 import { RequiredItem } from '../../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
 import { TileLoading } from '../../core/loading/loading';
+import { RequiredItemsQuantityContainer } from '../../common/tile/quantityContainer';
 
 
 interface IProps extends Processor {
@@ -72,30 +73,19 @@ class ProcessorItemListTileClass extends React.Component<IProps, IState> {
         });
     }
 
-    processorInputsToString(rowIndex: number, startIndex: number, row: RequiredItemDetails) {
-        return (rowIndex > startIndex ? ' + ' : '') +
-            row.Quantity.toString() +
-            'x ' +
-            row.Name;
-    }
-
     render() {
         if (!this.state.requiredItems || this.state.requiredItems.length === 0) {
             return (<TileLoading />);
         }
 
         const output = this.state.requiredItems[0];
-        let subtitle = '';
-        const startIndex = 1;
-        for (let inputIndex = startIndex; inputIndex < this.state.requiredItems.length; inputIndex++) {
-            subtitle += this.processorInputsToString(inputIndex, startIndex, this.state.requiredItems[inputIndex]);
-        }
+        const requiredItems = this.state.requiredItems;
         return (
-            <Link to={`${processorItem}/${this.props.Id}`} className="gen-item-container" draggable={false}>
+            <Link to={`${processorItem}/${this.props.Id}`} data-id="ProcessorItemListTile" className="gen-item-container" draggable={false}>
                 <ImageContainer Name={output.Name} Icon={output.Icon} Colour={this.state.colour} OutputQuantity={output.Quantity} />
                 <div className="gen-item-content-container">
                     <TextContainer text={output.Name} />
-                    <div className="quantity-container">{subtitle}</div>
+                    <RequiredItemsQuantityContainer requiredItems={requiredItems} />
                 </div>
             </Link>
         );

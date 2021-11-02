@@ -7,7 +7,7 @@ import { BaseFloatingActionButton } from './baseFloatingActionButton';
 export const CartFloatingActionButton = (addThisItemToCart: any) => {
     return (
         <BaseFloatingActionButton
-            key="CartFloatingActionButton"
+            keyString="CartFloatingActionButton"
             tooltipText={i18next.t(LocaleKey.cart)}
             icon={<i className="material-icons">shopping_basket</i>}
             onClick={addThisItemToCart}

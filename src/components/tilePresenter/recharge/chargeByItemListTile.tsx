@@ -50,7 +50,7 @@ class ChargeByItemListTileClass extends React.Component<IProps, IState> {
     render() {
         const childName = (this.props.totalChargeAmount / this.props.Value) + 'x ' + this.state.name;
         return (
-            <Link to={`${catalogueItem}/${this.props.Id}`} className="gen-item-container" draggable={false}>
+            <Link to={`${catalogueItem}/${this.props.Id}`} data-id="ChargeByItemListTile" className="gen-item-container" draggable={false}>
                 <ImageContainer Name={this.state.name} Icon={this.state.icon} Colour={this.state.colour} />
                 <div className="gen-item-content-container">
                     <TextContainer text={childName} additionalCss="full" />

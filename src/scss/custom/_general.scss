@@ -1,10 +1,28 @@
+@import url("https://nmscd.github.io/No-Mans-Sky-Universal-Font/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.css");
+
+
+// @font-face {
+//     font-family: 'NMSFuturaProBook';
+//     src: url('NMSFuturaProBook_Kerned.eot'); /* IE9 Compat Modes */
+//     src: url('NMSFuturaProBook_Kerned.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//          url('NMSFuturaProBook_Kerned.woff') format('woff'), /* Modern Browsers */
+//          url('NMSFuturaProBook_Kerned.ttf') format('truetype'); /* Safari, Android, iOS */
+//              font-style: normal;
+//     font-weight: normal;
+//     text-rendering: optimizeLegibility;
+// }
+
 #app,
 body {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     background-color: $brand-primary-background;
+}
+
+#app.nmsThemed {
+    font-family: 'NMSFuturaProBook', Helvetica, sans-serif !important;
 }
 
 #nav {

@@ -20,7 +20,7 @@ export function GenericListPresenter<T>(props: IProps<T>) {
                 props.list.map((item: T, index: number) => {
                     const key = props.identifier ? props.identifier(item) : '';
                     return (
-                        <div key={`generic-item-list ${index} ${key}`} className={classNames('gen-item', bootstrapClasses)}>
+                        <div key={`generic-item-list ${index} ${key}`} data-key={key} className={classNames('gen-item', bootstrapClasses)}>
                             {props.presenter(item, index)}
                         </div>
                     )

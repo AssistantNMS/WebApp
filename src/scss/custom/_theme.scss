@@ -63,6 +63,12 @@ body {
 
         .form-check .form-check-label.custom {
             color: $body-color-dark;
+
+            p {
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+            }
         }
 
         hr {
@@ -193,6 +199,10 @@ body {
         .progress-bar {
             background-color: $brand-secondary !important;
         }
+    }
+
+    .secondary-highlight {
+        color: $brand-secondary !important;
     }
 
     .guide .section .heading {

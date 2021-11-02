@@ -26,3 +26,10 @@ export const toggleAltGlyphs = () => {
         type: type.TOGGLEALTGLYPHS,
     }
 }
+
+export const setFont = (font: string) => {
+    return {
+        font,
+        type: type.SETFONT,
+    }
+}

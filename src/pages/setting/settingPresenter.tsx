@@ -6,13 +6,15 @@ import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps } from './setting.Redux';
-import { boolSettingTile, LangSettingTile } from './settingComponent';
+import { BoolSettingTile, LangSettingTile, FontSettingTile } from './settingComponent';
 
 interface IProps {
     useAltGlyphs: boolean;
     selectedLanguage: string;
+    selectedFont: string;
     toggleAltGlyphs: () => void;
     setLanguage: (selectedLanguage: string) => void;
+    setFont: (selectedFont: string) => void;
 }
 
 const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
@@ -28,7 +30,15 @@ const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
                             value={props.selectedLanguage}
                             onClick={props.setLanguage}
                         />
-                        {boolSettingTile(i18next.t(LocaleKey.useAltGlyphs), props.useAltGlyphs, props.toggleAltGlyphs)}
+                        <BoolSettingTile
+                            title={i18next.t(LocaleKey.useAltGlyphs)}
+                            value={props.useAltGlyphs}
+                            onClick={props.toggleAltGlyphs}
+                        />
+                        <FontSettingTile title={i18next.t(LocaleKey.settingsFont)}
+                            value={props.selectedFont}
+                            onClick={props.setFont}
+                        />
                     </div>
                 </div>
             </div>

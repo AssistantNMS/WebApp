@@ -85,7 +85,7 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
                             }
                             <li className="nav-item dropdown noselect" draggable={false}>
                                 <BaseFloatingActionButton
-                                    key="LanguageFloatingActionButton"
+                                    keyString="LanguageDropdownFloatingActionButton"
                                     tooltipText={i18next.t(LocaleKey.appLanguage)}
                                     icon={<i className="material-icons">language</i>}
                                     onClick={this.showLangDropdown}

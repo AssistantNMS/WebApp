@@ -3,12 +3,15 @@ import i18next from 'i18next';
 
 import { PlatformType } from '../../../contracts/enum/PlatformType';
 import { StateSettingReducer } from '../../state/StateSettingReducer';
+import { LocaleKey } from '../../../localization/LocaleKey';
+import { toggleHtmlNodeClass } from '../../../helper/documentHelper';
 
 export const initialSettingState: StateSettingReducer = {
     selectedLanguage: 'en',
     menuIsVisible: false,
     chosenPlatform: PlatformType.PC,
     useAltGlyphs: true,
+    selectedFont: LocaleKey.defaultFont.toString(),
 }
 
 export const settingReducer = (state = initialSettingState, action: any) => {
@@ -19,12 +22,9 @@ export const settingReducer = (state = initialSettingState, action: any) => {
                 selectedLanguage: action.langCode
             });
         case type.TOGGLEMENU:
-            const htmlTag = document.querySelector('html');
-            if (htmlTag != null) {
-                htmlTag.classList.toggle('nav-open');
-            }
+            const menuIsVisible = toggleHtmlNodeClass('html', 'nav-open');
             return Object.assign({}, state, {
-                menuIsVisible: htmlTag?.classList?.contains('nav-open') ?? false
+                menuIsVisible: menuIsVisible,
             });
         case type.SETPLATFORM:
             return Object.assign({}, state, {
@@ -33,6 +33,10 @@ export const settingReducer = (state = initialSettingState, action: any) => {
         case type.TOGGLEALTGLYPHS:
             return Object.assign({}, state, {
                 useAltGlyphs: !state.useAltGlyphs
+            });
+        case type.SETFONT:
+            return Object.assign({}, state, {
+                selectedFont: action.font
             });
         default:
             return state

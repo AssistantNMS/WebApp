@@ -4,6 +4,7 @@ import { toggleMenu } from './redux/modules/setting/action';
 export const mapStateToProps = (state: State) => {
     return {
         selectedLanguage: state.settingReducer.selectedLanguage,
+        selectedFont: state.settingReducer.selectedFont,
     };
 };
 

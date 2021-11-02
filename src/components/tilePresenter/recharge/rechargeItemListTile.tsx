@@ -55,7 +55,7 @@ class RechargeItemListTileClass extends React.Component<IProps, IState> {
     render() {
         const childName = (this.props.TotalChargeAmount / this.state.childValue) + 'x ' + this.state.child.Name;
         return (
-            <Link to={`${catalogueItem}/${this.props.Id}`} className="gen-item-container" draggable={false}>
+            <Link to={`${catalogueItem}/${this.props.Id}`} data-id="RechargeItemListTile" className="gen-item-container" draggable={false}>
                 <ImageContainer key={this.state.parent.Icon} Name={this.state.parent.Name} Icon={this.state.parent.Icon} Colour={this.state.parent.Colour} />
                 <div className="gen-item-content-container">
                     <TextContainer text={this.state.parent.Name} />
