@@ -27,14 +27,16 @@ export interface IDependencyInjection {
 }
 
 export const defaultDependencyInjectionFunc = () => {
+  const gameItemService = new GameItemService();
+
   return {
     //api
     assistantAppsApiService: new AssistantAppsApiService(),
     apiService: new ApiService(),
 
     //json
-    allGameItemsService: new AllGameItemsService(),
-    gameItemService: new GameItemService(),
+    gameItemService,
+    allGameItemsService: new AllGameItemsService(gameItemService),
     guideService: new GuideService(),
     rechargeByService: new RechargeByService(),
 

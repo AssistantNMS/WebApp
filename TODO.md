@@ -1,13 +1,10 @@
-- Convert components to Functional components
-- Memoize calls for data
-
-- replace modal bottom sheet
-  - https://codepen.io/Kascique/pen/XRJbPZ
-
+- Display properties on recipe screen
 - Add expedition viewer
 - Add dropdown for catalogue drawer menu
-- Add font settings
 - Show Expedition Alphabet translations
 - Add share dialog
   - Force current language
+  - Include name in url
 - Search from navbar, on click dropdown appears
+- Hide number of crafting items when more that 6 etc
+- Collapse sections

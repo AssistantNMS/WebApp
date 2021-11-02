@@ -164,7 +164,6 @@ class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> 
 
     getUsedToRechargeArray = async (itemId: string) => {
         const usedToRechargeResult = await this.props.rechargeByService.getRechargeByChargeById(itemId);
-        console.log(usedToRechargeResult);
         if (!usedToRechargeResult.isSuccess) return;
         return usedToRechargeResult.value;
     }

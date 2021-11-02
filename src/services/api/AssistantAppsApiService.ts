@@ -10,7 +10,6 @@ declare global {
 
 export class AssistantAppsApiService extends BaseApiService {
     constructor() {
-        console.log(window.config?.assistantAppsUrl);
         super(window.config?.assistantAppsUrl);
     }
 

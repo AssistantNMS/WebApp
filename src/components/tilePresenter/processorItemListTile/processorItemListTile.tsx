@@ -1,51 +1,42 @@
 
-import React, { ReactNode } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { anyObject } from '../../../helper/typescriptHacks';
-
-import { Processor } from '../../../contracts/Processor';
 import { processorItem } from '../../../constants/Route';
-
-import { TextContainer } from '../../common/tile/textContainer';
-import { ImageContainer } from '../../common/tile/imageContainer';
-import { GameItemService } from '../../../services/json/GameItemService';
+import { Processor } from '../../../contracts/Processor';
 import { RequiredItem } from '../../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
-import { TileLoading } from '../../core/loading/loading';
+import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
+import { GameItemService } from '../../../services/json/GameItemService';
+import { ImageContainer } from '../../common/tile/imageContainer';
 import { RequiredItemsQuantityContainer } from '../../common/tile/quantityContainer';
+import { TextContainer } from '../../common/tile/textContainer';
+import { TileLoading } from '../../core/loading/loading';
 
+interface IWithDepInj {
+    gameItemService: GameItemService;
+}
 
-interface IProps extends Processor {
+interface IWithoutDepInj extends Processor {
     singleItemImage: string;
     doubleItemImage: string;
     tripleItemImage: string;
 }
 
-interface IState {
-    item: Processor;
-    colour: string;
-    requiredItems: Array<RequiredItemDetails>;
-    gameItemService: GameItemService;
-}
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
-class ProcessorItemListTileClass extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
 
-        this.state = {
-            item: anyObject,
-            colour: '',
-            requiredItems: [],
-            gameItemService: new GameItemService()
-        }
+const ProcessorItemListTileClass: React.FC<IProps> = (props: IProps) => {
+    const [requiredItems, setRequiredItems] = useState<Array<RequiredItemDetails>>([]);
 
-        this.fetchData([this.props.Output, ...this.props.Inputs]);
-    }
+    useEffect(() => {
+        fetchData([props.Output, ...props.Inputs]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
-    fetchData = async (items: Array<RequiredItem>) => {
+    const fetchData = async (items: Array<RequiredItem>) => {
         const requiredItemsTasks = items.map(async (item: RequiredItem) => {
-            const itemDetails = await this.state.gameItemService.getItemDetails(item.Id);
+            const itemDetails = await props.gameItemService.getItemDetails(item.Id);
             if (!itemDetails.isSuccess) return null;
 
             const requiredItemDetails: RequiredItemDetails = {
@@ -65,32 +56,31 @@ class ProcessorItemListTileClass extends React.Component<IProps, IState> {
             return;
         }
 
-        this.setState((prev: IState) => {
-            return {
-                requiredItems: requiredItems,
-                colour: requiredItems.length === 1 ? requiredItems[0].Colour : prev.colour
-            }
-        });
+        setRequiredItems(requiredItems);
     }
 
-    render() {
-        if (!this.state.requiredItems || this.state.requiredItems.length === 0) {
-            return (<TileLoading />);
-        }
-
-        const output = this.state.requiredItems[0];
-        const requiredItems = this.state.requiredItems;
-        return (
-            <Link to={`${processorItem}/${this.props.Id}`} data-id="ProcessorItemListTile" className="gen-item-container" draggable={false}>
-                <ImageContainer Name={output.Name} Icon={output.Icon} Colour={this.state.colour} OutputQuantity={output.Quantity} />
-                <div className="gen-item-content-container">
-                    <TextContainer text={output.Name} />
-                    <RequiredItemsQuantityContainer requiredItems={requiredItems} />
-                </div>
-            </Link>
-        );
+    if (!requiredItems || requiredItems.length === 0) {
+        return (<TileLoading />);
     }
+
+    const colour = requiredItems.length > 0 ? requiredItems[0].Colour : '';
+    const output = requiredItems[0];
+    return (
+        <Link to={`${processorItem}/${props.Id}`} data-id="ProcessorItemListTile" className="gen-item-container" draggable={false}>
+            <ImageContainer Name={output.Name} Icon={output.Icon} Colour={colour} OutputQuantity={output.Quantity} />
+            <div className="gen-item-content-container">
+                <TextContainer text={output.Name} />
+                <RequiredItemsQuantityContainer requiredItems={requiredItems} />
+            </div>
+        </Link>
+    );
 }
 
+const ProcessorItemListTileWithDepInj = withServices<IWithoutDepInj, IWithDepInj>(
+    ProcessorItemListTileClass,
+    (services: IDependencyInjection) => ({
+        gameItemService: services.gameItemService,
+    })
+);
 
-export const ProcessorItemListTile = (props: any | Processor): JSX.Element => <ProcessorItemListTileClass {...props} />;
+export const ProcessorItemListTile = (props: any | Processor): JSX.Element => <ProcessorItemListTileWithDepInj {...props} />;

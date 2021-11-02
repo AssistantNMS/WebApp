@@ -2,11 +2,11 @@ import Swal from 'sweetalert2';
 
 import { ResultWithValue } from '../contracts/results/ResultWithValue';
 
-export const getQuantityDialog = async (title: string): Promise<ResultWithValue<number>> => {
+export const getQuantityDialog = async (title: string, defaultValue?: number): Promise<ResultWithValue<number>> => {
     const { value: quantity } = await Swal.fire({
         title,
         input: 'number',
-        inputValue: '1',
+        inputValue: (defaultValue != null) ? defaultValue.toString() : '1',
         showCancelButton: true
     });
     if (isNaN(quantity)) return {

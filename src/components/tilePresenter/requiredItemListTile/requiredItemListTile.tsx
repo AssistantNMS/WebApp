@@ -1,96 +1,93 @@
 
-import * as React from 'react';
 import i18next from 'i18next';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { LocaleKey } from '../../../localization/LocaleKey';
-import { RequiredItem } from '../../../contracts/RequiredItem';
 import { catalogueItem } from '../../../constants/Route';
-
-import { TextContainer } from '../../common/tile/textContainer';
-import { ImageContainer } from '../../common/tile/imageContainer';
-import { ActionContainer } from '../../common/tile/actionContainer';
-
+import { GameItemModel } from '../../../contracts/GameItemModel';
+import { RequiredItem } from '../../../contracts/RequiredItem';
+import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
+import { LocaleKey } from '../../../localization/LocaleKey';
 import { GameItemService } from '../../../services/json/GameItemService';
+import { ActionContainer } from '../../common/tile/actionContainer';
+import { ImageContainer } from '../../common/tile/imageContainer';
+import { TextContainer } from '../../common/tile/textContainer';
+import { SmallLoading } from '../../core/loading/loading';
 
-interface IProps extends RequiredItem {
+interface IWithDepInj {
+    gameItemService: GameItemService;
+}
+
+interface IWithoutDepInj extends RequiredItem {
     editItem?: () => void;
     removeItem?: () => void;
 }
 
-interface IState {
-    name: string;
-    icon: string;
-    colour: string;
-    gameItemService: GameItemService;
-}
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
-class RequiredItemListTileClass extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+const RequiredItemListTileClass: React.FC<IProps> = (props: IProps) => {
+    const [item, setItem] = useState<GameItemModel>();
 
-        this.state = {
-            name: '...',
-            icon: 'loader.svg',
-            colour: '',
-            gameItemService: new GameItemService()
-        }
+    useEffect(() => {
+        fetchData(props.Id);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
-        this.fetchData(this.props.Id);
+    const fetchData = async (itemId: string) => {
+        const itemDetails = await props.gameItemService.getItemDetails(itemId);
+        setItem(itemDetails.value);
     }
 
-    fetchData = async (itemId: string) => {
-        const itemDetails = await this.state.gameItemService.getItemDetails(itemId);
-
-        this.setState(() => {
-            return {
-                name: itemDetails.value.Name,
-                icon: itemDetails.value.Icon,
-                colour: itemDetails.value.Colour
-            }
-        });
-    }
-    editItem = async (e: any) => {
+    const editItem = async (e: any) => {
         e.preventDefault();
-        if (this.props.editItem != null) {
-            this.props.editItem();
+        if (props.editItem != null) {
+            props.editItem();
         }
     }
 
-    removeItem = (e: any) => {
+    const removeItem = (e: any) => {
         e.preventDefault();
-        if (this.props.removeItem != null) {
-            this.props.removeItem();
+        if (props.removeItem != null) {
+            props.removeItem();
         }
     }
 
-    getActions = () => {
+    const getActions = () => {
         const result = [];
-        if (this.props.editItem) {
-            result.push(<i key="edit" onClick={this.editItem} className="material-icons">edit</i>);
+        if (props.editItem) {
+            result.push(<i key="edit" onClick={editItem} className="material-icons">edit</i>);
         }
-        if (this.props.removeItem) {
-            result.push(<i key="delete" onClick={this.removeItem} className="material-icons">delete</i>);
+        if (props.removeItem) {
+            result.push(<i key="delete" onClick={removeItem} className="material-icons">delete</i>);
         }
         return result;
     }
 
-    render() {
-        return (
-            <Link to={`${catalogueItem}/${this.props.Id}`} data-id="RequiredItemListTile" className="gen-item-container" draggable={false}>
-                <ImageContainer Name={this.state.name} Icon={this.state.icon} Colour={this.state.colour} />
-                <div className="gen-item-content-container">
-                    <TextContainer text={this.state.name} additionalCss={(this.props.Quantity != null && this.props.Quantity > 0) ? "" : "full"} />
-                    {
-                        (this.props.Quantity != null && this.props.Quantity > 0)
-                            ? <div className="quantity-container">{i18next.t(LocaleKey.quantity)}: {this.props.Quantity}</div>
-                            : null
-                    }
-                    <ActionContainer actions={this.getActions()} />
-                </div>
-            </Link>
-        );
+    if (item == null) {
+        return (<SmallLoading />);
     }
+
+    return (
+        <Link to={`${catalogueItem}/${props.Id}`} data-id="RequiredItemListTile" className="gen-item-container" draggable={false}>
+            <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} />
+            <div className="gen-item-content-container">
+                <TextContainer text={item.Name} additionalCss={(props.Quantity != null && props.Quantity > 0) ? "" : "full"} />
+                {
+                    (props.Quantity != null && props.Quantity > 0)
+                        ? <div className="quantity-container">{i18next.t(LocaleKey.quantity)}: {props.Quantity}</div>
+                        : null
+                }
+                <ActionContainer actions={getActions()} />
+            </div>
+        </Link>
+    );
 }
 
-export const RequiredItemListTile = (props: IProps): JSX.Element => <RequiredItemListTileClass {...props} />;
+const RequiredItemListTileClassWithDepInj = withServices<IWithoutDepInj, IWithDepInj>(
+    RequiredItemListTileClass,
+    (services: IDependencyInjection) => ({
+        gameItemService: services.gameItemService,
+    })
+);
+
+export const RequiredItemListTile = (props: IProps): JSX.Element => <RequiredItemListTileClassWithDepInj {...props} />;

@@ -7,13 +7,37 @@ import { Processor } from '../../contracts/Processor';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
+import { getHashForObjectFor1Min } from '../../helper/hashHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { getCatalogueFromItemId, mapToLocale } from '../../mapper/CatalogueMapper';
 import { BaseJsonService } from './BaseJsonService';
 
 export class GameItemService extends BaseJsonService {
+
+  private _hashLookup: any;
+
+  constructor() {
+    super();
+    this._hashLookup = anyObject;
+  }
+
+  async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
+    const hash = getHashForObjectFor1Min(argsArray);
+
+    if (this._hashLookup != null && this._hashLookup[hash] != null) {
+      return this._hashLookup[hash];
+    }
+
+    const jsonResult = await promise();
+    this._hashLookup[hash] = jsonResult;
+    return jsonResult;
+  }
+
   async getListfromJson(catalogueType: string): Promise<ResultWithValue<Array<GameItemModel>>> {
+    return this._getOrAdd(() => this._getListfromJson(catalogueType), ['_getListfromJson', catalogueType]);
+  }
+  async _getListfromJson(catalogueType: string): Promise<ResultWithValue<Array<GameItemModel>>> {
     const detailJson: string = mapToLocale(catalogueType);
 
     if (detailJson == null || detailJson.length < 1) {
@@ -30,7 +54,10 @@ export class GameItemService extends BaseJsonService {
     }
   }
 
-  async getItemDetails(itemId: string): Promise<ResultWithValue<GameItemModel>> {
+  getItemDetails = async (itemId: string): Promise<ResultWithValue<GameItemModel>> => {
+    return this._getOrAdd(() => this._getItemDetails(itemId), ['_getItemDetails', itemId]);
+  }
+  async _getItemDetails(itemId: string): Promise<ResultWithValue<GameItemModel>> {
     let result: any = {};
 
     if (!itemId) return { isSuccess: false, value: result, errorMessage: 'itemId specified is invallid' };
@@ -61,7 +88,11 @@ export class GameItemService extends BaseJsonService {
     }
   }
 
+
   async getRequiredItems(itemId: string): Promise<ResultWithValue<Array<RequiredItemDetails>>> {
+    return this._getOrAdd(() => this._getRequiredItems(itemId), ['_getRequiredItems', itemId]);
+  }
+  async _getRequiredItems(itemId: string): Promise<ResultWithValue<Array<RequiredItemDetails>>> {
     const catalogue = getCatalogueFromItemId(itemId);
     const allGenericItemsResult = await this.getListfromJson(catalogue);
 
@@ -104,6 +135,9 @@ export class GameItemService extends BaseJsonService {
   }
 
   async getProcessorListfromJson(catalogueType: string): Promise<ResultWithValue<Array<Processor>>> {
+    return this._getOrAdd(() => this._getProcessorListfromJson(catalogueType), ['_getProcessorListfromJson', catalogueType]);
+  }
+  async _getProcessorListfromJson(catalogueType: string): Promise<ResultWithValue<Array<Processor>>> {
     const detailJson: string = mapToLocale(catalogueType);
 
     if (detailJson == null || detailJson.length < 1) {
@@ -121,6 +155,9 @@ export class GameItemService extends BaseJsonService {
   }
 
   async getProcessorsByOutput(catalogueType: string, itemId: string): Promise<ResultWithValue<Array<Processor>>> {
+    return this._getOrAdd(() => this._getProcessorsByOutput(catalogueType, itemId), ['_getProcessorsByOutput', catalogueType, itemId]);
+  }
+  async _getProcessorsByOutput(catalogueType: string, itemId: string): Promise<ResultWithValue<Array<Processor>>> {
     const allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
 
     if (!allGenericItemsResult.isSuccess) {
@@ -150,6 +187,9 @@ export class GameItemService extends BaseJsonService {
   getCookingByOutput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByOutput(CatalogueType.nutrientProcessor, itemId);
 
   async getProcessorsByInput(catalogueType: string, itemId: string): Promise<ResultWithValue<Array<Processor>>> {
+    return this._getOrAdd(() => this._getProcessorsByInput(catalogueType, itemId), ['_getProcessorsByInput', catalogueType, itemId]);
+  }
+  async _getProcessorsByInput(catalogueType: string, itemId: string): Promise<ResultWithValue<Array<Processor>>> {
     const allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
 
     if (!allGenericItemsResult.isSuccess) {
@@ -179,6 +219,9 @@ export class GameItemService extends BaseJsonService {
   getCookingByInput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByInput(CatalogueType.nutrientProcessor, itemId);
 
   async getProcessorById(catalogueType: string, itemId: string): Promise<ResultWithValue<Processor>> {
+    return this._getOrAdd(() => this._getProcessorById(catalogueType, itemId), ['_getProcessorById', catalogueType, itemId]);
+  }
+  async _getProcessorById(catalogueType: string, itemId: string): Promise<ResultWithValue<Processor>> {
     const allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
 
     let result: any = {};
@@ -216,6 +259,9 @@ export class GameItemService extends BaseJsonService {
   getCookingById = async (itemId: string): Promise<ResultWithValue<Processor>> => await this.getProcessorById(CatalogueType.nutrientProcessor, itemId);
 
   async getRequiredItemDetails(itemId: string): Promise<ResultWithValue<Array<RequiredItemDetails>>> {
+    return this._getOrAdd(() => this._getRequiredItemDetails(itemId), ['_getRequiredItemDetails', itemId]);
+  }
+  async _getRequiredItemDetails(itemId: string): Promise<ResultWithValue<Array<RequiredItemDetails>>> {
     let processorRecipe = (itemId.includes('ref'))
       ? await this.getRefinedById(itemId)
       : await this.getCookingById(itemId);
@@ -257,6 +303,9 @@ export class GameItemService extends BaseJsonService {
   }
 
   async getItemDetailsFromIdList(itemIdsList: Array<string>): Promise<ResultWithValue<Array<GameItemModel>>> {
+    return this._getOrAdd(() => this._getItemDetailsFromIdList(itemIdsList), ['_getItemDetailsFromIdList', itemIdsList]);
+  }
+  async _getItemDetailsFromIdList(itemIdsList: Array<string>): Promise<ResultWithValue<Array<GameItemModel>>> {
     const itemDetailsTask = itemIdsList.map(async (itemId: string) => {
       const itemDetails = await this.getItemDetails(itemId);
       if (!itemDetails.isSuccess) return null;
@@ -274,6 +323,9 @@ export class GameItemService extends BaseJsonService {
   }
 
   async getWeekendMissionStage(weekendMissionJson: LocaleKey, seasonId: string, levelId: number): Promise<ResultWithValue<WeekendMissionStage>> {
+    return this._getOrAdd(() => this._getWeekendMissionStage(weekendMissionJson, seasonId, levelId), ['_getWeekendMissionStage', weekendMissionJson, seasonId, levelId]);
+  }
+  async _getWeekendMissionStage(weekendMissionJson: LocaleKey, seasonId: string, levelId: number): Promise<ResultWithValue<WeekendMissionStage>> {
     let result: any = {};
 
     if (!seasonId) return { isSuccess: false, value: result, errorMessage: 'seasonId specified is invallid' };

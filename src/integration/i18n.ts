@@ -30,7 +30,5 @@ function loadLocaleMessages(): any {
       messages[locale] = i18nextTranslationObject;
     }
   });
-
-  console.log({ messages });
   return messages;
 }

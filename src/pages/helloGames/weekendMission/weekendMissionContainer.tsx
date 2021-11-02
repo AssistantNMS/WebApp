@@ -4,20 +4,26 @@ import { withRouter } from 'react-router-dom';
 import { NetworkState } from '../../../constants/NetworkState';
 import { WeekendMissionStage } from '../../../contracts/helloGames/weekendMissionStage';
 import { anyObject } from '../../../helper/typescriptHacks';
+import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { WeekendMissionPresenter } from './weekendMissionPresenter';
 
+interface IWithDepInj {
+    gameItemService: GameItemService;
+}
 
-interface IProps {
+interface IWithoutDepInj {
     location: any;
     match: any;
     history: any;
 }
 
+interface IProps extends IWithDepInj, IWithoutDepInj { }
+
+
 interface IState {
     title: string;
-    gameItemService: GameItemService;
     weekendMissionStage: WeekendMissionStage;
     status: NetworkState;
 
@@ -34,7 +40,6 @@ export class WeekendMissionContainerUnconnected extends React.Component<IProps, 
 
         this.state = {
             title: i18next.t(LocaleKey.weekendMission),
-            gameItemService: new GameItemService(),
             weekendMissionStage: anyObject,
             status: NetworkState.Loading,
 
@@ -57,7 +62,7 @@ export class WeekendMissionContainerUnconnected extends React.Component<IProps, 
     }
 
     fetchWeekendMissionStage = async (wmProperties: any) => {
-        const weekendMissionResult = await this.state.gameItemService.getWeekendMissionStage(wmProperties.weekendMissionJson, wmProperties.season, wmProperties.level);
+        const weekendMissionResult = await this.props.gameItemService.getWeekendMissionStage(wmProperties.weekendMissionJson, wmProperties.season, wmProperties.level);
         if (!weekendMissionResult.isSuccess) {
             this.setState(() => {
                 return {
@@ -99,4 +104,9 @@ export class WeekendMissionContainerUnconnected extends React.Component<IProps, 
     }
 }
 
-export const WeekendMissionContainer = withRouter(WeekendMissionContainerUnconnected);
+export const WeekendMissionContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    withRouter(WeekendMissionContainerUnconnected),
+    (services: IDependencyInjection) => ({
+        gameItemService: services.gameItemService,
+    })
+);

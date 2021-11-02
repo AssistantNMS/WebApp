@@ -3,6 +3,7 @@ import { GameItemModel } from '../../contracts/GameItemModel';
 import { GameItemService } from './GameItemService';
 import { CatalogueType } from '../../constants/CatalogueType';
 import { anyObject } from '../../helper/typescriptHacks';
+import { getHashForObjectFor1Min } from '../../helper/hashHelper';
 import { RequiredItem } from '../../contracts/RequiredItem';
 
 export class AllGameItemsService {
@@ -19,19 +20,42 @@ export class AllGameItemsService {
     CatalogueType.others.toString()
   ];
 
+  private _gameItemService: GameItemService;
+  private _hashLookup: any;
+
+  constructor(gameItemService: GameItemService) {
+    this._gameItemService = gameItemService;
+    this._hashLookup = anyObject;
+  }
+
+  async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
+    const hash = getHashForObjectFor1Min(argsArray);
+
+    if (this._hashLookup != null && this._hashLookup[hash] != null) {
+      return this._hashLookup[hash];
+    }
+
+    const jsonResult = await promise();
+    this._hashLookup[hash] = jsonResult;
+    return jsonResult;
+  }
+
   async getAllItems(): Promise<ResultWithValue<Array<GameItemModel>>> {
     return this.getSelectedCatalogueItems(this.typesArray);
   }
 
   async getSelectedCatalogueItems(catalogueTypes: Array<string>): Promise<ResultWithValue<Array<GameItemModel>>> {
+    return this._getOrAdd(() => this._getSelectedCatalogueItems(catalogueTypes), ['getSelectedCatalogueItems', catalogueTypes]);
+  }
+
+  async _getSelectedCatalogueItems(catalogueTypes: Array<string>): Promise<ResultWithValue<Array<GameItemModel>>> {
     const result = new Array<GameItemModel>();
     try {
-      const gameItemService = new GameItemService();
       const tasks = Array<Promise<ResultWithValue<GameItemModel[]>>>();
 
       for (const catType of catalogueTypes) {
         if (!this.typeExist(catType)) continue;
-        tasks.push(gameItemService.getListfromJson(catType));
+        tasks.push(this._gameItemService.getListfromJson(catType));
       }
 
       const allResults = await Promise.all(tasks);
@@ -61,6 +85,10 @@ export class AllGameItemsService {
   }
 
   async getByInputsId(itemId: string): Promise<ResultWithValue<Array<GameItemModel>>> {
+    return this._getOrAdd(() => this._getByInputsId(itemId), ['_getByInputsId', itemId]);
+  }
+
+  async _getByInputsId(itemId: string): Promise<ResultWithValue<Array<GameItemModel>>> {
     const allGenericItemsResult = await this.getAllItems();
 
     if (!allGenericItemsResult.isSuccess) {

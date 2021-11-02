@@ -13,11 +13,17 @@ import { ActionContainer } from '../../common/tile/actionContainer';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { getQuantityDialog } from '../../../helper/dialogHelper';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
+import { RequiredItem } from '../../../contracts/RequiredItem';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
 }
-interface IWithoutDepInj extends CartItem {
+interface IWithoutDepInj {
+    TypeName: string;
+    Icon: string;
+    Id: string;
+    RequiredItems: Array<RequiredItem>;
+    Quantity: number;
     editItemInCart?: (cartItem: CartItem) => void;
     removeItemFromCart?: (cartItemId: string) => void;
 }
@@ -44,7 +50,8 @@ class CartItemListTileClass extends React.Component<IProps, IState> {
     }
 
     fetchData = async (itemId: string) => {
-        const itemDetails = await this.props.gameItemService.getItemDetails(itemId);
+        const itemDetails = await this.props.gameItemService?.getItemDetails?.(itemId);
+        if (itemDetails == null) return;
 
         this.setState(() => {
             return {
@@ -69,10 +76,16 @@ class CartItemListTileClass extends React.Component<IProps, IState> {
     editItem = async (e: any) => {
         e.preventDefault();
         if (this.props.editItemInCart) {
-            const quantityResult = await getQuantityDialog(i18next.t(LocaleKey.quantity));
+            const quantityResult = await getQuantityDialog(i18next.t(LocaleKey.quantity), this.props.Quantity);
             if (quantityResult.isSuccess === false) return;
 
-            const newCartItem = { ...this.props, ...{ Quantity: quantityResult.value } }
+            const newCartItem = {
+                Id: this.props.Id,
+                Icon: this.props.Icon,
+                TypeName: this.props.TypeName,
+                RequiredItems: this.props.RequiredItems,
+                Quantity: quantityResult.value
+            }
             this.props.editItemInCart(newCartItem);
         }
     }
@@ -86,7 +99,7 @@ class CartItemListTileClass extends React.Component<IProps, IState> {
 
     render() {
         return (
-            <Link to={`${catalogueItem}/${this.props.Id}`} className="gen-item-container" draggable={false}>
+            <Link to={`${catalogueItem}/${this.props.Id}`} data-id="CartListTile" className="gen-item-container" draggable={false}>
                 <ImageContainer Name={this.state.name} Icon={this.state.icon} Colour={this.state.colour} />
                 <div className="gen-item-content-container">
                     <TextContainer text={this.state.name} />

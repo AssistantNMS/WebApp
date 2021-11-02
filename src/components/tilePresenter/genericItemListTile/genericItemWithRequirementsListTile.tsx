@@ -1,39 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { catalogueItem } from '../../../constants/Route';
 import { GameItemModel } from '../../../contracts/GameItemModel';
 import { RequiredItem } from '../../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
+import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { RequiredItemsQuantityContainer } from '../../common/tile/quantityContainer';
 import { TextContainer } from '../../common/tile/textContainer';
 import { TileLoading } from '../../core/loading/loading';
 
-interface IProps extends GameItemModel {
-}
-
-interface IState {
-    requiredItems: Array<RequiredItemDetails>;
+interface IWithDepInj {
     gameItemService: GameItemService;
 }
+interface IWithoutDepInj extends GameItemModel {
+}
 
-class GenericItemWithRequirementsListTileClass extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
-        this.state = {
-            requiredItems: [],
-            gameItemService: new GameItemService()
-        }
 
-        this.fetchData(this.props.RequiredItems);
-    }
+const GenericItemWithRequirementsListTileClass: React.FC<IProps> = (props: IProps) => {
+    const [requiredItems, setRequiredItems] = useState<Array<RequiredItemDetails>>([]);
 
-    fetchData = async (items: Array<RequiredItem>) => {
+    useEffect(() => {
+        fetchData(props.RequiredItems);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    const fetchData = async (items: Array<RequiredItem>) => {
         const requiredItemsTasks = items.map(async (item: RequiredItem) => {
-            const itemDetails = await this.state.gameItemService.getItemDetails(item.Id);
+            const itemDetails = await props.gameItemService.getItemDetails(item.Id);
             if (!itemDetails.isSuccess) return null;
 
             const requiredItemDetails: RequiredItemDetails = {
@@ -53,28 +51,29 @@ class GenericItemWithRequirementsListTileClass extends React.Component<IProps, I
             return;
         }
 
-        this.setState((prev: IState) => {
-            return {
-                requiredItems: requiredItems,
-            }
-        });
+        setRequiredItems(requiredItems);
     }
 
-    render() {
-        if (!this.state.requiredItems || this.state.requiredItems.length === 0) {
-            return (<TileLoading />);
-        }
-
-        return (
-            <Link to={`${catalogueItem}/${this.props.Id}`} data-id="GenericItemWithRequirementsListTile" className="gen-item-container" draggable={false}>
-                <ImageContainer {...this.props} />
-                <div className="gen-item-content-container">
-                    <TextContainer text={this.props.Name} />
-                    <RequiredItemsQuantityContainer requiredItems={this.state.requiredItems} />
-                </div>
-            </Link>
-        );
+    if (!requiredItems || requiredItems.length === 0) {
+        return (<TileLoading />);
     }
+
+    return (
+        <Link to={`${catalogueItem}/${props.Id}`} data-id="GenericItemWithRequirementsListTile" className="gen-item-container" draggable={false}>
+            <ImageContainer {...props} />
+            <div className="gen-item-content-container">
+                <TextContainer text={props.Name} />
+                <RequiredItemsQuantityContainer requiredItems={requiredItems} />
+            </div>
+        </Link>
+    );
 }
 
-export const GenericItemWithRequirementsListTile = (props: any | GameItemModel): JSX.Element => <GenericItemWithRequirementsListTileClass {...props} />;
+const GenericItemWithRequirementsListTileWithDepInj = withServices<IWithoutDepInj, IWithDepInj>(
+    GenericItemWithRequirementsListTileClass,
+    (services: IDependencyInjection) => ({
+        gameItemService: services.gameItemService,
+    })
+);
+
+export const GenericItemWithRequirementsListTile = (props: any | GameItemModel): JSX.Element => <GenericItemWithRequirementsListTileWithDepInj {...props} />;

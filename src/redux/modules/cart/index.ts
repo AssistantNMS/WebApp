@@ -8,6 +8,19 @@ export const initialCartState: StateCartReducer = {
 export const cartReducer = (state = initialCartState, action: any) => {
     switch (action.type) {
         case type.ADDITEM:
+            const cartItemIndex = state.cartItems.findIndex(c => c.Id === action.cartItem.Id);
+            console.log({ cartItemIndex });
+            if (cartItemIndex >= 0) {
+                const orig = { ...state.cartItems[cartItemIndex] };
+                const newQuantity = (+orig.Quantity) + (+action.cartItem.Quantity);
+                return Object.assign({}, state, {
+                    cartItems: [
+                        ...state.cartItems.slice(0, cartItemIndex),
+                        { ...orig, Quantity: newQuantity },
+                        ...state.cartItems.slice(cartItemIndex + 1)
+                    ],
+                });
+            }
             return Object.assign({}, state, {
                 cartItems: [...state.cartItems, action.cartItem],
             });
