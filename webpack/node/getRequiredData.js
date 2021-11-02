@@ -49,7 +49,7 @@ async function readItemsFromFile(filePath) {
     const fileContents = await readFile(filePath, 'utf8');
     return JSON.parse(fileContents).map(item => ({
         "Id": item.Id,
-        "Icon": item.Icon,
+        "Icon": (item.CdnUrl != null) ? item.CdnUrl : `https://app.nmsassistant.com/assets/images/${item.Icon}`,
         "Name": item.Name,
         "Group": item.Group,
         "Description": item.Description,
