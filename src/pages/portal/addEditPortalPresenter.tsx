@@ -4,6 +4,7 @@ import { PortalGlyphGridDisplay, PortalGlyphKeypadGrid } from '../../components/
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { ApplyFloatingActionButton } from '../../components/floatingActionButton/applyFloatingActionButton';
+import { BaseFloatingActionButton } from '../../components/floatingActionButton/baseFloatingActionButton';
 import * as Route from '../../constants/Route';
 import { PortalRecord } from '../../contracts/portal/portalRecord';
 import { LocaleKey } from '../../localization/LocaleKey';
@@ -51,11 +52,11 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
         <>
             <HeadComponent title={props.item.Name} />
             <NavBar title={props.item.Name} additionalItems={[
-                <li key={`editPortalName`} className="nav-item" onClick={props.editName}>
-                    <span className="nav-link pointer noselect">
-                        <i className="material-icons noselect">edit</i>
-                    </span>
-                </li>
+                <BaseFloatingActionButton
+                    key={`editPortalName`}
+                    icon={<i className="material-icons">edit</i>}
+                    onClick={props.editName}
+                />
             ]} />
             <div className="content">
                 <div className="row full pt1">

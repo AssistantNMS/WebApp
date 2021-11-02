@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import { Markdown } from '../../components/markdown';
 
 import { LazyLoadImage } from '../../components/core/lazyLoadImage/lazyLoadImage';
 import { GuideSectionItem } from '../../contracts/guide/guideSectionItem';
@@ -29,8 +29,8 @@ export const displaySectionImageItem = (sectionItem: GuideSectionItem, folder: s
 
 export const displaySectionMarkdownItem = (sectionItem: GuideSectionItem, index: number) => {
     return <div key={`${sectionItem.type}-${index}`} className="col-xl-7 col-lg-10 col-md-12 col-sm-12 col-xs-12 item ta-left">
-        <ReactMarkdown
-            children={sectionItem.content}
+        <Markdown
+            markdown={sectionItem.content}
         />
     </div>
 }

@@ -1,17 +1,16 @@
 
-import * as React from 'react';
 import i18next from 'i18next';
+import * as React from 'react';
 
-import { LocaleKey } from '../../localization/LocaleKey';
-import { AdditionalInfoChip } from '../common/chip/additionalInfoChip';
-import { TextContainer } from '../common/tile/textContainer';
-import { VersionViewModel } from '../../contracts/generated/AssistantApps/ViewModel/Version/versionViewModel';
+import { Markdown } from '../../components/markdown';
 import { PlatformType } from '../../contracts/generated/AssistantApps/Enum/platformType';
+import { VersionViewModel } from '../../contracts/generated/AssistantApps/ViewModel/Version/versionViewModel';
 import { formatDate } from '../../helper/dateHelper';
 import { platformToString } from '../../helper/platformHelper';
+import { LocaleKey } from '../../localization/LocaleKey';
+import { AdditionalInfoChip } from '../common/chip/additionalInfoChip';
 import { BottomModalSheet } from '../common/dialog/bottomModalSheet';
-
-const ReactMarkdown = require('react-markdown')
+import { TextContainer } from '../common/tile/textContainer';
 
 interface IProps {
     version: VersionViewModel;
@@ -76,10 +75,7 @@ export class WhatIsNewListTile extends React.Component<IProps, IState> {
                     <div className="container">
                         <div className="row justify pt-3" style={{ textAlign: 'left' }}>
                             <div className="col-xl-5 col-lg-6 col-md-8 col-sm-10 col-xs-12">
-                                <ReactMarkdown
-                                    source={version.markdown}
-                                    escapeHtml={true}
-                                />
+                                <Markdown markdown={version.markdown} />
                             </div>
                         </div>
                     </div>
