@@ -64,13 +64,13 @@ const ProcessorItemListTileClass: React.FC<IProps> = (props: IProps) => {
     }
 
     const colour = requiredItems.length > 0 ? requiredItems[0].Colour : '';
-    const output = requiredItems[0];
+    const [output, ...requiredItemsToDisplay] = requiredItems;
     return (
         <Link to={`${processorItem}/${props.Id}`} data-id="ProcessorItemListTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name={output.Name} Icon={output.Icon} Colour={colour} OutputQuantity={output.Quantity} />
             <div className="gen-item-content-container">
                 <TextContainer text={output.Name} />
-                <RequiredItemsQuantityContainer requiredItems={requiredItems} />
+                <RequiredItemsQuantityContainer requiredItems={requiredItemsToDisplay} />
             </div>
         </Link>
     );
