@@ -1,9 +1,8 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
+
 import { LazyLoadImage } from '../../components/core/lazyLoadImage/lazyLoadImage';
-
 import { GuideSectionItem } from '../../contracts/guide/guideSectionItem';
-
-const ReactMarkdown = require('react-markdown')
 
 export const displaySectionTextItem = (sectionItem: GuideSectionItem, index: number) => {
     return <div key={`${sectionItem.type}-${index}`} className="col-xl-7 col-lg-10 col-md-12 col-sm-12 col-xs-12 item">
@@ -31,8 +30,7 @@ export const displaySectionImageItem = (sectionItem: GuideSectionItem, folder: s
 export const displaySectionMarkdownItem = (sectionItem: GuideSectionItem, index: number) => {
     return <div key={`${sectionItem.type}-${index}`} className="col-xl-7 col-lg-10 col-md-12 col-sm-12 col-xs-12 item ta-left">
         <ReactMarkdown
-            source={sectionItem.content}
-            escapeHtml={false}
+            children={sectionItem.content}
         />
     </div>
 }
