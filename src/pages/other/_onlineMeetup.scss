@@ -5,9 +5,50 @@
 }
 
 .card {
+    &.exp {
+        margin-bottom: 0;
+    }
 
     .card-content.row {
         margin: 0;
+    }
+
+    .card-image {
+        position: relative;
+
+        &.exp {
+            height: 150px;
+
+            img {
+                max-height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .card-image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .card-top-right-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 0.25em 0.5em;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+
+        span {
+            font-size: 1.3rem;
+        }
     }
 
     .user-name {
@@ -20,6 +61,10 @@
         padding: 1em;
         display: flex;
         flex-direction: row;
+
+        &.exp {
+            padding: 0.5em;
+        }
 
         .external-link,
         .user-image {

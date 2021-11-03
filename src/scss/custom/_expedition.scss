@@ -1,0 +1,26 @@
+.expedition-season {
+    .row.full.glyphgrid {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+#app .chip.exp-alpha {
+    margin: 0 0 1em 0;
+
+    .char {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+
+        &.exp-font {
+            font-family: $expAlphaThemed;
+        }
+    }
+
+    &:hover {
+        .char {
+            font-family: $expAlphaThemed;
+        }
+    }
+}

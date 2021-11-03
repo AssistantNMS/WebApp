@@ -36,4 +36,5 @@ export interface GameItemModel {
   ProceduralStatBonuses: Array<ProceduralStatBonus>;
   NumStatsMax: number;
   NumStatsMin: number;
+  ExpeditionAlphabetTranslation: string;
 }

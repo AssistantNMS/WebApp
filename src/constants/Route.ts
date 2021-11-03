@@ -20,6 +20,7 @@ export const sync = '/sync';
 export const onlineMeetup2020 = '/onlineMeetup2020';
 export const weekendMission = '/helloGames/weekendMission';
 export const weekendMissionDetails = '/helloGames/weekendMission/detail';
+export const seasonExpedition = '/helloGames/seasonExpedition';
 export const patreon = '/patreon';
 export const nmsfm = '/nmsfm';
 export const whatIsNew = '/what-is-new';

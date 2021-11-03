@@ -11,7 +11,7 @@ import { CommunityMissionViewModel } from '../../contracts/generated/communityMi
 import { LocaleKey } from '../../localization/LocaleKey';
 import { QuicksilverItem, QuicksilverStore } from '../../contracts/data/quicksilver';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-import { IQuicksilverItemProps, QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
+import { IQuicksilverItemWithoutDepInj, QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
 
 interface IProps {
     // Container State
@@ -69,7 +69,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
         if (qsReward == null) return null;
 
         const customQuicksilverItemListTile = (communityMission: CommunityMissionViewModel) => (props: QuicksilverItem, index: number) => {
-            const customProps: IQuicksilverItemProps = { ...props, isDisabled: props.Tier >= communityMission.currentTier };
+            const customProps: IQuicksilverItemWithoutDepInj = { ...props, isDisabled: props.Tier >= communityMission.currentTier };
             return QuicksilverItemListTile(customProps, index);
         }
 

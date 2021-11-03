@@ -30,7 +30,7 @@ export const Loading = () => {
 
 export const SmallLoading = () => {
     return (
-        <div className="container">
+        <div className="container" data-id="SmallLoading">
             <div className="row">
                 <div className="col-12" style={{ textAlign: 'center' }}>
                     <img

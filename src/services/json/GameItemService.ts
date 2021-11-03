@@ -3,6 +3,7 @@ import { CatalogueType } from '../../constants/CatalogueType';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { WeekendMission } from '../../contracts/helloGames/weekendMission';
 import { WeekendMissionStage } from '../../contracts/helloGames/weekendMissionStage';
+import { ExpeditionSeason } from '../../contracts/helloGames/expeditionSeason';
 import { Processor } from '../../contracts/Processor';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
@@ -357,6 +358,21 @@ export class GameItemService extends BaseJsonService {
     return {
       isSuccess: true,
       value: result,
+      errorMessage: ''
+    }
+  }
+
+  async getAllSeasonExpeditions(): Promise<ResultWithValue<Array<ExpeditionSeason>>> {
+    return this._getOrAdd(() => this._getAllSeasonExpeditions(), ['_getAllSeasons']);
+  }
+  async _getAllSeasonExpeditions(): Promise<ResultWithValue<Array<ExpeditionSeason>>> {
+    const path = i18next.t(LocaleKey.seasonalExpeditionJson).toString();
+    const seasonExpeditionResult = await this.getAsset<Array<ExpeditionSeason>>(`json/${path}.json`);
+    if (!seasonExpeditionResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: seasonExpeditionResult.errorMessage };
+
+    return {
+      isSuccess: true,
+      value: seasonExpeditionResult.value,
       errorMessage: ''
     }
   }

@@ -43,7 +43,7 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                     </a>
                 }
             </div>
-            <div className="col-12 col-lg-10 col-md-10 col-sm-8 col-xs-9">
+            <div className="col-12 col-lg-10 col-md-10 col-sm-8 col-xs-9 ta-left ta-center-sm">
                 <h2 className="ta-left ta-center-sm" style={{ marginBottom: 0 }}>{name}</h2>
                 <h3 className="ta-left ta-center-sm" style={{ marginTop: 0 }}>{group}</h3>
                 {
@@ -60,8 +60,8 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                         </div>
                         : null
                 }
+                {props.children}
             </div>
-            {props.children}
         </div>
     );
 }

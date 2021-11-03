@@ -2,6 +2,7 @@ import React from 'react';
 
 interface IProps {
     percentage: number;
+    additionalText?: string;
 }
 
 export const ProgressBar = (props: IProps) => {
@@ -12,7 +13,9 @@ export const ProgressBar = (props: IProps) => {
                 aria-valuenow={props.percentage} aria-valuemin={0} aria-valuemax={100}
                 style={{ width: percentageString }}>
             </div>
-            <span className="text">{percentageString}</span>
+            <span className="text">{percentageString}
+                {props.additionalText != null && <span>&nbsp;-&nbsp;{props.additionalText}</span>}
+            </span>
         </div>
     )
 }

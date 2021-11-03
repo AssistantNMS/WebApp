@@ -1,5 +1,5 @@
 @import url("https://nmscd.github.io/No-Mans-Sky-Universal-Font/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.css");
-
+@import url('https://raw.githubusercontent.com/NMSCD/expedition-alphabet/master/public/assets/font/NMSExpeditionAlphabet.css');
 
 // @font-face {
 //     font-family: 'NMSFuturaProBook';
@@ -22,7 +22,11 @@ body {
 }
 
 #app.nmsThemed {
-    font-family: 'NMSFuturaProBook', Helvetica, sans-serif !important;
+    font-family: $nmsAlphaThemed;
+}
+
+#app.expAlphaThemed {
+    font-family: $expAlphaThemed;
 }
 
 #nav {
@@ -132,9 +136,14 @@ img.grayscale {
     text-align: center;
 }
 
+.mt-2em {
+    margin-top: 2em;
+}
+
 .mt-3em {
     margin-top: 3em;
 }
+
 
 // #app {
 //     overflow-y: scroll;

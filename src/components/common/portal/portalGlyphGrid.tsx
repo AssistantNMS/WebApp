@@ -25,11 +25,11 @@ export const PortalGlyphGridDisplay: React.FC<IPortalGlyphGridDisplayProps> = (p
 
     const columnDefs = {
         multiplier: props.columnMultiplier ?? 1,
-        base: 2,
+        base: 1,
         xl: 1,
-        lg: 2,
-        md: 2,
-        sm: 2,
+        lg: 1,
+        md: 1,
+        sm: 1,
         xs: 2,
     };
 
@@ -75,6 +75,6 @@ const getPortalImageType = (useAltGlyph: boolean) => {
     if (useAltGlyph) type = 'alt';
     return type;
 };
-const getPortalImage = (type: string, portalImageCode: number) => `assets/images/portals/${type}/${portalImageCode.toString(16)}.png`;
-const getPortalEmptyImage = (type: string) => `assets/images/portals/${type}/dot.png`;
+const getPortalImage = (type: string, portalImageCode: number) => `/assets/images/portals/${type}/${portalImageCode.toString(16)}.png`;
+const getPortalEmptyImage = (type: string) => `/assets/images/portals/${type}/dot.png`;
 

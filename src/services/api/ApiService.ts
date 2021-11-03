@@ -4,6 +4,7 @@ import { OnlineMeetup2020SubmissionViewModel } from '../../contracts/generated/o
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { BaseApiService } from './BaseApiService';
 import { WeekendMissionViewModel } from '../../contracts/generated/Model/HelloGames/weekendMissionViewModel';
+import { ExpeditionSeasonViewModel } from '../../contracts/generated/Model/HelloGames/expeditionSeasonViewModel';
 import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTrackDataViewModel';
 
 export class ApiService extends BaseApiService {
@@ -29,5 +30,9 @@ export class ApiService extends BaseApiService {
 
     async getNmsfm(): Promise<ResultWithValue<Array<NmsfmTrackDataViewModel>>> {
         return await this.get<Array<NmsfmTrackDataViewModel>>('NMSFM');
+    }
+
+    async getCurrentExpedition(): Promise<ResultWithValue<ExpeditionSeasonViewModel>> {
+        return await this.get<ExpeditionSeasonViewModel>('HelloGames/Expedition');
     }
 }

@@ -1,4 +1,5 @@
 const dayjs = require('dayjs');
+const relativeTime = require('dayjs/plugin/relativeTime');
 
 export const formatDate = (date: Date, format: string = 'YYYY/MM/DD'): string => {
     try {
@@ -20,4 +21,23 @@ export const dateIsBefore = (firstDate: Date, secondDate: Date): boolean => {
     catch {
         return false;
     }
+}
+
+export const percentageProgress = (startDate: Date, endDate: Date): number => {
+    const startDateMilli = dayjs(startDate).valueOf();
+    const currDateMilli = dayjs(new Date()).valueOf();
+    const endDateMilli = dayjs(endDate).valueOf();
+
+    const progressMilli = currDateMilli - startDateMilli;
+    const goalMilli = endDateMilli - startDateMilli;
+    console.log(goalMilli)
+
+    const percentage = (progressMilli / goalMilli) * 100;
+
+    return Math.round(percentage);
+}
+
+export const friendlyTimeLeft = (startDate: Date, endDate: Date): string => {
+    dayjs.extend(relativeTime);
+    return dayjs(startDate).to(endDate, true);
 }

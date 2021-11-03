@@ -35,6 +35,8 @@ import { SyncContainer } from './pages/sync/syncContainer';
 import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2020Container';
 import { WeekendMissionMenuPresenter } from './pages/helloGames/weekendMission/weekendMissionMenuPage';
 import { WeekendMissionContainer } from './pages/helloGames/weekendMission/weekendMissionContainer';
+import { ExpeditionSeasonList } from './pages/expeditionSeason/expeditionSeasonList';
+import { ExpeditionSeasonPhaseList } from './pages/expeditionSeason/expeditionSeasonPhaseList';
 import { PatreonContainer } from './pages/misc/patreonContainer';
 import { NmsfmContainer } from './pages/misc/nmsfmContainer';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
@@ -87,6 +89,8 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.onlineMeetup2020} component={OnlineMeetup2020SubmissionContainer} />
             <Route path={route.weekendMissionDetails} component={WeekendMissionContainer} />
             <Route path={route.weekendMission} component={WeekendMissionMenuPresenter} />
+            <Route path={`${route.seasonExpedition}/:seasId`} component={ExpeditionSeasonPhaseList} />
+            <Route path={route.seasonExpedition} component={ExpeditionSeasonList} />
             <Route path={route.patreon} component={PatreonContainer} />
             <Route path={route.nmsfm} component={NmsfmContainer} />
             <Route path={route.whatIsNew} component={WhatIsNewContainer} />

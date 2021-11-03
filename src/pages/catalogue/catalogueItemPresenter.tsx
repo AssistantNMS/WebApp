@@ -10,6 +10,7 @@ import { CartFloatingActionButton } from '../../components/floatingActionButton/
 import { FavouriteFloatingActionButton } from '../../components/floatingActionButton/favouriteFloatingActionButton';
 import { ShareFloatingActionButton } from '../../components/floatingActionButton/shareFloatingActionButton';
 import { showShareDialog } from '../../components/shareDialog';
+import { ExpeditionAlphabetDecoder } from '../../components/common/expeditionAlphabetDecoder';
 import { IdPrefix } from '../../constants/IdPrefix';
 import { NetworkState } from '../../constants/NetworkState';
 import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
@@ -83,7 +84,12 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
         return (
             <>
                 <div className="content">
-                    <ItemHeaderRow {...props.item} />
+                    <ItemHeaderRow {...props.item}>
+                        {
+                            props.item.ExpeditionAlphabetTranslation != null &&
+                            <ExpeditionAlphabetDecoder text={props.item.ExpeditionAlphabetTranslation} />
+                        }
+                    </ItemHeaderRow>
                     <AdditionalInfoChipRow additionalData={props.additionalData} />
 
                     {displayRequiredItems(props.resArray)}

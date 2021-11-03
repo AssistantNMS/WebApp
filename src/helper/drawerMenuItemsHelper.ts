@@ -95,6 +95,13 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     isActive: false
   });
   menuItems.push({
+    name: i18next.t(LocaleKey.seasonalExpeditionSeasons).toString(),
+    link: routes.seasonExpedition,
+    icon: 'map',
+    iconType: DrawerIconType.Material,
+    isActive: false
+  });
+  menuItems.push({
     name: i18next.t(LocaleKey.weekendMission).toString(),
     link: routes.weekendMission,
     icon: '/assets/images/drawer/weekendMission.png',

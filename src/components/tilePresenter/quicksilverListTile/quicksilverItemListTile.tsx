@@ -20,11 +20,11 @@ interface IWithDepInj {
     gameItemService: GameItemService;
 }
 
-interface IWithoutDepInj extends QuicksilverItem {
+export interface IQuicksilverItemWithoutDepInj extends QuicksilverItem {
     isDisabled: boolean;
 }
 
-export interface IQuicksilverItemProps extends IWithDepInj, IWithoutDepInj { }
+export interface IQuicksilverItemProps extends IWithDepInj, IQuicksilverItemWithoutDepInj { }
 
 const QuicksilverItemListTileClass: React.FC<IQuicksilverItemProps> = (props: IQuicksilverItemProps) => {
     const [item, setItem] = useState<GameItemModel>();
@@ -68,12 +68,12 @@ const QuicksilverItemListTileClass: React.FC<IQuicksilverItemProps> = (props: IQ
 }
 
 
-const QuicksilverItemListTileWithDepInj = withServices<IWithoutDepInj, IWithDepInj>(
+const QuicksilverItemListTileWithDepInj = withServices<IQuicksilverItemWithoutDepInj, IWithDepInj>(
     QuicksilverItemListTileClass,
     (services: IDependencyInjection) => ({
         gameItemService: services.gameItemService,
     })
 );
 
-export const QuicksilverItemListTile = (props: IQuicksilverItemProps, index: number): JSX.Element =>
+export const QuicksilverItemListTile = (props: IQuicksilverItemWithoutDepInj, index: number): JSX.Element =>
     <QuicksilverItemListTileWithDepInj {...props} />;
