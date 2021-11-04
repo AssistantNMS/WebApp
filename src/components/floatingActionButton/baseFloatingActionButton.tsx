@@ -1,7 +1,7 @@
 import React from 'react';
-
 import { Fab } from '@material/react-fab'
-import { Tooltip } from 'react-tippy';
+
+import { CustomTooltip } from '../common/tooltip/tooltip';
 
 interface IProps {
     keyString: string;
@@ -21,15 +21,13 @@ export const BaseFloatingActionButton = (props: IProps) => {
 
     if (props.tooltipText != null) {
         return (
-            <Tooltip
-                key={props.keyString + 'tooltip'}
-                title={props.tooltipText}
-                arrow={true}
-                theme="light"
+            <CustomTooltip
+                tooltipText={(props.tooltipText ?? props.icon) ?? 'tooltip'}
                 position="bottom-start"
+                theme="light"
             >
                 {child}
-            </Tooltip>
+            </CustomTooltip>
         );
     }
     return (child);

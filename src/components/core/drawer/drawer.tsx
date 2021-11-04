@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import i18next from 'i18next';
 import classNames from 'classnames';
-import { Tooltip } from 'react-tippy';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 
@@ -11,6 +10,7 @@ import { LocaleKey } from '../../../localization/LocaleKey';
 import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
 import { mapStateToProps, mapDispatchToProps } from './drawer.Redux';
 import * as metaJson from '../../../assets/data/meta.json';
+import { CustomTooltip } from '../../common/tooltip/tooltip';
 
 interface IProps {
     location: any;
@@ -55,13 +55,13 @@ export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
         if (menuItem.iconType === DrawerIconType.Custom) icon = <img className="custom-icons" src={menuItem.icon} alt={menuItem.icon} />;
 
         const child = menuItem.link.includes('http')
-            ? <a href={menuItem.link} target="_blank" rel="noopener noreferrer" className="nav-link noselect">{icon}<p>{menuItem.name}</p></a>
-            : <Link to={menuItem.link} className="nav-link noselect" draggable={false}>{icon}<p>{menuItem.name}</p></Link>
+            ? <a onClick={menuItemClick} href={menuItem.link} target="_blank" rel="noopener noreferrer" className="nav-link noselect">{icon}<p>{menuItem.name}</p></a>
+            : <Link onClick={menuItemClick} to={menuItem.link} className="nav-link noselect" draggable={false}>{icon}<p>{menuItem.name}</p></Link>
 
         const subMenuIsExpanded = expandedMenuItems.includes(menuItem.icon);
         const subMenuIconClasses = classNames('material-icons x2 pointer align-right', { 'rotate180': subMenuIsExpanded });
         return (
-            <li onClick={menuItemClick} key={`${menuItem.link}-${index}`}
+            <li key={`${menuItem.link}-${index}`}
                 className={classes} draggable={false}>
                 {child}
                 {
@@ -104,17 +104,12 @@ export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
                         data-version={require('../../../buildName.json')}>
                         {versionString}
                     </div>
-                    <Tooltip
-                        title={gameVersionGeneratedDate}
-                        arrow={true}
-                        theme="light"
-                        position="top-start"
-                    >
+                    <CustomTooltip tooltipText={gameVersionGeneratedDate} position="top-start" theme="light">
                         <div className="noselect"
                             style={{ textAlign: 'center' }}>
                             {gameVersionString}
                         </div>
-                    </Tooltip>
+                    </CustomTooltip>
                 </ul>
             </div>
         </div>

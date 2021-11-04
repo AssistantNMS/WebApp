@@ -9,7 +9,7 @@ export const getCatalogueMenuItems = (): Array<DrawerMenuItem> => {
   const menuItems = [];
   menuItems.push({
     name: i18next.t(LocaleKey.allItems).toString(),
-    link: `${catalogue}/${CatalogueType.rawMaterials}-${CatalogueType.craftedProducts}-${CatalogueType.tradeItems}-${CatalogueType.buildings}-${CatalogueType.curiosity}-${CatalogueType.cooking}-${CatalogueType.technology}-${CatalogueType.technologyModule}-${CatalogueType.constructedTechnology}-${CatalogueType.others}`,
+    link: `${catalogue}/${CatalogueType.rawMaterials}-${CatalogueType.craftedProducts}-${CatalogueType.tradeItems}-${CatalogueType.buildings}-${CatalogueType.curiosity}-${CatalogueType.cooking}-${CatalogueType.technology}-${CatalogueType.technologyModule}-${CatalogueType.constructedTechnology}-${CatalogueType.others}-${CatalogueType.proceduralProducts}`,
     icon: '/assets/images/drawer/crafted.png',
     iconType: DrawerIconType.Custom,
     isActive: false

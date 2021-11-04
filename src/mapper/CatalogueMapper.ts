@@ -29,12 +29,15 @@ export const mapToLocale = (catalogueType: string): string => {
       return i18next.t(LocaleKey.refineryJson).toString();
     case CatalogueType.nutrientProcessor.toString():
       return i18next.t(LocaleKey.nutrientProcessorJson).toString();
+    case CatalogueType.proceduralProducts.toString():
+      return i18next.t(LocaleKey.proceduralProductsJson).toString();
   }
   return '';
 }
 
 export const getCatalogueFromItemId = (itemId: string): string => {
   if (itemId.includes(IdPrefix.RawMaterial)) return CatalogueType.rawMaterials;
+  if (itemId.includes(IdPrefix.ProcProd)) return CatalogueType.proceduralProducts;
   if (itemId.includes(IdPrefix.Product)) return CatalogueType.craftedProducts;
   if (itemId.includes(IdPrefix.Trade)) return CatalogueType.tradeItems;
   if (itemId.includes(IdPrefix.Building)) return CatalogueType.buildings;

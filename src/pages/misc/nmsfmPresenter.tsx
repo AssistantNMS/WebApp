@@ -1,19 +1,17 @@
 import i18next from 'i18next';
 import React, { ReactNode } from 'react';
-import { Tooltip } from 'react-tippy';
 
-import { HeadComponent } from '../../components/core/headComponent';
-import { NavBar } from '../../components/core/navbar/navbar';
-import { Error } from '../../components/core/error/error';
 import { BottomModalSheet } from '../../components/common/dialog/bottomModalSheet';
+import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
+import { CustomTooltip } from '../../components/common/tooltip/tooltip';
+import { Error } from '../../components/core/error/error';
+import { HeadComponent } from '../../components/core/headComponent';
+import { SmallLoading } from '../../components/core/loading/loading';
+import { NavBar } from '../../components/core/navbar/navbar';
 import { NmsfmTrackListTile } from '../../components/tilePresenter/nmsfmTrackListTile';
 import { NetworkState } from '../../constants/NetworkState';
 import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTrackDataViewModel';
 import { LocaleKey } from '../../localization/LocaleKey';
-
-import './nmsfmPresenter.scss';
-import { SmallLoading } from '../../components/core/loading/loading';
-import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 
 interface IProps {
     trackListIsOpen: boolean;
@@ -49,15 +47,10 @@ export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
                         <div className="col-12">
                             <img src="/assets/images/special/nmsfm.png" alt="nmsfm" style={{ maxHeight: '50vh' }} />
                             <div className="view-queue">
-                                <Tooltip
-                                    title="View tracks"
-                                    arrow={true}
-                                    theme="light"
-                                    position="left"
-                                >
+                                <CustomTooltip tooltipText="View tracks" position="left" theme="light">
                                     <i className="material-icons action-icon noselect pointer"
                                         onClick={() => props.toggleTrackListOpen(true)}>queue_music</i>
-                                </Tooltip>
+                                </CustomTooltip>
                             </div>
                         </div>
                     </div>

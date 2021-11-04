@@ -13,4 +13,6 @@ export enum CatalogueType {
   //
   refinery = 'Refinery',
   nutrientProcessor = 'NutrientProcessor',
+
+  proceduralProducts = 'ProceduralProducts',
 }

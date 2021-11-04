@@ -1,7 +1,7 @@
 
 import React from 'react';
 import classNames from 'classnames';
-import { Tooltip } from 'react-tippy';
+import { CustomTooltip } from '../tooltip/tooltip';
 
 interface IChipRowProps {
     additionalData: Array<IChipProps>;
@@ -57,14 +57,9 @@ export const AdditionalInfoChip: React.FC<IChipProps> = (props: IChipProps) => {
             <span>{props.text}</span>
             {
                 props.children &&
-                <Tooltip
-                    title={props.tooltip}
-                    arrow={true}
-                    theme="dark"
-                    position="top"
-                >
+                <CustomTooltip tooltipText={props.tooltip} theme="transparent">
                     {props.children}
-                </Tooltip>
+                </CustomTooltip>
             }
         </div>
     );

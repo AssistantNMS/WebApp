@@ -10,4 +10,5 @@ export enum IdPrefix {
   Trade = 'trade',
   Upgrade = 'upgrade',
   ConTech = 'conTech',
+  ProcProd = 'procProd',
 }

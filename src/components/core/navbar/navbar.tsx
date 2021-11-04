@@ -90,9 +90,6 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
                                     icon={<i className="material-icons">language</i>}
                                     onClick={this.showLangDropdown}
                                 />
-                                {/* <span className="nav-link pointer" onClick={this.showLangDropdown}>
-                                    <i className="material-icons">language</i>
-                                </span> */}
                                 <div className={classNames('dropdown-menu dropdown-menu-right noselect', { 'show': this.state.langDropdownVisible })} draggable={false}>
                                     {
                                         this.state.localeMap.map((locale: LocalizationMap) => {

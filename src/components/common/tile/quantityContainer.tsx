@@ -1,9 +1,9 @@
 import i18next from 'i18next';
 import React, { ReactNode } from 'react';
-import { Tooltip } from 'react-tippy';
 
 import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
 import { LocaleKey } from '../../../localization/LocaleKey';
+import { CustomTooltip } from '../tooltip/tooltip';
 
 export interface CustomizedRequiredItemDetails extends RequiredItemDetails {
     QuantityRange?: string;
@@ -112,14 +112,9 @@ interface IBaseTooltipQuantityProps {
 export const BaseTooltipQuantityContainer: React.FC<IBaseTooltipQuantityProps> = (props: IBaseTooltipQuantityProps) => {
     return (
         <div className="quantity-container">
-            <Tooltip
-                title={props.tooltipText}
-                arrow={true}
-                theme="light"
-                position="top-start"
-            >
+            <CustomTooltip tooltipText={props.tooltipText} position="top-start">
                 {props.spans}
-            </Tooltip>
+            </CustomTooltip>
         </div>
     );
 }

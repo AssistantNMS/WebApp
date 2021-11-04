@@ -30,8 +30,6 @@ export const percentageProgress = (startDate: Date, endDate: Date): number => {
 
     const progressMilli = currDateMilli - startDateMilli;
     const goalMilli = endDateMilli - startDateMilli;
-    console.log(goalMilli)
-
     const percentage = (progressMilli / goalMilli) * 100;
 
     return Math.round(percentage);

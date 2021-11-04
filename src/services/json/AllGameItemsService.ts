@@ -17,7 +17,8 @@ export class AllGameItemsService {
     CatalogueType.technology.toString(),
     CatalogueType.technologyModule.toString(),
     CatalogueType.constructedTechnology.toString(),
-    CatalogueType.others.toString()
+    CatalogueType.others.toString(),
+    CatalogueType.proceduralProducts.toString(),
   ];
 
   private _gameItemService: GameItemService;
