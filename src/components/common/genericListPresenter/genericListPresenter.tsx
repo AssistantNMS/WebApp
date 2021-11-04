@@ -2,8 +2,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
 
-import './genericListPresenter.scss';
-
 interface IProps<T> {
     isCentered?: boolean;
     list: Array<T>;
