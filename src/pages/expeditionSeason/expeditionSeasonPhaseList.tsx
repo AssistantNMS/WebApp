@@ -1,6 +1,8 @@
 import i18next from 'i18next';
-import React, { useEffect, useState } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import { BottomModalSheet } from '../../components/common/dialog/bottomModalSheet';
 
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -13,7 +15,7 @@ import { getUseAltGlyphs } from '../../redux/modules/setting/selector';
 import { State } from '../../redux/state';
 import { ApiService } from '../../services/api/ApiService';
 import { GameItemService } from '../../services/json/GameItemService';
-import { ExpeditionSeasonHeader } from './expeditionSeasonComponents';
+import { ExpeditionSeasonHeader, ExpeditionSeasonPhases } from './expeditionSeasonComponents';
 
 interface IWithDepInj {
     apiService: ApiService;
@@ -30,11 +32,19 @@ interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj {
 }
 
 const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) => {
+    const history = useHistory();
+
     const [expedition, setExpedition] = useState<ExpeditionSeason>();
     const [expeditionStatus, setExpeditionStatus] = useState<NetworkState>(NetworkState.Loading);
+    const [isDetailPaneOpen, setDetailPaneOpen] = useState<boolean>(false);
+    const [detailPane, setDetailPane] = useState<ReactNode>(<></>);
+    const [snapPoint, setSnapPoint] = useState<number>(400);
 
     useEffect(() => {
-        fetchExpeditionData('seas-1');
+        const url = history.location.pathname;
+        const seasIdSlashIndex = url.lastIndexOf('/');
+        const seasId = url.substring(seasIdSlashIndex + 1, url.length);
+        fetchExpeditionData(seasId);
         // eslint-disable-next-line
     }, []);
 
@@ -62,7 +72,7 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
         }
     }
 
-    const title = i18next.t(LocaleKey.seasonalExpeditionSeasons);
+    const title = i18next.t(LocaleKey.seasonalExpedition);
     return (
         <>
             <HeadComponent title={title} />
@@ -75,8 +85,26 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
                         useAltGlyphs={props.useAltGlyphs}
                     />
                     <hr />
+                    <ExpeditionSeasonPhases
+                        networkState={expeditionStatus}
+                        phases={expedition?.Phases}
+                        setDetailPane={(newNode: ReactNode, snapPoint: number = 400) => {
+                            setDetailPane(newNode);
+                            setDetailPaneOpen(true);
+                            setSnapPoint(snapPoint);
+                        }}
+                    />
                 </div>
             </div>
+            <BottomModalSheet
+                isOpen={isDetailPaneOpen}
+                onClose={() => setDetailPaneOpen(false)}
+                snapPoints={[snapPoint]}
+            >
+                <div className="container">
+                    {detailPane}
+                </div>
+            </BottomModalSheet>
         </>
     );
 }

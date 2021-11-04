@@ -54,7 +54,6 @@ const ExpeditionSeasonListUnconnected: React.FC<IProps> = (props: IProps) => {
                         networkState={currentExpeditionStatus}
                         seasonDetails={currentExpedition}
                     />
-                    <hr />
                     <SeasonExpeditionCards />
                 </div>
             </div>

@@ -1,29 +1,73 @@
+import i18next from 'i18next';
 import React, { ReactNode } from 'react';
 import { Tooltip } from 'react-tippy';
 
 import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
+import { LocaleKey } from '../../../localization/LocaleKey';
+
+export interface CustomizedRequiredItemDetails extends RequiredItemDetails {
+    QuantityRange?: string;
+}
 
 interface IRequiredItemQuantityProps {
-    requiredItems: Array<RequiredItemDetails>;
+    requiredItems: Array<RequiredItemDetails | CustomizedRequiredItemDetails>;
+    limitRequiredItems?: number;
+    addExtraPadding?: boolean;
+    addBreakLines?: boolean;
 }
 
 export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps> = (props: IRequiredItemQuantityProps) => {
 
-    const requiredItemsToString = (rowIndex: number, startIndex: number, row: RequiredItemDetails) => {
-        return (rowIndex > startIndex ? ' + ' : '') +
-            row.Quantity.toString() +
-            'x ' +
-            row.Name;
+    const requiredItemsToString = (rowIndex: number, startIndex: number, row: RequiredItemDetails | CustomizedRequiredItemDetails) => {
+        let result: string = '';
+        result += (rowIndex > startIndex ? ' + ' : '');
+
+        if (row.Quantity === 0) {
+            result += row.Name + ' ' + i18next.t(LocaleKey.blueprint);
+        } else {
+            const quantityRange = (row as CustomizedRequiredItemDetails).QuantityRange;
+            if (quantityRange == null) {
+                result += row.Quantity.toString();
+            } else {
+                result += quantityRange;
+            }
+            result += 'x ' + row.Name;
+        }
+
+        return result;
     }
 
-    const requiredItemsToNodeArray = (rowIndex: number, startIndex: number, row: RequiredItemDetails): Array<ReactNode> => {
+    const requiredItemsToNodeArray = (rowIndex: number, startIndex: number, endIndex: number, row: RequiredItemDetails | CustomizedRequiredItemDetails): Array<ReactNode> => {
         const result: Array<ReactNode> = [];
+        const baseKey = `${rowIndex}-${startIndex}`;
+
         if (rowIndex > startIndex) {
-            result.push(<span key={`${rowIndex}-${startIndex}-+`}>&nbsp;+&nbsp;</span>);
+            result.push(<span key={`${baseKey}-+`}>&nbsp;+&nbsp;</span>);
+
+            if (props.addBreakLines) {
+                result.push(<br key={`${baseKey}-breakline`} />);
+            }
         }
-        result.push(<span key={`${rowIndex}-${startIndex}-quantity`}>{row.Quantity.toString()}</span>);
-        result.push(<span key={`${rowIndex}-${startIndex}-x`}>x&nbsp;</span>);
-        result.push(<span key={`${rowIndex}-${startIndex}-name`} className="item-name">{row.Name}</span>);
+
+        if (row.Quantity === 0) {
+            result.push(<span key={`${baseKey}-name-no-quantity`} className="item-name">{row.Name}&nbsp;</span>);
+            result.push(<span key={`${baseKey}-blueprint`}>{i18next.t(LocaleKey.blueprint)}</span>);
+        } else {
+            const quantityRange = (row as CustomizedRequiredItemDetails).QuantityRange;
+            if (quantityRange == null) {
+                result.push(<span key={`${baseKey}-quantity`}>{row.Quantity.toString()}</span>);
+            } else {
+                result.push(<span key={`${baseKey}-quantity-range`}>{quantityRange}</span>);
+            }
+            result.push(<span key={`${baseKey}-x`}>x&nbsp;</span>);
+            result.push(<span key={`${baseKey}-name`} className="item-name">{row.Name}</span>);
+        }
+
+        if (props.addExtraPadding) {
+            if ((rowIndex === endIndex)) {
+                result.push(<span key={`${baseKey}-space`} style={{ opacity: 0 }}>&nbsp;+&nbsp;</span>);
+            }
+        }
 
         return result;
     }
@@ -31,12 +75,25 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
     let subtitle = '';
     const quantities: Array<ReactNode> = [];
     const startIndex = 0;
+    const endIndex = props.requiredItems.length - 1;
+    const addEtc = endIndex > (props.limitRequiredItems ?? 0);
     for (let inputIndex = startIndex; inputIndex < props.requiredItems.length; inputIndex++) {
         subtitle += requiredItemsToString(inputIndex, startIndex, props.requiredItems[inputIndex]);
-        const tempArray = requiredItemsToNodeArray(inputIndex, startIndex, props.requiredItems[inputIndex]);
-        for (const temp of tempArray) {
-            quantities.push(temp);
+
+        let localEndIndex = (inputIndex === ((props.limitRequiredItems ?? 0) - 1)) ? inputIndex : endIndex;
+        if (props.limitRequiredItems == null || inputIndex < props.limitRequiredItems) {
+            const tempArray = requiredItemsToNodeArray(inputIndex, startIndex, localEndIndex, props.requiredItems[inputIndex]);
+            for (const temp of tempArray) {
+                quantities.push(temp);
+            }
         }
+    }
+
+    if (addEtc) {
+        quantities.pop();
+        quantities.push(<span key="quantity-etc-+">&nbsp;+&nbsp;</span>);
+        quantities.push(<br key="quantity-etc-br" />);
+        quantities.push(<span key="quantity-etc">{i18next.t(LocaleKey.more)}...</span>);
     }
 
     return (

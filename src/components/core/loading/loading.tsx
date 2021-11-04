@@ -28,7 +28,11 @@ export const Loading = () => {
     );
 }
 
-export const SmallLoading = () => {
+interface ISmallLoadingProps {
+    maxWidth?: string
+    hideText?: boolean
+}
+export const SmallLoading: React.FC<ISmallLoadingProps> = (props: ISmallLoadingProps) => {
     return (
         <div className="container" data-id="SmallLoading">
             <div className="row">
@@ -37,9 +41,12 @@ export const SmallLoading = () => {
                         src="/assets/images/loader.svg"
                         draggable="false"
                         alt="loading-animation"
-                        style={{ maxWidth: '100px' }}
+                        style={{ maxWidth: props.maxWidth ?? '100px' }}
                     />
-                    <h2 className="largeHeading">Loading...</h2>
+                    {
+                        (props.hideText !== true) &&
+                        <h2 className="largeHeading">Loading...</h2>
+                    }
                 </div>
             </div>
         </div>

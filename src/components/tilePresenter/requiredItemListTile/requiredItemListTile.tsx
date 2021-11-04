@@ -90,4 +90,4 @@ const RequiredItemListTileClassWithDepInj = withServices<IWithoutDepInj, IWithDe
     })
 );
 
-export const RequiredItemListTile = (props: IProps): JSX.Element => <RequiredItemListTileClassWithDepInj {...props} />;
+export const RequiredItemListTile = (props: IWithoutDepInj): JSX.Element => <RequiredItemListTileClassWithDepInj {...props} />;
