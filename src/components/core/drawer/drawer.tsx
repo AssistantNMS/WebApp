@@ -1,19 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import i18next from 'i18next';
 import classNames from 'classnames';
+import i18next from 'i18next';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
-
+import { MetaData } from '../../../contracts/data/metaData';
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
-import { LocaleKey } from '../../../localization/LocaleKey';
 import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
-import { mapStateToProps, mapDispatchToProps } from './drawer.Redux';
-import { CustomTooltip } from '../../common/tooltip/tooltip';
-import { DataJsonService } from '../../../services/json/DataJsonService';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
-import { anyObject } from '../../../helper/typescriptHacks';
-import { MetaData } from '../../../contracts/data/metaData';
+import { LocaleKey } from '../../../localization/LocaleKey';
+import { DataJsonService } from '../../../services/json/DataJsonService';
+import { CustomTooltip } from '../../common/tooltip/tooltip';
+import { mapDispatchToProps, mapStateToProps } from './drawer.Redux';
 
 interface IWithDepInj {
     dataJsonService: DataJsonService;
