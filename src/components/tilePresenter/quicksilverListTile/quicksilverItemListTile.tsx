@@ -14,7 +14,7 @@ import { ActionContainer } from '../../common/tile/actionContainer';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { useEffect, useState } from 'react';
 import { GameItemModel } from '../../../contracts/GameItemModel';
-import { SmallLoading } from '../../core/loading/loading';
+import { TileLoading } from '../../core/loading/loading';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -48,7 +48,7 @@ const QuicksilverItemListTileClass: React.FC<IQuicksilverItemProps> = (props: IQ
     }
 
     if (item == null) {
-        return (<SmallLoading />);
+        return (<TileLoading />);
     }
 
     return (

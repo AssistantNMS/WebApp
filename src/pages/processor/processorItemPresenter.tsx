@@ -12,7 +12,7 @@ import { LocaleKey } from '../../localization/LocaleKey';
 import { AllGameItemsService } from '../../services/json/AllGameItemsService';
 import { GameItemService } from '../../services/json/GameItemService';
 import { NetworkState } from '../../constants/NetworkState';
-import { SmallLoading } from '../../components/core/loading/loading';
+import { TileLoading } from '../../components/core/loading/loading';
 import { Error } from '../../components/core/error/error'
 import { ItemHeaderRow } from '../../components/core/itemHeaderRow';
 
@@ -34,7 +34,7 @@ interface IProps {
 
 export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
     const displayInputs = (requiredItems: Array<RequiredItemDetails>) => {
-        if (props.status === NetworkState.Loading) return (<SmallLoading />);
+        if (props.status === NetworkState.Loading) return (<TileLoading />);
         if (requiredItems == null || requiredItems.length < 1) return (<Error />);
 
         return (

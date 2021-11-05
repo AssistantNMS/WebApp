@@ -15,10 +15,26 @@
         margin-top: 0;
     }
 
+    // .lazy-load-image-loaded>img.phase-icon {
+    //     transition: all 250ms ease-in-out;
+
+    //     &:hover {
+    //         transform: scale(1.25);
+    //     }
+    // }
+
     .expedition-season-milestone {
         display: flex;
         width: 100%;
         border-top: 5px solid rgba(0, 0, 0, 0.1);
+
+        // .lazy-load-image-loaded img {
+        //     transition: all 250ms ease-in-out;
+        // }
+
+        // &:hover img {
+        //     transform: scale(1.25);
+        // }
 
         img {
             width: 100%;

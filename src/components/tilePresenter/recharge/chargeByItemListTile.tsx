@@ -10,7 +10,7 @@ import { IDependencyInjection, withServices } from '../../../integration/depende
 import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { TextContainer } from '../../common/tile/textContainer';
-import { SmallLoading } from '../../core/loading/loading';
+import { TileLoading } from '../../core/loading/loading';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -36,7 +36,7 @@ const ChargeByItemListTileClass: React.FC<IProps> = (props: IProps) => {
     }
 
     if (item == null) {
-        return (<SmallLoading />);
+        return (<TileLoading />);
     }
 
     const childName = (props.totalChargeAmount / props.Value) + 'x ' + item.Name;

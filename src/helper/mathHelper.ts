@@ -8,6 +8,6 @@ export const roundDecimalNum = (orig: number, decimals: number = 2): number => {
 }
 
 export const shouldListBeCentered = (orig: number): boolean => {
-    if (orig == 2) return true;
+    if (orig === 2) return true;
     return (orig % 3) === 1;
 }

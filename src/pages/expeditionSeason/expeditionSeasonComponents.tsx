@@ -201,7 +201,7 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
     return (
         <div data-id="ExpeditionSeasonPhaseWithMilestones" className="row expedition-season-phase noselect">
             <div className="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-3">
-                <LazyLoadImage src={`/${AppImage.base}${props.phase.Icon}`} alt={props.phase.Title} style={{ width: '100%', maxWidth: '250px' }} />
+                <LazyLoadImage src={`/${AppImage.base}${props.phase.Icon}`} alt={props.phase.Title} className="phase-icon" style={{ width: '100%', maxWidth: '250px' }} />
                 <h3 className="phase-title">{props.phase.Title}</h3>
                 <PositiveButton icon="info" iconPosition="left" additionalClass="mt-2em mb-2em" onClick={openDetailPane}>
                     <span>{i18next.t(LocaleKey.rewards).toString()}</span>

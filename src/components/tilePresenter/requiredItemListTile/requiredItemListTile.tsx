@@ -12,7 +12,7 @@ import { GameItemService } from '../../../services/json/GameItemService';
 import { ActionContainer } from '../../common/tile/actionContainer';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { TextContainer } from '../../common/tile/textContainer';
-import { SmallLoading } from '../../core/loading/loading';
+import { TileLoading } from '../../core/loading/loading';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -64,7 +64,7 @@ const RequiredItemListTileClass: React.FC<IProps> = (props: IProps) => {
     }
 
     if (item == null) {
-        return (<SmallLoading />);
+        return (<TileLoading />);
     }
 
     return (

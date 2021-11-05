@@ -11,7 +11,7 @@ import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { CustomizedRequiredItemDetails, RequiredItemsQuantityContainer } from '../../common/tile/quantityContainer';
 import { TextContainer } from '../../common/tile/textContainer';
-import { SmallLoading } from '../../core/loading/loading';
+import { TileLoading } from '../../core/loading/loading';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -36,7 +36,7 @@ const ExpeditionSeasonRewardTileInternal: React.FC<IProps> = (props: IProps) => 
     }
 
     if (item == null) {
-        return (<SmallLoading />);
+        return (<TileLoading />);
     }
 
     let customizedReqItem: CustomizedRequiredItemDetails = {

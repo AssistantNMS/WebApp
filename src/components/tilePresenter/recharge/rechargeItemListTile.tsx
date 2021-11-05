@@ -10,7 +10,7 @@ import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { BaseTooltipQuantityContainer } from '../../common/tile/quantityContainer';
 import { TextContainer } from '../../common/tile/textContainer';
-import { SmallLoading } from '../../core/loading/loading';
+import { TileLoading } from '../../core/loading/loading';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -44,7 +44,7 @@ const RechargeItemListTileClass: React.FC<IProps> = (props: IProps) => {
     }
 
     if (parent == null || child == null || childValue == null) {
-        return (<SmallLoading />);
+        return (<TileLoading />);
     }
 
     const value = roundDecimal((props.TotalChargeAmount / childValue));
