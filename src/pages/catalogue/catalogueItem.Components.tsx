@@ -32,6 +32,7 @@ export const displayRequiredItems = (resArray: Array<RequiredItemDetails>) => {
                         list={resArray}
                         presenter={RequiredItemDetailsListTile}
                         isCentered={shouldListBeCentered(resArray.length)}
+                        limitResultsTo={9}
                     />
                 </div>
             </div>
@@ -54,6 +55,7 @@ export const displayUsedToCreateItems = (usedToCreateArray: Array<GameItemModel>
                         list={usedToCreateArray}
                         presenter={GenericItemWithRequirementsListTile}
                         isCentered={shouldListBeCentered(usedToCreateArray.length)}
+                        limitResultsTo={9}
                     />
                 </div>
             </div>
@@ -77,6 +79,7 @@ export const displayRechargedByItems = (rechargedBy: Recharge) => {
                         list={orderedChargeBy}
                         presenter={(item: ChargeBy) => <ChargeByItemListTile {...item} totalChargeAmount={rechargedBy.TotalChargeAmount} />}
                         isCentered={shouldListBeCentered(orderedChargeBy.length)}
+                        limitResultsTo={9}
                     />
                 </div>
             </div>
@@ -100,6 +103,7 @@ export const displayUsedToRechargeItems = (id: string, name: string, usedToRecha
                         list={orderedUsedToRechargeArray}
                         presenter={(item: Recharge) => <RechargeItemListTile {...item} currentItemId={id} />}
                         isCentered={shouldListBeCentered(orderedUsedToRechargeArray.length)}
+                        limitResultsTo={9}
                     />
                 </div>
             </div>
@@ -122,6 +126,7 @@ export const displayRefItems = (refRecipesArray: Array<Processor>) => {
                         list={orderedRefRecipesArray}
                         presenter={ProcessorItemListTile}
                         isCentered={shouldListBeCentered(orderedRefRecipesArray.length)}
+                        limitResultsTo={9}
                     />
                 </div>
             </div>
@@ -145,6 +150,7 @@ export const displayUsedToRefItems = (name: string, usedToRefArray: Array<Proces
                         list={orderedUsedToRefArray}
                         presenter={ProcessorItemListTile}
                         isCentered={shouldListBeCentered(orderedUsedToRefArray.length)}
+                        limitResultsTo={9}
                     />
                 </div>
             </div>
@@ -168,6 +174,7 @@ export const displayCookItems = (cookRecipesArray: Array<Processor>) => {
                         list={orderedCookRecipesArray}
                         presenter={ProcessorItemListTile}
                         isCentered={shouldListBeCentered(orderedCookRecipesArray.length)}
+                        limitResultsTo={9}
                     />
                 </div>
             </div>
@@ -191,6 +198,7 @@ export const displayUsedToCookItems = (name: string, usedToCookArray: Array<Proc
                         list={orderedUsedToCookArray}
                         presenter={ProcessorItemListTile}
                         isCentered={shouldListBeCentered(orderedUsedToCookArray.length)}
+                        limitResultsTo={9}
                     />
                 </div>
             </div>
