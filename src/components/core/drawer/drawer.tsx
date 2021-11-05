@@ -13,6 +13,7 @@ import { CustomTooltip } from '../../common/tooltip/tooltip';
 import { DataJsonService } from '../../../services/json/DataJsonService';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { anyObject } from '../../../helper/typescriptHacks';
+import { MetaData } from '../../../contracts/data/metaData';
 
 interface IWithDepInj {
     dataJsonService: DataJsonService;
@@ -34,7 +35,7 @@ interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj {
 
 export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     const [expandedMenuItems, setExpandedMenuItems] = useState<Array<string>>([]);
-    const [metaJson, setMetaJson] = useState<any>(anyObject);
+    const [metaJson, setMetaJson] = useState<MetaData>();
 
     useEffect(() => {
         loadMetaJson();
@@ -109,8 +110,8 @@ export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     }
 
     const versionString = i18next.t(LocaleKey.appVersion).replace('{0}', process.env.REACT_APP_VERSION ?? '');
-    const gameVersionString = i18next.t(LocaleKey.gameVersion).replace('{0}', metaJson.GameVersion);
-    const gameVersionGeneratedDate = metaJson.GeneratedDate + ' '; // dont know why this is needed
+    const gameVersionString = i18next.t(LocaleKey.gameVersion).replace('{0}', (metaJson?.GameVersion ?? ''));
+    const gameVersionGeneratedDate = (metaJson?.GeneratedDate ?? '') + ' '; // dont know why this is needed
 
     return (
         <div

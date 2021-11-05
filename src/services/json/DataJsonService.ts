@@ -3,6 +3,7 @@ import { getHashForObject } from '../../helper/hashHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { QuicksilverStore } from '../../contracts/data/quicksilver';
 import { AlphabetTranslation } from '../../contracts/data/alphabetTranslation';
+import { MetaData } from '../../contracts/data/metaData';
 import { BaseJsonService } from './BaseJsonService';
 
 export class DataJsonService extends BaseJsonService {
@@ -33,26 +34,15 @@ export class DataJsonService extends BaseJsonService {
         );
     }
 
-    getAlphabetTranslations = async (): Promise<ResultWithValue<Array<AlphabetTranslation>>> =>
-        this.getDataJsonBasic('alphabetTranslations.json');
-    getssistantAppLinks = async (): Promise<ResultWithValue<Array<QuicksilverStore>>> =>
-        this.getDataJsonBasic('assistantAppLinks.json');
-    getDeveloperDetails = async (): Promise<ResultWithValue<Array<QuicksilverStore>>> =>
-        this.getDataJsonBasic('developerDetails.json');
-    getDonationsBackup = async (): Promise<ResultWithValue<Array<QuicksilverStore>>> =>
-        this.getDataJsonBasic('donationsBackup.json');
-    getEggNeuralTraits = async (): Promise<ResultWithValue<Array<QuicksilverStore>>> =>
-        this.getDataJsonBasic('eggNeuralTraits.json');
-    getMeta = async (): Promise<ResultWithValue<any>> =>
-        this.getDataJsonBasic('meta.json');
-    getNewItems = async (): Promise<ResultWithValue<Array<QuicksilverStore>>> =>
-        this.getDataJsonBasic('newItems.json');
-    getPatronsBackup = async (): Promise<ResultWithValue<Array<QuicksilverStore>>> =>
-        this.getDataJsonBasic('patronsBackup.json');
-    getQuicksilverStore = async (): Promise<ResultWithValue<Array<QuicksilverStore>>> =>
-        this.getDataJsonBasic('quicksilverStore.json');
-    getSocial = async (): Promise<ResultWithValue<Array<QuicksilverStore>>> =>
-        this.getDataJsonBasic('social.json');
-    getUnusedMilestonePatches = async (): Promise<ResultWithValue<Array<QuicksilverStore>>> =>
-        this.getDataJsonBasic('unusedMilestonePatches.json');
+    getAlphabetTranslations = () => this.getDataJsonBasic<Array<AlphabetTranslation>>('alphabetTranslations.json');
+    getssistantAppLinks = () => this.getDataJsonBasic<Array<QuicksilverStore>>('assistantAppLinks.json');
+    getDeveloperDetails = () => this.getDataJsonBasic<Array<QuicksilverStore>>('developerDetails.json');
+    getDonationsBackup = () => this.getDataJsonBasic<Array<QuicksilverStore>>('donationsBackup.json');
+    getEggNeuralTraits = () => this.getDataJsonBasic<Array<QuicksilverStore>>('eggNeuralTraits.json');
+    getMeta = () => this.getDataJsonBasic<MetaData>('meta.json');
+    getNewItems = () => this.getDataJsonBasic<Array<QuicksilverStore>>('newItems.json');
+    getPatronsBackup = () => this.getDataJsonBasic<Array<QuicksilverStore>>('patronsBackup.json');
+    getQuicksilverStore = () => this.getDataJsonBasic<Array<QuicksilverStore>>('quicksilverStore.json');
+    getSocial = () => this.getDataJsonBasic<Array<QuicksilverStore>>('social.json');
+    getUnusedMilestonePatches = () => this.getDataJsonBasic<Array<QuicksilverStore>>('unusedMilestonePatches.json');
 }

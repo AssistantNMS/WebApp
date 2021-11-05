@@ -1,6 +1,5 @@
 - Display properties on recipe screen
-- Add expedition viewer
-- Show Expedition Alphabet translations
+- Show Developer Details
 - Add share dialog
   - Force current language
   - Include name in url

@@ -1,9 +1,9 @@
-// .expedition-season-header {
-//     .row.full.glyphgrid {
-//         max-width: 700px;
-//         margin: 0 auto;
-//     }
-// }
+.expedition-season-header {
+    .row.full.glyphgrid {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+}
 
 .expedition-season-phase {
     background-color: rgba(0, 0, 0, 0.15);
@@ -19,12 +19,6 @@
         display: flex;
         width: 100%;
         border-top: 5px solid rgba(0, 0, 0, 0.1);
-
-        &:first-child {
-            @media only screen and (min-width: 576px) {
-                border-top: none;
-            }
-        }
 
         img {
             width: 100%;
@@ -42,10 +36,11 @@
 
             &.rewards {
                 display: flex;
-                max-width: 40%;
                 align-items: center;
-                text-align: right;
                 padding-right: 1em;
+                max-width: 40%;
+                text-align: right;
+                padding-bottom: 0;
 
                 .quantity-container {
                     width: 100%;
@@ -65,11 +60,23 @@
         }
 
 
-        @media only screen and (max-width: 576px) {
+        @media only screen and (min-width: 768px) {
+            &:first-child {
+                border-top: none;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
             display: block;
 
             .text-container {
                 text-align: center;
+
+                &.rewards {
+                    max-width: 100%;
+                    text-align: center;
+                    padding-bottom: 1em;
+                }
             }
 
             .rewards-container {
