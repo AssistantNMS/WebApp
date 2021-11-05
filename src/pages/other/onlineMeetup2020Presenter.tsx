@@ -15,7 +15,7 @@ interface IProps {
 
 export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IProps) => {
     const handleLoadingOrError = (displayFunc: (props: IProps) => void) => {
-        if (props.status === NetworkState.Loading) return SmallLoading();
+        if (props.status === NetworkState.Loading) return <SmallLoading />;
         if (props.status === NetworkState.Error ||
             props.items == null || props.items.length < 1) {
             return (<Error />);

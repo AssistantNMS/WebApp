@@ -19,7 +19,7 @@ interface IProps {
 export const WhatIsNewPresenter: React.FC<IProps> = (props: IProps) => {
 
     const handleLoadingOrError = (displayFunc: (props: IProps) => ReactNode): ReactNode => {
-        if (props.whatIsNewStatus === NetworkState.Loading) return SmallLoading();
+        if (props.whatIsNewStatus === NetworkState.Loading) return <SmallLoading />;
         if (props.whatIsNewStatus === NetworkState.Error) {
             return (<Error />);
         }

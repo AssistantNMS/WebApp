@@ -18,7 +18,7 @@ interface IProps {
 
 export const PatreonPresenter: React.FC<IProps> = (props: IProps) => {
     const handleLoadingOrError = (displayFunc: (props: IProps) => ReactNode) => {
-        if (props.status === NetworkState.Loading) return SmallLoading();
+        if (props.status === NetworkState.Loading) return <SmallLoading />;
         if (props.status === NetworkState.Error ||
             props.patreonItems == null ||
             props.patreonItems.length < 1) {
