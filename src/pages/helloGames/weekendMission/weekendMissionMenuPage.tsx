@@ -6,8 +6,8 @@ import { HeadComponent } from '../../../components/core/headComponent';
 import { NavBar } from '../../../components/core/navbar/navbar';
 import { ExternalUrls } from '../../../constants/ExternalUrls';
 import * as Routes from '../../../constants/Route';
+import { WeekendSeason2, WeekendSeason1 } from '../../../constants/WeekendMission';
 import { LocaleKey } from '../../../localization/LocaleKey';
-
 import './weekendMissionMenu.scss';
 
 interface IProps {
@@ -16,25 +16,7 @@ interface IProps {
 
 const WeekendMissionMenuPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
 
-    const season2Obj = {
-        weekendMissionJson: LocaleKey.weekendMissionSeason2Json,
-        season: 'MP_PORTALQUEST',
-        level: 45,
-        maxLevel: 45,
-        minLevel: 31,
-    };
-
-    const season1Obj = {
-        weekendMissionJson: LocaleKey.weekendMissionSeason1Json,
-        season: 'MP_PORTALQUEST',
-        level: 30,
-        maxLevel: 30,
-        minLevel: 1,
-    };
-
-
     const weekendMissionCard = (title: string, imageName: string, credits: string, state: any, external?: string) => {
-
         if (external != null) {
             return (
                 <a href={external} target="_blank" rel="noopener noreferrer" className={classNames('col-12 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-cs-12 weekend-mission-card')} style={{ backgroundImage: `url(/assets/images/${imageName})` }}>
@@ -66,8 +48,8 @@ const WeekendMissionMenuPresenterUnconnected: React.FC<IProps> = (props: IProps)
             <div className="content no-spacing">
                 <div className="container full">
                     <div className="row weekend-mission">
-                        {weekendMissionCard('Season 2', 'weekendMission/Season2.jpg', 'stoz0r', season2Obj)}
-                        {weekendMissionCard('Season 1', 'weekendMission/Season1.jpg', 'screenshot guy', season1Obj)}
+                        {weekendMissionCard('Season 2', 'weekendMission/Season2.jpg', 'stoz0r', WeekendSeason2)}
+                        {weekendMissionCard('Season 1', 'weekendMission/Season1.jpg', 'screenshot guy', WeekendSeason1)}
                         {weekendMissionCard('NMS Wiki', 'weekendMission/wiki.jpg', 'cyberpunk2350', {}, ExternalUrls.nmsWeekendMissionWiki)}
                     </div>
                 </div>

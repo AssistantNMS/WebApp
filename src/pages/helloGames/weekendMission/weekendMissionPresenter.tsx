@@ -37,7 +37,7 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
     const [currentMessageFlow, setMessageFlow] = React.useState(anyObject);
 
     const handleLoadingOrError = (displayFunc: (props: IProps) => void) => {
-        if (props.status === NetworkState.Loading) return SmallLoading();
+        if (props.status === NetworkState.Loading) return <SmallLoading />;
         if (props.status === NetworkState.Error ||
             !props.weekendMissionStage ||
             !props.weekendMissionStage.AppId) {

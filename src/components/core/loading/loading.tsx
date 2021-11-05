@@ -41,7 +41,7 @@ export const SmallLoading: React.FC<ISmallLoadingProps> = (props: ISmallLoadingP
                         src="/assets/images/loader.svg"
                         draggable="false"
                         alt="loading-animation"
-                        style={{ maxWidth: props.maxWidth ?? '100px' }}
+                        style={{ maxWidth: props?.maxWidth ?? '100px' }}
                     />
                     {
                         (props.hideText !== true) &&

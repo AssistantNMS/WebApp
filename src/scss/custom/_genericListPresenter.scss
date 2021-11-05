@@ -39,7 +39,8 @@
                 display: inline-block;
                 position: relative;
 
-                &.lazy-loaded-full-width {
+                &.lazy-loaded-full-width,
+                &.lazy-load-image-background {
                     height: 100px;
                     min-width: 100px;
 
