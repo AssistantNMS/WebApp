@@ -23,7 +23,7 @@ interface IProps {
 
 export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
     const handleLoadingOrError = (displayFunc: (props: IProps) => ReactNode): ReactNode => {
-        if (props.status === NetworkState.Loading) return SmallLoading();
+        if (props.status === NetworkState.Loading) return <SmallLoading />;
         if (props.status === NetworkState.Error ||
             !props.communityMission ||
             !props.communityMission.missionId) {
@@ -32,7 +32,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
         return displayFunc(props);
     }
 
-    const displayCommunityMissionData = (communityMission: CommunityMissionViewModel): ReactNode => {
+    const displayCommunityMissionData = (communityMission: CommunityMissionViewModel, quicksilverRewards: Array<QuicksilverStore>): ReactNode => {
         return (
             <>
                 <div className="row">
@@ -57,14 +57,14 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                         }
                     </div>
                 </div>
-                {displayQuicksilverData(communityMission)}
-                {displayQuicksilverData({ ...communityMission, missionId: communityMission.missionId + 1, currentTier: 0 }, LocaleKey.nextCommunityMission)}
+                {displayQuicksilverData(communityMission, quicksilverRewards)}
+                {displayQuicksilverData({ ...communityMission, missionId: communityMission.missionId + 1, currentTier: 0 }, quicksilverRewards, LocaleKey.nextCommunityMission)}
             </>
         );
     }
 
-    const displayQuicksilverData = (communityMission: CommunityMissionViewModel, title?: LocaleKey) => {
-        const qsRewards = props.quicksilverStoreItems.filter(qs => qs.MissionId === communityMission.missionId);
+    const displayQuicksilverData = (communityMission: CommunityMissionViewModel, quicksilverRewards: Array<QuicksilverStore>, title?: LocaleKey) => {
+        const qsRewards = quicksilverRewards.filter(qs => qs.MissionId === communityMission.missionId);
         const qsReward = (qsRewards != null && qsRewards.length > 0) ? qsRewards[0] : null;
         if (qsReward == null) return null;
 
@@ -103,7 +103,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                 <div className="container full pt1 pb5">
                     {
                         handleLoadingOrError((localProps: IProps) =>
-                            displayCommunityMissionData(localProps.communityMission)
+                            displayCommunityMissionData(localProps.communityMission, localProps.quicksilverStoreItems)
                         )
                     }
                 </div>

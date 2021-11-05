@@ -8,6 +8,7 @@ import { AllGameItemsService } from '../services/json/AllGameItemsService';
 import { GameItemService } from '../services/json/GameItemService';
 import { GuideService } from '../services/json/GuideService';
 import { RechargeByService } from '../services/json/RechargeByService';
+import { DataJsonService } from '../services/json/DataJsonService';
 import { ToastService } from '../services/toastService';
 
 export interface IDependencyInjection {
@@ -21,6 +22,9 @@ export interface IDependencyInjection {
   gameItemService: GameItemService;
   guideService: GuideService;
   rechargeByService: RechargeByService;
+
+  // data
+  dataJsonService: DataJsonService;
 
   // common
   toastService: ToastService,
@@ -39,6 +43,9 @@ export const defaultDependencyInjectionFunc = () => {
     allGameItemsService: new AllGameItemsService(gameItemService),
     guideService: new GuideService(),
     rechargeByService: new RechargeByService(),
+
+    // data
+    dataJsonService: new DataJsonService(),
 
     // common
     toastService: new ToastService(),

@@ -1,5 +1,4 @@
 
-import i18next from 'i18next';
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -8,9 +7,9 @@ import { catalogueItem } from '../../../constants/Route';
 import { GameItemModel } from '../../../contracts/GameItemModel';
 import { ExpeditionSeasonReward } from '../../../contracts/helloGames/expeditionSeason';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
-import { LocaleKey } from '../../../localization/LocaleKey';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../../common/tile/imageContainer';
+import { CustomizedRequiredItemDetails, RequiredItemsQuantityContainer } from '../../common/tile/quantityContainer';
 import { TextContainer } from '../../common/tile/textContainer';
 import { SmallLoading } from '../../core/loading/loading';
 
@@ -40,12 +39,23 @@ const ExpeditionSeasonRewardTileInternal: React.FC<IProps> = (props: IProps) => 
         return (<SmallLoading />);
     }
 
+    let customizedReqItem: CustomizedRequiredItemDetails = {
+        Id: props.Id,
+        Icon: item.Icon,
+        Colour: item.Colour,
+        Name: item.Name,
+        Quantity: props.AmountMax,
+    };
+    if (props.AmountMin !== props.AmountMax) {
+        customizedReqItem.QuantityRange = `(${props.AmountMin} - ${props.AmountMax})`;
+    }
+
     return (
         <Link to={`${catalogueItem}/${props.Id}`} data-id="ExpeditionSeasonRewardTile" className="gen-item-container" draggable={false}>
             <ImageContainer {...item} />
             <div className="gen-item-content-container">
                 <TextContainer text={item.Name} />
-                <div className="quantity-container">{i18next.t(LocaleKey.quantity)}: {props.AmountMin}</div>
+                <RequiredItemsQuantityContainer requiredItems={[customizedReqItem]} />
             </div>
         </Link>
     );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import i18next from 'i18next';
 import classNames from 'classnames';
 import { connect } from 'react-redux';
@@ -9,19 +9,42 @@ import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
 import { mapStateToProps, mapDispatchToProps } from './drawer.Redux';
-import * as metaJson from '../../../assets/data/meta.json';
 import { CustomTooltip } from '../../common/tooltip/tooltip';
+import { DataJsonService } from '../../../services/json/DataJsonService';
+import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
+import { anyObject } from '../../../helper/typescriptHacks';
 
-interface IProps {
+interface IWithDepInj {
+    dataJsonService: DataJsonService;
+}
+
+interface IFromRedux {
+    selectedLanguage: string;
+    toggleMenu: () => void;
+}
+
+interface IWithoutDepInj {
+}
+
+interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj {
     location: any;
     match: any;
     history: any;
-    selectedLanguage?: string;
-    toggleMenu?: () => void;
 }
 
 export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     const [expandedMenuItems, setExpandedMenuItems] = useState<Array<string>>([]);
+    const [metaJson, setMetaJson] = useState<any>(anyObject);
+
+    useEffect(() => {
+        loadMetaJson();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    const loadMetaJson = async () => {
+        const metaJson = await props.dataJsonService.getMeta();
+        if (metaJson.isSuccess) setMetaJson(metaJson.value);
+    }
 
     const baseItems = getDrawerMenuItems();
     const menuItems = baseItems.concat(menuItemSeperator);
@@ -87,7 +110,7 @@ export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
 
     const versionString = i18next.t(LocaleKey.appVersion).replace('{0}', process.env.REACT_APP_VERSION ?? '');
     const gameVersionString = i18next.t(LocaleKey.gameVersion).replace('{0}', metaJson.GameVersion);
-    const gameVersionGeneratedDate = metaJson.GeneratedDate;
+    const gameVersionGeneratedDate = metaJson.GeneratedDate + ' '; // dont know why this is needed
 
     return (
         <div
@@ -116,4 +139,9 @@ export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     );
 };
 
-export const Drawer = connect(mapStateToProps, mapDispatchToProps)(withRouter(DrawerUnconnected));
+export const Drawer = withServices<IWithoutDepInj, IWithDepInj>(
+    connect(mapStateToProps, mapDispatchToProps)(withRouter(DrawerUnconnected)),
+    (services: IDependencyInjection) => ({
+        dataJsonService: services.dataJsonService,
+    })
+);

@@ -1,6 +1,6 @@
 import { Recharge } from '../../contracts/recharge/recharge';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
-import { getHashForObjectFor1Min } from '../../helper/hashHelper';
+import { getHashForObject } from '../../helper/hashHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { BaseJsonService } from './BaseJsonService';
 
@@ -14,7 +14,7 @@ export class RechargeByService extends BaseJsonService {
     }
 
     async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
-        const hash = getHashForObjectFor1Min(argsArray);
+        const hash = getHashForObject(argsArray);
 
         if (this._hashLookup != null && this._hashLookup[hash] != null) {
             return this._hashLookup[hash];

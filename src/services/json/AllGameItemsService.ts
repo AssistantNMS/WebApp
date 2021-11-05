@@ -3,7 +3,7 @@ import { GameItemModel } from '../../contracts/GameItemModel';
 import { GameItemService } from './GameItemService';
 import { CatalogueType } from '../../constants/CatalogueType';
 import { anyObject } from '../../helper/typescriptHacks';
-import { getHashForObjectFor1Min } from '../../helper/hashHelper';
+import { getHashForObject } from '../../helper/hashHelper';
 import { RequiredItem } from '../../contracts/RequiredItem';
 
 export class AllGameItemsService {
@@ -30,7 +30,7 @@ export class AllGameItemsService {
   }
 
   async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
-    const hash = getHashForObjectFor1Min(argsArray);
+    const hash = getHashForObject(argsArray);
 
     if (this._hashLookup != null && this._hashLookup[hash] != null) {
       return this._hashLookup[hash];

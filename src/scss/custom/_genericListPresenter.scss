@@ -19,14 +19,17 @@
 
             .smol-image-container {
                 height: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 padding-left: 10px;
 
-                .image-container img {
-                    height: 50px;
-                    width: 50px;
+                .image-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        height: 64px;
+                        width: 64px;
+                    }
                 }
             }
 
@@ -65,8 +68,8 @@
 
                 .badge-container {
                     position: absolute;
-                    bottom: 0.1em;
-                    right: -.5em;
+                    bottom: 0em;
+                    right: -0.75em;
                     border-radius: 25px;
                     padding: 0 .5em;
 

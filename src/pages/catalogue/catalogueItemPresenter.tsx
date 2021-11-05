@@ -83,12 +83,9 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
     const displayDetails = () => {
         return (
             <>
-                <div className="content">
+                <div className="content noselect">
                     <ItemHeaderRow {...props.item}>
-                        {
-                            props.item.ExpeditionAlphabetTranslation != null &&
-                            <ExpeditionAlphabetDecoder text={props.item.ExpeditionAlphabetTranslation} />
-                        }
+                        <ExpeditionAlphabetDecoder id={props.item.Id} />
                     </ItemHeaderRow>
                     <AdditionalInfoChipRow additionalData={props.additionalData} />
 

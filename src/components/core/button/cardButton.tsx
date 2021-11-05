@@ -23,7 +23,9 @@ export const CardButton: React.FC<IProps> = (props: IProps) => {
                     props.imageUrl == null ? null :
                         <img src={props.imageUrl} alt={props.title} className="card-header-image" />
                 }
-                <span>{props.title} </span>
+                <div className="card-social">
+                    <span>{props.title}</span>
+                </div>
             </div>
         </a>
     );

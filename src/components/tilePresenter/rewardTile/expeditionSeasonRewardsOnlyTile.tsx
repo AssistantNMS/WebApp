@@ -1,5 +1,4 @@
 
-import i18next from 'i18next';
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { NetworkState } from '../../../constants/NetworkState';
@@ -7,11 +6,8 @@ import { GameItemModel } from '../../../contracts/GameItemModel';
 import { ExpeditionSeasonReward } from '../../../contracts/helloGames/expeditionSeason';
 import { anyObject } from '../../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
-import { LocaleKey } from '../../../localization/LocaleKey';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { CustomizedRequiredItemDetails, RequiredItemsQuantityContainer } from '../../common/tile/quantityContainer';
-import { SmallLoading } from '../../core/loading/loading';
-
 
 interface IWithDepInj {
     gameItemService: GameItemService;

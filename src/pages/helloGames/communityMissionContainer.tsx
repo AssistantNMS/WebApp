@@ -2,18 +2,19 @@ import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
 import { NetworkState } from '../../constants/NetworkState';
+import { QuicksilverStore } from '../../contracts/data/quicksilver';
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
 import { anyObject } from '../../helper/typescriptHacks';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { ApiService } from '../../services/api/ApiService';
+import { DataJsonService } from '../../services/json/DataJsonService';
 import { mapDispatchToProps, mapStateToProps } from './communityMission.Redux';
 import { CommunityMissionPresenter } from './communityMissionPresenter';
-import { QuicksilverStore } from '../../contracts/data/quicksilver';
-import * as quicksilverJson from '../../assets/data/quicksilverStore.json';
-import { ApiService } from '../../services/api/ApiService';
-import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 
 interface IWithDepInj {
     apiService: ApiService;
+    dataJsonService: DataJsonService;
 }
 interface IWithoutDepInj {
 }
@@ -34,15 +35,20 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
         this.state = {
             title: i18next.t(LocaleKey.communityMission),
             communityMission: anyObject,
-            quicksilverStoreItems: (quicksilverJson as any).default,
+            quicksilverStoreItems: [],
             status: NetworkState.Loading
         };
         this.fetchCommunityMission();
     }
 
     fetchCommunityMission = async () => {
-        const communityMissionResult = await this.props.apiService.getCommunityMission();
-        if (!communityMissionResult.isSuccess) {
+        const communityMissionTask = this.props.apiService.getCommunityMission();
+        const quickSilverStoreItemsTask = this.props.dataJsonService.getQuicksilverStore();
+
+        const communityMissionResult = await communityMissionTask;
+        const quickSilverStoreItems = await quickSilverStoreItemsTask;
+
+        if ((communityMissionResult?.isSuccess ?? false) === false || (quickSilverStoreItems?.isSuccess ?? false) === false) {
             this.setState(() => {
                 return {
                     status: NetworkState.Error
@@ -50,8 +56,10 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
             });
             return;
         }
+
         this.setState(() => {
             return {
+                quicksilverStoreItems: quickSilverStoreItems.value,
                 communityMission: communityMissionResult.value,
                 status: NetworkState.Success
             }
@@ -72,5 +80,6 @@ export const CommunityMissionContainer = withServices<IWithoutDepInj, IWithDepIn
     connect(mapStateToProps, mapDispatchToProps)(CommunityMissionContainerUnconnected),
     (services: IDependencyInjection) => ({
         apiService: services.apiService,
+        dataJsonService: services.dataJsonService,
     })
 );

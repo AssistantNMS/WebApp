@@ -19,6 +19,7 @@ import * as routes from '../../constants/Route';
 import { ExpeditionSeasonViewModel } from '../../contracts/generated/Model/HelloGames/expeditionSeasonViewModel';
 import { ExpeditionSeason, ExpeditionSeasonPhase, ExpeditionSeasonReward } from '../../contracts/helloGames/expeditionSeason';
 import { friendlyTimeLeft, guideFormatDate, percentageProgress } from '../../helper/dateHelper';
+import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 interface ICurrentExpeditionSeasonHeaderProps {
@@ -188,7 +189,7 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
 
         props.setDetailPane(
             <GenericListPresenter
-                isCentered={true}
+                isCentered={shouldListBeCentered(props.phase.Rewards.length)}
                 list={props.phase.Rewards}
                 presenter={ExpeditionSeasonRewardTile}
                 identifier={(item: ExpeditionSeasonReward) => item.Id}
@@ -234,7 +235,7 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
 
         props.setDetailPane(
             <GenericListPresenter
-                isCentered={true}
+                isCentered={shouldListBeCentered(props.milestone.Rewards.length)}
                 list={props.milestone.Rewards}
                 presenter={ExpeditionSeasonRewardTile}
                 identifier={(item: ExpeditionSeasonReward) => item.Id}

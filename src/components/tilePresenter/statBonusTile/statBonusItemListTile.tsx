@@ -14,7 +14,7 @@ const StatBonusItemListTileClass: React.FC<StatBonus> = (props: StatBonus) => {
             .replace('{0}', subTitle);
     }
     return (
-        <div className="gen-item-container" draggable={false}>
+        <div data-id="StatBonusItemListTile" className="gen-item-container" draggable={false}>
             <div className="smol-image-container">
                 <ImageContainer Name={props.Name} Icon={`stats/${props.Image}.png`} />
             </div>
@@ -47,7 +47,7 @@ const ProceduralStatBonusItemListTileClass: React.FC<ProceduralStatBonus> = (pro
     }
 
     return (
-        <div className="gen-item-container" draggable={false}>
+        <div data-id="ProceduralStatBonusItemListTile" className="gen-item-container" draggable={false}>
             <div className="smol-image-container">
                 <ImageContainer Name={props.Name} Icon={`stats/${props.Image}.png`} />
             </div>

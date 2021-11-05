@@ -76,7 +76,7 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
     const quantities: Array<ReactNode> = [];
     const startIndex = 0;
     const endIndex = props.requiredItems.length - 1;
-    const addEtc = props.limitRequiredItems && endIndex > (props.limitRequiredItems ?? 0);
+    const addEtc = props.limitRequiredItems && endIndex >= (props.limitRequiredItems ?? 0);
     for (let inputIndex = startIndex; inputIndex < props.requiredItems.length; inputIndex++) {
         subtitle += requiredItemsToString(inputIndex, startIndex, props.requiredItems[inputIndex]);
 

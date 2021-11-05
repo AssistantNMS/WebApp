@@ -15,6 +15,7 @@ import { ChargeBy } from '../../contracts/recharge/chargeBy';
 import { Recharge } from '../../contracts/recharge/recharge';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { StatBonus } from '../../contracts/StatBonus';
+import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 export const displayRequiredItems = (resArray: Array<RequiredItemDetails>) => {
@@ -27,7 +28,11 @@ export const displayRequiredItems = (resArray: Array<RequiredItemDetails>) => {
                     <h3>{i18next.t(LocaleKey.craftedUsing)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={resArray} presenter={RequiredItemDetailsListTile} />
+                    <GenericListPresenter
+                        list={resArray}
+                        presenter={RequiredItemDetailsListTile}
+                        isCentered={shouldListBeCentered(resArray.length)}
+                    />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -45,7 +50,11 @@ export const displayUsedToCreateItems = (usedToCreateArray: Array<GameItemModel>
                     <h3>{i18next.t(LocaleKey.usedToCreate)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={usedToCreateArray} presenter={GenericItemWithRequirementsListTile} />
+                    <GenericListPresenter
+                        list={usedToCreateArray}
+                        presenter={GenericItemWithRequirementsListTile}
+                        isCentered={shouldListBeCentered(usedToCreateArray.length)}
+                    />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -64,7 +73,11 @@ export const displayRechargedByItems = (rechargedBy: Recharge) => {
                     <h3>{i18next.t(LocaleKey.rechargeThisUsing)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={orderedChargeBy} presenter={(item: ChargeBy) => <ChargeByItemListTile {...item} totalChargeAmount={rechargedBy.TotalChargeAmount} />} />
+                    <GenericListPresenter
+                        list={orderedChargeBy}
+                        presenter={(item: ChargeBy) => <ChargeByItemListTile {...item} totalChargeAmount={rechargedBy.TotalChargeAmount} />}
+                        isCentered={shouldListBeCentered(orderedChargeBy.length)}
+                    />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -83,7 +96,11 @@ export const displayUsedToRechargeItems = (id: string, name: string, usedToRecha
                     <h3>{i18next.t(LocaleKey.useXToRecharge).replace('{0}', name)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={orderedUsedToRechargeArray} presenter={(item: Recharge) => <RechargeItemListTile {...item} currentItemId={id} />} />
+                    <GenericListPresenter
+                        list={orderedUsedToRechargeArray}
+                        presenter={(item: Recharge) => <RechargeItemListTile {...item} currentItemId={id} />}
+                        isCentered={shouldListBeCentered(orderedUsedToRechargeArray.length)}
+                    />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -101,7 +118,11 @@ export const displayRefItems = (refRecipesArray: Array<Processor>) => {
                     <h3>{i18next.t(LocaleKey.refinedUsing)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={orderedRefRecipesArray} presenter={ProcessorItemListTile} />
+                    <GenericListPresenter
+                        list={orderedRefRecipesArray}
+                        presenter={ProcessorItemListTile}
+                        isCentered={shouldListBeCentered(orderedRefRecipesArray.length)}
+                    />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -120,7 +141,11 @@ export const displayUsedToRefItems = (name: string, usedToRefArray: Array<Proces
                     <h3>{i18next.t(LocaleKey.refineToCreate).replace('{0}', name)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={orderedUsedToRefArray} presenter={ProcessorItemListTile} />
+                    <GenericListPresenter
+                        list={orderedUsedToRefArray}
+                        presenter={ProcessorItemListTile}
+                        isCentered={shouldListBeCentered(orderedUsedToRefArray.length)}
+                    />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -139,7 +164,11 @@ export const displayCookItems = (cookRecipesArray: Array<Processor>) => {
                     <h3>{i18next.t(LocaleKey.cookingRecipe)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={orderedCookRecipesArray} presenter={ProcessorItemListTile} />
+                    <GenericListPresenter
+                        list={orderedCookRecipesArray}
+                        presenter={ProcessorItemListTile}
+                        isCentered={shouldListBeCentered(orderedCookRecipesArray.length)}
+                    />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -158,7 +187,11 @@ export const displayUsedToCookItems = (name: string, usedToCookArray: Array<Proc
                     <h3>{i18next.t(LocaleKey.cookToCreate).replace('{0}', name)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={orderedUsedToCookArray} presenter={ProcessorItemListTile} />
+                    <GenericListPresenter
+                        list={orderedUsedToCookArray}
+                        presenter={ProcessorItemListTile}
+                        isCentered={shouldListBeCentered(orderedUsedToCookArray.length)}
+                    />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -176,7 +209,11 @@ export const displayStatBonuses = (statBonuses: Array<StatBonus>) => {
                     <h3>{i18next.t(LocaleKey.stats)}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={statBonuses} presenter={StatBonusItemListTile} />
+                    <GenericListPresenter
+                        list={statBonuses}
+                        presenter={StatBonusItemListTile}
+                        isCentered={shouldListBeCentered(statBonuses.length)}
+                    />
                 </div>
             </div>
             <hr className="mt-3em" />
@@ -196,7 +233,11 @@ export const displayProceduralStatBonuses = (numStatsMin: number, numStatsMax: n
                         .replace('{1}', numStatsMax.toString())}</h3>
                 </div>
                 <div className="col-12">
-                    <GenericListPresenter list={proceduralStatBonuses} presenter={ProceduralStatBonusItemListTile} />
+                    <GenericListPresenter
+                        list={proceduralStatBonuses}
+                        presenter={ProceduralStatBonusItemListTile}
+                        isCentered={shouldListBeCentered(proceduralStatBonuses.length)}
+                    />
                 </div>
             </div>
             <hr className="mt-3em" />

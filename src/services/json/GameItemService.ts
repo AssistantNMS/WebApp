@@ -1,14 +1,14 @@
 import i18next from 'i18next';
 import { CatalogueType } from '../../constants/CatalogueType';
 import { GameItemModel } from '../../contracts/GameItemModel';
+import { ExpeditionSeason } from '../../contracts/helloGames/expeditionSeason';
 import { WeekendMission } from '../../contracts/helloGames/weekendMission';
 import { WeekendMissionStage } from '../../contracts/helloGames/weekendMissionStage';
-import { ExpeditionSeason } from '../../contracts/helloGames/expeditionSeason';
 import { Processor } from '../../contracts/Processor';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
-import { getHashForObjectFor1Min } from '../../helper/hashHelper';
+import { getHashForObject } from '../../helper/hashHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { getCatalogueFromItemId, mapToLocale } from '../../mapper/CatalogueMapper';
@@ -24,7 +24,7 @@ export class GameItemService extends BaseJsonService {
   }
 
   async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
-    const hash = getHashForObjectFor1Min(argsArray);
+    const hash = getHashForObject(argsArray);
 
     if (this._hashLookup != null && this._hashLookup[hash] != null) {
       return this._hashLookup[hash];
