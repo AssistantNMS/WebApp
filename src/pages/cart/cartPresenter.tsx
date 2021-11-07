@@ -1,7 +1,6 @@
 import i18next from 'i18next';
 import React from 'react';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-import { CardButton } from '../../components/core/button/cardButton';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { CartListTile } from '../../components/tilePresenter/cartListTile/cartListTile';
@@ -9,6 +8,7 @@ import * as Route from '../../constants/Route';
 import { CartItem } from '../../contracts/cart/cartItem';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { requiredItemFromCart } from '../../mapper/CartMapper';
+import { PositiveButton } from '../../components/common/button/positiveButton';
 
 interface IProps {
     // Container Props
@@ -40,10 +40,8 @@ export const CartPresenter: React.FC<IProps> = (props: IProps) => {
         if (cartItems == null || cartItems.length === 0) return null;
 
         return (
-            <CardButton
-                title={i18next.t(LocaleKey.viewAllRawMaterialsRequired)}
-                className="button-active-bg"
-                url="/"
+            <PositiveButton
+                additionalClass="button-active-bg center full"
                 onClick={() => props.history.push({
                     pathname: Route.genericAllRequirements,
                     state: {
@@ -51,7 +49,9 @@ export const CartPresenter: React.FC<IProps> = (props: IProps) => {
                         requiredItems: props.cartItems.map(ci => requiredItemFromCart(ci))
                     }
                 })}
-            />
+            >
+                <span>{i18next.t(LocaleKey.viewAllRawMaterialsRequired)}</span>
+            </PositiveButton>
         );
     };
 

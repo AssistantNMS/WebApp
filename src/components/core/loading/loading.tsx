@@ -5,8 +5,7 @@ import { LocaleKey } from '../../../localization/LocaleKey';
 import { LazyLoadImage } from '../lazyLoadImage/lazyLoadImage';
 
 
-export const Loading = () => {
-
+export const Loading: React.FC = () => {
     return (
         <>
             <div className="full-page-loader opacity80"></div>

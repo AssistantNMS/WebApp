@@ -11,7 +11,7 @@ import { ExpeditionSeason } from '../../contracts/helloGames/expeditionSeason';
 import { anyObject } from '../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { getUseAltGlyphs } from '../../redux/modules/setting/selector';
+import { getCurrentLanguage, getUseAltGlyphs } from '../../redux/modules/setting/selector';
 import { State } from '../../redux/state';
 import { ApiService } from '../../services/api/ApiService';
 import { GameItemService } from '../../services/json/GameItemService';
@@ -23,6 +23,7 @@ interface IWithDepInj {
 }
 interface IFromRedux {
     useAltGlyphs: boolean;
+    selectedLanguage: string;
 }
 interface IWithoutDepInj {
 
@@ -46,7 +47,7 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
         const seasId = url.substring(seasIdSlashIndex + 1, url.length);
         fetchExpeditionData(seasId);
         // eslint-disable-next-line
-    }, []);
+    }, [props.selectedLanguage, history.location.pathname]);
 
     const fetchExpeditionData = async (seasId: string) => {
         const expeditionsResult = await props.gameItemService.getAllSeasonExpeditions();
@@ -112,6 +113,7 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
 export const mapStateToProps = (state: State) => {
     return {
         useAltGlyphs: getUseAltGlyphs(state),
+        selectedLanguage: getCurrentLanguage(state),
     };
 };
 

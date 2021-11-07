@@ -5,6 +5,7 @@ import { CatalogueType } from '../../constants/CatalogueType';
 import { anyObject } from '../../helper/typescriptHacks';
 import { getHashForObject } from '../../helper/hashHelper';
 import { RequiredItem } from '../../contracts/RequiredItem';
+import i18next from 'i18next';
 
 export class AllGameItemsService {
   private typesArray = [
@@ -30,7 +31,7 @@ export class AllGameItemsService {
   }
 
   async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
-    const hash = getHashForObject(argsArray);
+    const hash = getHashForObject([argsArray, i18next.language]);
 
     if (this._hashLookup != null && this._hashLookup[hash] != null) {
       return this._hashLookup[hash];

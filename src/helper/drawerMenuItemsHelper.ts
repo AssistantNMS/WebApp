@@ -1,7 +1,9 @@
 import i18next from 'i18next';
+import { ExistingExpeditions, IExistingExpeditions } from '../constants/Expedition';
 import * as routes from '../constants/Route';
+import { IWeekendMission, WeekendMissions } from '../constants/WeekendMission';
+import { DrawerMenuItem, IDrawerProps } from '../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../contracts/enum/DrawerIconType';
-import { DrawerMenuItem } from '../contracts/DrawerMenuItem';
 import { LocaleKey } from '../localization/LocaleKey';
 import { getCatalogueMenuItems } from './catalogueMenuItemsHelper';
 
@@ -99,6 +101,15 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     link: routes.seasonExpedition,
     icon: 'map',
     iconType: DrawerIconType.Material,
+    subs: ExistingExpeditions.map((ee: IExistingExpeditions) => {
+      return {
+        name: ee.name,
+        link: routes.seasonExpedition + '/seas-' + ee.seasonNum,
+        icon: `/${ee.icon}`,
+        iconType: DrawerIconType.Custom,
+        isActive: false,
+      };
+    }),
     isActive: false
   });
   menuItems.push({
@@ -106,6 +117,15 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     link: routes.weekendMission,
     icon: '/assets/images/drawer/weekendMission.png',
     iconType: DrawerIconType.Custom,
+    subs: WeekendMissions.map((wm: IWeekendMission) => {
+      return {
+        name: wm.name,
+        link: routes.weekendMissionDetails.replace(routes.weekendMissionParam, wm.id),
+        icon: '/assets/images/drawer/weekendMission.png',
+        iconType: DrawerIconType.Custom,
+        isActive: false,
+      };
+    }),
     isActive: false
   });
   menuItems.push(menuItemSeperator);

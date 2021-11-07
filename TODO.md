@@ -1,3 +1,6 @@
+
+- Better cart (use drill down tree thing)
+
 - Display properties on recipe screen
 - Show Developer Details
 - Add share dialog

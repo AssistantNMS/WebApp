@@ -21,7 +21,6 @@ interface IProps {
     // Container Props
 
     // Container State
-    title: string;
     weekendMissionStage: WeekendMissionStage;
     status: NetworkState;
 
@@ -125,10 +124,11 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
         );
     }
 
+    const title = i18next.t(LocaleKey.weekendMission);
     return (
         <>
-            <HeadComponent title={props.title} />
-            <NavBar title={props.title} />
+            <HeadComponent title={title} />
+            <NavBar title={title} />
             <div className="content">
                 <div className="container full pt1">
                     <div className="row">

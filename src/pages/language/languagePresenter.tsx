@@ -1,14 +1,11 @@
 import i18next from 'i18next';
 import React from 'react';
-import { CardButton } from '../../components/core/button/cardButton';
+import { CardButton } from '../../components/common/button/cardButton';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
 import { ExternalUrls } from '../../constants/ExternalUrls';
 import { LocaleKey } from '../../localization/LocaleKey';
-
-
-
 
 export const LanguagePresenter: React.FC = () => {
     const buttons = [
@@ -33,6 +30,7 @@ export const LanguagePresenter: React.FC = () => {
                                 return (
                                     <div key={button.title} className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                         <CardButton
+                                            className="center"
                                             title={button.title}
                                             url={button.url}
                                         />

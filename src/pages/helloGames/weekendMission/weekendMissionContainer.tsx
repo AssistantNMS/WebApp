@@ -1,16 +1,24 @@
-import i18next from 'i18next';
-import React from 'react';
-import { withRouter } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
+import { useHistory, withRouter } from 'react-router-dom';
+import { Error } from '../../../components/core/error/error';
+import { SmallLoading } from '../../../components/core/loading/loading';
 import { NetworkState } from '../../../constants/NetworkState';
+import { IWeekendMissionMeta, WeekendMissions } from '../../../constants/WeekendMission';
 import { WeekendMissionStage } from '../../../contracts/helloGames/weekendMissionStage';
-import { anyObject } from '../../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { LocaleKey } from '../../../localization/LocaleKey';
+import { getCurrentLanguage } from '../../../redux/modules/setting/selector';
+import { State } from '../../../redux/state';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { WeekendMissionPresenter } from './weekendMissionPresenter';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
+}
+
+interface IFromRedux {
+    selectedLanguage: string;
 }
 
 interface IWithoutDepInj {
@@ -19,93 +27,88 @@ interface IWithoutDepInj {
     history: any;
 }
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj { }
 
 
-interface IState {
-    title: string;
-    weekendMissionStage: WeekendMissionStage;
-    status: NetworkState;
+export const WeekendMissionContainerUnconnected: React.FC<IProps> = (props: IProps) => {
+    const history = useHistory();
 
-    weekendMissionJson: LocaleKey;
-    season: string;
-    level: number;
-    maxLevel: number;
-    minLevel: number;
-}
+    const [weekendMission, setWeekendMission] = useState<WeekendMissionStage>();
+    const [weekendMissionMeta, setWeekendMissionMeta] = useState<IWeekendMissionMeta>();
+    const [weekendMissionStatus, setWeekendMissionStatus] = useState<NetworkState>(NetworkState.Loading);
 
-export class WeekendMissionContainerUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+    useEffect(() => {
+        fetchWeekendMissionStage();
+        // eslint-disable-next-line
+    }, [props.selectedLanguage, history.location.pathname]);
 
-        this.state = {
-            title: i18next.t(LocaleKey.weekendMission),
-            weekendMissionStage: anyObject,
-            status: NetworkState.Loading,
 
-            weekendMissionJson: LocaleKey.weekendMissionSeason1Json,
-            season: '',
-            level: 0,
-            maxLevel: 0,
-            minLevel: 0,
-        };
-    }
+    const fetchWeekendMissionStage = async (newLevel?: number) => {
+        const url = history.location.pathname;
+        const seasIdSlashIndex = url.lastIndexOf('/');
+        const seasId = url.substring(seasIdSlashIndex + 1, url.length);
 
-    componentDidMount() {
-        this.fetchWeekendMissionStage({
-            weekendMissionJson: this.props.location?.state?.weekendMissionJson,
-            season: this.props.location?.state?.season,
-            level: this.props.location?.state?.level,
-            maxLevel: this.props.location?.state?.maxLevel,
-            minLevel: this.props.location?.state?.minLevel,
-        });
-    }
+        let wmSeasonObj;
+        for (const seasObj of WeekendMissions) {
+            if (seasObj.id !== seasId) continue;
+            wmSeasonObj = seasObj;
+        }
+        if (wmSeasonObj == null) return;
 
-    fetchWeekendMissionStage = async (wmProperties: any) => {
-        const weekendMissionResult = await this.props.gameItemService.getWeekendMissionStage(wmProperties.weekendMissionJson, wmProperties.season, wmProperties.level);
+        if (newLevel != null && newLevel != 0) {
+            wmSeasonObj.level = newLevel;
+        }
+
+        const weekendMissionResult = await props.gameItemService.getWeekendMissionStage(wmSeasonObj.weekendMissionJson, wmSeasonObj.season, wmSeasonObj.level);
         if (!weekendMissionResult.isSuccess) {
-            this.setState(() => {
-                return {
-                    status: NetworkState.Error
-                }
-            });
+            setWeekendMissionStatus(NetworkState.Error);
             return;
         }
-        this.setState(() => {
-            return {
-                weekendMissionStage: weekendMissionResult.value,
-                status: NetworkState.Success,
 
-                weekendMissionJson: wmProperties.weekendMissionJson,
-                season: wmProperties.season,
-                level: wmProperties.level,
-                maxLevel: wmProperties.maxLevel,
-                minLevel: wmProperties.minLevel,
-            }
+        setWeekendMissionMeta({
+            level: wmSeasonObj.level,
+            maxLevel: wmSeasonObj.maxLevel,
+            minLevel: wmSeasonObj.minLevel,
         });
+        setWeekendMission(weekendMissionResult.value)
+        setWeekendMissionStatus(NetworkState.Success);
     }
 
-    navigateToWeekendMissionLevel = (newLevel: number) => {
-        this.setState(() => {
-            return {
-                status: NetworkState.Loading,
-            }
-        });
-        this.fetchWeekendMissionStage({ ...this.state, level: newLevel });
+    const navigateToWeekendMissionLevel = (newLevel: number) => {
+        setWeekendMissionStatus(NetworkState.Loading);
+        fetchWeekendMissionStage(newLevel);
     }
 
-    render() {
-        return (
-            <WeekendMissionPresenter
-                {...this.state} {...this.props}
-                navigateToWeekendMissionLevel={this.navigateToWeekendMissionLevel}
-            />
-        );
-    }
+
+    if (weekendMissionStatus === NetworkState.Loading || weekendMissionMeta == null)
+        return (<SmallLoading />);
+
+    if (weekendMissionStatus === NetworkState.Error)
+        return (<Error />);
+
+
+    return (
+        <WeekendMissionPresenter
+            key={`weekend-missin-presenter-${props.selectedLanguage}`}
+            {...props}
+            weekendMissionStage={weekendMission!}
+            status={weekendMissionStatus}
+            level={(weekendMissionMeta!).level}
+            maxLevel={(weekendMissionMeta!).maxLevel}
+            minLevel={(weekendMissionMeta!).minLevel}
+            navigateToWeekendMissionLevel={navigateToWeekendMissionLevel}
+        />
+    );
 }
 
+export const mapStateToProps = (state: State) => {
+    return {
+        selectedLanguage: getCurrentLanguage(state),
+    };
+};
+
 export const WeekendMissionContainer = withServices<IWithoutDepInj, IWithDepInj>(
-    withRouter(WeekendMissionContainerUnconnected),
+    connect(mapStateToProps)(withRouter(WeekendMissionContainerUnconnected)),
     (services: IDependencyInjection) => ({
         gameItemService: services.gameItemService,
     })

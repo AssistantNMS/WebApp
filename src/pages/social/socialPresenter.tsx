@@ -1,6 +1,6 @@
 import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
-import { CardButton } from '../../components/core/button/cardButton';
+import { CardButton } from '../../components/common/button/cardButton';
 import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';

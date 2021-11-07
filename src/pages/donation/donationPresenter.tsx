@@ -1,6 +1,6 @@
 import i18next from 'i18next';
 import React from 'react';
-import { CardButton } from '../../components/core/button/cardButton';
+import { CardButton } from '../../components/common/button/cardButton';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
