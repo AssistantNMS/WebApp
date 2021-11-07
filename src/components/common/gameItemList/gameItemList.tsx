@@ -1,22 +1,28 @@
-
 import * as React from 'react';
 import ReactList from 'react-list';
-
 import { GameItemModel } from '../../../contracts/GameItemModel';
-import { GameItemListTile } from '../../tilePresenter/gameItemListTile/gameItemListTile';
-import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
 import { Processor } from '../../../contracts/Processor';
+import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
+import { GameItemListTile } from '../../tilePresenter/gameItemListTile/gameItemListTile';
 
-interface IProps {
+interface IWithDepInj {
+}
+
+interface IWithoutDepInj {
     items: Array<GameItemModel | RequiredItemDetails | Processor>;
     presenter?: (props: GameItemModel | RequiredItemDetails | Processor) => JSX.Element
 }
+
+interface IProps extends IWithDepInj, IWithoutDepInj { }
+
 
 export const GameItemListWithoutScrollTracking = (props: IProps) => {
 
     const displayGameItems = (any: any) => {
         const item: GameItemModel = any;
-        return (<GameItemListTile {...item} />);
+        return (
+            <GameItemListTile item={item} />
+        );
     }
 
     return (

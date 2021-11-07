@@ -110,6 +110,8 @@ $grip-col-min-max: minmax(50px, 200px);
     position: relative;
 
     .item {
+        position: relative;
+
         @media screen and (max-width: 500px) {
             display: flex;
             margin-bottom: 5px;
@@ -183,6 +185,16 @@ $grip-col-min-max: minmax(50px, 200px);
                 margin: 0 10px 3px 0;
                 color: white;
                 text-shadow: 1px 1px 2px #000000, 1px 1px 5px #000000;
+            }
+        }
+
+        .material-icons.top-right {
+            position: absolute;
+            top: 1.5em;
+            right: 0.25em;
+
+            &.secondary-colour {
+                color: $brand-secondary;
             }
         }
     }
