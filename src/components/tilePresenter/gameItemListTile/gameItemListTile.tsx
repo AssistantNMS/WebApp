@@ -14,6 +14,16 @@ import { CustomContextMenu } from '../../core/contextMenu/contextMenu';
 import { getQuantityDialog } from '../../../helper/dialogHelper';
 import i18next from 'i18next';
 import { LocaleKey } from '../../../localization/LocaleKey';
+import { ToastService } from '../../../services/toastService';
+import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
+
+interface IWithDepInj {
+    toastService: ToastService;
+}
+
+interface IWithoutDepInj {
+    item: GameItemModel;
+}
 
 interface IFromRedux {
     favourites: Array<FavouriteItem>;
@@ -22,11 +32,7 @@ interface IFromRedux {
     removeItemFromFavourite?: (appId: string) => void;
 }
 
-interface IWithoutRedux {
-    item: GameItemModel;
-}
-
-interface IProps extends IFromRedux, IWithoutRedux { }
+interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj { }
 
 export const GameItemListTileUnconnected: React.FC<IProps> = (props: IProps) => {
     const containerRef = useRef(null);
@@ -50,6 +56,8 @@ export const GameItemListTileUnconnected: React.FC<IProps> = (props: IProps) => 
                             content: <span><i className="material-icons">star</i>&nbsp;&nbsp;Remove from Favourites</span>,
                             onClick: () => {
                                 props.removeItemFromFavourite?.(props.item.Id);
+                                // TODO - translate
+                                props.toastService.success('Removed from Favourites');
                             },
                         }
                         : { // TODO translate
@@ -60,6 +68,8 @@ export const GameItemListTileUnconnected: React.FC<IProps> = (props: IProps) => 
                                     Icon: props.item.Icon,
                                 };
                                 props.addItemToFavourite?.(favouriteItem);
+                                // TODO - translate
+                                props.toastService.success('Added to Favourites');
                             },
                         },
                     {
@@ -75,6 +85,8 @@ export const GameItemListTileUnconnected: React.FC<IProps> = (props: IProps) => 
                                 Quantity: quantityResult.value
                             }
                             props.addItemToCart?.(cartItem);
+                            // TODO - translate
+                            props.toastService.success(`Added ${props.item.Name} to cart`);
                         },
                     }
                 ]}
@@ -84,5 +96,9 @@ export const GameItemListTileUnconnected: React.FC<IProps> = (props: IProps) => 
 }
 
 
-export const GameItemListTile: React.FC<IWithoutRedux> =
-    connect(mapStateToProps, mapDispatchToProps)(GameItemListTileUnconnected) as any;
+export const GameItemListTile = withServices<IWithoutDepInj, IWithDepInj>(
+    connect(mapStateToProps, mapDispatchToProps)(GameItemListTileUnconnected),
+    (services: IDependencyInjection) => ({
+        toastService: services.toastService,
+    })
+);
