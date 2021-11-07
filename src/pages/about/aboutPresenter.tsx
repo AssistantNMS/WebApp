@@ -40,6 +40,7 @@ export const AboutPresenter: React.FC = () => {
                                 return (
                                     <div key={button.title} className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                         <CardButton
+                                            className="center"
                                             title={button.title}
                                             url={button.url}
                                         />

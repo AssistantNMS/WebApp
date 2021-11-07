@@ -2,7 +2,7 @@ import i18next from 'i18next';
 import { ExistingExpeditions, IExistingExpeditions } from '../constants/Expedition';
 import * as routes from '../constants/Route';
 import { IWeekendMission, WeekendMissions } from '../constants/WeekendMission';
-import { DrawerMenuItem, IDrawerProps } from '../contracts/DrawerMenuItem';
+import { DrawerMenuItem } from '../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../contracts/enum/DrawerIconType';
 import { LocaleKey } from '../localization/LocaleKey';
 import { getCatalogueMenuItems } from './catalogueMenuItemsHelper';

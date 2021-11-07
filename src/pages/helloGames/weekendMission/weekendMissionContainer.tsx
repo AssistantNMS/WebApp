@@ -7,7 +7,6 @@ import { NetworkState } from '../../../constants/NetworkState';
 import { IWeekendMissionMeta, WeekendMissions } from '../../../constants/WeekendMission';
 import { WeekendMissionStage } from '../../../contracts/helloGames/weekendMissionStage';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
-import { LocaleKey } from '../../../localization/LocaleKey';
 import { getCurrentLanguage } from '../../../redux/modules/setting/selector';
 import { State } from '../../../redux/state';
 import { GameItemService } from '../../../services/json/GameItemService';
@@ -55,7 +54,7 @@ export const WeekendMissionContainerUnconnected: React.FC<IProps> = (props: IPro
         }
         if (wmSeasonObj == null) return;
 
-        if (newLevel != null && newLevel != 0) {
+        if (newLevel != null && newLevel !== 0) {
             wmSeasonObj.level = newLevel;
         }
 
