@@ -11,10 +11,6 @@ import { RequiredItem } from '../../contracts/RequiredItem';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps } from './favourite.Redux';
 
-
-
-
-
 interface IProps {
     location: any;
     match: any;

@@ -18,7 +18,7 @@ interface IProps {
 }
 
 const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
-    const title = i18next.t(LocaleKey.donation);
+    const title = i18next.t(LocaleKey.settings);
     return (
         <>
             <HeadComponent title={title} />

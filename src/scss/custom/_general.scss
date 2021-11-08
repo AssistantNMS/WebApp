@@ -126,6 +126,10 @@ img.grayscale {
     margin-top: 3em;
 }
 
+.mb-1em {
+    margin-bottom: 1em;
+}
+
 .mb-2em {
     margin-bottom: 2em;
 }
@@ -224,6 +228,12 @@ img.grayscale {
 
 .pos-rel {
     position: relative;
+}
+
+#app .main-panel #navbar.navbar {
+    @media screen and (min-width: 500px) and (max-width: 991px) {
+        padding-top: 0 !important;
+    }
 }
 
 .context-menu {

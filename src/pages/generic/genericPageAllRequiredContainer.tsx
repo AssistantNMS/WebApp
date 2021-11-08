@@ -1,25 +1,32 @@
-import i18next from 'i18next';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-import { HeadComponent } from '../../components/core/headComponent';
-import { NavBar } from '../../components/core/navbar/navbar';
-import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
-import { getAllRequiredItemsForMultiple } from '../../helper/itemHelper';
-import { LocaleKey } from '../../localization/LocaleKey';
+import { getAllRequiredItemsForMultiple, getAllRequiredItemsForTree } from '../../helper/itemHelper';
+import { GenericPageAllRequiredPresenter } from './genericPageAllRequiredPresenter';
 import { NetworkState } from '../../constants/NetworkState';
+import { GameItemService } from '../../services/json/GameItemService';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
+import { Tree } from '../../contracts/tree/tree';
+import { LocaleKey } from '../../localization/LocaleKey';
 
-interface IProps {
+interface IWithDepInj {
+    gameItemService: GameItemService;
+}
+interface IWithoutDepInj {
+}
+
+interface IProps extends IWithDepInj, IWithoutDepInj {
     location: any;
     match: any;
     history: any;
 }
 
 interface IState {
-    requiredItems: RequiredItemDetails[];
+    treeRequiredItems: Array<Tree<RequiredItemDetails>>;
+    requiredItems: Array<RequiredItemDetails>;
     status: NetworkState;
+    selectedOption: LocaleKey;
 }
 
 export class GenericPageAllRequiredContainerUnconnected extends React.Component<IProps, IState> {
@@ -27,8 +34,10 @@ export class GenericPageAllRequiredContainerUnconnected extends React.Component<
         super(props);
 
         this.state = {
+            treeRequiredItems: [],
             requiredItems: [],
             status: NetworkState.Loading,
+            selectedOption: LocaleKey.flatList,
         }
     }
 
@@ -37,38 +46,43 @@ export class GenericPageAllRequiredContainerUnconnected extends React.Component<
     }
 
     fetchData = async () => {
-        const requiredItemIds: RequiredItem[] = this.props.location?.state?.requiredItems || []
-        const itemsResult = await getAllRequiredItemsForMultiple(requiredItemIds);
+        const requiredItemIds: Array<RequiredItem> = this.props.location?.state?.requiredItems || []
+        const itemsResult = await getAllRequiredItemsForMultiple(this.props.gameItemService, requiredItemIds);
+        const treeItemsResult = await getAllRequiredItemsForTree(this.props.gameItemService, requiredItemIds);
         this.setState(() => {
             return {
+                treeRequiredItems: treeItemsResult,
                 requiredItems: itemsResult,
                 status: NetworkState.Success
             }
         });
     }
 
+    setSelectedOption = (selectedOption: LocaleKey) => {
+        this.setState(() => {
+            return {
+                selectedOption,
+            }
+        });
+    }
+
+
     render() {
-        const title = i18next.t(LocaleKey.allRawMaterialsRequired);
         return (
-            <>
-                <HeadComponent title={title} />
-                <NavBar title={title} />
-                <div className="content">
-                    <div className="container full pt1">
-                        <div className="row">
-                            <div className="col-12">
-                                {
-                                    this.state.requiredItems.length > 0
-                                        ? <GenericListPresenter list={this.state.requiredItems} presenter={RequiredItemDetailsListTile} />
-                                        : <h2>{i18next.t(LocaleKey.noCartItems)}</h2>
-                                }
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </>
+            <GenericPageAllRequiredPresenter
+                status={this.state.status}
+                treeRequiredItems={this.state.treeRequiredItems}
+                requiredItems={this.state.requiredItems}
+                selectedOption={this.state.selectedOption}
+                setSelectedOption={this.setSelectedOption}
+            />
         );
     }
 }
 
-export const GenericPageAllRequiredContainer = withRouter(GenericPageAllRequiredContainerUnconnected);
+export const GenericPageAllRequiredContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    withRouter(GenericPageAllRequiredContainerUnconnected),
+    (services: IDependencyInjection) => ({
+        gameItemService: services.gameItemService,
+    })
+);

@@ -4,11 +4,12 @@ import { GameItemModel } from '../contracts/GameItemModel';
 
 import { GameItemService } from '../services/json/GameItemService';
 import { ResultWithValue } from '../contracts/results/ResultWithValue';
+import { Tree } from '../contracts/tree/tree';
 
-export const getAllRequiredItemsForMultiple = async (requiredItems: Array<RequiredItem>): Promise<Array<RequiredItemDetails>> => {
+export const getAllRequiredItemsForMultiple = async (gameItemService: GameItemService, requiredItems: Array<RequiredItem>): Promise<Array<RequiredItemDetails>> => {
     let rawMaterials = [];
     for (const requiredItem of requiredItems) {
-        const tempItems = await getRequiredItems(requiredItem);
+        const tempItems = await getRequiredItems(gameItemService, requiredItem);
         for (let tempItemIndex = 0;
             tempItemIndex < tempItems.length;
             tempItemIndex++) {
@@ -43,10 +44,9 @@ export const getAllRequiredItemsForMultiple = async (requiredItems: Array<Requir
     return results.sort((a, b) => a.Quantity < b.Quantity ? 1 : 0);
 }
 
-export const getRequiredItems = async (requiredItem: RequiredItem): Promise<Array<RequiredItemDetails>> => {
+export const getRequiredItems = async (gameItemService: GameItemService, requiredItem: RequiredItem): Promise<Array<RequiredItemDetails>> => {
     let tempRawMaterials: Array<RequiredItem> = [];
 
-    const gameItemService = new GameItemService();
     const genericResult = await gameItemService.getItemDetails(requiredItem.Id);
     if (!genericResult.isSuccess) {
         console.error(`genericItemResult hasFailed: ${genericResult.errorMessage}`);
@@ -70,7 +70,7 @@ export const getRequiredItems = async (requiredItem: RequiredItem): Promise<Arra
         requiredIndex++) {
         const rawMaterial: RequiredItem = tempRawMaterials[requiredIndex];
         rawMaterial.Quantity *= requiredItem.Quantity;
-        const requiredItems: Array<RequiredItemDetails> = await getRequiredItems(rawMaterial);
+        const requiredItems: Array<RequiredItemDetails> = await getRequiredItems(gameItemService, rawMaterial);
         for (const requiredItem of requiredItems) {
             rawMaterialsResult.push(requiredItem);
         }
@@ -89,13 +89,12 @@ export const toRequiredItemDetails = (requiredItem: RequiredItem, genericItem: G
     return result;
 }
 
-export const requiredItemDetailsFromInputs = async (inputs: Array<RequiredItem>): Promise<ResultWithValue<Array<RequiredItemDetails>>> => {
+export const requiredItemDetailsFromInputs = async (gameItemService: GameItemService, inputs: Array<RequiredItem>): Promise<ResultWithValue<Array<RequiredItemDetails>>> => {
     const details: Array<RequiredItemDetails> = [];
 
     for (let refInputIndex = 0; refInputIndex < inputs.length; refInputIndex++) {
         const refinerInput = inputs[refInputIndex];
 
-        const gameItemService = new GameItemService();
         const itemResult = await gameItemService.getItemDetails(refinerInput.Id);
         if (!itemResult.isSuccess) continue;
         details.push(toRequiredItemDetails(refinerInput, itemResult.value));
@@ -112,4 +111,37 @@ export const requiredItemDetailsFromInputs = async (inputs: Array<RequiredItem>)
             value: details,
             errorMessage: 'no item found for refiner inputs'
         };
+}
+
+export const getRequiredItemsForTreeItem = async (gameItemService: GameItemService, requiredItem: RequiredItem): Promise<Tree<RequiredItemDetails> | null> => {
+    const genericResult = await gameItemService.getItemDetails(requiredItem.Id);
+    if (!genericResult.isSuccess) {
+        console.error(`genericItemResult hasFailed: ${genericResult.errorMessage}`);
+        return null;
+    }
+
+    const reqItemsDetails: Array<Tree<RequiredItemDetails>> = [];
+    for (let reqInput = 0; reqInput < genericResult.value.RequiredItems.length; reqInput++) {
+        const refinerInput: RequiredItem = genericResult.value.RequiredItems[reqInput];
+        const treeReq = await getRequiredItemsForTreeItem(gameItemService, refinerInput);
+        if (treeReq != null) reqItemsDetails.push(treeReq);
+    }
+
+    let currentItemDetail: RequiredItemDetails = toRequiredItemDetails(requiredItem, genericResult.value);
+    const result: Tree<RequiredItemDetails> = {
+        item: currentItemDetail,
+        children: reqItemsDetails,
+    };
+    return result;
+}
+
+export const getAllRequiredItemsForTree = async (gameItemService: GameItemService, requiredItems: Array<RequiredItem>): Promise<Array<Tree<RequiredItemDetails>>> => {
+    const results: Array<Tree<RequiredItemDetails>> = [];
+
+    for (const reqItem of requiredItems) {
+        const topLevel = await getRequiredItemsForTreeItem(gameItemService, reqItem);
+        // console.log({ topLevel });
+        if (topLevel != null) results.push(topLevel);
+    }
+    return results;
 }
