@@ -1,5 +1,4 @@
-import React, { ReactNode, useEffect, useState } from 'react';
-import { AssistantAppLinkItem, AssistantAppLinks } from '../../contracts/data/assistantAppLinks';
+import React, { useEffect, useState } from 'react';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { ImageContainer } from '../../components/common/tile/imageContainer';
