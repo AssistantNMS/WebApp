@@ -10,7 +10,7 @@ import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { Tree } from '../../contracts/tree/tree';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { GenericPageAllRequiredTree } from './genericPageAllRequiredTree';
-var SegmentedControl = require('segmented-control');
+const SegmentedControl = require('segmented-control');
 
 interface IProps {
     status: NetworkState;
@@ -47,7 +47,7 @@ export const GenericPageAllRequiredPresenter: React.FC<IProps> = (props: IProps)
     const options = [
         LocaleKey.flatList,
         LocaleKey.tree,
-    ]
+    ];
 
     const title = i18next.t(LocaleKey.allRawMaterialsRequired);
     return (
@@ -59,7 +59,7 @@ export const GenericPageAllRequiredPresenter: React.FC<IProps> = (props: IProps)
                     <div className="row justify mb-1em">
                         <div className="col-12 col-xl-6 col-lg-8 col-md-8 col-sm-10 col-xs-10">
                             <SegmentedControl.SegmentedControl
-                                name="platformChoice"
+                                name="allMaterialRequired"
                                 options={options.map((opt) => ({
                                     label: i18next.t(opt),
                                     value: opt,

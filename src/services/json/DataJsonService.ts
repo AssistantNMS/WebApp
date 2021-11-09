@@ -4,6 +4,8 @@ import { anyObject } from '../../helper/typescriptHacks';
 import { QuicksilverStore } from '../../contracts/data/quicksilver';
 import { AlphabetTranslation } from '../../contracts/data/alphabetTranslation';
 import { MetaData } from '../../contracts/data/metaData';
+import { AssistantAppLinks } from '../../contracts/data/assistantAppLinks';
+import { AssistantAppsTeam } from '../../contracts/data/assistantAppsTeam';
 import { BaseJsonService } from './BaseJsonService';
 
 export class DataJsonService extends BaseJsonService {
@@ -45,4 +47,6 @@ export class DataJsonService extends BaseJsonService {
     getQuicksilverStore = () => this.getDataJsonBasic<Array<QuicksilverStore>>('quicksilverStore.json');
     getSocial = () => this.getDataJsonBasic<Array<QuicksilverStore>>('social.json');
     getUnusedMilestonePatches = () => this.getDataJsonBasic<Array<QuicksilverStore>>('unusedMilestonePatches.json');
+    getAssistantAppLinks = () => this.getDataJsonBasic<Array<AssistantAppLinks>>('assistantAppLinks.json');
+    getAssistantAppsTeamMembers = () => this.getDataJsonBasic<Array<AssistantAppsTeam>>('assistantAppTeam.json');
 }

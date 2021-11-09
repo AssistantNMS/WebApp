@@ -8,6 +8,7 @@ import { BadgeContainer } from './badgeContainer';
 interface IProps {
     Icon: string;
     Directory?: string;
+    IsExternal?: boolean;
     Name: string;
     greyScale?: boolean;
     Description?: string;
@@ -18,6 +19,9 @@ interface IProps {
 
 export const ImageContainer = (props: IProps) => {
     let imageString = props.Directory ? `${props.Directory}${props.Icon}` : `/assets/images/${props.Icon}`
+    if (props.IsExternal === true) {
+        imageString = props.Icon;
+    }
     let styleObj: any = {};
     if (props.Colour != null) {
         styleObj.backgroundColor = props.greyScale === true ? 'grey' : `#${props.Colour}`;

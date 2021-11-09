@@ -25,7 +25,7 @@ export function GenericListPresenter<T>(props: IProps<T>) {
     );
 
     const renderShowHideMore = () => {
-        if (props.limitResultsTo == null || props.list.length < props.limitResultsTo) {
+        if (props.limitResultsTo == null || props.list.length <= props.limitResultsTo) {
             return (<span></span>);
         }
 

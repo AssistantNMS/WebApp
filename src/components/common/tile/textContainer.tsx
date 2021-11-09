@@ -1,5 +1,4 @@
-
-import * as React from 'react';
+import React from 'react';
 
 export const TextContainer = (props: { text: string, additionalCss?: string }) => (
     <div className={`text-container ${props.additionalCss || ''}`}>

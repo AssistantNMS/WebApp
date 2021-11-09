@@ -47,7 +47,7 @@ const RechargeItemListTileClass: React.FC<IProps> = (props: IProps) => {
         return (<TileLoading />);
     }
 
-    const value = roundDecimal((props.TotalChargeAmount / childValue));
+    const value = roundDecimal((props.TotalChargeAmount / childValue), 0);
     const subtitle = value + 'x ' + child.Name;
 
     const quantityNodes: Array<ReactNode> = [

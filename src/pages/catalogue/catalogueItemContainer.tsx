@@ -221,7 +221,7 @@ class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> 
                 additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: '/assets/images/nanites.png', tooltip: 'Nanites' });
                 break;
             case CurrencyType.SALVAGEDDATA:
-                additionalData.push({ text: itemDetail.BlueprintCost, image: '/assets/images/curiosities/44.png', tooltip: 'Salvaged Data' });
+                additionalData.push({ text: itemDetail.BlueprintCost, image: '/assets/images/curiosities/16.png', tooltip: 'Salvaged Data' });
                 break;
             case CurrencyType.FACTORYOVERRIDE:
                 additionalData.push({ text: itemDetail.BlueprintCost, image: '/assets/images/special/factoryOverride.png', tooltip: 'Factory Override Unit' });

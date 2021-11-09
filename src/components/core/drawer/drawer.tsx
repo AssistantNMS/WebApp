@@ -1,52 +1,29 @@
 import classNames from 'classnames';
-import i18next from 'i18next';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
-import { MetaData } from '../../../contracts/data/metaData';
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
 import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
-import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
-import { LocaleKey } from '../../../localization/LocaleKey';
-import { DataJsonService } from '../../../services/json/DataJsonService';
-import { CustomTooltip } from '../../common/tooltip/tooltip';
+import { AboutDrawerTilePresenter } from '../../common/about/aboutDrawerTilePresenter';
+import { AssistantAppsAboutDrawerTilePresenter } from '../../common/about/assistantAppsAboutDrawerTilePresenter';
 import { mapDispatchToProps, mapStateToProps } from './drawer.Redux';
-
-interface IWithDepInj {
-    dataJsonService: DataJsonService;
-}
 
 interface IFromRedux {
     selectedLanguage: string;
     toggleMenu: () => void;
 }
 
-interface IWithoutDepInj {
-}
-
-interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj {
+interface IProps extends IFromRedux {
     location: any;
     match: any;
     history: any;
 }
 
-export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
+const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     const [expandedMenuItems, setExpandedMenuItems] = useState<Array<string>>([]);
-    const [metaJson, setMetaJson] = useState<MetaData>();
 
-    useEffect(() => {
-        loadMetaJson();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
-    const loadMetaJson = async () => {
-        const metaJson = await props.dataJsonService.getMeta();
-        if (metaJson.isSuccess) setMetaJson(metaJson.value);
-    }
-
-    const baseItems = getDrawerMenuItems();
-    const menuItems = baseItems.concat(menuItemSeperator);
+    const menuItems = getDrawerMenuItems();
 
     const menuItemClick = () => {
         if (props.toggleMenu != null) {
@@ -65,7 +42,7 @@ export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     }
 
     const renderMenuItem = (pathname: string) => (menuItem: DrawerMenuItem, index: number) => {
-        const classes = classNames('nav-item noselect', {
+        const classes = classNames('nav-item', {
             active: pathname === menuItem.link,
             separator: menuItem.isSeparator
         });
@@ -77,8 +54,8 @@ export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
         if (menuItem.iconType === DrawerIconType.Custom) icon = <img className="custom-icons" src={menuItem.icon} alt={menuItem.icon} />;
 
         const child = menuItem.link.includes('http')
-            ? <a onClick={menuItemClick} href={menuItem.link} target="_blank" rel="noopener noreferrer" className="nav-link noselect">{icon}<p>{menuItem.name}</p></a>
-            : <Link onClick={menuItemClick} to={menuItem.link} className="nav-link noselect" draggable={false}>{icon}<p>{menuItem.name}</p></Link>
+            ? <a onClick={menuItemClick} href={menuItem.link} target="_blank" rel="noopener noreferrer" className="nav-link">{icon}<p>{menuItem.name}</p></a>
+            : <Link onClick={menuItemClick} to={menuItem.link} className="nav-link" draggable={false}>{icon}<p>{menuItem.name}</p></Link>
 
         const subMenuIsExpanded = expandedMenuItems.includes(menuItem.icon);
         const subMenuIconClasses = classNames('material-icons x2 pointer align-right', { 'rotate180': subMenuIsExpanded });
@@ -101,46 +78,29 @@ export const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
         );
     }
 
-    const renderMenuItems = (menuItems: DrawerMenuItem[]) => {
+    const renderMenuItems = (menuItems: Array<DrawerMenuItem>) => {
         const { pathname } = props.location;
 
         return menuItems.map(renderMenuItem(pathname));
     }
 
-    const versionString = i18next.t(LocaleKey.appVersion).replace('{0}', process.env.REACT_APP_VERSION ?? '');
-    const gameVersionString = i18next.t(LocaleKey.gameVersion).replace('{0}', (metaJson?.GameVersion ?? ''));
-    const gameVersionGeneratedDate = (metaJson?.GeneratedDate ?? '') + ' '; // dont know why this is needed
-
     return (
         <div
-            className={classNames('sidebar', props.selectedLanguage)}>
+            className={classNames('sidebar noselect', props.selectedLanguage)}>
             <div className="sidebar-wrapper ps-theme-default">
                 <ul className="nav">
-                    <div className="logo noselect">
+                    <div className="logo">
                         <Link to="/" draggable={false}><img src="/assets/images/DrawerHeader.png" draggable={false} alt="drawerHeader" /></Link>
                     </div>
                     {renderMenuItems(menuItems)}
+                    <AssistantAppsAboutDrawerTilePresenter />
+                    {renderMenuItems([menuItemSeperator])}
                     <br />
-                    <div className="noselect"
-                        style={{ textAlign: 'center', padding: '.5em .5em 0 .5em' }}
-                        data-version={require('../../../buildName.json')}>
-                        {versionString}
-                    </div>
-                    <CustomTooltip tooltipText={gameVersionGeneratedDate} position="top-start" theme="light">
-                        <div className="noselect"
-                            style={{ textAlign: 'center' }}>
-                            {gameVersionString}
-                        </div>
-                    </CustomTooltip>
+                    <AboutDrawerTilePresenter />
                 </ul>
             </div>
         </div>
     );
 };
 
-export const Drawer = withServices<IWithoutDepInj, IWithDepInj>(
-    connect(mapStateToProps, mapDispatchToProps)(withRouter(DrawerUnconnected)),
-    (services: IDependencyInjection) => ({
-        dataJsonService: services.dataJsonService,
-    })
-);
+export const Drawer = connect(mapStateToProps, mapDispatchToProps)(withRouter(DrawerUnconnected));
