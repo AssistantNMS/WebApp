@@ -35,7 +35,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
     const displayCommunityMissionData = (communityMission: CommunityMissionViewModel, quicksilverRewards: Array<QuicksilverStore>): ReactNode => {
         return (
             <>
-                <div className="row">
+                <div className="row noselect">
                     <div className="col-12">
                         <h3>
                             {i18next.t(LocaleKey.researchProgress)}<br />
@@ -46,7 +46,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                         <ProgressBar percentage={communityMission.percentage} />
                     </div>
                 </div>
-                <div className="row">
+                <div className="row noselect">
                     <div className="col-12">
                         {
                             i18next.t(LocaleKey.communityMissionContent).split('\n').map((text: string, index: number) => (
@@ -79,10 +79,10 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                     title &&
                     <>
                         <hr />
-                        <h3>{i18next.t(title)}</h3>
+                        <h3 className="noselect">{i18next.t(title)}</h3>
                     </>
                 }
-                <div className="row pt-3">
+                <div className="row noselect pt-3">
                     <div className="col-12">
                         <GenericListPresenter
                             list={qsReward.Items}
