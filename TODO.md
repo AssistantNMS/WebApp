@@ -1,3 +1,4 @@
+- Community Mission planner
 - Display properties on recipe screen
 - Show Developer Details
 - Add share dialog
