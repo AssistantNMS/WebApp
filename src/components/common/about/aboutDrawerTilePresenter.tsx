@@ -32,14 +32,17 @@ export const AboutDrawerTilePresenterUnconnected: React.FC<IProps> = (props: IPr
     const versionString = i18next.t(LocaleKey.appVersion).replace('{0}', process.env.REACT_APP_VERSION ?? '');
     const gameVersionString = i18next.t(LocaleKey.gameVersion).replace('{0}', (metaJson?.GameVersion ?? ''));
     const gameVersionGeneratedDate = (metaJson?.GeneratedDate ?? '') + ' '; // dont know why this is needed
+    const gameBuildNumber = (metaJson?.GameBuildNumber ?? '') + ' '; // dont know why this is needed
 
     return (
         <>
-            <span style={{ textAlign: 'center', padding: '.5em .5em 0 .5em' }}
-                data-version={require('../../../buildName.json')}>
-                {versionString}
-            </span>
             <CustomTooltip tooltipText={gameVersionGeneratedDate} position="top-start" theme="light">
+                <span style={{ textAlign: 'center', padding: '.5em .5em 0 .5em' }}
+                    data-version={require('../../../buildName.json')}>
+                    {versionString}
+                </span>
+            </CustomTooltip>
+            <CustomTooltip tooltipText={gameBuildNumber} position="top-start" theme="light">
                 <div style={{ textAlign: 'center' }}>
                     {gameVersionString}
                 </div>
