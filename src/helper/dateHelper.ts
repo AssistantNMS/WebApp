@@ -28,6 +28,10 @@ export const percentageProgress = (startDate: Date, endDate: Date): number => {
     const currDateMilli = dayjs(new Date()).valueOf();
     const endDateMilli = dayjs(endDate).valueOf();
 
+    if (currDateMilli > endDateMilli) {
+        return 100;
+    }
+
     const progressMilli = currDateMilli - startDateMilli;
     const goalMilli = endDateMilli - startDateMilli;
     const percentage = (progressMilli / goalMilli) * 100;
@@ -36,6 +40,10 @@ export const percentageProgress = (startDate: Date, endDate: Date): number => {
 }
 
 export const friendlyTimeLeft = (startDate: Date, endDate: Date): string => {
+    if ((new Date()) > endDate) {
+        return 'Complete';
+    }
+
     dayjs.extend(relativeTime);
     return dayjs(startDate).to(endDate, true);
 }
