@@ -194,10 +194,10 @@
                 var urlSuffix = '';
                 if (lang != null) urlSuffix += '/' + lang;
                 if (name != null) urlSuffix += '/' + name;
-                window.location.replace('/catalogue-item/build1' + urlSuffix);
+                window.location.replace('/catalogue-item/{{data.Id}}' + urlSuffix);
             } catch (e) {
                 console.log(e)
-                window.location.replace('/catalogue-item/build1');
+                window.location.replace('/catalogue-item/{{data.Id}}');
             }
         }
     </script>
