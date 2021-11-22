@@ -20,8 +20,9 @@ const ExpeditionAlphabetDecoderUnconnected: React.FC<IProps> = (props: IProps) =
 
     useEffect(() => {
         if (props?.id == null) return;
-        getTranslationText(props.id);
-        if (translation == null) return;
+        if (translation == null) {
+            getTranslationText(props.id);
+        }
 
         const timer = setTimeout(() => {
             setCounter(counter + 1)
