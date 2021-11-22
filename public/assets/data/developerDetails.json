@@ -130202,17 +130202,17 @@
     "Properties": [
       {
         "Name": "GameId",
-        "Value": "FOOD_R_BCREAM",
+        "Value": "FOOD_R_BCHEESE",
         "Type": 1
       },
       {
         "Name": "Name",
-        "Value": "FOOD_BONECREAM_NAME",
+        "Value": "FOOD_BONECHEESE_NAME",
         "Type": 1
       },
       {
         "Name": "NameLower",
-        "Value": "FOOD_BONECREAM_NAME_L",
+        "Value": "FOOD_BONECHEESE_NAME_L",
         "Type": 1
       },
       {
@@ -130227,7 +130227,7 @@
       },
       {
         "Name": "Icon",
-        "Value": "TEXTURES/UI/FRONTEND/ICONS/COOKINGPRODUCTS/PRODUCT.CREAM.DDS",
+        "Value": "TEXTURES/UI/FRONTEND/ICONS/COOKINGPRODUCTS/PRODUCT.REFINED.BUTTER.DDS",
         "Type": 1
       },
       {
@@ -133528,6 +133528,121 @@
       {
         "Name": "IsConsumable",
         "Value": "False",
+        "Type": 3
+      }
+    ]
+  },
+  {
+    "Id": "cook281",
+    "Properties": [
+      {
+        "Name": "GameId",
+        "Value": "FOOD_R_BCREAM",
+        "Type": 1
+      },
+      {
+        "Name": "Name",
+        "Value": "FOOD_BONECREAM_NAME",
+        "Type": 1
+      },
+      {
+        "Name": "NameLower",
+        "Value": "FOOD_BONECREAM_NAME_L",
+        "Type": 1
+      },
+      {
+        "Name": "Subtitle",
+        "Value": "FOOD_COOKED_SUB",
+        "Type": 1
+      },
+      {
+        "Name": "Description",
+        "Value": "FOOD_REFINED_DESC",
+        "Type": 1
+      },
+      {
+        "Name": "Icon",
+        "Value": "TEXTURES/UI/FRONTEND/ICONS/COOKINGPRODUCTS/PRODUCT.CREAM.DDS",
+        "Type": 1
+      },
+      {
+        "Name": "Colour",
+        "Value": "D35300",
+        "Type": 2
+      },
+      {
+        "Name": "BaseValue",
+        "Value": "32000",
+        "Type": 1
+      },
+      {
+        "Name": "Category",
+        "Value": "Exotic",
+        "Type": 1
+      },
+      {
+        "Name": "Type",
+        "Value": "Consumable",
+        "Type": 1
+      },
+      {
+        "Name": "Rarity",
+        "Value": "Common",
+        "Type": 1
+      },
+      {
+        "Name": "Legality",
+        "Value": "Legal",
+        "Type": 1
+      },
+      {
+        "Name": "StackMultiplier",
+        "Value": "10",
+        "Type": 1
+      },
+      {
+        "Name": "BlueprintCost",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "DeploysInto",
+        "Value": "",
+        "Type": 1
+      },
+      {
+        "Name": "ChargeValue",
+        "Value": "0",
+        "Type": 1
+      },
+      {
+        "Name": "DefaultCraftAmount",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "CraftAmountStepSize",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "CraftAmountMultiplier",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "CookingValue",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "IsCraftable",
+        "Value": "False",
+        "Type": 3
+      },
+      {
+        "Name": "IsConsumable",
+        "Value": "True",
         "Type": 3
       }
     ]
@@ -178258,6 +178373,236 @@
       {
         "Name": "IsCraftable",
         "Value": "False",
+        "Type": 3
+      },
+      {
+        "Name": "IsConsumable",
+        "Value": "False",
+        "Type": 3
+      }
+    ]
+  },
+  {
+    "Id": "build812",
+    "Properties": [
+      {
+        "Name": "GameId",
+        "Value": "PIPE",
+        "Type": 1
+      },
+      {
+        "Name": "Name",
+        "Value": "BLD_PIPE_NAME",
+        "Type": 1
+      },
+      {
+        "Name": "NameLower",
+        "Value": "BLD_PIPE_NAME_L",
+        "Type": 1
+      },
+      {
+        "Name": "Subtitle",
+        "Value": "BLD_PIPE_SUBTITLE",
+        "Type": 1
+      },
+      {
+        "Name": "Description",
+        "Value": "BLD_PIPE_DESCRIPTION",
+        "Type": 1
+      },
+      {
+        "Name": "Icon",
+        "Value": "TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.PIPE.DDS",
+        "Type": 1
+      },
+      {
+        "Name": "Colour",
+        "Value": "2C7C9F",
+        "Type": 2
+      },
+      {
+        "Name": "BaseValue",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "Category",
+        "Value": "BuildingPart",
+        "Type": 1
+      },
+      {
+        "Name": "Type",
+        "Value": "BuildingPart",
+        "Type": 1
+      },
+      {
+        "Name": "Rarity",
+        "Value": "Common",
+        "Type": 1
+      },
+      {
+        "Name": "Legality",
+        "Value": "Legal",
+        "Type": 1
+      },
+      {
+        "Name": "StackMultiplier",
+        "Value": "0",
+        "Type": 1
+      },
+      {
+        "Name": "BlueprintCost",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "DeploysInto",
+        "Value": "",
+        "Type": 1
+      },
+      {
+        "Name": "ChargeValue",
+        "Value": "0",
+        "Type": 1
+      },
+      {
+        "Name": "DefaultCraftAmount",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "CraftAmountStepSize",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "CraftAmountMultiplier",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "CookingValue",
+        "Value": "0",
+        "Type": 1
+      },
+      {
+        "Name": "IsCraftable",
+        "Value": "True",
+        "Type": 3
+      },
+      {
+        "Name": "IsConsumable",
+        "Value": "False",
+        "Type": 3
+      }
+    ]
+  },
+  {
+    "Id": "build813",
+    "Properties": [
+      {
+        "Name": "GameId",
+        "Value": "BASE_BUBPIPE_S",
+        "Type": 1
+      },
+      {
+        "Name": "Name",
+        "Value": "BLD_BUBBLE_PIPE_NAME",
+        "Type": 1
+      },
+      {
+        "Name": "NameLower",
+        "Value": "BLD_BUBBLE_PIPE_NAME_L",
+        "Type": 1
+      },
+      {
+        "Name": "Subtitle",
+        "Value": "BLD_BUBBLE_PIPE_SUB",
+        "Type": 1
+      },
+      {
+        "Name": "Description",
+        "Value": "BLD_BUBBLE_PIPE_DESC",
+        "Type": 1
+      },
+      {
+        "Name": "Icon",
+        "Value": "TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.BUBBLEPIPE.DDS",
+        "Type": 1
+      },
+      {
+        "Name": "Colour",
+        "Value": "2C7C9F",
+        "Type": 2
+      },
+      {
+        "Name": "BaseValue",
+        "Value": "500",
+        "Type": 1
+      },
+      {
+        "Name": "Category",
+        "Value": "BuildingPart",
+        "Type": 1
+      },
+      {
+        "Name": "Type",
+        "Value": "BuildingPart",
+        "Type": 1
+      },
+      {
+        "Name": "Rarity",
+        "Value": "Common",
+        "Type": 1
+      },
+      {
+        "Name": "Legality",
+        "Value": "Legal",
+        "Type": 1
+      },
+      {
+        "Name": "StackMultiplier",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "BlueprintCost",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "DeploysInto",
+        "Value": "",
+        "Type": 1
+      },
+      {
+        "Name": "ChargeValue",
+        "Value": "0",
+        "Type": 1
+      },
+      {
+        "Name": "DefaultCraftAmount",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "CraftAmountStepSize",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "CraftAmountMultiplier",
+        "Value": "1",
+        "Type": 1
+      },
+      {
+        "Name": "CookingValue",
+        "Value": "0",
+        "Type": 1
+      },
+      {
+        "Name": "IsCraftable",
+        "Value": "True",
         "Type": 3
       },
       {

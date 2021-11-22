@@ -8527,7 +8527,7 @@
   },
   {
     "Id": "cook263",
-    "Icon": "cooking/47.png",
+    "Icon": "cooking/57.png",
     "Name": "Crème en poudre",
     "Group": "Produit comestible",
     "Description": "Une denrée alimentaire raffinée créée à partir du processeur de nutriments. Ce genre de nourriture peut être très précieuse. Elle a à la fois les formes et les arômes caractéristiques d'un produit alimentaire réel, ce qui contraste fortement avec les pâtes ou les granulés nutritionnels classiques.\n\nElle peut être consommée telle quelle ou être soumise à davantage de traitements.",
@@ -9082,6 +9082,38 @@
     "MaxStackSize": 50.0,
     "Colour": "FFC356",
     "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
+      }
+    ],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "cook281",
+    "Icon": "cooking/47.png",
+    "Name": "Crème en poudre",
+    "Group": "Produit comestible",
+    "Description": "Une denrée alimentaire raffinée créée à partir du processeur de nutriments. Ce genre de nourriture peut être très précieuse. Elle a à la fois les formes et les arômes caractéristiques d'un produit alimentaire réel, ce qui contraste fortement avec les pâtes ou les granulés nutritionnels classiques.\n\nElle peut être consommée telle quelle ou être soumise à davantage de traitements.",
+    "BaseValueUnits": 32000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "D35300",
+    "CookingValue": 0.7,
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,

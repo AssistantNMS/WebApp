@@ -8527,7 +8527,7 @@
   },
   {
     "Id": "cook263",
-    "Icon": "cooking/47.png",
+    "Icon": "cooking/57.png",
     "Name": "Panna d'ossa",
     "Group": "Prodotto edibile",
     "Description": "Cibo raffinato creato nel trasformatore di sostanze nutritive. Il cibo di questo tipo può essere molto prezioso. Possiede la forma e gli aromi di un vero cibo, in netto contrasto con la pasta e i mangimi nutritivi.\n\nPuò essere consumato allo stato attuale o sottoposto a ulteriore lavorazione.",
@@ -9082,6 +9082,38 @@
     "MaxStackSize": 50.0,
     "Colour": "FFC356",
     "CookingValue": 0.4,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [
+      {
+        "RewardType": 4,
+        "PercentageChance": 100,
+        "LabelId": "",
+        "Amount": 20,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "SetNotAdd": false,
+        "Duration": 0
+      }
+    ],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "cook281",
+    "Icon": "cooking/47.png",
+    "Name": "Panna d'ossa",
+    "Group": "Prodotto edibile",
+    "Description": "Cibo raffinato creato nel trasformatore di sostanze nutritive. Il cibo di questo tipo può essere molto prezioso. Possiede la forma e gli aromi di un vero cibo, in netto contrasto con la pasta e i mangimi nutritivi.\n\nPuò essere consumato allo stato attuale o sottoposto a ulteriore lavorazione.",
+    "BaseValueUnits": 32000.0,
+    "CurrencyType": "Credits",
+    "IsCraftable": false,
+    "IsConsumable": true,
+    "MaxStackSize": 50.0,
+    "Colour": "D35300",
+    "CookingValue": 0.7,
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,

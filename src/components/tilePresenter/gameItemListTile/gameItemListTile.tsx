@@ -41,7 +41,7 @@ export const GameItemListTileUnconnected: React.FC<IProps> = (props: IProps) => 
     return (
         <Link to={`${catalogueItem}/${props.item.Id}`} ref={containerRef} data-id="GameItemListTile" className="item" draggable={false}>
             <TextContainer text={props.item.Name} />
-            <ImageContainer {...props.item} />
+            <ImageContainer {...props.item} Name={props.item.Description} />
             {
                 itemIsFavourited &&
                 <i className="material-icons top-right" style={{ color: invertColor(props.item.Colour || '000000') }}>{iconString}</i>
