@@ -69,7 +69,11 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
         if (qsReward == null) return null;
 
         const customQuicksilverItemListTile = (communityMission: CommunityMissionViewModel) => (props: QuicksilverItem, index: number) => {
-            const customProps: IQuicksilverItemWithoutDepInj = { ...props, isDisabled: props.Tier >= communityMission.currentTier };
+            let isDisabled = props.Tier >= communityMission.currentTier;
+            if (props.Tier === communityMission.currentTier && communityMission.percentage > 99) {
+                isDisabled = false;
+            }
+            const customProps: IQuicksilverItemWithoutDepInj = { ...props, isDisabled };
             return QuicksilverItemListTile(customProps, index);
         }
 
