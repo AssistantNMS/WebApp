@@ -21,7 +21,7 @@ export const AdditionalInfoChipRow: React.FC<IChipRowProps> = (props: IChipRowPr
 
     const getImage = (item: any) => {
         if (item.image != null && item.image.length > 0) {
-            return (<img src={item.image} alt={item.image} style={{ maxHeight: '20px' }} />);
+            return (<img src={item.image} alt={item.image} style={{ maxHeight: '20px', marginLeft: '5px' }} />);
         }
         if (item.icon != null && item.icon.length > 0) {
             return (<i className="material-icons" style={{ verticalAlign: 'middle' }}>{item.icon}</i>);

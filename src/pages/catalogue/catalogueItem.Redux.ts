@@ -9,6 +9,7 @@ import { addItemToFavourite, removeItemFromFavourite } from '../../redux/modules
 
 import { getCurrentLanguage } from '../../redux/modules/setting/selector';
 import { getFavouriteItems } from '../../redux/modules/favourite/selector';
+import { setLanguage } from '../../redux/modules/setting/action';
 
 
 export const mapStateToProps = (state: State) => {
@@ -40,6 +41,9 @@ export const mapDispatchToProps = (dispatch: any) => {
     };
     newProps.removeItemToFavourites = (itemId: string) => {
         dispatch(removeItemFromFavourite(itemId));
+    };
+    newProps.setLanguage = (langCode: string) => {
+        dispatch(setLanguage(langCode));
     };
     return { ...newProps };
 }

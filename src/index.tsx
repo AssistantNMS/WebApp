@@ -8,6 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';
 import { UpdateButton } from './components/updateButton';
+import { modalSetup } from './components/common/dialog/baseDialog';
 import { DependencyInjectionProvider } from './integration/dependencyInjection';
 import { initLocalization } from './integration/i18n';
 import { initAnalytics } from './integration/analytics';
@@ -25,6 +26,8 @@ import 'react-tippy/dist/tippy.css';
 declare global {
     interface Window { config: any; registration: any }
 }
+
+const reactAppId = 'nms-app';
 
 let persistedState: any = loadStateFromLocalStorage();
 persistedState.settingReducer.menuIsVisible = false;
@@ -46,6 +49,7 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
 
     initAnalytics();
     initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
+    modalSetup(reactAppId)
 
     ReactDOM.render(
         <DependencyInjectionProvider>
@@ -56,7 +60,7 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
                 </BrowserRouter>
             </Provider>
         </DependencyInjectionProvider>
-        , document.getElementById('nms-app'));
+        , document.getElementById(reactAppId));
 
     if (window.config.useServiceWorker) {
         serviceWorker.register({

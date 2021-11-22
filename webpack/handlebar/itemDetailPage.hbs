@@ -174,7 +174,31 @@
     </div>
     <script>
         window.onload = function () {
-            window.location.replace('/catalogue-item/{{data.Id}}' + window.location.search);
+            try {
+                var fullString = window.location.search.replace('?', '');
+                var params = fullString.split('&')
+
+                var lang;
+                var name;
+                for (let paramIndex = 0; paramIndex < params.length; paramIndex++) {
+                    var param = params[paramIndex];
+                    var nameValue = param.split('=');
+                    if (nameValue[0].includes('lang')) {
+                        lang = nameValue[1]
+                        continue;
+                    }
+                    if (nameValue[0] != null) {
+                        name = nameValue[0]
+                    }
+                }
+                var urlSuffix = '';
+                if (lang != null) urlSuffix += '/' + lang;
+                if (name != null) urlSuffix += '/' + name;
+                window.location.replace('/catalogue-item/build1' + urlSuffix);
+            } catch (e) {
+                console.log(e)
+                window.location.replace('/catalogue-item/build1');
+            }
         }
     </script>
 </body>

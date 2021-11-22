@@ -1,3 +1,5 @@
+import { itemNameUrlMapper } from './stringHelper';
+
 // export const setDocumentTitle = (title: string) => {
 //     document.title = getNewDocumentTitle(title);
 // }
@@ -12,10 +14,14 @@ export const toggleHtmlNodeClass = (selector: string, className: string): boolea
     return htmlTag?.classList?.contains?.(className) ?? false;
 };
 
-export const updateUrl = (id: string, title: string) => {
+export const updateUrl = (id: string, title: string, selectedLanguage?: string) => {
+    const urlTitle = itemNameUrlMapper(title);
+    const urlSuffix = (selectedLanguage != null)
+        ? `${selectedLanguage}/${urlTitle}`
+        : urlTitle
     window?.history?.replaceState?.(
         null,
         getNewDocumentTitle(title),
-        `/catalogue-item/${id}/${title.replace(/\s/g, '-')}`
+        `/catalogue-item/${id}/${urlSuffix}`
     );
 };

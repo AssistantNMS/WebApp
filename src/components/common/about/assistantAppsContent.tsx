@@ -40,7 +40,6 @@ const AssistantAppsContentUnconnected: React.FC<IProps> = (props: IProps) => {
                 <div className="col-12 mb-2em">
                     {
                         (appLinks ?? []).map((appl: AssistantAppLinks) => {
-                            console.log(appl.logoUrl);
                             return (
                                 <ListTile
                                     key={appl.guid}

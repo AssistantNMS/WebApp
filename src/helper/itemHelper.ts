@@ -140,7 +140,6 @@ export const getAllRequiredItemsForTree = async (gameItemService: GameItemServic
 
     for (const reqItem of requiredItems) {
         const topLevel = await getRequiredItemsForTreeItem(gameItemService, reqItem);
-        // console.log({ topLevel });
         if (topLevel != null) results.push(topLevel);
     }
     return results;

@@ -68,6 +68,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
           <Switch>
             <Route exact={true} path={route.home} component={HomePresenter} />
             <Route path={`${route.catalogue}/:types`} component={CatalogueListContainer} />
+            <Route path={`${route.catalogueItem}/:itemId/:langCode`} component={CatalogueItemContainer} />
             <Route path={`${route.catalogueItem}/:itemId`} component={CatalogueItemContainer} />
             <Route path={`${route.processorItem}/:itemId`} component={ProcessorItemContainer} />
             <Route path={route.catalogue} component={CataloguePresenter} />

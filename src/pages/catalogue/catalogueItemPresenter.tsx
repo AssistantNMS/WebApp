@@ -8,8 +8,7 @@ import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { CartFloatingActionButton } from '../../components/floatingActionButton/cartFloatingActionButton';
 import { FavouriteFloatingActionButton } from '../../components/floatingActionButton/favouriteFloatingActionButton';
-import { ShareFloatingActionButton } from '../../components/floatingActionButton/shareFloatingActionButton';
-import { showShareDialog } from '../../components/shareDialog';
+import { ShareDialog } from '../../components/shareDialog';
 import { ExpeditionAlphabetDecoder } from '../../components/common/expeditionAlphabetDecoder';
 import { IdPrefix } from '../../constants/IdPrefix';
 import { NetworkState } from '../../constants/NetworkState';
@@ -60,9 +59,14 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
         if (props.item == null || props.item.Id == null) return components;
         const shareDialogProps = {
             id: props.item.Id,
+            itemName: props.item.Name,
+            selectedLanguage: props.selectedLanguage!,
             toastService: props.toastService,
         }
-        components.push(ShareFloatingActionButton(() => showShareDialog(shareDialogProps)));
+        components.push(<ShareDialog
+            key="share-dialog"
+            {...shareDialogProps}
+        />);
 
         if (!props.item.Id.includes(IdPrefix.Cooking)) {
             components.push(CartFloatingActionButton(props.addThisItemToCart));
@@ -107,7 +111,13 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
     const { Name: title, Description: description, Id: id } = props?.item ?? anyObject;
     return (
         <>
-            <HeadComponent id={id} title={title} description={description} updateUrl={true} />
+            <HeadComponent
+                id={id}
+                title={title}
+                description={description}
+                selectedLanguage={props.selectedLanguage}
+                updateUrl={true}
+            />
             <NavBar title={title} additionalItems={getFloatingActionButtons()} />
             {handleLoadingOrError()}
 

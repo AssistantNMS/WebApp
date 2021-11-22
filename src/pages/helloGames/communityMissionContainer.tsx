@@ -75,7 +75,6 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
     }
 }
 
-
 export const CommunityMissionContainer = withServices<IWithoutDepInj, IWithDepInj>(
     connect(mapStateToProps, mapDispatchToProps)(CommunityMissionContainerUnconnected),
     (services: IDependencyInjection) => ({

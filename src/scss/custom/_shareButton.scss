@@ -1,3 +1,13 @@
+.ReactModal__Content {
+    .input-url {
+        width: 80vw;
+
+        @media only screen and (min-width: 991px) {
+            width: 40vw;
+        }
+    }
+}
+
 .share-button {
     border-radius: 8px;
     color: #fff;

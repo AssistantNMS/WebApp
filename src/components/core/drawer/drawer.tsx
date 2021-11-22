@@ -103,4 +103,4 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     );
 };
 
-export const Drawer = connect(mapStateToProps, mapDispatchToProps)(withRouter(DrawerUnconnected));
+export const Drawer: any = connect(mapStateToProps, mapDispatchToProps)(withRouter(DrawerUnconnected));

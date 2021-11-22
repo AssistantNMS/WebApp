@@ -18,8 +18,7 @@ interface IProps {
 }
 
 interface IState {
-    langDropdownVisible: boolean,
-    localeMap: LocalizationMap[]
+    langDropdownVisible: boolean
 }
 
 class NavBarUnconnected extends React.PureComponent<IProps, IState> {
@@ -27,8 +26,7 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
         super(props);
 
         this.state = {
-            langDropdownVisible: false,
-            localeMap: localeMap
+            langDropdownVisible: false
         }
     }
 
@@ -92,7 +90,7 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
                                 />
                                 <div className={classNames('dropdown-menu dropdown-menu-right noselect', { 'show': this.state.langDropdownVisible })} draggable={false}>
                                     {
-                                        this.state.localeMap.map((locale: LocalizationMap) => {
+                                        localeMap.map((locale: LocalizationMap) => {
                                             return (
                                                 <span onClick={() => this.selectLanguage(locale)} key={locale.code}
                                                     className="dropdown-item pointer">{locale.name}

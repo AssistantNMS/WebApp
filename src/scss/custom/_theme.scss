@@ -62,8 +62,6 @@ body {
         }
 
         .form-check .form-check-label.custom {
-            color: $body-color-dark;
-
             p {
                 margin: 0;
                 padding: 0;
@@ -252,6 +250,14 @@ body {
             background-color: $brand-secondary;
             color: black;
 
+        }
+    }
+
+    .form-check .form-check-label.custom {
+        color: $body-color;
+
+        &.dark {
+            color: #606060;
         }
     }
 }

@@ -14,6 +14,7 @@ import { getQuantityDialog } from '../../helper/dialogHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { localeMap } from '../../localization/Localization';
 import { AllGameItemsService } from '../../services/json/AllGameItemsService';
 import { GameItemService } from '../../services/json/GameItemService';
 import { RechargeByService } from '../../services/json/RechargeByService';
@@ -36,6 +37,7 @@ interface IWithoutDepInj {
     addItemToCart?: (item: GameItemModel, quantity: number) => void;
     addItemToFavourites?: (item: GameItemModel) => void;
     removeItemToFavourites?: (itemId: string) => void;
+    setLanguage: (langCode: string) => void;
 }
 
 interface IProps extends IWithDepInj, IWithoutDepInj { }
@@ -74,6 +76,13 @@ class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> 
     }
 
     componentDidMount() {
+        const languageCode = this.props.match?.params?.langCode;
+        if (languageCode != null) {
+            const indexOfLang = localeMap.findIndex(l => l.code === languageCode);
+            if (indexOfLang > -1) {
+                this.props.setLanguage(languageCode);
+            }
+        }
         this.fetchData(this.props.match?.params?.itemId);
     }
 
