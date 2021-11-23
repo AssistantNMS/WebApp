@@ -3,46 +3,42 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-
-import { mapStateToProps, mapDispatchToProps } from './App.Redux';
-import { StateSettingReducer } from './redux/state/StateSettingReducer';
-
-import { trackPageView } from './integration/analytics';
-
-import * as route from './constants/Route';
-
+import { mapDispatchToProps, mapStateToProps } from './App.Redux';
 import { Drawer } from './components/core/drawer/drawer';
-import { HomePresenter } from './pages/home/homePresenter';
+import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
+import * as route from './constants/Route';
+import { trackPageView } from './integration/analytics';
 import { AboutPresenter } from './pages/about/aboutPresenter';
-import { LanguagePresenter } from './pages/language/languagePresenter';
-import { CataloguePresenter } from './pages/catalogue/cataloguePresenter';
-import { CatalogueListContainer } from './pages/catalogue/catalogueListContainer';
-import { CatalogueItemContainer } from './pages/catalogue/catalogueItemContainer';
-import { ProcessorItemContainer } from './pages/processor/processorItemContainer';
-import { SettingPresenter } from './pages/setting/settingPresenter';
-import { DonationPresenter } from './pages/donation/donationPresenter';
 import { CartContainer } from './pages/cart/cartContainer';
-import { GenericPageAllRequiredContainer } from './pages/generic/genericPageAllRequiredContainer';
-import { PortalListContainer } from './pages/portal/portalListContainer';
-import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
-import { GuidePageContainer } from './pages/guide/guidePageContainer';
-import { GuideDetailPageContainer } from './pages/guide/guideDetailPageContainer';
-import { SocialPresenter } from './pages/social/socialPresenter';
-// import { HelloGamesPresenter } from './pages/helloGames/helloGamesPresenter';
-import { CommunityMissionContainer } from './pages/helloGames/communityMissionContainer';
-import { FavouritePresenter } from './pages/favourite/favouritePresenter';
-import { SyncContainer } from './pages/sync/syncContainer';
-import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2020Container';
-import { WeekendMissionMenuPresenter } from './pages/helloGames/weekendMission/weekendMissionMenuPage';
-import { WeekendMissionContainer } from './pages/helloGames/weekendMission/weekendMissionContainer';
+import { CatalogueItemContainer } from './pages/catalogue/catalogueItemContainer';
+import { CatalogueListContainer } from './pages/catalogue/catalogueListContainer';
+import { CataloguePresenter } from './pages/catalogue/cataloguePresenter';
+import { DonationPresenter } from './pages/donation/donationPresenter';
 import { ExpeditionSeasonList } from './pages/expeditionSeason/expeditionSeasonList';
 import { ExpeditionSeasonPhaseList } from './pages/expeditionSeason/expeditionSeasonPhaseList';
-import { PatreonContainer } from './pages/misc/patreonContainer';
+import { FavouritePresenter } from './pages/favourite/favouritePresenter';
+import { GenericPageAllRequiredContainer } from './pages/generic/genericPageAllRequiredContainer';
+import { GuideDetailPageContainer } from './pages/guide/guideDetailPageContainer';
+import { GuidePageContainer } from './pages/guide/guidePageContainer';
+// import { HelloGamesPresenter } from './pages/helloGames/helloGamesPresenter';
+import { CommunityMissionContainer } from './pages/helloGames/communityMissionContainer';
+import { CommunityMissionTimeline } from './pages/helloGames/communityMissionTimeline';
+import { WeekendMissionContainer } from './pages/helloGames/weekendMission/weekendMissionContainer';
+import { WeekendMissionMenuPresenter } from './pages/helloGames/weekendMission/weekendMissionMenuPage';
+import { HomePresenter } from './pages/home/homePresenter';
+import { LanguagePresenter } from './pages/language/languagePresenter';
 import { NmsfmContainer } from './pages/misc/nmsfmContainer';
-import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
+import { PatreonContainer } from './pages/misc/patreonContainer';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
-
-import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
+import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2020Container';
+import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
+import { PortalListContainer } from './pages/portal/portalListContainer';
+import { ProcessorItemContainer } from './pages/processor/processorItemContainer';
+import { SettingPresenter } from './pages/setting/settingPresenter';
+import { SocialPresenter } from './pages/social/socialPresenter';
+import { SyncContainer } from './pages/sync/syncContainer';
+import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
+import { StateSettingReducer } from './redux/state/StateSettingReducer';
 
 interface IProps extends StateSettingReducer {
   location: any;
@@ -84,6 +80,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.addEditPortal} component={AddEditPortalContainer} />
             {/* <Route path={route.helloGames} component={HelloGamesPresenter} /> */}
             <Route path={route.communityMission} component={CommunityMissionContainer} />
+            <Route path={route.communityMissionTimeline} component={CommunityMissionTimeline} />
             <Route path={route.favourites} component={FavouritePresenter} />
             <Route path={route.social} component={SocialPresenter} />
             <Route path={route.sync} component={SyncContainer} />

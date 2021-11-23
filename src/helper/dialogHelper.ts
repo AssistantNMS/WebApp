@@ -21,6 +21,7 @@ export const getQuantityDialog = async (title: string, defaultValue?: number): P
         value: quantity,
     };
 }
+
 export const getStringDialog = async (title: string, currentValue: string): Promise<string> => {
     const { value: text } = await Swal.fire({
         title,
@@ -30,4 +31,12 @@ export const getStringDialog = async (title: string, currentValue: string): Prom
     });
 
     return text;
+}
+
+export const successDialog = async (title: string, description?: string) => {
+    Swal.fire({ icon: 'success', title, text: description });
+}
+
+export const errorDialog = async (title: string, description?: string) => {
+    Swal.fire({ icon: 'error', title, text: description });
 }

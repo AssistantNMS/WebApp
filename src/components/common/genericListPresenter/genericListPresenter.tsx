@@ -32,16 +32,20 @@ export function GenericListPresenter<T>(props: IProps<T>) {
         if (showMore) {
             // TODO translate
             return (
-                <PositiveButton onClick={() => setShowMore(false)}>
-                    Show Less
-                </PositiveButton>
+                <div className="col-12 mt-1em">
+                    <PositiveButton onClick={() => setShowMore(false)}>
+                        Show Less
+                    </PositiveButton>
+                </div>
             );
         } else {
             const xRecordsLeft = (props.list.length - props.limitResultsTo).toString();
             return (
-                <PositiveButton onClick={() => setShowMore(true)}>
-                    {i18next.t(LocaleKey.viewXMore).replace('{0}', xRecordsLeft)}
-                </PositiveButton>
+                <div className="col-12 mt-1em">
+                    <PositiveButton onClick={() => setShowMore(true)}>
+                        {i18next.t(LocaleKey.viewXMore).replace('{0}', xRecordsLeft)}
+                    </PositiveButton>
+                </div>
             );
         }
     }
@@ -58,9 +62,7 @@ export function GenericListPresenter<T>(props: IProps<T>) {
                     )
                 })
             }
-            <div className="col-12 mt-1em">
-                {renderShowHideMore()}
-            </div>
+            {renderShowHideMore()}
         </div>
     );
 }

@@ -22,6 +22,7 @@ import * as serviceWorker from './serviceWorker';
 
 import './index.scss';
 import 'react-tippy/dist/tippy.css';
+import 'react-vertical-timeline-component/style.min.css';
 
 declare global {
     interface Window { config: any; registration: any }

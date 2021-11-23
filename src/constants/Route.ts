@@ -12,6 +12,7 @@ export const genericAllRequirements = '/genericAllRequirements';
 export const guides = '/guides';
 export const helloGames = '/helloGames';
 export const communityMission = '/helloGames/communityMission';
+export const communityMissionTimeline = '/helloGames/communityMissionTimeline';
 export const favourites = '/favourites';
 export const social = '/social';
 export const portal = '/portals';

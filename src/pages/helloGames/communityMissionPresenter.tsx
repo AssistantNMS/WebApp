@@ -1,17 +1,16 @@
 import i18next from 'i18next';
 import React, { ReactNode } from 'react';
-
+import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { ProgressBar } from '../../components/common/progressBar/progressBar';
+import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
-import { Error } from '../../components/core/error/error';
 import { NavBar } from '../../components/core/navbar/navbar';
+import { IQuicksilverItemWithoutDepInj, QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
 import { NetworkState } from '../../constants/NetworkState';
+import { QuicksilverItem, QuicksilverStore } from '../../contracts/data/quicksilver';
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { QuicksilverItem, QuicksilverStore } from '../../contracts/data/quicksilver';
-import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
-import { IQuicksilverItemWithoutDepInj, QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
 
 interface IProps {
     // Container State

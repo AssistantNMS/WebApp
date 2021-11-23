@@ -1,7 +1,7 @@
-import React from 'react';
 import i18next from 'i18next';
-
+import React from 'react';
 import { AdditionalInfoChipRow } from '../../components/common/chip/additionalInfoChip';
+import { ExpeditionAlphabetDecoder } from '../../components/common/expeditionAlphabetDecoder';
 import { HeadComponent } from '../../components/core/headComponent';
 import { ItemHeaderRow } from '../../components/core/itemHeaderRow';
 import { SmallLoading } from '../../components/core/loading/loading';
@@ -9,9 +9,9 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { CartFloatingActionButton } from '../../components/floatingActionButton/cartFloatingActionButton';
 import { FavouriteFloatingActionButton } from '../../components/floatingActionButton/favouriteFloatingActionButton';
 import { ShareDialog } from '../../components/shareDialog';
-import { ExpeditionAlphabetDecoder } from '../../components/common/expeditionAlphabetDecoder';
 import { IdPrefix } from '../../constants/IdPrefix';
 import { NetworkState } from '../../constants/NetworkState';
+import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
@@ -19,12 +19,8 @@ import { Recharge } from '../../contracts/recharge/recharge';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { AllGameItemsService } from '../../services/json/AllGameItemsService';
-import { GameItemService } from '../../services/json/GameItemService';
-import { RechargeByService } from '../../services/json/RechargeByService';
 import { ToastService } from '../../services/toastService';
 import { displayCookItems, displayEggTraits, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
-import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 
 interface IProps {
     // Container Props

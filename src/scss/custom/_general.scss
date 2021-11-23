@@ -277,6 +277,17 @@ img.grayscale {
     }
 }
 
+.vertical-timeline-element-content {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+@media only screen and (min-width: 1170px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+        width: unset !important;
+    }
+}
+
 .noselect {
     -webkit-touch-callout: none;
     /* iOS Safari */

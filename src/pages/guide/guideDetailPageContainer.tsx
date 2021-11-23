@@ -1,11 +1,10 @@
 import i18next from 'i18next';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import Swal from 'sweetalert2';
-
 import { NetworkState } from '../../constants/NetworkState';
 import { GuideMetaViewModel } from '../../contracts/generated/guideMetaViewModel';
 import { Guide } from '../../contracts/guide/guide';
+import { errorDialog, successDialog } from '../../helper/dialogHelper';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { ApiService } from '../../services/api/ApiService';
@@ -78,7 +77,7 @@ export class GuideDetailPageContainerUnconnected extends React.Component<IProps,
         if (!guid) return;
         const likeResult = await this.props.apiService.likeGuide(guid);
         if (likeResult.isSuccess) {
-            Swal.fire({ icon: 'success', title: '👍' });
+            successDialog('👍', '');
             const newGuideMeta: any = { ...this.state.guideMeta };
             newGuideMeta.likes = (this.state.guideMeta?.likes ?? 0) + 1;
             this.setState(() => {
@@ -87,7 +86,7 @@ export class GuideDetailPageContainerUnconnected extends React.Component<IProps,
                 }
             });
         } else {
-            Swal.fire({ icon: 'error', title: i18next.t(LocaleKey.error), text: 'Your \'like\' was not submitted' });
+            errorDialog(i18next.t(LocaleKey.error), 'Your \'like\' was not submitted');
         }
     }
 
