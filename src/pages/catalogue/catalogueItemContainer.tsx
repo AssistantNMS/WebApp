@@ -1,8 +1,8 @@
 import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
-
 import { NetworkState } from '../../constants/NetworkState';
+import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
 import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
@@ -16,6 +16,7 @@ import { IDependencyInjection, withServices } from '../../integration/dependency
 import { LocaleKey } from '../../localization/LocaleKey';
 import { localeMap } from '../../localization/Localization';
 import { AllGameItemsService } from '../../services/json/AllGameItemsService';
+import { DataJsonService } from '../../services/json/DataJsonService';
 import { GameItemService } from '../../services/json/GameItemService';
 import { RechargeByService } from '../../services/json/RechargeByService';
 import { ToastService } from '../../services/toastService';
@@ -26,6 +27,7 @@ interface IWithDepInj {
     gameItemService: GameItemService;
     allGameItemsService: AllGameItemsService;
     rechargeByService: RechargeByService;
+    dataJsonService: DataJsonService;
     toastService: ToastService;
 }
 interface IWithoutDepInj {
@@ -52,6 +54,7 @@ interface IState {
     usedToCookArray: Array<Processor>;
     rechargedBy: Recharge;
     usedToRechargeArray: Array<Recharge>;
+    eggTraitArray: Array<EggNeuralTrait>;
     networkState: NetworkState;
     additionalData: Array<any>;
 }
@@ -70,6 +73,7 @@ class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> 
             usedToCookArray: [],
             rechargedBy: anyObject,
             usedToRechargeArray: [],
+            eggTraitArray: [],
             networkState: NetworkState.Loading,
             additionalData: []
         }
@@ -136,6 +140,7 @@ class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> 
         const usedToCookArray = await this.getUsedToCookArray(itemResult.value.Id);
         const rechargedBy = await this.getRechargeByArray(itemResult.value.Id);
         const usedToRechargeArray = await this.getUsedToRechargeArray(itemResult.value.Id);
+        const eggTraitArray = await this.getEggTraitArray(itemResult.value.Id);
         this.setState(() => {
             return {
                 item: itemResult.value,
@@ -147,6 +152,7 @@ class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> 
                 usedToCookArray: usedToCookArray ?? [],
                 rechargedBy: rechargedBy ?? anyObject,
                 usedToRechargeArray: usedToRechargeArray ?? [],
+                eggTraitArray: eggTraitArray ?? [],
                 additionalData: this.getAdditionalData(itemResult.value),
                 networkState: NetworkState.Success,
             }
@@ -199,6 +205,12 @@ class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> 
         const usedToCookArray = await this.props.gameItemService.getCookingByInput(itemId);
         if (!usedToCookArray.isSuccess) return;
         return usedToCookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
+    }
+
+    getEggTraitArray = async (itemId: string) => {
+        const eggTraitsArray = await this.props.dataJsonService.getEggNeuralTraits();
+        if (!eggTraitsArray.isSuccess) return;
+        return eggTraitsArray.value.filter(egg => egg.AppId === itemId);
     }
 
     getAdditionalData = (itemDetail: GameItemModel): Array<any> => {
@@ -295,6 +307,7 @@ export const CatalogueItemContainer = withServices<IWithoutDepInj, IWithDepInj>(
         gameItemService: services.gameItemService,
         allGameItemsService: services.allGameItemsService,
         rechargeByService: services.rechargeByService,
+        dataJsonService: services.dataJsonService,
         toastService: services.toastService,
     })
 );

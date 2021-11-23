@@ -23,7 +23,8 @@ import { AllGameItemsService } from '../../services/json/AllGameItemsService';
 import { GameItemService } from '../../services/json/GameItemService';
 import { RechargeByService } from '../../services/json/RechargeByService';
 import { ToastService } from '../../services/toastService';
-import { displayCookItems, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
+import { displayCookItems, displayEggTraits, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
+import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 
 interface IProps {
     // Container Props
@@ -40,12 +41,11 @@ interface IProps {
     usedToCookArray: Array<Processor>;
     rechargedBy: Recharge;
     usedToRechargeArray: Array<Recharge>;
-    gameItemService: GameItemService;
-    allGameItemsService: AllGameItemsService;
-    rechargeByService: RechargeByService;
-    toastService: ToastService;
+    eggTraitArray: Array<EggNeuralTrait>;
     additionalData: Array<any>;
     networkState: NetworkState;
+
+    toastService: ToastService;
 
     // Container Specific
     addThisItemToCart: () => void;
@@ -103,6 +103,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     {displayUsedToCookItems(props.item.Name, props.usedToCookArray)}
                     {displayStatBonuses(props.item.StatBonuses)}
                     {displayProceduralStatBonuses(props.item.NumStatsMin, props.item.NumStatsMax, props.item.ProceduralStatBonuses)}
+                    {displayEggTraits(props.eggTraitArray)}
                 </div>
             </>
         )

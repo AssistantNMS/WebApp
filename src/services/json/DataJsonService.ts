@@ -2,6 +2,7 @@ import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { getHashForObject } from '../../helper/hashHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { QuicksilverStore } from '../../contracts/data/quicksilver';
+import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { AlphabetTranslation } from '../../contracts/data/alphabetTranslation';
 import { MetaData } from '../../contracts/data/metaData';
 import { AssistantAppLinks } from '../../contracts/data/assistantAppLinks';
@@ -40,7 +41,7 @@ export class DataJsonService extends BaseJsonService {
     getssistantAppLinks = () => this.getDataJsonBasic<Array<QuicksilverStore>>('assistantAppLinks.json');
     getDeveloperDetails = () => this.getDataJsonBasic<Array<QuicksilverStore>>('developerDetails.json');
     getDonationsBackup = () => this.getDataJsonBasic<Array<QuicksilverStore>>('donationsBackup.json');
-    getEggNeuralTraits = () => this.getDataJsonBasic<Array<QuicksilverStore>>('eggNeuralTraits.json');
+    getEggNeuralTraits = () => this.getDataJsonBasic<Array<EggNeuralTrait>>('eggNeuralTraits.json');
     getMeta = () => this.getDataJsonBasic<MetaData>('meta.json');
     getNewItems = () => this.getDataJsonBasic<Array<QuicksilverStore>>('newItems.json');
     getPatronsBackup = () => this.getDataJsonBasic<Array<QuicksilverStore>>('patronsBackup.json');
