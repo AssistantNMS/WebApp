@@ -50,7 +50,7 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
 
     initAnalytics();
     initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
-    modalSetup(reactAppId)
+    modalSetup(reactAppId);
 
     ReactDOM.render(
         <DependencyInjectionProvider>

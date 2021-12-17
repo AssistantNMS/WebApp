@@ -19,7 +19,11 @@ interface IWithDepInj {
 interface IWithoutDepInj {
 }
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IFromRedux {
+    selectedLanguage: string
+}
+
+interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj { }
 
 interface IState {
     title: string;
@@ -69,6 +73,7 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
     render() {
         return (
             <CommunityMissionPresenter
+                key={this.props.selectedLanguage}
                 {...this.state} {...this.props}
             />
         );
