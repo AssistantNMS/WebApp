@@ -556,4 +556,8 @@ export enum LocaleKey {
   settingsFont = 'settingsFont',
   nmsThemed = 'nmsThemed',
   defaultFont = 'defaultFont',
+  futureCommunityMission = 'futureCommunityMission',
+  inProgressCommunityMission = 'inProgressCommunityMission',
+  completedCommunityMission = 'completedCommunityMission',
+  viewMoreOnNmsWiki = 'viewMoreOnNmsWiki',
 }

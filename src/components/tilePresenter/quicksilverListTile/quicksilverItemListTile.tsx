@@ -52,7 +52,7 @@ const QuicksilverItemListTileClass: React.FC<IQuicksilverItemProps> = (props: IQ
     }
 
     return (
-        <Link to={`${catalogueItem}/${props.ItemId}`} className="gen-item-container" draggable={false}>
+        <Link to={`${catalogueItem}/${props.ItemId}`} data-id="QuicksilverItemListTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} greyScale={props.isDisabled} />
             <div className="gen-item-content-container">
                 <TextContainer text={item.Name} additionalCss={(props.Tier != null && props.Tier > 0) ? "" : "full"} />

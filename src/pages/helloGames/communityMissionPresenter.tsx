@@ -1,5 +1,7 @@
 import i18next from 'i18next';
 import React, { ReactNode } from 'react';
+import { Link } from 'react-router-dom';
+import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { ProgressBar } from '../../components/common/progressBar/progressBar';
 import { Error } from '../../components/core/error/error';
@@ -8,6 +10,7 @@ import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { IQuicksilverItemWithoutDepInj, QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
 import { NetworkState } from '../../constants/NetworkState';
+import { communityMissionTimeline } from '../../constants/Route';
 import { QuicksilverItem, QuicksilverStore } from '../../contracts/data/quicksilver';
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
 import { LocaleKey } from '../../localization/LocaleKey';
@@ -58,6 +61,13 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                 </div>
                 {displayQuicksilverData(communityMission, quicksilverRewards)}
                 {displayQuicksilverData({ ...communityMission, missionId: communityMission.missionId + 1, currentTier: 0 }, quicksilverRewards, LocaleKey.nextCommunityMission)}
+
+                <div className="row justify noselect">
+                    <Link to={communityMissionTimeline} draggable={false}
+                        className="customButton center full mt-3em mh-1em noselect">
+                        <span style={{ color: 'black' }}>{i18next.t(LocaleKey.prevCommunityMission)}</span>
+                    </Link>
+                </div>
             </>
         );
     }
@@ -90,6 +100,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                         <GenericListPresenter
                             list={qsReward.Items}
                             presenter={customQuicksilverItemListTile(communityMission)}
+                            identifier={(comM: QuicksilverItem) => comM.ItemId}
                             isCentered={true}
                         />
                     </div>

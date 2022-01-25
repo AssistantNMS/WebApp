@@ -6,7 +6,6 @@ import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { AlphabetTranslation } from '../../contracts/data/alphabetTranslation';
 import { MetaData } from '../../contracts/data/metaData';
 import { AssistantAppLinks } from '../../contracts/data/assistantAppLinks';
-import { AssistantAppsTeam } from '../../contracts/data/assistantAppsTeam';
 import { BaseJsonService } from './BaseJsonService';
 
 export class DataJsonService extends BaseJsonService {
@@ -49,5 +48,4 @@ export class DataJsonService extends BaseJsonService {
     getSocial = () => this.getDataJsonBasic<Array<QuicksilverStore>>('social.json');
     getUnusedMilestonePatches = () => this.getDataJsonBasic<Array<QuicksilverStore>>('unusedMilestonePatches.json');
     getAssistantAppLinks = () => this.getDataJsonBasic<Array<AssistantAppLinks>>('assistantAppLinks.json');
-    getAssistantAppsTeamMembers = () => this.getDataJsonBasic<Array<AssistantAppsTeam>>('assistantAppTeam.json');
 }

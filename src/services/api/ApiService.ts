@@ -6,9 +6,36 @@ import { BaseApiService } from './BaseApiService';
 import { WeekendMissionViewModel } from '../../contracts/generated/Model/HelloGames/weekendMissionViewModel';
 import { ExpeditionSeasonViewModel } from '../../contracts/generated/Model/HelloGames/expeditionSeasonViewModel';
 import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTrackDataViewModel';
+import { anyObject } from '../../helper/typescriptHacks';
+import { getHashForObject } from '../../helper/hashHelper';
+import i18next from 'i18next';
 
 export class ApiService extends BaseApiService {
+
+    private _hashLookup: any;
+
+    constructor() {
+        super();
+        this._hashLookup = anyObject;
+    }
+
+    async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
+        const hash = getHashForObject([argsArray, i18next.language]);
+
+        if (this._hashLookup != null && this._hashLookup[hash] != null) {
+            return this._hashLookup[hash];
+        }
+
+        const jsonResult = await promise();
+        this._hashLookup[hash] = jsonResult;
+        return jsonResult;
+    }
+
     async getCommunityMission(): Promise<ResultWithValue<CommunityMissionViewModel>> {
+        return this._getOrAdd(() => this._getCommunityMission(), ['_getCommunityMission', (new Date()).getMinutes().toString()]);
+    }
+
+    async _getCommunityMission(): Promise<ResultWithValue<CommunityMissionViewModel>> {
         return await this.get<CommunityMissionViewModel>('HelloGames/CommunityMission/');
     }
 

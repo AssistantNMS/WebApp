@@ -20,7 +20,6 @@ import { FavouritePresenter } from './pages/favourite/favouritePresenter';
 import { GenericPageAllRequiredContainer } from './pages/generic/genericPageAllRequiredContainer';
 import { GuideDetailPageContainer } from './pages/guide/guideDetailPageContainer';
 import { GuidePageContainer } from './pages/guide/guidePageContainer';
-// import { HelloGamesPresenter } from './pages/helloGames/helloGamesPresenter';
 import { CommunityMissionContainer } from './pages/helloGames/communityMissionContainer';
 import { CommunityMissionTimeline } from './pages/helloGames/communityMissionTimeline';
 import { WeekendMissionContainer } from './pages/helloGames/weekendMission/weekendMissionContainer';
@@ -78,7 +77,6 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.guides} component={GuidePageContainer} />
             <Route path={route.portal} component={PortalListContainer} />
             <Route path={route.addEditPortal} component={AddEditPortalContainer} />
-            {/* <Route path={route.helloGames} component={HelloGamesPresenter} /> */}
             <Route path={route.communityMission} component={CommunityMissionContainer} />
             <Route path={route.communityMissionTimeline} component={CommunityMissionTimeline} />
             <Route path={route.favourites} component={FavouritePresenter} />
