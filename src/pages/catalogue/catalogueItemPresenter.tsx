@@ -83,7 +83,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
     const displayDetails = () => {
         return (
             <>
-                <div className="content noselect">
+                <div className="content">
                     <ItemHeaderRow {...props.item}>
                         <ExpeditionAlphabetDecoder id={props.item.Id} />
                     </ItemHeaderRow>
