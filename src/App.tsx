@@ -28,7 +28,7 @@ import { WeekendMissionMenuPresenter } from './pages/helloGames/weekendMission/w
 import { HomePresenter } from './pages/home/homePresenter';
 import { LanguagePresenter } from './pages/language/languagePresenter';
 import { NmsfmContainer } from './pages/misc/nmsfmContainer';
-import { PatreonContainer } from './pages/misc/patreonContainer';
+import { PatreonPresenter } from './pages/misc/patreonPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2020Container';
 import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
@@ -89,7 +89,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             <Route path={route.weekendMission} component={WeekendMissionMenuPresenter} />
             <Route path={`${route.seasonExpedition}/:seasId`} component={ExpeditionSeasonPhaseList} />
             <Route path={route.seasonExpedition} component={ExpeditionSeasonList} />
-            <Route path={route.patreon} component={PatreonContainer} />
+            <Route path={route.patreon} component={PatreonPresenter} />
             <Route path={route.nmsfm} component={NmsfmContainer} />
             <Route path={route.whatIsNew} component={WhatIsNewContainer} />
             <Route component={NotFoundPresenter} />

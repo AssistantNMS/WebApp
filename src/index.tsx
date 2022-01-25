@@ -30,6 +30,7 @@ declare global {
     interface Window { config: any; registration: any }
     namespace JSX {
         interface IntrinsicElements {
+            ['assistant-apps-patreon-list']: CustomElement<any>;
             ['assistant-apps-team-list']: CustomElement<any>;
         }
     }
