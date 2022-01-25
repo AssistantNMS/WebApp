@@ -1,6 +1,12 @@
+:root {
+    // AssistantApps WebComponents
+    --assistantapps-font-family: "Roboto", Helvetica, Arial, sans-serif;
+    --assistantapps-team-member-link-text-colour: #{$brand-secondary};
+}
+
 #app,
 body {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -45,7 +51,7 @@ body {
 
     li.nav-item {
         @media screen and (max-width: 800px) {
-            margin-top: .5em;
+            margin-top: 0.5em;
         }
     }
 
@@ -101,7 +107,7 @@ img.grayscale {
     height: 100vh;
     // overflow-y: scroll;
 
-    >.content {
+    > .content {
         margin-top: 0;
         padding: 0 15px;
 
@@ -146,7 +152,6 @@ img.grayscale {
     margin-bottom: 2em;
 }
 
-
 // #app {
 //     overflow-y: scroll;
 // }
@@ -160,7 +165,7 @@ img.grayscale {
 // }
 
 .fab-margin {
-    margin: .5em;
+    margin: 0.5em;
 }
 
 .row.full,
@@ -169,7 +174,7 @@ img.grayscale {
 }
 
 .m-0-child {
-    >* {
+    > * {
         margin: 0;
     }
 }
@@ -242,8 +247,8 @@ img.grayscale {
 }
 
 .store {
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 #app .main-panel #navbar.navbar {
@@ -292,7 +297,8 @@ img.grayscale {
     }
 }
 
-.noselect, .tippy-popper {
+.noselect,
+.tippy-popper {
     -webkit-touch-callout: none;
     /* iOS Safari */
     -webkit-user-select: none;
