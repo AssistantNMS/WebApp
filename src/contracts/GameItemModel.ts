@@ -37,4 +37,5 @@ export interface GameItemModel {
   NumStatsMax: number;
   NumStatsMin: number;
   ExpeditionAlphabetTranslation: string;
+  HasDevProperties: boolean;
 }

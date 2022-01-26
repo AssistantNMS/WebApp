@@ -1,6 +1,7 @@
 import i18next from 'i18next';
-import React from 'react';
+import React, { useState } from 'react';
 import { AdditionalInfoChipRow } from '../../components/common/chip/additionalInfoChip';
+import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 import { ExpeditionAlphabetDecoder } from '../../components/common/expeditionAlphabetDecoder';
 import { HeadComponent } from '../../components/core/headComponent';
 import { ItemHeaderRow } from '../../components/core/itemHeaderRow';
@@ -50,6 +51,8 @@ interface IProps {
 }
 
 export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
+    const [isDetailPaneOpen, setDetailPaneOpen] = useState<boolean>(false);
+
     const getFloatingActionButtons = (): Array<any> => {
         const components: any[] = [];
         if (props.item == null || props.item.Id == null) return components;
@@ -84,7 +87,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
         return (
             <>
                 <div className="content">
-                    <ItemHeaderRow {...props.item}>
+                    <ItemHeaderRow {...props.item} openDevProperties={() => setDetailPaneOpen(!isDetailPaneOpen)}>
                         <ExpeditionAlphabetDecoder id={props.item.Id} />
                     </ItemHeaderRow>
                     <AdditionalInfoChipRow additionalData={props.additionalData} />
@@ -101,6 +104,11 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     {displayProceduralStatBonuses(props.item.NumStatsMin, props.item.NumStatsMax, props.item.ProceduralStatBonuses)}
                     {displayEggTraits(props.eggTraitArray)}
                 </div>
+                <DevDetailsBottomModalSheet
+                    appId={props.item.Id}
+                    isDetailPaneOpen={isDetailPaneOpen}
+                    setDetailPaneOpen={() => setDetailPaneOpen(false)}
+                />
             </>
         )
     }

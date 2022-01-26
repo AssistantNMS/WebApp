@@ -229,7 +229,7 @@ interface ICommonSectionProps {
 export const CommonSection: React.FC<ICommonSectionProps> = (props: ICommonSectionProps) => {
     return (
         <>
-            <div className="row">
+            <div className="row noselect">
                 <div className="col-12">
                     <h3>{props.heading}</h3>
                 </div>

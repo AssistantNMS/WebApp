@@ -2,17 +2,18 @@ import React from 'react';
 import { forceCheck } from 'react-lazyload';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-
 import { NetworkState } from '../../constants/NetworkState';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { State } from '../../redux/state';
 import { AllGameItemsService } from '../../services/json/AllGameItemsService';
+import { DataJsonService } from '../../services/json/DataJsonService';
 import { ToastService } from '../../services/toastService';
 import { CatalogueListPresenter } from './catalogueListPresenter';
 
 interface IWithDepInj {
     allGameItemsService: AllGameItemsService;
+    dataJsonService: DataJsonService;
     toastService: ToastService;
 }
 interface IWithoutDepInj {
@@ -123,6 +124,7 @@ export const CatalogueListContainer = withServices<IWithoutDepInj, IWithDepInj>(
     connect(mapStateToProps)(withRouter(CatalogueListContainerUnconnected)),
     (services: IDependencyInjection) => ({
         allGameItemsService: services.allGameItemsService,
+        dataJsonService: services.dataJsonService,
         toastService: services.toastService,
     })
 );

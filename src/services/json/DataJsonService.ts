@@ -2,6 +2,7 @@ import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { getHashForObject } from '../../helper/hashHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { QuicksilverStore } from '../../contracts/data/quicksilver';
+import { DevDetail } from '../../contracts/data/devDetail';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { AlphabetTranslation } from '../../contracts/data/alphabetTranslation';
 import { MetaData } from '../../contracts/data/metaData';
@@ -38,7 +39,7 @@ export class DataJsonService extends BaseJsonService {
 
     getAlphabetTranslations = () => this.getDataJsonBasic<Array<AlphabetTranslation>>('alphabetTranslations.json');
     getssistantAppLinks = () => this.getDataJsonBasic<Array<QuicksilverStore>>('assistantAppLinks.json');
-    getDeveloperDetails = () => this.getDataJsonBasic<Array<QuicksilverStore>>('developerDetails.json');
+    getDeveloperDetails = () => this.getDataJsonBasic<Array<DevDetail>>('developerDetails.json');
     getDonationsBackup = () => this.getDataJsonBasic<Array<QuicksilverStore>>('donationsBackup.json');
     getEggNeuralTraits = () => this.getDataJsonBasic<Array<EggNeuralTrait>>('eggNeuralTraits.json');
     getMeta = () => this.getDataJsonBasic<MetaData>('meta.json');

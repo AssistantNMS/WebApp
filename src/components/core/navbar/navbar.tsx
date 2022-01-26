@@ -48,7 +48,7 @@ class NavBarUnconnected extends React.PureComponent<IProps, IState> {
         if (this.props.setLanguage != null) {
             this.props.setLanguage(locale.code);
         }
-        this.setState((prevState: IState) => {
+        this.setState(() => {
             return {
                 langDropdownVisible: false
             }
