@@ -1,35 +1,43 @@
 import { AppImage } from '../constants/AppImage';
 
+export const getBackgroundForExpedition = (seasId: string) => {
+    if (seasId.includes('seas-1')) return AppImage.expeditionSeasonBackground2;
+    if (seasId.includes('seas-2')) return AppImage.expeditionSeasonBackground3;
+    if (seasId.includes('seas-3')) return AppImage.expeditionSeasonBackground4;
+    if (seasId.includes('seas-4')) return AppImage.expeditionSeasonBackground5;
+    return AppImage.expeditionSeasonBackground1;
+}
+
+export const getPatchForExpedition = (seasId: string) => {
+    if (seasId.includes('seas-1')) return AppImage.expeditionSeason1Patch;
+    if (seasId.includes('seas-2')) return AppImage.expeditionSeason2Patch;
+    if (seasId.includes('seas-3')) return AppImage.expeditionSeason3Patch;
+    if (seasId.includes('seas-4')) return AppImage.expeditionSeason4Patch;
+    return AppImage.expeditionSeason1Patch;
+}
+
+export const getExpeditionSeasonNum = (seasId: string): string => seasId.replaceAll('seas-', '').replaceAll('-redux', '');
+export const getExistingExpedition = (seasId: string, seasName: string): IExistingExpeditions => {
+    return {
+        name: seasName,
+        seasonId: seasId,
+        icon: getPatchForExpedition(seasId),
+        seasonNum: getExpeditionSeasonNum(seasId),
+        background: getBackgroundForExpedition(seasId),
+    };
+}
+
 export interface IExistingExpeditions {
     icon: string;
     name: string;
-    seasonNum: number;
+    seasonId: string;
+    seasonNum: string;
     background: string;
 }
 
 export const ExistingExpeditions: Array<IExistingExpeditions> = [
-    {
-        seasonNum: 4,
-        name: 'Emergence',
-        icon: AppImage.expeditionSeason4Patch,
-        background: AppImage.expeditionSeasonBackground5,
-    },
-    {
-        seasonNum: 3,
-        name: 'The Cartographers',
-        icon: AppImage.expeditionSeason3Patch,
-        background: AppImage.expeditionSeasonBackground4,
-    },
-    {
-        seasonNum: 2,
-        name: 'Beachhead',
-        icon: AppImage.expeditionSeason2Patch,
-        background: AppImage.expeditionSeasonBackground3,
-    },
-    {
-        seasonNum: 1,
-        name: 'Pioneer',
-        icon: AppImage.expeditionSeason1Patch,
-        background: AppImage.expeditionSeasonBackground2,
-    }
+    getExistingExpedition('seas-4', 'Emergence'),
+    getExistingExpedition('seas-3', 'The Cartographers'),
+    getExistingExpedition('seas-2', 'Beachhead'),
+    getExistingExpedition('seas-1', 'Pioneer'),
 ];

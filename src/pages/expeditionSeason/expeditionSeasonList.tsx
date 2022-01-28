@@ -10,7 +10,8 @@ import { ExpeditionSeasonViewModel } from '../../contracts/generated/Model/Hello
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { GameItemService } from '../../services/json/GameItemService';
-import { CurrentExpeditionSeasonHeader, SeasonExpeditionCards } from './expeditionSeasonComponents';
+import { CurrentExpeditionSeasonHeader } from './expeditionSeasonComponents';
+import { ExpeditionSeasonTiles } from './expeditionSeasonTiles';
 
 interface IWithDepInj {
     apiService: ApiService;
@@ -54,7 +55,9 @@ const ExpeditionSeasonListUnconnected: React.FC<IProps> = (props: IProps) => {
                         networkState={currentExpeditionStatus}
                         seasonDetails={currentExpedition}
                     />
-                    <SeasonExpeditionCards />
+                    <ExpeditionSeasonTiles
+                        gameItemService={props.gameItemService}
+                    />
                 </div>
             </div>
         </>
