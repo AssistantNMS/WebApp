@@ -2,8 +2,7 @@ import React, { DOMAttributes } from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { toast } from 'react-toastify';
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';

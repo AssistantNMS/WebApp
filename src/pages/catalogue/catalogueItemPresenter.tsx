@@ -1,7 +1,6 @@
 import i18next from 'i18next';
 import React, { useState } from 'react';
 import { AdditionalInfoChipRow } from '../../components/common/chip/additionalInfoChip';
-import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 import { ExpeditionAlphabetDecoder } from '../../components/common/expeditionAlphabetDecoder';
 import { HeadComponent } from '../../components/core/headComponent';
 import { ItemHeaderRow } from '../../components/core/itemHeaderRow';
@@ -20,8 +19,10 @@ import { Recharge } from '../../contracts/recharge/recharge';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { DataJsonService } from '../../services/json/DataJsonService';
 import { ToastService } from '../../services/toastService';
 import { displayCookItems, displayEggTraits, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
+import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 
 interface IProps {
     // Container Props
@@ -43,6 +44,7 @@ interface IProps {
     networkState: NetworkState;
 
     toastService: ToastService;
+    dataJsonService: DataJsonService;
 
     // Container Specific
     addThisItemToCart: () => void;
@@ -107,6 +109,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                 <DevDetailsBottomModalSheet
                     appId={props.item.Id}
                     isDetailPaneOpen={isDetailPaneOpen}
+                    dataJsonService={props.dataJsonService}
                     setDetailPaneOpen={() => setDetailPaneOpen(false)}
                 />
             </>

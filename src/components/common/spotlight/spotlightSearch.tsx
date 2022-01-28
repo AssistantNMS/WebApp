@@ -49,7 +49,7 @@ const SpotlightSearchUnconnected: React.FC<IProps> = (props: IProps) => {
 
     const fetchData = async () => {
         const devResult: ResultWithValue<Array<DevDetail>> = await props.dataJsonService.getDeveloperDetails();
-        if (devResult.isSuccess == false) {
+        if (devResult.isSuccess === false) {
             setNetworkState(NetworkState.Error);
             return;
         }
