@@ -61,6 +61,10 @@ $searchIconHeight: 30px;
         pointer-events: none;
     }
 
+    #spotlight {
+        color: #c5c5c5;
+    }
+
     #spotlight-wrapper {
         position: absolute;
         top: 10vh;
@@ -96,7 +100,7 @@ $searchIconHeight: 30px;
         padding: 1em;
 
         .highlight {
-            background-color: yellow;
+            background-color: $brand-secondary;
             color: black;
         }
     }
