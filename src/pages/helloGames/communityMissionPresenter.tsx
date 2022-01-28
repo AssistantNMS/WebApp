@@ -1,7 +1,6 @@
 import i18next from 'i18next';
 import React, { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { ProgressBar } from '../../components/common/progressBar/progressBar';
 import { Error } from '../../components/core/error/error';

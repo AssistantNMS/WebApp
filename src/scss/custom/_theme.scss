@@ -3,10 +3,8 @@ $list-item-background-color-dark: #6c757d;
 $list-item-text-color-dark: #f8f9fa;
 $list-item-text-color-darker: #c5c5c5;
 
-
 #app,
 body {
-
     color: $list-item-text-color-darker;
     background-color: $brand-primary-background;
 
@@ -94,8 +92,8 @@ body {
             margin-top: 1em;
         }
 
-        .table>thead>tr>th,
-        .table>tbody>tr>td {
+        .table > thead > tr > th,
+        .table > tbody > tr > td {
             border-color: white;
         }
     }
@@ -128,20 +126,19 @@ body {
             color: white;
         }
 
-        li.active>a {
+        li.active > a {
             background-color: $brand-primary;
         }
     }
 
     #searchBar {
-
         input {
             color: $white-color;
             background-image: linear-gradient(to top, #{$brand-primary} 2px, rgba(63, 81, 181, 0) 2px),
-            linear-gradient(to top, #{$white-color} 1px, rgba(210, 210, 210, 0) 1px);
+                linear-gradient(to top, #{$white-color} 1px, rgba(210, 210, 210, 0) 1px);
 
             $placeholderColor: rgba(255, 255, 255, 0.9);
-            $placeholderFontSize: .75em;
+            $placeholderFontSize: 0.75em;
 
             &::-webkit-input-placeholder {
                 color: $placeholderColor;
@@ -229,7 +226,7 @@ body {
     }
 
     .discussion {
-        >.bubble.sender {
+        > .bubble.sender {
             background-color: #606060;
             color: #fff;
 
@@ -238,7 +235,7 @@ body {
             }
         }
 
-        >.bubble.recipient {
+        > .bubble.recipient {
             background-color: $brand-primary;
 
             &:before {
@@ -246,10 +243,9 @@ body {
             }
         }
 
-        >.bubble.option {
+        > .bubble.option {
             background-color: $brand-secondary;
             color: black;
-
         }
     }
 

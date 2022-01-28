@@ -6,7 +6,6 @@ import { useState } from 'react';
 import { SpotlightSearchResult } from './spotlightSearchResults';
 import * as Route from '../../../constants/Route';
 import { knownKeyCodes } from '../../../constants/Keybind';
-import { GameItemModel } from '../../../contracts/GameItemModel';
 import { withRouter } from 'react-router-dom';
 import { DataJsonService } from '../../../services/json/DataJsonService';
 import { DevDetail } from '../../../contracts/data/devDetail';
