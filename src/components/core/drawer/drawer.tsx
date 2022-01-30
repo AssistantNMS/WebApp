@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
+import { NetworkState } from '../../../constants/NetworkState';
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
 import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
@@ -9,6 +10,7 @@ import { IDependencyInjection, withServices } from '../../../integration/depende
 import { GameItemService } from '../../../services/json/GameItemService';
 import { AboutDrawerTilePresenter } from '../../common/about/aboutDrawerTilePresenter';
 import { AssistantAppsAboutDrawerTilePresenter } from '../../common/about/assistantAppsAboutDrawerTilePresenter';
+import { SmallLoading } from '../loading/loading';
 import { mapDispatchToProps, mapStateToProps } from './drawer.Redux';
 
 interface IWithDepInj {
@@ -28,6 +30,7 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     let location = useLocation();
     const [menuItems, setMenuItems] = useState<Array<DrawerMenuItem>>([]);
     const [expandedMenuItems, setExpandedMenuItems] = useState<Array<string>>([]);
+    const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
 
     useEffect(() => {
         getMenuItems();
@@ -37,6 +40,7 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     const getMenuItems = async () => {
         const localMenuItems = await getDrawerMenuItems(props.gameItemService);
         setMenuItems(localMenuItems);
+        setNetworkState(NetworkState.Success);
     }
 
     const menuItemClick = () => {
@@ -122,7 +126,11 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
                     <div className="logo">
                         <Link to="/" draggable={false}><img src="/assets/images/DrawerHeader.png" draggable={false} alt="drawerHeader" /></Link>
                     </div>
-                    {renderMenuItems(menuItems ?? [])}
+                    {
+                        networkState !== NetworkState.Success
+                            ? <SmallLoading />
+                            : renderMenuItems(menuItems ?? [])
+                    }
                     <AssistantAppsAboutDrawerTilePresenter />
                     {renderMenuItems([menuItemSeperator])}
                     <br />
