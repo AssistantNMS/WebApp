@@ -1,5 +1,6 @@
 import i18next from 'i18next';
 import React, { ReactNode } from 'react';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 
 import { BottomModalSheet } from '../../components/common/dialog/bottomModalSheet';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
@@ -38,7 +39,7 @@ export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
     }
 
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={`${i18next.t(LocaleKey.nmsfm)} - ${i18next.t(LocaleKey.nmsfmSubtitle)}`} />
             <NavBar title={`${i18next.t(LocaleKey.nmsfm)} - ${i18next.t(LocaleKey.nmsfmSubtitle)}`} />
             <div className="content">
@@ -90,6 +91,6 @@ export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
             >
                 {renderTrackList(props)}
             </BottomModalSheet>
-        </>
+        </DefaultAnimation>
     );
 }

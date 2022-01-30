@@ -1,6 +1,7 @@
 import i18next from 'i18next';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -60,7 +61,7 @@ export const CartPresenter: React.FC<IProps> = (props: IProps) => {
 
     const title = i18next.t(LocaleKey.cart);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -75,6 +76,6 @@ export const CartPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 };

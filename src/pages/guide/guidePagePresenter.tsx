@@ -1,5 +1,6 @@
 import i18next from 'i18next';
 import React from 'react';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -27,7 +28,7 @@ export const GuidePagePresenter: React.FC<IProps> = (props: IProps) => {
     }
 
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={props.title} />
             <NavBar title={props.title} />
             <div className="content">
@@ -39,6 +40,6 @@ export const GuidePagePresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }

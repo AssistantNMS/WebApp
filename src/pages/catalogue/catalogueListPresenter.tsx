@@ -12,6 +12,7 @@ import { SpotlightSearch } from '../../components/common/spotlight/spotlightSear
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { toggleHtmlNodeClass } from '../../helper/documentHelper';
 import { Error } from '../../components/core/error/error';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 
 interface IProps {
     // Container Props
@@ -54,7 +55,7 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
 
     const title = i18next.t(LocaleKey.catalogue);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} additionalItems={getNavActionButtons()} />
             <div className="content">
@@ -76,6 +77,6 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
                 onClose={setSpotlight(false)}
                 dataJsonService={props.dataJsonService}
             />
-        </>
+        </DefaultAnimation>
     );
 }

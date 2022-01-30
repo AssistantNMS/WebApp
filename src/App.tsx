@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { AnimatePresence } from 'framer-motion';
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useLocation } from 'react-router';
@@ -6,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { mapDispatchToProps, mapStateToProps } from './App.Redux';
 import { Drawer } from './components/core/drawer/drawer';
+import { NavBarFake } from './components/core/navbar/navbarFake';
 import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
 import * as route from './constants/Route';
 import { trackPageView } from './integration/analytics';
@@ -39,7 +41,6 @@ import { SocialPresenter } from './pages/social/socialPresenter';
 import { SyncContainer } from './pages/sync/syncContainer';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
 import { StateSettingReducer } from './redux/state/StateSettingReducer';
-const ReactPageTransition = require('@steveeeie/react-page-transition');
 
 interface IProps extends StateSettingReducer {
   toggleMenu: () => void;
@@ -52,6 +53,8 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
     if (location == null) return;
     if (location.pathname == null) return;
     trackPageView(location.pathname);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location, location.pathname]);
 
   const toggleMenu = () => props?.toggleMenu != null ? props?.toggleMenu() : () => { };
@@ -63,11 +66,9 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
         <Drawer />
         <div className="main-panel ps-theme-default">
           <div id="sidebar-main-content-overlay" className="full-page-loader opacity80" onClick={() => toggleMenu()}></div>
-          <ReactPageTransition.PageTransition
-            preset="fadeFromRight"
-            transitionKey={location.pathname}
-          >
-            <Routes location={location}>
+          <NavBarFake />
+          <AnimatePresence exitBeforeEnter>
+            <Routes location={location} key={location.key}>
               <Route path={route.home} element={<HomePresenter />} />
               <Route path={route.setting} element={<SettingPresenter />} />
               <Route path={route.about} element={<AboutPresenter />} />
@@ -104,13 +105,13 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
 
               <Route path={route.social} element={<SocialPresenter />} />
               <Route path={route.sync} element={<SyncContainer />} />
-              <Route path={route.onlineMeetup2020} element={OnlineMeetup2020SubmissionContainer} />
+              <Route path={route.onlineMeetup2020} element={<OnlineMeetup2020SubmissionContainer />} />
 
-              <Route element={NotFoundPresenter} />
+              <Route element={<NotFoundPresenter />} />
             </Routes>
-          </ReactPageTransition.PageTransition>
+          </AnimatePresence>
         </div>
-      </ScrollToTop>
+      </ScrollToTop >
       <ToastContainer
         position="bottom-left"
         autoClose={false}
@@ -119,7 +120,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
         rtl={false}
         draggable
       />
-    </div>
+    </div >
   );
 }
 

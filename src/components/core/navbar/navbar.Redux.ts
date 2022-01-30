@@ -1,6 +1,11 @@
 import { State } from '../../../redux/state';
 import { setLanguage, toggleMenu } from '../../../redux/modules/setting/action';
 
+export interface IReduxProps {
+    setLanguage: (langCode: string) => void;
+    toggleMenu: () => void;
+}
+
 export const mapStateToProps = (state: State) => {
     return {};
 };

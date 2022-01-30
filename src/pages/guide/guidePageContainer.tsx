@@ -23,6 +23,7 @@ interface IState {
     status: NetworkState;
 }
 
+// TODO make functional component
 export class GuidePageContainerUnconnected extends React.Component<IProps, IState> {
     constructor(props: IProps) {
         super(props);

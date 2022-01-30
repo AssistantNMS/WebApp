@@ -8,17 +8,15 @@ interface IWithDepInj { }
 interface IWithoutDepInj { }
 interface IProps extends IWithoutDepInj, IReduxProps { }
 
-export class PortalListContainerUnconnected extends React.Component<IProps, any> {
-    render() {
-        return (
-            <PortalListPresenter
-                {...this.props}
-            />
-        );
-    }
+export const PortalListContainerUnconnected: React.FC<IProps> = (props: IProps) => {
+    return (
+        <PortalListPresenter
+            {...props}
+        />
+    );
 };
 
 export const PortalListContainer = withServices<IWithoutDepInj, IWithDepInj>(
     connect(mapStateToProps, mapDispatchToProps)(PortalListContainerUnconnected),
-    (services: IDependencyInjection) => ({})
+    () => ({})
 );

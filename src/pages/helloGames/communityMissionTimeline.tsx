@@ -1,6 +1,7 @@
 import i18next from 'i18next';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { Error } from '../../components/core/error/error';
@@ -117,7 +118,7 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
 
     const title = i18next.t(LocaleKey.communityMission);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -127,7 +128,7 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }
 

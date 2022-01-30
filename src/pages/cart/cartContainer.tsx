@@ -6,14 +6,12 @@ import { CartPresenter } from './cartPresenter';
 
 interface IWithDepInj { }
 interface IWithoutDepInj { }
-interface IProps extends IWithoutDepInj, IReduxProps { }
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
 
-export class CartContainerUnconnected extends React.Component<IProps, any> {
-    render() {
-        return (
-            <CartPresenter {...this.props} />
-        );
-    }
+export const CartContainerUnconnected: React.FC<IProps> = (props: IProps) => {
+    return (
+        <CartPresenter {...props} />
+    );
 };
 
 export const CartContainer = withServices<IWithoutDepInj, IWithDepInj>(

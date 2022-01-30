@@ -1,5 +1,6 @@
 import i18next from 'i18next';
 import React, { useState } from 'react';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { AdditionalInfoChipRow } from '../../components/common/chip/additionalInfoChip';
 import { ExpeditionAlphabetDecoder } from '../../components/common/expeditionAlphabetDecoder';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -87,7 +88,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
 
     const displayDetails = () => {
         return (
-            <>
+            <DefaultAnimation>
                 <div className="content">
                     <ItemHeaderRow {...props.item} openDevProperties={() => setDetailPaneOpen(!isDetailPaneOpen)}>
                         <ExpeditionAlphabetDecoder id={props.item.Id} />
@@ -112,7 +113,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     dataJsonService={props.dataJsonService}
                     setDetailPaneOpen={() => setDetailPaneOpen(false)}
                 />
-            </>
+            </DefaultAnimation>
         )
     }
 

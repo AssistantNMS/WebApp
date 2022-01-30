@@ -1,6 +1,7 @@
 import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -15,7 +16,7 @@ interface IWithDepInj { }
 interface IWithoutDepInj { }
 interface IProps extends IWithoutDepInj, IReduxProps { }
 
-export const FavouritePresenterUnconnected = (props: IProps) => {
+export const FavouritePresenterUnconnected: React.FC<IProps> = (props: IProps) => {
 
     const displayFavourites = (favourites: Array<FavouriteItem>) => {
         if (favourites == null || favourites.length === 0) return (
@@ -34,7 +35,7 @@ export const FavouritePresenterUnconnected = (props: IProps) => {
 
     const title = i18next.t(LocaleKey.favourites);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -44,7 +45,7 @@ export const FavouritePresenterUnconnected = (props: IProps) => {
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 };
 

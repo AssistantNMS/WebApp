@@ -1,5 +1,6 @@
 import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { CardButton } from '../../components/common/button/cardButton';
 import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
@@ -52,7 +53,7 @@ const SocialPresenterUnconnect: React.FC<IProps> = (props: IProps) => {
 
     const title = i18next.t(LocaleKey.social);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -60,7 +61,7 @@ const SocialPresenterUnconnect: React.FC<IProps> = (props: IProps) => {
                     {child}
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }
 

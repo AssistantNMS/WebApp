@@ -1,6 +1,7 @@
 import i18next from 'i18next';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { PortalGlyphGridDisplay, PortalGlyphKeypadGrid } from '../../components/common/portal/portalGlyphGrid';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -51,7 +52,7 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
         );
     };
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={props.record.Name} />
             <NavBar title={props.record.Name} additionalItems={[
                 <BaseFloatingActionButton
@@ -112,7 +113,7 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
                     : null
             }
             <div className="col-12" style={{ marginBottom: '2em', marginTop: '2em' }}></div>
-        </>
+        </DefaultAnimation>
     );
 
 }

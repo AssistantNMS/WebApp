@@ -1,14 +1,14 @@
 import React from 'react';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
+import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
-import { Error } from '../../components/core/error/error';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
 import { OnlineMeetup2020SubmissionViewModel } from '../../contracts/generated/onlineMeetup2020SubmissionViewModel';
 import './_onlineMeetup.scss';
 
 interface IProps {
-    history: any;
     items: Array<OnlineMeetup2020SubmissionViewModel>;
     status: NetworkState;
 }
@@ -76,7 +76,7 @@ export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IPr
         );
     }
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title="Online Meetup 2020" />
             <NavBar title="Online Meetup 2020" />
             <div className="content">
@@ -85,7 +85,7 @@ export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IPr
                     <br />
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 
 }

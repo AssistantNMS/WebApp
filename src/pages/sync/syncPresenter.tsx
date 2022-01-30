@@ -7,6 +7,7 @@ import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { GoogleSignedInState } from '../../contracts/enum/GoogleSignedInState';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 
 interface IProps {
     // Container props
@@ -66,7 +67,7 @@ export const SyncPresenter: React.FC<IProps> = (props: IProps) => {
 
     const title = i18next.t(LocaleKey.synchronize);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -83,6 +84,6 @@ export const SyncPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }

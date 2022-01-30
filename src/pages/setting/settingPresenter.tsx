@@ -1,6 +1,7 @@
 import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -17,7 +18,7 @@ interface IProps extends IWithoutDepInj, IReduxProps { }
 const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
     const title = i18next.t(LocaleKey.settings);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -39,7 +40,7 @@ const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }
 

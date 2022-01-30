@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NetworkState } from '../../constants/NetworkState';
 import { OnlineMeetup2020SubmissionViewModel } from '../../contracts/generated/onlineMeetup2020SubmissionViewModel';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
@@ -8,55 +8,37 @@ import { OnlineMeetup2020SubmissionPresenter } from './onlineMeetup2020Presenter
 interface IWithDepInj {
     apiService: ApiService;
 }
-interface IWithoutDepInj {
-    location: any;
-    match: any;
-    history: any;
-}
+interface IWithoutDepInj { }
 
 interface IProps extends IWithDepInj, IWithoutDepInj { }
 
-interface IState {
-    items: Array<OnlineMeetup2020SubmissionViewModel>;
-    status: NetworkState;
-}
+export const OnlineMeetup2020SubmissionContainerUnconnected: React.FC<IProps> = (props: IProps) => {
 
-export class OnlineMeetup2020SubmissionContainerUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+    const [items, setItems] = useState<Array<OnlineMeetup2020SubmissionViewModel>>([]);
+    const [status, setStatus] = useState<NetworkState>(NetworkState.Loading);
 
-        this.state = {
-            items: [],
-            status: NetworkState.Loading,
-        }
-        this.fetchOnlineMeetupSubmissions();
-    }
+    useEffect(() => {
+        fetchOnlineMeetupSubmissions();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
-    fetchOnlineMeetupSubmissions = async () => {
-        const itemsResult = await this.props.apiService.getOnlineMeetupSubmissions();
+    const fetchOnlineMeetupSubmissions = async () => {
+        const itemsResult = await props.apiService.getOnlineMeetupSubmissions();
         if (!itemsResult.isSuccess) {
-            this.setState(() => {
-                return {
-                    status: NetworkState.Error
-                }
-            });
+            setStatus(NetworkState.Error);
             return;
         }
-        this.setState(() => {
-            return {
-                items: itemsResult.value,
-                status: NetworkState.Success
-            };
-        })
+        setItems(itemsResult.value);
+        setStatus(NetworkState.Success);
     }
 
-    render() {
-        return (
-            <OnlineMeetup2020SubmissionPresenter
-                {...this.state} {...this.props}
-            />
-        );
-    }
+    return (
+        <OnlineMeetup2020SubmissionPresenter
+            {...props}
+            items={items}
+            status={status}
+        />
+    );
 }
 
 export const OnlineMeetup2020SubmissionContainer = withServices<IWithoutDepInj, IWithDepInj>(

@@ -2,6 +2,7 @@ import i18next from 'i18next';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { BottomModalSheet } from '../../components/common/dialog/bottomModalSheet';
 
 import { HeadComponent } from '../../components/core/headComponent';
@@ -75,7 +76,7 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
 
     const title = i18next.t(LocaleKey.seasonalExpedition);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -106,7 +107,7 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
                     {detailPane}
                 </div>
             </BottomModalSheet>
-        </>
+        </DefaultAnimation>
     );
 }
 

@@ -10,6 +10,7 @@ import { LocaleKey } from '../../localization/LocaleKey';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { WhatIsNewListTile } from '../../components/tilePresenter/whatIsNewListTile';
 import { VersionViewModel } from '../../contracts/generated/AssistantApps/ViewModel/Version/versionViewModel';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 
 interface IProps {
     whatIsNewItems: Array<VersionViewModel>;
@@ -38,19 +39,17 @@ export const WhatIsNewPresenter: React.FC<IProps> = (props: IProps) => {
             />;
 
         return (
-            <>
-                <div className="row">
-                    <div className="col-12">
-                        <GenericListPresenter list={whatIsNewItems || []} presenter={customWhatIsNewListTile} />
-                    </div>
+            <div className="row">
+                <div className="col-12">
+                    <GenericListPresenter list={whatIsNewItems || []} presenter={customWhatIsNewListTile} />
                 </div>
-            </>
+            </div>
         );
     }
 
     const title = i18next.t(LocaleKey.whatIsNew);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -58,6 +57,6 @@ export const WhatIsNewPresenter: React.FC<IProps> = (props: IProps) => {
                     {handleLoadingOrError((localProps: IProps) => displayWhatIsNewData(localProps.whatIsNewItems))}
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }
