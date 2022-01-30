@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
+import { withServices } from '../../integration/dependencyInjection';
 import { mapDispatchToProps, mapStateToProps, IReduxProps } from './portal.Redux';
 import { PortalListPresenter } from './portalListPresenter';
 
