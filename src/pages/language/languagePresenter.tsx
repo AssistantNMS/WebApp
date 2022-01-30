@@ -1,5 +1,6 @@
 import i18next from 'i18next';
 import React from 'react';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { CardButton } from '../../components/common/button/cardButton';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -14,7 +15,7 @@ export const LanguagePresenter: React.FC = () => {
     ];
     const title = i18next.t(LocaleKey.language);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -41,6 +42,6 @@ export const LanguagePresenter: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }

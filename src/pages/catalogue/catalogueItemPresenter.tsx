@@ -1,5 +1,6 @@
 import i18next from 'i18next';
-import React from 'react';
+import React, { useState } from 'react';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { AdditionalInfoChipRow } from '../../components/common/chip/additionalInfoChip';
 import { ExpeditionAlphabetDecoder } from '../../components/common/expeditionAlphabetDecoder';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -19,8 +20,10 @@ import { Recharge } from '../../contracts/recharge/recharge';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { DataJsonService } from '../../services/json/DataJsonService';
 import { ToastService } from '../../services/toastService';
 import { displayCookItems, displayEggTraits, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
+import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 
 interface IProps {
     // Container Props
@@ -42,6 +45,7 @@ interface IProps {
     networkState: NetworkState;
 
     toastService: ToastService;
+    dataJsonService: DataJsonService;
 
     // Container Specific
     addThisItemToCart: () => void;
@@ -50,6 +54,8 @@ interface IProps {
 }
 
 export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
+    const [isDetailPaneOpen, setDetailPaneOpen] = useState<boolean>(false);
+
     const getFloatingActionButtons = (): Array<any> => {
         const components: any[] = [];
         if (props.item == null || props.item.Id == null) return components;
@@ -82,9 +88,9 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
 
     const displayDetails = () => {
         return (
-            <>
-                <div className="content noselect">
-                    <ItemHeaderRow {...props.item}>
+            <DefaultAnimation>
+                <div className="content">
+                    <ItemHeaderRow {...props.item} openDevProperties={() => setDetailPaneOpen(!isDetailPaneOpen)}>
                         <ExpeditionAlphabetDecoder id={props.item.Id} />
                     </ItemHeaderRow>
                     <AdditionalInfoChipRow additionalData={props.additionalData} />
@@ -101,7 +107,13 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     {displayProceduralStatBonuses(props.item.NumStatsMin, props.item.NumStatsMax, props.item.ProceduralStatBonuses)}
                     {displayEggTraits(props.eggTraitArray)}
                 </div>
-            </>
+                <DevDetailsBottomModalSheet
+                    appId={props.item.Id}
+                    isDetailPaneOpen={isDetailPaneOpen}
+                    dataJsonService={props.dataJsonService}
+                    setDetailPaneOpen={() => setDetailPaneOpen(false)}
+                />
+            </DefaultAnimation>
         )
     }
 

@@ -32,7 +32,6 @@ export class SyncContainerUnconnected extends React.Component<IProps, IState> {
     }
 
     successfulSignIn = (googleSignInEvent: any) => {
-        console.log(googleSignInEvent);
         this.setState(() => {
             return {
                 name: googleSignInEvent.profileObj.name,

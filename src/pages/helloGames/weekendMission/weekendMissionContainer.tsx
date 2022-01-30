@@ -1,36 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
-import { useHistory, withRouter } from 'react-router-dom';
+import { useLocation } from 'react-router';
 import { Error } from '../../../components/core/error/error';
 import { SmallLoading } from '../../../components/core/loading/loading';
 import { NetworkState } from '../../../constants/NetworkState';
 import { IWeekendMissionMeta, WeekendMissions } from '../../../constants/WeekendMission';
 import { WeekendMissionStage } from '../../../contracts/helloGames/weekendMissionStage';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
-import { getCurrentLanguage } from '../../../redux/modules/setting/selector';
-import { State } from '../../../redux/state';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { WeekendMissionPresenter } from './weekendMissionPresenter';
+import { IFromRedux, mapStateToProps } from './weekendMission.redux';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
 }
 
-interface IFromRedux {
-    selectedLanguage: string;
-}
-
-interface IWithoutDepInj {
-    location: any;
-    match: any;
-    history: any;
-}
-
+interface IWithoutDepInj { }
 interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj { }
 
 
 export const WeekendMissionContainerUnconnected: React.FC<IProps> = (props: IProps) => {
-    const history = useHistory();
+    let location = useLocation();
 
     const [weekendMission, setWeekendMission] = useState<WeekendMissionStage>();
     const [weekendMissionMeta, setWeekendMissionMeta] = useState<IWeekendMissionMeta>();
@@ -39,11 +29,11 @@ export const WeekendMissionContainerUnconnected: React.FC<IProps> = (props: IPro
     useEffect(() => {
         fetchWeekendMissionStage();
         // eslint-disable-next-line
-    }, [props.selectedLanguage, history.location.pathname]);
+    }, [props.selectedLanguage, location.pathname]);
 
 
     const fetchWeekendMissionStage = async (newLevel?: number) => {
-        const url = history.location.pathname;
+        const url = location.pathname;
         const seasIdSlashIndex = url.lastIndexOf('/');
         const seasId = url.substring(seasIdSlashIndex + 1, url.length);
 
@@ -100,14 +90,8 @@ export const WeekendMissionContainerUnconnected: React.FC<IProps> = (props: IPro
     );
 }
 
-export const mapStateToProps = (state: State) => {
-    return {
-        selectedLanguage: getCurrentLanguage(state),
-    };
-};
-
 export const WeekendMissionContainer = withServices<IWithoutDepInj, IWithDepInj>(
-    connect(mapStateToProps)(withRouter(WeekendMissionContainerUnconnected)),
+    connect(mapStateToProps)(WeekendMissionContainerUnconnected),
     (services: IDependencyInjection) => ({
         gameItemService: services.gameItemService,
     })

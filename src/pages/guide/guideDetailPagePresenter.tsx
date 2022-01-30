@@ -1,5 +1,6 @@
 import i18next from 'i18next';
 import React from 'react';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
@@ -15,9 +16,6 @@ import { displaySectionImageItem, displaySectionLinkItem, displaySectionMarkdown
 
 interface IProps {
     // Container Props
-    location: any;
-    match: any;
-    history: any;
 
     // Container State
     guideService: GuideService;
@@ -98,7 +96,7 @@ export const GuideDetailPagePresenter: React.FC<IProps> = (props: IProps) => {
         props.guide?.title ?? 'Unknown' +
         props.guide?.shortTitle ?? 'Unknown';
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} description={description} />
             <NavBar title={title} />
             <div className="guide content">
@@ -110,6 +108,6 @@ export const GuideDetailPagePresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }

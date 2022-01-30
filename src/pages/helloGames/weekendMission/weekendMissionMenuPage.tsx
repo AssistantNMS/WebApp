@@ -1,7 +1,8 @@
 import classNames from 'classnames';
 import i18next from 'i18next';
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { DefaultAnimation } from '../../../components/common/animation/defaultAnim';
 import { HeadComponent } from '../../../components/core/headComponent';
 import { NavBar } from '../../../components/core/navbar/navbar';
 import { ExternalUrls } from '../../../constants/ExternalUrls';
@@ -9,11 +10,9 @@ import * as Routes from '../../../constants/Route';
 import { WeekendMissions } from '../../../constants/WeekendMission';
 import { LocaleKey } from '../../../localization/LocaleKey';
 
-interface IProps {
-    history: any;
-}
+interface IProps { }
 
-const WeekendMissionMenuPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
+export const WeekendMissionMenuPresenter: React.FC<IProps> = (props: IProps) => {
 
     const weekendMissionCard = (title: string, imageName: string, credits: string, seasonId: any, external?: string) => {
         if (external != null) {
@@ -38,7 +37,7 @@ const WeekendMissionMenuPresenterUnconnected: React.FC<IProps> = (props: IProps)
     }
 
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={i18next.t(LocaleKey.weekendMission)} />
             <NavBar title={i18next.t(LocaleKey.weekendMission)} />
             <div className="content no-spacing">
@@ -50,8 +49,6 @@ const WeekendMissionMenuPresenterUnconnected: React.FC<IProps> = (props: IProps)
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }
-
-export const WeekendMissionMenuPresenter = withRouter(WeekendMissionMenuPresenterUnconnected);

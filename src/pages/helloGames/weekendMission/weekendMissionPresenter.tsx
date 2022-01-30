@@ -15,6 +15,7 @@ import { RequiredItem } from '../../../contracts/RequiredItem';
 import { anyObject } from '../../../helper/typescriptHacks';
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { WeekendMissionDialogContent } from './weekendMissionDialogContent';
+import { DefaultAnimation } from '../../../components/common/animation/defaultAnim';
 
 
 interface IProps {
@@ -126,7 +127,7 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
 
     const title = i18next.t(LocaleKey.weekendMission);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -144,6 +145,6 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                     close={() => setOpen(false)}
                 />
             </BottomModalSheet>
-        </>
+        </DefaultAnimation>
     );
 }

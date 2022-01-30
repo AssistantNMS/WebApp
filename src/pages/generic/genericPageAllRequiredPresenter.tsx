@@ -1,5 +1,6 @@
 import i18next from 'i18next';
 import React from 'react';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -51,7 +52,7 @@ export const GenericPageAllRequiredPresenter: React.FC<IProps> = (props: IProps)
 
     const title = i18next.t(LocaleKey.allRawMaterialsRequired);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -76,6 +77,6 @@ export const GenericPageAllRequiredPresenter: React.FC<IProps> = (props: IProps)
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }

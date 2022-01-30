@@ -3,10 +3,8 @@ $list-item-background-color-dark: #6c757d;
 $list-item-text-color-dark: #f8f9fa;
 $list-item-text-color-darker: #c5c5c5;
 
-
 #app,
 body {
-
     color: $list-item-text-color-darker;
     background-color: $brand-primary-background;
 
@@ -25,7 +23,8 @@ body {
     .main-panel {
         background-color: $brand-primary-background;
 
-        #navbar.navbar {
+        #navbar.navbar,
+        .navbar-brand {
             background-color: $brand-primary;
             color: white;
         }
@@ -134,14 +133,13 @@ body {
     }
 
     #searchBar {
-
         input {
             color: $white-color;
             background-image: linear-gradient(to top, #{$brand-primary} 2px, rgba(63, 81, 181, 0) 2px),
             linear-gradient(to top, #{$white-color} 1px, rgba(210, 210, 210, 0) 1px);
 
             $placeholderColor: rgba(255, 255, 255, 0.9);
-            $placeholderFontSize: .75em;
+            $placeholderFontSize: 0.75em;
 
             &::-webkit-input-placeholder {
                 color: $placeholderColor;
@@ -249,7 +247,6 @@ body {
         >.bubble.option {
             background-color: $brand-secondary;
             color: black;
-
         }
     }
 
@@ -268,6 +265,7 @@ body {
 
 .react-modal-sheet-content {
     padding-bottom: 3em;
+    user-select: auto !important;
 
     a {
         color: $brand-secondary;

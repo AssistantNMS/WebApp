@@ -1,12 +1,12 @@
 import React from 'react';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { HeadComponent } from '../../components/core/headComponent';
 import { LazyLoadImage } from '../../components/core/lazyLoadImage/lazyLoadImage';
 import { NavBar } from '../../components/core/navbar/navbar';
 
-
 export const HomePresenter: React.FC = () => {
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={"Home"} />
             <NavBar title="Home" />
             <div className="content">
@@ -32,6 +32,6 @@ export const HomePresenter: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }

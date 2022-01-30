@@ -1,5 +1,8 @@
 import i18next from 'i18next';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
+import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -8,17 +11,17 @@ import * as Route from '../../constants/Route';
 import { CartItem } from '../../contracts/cart/cartItem';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { requiredItemFromCart } from '../../mapper/CartMapper';
-import { PositiveButton } from '../../components/common/button/positiveButton';
 
 interface IProps {
     // Container Props
-    history: any;
     cartItems: Array<CartItem>
     editItemInCart?: (cartItemIndex: number, cartItem: CartItem) => void;
     removeItemFromCart: (cartItemId: string) => void;
 }
 
 export const CartPresenter: React.FC<IProps> = (props: IProps) => {
+    const navigate = useNavigate();
+
     const displayCartItems = (cartItems: Array<CartItem>) => {
         if (cartItems == null || cartItems.length === 0) return (
             <h2>{i18next.t(LocaleKey.noCartItems)}</h2>
@@ -42,13 +45,14 @@ export const CartPresenter: React.FC<IProps> = (props: IProps) => {
         return (
             <PositiveButton
                 additionalClass="button-active-bg center full"
-                onClick={() => props.history.push({
-                    pathname: Route.genericAllRequirements,
-                    state: {
-                        typeName: i18next.t(LocaleKey.cart),
-                        requiredItems: props.cartItems.map(ci => requiredItemFromCart(ci))
+                onClick={() => navigate(Route.genericAllRequirements,
+                    {
+                        state: {
+                            typeName: i18next.t(LocaleKey.cart),
+                            requiredItems: props.cartItems.map(ci => requiredItemFromCart(ci))
+                        }
                     }
-                })}
+                )}
             >
                 <span>{i18next.t(LocaleKey.viewAllRawMaterialsRequired)}</span>
             </PositiveButton>
@@ -57,7 +61,7 @@ export const CartPresenter: React.FC<IProps> = (props: IProps) => {
 
     const title = i18next.t(LocaleKey.cart);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -72,6 +76,6 @@ export const CartPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 };

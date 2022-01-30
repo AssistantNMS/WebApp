@@ -1,6 +1,5 @@
 import i18next from 'i18next';
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 
 import { NetworkState } from '../../constants/NetworkState';
 import { Guide } from '../../contracts/guide/guide';
@@ -13,9 +12,6 @@ interface IWithDepInj {
     guideService: GuideService;
 }
 interface IWithoutDepInj {
-    location: any;
-    match: any;
-    history: any;
     selectedLanguage?: string;
 }
 
@@ -27,6 +23,7 @@ interface IState {
     status: NetworkState;
 }
 
+// TODO make functional component
 export class GuidePageContainerUnconnected extends React.Component<IProps, IState> {
     constructor(props: IProps) {
         super(props);
@@ -85,7 +82,7 @@ export class GuidePageContainerUnconnected extends React.Component<IProps, IStat
 }
 
 export const GuidePageContainer = withServices<IWithoutDepInj, IWithDepInj>(
-    withRouter(GuidePageContainerUnconnected),
+    GuidePageContainerUnconnected,
     (services: IDependencyInjection) => ({
         guideService: services.guideService,
     })

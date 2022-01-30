@@ -1,5 +1,7 @@
 import i18next from 'i18next';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { PortalGlyphGridDisplay, PortalGlyphKeypadGrid } from '../../components/common/portal/portalGlyphGrid';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -11,7 +13,6 @@ import { LocaleKey } from '../../localization/LocaleKey';
 
 interface IProps {
     // Container Props
-    history: any;
     useAltGlyphs: boolean;
     tags: Array<string>;
     availableTags: Array<string>;
@@ -21,7 +22,7 @@ interface IProps {
 
     // Container State
     isEdit: boolean;
-    item: PortalRecord;
+    record: PortalRecord;
 
     // Container Specific
     editName: () => void;
@@ -33,6 +34,8 @@ interface IProps {
 }
 
 export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
+    const navigate = useNavigate();
+
     const displayTags = (tags: Array<string>) => {
         return (
             <div className="row justify" style={{ paddingLeft: '1em', paddingRight: '1em' }}>
@@ -49,9 +52,9 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
         );
     };
     return (
-        <>
-            <HeadComponent title={props.item.Name} />
-            <NavBar title={props.item.Name} additionalItems={[
+        <DefaultAnimation>
+            <HeadComponent title={props.record.Name} />
+            <NavBar title={props.record.Name} additionalItems={[
                 <BaseFloatingActionButton
                     keyString={`editPortalName`}
                     icon={<i className="material-icons">edit</i>}
@@ -62,7 +65,7 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
                 <div className="row full pt1">
                     <div className="col-12">
                         <PortalGlyphGridDisplay
-                            codes={props.item.Codes || []}
+                            codes={props.record.Codes || []}
                             useAltGlyphs={props.useAltGlyphs}
                         />
                     </div>
@@ -96,23 +99,21 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
                         />
                     </div>
                 </div>
-                {displayTags(props.item.Tags)}
+                {displayTags(props.record.Tags)}
             </div>
             {
-                (props.item != null && props.item.Codes != null && props.item.Codes.length === 12)
+                (props.record != null && props.record.Codes != null && props.record.Codes.length === 12)
                     ? ApplyFloatingActionButton('portal-add-edit', () => {
                         let changeFunc = props.isEdit ? props.editPortal : props.addPortal;
                         if (changeFunc != null) {
-                            changeFunc(props.item);
-                            props.history.push({
-                                pathname: Route.portal,
-                            });
+                            changeFunc(props.record);
+                            navigate(Route.portal);
                         }
                     })
                     : null
             }
             <div className="col-12" style={{ marginBottom: '2em', marginTop: '2em' }}></div>
-        </>
+        </DefaultAnimation>
     );
 
 }

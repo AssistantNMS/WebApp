@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { DOMAttributes } from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { toast } from 'react-toastify';
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';
@@ -24,8 +23,16 @@ import './index.scss';
 import 'react-tippy/dist/tippy.css';
 import 'react-vertical-timeline-component/style.min.css';
 
+type CustomElement<T> = Partial<T & DOMAttributes<T> & { children: any }>;
+
 declare global {
     interface Window { config: any; registration: any }
+    namespace JSX {
+        interface IntrinsicElements {
+            ['assistant-apps-patreon-list']: CustomElement<any>;
+            ['assistant-apps-team-list']: CustomElement<any>;
+        }
+    }
 }
 
 const reactAppId = 'nms-app';

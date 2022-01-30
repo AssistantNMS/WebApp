@@ -7,6 +7,7 @@ import { LocaleKey } from '../../../localization/LocaleKey';
 import { PositiveButton } from '../button/positiveButton';
 
 interface IProps<T> {
+    hideViewMoreButton?: boolean;
     isCentered?: boolean;
     list: Array<T>;
     limitResultsTo?: number;
@@ -25,7 +26,7 @@ export function GenericListPresenter<T>(props: IProps<T>) {
     );
 
     const renderShowHideMore = () => {
-        if (props.limitResultsTo == null || props.list.length <= props.limitResultsTo) {
+        if (props.limitResultsTo == null || props.list.length <= props.limitResultsTo || props.hideViewMoreButton === true) {
             return (<span></span>);
         }
 

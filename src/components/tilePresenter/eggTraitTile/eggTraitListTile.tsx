@@ -1,15 +1,13 @@
-
 import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
+import { TileLoading } from '../../../components/core/loading/loading';
 import { EggNeuralTrait } from '../../../contracts/data/eggNeuralTrait';
-import { StatBonus } from '../../../contracts/StatBonus';
-import { ImageContainer } from '../../common/tile/imageContainer';
-import { TextContainer } from '../../common/tile/textContainer';
-import { GameItemService } from '../../../services/json/GameItemService';
 import { GameItemModel } from '../../../contracts/GameItemModel';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
-import { TileLoading } from '../../../components/core/loading/loading';
+import { GameItemService } from '../../../services/json/GameItemService';
 import { ActionContainer } from '../../common/tile/actionContainer';
+import { ImageContainer } from '../../common/tile/imageContainer';
+import { TextContainer } from '../../common/tile/textContainer';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -39,9 +37,9 @@ const EggTraitListTileInternal: React.FC<IProps> = (props: IProps) => {
 
     const getActions = () => {
         if (props.IsPositiveEffect) {
-            return [<img key="increasing" className="" src="/assets/images/special/increasing.png" />];
+            return [<img key="increasing" alt="increase" src="/assets/images/special/increasing.png" />];
         }
-        return [<img key="decreasing" className="" src="/assets/images/special/decreasing.png" />];
+        return [<img key="decreasing" alt="decrease" src="/assets/images/special/decreasing.png" />];
     }
 
     return (

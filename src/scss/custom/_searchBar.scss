@@ -7,8 +7,8 @@ $searchIconHeight: 30px;
 
     .icon-container {
         position: absolute;
-        top: .5em;
-        right: .5em;
+        top: 0.5em;
+        right: 0.5em;
         background-color: transparent;
         border: none;
         color: white;
@@ -23,7 +23,7 @@ $searchIconHeight: 30px;
         display: inline-block;
         height: $searchIconHeight;
         width: 100%;
-        padding: .75em;
+        padding: 0.75em;
         font-size: 1.75em;
         color: white;
         text-align: center;
@@ -44,7 +44,64 @@ $searchIconHeight: 30px;
 
         &.collapsed i {
             font-size: 2em;
-            margin-top: .4em;
+            margin-top: 0.4em;
+        }
+    }
+}
+
+.spotlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &:not(.isOpen) {
+        pointer-events: none;
+    }
+
+    #spotlight {
+        color: #c5c5c5;
+    }
+
+    #spotlight-wrapper {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        right: 0;
+        height: 85vh;
+        max-width: 50vw;
+        background-color: darken($brand-primary-background, 5%);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        overflow-y: auto;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        z-index: 20;
+    }
+
+    .spotlight-bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        transition: background-color 500ms ease-in-out;
+
+        &.isOpen {
+            background-color: rgba(0, 0, 0, 0.5);
+            pointer-events: all;
+        }
+    }
+
+    .spotlight-group {
+        padding: 1em;
+
+        .highlight {
+            background-color: $brand-secondary;
+            color: black;
         }
     }
 }

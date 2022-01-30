@@ -1,13 +1,12 @@
 import i18next from 'i18next';
 import React from 'react';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { CardButton } from '../../components/common/button/cardButton';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
 import { ExternalUrls } from '../../constants/ExternalUrls';
 import { LocaleKey } from '../../localization/LocaleKey';
-
-
 
 export const DonationPresenter: React.FC = () => {
     const paymentOptions = [];
@@ -20,7 +19,7 @@ export const DonationPresenter: React.FC = () => {
 
     const title = i18next.t(LocaleKey.donation);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -47,25 +46,6 @@ export const DonationPresenter: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }
-
-
-
-
-
-/*
-            <div class="row" style="justify-content: center;"">
-            <div v-for=" paymentOption in paymentOptions"
-            class="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-            <a :href="paymentOption.url" target="_blank" rel="noopener norefferer" class="card paymentOption">
-                <div class="card-header">
-                    <img :src="paymentOption.image" class="card-header-image" />
-                    <span>{{paymentOption.title}}</span>
-                </div>
-            </a>
-        </div>
-
-
-*/

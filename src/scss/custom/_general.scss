@@ -1,6 +1,16 @@
+:root {
+    // AssistantApps WebComponents
+    --assistantapps-font-family: "Roboto", Helvetica, Arial, sans-serif;
+    --assistantapps-team-member-link-text-colour: #{$brand-secondary};
+}
+
+.main-panel.noscroll {
+    overflow: hidden;
+}
+
 #app,
 body {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -45,7 +55,7 @@ body {
 
     li.nav-item {
         @media screen and (max-width: 800px) {
-            margin-top: .5em;
+            margin-top: 0.5em;
         }
     }
 
@@ -97,11 +107,22 @@ img.grayscale {
     border-radius: 0;
 }
 
+.navbar.navbar-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px !important;
+    border-radius: 0;
+    box-shadow: unset;
+    background-color: $brand-primary;
+}
+
 #app .main-panel {
     height: 100vh;
     // overflow-y: scroll;
 
-    >.content {
+    .content {
         margin-top: 0;
         padding: 0 15px;
 
@@ -138,6 +159,11 @@ img.grayscale {
     margin-top: 3em;
 }
 
+.mh-1em {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 .mb-1em {
     margin-bottom: 1em;
 }
@@ -145,7 +171,6 @@ img.grayscale {
 .mb-2em {
     margin-bottom: 2em;
 }
-
 
 // #app {
 //     overflow-y: scroll;
@@ -160,7 +185,7 @@ img.grayscale {
 // }
 
 .fab-margin {
-    margin: .5em;
+    margin: 0.5em;
 }
 
 .row.full,
@@ -184,6 +209,10 @@ img.grayscale {
 
 .pt1 {
     padding-top: 1em;
+}
+
+.pb1 {
+    padding-bottom: 1em;
 }
 
 .pb5 {
@@ -238,14 +267,23 @@ img.grayscale {
 }
 
 .store {
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 #app .main-panel #navbar.navbar {
     @media screen and (min-width: 500px) and (max-width: 991px) {
         padding-top: 0 !important;
     }
+}
+
+.colour-swatch {
+    display: inline-block;
+    height: 2em;
+    width: 5em;
+    margin-left: 0.75em;
+    margin-bottom: -0.65em;
+    border-radius: 5px;
 }
 
 .context-menu {
@@ -288,7 +326,8 @@ img.grayscale {
     }
 }
 
-.noselect {
+.noselect,
+.tippy-popper {
     -webkit-touch-callout: none;
     /* iOS Safari */
     -webkit-user-select: none;

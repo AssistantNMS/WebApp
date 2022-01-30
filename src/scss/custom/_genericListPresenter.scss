@@ -44,12 +44,12 @@
                     height: 100px;
                     min-width: 100px;
 
-                    >span {
+                    > span {
                         height: 100%;
                         width: 100%;
                         position: relative;
 
-                        >img {
+                        > img {
                             object-fit: cover;
                             height: 100%;
                             width: 100%;
@@ -72,18 +72,18 @@
                     bottom: 0em;
                     right: -0.75em;
                     border-radius: 25px;
-                    padding: 0 .5em;
+                    padding: 0 0.5em;
 
                     &.large {
-                        padding: .15em .4em;
+                        padding: 0.15em 0.4em;
                     }
 
                     &.xlarge {
-                        padding: .25em .2em;
+                        padding: 0.25em 0.2em;
                     }
 
                     &.xxlarge {
-                        padding: 0 .5em;
+                        padding: 0 0.5em;
                         border-radius: 25px;
                         bottom: 0;
                         right: 0;
@@ -101,9 +101,9 @@
                 .text-container {
                     font-size: 1.5em;
                     text-align: left;
-                    padding-top: .5em;
+                    padding-top: 0.5em;
                     padding-left: 1rem;
-                    padding-right: .5rem;
+                    padding-right: 0.5rem;
 
                     &:not(.multiline) {
                         p {
@@ -113,13 +113,17 @@
                             text-overflow: ellipsis;
                         }
                     }
-                }
 
-                .text-container.full {
-                    padding-top: 0;
+                    &.full {
+                        padding-top: 0;
 
-                    p {
-                        line-height: 100px;
+                        p {
+                            line-height: 100px;
+                        }
+                    }
+
+                    &.small {
+                        font-size: 1.2rem;
                     }
                 }
 
@@ -164,14 +168,14 @@
                         // padding-right: 1em;
                         // margin-top: 1rem;
 
-                        >* {
+                        > * {
                             // margin-top: .25em;
-                            margin-right: .5em;
+                            margin-right: 0.5em;
                             display: block;
                             color: white;
                         }
 
-                        >.not-centered {
+                        > .not-centered {
                             margin-top: 50%;
                         }
                     }

@@ -1,6 +1,6 @@
 import i18next from 'i18next';
-import React from 'react';
-import { withRouter } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { NetworkState } from '../../constants/NetworkState';
 import { GuideMetaViewModel } from '../../contracts/generated/guideMetaViewModel';
 import { Guide } from '../../contracts/guide/guide';
@@ -15,93 +15,68 @@ interface IWithDepInj {
     guideService: GuideService;
     apiService: ApiService;
 }
-interface IWithoutDepInj {
-    location: any;
-    match: any;
-    history: any;
-}
+interface IWithoutDepInj { }
 
 interface IProps extends IWithDepInj, IWithoutDepInj { }
 
-interface IState {
-    guide?: Guide;
-    guideMeta?: GuideMetaViewModel;
-    status: NetworkState;
-}
 
-export class GuideDetailPageContainerUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+export const GuideDetailPageContainerUnconnected: React.FC<IProps> = (props: IProps) => {
+    let { guid } = useParams();
+    const [guide, setGuide] = useState<Guide>();
+    const [guideMeta, setGuideMeta] = useState<GuideMetaViewModel>();
+    const [status, setStatus] = useState<NetworkState>(NetworkState.Loading);
 
-        this.state = {
-            status: NetworkState.Loading,
-        }
-    }
+    useEffect(() => {
+        if (guid == null) return;
+        fetchData(guid);
+        fetchMetaData(guid);
 
-    componentDidMount() {
-        const guid = this.props.match?.params?.guid;
-        this.fetchData(guid);
-        this.fetchMetaData(guid);
-    }
+        // eslint-disable-next-line
+    }, [guid]);
 
-    fetchData = async (guideGuid: string) => {
-        const guideResult = await this.props.guideService.getSpecificGuide(guideGuid);
+    const fetchData = async (guideGuid: string) => {
+        const guideResult = await props.guideService.getSpecificGuide(guideGuid);
         if (!guideResult.isSuccess) {
-            this.setState(() => {
-                return {
-                    status: NetworkState.Error
-                }
-            });
+            setStatus(NetworkState.Error);
             return;
         }
-        this.setState(() => {
-            return {
-                guide: guideResult.value,
-                status: NetworkState.Success
-            }
-        });
+        setGuide(guideResult.value);
+        setStatus(NetworkState.Success);
     }
 
-    fetchMetaData = async (guideGuid: string) => {
-        const guideMetaResult = await this.props.apiService.getGuideMetaData(guideGuid);
+    const fetchMetaData = async (guideGuid: string) => {
+        const guideMetaResult = await props.apiService.getGuideMetaData(guideGuid);
         if (!guideMetaResult.isSuccess) return;
-        this.setState(() => {
-            return {
-                guideMeta: guideMetaResult.value
-            }
-        });
+        setGuideMeta(guideMetaResult.value);
     }
 
-    likeGuide = async () => {
-        const guid = this.state.guide?.guid;
+    const likeGuide = async () => {
+        const guid = guide?.guid;
         if (!guid) return;
-        const likeResult = await this.props.apiService.likeGuide(guid);
+        const likeResult = await props.apiService.likeGuide(guid);
         if (likeResult.isSuccess) {
             successDialog('👍', '');
-            const newGuideMeta: any = { ...this.state.guideMeta };
-            newGuideMeta.likes = (this.state.guideMeta?.likes ?? 0) + 1;
-            this.setState(() => {
-                return {
-                    guideMeta: newGuideMeta
-                }
-            });
+            const newGuideMeta: any = { ...guideMeta };
+            newGuideMeta.likes = (guideMeta?.likes ?? 0) + 1;
+            setGuideMeta(newGuideMeta);
         } else {
             errorDialog(i18next.t(LocaleKey.error), 'Your \'like\' was not submitted');
         }
     }
 
-    render() {
-        return (
-            <GuideDetailPagePresenter
-                {...this.state} {...this.props}
-                likeGuide={this.likeGuide}
-            />
-        );
-    }
+    return (
+        <GuideDetailPagePresenter
+            {...props}
+            guide={guide}
+            guideMeta={guideMeta}
+            status={status}
+            likeGuide={likeGuide}
+        />
+    );
 }
 
 export const GuideDetailPageContainer = withServices<IWithoutDepInj, IWithDepInj>(
-    withRouter(GuideDetailPageContainerUnconnected),
+    GuideDetailPageContainerUnconnected,
     (services: IDependencyInjection) => ({
         guideService: services.guideService,
         apiService: services.apiService,

@@ -1,26 +1,24 @@
 import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
+import { withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { mapDispatchToProps, mapStateToProps } from './setting.Redux';
+import { mapDispatchToProps, mapStateToProps, IReduxProps } from './setting.Redux';
 import { BoolSettingTile, LangSettingTile, FontSettingTile } from './settingComponent';
 
-interface IProps {
-    useAltGlyphs: boolean;
-    selectedLanguage: string;
-    selectedFont: string;
-    toggleAltGlyphs: () => void;
-    setLanguage: (selectedLanguage: string) => void;
-    setFont: (selectedFont: string) => void;
-}
+
+interface IWithDepInj { }
+interface IWithoutDepInj { }
+interface IProps extends IWithoutDepInj, IReduxProps { }
 
 const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
     const title = i18next.t(LocaleKey.settings);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
@@ -42,8 +40,11 @@ const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }
 
-export const SettingPresenter = connect(mapStateToProps, mapDispatchToProps)(SettingPresenterUnconnected);
+export const SettingPresenter = withServices<IWithoutDepInj, IWithDepInj>(
+    connect(mapStateToProps, mapDispatchToProps)(SettingPresenterUnconnected),
+    () => ({})
+);

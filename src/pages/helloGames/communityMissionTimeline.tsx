@@ -1,9 +1,12 @@
 import i18next from 'i18next';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
+import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
+import { BasicLink } from '../../components/core/link';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { IQuicksilverItemWithoutDepInj, QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
@@ -76,46 +79,56 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
         if (status === NetworkState.Error) return (<Error />);
 
         return (
-            <VerticalTimeline>
-                {
-                    quicksilverStoreItems.map((qs: QuicksilverStore) => {
-                        let status = qs.MissionId > communityMission.missionId
-                            ? 'Future'
-                            : 'Completed';
-                        if (qs.MissionId === communityMission.missionId) {
-                            status = 'In progress'
-                        }
-                        return (
-                            <VerticalTimelineElement
-                                className="vertical-timeline-element"
-                                contentStyle={{ background: 'rgba(0,0,0,0.15)', color: '#fff' }}
-                                contentArrowStyle={{ borderRight: '1px solid rgba(0,0,0,0.15)' }}
-                                date={status}
-                                iconStyle={{ background: '#80cbc4', color: '#000' }}
-                                icon={<p style={{ paddingTop: '1em' }}>{qs.MissionId}</p>}
-                            >
-                                {renderQuickSilverContent(qs.Items)}
-                            </VerticalTimelineElement>
-                        );
-                    })
-                }
-            </VerticalTimeline>
+            <>
+                <VerticalTimeline>
+                    {
+                        quicksilverStoreItems.map((qs: QuicksilverStore) => {
+                            let status = qs.MissionId > communityMission.missionId
+                                ? i18next.t(LocaleKey.futureCommunityMission)
+                                : i18next.t(LocaleKey.completedCommunityMission);
+                            if (qs.MissionId === communityMission.missionId) {
+                                status = i18next.t(LocaleKey.inProgressCommunityMission);
+                            }
+                            return (
+                                <VerticalTimelineElement
+                                    key={qs.MissionId}
+                                    className="vertical-timeline-element"
+                                    contentStyle={{ background: 'rgba(0,0,0,0.15)', color: '#fff' }}
+                                    contentArrowStyle={{ borderRight: '1px solid rgba(0,0,0,0.15)' }}
+                                    date={status}
+                                    iconStyle={{ background: '#80cbc4', color: '#000' }}
+                                    icon={<p style={{ paddingTop: '1em' }}>{qs.MissionId}</p>}
+                                >
+                                    {renderQuickSilverContent(qs.Items)}
+                                </VerticalTimelineElement>
+                            );
+                        })
+                    }
+                </VerticalTimeline>
+                <div className="col-12">
+                    <PositiveButton additionalClass="customButton noselect">
+                        <BasicLink href="https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion">
+                            <span style={{ color: 'black' }}>{i18next.t(LocaleKey.viewMoreOnNmsWiki)}</span>
+                        </BasicLink>
+                    </PositiveButton>
+                </div>
+            </>
         );
     }
 
     const title = i18next.t(LocaleKey.communityMission);
     return (
-        <>
+        <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
                 <div className="container full pt1 pb5">
-                    <div className="row" style={{ overflowX: 'hidden' }}>
+                    <div className="row justify noselect" style={{ overflowX: 'hidden' }}>
                         {renderMainContent()}
                     </div>
                 </div>
             </div>
-        </>
+        </DefaultAnimation>
     );
 }
 

@@ -16,7 +16,7 @@ interface IProps extends IWithDepInj, IWithoutDepInj {
 }
 
 const AssistantAppsContentUnconnected: React.FC<IProps> = (props: IProps) => {
-    const [appLinks, setAppLinks] = useState<Array<AssistantAppLinks>>();
+    const [appLinks, setAppLinks] = useState<Array<AssistantAppLinks>>([]);
 
     useEffect(() => {
         loadMetaJson();
@@ -67,7 +67,7 @@ interface IAssistantAppLinkListTileProps {
 }
 
 const ListTile: React.FC<IAssistantAppLinkListTileProps> = (props: IAssistantAppLinkListTileProps) => (
-    <div className="row justify">
+    <div key={props.item.guid} className="row justify">
         <div className="gen-item col-12 col-xl-5 col-lg-8 col-md-10 col-sm-10 col-xs-12">
             <div className="gen-item-container" draggable={false}>
                 <ImageContainer Icon={props.item.logoUrl} Name={props.item.name} IsExternal={true} />
@@ -75,11 +75,11 @@ const ListTile: React.FC<IAssistantAppLinkListTileProps> = (props: IAssistantApp
                     <TextContainer text={props.item.name} />
                     <div className="quantity-container">
                         {
-                            props.item.links.map((l: AssistantAppLinkItem, index: number) => {
+                            (props?.item?.links ?? []).map((l: AssistantAppLinkItem, index: number) => {
                                 const children: Array<ReactNode> = [];
-                                if (index > 0) children.push(<span>,&nbsp;&nbsp;&nbsp;</span>);
+                                if (index > 0) children.push(<span key={l.type + 'seperator' + index}>,&nbsp;&nbsp;&nbsp;</span>);
                                 children.push(
-                                    <a href={l.url} className="uppercase secondary-colour" target="_blank" rel="noopener noreferrer">
+                                    <a key={l.type + index} href={l.url} className="uppercase secondary-colour" target="_blank" rel="noopener noreferrer">
                                         <b>{l.type}</b>&nbsp;<i className="material-icons small">open_in_new</i>
                                     </a>
                                 );

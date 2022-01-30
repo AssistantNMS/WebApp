@@ -30,6 +30,7 @@ export const CustomTooltip: React.FC<IProps> = (props: IProps) => {
             arrow={true}
             theme={props.theme ?? "dark"}
             position={props.position ?? "top"}
+            className="noselect"
         >
             {props.children}
         </Tooltip>

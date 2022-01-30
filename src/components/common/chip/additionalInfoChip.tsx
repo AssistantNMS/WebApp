@@ -31,7 +31,7 @@ export const AdditionalInfoChipRow: React.FC<IChipRowProps> = (props: IChipRowPr
     }
 
     return (
-        <div className="row justify " style={{ marginTop: '1em', paddingBottom: '.5em' }}>
+        <div className="row justify mt-1em pb1 noselect">
             {
                 props.additionalData.map((item: IChipProps, index: number) => {
                     return (

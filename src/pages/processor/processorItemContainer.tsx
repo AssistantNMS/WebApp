@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
+import { useParams } from 'react-router-dom';
 
 import { NetworkState } from '../../constants/NetworkState';
 import { GameItemModel } from '../../contracts/GameItemModel';
@@ -9,123 +10,83 @@ import { anyObject } from '../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { AllGameItemsService } from '../../services/json/AllGameItemsService';
 import { GameItemService } from '../../services/json/GameItemService';
-import { mapStateToProps } from './processorItem.Redux';
+import { mapStateToProps, IReduxProps } from './processorItem.Redux';
 import { ProcessorItemPresenter } from './processorItemPresenter';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
     allGameItemsService: AllGameItemsService;
 }
-interface IWithoutDepInj {
-    location: any;
-    match: any;
-    history: any;
-    selectedLanguage?: string;
-}
+interface IWithoutDepInj { }
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
 
-interface IState {
-    item: Processor;
-    outputDetails: GameItemModel;
-    inputDetails: Array<RequiredItemDetails>;
-    status: NetworkState;
-}
+export const ProcessorItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
+    let { itemId } = useParams();
 
-export class ProcessorItemContainerUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+    const [item, setItem] = useState<Processor>(anyObject);
+    const [outputDetails, setOutputDetails] = useState<GameItemModel>(anyObject);
+    const [inputDetails, setInputDetails] = useState<Array<RequiredItemDetails>>([]);
+    const [status, setStatus] = useState<NetworkState>(NetworkState.Loading);
 
-        this.state = {
-            item: anyObject,
-            outputDetails: anyObject,
-            inputDetails: [],
-            status: NetworkState.Loading
-        }
+    useEffect(() => {
+        clearData();
+        if (itemId == null || itemId.length < 1) return;
+        fetchData(itemId);
+        fetchInputDetails(itemId);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [props.selectedLanguage, itemId]);
+
+    const clearData = async () => {
+        setItem(anyObject);
+        setInputDetails([]);
+        setOutputDetails(anyObject);
     }
 
-    componentDidMount() {
-        const itemId = this.props.match?.params?.itemId;
-        this.fetchData(itemId);
-        this.fetchInputDetails(itemId);
-    }
-
-    componentDidUpdate(prevProps: IProps, prevState: IState) {
-        const prevSelectedLanguage = prevProps.selectedLanguage;
-        const prevItemId = prevProps.match?.params?.itemId;
-        if (this.props.selectedLanguage !== prevSelectedLanguage || this.props.match?.params?.itemId !== prevItemId) {
-            this.clearData();
-            const itemId = this.props.match?.params?.itemId;
-            this.fetchData(itemId);
-            this.fetchInputDetails(itemId);
-        }
-    }
-
-    clearData = async () => {
-        this.setState(() => {
-            return {
-                item: anyObject,
-                outputDetails: anyObject,
-            }
-        });
-    }
-
-    fetchData = async (itemId: string) => {
+    const fetchData = async (itemId: string) => {
         const itemResult = itemId.includes("ref")
-            ? await this.props.gameItemService.getRefinedById(itemId ?? '')
-            : await this.props.gameItemService.getCookingById(itemId ?? '');
+            ? await props.gameItemService.getRefinedById(itemId)
+            : await props.gameItemService.getCookingById(itemId);
         if (!itemResult.isSuccess) {
-            this.setState(() => {
-                return {
-                    status: NetworkState.Error
-                }
-            });
+            setStatus(NetworkState.Error);
             console.error(itemResult.errorMessage);
             return;
         }
 
-        this.fetchOutputData(itemResult.value.Output.Id);
-        this.setState(() => {
-            return {
-                item: itemResult.value,
-                status: NetworkState.Success
-            }
-        });
+        fetchOutputData(itemResult.value.Output.Id);
+        setItem(itemResult.value);
+        setStatus(NetworkState.Success);
     }
 
-    fetchOutputData = async (itemId: string) => {
-        const itemResult = await this.props.gameItemService.getItemDetails(itemId ?? '');
+    const fetchOutputData = async (itemId: string) => {
+        const itemResult = await props.gameItemService.getItemDetails(itemId);
         if (!itemResult.isSuccess) {
             console.error(itemResult.errorMessage);
             return;
         }
 
-        this.setState(() => {
-            return {
-                outputDetails: itemResult.value
-            }
-        });
+        setOutputDetails(itemResult.value);
     }
 
-    fetchInputDetails = async (itemId: string) => {
-        const inputDetails = await this.props.gameItemService.getRequiredItemDetails(itemId ?? '');
+    const fetchInputDetails = async (itemId: string) => {
+        const inputDetails = await props.gameItemService.getRequiredItemDetails(itemId ?? '');
         if (!inputDetails.isSuccess) {
             console.error(inputDetails.errorMessage);
             return;
         }
 
-        this.setState(() => {
-            return {
-                inputDetails: inputDetails.value
-            }
-        });
+        setInputDetails(inputDetails.value);
     }
 
-    render() {
-        return (
-            <ProcessorItemPresenter {...this.state} {...this.props} />
-        );
-    }
+    return (
+        <ProcessorItemPresenter
+            {...props}
+            item={item}
+            outputDetails={outputDetails}
+            inputDetails={inputDetails}
+            status={status}
+        />
+    );
 }
 
 export const ProcessorItemContainer = withServices<IWithoutDepInj, IWithDepInj>(
