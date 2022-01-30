@@ -10,7 +10,7 @@ import { IDependencyInjection, withServices } from '../../../integration/depende
 import { GameItemService } from '../../../services/json/GameItemService';
 import { AboutDrawerTilePresenter } from '../../common/about/aboutDrawerTilePresenter';
 import { AssistantAppsAboutDrawerTilePresenter } from '../../common/about/assistantAppsAboutDrawerTilePresenter';
-import { SmallLoading } from '../loading/loading';
+import { TileLoading } from '../loading/loading';
 import { mapDispatchToProps, mapStateToProps } from './drawer.Redux';
 
 interface IWithDepInj {
@@ -128,7 +128,7 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
                     </div>
                     {
                         networkState !== NetworkState.Success
-                            ? <SmallLoading />
+                            ? <TileLoading />
                             : renderMenuItems(menuItems ?? [])
                     }
                     <AssistantAppsAboutDrawerTilePresenter />
