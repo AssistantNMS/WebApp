@@ -1,7 +1,8 @@
 import classNames from 'classnames';
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { Route, Switch, withRouter } from 'react-router-dom';
+import { useLocation } from 'react-router';
+import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { mapDispatchToProps, mapStateToProps } from './App.Redux';
 import { Drawer } from './components/core/drawer/drawer';
@@ -38,18 +39,20 @@ import { SocialPresenter } from './pages/social/socialPresenter';
 import { SyncContainer } from './pages/sync/syncContainer';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
 import { StateSettingReducer } from './redux/state/StateSettingReducer';
+const ReactPageTransition = require('@steveeeie/react-page-transition');
 
 interface IProps extends StateSettingReducer {
-  location: any;
   toggleMenu: () => void;
 }
 
 const AppUnconnected: React.FC<any> = (props: IProps) => {
+  let location = useLocation();
+
   useEffect(() => {
-    if (props.location == null) return;
-    if (props.location.pathname == null) return;
-    trackPageView(props.location.pathname);
-  }, [props.location, props.location.pathname]);
+    if (location == null) return;
+    if (location.pathname == null) return;
+    trackPageView(location.pathname);
+  }, [location, location.pathname]);
 
   const toggleMenu = () => props?.toggleMenu != null ? props?.toggleMenu() : () => { };
 
@@ -60,38 +63,52 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
         <Drawer />
         <div className="main-panel ps-theme-default">
           <div id="sidebar-main-content-overlay" className="full-page-loader opacity80" onClick={() => toggleMenu()}></div>
-          <Switch>
-            <Route exact={true} path={route.home} component={HomePresenter} />
-            <Route path={`${route.catalogue}/:types`} component={CatalogueListContainer} />
-            <Route path={`${route.catalogueItem}/:itemId/:langCode`} component={CatalogueItemContainer} />
-            <Route path={`${route.catalogueItem}/:itemId`} component={CatalogueItemContainer} />
-            <Route path={`${route.processorItem}/:itemId`} component={ProcessorItemContainer} />
-            <Route path={route.catalogue} component={CataloguePresenter} />
-            <Route path={route.setting} component={SettingPresenter} />
-            <Route path={route.about} component={AboutPresenter} />
-            <Route path={route.language} component={LanguagePresenter} />
-            <Route path={route.donation} component={DonationPresenter} />
-            <Route path={route.cart} component={CartContainer} />
-            <Route path={route.genericAllRequirements} component={GenericPageAllRequiredContainer} />
-            <Route path={`${route.guides}/:guid`} component={GuideDetailPageContainer} />
-            <Route path={route.guides} component={GuidePageContainer} />
-            <Route path={route.portal} component={PortalListContainer} />
-            <Route path={route.addEditPortal} component={AddEditPortalContainer} />
-            <Route path={route.communityMission} component={CommunityMissionContainer} />
-            <Route path={route.communityMissionTimeline} component={CommunityMissionTimeline} />
-            <Route path={route.favourites} component={FavouritePresenter} />
-            <Route path={route.social} component={SocialPresenter} />
-            <Route path={route.sync} component={SyncContainer} />
-            <Route path={route.onlineMeetup2020} component={OnlineMeetup2020SubmissionContainer} />
-            <Route path={route.weekendMissionDetails} component={WeekendMissionContainer} />
-            <Route path={route.weekendMission} component={WeekendMissionMenuPresenter} />
-            <Route path={`${route.seasonExpedition}/:seasId`} component={ExpeditionSeasonPhaseList} />
-            <Route path={route.seasonExpedition} component={ExpeditionSeasonList} />
-            <Route path={route.patreon} component={PatreonPresenter} />
-            <Route path={route.nmsfm} component={NmsfmContainer} />
-            <Route path={route.whatIsNew} component={WhatIsNewContainer} />
-            <Route component={NotFoundPresenter} />
-          </Switch>
+          <ReactPageTransition.PageTransition
+            preset="fadeFromRight"
+            transitionKey={location.pathname}
+          >
+            <Routes location={location}>
+              <Route path={route.home} element={<HomePresenter />} />
+              <Route path={route.setting} element={<SettingPresenter />} />
+              <Route path={route.about} element={<AboutPresenter />} />
+              <Route path={route.language} element={<LanguagePresenter />} />
+              <Route path={route.donation} element={<DonationPresenter />} />
+              <Route path={route.patreon} element={<PatreonPresenter />} />
+              <Route path={route.whatIsNew} element={<WhatIsNewContainer />} />
+              <Route path={route.nmsfm} element={<NmsfmContainer />} />
+
+              <Route path={`${route.catalogue}/:types`} element={<CatalogueListContainer />} />
+              <Route path={route.catalogue} element={<CataloguePresenter />} />
+
+              <Route path={`${route.catalogueItem}/:itemId/:langCode/:name`} element={<CatalogueItemContainer />} />
+              <Route path={`${route.catalogueItem}/:itemId/:langCode`} element={<CatalogueItemContainer />} />
+              <Route path={`${route.catalogueItem}/:itemId`} element={<CatalogueItemContainer />} />
+
+              <Route path={`${route.processorItem}/:itemId`} element={<ProcessorItemContainer />} />
+              <Route path={route.cart} element={<CartContainer />} />
+              <Route path={route.favourites} element={<FavouritePresenter />} />
+              <Route path={route.genericAllRequirements} element={<GenericPageAllRequiredContainer />} />
+
+              <Route path={route.guides} element={<GuidePageContainer />} />
+              <Route path={`${route.guides}/:guid`} element={<GuideDetailPageContainer />} />
+
+              <Route path={route.portal} element={<PortalListContainer />} />
+              <Route path={route.addEditPortal} element={<AddEditPortalContainer />} />
+
+              <Route path={route.communityMission} element={<CommunityMissionContainer />} />
+              <Route path={route.communityMissionTimeline} element={<CommunityMissionTimeline />} />
+              <Route path={route.seasonExpedition} element={<ExpeditionSeasonList />} />
+              <Route path={`${route.seasonExpedition}/:seasId`} element={<ExpeditionSeasonPhaseList />} />
+              <Route path={route.weekendMissionDetails} element={<WeekendMissionContainer />} />
+              <Route path={route.weekendMission} element={<WeekendMissionMenuPresenter />} />
+
+              <Route path={route.social} element={<SocialPresenter />} />
+              <Route path={route.sync} element={<SyncContainer />} />
+              <Route path={route.onlineMeetup2020} element={OnlineMeetup2020SubmissionContainer} />
+
+              <Route element={NotFoundPresenter} />
+            </Routes>
+          </ReactPageTransition.PageTransition>
         </div>
       </ScrollToTop>
       <ToastContainer
@@ -107,4 +124,4 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
 }
 
 // export const App = connect(mapStateToProps)(AppUnconnected);
-export const App = connect(mapStateToProps, mapDispatchToProps)(withRouter(AppUnconnected));
+export const App = connect(mapStateToProps, mapDispatchToProps)(AppUnconnected);

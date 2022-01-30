@@ -15,12 +15,10 @@ import { NetworkState } from '../../constants/NetworkState';
 import { TileLoading } from '../../components/core/loading/loading';
 import { Error } from '../../components/core/error/error'
 import { ItemHeaderRow } from '../../components/core/itemHeaderRow';
+import { useNavigate } from 'react-router';
 
 interface IProps {
     // Container Props
-    location: any;
-    match: any;
-    history: any;
     selectedLanguage?: string;
 
     // Container State
@@ -33,6 +31,8 @@ interface IProps {
 }
 
 export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
+    let navigate = useNavigate();
+
     const displayInputs = (requiredItems: Array<RequiredItemDetails>) => {
         if (props.status === NetworkState.Loading) return (<TileLoading />);
         if (requiredItems == null || requiredItems.length < 1) return (<Error />);
@@ -68,7 +68,7 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
                     Icon={props.outputDetails.Icon}
                     Name={props.outputDetails.Name}
                     Group={props.item.Operation}
-                    Link={() => props.history.push(`${Route.catalogueItem}/${props.outputDetails.Id}`)}
+                    Link={() => navigate(`${Route.catalogueItem}/${props.outputDetails.Id}`)}
                 />
                 {displayInputs(props.inputDetails)}
             </div>

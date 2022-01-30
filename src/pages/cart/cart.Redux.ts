@@ -3,6 +3,12 @@ import { State } from '../../redux/state';
 import { addItemToCart, editItemInCart, removeItemFromCart, removeAllItems } from '../../redux/modules/cart/action';
 import { CartItem } from '../../contracts/cart/cartItem';
 
+export interface IReduxProps {
+    cartItems: Array<CartItem>
+    editItemInCart?: (cartItemIndex: number, cartItem: CartItem) => void;
+    removeItemFromCart: (cartItemId: string) => void;
+}
+
 export const mapStateToProps = (state: State) => {
     return {
         cartItems: state.cartReducer?.cartItems || [],

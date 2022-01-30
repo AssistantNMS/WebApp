@@ -1,5 +1,4 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { getAllRequiredItemsForMultiple, getAllRequiredItemsForTree } from '../../helper/itemHelper';
@@ -9,79 +8,50 @@ import { GameItemService } from '../../services/json/GameItemService';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { Tree } from '../../contracts/tree/tree';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { useLocation } from 'react-router-dom';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
 }
-interface IWithoutDepInj {
-}
+interface IWithoutDepInj { }
 
-interface IProps extends IWithDepInj, IWithoutDepInj {
-    location: any;
-    match: any;
-    history: any;
-}
+interface IProps extends IWithDepInj, IWithoutDepInj { }
 
-interface IState {
-    treeRequiredItems: Array<Tree<RequiredItemDetails>>;
-    requiredItems: Array<RequiredItemDetails>;
-    status: NetworkState;
-    selectedOption: LocaleKey;
-}
+export const GenericPageAllRequiredContainerUnconnected: React.FC<IProps> = (props: IProps) => {
+    let location = useLocation();
+    const [treeRequiredItems, setTreeRequiredItems] = useState<Array<Tree<RequiredItemDetails>>>([]);
+    const [requiredItems, setRequiredItems] = useState<Array<RequiredItemDetails>>([]);
+    const [status, setStatus] = useState<NetworkState>(NetworkState.Loading);
+    const [selectedOption, setSelectedOption] = useState<LocaleKey>(LocaleKey.flatList);
 
-export class GenericPageAllRequiredContainerUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+    useEffect(() => {
+        fetchData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
-        this.state = {
-            treeRequiredItems: [],
-            requiredItems: [],
-            status: NetworkState.Loading,
-            selectedOption: LocaleKey.flatList,
-        }
+    const fetchData = async () => {
+        const requiredItemIds: Array<RequiredItem> = (location.state as any)?.requiredItems || []
+        const itemsResult = await getAllRequiredItemsForMultiple(props.gameItemService, requiredItemIds);
+        const treeItemsResult = await getAllRequiredItemsForTree(props.gameItemService, requiredItemIds);
+
+        setTreeRequiredItems(treeItemsResult);
+        setRequiredItems(itemsResult);
+        setStatus(NetworkState.Success);
     }
 
-    componentDidMount() {
-        this.fetchData();
-    }
-
-    fetchData = async () => {
-        const requiredItemIds: Array<RequiredItem> = this.props.location?.state?.requiredItems || []
-        const itemsResult = await getAllRequiredItemsForMultiple(this.props.gameItemService, requiredItemIds);
-        const treeItemsResult = await getAllRequiredItemsForTree(this.props.gameItemService, requiredItemIds);
-        this.setState(() => {
-            return {
-                treeRequiredItems: treeItemsResult,
-                requiredItems: itemsResult,
-                status: NetworkState.Success
-            }
-        });
-    }
-
-    setSelectedOption = (selectedOption: LocaleKey) => {
-        this.setState(() => {
-            return {
-                selectedOption,
-            }
-        });
-    }
-
-
-    render() {
-        return (
-            <GenericPageAllRequiredPresenter
-                status={this.state.status}
-                treeRequiredItems={this.state.treeRequiredItems}
-                requiredItems={this.state.requiredItems}
-                selectedOption={this.state.selectedOption}
-                setSelectedOption={this.setSelectedOption}
-            />
-        );
-    }
+    return (
+        <GenericPageAllRequiredPresenter
+            status={status}
+            treeRequiredItems={treeRequiredItems}
+            requiredItems={requiredItems}
+            selectedOption={selectedOption}
+            setSelectedOption={(selectedOpt: LocaleKey) => setSelectedOption(selectedOpt)}
+        />
+    );
 }
 
 export const GenericPageAllRequiredContainer = withServices<IWithoutDepInj, IWithDepInj>(
-    withRouter(GenericPageAllRequiredContainerUnconnected),
+    GenericPageAllRequiredContainerUnconnected,
     (services: IDependencyInjection) => ({
         gameItemService: services.gameItemService,
     })

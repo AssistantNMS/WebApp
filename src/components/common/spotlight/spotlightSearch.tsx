@@ -1,25 +1,21 @@
-import React, { useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
 import classNames from 'classnames';
-import { useState } from 'react';
-
-import { SpotlightSearchResult } from './spotlightSearchResults';
-import * as Route from '../../../constants/Route';
+import { motion } from 'framer-motion';
+import i18next from 'i18next';
+import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { knownKeyCodes } from '../../../constants/Keybind';
-import { withRouter } from 'react-router-dom';
-import { DataJsonService } from '../../../services/json/DataJsonService';
+import { NetworkState } from '../../../constants/NetworkState';
+import * as Route from '../../../constants/Route';
 import { DevDetail } from '../../../contracts/data/devDetail';
 import { ResultWithValue } from '../../../contracts/results/ResultWithValue';
-import { NetworkState } from '../../../constants/NetworkState';
-import i18next from 'i18next';
 import { LocaleKey } from '../../../localization/LocaleKey';
-import { Loading } from '../../core/loading/loading';
+import { DataJsonService } from '../../../services/json/DataJsonService';
 import { Error } from '../../core/error/error';
+import { Loading } from '../../core/loading/loading';
+import { SpotlightSearchResult } from './spotlightSearchResults';
+
 
 interface INavProps {
-    location: any;
-    match: any;
-    history: any;
 }
 
 interface IProps extends INavProps {
@@ -28,7 +24,9 @@ interface IProps extends INavProps {
     onClose: () => void;
 }
 
-const SpotlightSearchUnconnected: React.FC<IProps> = (props: IProps) => {
+export const SpotlightSearch: React.FC<IProps> = (props: IProps) => {
+    const navigate = useNavigate();
+
     const [text, setText] = useState<string | undefined>();
     const [dataLookup, setDataLookup] = useState<Array<DevDetail>>([]);
     const [selectedSearchResult, setSelectedSearchResult] = useState(0);
@@ -124,9 +122,7 @@ const SpotlightSearchUnconnected: React.FC<IProps> = (props: IProps) => {
         if (gameId == null) return;
 
         onCloseSpotlight();
-        props.history.push({
-            pathname: `${Route.catalogueItem}/${gameId}`,
-        });
+        navigate(`${Route.catalogueItem}/${gameId}`);
     }
 
     const onSpotlightTextChange = (e: any) => {
@@ -189,5 +185,3 @@ const SpotlightSearchUnconnected: React.FC<IProps> = (props: IProps) => {
         </div>
     );
 }
-
-export const SpotlightSearch = withRouter(SpotlightSearchUnconnected);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Error } from '../../components/core/error/error';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { getBackgroundForExpedition, getPatchForExpedition } from '../../constants/Expedition';
@@ -72,10 +72,10 @@ interface IExpeditionSeasonTileProps {
 }
 
 export const ExpeditionSeasonTile: React.FC<IExpeditionSeasonTileProps> = (props: IExpeditionSeasonTileProps) => {
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const navigateToExpSeason = (seasId: string) => () => {
-        history.push(`${routes.seasonExpedition}/${seasId}`);
+        navigate(`${routes.seasonExpedition}/${seasId}`);
     }
     return (
         <div data-id="SeasonExpeditionCard" className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">

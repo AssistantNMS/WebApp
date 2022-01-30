@@ -11,6 +11,7 @@ import { LocaleKey } from '../../localization/LocaleKey';
 import { SpotlightSearch } from '../../components/common/spotlight/spotlightSearch';
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { toggleHtmlNodeClass } from '../../helper/documentHelper';
+import { Error } from '../../components/core/error/error';
 
 interface IProps {
     // Container Props
@@ -42,6 +43,15 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
         setSpotlightOpen(newValue);
     }
 
+    const renderContent = () => {
+        if (props.networkState === NetworkState.Loading) return (<SmallLoading />);
+        if (props.networkState === NetworkState.Error) return (<Error />);
+
+        return (
+            <GameItemList key={props.displayItems.length} items={props.displayItems} />
+        );
+    }
+
     const title = i18next.t(LocaleKey.catalogue);
     return (
         <>
@@ -59,11 +69,7 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
                         <i className="material-icons">search</i>
                     </button>
                 </form>
-                {
-                    props.networkState === NetworkState.Loading
-                        ? <SmallLoading />
-                        : <GameItemList key={props.displayItems.length} items={props.displayItems} />
-                }
+                {renderContent()}
             </div>
             <SpotlightSearch
                 isOpen={isSpotlightOpen}

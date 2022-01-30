@@ -14,10 +14,8 @@ import { IDependencyInjection, withServices } from '../../integration/dependency
 interface IWithDepInj {
     assistantAppsApiService: AssistantAppsApiService;
 }
-interface IWithoutDepInj extends IReduxProps {
-}
-
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IWithoutDepInj { }
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
 
 interface IState {
     whatIsNewItems: Array<VersionViewModel>;

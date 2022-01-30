@@ -2,6 +2,14 @@ import { State } from '../../redux/state';
 import { setLanguage, toggleAltGlyphs, setFont } from '../../redux/modules/setting/action';
 import { getUseAltGlyphs, getCurrentLanguage, getSelectedFont } from '../../redux/modules/setting/selector';
 
+export interface IReduxProps {
+    useAltGlyphs: boolean;
+    selectedLanguage: string;
+    selectedFont: string;
+    toggleAltGlyphs: () => void;
+    setLanguage: (selectedLanguage: string) => void;
+    setFont: (selectedFont: string) => void;
+}
 
 export const mapStateToProps = (state: State) => {
     return {

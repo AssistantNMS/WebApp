@@ -1,6 +1,7 @@
 import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { AddFloatingActionButton } from '../../components/floatingActionButton/addFloatingActionButton';
@@ -11,15 +12,13 @@ import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps } from './portal.Redux';
 
 interface IProps {
-    location: any;
-    match: any;
-    history: any;
     portals: Array<PortalRecord>
     useAltGlyphs: boolean;
     removePortal: (portalId: string) => void;
 }
 
 export const PortalListPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
+    const navigate = useNavigate();
 
     const displayPortals = (portals: Array<PortalRecord>) => {
         if (portals == null || portals.length === 0) return (
@@ -33,10 +32,11 @@ export const PortalListPresenterUnconnected: React.FC<IProps> = (props: IProps) 
                     <PortalCardListTile {...item}
                         useAltGlyphs={props.useAltGlyphs}
                         onDelete={() => props.removePortal(item.Uuid)}
-                        onEdit={() => props.history.push({
-                            pathname: Route.addEditPortal,
-                            state: item
-                        })}
+                        onEdit={() => navigate(Route.addEditPortal,
+                            {
+                                state: { item }
+                            }
+                        )}
                     />
                 </div>
             );
@@ -53,11 +53,7 @@ export const PortalListPresenterUnconnected: React.FC<IProps> = (props: IProps) 
                     {displayPortals(props.portals)}
                 </div>
             </div>
-            {AddFloatingActionButton('portal-add', () => {
-                props.history.push({
-                    pathname: Route.addEditPortal,
-                });
-            })}
+            {AddFloatingActionButton('portal-add', () => navigate(Route.addEditPortal))}
             <div className="col-12" style={{ marginBottom: '2em', marginTop: '2em' }}></div>
         </>
     );

@@ -11,6 +11,14 @@ import { getCurrentLanguage } from '../../redux/modules/setting/selector';
 import { getFavouriteItems } from '../../redux/modules/favourite/selector';
 import { setLanguage } from '../../redux/modules/setting/action';
 
+export interface IReduxProps {
+    selectedLanguage?: string;
+    favourites: Array<FavouriteItem>;
+    addItemToCart?: (item: GameItemModel, quantity: number) => void;
+    addItemToFavourites?: (item: GameItemModel) => void;
+    removeItemToFavourites?: (itemId: string) => void;
+    setLanguage: (langCode: string) => void;
+}
 
 export const mapStateToProps = (state: State) => {
     return {

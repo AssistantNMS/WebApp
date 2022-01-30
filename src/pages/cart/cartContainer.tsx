@@ -1,18 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
-import { CartItem } from '../../contracts/cart/cartItem';
-import { mapDispatchToProps, mapStateToProps } from './cart.Redux';
+import { withServices } from '../../integration/dependencyInjection';
+import { mapDispatchToProps, mapStateToProps, IReduxProps } from './cart.Redux';
 import { CartPresenter } from './cartPresenter';
 
-interface IProps {
-    location: any;
-    match: any;
-    history: any;
-    cartItems: Array<CartItem>
-    editItemInCart?: (cartItemIndex: number, cartItem: CartItem) => void;
-    removeItemFromCart: (cartItemId: string) => void;
-}
+interface IWithDepInj { }
+interface IWithoutDepInj { }
+interface IProps extends IWithoutDepInj, IReduxProps { }
 
 export class CartContainerUnconnected extends React.Component<IProps, any> {
     render() {
@@ -22,4 +16,7 @@ export class CartContainerUnconnected extends React.Component<IProps, any> {
     }
 };
 
-export const CartContainer = connect(mapStateToProps, mapDispatchToProps)(withRouter(CartContainerUnconnected));
+export const CartContainer = withServices<IWithoutDepInj, IWithDepInj>(
+    connect(mapStateToProps, mapDispatchToProps)(CartContainerUnconnected),
+    () => ({})
+);

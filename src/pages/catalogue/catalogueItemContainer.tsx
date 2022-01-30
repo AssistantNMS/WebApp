@@ -1,11 +1,11 @@
 import i18next from 'i18next';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import { NetworkState } from '../../constants/NetworkState';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
-import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { Recharge } from '../../contracts/recharge/recharge';
@@ -20,7 +20,7 @@ import { DataJsonService } from '../../services/json/DataJsonService';
 import { GameItemService } from '../../services/json/GameItemService';
 import { RechargeByService } from '../../services/json/RechargeByService';
 import { ToastService } from '../../services/toastService';
-import { mapDispatchToProps, mapStateToProps } from './catalogueItem.Redux';
+import { mapDispatchToProps, mapStateToProps, IReduxProps } from './catalogueItem.Redux';
 import { CatalogueItemPresenter } from './catalogueItemPresenter';
 
 interface IWithDepInj {
@@ -30,190 +30,150 @@ interface IWithDepInj {
     dataJsonService: DataJsonService;
     toastService: ToastService;
 }
-interface IWithoutDepInj {
-    location: any;
-    match: any;
-    history: any;
-    selectedLanguage?: string;
-    favourites: Array<FavouriteItem>;
-    addItemToCart?: (item: GameItemModel, quantity: number) => void;
-    addItemToFavourites?: (item: GameItemModel) => void;
-    removeItemToFavourites?: (itemId: string) => void;
-    setLanguage: (langCode: string) => void;
-}
+interface IWithoutDepInj { }
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
 
-interface IState {
-    item: GameItemModel;
-    resArray: Array<RequiredItemDetails>;
-    usedToCreateArray: Array<GameItemModel>;
-    refArray: Array<Processor>;
-    usedToRefArray: Array<Processor>;
-    cookArray: Array<Processor>;
-    usedToCookArray: Array<Processor>;
-    rechargedBy: Recharge;
-    usedToRechargeArray: Array<Recharge>;
-    eggTraitArray: Array<EggNeuralTrait>;
-    networkState: NetworkState;
-    additionalData: Array<any>;
-}
 
-class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
+    let { langCode, itemId } = useParams();
 
-        this.state = {
-            item: anyObject,
-            resArray: [],
-            usedToCreateArray: [],
-            refArray: [],
-            usedToRefArray: [],
-            cookArray: [],
-            usedToCookArray: [],
-            rechargedBy: anyObject,
-            usedToRechargeArray: [],
-            eggTraitArray: [],
-            networkState: NetworkState.Loading,
-            additionalData: []
-        }
-    }
+    const [item, setItem] = useState<GameItemModel>(anyObject);
+    const [resArray, setResArray] = useState<Array<RequiredItemDetails>>([]);
+    const [usedToCreateArray, setUsedToCreateArray] = useState<Array<GameItemModel>>([]);
+    const [refArray, setRefArray] = useState<Array<Processor>>([]);
+    const [usedToRefArray, setUsedToRefArray] = useState<Array<Processor>>([]);
+    const [cookArray, setCookArray] = useState<Array<Processor>>([]);
+    const [usedToCookArray, setUsedToCookArray] = useState<Array<Processor>>([]);
+    const [rechargedBy, setRechargedBy] = useState<Recharge>(anyObject);
+    const [usedToRechargeArray, setUsedToRechargeArray] = useState<Array<Recharge>>([]);
+    const [eggTraitArray, setEggTraitArray] = useState<Array<EggNeuralTrait>>([]);
+    const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
+    const [additionalData, setAdditionalData] = useState<Array<any>>([]);
 
-    componentDidMount() {
-        const languageCode = this.props.match?.params?.langCode;
-        if (languageCode != null) {
-            const indexOfLang = localeMap.findIndex(l => l.code === languageCode);
+    useEffect(() => {
+        if (langCode != null) {
+            const indexOfLang = localeMap.findIndex(l => l.code === langCode);
             if (indexOfLang > -1) {
-                this.props.setLanguage(languageCode);
+                props.setLanguage(langCode);
             }
         }
-        this.fetchData(this.props.match?.params?.itemId);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    useEffect(() => {
+        clearData();
+        fetchData(itemId);
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [langCode, itemId]);
+
+    const clearData = async () => {
+        setResArray([]);
+        setUsedToCreateArray([]);
+        setRefArray([]);
+        setUsedToRefArray([]);
+        setCookArray([]);
+        setUsedToCookArray([]);
+        setRechargedBy(anyObject);
+        setUsedToRechargeArray([]);
+        setAdditionalData([]);
+        setNetworkState(NetworkState.Loading);
     }
 
-    componentDidUpdate(prevProps: IProps, prevState: IState) {
-        const prevSelectedLanguage = prevProps.selectedLanguage;
-        const prevItemId = prevProps.match?.params?.itemId;
-        if (this.props.selectedLanguage !== prevSelectedLanguage || this.props.match?.params?.itemId !== prevItemId) {
-            this.clearData();
-            this.fetchData(this.props.match?.params?.itemId);
-        }
-    }
-
-    clearData = async () => {
-        this.setState(() => {
-            return {
-                resArray: [],
-                usedToCreateArray: [],
-                refArray: [],
-                usedToRefArray: [],
-                cookArray: [],
-                usedToCookArray: [],
-                rechargedBy: anyObject,
-                usedToRechargeArray: [],
-                additionalData: [],
-                networkState: NetworkState.Loading,
-            }
-        });
-    }
-
-    fetchData = async (itemId: string) => {
-        this.setState(() => {
-            return {
-                networkState: NetworkState.Loading,
-            }
-        });
-        const itemResult = await this.props.gameItemService.getItemDetails(itemId ?? '');
-        if (!itemResult.isSuccess) {
-            this.setState(() => {
-                return {
-                    networkState: NetworkState.Error,
-                }
-            });
+    const fetchData = async (itemId?: string) => {
+        if (itemId == null || itemId.length < 1) {
+            setNetworkState(NetworkState.Error);
             return;
         }
 
-        const resArray = await this.getResArray(itemResult.value.Id);
-        const usedToCreateArray = await this.getUsedToCreateArray(itemResult.value.Id);
-        const refArray = await this.getRefArray(itemResult.value.Id);
-        const usedToRefArray = await this.getUsedToRefArray(itemResult.value.Id);
-        const cookArray = await this.getCookArray(itemResult.value.Id);
-        const usedToCookArray = await this.getUsedToCookArray(itemResult.value.Id);
-        const rechargedBy = await this.getRechargeByArray(itemResult.value.Id);
-        const usedToRechargeArray = await this.getUsedToRechargeArray(itemResult.value.Id);
-        const eggTraitArray = await this.getEggTraitArray(itemResult.value.Id);
-        this.setState(() => {
-            return {
-                item: itemResult.value,
-                resArray: resArray ?? [],
-                usedToCreateArray: usedToCreateArray ?? [],
-                refArray: refArray ?? [],
-                usedToRefArray: usedToRefArray ?? [],
-                cookArray: cookArray ?? [],
-                usedToCookArray: usedToCookArray ?? [],
-                rechargedBy: rechargedBy ?? anyObject,
-                usedToRechargeArray: usedToRechargeArray ?? [],
-                eggTraitArray: eggTraitArray ?? [],
-                additionalData: this.getAdditionalData(itemResult.value),
-                networkState: NetworkState.Success,
-            }
-        });
+        setNetworkState(NetworkState.Loading);
+        const itemResult = await props.gameItemService.getItemDetails(itemId ?? '');
+        if (!itemResult.isSuccess) {
+            setNetworkState(NetworkState.Error);
+            return;
+        }
+
+        const resArray = await getResArray(itemResult.value.Id);
+        const usedToCreateArray = await getUsedToCreateArray(itemResult.value.Id);
+        const refArray = await getRefArray(itemResult.value.Id);
+        const usedToRefArray = await getUsedToRefArray(itemResult.value.Id);
+        const cookArray = await getCookArray(itemResult.value.Id);
+        const usedToCookArray = await getUsedToCookArray(itemResult.value.Id);
+        const rechargedBy = await getRechargeByArray(itemResult.value.Id);
+        const usedToRechargeArray = await getUsedToRechargeArray(itemResult.value.Id);
+        const eggTraitArray = await getEggTraitArray(itemResult.value.Id);
+
+        setItem(itemResult.value);
+        setResArray(resArray ?? []);
+        setUsedToCreateArray(usedToCreateArray ?? []);
+        setRefArray(refArray ?? []);
+        setUsedToRefArray(usedToRefArray ?? []);
+        setCookArray(cookArray ?? []);
+        setUsedToCookArray(usedToCookArray ?? []);
+        setRechargedBy(rechargedBy ?? anyObject);
+        setUsedToRechargeArray(usedToRechargeArray ?? []);
+        setEggTraitArray(eggTraitArray ?? []);
+        setAdditionalData(getAdditionalData(itemResult.value));
+
+        setNetworkState(NetworkState.Success);
     }
 
-    getResArray = async (itemId: string) => {
-        const resArrayResult = await this.props.gameItemService.getRequiredItems(itemId);
-        if (!resArrayResult.isSuccess) return;
+    const getResArray = async (itemId: string) => {
+        const resArrayResult = await props.gameItemService.getRequiredItems(itemId);
+        if (!resArrayResult.isSuccess) return [];
         return resArrayResult.value;
     }
 
-    getUsedToCreateArray = async (itemId: string) => {
-        const usedToCreateArrayResult = await this.props.allGameItemsService.getByInputsId(itemId);
-        if (!usedToCreateArrayResult.isSuccess) return;
+    const getUsedToCreateArray = async (itemId: string) => {
+        const usedToCreateArrayResult = await props.allGameItemsService.getByInputsId(itemId);
+        if (!usedToCreateArrayResult.isSuccess) return [];
         return usedToCreateArrayResult.value;
     }
 
-    getRechargeByArray = async (itemId: string) => {
-        const rechargeByResult = await this.props.rechargeByService.getRechargeById(itemId);
-        if (!rechargeByResult.isSuccess) return;
+    const getRechargeByArray = async (itemId: string) => {
+        const rechargeByResult = await props.rechargeByService.getRechargeById(itemId);
+        if (!rechargeByResult.isSuccess) return anyObject;
         return rechargeByResult.value;
     }
 
-    getUsedToRechargeArray = async (itemId: string) => {
-        const usedToRechargeResult = await this.props.rechargeByService.getRechargeByChargeById(itemId);
-        if (!usedToRechargeResult.isSuccess) return;
+    const getUsedToRechargeArray = async (itemId: string) => {
+        const usedToRechargeResult = await props.rechargeByService.getRechargeByChargeById(itemId);
+        if (!usedToRechargeResult.isSuccess) return [];
         return usedToRechargeResult.value;
     }
 
-    getRefArray = async (itemId: string) => {
-        const refArray = await this.props.gameItemService.getRefinedByOutput(itemId);
-        if (!refArray.isSuccess) return;
+    const getRefArray = async (itemId: string) => {
+        const refArray = await props.gameItemService.getRefinedByOutput(itemId);
+        if (!refArray.isSuccess) return [];
         return refArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
-    getUsedToRefArray = async (itemId: string) => {
-        const usedToRefArray = await this.props.gameItemService.getRefinedByInput(itemId);
-        if (!usedToRefArray.isSuccess) return;
+    const getUsedToRefArray = async (itemId: string) => {
+        const usedToRefArray = await props.gameItemService.getRefinedByInput(itemId);
+        if (!usedToRefArray.isSuccess) return [];
         return usedToRefArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
-    getCookArray = async (itemId: string) => {
-        const cookArray = await this.props.gameItemService.getCookingByOutput(itemId);
-        if (!cookArray.isSuccess) return;
+    const getCookArray = async (itemId: string) => {
+        const cookArray = await props.gameItemService.getCookingByOutput(itemId);
+        if (!cookArray.isSuccess) return [];
         return cookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
-    getUsedToCookArray = async (itemId: string) => {
-        const usedToCookArray = await this.props.gameItemService.getCookingByInput(itemId);
-        if (!usedToCookArray.isSuccess) return;
+    const getUsedToCookArray = async (itemId: string) => {
+        const usedToCookArray = await props.gameItemService.getCookingByInput(itemId);
+        if (!usedToCookArray.isSuccess) return [];
         return usedToCookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
-    getEggTraitArray = async (itemId: string) => {
-        const eggTraitsArray = await this.props.dataJsonService.getEggNeuralTraits();
-        if (!eggTraitsArray.isSuccess) return;
+    const getEggTraitArray = async (itemId: string) => {
+        const eggTraitsArray = await props.dataJsonService.getEggNeuralTraits();
+        if (!eggTraitsArray.isSuccess) return [];
         return eggTraitsArray.value.filter(egg => egg.AppId === itemId);
     }
 
-    getAdditionalData = (itemDetail: GameItemModel): Array<any> => {
+    const getAdditionalData = (itemDetail: GameItemModel): Array<any> => {
         const additionalData = [];
         if (itemDetail.BlueprintSource !== null && itemDetail.BlueprintSource !== BlueprintSource.unknown) {
             const bpSourceLangKey = blueprintToLocalKey(itemDetail.BlueprintSource);
@@ -265,40 +225,50 @@ class CatalogueItemContainerUnconnected extends React.Component<IProps, IState> 
         return additionalData;
     }
 
-    addThisItemToCart = async () => {
+    const addThisItemToCart = async () => {
         const quantityResult = await getQuantityDialog(i18next.t(LocaleKey.quantity));
         if (quantityResult.isSuccess === false) return;
 
-        if (this.props.addItemToCart == null) return;
-        this.props.addItemToCart(this.state.item, quantityResult.value);
+        if (props.addItemToCart == null) return;
+        props.addItemToCart(item, quantityResult.value);
         // TODO - translate
-        this.props.toastService.success(`Added ${this.state.item.Name} to cart`);
+        props.toastService.success(`Added ${item.Name} to cart`);
     }
 
-    addThisItemToFavourites = () => {
-        if (this.props.addItemToFavourites == null) return;
-        this.props.addItemToFavourites(this.state.item);
+    const addThisItemToFavourites = () => {
+        if (props.addItemToFavourites == null) return;
+        props.addItemToFavourites(item);
         // TODO - translate
-        this.props.toastService.success('Added to Favourites');
+        props.toastService.success('Added to Favourites');
     }
 
-    removeThisItemToFavourites = () => {
-        if (this.props.removeItemToFavourites == null) return;
-        this.props.removeItemToFavourites(this.state.item.Id);
+    const removeThisItemToFavourites = () => {
+        if (props.removeItemToFavourites == null) return;
+        props.removeItemToFavourites(item.Id);
         // TODO - translate
-        this.props.toastService.success('Removed from Favourites');
+        props.toastService.success('Removed from Favourites');
     }
 
-    render() {
-        return (
-            <CatalogueItemPresenter
-                {...this.state} {...this.props}
-                addThisItemToCart={this.addThisItemToCart}
-                addThisItemToFavourites={this.addThisItemToFavourites}
-                removeThisItemToFavourites={this.removeThisItemToFavourites}
-            />
-        );
-    }
+    return (
+        <CatalogueItemPresenter
+            {...props}
+            item={item}
+            resArray={resArray}
+            usedToCreateArray={usedToCreateArray}
+            refArray={refArray}
+            usedToRefArray={usedToRefArray}
+            cookArray={cookArray}
+            usedToCookArray={usedToCookArray}
+            rechargedBy={rechargedBy}
+            usedToRechargeArray={usedToRechargeArray}
+            eggTraitArray={eggTraitArray}
+            networkState={networkState}
+            additionalData={additionalData}
+            addThisItemToCart={addThisItemToCart}
+            addThisItemToFavourites={addThisItemToFavourites}
+            removeThisItemToFavourites={removeThisItemToFavourites}
+        />
+    );
 }
 
 export const CatalogueItemContainer = withServices<IWithoutDepInj, IWithDepInj>(

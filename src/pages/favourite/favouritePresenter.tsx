@@ -1,25 +1,21 @@
 import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { RequiredItem } from '../../contracts/RequiredItem';
+import { withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { mapDispatchToProps, mapStateToProps } from './favourite.Redux';
+import { mapDispatchToProps, mapStateToProps, IReduxProps } from './favourite.Redux';
 
-interface IProps {
-    location: any;
-    match: any;
-    history: any;
-    favourites: Array<FavouriteItem>
-    removeItemFromFavourites: (favouriteItemId: string) => void;
-}
+interface IWithDepInj { }
+interface IWithoutDepInj { }
+interface IProps extends IWithoutDepInj, IReduxProps { }
 
-export const FavouritePresenterUnconnected = withRouter((props: IProps) => {
+export const FavouritePresenterUnconnected = (props: IProps) => {
 
     const displayFavourites = (favourites: Array<FavouriteItem>) => {
         if (favourites == null || favourites.length === 0) return (
@@ -50,6 +46,9 @@ export const FavouritePresenterUnconnected = withRouter((props: IProps) => {
             </div>
         </>
     );
-});
+};
 
-export const FavouritePresenter = connect(mapStateToProps, mapDispatchToProps)(FavouritePresenterUnconnected);
+export const FavouritePresenter = withServices<IWithoutDepInj, IWithDepInj>(
+    connect(mapStateToProps, mapDispatchToProps)(FavouritePresenterUnconnected),
+    () => ({})
+);

@@ -15,9 +15,6 @@ import { displaySectionImageItem, displaySectionLinkItem, displaySectionMarkdown
 
 interface IProps {
     // Container Props
-    location: any;
-    match: any;
-    history: any;
 
     // Container State
     guideService: GuideService;

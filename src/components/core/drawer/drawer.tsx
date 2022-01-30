@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
 import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
@@ -15,12 +15,10 @@ interface IFromRedux {
 }
 
 interface IProps extends IFromRedux {
-    location: any;
-    match: any;
-    history: any;
 }
 
 const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
+    let location = useLocation();
     const [expandedMenuItems, setExpandedMenuItems] = useState<Array<string>>([]);
 
     const menuItems = getDrawerMenuItems();
@@ -78,11 +76,8 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
         );
     }
 
-    const renderMenuItems = (menuItems: Array<DrawerMenuItem>) => {
-        const { pathname } = props.location;
-
-        return menuItems.map(renderMenuItem(pathname));
-    }
+    const renderMenuItems = (menuItems: Array<DrawerMenuItem>) =>
+        menuItems.map(renderMenuItem(location.pathname));
 
     return (
         <div
@@ -103,4 +98,4 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     );
 };
 
-export const Drawer: any = connect(mapStateToProps, mapDispatchToProps)(withRouter(DrawerUnconnected));
+export const Drawer: any = connect(mapStateToProps, mapDispatchToProps)(DrawerUnconnected);

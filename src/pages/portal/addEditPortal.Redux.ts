@@ -6,6 +6,15 @@ import { getAvailableTags } from '../../redux/modules/portal/selector';
 import { getUseAltGlyphs } from '../../redux/modules/setting/selector';
 import { toggleAltGlyphs } from '../../redux/modules/setting/action';
 
+export interface IReduxProps {
+    useAltGlyphs: boolean;
+    tags: Array<string>;
+    availableTags: Array<string>;
+    addPortal?: (portalRecord: PortalRecord) => void;
+    editPortal?: (portalRecord: PortalRecord) => void;
+    toggleAltGlyphs?: () => void;
+}
+
 export const mapStateToProps = (state: State) => {
     return {
         availableTags: getAvailableTags(state),

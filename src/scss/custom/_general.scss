@@ -111,7 +111,15 @@ img.grayscale {
     height: 100vh;
     // overflow-y: scroll;
 
-    > .content {
+    >div {
+        overflow: hidden auto;
+
+        >div {
+            overflow: hidden auto;
+        }
+    }
+
+    .content {
         margin-top: 0;
         padding: 0 15px;
 
@@ -183,7 +191,7 @@ img.grayscale {
 }
 
 .m-0-child {
-    > * {
+    >* {
         margin: 0;
     }
 }

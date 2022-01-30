@@ -1,7 +1,7 @@
 import i18next from 'i18next';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { BottomModalSheet } from '../../components/common/dialog/bottomModalSheet';
 
 import { HeadComponent } from '../../components/core/headComponent';
@@ -33,7 +33,7 @@ interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj {
 }
 
 const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) => {
-    const history = useHistory();
+    let location = useLocation();
 
     const [expedition, setExpedition] = useState<ExpeditionSeason>();
     const [expeditionStatus, setExpeditionStatus] = useState<NetworkState>(NetworkState.Loading);
@@ -42,12 +42,12 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
     const [snapPoint, setSnapPoint] = useState<number>(400);
 
     useEffect(() => {
-        const url = history.location.pathname;
+        const url = location.pathname;
         const seasIdSlashIndex = url.lastIndexOf('/');
         const seasId = url.substring(seasIdSlashIndex + 1, url.length);
         fetchExpeditionData(seasId);
         // eslint-disable-next-line
-    }, [props.selectedLanguage, history.location.pathname]);
+    }, [props.selectedLanguage, location.pathname]);
 
     const fetchExpeditionData = async (seasId: string) => {
         const expeditionsResult = await props.gameItemService.getAllSeasonExpeditions();
