@@ -4,7 +4,6 @@ import { Error } from '../../components/core/error/error';
 import { TileLoading } from '../../components/core/loading/loading';
 import { NetworkState } from '../../constants/NetworkState';
 import { DevDetail } from '../../contracts/data/devDetail';
-import { GameItemModel } from '../../contracts/GameItemModel';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { DataJsonService } from '../../services/json/DataJsonService';
 
