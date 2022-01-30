@@ -10,6 +10,7 @@ import { IDependencyInjection, withServices } from '../../../integration/depende
 import { GameItemService } from '../../../services/json/GameItemService';
 import { WeekendMissionPresenter } from './weekendMissionPresenter';
 import { IFromRedux, mapStateToProps } from './weekendMission.redux';
+import * as Routes from '../../../constants/Route';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -27,6 +28,7 @@ export const WeekendMissionContainerUnconnected: React.FC<IProps> = (props: IPro
     const [weekendMissionStatus, setWeekendMissionStatus] = useState<NetworkState>(NetworkState.Loading);
 
     useEffect(() => {
+        if (!location.pathname.includes(Routes.weekendMission)) return;
         fetchWeekendMissionStage();
         // eslint-disable-next-line
     }, [props.selectedLanguage, location.pathname]);

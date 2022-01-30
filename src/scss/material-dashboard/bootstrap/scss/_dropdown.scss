@@ -21,10 +21,10 @@
   padding: $dropdown-padding-y 0;
   margin: $dropdown-spacer 0 0; // override default ul
   font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
-  color: $body-color;
+  color: white;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
-  background-color: $dropdown-bg;
+  background-color: lighten($brand-primary-background, 10%);
   background-clip: padding-box;
   border: $dropdown-border-width solid $dropdown-border-color;
   @include border-radius($dropdown-border-radius);
@@ -52,6 +52,7 @@
 
   .dropdown-toggle {
     @include caret(right);
+
     &::after {
       vertical-align: 0;
     }
@@ -66,6 +67,7 @@
 
   .dropdown-toggle {
     @include caret(left);
+
     &::before {
       vertical-align: 0;
     }
@@ -109,6 +111,7 @@
   &:disabled {
     color: $dropdown-link-disabled-color;
     background-color: transparent;
+
     // Remove CSS gradients if they're enabled
     @if $enable-gradients {
       background-image: none;

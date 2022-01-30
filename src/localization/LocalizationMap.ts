@@ -1,9 +1,15 @@
-export class LocalizationMap {
-  name: string;
-  code: string;
+import { LocaleKey } from "./LocaleKey";
 
-  constructor(name: string, code: string) {
+export class LocalizationMap {
+  name: LocaleKey;
+  code: string;
+  countryCode: string;
+  serverSideId: number;
+
+  constructor(name: LocaleKey, code: string, countryCode: string, serverSideId: number) {
     this.name = name;
     this.code = code;
+    this.countryCode = countryCode;
+    this.serverSideId = serverSideId;
   }
 }

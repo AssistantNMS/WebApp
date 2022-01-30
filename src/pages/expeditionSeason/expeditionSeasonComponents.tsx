@@ -78,7 +78,7 @@ export const ExpeditionSeasonHeader: React.FC<IExpeditionSeasonHeaderProps> = (p
             <div className="col-12 col-lg-9 col-md-9 col-sm-12 col-xs-9">
                 <h2>{props.seasonDetails.Title}</h2>
                 <PortalGlyphGridDisplay
-                    codes={props.seasonDetails.PortalCode.split('').map(p => parseInt(p, 16)) || []}
+                    codes={(props.seasonDetails?.PortalCode ?? []).split('').map(p => parseInt(p, 16)) || []}
                     columnMultiplier={2}
                     useAltGlyphs={props.useAltGlyphs}
                 />

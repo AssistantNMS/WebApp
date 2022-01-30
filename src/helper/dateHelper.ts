@@ -40,7 +40,7 @@ export const percentageProgress = (startDate: Date, endDate: Date): number => {
 }
 
 export const friendlyTimeLeft = (startDate: Date, endDate: Date): string => {
-    if (endDate > (new Date())) {
+    if (endDate < (new Date())) {
         return 'Complete';
     }
 

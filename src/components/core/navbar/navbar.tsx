@@ -72,7 +72,7 @@ const NavBarUnconnected: React.FC<IProps> = (props: IProps) => {
                                     localeMap.map((locale: LocalizationMap) => {
                                         return (
                                             <span onClick={() => selectLanguage(locale)} key={locale.code}
-                                                className="dropdown-item pointer">{locale.name}
+                                                className="dropdown-item pointer">{i18next.t(locale.name)}
                                             </span>
                                         );
                                     })

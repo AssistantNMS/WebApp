@@ -19,7 +19,7 @@ export class ExternalUrls {
   static bat = 'https://brave.com/nms136';
   static openCollective = 'https://opencollective.com/assistantnms';
   static nmsWeekendMissionWiki = 'https://nomanssky.gamepedia.com/Weekend_Missions_-_Lore';
-  static translationTool = 'https://tools.assistantapps.com';
+  static translationTool = 'https://tools.assistantapps.com/translation';
   static expeditionAlphabet = 'https://nmscd.github.io/expedition-alphabet/';
   static expeditionAlphabetDisplay = 'https://nmscd.github.io/expedition-alphabet/#/display?text=';
 }

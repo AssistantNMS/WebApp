@@ -60,13 +60,13 @@ export const DevDetailsBottomModalSheet: React.FC<IProps> = (props: IProps) => {
         for (let devPropIndex = 0; devPropIndex < devDetail.Properties.length; devPropIndex++) {
             const devProp = devDetail.Properties[devPropIndex];
 
-            details.push(<>
+            details.push(<React.Fragment key={`frag-${devProp.Type}-${devProp.Name}-${devProp.Value}`}>
                 <p key={`${devProp.Type}-${devProp.Name}-${devProp.Value}`}>
                     <b>{devProp.Name}:&nbsp;&nbsp;</b>{devProp.Value}
                     {(devProp.Type === DevPropertyType.Colour) && <ColourSwatch hex={devProp.Value} />}
                 </p>
                 {(devPropIndex < (devDetail.Properties.length - 1)) && <hr />}
-            </>);
+            </React.Fragment>);
         }
 
         return (

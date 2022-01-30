@@ -63,12 +63,12 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
     <div id="app"
       className={classNames('menu-on-left', props.selectedLanguage, props.selectedFont)}>
       <ScrollToTop>
-        <Drawer />
+        <Drawer key={props.selectedLanguage} />
         <div className="main-panel ps-theme-default">
           <div id="sidebar-main-content-overlay" className="full-page-loader opacity80" onClick={() => toggleMenu()}></div>
           <NavBarFake />
           <AnimatePresence exitBeforeEnter>
-            <Routes location={location} key={location.key}>
+            <Routes location={location} key={location.key + props.selectedLanguage}>
               <Route path={route.home} element={<HomePresenter />} />
               <Route path={route.setting} element={<SettingPresenter />} />
               <Route path={route.about} element={<AboutPresenter />} />

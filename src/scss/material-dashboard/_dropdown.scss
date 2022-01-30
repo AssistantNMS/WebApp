@@ -10,7 +10,7 @@
   transform-origin: 0 0;
   will-change: transform, opacity;
   transition: transform $bmd-menu-expand-duration $bmd-animation-curve-default,
-              opacity $bmd-menu-fade-duration $bmd-animation-curve-default;
+    opacity $bmd-menu-fade-duration $bmd-animation-curve-default;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 
   &.showing {
@@ -20,7 +20,7 @@
     animation-timing-function: $bmd-animation-curve-default;
   }
 
-  .open > &,
+  .open>&,
   &.show {
     display: block;
     opacity: 1;
@@ -49,42 +49,43 @@
     transform-origin: 100% 100%;
   }
 
-  .disabled > a{
-        color: $bmd-dropdown-header-color;
+  .disabled>a {
+    color: $bmd-dropdown-header-color;
 
-        &:focus,
-        &:hover{
-            text-decoration: none;
-            background-color: transparent;
-            background-image: none;
-            color: $bmd-dropdown-header-color;
-        }
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      background-color: transparent;
+      background-image: none;
+      color: $bmd-dropdown-header-color;
     }
+  }
 
-    &.dropdown-with-icons .dropdown-item{
-        padding: $dropdown-item-padding-y + 0.125 $dropdown-item-padding-x $dropdown-item-padding-y + 0.125 $dropdown-item-padding-y + 0.125;
+  &.dropdown-with-icons .dropdown-item {
+    padding: $dropdown-item-padding-y + 0.125 $dropdown-item-padding-x $dropdown-item-padding-y + 0.125 $dropdown-item-padding-y + 0.125;
 
-        & .material-icons{
-            vertical-align: middle;
-            font-size: 24px;
-            position: relative;
-            margin-top: -4px;
-            top: 1px;
-            margin-right: 12px;
-            opacity: .5;
-        }
+    & .material-icons {
+      vertical-align: middle;
+      font-size: 24px;
+      position: relative;
+      margin-top: -4px;
+      top: 1px;
+      margin-right: 12px;
+      opacity: .5;
     }
+  }
 
 
   // https://www.google.com/design/spec/components/menus.html#menus-specs
   .dropdown-item,
-  li > a{    // used to properly size the ripple container
+  li>a {
+    // used to properly size the ripple container
     position: relative;
     width: auto;
     display: flex;
     flex-flow: nowrap;
     align-items: center;
-    color: $bmd-dropdown-link-color;
+    color: white;
     font-weight: normal;
     text-decoration: none;
     font-size: .8125rem;
@@ -92,7 +93,7 @@
     margin: 0 $bmd-dropdown-margin-y;
     @include transitions($fast-transition-time, $transition-linear);
     min-width: $bmd-menu-item-min-width;
-    padding: $dropdown-item-padding-y  $dropdown-item-padding-x;
+    padding: $dropdown-item-padding-y $dropdown-item-padding-x;
     overflow: hidden;
     line-height: $bmd-line-height;
     text-overflow: ellipsis;
@@ -120,20 +121,23 @@ a[aria-expanded="true"] .caret,
 .dropdown.open .caret,
 .dropup.open .caret,
 .btn-group.bootstrap-select.open .caret {
-    @include rotate-180();
+  @include rotate-180();
 }
 
 
 // this could be in a .btn-group or .dropdown
 .dropdown-toggle {
+
   &.bmd-btn-icon,
   &.bmd-btn-fab {
+
     // remove the dropdown icon
     &::after {
       display: none;
     }
 
-    ~ .dropdown-menu {
+    ~.dropdown-menu {
+
       &.dropdown-menu-top-left,
       &.dropdown-menu-top-right {
         bottom: $bmd-btn-icon-size; // push up the bottom of the menu the height of the button
@@ -141,13 +145,14 @@ a[aria-expanded="true"] .caret,
     }
   }
 
-  &:after{
-      will-change: transform;
-      transition: transform $bmd-animation-dropdown-caret linear;
+  &:after {
+    will-change: transform;
+    transition: transform $bmd-animation-dropdown-caret linear;
   }
 
   &.bmd-btn-fab-sm {
-    ~ .dropdown-menu {
+    ~.dropdown-menu {
+
       &.dropdown-menu-top-left,
       &.dropdown-menu-top-right {
         bottom: $bmd-btn-fab-size-sm; // push up the bottom of the menu the height of the button
@@ -156,21 +161,22 @@ a[aria-expanded="true"] .caret,
   }
 
   &.bmd-btn-icon {
-    ~ .dropdown-menu {
+    ~.dropdown-menu {
       // collapse some spacing
       margin: 0;
     }
   }
 
-  .show > &:not(.dropdown-item):after {
+  .show>&:not(.dropdown-item):after {
     @include rotate-180();
   }
 }
 
-.dropdown-header{
+.dropdown-header {
   font-size: 0.75rem;
   padding-top: .625rem;
-  padding-bottom: .625rem;;
+  padding-bottom: .625rem;
+  ;
   text-transform: none;
   color: $bmd-dropdown-header-color;
   line-height: $bmd-line-height;
@@ -182,28 +188,29 @@ a[aria-expanded="true"] .caret,
     opacity: 0;
     transform: scale(0);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-.dropdown-menu.bootstrap-datetimepicker-widget{
-    opacity: 0;
-    transform: scale(0);
-    transition-duration: $bmd-menu-expand-duration;
-    transition-timing-function: $bmd-animation-curve-default;
-    transform-origin: 0 0;
-    will-change: transform, opacity;
-    top: 0;
+.dropdown-menu.bootstrap-datetimepicker-widget {
+  opacity: 0;
+  transform: scale(0);
+  transition-duration: $bmd-menu-expand-duration;
+  transition-timing-function: $bmd-animation-curve-default;
+  transform-origin: 0 0;
+  will-change: transform, opacity;
+  top: 0;
 }
 
-.dropdown-menu.bootstrap-datetimepicker-widget.top{
-    transform-origin: 0 100%;
+.dropdown-menu.bootstrap-datetimepicker-widget.top {
+  transform-origin: 0 100%;
 }
 
-.dropdown-menu.bootstrap-datetimepicker-widget.open{
-    opacity: 1;
-    transform: scale(1);
-    top: 0;
+.dropdown-menu.bootstrap-datetimepicker-widget.open {
+  opacity: 1;
+  transform: scale(1);
+  top: 0;
 }

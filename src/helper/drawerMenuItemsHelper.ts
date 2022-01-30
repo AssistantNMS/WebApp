@@ -1,13 +1,18 @@
 import i18next from 'i18next';
+import { AppImage } from '../constants/AppImage';
 import { ExistingExpeditions, IExistingExpeditions } from '../constants/Expedition';
 import * as routes from '../constants/Route';
 import { IWeekendMission, WeekendMissions } from '../constants/WeekendMission';
 import { DrawerMenuItem } from '../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../contracts/enum/DrawerIconType';
+import { ExpeditionSeason } from '../contracts/helloGames/expeditionSeason';
 import { LocaleKey } from '../localization/LocaleKey';
+import { GameItemService } from '../services/json/GameItemService';
 import { getCatalogueMenuItems } from './catalogueMenuItemsHelper';
 
-export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
+export const getDrawerMenuItems = async (gameItemService: GameItemService): Promise<Array<DrawerMenuItem>> => {
+  const expeditionsTask = gameItemService.getAllSeasonExpeditions();
+
   const menuItems = [];
   menuItems.push({
     name: i18next.t(LocaleKey.whatIsNew).toString(),
@@ -96,20 +101,37 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
+
+  let subs = ExistingExpeditions.map((ee: IExistingExpeditions) => {
+    return {
+      name: ee.name,
+      link: routes.seasonExpedition + '/' + ee.seasonId,
+      icon: `/${ee.icon}`,
+      iconType: DrawerIconType.Custom,
+      isActive: false,
+    };
+  });
+  const expeditionsResult = await expeditionsTask;
+  if (expeditionsResult.isSuccess) {
+    subs = expeditionsResult.value
+      .filter((es: ExpeditionSeason) => !es.Id.includes('-redux'))
+      .map((es: ExpeditionSeason) => {
+        return {
+          name: es.Title,
+          link: routes.seasonExpedition + '/' + es.Id,
+          icon: `/${AppImage.base}${es.Icon}`,
+          iconType: DrawerIconType.Custom,
+          isActive: false,
+        };
+      });
+  }
+
   menuItems.push({
     name: i18next.t(LocaleKey.seasonalExpeditionSeasons).toString(),
     link: routes.seasonExpedition,
     icon: 'map',
     iconType: DrawerIconType.Material,
-    subs: ExistingExpeditions.map((ee: IExistingExpeditions) => {
-      return {
-        name: ee.name,
-        link: routes.seasonExpedition + '/' + ee.seasonId,
-        icon: `/${ee.icon}`,
-        iconType: DrawerIconType.Custom,
-        isActive: false,
-      };
-    }),
+    subs: subs,
     isActive: false
   });
   menuItems.push({
