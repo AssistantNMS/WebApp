@@ -8,6 +8,7 @@ import { BottomModalSheet } from '../../components/common/dialog/bottomModalShee
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
+import { seasonExpedition } from '../../constants/Route';
 import { ExpeditionSeason } from '../../contracts/helloGames/expeditionSeason';
 import { anyObject } from '../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
@@ -43,12 +44,14 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
     const [snapPoint, setSnapPoint] = useState<number>(400);
 
     useEffect(() => {
+        if (!location.pathname.includes(seasonExpedition)) return;
+
         const url = location.pathname;
         const seasIdSlashIndex = url.lastIndexOf('/');
         const seasId = url.substring(seasIdSlashIndex + 1, url.length);
         fetchExpeditionData(seasId);
         // eslint-disable-next-line
-    }, [props.selectedLanguage, location.pathname]);
+    }, [props.selectedLanguage]);
 
     const fetchExpeditionData = async (seasId: string) => {
         const expeditionsResult = await props.gameItemService.getAllSeasonExpeditions();

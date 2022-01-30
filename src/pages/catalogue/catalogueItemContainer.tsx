@@ -55,7 +55,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         if (langCode != null) {
             const indexOfLang = localeMap.findIndex(l => l.code === langCode);
             if (indexOfLang > -1) {
-                props.setLanguage(langCode);
+                if (langCode !== props.selectedLanguage) props.setLanguage(props.selectedLanguage!);
             }
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -66,7 +66,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         fetchData(itemId);
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [langCode, itemId]);
+    }, [langCode, itemId, props.selectedLanguage]);
 
     const clearData = async () => {
         setResArray([]);
