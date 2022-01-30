@@ -1,4 +1,2 @@
-- Community Mission planner
 - Display properties on recipe screen
-- Show Developer Details
 - Search from navbar, on click dropdown appears

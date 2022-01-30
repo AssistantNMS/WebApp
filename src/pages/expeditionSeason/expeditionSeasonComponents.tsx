@@ -1,7 +1,5 @@
 import i18next from 'i18next';
 import React, { ReactNode } from 'react';
-import { useHistory } from 'react-router-dom';
-
 import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { PortalGlyphGridDisplay } from '../../components/common/portal/portalGlyphGrid';
@@ -13,9 +11,7 @@ import { SmallLoading } from '../../components/core/loading/loading';
 import { ExpeditionSeasonRewardsOnlyTile } from '../../components/tilePresenter/rewardTile/expeditionSeasonRewardsOnlyTile';
 import { ExpeditionSeasonRewardTile } from '../../components/tilePresenter/rewardTile/expeditionSeasonRewardTile';
 import { AppImage } from '../../constants/AppImage';
-import { ExistingExpeditions, IExistingExpeditions } from '../../constants/Expedition';
 import { NetworkState } from '../../constants/NetworkState';
-import * as routes from '../../constants/Route';
 import { ExpeditionSeasonViewModel } from '../../contracts/generated/Model/HelloGames/expeditionSeasonViewModel';
 import { ExpeditionSeason, ExpeditionSeasonPhase, ExpeditionSeasonReward } from '../../contracts/helloGames/expeditionSeason';
 import { friendlyTimeLeft, guideFormatDate, percentageProgress } from '../../helper/dateHelper';
@@ -57,59 +53,6 @@ export const CurrentExpeditionSeasonHeader: React.FC<ICurrentExpeditionSeasonHea
         </>
     );
 }
-
-interface ISeasonExpeditionCardsProps {
-}
-
-export const SeasonExpeditionCards: React.FC<ISeasonExpeditionCardsProps> = (props: ISeasonExpeditionCardsProps) => {
-    return (
-        <div data-id="SeasonExpeditionCards" className="row">
-            {
-                ExistingExpeditions.map((data) => {
-                    return <SeasonExpeditionCard details={data} />
-                })
-            }
-        </div>
-    );
-}
-
-interface ISeasonExpeditionCardProps {
-    details: IExistingExpeditions;
-}
-
-export const SeasonExpeditionCard: React.FC<ISeasonExpeditionCardProps> = (props: ISeasonExpeditionCardProps) => {
-    const history = useHistory();
-
-    const navigateToExpSeason = (seasId: string) => () => {
-        history.push(`${routes.seasonExpedition}/${seasId}`);
-    }
-    return (
-        <div data-id="SeasonExpeditionCard" className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div className="card exp pointer noselect" onClick={navigateToExpSeason(`seas-${props.details.seasonNum}`)} draggable={false}>
-                <div className="card-image exp">
-                    <img src={`/${props.details.background}`} draggable={false} alt={props.details.name} />
-                </div>
-
-                <img src={`/${props.details.icon}`} className="card-image-overlay" draggable={false} alt={props.details.name + ' icon'} />
-
-                <div className="card-top-right-content">
-                    <span>Season {props.details.seasonNum}</span>
-                </div>
-
-                <div className="card-content row">
-                    <div className="col-12">
-                        <div className="user-details exp">
-                            <div className="user-name">
-                                <h3 style={{ width: '100%', textAlign: 'center' }}>{props.details.name}</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
-
 
 interface IExpeditionSeasonHeaderProps {
     seasonDetails?: ExpeditionSeason;

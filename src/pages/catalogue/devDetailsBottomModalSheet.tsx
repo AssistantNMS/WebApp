@@ -6,6 +6,8 @@ import { NetworkState } from '../../constants/NetworkState';
 import { DevDetail } from '../../contracts/data/devDetail';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { DataJsonService } from '../../services/json/DataJsonService';
+import { DevPropertyType } from '../../constants/DevProperty';
+import { ColourSwatch } from '../../components/common/colourSwatch';
 
 interface IProps {
     appId: string;
@@ -15,7 +17,7 @@ interface IProps {
 }
 
 export const DevDetailsBottomModalSheet: React.FC<IProps> = (props: IProps) => {
-    const [item, setItem] = useState<DevDetail>();
+    const [devItem, setDevItem] = useState<DevDetail>();
     const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
 
     useEffect(() => {
@@ -39,30 +41,42 @@ export const DevDetailsBottomModalSheet: React.FC<IProps> = (props: IProps) => {
         }
 
         if (devData != null) {
-            setItem(devData);
+            setDevItem(devData);
             setNetworkState(NetworkState.Success);
             return;
         }
         setNetworkState(NetworkState.Error);
     }
 
-    const renderContent = () => {
+    const renderContent = (devDetail: DevDetail | undefined) => {
         if (networkState === NetworkState.Loading) {
             return (<TileLoading />);
         }
-        if (networkState === NetworkState.Error) {
+        if (networkState === NetworkState.Error || devDetail == null) {
             return (<Error />);
         }
 
         const details = [];
-        details.push(<>
+        for (let devPropIndex = 0; devPropIndex < devDetail.Properties.length; devPropIndex++) {
+            const devProp = devDetail.Properties[devPropIndex];
 
-        </>);
+            details.push(<>
+                <p key={`${devProp.Type}-${devProp.Name}-${devProp.Value}`}>
+                    <b>{devProp.Name}:&nbsp;&nbsp;</b>{devProp.Value}
+                    {(devProp.Type === DevPropertyType.Colour) && <ColourSwatch hex={devProp.Value} />}
+                </p>
+                {(devPropIndex < (devDetail.Properties.length - 1)) && <hr />}
+            </>);
+        }
+
         return (
             <>
-                {
-
-                }
+                <div className="col-12">
+                    {details}
+                </div>
+                <div className="col-12">
+                    <br /><br />
+                </div>
             </>
         );
     }
@@ -76,7 +90,7 @@ export const DevDetailsBottomModalSheet: React.FC<IProps> = (props: IProps) => {
             <div className="content">
                 <div className="container full pt1">
                     <div className="row">
-                        {renderContent()}
+                        {renderContent(devItem)}
                     </div>
                 </div>
             </div>

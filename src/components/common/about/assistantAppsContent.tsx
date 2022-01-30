@@ -16,7 +16,7 @@ interface IProps extends IWithDepInj, IWithoutDepInj {
 }
 
 const AssistantAppsContentUnconnected: React.FC<IProps> = (props: IProps) => {
-    const [appLinks, setAppLinks] = useState<Array<AssistantAppLinks>>();
+    const [appLinks, setAppLinks] = useState<Array<AssistantAppLinks>>([]);
 
     useEffect(() => {
         loadMetaJson();
@@ -75,7 +75,7 @@ const ListTile: React.FC<IAssistantAppLinkListTileProps> = (props: IAssistantApp
                     <TextContainer text={props.item.name} />
                     <div className="quantity-container">
                         {
-                            props.item.links.map((l: AssistantAppLinkItem, index: number) => {
+                            (props?.item?.links ?? []).map((l: AssistantAppLinkItem, index: number) => {
                                 const children: Array<ReactNode> = [];
                                 if (index > 0) children.push(<span key={l.type + 'seperator' + index}>,&nbsp;&nbsp;&nbsp;</span>);
                                 children.push(

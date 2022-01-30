@@ -104,7 +104,7 @@ export const getDrawerMenuItems = (): Array<DrawerMenuItem> => {
     subs: ExistingExpeditions.map((ee: IExistingExpeditions) => {
       return {
         name: ee.name,
-        link: routes.seasonExpedition + '/seas-' + ee.seasonNum,
+        link: routes.seasonExpedition + '/' + ee.seasonId,
         icon: `/${ee.icon}`,
         iconType: DrawerIconType.Custom,
         isActive: false,
