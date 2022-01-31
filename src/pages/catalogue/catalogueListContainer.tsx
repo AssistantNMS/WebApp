@@ -44,7 +44,7 @@ export const CatalogueListContainerUnconnected: React.FC<IProps> = (props: IProp
         setItems(itemsResult.value);
         setDisplayItems(itemsResult.value);
         setNetworkState(NetworkState.Success);
-        search(null, itemsResult.value, searchTerm);
+        search(null, itemsResult.value, '');
     }
 
     const onSearchTextChange = (e: any) => {
@@ -68,7 +68,7 @@ export const CatalogueListContainerUnconnected: React.FC<IProps> = (props: IProp
             }
         }
         setDisplayItems(newDisplayItems);
-        setSearchTerm(searchText);
+        if (searchText.length > 0) setSearchTerm(searchText);
         forceCheck();
     }
 
