@@ -6,6 +6,13 @@ import { addItemToFavourite, removeItemFromFavourite } from '../../../redux/modu
 import { getFavouriteItems } from '../../../redux/modules/favourite/selector';
 import { State } from '../../../redux/state';
 
+export interface IFromRedux {
+    favourites: Array<FavouriteItem>;
+    addItemToCart?: (cartItem: CartItem) => void;
+    addItemToFavourite?: (favouriteItem: FavouriteItem) => void;
+    removeItemFromFavourite?: (appId: string) => void;
+}
+
 export const mapStateToProps = (state: State) => {
     return {
         cartItems: getCartItems(state),

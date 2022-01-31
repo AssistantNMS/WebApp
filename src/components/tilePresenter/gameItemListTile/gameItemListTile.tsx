@@ -1,3 +1,4 @@
+import i18next from 'i18next';
 import * as React from 'react';
 import { useRef } from 'react';
 import { connect } from 'react-redux';
@@ -7,15 +8,15 @@ import { CartItem } from '../../../contracts/cart/cartItem';
 import { FavouriteItem } from '../../../contracts/favourite/favouriteItem';
 import { GameItemModel } from '../../../contracts/GameItemModel';
 import { invertColor } from '../../../helper/colourHelper';
-import { ImageContainer } from '../../common/tile/imageContainer';
-import { TextContainer } from '../../common/tile/textContainer';
-import { mapDispatchToProps, mapStateToProps } from './gameItemListTile.Redux';
-import { CustomContextMenu } from '../../core/contextMenu/contextMenu';
 import { getQuantityDialog } from '../../../helper/dialogHelper';
-import i18next from 'i18next';
+import { removeXmlTags } from '../../../helper/stringHelper';
+import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { ToastService } from '../../../services/toastService';
-import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
+import { ImageContainer } from '../../common/tile/imageContainer';
+import { TextContainer } from '../../common/tile/textContainer';
+import { CustomContextMenu } from '../../core/contextMenu/contextMenu';
+import { IFromRedux, mapDispatchToProps, mapStateToProps } from './gameItemListTile.Redux';
 
 interface IWithDepInj {
     toastService: ToastService;
@@ -23,13 +24,6 @@ interface IWithDepInj {
 
 interface IWithoutDepInj {
     item: GameItemModel;
-}
-
-interface IFromRedux {
-    favourites: Array<FavouriteItem>;
-    addItemToCart?: (cartItem: CartItem) => void;
-    addItemToFavourite?: (favouriteItem: FavouriteItem) => void;
-    removeItemFromFavourite?: (appId: string) => void;
 }
 
 interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj { }
@@ -41,7 +35,7 @@ export const GameItemListTileUnconnected: React.FC<IProps> = (props: IProps) => 
     return (
         <Link to={`${catalogueItem}/${props.item.Id}`} ref={containerRef} data-id="GameItemListTile" className="item" draggable={false}>
             <TextContainer text={props.item.Name} />
-            <ImageContainer {...props.item} Name={props.item.Description} />
+            <ImageContainer {...props.item} Name={removeXmlTags(props.item.Description)} />
             {
                 itemIsFavourited &&
                 <i className="material-icons top-right" style={{ color: invertColor(props.item.Colour || '000000') }}>{iconString}</i>

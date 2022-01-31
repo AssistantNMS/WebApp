@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { catalogueItem } from '../../../constants/Route';
 import { GameItemModel } from '../../../contracts/GameItemModel';
 import { ChargeBy } from '../../../contracts/recharge/chargeBy';
+import { roundDecimalNum } from '../../../helper/mathHelper';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../../common/tile/imageContainer';
@@ -39,7 +40,7 @@ const ChargeByItemListTileClass: React.FC<IProps> = (props: IProps) => {
         return (<TileLoading />);
     }
 
-    const childName = (props.totalChargeAmount / props.Value) + 'x ' + item.Name;
+    const childName = roundDecimalNum(props.totalChargeAmount / props.Value) + 'x ' + item.Name;
     return (
         <Link to={`${catalogueItem}/${props.Id}`} data-id="ChargeByItemListTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} />

@@ -5,6 +5,7 @@ import { IDependencyInjection, withServices } from '../../integration/dependency
 import { ToastService } from '../../services/toastService';
 import { AdditionalInfoChip } from '../common/chip/additionalInfoChip';
 import { LazyLoadImage } from './lazyLoadImage/lazyLoadImage';
+import { DecriptionRegexHighlightText } from '../common/descriptionRegexHighlighter';
 
 interface IWithDepInj {
     toastService: ToastService;
@@ -56,7 +57,11 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                 <h3 className="ta-left ta-center-sm" style={{ marginTop: 0 }}>{group}</h3>
                 {
                     props?.Description
-                        ? <h5 className="ta-left ta-center-sm">{props.Description}</h5>
+                        ? <h5 className="ta-left ta-center-sm">
+                            <DecriptionRegexHighlightText
+                                orig={props.Description}
+                            />
+                        </h5>
                         : null
                 }
                 {
