@@ -2,15 +2,13 @@ import classNames from 'classnames';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
-import { NetworkState } from '../../../constants/NetworkState';
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
-import { getDrawerMenuItems, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
+import { getMenuSection1, getMenuSection2, getMenuSection3, getMenuSection4, getMenuSection4Async, getMenuSection5, getMenuSection6, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { AboutDrawerTilePresenter } from '../../common/about/aboutDrawerTilePresenter';
 import { AssistantAppsAboutDrawerTilePresenter } from '../../common/about/assistantAppsAboutDrawerTilePresenter';
-import { TileLoading } from '../loading/loading';
 import { mapDispatchToProps, mapStateToProps } from './drawer.Redux';
 
 interface IWithDepInj {
@@ -28,9 +26,15 @@ interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj { }
 
 const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     let location = useLocation();
-    const [menuItems, setMenuItems] = useState<Array<DrawerMenuItem>>([]);
     const [expandedMenuItems, setExpandedMenuItems] = useState<Array<string>>([]);
-    const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
+    const [menuItems, setMenuItems] = useState<Array<DrawerMenuItem>>([
+        ...getMenuSection1(),
+        ...getMenuSection2(),
+        ...getMenuSection3(),
+        ...getMenuSection4(),
+        ...getMenuSection5(),
+        ...getMenuSection6(),
+    ]);
 
     useEffect(() => {
         getMenuItems();
@@ -38,9 +42,16 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
     }, []);
 
     const getMenuItems = async () => {
-        const localMenuItems = await getDrawerMenuItems(props.gameItemService);
+        const menuSection4Items = await getMenuSection4Async(props.gameItemService);
+        const localMenuItems = [
+            ...getMenuSection1(),
+            ...getMenuSection2(),
+            ...getMenuSection3(),
+            ...menuSection4Items,
+            ...getMenuSection5(),
+            ...getMenuSection6(),
+        ];
         setMenuItems(localMenuItems);
-        setNetworkState(NetworkState.Success);
     }
 
     const menuItemClick = () => {
@@ -126,11 +137,7 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
                     <div className="logo">
                         <Link to="/" draggable={false}><img src="/assets/images/DrawerHeader.png" draggable={false} alt="drawerHeader" /></Link>
                     </div>
-                    {
-                        networkState !== NetworkState.Success
-                            ? <TileLoading />
-                            : renderMenuItems(menuItems ?? [])
-                    }
+                    {renderMenuItems(menuItems ?? [])}
                     <AssistantAppsAboutDrawerTilePresenter />
                     {renderMenuItems([menuItemSeperator])}
                     <br />
