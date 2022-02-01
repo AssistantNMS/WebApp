@@ -6638,9 +6638,9 @@
   {
     "Id": "build315",
     "Icon": "building/315.png",
-    "Name": "绿色烟花",
+    "Name": "蓝色烟花",
     "Group": "消耗型烟火技术设备",
-    "Description": "一枚包含大量镁和艾梅里尔的奢华烟花。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
+    "Description": "一枚包含大量镁和铟的奢华烟花。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Quicksilver",
     "IsCraftable": false,
@@ -6939,6 +6939,26 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build327",
+    "Icon": "building/315.png",
+    "Name": "红色烟花",
+    "Group": "消耗型烟火技术设备",
+    "Description": "一枚包含大量镁和镉的奢华烟花。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
+    "BaseValueUnits": 50.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "262626",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build328",
     "Icon": "building/328.png",
     "Name": "金属内屋顶檐角",
@@ -7017,6 +7037,26 @@
         "Quantity": 25
       }
     ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build331",
+    "Icon": "building/315.png",
+    "Name": "绿色烟花",
+    "Group": "消耗型烟火技术设备",
+    "Description": "一枚包含大量镁和艾梅里尔的奢华烟花。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
+    "BaseValueUnits": 50.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "262626",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
