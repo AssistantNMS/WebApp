@@ -4,7 +4,7 @@
     "Icon": "technology/1.png",
     "Name": "危険防御システム",
     "Group": "エクソスーツの対環境シールド",
-    "Description": "エクソスーツの危険防御システムは常時使用者の環境を管理し、\n安定化させる役割を担っている。 \n基礎的な反応防御は環境的なシールドで強化され、特定の条件に対する防御力が上昇する。\nこの装置はナトリウム系物質でチャージできる。 危険防御システムのチャージを怠ると生命の維持が出来なくなるため注意が必要だ。",
+    "Description": "エクソスーツの<CATALYST>危険防御<>システムは常時使用者の環境を管理し、\n安定化させる役割を担っている。 \n基礎的な反応防御は<TECHNOLOGY>環境的なシールド<>で強化され、特定の条件に対する防御力が上昇する。\nこの装置は<CATALYST>ナトリウム系物質<>でチャージできる。 危険防御システムのチャージを怠ると生命の維持が出来なくなるため注意が必要だ。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -28,7 +28,7 @@
     "Icon": "technology/2.png",
     "Name": "シールドラティス",
     "Group": "危険防御システムアップグレード",
-    "Description": "危険防御システムの基礎容量を\n上昇させることで、有害環境でも\nより長時間活動を続けられるようになる。",
+    "Description": "<COMMODITY>危険防御<>システムの基礎容量を\n上昇させることで、有害環境でも\nより長時間活動を続けられるようになる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -56,7 +56,7 @@
     "Icon": "technology/3.png",
     "Name": "生命維持システム",
     "Group": "スーツ生存エネルギー",
-    "Description": "エクソスーツの中核、生命維持システムは常時空気をフィルターし、\n呼吸に不可欠な酸素を送り込んでいる。\n \nエクソスーツの使用者の生命の維持\nという役割に加え、このシステムは\n余剰の酸素を活用して、ジェットパック、\n速度強化、およびライトなど\nその他のシステムの動力も作成している。",
+    "Description": "エクソスーツの中核、<TECHNOLOGY>生命維持システム<>は常時空気をフィルターし、\n呼吸に不可欠な<FUEL>酸素<>を送り込んでいる。\n \nエクソスーツの使用者の生命の維持\nという役割に加え、このシステムは\n余剰の酸素を活用して、<TECHNOLOGY>ジェットパック<>、\n<TECHNOLOGY>速度強化<>、および<TECHNOLOGY>ライト<>など\nその他のシステムの動力も作成している。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -80,7 +80,7 @@
     "Icon": "technology/4.png",
     "Name": "酸素リサイクラー",
     "Group": "生命維持システムアップグレード",
-    "Description": "生命維持システムの基礎容量を上昇させることで、チャージを要するまでの活動時間を\n延長させる。",
+    "Description": "<FUEL>生命維持<>システムの基礎容量を上昇させることで、チャージを要するまでの活動時間を\n延長させる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -104,7 +104,7 @@
     "Icon": "technology/5.png",
     "Name": "ジェットパック",
     "Group": "空中推進ブースター",
-    "Description": "エクソスーツに一時的な飛行などの上級動作機能を与える。\nJUMPで推進を制御できる。 ジェットパックはエクソスーツの生命維持システムのエネルギーを消費し、ガスを加圧し爆発を起こして使用者を空中へ浮かばせることができる。\n重水素を多く含む植物を集めるとジェットパックは、一時的にオーバーロード状態となり、推進が著しく強化される。",
+    "Description": "エクソスーツに一時的な飛行などの<TECHNOLOGY>上級動作機能<>を与える。\n<IMG>JUMP<>で推進を制御できる。 ジェットパックは<FUEL>エクソスーツの生命維持<>システムのエネルギーを消費し、ガスを加圧し爆発を起こして使用者を空中へ浮かばせることができる。\n<TECHNOLOGY>重水素を多く含む植物<>を集めるとジェットパックは、一時的にオーバーロード状態となり、推進が著しく強化される。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -128,7 +128,7 @@
     "Icon": "technology/6.png",
     "Name": "神経シミュレーター",
     "Group": "エクソスーツ動作アップグレード",
-    "Description": "エクソスーツのジェットパックタンクと\n副腎ポンプの予備容量を\n上昇させることで、使用者の飛行\nおよびダッシュ可能時間を延長させる。",
+    "Description": "エクソスーツの<STELLAR>ジェットパックタンク<>と\n<STELLAR>副腎ポンプの予備<>容量を\n上昇させることで、使用者の飛行\nおよびダッシュ可能時間を延長させる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -156,7 +156,7 @@
     "Icon": "technology/7.png",
     "Name": "ロケットブースト",
     "Group": "エクソスーツアップグレード",
-    "Description": "エクソスーツのジェットパックに高度なジャンプ能力に実装することで、使用者の飛躍高度が改善される。\n\nジャンプシステムを起動するにはJUMPを押す。",
+    "Description": "エクソスーツのジェットパックに<STELLAR>高度なジャンプ能力<>に実装することで、使用者の飛躍高度が改善される。\n\nジャンプシステムを起動するには<IMG>JUMP<>を押す。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -184,7 +184,7 @@
     "Icon": "technology/8.png",
     "Name": "冷却ネットワーク",
     "Group": "危険防御ユニット",
-    "Description": "焼け焦げた惑星で極度の熱から保護される。\n\n液状フレニウムの糸状真皮からなるネットワークを強烈な大気と太陽熱が通り抜けるようにする。\n\n装置は灼熱の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
+    "Description": "焼け焦げた惑星で極度の熱から保護される。\n\n液状フレニウムの糸状真皮からなるネットワークを強烈な大気と太陽熱が通り抜けるようにする。\n\n装置は灼熱の環境から採取した<EARTH>鉱物<>でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -216,7 +216,7 @@
     "Icon": "technology/9.png",
     "Name": "サーマルレイヤー",
     "Group": "危険防御ユニット",
-    "Description": "極度に温度の低いエリアでの低気温によるダメージから保護される。\n\nスーツ全体に熱が毛細血管状に張り巡らされ、液状カラジウムをむらなく分配し、適切な体温を維持する。\n\n装置は極寒の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
+    "Description": "極度に温度の低いエリアでの低気温によるダメージから保護される。\n\nスーツ全体に熱が毛細血管状に張り巡らされ、液状カラジウムをむらなく分配し、適切な体温を維持する。\n\n装置は極寒の環境から採取した<EARTH>鉱物<>でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -248,7 +248,7 @@
     "Icon": "technology/10.png",
     "Name": "毒性制御装置",
     "Group": "危険防御ユニット",
-    "Description": "毒物汚染からユーザーを保護する。\n\n制御装置内の反応性化合物が、ユーザーに降り注ぐ有毒な液体を取り除き、差し迫った危険と息苦しさを軽減する。\n\n装置は毒性の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
+    "Description": "毒物汚染からユーザーを保護する。\n\n制御装置内の反応性化合物が、ユーザーに降り注ぐ有毒な液体を取り除き、差し迫った危険と息苦しさを軽減する。\n\n装置は毒性の環境から採取した<EARTH>鉱物<>でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -280,7 +280,7 @@
     "Icon": "technology/11.png",
     "Name": "放射線ディフレクター",
     "Group": "危険防御ユニット",
-    "Description": "放射線によるダメージからユーザーを保護する。\n\n放射線で汚染された世界を探索するユーザーの危険を大幅に減少させる。微小振動により電磁波の反射量を増幅させ、結果的に吸収量が低下する。\n\n装置は放射性の環境から採取した鉱物でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
+    "Description": "放射線によるダメージからユーザーを保護する。\n\n放射線で汚染された世界を探索するユーザーの危険を大幅に減少させる。微小振動により電磁波の反射量を増幅させ、結果的に吸収量が低下する。\n\n装置は放射性の環境から採取した<EARTH>鉱物<>でリチャージできる。一度エクソスーツのアイテムケース内に作成すると自動的に作動する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -344,7 +344,7 @@
     "Icon": "technology/13.png",
     "Name": "危険物用手袋",
     "Group": "エクソスーツ増強",
-    "Description": "エクソスーツの手袋の金属性シールドのアップグレード。\n\n強化金属と触媒シールドの効果により、有害物質の安全な取扱いは勿論、特定の栽培可能な植物の収穫作業にも使用できる。",
+    "Description": "<TECHNOLOGY>エクソスーツの手袋<>の金属性シールドのアップグレード。\n\n強化金属と触媒シールドの効果により、<CATALYST>有害物質<>の安全な取扱いは勿論、特定の<TRADEABLE>栽培可能な植物<>の収穫作業にも使用できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -432,7 +432,7 @@
     "Icon": "technology/16.png",
     "Name": "廃れたテクノロジー",
     "Group": "時代遅れの利用価値の無いテクノロジー",
-    "Description": "アトラスの影響によって退廃したテクノロジー。\n\nリサイクルして部品を使用することができる。",
+    "Description": "アトラスの影響によって退廃した<TECHNOLOGY>テクノロジー<>。\n\nリサイクルして部品を使用することができる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -460,7 +460,7 @@
     "Icon": "technology/17.png",
     "Name": "効率型ウォータージェット",
     "Group": "ジェットパックアップグレードユニット",
-    "Description": "ジェットパックの水中ジェットの燃料効率性を上昇させ、エクソスーツ生命維持システムの燃料浪費を減らす。 \n\nジェットパックのタービンに水性のコンプレッサーユニットが内蔵されており、水中の着火に必要な膨大なエネルギーを回避することができる。",
+    "Description": "ジェットパックの水中ジェットの<STELLAR>燃料効率性<>を上昇させ、エクソスーツ生命維持システムの燃料浪費を減らす。 \n\nジェットパックのタービンに水性のコンプレッサーユニットが内蔵されており、水中の着火に必要な膨大なエネルギーを回避することができる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -492,7 +492,7 @@
     "Icon": "technology/18.png",
     "Name": "酸素リルーター",
     "Group": "緊急生命維持システム",
-    "Description": "エクソスーツの膜通気をアップグレードして、呼吸が危険に晒されるような事態が発生した際に生命維持システムから酸素を取り入れて、使用者が従来の燃料共有を使用できるように切り替えることができる。\n\n注意: 長期間の生命維持エネルギーの呼吸可能なガスへの変換は避けてください。 維持システムの停止に繋がる可能性があります。",
+    "Description": "エクソスーツの<TECHNOLOGY>膜通気<>をアップグレードして、呼吸が危険に晒されるような事態が発生した際に生命維持システムから酸素を取り入れて、使用者が従来の燃料共有を使用できるように切り替えることができる。\n\n注意: 長期間の生命維持エネルギーの呼吸可能なガスへの変換は避けてください。 維持システムの停止に繋がる可能性があります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -612,7 +612,7 @@
     "Icon": "technology/22.png",
     "Name": "アルテミスの翻訳機",
     "Group": "自動言語解析ツール",
-    "Description": "自動翻訳デバイス。現存する翻訳データを\nプリロードしてキャリブレートする必要\nがあり、アルテミスとネットワークで\n接続しないと機能しない。\n\nホストのトランスレーションサービスへの\nアクセスがない場合でも、少量であれば\nオンボードの回路によって\nリアルタイム翻訳を行うことができる。",
+    "Description": "自動翻訳デバイス。現存する翻訳データを\nプリロードしてキャリブレートする必要\nがあり、<STELLAR>アルテミス<>とネットワークで\n接続しないと機能しない。\n\nホストのトランスレーションサービスへの\nアクセスがない場合でも、少量であれば\nオンボードの回路によって\nリアルタイム翻訳を行うことができる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -640,7 +640,7 @@
     "Icon": "technology/23.png",
     "Name": "パルスドライブ",
     "Group": "宇宙船飛行ブースター",
-    "Description": "周囲の星系で宇宙空間の移動、ブースト、\nパルスジャンプをする際に使用する。\n \nパルスエンジンのチャージには三重水素が必要。 三重水素は宇宙近くの小惑星で豊富に存在している。\n\nROLLLEFTとROLLRIGHTを同時に長押ししてパルスジャンプ。\nBOOSTを長押しするとフライト速度を加速できる。",
+    "Description": "周囲の星系で宇宙空間の移動、ブースト、\nパルスジャンプをする際に使用する。\n \nパルスエンジンのチャージには<EXOTIC>三重水素<>が必要。 三重水素は<COMMODITY>宇宙近くの小惑星<>で豊富に存在している。\n\n<IMG>ROLLLEFT<>と<IMG>ROLLRIGHT<>を同時に長押ししてパルスジャンプ。\n<IMG>BOOST<>を長押しするとフライト速度を加速できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -696,7 +696,7 @@
     "Icon": "technology/25.png",
     "Name": "発射エンジン",
     "Group": "垂直離陸システム",
-    "Description": "ギアシステムの発射と着陸に必要な\nシステム。エンジンは特製の重水素燃料で\nリチャージできる。発射プロセスには、\n充分な燃料レベルが必要。\n \nTHRUST を長押しで惑星から飛び立つ。\nBOOSTで飛行を加速する。",
+    "Description": "ギアシステムの発射と着陸に必要な\nシステム。エンジンは特製の重水素燃料で\nリチャージできる。発射プロセスには、\n充分な燃料レベルが必要。\n \n<IMG>THRUST<> を長押しで惑星から飛び立つ。\n<IMG>BOOST<>で飛行を加速する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -724,7 +724,7 @@
     "Icon": "technology/26.png",
     "Name": "エコエンジン",
     "Group": "宇宙船発射システムアップグレード",
-    "Description": "宇宙船の発射システムをアップグレードすることで、離陸時の消費燃料を減少させる。",
+    "Description": "宇宙船の発射システムをアップグレードすることで、離陸時の<STELLAR>消費燃料<>を減少させる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -756,7 +756,7 @@
     "Icon": "technology/27.png",
     "Name": "発射エンジン再充填器",
     "Group": "宇宙船発射システムアップグレード",
-    "Description": "宇宙船の発射エンジンに装着する光発電パネル。停泊中に燃料をわずかながら補充できる。\n\n光から得た電力で大気から二水素を合成し、発射エンジンの燃料を自動的に少しずつリチャージする。",
+    "Description": "宇宙船の<TECHNOLOGY>発射エンジン<>に装着する光発電パネル。停泊中に燃料をわずかながら補充できる。\n\n光から得た電力で大気から二水素を合成し、<STELLAR>発射エンジンの燃料を自動的に少しずつリチャージ<>する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -788,7 +788,7 @@
     "Icon": "technology/28.png",
     "Name": "テレポート受信機",
     "Group": "船に取り付けられた転送装置",
-    "Description": "一般的な宇宙船の通信信号を変化させ、\n\nデータや物質の転送を可能にする装置。 \nこのような装置が取り付けられた宇宙船は、\n商品や物質を使用者のエクソスーツに\n距離を問わず送受信できる。",
+    "Description": "一般的な宇宙船の通信信号を変化させ、\n\nデータや<TECHNOLOGY>物質の転送を可能にする<>装置。 \nこのような装置が取り付けられた宇宙船は、\n商品や物質を使用者のエクソスーツに\n<VAL_ON>距離を問わず<>送受信できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -844,7 +844,7 @@
     "Icon": "technology/30.png",
     "Name": "カドミウムドライブ",
     "Group": "ハイパードライブアップグレード: 赤色星系",
-    "Description": "レアクラスの赤色恒星への着陸を試みる際の急速な\n\n逆アセンブルを防止するため、ハイパードライブのコアバウンディングマグネットをアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。",
+    "Description": "レアクラスの<FUEL>赤色恒星<>への着陸を試みる際の急速な\n\n逆アセンブルを防止するため、ハイパードライブのコアバウンディングマグネットをアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n<VAL_ON>銀河マップ<>の使用をお勧めします。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -872,7 +872,7 @@
     "Icon": "technology/31.png",
     "Name": "エメリルドライブ",
     "Group": "ハイパードライブアップグレード: 緑色星系",
-    "Description": "レアクラスの緑色恒星への着陸を試みる際の\n\nリアリティーグリッチを防止するため、ハイパードライブのシールド完全性を\nアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。",
+    "Description": "レアクラスの<TRADEABLE>緑色恒星<>への着陸を試みる際の\n\nリアリティーグリッチを防止するため、ハイパードライブのシールド完全性を\nアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n<VAL_ON>銀河マップ<>の使用をお勧めします。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -900,7 +900,7 @@
     "Icon": "technology/32.png",
     "Name": "インジウムドライブ",
     "Group": "ハイパードライブアップグレード: 青色星系",
-    "Description": "レアクラスの青色恒星への\n\n着陸を試みる際に一時的なアノマリーを防止するため、\nハイパードライブの計算マトリックスを\nアップグレードする。\n\nハイパードライブシステムにアクセスする\n際は銀河マップの使用をお勧めします。",
+    "Description": "レアクラスの<TECHNOLOGY>青色恒星<>への\n\n着陸を試みる際に一時的なアノマリーを防止するため、\nハイパードライブの計算マトリックスを\nアップグレードする。\n\nハイパードライブシステムにアクセスする\n際は<VAL_ON>銀河マップ<>の使用をお勧めします。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -928,7 +928,7 @@
     "Icon": "technology/33.png",
     "Name": "ディフレクターシールド",
     "Group": "宇宙船防衛装置",
-    "Description": "レーザー銃、ミサイル武器、宇宙のゴミから\n船体を守るエネルギーシールド。\n \n触媒資源でリチャージできる。\n \n宇宙船のアイテムケース内に作成すると\n自動的に作動する。",
+    "Description": "レーザー銃、ミサイル武器、宇宙のゴミから\n船体を守るエネルギーシールド。\n \n<CATALYST>触媒資源<>でリチャージできる。\n \n宇宙船のアイテムケース内に作成すると\n自動的に作動する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -956,7 +956,7 @@
     "Icon": "technology/34.png",
     "Name": "アブレーションアーマー",
     "Group": "宇宙船シールドアップグレード",
-    "Description": "宇宙船防御列に超高温のシールドレイヤー\n\nを追加することで、向かってくる熱を蒸発させる。\n\n宇宙船シールド性能が大幅に上昇する。",
+    "Description": "宇宙船防御列に超高温のシールドレイヤー\n\nを追加することで、向かってくる熱を蒸発させる。\n\n<STELLAR>宇宙船シールド性能<>が大幅に上昇する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -988,7 +988,7 @@
     "Icon": "technology/35.png",
     "Name": "ロケットランチャー ",
     "Group": "宇宙船のミサイル型武器 ",
-    "Description": "非常に強力かつ連射性能の高い\n\n艦対艦武器。SHIPFIREで使用する。",
+    "Description": "非常に強力かつ連射性能の高い\n\n艦対艦武器。<IMG>SHIPFIRE<>で使用する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1016,7 +1016,7 @@
     "Icon": "technology/36.png",
     "Name": "大型ロケットチューブ",
     "Group": "宇宙船ロケットアップグレード",
-    "Description": "宇宙船のロケットランチャーの装填室を\n拡張し、性能を駆使することで、\n熱回復速度を大幅に改善する。",
+    "Description": "宇宙船のロケットランチャーの装填室を\n拡張し、性能を駆使することで、\n<STELLAR>熱回復速度<>を大幅に改善する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1044,7 +1044,7 @@
     "Icon": "technology/37.png",
     "Name": "フォトンキャノン",
     "Group": "宇宙船のミサイル型武器",
-    "Description": "宇宙船同士の戦闘時に船を即時に破壊できる\n非常に破壊力の高い武器。\n \nSHIPFIREを押して起動する。",
+    "Description": "宇宙船同士の戦闘時に船を即時に破壊できる\n非常に破壊力の高い武器。\n \n<IMG>SHIPFIRE<>を押して起動する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1128,7 +1128,7 @@
     "Icon": "technology/41.png",
     "Name": "フェーズビーム",
     "Group": "宇宙船のレーザー装置",
-    "Description": "宇宙用レーザー武器と小惑星の採掘に使うツール。\n\n有機資源でリチャージできる。\n\nSHIPFIREを押して起動。",
+    "Description": "宇宙用レーザー武器と小惑星の採掘に使うツール。\n\n<FUEL>有機資源<>でリチャージできる。\n\n<IMG>SHIPFIRE<>を押して起動。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1156,7 +1156,7 @@
     "Icon": "technology/42.png",
     "Name": "フォーリエデリミッター",
     "Group": "フェーズビームアップグレード",
-    "Description": "フェーズビームの配線を\n\nナノマシンベースの電気回路で配線し直して、レーザーパワーにある\n標準回路をバイパスする。\n\n熱発散が大幅に改善される。",
+    "Description": "<TECHNOLOGY>フェーズビーム<>の配線を\n\nナノマシンベースの電気回路で配線し直して、レーザーパワーにある\n標準回路をバイパスする。\n\n<STELLAR>熱発散<>が大幅に改善される。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1212,7 +1212,7 @@
     "Icon": "technology/44.png",
     "Name": "フラグメントスーパーチャージャー",
     "Group": "宇宙船ポジトロン・イジェクターアップグレード",
-    "Description": "ポジトロン・イジェクターの\n\n発射メカニズムを組み直すことで、粒子の速度と正確性が上昇する。\n\n範囲と正確性が改善される。",
+    "Description": "<TECHNOLOGY>ポジトロン・イジェクター<>の\n\n発射メカニズムを組み直すことで、粒子の速度と正確性が上昇する。\n\n<STELLAR>範囲<>と<STELLAR>正確性<>が改善される。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1268,7 +1268,7 @@
     "Icon": "technology/46.png",
     "Name": "非線形光学",
     "Group": "フォトンキャノンアップグレード",
-    "Description": "標準的なフォトンキャノンの光学を\n\n実験的なガラス配列と交換することで、戦闘性能を増強させる。\n\n放熱板容量が大幅に改善される。",
+    "Description": "標準的な<TECHNOLOGY>フォトンキャノン<>の光学を\n\n実験的なガラス配列と交換することで、戦闘性能を増強させる。\n\n<STELLAR>放熱板容量<>が大幅に改善される。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1328,7 +1328,7 @@
     "Icon": "technology/48.png",
     "Name": "ダイソンパンプ",
     "Group": "宇宙船サイクロトロンアップグレード",
-    "Description": "全体のユニットを吸熱性の巨大板を\n\n取り囲むことでサイクロトロン・バリスタの放熱板を交換する。 熱の出力が\n再利用され、戦闘効率が上昇する。\n\n熱性能が大幅に改善される。",
+    "Description": "全体のユニットを吸熱性の巨大板を\n\n取り囲むことで<TECHNOLOGY>サイクロトロン・バリスタ<>の放熱板を交換する。 熱の出力が\n再利用され、戦闘効率が上昇する。\n\n<STELLAR>熱性能<>が大幅に改善される。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1388,7 +1388,7 @@
     "Icon": "technology/56.png",
     "Name": "外殻破壊",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1412,7 +1412,7 @@
     "Icon": "technology/57.png",
     "Name": "錆びた電気回路",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1440,7 +1440,7 @@
     "Icon": "technology/58.png",
     "Name": "崩壊した防壁",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1464,7 +1464,7 @@
     "Icon": "technology/59.png",
     "Name": "放射線漏洩",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1492,7 +1492,7 @@
     "Icon": "technology/60.png",
     "Name": "格納停止",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1524,7 +1524,7 @@
     "Icon": "technology/61.png",
     "Name": "破損した歯車",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1552,7 +1552,7 @@
     "Icon": "technology/62.png",
     "Name": "分析レンズ",
     "Group": "双眼鏡に取り付け可能な装置",
-    "Description": "スペシャリスト用のディスカバリーと\n調査機のユニット。詳細な環境データを\n直接使用者の視野に反映させることで、\n標準的なスキャナーの機能を強化する。\n遠方の特定ポイントを見つけることができる。\n植物や動物、鉱物を調べる際に使用すると、\n分析レンズが貴重なデータを作成する。\nAIMを長押しして使用。ZOOMでズームできる。",
+    "Description": "スペシャリスト用の<TECHNOLOGY>ディスカバリー<>と\n<TECHNOLOGY>調査機<>のユニット。詳細な環境データを\n直接使用者の視野に反映させることで、\n標準的なスキャナーの機能を強化する。\n<STELLAR>遠方の特定ポイント<>を見つけることができる。\n<TRADEABLE>植物<>や<FUEL>動物<>、<TECHNOLOGY>鉱物<>を調べる際に使用すると、\n分析レンズが<COMMODITY>貴重なデータ<>を作成する。\n<IMG>AIM<>を長押しして使用。<IMG>ZOOM<>でズームできる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1576,7 +1576,7 @@
     "Icon": "technology/63.png",
     "Name": "スキャナー",
     "Group": "地形調査",
-    "Description": "マルチツールに使用できるパーソナル地表探査機強化アイテム。\n \nスキャナーが高エネルギーパルスを発し\n周囲にある生命維持に不可欠な資源をハイライトする。 スキャンデータはエクソスーツを通して\n使用者の神経系へと伝達される。\nSCANで周囲のスキャンができる。",
+    "Description": "マルチツールに使用できる<TECHNOLOGY>パーソナル地表探査機<>強化アイテム。\n \nスキャナーが高エネルギーパルスを発し\n周囲にある<COMMODITY>生命維持に不可欠な資源<>をハイライトする。 スキャンデータはエクソスーツを通して\n使用者の神経系へと伝達される。\n<IMG>SCAN<>で周囲のスキャンができる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1600,7 +1600,7 @@
     "Icon": "technology/64.png",
     "Name": "波形リサイクラー",
     "Group": "マルチツールアップグレード",
-    "Description": "マルチツールのスキャンシステムに\n\n強力な側面加工を挿入することで、装置のリチャージ頻度を改善する。\n\n潜在スキャン周波数を上昇させる。",
+    "Description": "マルチツールの<TECHNOLOGY>スキャンシステム<>に\n\n強力な側面加工を挿入することで、装置のリチャージ頻度を改善する。\n\n<STELLAR>潜在スキャン周波数<>を上昇させる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1628,7 +1628,7 @@
     "Icon": "technology/65.png",
     "Name": "調査デバイス",
     "Group": "分析レンズアップグレード",
-    "Description": "分析レンズ用のアップグレードモジュール。\nスキャン回路に地質学的分析を\nリアルタイムで行う機能を追加する。\n\nSURVEYFILTERL/SURVEYFILTERRでレンズモードを切り替える。調査モードにすると隠れた地下資源を発見できる。",
+    "Description": "<TECHNOLOGY>分析レンズ<>用のアップグレードモジュール。\nスキャン回路に地質学的分析を\nリアルタイムで行う機能を追加する。\n\n<IMG>SURVEYFILTERL<>/<IMG>SURVEYFILTERR<>でレンズモードを切り替える。<STELLAR>調査モード<>にすると隠れた地下資源を発見できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1660,7 +1660,7 @@
     "Icon": "technology/66.png",
     "Name": "地形操作機",
     "Group": "景観変形ツール",
-    "Description": "高度なテラフォーミング用デバイス。\n\n既存のマルチツールシステムを改造して、思い通りに地形を作り変えられるようにする。\n金属資源でチャージできる。",
+    "Description": "高度なテラフォーミング用デバイス。\n\n既存のマルチツールシステムを改造して、思い通りに地形を作り変えられるようにする。\n<EARTH>金属資源<>でチャージできる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1688,7 +1688,7 @@
     "Icon": "technology/67.png",
     "Name": "パーソナルフォースフィールド",
     "Group": "守備シールドテクノロジー",
-    "Description": "起動すると、エクソスーツ生命維持システムから\n\nパワーを引き出し、マルチツールへ多重定義する。使用者の周りの電磁気フィールドを歪め、強力な\nパーソナルシールドを作り出す。\n\n頑丈な防御でレーザー光線を防ぐ一方、\nシールド展開中には使用者はマルチツールの\n他機能を使うことができない。",
+    "Description": "起動すると、<VAL_ON>エクソスーツ生命維持<>システムから\n\nパワーを引き出し、マルチツールへ多重定義する。使用者の周りの電磁気フィールドを歪め、<COMMODITY>強力な\nパーソナルシールド<>を作り出す。\n\n頑丈な防御でレーザー光線を防ぐ一方、\nシールド展開中には使用者はマルチツールの\n他機能を使うことができない。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1744,7 +1744,7 @@
     "Icon": "technology/69.png",
     "Name": "マインビーム",
     "Group": "鉱物採掘用レーザー",
-    "Description": "炭素系資源でチャージできるマルチツールのマインビーム。 ATTACKで使用できる。\n マルチツールに焦点光学を組み込み、高エネルギービームの放射が可能になる。 ビームは一般的な有機物や鉱物にある分子を励起するよう設定されており、\nそれによって効率的な採掘装置として\n機能するようになっている。\n 注意: 植物や動物、鉱物を破壊するとセンチネルの\n注意を引く可能性あり。",
+    "Description": "<FUEL>炭素系資源<>でチャージできるマルチツールの<TECHNOLOGY>マインビーム<>。 <IMG>ATTACK<>で使用できる。\n マルチツールに焦点光学を組み込み、<STELLAR>高エネルギービーム<>の放射が可能になる。 ビームは一般的な<STELLAR>有機物や鉱物<>にある分子を励起するよう設定されており、\nそれによって効率的な採掘装置として\n機能するようになっている。\n <FUEL>注意<>: 植物や動物、鉱物を破壊するとセンチネルの\n注意を引く可能性あり。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1768,7 +1768,7 @@
     "Icon": "technology/70.png",
     "Name": "高機能マインレーザー",
     "Group": "マインビームコンパニオンユニット",
-    "Description": "標準的なマインビームの光学を高級の生けるガラスと交換することで、規模の大きな鉱脈や希少な鉱脈に対してもビームが有効になる。\n\nレンズが自動でビームの波形内の細かな揺らぎに適応することで、ビームの離散を最小限にし、装置の採掘効果を最大化する。",
+    "Description": "標準的な<TECHNOLOGY>マインビーム<>の光学を高級の生けるガラスと交換することで、<STELLAR>規模の大きな鉱脈や希少な鉱脈<>に対してもビームが有効になる。\n\nレンズが自動でビームの波形内の細かな揺らぎに適応することで、ビームの離散を最小限にし、<STELLAR>装置の採掘効果を最大化する。<>",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1800,7 +1800,7 @@
     "Icon": "technology/71.png",
     "Name": "光学ドリル",
     "Group": "資源獲得量増加",
-    "Description": "極薄レンズを高精度マトリックスに配置したもので、マインビームを原子レベルの精度で照射する。\n\nそのため資源を効率良く抽出でき、\n採掘効率に優れている。\nマルチツールによる資源の\n採取量が増加する。",
+    "Description": "極薄レンズを高精度マトリックスに配置したもので、<TECHNOLOGY>マインビーム<>を原子レベルの精度で照射する。\n\nそのため資源を効率良く抽出でき、\n採掘効率に優れている。\nマルチツールによる資源の\n<STELLAR>採取量<>が増加する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1832,7 +1832,7 @@
     "Icon": "technology/72.png",
     "Name": "ボルトキャスター",
     "Group": "エネルギー発射武器",
-    "Description": "マルチツールに使用できるジェネラリスト用のアタッチメント。 CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nボルトキャスターはマルチツールを再設定することで金属元素を補充して高速弾のように発射し、対象に大ダメージを与える。",
+    "Description": "<TECHNOLOGY>マルチツール<>に使用できるジェネラリスト用のアタッチメント。 <IMG>CYCLEWEAPON<>で攻撃モードに切り替えて<IMG>ATTACK<>で使用できる。\n\n<TECHNOLOGY>ボルトキャスター<>はマルチツールを再設定することで<EARTH>金属元素<>を補充して<STELLAR>高速弾<>のように発射し、対象に大ダメージを与える。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1860,7 +1860,7 @@
     "Icon": "technology/73.png",
     "Name": "バレルイオナイザー",
     "Group": "ボルトキャスターアップグレード",
-    "Description": "ボルトキャスターのシリンダーに\n\n強力なイオン化装置を挿入することで、空気中の発射安定性が上昇する。\n\n装置の正確性が改善され、使用者は\n戦闘性能の低下を感じることなくより\n長時間発砲を続けることができるようになる。",
+    "Description": "<TECHNOLOGY>ボルトキャスター<>のシリンダーに\n\n強力なイオン化装置を挿入することで、空気中の発射安定性が上昇する。\n\n<STELLAR>装置の正確性<>が改善され、使用者は\n戦闘性能の低下を感じることなくより\n長時間発砲を続けることができるようになる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1912,7 +1912,7 @@
     "Icon": "technology/75.png",
     "Name": "ビーム冷却システム シグマ",
     "Group": "標準マインビームアップグレード",
-    "Description": "マインビーム用の上級アップグレード。\n\n更なる反射性の資源をマインレーザーの初期装備結晶部分に挿入することで、不要な熱の流出を減らしつつコアビームエネルギーを強化する。",
+    "Description": "<TECHNOLOGY>マインビーム<>用の<TRADEABLE>上級<>アップグレード。\n\n更なる反射性の資源をマインレーザーの初期装備結晶部分に挿入することで、不要な<STELLAR>熱の流出<>を減らしつつコア<STELLAR>ビームエネルギー<>を強化する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1936,7 +1936,7 @@
     "Icon": "technology/76.png",
     "Name": "プラズマランチャー",
     "Group": "グレネード",
-    "Description": "ハイインパクト型投射兵器。撃ち出されたプラズマ弾は、地面や障害物に当たると跳ね返り、内蔵タイマーにより大爆発を起こす。\n\n変動性プラズマでチャージできる。\n使用時に注意を怠ると、使用者がダメージを受けることになる。\n\nALTATTACKを押して使用する。",
+    "Description": "ハイインパクト型投射兵器。撃ち出されたプラズマ弾は、地面や障害物に当たると跳ね返り、内蔵タイマーにより大爆発を起こす。\n\n<FUEL>変動性プラズマ<>でチャージできる。\n使用時に注意を怠ると、使用者がダメージを受けることになる。\n\n<IMG>ALTATTACK<>を押して使用する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1968,7 +1968,7 @@
     "Icon": "technology/77.png",
     "Name": "ジオロジーキャノン",
     "Group": "地層破壊装置",
-    "Description": "大口径のミサイルランチャー。 瞬間地上採掘の為に設計されたプラズマ炸裂弾を発射する。\n\n変動性プラズマでチャージできる。 警告: 使用は爆発を伴う為周囲を勇気生物を傷つける可能性がある。\n \nALTATTACKを押して起動する。",
+    "Description": "大口径のミサイルランチャー。 <STELLAR>瞬間地上採掘<>の為に設計されたプラズマ炸裂弾を発射する。\n\n<FUEL>変動性プラズマ<>でチャージできる。 警告: 使用は爆発を伴う為周囲を勇気生物を傷つける可能性がある。\n \n<IMG>ALTATTACK<>を押して起動する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -1996,7 +1996,7 @@
     "Icon": "technology/78.png",
     "Name": "ブレイズジャベリン",
     "Group": "エネルギービーム武器",
-    "Description": "マルチツールに使用できる攻撃用武器アタッチメント。  CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n炎の槍がターゲットに即座にダメージを与える。\n\nプラズマチャージプロセスがイオン化ガスの弧を作り出し、高速でミサイルを発射する。 使用者はトリガーを引くと即座に攻撃の効果を得ることができるはずだ。",
+    "Description": "<TECHNOLOGY>マルチツール<>に使用できる攻撃用武器アタッチメント。  <IMG>CYCLEWEAPON<>で攻撃モードに切り替えて<IMG>ATTACK<>で使用できる。\n炎の槍がターゲットに即座にダメージを与える。\n\nプラズマチャージプロセスがイオン化ガスの弧を作り出し、高速でミサイルを発射する。 使用者はトリガーを引くと即座に攻撃の効果を得ることができるはずだ。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2028,7 +2028,7 @@
     "Icon": "technology/79.png",
     "Name": "マスアクセル",
     "Group": "ブレーズジャベリンアップグレード",
-    "Description": "ブレーズジャベリンの燃焼室を拡張する\n\nことで、内部の粒子アクセルの到達する質量と速度が改善される。\n\n武器のダメージが大幅に改善される。",
+    "Description": "<TECHNOLOGY>ブレーズジャベリン<>の燃焼室を拡張する\n\nことで、内部の粒子アクセルの到達する質量と速度が改善される。\n\n<STELLAR>武器のダメージ<>が大幅に改善される。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2056,7 +2056,7 @@
     "Icon": "technology/80.png",
     "Name": "スキャターブラスター",
     "Group": "散弾型武器",
-    "Description": "マルチツールに使用できるスペシャリスト用の接近戦のアタッチメント。 CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nスキャターブラスターはマルチツールを再設定することで金属元素に熱を与え粉砕して放射状に広範囲のダメージを与える。 射程距離は長くないが、近距離での散弾効果は高い。",
+    "Description": "<TECHNOLOGY>マルチツール<>に使用できるスペシャリスト用の<STELLAR>接近戦<>のアタッチメント。 <IMG>CYCLEWEAPON<>で攻撃モードに切り替えて<IMG>ATTACK<>で使用できる。\n\n<TECHNOLOGY>スキャターブラスター<>はマルチツールを再設定することで<EARTH>金属元素<>に熱を与え粉砕して<STELLAR>放射状に広範囲のダメージ<>を与える。 射程距離は長くないが、近距離での散弾効果は高い。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2084,7 +2084,7 @@
     "Icon": "technology/81.png",
     "Name": "炸裂弾グリース",
     "Group": "スキャターブラスターアップグレード",
-    "Description": "高度な自己潤滑性コンポーネントが\nスキャターブラスター内の摩擦を減少\nさせ、リロード時間を大幅に改善する。",
+    "Description": "高度な自己潤滑性コンポーネントが\n<TECHNOLOGY>スキャターブラスター<>内の摩擦を減少\nさせ、<STELLAR>リロード時間<>を大幅に改善する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2112,7 +2112,7 @@
     "Icon": "technology/82.png",
     "Name": "パルススピッター",
     "Group": "速射武器",
-    "Description": "マルチツールに使用できるスペシャリスト用の高速発射のアタッチメント。 CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nパルススピッターはマルチツールの光学に補充した金属元素をイオン化させる。 ミサイルは高速発射され、高エネルギープラズマウェーブで敵を爆撃する。",
+    "Description": "<TECHNOLOGY>マルチツール<>に使用できるスペシャリスト用の<STELLAR>高速発射<>のアタッチメント。 <IMG>CYCLEWEAPON<>で攻撃モードに切り替えて<IMG>ATTACK<>で使用できる。\n\n<TECHNOLOGY>パルススピッター<>はマルチツールの光学に補充した<EARTH>金属元素<>をイオン化させる。 ミサイルは高速発射され、<STELLAR>高エネルギープラズマウェーブ<>で敵を爆撃する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2140,7 +2140,7 @@
     "Icon": "technology/83.png",
     "Name": "アンプカートリッジ",
     "Group": "パルススピッターアップグレード",
-    "Description": "専門調波共鳴装置がパルススピッターに\n\n挿入された弾薬を分裂させ、少ない原料でより多くの発砲ができるよう効率的に製造する。\n\n武器の弾倉サイズが上昇する。",
+    "Description": "専門調波共鳴装置が<TECHNOLOGY>パルススピッター<>に\n\n挿入された弾薬を分裂させ、少ない原料でより多くの発砲ができるよう効率的に製造する。\n\n<STELLAR>武器の弾倉サイズ<>が上昇する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2168,7 +2168,7 @@
     "Icon": "technology/84.png",
     "Name": "ショート回路",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2192,7 +2192,7 @@
     "Icon": "technology/85.png",
     "Name": "吹き飛んだトランジスタ",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2216,7 +2216,7 @@
     "Icon": "technology/86.png",
     "Name": "破損した回線",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2248,7 +2248,7 @@
     "Icon": "technology/87.png",
     "Name": "錆びたパワーコア",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2272,7 +2272,7 @@
     "Icon": "technology/88.png",
     "Name": "崩壊したモジュール",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2304,7 +2304,7 @@
     "Icon": "technology/89.png",
     "Name": "配線繊維の破損",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2364,7 +2364,7 @@
     "Icon": "technology/91.png",
     "Name": "ドリフトサスペンション",
     "Group": "エクソクラフト操縦カスタム",
-    "Description": "ソフトウェアの微調整、圧力調整および\n\n微小重力を主要サスペンション部分に挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトのドラフト能力を\n上げる為、特別に調整されている。",
+    "Description": "ソフトウェアの微調整、圧力調整および\n\n微小重力を主要サスペンション部分に挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトの<STELLAR>ドラフト<>能力を\n上げる為、特別に調整されている。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2396,7 +2396,7 @@
     "Icon": "technology/92.png",
     "Name": "グリップブーストサスペンション",
     "Group": "エクソクラフト操縦カスタム",
-    "Description": "ソフトウェアの微調整、圧力調整および\n\n微小重力を主要サスペンション部分に挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトが急角度のターンに\n耐えられるよう、特別に調整されている。",
+    "Description": "ソフトウェアの微調整、圧力調整および\n\n微小重力を主要サスペンション部分に挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトが<STELLAR>急角度のターン<>に\n耐えられるよう、特別に調整されている。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2428,7 +2428,7 @@
     "Icon": "technology/93.png",
     "Name": "ハイスライドサスペンション",
     "Group": "エクソクラフト操縦カスタム",
-    "Description": "ソフトウェアの微調整、圧力調整および\n\n微小重力を主要サスペンション部分に挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトのスライド力を\n上げるよう、特別に調整されている。",
+    "Description": "ソフトウェアの微調整、圧力調整および\n\n微小重力を主要サスペンション部分に挿入することでエクソクラフトの\n操縦性を改善する。\n\nエクソクラフトの<STELLAR>スライド<>力を\n上げるよう、特別に調整されている。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2460,7 +2460,7 @@
     "Icon": "technology/94.png",
     "Name": "エクソクラフト信号ブースター",
     "Group": "エクソクラフトスキャン装備",
-    "Description": "大きく複雑なフィールドベースのサブスペースレーダー。\n\n電力消費の多さと、固有の原子核内部の不安定性が理由で、エクソクラフトにのみインストールされている。\n\nQUICK_MENUを押して信号ブースターを起動する。",
+    "Description": "大きく複雑なフィールドベースのサブスペースレーダー。\n\n電力消費の多さと、固有の原子核内部の不安定性が理由で、エクソクラフトにのみインストールされている。\n\n<IMG>QUICK_MENU<>を押して信号ブースターを起動する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2640,7 +2640,7 @@
     "Icon": "technology/101.png",
     "Name": "フンボルトドライブ",
     "Group": "エクソクラフト電力系統",
-    "Description": "熱効率が良く、気温逆転に耐性のあるリアクターエンジンで、極端に深度の低い場所でもニュートロンを稼働させることができる。\n\n熱水燃料電池で動く。",
+    "Description": "熱効率が良く、気温逆転に耐性のあるリアクターエンジンで、極端に深度の低い場所でもニュートロンを稼働させることができる。\n\n<FUEL>熱水燃料電池<>で動く。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2668,7 +2668,7 @@
     "Icon": "technology/102.png",
     "Name": "ノーティロンキャノン",
     "Group": "潜水艦武器",
-    "Description": "ノーティロン潜水艦専用に設計された機動力の高い大砲。\n\n高エネルギーの武器システムで、小さな水の塊を超高温に上昇させて、ターゲットに発射する。\n\n当初は生物をターゲットに想定して設計されているため、採掘機器としての機能性はほぼない。",
+    "Description": "<STELLAR>ノーティロン潜水艦<>専用に設計された機動力の高い大砲。\n\n高エネルギーの武器システムで、小さな水の塊を超高温に上昇させて、ターゲットに発射する。\n\n当初は生物をターゲットに想定して設計されているため、採掘機器としての機能性はほぼない。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2700,7 +2700,7 @@
     "Icon": "technology/103.png",
     "Name": "テティスビーム",
     "Group": "潜水艦マインレーザー",
-    "Description": "ノーティロン潜水艦専用に設計された機動力の高いレーザーシステム。\n\nターゲットに発火性の圧縮されたプラズマビームを発射する。 このトリガー機構のお陰で液状物質内でも高エネルギー光学採掘システムを使用することができる。",
+    "Description": "<STELLAR>ノーティロン潜水艦<>専用に設計された機動力の高いレーザーシステム。\n\nターゲットに発火性の圧縮されたプラズマビームを発射する。 このトリガー機構のお陰で液状物質内でも高エネルギー光学採掘システムを使用することができる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2732,7 +2732,7 @@
     "Icon": "technology/104.png",
     "Name": "ハイパワーソナー",
     "Group": "潜水艦分析機器",
-    "Description": "ノーティロン級の潜水艦に装備されているスキャナー技術を分析レンズレベルにアップグレードできる高性能ソナー機器。\nSCANを押すとハイパワーソナーを起動できる。",
+    "Description": "ノーティロン級の潜水艦に装備されているスキャナー技術を分析レンズレベルにアップグレードできる高性能ソナー機器。\n<IMG>SCAN<>を押すとハイパワーソナーを起動できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2764,7 +2764,7 @@
     "Icon": "technology/105.png",
     "Name": "浸透圧発電機",
     "Group": "フンボルトドライブアップグレード",
-    "Description": "ノーティロン潜水艦のドライブシステムにインストールされている。\n\n深海環境に存在するアルカリ塩を抽出することでエネルギーを捕獲し、燃料が危機的状態にある際にフンボルトドライブを緩やかにチャージする。",
+    "Description": "<STELLAR>ノーティロン潜水艦<>のドライブシステムにインストールされている。\n\n深海環境に存在するアルカリ塩を抽出することでエネルギーを捕獲し、燃料が危機的状態にある際に<TECHNOLOGY>フンボルトドライブ<>を緩やかにチャージする。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2808,7 +2808,7 @@
     "RequiredItems": [
       {
         "Id": "raw8",
-        "Quantity": 30
+        "Quantity": 15
       }
     ],
     "StatBonuses": [],
@@ -2832,7 +2832,7 @@
     "RequiredItems": [
       {
         "Id": "raw14",
-        "Quantity": 20
+        "Quantity": 10
       }
     ],
     "StatBonuses": [],
@@ -2856,7 +2856,7 @@
     "RequiredItems": [
       {
         "Id": "raw12",
-        "Quantity": 10
+        "Quantity": 5
       }
     ],
     "StatBonuses": [],
@@ -2880,11 +2880,11 @@
     "RequiredItems": [
       {
         "Id": "raw12",
-        "Quantity": 20
+        "Quantity": 10
       },
       {
         "Id": "raw23",
-        "Quantity": 20
+        "Quantity": 10
       }
     ],
     "StatBonuses": [],
@@ -2908,7 +2908,7 @@
     "RequiredItems": [
       {
         "Id": "raw23",
-        "Quantity": 10
+        "Quantity": 5
       }
     ],
     "StatBonuses": [],
@@ -2932,7 +2932,7 @@
     "RequiredItems": [
       {
         "Id": "raw9",
-        "Quantity": 100
+        "Quantity": 50
       }
     ],
     "StatBonuses": [],
@@ -2956,11 +2956,11 @@
     "RequiredItems": [
       {
         "Id": "raw2",
-        "Quantity": 20
+        "Quantity": 10
       },
       {
         "Id": "raw12",
-        "Quantity": 40
+        "Quantity": 20
       }
     ],
     "StatBonuses": [],
@@ -2984,7 +2984,7 @@
     "RequiredItems": [
       {
         "Id": "raw9",
-        "Quantity": 30
+        "Quantity": 15
       }
     ],
     "StatBonuses": [],
@@ -3008,7 +3008,7 @@
     "RequiredItems": [
       {
         "Id": "raw23",
-        "Quantity": 15
+        "Quantity": 7
       }
     ],
     "StatBonuses": [],
@@ -3032,7 +3032,7 @@
     "RequiredItems": [
       {
         "Id": "raw31",
-        "Quantity": 20
+        "Quantity": 10
       }
     ],
     "StatBonuses": [],
@@ -3056,7 +3056,7 @@
     "RequiredItems": [
       {
         "Id": "raw12",
-        "Quantity": 40
+        "Quantity": 20
       }
     ],
     "StatBonuses": [],
@@ -3080,7 +3080,7 @@
     "RequiredItems": [
       {
         "Id": "raw11",
-        "Quantity": 30
+        "Quantity": 15
       }
     ],
     "StatBonuses": [],
@@ -3104,11 +3104,11 @@
     "RequiredItems": [
       {
         "Id": "raw14",
-        "Quantity": 50
+        "Quantity": 25
       },
       {
         "Id": "raw31",
-        "Quantity": 40
+        "Quantity": 20
       }
     ],
     "StatBonuses": [],
@@ -3132,11 +3132,11 @@
     "RequiredItems": [
       {
         "Id": "raw9",
-        "Quantity": 20
+        "Quantity": 10
       },
       {
         "Id": "raw15",
-        "Quantity": 100
+        "Quantity": 50
       }
     ],
     "StatBonuses": [],
@@ -3160,7 +3160,7 @@
     "RequiredItems": [
       {
         "Id": "raw9",
-        "Quantity": 60
+        "Quantity": 30
       }
     ],
     "StatBonuses": [],
@@ -3184,7 +3184,7 @@
     "RequiredItems": [
       {
         "Id": "raw1",
-        "Quantity": 50
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],
@@ -3208,11 +3208,11 @@
     "RequiredItems": [
       {
         "Id": "raw3",
-        "Quantity": 40
+        "Quantity": 20
       },
       {
         "Id": "raw9",
-        "Quantity": 100
+        "Quantity": 50
       }
     ],
     "StatBonuses": [],
@@ -3236,7 +3236,7 @@
     "RequiredItems": [
       {
         "Id": "raw10",
-        "Quantity": 10
+        "Quantity": 5
       }
     ],
     "StatBonuses": [],
@@ -3260,11 +3260,11 @@
     "RequiredItems": [
       {
         "Id": "raw10",
-        "Quantity": 30
+        "Quantity": 15
       },
       {
         "Id": "raw23",
-        "Quantity": 50
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],
@@ -3288,7 +3288,7 @@
     "RequiredItems": [
       {
         "Id": "raw19",
-        "Quantity": 50
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],
@@ -3312,11 +3312,11 @@
     "RequiredItems": [
       {
         "Id": "raw2",
-        "Quantity": 50
+        "Quantity": 25
       },
       {
         "Id": "raw10",
-        "Quantity": 10
+        "Quantity": 5
       }
     ],
     "StatBonuses": [],
@@ -3340,11 +3340,11 @@
     "RequiredItems": [
       {
         "Id": "raw9",
-        "Quantity": 100
+        "Quantity": 50
       },
       {
         "Id": "raw19",
-        "Quantity": 100
+        "Quantity": 50
       }
     ],
     "StatBonuses": [],
@@ -3368,11 +3368,11 @@
     "RequiredItems": [
       {
         "Id": "raw10",
-        "Quantity": 30
+        "Quantity": 15
       },
       {
         "Id": "raw23",
-        "Quantity": 50
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],
@@ -3396,15 +3396,15 @@
     "RequiredItems": [
       {
         "Id": "raw10",
-        "Quantity": 30
+        "Quantity": 15
       },
       {
         "Id": "raw14",
-        "Quantity": 50
+        "Quantity": 25
       },
       {
         "Id": "raw23",
-        "Quantity": 50
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],
@@ -3428,11 +3428,11 @@
     "RequiredItems": [
       {
         "Id": "raw30",
-        "Quantity": 50
+        "Quantity": 25
       },
       {
         "Id": "raw50",
-        "Quantity": 50
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],
@@ -3468,7 +3468,7 @@
     "Icon": "technology/132.png",
     "Name": "真珠の捧げ物",
     "Group": "海への捧げ物",
-    "Description": "箱を開けるには生ける真珠が必要。 海底に生息する巨大な軟体動物から採取できる。",
+    "Description": "箱を開けるには<SPECIAL>生ける真珠<>が必要。 海底に生息する巨大な軟体動物から採取できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3492,7 +3492,7 @@
     "Icon": "technology/133.png",
     "Name": "破損した電極",
     "Group": "破損したコンポーネント",
-    "Description": "このエクソスーツアップグレードモジュールは致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに代金を支払う必要はありません。",
+    "Description": "この<TECHNOLOGY>エクソスーツアップグレードモジュール<>は致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに<STELLAR>代金を支払う必要はありません<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3516,7 +3516,7 @@
     "Icon": "technology/134.png",
     "Name": "崩壊したパワーコア",
     "Group": "破損したコンポーネント",
-    "Description": "このエクソスーツアップグレードモジュールは致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに代金を支払う必要はありません。",
+    "Description": "この<TECHNOLOGY>エクソスーツアップグレードモジュール<>は致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに<STELLAR>代金を支払う必要はありません<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3540,7 +3540,7 @@
     "Icon": "technology/135.png",
     "Name": "欠落したホログラム",
     "Group": "破損したコンポーネント",
-    "Description": "このエクソスーツアップグレードモジュールは致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに代金を支払う必要はありません。",
+    "Description": "この<TECHNOLOGY>エクソスーツアップグレードモジュール<>は致命的にダメージを受けました。  アップグレード機能を復活させるにはシステムを修理してください。\n\n修復すれば、ユーザーがエクソスーツのアップグレードに<STELLAR>代金を支払う必要はありません<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3564,7 +3564,7 @@
     "Icon": "technology/136.png",
     "Name": "ワープコア共鳴装置",
     "Group": "ハイパードライブ・コンパニオンユニット",
-    "Description": "恒星間貨物船用巨大ハイパードライブエンジン\n\nの改造。\n量子共鳴によって超光速航行中のドライブの\n耐エラー性能が向上し、\nこれまでは航行できなかった恒星にも\nジャンプできるようになる。",
+    "Description": "<STELLAR>恒星間貨物船<>用巨大ハイパードライブエンジン\n\nの改造。\n量子共鳴によって超光速航行中のドライブの\n耐エラー性能が向上し、\nこれまでは航行できなかった恒星にも\nジャンプできるようになる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3596,7 +3596,7 @@
     "Icon": "technology/137.png",
     "Name": "プラズマワープインジェクター",
     "Group": "ハイパードライブ・コンパニオンユニット",
-    "Description": "恒星間貨物船用巨大ハイパードライブエンジン\n\nの改造。\n高度核融合により宇宙船のワープ速度と濃度を\n上げることでハイパードライブの性能を\n向上させる。\n宇宙のより深くへジャンプして、\nより遠くの惑星系にまで到達できる。",
+    "Description": "<STELLAR>恒星間貨物船<>用巨大ハイパードライブエンジン\n\nの改造。\n高度核融合により宇宙船のワープ速度と濃度を\n上げることでハイパードライブの性能を\n向上させる。\n宇宙のより深くへジャンプして、\nより遠くの惑星系にまで到達できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3628,7 +3628,7 @@
     "Icon": "technology/138.png",
     "Name": "リアリティディスレッダー",
     "Group": "ハイパードライブ・コンパニオンユニット",
-    "Description": "恒星間貨物船用巨大ハイパードライブエンジン\n\nの改造。\n上限の無い安定した融合システムが\nユーザーのハイパードライブに追加される。\n深宇宙でのジャンプ距離が伸びる。",
+    "Description": "<STELLAR>恒星間貨物船<>用巨大ハイパードライブエンジン\n\nの改造。\n上限の無い安定した融合システムが\nユーザーのハイパードライブに追加される。\n深宇宙でのジャンプ距離が伸びる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3660,7 +3660,7 @@
     "Icon": "technology/139.png",
     "Name": "拡張ワープシールディング",
     "Group": "ハイパードライブアップグレード: 赤色星系",
-    "Description": "レアクラスの赤色恒星への着陸を試みる際の急速な\n\n逆アセンブルを防止するため、ハイパードライブのコアバウンディングマグネットをアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。",
+    "Description": "レアクラスの<FUEL>赤色恒星<>への着陸を試みる際の急速な\n\n逆アセンブルを防止するため、ハイパードライブのコアバウンディングマグネットをアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n<VAL_ON>銀河マップ<>の使用をお勧めします。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3692,7 +3692,7 @@
     "Icon": "technology/140.png",
     "Name": "クロマティックワープシールディング",
     "Group": "ハイパードライブアップグレード: 緑色星系",
-    "Description": "レアクラスの緑色恒星への着陸を試みる際の\n\nリアリティーグリッチを防止するため、ハイパードライブのシールド完全性を\nアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n銀河マップの使用をお勧めします。",
+    "Description": "レアクラスの<TRADEABLE>緑色恒星<>への着陸を試みる際の\n\nリアリティーグリッチを防止するため、ハイパードライブのシールド完全性を\nアップグレードする。\n\nハイパードライブシステムにアクセスする際は\n<VAL_ON>銀河マップ<>の使用をお勧めします。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3724,7 +3724,7 @@
     "Icon": "technology/141.png",
     "Name": "テンポラルワープコンピューター",
     "Group": "ハイパードライブアップグレード: 青色星系",
-    "Description": "レアクラスの青色恒星への\n\n着陸を試みる際に一時的なアノマリーを防止するため、\nハイパードライブの計算マトリックスを\nアップグレードする。\n\nハイパードライブシステムにアクセスする\n際は銀河マップの使用をお勧めします。",
+    "Description": "レアクラスの<TECHNOLOGY>青色恒星<>への\n\n着陸を試みる際に一時的なアノマリーを防止するため、\nハイパードライブの計算マトリックスを\nアップグレードする。\n\nハイパードライブシステムにアクセスする\n際は<VAL_ON>銀河マップ<>の使用をお勧めします。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3756,7 +3756,7 @@
     "Icon": "technology/6.png",
     "Name": "エアバーストエンジン",
     "Group": "ジェットパック拡張",
-    "Description": "エクソスーツのジェットパック用の強力なアップグレードで、限定的ではあるが飛行中にジェットパックのリチャージを可能にする。\n\nジェットパックの周囲に高効率コンプレッサを取り付け、降下中に生じる気流を利用して得たエネルギーをジェットパックの動力源に再利用するしくみ。",
+    "Description": "<TECHNOLOGY>エクソスーツのジェットパック<>用の強力なアップグレードで、限定的ではあるが飛行中に<STELLAR>ジェットパックのリチャージ<>を可能にする。\n\nジェットパックの周囲に高効率コンプレッサを取り付け、<STELLAR>降下中<>に生じる気流を利用して得たエネルギーをジェットパックの動力源に再利用するしくみ。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3788,7 +3788,7 @@
     "Icon": "technology/143.png",
     "Name": "パーソナル精製機",
     "Group": "個人携帯型の精製機ユニット",
-    "Description": "コンパクトな拡張ユニットでエクソスーツに小型の携帯精製機を取り付け、エクソスーツのインターフェイスから直接使用できるようにする。\n\nユニットの稼働には燃料が必要で、一度に1種類の物質しか精製できない。",
+    "Description": "コンパクトな拡張ユニットでエクソスーツに小型の<TECHNOLOGY>携帯精製機<>を取り付け、エクソスーツのインターフェイスから直接使用できるようにする。\n\nユニットの稼働には<FUEL>燃料<>が必要で、一度に1種類の物質しか精製できない。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3816,7 +3816,7 @@
     "Icon": "technology/144.png",
     "Name": "不安定性ドライブ",
     "Group": "パルスドライブ拡張",
-    "Description": "パルスドライブ用の高度なアップグレードで、燃料効率を大幅に向上させる。\n\n燃料である三重水素を、超小型ブラックホール経由で送りこむことで微少な重力変動を発生させ、これを宇宙船の推力に転換することで従来の燃焼方式を超える効率を実現する。",
+    "Description": "<TECHNOLOGY>パルスドライブ<>用の高度なアップグレードで、<STELLAR>燃料効率<>を大幅に向上させる。\n\n燃料である三重水素を、超小型ブラックホール経由で送りこむことで微少な重力変動を発生させ、これを宇宙船の推力に転換することで従来の燃焼方式を超える効率を実現する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3848,7 +3848,7 @@
     "Icon": "technology/144.png",
     "Name": "亜光速アンプリファイア",
     "Group": "パルスドライブ拡張",
-    "Description": "パルスドライブ用の高度なアップグレードで、惑星間航行速度を大幅に向上させる。\n\nパルスドライブ内で自然に発生するフレームシフト効果を、三重水素を用いた共鳴装置で増幅することで、亜光速航行時の最大速度を高めるしくみ。",
+    "Description": "<TECHNOLOGY>パルスドライブ<>用の高度なアップグレードで、<STELLAR>惑星間航行速度<>を大幅に向上させる。\n\nパルスドライブ内で自然に発生するフレームシフト効果を、三重水素を用いた共鳴装置で増幅することで、亜光速航行時の最大速度を高めるしくみ。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3880,7 +3880,7 @@
     "Icon": "technology/146.png",
     "Name": "緊急ワープユニット",
     "Group": "ハイパードライブ拡張",
-    "Description": "ハイパードライブ用の強力なアップグレード。 通常ならシステムを起動できない宇宙船戦闘中でも即時緊急ワープを行えるようになる。 緊急ワープシステムにはクイックメニューからアクセスできる。\n\n警告：即時緊急ワープでは目的地を設定できない。 航路計算なしの光速航行はユニットを損耗させるため、頻繁な修理が必要になる。",
+    "Description": "<TECHNOLOGY>ハイパードライブ<>用の強力なアップグレード。 通常ならシステムを起動できない<WARNING>宇宙船戦闘<>中でも<STELLAR>即時緊急ワープ<>を行えるようになる。 緊急ワープシステムには<STELLAR>クイックメニュー<>からアクセスできる。\n\n<FUEL>警告：<>即時緊急ワープでは目的地を設定できない。 航路計算なしの光速航行はユニットを損耗させるため、<STELLAR>頻繁な修理<>が必要になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3912,7 +3912,7 @@
     "Icon": "technology/147.png",
     "Name": "Q-リゾネーター",
     "Group": "宇宙船インフラナイフアップグレード",
-    "Description": "インフラナイフ・アクセルを向上し、\n内蔵波形を圧縮することで\n標準の発砲パターンに弾数を増加させる。",
+    "Description": "<TECHNOLOGY>インフラナイフ・アクセル<>を向上し、\n内蔵波形を圧縮することで\n標準の発砲パターンに弾数を増加させる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3944,7 +3944,7 @@
     "Icon": "technology/111.png",
     "Name": "油圧系損傷",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -3972,7 +3972,7 @@
     "Icon": "technology/149.png",
     "Name": "爆発したパネル",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4000,7 +4000,7 @@
     "Icon": "technology/150.png",
     "Name": "腐食したタンク",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4024,7 +4024,7 @@
     "Icon": "technology/112.png",
     "Name": "焼き切れたコンプレッサー",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4052,7 +4052,7 @@
     "Icon": "products/52.png",
     "Name": "焼け焦げたプレート",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4084,7 +4084,7 @@
     "Icon": "products/63.png",
     "Name": "溶けた燃料電池",
     "Group": "破損した宇宙船コンポーネント",
-    "Description": "宇宙船のサブシステムが深刻なダメージを受けました。ダメージを修復するまでスロットを貯蔵やテクノロジー用に使用することはできません。REPAIRで修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
+    "Description": "宇宙船のサブシステムが<FUEL>深刻なダメージ<>を受けました。ダメージを修復するまでスロットを<STELLAR>貯蔵<>や<TECHNOLOGY>テクノロジー<>用に使用することはできません。<IMG>REPAIR<>で修理を開始してください。\n\n宇宙船の主要機能には影響を及ぼしません。ダメージを修復すれば通常どおり一般アイテムケースが使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4116,7 +4116,7 @@
     "Icon": "technology/112.png",
     "Name": "腐食した作動装置",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4144,7 +4144,7 @@
     "Icon": "products/53.png",
     "Name": "焼き切れたターミナル",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4176,7 +4176,7 @@
     "Icon": "curiosities/1.png",
     "Name": "溶けたサーボ",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4204,7 +4204,7 @@
     "Icon": "technology/110.png",
     "Name": "砕けたレンズ",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4232,7 +4232,7 @@
     "Icon": "technology/158.png",
     "Name": "破れた膜",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4264,7 +4264,7 @@
     "Icon": "technology/113.png",
     "Name": "故障した抵抗器",
     "Group": "破損したマルチツールコンポーネント",
-    "Description": "マルチツールのサブシステムが致命的なダメージを受けました。\n\nダメージを修復するまでスロットは使用できません。 REPAIRで修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
+    "Description": "マルチツールのサブシステムが<FUEL>致命的なダメージを受けました<>。\n\nダメージを修復するまでスロットは使用できません。 <IMG>REPAIR<>で修理を開始してください。\n\n修理すれば通常どおり使用可能になります。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4296,7 +4296,7 @@
     "Icon": "technology/160.png",
     "Name": "脈打つ心臓",
     "Group": "融合した有機テクノロジー",
-    "Description": "この温かく命ある内臓は、\n線維状の金属性上部構造で\n船の中心に結び付けられている。\nこの心臓がなければ、\n船は命なき抜け殻に過ぎないだろう。\n\nROLLLEFTとROLLRIGHTを同時に長押しして\n心臓にパルスジャンプを発動させる。\nBOOST長押しでスピードブースト。",
+    "Description": "この温かく命ある内臓は、\n線維状の金属性上部構造で\n船の中心に結び付けられている。\nこの心臓がなければ、\n船は命なき抜け殻に過ぎないだろう。\n\n<IMG>ROLLLEFT<>と<IMG>ROLLRIGHT<>を同時に長押しして\n心臓にパルスジャンプを発動させる。\n<IMG>BOOST<>長押しでスピードブースト。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4324,7 +4324,7 @@
     "Icon": "technology/161.png",
     "Name": "神経集合体",
     "Group": "融合した有機テクノロジー",
-    "Description": "分散して並んだニューロンで、\n金属のラインが走る板に結合している。\n表面を縫うように進む\nその電子信号の複雑なパターンが、\n船の各システムを結び付けている。\n\nTHRUST長押しで離陸するか船に確認できる。",
+    "Description": "分散して並んだニューロンで、\n金属のラインが走る板に結合している。\n表面を縫うように進む\nその電子信号の複雑なパターンが、\n船の各システムを結び付けている。\n\n<IMG>THRUST<>長押しで離陸するか船に確認できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4380,7 +4380,7 @@
     "Icon": "technology/163.png",
     "Name": "悲鳴抑制装置",
     "Group": "融合した有機テクノロジー",
-    "Description": "船の自動防衛ネットワークの延長機能であり、\n自律した生命体のようだ。\n真ん中には小さな口があり、パグニウムを渇望している。\n\n戦闘中は神経配列を乗っ取り、\n船体の他の部分が\n恐怖や痛みでトラウマを負うのを防いでいる。",
+    "Description": "船の自動防衛ネットワークの延長機能であり、\n自律した生命体のようだ。\n真ん中には小さな口があり、<SPECIAL>パグニウム<>を渇望している。\n\n戦闘中は神経配列を乗っ取り、\n船体の他の部分が\n恐怖や痛みでトラウマを負うのを防いでいる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4408,7 +4408,7 @@
     "Icon": "technology/164.png",
     "Name": "噴出口",
     "Group": "融合した有機テクノロジー",
-    "Description": "球形状のプラズマを生成して放出する嚢と括約筋の寄せ集め。\n船の武器システムへの結合時には、\n非常に高温のプラズマを高圧下で放出する。\n\nSHIPFIREを押すと、\n通風孔を現在の標的に向かわせるか、船に確認できる。",
+    "Description": "球形状のプラズマを生成して放出する嚢と括約筋の寄せ集め。\n船の武器システムへの結合時には、\n非常に高温のプラズマを高圧下で放出する。\n\n<IMG>SHIPFIRE<>を押すと、\n通風孔を現在の標的に向かわせるか、船に確認できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4436,7 +4436,7 @@
     "Icon": "technology/165.png",
     "Name": "移植眼",
     "Group": "融合した有機テクノロジー",
-    "Description": "薄膜と水晶体が複合配置されたもので、\n高エネルギーレーザーアレイ上に結合している。\n目が合うと焼却される。\n\nSHIPFIREを押すと、近くの標的を見据える。",
+    "Description": "薄膜と水晶体が複合配置されたもので、\n高エネルギーレーザーアレイ上に結合している。\n目が合うと焼却される。\n\n<IMG>SHIPFIRE<>を押すと、近くの標的を見据える。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4464,7 +4464,7 @@
     "Icon": "technology/28.png",
     "Name": "物質転送ビーム",
     "Group": "貨物船搭載型テレポーテーション装置",
-    "Description": "貨物船の標準通信信号を変調させ、データだけでなく物質の惑星間転送も可能にする装置。\n\nこの装置を取り付けた貨物船は、遠く離れた使用者のエクソスーツにアイテムや物質を送り込んだり、逆に受け取ったりできる。",
+    "Description": "貨物船の標準通信信号を変調させ、データだけでなく<TECHNOLOGY>物質の惑星間転送<>も可能にする装置。\n\nこの装置を取り付けた貨物船は、<STELLAR>遠く離れた<>使用者の<STELLAR>エクソスーツ<>にアイテムや物質を送り込んだり、逆に受け取ったりできる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4496,7 +4496,7 @@
     "Icon": "technology/167.png",
     "Name": "太陽光線",
     "Group": "錬金レーザー",
-    "Description": "マルチツールの採掘能力に高度な専門機能を追加し、地上の鉱脈を液体太陽に変えることができるようになる。\n\n強力なレーザーアレイが現地の太陽放射を増幅させ、近くの鉱物を急速に再構成する。",
+    "Description": "マルチツールの採掘能力に高度な専門機能を追加し、<STELLAR>地上の鉱脈<>を<STELLAR>液体太陽<>に変えることができるようになる。\n\n強力なレーザーアレイが現地の太陽放射を増幅させ、近くの鉱物を急速に再構成する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4524,7 +4524,7 @@
     "Icon": "technology/168.png",
     "Name": "アニムスビーム",
     "Group": "魂抽出装置",
-    "Description": "マルチツールの標準的なマインレーザーにオーバーロードして発する。ビームの周波数を正確に調節するため、衝突対象が発するデルタ波とフィードバックループを形成する。\n\n対象の経験を記録してごく小さな金属のかけらに刻み込み、特質の断片としてレンダリングする。収集された断片の可読性は保証されていない。",
+    "Description": "マルチツールの標準的なマインレーザーにオーバーロードして発する。ビームの周波数を正確に調節するため、衝突対象が発するデルタ波とフィードバックループを形成する。\n\n対象の経験を記録してごく小さな金属のかけらに刻み込み、<STELLAR>特質の断片<>としてレンダリングする。収集された断片の可読性は保証されていない。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4552,7 +4552,7 @@
     "Icon": "technology/8.png",
     "Name": "サーマルバッファー",
     "Group": "エクソクラフト危険防御ユニット",
-    "Description": "構造パネルすべてに、昇華冷却通気口と\n大容量高温バッファーを追加し、\n船体が炎の旋風に包まれても、\nエクソクラフトのパイロットを致命的な高温から守る。\n\n焦土の環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
+    "Description": "構造パネルすべてに、昇華冷却通気口と\n大容量高温バッファーを追加し、\n船体が炎の旋風に包まれても、\nエクソクラフトのパイロットを致命的な高温から守る。\n\n<FUEL>焦土の環境<>でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4584,7 +4584,7 @@
     "Icon": "technology/9.png",
     "Name": "メガワットヒーター",
     "Group": "エクソクラフト危険防御ユニット",
-    "Description": "エクソクラフトに強力なヒーターを追加し、\n極寒の状態でも乗組員室を居住可能な温度に保つ。\n\n凍てつく環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
+    "Description": "エクソクラフトに強力なヒーターを追加し、\n極寒の状態でも乗組員室を居住可能な温度に保つ。\n\n<TEMPERATURE>凍てつく環境<>でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4616,7 +4616,7 @@
     "Icon": "technology/10.png",
     "Name": "空気ろ過ユニット",
     "Group": "エクソクラフト危険防御ユニット",
-    "Description": "二重真空式空気ろ過システムで、エクソクラフトの乗組員室に\n入る惑星の空気を徹底して浄化する。\n\n毒性の環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
+    "Description": "二重真空式空気ろ過システムで、エクソクラフトの乗組員室に\n入る惑星の空気を徹底して浄化する。\n\n<TRADEABLE>毒性の環境<>でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4648,7 +4648,7 @@
     "Icon": "technology/11.png",
     "Name": "中性子シールド",
     "Group": "エクソクラフト危険防御ユニット",
-    "Description": "エクソクラフトの骨組みに高性能の制御材を追加し、\n流入する危険なエネルギー波を中和する。\n\n放射性の環境でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
+    "Description": "エクソクラフトの骨組みに高性能の制御材を追加し、\n流入する危険なエネルギー波を中和する。\n\n<COMMODITY>放射性の環境<>でも、エクソクラフトの中にいるあいだは\nダメージを受けず、体力が低下しない。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4680,7 +4680,7 @@
     "Icon": "technology/173.png",
     "Name": "イカロス燃料システム",
     "Group": "太陽光リチャージユニット",
-    "Description": "イカロスシステムは既存の金属パネルを太陽光発電パネルに\nアップグレードする。日中はこの反応性コーティングが\n電力を生み、燃料消費を抑えることができる。\n\n日中、自動エンジンリチャージが有効になる。",
+    "Description": "イカロスシステムは既存の金属パネルを太陽光発電パネルに\nアップグレードする。日中はこの反応性コーティングが\n電力を生み、燃料消費を抑えることができる。\n\n<STELLAR>日中<>、<STELLAR>自動エンジンリチャージ<>が有効になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4744,7 +4744,7 @@
     "Icon": "technology/90.png",
     "Name": "ダイダロスエンジン",
     "Group": "ミノタウロス電力ユニット",
-    "Description": "小型原子炉ユニットで、ミノタウロスの核となるエンジン。急激な動きにも耐えられるよう、ジャイロスコープ上に取り付けられる。\n\n従来型の炭素系燃料を動力とする。",
+    "Description": "小型原子炉ユニットで、ミノタウロスの核となるエンジン。急激な動きにも耐えられるよう、ジャイロスコープ上に取り付けられる。\n\n従来型の<FUEL>炭素系燃料<>を動力とする。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4776,7 +4776,7 @@
     "Icon": "technology/90.png",
     "Name": "自己給脂サーボ",
     "Group": "モーター効率化アップグレード",
-    "Description": "自動調整した潤滑剤を投入する装置。ミノタウロスの\n脚部ジョイント用で、摩擦を減らし、燃料効率を向上させる。\n\nミノタウロスのダイダロスエンジンが消費する燃料を大幅に抑える。",
+    "Description": "自動調整した潤滑剤を投入する装置。ミノタウロスの\n脚部ジョイント用で、摩擦を減らし、燃料効率を向上させる。\n\nミノタウロスのダイダロスエンジンが<STELLAR>消費する燃料を大幅に抑える<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4808,7 +4808,7 @@
     "Icon": "technology/28.png",
     "Name": "ミノタウロス・レーダーアレイ",
     "Group": "ミノタウロス・スキャンアタッチメント",
-    "Description": "ミノタウロスに搭載されているスキャナー技術を分析レンズレベルにアップグレードできる高性能レーダー機器。\n\nSCANでレーダーのスイープを実行し、マルチツールのスキャナーではわからないさらなる特定ポイントをあぶり出す。\n\nクイックメニューから、レーダーを特定の建物に向けることができる。",
+    "Description": "ミノタウロスに搭載されているスキャナー技術を分析レンズレベルにアップグレードできる高性能レーダー機器。\n\n<IMG>SCAN<>でレーダーのスイープを実行し、マルチツールのスキャナーではわからない<STELLAR>さらなる特定ポイント<>をあぶり出す。\n\nクイックメニューから、レーダーを<TECHNOLOGY>特定の建物<>に向けることができる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4840,7 +4840,7 @@
     "Icon": "technology/97.png",
     "Name": "アリアドネの炎",
     "Group": "ミノタウロス推進システム",
-    "Description": "機動性の高いジェット推進装置の集合体。ミノタウロスの後部に取り付けられており、精密な運用によりあらゆる地形でミノタウロスを機敏に力強く動かすことができる。\n\nJUMP長押しで起動する。飛行中も限定的に制御可能。",
+    "Description": "機動性の高いジェット推進装置の集合体。ミノタウロスの後部に取り付けられており、精密な運用によりあらゆる地形でミノタウロスを機敏に力強く動かすことができる。\n\n<IMG>JUMP<>長押しで起動する。飛行中も限定的に制御可能。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4872,7 +4872,7 @@
     "Icon": "technology/98.png",
     "Name": "ミノタウロス・レーザー",
     "Group": "ミノタウロス採掘ツール",
-    "Description": "ミノタウロス・重エクソスーツハイブリッド用に設計された\n機動力の高いレーザーシステム。\n\n従来の採掘作業ができるようになる。戦闘時には無効になる。",
+    "Description": "<STELLAR>ミノタウロス・重エクソスーツハイブリッド<>用に設計された\n機動力の高いレーザーシステム。\n\n従来の採掘作業ができるようになる。戦闘時には無効になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4904,7 +4904,7 @@
     "Icon": "technology/99.png",
     "Name": "ミノタウロス精密レーザー",
     "Group": "ミノタウロス高度マインレーザー",
-    "Description": "ミノタウロス・重エクソスーツハイブリッドの\nレーザーアレイシステム用アップグレード。\n\nマインビームのパワーを増幅し、採掘スピードを上げるほか、\n採掘の困難な原材料の加工を可能にする。",
+    "Description": "<STELLAR>ミノタウロス・重エクソスーツハイブリッド<>の\nレーザーアレイシステム用アップグレード。\n\nマインビームのパワーを増幅し、採掘スピードを上げるほか、\n採掘の困難な原材料の加工を可能にする。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4932,7 +4932,7 @@
     "Icon": "technology/100.png",
     "Name": "ミノタウロス・キャノン",
     "Group": "装備型重火器",
-    "Description": "ミノタウロス重エクソスーツハイブリッド用に設計された\n機動力の高い大砲。\n\n当初は生物をターゲットに想定して設計されているため、\n採掘機器としての機能性はほぼない。",
+    "Description": "<STELLAR>ミノタウロス重エクソスーツハイブリッド<>用に設計された\n機動力の高い大砲。\n\n当初は生物をターゲットに想定して設計されているため、\n採掘機器としての機能性はほぼない。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4964,7 +4964,7 @@
     "Icon": "technology/100.png",
     "Name": "ミノタウロス掘削装置",
     "Group": "ミノタウロス採掘レーザー",
-    "Description": "ミノタウロス重エクソスーツハイブリッドのレーザーアレイに地形操作機能を追加する。\n\n特製の装置により、ミノタウロスの精巧なジョイントや\nサーボモーターを目詰まりさせることなく、\n高エネルギーの地形掘削機を素早く展開できる。",
+    "Description": "<STELLAR>ミノタウロス重エクソスーツハイブリッド<>のレーザーアレイに<STELLAR>地形操作<>機能を追加する。\n\n特製の装置により、ミノタウロスの精巧なジョイントや\nサーボモーターを目詰まりさせることなく、\n高エネルギーの地形掘削機を素早く展開できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -4996,7 +4996,7 @@
     "Icon": "technology/1.png",
     "Name": "環境制御ユニット",
     "Group": "エクソクラフト危険防御ユニット",
-    "Description": "車両を操縦するミノタウロスのパイロットに、強力な\n環境中和システムを直接接続する。システムは\nミノタウロスのメインエンジンユニットを動力源とし、\nユーザーによる追加の入力は必要ない。\n接続される部位にわずかな痛みを感じる場合がある。\n\nミノタウロスのパイロットが、あらゆる環境上の危険に\n影響を受けなくなる。",
+    "Description": "車両を操縦するミノタウロスのパイロットに、強力な\n環境中和システムを直接接続する。システムは\nミノタウロスのメインエンジンユニットを動力源とし、\nユーザーによる追加の入力は必要ない。\n接続される部位にわずかな痛みを感じる場合がある。\n\nミノタウロスのパイロットが、<STELLAR>あらゆる環境上の危険<>に\n影響を受けなくなる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5028,7 +5028,7 @@
     "Icon": "technology/184.png",
     "Name": "ボルトキャスターバウンス・ショット モジュール",
     "Group": "ボルトキャスターアップグレード",
-    "Description": "ボルトキャスターの\n\n弾の周りに反物質フィールドを作り出し、ダメージを受けていない面で跳ね返るようにする。\n\nバウンス・ショットが可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。",
+    "Description": "<TECHNOLOGY>ボルトキャスター<>の\n\n弾の周りに反物質フィールドを作り出し、ダメージを受けていない面で跳ね返るようにする。\n\n<STELLAR>バウンス・ショット<>が可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5056,7 +5056,7 @@
     "Icon": "technology/185.png",
     "Name": "パルススピッターバウンス・ショット モジュール",
     "Group": "パルススピッターアップグレード",
-    "Description": "パルススピッターの\n\n弾の周りに反物質フィールドを作り出し、ダメージを受けていない面で跳ね返るようにする。\n\nバウンス・ショットが可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。",
+    "Description": "<TECHNOLOGY>パルススピッター<>の\n\n弾の周りに反物質フィールドを作り出し、ダメージを受けていない面で跳ね返るようにする。\n\n<STELLAR>バウンス・ショット<>が可能になり、\nダメージが入らない標的に当たると\n発射物が跳ね返る。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5088,7 +5088,7 @@
     "Icon": "technology/186.png",
     "Name": "インシネレーター",
     "Group": "近距離射撃ユニット",
-    "Description": "マルチツールに使用できるスペシャリスト用の高温アタッチメント。CYCLEWEAPONで攻撃モードに切り替えてATTACKで使用できる。\n\nインシネレーターは、マルチツールによって自然発生する排出ガスに\n内部レーザーを集中させるアタッチメントで、非常に破壊力が高い。\n近距離ではさらに威力が高まる。",
+    "Description": "<TECHNOLOGY>マルチツール<>に使用できるスペシャリスト用の<FUEL>高温<>アタッチメント。<IMG>CYCLEWEAPON<>で攻撃モードに切り替えて<IMG>ATTACK<>で使用できる。\n\n<TECHNOLOGY>インシネレーター<>は、マルチツールによって自然発生する排出ガスに\n内部レーザーを集中させるアタッチメントで、非常に破壊力が高い。\n近距離ではさらに威力が高まる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5116,7 +5116,7 @@
     "Icon": "technology/187.png",
     "Name": "高度な発射システム",
     "Group": "カスタム着陸装置",
-    "Description": "高性能な宇宙船に必要なカスタムメイドの発射コントロールシステム。高感度のジャイロスコープと特殊な制御回路により、カスタムメイドの離陸ルーチンを作製し、発射の速度と効率を向上させる。\nエンジンは特製の重水素燃料で\nリチャージできる。発射プロセスには、\n充分な燃料レベルが必要。\n THRUST を長押しで惑星から飛び立つ。BOOSTで飛行を加速する。",
+    "Description": "高性能な宇宙船に必要なカスタムメイドの<TECHNOLOGY>発射コントロール<>システム。高感度のジャイロスコープと特殊な制御回路により、カスタムメイドの離陸ルーチンを作製し、発射の<STELLAR>速度<>と<STELLAR>効率<>を向上させる。\nエンジンは特製の<TECHNOLOGY>重水素燃料<>で\nリチャージできる。発射プロセスには、\n充分な燃料レベルが必要。\n <IMG>THRUST<> を長押しで惑星から飛び立つ。<IMG>BOOST<>で飛行を加速する。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5144,7 +5144,7 @@
     "Icon": "technology/188.png",
     "Name": "波形エンジン",
     "Group": "高カスタム宇宙船エンジン",
-    "Description": "従来の宇宙船のパルスエンジンを高度にチューニングしたもの。波面占有率を極限まで高め、効率の良さと応答性の高さを両立させたパルスを実現する\n\nパルスエンジンのチャージには三重水素が必要。 三重水素は宇宙近くの小惑星で豊富に存在している。\n\nROLLLEFTとROLLRIGHTを同時に長押ししてパルスジャンプ。BOOSTを長押しするとフライト速度を加速できる。",
+    "Description": "従来の宇宙船の<TECHNOLOGY>パルスエンジン<>を高度にチューニングしたもの。波面占有率を極限まで高め、<STELLAR>効率の良さ<>と<STELLAR>応答性の高さ<>を両立させたパルスを実現する\n\nパルスエンジンのチャージには<EXOTIC>三重水素<>が必要。 三重水素は<COMMODITY>宇宙近くの小惑星<>で豊富に存在している。\n\n<IMG>ROLLLEFT<>と<IMG>ROLLRIGHT<>を同時に長押ししてパルスジャンプ。<IMG>BOOST<>を長押しするとフライト速度を加速できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5172,7 +5172,7 @@
     "Icon": "technology/189.png",
     "Name": "フレームシフトカタパルト",
     "Group": "違法改造ワープドライブ",
-    "Description": "この実験的なドライブは、従来のハイパードライブテクノロジーを強化するもので、ワープの初期化時に局所的に幾何学的形状を歪めることで、標準的なドライブをはるかに上回る飛距離と効率を実現している\n\nギャラクシーマップから、ハイパードライブシステムへのアクセスできる",
+    "Description": "この実験的なドライブは、従来の<TECHNOLOGY>ハイパードライブ<>テクノロジーを強化するもので、ワープの初期化時に局所的に幾何学的形状を歪めることで、標準的なドライブをはるかに上回る<STELLAR>飛距離<>と<STELLAR>効率<>を実現している\n\n<STELLAR>ギャラクシーマップ<>から、ハイパードライブシステムへのアクセスできる",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5204,7 +5204,7 @@
     "Icon": "technology/190.png",
     "Name": "加圧カプセル",
     "Group": "宇宙船生命維持ユニット",
-    "Description": "軌道外飛行には欠かせない、宇宙船の重要な安全機能。\n\n加圧カプセルは、呼吸可能な大気を確保すると同時に、特殊なデザインのコックピットが壊滅的な被害を受けるのを防ぐ専用ユニットである",
+    "Description": "軌道外飛行には欠かせない、宇宙船の重要な安全機能。\n\n加圧カプセルは、<STELLAR>呼吸可能な大気<>を確保すると同時に、特殊なデザインのコックピットが壊滅的な被害を受けるのを防ぐ専用ユニットである",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5232,7 +5232,7 @@
     "Icon": "technology/191.png",
     "Name": "内臓器官同調機",
     "Group": "エーテル培養器",
-    "Description": "異世界の技術の一部。触りたくなるような膜組織は柔らかく、ゲル状で、優しい深紅の光を放ちながら脈打っている。\n\n使用者を暖かく包み、飢えた蔓の胚のうからおぞましき落とし子を救い出すことができるようになる。",
+    "Description": "異世界の技術の一部。触りたくなるような膜組織は柔らかく、ゲル状で、優しい深紅の光を放ちながら脈打っている。\n\n使用者を暖かく包み、<SPECIAL>飢えた蔓<>の胚のうから<STELLAR>おぞましき落とし子<>を救い出すことができるようになる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5264,7 +5264,7 @@
     "Icon": "technology/192.png",
     "Name": "アーカイブオーバーライドインプラント",
     "Group": "皮下接触回路",
-    "Description": "バイオ技術によるファイアウォールであり、文字認識災害に対するセーフガードとして開発された。何かヌルヌルしたもので覆われており、表面が泡立ち始めている。\n\n皮膚の下に埋め込むと、惑星アーカイブで古代の禁じられた文章に管理者権限でアクセスできるようになる。\n警告：禁じられた文章を解かないこと。禁じられた文章に触れることは非常な危険を伴う。",
+    "Description": "<TECHNOLOGY>バイオ技術によるファイアウォール<>であり、文字認識災害に対するセーフガードとして開発された。何かヌルヌルしたもので覆われており、表面が泡立ち始めている。\n\n皮膚の下に埋め込むと、<SPECIAL>惑星アーカイブ<>で古代の禁じられた文章に管理者権限でアクセスできるようになる。\n<FUEL>警告<>：禁じられた文章を解かないこと。禁じられた文章に触れることは非常な危険を伴う。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -5285,6 +5285,34 @@
       {
         "Id": "prod81",
         "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech193",
+    "Icon": "technology/121.png",
+    "Name": "筒型コイル ",
+    "Group": "損傷部分",
+    "Description": "デバイスの出力を上げるためのリレースイッチ。\nコネクタが腐食し筒型コイルは作動していない。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 2,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 10
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],
