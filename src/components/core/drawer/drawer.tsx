@@ -89,8 +89,8 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
         if (menuItem.isSeparator) return <li className={classes} key={`seperator-${index}`}></li>;
 
         let icon: any = null;
-        if (menuItem.iconType === DrawerIconType.Material) icon = <i className="material-icons">{menuItem.icon}</i>;
-        if (menuItem.iconType === DrawerIconType.Custom) icon = <img className="custom-icons" src={menuItem.icon} alt={menuItem.icon} />;
+        if (menuItem.iconType === DrawerIconType.Material) icon = <i key={menuItem.icon} className="material-icons">{menuItem.icon}</i>;
+        if (menuItem.iconType === DrawerIconType.Custom) icon = <img key={menuItem.icon} className="custom-icons" src={menuItem.icon} alt={menuItem.icon} />;
 
         const child = renderMenuItemChild(menuItem, icon, isActive);
 

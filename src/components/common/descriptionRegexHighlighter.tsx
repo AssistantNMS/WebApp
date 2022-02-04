@@ -11,8 +11,8 @@ const paleBlueColourClass = '#83BCDB';
 const greenColourClass = '#AADE9B';
 const purpleColourClass = '#B0A5DD';
 const offWhiteColourClass = '#F5F5F5';
-const orangeColourClass = '#f3a923';
-const redColourClass = '#c03022';
+const orangeColourClass = '#F3A923';
+const redColourClass = '#C03022';
 
 const getColourValueFromTag = (tag: string) => {
 
@@ -86,7 +86,7 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
             }
 
             let endMatches: Array<any> | null = tagEndRegex.exec(word);
-            let hasEndMatch = endMatches != null && endMatches.length >= 2
+            let hasEndMatch = endMatches != null && endMatches.length >= 2;
             if (hasEndMatch) {
                 displayWord = (endMatches?.[1] ?? '').replace(localTag, '');
             }
