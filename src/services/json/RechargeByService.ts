@@ -29,7 +29,7 @@ export class RechargeByService extends BaseJsonService {
         return this._getOrAdd(() => this._getAllRechargeItems(), ['_getListfromJson']);
     }
     async _getAllRechargeItems(): Promise<ResultWithValue<Array<Recharge>>> {
-        const result = await this.getAsset<Array<Recharge>>(`json/Recharge.json`);
+        const result = await this.getAsset<Array<Recharge>>(`data/Recharge.json`);
         if (!result.isSuccess) return { isSuccess: false, value: [], errorMessage: result.errorMessage };
 
         return result;

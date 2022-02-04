@@ -20,7 +20,7 @@
     animation-timing-function: $bmd-animation-curve-default;
   }
 
-  .open>&,
+  .open > &,
   &.show {
     display: block;
     opacity: 1;
@@ -49,7 +49,7 @@
     transform-origin: 100% 100%;
   }
 
-  .disabled>a {
+  .disabled > a {
     color: $bmd-dropdown-header-color;
 
     &:focus,
@@ -62,7 +62,8 @@
   }
 
   &.dropdown-with-icons .dropdown-item {
-    padding: $dropdown-item-padding-y + 0.125 $dropdown-item-padding-x $dropdown-item-padding-y + 0.125 $dropdown-item-padding-y + 0.125;
+    padding: $dropdown-item-padding-y + 0.125 $dropdown-item-padding-x $dropdown-item-padding-y + 0.125
+      $dropdown-item-padding-y + 0.125;
 
     & .material-icons {
       vertical-align: middle;
@@ -71,14 +72,13 @@
       margin-top: -4px;
       top: 1px;
       margin-right: 12px;
-      opacity: .5;
+      opacity: 0.5;
     }
   }
 
-
   // https://www.google.com/design/spec/components/menus.html#menus-specs
   .dropdown-item,
-  li>a {
+  li > a {
     // used to properly size the ripple container
     position: relative;
     width: auto;
@@ -88,7 +88,7 @@
     color: white;
     font-weight: normal;
     text-decoration: none;
-    font-size: .8125rem;
+    font-size: 0.8125rem;
     border-radius: $border-radius / 2;
     margin: 0 $bmd-dropdown-margin-y;
     @include transitions($fast-transition-time, $transition-linear);
@@ -98,11 +98,6 @@
     line-height: $bmd-line-height;
     text-overflow: ellipsis;
     word-wrap: break-word;
-
-    @include media-breakpoint-up(md) {
-      padding-right: $bmd-menu-item-padding-right-md;
-      padding-left: $bmd-menu-item-padding-left-md;
-    }
   }
 
   .dropdown-item:hover,
@@ -112,7 +107,7 @@
   a:active {
     @include shadow-small-color($brand-primary);
     background-color: $brand-primary;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -124,20 +119,16 @@ a[aria-expanded="true"] .caret,
   @include rotate-180();
 }
 
-
 // this could be in a .btn-group or .dropdown
 .dropdown-toggle {
-
   &.bmd-btn-icon,
   &.bmd-btn-fab {
-
     // remove the dropdown icon
     &::after {
       display: none;
     }
 
-    ~.dropdown-menu {
-
+    ~ .dropdown-menu {
       &.dropdown-menu-top-left,
       &.dropdown-menu-top-right {
         bottom: $bmd-btn-icon-size; // push up the bottom of the menu the height of the button
@@ -151,8 +142,7 @@ a[aria-expanded="true"] .caret,
   }
 
   &.bmd-btn-fab-sm {
-    ~.dropdown-menu {
-
+    ~ .dropdown-menu {
       &.dropdown-menu-top-left,
       &.dropdown-menu-top-right {
         bottom: $bmd-btn-fab-size-sm; // push up the bottom of the menu the height of the button
@@ -161,22 +151,21 @@ a[aria-expanded="true"] .caret,
   }
 
   &.bmd-btn-icon {
-    ~.dropdown-menu {
+    ~ .dropdown-menu {
       // collapse some spacing
       margin: 0;
     }
   }
 
-  .show>&:not(.dropdown-item):after {
+  .show > &:not(.dropdown-item):after {
     @include rotate-180();
   }
 }
 
 .dropdown-header {
   font-size: 0.75rem;
-  padding-top: .625rem;
-  padding-bottom: .625rem;
-  ;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   text-transform: none;
   color: $bmd-dropdown-header-color;
   line-height: $bmd-line-height;

@@ -49,8 +49,6 @@ const getColourValueFromTag = (tag: string) => {
 }
 
 export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) => {
-    console.log(props.orig);
-
     const groupRegex = new RegExp(/(<\w+>(\w+\s*)*<>)/);
     const tagStartRegex = new RegExp(/(.*)<(\w+)>(.*)/);
     const tagEndRegex = new RegExp(/(.*)<>(.*)/);
