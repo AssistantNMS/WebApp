@@ -6638,9 +6638,9 @@
   {
     "Id": "build315",
     "Icon": "building/315.png",
-    "Name": "Fuoco d'artificio verde",
+    "Name": "Fuoco d'artificio blu",
     "Group": "Dispositivo pirotecnico consumabile",
-    "Description": "Un fuoco d'artificio, ricco di magnesio ed emeril. Accendilo per creare spettacoli luminosi nel cielo.\n\nPosiziona il tubo di lancio dal <VAL_ON>menu di creazione<> (<IMG>BUILD_MENU<>). \n<FUEL>Attenzione<>: non mirare verso creature viventi. Sconsigliato l'uso negli interni.",
+    "Description": "Un fuoco d'artificio, ricco di magnesio e indio. Accendilo per creare spettacoli luminosi nel cielo.\n\nPosiziona il tubo di lancio dal <VAL_ON>menu di creazione<> (<IMG>BUILD_MENU<>). \n<FUEL>Attenzione<>: non mirare verso creature viventi. Sconsigliato l'uso negli interni.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Quicksilver",
     "IsCraftable": false,
@@ -6939,6 +6939,26 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build327",
+    "Icon": "building/315.png",
+    "Name": "Fuoco d'artificio rosso",
+    "Group": "Dispositivo pirotecnico consumabile",
+    "Description": "Un fuoco d'artificio, ricco di magnesio e cadmio. Accendilo per creare spettacoli luminosi nel cielo.\n\nPosiziona il tubo di lancio dal <VAL_ON>menu di creazione<> (<IMG>BUILD_MENU<>).\n<FUEL>Attenzione<>: non mirare verso creature viventi. Sconsigliato l'uso negli interni.",
+    "BaseValueUnits": 50.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "262626",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build328",
     "Icon": "building/328.png",
     "Name": "Angolo per tetto di metallo interno",
@@ -7017,6 +7037,26 @@
         "Quantity": 25
       }
     ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build331",
+    "Icon": "building/315.png",
+    "Name": "Fuoco d'artificio verde",
+    "Group": "Dispositivo pirotecnico consumabile",
+    "Description": "Un fuoco d'artificio, ricco di magnesio ed emeril. Accendilo per creare spettacoli luminosi nel cielo.\n\nPosiziona il tubo di lancio dal <VAL_ON>menu di creazione<> (<IMG>BUILD_MENU<>). \n<FUEL>Attenzione<>: non mirare verso creature viventi. Sconsigliato l'uso negli interni.",
+    "BaseValueUnits": 50.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "262626",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true

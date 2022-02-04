@@ -6638,9 +6638,9 @@
   {
     "Id": "build315",
     "Icon": "building/315.png",
-    "Name": "Zielone fajerwerki",
+    "Name": "Niebieskie fajerwerki",
     "Group": "Jednorazowe urządzenie pirotechniczne",
-    "Description": "Luksusowe fajerwerki, zasobne w magnez i emeryl. Odpal, aby tworzyć świetlne pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie odpalać w kierunku istot żywych. Nie używać w pomieszczeniach.",
+    "Description": "Luksusowe fajerwerki, zasobne w magnez i ind. Odpal, aby tworzyć świetlne pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie odpalać w kierunku istot żywych. Nie używać w pomieszczeniach.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Quicksilver",
     "IsCraftable": false,
@@ -6939,6 +6939,26 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build327",
+    "Icon": "building/315.png",
+    "Name": "Czerwone fajerwerki",
+    "Group": "Jednorazowe urządzenie pirotechniczne",
+    "Description": "Luksusowe fajerwerki, zasobne w magnez i kadm. Odpal, aby tworzyć świetlne pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie odpalać w kierunku istot żywych. Nie używać w pomieszczeniach.",
+    "BaseValueUnits": 50.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "262626",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build328",
     "Icon": "building/328.png",
     "Name": "Metalowe wewnętrzne naroże dachowe",
@@ -7017,6 +7037,26 @@
         "Quantity": 25
       }
     ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build331",
+    "Icon": "building/315.png",
+    "Name": "Zielone fajerwerki",
+    "Group": "Jednorazowe urządzenie pirotechniczne",
+    "Description": "Luksusowe fajerwerki, zasobne w magnez i emeryl. Odpal, aby tworzyć świetlne pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie odpalać w kierunku istot żywych. Nie używać w pomieszczeniach.",
+    "BaseValueUnits": 50.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "262626",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true

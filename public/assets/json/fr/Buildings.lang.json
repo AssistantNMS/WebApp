@@ -6638,9 +6638,9 @@
   {
     "Id": "build315",
     "Icon": "building/315.png",
-    "Name": "Feu d'artifice vert",
+    "Name": "Feu d'artifice bleu",
     "Group": "Appareil de pyrotechnie consommable",
-    "Description": "Des feux d'artifice de luxe, riches en magnésium et en émeril. Allumez-les pour illuminer les cieux de figures scintillantes.\n\nPlacez le tube de lancement depuis <VAL_ON>menu de construction<> (<IMG>BUILD_MENU<>). <FUEL>Attention<> : ne pas viser les créatures vivantes. Non recommandé pour un usage en intérieur. ",
+    "Description": "Des feux d'artifice de luxe, riches en magnésium et en indium. Allumez-les pour illuminer les cieux de figures scintillantes.\n\nPlacez le tube de lancement depuis <VAL_ON>menu de construction<> (<IMG>BUILD_MENU<>). <FUEL>Attention<> : ne pas viser les créatures vivantes. Non recommandé pour un usage en intérieur. ",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Quicksilver",
     "IsCraftable": false,
@@ -6939,6 +6939,26 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build327",
+    "Icon": "building/315.png",
+    "Name": "Feu d'artifice rouge",
+    "Group": "Appareil de pyrotechnie consommable",
+    "Description": "Des feux d'artifice de luxe, riches en magnésium et en cadmium. Allumez-les pour illuminer les cieux de figures scintillantes.\n\nPlacez le tube de lancement depuis <VAL_ON>menu de construction<> (<IMG>BUILD_MENU<>). <FUEL>Attention<> : ne pas viser les créatures vivantes. Non recommandé pour un usage en intérieur. ",
+    "BaseValueUnits": 50.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "262626",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build328",
     "Icon": "building/328.png",
     "Name": "Angle de toit intérieur métallique",
@@ -7017,6 +7037,26 @@
         "Quantity": 25
       }
     ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build331",
+    "Icon": "building/315.png",
+    "Name": "Feu d'artifice vert",
+    "Group": "Appareil de pyrotechnie consommable",
+    "Description": "Des feux d'artifice de luxe, riches en magnésium et en émeril. Allumez-les pour illuminer les cieux de figures scintillantes.\n\nPlacez le tube de lancement depuis <VAL_ON>menu de construction<> (<IMG>BUILD_MENU<>). <FUEL>Attention<> : ne pas viser les créatures vivantes. Non recommandé pour un usage en intérieur. ",
+    "BaseValueUnits": 50.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 20.0,
+    "Colour": "262626",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
