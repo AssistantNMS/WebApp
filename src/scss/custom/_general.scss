@@ -194,7 +194,7 @@ img.grayscale {
 }
 
 .m-0-child {
-    >* {
+    > * {
         margin: 0;
     }
 }
@@ -323,6 +323,13 @@ img.grayscale {
 @media only screen and (min-width: 1170px) {
     .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
         width: unset !important;
+    }
+}
+
+.settings {
+    .platform-img {
+        max-width: 2rem;
+        max-height: 2rem;
     }
 }
 

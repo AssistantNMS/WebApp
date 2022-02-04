@@ -1,14 +1,17 @@
 import { State } from '../../redux/state';
-import { setLanguage, toggleAltGlyphs, setFont } from '../../redux/modules/setting/action';
-import { getUseAltGlyphs, getCurrentLanguage, getSelectedFont } from '../../redux/modules/setting/selector';
+import { setLanguage, toggleAltGlyphs, setFont, setPlatform } from '../../redux/modules/setting/action';
+import { getUseAltGlyphs, getCurrentLanguage, getSelectedFont, getChosenPlatform } from '../../redux/modules/setting/selector';
+import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
 
 export interface IReduxProps {
     useAltGlyphs: boolean;
     selectedLanguage: string;
     selectedFont: string;
+    selectedPlatform: ControllerPlatformType;
     toggleAltGlyphs: () => void;
     setLanguage: (selectedLanguage: string) => void;
     setFont: (selectedFont: string) => void;
+    setPlatform: (platform: ControllerPlatformType) => void;
 }
 
 export const mapStateToProps = (state: State) => {
@@ -16,6 +19,7 @@ export const mapStateToProps = (state: State) => {
         useAltGlyphs: getUseAltGlyphs(state),
         selectedLanguage: getCurrentLanguage(state),
         selectedFont: getSelectedFont(state),
+        selectedPlatform: getChosenPlatform(state),
     };
 };
 
@@ -30,6 +34,9 @@ export const mapDispatchToProps = (dispatch: any) => {
     };
     newProps.setFont = (selectedFont: string) => {
         dispatch(setFont(selectedFont));
+    };
+    newProps.setPlatform = (platform: ControllerPlatformType) => {
+        dispatch(setPlatform(platform));
     };
     return { ...newProps };
 }

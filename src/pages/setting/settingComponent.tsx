@@ -4,6 +4,9 @@ import classNames from 'classnames';
 import { LocalizationMap } from '../../localization/LocalizationMap';
 import { localeMap } from '../../localization/Localization';
 import { availableFonts } from '../../constants/Fonts';
+import { availableControlPlatforms, IControlPlatformsOptions } from '../../constants/ControlPlatforms';
+import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
+import { AppImage } from '../../constants/AppImage';
 
 interface IBoolSettingProps {
     title: string;
@@ -113,5 +116,53 @@ export const FontSettingTile: React.FC<IFontProp> = (props: IFontProp) => {
             options={availableFonts()}
             onClick={props.onClick}
         />
+    );
+}
+
+
+interface IControlPlatformProp {
+    title: string;
+    value: ControllerPlatformType;
+    onClick: (newValue: ControllerPlatformType) => void;
+}
+
+export const ControlPlatformSettingTile: React.FC<IControlPlatformProp> = (props: IControlPlatformProp) => {
+    const [isVisible, setIsVisible] = useState<boolean>(false);
+
+    const toggleDropdown = () => {
+        setIsVisible(!isVisible);
+    }
+
+    const options = availableControlPlatforms();
+
+    return (
+        <div className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12-xsmall" onClick={toggleDropdown}>
+            {
+                isVisible
+                    ? <div className="full-page-loader opacity80"></div>
+                    : null
+            }
+            <div className="card" style={{ padding: '1em' }}>
+                <div className="form-check">
+                    <label className="form-check-label custom">
+                        <p>{props.title}:</p>&nbsp;
+                        <img className="platform-img" src={options.find(opt => opt.value === props.value)?.imgUrl ?? AppImage.platformPc} alt="platform" />
+                    </label>
+                </div>
+                <div className="dropdown">
+                    <div className={classNames('dropdown-menu', { 'show': isVisible })}>
+                        {
+                            options.map((opt: IControlPlatformsOptions) => {
+                                return (
+                                    <span onClick={() => props.onClick(opt.value)} key={opt.value} className="dropdown-item pointer">
+                                        <img className="platform-img" src={opt.imgUrl} alt="platform" />
+                                    </span>
+                                );
+                            })
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }

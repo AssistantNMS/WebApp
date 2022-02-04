@@ -8,7 +8,7 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { mapDispatchToProps, mapStateToProps, IReduxProps } from './setting.Redux';
-import { BoolSettingTile, LangSettingTile, FontSettingTile } from './settingComponent';
+import { BoolSettingTile, LangSettingTile, FontSettingTile, ControlPlatformSettingTile } from './settingComponent';
 
 
 interface IWithDepInj { }
@@ -21,7 +21,7 @@ const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
         <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
-            <div className="content">
+            <div className="content settings">
                 <div className="container full pt1">
                     <div className="row">
                         <LangSettingTile title={i18next.t(LocaleKey.appLanguage)}
@@ -36,6 +36,10 @@ const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
                         <FontSettingTile title={i18next.t(LocaleKey.settingsFont)}
                             value={props.selectedFont}
                             onClick={props.setFont}
+                        />
+                        <ControlPlatformSettingTile title={i18next.t(LocaleKey.platform)}
+                            value={props.selectedPlatform}
+                            onClick={props.setPlatform}
                         />
                     </div>
                 </div>

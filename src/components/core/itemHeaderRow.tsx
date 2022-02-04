@@ -6,6 +6,7 @@ import { ToastService } from '../../services/toastService';
 import { AdditionalInfoChip } from '../common/chip/additionalInfoChip';
 import { LazyLoadImage } from './lazyLoadImage/lazyLoadImage';
 import { DecriptionRegexHighlightText } from '../common/descriptionRegexHighlighter';
+import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 
 interface IWithDepInj {
     toastService: ToastService;
@@ -20,6 +21,7 @@ interface IWithoutDepInj {
     HasDevProperties?: boolean;
     Description?: string;
     Link?: any;
+    controlLookup?: Array<PlatformControlMapping>;
     children?: ReactNode;
     openDevProperties?: () => void;
 }
@@ -60,6 +62,7 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                         ? <h5 className="ta-left ta-center-sm">
                             <DecriptionRegexHighlightText
                                 orig={props.Description}
+                                controlLookup={props.controlLookup}
                             />
                         </h5>
                         : null
