@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
-import { getMenuSection1, getMenuSection2, getMenuSection3, getMenuSection4, getMenuSection4Async, getMenuSection5, getMenuSection6, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
+import { getMenuSection1, getMenuSection2, getMenuSection3, getMenuSection4, getMenuSection4Async, getMenuSection5, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { AboutDrawerTilePresenter } from '../../common/about/aboutDrawerTilePresenter';
@@ -33,7 +33,6 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
         ...getMenuSection3(),
         ...getMenuSection4(),
         ...getMenuSection5(),
-        ...getMenuSection6(),
     ]);
 
     useEffect(() => {
@@ -49,7 +48,6 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
             ...getMenuSection3(),
             ...menuSection4Items,
             ...getMenuSection5(),
-            ...getMenuSection6(),
         ];
         setMenuItems(localMenuItems);
     }

@@ -218,28 +218,6 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
 
 export const getMenuSection5 = (): Array<DrawerMenuItem> => {
   const menuItems: Array<DrawerMenuItem> = [];
-  menuItems.push({
-    name: i18next.t(LocaleKey.weekendMission).toString(),
-    link: routes.weekendMission,
-    icon: '/assets/images/drawer/weekendMission.png',
-    iconType: DrawerIconType.Custom,
-    subs: WeekendMissions.map((wm: IWeekendMission) => {
-      return {
-        name: wm.name,
-        link: routes.weekendMissionDetails.replace(routes.weekendMissionParam, wm.id),
-        icon: '/assets/images/drawer/weekendMission.png',
-        iconType: DrawerIconType.Custom,
-        isActive: false,
-      };
-    }),
-    isActive: false
-  });
-  menuItems.push(menuItemSeperator);
-  return menuItems;
-}
-
-export const getMenuSection6 = (): Array<DrawerMenuItem> => {
-  const menuItems: Array<DrawerMenuItem> = [];
   // menuItems.push({
   //   name: i18next.t(LocaleKey.synchronize).toString(),
   //   link: routes.sync,

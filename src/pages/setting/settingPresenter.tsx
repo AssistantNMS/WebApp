@@ -7,6 +7,7 @@ import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { LocalizationMap } from '../../localization/LocalizationMap';
 import { mapDispatchToProps, mapStateToProps, IReduxProps } from './setting.Redux';
 import { BoolSettingTile, LangSettingTile, FontSettingTile, ControlPlatformSettingTile } from './settingComponent';
 
@@ -17,6 +18,13 @@ interface IProps extends IWithoutDepInj, IReduxProps { }
 
 const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
     const title = i18next.t(LocaleKey.settings);
+
+    const selectLanguage = (locale: LocalizationMap) => {
+        if (props.setLanguage != null) {
+            props.setLanguage(locale.code);
+        }
+    }
+
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />
@@ -24,9 +32,10 @@ const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
             <div className="content settings">
                 <div className="container full pt1">
                     <div className="row">
-                        <LangSettingTile title={i18next.t(LocaleKey.appLanguage)}
+                        <LangSettingTile
+                            title={i18next.t(LocaleKey.appLanguage)}
                             value={props.selectedLanguage}
-                            onClick={props.setLanguage}
+                            onClick={selectLanguage}
                         />
                         <BoolSettingTile
                             title={i18next.t(LocaleKey.useAltGlyphs)}
@@ -37,7 +46,8 @@ const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
                             value={props.selectedFont}
                             onClick={props.setFont}
                         />
-                        <ControlPlatformSettingTile title={i18next.t(LocaleKey.platform)}
+                        <ControlPlatformSettingTile
+                            title={i18next.t(LocaleKey.platform)}
                             value={props.selectedPlatform}
                             onClick={props.setPlatform}
                         />

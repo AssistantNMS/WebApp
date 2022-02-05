@@ -14,7 +14,6 @@ import { IdPrefix } from '../../constants/IdPrefix';
 import { NetworkState } from '../../constants/NetworkState';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
-import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { Recharge } from '../../contracts/recharge/recharge';
