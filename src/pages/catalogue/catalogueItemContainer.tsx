@@ -3,8 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { NetworkState } from '../../constants/NetworkState';
+import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
+import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
@@ -48,6 +50,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     const [rechargedBy, setRechargedBy] = useState<Recharge>(anyObject);
     const [usedToRechargeArray, setUsedToRechargeArray] = useState<Array<Recharge>>([]);
     const [eggTraitArray, setEggTraitArray] = useState<Array<EggNeuralTrait>>([]);
+    const [controlLookup, setControlLookup] = useState<Array<PlatformControlMapping>>([]);
     const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
     const [additionalData, setAdditionalData] = useState<Array<any>>([]);
 
@@ -79,6 +82,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         setUsedToCookArray([]);
         setRechargedBy(anyObject);
         setUsedToRechargeArray([]);
+        setControlLookup([]);
         setAdditionalData([]);
         setNetworkState(NetworkState.Loading);
     }
@@ -105,6 +109,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         const rechargedBy = await getRechargeByArray(itemResult.value.Id);
         const usedToRechargeArray = await getUsedToRechargeArray(itemResult.value.Id);
         const eggTraitArray = await getEggTraitArray(itemResult.value.Id);
+        const controlLookup = await getControlLookup(props.controlPlatform);
 
         setItem(itemResult.value);
         setResArray(resArray ?? []);
@@ -116,6 +121,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         setRechargedBy(rechargedBy ?? anyObject);
         setUsedToRechargeArray(usedToRechargeArray ?? []);
         setEggTraitArray(eggTraitArray ?? []);
+        setControlLookup(controlLookup ?? []);
         setAdditionalData(getAdditionalData(itemResult.value));
 
         setNetworkState(NetworkState.Success);
@@ -173,6 +179,12 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         const eggTraitsArray = await props.dataJsonService.getEggNeuralTraits();
         if (!eggTraitsArray.isSuccess) return [];
         return eggTraitsArray.value.filter(egg => egg.AppId === itemId);
+    }
+
+    const getControlLookup = async (platform: ControllerPlatformType) => {
+        const controlsArray = await props.dataJsonService.getControlMapping(platform);
+        if (!controlsArray.isSuccess) return [];
+        return controlsArray.value;
     }
 
     const getAdditionalData = (itemDetail: GameItemModel): Array<any> => {
@@ -264,6 +276,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             rechargedBy={rechargedBy}
             usedToRechargeArray={usedToRechargeArray}
             eggTraitArray={eggTraitArray}
+            controlLookup={controlLookup}
             networkState={networkState}
             additionalData={additionalData}
             addThisItemToCart={addThisItemToCart}

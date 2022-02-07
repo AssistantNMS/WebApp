@@ -10,10 +10,17 @@ import { LocaleKey } from '../localization/LocaleKey';
 import { GameItemService } from '../services/json/GameItemService';
 import { getCatalogueMenuItems } from './catalogueMenuItemsHelper';
 
-export const getDrawerMenuItems = async (gameItemService: GameItemService): Promise<Array<DrawerMenuItem>> => {
-  const expeditionsTask = gameItemService.getAllSeasonExpeditions();
+export const menuItemSeperator = {
+  name: 'Separator',
+  link: '/',
+  icon: 'separator',
+  iconType: DrawerIconType.Material,
+  isSeparator: true,
+  isActive: false
+};
 
-  const menuItems = [];
+export const getMenuSection1 = () => {
+  const menuItems: Array<DrawerMenuItem> = [];
   menuItems.push({
     name: i18next.t(LocaleKey.whatIsNew).toString(),
     link: routes.whatIsNew,
@@ -43,6 +50,11 @@ export const getDrawerMenuItems = async (gameItemService: GameItemService): Prom
     isActive: false
   });
   menuItems.push(menuItemSeperator);
+  return menuItems;
+}
+
+export const getMenuSection2 = () => {
+  const menuItems: Array<DrawerMenuItem> = [];
   menuItems.push({
     name: i18next.t(LocaleKey.favourites).toString(),
     link: routes.favourites,
@@ -73,6 +85,11 @@ export const getDrawerMenuItems = async (gameItemService: GameItemService): Prom
   //   isActive: false
   // });
   menuItems.push(menuItemSeperator);
+  return menuItems;
+}
+
+export const getMenuSection3 = () => {
+  const menuItems: Array<DrawerMenuItem> = [];
   menuItems.push({
     name: i18next.t(LocaleKey.cart).toString(),
     link: routes.cart,
@@ -101,7 +118,52 @@ export const getDrawerMenuItems = async (gameItemService: GameItemService): Prom
     iconType: DrawerIconType.Custom,
     isActive: false
   });
+  menuItems.push(menuItemSeperator);
+  return menuItems;
+}
 
+export const getMenuSection4 = (): Array<DrawerMenuItem> => {
+  const menuItems: Array<DrawerMenuItem> = [];
+  menuItems.push({
+    name: i18next.t(LocaleKey.seasonalExpeditionSeasons).toString(),
+    link: routes.seasonExpedition,
+    icon: 'map',
+    iconType: DrawerIconType.Material,
+    subs: ExistingExpeditions.map((ee: IExistingExpeditions) => {
+      return {
+        name: ee.name,
+        link: routes.seasonExpedition + '/' + ee.seasonId,
+        icon: `/${ee.icon}`,
+        iconType: DrawerIconType.Custom,
+        isActive: false,
+      };
+    }),
+    isActive: false
+  });
+  menuItems.push({
+    name: i18next.t(LocaleKey.weekendMission).toString(),
+    link: routes.weekendMission,
+    icon: '/assets/images/drawer/weekendMission.png',
+    iconType: DrawerIconType.Custom,
+    subs: WeekendMissions.map((wm: IWeekendMission) => {
+      return {
+        name: wm.name,
+        link: routes.weekendMissionDetails.replace(routes.weekendMissionParam, wm.id),
+        icon: '/assets/images/drawer/weekendMission.png',
+        iconType: DrawerIconType.Custom,
+        isActive: false,
+      };
+    }),
+    isActive: false
+  });
+  menuItems.push(menuItemSeperator);
+  return menuItems;
+}
+
+export const getMenuSection4Async = async (gameItemService: GameItemService): Promise<Array<DrawerMenuItem>> => {
+  const expeditionsTask = gameItemService.getAllSeasonExpeditions();
+
+  const menuItems: Array<DrawerMenuItem> = [];
   let subs = ExistingExpeditions.map((ee: IExistingExpeditions) => {
     return {
       name: ee.name,
@@ -151,6 +213,11 @@ export const getDrawerMenuItems = async (gameItemService: GameItemService): Prom
     isActive: false
   });
   menuItems.push(menuItemSeperator);
+  return menuItems;
+}
+
+export const getMenuSection5 = (): Array<DrawerMenuItem> => {
+  const menuItems: Array<DrawerMenuItem> = [];
   // menuItems.push({
   //   name: i18next.t(LocaleKey.synchronize).toString(),
   //   link: routes.sync,
@@ -188,12 +255,3 @@ export const getDrawerMenuItems = async (gameItemService: GameItemService): Prom
   });
   return menuItems;
 }
-
-export const menuItemSeperator = {
-  name: 'Separator',
-  link: '/',
-  icon: 'separator',
-  iconType: DrawerIconType.Material,
-  isSeparator: true,
-  isActive: false
-};

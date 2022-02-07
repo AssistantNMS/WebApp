@@ -12,8 +12,8 @@ import { FavouriteFloatingActionButton } from '../../components/floatingActionBu
 import { ShareDialog } from '../../components/shareDialog';
 import { IdPrefix } from '../../constants/IdPrefix';
 import { NetworkState } from '../../constants/NetworkState';
+import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
-import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { Recharge } from '../../contracts/recharge/recharge';
@@ -24,12 +24,9 @@ import { DataJsonService } from '../../services/json/DataJsonService';
 import { ToastService } from '../../services/toastService';
 import { displayCookItems, displayEggTraits, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
 import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
+import { IReduxProps } from './catalogueItem.Redux';
 
-interface IProps {
-    // Container Props
-    selectedLanguage?: string;
-    favourites: Array<FavouriteItem>;
-
+interface IProps extends IReduxProps {
     // Container State
     item: GameItemModel;
     resArray: Array<RequiredItemDetails>;
@@ -41,6 +38,7 @@ interface IProps {
     rechargedBy: Recharge;
     usedToRechargeArray: Array<Recharge>;
     eggTraitArray: Array<EggNeuralTrait>;
+    controlLookup: Array<PlatformControlMapping>;
     additionalData: Array<any>;
     networkState: NetworkState;
 
@@ -90,7 +88,10 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
         return (
             <DefaultAnimation>
                 <div className="content">
-                    <ItemHeaderRow {...props.item} openDevProperties={() => setDetailPaneOpen(!isDetailPaneOpen)}>
+                    <ItemHeaderRow {...props.item}
+                        controlLookup={props.controlLookup}
+                        openDevProperties={() => setDetailPaneOpen(!isDetailPaneOpen)}
+                    >
                         <ExpeditionAlphabetDecoder id={props.item.Id} />
                     </ItemHeaderRow>
                     <AdditionalInfoChipRow additionalData={props.additionalData} />

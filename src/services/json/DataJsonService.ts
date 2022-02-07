@@ -7,6 +7,8 @@ import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { AlphabetTranslation } from '../../contracts/data/alphabetTranslation';
 import { MetaData } from '../../contracts/data/metaData';
 import { AssistantAppLinks } from '../../contracts/data/assistantAppLinks';
+import { ControlMappingList, PlatformControlMapping } from '../../contracts/data/controlMapping';
+import { ControllerPlatformType, ToJsonProperty } from '../../contracts/enum/ControllerPlatformType';
 import { BaseJsonService } from './BaseJsonService';
 
 export class DataJsonService extends BaseJsonService {
@@ -35,6 +37,35 @@ export class DataJsonService extends BaseJsonService {
             async () => await this.getAsset<Array<QuicksilverStore>>(`data/${fileName}`),
             [fileName]
         );
+    }
+
+
+    async getAllControls(): Promise<ResultWithValue<ControlMappingList>> {
+        return this._getOrAdd(() => this._getAllControls(), ['_getAllControls']);
+    }
+    async _getAllControls(): Promise<ResultWithValue<ControlMappingList>> {
+        const result = await this.getAsset<ControlMappingList>(`data/controllerLookup.json`);
+        if (!result.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: result.errorMessage };
+
+        return result;
+    }
+
+    async getControlMapping(platform: ControllerPlatformType): Promise<ResultWithValue<Array<PlatformControlMapping>>> {
+        return this._getOrAdd(() => this._getControlMapping(platform), ['_getControlMapping', platform]);
+    }
+    async _getControlMapping(platform: ControllerPlatformType): Promise<ResultWithValue<Array<PlatformControlMapping>>> {
+        let result: any = {};
+
+        const jsonProp = ToJsonProperty(platform);
+        const getAllResult = await this.getAllControls();
+        if (!getAllResult.isSuccess) return { isSuccess: false, value: result, errorMessage: getAllResult.errorMessage };
+
+        const controlItem = getAllResult.value?.[jsonProp] ?? [];
+        return {
+            isSuccess: true,
+            value: controlItem,
+            errorMessage: ''
+        }
     }
 
     getAlphabetTranslations = () => this.getDataJsonBasic<Array<AlphabetTranslation>>('alphabetTranslations.json');

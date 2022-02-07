@@ -1,7 +1,10 @@
 import React, { ReactNode } from 'react';
+import { AppImage } from '../../constants/AppImage';
+import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 
 interface IProps {
     orig: string;
+    controlLookup?: Array<PlatformControlMapping>;
 }
 
 const paleYellowColourClass = '#C9D68B';
@@ -11,13 +14,13 @@ const paleBlueColourClass = '#83BCDB';
 const greenColourClass = '#AADE9B';
 const purpleColourClass = '#B0A5DD';
 const offWhiteColourClass = '#F5F5F5';
-const orangeColourClass = '#f3a923';
-const redColourClass = '#c03022';
+const orangeColourClass = '#F3A923';
+const redColourClass = '#C03022';
 
 const getColourValueFromTag = (tag: string) => {
 
     switch (tag.toUpperCase()) {
-        case 'IMG': return '';
+        case 'IMG': return 'replace-with-img';
 
         case 'EARTH':
         case 'TITLE':
@@ -49,8 +52,7 @@ const getColourValueFromTag = (tag: string) => {
 }
 
 export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) => {
-    console.log(props.orig);
-
+    console.log(props.orig)
     const groupRegex = new RegExp(/(<\w+>(\w+\s*)*<>)/);
     const tagStartRegex = new RegExp(/(.*)<(\w+)>(.*)/);
     const tagEndRegex = new RegExp(/(.*)<>(.*)/);
@@ -76,17 +78,19 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
             const word = words[wordIndex];
             let displayWord = word;
             let localTag = '<unused>';
+            let leftOverDisplayWordFront = '';
             let leftOverDisplayWord = '';
 
             let startMatches: Array<any> | null = tagStartRegex.exec(word);
             if (startMatches != null && startMatches.length === 4) {
+                leftOverDisplayWordFront = startMatches[1];
                 displayWord = startMatches[3];
                 localTag = '<' + startMatches[2] + '>';
                 currentColourValue = getColourValueFromTag(startMatches[2]);
             }
 
             let endMatches: Array<any> | null = tagEndRegex.exec(word);
-            let hasEndMatch = endMatches != null && endMatches.length >= 2
+            let hasEndMatch = endMatches != null && endMatches.length >= 2;
             if (hasEndMatch) {
                 displayWord = (endMatches?.[1] ?? '').replace(localTag, '');
             }
@@ -98,7 +102,25 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
                 if (wordChain.length > 1) {
                     nodes.push(renderNode(paragraphIndex, wordIndex, word, '', wordChain));
                 }
-                nodes.push(renderNode(paragraphIndex, wordIndex + 999, displayWord, currentColourValue, displayWord + ((leftOverDisplayWord.length > 0) ? '' : ' ')));
+                if (leftOverDisplayWordFront.length > 0) {
+                    nodes.push(renderNode(paragraphIndex, wordIndex + 9999, leftOverDisplayWordFront, '', leftOverDisplayWordFront));
+                }
+                if (localTag === '<IMG>') {
+                    const lookupKey = displayWord.replaceAll('(', '').replaceAll(')', '');
+                    const lookupResult = props.controlLookup?.filter?.(cl => cl.Key === lookupKey);
+                    if (lookupResult != null && lookupResult.length > 0) {
+                        nodes.push(
+                            <img
+                                key={`paragraph-${paragraphIndex}-word-${wordIndex}-${word}-${lookupResult[0].Key}`}
+                                className="descrip-img"
+                                src={`/${AppImage.controls}${lookupResult[0].Icon}`}
+                                alt={lookupResult[0].Key}
+                            />
+                        );
+                    }
+                } else {
+                    nodes.push(renderNode(paragraphIndex, wordIndex + 999, displayWord, currentColourValue, displayWord + ((leftOverDisplayWord.length > 0) ? '' : ' ')));
+                }
                 if (leftOverDisplayWord.length > 0) {
                     nodes.push(renderNode(paragraphIndex, wordIndex + 9999, leftOverDisplayWord, '', leftOverDisplayWord));
                 }
@@ -106,6 +128,7 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
             } else {
                 wordChain += displayWord + ' ';
             }
+
 
             if (hasEndMatch) {
                 currentColourValue = '';

@@ -4,6 +4,7 @@ import { initialSettingState } from './modules/setting/index';
 import { initialCartState } from './modules/cart/index';
 import { initialPortalState } from './modules/portal/index';
 import { initialFavouriteState } from './modules/favourite';
+import { StateSettingReducer } from './state/StateSettingReducer';
 
 
 export const loadStateFromLocalStorage = () => {
@@ -42,11 +43,12 @@ export const loadStateFromLocalStorage = () => {
 
 export const saveStateToLocalStorage = (store: any) => {
     const currentSettingReducer = store.getState().settingReducer;
-    const storedSettingReducer = JSON.parse(localStorage.getItem(CacheKey.SettingReducerKey) || '{}');
+    const storedSettingReducer: StateSettingReducer = JSON.parse(localStorage.getItem(CacheKey.SettingReducerKey) || '{}');
     if (storedSettingReducer == null
         || storedSettingReducer.selectedLanguage !== currentSettingReducer.selectedLanguage
         || storedSettingReducer.useAltGlyphs !== currentSettingReducer.useAltGlyphs
         || storedSettingReducer.selectedFont !== currentSettingReducer.selectedFont
+        || storedSettingReducer.chosenPlatform !== currentSettingReducer.chosenPlatform
     ) {
         localStorage.setItem(CacheKey.SettingReducerKey, JSON.stringify(currentSettingReducer));
     }

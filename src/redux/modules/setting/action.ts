@@ -1,5 +1,5 @@
-import * as type from "./type";
-import { PlatformType } from "../../../contracts/enum/PlatformType";
+import { ControllerPlatformType } from '../../../contracts/enum/ControllerPlatformType';
+import * as type from './type';
 
 export const setLanguage = (langCode: string) => {
     return {
@@ -14,7 +14,7 @@ export const toggleMenu = () => {
     }
 }
 
-export const setPlatform = (platform: PlatformType) => {
+export const setPlatform = (platform: ControllerPlatformType) => {
     return {
         platform,
         type: type.SETPLATFORM,

@@ -560,4 +560,5 @@ export enum LocaleKey {
   inProgressCommunityMission = 'inProgressCommunityMission',
   completedCommunityMission = 'completedCommunityMission',
   viewMoreOnNmsWiki = 'viewMoreOnNmsWiki',
+  platform = 'platform',
 }
