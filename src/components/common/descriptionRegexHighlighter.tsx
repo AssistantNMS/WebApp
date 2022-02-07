@@ -41,10 +41,6 @@ const getColourValueFromTag = (tag: string) => {
         case 'SPECIAL': return purpleColourClass;
         case 'VAL_ON': return offWhiteColourClass;
         case 'CATALYST': return orangeColourClass;
-
-        /*
-            [<TEMPERATURE>, tech170]
-        */
     }
 
     console.warn('unknown tag', tag);
@@ -52,7 +48,6 @@ const getColourValueFromTag = (tag: string) => {
 }
 
 export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) => {
-    console.log(props.orig)
     const groupRegex = new RegExp(/(<\w+>(\w+\s*)*<>)/);
     const tagStartRegex = new RegExp(/(.*)<(\w+)>(.*)/);
     const tagEndRegex = new RegExp(/(.*)<>(.*)/);

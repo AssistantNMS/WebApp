@@ -4,13 +4,22 @@ const util = require('util');
 const readFile = util.promisify(fs.readFile);
 
 async function generateFullJson() {
-    let fullJson = {};
-
     const siteDataContents = await readFile('./data/site.json', 'utf8');
     const siteData = JSON.parse(siteDataContents);
 
+    const allItemFolders = fs.readdirSync('../public/assets/json', { withFileTypes: true });
+    const directories = allItemFolders.filter(dirent => dirent.isDirectory()).map(dirent => dirent.name);
+
+    await writeProjectJson('en', siteData, 'project');
+    for (const dir of directories) {
+        if (dir === 'en') continue;
+        await writeProjectJson(dir, siteData, `project-${dir}`);
+    }
+}
+
+async function writeProjectJson(dir, siteData, destFile) {
     // Read game data
-    const baseJsonPath = '../public/assets/json/en/';
+    const baseJsonPath = `../public/assets/json/${dir}/`;
     const buildings = await readItemsFromFile(`${baseJsonPath}Buildings.lang.json`);
     const constructedTechnology = await readItemsFromFile(`${baseJsonPath}ConstructedTechnology.lang.json`);
     const cooking = await readItemsFromFile(`${baseJsonPath}Cooking.lang.json`);
@@ -37,14 +46,13 @@ async function generateFullJson() {
         ...technologyModule,
         ...tradeItems,
         ...upgradeModules,
-    ];
+    ];    
 
-
-    fullJson = { ...siteData, ...{ allItems: allItems } };
-
-    fs.writeFile('./data/project.json', JSON.stringify(fullJson), ['utf8'], () => { });
+    const fullJson = { ...siteData, ...{ allItems: allItems } };    
+    fs.writeFile(`./data/${destFile}.json`, JSON.stringify(fullJson), ['utf8'], () => { });
 }
 
+const descripTagRegex = /(<\w*>)/g;
 async function readItemsFromFile(filePath) {
     const fileContents = await readFile(filePath, 'utf8');
     return JSON.parse(fileContents).map(item => ({
@@ -52,7 +60,7 @@ async function readItemsFromFile(filePath) {
         "Icon": (item.CdnUrl != null) ? item.CdnUrl : `https://app.nmsassistant.com/assets/images/${item.Icon}`,
         "Name": item.Name,
         "Group": item.Group,
-        "Description": item.Description,
+        "Description": (item.Description == null ? '' : item.Description).replaceAll(descripTagRegex, ''),
         "Colour": item.Colour,
     }));
 }
