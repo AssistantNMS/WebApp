@@ -60,7 +60,7 @@ async function readItemsFromFile(filePath) {
         "Icon": (item.CdnUrl != null) ? item.CdnUrl : `https://app.nmsassistant.com/assets/images/${item.Icon}`,
         "Name": item.Name,
         "Group": item.Group,
-        "Description": (item.Description ?? '').replaceAll(descripTagRegex, ''),
+        "Description": (item.Description == null ? '' : item.Description).replaceAll(descripTagRegex, ''),
         "Colour": item.Colour,
     }));
 }
