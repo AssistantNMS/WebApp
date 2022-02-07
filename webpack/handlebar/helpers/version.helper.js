@@ -1,5 +1,3 @@
-module.exports = function (version) {
-    return function (context, options) {
-        return version;
-    }
+module.exports = function (context, options) {
+    return process.env['NODE_ENV'];
 };

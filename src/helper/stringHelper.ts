@@ -3,5 +3,5 @@ export const itemNameUrlMapper = (orig: string) => {
 }
 
 export const removeXmlTags = (orig: string) => {
-    return orig.replace(/\s/g, '-');
+    return orig.replace(/(<\w*>)/g, ' ');
 }
