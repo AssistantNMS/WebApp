@@ -2,9 +2,9 @@
   {
     "Id": "build1",
     "Icon": "building/1.png",
-    "Name": "大型货船房间C",
-    "Group": "货船内部模块",
-    "Description": "这种扩展模块允许在大型星际飞船内快速建造居住空间。\n\n制成的建筑单位配备了压力舱壁和所有必要的配件点。",
+    "Name": "Large Freighter Room C",
+    "Group": "Freighter Interior Module",
+    "Description": "This expansion module allows for the rapid construction of habitable spaces inside large starships.\n\nConstruction unit is fabricated complete with pressure bulkhead and all necessary attachment points.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -1748,9 +1748,9 @@
   {
     "Id": "build66",
     "Icon": "building/66.png",
-    "Name": "方形房间",
-    "Group": "建造模块",
-    "Description": "基地建筑核心模块的方形替代物，提供向四周扩张的中央区。",
+    "Name": "Square Room",
+    "Group": "Construction module",
+    "Description": "A square alternative to the core module for base construction, providing a generous central space on which to expand.",
     "BaseValueUnits": 2.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -3050,9 +3050,9 @@
   {
     "Id": "build141",
     "Icon": "building/141.png",
-    "Name": "植物容器3",
-    "Group": "装饰",
-    "Description": "可建造的装饰，美化你的基地。",
+    "Name": "Flora Containment 3",
+    "Group": "Decoration",
+    "Description": "Buildable ornament to beautify your base.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -3354,9 +3354,9 @@
   {
     "Id": "build156",
     "Icon": "building/156.png",
-    "Name": "转角桌",
-    "Group": "家具",
-    "Description": "通用型工作面，由非磁性的抗腐蚀材料制成。",
+    "Name": "Corner Table",
+    "Group": "Furniture",
+    "Description": "An all-purpose work surface built from non-magnetic, corrosion resistant materials.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -5399,11 +5399,12 @@
   {
     "Id": "build270",
     "Icon": "building/270.png",
-    "Name": "奇异动物群系贴花",
-    "Group": "装饰",
-    "Description": "可移除装饰贴花。",
+    "Name": "Curious Fauna Decal",
+    "Group": "Decoration",
+    "Description": "Placeable decorative decals.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
+    "Additional": "",
     "IsCraftable": true,
     "IsConsumable": false,
     "Colour": "2C7C9F",
@@ -6940,7 +6941,7 @@
   },
   {
     "Id": "build327",
-    "Icon": "building/315.png",
+    "Icon": "building/327.png",
     "Name": "红色烟花",
     "Group": "消耗型烟火技术设备",
     "Description": "一枚包含大量镁和镉的奢华烟花。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
@@ -7043,7 +7044,7 @@
   },
   {
     "Id": "build331",
-    "Icon": "building/315.png",
+    "Icon": "building/331.png",
     "Name": "绿色烟花",
     "Group": "消耗型烟火技术设备",
     "Description": "一枚包含大量镁和艾梅里尔的奢华烟花。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
@@ -15875,6 +15876,888 @@
       {
         "Id": "prod54",
         "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build814",
+    "Icon": "building/1.png",
+    "Name": "大型货船房间A",
+    "Group": "货船内部模块",
+    "Description": "这种扩展模块允许在大型星际飞船内快速建造居住空间。\n\n制成的建筑单位配备了压力舱壁和所有必要的配件点。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build815",
+    "Icon": "building/1.png",
+    "Name": "大型货船房间B",
+    "Group": "货船内部模块",
+    "Description": "这种扩展模块允许在大型星际飞船内快速建造居住空间。\n\n制成的建筑单位配备了压力舱壁和所有必要的配件点。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build816",
+    "Icon": "building/1.png",
+    "Name": "大型货船房间C",
+    "Group": "货船内部模块",
+    "Description": "这种扩展模块允许在大型星际飞船内快速建造居住空间。\n\n制成的建筑单位配备了压力舱壁和所有必要的配件点。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build817",
+    "Icon": "building/66.png",
+    "Name": "方形房间",
+    "Group": "建造模块",
+    "Description": "基地建筑核心模块的方形替代物，提供向四周扩张的中央区。",
+    "BaseValueUnits": 3.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -10.0,
+    "BlueprintCost": 3,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build818",
+    "Icon": "building/66.png",
+    "Name": "方形房间",
+    "Group": "建造模块",
+    "Description": "基地建筑核心模块的方形替代物，提供向四周扩张的中央区。",
+    "BaseValueUnits": 2.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 2,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build819",
+    "Icon": "building/141.png",
+    "Name": "植物容器1",
+    "Group": "装饰",
+    "Description": "可建造的装饰，美化你的基地。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build820",
+    "Icon": "building/141.png",
+    "Name": "植物容器2",
+    "Group": "装饰",
+    "Description": "可建造的装饰，美化你的基地。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build821",
+    "Icon": "building/141.png",
+    "Name": "植物容器3",
+    "Group": "装饰",
+    "Description": "可建造的装饰，美化你的基地。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build822",
+    "Icon": "building/156.png",
+    "Name": "圆桌",
+    "Group": "家具",
+    "Description": "通用型工作面，由非磁性的抗腐蚀材料制成。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build823",
+    "Icon": "building/156.png",
+    "Name": "六角桌",
+    "Group": "家具",
+    "Description": "通用型工作面，由非磁性的抗腐蚀材料制成。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build824",
+    "Icon": "building/156.png",
+    "Name": "转角桌",
+    "Group": "家具",
+    "Description": "通用型工作面，由非磁性的抗腐蚀材料制成。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build825",
+    "Icon": "building/270.png",
+    "Name": "白色设计贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build826",
+    "Icon": "building/270.png",
+    "Name": "白色边境贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build828",
+    "Icon": "building/270.png",
+    "Name": "阿特拉斯贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build829",
+    "Icon": "building/270.png",
+    "Name": "'0'贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build830",
+    "Icon": "building/270.png",
+    "Name": "'1'贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build831",
+    "Icon": "building/270.png",
+    "Name": "'2'贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build832",
+    "Icon": "building/270.png",
+    "Name": "'3'贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build833",
+    "Icon": "building/270.png",
+    "Name": "'4'贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build834",
+    "Icon": "building/270.png",
+    "Name": "'5'贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build835",
+    "Icon": "building/270.png",
+    "Name": "'6'贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build836",
+    "Icon": "building/270.png",
+    "Name": "'7'贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build837",
+    "Icon": "building/270.png",
+    "Name": "'8'贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build838",
+    "Icon": "building/270.png",
+    "Name": "'9'贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build839",
+    "Icon": "building/270.png",
+    "Name": "维吉恩贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build840",
+    "Icon": "building/270.png",
+    "Name": "吉克贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build841",
+    "Icon": "building/270.png",
+    "Name": "科尔瓦克斯贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build842",
+    "Icon": "building/270.png",
+    "Name": "小生物贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build843",
+    "Icon": "building/270.png",
+    "Name": "奇异动物群系贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build844",
+    "Icon": "building/270.png",
+    "Name": "蓝色设计贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build845",
+    "Icon": "building/270.png",
+    "Name": "绿色设计贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build846",
+    "Icon": "building/270.png",
+    "Name": "红色设计贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build847",
+    "Icon": "building/270.png",
+    "Name": "黑色设计贴花",
+    "Group": "装饰",
+    "Description": "可移除装饰贴花。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build848",
+    "Icon": "building/336.png",
+    "Name": "方形落地灯",
+    "Group": "装配",
+    "Description": "低耗能灯，使用期得到了延长，具有完全可回收组件。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build849",
+    "Icon": "building/336.png",
+    "Name": "圆形落地灯",
+    "Group": "装配",
+    "Description": "低耗能灯，使用期得到了延长，具有完全可回收组件。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build850",
+    "Icon": "building/336.png",
+    "Name": "有盖落地灯",
+    "Group": "装配",
+    "Description": "低耗能灯，使用期得到了延长，具有完全可回收组件。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 5
       }
     ],
     "StatBonuses": [],
