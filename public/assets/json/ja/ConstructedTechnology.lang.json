@@ -1060,57 +1060,32 @@
   },
   {
     "Id": "conTech35",
-    "Icon": "constructedTechnology/35.png",
-    "Name": "貯蔵コンテナ",
-    "Group": "倉庫",
-    "Description": "在庫アイテム用の広々とした追加倉庫。",
-    "BaseValueUnits": 5.0,
+    "Icon": "constructedTechnology/10.png",
+    "Name": "基地テレポートモジュール",
+    "Group": "長距離物質転送装置",
+    "Description": "<TECHNOLOGY>個人用のテレポート装置<>で、ネットワークに接続された自分の基地と宇宙ステーションのターミナルを素早く移動できる。\n\n分離することのできない物質を挿入する場合は、使用前にネットワークの整合性を検証すること。",
+    "BaseValueUnits": 2.0,
     "CurrencyType": "None",
     "IsCraftable": true,
     "IsConsumable": false,
     "Colour": "2C7C9F",
-    "Power": -5.0,
+    "Power": -20.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/35.png",
-    "BlueprintCost": 5,
-    "BlueprintCostType": "SalvagedData",
-    "BlueprintSource": 0,
-    "RequiredItems": [
-      {
-        "Id": "raw10",
-        "Quantity": 35
-      },
-      {
-        "Id": "raw12",
-        "Quantity": 20
-      }
-    ],
-    "StatBonuses": [],
-    "ConsumableRewards": [],
-    "HasDevProperties": true
-  },
-  {
-    "Id": "conTech36",
-    "Icon": "constructedTechnology/36.png",
-    "Name": "貨物船貯蔵箱",
-    "Group": "貨物船カスタムモジュール",
-    "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
-    "BaseValueUnits": 5.0,
-    "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
-    "Colour": "2C7C9F",
-    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/36.png",
-    "BlueprintCost": 5,
+    "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw10",
-        "Quantity": 50
+        "Id": "prod3",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 4
       },
       {
         "Id": "raw12",
-        "Quantity": 20
+        "Quantity": 40
       }
     ],
     "StatBonuses": [],
@@ -1918,6 +1893,576 @@
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
     "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech65",
+    "Icon": "constructedTechnology/65.png",
+    "Name": "貯蔵コンテナ",
+    "Group": "倉庫",
+    "Description": "在庫アイテム用の広々とした追加倉庫。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech66",
+    "Icon": "constructedTechnology/66.png",
+    "Name": "貯蔵コンテナ",
+    "Group": "倉庫",
+    "Description": "在庫アイテム用の広々とした追加倉庫。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech67",
+    "Icon": "constructedTechnology/67.png",
+    "Name": "貯蔵コンテナ",
+    "Group": "倉庫",
+    "Description": "在庫アイテム用の広々とした追加倉庫。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech68",
+    "Icon": "constructedTechnology/68.png",
+    "Name": "貯蔵コンテナ",
+    "Group": "倉庫",
+    "Description": "在庫アイテム用の広々とした追加倉庫。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech69",
+    "Icon": "constructedTechnology/69.png",
+    "Name": "貯蔵コンテナ",
+    "Group": "倉庫",
+    "Description": "在庫アイテム用の広々とした追加倉庫。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech70",
+    "Icon": "constructedTechnology/70.png",
+    "Name": "貯蔵コンテナ",
+    "Group": "倉庫",
+    "Description": "在庫アイテム用の広々とした追加倉庫。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech71",
+    "Icon": "constructedTechnology/71.png",
+    "Name": "貯蔵コンテナ",
+    "Group": "倉庫",
+    "Description": "在庫アイテム用の広々とした追加倉庫。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech72",
+    "Icon": "constructedTechnology/72.png",
+    "Name": "貯蔵コンテナ",
+    "Group": "倉庫",
+    "Description": "在庫アイテム用の広々とした追加倉庫。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech73",
+    "Icon": "constructedTechnology/73.png",
+    "Name": "貯蔵コンテナ",
+    "Group": "倉庫",
+    "Description": "在庫アイテム用の広々とした追加倉庫。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech74",
+    "Icon": "constructedTechnology/74.png",
+    "Name": "貯蔵コンテナ",
+    "Group": "倉庫",
+    "Description": "在庫アイテム用の広々とした追加倉庫。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech75",
+    "Icon": "constructedTechnology/75.png",
+    "Name": "貨物船貯蔵箱",
+    "Group": "貨物船カスタムモジュール",
+    "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech76",
+    "Icon": "constructedTechnology/76.png",
+    "Name": "貨物船貯蔵箱",
+    "Group": "貨物船カスタムモジュール",
+    "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech77",
+    "Icon": "constructedTechnology/77.png",
+    "Name": "貨物船貯蔵箱",
+    "Group": "貨物船カスタムモジュール",
+    "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech78",
+    "Icon": "constructedTechnology/78.png",
+    "Name": "貨物船貯蔵箱",
+    "Group": "貨物船カスタムモジュール",
+    "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech79",
+    "Icon": "constructedTechnology/79.png",
+    "Name": "貨物船貯蔵箱",
+    "Group": "貨物船カスタムモジュール",
+    "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech80",
+    "Icon": "constructedTechnology/80.png",
+    "Name": "貨物船貯蔵箱",
+    "Group": "貨物船カスタムモジュール",
+    "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech81",
+    "Icon": "constructedTechnology/81.png",
+    "Name": "貨物船貯蔵箱",
+    "Group": "貨物船カスタムモジュール",
+    "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech82",
+    "Icon": "constructedTechnology/82.png",
+    "Name": "貨物船貯蔵箱",
+    "Group": "貨物船カスタムモジュール",
+    "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech83",
+    "Icon": "constructedTechnology/83.png",
+    "Name": "貨物船貯蔵箱",
+    "Group": "貨物船カスタムモジュール",
+    "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech84",
+    "Icon": "constructedTechnology/84.png",
+    "Name": "貨物船貯蔵箱",
+    "Group": "貨物船カスタムモジュール",
+    "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true

@@ -17,7 +17,7 @@ async function generateItemPage() {
     Handlebars.registerHelper('loud', loudHelper);
     Handlebars.registerHelper('urlref', urlrefHelper);
     Handlebars.registerHelper('version', versionHelper);
-    
+
     const allItemFolders = fs.readdirSync('../public/assets/json', { withFileTypes: true });
     const directories = allItemFolders.filter(dirent => dirent.isDirectory()).map(dirent => dirent.name);
 
@@ -26,9 +26,8 @@ async function generateItemPage() {
 
     await writeTemplateFile(templateFunc, 'en', `project`, `link/`);
     for (const dir of directories) {
-        if (dir === 'en') continue;
         await writeTemplateFile(templateFunc, dir, `project-${dir}`, `link/${dir}/`);
-    }    
+    }
 }
 
 async function writeTemplateFile(templateFunc, dir, sourceFile, destFolder) {
@@ -43,7 +42,7 @@ async function writeTemplateFile(templateFunc, dir, sourceFile, destFolder) {
             data: { ...item }
         };
         const fullDir = `../public/link/${dir}`;
-        if (!fs.existsSync(fullDir)){
+        if (!fs.existsSync(fullDir)) {
             fs.mkdirSync(fullDir);
         }
 

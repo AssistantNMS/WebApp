@@ -12,7 +12,6 @@ async function generateFullJson() {
 
     await writeProjectJson('en', siteData, 'project');
     for (const dir of directories) {
-        if (dir === 'en') continue;
         await writeProjectJson(dir, siteData, `project-${dir}`);
     }
 }
@@ -46,9 +45,9 @@ async function writeProjectJson(dir, siteData, destFile) {
         ...technologyModule,
         ...tradeItems,
         ...upgradeModules,
-    ];    
+    ];
 
-    const fullJson = { ...siteData, ...{ allItems: allItems } };    
+    const fullJson = { ...siteData, ...{ allItems: allItems } };
     fs.writeFile(`./data/${destFile}.json`, JSON.stringify(fullJson), ['utf8'], () => { });
 }
 
@@ -60,7 +59,7 @@ async function readItemsFromFile(filePath) {
         "Icon": (item.CdnUrl != null) ? item.CdnUrl : `https://app.nmsassistant.com/assets/images/${item.Icon}`,
         "Name": item.Name,
         "Group": item.Group,
-        "Description": (item.Description == null ? '' : item.Description).replaceAll(descripTagRegex, ''),
+        "Description": (item.Description == null ? '' : item.Description).replace(descripTagRegex, ''),
         "Colour": item.Colour,
     }));
 }

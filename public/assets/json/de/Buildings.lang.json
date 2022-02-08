@@ -2,9 +2,9 @@
   {
     "Id": "build1",
     "Icon": "building/1.png",
-    "Name": "Großer Frachterraum C",
-    "Group": "Frachter-Innenmodul",
-    "Description": "Dank diesem Erweiterungsmodul können in großen Raumschiffen schnell bewohnbare Räume gebaut werden.\n\nDie Baueinheit wird mit Druckschotten und allen nötigen Aufsatzpunkten gefertigt.",
+    "Name": "Large Freighter Room C",
+    "Group": "Freighter Interior Module",
+    "Description": "This expansion module allows for the rapid construction of habitable spaces inside large starships.\n\nConstruction unit is fabricated complete with pressure bulkhead and all necessary attachment points.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -1748,9 +1748,9 @@
   {
     "Id": "build66",
     "Icon": "building/66.png",
-    "Name": "Quadratischer Raum",
-    "Group": "Konstruktionsmodul",
-    "Description": "Eine quadratische Alternative des Kernmoduls für die Basiskonstruktion. Bietet einen großzügigen zentralen Raum, der erweitert werden kann.",
+    "Name": "Square Room",
+    "Group": "Construction module",
+    "Description": "A square alternative to the core module for base construction, providing a generous central space on which to expand.",
     "BaseValueUnits": 2.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -3050,9 +3050,9 @@
   {
     "Id": "build141",
     "Icon": "building/141.png",
-    "Name": "Flora-Behälter 3",
-    "Group": "Dekoration",
-    "Description": "Herstellbares Ornament zur Verschönerung deiner Basis.",
+    "Name": "Flora Containment 3",
+    "Group": "Decoration",
+    "Description": "Buildable ornament to beautify your base.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -3354,9 +3354,9 @@
   {
     "Id": "build156",
     "Icon": "building/156.png",
-    "Name": "Ecktisch",
-    "Group": "Möbel",
-    "Description": "Eine Allzweckarbeitsfläche, hergestellt aus nichtmagnetischen, korrosionsbeständigen Materialien.",
+    "Name": "Corner Table",
+    "Group": "Furniture",
+    "Description": "An all-purpose work surface built from non-magnetic, corrosion resistant materials.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -5397,31 +5397,6 @@
     "HasDevProperties": true
   },
   {
-    "Id": "build270",
-    "Icon": "building/270.png",
-    "Name": "„Kuriose Fauna“-Motiv",
-    "Group": "Dekoration",
-    "Description": "Platzierbare, dekorative Motive.",
-    "BaseValueUnits": 1.0,
-    "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
-    "Colour": "2C7C9F",
-    "CdnUrl": "https://cdn.nmsassistant.com/building/270.png",
-    "BlueprintCost": 1,
-    "BlueprintCostType": "SalvagedData",
-    "BlueprintSource": 0,
-    "RequiredItems": [
-      {
-        "Id": "raw1",
-        "Quantity": 20
-      }
-    ],
-    "StatBonuses": [],
-    "ConsumableRewards": [],
-    "HasDevProperties": true
-  },
-  {
     "Id": "build272",
     "Icon": "building/272.png",
     "Name": "Verlorene Tiefseetaucherkugel",
@@ -6940,7 +6915,7 @@
   },
   {
     "Id": "build327",
-    "Icon": "building/315.png",
+    "Icon": "building/327.png",
     "Name": "Rotes Feuerwerk",
     "Group": "Verbrauchbare Pyrotechnik-Apparatur",
     "Description": "Ein Luxusfeuerwerk – mit viel Magnesium und Cadmium. Zünde es, um glanzvolle Bilder am Himmel zu erzeugen.\n\nDie Abschussröhre kann über das <VAL_ON>Baumenü<> (<IMG>BUILD_MENU<>) platziert werden. <FUEL>Warnung<>: Niemals damit auf lebende Kreaturen zielen. Nicht empfohlen für den Gebrauch in geschlossenen Räumen.",
@@ -7043,7 +7018,7 @@
   },
   {
     "Id": "build331",
-    "Icon": "building/315.png",
+    "Icon": "building/331.png",
     "Name": "Grünes Feuerwerk",
     "Group": "Verbrauchbare Pyrotechnik-Apparatur",
     "Description": "Ein Luxusfeuerwerk – mit viel Magnesium und Emeril. Zünde es, um glanzvolle Bilder am Himmel zu erzeugen.\n\nDie Abschussröhre kann über das <VAL_ON>Baumenü<> (<IMG>BUILD_MENU<>) platziert werden. <FUEL>Warnung<>: Niemals damit auf lebende Kreaturen zielen. Nicht empfohlen für den Gebrauch in geschlossenen Räumen.",
@@ -15857,24 +15832,881 @@
     "HasDevProperties": true
   },
   {
-    "Id": "build813",
-    "Icon": "building/432.png",
-    "Name": "Blasedukt",
-    "Group": "Dekoratives Aquädukt",
-    "Description": "Dieses durchsichtige Glasaquädukt schließt eine ewig umher fließende Menge Flüssigkeit ein.\n\nVerschweiße es mit anderen Formen, um auf diese Weise geradezu hypnotisch wirkende Ausstellungsstücke in deiner Basis zu kreieren.",
-    "BaseValueUnits": 500.0,
+    "Id": "build814",
+    "Icon": "building/1.png",
+    "Name": "Großer Frachterraum A",
+    "Group": "Frachter-Innenmodul",
+    "Description": "Dank diesem Erweiterungsmodul können in großen Raumschiffen schnell bewohnbare Räume gebaut werden.\n\nDie Baueinheit wird mit Druckschotten und allen nötigen Aufsatzpunkten gefertigt.",
+    "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
     "IsConsumable": false,
-    "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "prod54",
-        "Quantity": 1
+        "Id": "raw7",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build815",
+    "Icon": "building/1.png",
+    "Name": "Großer Frachterraum B",
+    "Group": "Frachter-Innenmodul",
+    "Description": "Dank diesem Erweiterungsmodul können in großen Raumschiffen schnell bewohnbare Räume gebaut werden.\n\nDie Baueinheit wird mit Druckschotten und allen nötigen Aufsatzpunkten gefertigt.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build816",
+    "Icon": "building/1.png",
+    "Name": "Großer Frachterraum C",
+    "Group": "Frachter-Innenmodul",
+    "Description": "Dank diesem Erweiterungsmodul können in großen Raumschiffen schnell bewohnbare Räume gebaut werden.\n\nDie Baueinheit wird mit Druckschotten und allen nötigen Aufsatzpunkten gefertigt.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build817",
+    "Icon": "building/66.png",
+    "Name": "Quadratischer Raum",
+    "Group": "Konstruktionsmodul",
+    "Description": "Eine quadratische Alternative des Kernmoduls für die Basiskonstruktion. Bietet einen großzügigen zentralen Raum, der erweitert werden kann.",
+    "BaseValueUnits": 3.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -10.0,
+    "BlueprintCost": 3,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build818",
+    "Icon": "building/66.png",
+    "Name": "Quadratischer Raum",
+    "Group": "Konstruktionsmodul",
+    "Description": "Eine quadratische Alternative des Kernmoduls für die Basiskonstruktion. Bietet einen großzügigen zentralen Raum, der erweitert werden kann.",
+    "BaseValueUnits": 2.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 2,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build819",
+    "Icon": "building/141.png",
+    "Name": "Flora-Behälter 1",
+    "Group": "Dekoration",
+    "Description": "Herstellbares Ornament zur Verschönerung deiner Basis.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build820",
+    "Icon": "building/141.png",
+    "Name": "Flora-Behälter 2",
+    "Group": "Dekoration",
+    "Description": "Herstellbares Ornament zur Verschönerung deiner Basis.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build821",
+    "Icon": "building/141.png",
+    "Name": "Flora-Behälter 3",
+    "Group": "Dekoration",
+    "Description": "Herstellbares Ornament zur Verschönerung deiner Basis.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build822",
+    "Icon": "building/156.png",
+    "Name": "Runder Tisch",
+    "Group": "Möbel",
+    "Description": "Eine Allzweckarbeitsfläche, hergestellt aus nichtmagnetischen, korrosionsbeständigen Materialien.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build823",
+    "Icon": "building/156.png",
+    "Name": "Sechseckiger Tisch",
+    "Group": "Möbel",
+    "Description": "Eine Allzweckarbeitsfläche, hergestellt aus nichtmagnetischen, korrosionsbeständigen Materialien.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build824",
+    "Icon": "building/156.png",
+    "Name": "Ecktisch",
+    "Group": "Möbel",
+    "Description": "Eine Allzweckarbeitsfläche, hergestellt aus nichtmagnetischen, korrosionsbeständigen Materialien.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build825",
+    "Icon": "building/825.png",
+    "Name": "Weißes Gestaltungsmotiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build826",
+    "Icon": "building/826.png",
+    "Name": "Weißes Randmotiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build828",
+    "Icon": "building/828.png",
+    "Name": "Atlas-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build829",
+    "Icon": "building/829.png",
+    "Name": "‚0‘-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build830",
+    "Icon": "building/830.png",
+    "Name": "‚1‘-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build831",
+    "Icon": "building/831.png",
+    "Name": "‚2‘-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build832",
+    "Icon": "building/832.png",
+    "Name": "‚3‘-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build833",
+    "Icon": "building/833.png",
+    "Name": "‚4‘-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build834",
+    "Icon": "building/834.png",
+    "Name": "‚5‘-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build835",
+    "Icon": "building/835.png",
+    "Name": "‚6‘-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build836",
+    "Icon": "building/836.png",
+    "Name": "‚7‘-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build837",
+    "Icon": "building/837.png",
+    "Name": "‚8‘-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build838",
+    "Icon": "building/838.png",
+    "Name": "‚9‘-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build839",
+    "Icon": "building/839.png",
+    "Name": "Vy‘keen-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build840",
+    "Icon": "building/840.png",
+    "Name": "Gek-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build841",
+    "Icon": "building/841.png",
+    "Name": "Korvax-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build842",
+    "Icon": "building/842.png",
+    "Name": "Kreaturenmotiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build843",
+    "Icon": "building/843.png",
+    "Name": "„Kuriose Fauna“-Motiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build844",
+    "Icon": "building/844.png",
+    "Name": "Blaues Gestaltungsmotiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build845",
+    "Icon": "building/845.png",
+    "Name": "Grünes Gestaltungsmotiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build846",
+    "Icon": "building/846.png",
+    "Name": "Rotes Gestaltungsmotiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build847",
+    "Icon": "building/847.png",
+    "Name": "Schwarzes Gestaltungsmotiv",
+    "Group": "Dekoration",
+    "Description": "Platzierbare, dekorative Motive.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build848",
+    "Icon": "building/336.png",
+    "Name": "Eckige Stehlampe",
+    "Group": "Einbauteil",
+    "Description": "Licht mit geringem Energieverbrauch, verlängerter Lebensdauer und voll recycelbaren Komponenten.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build849",
+    "Icon": "building/336.png",
+    "Name": "Runde Stehlampe",
+    "Group": "Einbauteil",
+    "Description": "Licht mit geringem Energieverbrauch, verlängerter Lebensdauer und voll recycelbaren Komponenten.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build850",
+    "Icon": "building/336.png",
+    "Name": "Stehlampe mit Schirm",
+    "Group": "Einbauteil",
+    "Description": "Licht mit geringem Energieverbrauch, verlängerter Lebensdauer und voll recycelbaren Komponenten.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 5
       }
     ],
     "StatBonuses": [],
