@@ -16,9 +16,10 @@ export const toggleHtmlNodeClass = (selector: string, className: string): boolea
 
 export const updateUrl = (id: string, title: string, selectedLanguage?: string) => {
     const urlTitle = itemNameUrlMapper(title);
-    const urlSuffix = (selectedLanguage != null)
-        ? `${selectedLanguage}/${urlTitle}`
-        : urlTitle
+    // const urlSuffix = (selectedLanguage != null)
+    //     ? `${selectedLanguage}/${urlTitle}`
+    //     : urlTitle
+    const urlSuffix = urlTitle;
     window?.history?.replaceState?.(
         null,
         getNewDocumentTitle(title),

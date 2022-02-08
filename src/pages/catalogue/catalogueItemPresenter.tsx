@@ -63,10 +63,12 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
             selectedLanguage: props.selectedLanguage!,
             toastService: props.toastService,
         }
-        components.push(<ShareDialog
-            key="share-dialog"
-            {...shareDialogProps}
-        />);
+        components.push(
+            <ShareDialog
+                key="share-dialog"
+                {...shareDialogProps}
+            />
+        );
 
         if (!props.item.Id.includes(IdPrefix.Cooking)) {
             components.push(CartFloatingActionButton(props.addThisItemToCart));
@@ -132,7 +134,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
             {handleLoadingOrError()}
 
             {getFloatingActionButtons()}
-            <div className="col-12" style={{ marginBottom: '2em', marginTop: '2em' }}></div>
+            <div className="col-12" style={{ marginTop: '8em' }}></div>
         </>
     );
 }
