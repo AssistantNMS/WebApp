@@ -28,14 +28,18 @@ export const ShareDialog: React.FC<IProps> = (props: IProps) => {
         params.push(itemNameUrlMapper(props.itemName));
     }
     const paramString = (params.length > 0) ? ('?' + params.join('&')) : '';
-    const shareableLink = `https://app.nmsassistant.com/link/${props.id}.html${paramString}`;
-    const shareContent: string = i18next.t(LocaleKey.shareContent) + ' \n' + shareableLink;
+    const baseShareableLink = 'https://app.nmsassistant.com/link';
+    let fullLink = `${baseShareableLink}/${props.selectedLanguage}/${props.id}.html${paramString}`;
+    if (props.selectedLanguage === 'en') {
+        fullLink = `${baseShareableLink}/${props.id}.html${paramString}`;
+    }
+    const shareContent: string = i18next.t(LocaleKey.shareContent) + ' \n' + fullLink;
     const waShareContent: string = i18next.t(LocaleKey.shareContent).replace(/\s{1}[#]\w+/g, '');
     const fbShareContent: string = 'https://www.facebook.com/sharer/sharer.php?u=https://nmsassistant.com';
 
     const copyFunc = (e: any) => {
         e?.preventDefault?.();
-        navigator?.clipboard?.writeText?.(shareableLink)?.then?.(() => {
+        navigator?.clipboard?.writeText?.(fullLink)?.then?.(() => {
             props.toastService.success(<span>Copied!</span>)
         });
     }
@@ -51,7 +55,7 @@ export const ShareDialog: React.FC<IProps> = (props: IProps) => {
                     <input type="text"
                         className="form-control input-url"
                         readOnly
-                        value={shareableLink}
+                        value={fullLink}
                         style={{ marginTop: '0.5em', marginBottom: '0.5em' }}
                     />
                     <div className="row">

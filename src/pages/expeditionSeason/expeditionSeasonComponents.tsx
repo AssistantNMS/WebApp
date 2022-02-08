@@ -58,6 +58,7 @@ interface IExpeditionSeasonHeaderProps {
     seasonDetails?: ExpeditionSeason;
     useAltGlyphs: boolean;
     networkState: NetworkState;
+    setDetailPane: (newNode: ReactNode, snapPoint: number) => void;
 }
 
 export const ExpeditionSeasonHeader: React.FC<IExpeditionSeasonHeaderProps> = (props: IExpeditionSeasonHeaderProps) => {
@@ -83,6 +84,27 @@ export const ExpeditionSeasonHeader: React.FC<IExpeditionSeasonHeaderProps> = (p
                     useAltGlyphs={props.useAltGlyphs}
                 />
             </div>
+            {
+                props.seasonDetails?.Rewards != null &&
+                (
+                    <>
+                        <div className="col-12">
+                            <hr className="mt-2em" />
+                        </div>
+                        <div className="col-12">
+                            <h3 style={{ margin: 0 }}>{i18next.t(LocaleKey.rewards)}</h3>
+                        </div>
+                        <div className="col-12 mt-1em mb-1em">
+                            <GenericListPresenter
+                                isCentered={shouldListBeCentered(props.seasonDetails.Rewards.length)}
+                                list={props.seasonDetails.Rewards}
+                                presenter={ExpeditionSeasonRewardTile}
+                                identifier={(item: ExpeditionSeasonReward) => item.Id}
+                            />
+                        </div>
+                    </>
+                )
+            }
         </div>
     );
 }
