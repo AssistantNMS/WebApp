@@ -77,6 +77,12 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
         }
     }
 
+    const openDetailPaneFunc = (newNode: ReactNode, snapPoint: number = 400) => {
+        setDetailPane(newNode);
+        setDetailPaneOpen(true);
+        setSnapPoint(snapPoint);
+    }
+
     const title = i18next.t(LocaleKey.seasonalExpedition);
     return (
         <DefaultAnimation>
@@ -88,16 +94,13 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
                         networkState={expeditionStatus}
                         seasonDetails={expedition}
                         useAltGlyphs={props.useAltGlyphs}
+                        setDetailPane={openDetailPaneFunc}
                     />
                     <hr />
                     <ExpeditionSeasonPhases
                         networkState={expeditionStatus}
                         phases={expedition?.Phases}
-                        setDetailPane={(newNode: ReactNode, snapPoint: number = 400) => {
-                            setDetailPane(newNode);
-                            setDetailPaneOpen(true);
-                            setSnapPoint(snapPoint);
-                        }}
+                        setDetailPane={openDetailPaneFunc}
                     />
                 </div>
             </div>
