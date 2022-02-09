@@ -32,6 +32,7 @@ export const GameItemListTileUnconnected: React.FC<IProps> = (props: IProps) => 
     const containerRef = useRef(null);
     const itemIsFavourited = (props.favourites ?? []).findIndex(f => f.Id === props.item.Id) >= 0;
     const iconString = itemIsFavourited ? 'star' : 'star_border';
+
     return (
         <Link to={`${catalogueItem}/${props.item.Id}`} ref={containerRef} data-id="GameItemListTile" className="item" draggable={false}>
             <TextContainer text={props.item.Name} />

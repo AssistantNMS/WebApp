@@ -101,7 +101,7 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
                     nodes.push(renderNode(paragraphIndex, wordIndex + 9999, leftOverDisplayWordFront, '', leftOverDisplayWordFront));
                 }
                 if (localTag === '<IMG>') {
-                    const lookupKey = displayWord.replaceAll('(', '').replaceAll(')', '');
+                    const lookupKey = (displayWord ?? '').replaceAll('(', '').replaceAll(')', '');
                     const lookupResult = props.controlLookup?.filter?.(cl => cl.Key === lookupKey);
                     if (lookupResult != null && lookupResult.length > 0) {
                         nodes.push(

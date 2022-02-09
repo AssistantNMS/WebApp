@@ -175,7 +175,7 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
   });
   const expeditionsResult = await expeditionsTask;
   if (expeditionsResult.isSuccess) {
-    subs = expeditionsResult.value
+    subs = (expeditionsResult.value ?? [])
       .filter((es: ExpeditionSeason) => !es.Id.includes('-redux'))
       .map((es: ExpeditionSeason) => {
         return {
