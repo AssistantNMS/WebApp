@@ -1,3 +1,5 @@
+$gen-item-radius: 0.25em;
+
 .generic-item-list {
     // justify-content: center;
 
@@ -8,6 +10,7 @@
             display: flex;
             padding-right: 100px;
             width: 100%;
+            border-radius: $gen-item-radius;
 
             &.w-full {
                 padding-right: 0;
@@ -38,18 +41,20 @@
                 min-width: 100px;
                 display: inline-block;
                 position: relative;
+                border-top-left-radius: $gen-item-radius;
+                border-bottom-left-radius: $gen-item-radius;
 
                 &.lazy-loaded-full-width,
                 &.lazy-load-image-background {
                     height: 100px;
                     min-width: 100px;
 
-                    > span {
+                    >span {
                         height: 100%;
                         width: 100%;
                         position: relative;
 
-                        > img {
+                        >img {
                             object-fit: cover;
                             height: 100%;
                             width: 100%;
@@ -65,6 +70,8 @@
 
                 img {
                     max-height: 100px;
+                    border-top-left-radius: $gen-item-radius;
+                    border-bottom-left-radius: $gen-item-radius;
                 }
 
                 .badge-container {
@@ -168,14 +175,14 @@
                         // padding-right: 1em;
                         // margin-top: 1rem;
 
-                        > * {
+                        >* {
                             // margin-top: .25em;
                             margin-right: 0.5em;
                             display: block;
                             color: white;
                         }
 
-                        > .not-centered {
+                        >.not-centered {
                             margin-top: 50%;
                         }
                     }

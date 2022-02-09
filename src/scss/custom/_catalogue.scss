@@ -1,5 +1,6 @@
 $grid-gap: 7px;
 $grip-col-min-max: minmax(50px, 200px);
+$gen-item-radius: 2px;
 
 .catalogue-container {
     padding-top: 1em;
@@ -30,7 +31,7 @@ $grip-col-min-max: minmax(50px, 200px);
     }
 }
 
-.game-item-list > div > div > div {
+.game-item-list>div>div>div {
     padding-top: 1em;
     padding-bottom: 3em;
     margin-bottom: 3em;
@@ -108,6 +109,7 @@ $grip-col-min-max: minmax(50px, 200px);
 
 .game-item {
     position: relative;
+    border-radius: $gen-item-radius;
 
     .item {
         position: relative;
@@ -118,10 +120,11 @@ $grip-col-min-max: minmax(50px, 200px);
         }
 
         .image-container {
-            width: calc(100% - 10px);
+            width: 100%;
             height: 0;
-            padding-bottom: calc(100% - 10px);
-            margin: 5px;
+            padding-bottom: 100%;
+            border-bottom-left-radius: $gen-item-radius;
+            border-bottom-right-radius: $gen-item-radius;
 
             @media screen and (max-width: 500px) {
                 max-width: 128px;
@@ -133,7 +136,7 @@ $grip-col-min-max: minmax(50px, 200px);
                 order: 1;
             }
 
-            > span {
+            >span {
                 width: 100%;
             }
         }
@@ -142,6 +145,8 @@ $grip-col-min-max: minmax(50px, 200px);
             width: 100%;
             max-height: 100%;
             // min-height: 100px;
+            border-bottom-left-radius: $gen-item-radius;
+            border-bottom-right-radius: $gen-item-radius;
         }
 
         .loading img {
@@ -202,6 +207,7 @@ $grip-col-min-max: minmax(50px, 200px);
 
 .highlight-text {
     word-wrap: unset;
+
     span {
         word-wrap: break-word;
     }

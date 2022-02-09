@@ -2,9 +2,9 @@
   {
     "Id": "build1",
     "Icon": "building/1.png",
-    "Name": "Большая комната грузового судна C",
-    "Group": "Внутренний модуль грузового судна",
-    "Description": "Этот модуль расширения позволяет быстро строить обитаемые отсеки внутри крупных звездолетов.\n\nКонструкция создается вместе с герметичной перегородкой и всеми необходимыми точками подсоединения.",
+    "Name": "Large Freighter Room C",
+    "Group": "Freighter Interior Module",
+    "Description": "This expansion module allows for the rapid construction of habitable spaces inside large starships.\n\nConstruction unit is fabricated complete with pressure bulkhead and all necessary attachment points.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -1748,9 +1748,9 @@
   {
     "Id": "build66",
     "Icon": "building/66.png",
-    "Name": "Квадратная комната",
-    "Group": "Строительный модуль",
-    "Description": "Квадратная версия базового модуля позволяет построить просторное центральное помещение в качестве основы базы.",
+    "Name": "Square Room",
+    "Group": "Construction module",
+    "Description": "A square alternative to the core module for base construction, providing a generous central space on which to expand.",
     "BaseValueUnits": 2.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -3050,9 +3050,9 @@
   {
     "Id": "build141",
     "Icon": "building/141.png",
-    "Name": "Контейнер для флоры 3",
-    "Group": "Украшение",
-    "Description": "Декоративные предметы для украшения базы.",
+    "Name": "Flora Containment 3",
+    "Group": "Decoration",
+    "Description": "Buildable ornament to beautify your base.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -3354,9 +3354,9 @@
   {
     "Id": "build156",
     "Icon": "building/156.png",
-    "Name": "Угловой стол",
-    "Group": "Мебель",
-    "Description": "Многоцелевая рабочая поверхность из немагнитных нержавеющих материалов.",
+    "Name": "Corner Table",
+    "Group": "Furniture",
+    "Description": "An all-purpose work surface built from non-magnetic, corrosion resistant materials.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -5397,31 +5397,6 @@
     "HasDevProperties": true
   },
   {
-    "Id": "build270",
-    "Icon": "building/270.png",
-    "Name": "Рисунок любопытной фауны",
-    "Group": "Украшение",
-    "Description": "Рисунки для украшения базы.",
-    "BaseValueUnits": 1.0,
-    "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
-    "Colour": "2C7C9F",
-    "CdnUrl": "https://cdn.nmsassistant.com/building/270.png",
-    "BlueprintCost": 1,
-    "BlueprintCostType": "SalvagedData",
-    "BlueprintSource": 0,
-    "RequiredItems": [
-      {
-        "Id": "raw1",
-        "Quantity": 20
-      }
-    ],
-    "StatBonuses": [],
-    "ConsumableRewards": [],
-    "HasDevProperties": true
-  },
-  {
     "Id": "build272",
     "Icon": "building/272.png",
     "Name": "Пропавшая батисфера",
@@ -6940,7 +6915,7 @@
   },
   {
     "Id": "build327",
-    "Icon": "building/315.png",
+    "Icon": "building/327.png",
     "Name": "Красный фейерверк",
     "Group": "Расходуемое пиротехническое устройство",
     "Description": "Роскошный фейерверк, состоящий из магния и кадмия. Зажгите его, чтобы озарить небо мерцающими огнями.\n\nРазместите пусковую трубку с помощью <VAL_ON>меню созидания<> (<IMG>BUILD_MENU<>). <FUEL>Внимание<>: не нацеливайте на живых существ. Не рекомендуется использовать в помещениях.",
@@ -7043,7 +7018,7 @@
   },
   {
     "Id": "build331",
-    "Icon": "building/315.png",
+    "Icon": "building/331.png",
     "Name": "Зеленый фейерверк",
     "Group": "Расходуемое пиротехническое устройство",
     "Description": "Роскошный фейерверк, состоящий из магния и эмерила. Зажгите его, чтобы озарить небо мерцающими огнями.\n\nРазместите пусковую трубку с помощью <VAL_ON>меню созидания<> (<IMG>BUILD_MENU<>). <FUEL>Внимание<>: не нацеливайте на живых существ. Не рекомендуется использовать в помещениях.",
@@ -15857,24 +15832,881 @@
     "HasDevProperties": true
   },
   {
-    "Id": "build813",
-    "Icon": "building/432.png",
-    "Name": "Пузырчатый канал",
-    "Group": "Декоративный канал",
-    "Description": "В этом прозрачном стеклянном канале постоянно бурлит «жидкость».\n\nСоединяется с различными фигурными трубками для создания завораживающих узоров на базе.",
-    "BaseValueUnits": 500.0,
+    "Id": "build814",
+    "Icon": "building/1.png",
+    "Name": "Большая комната грузового судна A",
+    "Group": "Внутренний модуль грузового судна",
+    "Description": "Этот модуль расширения позволяет быстро строить обитаемые отсеки внутри крупных звездолетов.\n\nКонструкция создается вместе с герметичной перегородкой и всеми необходимыми точками подсоединения.",
+    "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
     "IsConsumable": false,
-    "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "prod54",
-        "Quantity": 1
+        "Id": "raw7",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build815",
+    "Icon": "building/1.png",
+    "Name": "Большая комната грузового судна B",
+    "Group": "Внутренний модуль грузового судна",
+    "Description": "Этот модуль расширения позволяет быстро строить обитаемые отсеки внутри крупных звездолетов.\n\nКонструкция создается вместе с герметичной перегородкой и всеми необходимыми точками подсоединения.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build816",
+    "Icon": "building/1.png",
+    "Name": "Большая комната грузового судна C",
+    "Group": "Внутренний модуль грузового судна",
+    "Description": "Этот модуль расширения позволяет быстро строить обитаемые отсеки внутри крупных звездолетов.\n\nКонструкция создается вместе с герметичной перегородкой и всеми необходимыми точками подсоединения.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 20
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build817",
+    "Icon": "building/66.png",
+    "Name": "Квадратная комната",
+    "Group": "Строительный модуль",
+    "Description": "Квадратная версия базового модуля позволяет построить просторное центральное помещение в качестве основы базы.",
+    "BaseValueUnits": 3.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -10.0,
+    "BlueprintCost": 3,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 250
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build818",
+    "Icon": "building/66.png",
+    "Name": "Квадратная комната",
+    "Group": "Строительный модуль",
+    "Description": "Квадратная версия базового модуля позволяет построить просторное центральное помещение в качестве основы базы.",
+    "BaseValueUnits": 2.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 2,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build819",
+    "Icon": "building/141.png",
+    "Name": "Контейнер для флоры 1",
+    "Group": "Украшение",
+    "Description": "Декоративные предметы для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build820",
+    "Icon": "building/141.png",
+    "Name": "Контейнер для флоры 2",
+    "Group": "Украшение",
+    "Description": "Декоративные предметы для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build821",
+    "Icon": "building/141.png",
+    "Name": "Контейнер для флоры 3",
+    "Group": "Украшение",
+    "Description": "Декоративные предметы для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build822",
+    "Icon": "building/156.png",
+    "Name": "Круглый стол",
+    "Group": "Мебель",
+    "Description": "Многоцелевая рабочая поверхность из немагнитных нержавеющих материалов.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build823",
+    "Icon": "building/156.png",
+    "Name": "Шестиугольный стол",
+    "Group": "Мебель",
+    "Description": "Многоцелевая рабочая поверхность из немагнитных нержавеющих материалов.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build824",
+    "Icon": "building/156.png",
+    "Name": "Угловой стол",
+    "Group": "Мебель",
+    "Description": "Многоцелевая рабочая поверхность из немагнитных нержавеющих материалов.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build825",
+    "Icon": "building/825.png",
+    "Name": "Белый рисунок",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build826",
+    "Icon": "building/826.png",
+    "Name": "Рисунок с белой рамкой",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build828",
+    "Icon": "building/828.png",
+    "Name": "Рисунок «Атлас»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build829",
+    "Icon": "building/829.png",
+    "Name": "Рисунок «0»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build830",
+    "Icon": "building/830.png",
+    "Name": "Рисунок «1»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build831",
+    "Icon": "building/831.png",
+    "Name": "Рисунок «2»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build832",
+    "Icon": "building/832.png",
+    "Name": "Рисунок «3»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build833",
+    "Icon": "building/833.png",
+    "Name": "Рисунок «4»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build834",
+    "Icon": "building/834.png",
+    "Name": "Рисунок «5»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build835",
+    "Icon": "building/835.png",
+    "Name": "Рисунок «6»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build836",
+    "Icon": "building/836.png",
+    "Name": "Рисунок «7»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build837",
+    "Icon": "building/837.png",
+    "Name": "Рисунок «8»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build838",
+    "Icon": "building/838.png",
+    "Name": "Рисунок «9»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build839",
+    "Icon": "building/839.png",
+    "Name": "Вай'кинский рисунок",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build840",
+    "Icon": "building/840.png",
+    "Name": "Гекский рисунок",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build841",
+    "Icon": "building/841.png",
+    "Name": "Корвакский рисунок",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build842",
+    "Icon": "building/842.png",
+    "Name": "Рисунок «Пузырь»",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build843",
+    "Icon": "building/843.png",
+    "Name": "Рисунок любопытной фауны",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build844",
+    "Icon": "building/844.png",
+    "Name": "Синий рисунок",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build845",
+    "Icon": "building/845.png",
+    "Name": "Зеленый рисунок",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build846",
+    "Icon": "building/846.png",
+    "Name": "Красный рисунок",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build847",
+    "Icon": "building/847.png",
+    "Name": "Черный рисунок",
+    "Group": "Украшение",
+    "Description": "Рисунки для украшения базы.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build848",
+    "Icon": "building/336.png",
+    "Name": "Квадратный торшер",
+    "Group": "Принадлежность",
+    "Description": "Энергосберегающая лампа из перерабатываемых компонентов.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build849",
+    "Icon": "building/336.png",
+    "Name": "Круглый торшер",
+    "Group": "Принадлежность",
+    "Description": "Энергосберегающая лампа из перерабатываемых компонентов.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build850",
+    "Icon": "building/336.png",
+    "Name": "Закрытый торшер",
+    "Group": "Принадлежность",
+    "Description": "Энергосберегающая лампа из перерабатываемых компонентов.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -1.0,
+    "BlueprintCost": 1,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw12",
+        "Quantity": 5
       }
     ],
     "StatBonuses": [],

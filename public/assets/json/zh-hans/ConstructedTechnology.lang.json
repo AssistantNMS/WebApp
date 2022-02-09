@@ -1060,57 +1060,32 @@
   },
   {
     "Id": "conTech35",
-    "Icon": "constructedTechnology/35.png",
-    "Name": "贮藏箱",
-    "Group": "储存器",
-    "Description": "宽敞的额外储藏箱，用于存放库存物品。",
-    "BaseValueUnits": 5.0,
+    "Icon": "constructedTechnology/10.png",
+    "Name": "基地传送模块",
+    "Group": "远距离物质传输设备",
+    "Description": "一台<TECHNOLOGY>个人传送设备<>，允许使用者在其构建的基地之间以及连接其网络的任何空间站终端之间快速移动。\n\n敦促使用者在插入其负担不起的任何内容之前验证网络完整性。",
+    "BaseValueUnits": 2.0,
     "CurrencyType": "None",
     "IsCraftable": true,
     "IsConsumable": false,
     "Colour": "2C7C9F",
-    "Power": -5.0,
+    "Power": -20.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/35.png",
-    "BlueprintCost": 5,
-    "BlueprintCostType": "SalvagedData",
-    "BlueprintSource": 0,
-    "RequiredItems": [
-      {
-        "Id": "raw10",
-        "Quantity": 35
-      },
-      {
-        "Id": "raw12",
-        "Quantity": 20
-      }
-    ],
-    "StatBonuses": [],
-    "ConsumableRewards": [],
-    "HasDevProperties": true
-  },
-  {
-    "Id": "conTech36",
-    "Icon": "constructedTechnology/36.png",
-    "Name": "货船存储单位",
-    "Group": "自定义货船模块",
-    "Description": "混合高容量存储单位兼搁置模块，适用于星际货船。\n\n与所有的标准生命维持配件兼容。",
-    "BaseValueUnits": 5.0,
-    "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
-    "Colour": "2C7C9F",
-    "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/36.png",
-    "BlueprintCost": 5,
+    "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
     "RequiredItems": [
       {
-        "Id": "raw10",
-        "Quantity": 50
+        "Id": "prod3",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 4
       },
       {
         "Id": "raw12",
-        "Quantity": 20
+        "Quantity": 40
       }
     ],
     "StatBonuses": [],
@@ -1918,6 +1893,576 @@
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
     "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech65",
+    "Icon": "constructedTechnology/65.png",
+    "Name": "贮藏箱",
+    "Group": "储存器",
+    "Description": "宽敞的额外储藏箱，用于存放库存物品。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech66",
+    "Icon": "constructedTechnology/66.png",
+    "Name": "贮藏箱",
+    "Group": "储存器",
+    "Description": "宽敞的额外储藏箱，用于存放库存物品。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech67",
+    "Icon": "constructedTechnology/67.png",
+    "Name": "贮藏箱",
+    "Group": "储存器",
+    "Description": "宽敞的额外储藏箱，用于存放库存物品。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech68",
+    "Icon": "constructedTechnology/68.png",
+    "Name": "贮藏箱",
+    "Group": "储存器",
+    "Description": "宽敞的额外储藏箱，用于存放库存物品。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech69",
+    "Icon": "constructedTechnology/69.png",
+    "Name": "贮藏箱",
+    "Group": "储存器",
+    "Description": "宽敞的额外储藏箱，用于存放库存物品。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech70",
+    "Icon": "constructedTechnology/70.png",
+    "Name": "贮藏箱",
+    "Group": "储存器",
+    "Description": "宽敞的额外储藏箱，用于存放库存物品。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech71",
+    "Icon": "constructedTechnology/71.png",
+    "Name": "贮藏箱",
+    "Group": "储存器",
+    "Description": "宽敞的额外储藏箱，用于存放库存物品。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech72",
+    "Icon": "constructedTechnology/72.png",
+    "Name": "贮藏箱",
+    "Group": "储存器",
+    "Description": "宽敞的额外储藏箱，用于存放库存物品。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech73",
+    "Icon": "constructedTechnology/73.png",
+    "Name": "贮藏箱",
+    "Group": "储存器",
+    "Description": "宽敞的额外储藏箱，用于存放库存物品。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech74",
+    "Icon": "constructedTechnology/74.png",
+    "Name": "贮藏箱",
+    "Group": "储存器",
+    "Description": "宽敞的额外储藏箱，用于存放库存物品。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "Power": -5.0,
+    "BlueprintCost": 5,
+    "BlueprintCostType": "SalvagedData",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 35
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech75",
+    "Icon": "constructedTechnology/75.png",
+    "Name": "货船存储单位",
+    "Group": "自定义货船模块",
+    "Description": "混合高容量存储单位兼搁置模块，适用于星际货船。\n\n与所有的标准生命维持配件兼容。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech76",
+    "Icon": "constructedTechnology/76.png",
+    "Name": "货船存储单位",
+    "Group": "自定义货船模块",
+    "Description": "混合高容量存储单位兼搁置模块，适用于星际货船。\n\n与所有的标准生命维持配件兼容。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech77",
+    "Icon": "constructedTechnology/77.png",
+    "Name": "货船存储单位",
+    "Group": "自定义货船模块",
+    "Description": "混合高容量存储单位兼搁置模块，适用于星际货船。\n\n与所有的标准生命维持配件兼容。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech78",
+    "Icon": "constructedTechnology/78.png",
+    "Name": "货船存储单位",
+    "Group": "自定义货船模块",
+    "Description": "混合高容量存储单位兼搁置模块，适用于星际货船。\n\n与所有的标准生命维持配件兼容。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech79",
+    "Icon": "constructedTechnology/79.png",
+    "Name": "货船存储单位",
+    "Group": "自定义货船模块",
+    "Description": "混合高容量存储单位兼搁置模块，适用于星际货船。\n\n与所有的标准生命维持配件兼容。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech80",
+    "Icon": "constructedTechnology/80.png",
+    "Name": "货船存储单位",
+    "Group": "自定义货船模块",
+    "Description": "混合高容量存储单位兼搁置模块，适用于星际货船。\n\n与所有的标准生命维持配件兼容。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech81",
+    "Icon": "constructedTechnology/81.png",
+    "Name": "货船存储单位",
+    "Group": "自定义货船模块",
+    "Description": "混合高容量存储单位兼搁置模块，适用于星际货船。\n\n与所有的标准生命维持配件兼容。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech82",
+    "Icon": "constructedTechnology/82.png",
+    "Name": "货船存储单位",
+    "Group": "自定义货船模块",
+    "Description": "混合高容量存储单位兼搁置模块，适用于星际货船。\n\n与所有的标准生命维持配件兼容。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech83",
+    "Icon": "constructedTechnology/83.png",
+    "Name": "货船存储单位",
+    "Group": "自定义货船模块",
+    "Description": "混合高容量存储单位兼搁置模块，适用于星际货船。\n\n与所有的标准生命维持配件兼容。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "conTech84",
+    "Icon": "constructedTechnology/84.png",
+    "Name": "货船存储单位",
+    "Group": "自定义货船模块",
+    "Description": "混合高容量存储单位兼搁置模块，适用于星际货船。\n\n与所有的标准生命维持配件兼容。",
+    "BaseValueUnits": 5.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 5,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw12",
+        "Quantity": 20
+      }
+    ],
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
