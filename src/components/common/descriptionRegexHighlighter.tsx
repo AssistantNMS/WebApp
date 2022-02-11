@@ -110,21 +110,28 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
                 }
                 if (localTag === '<IMG>') {
                     const lookupKey = (displayWord ?? '').replaceAll('(', '').replaceAll(')', '');
-                    const lookupResult = props.controlLookup?.filter?.(cl => cl.Key === lookupKey);
-                    if (lookupResult != null && lookupResult.length > 0) {
-                        nodes.push(
-                            <CustomTooltip
-                                key={`paragraph-${paragraphIndex}-word-${wordIndex}-${word}-${lookupResult[0].Key}`}
-                                tooltipText="Not the right platform? Change your platform on the settings page!" theme="transparent"
-                            >
-                                <img
-                                    className="descrip-img"
-                                    src={`/${AppImage.controls}${lookupResult[0].Icon}`}
-                                    alt={lookupResult[0].Key}
-                                />
-                            </CustomTooltip>
-                        );
+                    let lookupResult = props.controlLookup?.filter?.(cl => cl.Key === lookupKey);
+                    if (lookupResult == null || lookupResult.length < 1) {
+                        lookupResult = props.controlLookup?.filter?.(cl => cl.Key.includes(lookupKey));
                     }
+                    let lookupResKey = 'Unknown';
+                    let lookupResIcon = AppImage.unknownButton;
+                    if (lookupResult != null && lookupResult.length > 0) {
+                        lookupResKey = lookupResult[0].Key;
+                        lookupResIcon = lookupResult[0].Icon;
+                    }
+                    nodes.push(
+                        <CustomTooltip
+                            key={`paragraph-${paragraphIndex}-word-${wordIndex}-${word}-${lookupResKey}`}
+                            tooltipText="Not the right platform? Change your platform on the settings page!" theme="transparent"
+                        >
+                            <img
+                                className="descrip-img"
+                                src={`/${AppImage.controls}${lookupResIcon}`}
+                                alt={lookupResKey}
+                            />
+                        </CustomTooltip>
+                    );
                 } else {
                     nodes.push(renderNode(paragraphIndex, wordIndex + 999, displayWord, currentColourValue, displayWord + ((leftOverDisplayWord.length > 0) ? '' : ' ')));
                 }

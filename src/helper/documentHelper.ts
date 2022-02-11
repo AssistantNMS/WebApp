@@ -20,7 +20,7 @@ export const updateUrl = (id: string, title: string, selectedLanguage?: string) 
     //     ? `${selectedLanguage}/${urlTitle}`
     //     : urlTitle
     const urlSuffix = urlTitle;
-    window?.history?.replaceState?.(
+    window?.history?.pushState?.(
         null,
         getNewDocumentTitle(title),
         `/catalogue-item/${id}/${urlSuffix}`

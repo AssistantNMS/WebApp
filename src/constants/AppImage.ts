@@ -1,6 +1,7 @@
 export class AppImage {
     static base: string = 'assets/images/';
     static controls: string = AppImage.base + 'buttons/';
+
     static expeditionSeasonBackground1: string = AppImage.base + 'special/expeditionsCoverUnused.jpg';
     static expeditionSeasonBackground2: string = AppImage.base + 'special/expeditionsCover.jpg';
     static expeditionSeasonBackground3: string = AppImage.base + 'special/expeditionsCover1.jpg';
@@ -17,4 +18,5 @@ export class AppImage {
     static platformPc: string = '/' + AppImage.base + 'platformPc.png';
     static platformPsn: string = '/' + AppImage.base + 'platformPs4.png';
     static platformXbx: string = '/' + AppImage.base + 'platformXb1.png';
+    static unknownButton: string = 'unknown.png';
 }

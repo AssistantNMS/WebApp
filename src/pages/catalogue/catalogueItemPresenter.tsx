@@ -128,7 +128,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                 title={title}
                 description={description}
                 selectedLanguage={props.selectedLanguage}
-                updateUrl={true}
+            // updateUrl={true}
             />
             <NavBar title={title} additionalItems={getFloatingActionButtons()} />
             {handleLoadingOrError()}
