@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { AppImage } from '../../constants/AppImage';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
+import { CustomTooltip } from './tooltip/tooltip';
 
 interface IProps {
     orig: string;
@@ -49,6 +50,7 @@ const getColourValueFromTag = (tag: string) => {
 
 export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) => {
     const groupRegex = new RegExp(/(<\w+>(\w+\s*)*<>)/);
+    const doubleTagRegex = new RegExp(/<\w+>(<\w+>(\w+\s*)*<>)<>/);
     const tagStartRegex = new RegExp(/(.*)<(\w+)>(.*)/);
     const tagEndRegex = new RegExp(/(.*)<>(.*)/);
 
@@ -70,11 +72,17 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
         let wordChain = '';
         const words = paragraph.split(' ');
         for (let wordIndex = 0; wordIndex < words.length; wordIndex++) {
-            const word = words[wordIndex];
+            let word = words[wordIndex];
             let displayWord = word;
             let localTag = '<unused>';
             let leftOverDisplayWordFront = '';
             let leftOverDisplayWord = '';
+
+            let doubleMatches: Array<any> | null = doubleTagRegex.exec(word)
+            if (doubleMatches != null && doubleMatches.length > 0) {
+                console.log(doubleMatches);
+                word = doubleMatches[1];
+            }
 
             let startMatches: Array<any> | null = tagStartRegex.exec(word);
             if (startMatches != null && startMatches.length === 4) {
@@ -102,17 +110,28 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
                 }
                 if (localTag === '<IMG>') {
                     const lookupKey = (displayWord ?? '').replaceAll('(', '').replaceAll(')', '');
-                    const lookupResult = props.controlLookup?.filter?.(cl => cl.Key === lookupKey);
-                    if (lookupResult != null && lookupResult.length > 0) {
-                        nodes.push(
-                            <img
-                                key={`paragraph-${paragraphIndex}-word-${wordIndex}-${word}-${lookupResult[0].Key}`}
-                                className="descrip-img"
-                                src={`/${AppImage.controls}${lookupResult[0].Icon}`}
-                                alt={lookupResult[0].Key}
-                            />
-                        );
+                    let lookupResult = props.controlLookup?.filter?.(cl => cl.Key === lookupKey);
+                    if (lookupResult == null || lookupResult.length < 1) {
+                        lookupResult = props.controlLookup?.filter?.(cl => cl.Key.includes(lookupKey));
                     }
+                    let lookupResKey = 'Unknown';
+                    let lookupResIcon = AppImage.unknownButton;
+                    if (lookupResult != null && lookupResult.length > 0) {
+                        lookupResKey = lookupResult[0].Key;
+                        lookupResIcon = lookupResult[0].Icon;
+                    }
+                    nodes.push(
+                        <CustomTooltip
+                            key={`paragraph-${paragraphIndex}-word-${wordIndex}-${word}-${lookupResKey}`}
+                            tooltipText="Not the right platform? Change your platform on the settings page!" theme="transparent"
+                        >
+                            <img
+                                className="descrip-img"
+                                src={`/${AppImage.controls}${lookupResIcon}`}
+                                alt={lookupResKey}
+                            />
+                        </CustomTooltip>
+                    );
                 } else {
                     nodes.push(renderNode(paragraphIndex, wordIndex + 999, displayWord, currentColourValue, displayWord + ((leftOverDisplayWord.length > 0) ? '' : ' ')));
                 }
@@ -135,9 +154,9 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
         }
 
         paragraphNodes.push(
-            <p key={`paragraph-${paragraphIndex}`}>
+            <div key={`paragraph-${paragraphIndex}`} className="pb1">
                 {nodes}
-            </p>
+            </div>
         );
     }
 
