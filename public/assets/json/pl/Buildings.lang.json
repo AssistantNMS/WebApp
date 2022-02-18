@@ -5397,6 +5397,31 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build271",
+    "Icon": "building/271.png",
+    "Name": "Klasyczne krzesło",
+    "Group": "Mebel",
+    "Description": "Solidne, dobrze skonstruowane siedzenie, znormalizowane do instalacji na stacjach kosmicznych w galaktykach. Jego kanciasta konstrukcja jest zaskakująco ergonomiczna.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "trade26",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build272",
     "Icon": "building/272.png",
     "Name": "Zaginiona batysfera",
@@ -9049,7 +9074,7 @@
     "Icon": "building/425.png",
     "Name": "Pnącze jaskiniowe",
     "Group": "Dekoracja organiczna",
-    "Description": "Te wytrzymałe pnącza, należące do lampenflory, pierwotnie występują w wilgotnych, podziemnych ekosystemach, ale mogę też rosnąć w formie krzaków w wielu innych biomach.",
+    "Description": "Te wytrzymałe pnącza, należące do lampenflory, pierwotnie występują w wilgotnych, podziemnych ekosystemach, ale mogą też rosnąć w formie krzaków w wielu innych biomach.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -9074,7 +9099,7 @@
     "Icon": "building/426.png",
     "Name": "Troglotulipan",
     "Group": "Dekoracja organiczna",
-    "Description": "Ten przyciągający uwagę, świecący kwiat znany jest ze swojego zapachu, który przywodzi na myśl świeżo zoraną glebę. Ze względu na bogatą w minerały dietę pręciki tych roślin zawierają śladowe ilości kobaltu.",
+    "Description": "Ten przyciągający uwagę, świecący kwiat znany jest ze swojego zapachu, który przywodzi na myśl świeżo zaoraną glebę. Ze względu na bogatą w minerały dietę pręciki tych roślin zawierają śladowe ilości kobaltu.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -9332,7 +9357,7 @@
     "Icon": "building/436.png",
     "Name": "Mapa osady",
     "Group": "Specjalistyczna mapa planetarna",
-    "Description": "Mapa wskazująca lokalizację pobliskiej osady planetarnej, uzyskana od <STELLAR>kartografa stacji kosmicznej<>.\n\nWybierz mapę i użyj wytyczania trasy (<IMG>FE_ALT1<>) by przypiąć lokalizację na wyświetlaczu egzokombinezonu.",
+    "Description": "Mapa wskazująca lokalizację pobliskiej osady planetarnej, uzyskana od <STELLAR>kartografa stacji kosmicznej<>.\n\nWybierz mapę i użyj wytyczania trasy (<IMG>FE_ALT1<>), by przypiąć lokalizację na wyświetlaczu egzokombinezonu.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -9803,7 +9828,7 @@
     "Icon": "building/455.png",
     "Name": "Złoty narożnik blatu",
     "Group": "Dekoracja",
-    "Description": "Piękny, złoty narożnik blatu pokryty zapewniającym stabilność cieplną żywym szkłem i wykończeniem odpornym na zadrapania. Podświetlana podstawa poprawia widoczność we wszystkich warunkach.\n\nUmieść obok <TECHNOLOGY>złotego blatu<> i <TECHNOLOGY>złotego pół-blatu<>, by stworzyć własny układ blatów.",
+    "Description": "Piękny, złoty narożnik blatu pokryty zapewniającym stabilność cieplną żywym szkłem i wykończeniem odpornym na zadrapania. Podświetlana podstawa poprawia widoczność we wszystkich warunkach.\n\nUmieść obok <TECHNOLOGY>złotego blatu<> i <TECHNOLOGY>złotego półblatu<>, by stworzyć własny układ blatów.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -15832,6 +15857,31 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build813",
+    "Icon": "building/813.png",
+    "Name": "Podświetlana doniczka",
+    "Group": "Dekoracja",
+    "Description": "Ta gliniana doniczka ma pole neutralizujące klimat, system recyklingu składników odżywczych i zintegrowaną tackę ociekową. Idealna do ekspozycji roślin ozdobnych lub innych dekoracji.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build814",
     "Icon": "building/1.png",
     "Name": "Duże pomieszczenie frachtowca A",
@@ -16707,6 +16757,176 @@
       {
         "Id": "raw12",
         "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build851",
+    "Icon": "building/851.png",
+    "Name": "Smuga błędu w rzeczywistości",
+    "Group": "Personalizacja wydechu plecaka odrzutowego",
+    "Description": "Ekskluzywna <STELLAR>zmiana wyglądu egzokombinezonu<>.\n\nDysza plecaka odrzutowego została wyposażona w dyspenser skoncentrowanego pugneum. Aktywacja silników wywołuje miniaturowe zakrzywienia rzeczywistości, co owocuje ciekawym efektem wizualnym.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build852",
+    "Icon": "building/852.png",
+    "Name": "Plakat z przesileniem",
+    "Group": "Dekoracja",
+    "Description": "Ekskluzywna, samoprzylepna, niegniotąca się ozdoba ściany.\nTen plakat przywołuje tęsknotę za długimi, letnimi dniami.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build853",
+    "Icon": "building/853.png",
+    "Name": "Plakat głębinowy",
+    "Group": "Dekoracja",
+    "Description": "Ekskluzywna, samoprzylepna, niegniotąca się ozdoba ściany.\nPrzypomina o tym, co czai się na dnie.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build854",
+    "Icon": "building/854.png",
+    "Name": "Plakat terytoriów",
+    "Group": "Dekoracja",
+    "Description": "Ekskluzywna, samoprzylepna, niegniotąca się ozdoba ściany.\nTen pompujący adrenalinę plakat przedstawia dwóch przywódców stad walczących o terytorium.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build855",
+    "Icon": "building/855.png",
+    "Name": "Plakat „Tort Atlasa”",
+    "Group": "Dekoracja",
+    "Description": "Ekskluzywna, samoprzylepna, niegniotąca się ozdoba ściany.\nTen plakat przedstawia przepysznie wilgotny tort ozdobiony symbolem Atlasa.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build856",
+    "Icon": "building/856.png",
+    "Name": "Plakat „Podrobiona Przepustka”",
+    "Group": "Dekoracja",
+    "Description": "Ekskluzywna, samoprzylepna, niegniotąca się ozdoba ściany.\nTen plakat przedstawia przepustkę Atlasa w promocyjnej cenie, reklamowaną przez targowisko o wątpliwej reputacji.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build857",
+    "Icon": "building/857.png",
+    "Name": "Plakat „Przyjazna Istota”",
+    "Group": "Dekoracja",
+    "Description": "Ekskluzywna, samoprzylepna, niegniotąca się ozdoba ściany.\nTen plakat przedstawia istotę kapłańską Nadę, stale poszukującą przyjaciół i odkrywców.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],

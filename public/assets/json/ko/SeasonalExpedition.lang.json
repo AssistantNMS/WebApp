@@ -12257,5 +12257,2841 @@
         "HideInSeasonRewards": false
       }
     ]
+  },
+  {
+    "Id": "seas-5",
+    "Icon": "milestonePatches/PATCH.EXPEDITION.5.png",
+    "StartDate": "2022-02-18T00:00:00",
+    "EndDate": "2022-03-26T00:00:00",
+    "Title": "우주생물학",
+    "IsRedux": false,
+    "PortalCode": "405C0A958F08",
+    "Phases": [
+      {
+        "Id": "seas-5-expedPhase-1",
+        "Icon": "milestonePatches/PATCH.MILESTONE.1.png",
+        "Title": "1단계",
+        "Description": "현재 진행도: 0/7",
+        "DescriptionDone": "1단계 완료",
+        "Milestones": [
+          {
+            "Id": "seas-5-expedPhase-1-milestone-1",
+            "Title": "자동 진단: 1",
+            "Description": "자신의 함선을 찾아 탑승하기",
+            "DescriptionDone": "자동 진단 절차 실행 완료",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTFIND.png",
+            "Rewards": [
+              {
+                "Id": "prod20",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw3",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 120,
+                "AmountMax": 120,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd68",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-2",
+            "Title": "땅을 움직이는 자",
+            "Description": "지형 조작기 설치하기",
+            "DescriptionDone": "지형 조작기 설치 완료",
+            "Icon": "milestonePatches/PATCH.TERRAIN.png",
+            "Rewards": [
+              {
+                "Id": "tech70",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-3",
+            "Title": "참호",
+            "Description": "자연적인 피난처 발견하기",
+            "DescriptionDone": "피난처에서 폭풍을 피함",
+            "Icon": "milestonePatches/PATCH.STORMSHELTER.png",
+            "Rewards": [
+              {
+                "Id": "conTech1",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod64",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-4",
+            "Title": "귀향",
+            "Description": "기지 설립하기",
+            "DescriptionDone": "기지 설립 완료",
+            "Icon": "milestonePatches/PATCH.BASESIZE2.png",
+            "Rewards": [
+              {
+                "Id": "conTech12",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech12",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur16",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 20,
+                "AmountMax": 20,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-5",
+            "Title": "기술 지표",
+            "Description": "신호 부스터를 배치하고 사용하기",
+            "DescriptionDone": "신호 부스터 사용 완료",
+            "Icon": "milestonePatches/PATCH.SIGNALBOOST.png",
+            "Rewards": [
+              {
+                "Id": "prod81",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 4,
+                "AmountMax": 4,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur39",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur40",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other5",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-6",
+            "Title": "일단 숨어",
+            "Description": "행성 표면의 건물 안에 숨기",
+            "DescriptionDone": "행성 표면의 건물 방문하기",
+            "Icon": "milestonePatches/PATCH.VISITBUILDING.png",
+            "Rewards": [
+              {
+                "Id": "other207",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other208",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-7",
+            "Title": "순례자",
+            "Description": "도보로 탐험하기: 0u/5000u",
+            "DescriptionDone": "도보로 5000u 이동함",
+            "Icon": "milestonePatches/PATCH.WALKER.png",
+            "Rewards": [
+              {
+                "Id": "tMod55",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur24",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other156",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-5-expedPhase-2",
+        "Icon": "milestonePatches/PATCH.MILESTONE.2.png",
+        "Title": "2단계",
+        "Description": "현재 진행도: 0/7",
+        "DescriptionDone": "2단계 완료",
+        "Milestones": [
+          {
+            "Id": "seas-5-expedPhase-2-milestone-1",
+            "Title": "자동 진단: 2",
+            "Description": "첨단 발진 시스템 수리하기",
+            "DescriptionDone": "함선 발진 시스템 수리 완료",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTBUILD.png",
+            "Rewards": [
+              {
+                "Id": "conTech3",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-2",
+            "Title": "동력 과잉",
+            "Description": "150 발전",
+            "DescriptionDone": "150 발전",
+            "Icon": "milestonePatches/PATCH.POWER.png",
+            "Rewards": [
+              {
+                "Id": "prod114",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod81",
+                "Type": 0,
+                "AmountMin": 6,
+                "AmountMax": 6,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-3",
+            "Title": "물질 운반",
+            "Description": "텔레포터 건설하기",
+            "DescriptionDone": "텔레포터 건설 완료",
+            "Icon": "milestonePatches/PATCH.TELEPORTER.png",
+            "Rewards": [
+              {
+                "Id": "conTech57",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech52",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech51",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech50",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech65",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-4",
+            "Title": "태양 공포증",
+            "Description": "지하에 터널 건설: 0/1000u³",
+            "DescriptionDone": "터널을 1000u³ 건설",
+            "Icon": "milestonePatches/PATCH.CAVEWALKER.png",
+            "Rewards": [
+              {
+                "Id": "tech143",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw33",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 333,
+                "AmountMax": 333,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-5",
+            "Title": "원소의 지배자",
+            "Description": "폭풍이 칠 때 이동: 0u/1500u",
+            "DescriptionDone": "폭풍이 칠 때 도보로 1500u 이동함",
+            "Icon": "milestonePatches/PATCH.SURVIVESTORM.png",
+            "Rewards": [
+              {
+                "Id": "conTech63",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod10",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-6",
+            "Title": "동료애",
+            "Description": "반려동물 입양하기: 0 / 1",
+            "DescriptionDone": "1마리의 반려동물 입양 완료",
+            "Icon": "milestonePatches/PATCH.GETPET.png",
+            "Rewards": [
+              {
+                "Id": "raw50",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 256,
+                "AmountMax": 256,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd7",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur23",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-7",
+            "Title": "기계 인간",
+            "Description": "미노타우로스 배치하기",
+            "DescriptionDone": "미노타우로스 배치 완료",
+            "Icon": "milestonePatches/PATCH.MECH.png",
+            "Rewards": [
+              {
+                "Id": "tMod143",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod137",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw23",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build807",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-5-expedPhase-3",
+        "Icon": "milestonePatches/PATCH.MILESTONE.3.png",
+        "Title": "3단계",
+        "Description": "현재 진행도: 0/7",
+        "DescriptionDone": "3단계 완료",
+        "Milestones": [
+          {
+            "Id": "seas-5-expedPhase-3-milestone-1",
+            "Title": "자동 진단: 3",
+            "Description": "파형 엔진 수리하기",
+            "DescriptionDone": "함선 주 엔진 수리 완료",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTREPAIR.png",
+            "Rewards": [
+              {
+                "Id": "other38",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-2",
+            "Title": "지질학자",
+            "Description": "광물 발견하기: 0 / 18",
+            "DescriptionDone": "18가지의 새로운 광물 분석 완료",
+            "Icon": "milestonePatches/PATCH.DISCOVERMINERAL.2.png",
+            "Rewards": [
+              {
+                "Id": "other127",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 10,
+                "AmountMax": 10,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod75",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-3",
+            "Title": "식물학자",
+            "Description": "식물 발견하기: 0 / 12",
+            "DescriptionDone": "12가지의 새로운 식물 문서화 완료",
+            "Icon": "milestonePatches/PATCH.DISCOVERPLANT.2.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 600,
+                "AmountMax": 600,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech64",
+                "Type": 0,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-4",
+            "Title": "도감 완성",
+            "Description": "행성의 모든 생명체 발견: 0/10",
+            "DescriptionDone": "행성의 모든 생명체 발견 완료",
+            "Icon": "milestonePatches/PATCH.DISCOVERANIMAL.2.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw58",
+                "Type": 2,
+                "AmountMin": 5000000,
+                "AmountMax": 5000000,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-5",
+            "Title": "항법사",
+            "Description": "웨이포인트 기록하기: 0/4",
+            "DescriptionDone": "웨이포인트 4개 기록 완료",
+            "Icon": "milestonePatches/PATCH.DISCOVERWAYPOINT.1.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur65",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-6",
+            "Title": "제초제",
+            "Description": "유해 식물 제거: 0/20",
+            "DescriptionDone": "유해 식물 20체 제거",
+            "Icon": "milestonePatches/PATCH.KILL.PLANTS.png",
+            "Rewards": [
+              {
+                "Id": "tMod80",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech30",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech31",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech32",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-7",
+            "Title": "산업 종사자",
+            "Description": "광물 추출하기: 0/1000",
+            "DescriptionDone": "광물 1000개를 추출함",
+            "Icon": "milestonePatches/PATCH.EXTRACTMINERAL.png",
+            "Rewards": [
+              {
+                "Id": "build418",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other126",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build808",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-5-expedPhase-4",
+        "Icon": "milestonePatches/PATCH.MILESTONE.4.png",
+        "Title": "4단계",
+        "Description": "현재 진행도: 0/8",
+        "DescriptionDone": "4단계 완료",
+        "Milestones": [
+          {
+            "Id": "seas-5-expedPhase-4-milestone-1",
+            "Title": "자동 진단: 4",
+            "Description": "가압 캡슐 수리하기",
+            "DescriptionDone": "함선의 생명 유지 장치 수리 완료",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTLIFE.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-2",
+            "Title": "우주공항 알파",
+            "Description": "행성 전초기지 방문하기",
+            "DescriptionDone": "행성 전초기지 방문 완료",
+            "Icon": "milestonePatches/PATCH.VISITOUTPOST.png",
+            "Rewards": [
+              {
+                "Id": "prod71",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod72",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod74",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod76",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod75",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod73",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod77",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod78",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech25",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech25",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-3",
+            "Title": "네트워크 온라인",
+            "Description": "추가 텔레포터 건설하기",
+            "DescriptionDone": "순간이동망 설립 완료",
+            "Icon": "milestonePatches/PATCH.TELEPORTER2.png",
+            "Rewards": [
+              {
+                "Id": "conTech62",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech54",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech27",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech27",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-4",
+            "Title": "크로스컨트리",
+            "Description": "엑소크래프트로 여행: 0/15000u",
+            "DescriptionDone": "엑소크래프트를 타고 15000u 여행함",
+            "Icon": "milestonePatches/PATCH.EXOCRAFT.png",
+            "Rewards": [
+              {
+                "Id": "tMod122",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod126",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-5",
+            "Title": "탐색자",
+            "Description": "파묻힌 물품 회수: 0/5",
+            "DescriptionDone": "분실된 물품 5개 회수",
+            "Icon": "milestonePatches/PATCH.UNDERGROUNDTREASURE.png",
+            "Rewards": [
+              {
+                "Id": "raw58",
+                "Type": 2,
+                "AmountMin": 750000,
+                "AmountMax": 750000,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw67",
+                "Type": 5,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-6",
+            "Title": "살아있는 언덕",
+            "Description": "625u 이상 높은 산 오르기",
+            "DescriptionDone": "625u보다 높은 산 오르기",
+            "Icon": "milestonePatches/PATCH.MOUNTAIN.png",
+            "Rewards": [
+              {
+                "Id": "tech7",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-7",
+            "Title": "로켓맨",
+            "Description": "30초 동안 공중에서 머무르기",
+            "DescriptionDone": "30초 동안 비행을 함",
+            "Icon": "milestonePatches/PATCH.AIRBORNE.png",
+            "Rewards": [
+              {
+                "Id": "cur21",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-8",
+            "Title": "고고학자",
+            "Description": "고대 뼈 발굴: 0/10",
+            "DescriptionDone": "화석 10개 발굴",
+            "Icon": "milestonePatches/PATCH.GETDIGGING.png",
+            "Rewards": [
+              {
+                "Id": "other2",
+                "Type": 0,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build424",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build425",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build426",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build427",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build428",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-5-expedPhase-5",
+        "Icon": "milestonePatches/PATCH.MILESTONE.5.png",
+        "Title": "5단계",
+        "Description": "현재 진행도: 0/7",
+        "DescriptionDone": "5단계 완료",
+        "Milestones": [
+          {
+            "Id": "seas-5-expedPhase-5-milestone-1",
+            "Title": "이륙",
+            "Description": "행성에서 떠나기",
+            "DescriptionDone": "행성에서 떠남",
+            "Icon": "milestonePatches/PATCH.FIRSTPLANET4.png",
+            "Rewards": [
+              {
+                "Id": "other38",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-2",
+            "Title": "곡예사",
+            "Description": "저공 곡예비행하기",
+            "DescriptionDone": "낮고 빠르게 비행함",
+            "Icon": "milestonePatches/PATCH.SHIP1.png",
+            "Rewards": [
+              {
+                "Id": "other127",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 10,
+                "AmountMax": 10,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod75",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-3",
+            "Title": "승선을 환영한다",
+            "Description": "우주정거장에 정박하기",
+            "DescriptionDone": "우주정거장 방문 완료",
+            "Icon": "milestonePatches/PATCH.LOSTINSPACE.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 600,
+                "AmountMax": 600,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech64",
+                "Type": 0,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-4",
+            "Title": "합류지 1",
+            "Description": "첫 번째 합류지에 도달하기",
+            "DescriptionDone": "첫 번째 합류지에 도달 완료",
+            "Icon": "milestonePatches/PATCH.PARTY.1.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw58",
+                "Type": 2,
+                "AmountMin": 5000000,
+                "AmountMax": 5000000,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-5",
+            "Title": "자동 진단: 5",
+            "Description": "프레임시프트 발사기 수리하기",
+            "DescriptionDone": "함선 워프 기능 수리 완료",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTWARP.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur65",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-6",
+            "Title": "성간",
+            "Description": "새로운 성계로 워프하기",
+            "DescriptionDone": "광속에 도달함",
+            "Icon": "milestonePatches/PATCH.WARPFIX.png",
+            "Rewards": [
+              {
+                "Id": "tMod80",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech30",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech31",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech32",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-7",
+            "Title": "합류지 2",
+            "Description": "두 번째 합류지에 도달하기",
+            "DescriptionDone": "두 번째 합류지에 도달 완료",
+            "Icon": "milestonePatches/PATCH.PARTY.2.png",
+            "Rewards": [
+              {
+                "Id": "build418",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other126",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other153",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other154",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other155",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      }
+    ],
+    "Rewards": [
+      {
+        "Id": "other157",
+        "Type": 13,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "Currency": 0,
+        "ProcTechQuality": 0,
+        "HideInSeasonRewards": false
+      }
+    ]
+  },
+  {
+    "Id": "seas-5",
+    "Icon": "milestonePatches/PATCH.EXPEDITION.5.png",
+    "StartDate": "2022-02-18T00:00:00",
+    "EndDate": "2022-03-26T00:00:00",
+    "Title": "우주생물학",
+    "IsRedux": false,
+    "PortalCode": "405C0A958F08",
+    "Phases": [
+      {
+        "Id": "seas-5-expedPhase-1",
+        "Icon": "milestonePatches/PATCH.MILESTONE.1.png",
+        "Title": "1단계",
+        "Description": "현재 진행도: 0/7",
+        "DescriptionDone": "1단계 완료",
+        "Milestones": [
+          {
+            "Id": "seas-5-expedPhase-1-milestone-1",
+            "Title": "자동 진단: 1",
+            "Description": "자신의 함선을 찾아 탑승하기",
+            "DescriptionDone": "자동 진단 절차 실행 완료",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTFIND.png",
+            "Rewards": [
+              {
+                "Id": "prod20",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw3",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 120,
+                "AmountMax": 120,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd68",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-2",
+            "Title": "땅을 움직이는 자",
+            "Description": "지형 조작기 설치하기",
+            "DescriptionDone": "지형 조작기 설치 완료",
+            "Icon": "milestonePatches/PATCH.TERRAIN.png",
+            "Rewards": [
+              {
+                "Id": "tech70",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-3",
+            "Title": "참호",
+            "Description": "자연적인 피난처 발견하기",
+            "DescriptionDone": "피난처에서 폭풍을 피함",
+            "Icon": "milestonePatches/PATCH.STORMSHELTER.png",
+            "Rewards": [
+              {
+                "Id": "conTech1",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod64",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-4",
+            "Title": "귀향",
+            "Description": "기지 설립하기",
+            "DescriptionDone": "기지 설립 완료",
+            "Icon": "milestonePatches/PATCH.BASESIZE2.png",
+            "Rewards": [
+              {
+                "Id": "conTech12",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech12",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur16",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 20,
+                "AmountMax": 20,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-5",
+            "Title": "기술 지표",
+            "Description": "신호 부스터를 배치하고 사용하기",
+            "DescriptionDone": "신호 부스터 사용 완료",
+            "Icon": "milestonePatches/PATCH.SIGNALBOOST.png",
+            "Rewards": [
+              {
+                "Id": "prod81",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 4,
+                "AmountMax": 4,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur39",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur40",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other5",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-6",
+            "Title": "일단 숨어",
+            "Description": "행성 표면의 건물 안에 숨기",
+            "DescriptionDone": "행성 표면의 건물 방문하기",
+            "Icon": "milestonePatches/PATCH.VISITBUILDING.png",
+            "Rewards": [
+              {
+                "Id": "other207",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other208",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-1-milestone-7",
+            "Title": "순례자",
+            "Description": "도보로 탐험하기: 0u/5000u",
+            "DescriptionDone": "도보로 5000u 이동함",
+            "Icon": "milestonePatches/PATCH.WALKER.png",
+            "Rewards": [
+              {
+                "Id": "tMod55",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur24",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other156",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-5-expedPhase-2",
+        "Icon": "milestonePatches/PATCH.MILESTONE.2.png",
+        "Title": "2단계",
+        "Description": "현재 진행도: 0/7",
+        "DescriptionDone": "2단계 완료",
+        "Milestones": [
+          {
+            "Id": "seas-5-expedPhase-2-milestone-1",
+            "Title": "자동 진단: 2",
+            "Description": "첨단 발진 시스템 수리하기",
+            "DescriptionDone": "함선 발진 시스템 수리 완료",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTBUILD.png",
+            "Rewards": [
+              {
+                "Id": "conTech3",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-2",
+            "Title": "동력 과잉",
+            "Description": "150 발전",
+            "DescriptionDone": "150 발전",
+            "Icon": "milestonePatches/PATCH.POWER.png",
+            "Rewards": [
+              {
+                "Id": "prod114",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod81",
+                "Type": 0,
+                "AmountMin": 6,
+                "AmountMax": 6,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-3",
+            "Title": "물질 운반",
+            "Description": "텔레포터 건설하기",
+            "DescriptionDone": "텔레포터 건설 완료",
+            "Icon": "milestonePatches/PATCH.TELEPORTER.png",
+            "Rewards": [
+              {
+                "Id": "conTech57",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech52",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech51",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech50",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech65",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-4",
+            "Title": "태양 공포증",
+            "Description": "지하에 터널 건설: 0/1000u³",
+            "DescriptionDone": "터널을 1000u³ 건설",
+            "Icon": "milestonePatches/PATCH.CAVEWALKER.png",
+            "Rewards": [
+              {
+                "Id": "tech143",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw33",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 333,
+                "AmountMax": 333,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod5",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-5",
+            "Title": "원소의 지배자",
+            "Description": "폭풍이 칠 때 이동: 0u/1500u",
+            "DescriptionDone": "폭풍이 칠 때 도보로 1500u 이동함",
+            "Icon": "milestonePatches/PATCH.SURVIVESTORM.png",
+            "Rewards": [
+              {
+                "Id": "conTech63",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod10",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod44",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-6",
+            "Title": "동료애",
+            "Description": "반려동물 입양하기: 0 / 1",
+            "DescriptionDone": "1마리의 반려동물 입양 완료",
+            "Icon": "milestonePatches/PATCH.GETPET.png",
+            "Rewards": [
+              {
+                "Id": "raw50",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 256,
+                "AmountMax": 256,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "procProd7",
+                "Type": 8,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur23",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-2-milestone-7",
+            "Title": "기계 인간",
+            "Description": "미노타우로스 배치하기",
+            "DescriptionDone": "미노타우로스 배치 완료",
+            "Icon": "milestonePatches/PATCH.MECH.png",
+            "Rewards": [
+              {
+                "Id": "tMod143",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod137",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw23",
+                "Type": 0,
+                "MultiItemRewardType": "Substance",
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build807",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-5-expedPhase-3",
+        "Icon": "milestonePatches/PATCH.MILESTONE.3.png",
+        "Title": "3단계",
+        "Description": "현재 진행도: 0/7",
+        "DescriptionDone": "3단계 완료",
+        "Milestones": [
+          {
+            "Id": "seas-5-expedPhase-3-milestone-1",
+            "Title": "자동 진단: 3",
+            "Description": "파형 엔진 수리하기",
+            "DescriptionDone": "함선 주 엔진 수리 완료",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTREPAIR.png",
+            "Rewards": [
+              {
+                "Id": "other38",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-2",
+            "Title": "지질학자",
+            "Description": "광물 발견하기: 0 / 18",
+            "DescriptionDone": "18가지의 새로운 광물 분석 완료",
+            "Icon": "milestonePatches/PATCH.DISCOVERMINERAL.2.png",
+            "Rewards": [
+              {
+                "Id": "other127",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 10,
+                "AmountMax": 10,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod75",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-3",
+            "Title": "식물학자",
+            "Description": "식물 발견하기: 0 / 12",
+            "DescriptionDone": "12가지의 새로운 식물 문서화 완료",
+            "Icon": "milestonePatches/PATCH.DISCOVERPLANT.2.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 600,
+                "AmountMax": 600,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech64",
+                "Type": 0,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-4",
+            "Title": "도감 완성",
+            "Description": "행성의 모든 생명체 발견: 0/10",
+            "DescriptionDone": "행성의 모든 생명체 발견 완료",
+            "Icon": "milestonePatches/PATCH.DISCOVERANIMAL.2.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw58",
+                "Type": 2,
+                "AmountMin": 5000000,
+                "AmountMax": 5000000,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-5",
+            "Title": "항법사",
+            "Description": "웨이포인트 기록하기: 0/4",
+            "DescriptionDone": "웨이포인트 4개 기록 완료",
+            "Icon": "milestonePatches/PATCH.DISCOVERWAYPOINT.1.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur65",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-6",
+            "Title": "제초제",
+            "Description": "유해 식물 제거: 0/20",
+            "DescriptionDone": "유해 식물 20체 제거",
+            "Icon": "milestonePatches/PATCH.KILL.PLANTS.png",
+            "Rewards": [
+              {
+                "Id": "tMod80",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech30",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech31",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech32",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-3-milestone-7",
+            "Title": "산업 종사자",
+            "Description": "광물 추출하기: 0/1000",
+            "DescriptionDone": "광물 1000개를 추출함",
+            "Icon": "milestonePatches/PATCH.EXTRACTMINERAL.png",
+            "Rewards": [
+              {
+                "Id": "build418",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other126",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build808",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-5-expedPhase-4",
+        "Icon": "milestonePatches/PATCH.MILESTONE.4.png",
+        "Title": "4단계",
+        "Description": "현재 진행도: 0/8",
+        "DescriptionDone": "4단계 완료",
+        "Milestones": [
+          {
+            "Id": "seas-5-expedPhase-4-milestone-1",
+            "Title": "자동 진단: 4",
+            "Description": "가압 캡슐 수리하기",
+            "DescriptionDone": "함선의 생명 유지 장치 수리 완료",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTLIFE.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-2",
+            "Title": "우주공항 알파",
+            "Description": "행성 전초기지 방문하기",
+            "DescriptionDone": "행성 전초기지 방문 완료",
+            "Icon": "milestonePatches/PATCH.VISITOUTPOST.png",
+            "Rewards": [
+              {
+                "Id": "prod71",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod72",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod74",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod76",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod75",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod73",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod77",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "prod78",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech25",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech25",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-3",
+            "Title": "네트워크 온라인",
+            "Description": "추가 텔레포터 건설하기",
+            "DescriptionDone": "순간이동망 설립 완료",
+            "Icon": "milestonePatches/PATCH.TELEPORTER2.png",
+            "Rewards": [
+              {
+                "Id": "conTech62",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech54",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech27",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech27",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-4",
+            "Title": "크로스컨트리",
+            "Description": "엑소크래프트로 여행: 0/15000u",
+            "DescriptionDone": "엑소크래프트를 타고 15000u 여행함",
+            "Icon": "milestonePatches/PATCH.EXOCRAFT.png",
+            "Rewards": [
+              {
+                "Id": "tMod122",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod126",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-5",
+            "Title": "탐색자",
+            "Description": "파묻힌 물품 회수: 0/5",
+            "DescriptionDone": "분실된 물품 5개 회수",
+            "Icon": "milestonePatches/PATCH.UNDERGROUNDTREASURE.png",
+            "Rewards": [
+              {
+                "Id": "raw58",
+                "Type": 2,
+                "AmountMin": 750000,
+                "AmountMax": 750000,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw67",
+                "Type": 5,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-6",
+            "Title": "살아있는 언덕",
+            "Description": "625u 이상 높은 산 오르기",
+            "DescriptionDone": "625u보다 높은 산 오르기",
+            "Icon": "milestonePatches/PATCH.MOUNTAIN.png",
+            "Rewards": [
+              {
+                "Id": "tech7",
+                "Type": 0,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-7",
+            "Title": "로켓맨",
+            "Description": "30초 동안 공중에서 머무르기",
+            "DescriptionDone": "30초 동안 비행을 함",
+            "Icon": "milestonePatches/PATCH.AIRBORNE.png",
+            "Rewards": [
+              {
+                "Id": "cur21",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod50",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-4-milestone-8",
+            "Title": "고고학자",
+            "Description": "고대 뼈 발굴: 0/10",
+            "DescriptionDone": "화석 10개 발굴",
+            "Icon": "milestonePatches/PATCH.GETDIGGING.png",
+            "Rewards": [
+              {
+                "Id": "other2",
+                "Type": 0,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "build424",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build425",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build426",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build427",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "build428",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      },
+      {
+        "Id": "seas-5-expedPhase-5",
+        "Icon": "milestonePatches/PATCH.MILESTONE.5.png",
+        "Title": "5단계",
+        "Description": "현재 진행도: 0/7",
+        "DescriptionDone": "5단계 완료",
+        "Milestones": [
+          {
+            "Id": "seas-5-expedPhase-5-milestone-1",
+            "Title": "이륙",
+            "Description": "행성에서 떠나기",
+            "DescriptionDone": "행성에서 떠남",
+            "Icon": "milestonePatches/PATCH.FIRSTPLANET4.png",
+            "Rewards": [
+              {
+                "Id": "other38",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-2",
+            "Title": "곡예사",
+            "Description": "저공 곡예비행하기",
+            "DescriptionDone": "낮고 빠르게 비행함",
+            "Icon": "milestonePatches/PATCH.SHIP1.png",
+            "Rewards": [
+              {
+                "Id": "other127",
+                "Type": 0,
+                "MultiItemRewardType": "Product",
+                "AmountMin": 10,
+                "AmountMax": 10,
+                "Currency": 0,
+                "ProcTechGroup": "",
+                "ProcTechQuality": 0,
+                "ProcProdType": "Loot",
+                "ProcProdRarity": "Common",
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tMod75",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-3",
+            "Title": "승선을 환영한다",
+            "Description": "우주정거장에 정박하기",
+            "DescriptionDone": "우주정거장 방문 완료",
+            "Icon": "milestonePatches/PATCH.LOSTINSPACE.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 600,
+                "AmountMax": 600,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "conTech64",
+                "Type": 0,
+                "AmountMin": 3,
+                "AmountMax": 3,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-4",
+            "Title": "합류지 1",
+            "Description": "첫 번째 합류지에 도달하기",
+            "DescriptionDone": "첫 번째 합류지에 도달 완료",
+            "Icon": "milestonePatches/PATCH.PARTY.1.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 512,
+                "AmountMax": 512,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "raw58",
+                "Type": 2,
+                "AmountMin": 5000000,
+                "AmountMax": 5000000,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-5",
+            "Title": "자동 진단: 5",
+            "Description": "프레임시프트 발사기 수리하기",
+            "DescriptionDone": "함선 워프 기능 수리 완료",
+            "Icon": "milestonePatches/PATCH.BLUEPRINTWARP.png",
+            "Rewards": [
+              {
+                "Id": "raw56",
+                "Type": 2,
+                "AmountMin": 999,
+                "AmountMax": 999,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "cur65",
+                "Type": 0,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-6",
+            "Title": "성간",
+            "Description": "새로운 성계로 워프하기",
+            "DescriptionDone": "광속에 도달함",
+            "Icon": "milestonePatches/PATCH.WARPFIX.png",
+            "Rewards": [
+              {
+                "Id": "tMod80",
+                "Type": 8,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech30",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech31",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "tech32",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          },
+          {
+            "Id": "seas-5-expedPhase-5-milestone-7",
+            "Title": "합류지 2",
+            "Description": "두 번째 합류지에 도달하기",
+            "DescriptionDone": "두 번째 합류지에 도달 완료",
+            "Icon": "milestonePatches/PATCH.PARTY.2.png",
+            "Rewards": [
+              {
+                "Id": "build418",
+                "Type": 1,
+                "AmountMin": 0,
+                "AmountMax": 0,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              },
+              {
+                "Id": "other126",
+                "Type": 0,
+                "AmountMin": 5,
+                "AmountMax": 5,
+                "Currency": 0,
+                "ProcTechQuality": 0,
+                "HideInSeasonRewards": false
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "Id": "other153",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other154",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          },
+          {
+            "Id": "other155",
+            "Type": 3,
+            "AmountMin": 0,
+            "AmountMax": 0,
+            "Currency": 0,
+            "ProcTechQuality": 0,
+            "HideInSeasonRewards": false
+          }
+        ]
+      }
+    ],
+    "Rewards": [
+      {
+        "Id": "other157",
+        "Type": 13,
+        "AmountMin": 0,
+        "AmountMax": 0,
+        "Currency": 0,
+        "ProcTechQuality": 0,
+        "HideInSeasonRewards": false
+      }
+    ]
   }
 ]

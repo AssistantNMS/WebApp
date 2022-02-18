@@ -5397,6 +5397,31 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build271",
+    "Icon": "building/271.png",
+    "Name": "クラシックチェア",
+    "Group": "家具",
+    "Description": "銀河の宇宙ステーションに設置するために標準化された、頑丈でしっかりとした構造のシート。その角張ったデザインは驚くほど人間工学的です。",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "trade26",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build272",
     "Icon": "building/272.png",
     "Name": "古い潜水球",
@@ -9232,7 +9257,7 @@
     "Icon": "building/432.png",
     "Name": "バブルダクト",
     "Group": "装飾水管",
-    "Description": "「液体」を常に撹拌させて泡状にする透き通ったガラス製の水管。\n\n<SPECIAL>様々な形<>でうまく結合させて、基地の魅力を引き立たせよう。",
+    "Description": "「液体」を撹拌し続けて泡状にする透き通ったガラス製の水管。\n\n<SPECIAL>様々な形<>でうまく結合させて、基地の魅力を引き立たせよう。",
     "BaseValueUnits": 2000.0,
     "CurrencyType": "Quicksilver",
     "IsCraftable": true,
@@ -15832,6 +15857,31 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build813",
+    "Icon": "building/813.png",
+    "Name": "照明標識",
+    "Group": "デコレーション",
+    "Description": "この粘土植木鉢は、気候中和フィールド、栄養リサイクルシステム、および統合されたドリップトレイを備えています。装飾用の植物やその他の装飾品を飾るのに最適です。",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build814",
     "Icon": "building/1.png",
     "Name": "大型の貨物船室A",
@@ -16707,6 +16757,176 @@
       {
         "Id": "raw12",
         "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build851",
+    "Icon": "building/851.png",
+    "Name": "リアリティグリッチ排気煙",
+    "Group": "ジェットパック排気オーバーライド",
+    "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nジェットパックのエキゾーストに、高濃度のパグニウムディスペンサーが取り付けられている。ジェットが作動すると、その結果起こる反応により現実に小さな歪みが刻まれ、興味深い視覚効果を生み出す。\n\nエクソスーツの外観は<TECHNOLOGY>外見変更モジュール<>で変更できる。",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build852",
+    "Icon": "building/852.png",
+    "Name": "至点ポスター",
+    "Group": "デコレーション",
+    "Description": "のりもいらずシワにもならない特製のウォールアート。\nこの黄金のポスターは、長い夏の日の郷愁を思い起こさせる。",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build853",
+    "Icon": "building/853.png",
+    "Name": "深海のポスター",
+    "Group": "デコレーション",
+    "Description": "のりもいらずシワにもならない特製のウォールアート。\n底深くに潜むものの思い出。",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build854",
+    "Icon": "building/854.png",
+    "Name": "領地のポスター",
+    "Group": "デコレーション",
+    "Description": "のりもいらずシワにもならない特製のウォールアート。\nこの血湧き肉躍るポスターには、2つの群れの誇り高きリーダーが領地を巡って衝突している様が描かれている。",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build855",
+    "Icon": "building/855.png",
+    "Name": "アトラスケーキポスター",
+    "Group": "デコレーション",
+    "Description": "のりもいらずシワにもならない特製のウォールアート。\nこのポスターには、アトラスのシンボルマークをあしらった、しっとりとしたクリームケーキが描かれている。",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build856",
+    "Icon": "building/856.png",
+    "Name": "偽造パスポスター",
+    "Group": "デコレーション",
+    "Description": "のりもいらずシワにもならない特製のウォールアート。\nこのポスターには、評判の悪い市場で宣伝されている、割引されたアトラスパスが描かれている。",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build857",
+    "Icon": "building/857.png",
+    "Name": "親愛なるエンティティのポスター",
+    "Group": "デコレーション",
+    "Description": "のりもいらずシワにもならない特製のウォールアート。\nこのポスターには、祭司ナーダが友人や探検家を探している様子が描かれている。",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],

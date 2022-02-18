@@ -5397,6 +5397,31 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build271",
+    "Icon": "building/271.png",
+    "Name": "Klassischer Stuhl",
+    "Group": "Möbel",
+    "Description": "Ein robuster, gut designter Stuhl. Er wurde für den Einbau in Raumstationen in sämtlichen Galaxien standardisiert. Sein kantiges Design ist überraschend ergonomisch.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "trade26",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build272",
     "Icon": "building/272.png",
     "Name": "Verlorene Tiefseetaucherkugel",
@@ -9332,7 +9357,7 @@
     "Icon": "building/436.png",
     "Name": "Siedlungskarte",
     "Group": "Spezialisierte Planetenkarte",
-    "Description": "Eine Karte von einer planetarischen Siedlung in der Nähe, gekauft vom <STELLAR>Raumstation-Kartografen<>\n\nWähle die Karte aus und nutze „Route planen“ (<IMG>FE_ALT1<>), um den Ort in der Anzeige deines Exo-Anzugs einzustellen.",
+    "Description": "Eine Karte von einer planetarischen Siedlung in der Nähe, die beim <STELLAR>Raumstation-Kartografen<> gekauft wurde.\n\nWähle die Karte aus und nutze „Route planen“ (<IMG>FE_ALT1<>), um den Ort in der Anzeige deines Exo-Anzugs einzustellen.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -15812,7 +15837,7 @@
     "Icon": "building/257.png",
     "Name": "Rohr",
     "Group": "Dekoration",
-    "Description": "Grundlegender herstellbarer Konstruktionsgegenstand.\n\nVerschweiße es in Kurven, um komplexe Rohrnetzwerke zu kreieren.",
+    "Description": "Grundlegender herstellbarer Konstruktionsgegenstand.\n\nVerschweiße ihn in Kurven, um komplexe Rohrnetzwerke zu kreieren.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -15825,6 +15850,31 @@
       {
         "Id": "raw8",
         "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build813",
+    "Icon": "building/813.png",
+    "Name": "Beleuchteter Blumentopf",
+    "Group": "Dekoration",
+    "Description": "Dieser Blumentopf aus Keramik verfügt über ein klimaneutralisierendes Feld, ein Nährstoffrecyclingsystem und einen integrierten Auffangbehälter. Er ist ideal, um Zierpflanzen oder andere Dekorationen in Szene zu setzen.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
       }
     ],
     "StatBonuses": [],
@@ -16707,6 +16757,176 @@
       {
         "Id": "raw12",
         "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build851",
+    "Icon": "building/851.png",
+    "Name": "Spuren von Realitätsverzerrung",
+    "Group": "Jetpack-Auspuffüberschreibung",
+    "Description": "Ein exklusiver <STELLAR>Exo-Anzug-Aussehenmodifikator<>.\n\nDer Jetpack-Auslass ist mit einem hochkonzentrierten Pugneum-Verteiler ausgestattet. Wenn die Düsen aktiviert werden, verursacht die daraus resultierende Reaktion Miniaturverzerrungen in der Realität, was zu einem interessanten visuellen Effekt führt.\n\nVerändere das Aussehen deines Exo-Anzugs mit einem <TECHNOLOGY>Aussehenmodifikator<>.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build852",
+    "Icon": "building/852.png",
+    "Name": "Sonnenwende-Poster",
+    "Group": "Dekoration",
+    "Description": "Ein exklusives, selbstklebendes und absolut knitterfreies Stück Wandkunst.\nDieses goldfarbene Poster weckt die Nostalgie langer Sommertage.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build853",
+    "Icon": "building/853.png",
+    "Name": "Tiefsee-Poster",
+    "Group": "Dekoration",
+    "Description": "Ein exklusives, selbstklebendes und absolut knitterfreies Stück Wandkunst.\nEs erinnert daran, was in den Tiefen lauert.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build854",
+    "Icon": "building/854.png",
+    "Name": "Territorien-Poster",
+    "Group": "Dekoration",
+    "Description": "Ein exklusives, selbstklebendes und absolut knitterfreies Stück Wandkunst.\nDieses adrenalingeladene Poster zeigt zwei edle Herdenführer, die um ihr Territorium streiten.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build855",
+    "Icon": "building/855.png",
+    "Name": "Atlas-Kuchenposter",
+    "Group": "Dekoration",
+    "Description": "Ein exklusives selbstklebendes, knitterfreies Wandkunstwerk.\nDieses Poster zeigt einen köstlich-saftigen Kuchen, verziert mit dem Symbol der Atlas.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build856",
+    "Icon": "building/856.png",
+    "Name": "Gefälschter-Pass-Poster",
+    "Group": "Dekoration",
+    "Description": "Ein exklusives selbstklebendes, knitterfreies Wandkunstwerk.\nDieses Poster zeigt einen abgelaufenen Atlas-Pass, wie er von dubiosen Händlern angeboten wird.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build857",
+    "Icon": "building/857.png",
+    "Name": "Freundliches-Wesen-Poster",
+    "Group": "Dekoration",
+    "Description": "Ein exklusives selbstklebendes, knitterfreies Wandkunstwerk.\nDieses Poster zeigt die laufende Suche der Priester-Entität Nada nach Freunden und Entdeckern.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],

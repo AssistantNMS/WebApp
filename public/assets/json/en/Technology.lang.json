@@ -852,7 +852,7 @@
     "Icon": "technology/23.png",
     "Name": "Pulse Engine",
     "Group": "Starship Flight Booster",
-    "Description": "Spaceflight propulsion, boosts and on-demand Pulse Jumps through local system.\n \nUser is advised that <EXOTIC>Tritium<> is required to charge Pulse Engine. Tritium is abundant in <COMMODITY>near-space asteroid fields<>.\n\nHold <IMG>ROLLLEFT<> and <IMG>ROLLRIGHT<> together to engage Pulse Jump.\nHold <IMG>BOOST<> to initiate in-flight speed boost.",
+    "Description": "Spaceflight propulsion, boosts and on-demand Pulse Jumps through local system.\n \nUser is advised that <EXOTIC>Tritium<> is required to charge Pulse Engine. Tritium is abundant in <COMMODITY>near-space asteroid fields<>.\n\nHold <IMG>PULSEJUMP<> to engage Pulse Jump.\nHold <IMG>BOOST<> to initiate in-flight speed boost.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -2600,6 +2600,12 @@
         "LocaleKeyTemplate": "defaultTemplate",
         "Image": "ammo",
         "Value": "4"
+      },
+      {
+        "Name": "Ion Spheres Created",
+        "LocaleKeyTemplate": "defaultTemplate",
+        "Image": "unknown",
+        "Value": "200"
       }
     ],
     "ConsumableRewards": [],
@@ -2995,6 +3001,12 @@
         "LocaleKeyTemplate": "defaultTemplate",
         "Image": "ammo",
         "Value": "2"
+      },
+      {
+        "Name": "Ion Spheres Created",
+        "LocaleKeyTemplate": "defaultTemplate",
+        "Image": "unknown",
+        "Value": "100"
       }
     ],
     "ConsumableRewards": [],
@@ -3107,6 +3119,12 @@
         "LocaleKeyTemplate": "defaultTemplate",
         "Image": "ammo",
         "Value": "0"
+      },
+      {
+        "Name": "Ion Spheres Created",
+        "LocaleKeyTemplate": "defaultTemplate",
+        "Image": "unknown",
+        "Value": "200"
       }
     ],
     "ConsumableRewards": [],
@@ -5554,7 +5572,7 @@
     "Icon": "technology/160.png",
     "Name": "Pulsing Heart",
     "Group": "Fused Organic Technology",
-    "Description": "A fibrous metallic superstructure binds this warm and vital organ with the core of the ship. Without it, the ship would be nothing, a lifeless husk.\n\nHold <IMG>ROLLLEFT<> and <IMG>ROLLRIGHT<> together to ask the heart to initiate a Pulse Jump.\nHold <IMG>BOOST<> to request a speed boost.",
+    "Description": "A fibrous metallic superstructure binds this warm and vital organ with the core of the ship. Without it, the ship would be nothing, a lifeless husk.\n\nHold <IMG>PULSEJUMP<> to ask the heart to initiate a Pulse Jump.\nHold <IMG>BOOST<> to request a speed boost.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -6743,6 +6761,12 @@
         "LocaleKeyTemplate": "defaultTemplate",
         "Image": "ammo",
         "Value": "0"
+      },
+      {
+        "Name": "Ion Spheres Created",
+        "LocaleKeyTemplate": "defaultTemplate",
+        "Image": "unknown",
+        "Value": "200"
       }
     ],
     "ConsumableRewards": [],
@@ -6788,7 +6812,7 @@
     "Icon": "products/79.png",
     "Name": "Waveform Engine",
     "Group": "Highly Customised Starship Engine",
-    "Description": "A highly-tuned version of the conventional starship <TECHNOLOGY>Pulse Engine<>. Wavefront occupancy has been pushed to the limit, creating a pulse experience that is both <STELLAR>efficient<> and <STELLAR>highly responsive<>.\n\nUser is advised that <EXOTIC>Tritium<> is required to charge the drive. Tritium is abundant in <COMMODITY>near-space asteroid fields<>.\n\nHold <IMG>ROLLLEFT<> and <IMG>ROLLRIGHT<> together to engage Pulse Jump. Hold <IMG>BOOST<> to initiate in-flight speed boost.",
+    "Description": "A highly-tuned version of the conventional starship <TECHNOLOGY>Pulse Engine<>. Wavefront occupancy has been pushed to the limit, creating a pulse experience that is both <STELLAR>efficient<> and <STELLAR>highly responsive<>.\n\nUser is advised that <EXOTIC>Tritium<> is required to charge the drive. Tritium is abundant in <COMMODITY>near-space asteroid fields<>.\n\nHold <IMG>PULSEJUMP<> to engage Pulse Jump. Hold <IMG>BOOST<> to initiate in-flight speed boost.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": false,

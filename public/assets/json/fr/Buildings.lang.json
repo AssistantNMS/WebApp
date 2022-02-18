@@ -5397,6 +5397,31 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build271",
+    "Icon": "building/271.png",
+    "Name": "Chaise classique",
+    "Group": "Meuble",
+    "Description": "Un siège robuste de belle facture, standardisé pour une installation dans les stations spatiales de toutes les galaxies. Sa conception angulaire est étonnamment ergonomique.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "trade26",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build272",
     "Icon": "building/272.png",
     "Name": "Bathysphère perdue",
@@ -9232,7 +9257,7 @@
     "Icon": "building/432.png",
     "Name": "Conduit à bulles",
     "Group": "Aqueduc décoratif",
-    "Description": "Cet aqueduc en verre transparent renferme une réserve de 'liquide' en perpétuelle ébullition.\n\nS’intègre intelligemment dans <SPECIAL>différentes formes<> pour créer des spectacles fascinants dans votre base.",
+    "Description": "Cet aqueduc en verre transparent renferme une réserve de 'liquide' en mouvement perpétuel.\n\nS'intègre intelligemment sous <SPECIAL>différentes formes<> pour créer des spectacles fascinants dans votre base.",
     "BaseValueUnits": 2000.0,
     "CurrencyType": "Quicksilver",
     "IsCraftable": true,
@@ -9257,7 +9282,7 @@
     "Icon": "building/433.png",
     "Name": "Conduit à bulles en forme de L",
     "Group": "Aqueduc décoratif",
-    "Description": "Cet aqueduc en verre transparent renferme une réserve de 'liquide' en perpétuelle ébullition. Cette configuration en forme de L permet de réaliser des courbes dans les raccordements des conduits.\n\nSoudez différentes formes de conduits pour créer des spectacles fascinants dans votre base.",
+    "Description": "Cet aqueduc en verre transparent renferme une réserve de 'liquide' en mouvement perpétuel. Cette configuration en forme de L permet de réaliser des courbes dans les raccordements des conduits.\n\nSoudez différentes formes de conduits pour créer des spectacles fascinants dans votre base.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -9282,7 +9307,7 @@
     "Icon": "building/434.png",
     "Name": "Conduit à bulles en forme de T",
     "Group": "Aqueduc décoratif",
-    "Description": "Cet aqueduc en verre transparent renferme une réserve de 'liquide' en perpétuelle ébullition. Cette configuration en forme de T permet de créer des branches dans les connexions de conduits.\n\nSoudez différentes formes de conduits pour créer des spectacles fascinants dans votre base.",
+    "Description": "Cet aqueduc en verre transparent renferme une réserve de 'liquide' en mouvement perpétuel. Cette configuration en forme de T permet de créer des branches dans les connexions de conduits.\n\nSoudez différentes formes de conduits pour créer des spectacles fascinants dans votre base.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -9307,7 +9332,7 @@
     "Icon": "building/435.png",
     "Name": "Conduit à bulles en forme de X",
     "Group": "Aqueduc décoratif",
-    "Description": "Cet aqueduc en verre transparent renferme une réserve de 'liquide' en perpétuelle ébullition. Cette configuration en forme de X permet de relier quatre conduits en une disposition cruciforme.\n\nSoudez différentes formes de conduits pour créer des spectacles fascinants dans votre base.",
+    "Description": "Cet aqueduc en verre transparent renferme une réserve de 'liquide' en mouvement perpétuel. Cette configuration en forme de X permet de relier quatre conduits en une disposition cruciforme.\n\nSoudez différentes formes de conduits pour créer des spectacles fascinants dans votre base.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -15694,7 +15719,7 @@
     "Icon": "building/807.png",
     "Name": "Projecteur de carte holographique",
     "Group": "Dispositif de simulation de système",
-    "Description": "Une maquette décorative d'un système solaire, comprenant des représentations holographiques d'astres divers.\n\nUn petit appareil de mouvement perpétuel qui génère juste assez d'énergie pour maintenir la projection.",
+    "Description": "Une maquette décorative d'un système stellaire, comprenant des représentations holographiques d'astres divers.\n\nUn petit appareil de mouvement perpétuel qui génère juste assez d'énergie pour maintenir la projection.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -15812,7 +15837,7 @@
     "Icon": "building/257.png",
     "Name": "Canalisation",
     "Group": "Décoration",
-    "Description": "Objet structurel constructible de base.\n\n Se raccorde de manière incurvée pour créer des réseaux de tuyaux complexes.",
+    "Description": "Objet structurel constructible de base.\n\nSe raccorde de manière incurvée pour créer des réseaux de tuyaux complexes.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -15825,6 +15850,31 @@
       {
         "Id": "raw8",
         "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build813",
+    "Icon": "building/813.png",
+    "Name": "Pot lumineux",
+    "Group": "Décoration",
+    "Description": "Ce pot de fleurs en argile est doté d'un champ de neutralisation climatique, d'un système de recyclage des nutriments et d'un bac d'égouttage intégré. Idéal pour mettre en valeur des plantes ornementales ou autres décorations.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
       }
     ],
     "StatBonuses": [],
@@ -16707,6 +16757,176 @@
       {
         "Id": "raw12",
         "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build851",
+    "Icon": "building/851.png",
+    "Name": "Traînée de distorsion de réalité",
+    "Group": "Changement de l'échappement du jetpack",
+    "Description": "Un <STELLAR>changement d'apparence de l'exocombinaison<> exclusif.\n\nL'échappement du jetpack est équipé d'un distributeur de pugnéum à haute concentration. Lorsque les jets sont activés, la réaction qui en résulte sculpte des mini-distorsions dans la réalité et crée un effet visuel intéressant.\n\nTransformez l'apparence de votre exocombinaison dans un <TECHNOLOGY>modificateur d'apparence<>.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build852",
+    "Icon": "building/852.png",
+    "Name": "Affiche du solstice",
+    "Group": "Décoration",
+    "Description": "Une œuvre d'art mural exclusive, adhésive et infroissable.\nCette affiche dorée rappelle la nostalgie des longues journées d'été.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build853",
+    "Icon": "building/853.png",
+    "Name": "Affiche abyssale",
+    "Group": "Décoration",
+    "Description": "Une œuvre d'art mural exclusive, adhésive et infroissable.\nUn rappel de ce qui rôde dans les profondeurs.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build854",
+    "Icon": "building/854.png",
+    "Name": "Affiche guerre de territoires",
+    "Group": "Décoration",
+    "Description": "Une œuvre d'art mural exclusive, adhésive et infroissable.\nCette affiche pleine d'adrénaline représente deux nobles chefs de troupeau s'affrontant pour leur territoire.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build855",
+    "Icon": "building/855.png",
+    "Name": "Affiche gâteau d’Atlas",
+    "Group": "Décoration",
+    "Description": "Une œuvre d'art mural exclusive, adhésive et infroissable.\nCette affiche représente un délicieux gâteau à la crème, portant le symbole de l’Atlas.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build856",
+    "Icon": "building/856.png",
+    "Name": "Poster faux pass",
+    "Group": "Décoration",
+    "Description": "Une œuvre d'art mural exclusive, adhésive et infroissable.\nCette affiche représente un pass Atlas de contrefaçon, tels qu’ils sont vendus sur les marchés peu recommandables.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build857",
+    "Icon": "building/857.png",
+    "Name": "Affiche entité-amie",
+    "Group": "Décoration",
+    "Description": "Une œuvre d'art mural exclusive, adhésive et infroissable.\nCette affiche représente le prêtre Nada dans sa recherche d’amis et explorateurs.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],
