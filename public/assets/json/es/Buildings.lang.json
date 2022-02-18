@@ -5397,6 +5397,31 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build271",
+    "Icon": "building/271.png",
+    "Name": "Silla clásica",
+    "Group": "Mueble",
+    "Description": "Un asiento robusto y bien construido, estandarizado para su instalación en estaciones espaciales a través de las galaxias. Su diseño angular es sorprendentemente ergonómico.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "trade26",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build272",
     "Icon": "building/272.png",
     "Name": "Batisfera perdida",
@@ -9232,7 +9257,7 @@
     "Icon": "building/432.png",
     "Name": "Conducto de burbujas",
     "Group": "Acueducto decorativo",
-    "Description": "Este acueducto de vidrio transparente encierra un suministro de «líquido» que se agita perpetuamente.\n\nCrea <SPECIAL>diferentes formas<> para mostrar exhibiciones hipnotizantes en tu base.",
+    "Description": "Este acueducto de vidrio transparente encierra un suministro de «líquido» que se agita perpetuamente.\n\nÚnelo con inteligencia a <SPECIAL>diferentes formas<> para crear hipnóticas piezas en tu base.",
     "BaseValueUnits": 2000.0,
     "CurrencyType": "Quicksilver",
     "IsCraftable": true,
@@ -9257,7 +9282,7 @@
     "Icon": "building/433.png",
     "Name": "Conducto de burbujas en forma de L",
     "Group": "Acueducto decorativo",
-    "Description": "Este acueducto de vidrio transparente encierra un suministro de «líquido» que se agita perpetuamente. La estructura en forma de L permite conectar conductos con curvaturas.\n\nÚnelo a otros conductos con formas diferentes para crear exhibiciones hipnotizantes en tu base.",
+    "Description": "Este acueducto de vidrio transparente encierra un suministro de «líquido» que se agita perpetuamente. La estructura en forma de L permite conectar conductos con curvaturas.\n\nÚnelo con distintas formas de conductos para crear hipnóticas piezas en tu base.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -9282,7 +9307,7 @@
     "Icon": "building/434.png",
     "Name": "Conducto de burbujas en forma de T",
     "Group": "Acueducto decorativo",
-    "Description": "Este acueducto de vidrio transparente encierra un suministro de «líquido» que se agita perpetuamente. La estructura en forma de T permite conectar conductos con ramificaciones.\n\nÚnelo a otros conductos con formas diferentes para crear exhibiciones hipnotizantes en tu base.",
+    "Description": "Este acueducto de vidrio transparente encierra un suministro de «líquido» que se agita perpetuamente. La estructura en forma de T permite conectar conductos con ramificaciones.\n\nÚnelo con distintas formas de conductos para crear hipnóticas piezas en tu base.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -9307,7 +9332,7 @@
     "Icon": "building/435.png",
     "Name": "Conducto de burbujas en forma de X",
     "Group": "Acueducto decorativo",
-    "Description": "Este acueducto de vidrio transparente encierra un suministro de «líquido» que se agita perpetuamente. La estructura en forma de X permite conectar cuatro conductos en una disposición cruciforme.\n\nÚnelo a otros conductos con formas diferentes para crear exhibiciones hipnotizantes en tu base.",
+    "Description": "Este acueducto de vidrio transparente encierra un suministro de «líquido» que se agita perpetuamente. La estructura en forma de X permite conectar cuatro conductos en una disposición cruciforme.\n\nÚnelo con distintas formas de conductos para crear hipnóticas piezas en tu base.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -9332,7 +9357,7 @@
     "Icon": "building/436.png",
     "Name": "Carta de asentamiento",
     "Group": "Carta de navegación planetaria especializada",
-    "Description": "Un mapa que muestra la ubicación de un asentamiento planetario cercano, adquirido del <STELLAR>cartógrafo de la estación espacial<>.\n\nSelecciona el mapa y usa «Trazar rumbo» (<IMG>FE_ALT1<>) para fijar la ubicación en la pantalla de tu exotraje.",
+    "Description": "Un mapa que muestra la ubicación de un asentamiento planetario cercano, adquirido al <STELLAR>cartógrafo de la estación espacial<>.\n\nSelecciona el mapa y usa «Trazar rumbo» (<IMG>FE_ALT1<>) para fijar la ubicación en la pantalla de tu exotraje.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -15812,7 +15837,7 @@
     "Icon": "building/257.png",
     "Name": "Tubería",
     "Group": "Decoración",
-    "Description": "Elemento construible estructural básico.\n\nÚnelo a otros conductos para crear una red de tuberías compleja.",
+    "Description": "Elemento construible estructural básico.\n\nÚnelo con curvaturas para crear una red de tuberías compleja.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -15825,6 +15850,31 @@
       {
         "Id": "raw8",
         "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build813",
+    "Icon": "building/813.png",
+    "Name": "Maceta luminosa",
+    "Group": "Decoración",
+    "Description": "Esta maceta de arcilla cuenta con un campo que neutraliza el clima, un sistema de reciclaje de nutrientes y una bandeja de goteo integrada. Ideal para exhibir plantas decorativas u otras decoraciones.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
       }
     ],
     "StatBonuses": [],
@@ -16707,6 +16757,176 @@
       {
         "Id": "raw12",
         "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build851",
+    "Icon": "building/851.png",
+    "Name": "Ruta de fallo de realidad",
+    "Group": "Anulación de escape de jetpack",
+    "Description": "Una exclusiva <STELLAR>manipulación de apariencia de exotraje<>.\n\nEl escape del jetpack está equipado con un dispensador de púgneo de alta concentración. Cuando se activan los chorros, la reacción resultante crea distorsiones en miniatura en la realidad y crea un efecto visual interesante.\n\nTransforma la apariencia de tu exotraje en un <TECHNOLOGY>modificador de apariencia<>.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build852",
+    "Icon": "building/852.png",
+    "Name": "Cartel del solsticio",
+    "Group": "Decoración",
+    "Description": "Una pieza exclusiva de arte de pared autoadhesiva a prueba de arrugas.\nEste cartel dorado evoca la nostalgia de los largos días de verano.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build853",
+    "Icon": "building/853.png",
+    "Name": "Cartel abisal",
+    "Group": "Decoración",
+    "Description": "Una pieza exclusiva de arte de pared autoadhesivo a prueba de arrugas.\nUn recordatorio de lo que acecha en las profundidades.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build854",
+    "Icon": "building/854.png",
+    "Name": "Cartel de territorios",
+    "Group": "Decoración",
+    "Description": "Una pieza exclusiva de arte de pared autoadhesiva a prueba de arrugas.\nEste cartel lleno de adrenalina muestra a dos nobles líderes de rebaños enfrentándose por el territorio.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build855",
+    "Icon": "building/855.png",
+    "Name": "Póster de bizcocho del atlas",
+    "Group": "Decoración",
+    "Description": "Una exclusiva pieza de arte mural autoadhesiva y a prueba de arrugas.\nEste póster muestra un delicioso bizcocho de nata decorado con el símbolo del Atlas.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build856",
+    "Icon": "building/856.png",
+    "Name": "Póster de pase falsificado",
+    "Group": "Decoración",
+    "Description": "Una exclusiva pieza de arte mural autoadhesiva y a prueba de arrugas.\nEste póster muestra un pase del Atlas con descuento, como si se hubiera comprado en un mercado de dudosa reputación.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build857",
+    "Icon": "building/857.png",
+    "Name": "Póster de entidad amiga",
+    "Group": "Decoración",
+    "Description": "Una exclusiva pieza de arte mural autoadhesiva y a prueba de arrugas.\nEste póster muestra la búsqueda activa de amigos y exploradores por parte del Ente Sacerdote Nada.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],

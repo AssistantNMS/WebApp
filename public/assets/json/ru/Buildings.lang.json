@@ -5397,6 +5397,31 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build271",
+    "Icon": "building/271.png",
+    "Name": "Классический стул",
+    "Group": "Мебель",
+    "Description": "Прочный качественный стул, созданный по стандарту для установки на космических станциях во всех галактиках. Угловатый дизайн на удивление удобен в использовании.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "trade26",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build272",
     "Icon": "building/272.png",
     "Name": "Пропавшая батисфера",
@@ -9332,7 +9357,7 @@
     "Icon": "building/436.png",
     "Name": "Карта поселения",
     "Group": "Специальная планетарная карта",
-    "Description": "Карта, на которой изображено местоположение ближайшего планетарного поселения. Получена у <STELLAR>картографа космической станции<>.\n\nВыберите карту и проложите маршрут (<IMG>FE_ALT1<>), чтобы закрепить координаты на дисплее экзокостюма.",
+    "Description": "Карта, на которой отмечено местоположение ближайшего планетарного поселения. Получена у <STELLAR>картографа космической станции<>.\n\nВыберите карту и проложите маршрут (<IMG>FE_ALT1<>), чтобы закрепить координаты на дисплее экзокостюма.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "None",
     "IsCraftable": false,
@@ -15832,6 +15857,31 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build813",
+    "Icon": "building/813.png",
+    "Name": "Освещенный горшок",
+    "Group": "Украшение",
+    "Description": "Этот керамический горшок для растений оснащен полем нейтрализации климата, системой переработки питательных веществ и встроенным поддоном. Идеально подходит для декоративных растений и других украшений.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build814",
     "Icon": "building/1.png",
     "Name": "Большая комната грузового судна A",
@@ -16707,6 +16757,176 @@
       {
         "Id": "raw12",
         "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build851",
+    "Icon": "building/851.png",
+    "Name": "След сбоя реальности",
+    "Group": "Декоративный выхлоп реактивного ранца",
+    "Description": "Эксклюзивное <STELLAR>изменение внешнего вида экзокостюма<>.\n\nВыхлопная система реактивного ранца оснащена распылителем пугния высокой концентрации. При активации реактивных двигателей начавшаяся реакция прорезает в реальности миниатюрные искривления и создает интересный визуальный эффект.\n\nПоменяйте внешний вид экзокостюма в <TECHNOLOGY>модификаторе внешности<>.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build852",
+    "Icon": "building/852.png",
+    "Name": "Плакат «Солнцестояние»",
+    "Group": "Украшение",
+    "Description": "Эксклюзивные самоклеющиеся несминаемые обои.\nЭтот золотой плакат вызывает ностальгию по долгим летним дням.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build853",
+    "Icon": "building/853.png",
+    "Name": "Плакат «Бездна»",
+    "Group": "Украшение",
+    "Description": "Эксклюзивные самоклеющиеся несминаемые обои.\nНапоминание о том, что прячется в глубинах.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build854",
+    "Icon": "building/854.png",
+    "Name": "Плакат «Территории»",
+    "Group": "Украшение",
+    "Description": "Эксклюзивные самоклеющиеся несминаемые обои.\nНа этом пропитанном адреналином плакате изображены два благородных вожака стад, сражающихся за территорию.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build855",
+    "Icon": "building/855.png",
+    "Name": "Плакат «Торт Атласа»",
+    "Group": "Украшение",
+    "Description": "Самоклеющийся несминаемый плакат на стену.\nНа этом плакате изображен вкусный, пропитанный кремом торт с символом Атласа.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build856",
+    "Icon": "building/856.png",
+    "Name": "Плакат «Поддельный ключ»",
+    "Group": "Украшение",
+    "Description": "Самоклеющийся несминаемый плакат на стену.\nНа этом плакате изображен уцененный ключ Атласа, рекламируемый на сомнительной торговой площадке.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build857",
+    "Icon": "building/857.png",
+    "Name": "Плакат «Сущность-друг»",
+    "Group": "Украшение",
+    "Description": "Самоклеющийся несминаемый плакат на стену.\nНа этом плакате изображены бесконечные поиски друзей и исследователей сущностью-священником Нада.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],

@@ -5397,6 +5397,31 @@
     "HasDevProperties": true
   },
   {
+    "Id": "build271",
+    "Icon": "building/271.png",
+    "Name": "Silla clásica",
+    "Group": "Muebles",
+    "Description": "Un asiento robusto y bien construido, estandarizado para su instalación en Estaciones Espaciales a lo largo y ancho de las galaxias. Su diseño angular es sorprendentemente ergonómico.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "trade26",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
     "Id": "build272",
     "Icon": "building/272.png",
     "Name": "Batisfera perdida",
@@ -9753,7 +9778,7 @@
     "Icon": "building/453.png",
     "Name": "Medio mostrador dorado",
     "Group": "Decoración",
-    "Description": "Este bello medio mostrador dorado está cubierto con una capa delgada de vidrio vivo, asegurando la estabilidad térmica y un acabado antimarcas. Una base iluminada ofrece visibilidad en cualquier condición de iluminación.\n\nInstálalo con los módulos de <TECHNOLOGY>mostrador dorado<> y el <TECHNOLOGY>mostrador esquinero dorado<> para crear composiciones de mostradores a medida.",
+    "Description": "Este bello medio mostrador dorado está cubierto con una capa delgada de vidrio vivo, asegurando así su estabilidad térmica y un acabado antimarcas. Una base iluminada ofrece visibilidad en cualquier condición de iluminación.\n\nInstálalo con los módulos de <TECHNOLOGY>mostrador dorado<> y el <TECHNOLOGY>esquinero dorado<> para lograr composiciones de mostradores a la medida.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -9778,7 +9803,7 @@
     "Icon": "building/454.png",
     "Name": "Mostrador dorado",
     "Group": "Decoración",
-    "Description": "Este bello medio mostrador dorado está cubierto con una capa delgada de vidrio vivo, asegurando la estabilidad térmica y un acabado antimarcas. Una base iluminada ofrece visibilidad en cualquier condición de iluminación.\n\nInstálalo con los módulos de <TECHNOLOGY>medio mostrador dorado<> y el <TECHNOLOGY>mostrador esquinero dorado<> para crear composiciones de mostradores a medida.",
+    "Description": "Este bello medio mostrador dorado está cubierto con una capa delgada de vidrio vivo, asegurando la estabilidad térmica y un acabado antimarcas. Una base iluminada ofrece visibilidad en cualquier condición de iluminación.\n\nInstálalo con los módulos de <TECHNOLOGY>medio mostrador dorado<> y el <TECHNOLOGY>esquinero dorado<> para lograr composiciones de mostradores a la medida.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -9803,7 +9828,7 @@
     "Icon": "building/455.png",
     "Name": "Mostrador esquinero dorado",
     "Group": "Decoración",
-    "Description": "Este bello medio mostrador dorado está cubierto con una capa delgada de vidrio vivo, asegurando la estabilidad térmica y un acabado antimarcas. Una base iluminada ofrece visibilidad en cualquier condición de iluminación.\n\nInstálalo con los módulos de <TECHNOLOGY>mostrador dorado<> y el <TECHNOLOGY>medio mostrador dorado<> para crear composiciones de mostradores a medida.",
+    "Description": "Este bello medio mostrador dorado está cubierto con una capa delgada de vidrio vivo, asegurando la estabilidad térmica y un acabado antimarcas. Una base iluminada ofrece visibilidad en cualquier condición de iluminación.\n\nInstálalo con los módulos de <TECHNOLOGY>mostrador dorado<> y el <TECHNOLOGY>medio mostrador dorado<> para lograr composiciones de mostradores a la medida.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -15812,7 +15837,7 @@
     "Icon": "building/257.png",
     "Name": "Tubería",
     "Group": "Decoración",
-    "Description": "Elemento construible estructural básico.\n\nSoldado en curvas para crear redes de tuberías complejas.",
+    "Description": "Elemento construible estructural básico.\n\nSoldado en curvas para formar redes de tuberías complejas.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -15825,6 +15850,31 @@
       {
         "Id": "raw8",
         "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build813",
+    "Icon": "building/813.png",
+    "Name": "Maceta iluminada",
+    "Group": "Decoración",
+    "Description": "Esta maceta de arcilla cuenta con un campo que neutraliza el clima, un sistema de reciclaje de nutrientes y una bandeja de goteo integrada. Ideal para exhibir plantas decorativas u otras decoraciones.",
+    "BaseValueUnits": 500.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 15
       }
     ],
     "StatBonuses": [],
@@ -16707,6 +16757,176 @@
       {
         "Id": "raw12",
         "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build851",
+    "Icon": "building/851.png",
+    "Name": "Rastro de una falla en la realidad",
+    "Group": "Anulación de escape de jetpack",
+    "Description": "Un <STELLAR>modificador exclusivo de la apariencia del exotraje<>.\n\nEl escape del jetpack viene con un dispensador de púgneo a alta concentración. Al activar los propulsores, la reacción producida forma minidistorsiones en la realidad y genera un efecto visual muy interesante.\n\nTransforma la apariencia de tu exotraje en un <TECHNOLOGY>modificador de apariencia<>.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build852",
+    "Icon": "building/852.png",
+    "Name": "Cartel del solsticio",
+    "Group": "Decoración",
+    "Description": "Una obra de arte para decorar la pared; es exclusiva, autoadherible y a prueba de arrugas.\nEste cartel evoca la nostalgia del verano.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build853",
+    "Icon": "building/853.png",
+    "Name": "Cartel del abismo",
+    "Group": "Decoración",
+    "Description": "Una obra de arte para decorar la pared; es exclusiva, autoadherible y a prueba de arrugas.\nUn lúgubre recordatorio de lo que acecha en las profundidades.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build854",
+    "Icon": "building/854.png",
+    "Name": "Cartel de territorios",
+    "Group": "Decoración",
+    "Description": "Una obra de arte para decorar la pared; es exclusiva, autoadherible y a prueba de arrugas.\nEste cartel retrata a dos fieros líderes peleando por territorio.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build855",
+    "Icon": "building/855.png",
+    "Name": "Póster de pastel de Atlas",
+    "Group": "Decoración",
+    "Description": "Una pieza exclusiva de arte de pared, autoadherible y a prueba de arrugas.\nEste póster representa un delicioso y cremoso pastel, decorado con el símbolo del Atlas.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build856",
+    "Icon": "building/856.png",
+    "Name": "Póster de pase falso",
+    "Group": "Decoración",
+    "Description": "Una pieza exclusiva de arte de pared, autoadherible y a prueba de arrugas.\nEste póster representa un pase Atlas con descuento, como se anuncia en un mercado de dudosa reputación.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "build857",
+    "Icon": "building/857.png",
+    "Name": "Póster de entidad amistosa",
+    "Group": "Decoración",
+    "Description": "Una pieza exclusiva de arte de pared, autoadherible y a prueba de arrugas.\nEste póster representa la búsqueda continua de amigos y exploradores del Ente Sacerdote Nada.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "Quicksilver",
+    "IsCraftable": true,
+    "IsConsumable": false,
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 25
       }
     ],
     "StatBonuses": [],

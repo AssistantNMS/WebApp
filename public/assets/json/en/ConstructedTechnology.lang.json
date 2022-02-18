@@ -821,7 +821,7 @@
     "Icon": "constructedTechnology/27.png",
     "Name": "Exocraft Summoning Station",
     "Group": "Vehicle Translocation Device",
-    "Description": "Construction allows the user to summon any owned Exocraft from anywhere else on that planet.\n\nInterfaces with the <STELLAR>Exosuit Quick Command Menu<> to ease of use.",
+    "Description": "Construction allows the user to summon any owned Exocraft from <STELLAR>anywhere<> else in that system.\n\nInterfaces with the <STELLAR>Exosuit Quick Command Menu<> to ease of use. Can be compressed and carried within the Exosuit with <IMG>DECONSTRUCT<> for later redeployment.",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
     "IsCraftable": true,
@@ -834,15 +834,15 @@
     "RequiredItems": [
       {
         "Id": "raw7",
-        "Quantity": 100
+        "Quantity": 60
       },
       {
         "Id": "raw27",
-        "Quantity": 100
+        "Quantity": 80
       },
       {
         "Id": "prod19",
-        "Quantity": 4
+        "Quantity": 1
       }
     ],
     "StatBonuses": [],
