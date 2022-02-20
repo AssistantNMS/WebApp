@@ -5570,5 +5570,385 @@
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech204",
+    "Icon": "technology/204.png",
+    "Name": "Dispositivo di occultamento",
+    "Group": "Unità di camuffamento attivo",
+    "Description": "All'attivazione, questo modulo preleva energia dai sistemi di <VAL_ON>supporto vitale dell'exotuta<> per manipolare il campo gravitazionale attorno all'utente, rifrangendo la luce e creando un <STELLAR>effetto di camuffamento attivo<>.\n\nQuesto effetto <STELLAR>temporaneo<> può essere utilizzato per sfuggire a un'attenzione ostile indesiderata. ATTENZIONE: il camuffamento attivo potrebbe interrompersi a seguito di manovre impegnative dell'exotuta come l'attivazione del jet pack o l'attivazione dei sistemi d'arma multi-tool.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 80,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech205",
+    "Icon": "technology/205.png",
+    "Name": "Mortaio paralizzante",
+    "Group": "Granate stordenti",
+    "Description": "Arma a proiettili non letale. Spara proiettili che neutralizzano i bersagli nelle vicinanze con una scarica di energia elettrica. Efficace sia contro le entità biologiche sia elettroniche.\n \nCaricata con <FUEL>plasma instabile<>.\n \nPremi <IMG>ALTATTACK<> per attivare.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 150,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech206",
+    "Icon": "technology/79.png",
+    "Name": "Oscillatore a onde",
+    "Group": "Potenziamento Lancia di luce",
+    "Description": "Sovraccarica il raggio energetico generato dalla <TECHNOLOGY>Lancia di luce<> facendo in modo che rilasci una potente scarica elettrica all'impatto.\n\n<STELLAR>Stordisce<> brevemente qualsiasi entità organica e inorganica che incrocia il raggio della Lancia di luce.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech207",
+    "Icon": "technology/83.png",
+    "Name": "Iniettore d'impatto",
+    "Group": "Potenziamento Sputa-impulsi",
+    "Description": "Un potenziamento utilissimo in combattimento per lo <TECHNOLOGY>Sputa-impulsi<>. Questo modulo installa una serie di ugelli di iniezione del carburante delicatamente calibrati all'interno della camera di scoppio, che vengono utilizzati per avviare una combustione controllata all'interno dei suoi proiettili al plasma.\n\nFa in modo che i bersagli colpiti dallo Sputa-impulsi <STELLAR>brucino<> per un breve periodo, causando ulteriori danni.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech208",
+    "Icon": "technology/208.png",
+    "Name": "Cannone neutronico",
+    "Group": "Arma energetica esplosiva",
+    "Description": "Un'<STELLAR>arma ad alta energia<> per il <TECHNOLOGY>multi-tool<>. Il cannone neutronico energizza le particelle atmosferiche prima di lanciarle verso bersagli ostili, infliggendo <STELLAR>gravi danni ad area<>\n\nAccedi alla modalità di fuoco premendo <IMG>CYCLEWEAPON<>. Carica l'arma con <IMG>ATTACK<>, poi rilascia per sprigionare una <STELLAR>raffica di particelle ionizzate<>.\n\nMentre il cannone può sparare colpi singoli istantanei, <TECHNOLOGY>cariche più lunghe<> aumentano di molto la <TECHNOLOGY>velocità e il volume delle particelle rilasciate<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 250,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 95
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech209",
+    "Icon": "technology/209.png",
+    "Name": "Compressore a campo P",
+    "Group": "Potenziamento cannone neutronico",
+    "Description": "Un potente miglioramento al <TECHNOLOGY>cannone neutronico<>. Compressori a risonanza aggiuntivi consentono di incanalare molta più energia nel nucleo centrale del cannone, aumentando moltissimo la potenza operativa.\n\nL'installazione consente a un cannone neutronico completamente caricato di sparare <STELLAR>proiettili aggiuntivi<> ad <STELLAR>alta velocità<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech210",
+    "Icon": "technology/210.png",
+    "Name": "Amplificatore voltaico",
+    "Group": "Modulo di danneggiamento da sovraccarico",
+    "Description": "Un potenziamento generalizzato per tutti i <TECHNOLOGY>sistemi d'arma<> del multi-tool che fa in modo che i proiettili risuonino fortemente all'impatto con un qualsiasi campo magnetico appropriato.\n\nAumenta considerevolmente i <STELLAR>danni<> inflitti a qualsiasi entità organica e inorganica che al momento è <STELLAR>stordita<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw61",
+        "Quantity": 70
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech211",
+    "Icon": "technology/211.png",
+    "Name": "Pilota IA Minotauro",
+    "Group": "Unità di controllo autonoma",
+    "Description": "Un <TECHNOLOGY>plugin pilota artificiale<> semi-autonomo per l'exoscafo pesante ibrido Minotauro. L'installazione consente al Minotauro di <STELLAR>viaggiare da solo verso i pianeti<> e affrontare <STELLAR>combattimenti<> o attività di <STELLAR>estrazione<> per supportare il suo operatore primario.\n\nIl pilota IA cede sempre il controllo all'operatore primario all'entrata nell'abitacolo.\n\nLe routine di pilotaggio sono altamente localizzate. Non può sviluppare legami emotivi né esercitare controllo indipendente sul Minotauro.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech212",
+    "Icon": "technology/212.png",
+    "Name": "Braccio sinistro Sentinella rinforzata",
+    "Group": "Arto Minotauro sostitutivo",
+    "Description": "Una serie di componenti recuperati da una Sentinella rinforzata, ricondizionati per adattarsi all'exoscafo pesante ibrido <TECHNOLOGY>Minotauro<>.\n\nSe installato insieme a un <TECHNOLOGY>laser Minotauro<>, aumenta la <STELLAR>potenza<> e l'<STELLAR>efficacia<> dei sistemi del <TECHNOLOGY>laser minerario<> del Minotauro.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech213",
+    "Icon": "technology/213.png",
+    "Name": "Braccio destro Sentinella rinforzata",
+    "Group": "Arto Minotauro sostitutivo",
+    "Description": "Una serie di componenti recuperati da una Sentinella rinforzata, ricondizionati per adattarsi all'exoscafo pesante ibrido <TECHNOLOGY>Minotauro<>.\n\nOffrono un grande <STELLAR>potenziamento della potenza di fuoco<> al <TECHNOLOGY>sistema di armi<> del Minotauro.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech214",
+    "Icon": "technology/214.png",
+    "Name": "Gambe Sentinella rinforzata",
+    "Group": "Arto Minotauro sostitutivo",
+    "Description": "Una serie di componenti recuperati da una Sentinella rinforzata, ricondizionati per adattarsi all'exoscafo pesante ibrido <TECHNOLOGY>Minotauro<>.\n\nL'installazione migliora in modo significativo i sistemi del <TECHNOLOGY>motore e della mobilità<> del Minotauro.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod149",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech215",
+    "Icon": "technology/215.png",
+    "Name": "Corpo Sentinella rinforzata",
+    "Group": "Nucleo Minotauro sostitutivo",
+    "Description": "Una serie di componenti recuperati da una Sentinella rinforzata, ricondizionati per adattarsi all'exoscafo pesante ibrido <TECHNOLOGY>Minotauro<>.\n\nLa loro funzione sarà quella di <TECHNOLOGY>plugin pilota artificiale<> semi-autonomo. L'installazione consente al Minotauro di <STELLAR>viaggiare da solo verso i pianeti<> e affrontare <STELLAR>combattimenti<> o attività di <STELLAR>estrazione<> per supportare il suo operatore primario.\n\nIl pilota IA cede sempre il controllo all'operatore primario all'entrata nell'abitacolo.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod159",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]

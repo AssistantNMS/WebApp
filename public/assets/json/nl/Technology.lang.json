@@ -5570,5 +5570,385 @@
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech204",
+    "Icon": "technology/204.png",
+    "Name": "Verhullingsapparaat",
+    "Group": "Unit voor actieve camouflage",
+    "Description": "Na het activeren gebruikt deze module energie van het <VAL_ON>lifesupport-systeem van het exopak<> om het zwaartekrachtveld rond de gebruiker te manipuleren, het licht te breken en een <STELLAR>actief camouflage-effect<> te creëren.\n\nDit <STELLAR>tijdelijke<> effect kan worden gebruikt om te ontsnappen aan vijanden. WAARSCHUWING: actieve camouflage kan worden onderbroken bij extreme manoeuvres van het exopak, zoals het activeren van de jetpack of de multitool-wapensystemen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 80,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech205",
+    "Icon": "technology/205.png",
+    "Name": "Verlammingsmortier",
+    "Group": "Verdovingsgranaten",
+    "Description": "Geweldloos projectielwapen. Afgevuurde projectielen schakelen doelwitten in de buurt uit met een elektrische energiestoot. Effectief tegen zowel organische als elektronische entiteiten.\n \nBevat <FUEL>onstabiel plasma<>.\n \nDruk op <IMG>ALTATTACK<> om te activeren.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 150,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech206",
+    "Icon": "technology/79.png",
+    "Name": "Golfvorm-oscillator",
+    "Group": "Vuurspeer-upgrade",
+    "Description": "Overbelast de energiestraal die wordt gegenereerd door de <TECHNOLOGY>vuurspeer<>, waardoor deze een elektrische lading afgeeft op de plaats van inslag.\n\n<STELLAR>Verdooft<> korte tijd alle organische en anorganische entiteiten die worden getroffen door de straal van de vuurspeer.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech207",
+    "Icon": "technology/83.png",
+    "Name": "Inslagontsteker",
+    "Group": "Pulsspitter-upgrade",
+    "Description": "Een krachtige gevechtsupgrade voor de <TECHNOLOGY>pulsspitter<>. Deze module installeert zorgvuldig gekalibreerde brandstofinjectiekoppen, die in de vuurkamer een gecontroleerde verbranding in de plasmaprojectielen veroorzaken.\n\nHierdoor vliegen doelen die zijn geraakt door de pulsspitter voor korte tijd <STELLAR>in brand<>, wat extra schade veroorzaakt.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech208",
+    "Icon": "technology/208.png",
+    "Name": "Neutronenkanon",
+    "Group": "Explosief energetisch wapen",
+    "Description": "Een <STELLAR>hoogenergetische wapen<>uitbreiding voor de <TECHNOLOGY>multitool<>. Het neutronenkanon schiet opgeladen atmosferische deeltjes af naar vijandige doelen, wat <STELLAR>aanzienlijke gebiedschade<> veroorzaakt.\n\nActiveer de vuurstand met <IMG>CYCLEWEAPON<>. Laad het wapen op met <IMG>ATTACK<> en laat los voor een <STELLAR>salvo van geïoniseerde deeltjes<>.\n\nHoewel het kanon direct een enkel schot kan lossen, resulteert <TECHNOLOGY>langer opladen<> in een aanzienlijke verhoging van de <TECHNOLOGY>snelheid en de hoeveelheid van de afgeschoten deeltjes<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 250,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 95
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech209",
+    "Icon": "technology/209.png",
+    "Name": "P-veldcompressor",
+    "Group": "Neutronenkanon-upgrade",
+    "Description": "Een krachtige upgrade voor het <TECHNOLOGY>neutronenkanon<>. Extra resonantiecompressoren leiden aanzienlijk meer energie door de centrale kern van het kanon, waardoor de werkingskracht in hoge mate toeneemt.\n\nNa installatie kan een volledig opgeladen neutronenkanon <STELLAR>extra projectielen<> op <STELLAR>hogere snelheden<> afvuren.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech210",
+    "Icon": "technology/210.png",
+    "Name": "Voltaïsche versterker",
+    "Group": "Schadeverhogende module",
+    "Description": "Een algemene upgrade voor alle multitool-<TECHNOLOGY>wapensystemen<>, waardoor de projectielen dramatisch resoneren als ze een geschikt elektromagnetisch veld raken.\n\nZorgt voor aanzienlijk meer <STELLAR>schade<> aan alle organische en anorganische entiteiten die al <STELLAR>zijn verdoofd<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw61",
+        "Quantity": 70
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech211",
+    "Icon": "technology/211.png",
+    "Name": "Automatische piloot Minotaur",
+    "Group": "Autonome besturingsunit",
+    "Description": "Een semi-autonome <TECHNOLOGY>kunstmatige piloot-plugin<> voor de zware Minotaur-exocrafthybride. Na installatie kan de Minotaur <STELLAR>zelfstandig naar planeten reizen<> en de primaire operator ondersteunen met <STELLAR>gevechts-<> of <STELLAR>mijnbouw<>activiteiten.\n\nDe automatische piloot draagt de controle over aan de primaire operator zodra deze de cockpit betreedt.\n\nDe besturingsroutines zijn zeer plaatsgebonden. De automatische piloot is niet in staat tot emotionele hechting en kan nooit volledig onafhankelijk de controle nemen over de Minotaur.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech212",
+    "Icon": "technology/212.png",
+    "Name": "Linkerarm Sentinel-hardframe",
+    "Group": "Vervangend lichaamsdeel Minotaur",
+    "Description": "Een verzameling geborgen onderdelen van een Sentinel-hardframe, aangepast voor de zware <TECHNOLOGY>Minotaur-<>exocrafthybride.\n\nAls deze wordt geïnstalleerd naast een <TECHNOLOGY>Minotaur-laser<>, neemt de <STELLAR>kracht<> en <STELLAR>effectiviteit<> van de Minotaur<TECHNOLOGY>-mijnlaser<>-systemen toe.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech213",
+    "Icon": "technology/213.png",
+    "Name": "Rechterarm Sentinel-Hardframe",
+    "Group": "Vervangend lichaamsdeel Minotaur",
+    "Description": "Een verzameling geborgen onderdelen van een Sentinel-hardframe, aangepast voor de zware <TECHNOLOGY>Minotaur-<>exocrafthybride.\n\nZorgt voor een aanzienlijke <STELLAR>verbetering van de vuurkracht<> van de <TECHNOLOGY>wapensystemen<> van de Minotaur.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech214",
+    "Icon": "technology/214.png",
+    "Name": "Benen Sentinel-hardframe",
+    "Group": "Vervangend lichaamsdeel Minotaur",
+    "Description": "Een verzameling geborgen onderdelen van een Sentinel-hardframe, aangepast voor de zware <TECHNOLOGY>Minotaur-<>exocrafthybride.\n\nNa installatie zijn de <TECHNOLOGY>motor- en mobiliteit<>systemen van de Minotaur aanzienlijk verbeterd.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod149",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech215",
+    "Icon": "technology/215.png",
+    "Name": "Romp Sentinel-hardframe",
+    "Group": "Vervanging Minotaur-kern",
+    "Description": "Een verzameling geborgen onderdelen van een Sentinel-hardframe, aangepast voor de zware <TECHNOLOGY>Minotaur-<>exocrafthybride.\n\nFunctioneert als een semi-autonome <TECHNOLOGY>kunstmatige piloot-plugin<>. Na installatie kan de Minotaur <STELLAR>zelfstandig naar planeten reizen<> en de primaire operator ondersteunen met <STELLAR>gevechts-<> of <STELLAR>mijnbouw<>activiteiten.\n\nDe automatische piloot draagt de controle over aan de primaire operator zodra deze de cockpit betreedt.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod159",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]

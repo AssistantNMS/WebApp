@@ -5570,5 +5570,385 @@
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech204",
+    "Icon": "technology/204.png",
+    "Name": "Système de camouflage",
+    "Group": "Unité de camouflage actif",
+    "Description": "Lors de l'activation, ce module est alimenté par les systèmes de <VAL_ON>survie de l'exocombinaison<> pour manipuler le champ gravitationnel autour de l'utilisateur, réfracter la lumière et créer un <STELLAR>effet de camouflage actif<>.\n\nCet effet <STELLAR>temporaire<> peut être utilisé pour échapper à la vigilance ennemie. AVERTISSEMENT : le camouflage actif peut être interrompu lors de manœuvres importantes de l'exocombinaison telles que l'activation du jetpack ou des systèmes d'armes du multi-outil.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 80,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech205",
+    "Icon": "technology/205.png",
+    "Name": "Mortier paralysant",
+    "Group": "Grenades étourdissantes",
+    "Description": "Une arme de jet non violente. Les projectiles lancés neutralisent les cibles proches à l'aide d'une décharge électrique. Efficace contre les entités biologiques et électroniques.\n \nSe charge avec du <FUEL>plasma instable<>.\n \nAppuyez sur <IMG>ALTATTACK<> pour l'activer.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 150,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech206",
+    "Icon": "technology/79.png",
+    "Name": "Oscillateur de forme d'onde",
+    "Group": "Amélioration du dard ardent",
+    "Description": "Surcharge le faisceau d'énergie généré par le <TECHNOLOGY>dard ardent<>, l'amenant à délivrer une charge électrique puissante à son point d'impact.\n\n<STELLAR>Étourdit<> brièvement toutes les entités organiques et inorganiques qui croisent le faisceau du dard ardent.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech207",
+    "Icon": "technology/83.png",
+    "Name": "Igniteur à impact",
+    "Group": "Amélioration du souffle destructeur",
+    "Description": "Une amélioration de combat puissante pour le <TECHNOLOGY>souffle destructeur<>. Ce module installe une série de buses d'injection de carburant délicatement calibrées dans la chambre de tir, utilisées pour initier une combustion contrôlée dans ses projectiles à plasma.\n\n<STELLAR>Brûle<> les cibles touchées par le souffle destructeur pendant un court moment, infligeant des dégâts supplémentaires.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech208",
+    "Icon": "technology/208.png",
+    "Name": "Canon à neutrons",
+    "Group": "Arme à énergie explosive",
+    "Description": "Un accessoire d'<STELLAR>arme à haute énergie<> pour le <TECHNOLOGY>multi-outil<>. Le canon à neutrons stimule des particules atmosphériques avant de les propulser vers les cibles ennemies, infligeant des <STELLAR>dégâts de zone importants<>.\n\nAccédez au mode de tir avec <IMG>CYCLEWEAPON<>. Chargez l'arme avec <IMG>ATTACK<> puis relâchez pour libérer une <STELLAR>salve de particules ionisées<>.\n\nMême si le canon peut tirer instantanément, <TECHNOLOGY>un temps plus long entre les recharges<> permet une amélioration considérable de la <TECHNOLOGY>vitesse et du volume des particules libérées<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 250,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 95
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech209",
+    "Icon": "technology/209.png",
+    "Name": "Compresseur de champ-P",
+    "Group": "Amélioration du canon à neutrons",
+    "Description": "Une amélioration puissante pour le <TECHNOLOGY>canon à neutrons<>. Des compresseurs à résonance supplémentaires permettent d'acheminer beaucoup plus d'énergie à travers le noyau central du canon, augmentant considérablement sa puissance.\n\nCette installation permet à un canon à neutrons chargé au maximum de lancer des <STELLAR>projectiles supplémentaires<> <STELLAR>plus rapidement<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech210",
+    "Icon": "technology/210.png",
+    "Name": "Amplificateur voltaïque",
+    "Group": "Module de surcharge des dégâts",
+    "Description": "Une mise à jour généralisée pour tous les <TECHNOLOGY>systèmes d'armes<> du multi-outil, faisant résonner ses projectiles de façon spectaculaire lors de l'impact avec n'importe quel champ électromagnétique adapté.\n\nAugmente considérablement les <STELLAR>dégâts<> infligés à toutes les entités organiques et inorganiques déjà <STELLAR>étourdies<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw61",
+        "Quantity": 70
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech211",
+    "Icon": "technology/211.png",
+    "Name": "Pilote IA du Minotaure",
+    "Group": "Unité de contrôle autonome",
+    "Description": "Un <TECHNOLOGY>plug-in de pilote artificiel<> semi-autonome pour l'exonef lourd hybride du Minotaure. Cette installation permet au Minotaure de <STELLAR>traverser des planètes de manière autonome<> ou d'aider son opérateur principal à <STELLAR>combattre<> ou à <STELLAR>extraire du minerai<>.\n\nLe pilote IA cède toujours le contrôle à l'opérateur principal lorsque ce dernier entre dans le cockpit.\n\nLes opérations de pilotage font l'objet d'une haute restriction. L'IA est incapable de développer des liens émotionnels ou de contrôler indépendamment le Minotaure.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech212",
+    "Icon": "technology/212.png",
+    "Name": "Bras gauche de cuirassé sentinelle",
+    "Group": "Membre de remplacement de Minotaure",
+    "Description": "Une collection de composants récupérés sur un cuirassé, reconditionnés pour l'exonef lourd hybride du <TECHNOLOGY>Minotaure<>.\n\nLorsqu'il est installé à proximité du <TECHNOLOGY>laser du Minotaure<>, il augmente la <STELLAR>puissance<> et l'<STELLAR>efficacité<> des systèmes d'<TECHNOLOGY>extraction au laser<> du Minotaure.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech213",
+    "Icon": "technology/213.png",
+    "Name": "Bras droit de cuirassé sentinelle",
+    "Group": "Membre de remplacement de Minotaure",
+    "Description": "Une collection de composants récupérés sur un cuirassé, reconditionnés pour l'exonef lourd hybride du <TECHNOLOGY>Minotaure<>.\n\nAméliore considérablement la <STELLAR>puissance de feu<> des <TECHNOLOGY>systèmes d'armes<> du Minotaure.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech214",
+    "Icon": "technology/214.png",
+    "Name": "Jambes de cuirassé sentinelle",
+    "Group": "Membre de remplacement de Minotaure",
+    "Description": "Une collection de composants récupérés sur un cuirassé, reconditionnés pour l'exonef lourd hybride du <TECHNOLOGY>Minotaure<>.\n\nAméliore considérablement les systèmes de <TECHNOLOGY>locomotion et de mobilité<> du Minotaure.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod149",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech215",
+    "Icon": "technology/215.png",
+    "Name": "Corps de cuirassé sentinelle",
+    "Group": "Noyau de remplacement de Minotaure",
+    "Description": "Une collection de composants récupérés sur un cuirassé, reconditionnés pour l'exonef lourd hybride du <TECHNOLOGY>Minotaure<>.\n\nFonctionne comme un <TECHNOLOGY>plug-in de pilote artificiel<> semi-autonome. Cette installation permet au Minotaure de <STELLAR>traverser des planètes de manière autonome<> ou d'aider son opérateur principal à <STELLAR>combattre<> ou à <STELLAR>extraire du minerai<>.\n\nLe pilote IA cède toujours le contrôle à l'opérateur principal lorsque ce dernier entre dans le cockpit.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod159",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]

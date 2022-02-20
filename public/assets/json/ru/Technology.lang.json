@@ -5570,5 +5570,385 @@
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech204",
+    "Icon": "technology/204.png",
+    "Name": "Генератор невидимости",
+    "Group": "Модуль активного камуфляжа",
+    "Description": "При активации этот модуль использует мощности системы <VAL_ON>жизнеобеспечения экзокостюма<>, чтобы изменять гравитационное поле вокруг пользователя, преломляя свет и создавая <STELLAR>эффект активного камуфляжа<>.\n\nЭтот <STELLAR>временный<> эффект можно использовать, чтобы избежать нежелательного враждебного внимания. ПРЕДУПРЕЖДЕНИЕ: эффект активного камуфляжа может быть нарушен значительными маневрами экзокостюма, такими как активация реактивного ранца или систем вооружения мультитула.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 80,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech205",
+    "Icon": "technology/205.png",
+    "Name": "Парализующий миномет",
+    "Group": "Оглушающие гранаты",
+    "Description": "Нелетальное оружие дальнего боя. Выпускаемые снаряды нейтрализуют окружающие цели с помощью электрического разряда. Эффективно против биологических и электронных существ.\n \nЗаряжается <FUEL>нестабильной плазмой<>.\n \nДля активации нажмите <IMG>ALTATTACK<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 150,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech206",
+    "Icon": "technology/79.png",
+    "Name": "Генератор волновых колебаний",
+    "Group": "Улучшение пламенного копья",
+    "Description": "Вызывает перегрузку энергетического излучения <TECHNOLOGY>пламенного копья<>, из-за чего тот при ударе испускает мощный электрический разряд.\n\nНенадолго <STELLAR>оглушает<> органических и неорганических существ, попавших под удар пламенного копья.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech207",
+    "Icon": "technology/83.png",
+    "Name": "Ударный воспламенитель",
+    "Group": "Улучшение импульсного скорострела",
+    "Description": "Мощное боевое улучшение для <TECHNOLOGY>импульсного скорострела<>. Этот модуль устанавливает в зарядную камеру несколько точно настроенных форсунок, которые вызывают контролируемый процесс горения внутри зарядов плазмы.\n\nПри попадании эти снаряды ненадолго <STELLAR>поджигают<> цель, нанося дополнительный урон.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech208",
+    "Icon": "technology/208.png",
+    "Name": "Нейтронная пушка",
+    "Group": "Разрывное энергетическое оружие",
+    "Description": "<STELLAR>Высокоэнергетический<> боевой модуль для <TECHNOLOGY>мультитула<>. Нейтронная пушка заряжает атмосферные частицы и выбрасывает их во враждебные цели, нанося <STELLAR>значительный урон по площади<>.\n\nНажмите <IMG>CYCLEWEAPON<>, чтобы выбрать режим стрельбы. Нажмите <IMG>ATTACK<>, чтобы зарядить оружие, а потом отпустите, чтобы выпустить <STELLAR>залп ионизированных частиц<>.\n\nВы можете использовать пушку как скорострельное оружие, но <TECHNOLOGY>более долгая зарядка<> значительно увеличивает <TECHNOLOGY>скорость и объем залпа выпускаемых частиц<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 250,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 95
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech209",
+    "Icon": "technology/209.png",
+    "Name": "Компрессор П-поля",
+    "Group": "Улучшение нейтронной пушки",
+    "Description": "Мощное улучшение для <TECHNOLOGY>нейтронной пушки<>. Дополнительные компрессоры резонанса позволяют значительно повысить объем энергии, направляемой в ядро пушки, что серьезно увеличивает ее мощность.\n\nПри установке позволяет полностью заряженной нейтронной пушке выпускать <STELLAR>дополнительные снаряды<> с <STELLAR>большей скоростью<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech210",
+    "Icon": "technology/210.png",
+    "Name": "Усилитель напряжения",
+    "Group": "Модуль дополнительного урона",
+    "Description": "Стандартное улучшение для всех <TECHNOLOGY>систем вооружения<> мультитула, позволяющее выпускаемым снарядам при ударе сильно резонировать с любыми подходящими электромагнитными полями.\n\nЭто значительно увеличивает <STELLAR>урон<>, наносимый любым <STELLAR>оглушенным<> органическим и неорганическим целям.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw61",
+        "Quantity": 70
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech211",
+    "Icon": "technology/211.png",
+    "Name": "ИИ-пилот «Минотавра»",
+    "Group": "Автономный модуль управления",
+    "Description": "Полуавтономный <TECHNOLOGY>модуль автопилота<> для тяжелого гибридного экзокостюма «Минотавр». После установки позволяет «Минотавру» <STELLAR>передвигаться по поверхности планет<> и участвовать в <STELLAR>бою<> или операциях <STELLAR>добычи<> для поддержки основного оператора.\n\nИИ-пилот всегда передает управление основному оператору, когда тот садится в кабину.\n\nПрограммы пилотирования крайне специализированы. Модуль не способен устанавливать эмоциональные связи и независимо управлять «Минотавром».",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech212",
+    "Icon": "technology/212.png",
+    "Name": "Левая рука каркасного стража",
+    "Group": "Замена конечностей «Минотавра»",
+    "Description": "Набор компонентов, снятых с каркасного стража, переделанных для установки в тяжелый гибридный экзокостюм <TECHNOLOGY>«Минотавр»<>.\n\nПри установке вместе с <TECHNOLOGY>лазером «Минотавра»<> увеличивает <STELLAR>мощность<> и <STELLAR>эффективность<> <TECHNOLOGY>расщепителя<> «Минотавра».",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech213",
+    "Icon": "technology/213.png",
+    "Name": "Правая рука каркасного стража",
+    "Group": "Замена конечностей «Минотавра»",
+    "Description": "Набор компонентов, снятых с каркасного стража, переделанных для установки в тяжелый гибридный экзокостюм <TECHNOLOGY>«Минотавр»<>.\n\nЗначительно <STELLAR>повышает огневую мощь<> <TECHNOLOGY>систем вооружения<> «Минотавра».",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech214",
+    "Icon": "technology/214.png",
+    "Name": "Ноги каркасного стража",
+    "Group": "Замена конечностей «Минотавра»",
+    "Description": "Набор компонентов, снятых с каркасного стража, переделанных для установки в тяжелый гибридный экзокостюм <TECHNOLOGY>«Минотавр»<>.\n\nПри установке значительно улучшает системы <TECHNOLOGY>двигателя и подвижности<> «Минотавра».",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod149",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech215",
+    "Icon": "technology/215.png",
+    "Name": "Корпус каркасного стража",
+    "Group": "Замена ядра «Минотавра»",
+    "Description": "Набор компонентов, снятых с каркасного стража, переделанных для установки в тяжелый гибридный экзокостюм <TECHNOLOGY>«Минотавр»<>.\n\nРаботает аналогично полуавтономному <TECHNOLOGY>модулю пилотирования с ИИ<>. После установки позволяет «Минотавру» <STELLAR>передвигаться по поверхности планет<> и участвовать в <STELLAR>бою<> или операциях <STELLAR>добычи<> для поддержки основного оператора.\n\nИИ-пилот всегда передает управление основному оператору, когда тот садится в кабину.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod159",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]

@@ -5570,5 +5570,385 @@
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech204",
+    "Icon": "technology/204.png",
+    "Name": "Tarngerät",
+    "Group": "Aktive Tarnungseinheit",
+    "Description": "Bei Aktivierung zieht dieses Modul Energie aus den <VAL_ON>Exo-Anzug-Lebenserhaltungssystemen<>, um das Gravitationsfeld um den Benutzer herum zu manipulieren, das Licht zu brechen und einen <STELLAR>aktiven Tarnungseffekt<> zu erzeugen.\n\nDieser <STELLAR>vorübergehende<> Effekt kann genutzt werden, um unerwünschter feindlicher Aufmerksamkeit zu entgehen. WARNUNG: Die aktive Tarnung kann bei dramatischen Exo-Anzug-Manövern wie der Aktivierung des Jetpacks oder der Aktivierung der Multiwerkzeug-Waffensysteme ausfallen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 80,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech205",
+    "Icon": "technology/205.png",
+    "Name": "Paralysemörser",
+    "Group": "Betäubungsgranaten",
+    "Description": "Gewaltfreie Projektilwaffe. Abgeschossene Projektile setzen Ziele in der Nähe mit einem elektrischen Energiestoß außer Gefecht. Wirksam gegen biologische und elektronische Wesen.\n \nMit <FUEL>Instabilem Plasma<> geladen.\n \nDurch Drücken von <IMG>ALTATTACK<> aktivieren.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 150,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech206",
+    "Icon": "technology/79.png",
+    "Name": "Wellenform-Oszillator",
+    "Group": "Glutspeer-Upgrade",
+    "Description": "Überlastet den Energiestrahl des <TECHNOLOGY>Glutspeers<>, wodurch er an seinem Aufprallpunkt eine elektrische Energieladung abgibt.\n\n<STELLAR>Betäubt<> kurzzeitig alle organischen und anorganischen Wesen, die den Strahl des Glutspeers kreuzen.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech207",
+    "Icon": "technology/83.png",
+    "Name": "Aufprallzünder",
+    "Group": "Impulswerfer-Upgrade",
+    "Description": "Ein leistungsstarkes Kampf-Upgrade für den <TECHNOLOGY>Impulswerfer<>. Dieses Modul installiert eine Reihe fein kalibrierter Treibstoff-Einspritzdüsen in der Brennkammer, die einen kontrollierten Verbrennungsvorgang in den Plasmageschossen auslösen.\n\nVerursacht bei Zielen, die vom Impulswerfer getroffen werden, für kurze Zeit eine <STELLAR>Verbrennung<>, die zusätzlichen Schaden verursacht.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech208",
+    "Icon": "technology/208.png",
+    "Name": "Neutronenkanone",
+    "Group": "Explosiv-Energiewaffe",
+    "Description": "Ein <STELLAR>leistungsstarkes Energiewaffen<>-Ansatzstück für das <TECHNOLOGY>Multiwerkzeug<>. Die Neutronenkanone energetisiert atmosphärische Partikel, bevor sie auf feindliche Ziele geschleudert werden, und verursacht <STELLAR>erheblichen Flächenschaden<>.\n\nDrücke <IMG>CYCLEWEAPON<>, um den alternativen Feuermodus zu aktivieren. Lade die Waffe durch Drücken von <IMG>ATTACK<> auf und lasse dann los, um eine <STELLAR>Salve ionisierter Partikel<> zu entfesseln.\n\nWährend die Kanone sofortige Einzelschüsse abgeben kann, <TECHNOLOGY>führt ein längeres Aufladen<> zu einer deutlichen <TECHNOLOGY>Erhöhung des Tempos und Volumens freigesetzter Partikel<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 250,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 95
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech209",
+    "Icon": "technology/209.png",
+    "Name": "P-Feld-Kompressor",
+    "Group": "Neutronenkanonen-Upgrade",
+    "Description": "Ein leistungsstarkes Upgrade für die <TECHNOLOGY>Neutronenkanone<>. Zusätzliche Resonanzkompressoren ermöglichen es, deutlich mehr Energie durch den zentralen Kern der Kanone zu leiten, was die Betriebsleistung drastisch erhöht.\n\nDurch die Installation kann eine voll aufgeladene Neutronenkanone <STELLAR>zusätzliche Projektile<> mit <STELLAR>höheren Geschwindigkeiten<> abfeuern.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech210",
+    "Icon": "technology/210.png",
+    "Name": "Galvanischer Verstärker",
+    "Group": "Schadenüberladungs-Modul",
+    "Description": "Ein allgemeines Upgrade für alle Multiwerkzeug-<TECHNOLOGY>Waffensysteme<>, das bewirkt, dass seine Geschosse beim Aufprall auf ein geeignetes elektromagnetisches Feld dramatisch mitschwingen.\n\nErhöht signifikant den <STELLAR>Schaden<> an organischen und anorganischen Wesen, die aktuell <STELLAR>betäubt sind<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw61",
+        "Quantity": 70
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech211",
+    "Icon": "technology/211.png",
+    "Name": "Minotaurus-KI-Pilot",
+    "Group": "Autonome Kontrolleinheit",
+    "Description": "Ein halbautonomes, <TECHNOLOGY>künstliches Piloten-Plugin<> für den Minotaurus-Exo-Fahrzeug-Hybrid. Die Installation ermöglicht es dem Minotaurus, <STELLAR>selbständig Planeten zu bereisen<> und sich an <STELLAR>Kampfhandlungen<> oder <STELLAR>Bergbauaktivitäten<> zu beteiligen, um seinen primären Anwender zu unterstützen.\n\nDer KI-Pilot gibt die Kontrolle immer an den primären Anwender ab, wenn dieser das Cockpit betritt.\n\nDie Pilotenroutinen sind stark lokalisiert. Er ist nicht in der Lage, emotionale Bindungen zu entwickeln oder eine unabhängige Kontrolle über den Minotaurus auszuüben.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech212",
+    "Icon": "technology/212.png",
+    "Name": "Linker Wächter-Hartgestellarm",
+    "Group": "Minotaurus-Gliedmaßenersatz",
+    "Description": "Eine Sammlung geborgener Komponenten eines Wächter-Hartgestells, die für den <TECHNOLOGY>Minotaurus<>-Exo-Fahrzeug-Hybrid umgebaut wurden.\n\nWerden sie zusammen mit einem <TECHNOLOGY>Minotaurus-Laser<> verbaut, erhöht dies die <STELLAR>Leistung<> und <STELLAR>Effektivität<> der <TECHNOLOGY>Minenlaser<>-Systeme des Minotaurus.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech213",
+    "Icon": "technology/213.png",
+    "Name": "Rechter Wächter-Hartgestellarm",
+    "Group": "Minotaurus-Gliedmaßenersatz",
+    "Description": "Eine Sammlung geborgener Komponenten eines Wächter-Hartgestells, die für den <TECHNOLOGY>Minotaurus<>-Exo-Fahrzeug-Hybrid umgebaut wurden.\n\nGewährt den <TECHNOLOGY>Waffensystemen<> des Minotaurus ein bedeutendes <STELLAR>Feuerkraft-Upgrade<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech214",
+    "Icon": "technology/214.png",
+    "Name": "Wächter-Hartgestellbeine",
+    "Group": "Minotaurus-Gliedmaßenersatz",
+    "Description": "Eine Sammlung geborgener Komponenten eines Wächter-Hartgestells, die für den <TECHNOLOGY>Minotaurus<>-Exo-Fahrzeug-Hybrid umgebaut wurden.\n\nDie Installation wird den <TECHNOLOGY>Antrieb und die Mobilitäts<>systeme des Minotaurus erheblich verbessern.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod149",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech215",
+    "Icon": "technology/215.png",
+    "Name": "Wächter-Hartgestellkörper",
+    "Group": "Minotaurus-Kernersatz",
+    "Description": "Eine Sammlung geborgener Komponenten eines Wächter-Hartgestells, die für den <TECHNOLOGY>Minotaurus<>-Exo-Fahrzeug-Hybrid umgebaut wurden.\n\nFunktioniert als halbautonomes, <TECHNOLOGY>künstliches Piloten-Plugin<>. Die Installation ermöglicht es dem Minotaurus, <STELLAR>selbständig Planeten zu bereisen<> und sich an <STELLAR>Kampfhandlungen<> oder <STELLAR>Bergbauaktivitäten<> zu beteiligen, um seinen primären Anwender zu unterstützen.\n\nDer KI-Pilot gibt die Kontrolle immer an den primären Anwender ab, wenn dieser das Cockpit betritt.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod159",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]

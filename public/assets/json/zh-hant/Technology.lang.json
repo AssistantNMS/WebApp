@@ -5570,5 +5570,385 @@
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech204",
+    "Icon": "technology/204.png",
+    "Name": "隱形裝置",
+    "Group": "主動偽裝單位",
+    "Description": "啟動後，此模組會從<VAL_ON>強化套裝維生<>系統中抽取能量，控制使用者周遭的重力力場，折射光線並創造一個<STELLAR>主動迷彩效果<>。\n\n這個<STELLAR>暫時的<>效果可用於逃離非必要的敵對注意。警告：主動迷彩可能會因激烈的強化套裝動作而中止，像是啟動噴射背包或是啟動工具組武器系統。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 80,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech205",
+    "Icon": "technology/205.png",
+    "Name": "癱瘓迫擊砲",
+    "Group": "暈眩手榴彈",
+    "Description": "「非暴力」射彈武器。發射的射彈會發出一道電能癱瘓附近的目標。對生物和電子存在體都有效。\n\n使用<FUEL>不穩定電漿<>充能。\n\n按下 <IMG>ALTATTACK<> 啟動。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 150,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech206",
+    "Icon": "technology/79.png",
+    "Name": "波形震盪器",
+    "Group": "火焰標槍升級",
+    "Description": "使<TECHNOLOGY>火焰標槍<>所產生的能量光束超載，在其衝擊點釋放能量電子充能。\n\n將會短暫<STELLAR>暈眩<>和火焰標槍光束交會的有機和無機存在體。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech207",
+    "Icon": "technology/83.png",
+    "Name": "衝擊點火器",
+    "Group": "脈衝槍升級",
+    "Description": "<TECHNOLOGY>脈衝槍<>的強大戰鬥升級。此模組在燃燒室中安裝了一系列經過精密校準的燃料噴射噴嘴，用於在其電漿射彈的範圍內造成可控制的燃燒。\n\n讓脈衝槍擊中的目標在短時間內<STELLAR>燃燒<>，造成額外傷害。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech208",
+    "Icon": "technology/208.png",
+    "Name": "中子砲",
+    "Group": "爆炸能量武器",
+    "Description": "<TECHNOLOGY>工具組<>的<STELLAR>高能量武器<>配件。中子砲會將大氣粒子充能後，向敵對目標推進，造成<STELLAR>重大區域傷害<>\n\n按下 <IMG>CYCLEWEAPON<> 進入開火模式。按下 <IMG>ATTACK<> 替武器充能，放開後即可釋放<STELLAR>電離粒子群<>。\n\n雖然大砲可瞬間單發射擊，但<TECHNOLOGY>較長的充能時間<>會顯著增加<TECHNOLOGY>釋放粒子的速度和數量<>。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 250,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 95
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech209",
+    "Icon": "technology/209.png",
+    "Name": "P 力場壓縮機",
+    "Group": "中子砲升級",
+    "Description": "<TECHNOLOGY>中子砲<>的強力升級。額外的共振壓縮機能夠使大幅能量通過大砲的中央核心，顯著增加操作功率。\n\n安裝後，能夠讓充滿能量的中子砲用<STELLAR>更快的速度<>發射<STELLAR>額外射彈<>。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech210",
+    "Icon": "technology/210.png",
+    "Name": "伏打增幅器",
+    "Group": "傷害超載模組",
+    "Description": "工具組<TECHNOLOGY>武器系統<>的通用升級，讓射彈在與任何適當的電磁力場碰撞時，產生劇烈的共振。\n\n對所有處於<STELLAR>暈眩<>狀態的有機和無機存在體，將會顯著提高其受到的<STELLAR>傷害<>。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw61",
+        "Quantity": 70
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech211",
+    "Icon": "technology/211.png",
+    "Name": "彌諾陶洛斯人工智慧駕駛員",
+    "Group": "自主控制單位",
+    "Description": "一種半自主<TECHNOLOGY>人工駕駛員外掛程式<>，用於彌諾陶洛斯重型混合強化艇。安裝後能讓彌諾陶洛斯<STELLAR>獨自穿越星球<>並進行<STELLAR>戰鬥<>或者<STELLAR>採礦<>活動，以支援其主要操作員。\n\n主要操作員進入駕駛艙後，人工駕駛員將會交付控制權。\n\n飛行程序高度在地化。無法發展出情感連結，也無法自由控制彌諾陶洛斯。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech212",
+    "Icon": "technology/212.png",
+    "Name": "巡警硬體結構左臂",
+    "Group": "彌諾陶洛斯四肢替換零件",
+    "Description": "從巡警硬體結構中回收的一系列元件，經過翻新後用於<TECHNOLOGY>彌諾陶洛斯<>重型混合強化艇。\n\n當和<TECHNOLOGY>彌諾陶洛斯雷射<>一起安裝時，可增強彌諾陶洛斯<TECHNOLOGY>採礦雷射<>系統的<STELLAR>威力<>和<STELLAR>效率<>。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech213",
+    "Icon": "technology/213.png",
+    "Name": "巡警硬體結構右臂",
+    "Group": "彌諾陶洛斯四肢替換零件",
+    "Description": "從巡警硬體結構中回收的一系列元件，經過翻新後用於<TECHNOLOGY>彌諾陶洛斯<>重型混合強化艇。\n\n替彌諾陶洛斯<STELLAR>武器系統<>提供顯著的<TECHNOLOGY>火力升級<>。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech214",
+    "Icon": "technology/214.png",
+    "Name": "巡警硬體結構腿",
+    "Group": "彌諾陶洛斯四肢替換零件",
+    "Description": "從巡警硬體結構中回收的一系列元件，經過翻新後用於<TECHNOLOGY>彌諾陶洛斯<>重型混合強化艇。\n\n安裝後會顯著提升<TECHNOLOGY>引擎和機動性<>系統。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod149",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech215",
+    "Icon": "technology/215.png",
+    "Name": "巡警硬體結構機身",
+    "Group": "彌諾陶洛斯核心替換零件",
+    "Description": "從巡警硬體結構中回收的一系列元件，經過翻新後用於<TECHNOLOGY>彌諾陶洛斯<>重型混合強化艇。\n\n可作為半自主的<TECHNOLOGY>人工駕駛員外掛程式<>使用。安裝後能讓彌諾陶洛斯<STELLAR>獨自穿越星球<>並進行<STELLAR>戰鬥<>或者<STELLAR>採礦<>活動，以支援其主要操作員。\n\n主要操作員進入駕駛艙後，人工駕駛員將會交付控制權。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod159",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]
