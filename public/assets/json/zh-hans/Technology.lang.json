@@ -5570,5 +5570,385 @@
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech204",
+    "Icon": "technology/204.png",
+    "Name": "隐形装置",
+    "Group": "主动迷彩单位",
+    "Description": "激活后，这种模块将消耗<VAL_ON>套装维生<>系统的能源来扭曲使用者周围的重力场，折射光线并创造<STELLAR>主动迷彩效果<>。\n\n这种<STELLAR>暂时性<>的效果能够用来摆脱敌人的抓捕。警告：使用套装进行类似启动喷气背包或者是激活多用途工具武器系统等剧烈动作将有可能关闭主动迷彩。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 80,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech205",
+    "Icon": "technology/205.png",
+    "Name": "瘫痪迫击炮",
+    "Group": "眩晕手榴弹",
+    "Description": "非致命性投射武器。此武器发射的投射物可释放电能冲击瘫痪周遭目标，能够有效对抗生命体与电子设备。\n\n充能需要消耗<FUEL>不稳定的等离子<>。\n\n按<IMG>ALTATTACK<>激活武器。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 150,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech206",
+    "Icon": "technology/79.png",
+    "Name": "波形振荡器",
+    "Group": "火焰标枪升级",
+    "Description": "能够使<TECHNOLOGY>火焰标枪<>制造的能量光束过载，并借此向攻击位置投射一道极其强大的电荷。\n\n能够短暂<STELLAR>眩晕<>接触火焰标枪光束的一切有机与非有机体。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech207",
+    "Icon": "technology/83.png",
+    "Name": "冲击点火器",
+    "Group": "脉冲喷射器升级",
+    "Description": "强大的<TECHNOLOGY>脉冲喷射器<>战斗升级组件。这种模块能够在发射室中安装一系列精准调校过的燃料注射喷嘴，这些装置能够在武器的等离子投射物中引发局部燃烧。\n\n脉冲喷射器命中的目标将会短暂<STELLAR>燃烧<>，承受额外伤害。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech208",
+    "Icon": "technology/208.png",
+    "Name": "中子大炮",
+    "Group": "爆炸性能量武器",
+    "Description": "一种为<TECHNOLOGY>多用途工具<>设计的<STELLAR>高能武器<>组件。中子大炮通过发射高能大气悬浮颗粒对敌对目标造成<STELLAR>大量范围伤害<>\n\n按<IMG>CYCLEWEAPON<>激活开火模式。按<IMG>ATTACK<>为武器充能，松开后即可施放<STELLAR>一连串离子颗粒<>。\n\n中子大炮可以随时发射单枚投射物，不过<TECHNOLOGY>持续充能<>能够显著提高<TECHNOLOGY>投射粒子的速度与数量<>。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 250,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 95
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech209",
+    "Icon": "technology/209.png",
+    "Name": "P力场压缩机",
+    "Group": "中子大炮升级",
+    "Description": "强劲的<TECHNOLOGY>中子大炮<>升级组件。此升级提供的额外共鸣压缩机将显著提高中子大炮核心接收的能量，并借此大幅提升功率。\n\n安装此升级组件后，完全充能的中子大炮能够<STELLAR>高速发射<>一枚<STELLAR>额外投射物<>。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech210",
+    "Icon": "technology/210.png",
+    "Name": "电压放大器",
+    "Group": "伤害过载模块",
+    "Description": "适用于所有多用途工具<TECHNOLOGY>武器系统<>的通用型升级组件，能够使投射物与接触到的任何电磁场产生剧烈共鸣。\n\n这种组件能够大幅提高对处于<STELLAR>晕眩<>状态的有机与无机体造成的<STELLAR>伤害<>。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw61",
+        "Quantity": 70
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech211",
+    "Icon": "technology/211.png",
+    "Name": "弥诺陶洛斯人工智能驾驶员",
+    "Group": "自主控制单元",
+    "Description": "专为弥诺陶洛斯重型混合强化艇设计的半自主<TECHNOLOGY>智能导航插件<>。安装后，弥诺陶洛斯将能够<STELLAR>独立跨越行星<>并与敌人<STELLAR>交战<>，除此以外还能进行<STELLAR>采矿<>以帮助自己的主要操作员。\n\n当主要操作员进入驾驶舱后，人工智能驾驶员将移交设备控制权。\n\n导航程序已经过高度本地化。人工智能无法与操作员产生情感联系，也无法完全独立操纵弥诺陶洛斯。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech212",
+    "Icon": "technology/212.png",
+    "Name": "护卫强化外壳左臂",
+    "Group": "弥诺陶洛斯肢体替换组件",
+    "Description": "从一台护卫强化外壳上回收的构件，针对<TECHNOLOGY>弥诺陶洛斯<>重型混合强化艇进行了改装处理。\n\n与<TECHNOLOGY>弥诺陶洛斯激光<>一同安装后，能够提高<TECHNOLOGY>开采激光<>系统的<STELLAR>功率<>以及<STELLAR>效率<>。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech213",
+    "Icon": "technology/213.png",
+    "Name": "护卫强化外壳右臂",
+    "Group": "弥诺陶洛斯肢体替换组件",
+    "Description": "从一台护卫强化外壳上回收的构件，针对<TECHNOLOGY>弥诺陶洛斯<>重型混合强化艇进行了改装处理。\n\n能够显著提升弥诺陶洛斯<TECHNOLOGY>武器系统<>的<STELLAR>火力<>。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech214",
+    "Icon": "technology/214.png",
+    "Name": "护卫强化外壳腿部",
+    "Group": "弥诺陶洛斯肢体替换组件",
+    "Description": "从一台护卫强化外壳上回收的构件，针对<TECHNOLOGY>弥诺陶洛斯<>重型混合强化艇进行了改装处理。\n\n安装后能够显著提升弥诺陶洛斯的<TECHNOLOGY>驱动器以及机动<>系统。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod149",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech215",
+    "Icon": "technology/215.png",
+    "Name": "护卫强化外壳机体",
+    "Group": "弥诺陶洛斯核心替换组件",
+    "Description": "从一台护卫强化外壳上回收的构件，针对<TECHNOLOGY>弥诺陶洛斯<>重型混合强化艇进行了改装处理。\n\n能够作为半自主<TECHNOLOGY>智能导航插件<>使用。安装后，弥诺陶洛斯将能够<STELLAR>独立跨越行星<>并与敌人<STELLAR>交战<>，除此以外还能进行<STELLAR>采矿<>以帮助自己的主要操作员。\n\n当主要操作员进入驾驶舱后，人工智能驾驶员将移交设备控制权。",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod159",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]

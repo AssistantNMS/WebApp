@@ -5570,5 +5570,385 @@
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech204",
+    "Icon": "technology/204.png",
+    "Name": "Dispositivo de camuflagem",
+    "Group": "Unidade de camuflagem ativa",
+    "Description": "Ao ser ativado, este módulo consome energia dos sistemas de <VAL_ON>sobrevivência do exotraje<> para manipular o campo gravitacional ao redor do usuário, refratando a luz e criando um <STELLAR>efeito de camuflagem ativo<>.\n\nEste efeito <STELLAR>temporário<> pode ser utilizado pelo usuário para escapar de atenções hostis indesejadas. ATENÇÃO: a camuflagem ativa pode ser abortada em manobras dramáticas do exotraje, como a ativação do jetpack ou dos sistemas de armamento da multiferramenta.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 80,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech205",
+    "Icon": "technology/205.png",
+    "Name": "Morteiro paralisante",
+    "Group": "Granadas de atordoamento",
+    "Description": "Arma com projétil não violenta. Projéteis lançados incapacitarão alvos próximos com uma explosão de energia elétrica. Eficaz contra entidades biológicas e eletrônicas.\n \nÉ carregada com <FUEL>plasma instável<>.\n \nPressione <IMG>ALTATTACK<> para ativar.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 150,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech206",
+    "Icon": "technology/79.png",
+    "Name": "Oscilador de forma de onda",
+    "Group": "Atualização do dardo flamejante",
+    "Description": "Sobrecarrega o raio de energia gerado pela <TECHNOLOGY>arma de precisão<>, fazendo com que ele dispare uma carga elétrica em seu ponto de impacto.\n\nEle <STELLAR>atordoará<> por alguns instantes quaisquer entidades orgânicas e inorgânicas que cruzarem o raio da arma de precisão.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech207",
+    "Icon": "technology/83.png",
+    "Name": "Ignitor de impacto",
+    "Group": "Atualização do emissor de pulsos",
+    "Description": "Uma poderosa atualização de combate para o <TECHNOLOGY>emissor de pulsos<>. Este módulo instala uma série de bocais de injeção de combustível delicadamente calibrados dentro da câmara de disparo, que são utilizados para iniciar uma queima controlada dentro de seus projéteis de plasma.\n\nFaz com que os alvos atingidos pelo emissor de pulsos <STELLAR>queimem<> por um curto período, causando dano adicional.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech208",
+    "Icon": "technology/208.png",
+    "Name": "Canhão de nêutrons",
+    "Group": "Arma de energia explosiva",
+    "Description": "Um acessório de <STELLAR>arma de alta energia<> para a <TECHNOLOGY>multiferramenta<>. O Canhão de nêutrons energiza as partículas atmosféricas antes de impulsioná-las na direção de alvos hostis, causando um <STELLAR>dano em área<> significativo\n\nAcesse o modo de disparo pressionando <IMG>CYCLEWEAPON<>. Carregue a arma com <IMG>ATTACK<>, e então solte para liberar uma <STELLAR>saraivada de partículas ionizadas<>.\n\nAlém de o canhão poder disparar tiros únicos instantâneos, <TECHNOLOGY>cargas mais longas<> resultarão em um aumentos significativo na <TECHNOLOGY>velocidade e quantidade de partículas liberadas<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 250,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 95
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech209",
+    "Icon": "technology/209.png",
+    "Name": "Compressor de Campo-P",
+    "Group": "Atualização do canhão de nêutrons",
+    "Description": "Uma atualização poderosa para o <TECHNOLOGY>canhão de nêutrons<>. Os compressores de ressonância adicionais permitem que muito mais energia seja roteada através do núcleo central do canhão, aumentando drasticamente sua potência operacional.\n\nSua instalação permitirá que um canhão de nêutrons totalmente carregado dispare <STELLAR>projéteis adicionais<> a <STELLAR>velocidades mais altas<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech210",
+    "Icon": "technology/210.png",
+    "Name": "Amplificador galvânico",
+    "Group": "Módulo de sobrecarga de dano",
+    "Description": "Uma atualização generalizada para todos os <TECHNOLOGY>sistemas de armamento<> da multiferramenta, fazendo com que seus projéteis ressoem dramaticamente no impacto contra qualquer campo eletromagnético apropriado.\n\nAumentará significativamente o <STELLAR>dano<> causado a quaisquer entidades orgânicas e inorgânicas que estejam <STELLAR>atordoadas<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw61",
+        "Quantity": 70
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech211",
+    "Icon": "technology/211.png",
+    "Name": "Piloto de IA do Minotauro",
+    "Group": "Unidade de controle autônoma",
+    "Description": "Um <TECHNOLOGY>plug-in de piloto de inteligência artificial<> semiautônomo para o exoveículo pesado híbrido Minotauro. Sua instalação permite que o Minotauro <STELLAR>viaje por planetas por conta própria<> e se envolva em atividades de <STELLAR>combate<> ou <STELLAR>mineração<> para dar suporte ao seu operador principal.\n\nO piloto de IA sempre cederá o controle ao operador principal quando este entrar no cockpit.\n\nAs rotinas de pilotagem são altamente localizadas. A IA é incapaz de desenvolver vínculos emocionais ou de exercer controle independente do Minotauro.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech212",
+    "Icon": "technology/212.png",
+    "Name": "Braço esquerdo de megasentinela",
+    "Group": "Substituição de membro do Minotauro",
+    "Description": "Um conjunto de componentes retirados de um megasentinela, recondicionados para se adequarem ao exoveículo pesado híbrido <TECHNOLOGY>Minotauro<>.\n\nQuando é instalado junto com um <TECHNOLOGY>laser do Minotauro<>, aumenta a <STELLAR>potência<> e <STELLAR>eficácia<> dos sistemas do <TECHNOLOGY>laser minerador<> do Minotauro.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech213",
+    "Icon": "technology/213.png",
+    "Name": "Braço direito de megasentinela",
+    "Group": "Substituição de membro do Minotauro",
+    "Description": "Um conjunto de componentes retirados de um megasentinela, recondicionados para se adequarem ao exoveículo pesado híbrido <TECHNOLOGY>Minotauro<>.\n\nOferece uma <STELLAR>melhoria no poder de fogo<> significativa para os <TECHNOLOGY>sistemas de armas<> do Minotauro.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech214",
+    "Icon": "technology/214.png",
+    "Name": "Pernas de megasentinela",
+    "Group": "Substituição de membro do Minotauro",
+    "Description": "Um conjunto de componentes retirados de um megasentinela, recondicionados para se adequarem ao exoveículo pesado híbrido <TECHNOLOGY>Minotauro<>.\n\nSua instalação melhorará significativamente os sistemas do <TECHNOLOGY>motor e de mobilidade<> do Minotauro.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod149",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech215",
+    "Icon": "technology/215.png",
+    "Name": "Corpo de megasentinela",
+    "Group": "Substituição do núcleo do Minotauro",
+    "Description": "Um conjunto de componentes retirados de um megasentinela, recondicionados para se adequarem ao exoveículo pesado híbrido <TECHNOLOGY>Minotauro<>.\n\nFuncionará como um <TECHNOLOGY>plug-in de piloto de inteligência artificial<> semiautônomo. Sua instalação permite que o Minotauro <STELLAR>viaje por planetas por conta própria<> e se envolva em atividades de <STELLAR>combate<> ou <STELLAR>mineração<> para dar suporte ao seu operador principal.\n\nO piloto de IA sempre cederá o controle ao operador principal quando este entrar no cockpit.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod159",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]

@@ -5570,5 +5570,385 @@
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech204",
+    "Icon": "technology/204.png",
+    "Name": "은폐 장치",
+    "Group": "활성 위장 유닛",
+    "Description": "이 모듈은 작동 시 <VAL_ON>엑소슈트 생명 유지<> 시스템에서 동력을 끌어와 사용자 주변의 중력장을 조작하여 빛을 굴절시키고 <STELLAR>활성 위장 효과<>를 만들어 냅니다.\n\n이 <STELLAR>일시적<> 효과는 원치 않는 적대적인 관심에서 벗어날 때 사용할 수 있습니다. 경고: 제트팩 사용 또는 멀티툴 무기 시스템 작동과 같은 과격한 엑소슈트 사용 시 활동 위장이 중단될 수 있습니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 80,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech205",
+    "Icon": "technology/205.png",
+    "Name": "마비 박격포",
+    "Group": "기절 수류탄",
+    "Description": "비폭력 발사체 무기. 발사체는 전기 에너지 폭발로 근처의 목표물을 무력화합니다. 생물 엔티티와 전자 엔티티 모두에 효과적입니다.\n \n<FUEL>불안정 플라스마<>로 충전합니다.\n \n<IMG>ALTATTACK<>을 눌러 사용합니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 150,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech206",
+    "Icon": "technology/79.png",
+    "Name": "파형 진동자",
+    "Group": "블레이즈 자벨린 업그레이드",
+    "Description": "<TECHNOLOGY>블레이즈 자벨린<>이 생성한 에너지 빔을 과부하시켜 충돌 지점에 강력한 전하를 전달합니다.\n\n블레이즈 자벨린의 빔을 맞으면 어떤 유기 및 무기 엔티티든 잠시 <STELLAR>기절<>하게 됩니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech207",
+    "Icon": "technology/83.png",
+    "Name": "충격 점화기",
+    "Group": "펄스 스피터 업그레이드",
+    "Description": "<TECHNOLOGY>펄스 스피터<>의 강력한 전투 업그레이드입니다. 이 모듈은 섬세하게 조정된 일련의 연료 주입 노즐을 플라스마 발사체 내부에서 통제된 화염을 일으키는 데 쓰이는 약실에 설치합니다.\n\n펄스 스피터에 맞은 대상에 잠시 <STELLAR>화상<>을 일으켜 추가 피해를 입힙니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech208",
+    "Icon": "technology/208.png",
+    "Name": "중성자 캐논",
+    "Group": "폭발 에너지 무기",
+    "Description": "<TECHNOLOGY>멀티툴<>용 <STELLAR>고에너지 무기<>입니다. 중성자 캐논은 대기 입자에 에너지를 공급해 적대 목표물을 향해 발사하며 <STELLAR>상당한 범위 피해<>를 줍니다.\n\n<IMG>CYCLEWEAPON<>을 눌러 사격 모드를 사용할 수 있습니다. <IMG>ATTACK<>으로 충전한 다음, 놓으면 <STELLAR>이온 입자를 일제히<> 사격합니다.\n\n캐논으로 즉시 단발을 발사할 수도 있고 <TECHNOLOGY>오래 충전하면<> <TECHNOLOGY>입자 속도와 발사량<>이 상당히 증가합니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 250,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 95
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech209",
+    "Icon": "technology/209.png",
+    "Name": "P-필드 컴프레서",
+    "Group": "중성자 캐논 업그레이드",
+    "Description": "<TECHNOLOGY>중성자 캐논<>의 강력한 업그레이드입니다. 추가 공진 압축기를 사용해서 대포의 중앙 코어로 훨씬 더 많은 에너지를 전달해 작동 전력이 많이 증가합니다.\n\n설치하면 한계까지 충전한 중성자 캐논으로 <STELLAR>추가 발사체<>를 <STELLAR>더 빠르게<> 발사합니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech210",
+    "Icon": "technology/210.png",
+    "Name": "볼테익 증폭기",
+    "Group": "피해 과부하 모듈",
+    "Description": "모든 멀티툴 <TECHNOLOGY>무기 시스템<>을 위해 보편화된 업그레이드로, 발사체가 적절한 전자기장과 충돌 시 크게 공명하게 만듭니다.\n\n현재 <STELLAR>기절<> 상태인 유기 및 무기 엔티티에게 가하는 <STELLAR>피해<>가 크게 증가합니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw61",
+        "Quantity": 70
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech211",
+    "Icon": "technology/211.png",
+    "Name": "미노타우로스 AI 파일럿",
+    "Group": "자율 제어 유닛",
+    "Description": "미노타우로스 중장갑 엑소크래프트 하이브리드용 반자동 <TECHNOLOGY>인공 파일럿 플러그인<>입니다. 설치 시 미노타우로스가 <STELLAR>스스로 행성을 횡단<>하고 <STELLAR>전투<>나 <STELLAR>채광<>을 진행하여 주 운전자를 지원합니다.\n\nAI 파일럿은 조종석에 들어갈 때 항상 주 운전자에게 제어권을 양도합니다.\n\n운전 경로는 매우 국지적입니다. 미노타우로스와 정서적 유대를 형성하거나 미노타우로스를 독립적으로 통제할 수는 없습니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech212",
+    "Icon": "technology/212.png",
+    "Name": "센티널 하드프레임 왼팔",
+    "Group": "미노타우로스 수족 교체",
+    "Description": "센티널 하드프레임에서 노획한 부품으로, <TECHNOLOGY>미노타우로스<> 중장갑 엑소크래프트 하이브리드에 맞게 재구성되었습니다.\n\n<TECHNOLOGY>미노타우로스 레이저<>와 함께 설치하면, 미노타우로스 <TECHNOLOGY>마이닝 레이저<> 시스템의 <STELLAR>출력<>과 <STELLAR>효율<>이 증가합니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech213",
+    "Icon": "technology/213.png",
+    "Name": "센티널 하드프레임 오른팔",
+    "Group": "미노타우로스 수족 교체",
+    "Description": "센티널 하드프레임에서 인양한 부품으로, <TECHNOLOGY>미노타우로스<> 중장갑 엑소크래프트 하이브리드에 맞게 재구성되었습니다.\n\n미노타우로스의 <TECHNOLOGY>무기 시스템<> <STELLAR>화력<>이 극도로 강화됩니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech214",
+    "Icon": "technology/214.png",
+    "Name": "센티널 하드프레임 다리",
+    "Group": "미노타우로스 수족 교체",
+    "Description": "센티널 하드프레임에서 인양한 부품으로, <TECHNOLOGY>미노타우로스<> 중장갑 엑소크래프트 하이브리드에 맞게 재구성되었습니다.\n\n설치 시 미노타우로스의 <TECHNOLOGY>엔진과 기동<> 시스템이 극도로 개선됩니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod149",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech215",
+    "Icon": "technology/215.png",
+    "Name": "센티널 하드프레임 본체",
+    "Group": "미노타우로스 코어 교체품",
+    "Description": "센티널 하드프레임에서 인양한 부품으로, <TECHNOLOGY>미노타우로스<> 중장갑 엑소크래프트 하이브리드에 맞게 재구성되었습니다.\n\n반자동 <TECHNOLOGY>인공 파일럿 플러그인<>으로 기능합니다. 설치 시 미노타우로스가 <STELLAR>스스로 행성을 횡단<>하고 <STELLAR>전투<>나 <STELLAR>채광<>을 진행하여 주 운전자를 지원합니다.\n\nAI 파일럿은 조종석에 들어갈 때 항상 주 운전자에게 제어권을 양도합니다.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod159",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]

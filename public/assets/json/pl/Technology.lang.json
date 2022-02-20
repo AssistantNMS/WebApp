@@ -5570,5 +5570,385 @@
     "StatBonuses": [],
     "ConsumableRewards": [],
     "HasDevProperties": true
+  },
+  {
+    "Id": "tech204",
+    "Icon": "technology/204.png",
+    "Name": "Urządzenie maskujące",
+    "Group": "Moduł aktywnego kamuflażu",
+    "Description": "Po aktywacji moduł pobiera moc z systemów <VAL_ON>podtrzymywania życia<> i manipuluje polem grawitacyjnym wokół użytkownika, by zaginać światło, tworząc <STELLAR>aktywny kamuflaż<>.\n\nTen <STELLAR>tymczasowy<> efekt pozwala uniknąć niezamierzonego kontaktu z wrogiem. UWAGA: aktywny kamuflaż może się wyłączyć po wykonaniu gwałtownych manewrów w egzokombinezonie, na przykład podczas aktywacji plecaka odrzutowego lub systemów uzbrojenia multinarzędzia.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 80,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod20",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 2
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech205",
+    "Icon": "technology/205.png",
+    "Name": "Moździerz paraliżujący",
+    "Group": "Granaty ogłuszające",
+    "Description": "Niezabijająca broń miotająca. Wystrzelone pociski ogłuszają pobliskie cele ładunkiem energii elektrycznej. Działają zarówno przeciw istotom biologicznym, jak i elektronicznym.\n \nOręż ładowany <FUEL>niestabilną plazmą<>.\n \nWciśnij <IMG>ALTATTACK<>, by uruchomić.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 150,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod11",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech206",
+    "Icon": "technology/79.png",
+    "Name": "Oscylator kształtu fali",
+    "Group": "Ulepszenie oszczepu rozbłysku",
+    "Description": "Doładowuje promień energii generowany przez <TECHNOLOGY>oszczep rozbłysku<>, tworząc potężny ładunek elektryczny w miejscu uderzenia.\n\nNa chwilę <STELLAR>ogłusza<> wszystkie organiczne i nieorganiczne istoty mające kontakt z promieniem oszczepu rozbłysku.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 75
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 125
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech207",
+    "Icon": "technology/83.png",
+    "Name": "Zapalacz uderzeniowy",
+    "Group": "Ulepszenie PMa pulsacyjnego",
+    "Description": "Potężne ulepszenie bojowe dla <TECHNOLOGY>spluwacza pulsacyjnego<>. Moduł ten instaluje w lufie serię delikatnie skalibrowanych dysz wtryskowych paliwa, które inicjują kontrolowane spalanie w pociskach plazmowych.\n\nSprawia, że cele trafione pulsatorem <STELLAR>płoną<> przez krótką chwilę i otrzymują dodatkowe obrażenia.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod5",
+        "Quantity": 4
+      },
+      {
+        "Id": "raw29",
+        "Quantity": 200
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech208",
+    "Icon": "technology/208.png",
+    "Name": "Działko neutronowe",
+    "Group": "Eksplodująca broń energetyczna",
+    "Description": "<STELLAR>Broń energetyczna<>, dodatek do <TECHNOLOGY>multinarzędzia<>. Działko neutronowe energetyzuje cząsteczki atmosferyczne, po czym wystrzeliwuje je w stronę wrogich celów, zadając <STELLAR>znaczne obrażenia obszarowe<>\n\nZmień tryb ostrzału, naciskając <IMG>CYCLEWEAPON<>. Naładuj broń, przytrzymując <IMG>ATTACK<>, a potem puść, by wystrzelić <STELLAR>salwę jonizowanych cząstek<>.\n\nChoć działko może strzelać szybkim ogniem pojedynczym, <TECHNOLOGY>dłuższe naładowanie<> znacząco zwiększa <TECHNOLOGY>szybkość i objętość wypuszczonych cząstek<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 250,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 95
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod115",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech209",
+    "Icon": "technology/209.png",
+    "Name": "Kompresor Pola P",
+    "Group": "Ulepszenie działka neutronowego",
+    "Description": "Potężne ulepszenie <TECHNOLOGY>działka neutronowego<>. Dodatkowe kompresory rezonansowe pozwalają na przepuszczenie przez rdzeń działka o wiele większej energii, zauważalnie zwiększając moc broni.\n\nPo instalacji w pełni naładowane działko neutronowe wystrzeli <STELLAR>dodatkowe pociski<> z większą <STELLAR>szybkością<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod7",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech210",
+    "Icon": "technology/210.png",
+    "Name": "Wzmacniacz woltaiczny",
+    "Group": "Moduł przeładowania obrażeń",
+    "Description": "Ogólne ulepszenie wszystkich <TECHNOLOGY>systemów uzbrojenia<> multinarzędzia, dzięki któremu pociski po uderzeniu wpadają w rezonans elektromagnetyczny.\n\nZnacząco zwiększa <STELLAR>obrażenia<> zadawane wszystkim <STELLAR>ogłuszonym<> istotom organicznym i nieorganicznym.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "2177C8",
+    "BlueprintCost": 180,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw61",
+        "Quantity": 70
+      },
+      {
+        "Id": "prod20",
+        "Quantity": 2
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech211",
+    "Icon": "technology/211.png",
+    "Name": "Pilot SI Minotaura",
+    "Group": "Jednostka kontroli autonomicznej",
+    "Description": "Półautonomiczna <TECHNOLOGY>wtyczka autopilota<> do ciężkiej hybrydy egzopojazdu Minotaur. Po instalacji Minotaur może <STELLAR>samodzielnie poruszać się po planetach<>, brać udział w <STELLAR>walce<> lub przeprowadzać <STELLAR>wydobycie<>, by wesprzeć swojego głównego operatora.\n\nPilot SI zawsze oddaje kontrolę nad pojazdem operatorowi, gdy ten wejdzie do kokpitu.\n\nProcedury pilotażu mają wymiar lokalny. SI nie jest w stanie nawiązać więzi emocjonalnej ani objąć samodzielnej kontroli nad Minotaurem.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod114",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech212",
+    "Icon": "technology/212.png",
+    "Name": "Lewe ramię mecha Strażnika",
+    "Group": "Zamienna kończyna Minotaura",
+    "Description": "Zestaw różnych komponentów zebranych ze szczątków mecha Strażnika i przerobionych tak, by pasowały do ciężkiej hybrydy egzopojazdu <TECHNOLOGY>Minotaur<>.\n\nJeśli są zainstalowane razem z <TECHNOLOGY>laserem Minotaura<>, zwiększają <STELLAR>moc<> i <STELLAR>wydajność<> <TECHNOLOGY>laserów górniczych<> Minotaura.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 50
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech213",
+    "Icon": "technology/213.png",
+    "Name": "Prawe ramię mecha Strażnika",
+    "Group": "Zamienna kończyna Minotaura",
+    "Description": "Zestaw różnych komponentów zebranych ze szczątków mecha Strażnika i przerobionych tak, by pasowały do ciężkiej hybrydy egzopojazdu <TECHNOLOGY>Minotaur<>.\n\nZapewniają znaczne <STELLAR>ulepszenie siły ognia<> <TECHNOLOGY>systemów uzbrojenia<> Minotaura.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw15",
+        "Quantity": 30
+      },
+      {
+        "Id": "raw31",
+        "Quantity": 40
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech214",
+    "Icon": "technology/214.png",
+    "Name": "Nogi mecha Strażnika",
+    "Group": "Zamienna kończyna Minotaura",
+    "Description": "Zestaw różnych komponentów zebranych ze szczątków mecha Strażnika i przerobionych tak, by pasowały do ciężkiej hybrydy egzopojazdu <TECHNOLOGY>Minotaur<>.\n\nInstalacja znacząco poprawia działanie <TECHNOLOGY>silnika i systemów napędowych<>.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 500,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw31",
+        "Quantity": 120
+      },
+      {
+        "Id": "prod149",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
+  },
+  {
+    "Id": "tech215",
+    "Icon": "technology/215.png",
+    "Name": "Korpus mecha Strażnika",
+    "Group": "Zamienna część rdzenia Minotaura",
+    "Description": "Zestaw różnych komponentów zebranych ze szczątków mecha Strażnika i przerobionych tak, by pasowały do ciężkiej hybrydy egzopojazdu <TECHNOLOGY>Minotaur<>.\n\nFunkcjonuje jako półautonomiczna <TECHNOLOGY>wtyczka autopilota<>. Po instalacji Minotaur może <STELLAR>samodzielnie poruszać się po planetach<>, brać udział w <STELLAR>walce<> lub przeprowadzać <STELLAR>wydobycie<>, by wesprzeć swojego głównego operatora.\n\nPilot SI zawsze oddaje kontrolę nad pojazdem operatorowi, gdy ten wejdzie do kokpitu.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "IsCraftable": false,
+    "IsConsumable": false,
+    "Colour": "095C77",
+    "BlueprintCost": 480,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod1",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod23",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod159",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewards": [],
+    "HasDevProperties": true
   }
 ]
