@@ -7,9 +7,11 @@
     "Description": "Het <CATALYST>omgevingsbeschermings<>-systeem van het exopak houdt continu de omgeving van de gebruiker in de gaten en zorgt desnoods voor stabilisatie. De algemene reactieve bescherming kan worden verbeterd met <TECHNOLOGY>omgevingsschilden<>, die extra bescherming bieden tegen specifieke omstandigheden. Het apparaat wordt opgeladen met <CATALYST>natriumsubstanties<>. Let op: als het omgevingsbeschermingssysteem niet wordt opgeladen, dan wordt de omgeving mogelijk incompatibel met de voorwaarden voor het leven van de gebruiker.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -31,9 +33,10 @@
     "Description": "Verbetert de basiscapaciteit van de <COMMODITY>omgevingsbescherming<>, waardoor de gebruiker langer in een schadelijke omgeving kan blijven zonder het exopak op te laden.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -59,9 +62,11 @@
     "Description": "Het <TECHNOLOGY>lifesupport<>-systeem is het hart van het exopak en filtert en pompt doorlopend <FUEL>zuurstof<>.\n\nHet lifesupport-systeem doet meer dan het in leven houden van de gebruiker van het exopak. Het zuurstofoverschot wordt gebruikt als aandrijving voor secundaire systemen, zoals het <TECHNOLOGY>jetpack<>, <TECHNOLOGY>extra snelheid<> en de <TECHNOLOGY>zaklamp<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -83,9 +88,10 @@
     "Description": "Verbetert de basiscapaciteit van de <FUEL>lifesupport<>, waardoor de gebruiker minder vaak hoeft op te laden.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -107,9 +113,10 @@
     "Description": "Geeft het exopak <TECHNOLOGY>geavanceerde reismogelijkheden<>, zoals een korte vlucht.\n\nGeef beheerst gas met <IMG>JUMP<>. Het jetpack gebruikt de energie van de <FUEL>lifesupport van het exopak<> om gas onder druk te zetten en in korte stoten vrij te geven, waardoor de gebruiker de lucht in schiet.\n\nJe kunt het jetpack tijdelijk extra krachtig maken door <TECHNOLOGY>planten met veel deuterium<> te verzamelen, waarmee je veel meer vermogen krijgt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -131,9 +138,10 @@
     "Description": "Verbetert de capaciteit van de <STELLAR>jetpacktanks<> en <STELLAR>pompreserves<> van het exopak, zodat de gebruiker langer kan vliegen en sprinten.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -159,9 +167,10 @@
     "Description": "Voorziet de jetpack van het exopak met <STELLAR>geavanceerde sprongvaardigheden<>, zodat de gebruiker eenvoudig grote sprongen kan maken.\n\nActiveer het springsysteem door snel op <IMG>JUMP<> te drukken.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 200,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -187,9 +196,11 @@
     "Description": "Beschermt de gebruiker tegen extreme hitte in verschroeide werelden.\n\nEen onderhuids distributienetwerk van vloeibare frenium zorgt ervoor dat de gebruiker minder last heeft van hitte in de atmosfeer of van de zon.\n\nHet apparaat wordt opgeladen door <EARTH>mineraalextracten<> uit hete omgevingen. Werkt automatisch zodra het is geïntegreerd in de inventaris van het exopak.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -219,9 +230,11 @@
     "Description": "Beschermt de gebruiker tegen extreme kou in bevroren werelden.\n\nWarmtebuisjes in het pak van de gebruiker zorgen voor een gelijkmatige verdeling van vloeibare calidium voor een aangename lichaamstemperatuur.\n\nHet apparaat wordt opgeladen door <EARTH>mineraalextracten<> uit bevroren omgevingen. Werkt automatisch zodra het is geïntegreerd in de inventaris van het exopak.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -251,9 +264,11 @@
     "Description": "Beschermt de gebruiker tegen vergiftiging.\n\nDe reactieve samenstellingen van het product verwijderen giftig vocht dat op de gebruiker valt, waardoor verstikking wordt voorkomen.\n\nHet apparaat wordt opgeladen door <EARTH>mineraalextracten<> uit giftige omgevingen. Werkt automatisch zodra het is geïntegreerd in de inventaris van het exopak.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -283,9 +298,11 @@
     "Description": "Beschermt de gebruiker tegen straling.\n\nZorgt voor aanzienlijk minder gevaar tijdens de verkenning van werelden met veel straling. De microtrillingen verhogen de afweer van elektromagnetische golven en verminderen zo de absorptie.\n\nHet apparaat wordt opgeladen door <EARTH>mineraalextracten<> uit radioactieve omgevingen. Werkt automatisch zodra het is geïntegreerd in de inventaris van het exopak.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -315,9 +332,10 @@
     "Description": "Hiermee kan de gebruiker langer onder water zwemmen.\n\nAbsorbeert in water opgeloste gassen via een membraancontactor, die bij conventioneel gestructureerde soorten over de mond of een andere ademhalingsopening in het gezicht wordt geplaatst.\n\nWerkt automatisch zodra het is geïntegreerd in de inventaris van het exopak.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -347,9 +365,10 @@
     "Description": "Verbetert de metaalachtige schilden van de <TECHNOLOGY>handschoenen van het exopak<>.\n\nEen geavanceerde mix van verstevigd metaal en katalytische schilden waardoor de gebruiker zonder zorgen <CATALYST>gevaarlijke materialen<> kan hanteren en zware handelingen kan uitvoeren, zoals het oogsten van bepaalde <TRADEABLE>flora<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -375,9 +394,10 @@
     "Description": "Bevat alles wat je ooit hebt geweten.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -403,9 +423,10 @@
     "Description": "Een heel klein vonkje in een krachtveld van onbekende origine.\n\nHet zaadje gloeit van leven en kan niet wachten om te ontsnappen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -435,9 +456,10 @@
     "Description": "Een stukje <TECHNOLOGY>technologie<>, aangetast na storing door de Atlas.\n\nKan worden gerecycled voor bruikbare onderdelen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -463,9 +485,10 @@
     "Description": "Verbetert het <STELLAR>energieverbruik<> van de waterstralen van het jetpack, waardoor de lifesupport-systemen van het exopak minder zwaar worden belast.\n\nIn de turbines van het jetpack worden watercompressors gemonteerd, waardoor de ontsteking onder water minder energie verbruikt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 350,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -495,9 +518,10 @@
     "Description": "Verbetert het <TECHNOLOGY>ventilatiemembraan<> van het exopak, waardoor er zuurstof uit de lifesupport-systemen wordt gehaald in het geval van ademhalingsproblemen. Zo kan de gebruiker naar het wateroppervlak zwemmen om de energie op conventionele manieren bij te vullen.\n\nOpmerking: langdurige omzetting van lifesupport-energie in zuurstof wordt niet aanbevolen en kan resulteren in beëindiging van de vitale systemen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 240,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -527,9 +551,10 @@
     "Description": "Een automatisch vertaalapparaat. Het neemt conversaties in de buurt op en gebruikt vervolgens een contextueel leersysteem om de betekenis te achterhalen.\n\nDit basismodel heeft weinig geheugen, waardoor hij maar een beperkt aantal vertalingen kan opslaan.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -551,9 +576,10 @@
     "Description": "Een automatisch vertaalapparaat. Het neemt conversaties in de buurt op en gebruikt vervolgens een contextueel leersysteem om de betekenis te achterhalen.\n\nDankzij de parallelle taalprocessors kan een aanzienlijk groter deel van de opgenomen spraak worden vertaald.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 310,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -583,9 +609,10 @@
     "Description": "Een automatisch vertaalapparaat. Het neemt conversaties in de buurt op en gebruikt vervolgens een contextueel leersysteem om de betekenis te achterhalen.\n\nDoor de grote geheugenkaart en overklokte taalprocessors kunnen behoorlijk grote spraakbestanden in realtime worden vertaald.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 580,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -615,9 +642,10 @@
     "Description": "Een automatisch vertaalapparaat. Het apparaat moet worden gekalibreerd door het invoeren van bestaande vertaalgegevens. Het apparaat heeft een <STELLAR>netwerkverbinding met Artemis<> nodig om te functioneren.\n\nZonder toegang tot deze vertaalservice kan de hardware van het apparaat slechts een beperkt aantal woorden in realtime vertalen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -643,9 +671,11 @@
     "Description": "Voor de aandrijving en versnelling van ruimteschepen en pulssprongen door lokale systemen.\n \nEr is <EXOTIC>tritium<> nodig om de pulsmotor op te laden. Tritium wordt veel aangetroffen in <COMMODITY>asteroïdenvelden in de buurt van planeten<>.\n\nHou <IMG>PULSEJUMP<> ingedrukt om de pulssprong te activeren.\nHou <IMG>BOOST<> ingedrukt voor een snelheidsboost tijdens de vlucht.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -671,9 +701,10 @@
     "Description": "Zorgt voor een betere wendbaarheid en langere snelheidsboosts tijdens ruimtevluchten.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -699,9 +730,11 @@
     "Description": "Essentieel lanceer- en landingssysteem.\n \nEr is speciale brandstof op Diwaterstof-basis nodig om de stuwraket op te laden. De opstijgprocedure kan alleen worden gestart als er voldoende energie beschikbaar is.\n \nHou <IMG>THRUST<> ingedrukt om op te stijgen.\nHou <IMG>BOOST<> ingedrukt voor een snelheidsboost tijdens de vlucht.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -727,9 +760,10 @@
     "Description": "Verbetert de lanceersystemen van het ruimteschip, waardoor de <STELLAR>brandstofkosten<> voor het opstijgen lager worden.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -759,9 +793,10 @@
     "Description": "De fotovoltaïsche panelen die op de <TECHNOLOGY>stuwraketten<> van het ruimteschip zijn gemonteerd, zorgen ervoor dat de stuwraketten langzaam worden opgeladen als het schip niet in gebruik is.\n\nHet geoogste licht wordt gebruikt om diwaterstof uit de atmosfeer te halen. Daardoor worden na verloop van tijd de <STELLAR>stuwraketten automatisch opgeladen<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -791,9 +826,10 @@
     "Description": "Een apparaat dat de standaard communicatiesignalen van een ruimteschip moduleert om naast gegevens ook <TECHNOLOGY>materie te kunnen transporteren<>.\n\nRuimteschepen met een dergelijk apparaat kunnen over een <VAL_ON>grote afstand<> producten en substanties van en naar een exopak verzenden en ontvangen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -819,9 +855,11 @@
     "Description": "FTL-aandrijfmotor waarmee ruimteschepen warpsnelheden kunnen bereiken en direct naar een aangrenzend systeem kunnen springen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de galactische kaart.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -847,9 +885,10 @@
     "Description": "Verbetert de magneten van de hyperdrive-kern, waardoor versnelde aftakeling bij reizen naar zeldzame <FUEL>rode sterren<> wordt voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de <VAL_ON>galactische kaart<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -875,9 +914,10 @@
     "Description": "Maakt het hyperdrive-schild sterker, waardoor werkelijkheidsfouten bij reizen naar zeldzame <TRADEABLE>groene hemellichamen<> worden voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de <VAL_ON>galactische kaart<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -903,9 +943,10 @@
     "Description": "Verbetert de rekenmatrix van de hyperdrive, waardoor tijdsanomalieën bij reizen naar zeldzame <TECHNOLOGY>blauwe sterren<> worden voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de <VAL_ON>galactische kaart<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 200,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -931,9 +972,11 @@
     "Description": "Energieveld dat het ruimteschip beschermt tegen lasers, projectielen en ruimteschroot.\n\nEr zijn <CATALYST>katalytische elementen<> nodig om het apparaat op te laden.\n\nWerkt automatisch zodra het is geïntegreerd in de inventaris van het ruimteschip.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -959,9 +1002,10 @@
     "Description": "Voegt superhete schilden toe aan het verdedigingsmechanisme van het ruimteschip, waardoor vijandelijk vuur verdampt.\n\nVerhoogt de <STELLAR>prestaties van het ruimteschipschild<> aanzienlijk.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 85,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -991,9 +1035,10 @@
     "Description": "Een extreem verwoestend wapen dat is ontworpen voor de vernietiging van andere schepen.\n\nDruk op <IMG>SHIPFIRE<> om te schieten.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 100,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1019,9 +1064,10 @@
     "Description": "Breidt de laadkamer van de <TECHNOLOGY>raketlanceerder<> van het ruimteschip uit voor een betere uitlaat en een aanzienlijk sneller <STELLAR>warmteherstel<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 50,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1047,9 +1093,10 @@
     "Description": "Uiterst vernietigend wapen dat snel kan afrekenen met andere schepen.\n\nDruk op <IMG>SHIPFIRE<> om te activeren.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1075,9 +1122,10 @@
     "Description": "Een upgrade van de galactische systeemsensoren van het ruimteschip. Met dit apparaat krijg je gedetailleerde economische gegevens over een stelsel zonder dat je het hoeft te bezoeken.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1103,9 +1151,10 @@
     "Description": "Een upgrade van de galactische systeemsensoren van het ruimteschip. Met dit apparaat krijg je toegang tot conflictgegevens op de galactische kaart zonder dat je gevaar loopt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1131,9 +1180,10 @@
     "Description": "Stationair laserwapen en mijngereedschap voor asteroïden.\n\nEr zijn <FUEL>organische elementen<> nodig om het wapen op te laden.\n\nDruk op <IMG>SHIPFIRE<> om te activeren.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1159,9 +1209,10 @@
     "Description": "Voorziet de <TECHNOLOGY>faselaser<> van een nieuw nanietcircuit, waardoor de conventionele realiteitsgrenzen van het laservermogen omzeild worden.\n\nVerbetert de <STELLAR>hitteverwerking<> aanzienlijk.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1187,9 +1238,10 @@
     "Description": "Schoten bestrijken hiermee een groot kegelvormig gebied.\n\nDoor vermindert bereik en verminderde vuursnelheid van het wapen worden gebruikers aangemoedigd om hun doelen van korte afstand aan te vallen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1215,9 +1267,10 @@
     "Description": "Verbetert het vuurmechanisme van de <TECHNOLOGY>positronuitwerper<>, wat leidt tot snellere, accuratere deeltjes.\n\nVerbetert het <STELLAR>bereik<> en de <STELLAR>nauwkeurigheid<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1243,9 +1296,10 @@
     "Description": "Hiermee kunnen onafgebroken snelle vuurstoten worden afgevuurd.\n\nOm oververhitting te voorkomen, wordt geadviseerd om de versneller niet te lang achter elkaar te gebruiken.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1271,9 +1325,10 @@
     "Description": "Vervangt de conventionele <TECHNOLOGY>fotonkanon<>zoekers door experimenteel glas voor betere gevechtsprestaties.\n\nVerbetert de <STELLAR>capaciteit van het koellichaam<> aanzienlijk.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 75,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1303,9 +1358,10 @@
     "Description": "Vuurt een grote geconcentreerde bal met geladen deeltjes af, die veel schade aanricht aan doelwitten in zijn baan. De lading is ongeleid en blijft in zijn baan tot hij een obstakel raakt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1331,9 +1387,10 @@
     "Description": "Vervangt het koellichaam van de <TECHNOLOGY>cyclotron-ballista<> door de volledige unit te omringen met een warmte-absorberende, gigantische constructie. De warmte-uitstoot wordt gerecycled voor efficiëntere gevechten.\n\nVerbetert de <STELLAR>hitteprestaties<> aanzienlijk.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1359,9 +1416,11 @@
     "Description": "FTL-aandrijfmotor waarmee ruimteschepen warpsnelheden kunnen bereiken en direct naar een aangrenzend systeem kunnen springen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1391,9 +1450,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1415,9 +1475,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1443,9 +1504,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1467,9 +1529,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1495,9 +1558,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1527,9 +1591,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1555,9 +1620,10 @@
     "Description": "Speciale unit voor <TECHNOLOGY>ontdekkingen<> en <TECHNOLOGY>detectie<>.\n\nVerbetert de mogelijkheden van de standaard<TECHNOLOGY>scanner<> door gedetailleerde informatie over de omgeving rechtstreeks te projecteren op het vizier van de gebruiker. Hiermee kunnen <STELLAR>afgelegen interessante locaties<> worden geïdentificeerd.\n\nHet vizier genereert <COMMODITY>waardevolle gegevens<> tijdens het bestuderen van <TRADEABLE>flora<>, <FUEL>fauna<> en <TECHNOLOGY>mineralen<>.\n\nHou <IMG>AIM<>ingedrukt om te gebruiken. Druk op <IMG>ZOOM<> om te zoomen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1579,9 +1645,10 @@
     "Description": "Een <TECHNOLOGY>persoonlijke oppervlakteradar<> voor de multitool. \n\nDe scanner genereert een hoogenergetische impuls die alle <COMMODITY>essentiële grondstoffen<> in de directe omgeving zichtbaar maakt. De gegevens worden rechtstreeks via het exopak aan het visuele zenuwstelsel gevoed.\n \nDruk op <IMG>SCAN<> om een lokale scan te maken.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1603,9 +1670,10 @@
     "Description": "Een krachtige processor die in de zijkant van het <TECHNOLOGY>scansysteem<> van de multitool wordt geplaatst, zodat het apparaat sneller wordt opgeladen.\n\nVerhoogt de <STELLAR>mogelijke scanfrequentie<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1631,9 +1699,10 @@
     "Description": "Een op zichzelf staande upgrade van de elektronica van het <TECHNOLOGY>analysevizier<> waarmee realtime analyse van het terrein mogelijk is.\n\nSchakel tussen de vizierstanden met <IMG>SURVEYFILTERL<>/<IMG>SURVEYFILTERR<>. Gebruik de <STELLAR>detector<> om verborgen grondstoffen in het terrein te ontdekken.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 320,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1663,9 +1732,10 @@
     "Description": "Geavanceerd apparaat voor terravorming. Deze module overbelast bestaande multitoolsystemen, zodat de gebruiker regio's naar wens kan vormen.\n\nWordt opgeladen met <EARTH>metaalelementen<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 50,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1691,9 +1761,10 @@
     "Description": "Na het activeren gebruikt deze module energie van het <VAL_ON>lifesupport<>-systeem van het exopak om de multitool te overbelasten. Hierdoor wordt het elektromagnetische veld rond de gebruiker omgevormd tot een <COMMODITY>krachtig persoonlijk schild<>.\n\nHet veld biedt een goede bescherming tegen vijandelijk laservuur, maar de multitool kan niet voor andere functies worden gebruikt als het schild actief is.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1719,9 +1790,10 @@
     "Description": "Een vizier met antiterugslageigenschappen waarmee je heel nauwkeurig kunt schieten.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1747,9 +1819,11 @@
     "Description": "<TECHNOLOGY>Mijnlaser<> van de multitool die wordt aangedreven door <FUEL>elementen op koolstofbasis<>. Druk op <IMG>ATTACK<> om de laser af te vuren. Monteert zoekers in de multitool, die daardoor een <STELLAR>hoogenergetische straal<> kan afvuren. De straal wordt dusdanig gekalibreerd dat hij moleculen van dezelfde <STELLAR>organische of geologische objecten<> in beweging brengt, waardoor hij zeer effectief is als mijnapparaat.\n\n<FUEL>WAARSCHUWING<>: als je flora, fauna of mineralen vernietigt, kun je worden aangevallen door Sentinels.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1771,9 +1845,10 @@
     "Description": "Vervangt de zoekers van de standaard<TECHNOLOGY>mijnlaser<> door levend glas van de hoogste kwaliteit, waardoor de laser effectief is tegen <STELLAR>grote en/of zeldzame grondstofafzettingen<>.\n\nDe lens past zich automatisch aan minuscule fluctuaties in de golfvorm van de laser aan, waardoor de straal gefocust blijft en zijn <STELLAR>potentie als mijnapparaat toeneemt<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 75,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1803,9 +1878,10 @@
     "Description": "De flinterdunne lenzen zijn gerangschikt in een gekalibreerde matrix, waardoor de <TECHNOLOGY>mijnlaser<> op atomisch niveau focust.\n\nDie extra precisie maakt efficiënter delven mogelijk. Het oogsten van elementen gebeurt efficiënter, waardoor voorwerpen die met de multitool worden geoogst <STELLAR>meer grondstoffen opbrengen<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1835,9 +1911,10 @@
     "Description": "Algemene wapenuitbreiding voor de <TECHNOLOGY>multitool<>. Activeer de vuurstand met <IMG>CYCLEWEAPON<> en schiet met <IMG>ATTACK<>.\n\nMet de <TECHNOLOGY>boltcaster<> kun je de multitool gebruiken om <EARTH>metaalelementen<> op te laden en ze af te vuren als <STELLAR>zeer snelle projectielen<> die extreem veel schade kunnen aanrichten.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1863,9 +1940,10 @@
     "Description": "Plaatst een krachtige veldionisator in de loop van de <TECHNOLOGY>Boltcaster<>, waardoor de stabiliteit van een projectiel in de lucht toeneemt.\n\nVerbetert de <STELLAR>nauwkeurigheid van het apparaat<> en de gebruiker kan langer achter elkaar schieten zonder dat de gevechtsprestaties afnemen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1891,9 +1969,10 @@
     "Description": "De schoten van de Boltcaster zorgen bij inslag voor meer fysieke schade.\n\nVoegt extra kinetische energie toe aan de distributiesystemen van geïoniseerde plasmaschoten.\n\nWerkt automatisch zodra het is geïntegreerd in de inventaris van de multitool.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1915,9 +1994,10 @@
     "Description": "Een <TECHNOLOGY>aanzienlijke<> upgrade voor de <TECHNOLOGY>mijnlaser<>.\n\nPlaatst extra reflectoren in de primaire kristalkamer van de mijnlaser, wat de <STELLAR>straalkracht<> versterkt en ongewenst <STELLAR>hitteverlies<> voorkomt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1939,9 +2019,11 @@
     "Description": "Krachtig projectielwapen. Afgevuurde plasmagranaten stuiteren op oppervlakken tot de interne timer een grote explosie activeert.\n \nBevat <FUEL>onstabiel plasma<>. Onzorgvuldig gebruik kan leiden tot schade aan de gebruiker.\n \nDruk op <IMG>ALTATTACK<> om te activeren.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1971,9 +2053,11 @@
     "Description": "Lanceert projectielen met een grote diameter. De plasmagranaten zijn ontwikkeld voor <STELLAR>snelle graafwerkzaamheden<>.\n \nBevat <FUEL>onstabiel plasma<>. Waarschuwing: de explosieve inslag kan ook schade toebrengen aan organisch materiaal in de buurt.\n \nDruk op <IMG>ALTATTACK<> om te activeren.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1999,9 +2083,11 @@
     "Description": "Agressieve wapenuitbreiding voor de <TECHNOLOGY>multitool<>. Activeer de vuurstand met <IMG>CYCLEWEAPON<> en schiet met <IMG>ATTACK<>.\n\nDe <TECHNOLOGY>vuurspeer<> zorgt voor directe schade bij doelen.\n\nDe plasmalading genereert een geïoniseerde gasboog die op hoge snelheid projectielen afvuurt. Het vernietigende resultaat is zichtbaar zodra de trekker wordt overgehaald.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2031,9 +2117,10 @@
     "Description": "Verlengt de vuurkamer van de <TECHNOLOGY>vuurspeer<>, zodat de interne deeltjesversnellers meer massa en meer snelheid krijgen.\n\nVerbetert de <STELLAR>schade<> die het wapen aanricht aanzienlijk.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2059,9 +2146,10 @@
     "Description": "Speciale uitbreiding voor <STELLAR>aanvallen op korte afstand<> met de <TECHNOLOGY>multitool<>. Activeer de vuurstand met <IMG>CYCLEWEAPON<> en schiet met <IMG>ATTACK<>.\n\nMet de <TECHNOLOGY>energieblaster<> kun je de multitool gebruiken voor het verhitten en verspreiden van <EARTH>metaalelementen<>, die over een <STELLAR>groot gebied verwoesting<> aanrichten. Het bereik is beperkt, maar de scherven zijn heel effectief van dichtbij.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2087,9 +2175,10 @@
     "Description": "Geavanceerde zelf-smerende onderdelen verminderen wrijving in de <TECHNOLOGY>energieblaster<> voor aanzienlijk kortere <STELLAR>herlaadtijden<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2115,9 +2204,10 @@
     "Description": "Speciale uitbreiding voor de <TECHNOLOGY>multitool<> waarmee de <STELLAR>vuursnelheid toeneemt<>. Activeer de vuurstand met <IMG>CYCLEWEAPON<> en schiet met <IMG>ATTACK<>.\n\nMet de <TECHNOLOGY>pulsspitter<> kun je de multitool gebruiken om <EARTH>metaalelementen<> af te vuren die zijn geïoniseerd. Deze projectielen worden snel achter elkaar afgevuurd en bombarderen potentiële doelwitten met een <STELLAR>golf van hoogenergetisch plasma<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2143,9 +2233,10 @@
     "Description": "Dankzij de gespecialiseerde harmonische resonatoren kan de <TECHNOLOGY>pulsspitter<> de geplaatste munitie splitsen voor meer schoten met minder materiaal.\n\nVergroot de <STELLAR>capaciteit van het wapenmagazijn<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2171,9 +2262,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2195,9 +2287,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2219,9 +2312,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2251,9 +2345,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2275,9 +2370,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2307,9 +2403,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2339,9 +2436,10 @@
     "Description": "Een compacte fusiekern voor alle exocrafts.\n\nWerkt alleen met brandstof.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2367,9 +2465,10 @@
     "Description": "Wijzigt het rijgedrag van de exocraft via een combinatie van softwarematige tweaks, drukaanpassingen en de montage van microzwaartekrachtputten in belangrijke onderdelen van de ophanging.\n\nSpeciaal afgesteld om de exocraft beter te laten <STELLAR>driften<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2399,9 +2498,10 @@
     "Description": "Wijzigt het rijgedrag van de exocraft via een combinatie van softwarematige tweaks, drukaanpassingen en de montage van microzwaartekrachtputten in belangrijke onderdelen van de ophanging.\n\nSpeciaal afgesteld om de exocraft scherper te laten <STELLAR>sturen<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2431,9 +2531,10 @@
     "Description": "Wijzigt het rijgedrag van de exocraft via een combinatie van softwarematige tweaks, drukaanpassingen en de montage van microzwaartekrachtputten in belangrijke onderdelen van de ophanging.\n\nSpeciaal afgesteld om de exocraft beter te laten <STELLAR>glijden<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2463,9 +2564,10 @@
     "Description": "Een grote en complexe subruimteradar voor in het veld.\n\nDoor het hoge energieverbruik en de subatomische instabiliteit kan hij alleenworden gemonteerd op een exocraft.\n\nDruk op <IMG>QUICK_MENU<> om de signaalversterker te activeren.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2491,9 +2593,10 @@
     "Description": "Hiermee kunnen meer constructietypen worden herkend door de exocraft-signaalversterker.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 320,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2523,9 +2626,10 @@
     "Description": "Een efficiënt plasma-injectiesysteem voor de motor die korte snelheidsboosts mogelijk maakt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2555,9 +2659,10 @@
     "Description": "Deze mijnlaser kan niet worden gedragen en moet op een exocraft worden gemonteerd.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2587,9 +2692,10 @@
     "Description": "Vergroot het vermogen van de exocraft-mijnlaser.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2615,9 +2721,10 @@
     "Description": "Dit krachtige wapen heeft veel energie nodig en moet daarom op een exocraft worden gemonteerd.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2643,9 +2750,11 @@
     "Description": "Een warmte-efficiënte, inversieongevoelige reactorkrachtbron die de Nautilon zelfs op extreme diepte kan aandrijven.\n\nAangedreven door <FUEL>hydrothermale brandstofcellen<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2671,9 +2780,10 @@
     "Description": "Een geschut dat speciaal is ontworpen voor de <STELLAR>Nautilon-onderzeeër<>.\n\nDit hoogenergetische wapen verhit druppels water, die het vervolgens met grote snelheid richting het doelwit vuurt.\n\nHet wapen is in de eerste plaats ontworpen om biologische entiteiten te verwonden en is inefficiënt als mijnapparaat.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2703,9 +2813,10 @@
     "Description": "Een lasergeschut dat speciaal ontworpen is voor de <STELLAR>Nautilon-onderzeeër<>.\n\nVuurt een geconcentreerde plasmastraal af op het doelwit, dat vervolgens in brand vliegt. Dit mechanisme maakt het gebruik van hoogenergetische, optische mijnsystemen in een vloeibaar medium mogelijk.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 450,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2735,9 +2846,10 @@
     "Description": "Een sonarapparaat dat gedetailleerde opnamen maakt en de scannertechnologie aan boord van een Nautilon-onderzeeër kan verbeteren naar het niveau van een analysevizier.\nDruk op <IMG>SCAN<> om de supersonar te activeren.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2767,9 +2879,10 @@
     "Description": "Wordt geïnstalleerd in het aandrijfsysteem van de <STELLAR>Nautilon-onderzeeër<>.\n\nWint energie door het zoutgehalte van diepzeeomgevingen te benutten, waardoor de <TECHNOLOGY>Humboldt-motor<> bij een gebrek aan brandstof langzaam wordt opgeladen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 350,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2799,9 +2912,10 @@
     "Description": "Een eenvoudig sluitsysteem om onbevoegden weg te houden. Door de schade kan het niet meer open.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2823,9 +2937,10 @@
     "Description": "Een geavanceerd sluitsysteem. Door een polariteitsprobleem kan het niet meer open.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2847,9 +2962,10 @@
     "Description": "Een zeer geavanceerd sluitsysteem. Door schade aan de voeding van de magneet kan het niet meer open.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2871,9 +2987,10 @@
     "Description": "Een terminal voor de handmatige bediening van het apparaat. Door de schade reageert hij niet meer op invoer.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2899,9 +3016,10 @@
     "Description": "Een geavanceerde besturingsunit voor interactie tussen apparaat en vlees. Door schade functioneert het niet meer goed. In deze staat kun je er maar beter van afblijven.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2923,9 +3041,10 @@
     "Description": "Een kleine boiler die warmte genereert, zodat het apparaat ook functioneert in moeilijke klimaatomstandigheden. Door een storing is de boiler overbelast geraakt en beschadigd.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2947,9 +3066,10 @@
     "Description": "Een zeer kleine motor voor de aandrijving van zeer kleine onderdelen. Inmiddels zit hij ook helemaal vol met zeer kleine roestplekken.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2971,9 +3091,10 @@
     "Description": "Een pomp met een warmtewisselaar die oververhitting van het apparaat voorkomt. Inmiddels heeft hij zichzelf oververhit en werkt hij dus niet meer.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2999,9 +3120,10 @@
     "Description": "Een terminal met display die de status van het apparaat meldt aan de gebruiker. Omdat de terminal stuk is, kan hij de gebruiker niet laten weten dat hij stuk is.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3023,9 +3145,10 @@
     "Description": "Een unit die vitale systemen vernietigt indien er door onbevoegden met het apparaat wordt geknoeid. Helaas is hij zelf stuk en blijft hij andere systemen beschadigen tot hij wordt gerepareerd.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3047,9 +3170,10 @@
     "Description": "Een kleine licht- en alarminstallatie die waarschuwt voor onbevoegd gebruik van het apparaat. Door schade aan het alarm is het overbelast geraakt en veroorzaakt het kortsluiting in de circuits.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3071,9 +3195,10 @@
     "Description": "De behuizing van een hogedrukveer. De behuizing is gebarsten, waardoor de veer eruit is gesprongen en de rest van het apparaat is beschadigd.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3095,9 +3220,10 @@
     "Description": "Een besturingsunit die zorgt voor een gelijkmatige temperatuur in het hele apparaat. De sensor is beschadigd, waardoor hij op ongewenste momenten ventileert en hitte afgeeft.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3119,9 +3245,10 @@
     "Description": "Een pomp met een hoge capaciteit die ervoor zorgt dat de brandstof elk onderdeel van het apparaat bereikt, onafhankelijk van de zwaartekracht. Het filter zit verstopt met een vreemde substantie, waardoor hij minder vermogen heeft.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3147,9 +3274,10 @@
     "Description": "Een klein mechanisch verbindingsstuk dat overal in het apparaat kleine mechanische fouten corrigeert. Door een storing worden werkende componenten verplaatst naar elders in het apparaat, wat alleen maar meer schade veroorzaakt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3171,9 +3299,10 @@
     "Description": "Een relais dat wordt gebruikt tijdens het opstarten van het apparaat. De connectors zijn verroest, waardoor de solenoïde niet meer functioneert.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3195,9 +3324,10 @@
     "Description": "Een kleine compressiekamer voor de productie van het samengeperste gas dat het apparaat aanstuurt. Er zitten barsten in de kamer, waardoor er lekkages zijn ontstaan.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3219,9 +3349,10 @@
     "Description": "Het regelcircuit voor alle andere componenten in het apparaat. Schade aan dit circuit kan fataal zijn.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3243,9 +3374,10 @@
     "Description": "De centrale voedingseenheid van het apparaat. Door de schade aan de eenheid wordt alle stroom naar één circuit geleid, wat kortsluiting veroorzaakt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3271,9 +3403,10 @@
     "Description": "Een kleine eenheid die de energie in het apparaat verdeelt. Door een storing is kortsluiting ontstaan, waardoor andere componenten zijn beschadigd.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3295,9 +3428,10 @@
     "Description": "Een universele netwerkinterface waarmee het apparaat contact maakt met een externe bedieningscentrale. Door de schade interpreteert deze interface achtergrondstraling als netwerksignalen, waardoor gegevens in andere circuits beschadigd raken.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3323,9 +3457,10 @@
     "Description": "Het beveiligingspaneel beschermt mogelijk gevaarlijke onderdelen in het geval van een storing. Door een overgevoelige starter is hij geactiveerd, waardoor het apparaat niet meer functioneert.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3351,9 +3486,10 @@
     "Description": "De wisselstroomdynamo genereert en reguleert stroom voor het apparaat. Hij is aangetast door een vreemde corrosie, waardoor hij niet meer werkt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3379,9 +3515,10 @@
     "Description": "Een klein, maar efficiënt paneel dat is bedoeld om licht op te vangen en om te zetten in energie. Het paneel zit echter onder de barsten en het stof, wat een betrouwbare werking in de weg staat.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3407,9 +3544,10 @@
     "Description": "Het schakelmechanisme van het apparaat. Het benodigde smeermiddel is vervangen door een vreemd groen goedje, waardoor het mechanisme is vastgelopen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3431,9 +3569,10 @@
     "Description": "Een mysterieus slot met meerdere sleutelgaten. Deze relikwie moet een kostbare schat herbergen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3455,9 +3594,10 @@
     "Description": "Voor deze kist heb je een <SPECIAL>levende parel<> nodig. Deze kun je krijgen van de reusachtige moeder-weekdieren op de bodem van de oceaan.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3479,9 +3619,10 @@
     "Description": "Deze <TECHNOLOGY>upgrademodule voor exopakken<> heeft kritische schade opgelopen. Repareer systemen om de upgrade-functionaliteit te herstellen.\n\nNa de reparatie hoeft de gebruiker <STELLAR>niet te betalen<> voor exopak-upgrades.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3503,9 +3644,10 @@
     "Description": "Deze <TECHNOLOGY>upgrademodule voor exopakken<> heeft kritische schade opgelopen. Repareer systemen om de upgrade-functionaliteit te herstellen.\n\nNa de reparatie hoeft de gebruiker <STELLAR>niet te betalen<> voor exopak-upgrades.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3527,9 +3669,10 @@
     "Description": "Deze <TECHNOLOGY>upgrademodule voor exopakken<> heeft kritische schade opgelopen. Repareer systemen om de upgrade-functionaliteit te herstellen.\n\nNa de reparatie hoeft de gebruiker <STELLAR>niet te betalen<> voor exopak-upgrades.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3551,9 +3694,10 @@
     "Description": "Een verbetering voor de kolossale hyperdrive-motor van een <STELLAR>interstellair vrachtschip<>.\n\nKwantumresonantie zorgt voor een betere bescherming van de hyperdrive tijdens FTL-reizen. Daardoor kunnen sterren worden bereikt die voorheen nog te ver weg lagen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 4,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3583,9 +3727,10 @@
     "Description": "Een verbetering voor de kolossale hyperdrive-motor van een <STELLAR>interstellair vrachtschip<>.\n\nDe hyperdrive maakt gebruik van geavanceerde fusies die hogere warpsnelheden mogelijk maken. Schepen kunnen daardoor verder in de ruimte reizen en afgelegen planetaire systemen bereiken.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 8,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3615,9 +3760,10 @@
     "Description": "Een verbetering voor de kolossale hyperdrive-motor van een <STELLAR>interstellair vrachtschip<>.\n\nOnbegrensde, maar wel gestabiliseerde fusiesystemen worden geïntegreerd in de hyperdrive. Hierdoor kunnen ruimteschepen verder in de ruimte springen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 12,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3647,9 +3793,10 @@
     "Description": "Verbetert de magneten van de hyperdrive-kern, waardoor versnelde aftakeling bij reizen naar zeldzame <FUEL>rode sterren<> wordt voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de <VAL_ON>galactische kaart<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 4,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3679,9 +3826,10 @@
     "Description": "Maakt het hyperdrive-schild sterker, waardoor werkelijkheidsfouten bij reizen naar zeldzame <TRADEABLE>groene hemellichamen<> worden voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de <VAL_ON>galactische kaart<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 8,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3711,9 +3859,10 @@
     "Description": "Verbetert de rekenmatrix van de hyperdrive, waardoor tijdsanomalieën bij reizen naar zeldzame <TECHNOLOGY>blauwe sterren<> worden voorkomen.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de <VAL_ON>galactische kaart<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 12,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3743,9 +3892,10 @@
     "Description": "Een krachtige upgrade voor de <TECHNOLOGY>jetpack van het exopak<> waarmee je de jetpack in de lucht kunt <STELLAR>opladen<>.\n\nDe zeer efficiënte compressors rond de jetpack-uitlaat zetten de een deel van de windstroom die wordt gegenereerd door de <STELLAR>persistente neerwaartse beweging<> om in jetpack-energie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3775,9 +3925,10 @@
     "Description": "Een compacte uitbreiding van het exopak. Er wordt een kleine <TECHNOLOGY>draagbare raffinaderij<> geïnstalleerd die direct beschikbaar is via de interface van het exopak.\n\nDe module heeft <FUEL>energie<> nodig en is kan slechts één stof tegelijk raffineren.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 360,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3803,9 +3954,10 @@
     "Description": "Een zeer geavanceerde upgrade voor de <TECHNOLOGY>pulsmotor<> die het <STELLAR>energieverbruik<> veel efficiënter maakt.\n\nTritiumhoudende benodigdheden worden omgeleid naar een cyclus van kleine zwarte gaten. Door de microzwaartekrachtschommelingen is de voortstuwing van een ruimteschip krachtiger dan mogelijk is met conventionele verbrandingsmethoden.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3835,9 +3987,10 @@
     "Description": "Een zeer geavanceerde upgrade voor de <TECHNOLOGY>pulsmotor<> die een veel grotere <STELLAR>interplanetaire snelheid<> mogelijk maakt.\n\nDe natuurlijke frameshift-effecten in de pulsmotor worden versterkt door op tritium gebaseerde resonatoren, wat de maximale sublichtsnelheid verhoogt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3867,9 +4020,10 @@
     "Description": "Een aanzienlijke upgrade voor de <TECHNOLOGY>hyperdrive<> die een <STELLAR>onmiddellijke warpsnelheid<> mogelijk maakt, zelfs als de conventionele systemen zijn geblokkeerd tijdens <WARNING>ruimtegevechten<>. Via het <STELLAR>snelmenu<> krijg je toegang tot het noodsysteem.\n\n<FUEL>WAARSCHUWING:<> met de snelle coderingssystemen kun je geen bestemming invoeren. Onberekende acties op lichtsnelheid beschadigen de unit en vereisen <STELLAR>regelmatige reparaties<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 240,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3899,9 +4053,10 @@
     "Description": "Verbetert de <TECHNOLOGY>infraversneller<>, waardoor interne golven worden samengeperst en er een extra schot in het conventionele schietpatroon wordt verwerkt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3931,9 +4086,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3959,9 +4115,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3987,9 +4144,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4011,9 +4169,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4039,9 +4198,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4071,9 +4231,10 @@
     "Description": "Subsysteem ruimteschip <FUEL>heeft ernstige schade<> opgelopen. Vak kan niet worden gebruikt voor <STELLAR>opslag<> of <TECHNOLOGY>technologie<> tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nKernfunctionaliteit ruimteschip niet aangetast. Reparatie van de schade maakt dit vak beschikbaar voor algemeen inventarisgebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4103,9 +4264,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4131,9 +4293,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4163,9 +4326,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4191,9 +4355,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4219,9 +4384,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4251,9 +4417,10 @@
     "Description": "Subsysteem multitool <FUEL>heeft kritische schade opgelopen<>.\n\nVak kan niet worden gebruikt tot de schade is gerepareerd. Gebruik <IMG>REPAIR<> om te beginnen met repareren.\n\nReparatie maakt vak beschikbaar voor algemeen gebruik.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4283,9 +4450,11 @@
     "Description": "Een vezelachtige metalen superstructuur houdt dit warme en vitale orgaan vast in de kern van het schip. Zonder dit element zou het schip niets meer zijn dan een levenloze huls.\n\nHou <IMG>PULSEJUMP<> ingedrukt om het hart te vragen een pulssprong te activeren.\nHou <IMG>BOOST<> ingedrukt om een snelheidsboost aan te vragen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4311,9 +4480,11 @@
     "Description": "Een reeks neuronen die op een soort printplaat met metalen strengen zijn versmolten. Het oppervlak is bezaaid met complexe patronen van elektrische impulsen die alle systemen van het schip met elkaar verbinden.\n \nHou <IMG>THRUST<> ingedrukt om te vragen of het schip zin heeft om te vertrekken.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4339,9 +4510,11 @@
     "Description": "Een complexe bio-metalen ader die rechtstreeks is aangesloten op een antimateriehart. Registreert activiteitstoename tijdens interstellaire sprongen. Het lijkt blij te worden van de complexe berekeningen die nodig zijn voor FTL-reizen.\n\nKrijg toegang tot langeafstandsnavigatiesystemen via de galactische kaart. Hou het schip tevreden door regelmatig van stelsel naar stelsel te springen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4367,9 +4540,11 @@
     "Description": "Deze kleine uitbreiding van het geautomatiseerde verdedigingsnetwerk van het schip lijkt een autonoom organisme te zijn. Een kleine mond, omringd door vlees, smacht naar <SPECIAL>pugneum<>.\n\nTijdens gevechten lijkt het de neuronenplaat over te nemen om te voorkomen dat de rest van het lichaam van het schip trauma's oploopt door pijn of angst.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4395,9 +4570,10 @@
     "Description": "Een hoopje blazen en kringspieren die plasmabolletjes afgeven. Als ze worden bevestigd op de wapensystemen van het schip, worden deze bollen verhit en met hoge druk uitgestoten.\n\nDruk op <IMG>SHIPFIRE<> om te vragen of het schip de spuwgaten wil richten op het huidige doelwit.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4423,9 +4599,10 @@
     "Description": "Een complexe verzameling membranen en lenzen, versmolten op een hoogenergetische laserplaat. Wie terugkijkt, wordt levend verbrand.\nDruk op <IMG>SHIPFIRE<> om de blik van de ogen op doelwitten in de buurt te richten.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4451,9 +4628,10 @@
     "Description": "Een apparaat dat de standaard communicatiesignalen van een vrachtschip moduleert om naast gegevens ook <TECHNOLOGY>interplanetair materie te kunnen transporteren<>.\n\nVrachtschepen met een dergelijk apparaat kunnen over een <STELLAR>grote afstand<> producten en substanties van en naar een <STELLAR>exopak<> verzenden en ontvangen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4483,9 +4661,10 @@
     "Description": "Een uiterst gespecialiseerde uitbreiding van de mijnmogelijkheden van de multitool waarmee je <STELLAR>afzettingen<> kunt omzetten in <STELLAR>zonnevloeistof<>.\n\nEen krachtige laser vergroot de plaatselijke zonnestraling om de snelle omzetting van mineralen mogelijk te maken.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4511,9 +4690,11 @@
     "Description": "Een unieke boost voor de mijnlaser waarmee de multitool standaard is uitgerust. De frequentie van de straal wordt nauwkeurig gemoduleerd in een feedbacklus met de deltagolven die het doelwit genereert.\n\nDaardoor worden de ervaringen van het doelwit in piepkleine metaalfragmenten geëtst als <STELLAR>gefragmenteerde qualia<>. De leesbaarheid van verzamelde fragmenten kan niet worden gegarandeerd.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4539,9 +4720,10 @@
     "Description": "Er worden sublimatieventilatoren en hoogthermische massabuffers in alle structurele panelen geïnstalleerd. Daardoor is de exocraftbestuurder opgewassen tegen zelfs de heetste vuurstormen.\n\nVoorkomt dat je in <FUEL>verschroeide omgevingen<> schade oploopt of energie verliest in een exocraft.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4571,9 +4753,10 @@
     "Description": "Er wordt een krachtige verwarming in de exocraft gemonteerd, zodat het in de cabine zelfs onder de koudste omstandigheden aangenaam toeven is.\n\nVoorkomt dat je in <TEMPERATURE>koude omgevingen<> schade oploopt of energie verliest in een exocraft.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4603,9 +4786,10 @@
     "Description": "Dankzij de dubbel vacuüm gezogen luchtfiltersystemen dringt er geen molecuul van de planetaire atmosfeer door in de cabine van de exocraft dat niet uitvoerig van vreemde smetten is ontdaan.\n\nVoorkomt dat je in <TRADEABLE>giftige omgevingen<> schade oploopt of energie verliest in een exocraft.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4635,9 +4819,10 @@
     "Description": "Het frame van de exocraft wordt versterkt met zeer efficiënte controlematerialen, waardoor de exocraft beschermd is tegen gevaarlijke energiegolven.\n\nVoorkomt dat je in <COMMODITY>radioactieve omgevingen<> schade oploopt of energie verliest in een exocraft.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4667,9 +4852,10 @@
     "Description": "Het Icarus-systeem verandert bestaande metalen panelen in fotovoltaïsche oppervlakken. Deze reactieve coating wekt energie op bij zonlicht, waardoor het energieverbruik wordt teruggedrongen.\n\nSchakelt het <STELLAR>automatisch opladen van de motor<> <STELLAR>overdag<> in.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4699,9 +4885,10 @@
     "Description": "Hiermee kunnen meer constructietypen worden herkend door de exocraft-signaalversterker.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4731,9 +4918,10 @@
     "Description": "Deze compacte reactorunit is het hart van de Minotaur. Hij is geplaatst op een gyroscoop, om incidenten met de energie tijdens snelle bewegingen te voorkomen.\n\nAangedreven door conventionele <FUEL>energie op koolstofbasis<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4763,9 +4951,10 @@
     "Description": "Een geautomatiseerde smeermiddeldispenser, die wordt gemonteerd op de beengewrichten van de Minotaur om de wrijving te verminderen en een zuinige beweging mogelijk te maken.\n\nReduceert het <STELLAR>energieverbruik<> van de Daedalusmotor van de Minotaur aanzienlijk.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4795,9 +4984,10 @@
     "Description": "Een radarapparaat dat gedetailleerde opnamen maakt en de scannertechnologie aan boord van de Minotaur kan verbeteren naar het niveau van een analysevizier.\n\nDruk op <IMG>SCAN<> om een radarscan uit te voeren en <STELLAR>meer interessante locaties<> te onthullen die je niet kunt vinden met de scanner van de multitool.\n\nGebruik het snelmenu om de radar af te stellen <TECHNOLOGY>op specifieke gebouwen<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4827,9 +5017,10 @@
     "Description": "Een reeks wendbare, krachtige straalmotoren die aan de achterkant van de Minotaur wordt gemonteerd. Daarmee kun je de Minotaur snel en krachtig besturen en allerlei soorten terrein bedwingen.\n\nHou <IMG>JUMP<> ingedrukt om te activeren. Beperkte vluchtbesturing mogelijk.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4859,9 +5050,10 @@
     "Description": "Een lasergeschut dat speciaal is ontworpen voor de <STELLAR>zware Minotaur-exopakhybride<>.\n\nMaakt conventionele mijnbouwwerkzaamheden mogelijk. Nutteloos tijdens gevechten.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4891,9 +5083,10 @@
     "Description": "Een upgrade voor het lasersysteem van de <STELLAR>zware Minotaur-exopakhybride<>.\n\nVergroot de kracht van de mijnlaser, zodat je er sneller mee delft en ook lastiger te verkrijgen ruwe materialen mee verzamelt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4919,9 +5112,10 @@
     "Description": "Een vast kanon dat speciaal is ontworpen voor de <STELLAR>zware Minotaur-exopakhybride<>.\n\nHet wapen is in de eerste plaats ontworpen om biologische entiteiten te verwonden en is inefficiënt als mijnapparaat.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4951,9 +5145,10 @@
     "Description": "Geeft het lasersysteem van de <STELLAR>zware Minotaur-exopakhybride<> de mogelijkheid tot <STELLAR>terreinvervorming<>.\n\nDe hoogenergetische graafmachine kan snel worden ingezet op een manier waarbij de gevoelige gewrichten en servo's van de Minotaur niet vol komen te zitten met aarde.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4983,9 +5178,10 @@
     "Description": "Zodra de Minotaur-piloot plaatsneemt in het voertuig, wordt hij aangesloten op een krachtig systeem dat schadelijke invloeden uit de omgeving neutraliseert. Het systeem wordt aangedreven door de hoofdmotor van de Minotaur en hoeft niet te worden bediend. Rondom de aansluitingsplek kan enige pijn worden ervaren.\n\nZorgt ervoor dat de Minotaur-piloot ongevoelig is voor <STELLAR>alle omgevingsgevaren<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5015,9 +5211,10 @@
     "Description": "Zet een antimaterieschild op rond de projectielen van de <TECHNOLOGY>Boltcaster<>, die daardoor worden afgeweerd door onbeschadigde oppervlakken.\n\nMaakt het <STELLAR>afketsen<> van projectielen mogelijk, waardoor ze terug stuiteren als ze iets raken wat ze niet beschadigen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5043,9 +5240,10 @@
     "Description": "Zet een antimaterieschild op rond de projectielen van de <TECHNOLOGY>pulsspitter<>, die daardoor worden afgeweerd door onbeschadigde oppervlakken.\n\nMaakt het <STELLAR>afketsen<> van projectielen mogelijk, waardoor ze terug stuiteren als ze iets raken wat ze niet beschadigen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5075,9 +5273,10 @@
     "Description": "Speciale <FUEL>vuur genererende<> wapenuitbreiding voor de <TECHNOLOGY>multitool<>. Activeer de vuurstand met <IMG>CYCLEWEAPON<> en schiet met <IMG>ATTACK<>.\n\nDe <TECHNOLOGY>vlammenwerper<> richt interne lasers op de natuurlijke uitlaatgassen die door de multitool worden gegenereerd. Ontsteking resulteert in een zeer destructieve vlammenzee in de directe omgeving.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5103,9 +5302,11 @@
     "Description": "Een speciaal <TECHNOLOGY>lanceersysteem<> voor krachtige ruimteschepen. De gevoelige gyroscopen en gespecialiseerde besturingscircuits passen de opstijgroutines aan voor meer <STELLAR>snelheid<> en <STELLAR>efficiëntie<> bij de lancering.\n \nJe hebt speciale <TECHNOLOGY>energie op deuteriumbasis<> nodig om de stuwraket op te laden. De opstijgprocedure kan alleen worden gestart als er voldoende energie beschikbaar is.\n \nHou <IMG>THRUST<> ingedrukt om op te stijgen. Hou <IMG>BOOST<> ingedrukt voor een snelheidsboost tijdens de vlucht.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5131,9 +5332,11 @@
     "Description": "Een opgevoerde versie van de conventionele <TECHNOLOGY>pulsmotor<> van het ruimteschip. De wavefront-bezetting is tot het uiterste afgesteld, waardoor de pulsmotor zowel <STELLAR>efficiënt<> als <STELLAR>zeer responsief<> functioneert.\n\nEr is <EXOTIC>tritium<> nodig om de motor op te laden. Tritium wordt veel aangetroffen in <COMMODITY>asteroïdenvelden in de buurt van planeten<>.\n\nHou <IMG>PULSEJUMP<> ingedrukt om de pulssprong te activeren. Hou <IMG>BOOST<> ingedrukt voor een snelheidsboost tijdens de vlucht.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5159,9 +5362,11 @@
     "Description": "Deze experimentele motor verbetert de conventionele <TECHNOLOGY>hyperdrive<>-technologie door de lokale geometrie te vervormen bij de warp-initialisatie. Dit zorgt voor een veel groter <STELLAR>bereik<> en veel meer <STELLAR>efficiëntie<> dan met normale motoren.\n\nHet is aan te raden om hyperdrive-systemen te gebruiken via de <STELLAR>galactische kaart<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5191,9 +5396,11 @@
     "Description": "Een belangrijke veiligheidsvoorziening van het ruimteschip die essentieel is voor vluchten buiten de planetaire atmosfeer.\n\nDe drukcapsule is een speciaal onderdeel dat zorgt voor een <STELLAR>levensvatbare atmosfeer<> en fatale explosies van onconventionele cockpits voorkomt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5219,9 +5426,10 @@
     "Description": "Een stukje buitenaardse technologie. De uitnodigende membranen zijn zacht, gelachtig en pulseren met een zachte karmozijnrode uitstraling.\n\nGebruik het warme oppervlak om <STELLAR>walgelijke smurrie<> uit de embryonale blazen van de <SPECIAL>hongerige tentakels<> te halen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5251,9 +5459,10 @@
     "Description": "Een <TECHNOLOGY>biotechnische firewall<>, ontwikkeld als beveiliging tegen tekstuele cognito-gevaren. Het is bedekt met iets glibberigs en er borrelt iets op het oppervlak.\n\nWanneer dit onder de huid wordt aangebracht, krijg je onbeperkte toegang tot oude verboden teksten in een <SPECIAL>planetair archief<>.\n<FUEL>Waarschuwing<>: Hou de verboden teksten verborgen. Blootstelling aan verboden teksten is extreem risicovol.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5283,9 +5492,10 @@
     "Description": "Een relais dat wordt gebruikt tijdens het opstarten van het apparaat. De connectors zijn verroest, waardoor de solenoïde niet meer functioneert.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5311,9 +5521,10 @@
     "Description": "Een zeer kleine motor voor de aandrijving van zeer kleine onderdelen. Inmiddels zit hij ook helemaal vol met zeer kleine roestplekken.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5339,9 +5550,10 @@
     "Description": "Een pomp met een warmtewisselaar die oververhitting van het apparaat voorkomt. Inmiddels heeft hij zichzelf oververhit en werkt hij dus niet meer.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5363,9 +5575,10 @@
     "Description": "Een besturingsunit die zorgt voor een gelijkmatige temperatuur in het hele apparaat. De sensor is beschadigd, waardoor hij op ongewenste momenten ventileert en hitte afgeeft.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5391,9 +5604,10 @@
     "Description": "Een klein mechanisch verbindingsstuk dat overal in het apparaat kleine mechanische fouten corrigeert. Door een storing worden werkende componenten verplaatst naar elders in het apparaat, wat alleen maar meer schade veroorzaakt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5415,9 +5629,10 @@
     "Description": "Een kleine compressiekamer voor de productie van het samengeperste gas dat het apparaat aanstuurt. Er zitten barsten in de kamer, waardoor er lekkages zijn ontstaan.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5443,9 +5658,10 @@
     "Description": "Het regelcircuit voor alle andere componenten in het apparaat. Schade aan dit circuit kan fataal zijn.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5467,9 +5683,10 @@
     "Description": "De centrale voedingseenheid van het apparaat. Door de schade aan de eenheid wordt alle stroom naar één circuit geleid, wat kortsluiting veroorzaakt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5495,9 +5712,10 @@
     "Description": "Het schakelmechanisme van het apparaat. Het benodigde smeermiddel is vervangen door een vreemd groen goedje, waardoor het mechanisme is vastgelopen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5523,9 +5741,10 @@
     "Description": "Een klein, maar efficiënt paneel dat is bedoeld om licht op te vangen en om te zetten in energie. Het paneel zit echter onder de barsten en het stof, wat een betrouwbare werking in de weg staat.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5555,9 +5774,10 @@
     "Description": "Voor deze kist heb je een <TECHNOLOGY>drietandsleutel<> nodig. Deze vind je door de diepten van de oceaan te bestuderen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5579,9 +5799,10 @@
     "Description": "Na het activeren gebruikt deze module energie van het <VAL_ON>lifesupport-systeem van het exopak<> om het zwaartekrachtveld rond de gebruiker te manipuleren, het licht te breken en een <STELLAR>actief camouflage-effect<> te creëren.\n\nDit <STELLAR>tijdelijke<> effect kan worden gebruikt om te ontsnappen aan vijanden. WAARSCHUWING: actieve camouflage kan worden onderbroken bij extreme manoeuvres van het exopak, zoals het activeren van de jetpack of de multitool-wapensystemen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5611,9 +5832,11 @@
     "Description": "Geweldloos projectielwapen. Afgevuurde projectielen schakelen doelwitten in de buurt uit met een elektrische energiestoot. Effectief tegen zowel organische als elektronische entiteiten.\n \nBevat <FUEL>onstabiel plasma<>.\n \nDruk op <IMG>ALTATTACK<> om te activeren.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5643,9 +5866,10 @@
     "Description": "Overbelast de energiestraal die wordt gegenereerd door de <TECHNOLOGY>vuurspeer<>, waardoor deze een elektrische lading afgeeft op de plaats van inslag.\n\n<STELLAR>Verdooft<> korte tijd alle organische en anorganische entiteiten die worden getroffen door de straal van de vuurspeer.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5675,9 +5899,10 @@
     "Description": "Een krachtige gevechtsupgrade voor de <TECHNOLOGY>pulsspitter<>. Deze module installeert zorgvuldig gekalibreerde brandstofinjectiekoppen, die in de vuurkamer een gecontroleerde verbranding in de plasmaprojectielen veroorzaken.\n\nHierdoor vliegen doelen die zijn geraakt door de pulsspitter voor korte tijd <STELLAR>in brand<>, wat extra schade veroorzaakt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5707,9 +5932,11 @@
     "Description": "Een <STELLAR>hoogenergetische wapen<>uitbreiding voor de <TECHNOLOGY>multitool<>. Het neutronenkanon schiet opgeladen atmosferische deeltjes af naar vijandige doelen, wat <STELLAR>aanzienlijke gebiedschade<> veroorzaakt.\n\nActiveer de vuurstand met <IMG>CYCLEWEAPON<>. Laad het wapen op met <IMG>ATTACK<> en laat los voor een <STELLAR>salvo van geïoniseerde deeltjes<>.\n\nHoewel het kanon direct een enkel schot kan lossen, resulteert <TECHNOLOGY>langer opladen<> in een aanzienlijke verhoging van de <TECHNOLOGY>snelheid en de hoeveelheid van de afgeschoten deeltjes<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5739,9 +5966,10 @@
     "Description": "Een krachtige upgrade voor het <TECHNOLOGY>neutronenkanon<>. Extra resonantiecompressoren leiden aanzienlijk meer energie door de centrale kern van het kanon, waardoor de werkingskracht in hoge mate toeneemt.\n\nNa installatie kan een volledig opgeladen neutronenkanon <STELLAR>extra projectielen<> op <STELLAR>hogere snelheden<> afvuren.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5771,9 +5999,10 @@
     "Description": "Een algemene upgrade voor alle multitool-<TECHNOLOGY>wapensystemen<>, waardoor de projectielen dramatisch resoneren als ze een geschikt elektromagnetisch veld raken.\n\nZorgt voor aanzienlijk meer <STELLAR>schade<> aan alle organische en anorganische entiteiten die al <STELLAR>zijn verdoofd<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5803,9 +6032,10 @@
     "Description": "Een semi-autonome <TECHNOLOGY>kunstmatige piloot-plugin<> voor de zware Minotaur-exocrafthybride. Na installatie kan de Minotaur <STELLAR>zelfstandig naar planeten reizen<> en de primaire operator ondersteunen met <STELLAR>gevechts-<> of <STELLAR>mijnbouw<>activiteiten.\n\nDe automatische piloot draagt de controle over aan de primaire operator zodra deze de cockpit betreedt.\n\nDe besturingsroutines zijn zeer plaatsgebonden. De automatische piloot is niet in staat tot emotionele hechting en kan nooit volledig onafhankelijk de controle nemen over de Minotaur.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 480,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5835,9 +6065,10 @@
     "Description": "Een verzameling geborgen onderdelen van een Sentinel-hardframe, aangepast voor de zware <TECHNOLOGY>Minotaur-<>exocrafthybride.\n\nAls deze wordt geïnstalleerd naast een <TECHNOLOGY>Minotaur-laser<>, neemt de <STELLAR>kracht<> en <STELLAR>effectiviteit<> van de Minotaur<TECHNOLOGY>-mijnlaser<>-systemen toe.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5867,9 +6098,10 @@
     "Description": "Een verzameling geborgen onderdelen van een Sentinel-hardframe, aangepast voor de zware <TECHNOLOGY>Minotaur-<>exocrafthybride.\n\nZorgt voor een aanzienlijke <STELLAR>verbetering van de vuurkracht<> van de <TECHNOLOGY>wapensystemen<> van de Minotaur.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5899,9 +6131,10 @@
     "Description": "Een verzameling geborgen onderdelen van een Sentinel-hardframe, aangepast voor de zware <TECHNOLOGY>Minotaur-<>exocrafthybride.\n\nNa installatie zijn de <TECHNOLOGY>motor- en mobiliteit<>systemen van de Minotaur aanzienlijk verbeterd.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5927,9 +6160,10 @@
     "Description": "Een verzameling geborgen onderdelen van een Sentinel-hardframe, aangepast voor de zware <TECHNOLOGY>Minotaur-<>exocrafthybride.\n\nFunctioneert als een semi-autonome <TECHNOLOGY>kunstmatige piloot-plugin<>. Na installatie kan de Minotaur <STELLAR>zelfstandig naar planeten reizen<> en de primaire operator ondersteunen met <STELLAR>gevechts-<> of <STELLAR>mijnbouw<>activiteiten.\n\nDe automatische piloot draagt de controle over aan de primaire operator zodra deze de cockpit betreedt.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 480,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,

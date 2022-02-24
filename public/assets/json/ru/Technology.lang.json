@@ -7,9 +7,11 @@
     "Description": "Система <CATALYST>защиты от вредных факторов<> постоянно следит за условиями, в которых находится пользователь экзокостюма, и стабилизирует их.\nРеагирующую на среду защиту можно усилить с <TECHNOLOGY>щитом от внешнего воздействия<>, обеспечивающего дополнительную защиту в определенных условиях.\nУстройство заряжается <CATALYST>веществами на основе натрия<>. В случае отсутствия заряда в системе защиты от вредных факторов, окружающие условия могут быть несовместимы с жизнью.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -31,9 +33,10 @@
     "Description": "Повышает эффективность системы <COMMODITY>защиты от вредных факторов<>, позволяя проводить больше времени в опасной среде без перезарядки экзокостюма.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -59,9 +62,11 @@
     "Description": "Сердце экзокостюма — его <TECHNOLOGY>система жизнеобеспечения<>. Она постоянно фильтрует и качает пригодный для дыхания <FUEL>кислород<>.\n\nПомимо поддержания жизнедеятельности хозяина экзокостюма, система выполняет и другую важную функцию. Она перерабатывает излишки кислорода в энергию для вспомогательных систем, таких как <TECHNOLOGY>реактивный ранец<>, <TECHNOLOGY>ускоритель<> и <TECHNOLOGY>фонарь<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -83,9 +88,10 @@
     "Description": "Повышает эффективность системы <FUEL>жизнеобеспечения<>, позволяя реже производить перезарядку.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -107,9 +113,10 @@
     "Description": "Обеспечивает экзокостюм дополнительными <TECHNOLOGY>возможностями перемещения<>, включая непродолжительный полет.\n\nДля управления тягой используйте <IMG>JUMP<>. Летный ранец использует энергию <FUEL>системы жизнеобеспечения экзокостюма<>. Он сжимает газ и создает поток, тем самым поднимая пользователя в воздух.\n\nМощность реактивного ранца можно временно повысить с помощью <TECHNOLOGY>насыщенных дейтерием растений<>, что позволит значительно увеличить тягу.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -131,9 +138,10 @@
     "Description": "Повышает вместимость <STELLAR>баков реактивного ранца<> и <STELLAR>запас адреналина<>, позволяя дольше находиться в воздухе и бежать.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -159,9 +167,10 @@
     "Description": "Повышает эффективность работы реактивного ранца <STELLAR>при совершении прыжков<>, позволяя легко покрывать огромные расстояния.\n\nЧтобы активировать систему, быстро нажимайте <IMG>JUMP<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 200,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -187,9 +196,11 @@
     "Description": "Пользователь защищен от перегрева в горячих мирах.\n\nИнтенсивное воздействие атмосферного и солнечного тепла смягчается благодаря сети трубок, распределяющих по костюму жидкий френий.\n\nУстройства заряжаются от <EARTH>минеральных элементов<>, которые встречаются на планетах с жарким климатом. После создания в инвентаре экзокостюма пользователя работает автоматически.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -219,9 +230,11 @@
     "Description": "Пользователь защищен от переохлаждения в холодных мирах.\n\nСеть тепловых трубок равномерно распределяет жидкий калидий по костюму пользователя, что позволяет поддерживать комфортную температуру тела.\n\nУстройства заряжаются от <EARTH>минеральных элементов<>, которые встречаются на планетах с холодным климатом. После создания в инвентаре экзокостюма пользователя работает автоматически.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -251,9 +264,11 @@
     "Description": "Пользователь защищен от отравления.\n\nРеактивные химические соединения удаляют токсичные жидкости, попадающие на тело пользователя, тем самым уменьшая вероятность смерти от удушения.\n\nУстройства заряжаются от <EARTH>минеральных элементов<>, которые встречаются на планетах с токсичной средой. После создания в инвентаре экзокостюма пользователя работает автоматически.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -283,9 +298,11 @@
     "Description": "Пользователь защищен от радиации.\n\nУровень риска при исследовании радиоактивных миров значительно снижается. Микровибрации усиливают отражение электромагнитных волн, тем самым уменьшая их поглощение.\n\nУстройства заряжаются от <EARTH>минеральных элементов<>, которые встречаются на планетах с повышенным радиационным фоном. После создания в инвентаре экзокостюма пользователя работает автоматически.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -315,9 +332,10 @@
     "Description": "Пользователь может плавать под водой длительное время.\n\nПоглощает растворенные в воде газы мембранным контактным фильтром, который располагается надо ртом или лицевым дыхательным отверстием, если таковые имеются у пользователя.\n\nПосле создания в инвентаре экзокостюма пользователя работает автоматически.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -347,9 +365,10 @@
     "Description": "Улучает металлическую обшивку <TECHNOLOGY>перчаток экзокостюма<>.\n\nВысокотехнологичное соединение армированного металла и каталитической обшивки позволяет пользователю без вреда для здоровья обращаться с <CATALYST>опасными веществами<>, а также совершать активные физические действия. Например, собирать некоторые <TRADEABLE>сельскохозяйственные растения<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -375,9 +394,10 @@
     "Description": "Внутри находится все, что вы когда-либо узнавали.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -403,9 +423,10 @@
     "Description": "Мельчайшая искра, заключенная в поле неизвестной природы.\n\nСемя наполнено жизнью, оно отчаянно жаждет вырваться и исполнить предназначение.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -435,9 +456,10 @@
     "Description": "<TECHNOLOGY>Технология<>, испорченная воздействием Атласа.\n\nМожет быть переработана на полезные компоненты.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -463,9 +485,10 @@
     "Description": "Повышает <STELLAR>топливную эффективность<> водометов реактивного ранца, уменьшая расход ресурсов системы жизнеобеспечения экзокостюма.\n\nВнутрь турбин реактивного ранца устанавливаются водяные компрессоры, что позволяет избежать огромного расхода энергии, необходимого для запала под водой.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 350,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -495,9 +518,10 @@
     "Description": "Улучшает <TECHNOLOGY>аэрационную мембрану<> экзокостюма, позволяя в случае крайней необходимости откачивать кислород из системы жизнеобеспечения экзокостюма. Так пользователь сможет быстро подняться на поверхность и пополнить запасы топлива.\n\nПримечание: длительный процесс переработки энергии системы жизнеобеспечения в пригодный для дыхания газ может привести к неисправности системы жизнеобеспечения.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 240,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -527,9 +551,10 @@
     "Description": "Устройство автоматического перевода. Записывает и разбирает всю слышимую речь, после чего пропускает полученные данные через систему контекстного обучения, определяя смысл сказанного.\n\nНебольшой размер памяти у этой простейшей модели ограничивает объем перевода.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -551,9 +576,10 @@
     "Description": "Устройство автоматического перевода. Записывает и разбирает всю слышимую речь, после чего пропускает полученные данные через систему контекстного обучения, определяя смысл сказанного.\n\nПараллельные языковые процессоры позволяют переводить внушительную часть записанной речи.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 310,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -583,9 +609,10 @@
     "Description": "Устройство автоматического перевода. Записывает и разбирает всю слышимую речь, после чего пропускает полученные данные через систему контекстного обучения, определяя смысл сказанного.\n\nБольшой размер памяти и усовершенствованный языковой процессор позволяют переводить большие объемы речи.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 580,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -615,9 +642,10 @@
     "Description": "Устройство автоматического перевода. Для настройки устройства в него необходимо сначала загрузить данные готового перевода. Для работы устройство должно быть <STELLAR>связано с Артемидой<>.\n\nБез доступа к внешнему переводческому серверу устройство способно лишь переводить небольшое количество слов в реальном времени.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -643,9 +671,11 @@
     "Description": "Реактивный полет, ускорения и импульсные прыжки в пределах системы.\n \nДля зарядки импульсного двигателя требуется <EXOTIC>тритий<>. Тритий в изобилии встречается в <COMMODITY>скоплениях астероидов рядом с планетами<>.\n\nУдерживайте <IMG>PULSEJUMP<>, чтобы совершить импульсный прыжок.\nУдерживайте <IMG>BOOST<>, чтобы активировать ускоритель в полете.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -671,9 +701,10 @@
     "Description": "Улучшает маневрирование и продлевает ускорение во время космических полетов.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -699,9 +730,11 @@
     "Description": "Необходимое каждому пилоту оборудование для посадки и взлета.\n \nДля зарядки ускорителя лучше использовать топливо дигидрогена. Для активации необходим достаточный запас топлива.\n \nУдерживайте <IMG>THRUST<>, чтобы подняться с поверхности планеты.\nУдерживайте<IMG>BOOST<>, чтобы активировать ускоритель в полете.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -727,9 +760,10 @@
     "Description": "Улучшает систему запуска звездолета, снижая <STELLAR>расход топлива<> на взлет.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -759,9 +793,10 @@
     "Description": "Фотовольтические панели, установленные на <TECHNOLOGY>взлетных ускорителях<> звездолета, позволяющие производить медленный непрерывный подзаряд батарей, пока корабль не движется.\n\nСобранный свет используется для сжигания атмосферного дигидрогена и со временем будет <STELLAR>заправлять взлетные ускорители автоматически<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -791,9 +826,10 @@
     "Description": "Устройство, которое изменяет модуляцию стандартных сигналов связи корабля, чтобы они <TECHNOLOGY>передавали не только данные, но и материю<>.\n\nЗвездолет, оснащенный таким устройством, способен передавать продукцию и вещества на экзокостюм пользователя и обратно на <VAL_ON>большие расстояния<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -819,9 +855,11 @@
     "Description": "Сверхсветовой реактивный двигатель, позволяющий звездолету достигать варп-скорости и прыгать между соседними системами.\n\nРекомендуется использовать системы гипердвигателя через галактическую карту.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -847,9 +885,10 @@
     "Description": "Улучшает магниты поддержки ядра гипердвигателя, защищая его от разрушения при приближении к редким <FUEL>красным космическим телам<>.\n\nРекомендуется использовать системы гипердвигателя с помощью <VAL_ON>галактической карты<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -875,9 +914,10 @@
     "Description": "Повышает прочность экрана гипердвигателя, защищая его от сбоев в реальности при приближении к редким <TRADEABLE>зеленым космическим телам<>.\n\nРекомендуется использовать системы гипердвигателя с помощью <VAL_ON>галактической карты<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -903,9 +943,10 @@
     "Description": "Улучшает расчетную матрицу гипердвигателя, предотвращая возникновение темпоральных аномалий при приближении к редким <TECHNOLOGY>синим космическим телам<>.\n\nРекомендуется использовать системы гипердвигателя с помощью <VAL_ON>галактической карты<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 200,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -931,9 +972,11 @@
     "Description": "Энергетический щит, защищающий космическое судно от лазерного огня, снарядов и случайных столкновений с космическим мусором.\n\nДля перезарядки необходимы <CATALYST>катализаторы<>.\n\nПосле создания в инвентаре звездолета пользователя работает автоматически.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -959,9 +1002,10 @@
     "Description": "Дополняет уже установленную на звездолет защиту перегретым слоем, способным испарять вражеские снаряды.\n\nЗначительно улучшает <STELLAR>показатели защищенности звездолета<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 85,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -991,9 +1035,10 @@
     "Description": "Разрушительное, но медленное оружие, крайне эффективное в бою между кораблями.\n\nДля активации нажмите <IMG>SHIPFIRE<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 100,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1019,9 +1064,10 @@
     "Description": "Расширенный диаметр направляющих труб в <TECHNOLOGY>ракетной установке<> ускоряет вывод отработанных газов и <STELLAR>охлаждение<> механизма.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 50,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1047,9 +1093,10 @@
     "Description": "Крайне разрушительное оружие, эффективное в бою между кораблями.\n\nДля активации нажмите <IMG>SHIPFIRE<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1075,9 +1122,10 @@
     "Description": "Улучшение галактических сканеров корабля. Это устройство позволяет получать подробные данные об экономике звездных систем без необходимости их посещать.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1103,9 +1151,10 @@
     "Description": "Улучшение галактических сканеров корабля. Это устройство позволяет просматривать на галактической карте информацию о военных конфликтах.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1131,9 +1180,10 @@
     "Description": "Лучевое оружие для ведения боя в космосе и добычи ископаемых.\n\nДля перезарядки необходимы <FUEL>органические элементы<>.\n\nДля активации нажмите <IMG>SHIPFIRE<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1159,9 +1209,10 @@
     "Description": "<TECHNOLOGY>Фазовый луч<> оборудуется нанитовыми микросхемами, что позволяет ему преодолевать считающиеся стандартными ограничения максимальной мощности.\n\nЗначительно улучшает <STELLAR>отвод тепла<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1187,9 +1238,10 @@
     "Description": "Заряды имеют широкую область поражения.\n\nПоскольку дальность и скорость стрельбы этого оружия снижена, с его помощью можно поражать цели вблизи корабля.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1215,9 +1267,10 @@
     "Description": "Механизм работы <TECHNOLOGY>позитронного эжектора<> радикально изменяется, повышая скорость и точность выброса частиц.\n\nПовышает <STELLAR>дальность<> и <STELLAR>точность<> стрельбы.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1243,9 +1296,10 @@
     "Description": "Стреляет небольшими очередями.\n\nРекомендуется проявить осторожность, так как длительное ведение огня может вызвать перегрев.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1271,9 +1325,10 @@
     "Description": "Стандартная оптическая система <TECHNOLOGY>фотонной пушки<> заменяется на экспериментальный стеклянный модуль, что повышает ее эффективность в бою.\n\nЗначительно повышает мощность <STELLAR>теплоотвода<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 75,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1303,9 +1358,10 @@
     "Description": "Выпускает большой шар сконцентрированных заряженных частиц, который движется вперед и при попадании в цель наносит большой урон. Заряд не управляем и продолжает движение по своей траектории до тех пор, пока не столкнется с препятствием.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1331,9 +1387,10 @@
     "Description": "Теплоотвод <TECHNOLOGY>циклотронной баллисты<> заменяется на поглощающий излишнее тепло корпус самого устройства. Излишек тепла идет на повышение эффективности работы механизма.\n\nЗначительно улучшает <STELLAR>отвод тепла<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1359,9 +1416,11 @@
     "Description": "Сверхсветовой реактивный двигатель, позволяющий звездолету достигать варп-скорости и прыгать между соседними системами.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1391,9 +1450,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1415,9 +1475,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1443,9 +1504,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1467,9 +1529,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1495,9 +1558,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1527,9 +1591,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1555,9 +1620,10 @@
     "Description": "Специализированное устройство для <TECHNOLOGY>исследований<> и <TECHNOLOGY>открытий<>.\n\nУлучшает стандартный <TECHNOLOGY>сканер<>, направляя подробные данные об окружающей местности напрямую в зрительную систему пользователя. Позволяет находить <STELLAR>интересные места на большом расстоянии<>.\n\nПри использовании визор подготавливает <COMMODITY>ценные данные<> для изучения <TRADEABLE>флоры<>, <FUEL>фауны<> и <TECHNOLOGY>минералов<>.\n\nДля использования удерживайте <IMG>AIM<>. Для приближения нажмите <IMG>ZOOM<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1579,9 +1645,10 @@
     "Description": "<TECHNOLOGY>Личный планетарный радиолокационный<> модуль мультитула. \n\nСканер создает мощный энергетический импульс, который обнаруживает в непосредственной близости все <COMMODITY>важные ресурсы<>. Данные передаются через экзокостюм напрямую в зрительную систему пользователя.\n \nНажмите <IMG>SCAN<>, чтобы включить сканирование.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1603,9 +1670,10 @@
     "Description": "В <TECHNOLOGY>систему сканирования<> встраивается мощный дополнительный процессор, значительно ускоряющий перезарядку устройства.\n\nПовышает <STELLAR>потенциальную частоту сканирования<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1631,9 +1699,10 @@
     "Description": "Дополнительная автономная электронная схема для <TECHNOLOGY>анализирующего визора<>, добавляющая сканирующей решетке функцию анализа ландшафта в реальном времени.\n\nДля переключения режимов визора используйте <IMG>SURVEYFILTERL<>/<IMG>SURVEYFILTERR<>. Используйте <STELLAR>режим наблюдения<>, чтобы находить скрытые ландшафтом ресурсы.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 320,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1663,9 +1732,10 @@
     "Description": "Продвинутое устройство для терраформинга. Этот модуль выводит существующие системы на новый уровень, позволяя пользователю подчинять своей воле целые планеты.\n\nПитается от <EARTH>металлических элементов<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 50,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1691,9 +1761,10 @@
     "Description": "В момент активации этот модуль черпает энергию из <VAL_ON>системы жизнеобеспечения экзокостюма<> и перегружает мультитул, искажая магнитное поле вокруг пользователя и создавая <COMMODITY>мощный личный щит<>.\n\nЭто поле обеспечивает надежную защиту от лазерного огня, но пользователю стоит помнить, что, пока мультитул питает щит, использовать другие его функции невозможно.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1719,9 +1790,10 @@
     "Description": "Гасящий отдачу прицел для точного ведения огня.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1747,9 +1819,11 @@
     "Description": "<TECHNOLOGY>Расщепитель<> мульитула, заряжается от <FUEL>углеродных элементов<>. Чтобы выстрелить, нажмите <IMG>ATTACK<>.\nПомещает в мультитул фокусирующую оптику, позволяя ему выпускать <STELLAR>мощный энергетический луч<>. Излучение воздействует на молекулы обычных <STELLAR>органических и геологических объектов<>. Благодаря такому воздействию устройство активно используется для добычи полезных ископаемых.\n<FUEL>ВНИМАНИЕ<>: уничтожение флоры, фауны и минералов может привлечь внимание стражей.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1771,9 +1845,10 @@
     "Description": "Заменяет стандартную оптику <TECHNOLOGY>расщепителя<> высококлассным живым стеклом, позволяя разрабатывать <STELLAR>крупные залежи и месторождения редких ресурсов<>.\n\nЛинза автоматически подстраивается к мельчайшим колебаниям волны луча, сводя к минимуму рассеивание и <STELLAR>повышая эффективность устройства<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 75,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1803,9 +1878,10 @@
     "Description": "Системы тончайших линз размещены в сложно настроенной матрице, фокусирующей <TECHNOLOGY>расщепитель<> на атомном уровне.\n\nВысочайшая точность повышает эффективность добычи ресурсов. Элементы извлекаются более эффективно, <STELLAR>повышая объем добычи<> с предметов, собранных мультитулом.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1835,9 +1911,10 @@
     "Description": "Стандартный боевой модуль <TECHNOLOGY>мультитула<>. Нажмите <IMG>CYCLEWEAPON<>, чтобы выбрать режим стрельбы. Чтобы выстрелить, нажмите <IMG>ATTACK<>.\n\n<TECHNOLOGY>Плазмомет<> изменяет конфигурацию мультитула, позволяя ему заряжать энергией <EARTH>металлы<> и использовать их в качестве <STELLAR>высокоскоростных снарядов<>, способных наносить огромный урон.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1863,9 +1940,10 @@
     "Description": "В ствол <TECHNOLOGY>плазмомета<> встраивается мощное ионизирующее устройство, что повышает стабильность траектории снарядов.\n\nПовышает <STELLAR>точность<>, а также позволяет стрелять более длинными очередями без снижения эффективности.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1891,9 +1969,10 @@
     "Description": "Заряды плазмомета наносят дополнительный физический урон при попадании.\n\nСистема распределения ионизированной плазмы снабжается дополнительной кинетической энергией.\n\nАвтоматически начинает работать после создания в инвентаре пользовательского мультитула.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1915,9 +1994,10 @@
     "Description": "<TECHNOLOGY>Значительное<> улучшение: <TECHNOLOGY>расщепитель<>.\n\nУстанавливает дополнительные отражающие элементы в камеру основного кристалла, увеличивая базовую <STELLAR>мощность ядра<> и уменьшая нежелательный <STELLAR>выброс тепла<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1939,9 +2019,11 @@
     "Description": "Кинетическое оружие космического корабля высокой мощности. Стреляет плазменными снарядами, которые отскакивают от поверхностей до тех пор, пока внутренний таймер не активирует взрыв.\n \nВ качестве заряда используется <FUEL>нестабильная плазма<>. Небрежное обращение может привести к смерти пользователя.\n \nДля активации нажмите <IMG>ALTATTACK<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1971,9 +2053,11 @@
     "Description": "Установка для запуска снарядов большого диаметра. Выпускает сгустки плазмы, предназначенные для <STELLAR>скоростной выемки грунта<>.\n \nВ качестве заряда используется <FUEL>нестабильная плазма<>. Внимание! Взрыв способен повредить находящуюся поблизости органическую материю.\n \nДля активации нажмите <IMG>ALTATTACK<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1999,9 +2083,11 @@
     "Description": "Агрессивный боевой модуль <TECHNOLOGY>мультитула<>. Нажмите <IMG>CYCLEWEAPON<>, чтобы выбрать режим стрельбы. Чтобы выстрелить, нажмите <IMG>ATTACK<>.\n\nПламенное копье наносит урон целям мгновенно.\n\nПлазменный заряд порождает газовую дугу для запуска плазменных выстрелов с большой скоростью. Вы получите разрушительный результат сразу после нажатия на спуск.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2031,9 +2117,10 @@
     "Description": "Объем подготовительной камеры <TECHNOLOGY>пламенного копья<> увеличивается, а внутренние ускорители частиц разгоняют большую массу до большей скорости.\n\nЗначительно повышает <STELLAR>урон<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2059,9 +2146,10 @@
     "Description": "Специализированный модуль <STELLAR>ближнего боя<> для <TECHNOLOGY>мультитула<>. Нажмите <IMG>CYCLEWEAPON<>, чтобы выбрать режим стрельбы. Чтобы выстрелить, нажмите <IMG>ATTACK<>.\n\n<TECHNOLOGY>Бластер-рассеиватель<> изменяет конфигурацию мультитула, позволяя ему нагревать и раскалывать <EARTH>металл<>. Обладает <STELLAR>широкой областью поражения<>. Дальность весьма ограничена, однако вблизи шрапнель крайне эффективна.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2087,9 +2175,10 @@
     "Description": "Новейшие самосмазывающиеся детали снижают трение внутри <TECHNOLOGY>бластера-рассеивателя<>, в результате чего повышается <STELLAR>скорость перезарядки<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2115,9 +2204,10 @@
     "Description": "Специализированный боевой модуль <TECHNOLOGY>мультитула<> с <STELLAR>высокой скоростью стрельбы<>. Нажмите <IMG>CYCLEWEAPON<>, чтобы выбрать режим стрельбы. Чтобы выстрелить, нажмите <IMG>ATTACK<>.\n\n<TECHNOLOGY>Импульсный скорострел<> перестраивает оптику мультитула на ионизацию введенных в него <EARTH>металлов<>. Создаваемые снаряды выстреливаются очередями и с большой скоростью, поражая потенциальные цели <STELLAR>высокоактивной плазмой<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2143,9 +2233,10 @@
     "Description": "Специальные гармонические резонаторы расщепляют боеприпасы <TECHNOLOGY>импульсного скорострела<>, увеличивая количество снарядов при меньшем расходе материалов.\n\nУвеличивает <STELLAR>размер обоймы<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2171,9 +2262,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2195,9 +2287,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2219,9 +2312,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2251,9 +2345,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2275,9 +2370,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2307,9 +2403,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2339,9 +2436,10 @@
     "Description": "Компактный термоядерный блок, стандартный для любого вездехода.\n\nДля его работы необходимо топливо.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2367,9 +2465,10 @@
     "Description": "Значительно повышает управляемость вездехода с помощью доработки программного обеспечения, регулировки давления и размещения микрогравитационных колодцев в основных компонентах подвески.\n\nСпециально настроена, чтобы улучшить способность вездехода входить в <STELLAR>занос<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2399,9 +2498,10 @@
     "Description": "Значительно повышает управляемость вездехода с помощью доработки программного обеспечения, регулировки давления и размещения микрогравитационных колодцев в основных компонентах подвески.\n\nСпециально настроена, чтобы улучшить способность вездехода делать <STELLAR>резкие повороты<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2431,9 +2531,10 @@
     "Description": "Значительно повышает управляемость вездехода с помощью доработки программного обеспечения, регулировки давления и размещения микрогравитационных колодцев в основных компонентах подвески.\n\nСпециально настроена, чтобы улучшить способность вездехода <STELLAR>скользить<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2463,9 +2564,10 @@
     "Description": "Крупный и сложный подпространственный радар.\n\nИз-за большого расхода энергии и общей нестабильности всей системы устанавливается только на вездеходы.\n\nНажмите <IMG>QUICK_MENU<> чтобы активировать усилитель сигнала.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2491,9 +2593,10 @@
     "Description": "Позволяет усилителю сигнала обнаруживать дополнительные типы зданий.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 320,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2523,9 +2626,10 @@
     "Description": "Плазменный инжектор, увеличивающий эффективность двигателя, позволяющий кратковременно увеличивать скорость.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2555,9 +2659,10 @@
     "Description": "Расщепитель слишком громоздкий, чтобы его можно было держать в руках, поэтому его устанавливают только на вездеходы.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2587,9 +2692,10 @@
     "Description": "Увеличивает мощность расщепителя для вездехода.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2615,9 +2721,10 @@
     "Description": "Из-за большого расхода энергии это мощное орудие устанавливается только на вездеходы.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2643,9 +2750,11 @@
     "Description": "Двигатель с термическим реактором и защитой от инверсий, способный питать «Наутилон» энергией даже на большой глубине.\n\nРаботает на <FUEL>гидротермальных топливных блоках<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2671,9 +2780,10 @@
     "Description": "Пушка, разработанная для <STELLAR>подводной лодки «Наутилон»<>.\n\nМощное энергетическое оружие раскаляет воду и направляет ее на большой скорости к цели.\n\nЭто оружие разработано для борьбы с живыми организмами и не подходит для добычи ресурсов.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2703,9 +2813,10 @@
     "Description": "Лазерное орудие, разработанное для <STELLAR>подводной лодки «Наутилон»<>.\n\nВыпускает по цели луч концентрированной плазмы, воспламеняя ее. Подобный механизм позволяет использовать энергооптическое оборудование для добычи ресурсов в жидкой среде.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 450,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2735,9 +2846,10 @@
     "Description": "Высокоточный сонар, способный улучшить бортовой сканер «Наутилона» до уровня анализирующего визора.\nЧтобы активировать мощный сонар, нажмите <IMG>SCAN<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2767,9 +2879,10 @@
     "Description": "Устанавливается в двигательную систему <STELLAR>подводной лодки «Наутилон»<>.\n\nЧерпает энергию из солей, содержащихся в морской воде, позволяя заряжать <TECHNOLOGY>гумбольдтовый двигатель<> в условиях нехватки топлива.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 350,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2799,9 +2912,10 @@
     "Description": "Простой запирающий механизм, призванный отвадить нежеланных гостей. Не открывается.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2823,9 +2937,10 @@
     "Description": "Сложное на вид устройство. Случайная смена полярности привела к его заклиниванию.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2847,9 +2962,10 @@
     "Description": "Очень сложное на вид устройство. Поврежденные цепи, питающие магнит, заклинили его.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2871,9 +2987,10 @@
     "Description": "Терминал, предоставляющий возможность управления устройством в ручном режиме. Поврежден. Не принимает входящих сигналов.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2899,9 +3016,10 @@
     "Description": "Сложное устройство, дающее возможность сенсорного ввода. Устройство неисправно. Использовать в таком состоянии не рекомендуется.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2923,9 +3041,10 @@
     "Description": "Небольшой бойлер производит тепло, которое позволяет устройству работать даже в неблагоприятных температурных условиях. Неисправность привела к его переполнению.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2947,9 +3066,10 @@
     "Description": "Маленький мотор, рассчитанный на использование в маленьких механизмах. Внутри полно очень мелкой ржавчины.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2971,9 +3091,10 @@
     "Description": "Система, состоящая из устройства теплообмена и насоса. Призвана поддерживать адекватный температурный режим и предотвращать перегрев устройства. Система сама подверглась перегреву и больше не работает.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2999,9 +3120,10 @@
     "Description": "Устройство вывода, призванное передавать пользователю информацию о состоянии системы. Устройство сломано и потому лишено возможности оповестить об этом пользователя.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3023,9 +3145,10 @@
     "Description": "Блок, призванный уничтожить главные составляющие устройства в случае нежелательного вмешательства неизвестных лиц. К несчастью, произошел сбой, в результате которого блок постепенно повреждает соседние системы.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3047,9 +3170,10 @@
     "Description": "Небольшое устройство, объединяющее в себе лампы и клаксоны. Призвано оповещать о вторжениях. Устройство неисправно. Его повреждение закоротило соседние цепи.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3071,9 +3195,10 @@
     "Description": "Корпус, сдерживающий мощную пружину. Корпус поврежден, что привело к распрямлению пружины. Удар повредил и другие части устройства.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3095,9 +3220,10 @@
     "Description": "Управляющий блок, призванный распределять тепло по всему устройству. Сенсор поврежден, и блок отводит и производит тепло абсолютно бессистемно.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3119,9 +3245,10 @@
     "Description": "Мощный насос, способный надежно прокачивать топливо в условиях любой гравитации и ее отсутствия. Фильтр засорен неизвестной субстанцией, и насос не работает.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3147,9 +3274,10 @@
     "Description": "Небольшое механическое устройство, которое должно поправлять случайно сместившиеся компоненты других систем. В результате сбоя оно стало хватать вполне рабочие компоненты и впихивать их в неподходящие места.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3171,9 +3299,10 @@
     "Description": "Реле, которое должно участвовать во включении устройства. Разъемы проржавели, и соленоид больше не работает.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3195,9 +3324,10 @@
     "Description": "Небольшая камера с высоким давлением. Должна сжимать газ, необходимый для работы устройства. Оболочка покрыта трещинами.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3219,9 +3349,10 @@
     "Description": "Контрольная цепь, регулирующая работу всех основных систем. Не подлежит восстановлению.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3243,9 +3374,10 @@
     "Description": "Центральный блок питания. Поврежден и направляет всю энергию на одну цепь, создавая условия для потенциального возгорания.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3271,9 +3403,10 @@
     "Description": "Небольшое устройство, которое должно регулировать поток энергии. Неисправность вызвала короткое замыкание, и нерегулируемая энергия повредила другие компоненты.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3295,9 +3428,10 @@
     "Description": "Универсальный сетевой интерфейс, который позволяет устройству подключаться к удаленному центру управления. Интерфейс поврежден, и поэтому воспринимает фоновую радиацию как осмысленные сигналы, что влияет на данные других компонентов.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3323,9 +3457,10 @@
     "Description": "В случае обнаружения неисправности панель безопасности должна изолировать потенциально опасные компоненты устройства. Сверхчувствительность датчика привела к ее срабатыванию. Устройство больше не может выполнять свою функцию.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3351,9 +3486,10 @@
     "Description": "Генератор переменного тока генерирует и регулирует необходимый устройству поток энергии. Из него капает странная едкая жидкость.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3379,9 +3515,10 @@
     "Description": "Небольшая, но высокоэффективная панель, превращающая свет в энергию. Панель растрескалась и покрылась пылью. Вероятно, теперь бесперебойной работы от нее ожидать нельзя.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3407,9 +3544,10 @@
     "Description": "Комплекс шестеренок. Смазка, необходимая ему для работы, заменена какой-то инопланетной зеленой слизью. Теперь шестеренки отказываются вращаться.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3431,9 +3569,10 @@
     "Description": "Загадочный замок с несколькими скважинами. Эта реликвия наверняка защищает ценное сокровище.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3455,9 +3594,10 @@
     "Description": "Этому сундуку нужен <SPECIAL>живой жемчуг<>, который можно найти внутри гигантских матерей-моллюсков, обитающих на дне океана.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3479,9 +3619,10 @@
     "Description": "Критическое повреждение <TECHNOLOGY>модуля улучшения экзокостюма<>. Отремонтируйте систему для восстановления работоспособности улучшения.\n\nВ случае ремонта пользователю <STELLAR>не придется платить<> за улучшения экзокостюма.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3503,9 +3644,10 @@
     "Description": "Критическое повреждение <TECHNOLOGY>модуля улучшения экзокостюма<>. Отремонтируйте систему для восстановления работоспособности улучшения.\n\nВ случае ремонта пользователю <STELLAR>не придется платить<> за улучшения экзокостюма.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3527,9 +3669,10 @@
     "Description": "Критическое повреждение <TECHNOLOGY>модуля улучшения экзокостюма<>. Отремонтируйте систему для восстановления работоспособности улучшения.\n\nВ случае ремонта пользователю <STELLAR>не придется платить<> за улучшения экзокостюма.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3551,9 +3694,10 @@
     "Description": "Модификация для огромного гипердвигателя <STELLAR>межзвездного грузового судна<>.\n\nКвантовое резонирование повышает надежность и эффективность работы двигателя во время полетов на сверхсветовой скорости, позволяя добираться до звезд, которые раньше были недоступны.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 4,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3583,9 +3727,10 @@
     "Description": "Модификация для огромного гипердвигателя <STELLAR>межзвездного грузового судна<>.\n\nГипердвигатель использует усовершенствованный термоядерный синтез, который позволяет звездолету достичь более высокой варп-скорости и интенсивности. Судно сможет совершать более длинные прыжки в космос и перемещаться в отдаленные планетарные системы.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 8,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3615,9 +3760,10 @@
     "Description": "Модификация для огромного гипердвигателя <STELLAR>межзвездного грузового судна<>.\n\nНеограниченная по производительности, но стабилизированная система синтеза подключена к варп-двигателю. Позволяет звездолету совершать еще более длинные прыжки в космосе.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 12,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3647,9 +3793,10 @@
     "Description": "Улучшает магниты поддержки ядра гипердвигателя, защищая его от разрушения при приближении к редким <FUEL>красным космическим телам<>.\n\nРекомендуется использовать системы гипердвигателя с помощью <VAL_ON>галактической карты<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 4,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3679,9 +3826,10 @@
     "Description": "Повышает прочность экрана гипердвигателя, защищая его от сбоев в реальности при приближении к редким <TRADEABLE>зеленым космическим телам<>.\n\nРекомендуется использовать системы гипердвигателя с помощью <VAL_ON>галактической карты<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 8,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3711,9 +3859,10 @@
     "Description": "Улучшает расчетную матрицу гипердвигателя, предотвращая возникновение темпоральных аномалий при приближении к редким <TECHNOLOGY>синим космическим телам<>.\n\nРекомендуется использовать системы гипердвигателя с помощью <VAL_ON>галактической карты<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 12,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3743,9 +3892,10 @@
     "Description": "Мощное улучшение для <TECHNOLOGY>реактивного ранца<> экзокостюма, позволяющее ограниченно <STELLAR>дозаправлять реактивный ранец<> прямо в полете.\n\nВысокоэффективные компрессоры, установленные вокруг выхлопа реактивного ранца, используют воздушный поток, который образуется в результате <STELLAR>постоянного падения<>, преобразуя часть его энергии в топливо.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3775,9 +3925,10 @@
     "Description": "Компактное расширение экзокостюма — небольшой портативный <TECHNOLOGY>очиститель<>, доступ к которому можно получить через пользовательский интерфейс экзокостюма.\n\nУстройство работает на <FUEL>топливе<> и может обрабатывать не более одного вещества за раз.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 360,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3803,9 +3954,10 @@
     "Description": "Высокотехнологичное улучшение для <TECHNOLOGY>импульсного двигателя<>, значительно повышающее его <STELLAR>топливную эффективность<>.\n\nЗапасы трития перенаправляются в цикл миниатюрных черных дыр. Получаемые в результате микрогравитационные колебания затем используются для усиления двигательных систем. Такой подход значительно более эффективен, чем любые традиционные методы, основанные на топливных системах внутреннего сгорания.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3835,9 +3987,10 @@
     "Description": "Высокотехнологичное улучшение для <TECHNOLOGY>импульсного двигателя<>, значительно повышающее его <STELLAR>скорость в межпланетных перелетах<>.\n\nЭффекты смещения, возникающие в импульсном двигателе естественным образом, усиливаются тритиевыми резонаторами, что в результате увеличивает досветовую скорость корабля.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3867,9 +4020,10 @@
     "Description": "Знач. улучш. для <TECHNOLOGY>гипердвигателя<>, позволяющее <STELLAR>мгновенно совершить варп-прыжок<>, даже если все обычные системы заблокированы из-за <WARNING>космического сражения<>. Доступ к аварийной варп-системе осуществляется через <STELLAR>быстрое меню<>.\n\n<FUEL>ВНИМАНИЕ!<> Использование систем мгновенного перехода не позволяет задать конечный пункт назначения. Полеты на световой скорости без дополнительных просчетов наносят вред системе, и она требует <STELLAR>частого ремонта<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 240,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3899,9 +4053,10 @@
     "Description": "Улучшает <TECHNOLOGY>инфракрасный ускоритель<>, сжимая внутренние волны. В стандартный волновой паттерн выстрела вмещается дополнительный заряд.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3931,9 +4086,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3959,9 +4115,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3987,9 +4144,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4011,9 +4169,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4039,9 +4198,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4071,9 +4231,10 @@
     "Description": "<FUEL>Серьезное повреждение<> подсистемы звездолета. До устранения повреждения эту ячейку нельзя использовать в качестве <STELLAR>склада<> или для размещения <TECHNOLOGY>технологии<>. Начните ремонт с помощью <IMG>REPAIR<>.\n\nБазовые возможности звездолета не затронуты. Ремонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4103,9 +4264,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4131,9 +4293,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4163,9 +4326,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4191,9 +4355,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4219,9 +4384,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4251,9 +4417,10 @@
     "Description": "<FUEL>Критическое повреждение<> подсистемы мультитула.\n\nПока не устранено повреждение, ячейку использовать нельзя. Начните ремонт с помощью <IMG>REPAIR<>.\n\nРемонт освободит ячейку для общего использования.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4283,9 +4450,11 @@
     "Description": "Волокнистая металлическая конструкция соединяет этот теплый живой орган с ядром корабля. Без него корабль — ничто, пустая безжизненная оболочка.\n\nЗажмите <IMG>PULSEJUMP<>, чтобы попросить сердце совершить импульсный прыжок.\nУдерживайте <IMG>BOOST<>, чтобы запросить ускорение.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4311,9 +4480,11 @@
     "Description": "Матрица распределенных нейронов, вплавленная в панель из металлических нитей. По поверхности проносятся сложные электрические импульсы, связывая все системы корабля воедино.\n \nЗажмите <IMG>THRUST<>, чтобы спросить корабль, не желает ли он взлететь.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4339,9 +4510,11 @@
     "Description": "Сложный биометаллический стержень, напрямую подключенный к сердцу с антиматерией. Регистрирует повышение активности при межзвездных прыжках. Похоже, ему нравится выполнять сложные математические расчеты, необходимые для перемещения на сверхсветовой скорости.\n\nЧтобы воспользоваться навигационными системами для дальних перелетов, откройте галактическую карту. Не забывайте радовать свой корабль, регулярно совершая прыжки между системами.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4367,9 +4540,11 @@
     "Description": "Этот небольшой отросток автоматической защитной сети корабля, похоже, является отдельным самостоятельным организмом. Небольшой рот, расположенный в центральной части его тела, жаждет <SPECIAL>пугния<>.\n\nВо время боя этот организм перехватывает контроль над нейронной матрицей, защищая от страха и боли остальное тело корабля.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4395,9 +4570,10 @@
     "Description": "Беспорядочный набор мешков и сфинктеров с отверстиями, которые извергают сферические сгустки плазмы. Слияние с оружейными системами корабля позволяет раскалять эти сгустки и выбрасывать их под большим давлением.\n\nНажмите <IMG>SHIPFIRE<>, чтобы спросить, согласится ли корабль направить свои отверстия на текущую цель.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4423,9 +4599,10 @@
     "Description": "Сложная система мембран и линз, вживленная в лазерную матрицу высокой мощности. Тот, кто окажется в поле их зрения, будет испепелен.\nНажмите <IMG>SHIPFIRE<>, чтобы попросить глаза посмотреть на ближайшие цели.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4451,9 +4628,10 @@
     "Description": "Устройство, которое изменяет модуляцию стандартных сигналов связи грузового судна, чтобы <TECHNOLOGY>осуществлять межпланетную передачу не только данных, но и материи<>.\n\nГрузовые суда, оснащенный таким устройством, способен передавать товары и вещества на <STELLAR>экзокостюм<> пользователя и обратно на <STELLAR>большие расстояния<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4483,9 +4661,10 @@
     "Description": "Крайне специализированный модуль для расщепителя мультитула, превращающий <STELLAR>природные залежи<> в <STELLAR>жидкое солнце<>.\n\nКомплекс мощных лазеров усиливает излучение локального солнца, позволяя быстро видоизменять близлежащие минералы.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4511,9 +4690,11 @@
     "Description": "Уникальный модуль перегрузки для стандартного расщепителя мультитула. Частота луча точно модулируется по схеме обратной связи с дельта-волнами, испускаемыми целью.\n\nПережитое целью записывается на крохотные металлические фрагменты и отображается в виде <STELLAR>разрозненных квалиа<>. Возможность прочесть собранные фрагменты не гарантирована.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4539,9 +4720,10 @@
     "Description": "Во всех структурных панелях проделывают отверстия для сублимационного охлаждения и устанавливают теплоемкие демпферы. Это позволяет пилоту пребывать в сносных условиях даже при самых яростных огненных бурях.\n\nПолностью предотвращает урон или утечку энергии, когда вездеход находится в <FUEL>горячей среде<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4571,9 +4753,10 @@
     "Description": "Устанавливает мощный нагреватель, поддерживающий комфортную температуру в кабине даже в самых холодных условиях.\n\nПолностью предотвращает урон или утечку энергии, когда вездеход находится в <TEMPERATURE>холодной среде<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4603,9 +4786,10 @@
     "Description": "Система фильтрации воздуха с двойным вакуумированием не пропускает частицы планетарной атмосферы в вездеход без тщательной очистки.\n\nПолностью предотвращает урон или утечку энергии, когда вездеход находится в <TRADEABLE>токсичной среде<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4635,9 +4819,10 @@
     "Description": "Эффективные контролирующие материалы, устанавливаемые в раму вездехода и нейтрализующие опасные энергетические волны.\n\nПолностью предотвращает урон или утечку энергии, когда вездеход находится в <COMMODITY>радиоактивной среде<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4667,9 +4852,10 @@
     "Description": "Система «Икар» использует существующую металлическую обшивку, превращая ее в фотоэлектрические поверхности. Днем это химически активное покрытие позволяет накапливать энергию, снижая потребление топлива.\n\nПозволяет <STELLAR>автоматически подзаряжать двигатель<> в <STELLAR>дневное время<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4699,9 +4885,10 @@
     "Description": "Позволяет усилителю сигнала обнаруживать дополнительные типы зданий.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4731,9 +4918,10 @@
     "Description": "Компактный блок реактора, питающий «Минотавра». Он установлен на гироскоп, что предотвращает утечки топлива при быстром движении.\n\nРаботает на стандартном <FUEL>углеродном топливе<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4763,9 +4951,10 @@
     "Description": "Раздатчик масла с автоматической регулировкой устанавливается в ножные сочленения «Минотавра», чтобы снижать трение и поддерживать экономящее топливо движение.\n\nЗначительно <STELLAR>снижает расход топлива<> двигателем «Дедал».",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4795,9 +4984,10 @@
     "Description": "Высокоточный радар, способный улучшить бортовой сканер «Минотавра» до уровня анализирующего визора.\n\nНажмите <IMG>SCAN<>, чтобы начать радарное сканирование, открывающее <STELLAR>дополнительные важные объекты<>, которые нельзя обнаружить сканером мультитула.\n\nИспользуйте быстрое меню, чтобы настроить радар на <TECHNOLOGY>конкретные постройки<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4827,9 +5017,10 @@
     "Description": "Несколько подвижных мощных реактивных ускорителей, установленных в задней части «Минотавра». Своевременное использование позволяет «Минотавру» быстро и легко преодолевать любой ландшафт.\n\nДля включения нажмите и удерживайте <IMG>JUMP<>. Возможно ограниченное управление во время полета.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4859,9 +5050,10 @@
     "Description": "Лазерное орудие, разработанное для <STELLAR>тяжелого гибридного экзокостюма «Минотавр»<>.\n\nПозволяет заниматься обычной добычей ресурсов. Бесполезно в бою.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4891,9 +5083,10 @@
     "Description": "Улучшение массива лазеров для <STELLAR>тяжелого гибридного экзокостюма «Минотавр»<>\n\nУвеличивает мощность расщепителя, повышая скорость добычи ресурсов и позволяя обрабатывать сложное в добыче сырье.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4919,9 +5112,10 @@
     "Description": "Пушка, разработанная для <STELLAR>тяжелого гибридного экзокостюма «Минотавр»<>.\n\nЭто оружие предназначено для борьбы с живыми организмами и не подходит для добычи ресурсов.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4951,9 +5145,10 @@
     "Description": "Добавляет массиву лазеров <STELLAR>тяжелого гибридного экзокостюма «Минотавр»<> возможность <STELLAR>изменять ландшафт<>.\n\nОсобый элемент, позволяющий быстро вызывать мощный ландшафтный экскаватор, не подвергая чувствительные сочленения и приводы «Минотавра» риску загрязнения.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4983,9 +5178,10 @@
     "Description": "Мощная система нейтрализации окружающей среды, подключающаяся напрямую к пилоту «Минотавра», когда тот управляет транспортным средством. Система питается от главного привода «Минотавра» и не требует дополнительного источника питания. В зоне подключения может отмечаться небольшая боль.\n\nДелает пилота «Минотавра» неуязвимым к <STELLAR>вредным факторам окружающей среды<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5015,9 +5211,10 @@
     "Description": "Создает поле антиматерии вокруг снарядов <TECHNOLOGY>плазмомета<>, позволяющее им отскакивать от неповрежденных поверхностей.\n\nПозволяет снарядам <STELLAR>рикошетить<> и отскакивать, если они попадают по цели, которую не могут повредить.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5043,9 +5240,10 @@
     "Description": "Создает поле антиматерии вокруг снарядов <TECHNOLOGY>импульсного скорострела<>, позволяющее им отскакивать от неповрежденных поверхностей.\n\nПозволяет снарядам <STELLAR>рикошетить<> и отскакивать, если они попадают по цели, которую не могут повредить.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5075,9 +5273,10 @@
     "Description": "Специализированный <FUEL>высокотемпературный<> боевой модуль <TECHNOLOGY>мультитула<>. Нажмите <IMG>CYCLEWEAPON<>, чтобы выбрать режим стрельбы. Нажмите <IMG>ATTACK<>, чтобы выстрелить.\n\n<TECHNOLOGY>Сжигатель<> фокусирует внутренние лазеры на выхлопных газах, вырабатываемых в результате работы мультитула. Возгорание создает мощное пламя, уничтожающее все на небольшом расстоянии.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5103,9 +5302,11 @@
     "Description": "Сделанная на заказ система <TECHNOLOGY>управления запуском<> для мощных звездолетов. Чувствительные гироскопы и специальные контрольные цепи позволяют использовать особые процедуры взлета, повышающие <STELLAR>скорость<> и <STELLAR>эффективность<> при запуске.\n \nДля зарядки ускорителя рекомендуется использовать <TECHNOLOGY>дейтериевое топливо<>. Для активации необходим достаточный запас топлива.\n \nУдерживайте кнопку <IMG>THRUST<>, чтобы взлететь с планеты. Удерживайте <IMG>BOOST<>, чтобы активировать ускоритель.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5131,9 +5332,11 @@
     "Description": "Точно настроенная модификация обычного <TECHNOLOGY>импульсного двигателя<> звездолета. Заполненность волнового фронта повышена до предела, что создает <STELLAR>эффективный<> и <STELLAR>крайне отзывчивый<> импульс.\n\nДля зарядки двигателя рекомендуется использовать <EXOTIC>тритий<>. Он в изобилии встречается в <COMMODITY>скоплениях астероидов рядом с планетами<>.\n\nУдерживайте <IMG>PULSEJUMP<>, чтобы совершить импульсный прыжок. Удерживайте <IMG>BOOST<>, чтобы активировать ускоритель.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5159,9 +5362,11 @@
     "Description": "Этот экспериментальный привод улучшает работу обычного <TECHNOLOGY>гипердвигателя<>, искажая локальное пространство в точке инициализации варпа и тем самым позволяя значительно превзойти обычные двигатели по <STELLAR>дальности<> и <STELLAR>эффективности<> прыжка.\n\nРекомендуем использовать системы гипердвигателя на <STELLAR>галактической карте<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5191,9 +5396,11 @@
     "Description": "Крайне важная система обеспечения безопасности звездолета, необходимая для полетов в открытом космосе.\n\nНагнетательная капсула — это специальное устройство, обеспечивающее <STELLAR>пригодную для дыхания атмосферу<> и предотвращающее непоправимое разрушение нестандартных кабин экипажа.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5219,9 +5426,10 @@
     "Description": "Устройство, сделанное по загадочной технологии. Его гибкие гелеподобные мембраны будто манят вас прикоснуться, мягко пульсируя багряным светом.\n\nТеплые объятья позволяют носителю извлекать <STELLAR>мерзкие отродья<> из зародышевых мешков на <SPECIAL>алчущих отростках<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5251,9 +5459,10 @@
     "Description": "<TECHNOLOGY>Биотехнический брандмауэр<>, разработанный для защиты от текстовых угроз разумной жизни. Покрыт чем-то скользким, а его поверхность начинает пузыриться.\n\nУстанавливается под кожу и дает администраторский доступ к запретным древним текстам, запечатанным в <SPECIAL>планетарном архиве<>.\n<FUEL>Внимание<>: не распечатывайте запретные записи. Чтение запретных записей невероятно опасно.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5283,9 +5492,10 @@
     "Description": "Реле, которое должно участвовать во включении устройства. Разъемы проржавели, и соленоид больше не работает.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5311,9 +5521,10 @@
     "Description": "Маленький мотор, рассчитанный на использование в маленьких механизмах. Внутри полно очень мелкой ржавчины.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5339,9 +5550,10 @@
     "Description": "Система, состоящая из устройства теплообмена и насоса. Призвана поддерживать адекватный температурный режим и предотвращать перегрев устройства. Система сама подверглась перегреву и больше не работает.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5363,9 +5575,10 @@
     "Description": "Управляющий блок, призванный распределять тепло по всему устройству. Сенсор поврежден, и блок отводит и производит тепло абсолютно бессистемно.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5391,9 +5604,10 @@
     "Description": "Небольшое механическое устройство, которое должно поправлять случайно сместившиеся компоненты других систем. В результате сбоя оно стало хватать вполне рабочие компоненты и впихивать их в неподходящие места.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5415,9 +5629,10 @@
     "Description": "Небольшая камера с высоким давлением. Должна сжимать газ, необходимый для работы устройства. Оболочка покрыта трещинами.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5443,9 +5658,10 @@
     "Description": "Контрольная цепь, регулирующая работу всех основных систем. Не подлежит восстановлению.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5467,9 +5683,10 @@
     "Description": "Центральный блок питания. Поврежден и направляет всю энергию на одну цепь, создавая условия для потенциального возгорания.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5495,9 +5712,10 @@
     "Description": "Комплекс шестеренок. Смазка, необходимая ему для работы, заменена какой-то инопланетной зеленой слизью. Теперь шестеренки отказываются вращаться.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5523,9 +5741,10 @@
     "Description": "Небольшая, но высокоэффективная панель, превращающая свет в энергию. Панель растрескалась и покрылась пылью. Вероятно, теперь бесперебойной работы от нее ожидать нельзя.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5555,9 +5774,10 @@
     "Description": "Этому сундуку нужен <TECHNOLOGY>ключ-трезубец<>, который дается тем, кто изучает загадочные места в глубинах океана.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5579,9 +5799,10 @@
     "Description": "При активации этот модуль использует мощности системы <VAL_ON>жизнеобеспечения экзокостюма<>, чтобы изменять гравитационное поле вокруг пользователя, преломляя свет и создавая <STELLAR>эффект активного камуфляжа<>.\n\nЭтот <STELLAR>временный<> эффект можно использовать, чтобы избежать нежелательного враждебного внимания. ПРЕДУПРЕЖДЕНИЕ: эффект активного камуфляжа может быть нарушен значительными маневрами экзокостюма, такими как активация реактивного ранца или систем вооружения мультитула.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5611,9 +5832,11 @@
     "Description": "Нелетальное оружие дальнего боя. Выпускаемые снаряды нейтрализуют окружающие цели с помощью электрического разряда. Эффективно против биологических и электронных существ.\n \nЗаряжается <FUEL>нестабильной плазмой<>.\n \nДля активации нажмите <IMG>ALTATTACK<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5643,9 +5866,10 @@
     "Description": "Вызывает перегрузку энергетического излучения <TECHNOLOGY>пламенного копья<>, из-за чего тот при ударе испускает мощный электрический разряд.\n\nНенадолго <STELLAR>оглушает<> органических и неорганических существ, попавших под удар пламенного копья.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5675,9 +5899,10 @@
     "Description": "Мощное боевое улучшение для <TECHNOLOGY>импульсного скорострела<>. Этот модуль устанавливает в зарядную камеру несколько точно настроенных форсунок, которые вызывают контролируемый процесс горения внутри зарядов плазмы.\n\nПри попадании эти снаряды ненадолго <STELLAR>поджигают<> цель, нанося дополнительный урон.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5707,9 +5932,11 @@
     "Description": "<STELLAR>Высокоэнергетический<> боевой модуль для <TECHNOLOGY>мультитула<>. Нейтронная пушка заряжает атмосферные частицы и выбрасывает их во враждебные цели, нанося <STELLAR>значительный урон по площади<>.\n\nНажмите <IMG>CYCLEWEAPON<>, чтобы выбрать режим стрельбы. Нажмите <IMG>ATTACK<>, чтобы зарядить оружие, а потом отпустите, чтобы выпустить <STELLAR>залп ионизированных частиц<>.\n\nВы можете использовать пушку как скорострельное оружие, но <TECHNOLOGY>более долгая зарядка<> значительно увеличивает <TECHNOLOGY>скорость и объем залпа выпускаемых частиц<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5739,9 +5966,10 @@
     "Description": "Мощное улучшение для <TECHNOLOGY>нейтронной пушки<>. Дополнительные компрессоры резонанса позволяют значительно повысить объем энергии, направляемой в ядро пушки, что серьезно увеличивает ее мощность.\n\nПри установке позволяет полностью заряженной нейтронной пушке выпускать <STELLAR>дополнительные снаряды<> с <STELLAR>большей скоростью<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5771,9 +5999,10 @@
     "Description": "Стандартное улучшение для всех <TECHNOLOGY>систем вооружения<> мультитула, позволяющее выпускаемым снарядам при ударе сильно резонировать с любыми подходящими электромагнитными полями.\n\nЭто значительно увеличивает <STELLAR>урон<>, наносимый любым <STELLAR>оглушенным<> органическим и неорганическим целям.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5803,9 +6032,10 @@
     "Description": "Полуавтономный <TECHNOLOGY>модуль автопилота<> для тяжелого гибридного экзокостюма «Минотавр». После установки позволяет «Минотавру» <STELLAR>передвигаться по поверхности планет<> и участвовать в <STELLAR>бою<> или операциях <STELLAR>добычи<> для поддержки основного оператора.\n\nИИ-пилот всегда передает управление основному оператору, когда тот садится в кабину.\n\nПрограммы пилотирования крайне специализированы. Модуль не способен устанавливать эмоциональные связи и независимо управлять «Минотавром».",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 480,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5835,9 +6065,10 @@
     "Description": "Набор компонентов, снятых с каркасного стража, переделанных для установки в тяжелый гибридный экзокостюм <TECHNOLOGY>«Минотавр»<>.\n\nПри установке вместе с <TECHNOLOGY>лазером «Минотавра»<> увеличивает <STELLAR>мощность<> и <STELLAR>эффективность<> <TECHNOLOGY>расщепителя<> «Минотавра».",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5867,9 +6098,10 @@
     "Description": "Набор компонентов, снятых с каркасного стража, переделанных для установки в тяжелый гибридный экзокостюм <TECHNOLOGY>«Минотавр»<>.\n\nЗначительно <STELLAR>повышает огневую мощь<> <TECHNOLOGY>систем вооружения<> «Минотавра».",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5899,9 +6131,10 @@
     "Description": "Набор компонентов, снятых с каркасного стража, переделанных для установки в тяжелый гибридный экзокостюм <TECHNOLOGY>«Минотавр»<>.\n\nПри установке значительно улучшает системы <TECHNOLOGY>двигателя и подвижности<> «Минотавра».",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5927,9 +6160,10 @@
     "Description": "Набор компонентов, снятых с каркасного стража, переделанных для установки в тяжелый гибридный экзокостюм <TECHNOLOGY>«Минотавр»<>.\n\nРаботает аналогично полуавтономному <TECHNOLOGY>модулю пилотирования с ИИ<>. После установки позволяет «Минотавру» <STELLAR>передвигаться по поверхности планет<> и участвовать в <STELLAR>бою<> или операциях <STELLAR>добычи<> для поддержки основного оператора.\n\nИИ-пилот всегда передает управление основному оператору, когда тот садится в кабину.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 480,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,

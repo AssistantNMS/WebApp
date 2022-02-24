@@ -1,16 +1,18 @@
 [
   {
     "Id": "other1",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "星系図",
     "Group": "地図データ",
     "Description": "近くの惑星の地図。<TECHNOLOGY>救難信号<>がマークされている。\n\n地図を選択してルート設定（<IMG>FE_ALT1<>）を使うと、エクソスーツの画面に位置をブックマークできる。\n\n新しい地図は、宇宙ステーションの地図製作者と<COMMODITY>ナビゲーションデータ<>を交換すると手に入る。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -21,17 +23,19 @@
   },
   {
     "Id": "other2",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "星系図",
     "Group": "地図データ",
     "Description": "惑星アーカイブの建物で<STELLAR>現地情報レポジトリ<>から入手した、近くにある地点の地図。\n\n<SPECIAL>古代の遺跡<>にブックマークをつけた。採掘することで貴重な物資が手に入る可能性がある。\n\nマップを開いてルート設定（<IMG>FE_ALT1<>）をすることで該当地点をエクソスーツにハイライト表示させられる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/2.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -48,11 +52,14 @@
     "Description": "鍛鉄でできた重みのある鍵。\n近くに錠があるはずだが...",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/other/3.png",
+    "Usages": {
+      "HasUsedToCraft": true,
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -69,11 +76,14 @@
     "Description": "三又鉾があしらわれた鍵。 紫色に光っている。\n\nかなり古いもののように見えるが、エクソスーツのスキャンシステムによると歯の部分にナノマシンが使用されているのが分かる。",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/other/4.png",
+    "Usages": {
+      "HasUsedToCraft": true,
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -90,11 +100,13 @@
     "Description": "暗号化されたナビゲーションデータ。\n\nこの移植性の高いデータユニットには、とある惑星の地図情報がすべて保存されている。\n\n宇宙ステーションにいる<TRADEABLE>地図製作者<>に、\n<STELLAR>利用可能な星図<>と交換してもらえるかもしれない。",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "0063B7",
     "CdnUrl": "https://cdn.nmsassistant.com/other/5.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -111,11 +123,13 @@
     "Description": "<TECHNOLOGY>信号ブースター<>に入力する暗号化されたナビゲーションデータ。\n\n正しく解読されれば同一の惑星上の<SPECIAL>エクソスーツアップグレード<>を含んだ<TECHNOLOGY>投下ポッド<>の位置が分かる。",
     "BaseValueUnits": 85000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/6.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -132,11 +146,13 @@
     "Description": "<TECHNOLOGY>貨物船の緊急事態ログ<>の暗号化\nオーバーライドプロセスの一部。\n\nプロセスの中には、記録データへの\nフルアクセス許可が必要なものもある。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/7.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -153,11 +169,13 @@
     "Description": "これを所有する者は海賊対策当局の支援を得ることができる。",
     "BaseValueUnits": 10000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/8.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -174,10 +192,11 @@
     "Description": "特製ジェスチャー。\n<VAL_ON>クイックメニュー<>で選択して、驚嘆や喜びを他の探検家と共有しよう。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/9.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -194,10 +213,11 @@
     "Description": "特製ジェスチャー。\n<VAL_ON>クイックメニュー<>で選択して、他の探検家とお祝いしよう。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/10.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -214,10 +234,11 @@
     "Description": "特製ジェスチャー。\n<VAL_ON>クイックメニュー<>で選択して、ワクワクを他の探検家と共有しよう。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/11.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -234,10 +255,11 @@
     "Description": "特製ジェスチャー。\n<VAL_ON>クイックメニュー<>\nで選択して、巨大な建設物、動物、植物、\n星を見上げて、宇宙全体に対する\n小さな命の無意味さについて思いを馳せよう。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/12.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -254,10 +276,11 @@
     "Description": "特製ジェスチャー。\n水中で<VAL_ON>クイックメニュー<>から選択して、他の探索者に「問題ないよ」とサインを伝えよう。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/13.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -274,10 +297,11 @@
     "Description": "特製ジェスチャー。\n<VAL_ON>クイックメニュー<>から選択可能。 地平線を見つめて新たな旅に向かう風を 演出できる。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/14.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -294,10 +318,11 @@
     "Description": "特製ジェスチャー。\n<VAL_ON>クイックメニュー<>から選択可能。 廃墟や鉱山、巨大な肉食動物の前でドラマチックなヒーローポーズをキめよう。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/15.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -314,10 +339,11 @@
     "Description": "特製ジェスチャー。\n<VAL_ON>クイックメニュー<>から選択可能。 目にしたものを信じられずに 崩れ落ちるジェスチャー。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/16.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -334,10 +360,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n<TECHNOLOGY>外見変更モジュール<>でエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/17.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -354,10 +381,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n<TECHNOLOGY>外見変更モジュール<>でエクソスーツのデザインを\n変更することができる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/18.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -374,10 +402,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n<TECHNOLOGY>外見変更モジュール<>でエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/19.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -394,10 +423,11 @@
     "Description": "古代ゲック文化の戦闘用ヘルメットを\n模した、恐ろしげな<STELLAR>エクソスーツデザインオーバーライド<>。\n<TECHNOLOGY>外見変更モジュール<>でエクソスーツの\nデザインを変更することができる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/20.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -414,10 +444,11 @@
     "Description": "このパワフルな肩部アーマーは\n使用者の骨格組織に高電圧の力を\n利用して接続する。\n必要時にはアーマーが使用者の体に\n衝撃を与え、防御力の高い姿勢へ\n筋肉を操作することができる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/21.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -434,10 +465,11 @@
     "Description": "強化されているがスタイリッシュさを\n忘れないこのエクソスーツの\n胸部用アーマーは、見た目を損なうこと\nなしに腹部の保護性能を高めた逸品。",
     "BaseValueUnits": 750.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/22.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -454,10 +486,11 @@
     "Description": "防御力の高く、\n武器を扱うのに適したグローブ。 \n直接攻撃を繰り出すのにも使用でき、\n棘の多い植物に触れることもできる。",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/23.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -474,10 +507,11 @@
     "Description": "繊細に縫製されたナノファイバーが\n\n脚部の柔軟性を高めると共に小型武器の攻撃に対する防御性能を向上させる。\n\n洗濯には専門装置が必要になる。",
     "BaseValueUnits": 750.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/24.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -494,10 +528,11 @@
     "Description": "歩行を安定化させる姿勢制御装置と\n\n統合された強化胸部保護システム。\n数百年の技術研究の末に採用された\n足用アーマー。",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/25.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -514,10 +549,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/26.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -534,10 +570,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/27.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -554,10 +591,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/28.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -574,10 +612,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/29.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -594,10 +633,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/30.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -614,10 +654,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/31.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -634,10 +675,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/32.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -654,10 +696,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/33.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -674,10 +717,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/34.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -694,10 +738,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/35.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -714,10 +759,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/36.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -734,10 +780,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nシリコンと生体部品で作られたヘルメットで、装着者の表情筋の動きを検知して再現することで\n\n自然な頭部の外見を生み出すことができる。\nエクソスーツ技術と完全な互換性を持っており、\n通常のヘルメット同様の防護効果を持つ。\n\n<TECHNOLOGY>外見変更モジュール<>で\nエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/37.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -754,10 +801,12 @@
     "Description": "宇宙船の残骸からサルベージされた\nモジュール型機械。\n<STELLAR>貨物船の墜落現場<>から回収、\nあるいは<STELLAR>フリゲートでの探検<>中に\nサルベージできる場合もある。\n\n適切な<TECHNOLOGY>宇宙船艤装場<>で使えば、\n宇宙船の積載量を増やすことができる。",
     "BaseValueUnits": 125000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": true,
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -774,10 +823,11 @@
     "Description": "解体された宇宙船の価値がある部品。<TRADEABLE>宇宙ステーション<>の<TECHNOLOGY>宇宙船艤装場<>で作成された。\n\n<VAL_ON>交易ターミナル<>でスクラップとして売り払う以外に用途はない。",
     "BaseValueUnits": 100000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 25.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -794,10 +844,12 @@
     "Description": "解体された宇宙船の価値がある部品。<TRADEABLE>宇宙ステーション<>の<TECHNOLOGY>宇宙船艤装場<>で作成された。\n\n<VAL_ON>交易ターミナル<>でスクラップとして売り払う以外に用途はない。",
     "BaseValueUnits": 200000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 25.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsEggIngredient": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -814,10 +866,11 @@
     "Description": "解体された宇宙船の価値がある部品。<TRADEABLE>宇宙ステーション<>の<TECHNOLOGY>宇宙船艤装場<>で作成された。\n\n<VAL_ON>交易ターミナル<>でスクラップとして売り払う以外に用途はない。",
     "BaseValueUnits": 400000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -834,10 +887,11 @@
     "Description": "解体された宇宙船の価値がある部品。<TRADEABLE>宇宙ステーション<>の<TECHNOLOGY>宇宙船艤装場<>で作成された。\n\n<VAL_ON>交易ターミナル<>でスクラップとして売り払う以外に用途はない。",
     "BaseValueUnits": 600000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 15.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -854,10 +908,11 @@
     "Description": "解体された宇宙船の価値がある部品。<TRADEABLE>宇宙ステーション<>の<TECHNOLOGY>宇宙船艤装場<>で作成された。\n\n<VAL_ON>交易ターミナル<>でスクラップとして売り払う以外に用途はない。",
     "BaseValueUnits": 800000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 10.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -874,10 +929,11 @@
     "Description": "解体された宇宙船の価値がある部品。<TRADEABLE>宇宙ステーション<>の<TECHNOLOGY>宇宙船艤装場<>で作成された。\n\n<VAL_ON>交易ターミナル<>でスクラップとして売り払う以外に用途はない。",
     "BaseValueUnits": 3000000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -894,10 +950,11 @@
     "Description": "解体された宇宙船の価値がある部品。<TRADEABLE>宇宙ステーション<>の<TECHNOLOGY>宇宙船艤装場<>で作成された。\n\n<VAL_ON>交易ターミナル<>でスクラップとして売り払う以外に用途はない。",
     "BaseValueUnits": 50000000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -914,10 +971,11 @@
     "Description": "宇宙船のコックピットに飾る、合成ポリマー製の旅のお伴。\n\n外見はトラベラー アポロに似せて作られている。\n<TECHNOLOGY>アイテムケースのスロット<>にインストール\nすれば船内の装飾に使用できる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/46.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -939,10 +997,11 @@
     "Description": "宇宙船のコックピットに飾る、合成ポリマー製の旅のお伴。\n\n外見はトラベラー アルテミスに似せて作られている。\n<TECHNOLOGY>アイテムケースのスロット<>にインストール\nすれば船内の装飾に使用できる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/47.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -964,10 +1023,11 @@
     "Description": "宇宙船のコックピットに飾る、合成ポリマー製の旅のお伴。\n\n外見はアトラスインターフェースに似せて作られている。\n<TECHNOLOGY>アイテムケースのスロット<>にインストール\nすれば船内の装飾に使用できる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/48.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -989,10 +1049,11 @@
     "Description": "宇宙船のコックピットに飾る、合成ポリマー製の旅のお伴。\n\n外見は祭司 ナーダに似せて作られている。\n<TECHNOLOGY>アイテムケースのスロット<>にインストール\nすれば船内の装飾に使用できる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/49.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1014,10 +1075,11 @@
     "Description": "宇宙船のコックピットに飾る、合成ポリマー製の旅のお伴。\n\n外見は-ナル-に似せて作られている。\n<TECHNOLOGY>アイテムケースのスロット<>にインストール\nすれば船内の装飾に使用できる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/50.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1039,10 +1101,11 @@
     "Description": "宇宙船のコックピットに飾る、合成ポリマー製の旅のお伴。\n\n外見は専門家ポーロに似せて作られている。\n<TECHNOLOGY>アイテムケースのスロット<>にインストール\nすれば船内の装飾に使用できる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/51.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1064,10 +1127,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n<STELLAR>市民科学者同盟<>への忠誠の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1084,10 +1148,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\nはるか遠い衛星たちの淡い想い出がよみがえる。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1104,10 +1169,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n自らの存在の超常性を自覚した者の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1124,10 +1190,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n専門家ポーロとの友情の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1144,10 +1211,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n祭司ナーダとの友情の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1164,10 +1232,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\nイテレーションヘスペロスとの友情の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1184,10 +1253,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\nイテレーションアリアドネとの友情の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1204,10 +1274,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n独り旅を信条とする者の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1224,10 +1295,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n存在というものの決定論的な性質を見続けた証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1244,10 +1316,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n宇宙における自己の存在意義を掘り下げた証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1264,10 +1337,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n宇宙における自己の存在意義を掘り下げた証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1284,10 +1358,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n宇宙に名を轟かせようという意気込みの表れ。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1304,10 +1379,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n独り旅を信条とする者の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1324,10 +1400,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n専門家ポーロとの友情の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1344,10 +1421,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n祭司ナーダとの友情の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1364,10 +1442,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\nイテレーションアリアドネとの友情の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1384,10 +1463,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\nイテレーションジェミニとの友情の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1404,10 +1484,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\nイテレーションマーキュリーとの友情の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1424,10 +1505,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\nイテレーションテティスとの友情の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1444,10 +1526,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\nイテレーションヘスペロスとの友情の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1464,10 +1547,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n存在というものの決定論的な性質を見続けた証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1484,10 +1568,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n宇宙における自己の存在意義を掘り下げた証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1504,10 +1589,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\nこの宇宙で自由を勝ち得た者の高らかなる宣言。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1524,10 +1610,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\nヴァイキーンにつけられた呼び名を受け入れた者の証。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1544,10 +1631,11 @@
     "Description": "宇宙の闇の奥に足を踏み入れた者に贈られる、特別な<STELLAR>探検家の称号<>。\n\n<TECHNOLOGY>外見変更モジュール<>でプロフィールに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1564,10 +1652,11 @@
     "Description": "宇宙の闇の奥に足を踏み入れた者に贈られる、特別な<STELLAR>探検家の称号<>。\n\n<TECHNOLOGY>外見変更モジュール<>でプロフィールに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1584,10 +1673,11 @@
     "Description": "この種の肉食性寄生生物は宿主の脳幹に部分的に融合し、共生関係を構築するため、外見を有機的に変更できる。\n\nエクソスーツの外観を<TECHNOLOGY>外見変更モジュール<>で変更する際は、慎重な操作が推奨される。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1604,10 +1694,11 @@
     "Description": "科学および装飾のためにとらえた、深海の危険生物の一端。\n\n脱出を防ぐフォースフィールドは最高性能であり、\n逃れることなく同道させられる。\nそう、決して逃れ出ることなどなく。決して。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1633,10 +1724,11 @@
     "Description": "脈管密度の高さと生物発光が特徴の菌類。\n\n化学変化の循環連鎖により夜間に光を発する。\n基地の景観を改良するために使用できる。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1658,10 +1750,11 @@
     "Description": "単為系樹木コロニーから採取された、\n\n年季の入った切り株。推定10万年以上の樹齢を誇る。\n樹皮からコケ類を思わせる芳香を発している。\n\n基地の景観を改良するために使用できる。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1683,10 +1776,11 @@
     "Description": "この質素な泥の小屋は惑星サクスムA13の霧の中で発見された謎の構造物をモデルにしている。\n\n同類と思しき構造物が宇宙の方々で確認されているが、その起源に関する仮説はいずれも証明されるに至っていない。\n基地の景観を改良するために使用できる。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1708,10 +1802,11 @@
     "Description": "出所不明のタンパク体をスペースアノマリー上で複製したもの。\n\n骨格構造内にエアポケットが残っていることが多く、ケージ構造の中心部分の温度が若干高かったり低かったりすることがある。\n基地の景観を改良するために使用できる。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1733,10 +1828,11 @@
     "Description": "環状に並ぶ発光腺が特徴的なこの独特な生命体は、\n\n植物相にも動物相にも明確に分類しにくい。棘が幾重にも並んでおり、風味豊かな発光腺を捕食者から守る一助となっている。\n\n基地の景観を改良するために使用できる。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1758,10 +1854,11 @@
     "Description": "この奇妙な生物の目のような突出部位は光刺激の受容\n\nと単純な計算の両機能を有するようだが、何を見るためのものなのかは不明である。\n\n基地の景観を改良するために使用できる。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1783,10 +1880,11 @@
     "Description": "この卵殻は今でもかすかな歌を奏で続けている。遥か彼方の輪唱に応えるかのように...\n\n基地の景観を改良するために使用できる。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1808,10 +1906,11 @@
     "Description": "この樹木の頂部にある平板状の葉は光合成効率が非常に高く、野生種は驚異的な高さにまで生長しうる。\n\nこの個体は住居の内装向けに調整した変種である。\n基地の景観を改良するために使用できる。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1833,10 +1932,11 @@
     "Description": "この植物系構造物は抗酸化物を高濃度で含むものの、鱗状の厚い外皮ゆえに耕作には不向きである。\n\n基地の景観を改良するために使用できる。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1858,10 +1958,11 @@
     "Description": "流浪や探索ゆえの宇宙旅行を称えた特製 <STELLAR>自己表現用アイテム<>。\n\n<TECHNOLOGY>外見変更モジュール<> で自分のプロフィールにこのバナーを採用できる。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1878,10 +1979,11 @@
     "Description": "共同体、探索そして発見を象徴する特製 <STELLAR>自己表現用アイテム<>。\n\n<TECHNOLOGY>外見変更モジュール<> で自分のプロフィールにこのバナーを採用できる。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1898,10 +2000,11 @@
     "Description": "最果てのカフェへようこそ！ 「仲間と楽しくいい気分」を形にした <STELLAR>自己表現用アイテム<>。\n\n<TECHNOLOGY>外見変更モジュール<> で自分のプロフィールにこのバナーを採用できる。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1918,10 +2021,11 @@
     "Description": "統一された銀河を称える<STELLAR>自己表現用アイテム<>。記録し、助け、生み出し、伝えよ！\n\n<TECHNOLOGY>外見変更モジュール<> で自分のプロフィールにこのバナーを採用できる。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1938,9 +2042,10 @@
     "Description": "生きている受精卵。%READY%\n\n%MODIFIED%\n\nスキャンにより、%SIZE%と%TRAIT%である遺伝的ポテンシャルを持つ存在が中にいると表示されている。",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "311A49",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1957,10 +2062,11 @@
     "Description": "設置可能な特製ステッカー。\nこれで基地に遊び心を加えよう。\nこのステッカーは銀河旅行者同盟を象徴し、\n放浪の旅の価値を示している。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1982,10 +2088,11 @@
     "Description": "設置可能な特製ステッカー。\nこれで基地に遊び心を加えよう。\nこのステッカーはアミノハブを象徴し、\nコミュニティ、探索、発見の原則を示している。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2007,10 +2114,11 @@
     "Description": "設置可能な特製ステッカー。\nこれで基地に遊び心を加えよう。\nこのステッカーはカフェ42を象徴し、\n「仲間と楽しくいい気分」を表している。\n最果てのカフェへようこそ！",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2032,10 +2140,11 @@
     "Description": "設置可能な特製ステッカー。\nこれで基地に遊び心を加えよう。\nこのステッカーは統一旅人連盟を象徴する。\n記録し、助け、生み出し、伝えよ！",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2057,10 +2166,11 @@
     "Description": "設置可能な特製ステッカー。\nこれで基地に遊び心を加えよう。\nこのステッカーはキタニアン帝国を象徴し、\n博愛、思いやり、平和、道理の精神を表している。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2082,10 +2192,11 @@
     "Description": "三段階に彩りを炸裂させる豪華絢爛な花火。\n\n着火すると空に美しい煌めきを作り上げる。\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。\n<FUEL>警告<>：生物に向けて発砲しないこと。\n室内での使用は推奨しない。",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2102,10 +2213,11 @@
     "Description": "インジウムとカドミウムを\n\nV字型に輝かせる豪華絢爛な花火。着火すると空に美しい煌めきを作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。\n<FUEL>警告<>：生物に向けて発砲しないこと。\n室内での使用は推奨しない。",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2122,10 +2234,11 @@
     "Description": "目が回るほどの渦を描いて燃える豪華絢爛な花火。\n\n着火すると空に美しい煌めきを作り上げる。\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。\n<FUEL>警告<>：生物に向けて発砲しないこと。\n室内での使用は推奨しない。",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2142,10 +2255,11 @@
     "Description": "博愛、思いやり、平和、道理の精神を表す<STELLAR>自己表現用アイテム<>。\n\n<TECHNOLOGY>外見変更モジュール<> で自分のプロフィールにこのバナーを採用できる。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2162,10 +2276,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n「風変わり」とは、自らをはずれ者と称する者の誇らしげな宣言。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2182,10 +2297,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n「火山のような」とは、文字どおり、または比喩的に爆発的な烈火を好む者の、高らかなる宣言。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2202,10 +2318,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n「沼地の住人」とは、他者とは違う場所に喜びを見いだす者の証。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2222,10 +2339,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n「16番目」とは、宇宙の最奥に眠る秘密を知っている者の証。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2242,10 +2360,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n「暗号家」とは、先人への理解を示す者の証。\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2262,10 +2381,11 @@
     "Description": "卓越した者にのみ与えられる<STELLAR>探検家の称号<>。\n\n「写真家」とは、宇宙の姿を美しい記録に残した旅人の証。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2282,10 +2402,11 @@
     "Description": "特製の<STELLAR>コンパニオン用外見カスタマイズ<>。\n\n軽量のジェルで絶縁加工された連結式のマインレーザーで、資源採取をアシストする\nコンパニオンの仕事を楽にしてくれる。\n\n野生動物の信頼を得ると、コンパニオンにできる。\nコンパニオンの外見をカスタマイズするには、\nコンパニオンに接触する。",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2302,10 +2423,11 @@
     "Description": "特製の<STELLAR>コンパニオン用外見カスタマイズ<>。\n\n装着した生物の活動を記録する小型のデバイスで、詳細な分析レポートを出力してくれる。\nコンパニオンの隠れた生態が明らかになるだろう。\n\n野生動物の信頼を得ると、コンパニオンにできる。\nコンパニオンの外見をカスタマイズするには、\nコンパニオンに接触する。",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2322,10 +2444,11 @@
     "Description": "特製の<STELLAR>コンパニオン用外見カスタマイズ<>。\n\n装着した生物の生体反応に応じて、温度や照度を調節する多用途レーザー。また、穏やかな拍動を発しており、\n不安を和らげる効果がある。\n\n野生動物の信頼を得ると、コンパニオンにできる。\nコンパニオンの外見をカスタマイズするには、\nコンパニオンに接触する。",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2342,10 +2465,12 @@
     "Description": "<STELLAR>エクソスーツの保管容量<>を拡張できる高度なサバイバルテクノロジーモジュール。\n\nあらかじめパックされたナノ拡張剤がエクソスーツの中に安定した空間を作製し、<STELLAR>アイテムケースの容量<>が増加する。<STELLAR>宇宙ステーション<>にあるエクソスーツのアップグレードターミナルで拡張を適用できる。",
     "BaseValueUnits": 155000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": true,
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2362,10 +2487,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\n軽量で流線形のバックパックユニットで、優雅な単発スラスター方式を採用している。初の<STELLAR>探検<>である「パイオニア」達成を記念した特製のエクソスーツ改造パーツ。\n\n<TECHNOLOGY>外見変更モジュール<>でエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3500.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2382,10 +2508,11 @@
     "Description": "古代ゲック文化の戦闘用ヘルメットを\n\n模した、恐ろしげな<STELLAR>エクソスーツデザインオーバーライド<>。頑丈で貴重な合金で作られた特別製。\n\n<TECHNOLOGY>外見変更モジュール<>でエクソスーツの\nデザインを変更することができる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2402,10 +2529,11 @@
     "Description": "象徴的な<STELLAR>宇宙船アルファベクター<>の特製ゴールドカラー版。初の<STELLAR>探検<>である「パイオニア」達成を記念したもの。\n\n高い機動性を誇るこの宇宙船は頑丈で貴重な合金で作られた特別製で、断熱繊維を用いた強靭な補強により何世代分もの過酷な宇宙探検に耐える。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー(<IMG>QUICK_MENU<>)から宇宙船を招集できる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2422,10 +2550,11 @@
     "Description": "初の<STELLAR>探検<>である「パイオニア」達成を記念した特別な<STELLAR>探検家の称号<>。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2442,10 +2571,11 @@
     "Description": "設置可能な特製ステッカー。これで基地に遊び心を加えよう。\n象徴的な宇宙船アルファベクターを象ったゴールドカラー版で、初の<STELLAR>探検<>である「パイオニア」達成を記念したもの。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2467,10 +2597,11 @@
     "Description": "初の<STELLAR>探検<>である「パイオニア」達成を記念した特製 <STELLAR>自己表現用アイテム<>。\n<TECHNOLOGY>外見変更モジュール<> で自分のプロフィールにこのバナーを採用できる。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2487,10 +2618,11 @@
     "Description": "見事な演出の高級花火3点セット。アトラスのインターフェースを<TECHNOLOGY>インジウム<>、<COMMODITY>金<>そして<FUEL>カドミウム<>で描く。着火すると空に美しい煌めきを作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2507,10 +2639,11 @@
     "Description": "アトラスのインターフェースを<TECHNOLOGY>インジウム<>と<FUEL>カドミウム<>で描き出す。着火すると空に美しい煌めきを作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2527,10 +2660,11 @@
     "Description": "アトラスのインターフェースを<COMMODITY>金<>と<TECHNOLOGY>インジウム<>で描き出す。着火すると空に美しい煌めきを作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2547,10 +2681,11 @@
     "Description": "アトラスのインターフェースを<FUEL>カドミウム<>と<COMMODITY>金<>で描き出す。着火すると空に美しい煌めきを作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2567,10 +2702,11 @@
     "Description": "建設可能な基地装飾品。\n象徴的な宇宙船アルファベクターを象った<STELLAR>金色に縁取られた旗<>。初の<STELLAR>探検<>である「パイオニア」達成を記念して居住可能な基地に設置できる。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2592,10 +2728,11 @@
     "Description": "特別製の<STELLAR>宇宙船<>。効率的な銀河探査用にアップグレードされた<TECHNOLOGY>ハイパードライブ<>があらかじめ取り付けられている。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2612,10 +2749,11 @@
     "Description": "特別製の<STELLAR>宇宙船<>。効率的な敵船破壊用にアップグレードされた<TECHNOLOGY>インフラナイフ<>があらかじめ取り付けられている。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2632,10 +2770,11 @@
     "Description": "特別製の<STELLAR>宇宙船<>。効率的な敵船破壊用にアップグレードされた<TECHNOLOGY>ポジトロン・イジェクター<>があらかじめ取り付けられている。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2652,10 +2791,11 @@
     "Description": "特別製の<STELLAR>宇宙船<>。広々とした貨物室があり、アップグレードされた<TECHNOLOGY>偏向シールド<>と<TECHNOLOGY>サイクロトロン・バリスタ<>があらかじめ取り付けられている。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2672,10 +2812,11 @@
     "Description": "特別製の<STELLAR>宇宙船<>。効率的な宇宙探索用に強力な<TECHNOLOGY>フェーズビーム<>とアップグレードされた<TECHNOLOGY>パルスドライブ<>があらかじめ取り付けられている。また、<TECHNOLOGY>経済状態スキャナー<>で星系の詳細な経済データを遠隔で取得でき、銀河系での交易ルートを計画する時に役立つ。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2692,10 +2833,11 @@
     "Description": "特別製の<STELLAR>マルチツール<>。致死能力のある<TECHNOLOGY>ブレイズジャベリン<>と反動を安定させる<TECHNOLOGY>コンバットスコープ<>があらかじめ取り付けられているライフル。\n\nこのマルチツールは<STELLAR>取得<>して手持ちに加えるか、現在のマルチツールと<STELLAR>交換<>できる。クイックメニュー（<IMG>QUICK_MENU<>）の機能の項目から使用するマルチツールを切り替えられる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2712,10 +2854,11 @@
     "Description": "特別製の<STELLAR>マルチツール<>。攻撃に向いた<TECHNOLOGY>ボルトキャスター<>と防御に向いた<TECHNOLOGY>パーソナルフォースフィールド<>があらかじめ取り付けられているピストル。\n\nこのマルチツールは<STELLAR>取得<>して手持ちに加えるか、現在のマルチツールと<STELLAR>交換<>できる。クイックメニュー（<IMG>QUICK_MENU<>）の機能の項目から使用するマルチツールを切り替えられる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2732,10 +2875,11 @@
     "Description": "特別製の<STELLAR>マルチツール<>。<TECHNOLOGY>高機能マインレーザー<>と<TECHNOLOGY>光学ドリル<>のアップグレード型があらかじめ取り付けられている専門ツール。\n\nこのマルチツールは<STELLAR>取得<>して手持ちに加えるか、現在のマルチツールと<STELLAR>交換<>できる。クイックメニュー（<IMG>QUICK_MENU<>）の機能の項目から使用するマルチツールを切り替えられる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2752,10 +2896,11 @@
     "Description": "特別製の<STELLAR>マルチツール<>。惑星でのディスカバリーの効率性と収益性を上げるための<TECHNOLOGY>スキャン<>アップグレードがいくつかあらかじめ取り付けられている専門ツール。\n\nこのマルチツールは<STELLAR>取得<>して手持ちに加えるか、現在のマルチツールと<STELLAR>交換<>できる。クイックメニュー（<IMG>QUICK_MENU<>）の機能の項目から使用するマルチツールを切り替えられる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2772,10 +2917,11 @@
     "Description": "特別製の<STELLAR>マルチツール<>。致死能力のある<TECHNOLOGY>パルススピッター<>と火力の強い<TECHNOLOGY>プラズマランチャー<>があらかじめ取り付けられているライフル。\n\nこのマルチツールは<STELLAR>取得<>して手持ちに加えるか、現在のマルチツールと<STELLAR>交換<>できる。クイックメニュー（<IMG>QUICK_MENU<>）の機能の項目から使用するマルチツールを切り替えられる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2792,10 +2938,11 @@
     "Description": "すべての<STELLAR>マルチツール<>と互換性のあるアップグレードセット。\n\n宇宙ステーションの<STELLAR>マルチツールアップグレードラック<>で装着できる<TECHNOLOGY>マルチツール拡張スロット<>や、既存のマルチツールテクノロジーを強化するために手作業ですぐ取り付けられるユニークな<TECHNOLOGY>アップグレードモジュール<>などが含まれている。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2812,10 +2959,11 @@
     "Description": "見事な演出の高級花火3点セット。<FUEL>カドミウム<>、<TRADEABLE>エメリル<>そして<TECHNOLOGY>インジウム<>を惜しげなく使っている。着火すると空に美しい煌めきを作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2832,9 +2980,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2851,9 +2998,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2870,9 +3016,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2889,9 +3034,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2908,9 +3052,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2927,9 +3070,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2946,9 +3088,10 @@
     "Description": "ナーダによる<TRANS_TRA>ゲック<>、<TRANS_EXP>コーバックス<>、<TRANS_WAR>ヴァイキーン<>の話から検知した不思議なパターンの研究結果。\n\nビーコンは、ナーダの仲間のトラベラーがマッピングした<SPECIAL>歴史の変遷<>に調和した<STELLAR>エコー信号<>を出している。\n\n専門家ポーロはこの信号の結果に対する予測を望んでいない。",
     "BaseValueUnits": 80.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2965,9 +3108,10 @@
     "Description": "ナーダが<TRANS_TRA>ゲック<>、<TRANS_EXP>コーバックス<>、<TRANS_WAR>ヴァイキーン<>の話から出現する新たなパターンを検知した。\n\n測定器で重要な遺物のある現場の周辺を測定すると、<SPECIAL>歴史の変遷<>が明らかになる。際立った歴史的変化の記録があれば、ナーダが信号を追跡できるようになる。\n\nナーこのデバイスを使って異星人の遺物のある場所から<STELLAR>歴史データを送信<>して、ナーダとポーロの研究を手伝ってあげよう。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2984,10 +3128,11 @@
     "Description": "<STELLAR>探検<>「橋頭堡」達成と<SPECIAL>裏切り者の歴史的残響音<>追跡の成功を記念した特別な<STELLAR>探検家の称号<>。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3004,10 +3149,11 @@
     "Description": "<STELLAR>探検<>「橋頭堡」達成と<SPECIAL>裏切り者の歴史的残響音<>追跡の成功を記念した特別な<STELLAR>探検家の称号<>。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3024,10 +3170,11 @@
     "Description": "<TECHNOLOGY>SSV ノルマンディー SR1<>は唯一無二の「ディープスカウト」フリゲート艦だ。この伝説的な船は人種間の平和と協力を表しているほか、「橋頭堡」<STELLAR>探検<>の完了を記念している。\n\nこのフリゲート艦を受け入れると自分の船となる。貨物船の<TECHNOLOGY>艦隊指揮室<>からこの船を管理し、<TECHNOLOGY>ナビゲーター<>を確認してフリゲート艦を有益な探検に活用しよう。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3044,8 +3191,6 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 0.0,
     "Colour": "2C7C9F",
     "BlueprintCost": 0,
@@ -3064,10 +3209,11 @@
     "Description": "<STELLAR>探検<>「地図製作者」を達成したことと、探検先の惑星を記録して脱出に成功したことを記念した特別な<STELLAR>探検家の称号<>。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3084,10 +3230,11 @@
     "Description": "設置可能な特製ステッカー。これで基地に遊び心を加えよう。\n\nこのステッカーは、探検先の惑星を記録し、脱出に成功したことを記念するものである。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3109,10 +3256,11 @@
     "Description": "<STELLAR>探検<>「地図製作者」を達成したことと、探検先の惑星を記録して脱出に成功したことを記念した特別な<STELLAR>自己表現用アイテム<>。\n\n<TECHNOLOGY>外見変更モジュール<>で自分のプロフィールにこのバナーを採用できる。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3129,10 +3277,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nジェットパックの排気口には、専用に調整されたオイルが添加されており、動作時には真珠のような泡が発生する。\n\n<TECHNOLOGY>外見変更モジュール<>でエクソスーツのデザインを変更できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3149,10 +3298,11 @@
     "Description": "生きている受精卵。<TRADEABLE>孵化の準備が整った！<>\n\n卵の保護膜の下には、影が蠢いている。\n\nスキャンにより、<FUEL>悪夢のような生物<>、<FUEL>手のかかる生物<>となる遺伝的ポテンシャルを持つ存在が中にいると表示されている。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3169,10 +3319,11 @@
     "Description": "特別製の<STELLAR>宇宙船<>。効率的な宇宙探索用に強力な<TECHNOLOGY>フェーズビーム<>とアップグレードされた<TECHNOLOGY>パルスドライブ<>があらかじめ取り付けられている。また、<TECHNOLOGY>テレポート受信機<>を使用すると、集めたアイテムや素材を<STELLAR>長距離<>にわたって効率的に船へテレポートできる。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3189,10 +3340,11 @@
     "Description": "特別製の<STELLAR>宇宙船<>。効率的な銀河探査用にアップグレードされた<TECHNOLOGY>ハイパードライブ<>があらかじめ取り付けられている。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3209,10 +3361,11 @@
     "Description": "特別製の<STELLAR>宇宙船<>。効率的な敵船破壊用にアップグレードされた<TECHNOLOGY>インフラナイフ<>があらかじめ取り付けられている。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3229,10 +3382,11 @@
     "Description": "特別製の<STELLAR>宇宙船<>。広々とした貨物室があり、アップグレードされた<TECHNOLOGY>偏向シールド<>と<TECHNOLOGY>サイクロトロン・バリスタ<>があらかじめ取り付けられている。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3249,10 +3403,11 @@
     "Description": "特別製の<STELLAR>宇宙船<>。効率的な敵船破壊用にアップグレードされた<TECHNOLOGY>ポジトロン・イジェクター<>があらかじめ取り付けられている。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3269,10 +3424,11 @@
     "Description": "生きている受精卵。<TRADEABLE>孵化の準備が整った！<>\n\n水晶と肉の鎧をまとった獣が、卵の上で静かに揺れている。\n\nスキャンにより、<TRADEABLE>忠実<>に主人を守る生物となる遺伝的ポテンシャルを持つ存在が中にいると表示されている。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3289,10 +3445,11 @@
     "Description": "生きている受精卵。<TRADEABLE>孵化の準備が整った！<>\n\n卵の中の優美な生物は、柔らかい翼を卵に打ちつけ、孵化を待ち望んでいる。\n\nスキャンにより、高所から資源を探してくる<STELLAR>甲斐甲斐しい<>生物となる遺伝的ポテンシャルを持つ存在が中にいると表示されている。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3309,10 +3466,11 @@
     "Description": "生きている受精卵。<TRADEABLE>孵化の準備が整った！<>\n\n卵内部の重心が目まぐるしく移り変わる。まるで中の生き物が元気よく跳ね回っているかのようだ。\n\nスキャンにより、優しく接することで<TRADEABLE>愛らしく<>癒やされる生物となる遺伝的ポテンシャルを持つ存在が中にいると表示されている。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3329,10 +3487,11 @@
     "Description": "生きている受精卵。<TRADEABLE>孵化の準備が整った！ <>\n\n内部にいる鱗だらけの爬虫類が爪で卵を引っかいている。その獰猛さを証明するのが待ちきれないようだ。\n\nスキャンにより、強力な顎で他の生物を倒す<FUEL>凶暴<>なハンターとなる遺伝的ポテンシャルを持つ存在が中にいると表示されている。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3349,10 +3508,11 @@
     "Description": "生きている受精卵。<TRADEABLE>孵化の準備が整った！<>\n\n中の昆虫は大きな角を打ちつけ、外に出て宇宙を探索したがっている。\n\nスキャンにより、<TECHNOLOGY>冒険好き<>で湿地帯の故郷以外の惑星を探検したがる生物となる遺伝的ポテンシャルを持つ存在が中にいると表示されている。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3369,10 +3529,11 @@
     "Description": "見事な演出の高級花火3点セット。<FUEL>カドミウム<>、<TRADEABLE>エメリル<>そして<TECHNOLOGY>インジウム<>を惜しげなく使っている。着火すると空に美しい煌めきを作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3389,10 +3550,11 @@
     "Description": "見事な演出の高級花火3点セット。<FUEL>カドミウム<>、<TRADEABLE>エメリル<>そして<TECHNOLOGY>インジウム<>を惜しげなく使っている。着火すると空に美しい煌めきを作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3409,10 +3571,11 @@
     "Description": "見事な演出の高級花火3点セット。<FUEL>カドミウム<>、<TRADEABLE>エメリル<>そして<TECHNOLOGY>インジウム<>を惜しげなく使っている。着火すると空に美しい煌めきを作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3429,10 +3592,11 @@
     "Description": "見事な演出の高級花火3点セット。<FUEL>カドミウム<>、<TRADEABLE>エメリル<>そして<TECHNOLOGY>インジウム<>を惜しげなく使っている。着火すると空に美しい煌めきを作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3449,10 +3613,11 @@
     "Description": "見事な演出の高級花火3点セット。<FUEL>カドミウム<>、<TRADEABLE>エメリル<>そして<TECHNOLOGY>インジウム<>を惜しげなく使っている。着火すると空に美しい煌めきを作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から\n打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3469,10 +3634,11 @@
     "Description": "設置可能な特製ステッカー。これで基地に遊び心を加えよう。\nこのステッカーは淡い青色の空に浮かぶ星を見上げる探検家を模している。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3494,10 +3660,11 @@
     "Description": "設置可能な特製ステッカー。これで基地に遊び心を加えよう。\nこのステッカーは赤茶けた大地を闊歩する巨大なエイリアンの獣を模している。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3519,10 +3686,11 @@
     "Description": "設置可能な特製ステッカー。これで基地に遊び心を加えよう。\nこのステッカーは着陸した宇宙船がパイロットの帰還を待っている様子を模している。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3544,10 +3712,11 @@
     "Description": "設置可能な特製ステッカー。これで基地に遊び心を加えよう。\nこのステッカーはギャラクティックコアを目指して旅する2隻の宇宙船を模している。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3569,10 +3738,11 @@
     "Description": "設置可能な特製ステッカー。これで基地に遊び心を加えよう。\nこのステッカーは伝説的な呪いの潜水マスクを模している。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3594,10 +3764,11 @@
     "Description": "設置可能な特製ステッカー。これで基地に遊び心を加えよう。\nこのステッカーはナーダとポーロの異質な故郷を過ぎゆく宇宙船を模している。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3619,10 +3790,11 @@
     "Description": "このフルセイルはゲックが大昔に使用していた交易船のデザインを模している。海をテーマにした印象的な家庭用装飾品。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3644,10 +3816,11 @@
     "Description": "このオフセットセイルはゲックが大昔に使用していた交易船のデザインを模している。海をテーマにした印象的な家庭用装飾品。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3669,10 +3842,11 @@
     "Description": "このアシンメトリカルセイルはゲックが大昔に使用していた交易船のデザインを模している。海をテーマにした印象的な家庭用装飾品。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3694,10 +3868,11 @@
     "Description": "このドレープドキャンバスはゲックが大昔に使用していた交易船のデザインを模している。海をテーマにした印象的な家庭用装飾品。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3719,10 +3894,11 @@
     "Description": "のりもいらずシワにもならない特製のウォールアート。\n華やかな黒と金のポスターにはアポロに似たトラベラーが描かれている。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3744,10 +3920,11 @@
     "Description": "のりもいらずシワにもならない特製のウォールアート。\n鮮やかな色のポスターにはスペースアノマリーの簡略化されたイラストが描かれている。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3769,10 +3946,11 @@
     "Description": "のりもいらずシワにもならない特製のウォールアート。\nこのポスターにはクリーミーでおいしそうなホカホカのプロトミルクが描かれている。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3794,10 +3972,11 @@
     "Description": "<STELLAR>ワームの上質皮紙<>でできた透明な紙。狂信的な文章が書かれている。触れるとのたうつ。\n\n「最初に気付いたのは子どもたちだった。\nドン、ドン、ドン、砂の下深いところで轟いていた。\n最初のワームが頭上を飛ぶさまは黒い稲妻が空を裂くようだった。\nワームは次から次へと砂漠から昇っていった。\n嵐の季節になるたびに、それぞれ自分が選ばれることを望んだ。列を作って砂漠を渡り、空に腕を伸ばした。\n誰でも胃袋に入れる可能性がある。\n大いなるワームの前で我々はみな平等だ。」",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3814,10 +3993,12 @@
     "Description": "<SPECIAL>飢えた落とし子<>の消化管がらせん状になったもの。肉厚の壁はまだ痙攣しているが、このわずかな肉片から落とし子が再生することはないだろう...\n\nこれほどまでに特殊な内臓が銀河市場で取引されることはほとんどないため、<STELLAR>非常に高い価値<>を持つ。",
     "BaseValueUnits": 160016.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasRefinedToCreate": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3834,10 +4015,12 @@
     "Description": "<SPECIAL>飢えた蔓<>の壊れやすい胚。まだ粘液状の栄養分が滴っている。触れると泣き叫んで逃れようと身を引く。\n\n<TECHNOLOGY>内臓器官同調機<>を使えば、胚のうから取り出せるかもしれない。",
     "BaseValueUnits": 16.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasRefinedToCreate": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3854,10 +4037,11 @@
     "Description": "絢爛豪華な花火。有機花火が空に打ち上げられ、爆発してスライム、プラズマ、小さなワームをぶちまける。着火すると空にスプラッタな光景を作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3874,10 +4058,11 @@
     "Description": "絢爛豪華な花火パック。有機花火が空に打ち上げられ、爆発してスライム、粘液、小さなワームをぶちまける。着火すると空にスプラッタな光景を作り上げる。\n\n<VAL_ON>ビルドメニュー<>(<IMG>BUILD_MENU<>)から打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて発砲しないこと。室内での使用は推奨しない。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3894,10 +4079,11 @@
     "Description": "探検「<STELLAR>緊急<>」達成を記念した特別な<STELLAR>探検家の称号<>。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3914,10 +4100,11 @@
     "Description": "設置可能な特製ステッカー。これで基地に遊び心を加えよう。\n\nこのステッカーは探検「<STELLAR>緊急<>」達成を記念している。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3939,10 +4126,11 @@
     "Description": "探検「<STELLAR>緊急<>」を記念した特製<STELLAR>自己表現用アイテム<>。\n<TECHNOLOGY>外見変更モジュール<>で自分のプロフィールにこのバナーを採用できる。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3959,10 +4147,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\nジェットパックの排気ノズルにアクティブバイオチャンバーを装着する。フラウト中、スラスターが温まると中に含まれるスライム状の液体を排出する。\n<STELLAR>注<>：生きているワームが含まれるため、ワームを放出すると現地の生態系を荒らす可能性がある。\n\n<TECHNOLOGY>外見変更モジュール<>でエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3979,10 +4168,11 @@
     "Description": "生きている繁殖力の強い卵。<TRADEABLE>孵る直前！<>\n\n殻の中には腹を空かせた小さなワームが丸まっており、とぐろを巻いて絶えず身じろいでいる。\n\nスキャンによれば、中にいる存在は遺伝的に<FUEL>忌まわしく<><FUEL>強欲<>なものになる可能性がある。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3999,10 +4189,11 @@
     "Description": "建設可能な基地装飾品。\n\n歯がたくさんある頭蓋骨で、元は巨大なサンドワームの従兄弟とも言える大型の無足脊椎動物のものだった。強力な顎の力はマルチツールを破壊し、大抵の生物の骨を砕く。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4024,10 +4215,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\n顔面組織を再配置し、サンドワーム狂信者の外見をとって他の探検者たちに警告する。このバイオシリコン製のヘルメットは惑星における既知の危険を防ぐように密封されているが、装着すると少しじっとりしているように感じるかもしれない。\n\n<TECHNOLOGY>外見変更モジュール<>で<STELLAR>ヴァイキーン<>の外見の頭部を儀式的に変更する。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4044,8 +4236,6 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
@@ -4062,10 +4252,11 @@
     "Description": "この<STELLAR>生きた文書<>には、古代の言葉が刻まれている。このような内容だ。\n\n「ワームロードは砂塵舞う大地にそびえ立ち、その身体は空となる。\n我々のちっぽけな殻では、追跡することもできず、その高みに到達することもできず、その深みに到達することもできない。\n我々は大地に我が身を捧げる\n我々の捧げ物が受領されんことを乞う」",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4082,10 +4273,11 @@
     "Description": "この<STELLAR>生きた文書<>には、古代の言葉が刻まれている。このような内容だ。\n\n「砂塵は息もできないほどだ。\n目は充血し涙があふれる。\nだが真実は逃れがたいものだ。\nアトラスの血管が顕になっていた。」",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4102,10 +4294,11 @@
     "Description": "この<STELLAR>生きた文書<>には、古代の言葉が刻まれている。このような内容だ。\n\n「嵐のたびに選んでくれと希う。\n腕を顔に当て、顔を泥に伏せ、力を振り絞って叫ぶ。\n大粒の雨が大地を打つ時、アトラスの血管が応える。\n疲弊した末の歓喜は言葉にならない」",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4122,10 +4315,11 @@
     "Description": "この<STELLAR>生きた文書<>には、古代の言葉が刻まれている。このような内容だ。\n\n「それが飲み込むたびに我々は転がったが、滑りやすい壁を力の限り掴んだ。\nああ！まだ動いている臓腑に到達するために。\n深く息を吸う！肺が鳴る！\n粘液が鼻を塞ぎ目を刺す。\nだがこの温かい暗闇の中、我々はとうに何も見えなくなっている」",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4142,10 +4336,11 @@
     "Description": "この<STELLAR>生きた文書<>には、古代の言葉が刻まれている。このような内容だ。\n\n「おのれ吐き戻しの苦しみめ、\nおのれ私をいまだ捕らえるこの、この脆弱な肉体め！\n我が同志たちは生まれ変わった、新たな蔓となって聖なる塵から立ち上がった。\n輝く毛細血管が大動脈に向かって、ズルリと滑って砂の中に消えていく。\n私は辛抱強く待とう。次の嵐を。」",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4156,16 +4351,18 @@
   },
   {
     "Id": "other205",
-    "Icon": "other/2.png",
+    "Icon": "other/205.png",
     "Name": "星系図",
     "Group": "機密地図データ",
     "Description": "近くの惑星の地図。 <FUEL>秘密の特定ポイント<>がマークされている。 この種の施設には<STELLAR>新たなアイテム<>の<TECHNOLOGY>設計図<>があることが多い。 \n\n地図を選択してルート設定（<IMG>FE_ALT1<>）を使うと、エクソスーツの画面に位置をブックマークできる。\n\n新しい地図は、宇宙ステーションの地図製作者と<COMMODITY>ナビゲーションデータ<>を交換することで入手できる。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4176,16 +4373,18 @@
   },
   {
     "Id": "other206",
-    "Icon": "other/2.png",
+    "Icon": "other/206.png",
     "Name": "星系図",
     "Group": "緊急地図データ",
     "Description": "近くの惑星の地図。<TECHNOLOGY>救難信号<>がマークされている。\n\n地図を選択してルート設定（<IMG>FE_ALT1<>）を使うと、エクソスーツの画面に位置をブックマークできる。\n\n新しい地図は、宇宙ステーションの地図製作者と<COMMODITY>ナビゲーションデータ<>を交換すると手に入る。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4196,16 +4395,18 @@
   },
   {
     "Id": "other207",
-    "Icon": "other/2.png",
+    "Icon": "other/207.png",
     "Name": "星系図",
     "Group": "商用地図データ",
     "Description": "近くの惑星の地図。何らかの<COMMODITY>居住者のいるアウトポスト<>がマークされている。\n\n地図を選択してルート設定（<IMG>FE_ALT1<>）を使うと、\nエクソスーツの画面に位置をブックマークできる。\n\n新しい地図は、宇宙ステーションの地図製作者と<COMMODITY>ナビゲーションデータ<>を交換すると手に入る。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4216,16 +4417,18 @@
   },
   {
     "Id": "other208",
-    "Icon": "other/2.png",
+    "Icon": "other/208.png",
     "Name": "星系図",
     "Group": "異星人地図データ",
     "Description": "近くの惑星の地図。\n<SPECIAL>古代遺物サイト<>が\nマークされている。地図を選択して\nルート設定（<IMG>FE_ALT1<>）を\n使うと、エクソスーツの画面に\nブックマークできる。\n新しい地図は、宇宙ステーションの\n地図製作者と\n<COMMODITY>ナビゲーションデータ<>\nを交換すると手に入る。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4236,16 +4439,18 @@
   },
   {
     "Id": "other209",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "星系図",
     "Group": "地図データ",
     "Description": "近くの惑星の地図。\n<SPECIAL>古代遺物サイト<>が\nマークされている。地図を選択して\nルート設定（<IMG>FE_ALT1<>）を\n使うと、エクソスーツの画面に\nブックマークできる。\n新しい地図は、宇宙ステーションの\n地図製作者と\n<COMMODITY>ナビゲーションデータ<>\nを交換すると手に入る。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4262,10 +4467,11 @@
     "Description": "特製の<STELLAR>コンパニオン用外見カスタマイズ<>。希少の激しいコンパニオンに最適なこのスタイリッシュなプレートアーマーは、レーザーや弾丸から急所を保護する。非常に柔らかく通気性のいいパッドがついているため、コンパニオンがアクセサリーから抜け出してしまうことが減る。\n\n野生動物の信頼を得ると、コンパニオンにできる。コンパニオンの外見をカスタマイズするには、コンパニオンに接触する。",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4282,10 +4488,11 @@
     "Description": "特製<STELLAR>エクソスーツデザインオーバーライド<>。\n\n優雅な翼のアシストがついたジェットパックで、エキゾチックの宇宙船の設計思想にインスパイアされている。特製エクソスーツの拡張は<STELLAR>探検<>「宇宙生物学」の完了を記念している。\n\n<TECHNOLOGY>外見変更モジュール<>でエクソスーツのデザインを変更することができる。",
     "BaseValueUnits": 3500.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4302,10 +4509,11 @@
     "Description": "探検「<STELLAR>宇宙生物学<>」達成を記念した特別な<STELLAR>探検家の称号<>。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4322,10 +4530,11 @@
     "Description": "設置可能な特製ステッカー。これでベースに遊び心を加えよう。\n\nこのステッカーは探検「<STELLAR>宇宙生物学<>」達成を記念しており、トラベラーとこの世界に息づく数多の野生生物種との平和な共存関係を祝福している。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4347,10 +4556,11 @@
     "Description": "<STELLAR>探検<>「宇宙生物学」と、この世界に生息する多様な野生生物の調査を記念した特製<STELLAR>自己表現用アイテム<>。\n\n<TECHNOLOGY>外見変更モジュール<>で自分のプロフィールにこのバナーを採用できる。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4367,10 +4577,11 @@
     "Description": "金属製の「卵」カプセルで、<TRADEABLE>今にも孵化しそうだ！<>\n\n殻が電子エネルギーでバチバチと音を立てている。\n\nスキャンによれば、中にいる存在は<SPECIAL>疲れを知らず<>、<SPECIAL>用心深く<>プログラムされている。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,

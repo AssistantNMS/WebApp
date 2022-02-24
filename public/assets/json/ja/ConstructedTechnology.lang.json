@@ -7,10 +7,11 @@
     "Description": "携帯型の土地登記サービス。\n\n設置すると、全宇宙地図アーカイブに\n接続し、土地の所有権を確立できる。\n登記が完了すると、土地のどこでも\n好きなところに基地モジュールを\n建設できる。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/1.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -32,10 +33,11 @@
     "Description": "宇宙船用の安定した強化済み離着陸場。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/2.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -65,11 +67,12 @@
     "Description": "資源や商品を売る市場へのアクセスを\n即座に可能にする貿易ターミナル。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -15.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/3.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -95,11 +98,12 @@
     "Description": "体力を回復できる壁掛け式のモジュール。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -10.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/4.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -129,11 +133,12 @@
     "Description": "壁に取り付けるユニットで、使用者の<COMMODITY>危険防御<>システムをリチャージできる。\n\n危険防御ユニットをチャージするには<FUEL>燃料<>が必要だ。",
     "BaseValueUnits": 3.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -10.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/5.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 3,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -163,10 +168,11 @@
     "Description": "一度起動すると、ビーコンは半永久的に\nナビゲーションマーカーとなる。特定の\n場所に繰り返し訪問できるようになる。\n\n進捗はいつでも記録可能だ。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/6.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -192,10 +198,11 @@
     "Description": "ゲーム進捗を管理する為の建設可能なセーブポイント。",
     "BaseValueUnits": 2.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/7.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -221,10 +228,11 @@
     "Description": "<TECHNOLOLY>周辺の建物を検知する<>多目的スキャナー。 <COMMODITY>ナビゲーションデータ<>を解読して特定位置を\n見つけることができる。\n \n信号ブースターは<VAL_ON>解体と再作成<>が可能なため簡単に持ち運びできる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/8.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -254,10 +262,11 @@
     "Description": "<TECHNOLOGY>自律式バリオン反粒子リアクター<>。事象のパラドックスを自動的に\n捕捉し、利用可能な<FUEL>反物質<>に変換する。稼働には燃料が\n必要なので、連続使用時は残量に\n注意すること。\n\n生成された反物質は安全容器に\n封じ込められ、あらゆる標準的な\n<FUEL>超空間推進ユニット<>に使用できる。",
     "BaseValueUnits": 20.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/9.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 20,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -287,11 +296,12 @@
     "Description": "<TECHNOLOGY>個人用のテレポート装置<>で、ネットワークに接続された自分の基地と宇宙ステーションのターミナルを素早く移動できる。\n\n分離することのできない物質を挿入する場合は、使用前にネットワークの整合性を検証すること。",
     "BaseValueUnits": 2.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -20.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/10.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -321,10 +331,11 @@
     "Description": "<TECHNOLOGY>艦隊管理ステーション<>の要で、上級ホログラムの\n\n通信ステーション。主力艦の快適さから艦隊の探検隊まで管理することができる。\n \n1度に複数の探検隊を管理する場合は、\nステーションも複数必要になる。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/11.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -354,10 +365,11 @@
     "Description": "持ち運び可能な<TECHNOLOGY>設計図解読装置<>。\n\nこの展開可能なリサーチモジュールを使用することで、古いテクノロジーモジュールや損傷したテクノロジーモジュールを高度な建設設計図に変換できる。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/12.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -383,10 +395,11 @@
     "Description": "惑星に欠かせない設備。\n\n<TECHNOLOGY>精製機<>を使えば、集めた物質を加工して強力でより高度な物質を作成できる。\nポータブル精製機は<VAL_ON>解体して再度展開する<>ことで容易に持ち運べる。\n注意：ポータブル精製機を作動させるには<FUEL>燃料<>が必要。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/13.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -412,10 +425,11 @@
     "Description": "惑星に欠かせない設備。\n\n<TECHNOLOGY>精製機<>を使えば、集めた物質を加工して強力でより高度な物質を作成できる。\n\n中型精製機では<COMMODITY>2つ<>の物質を組み合わせて新しい物質を作成することができる。\nまた、物質の加工比率も高い。\n\n<VAL_ON>居住可能な基地<>に設置しなければならないが、追加の電源は不要。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/14.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -441,10 +455,11 @@
     "Description": "惑星に欠かせない設備。\n\n<TECHNOLOGY>精製機<>を使えば、集めた物質を加工して強力でより高度な物質を作成できる。\n\n大型精製機では<COMMODITY>3つ<>の物質を組み合わせて\n新しい物質を作成することができる。\nまた、物質の加工比率も高い。\n\n居住可能な基地に設置しなければならないが、追加の電源は不要。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/15.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -474,11 +489,12 @@
     "Description": "建築すると、<TECHNOLOGY>外見の設定を変更<>できるようになるモジュール。\n\nこのモジュールの高度なホログラム技術により、ユーザーは周囲の光を再構築し、思い通りの外見を得ることができる。使用前に外見データを適切にフォーマットすること。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -50.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/16.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -500,10 +516,11 @@
     "Description": "集めた食材を加工し精製して\n食用品にする携帯用の<TECHNOLOGY>栄養抽出器<>。\n\n精製された食品を消費した結果は\n使用者の責任とする。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/17.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -533,11 +550,12 @@
     "Description": "<STELLAR>付近の生物に自動で食物を与える<>よう\n設計された、農業ユニットロボット。\n\n起動すると付近の動物を引き寄せる。\n餌のタンクを必要な食物で満たすことで、\n生物に供給することができる。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -20.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/18.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -567,11 +585,12 @@
     "Description": "生物から物質を<STELLAR>自動的に収穫する<>ために\n設計された農業ロボット。\n使用には<STELLAR>電力<>が必要。\n\n牛乳、卵、その他の農産物の収穫が可能な生物は、\n家畜ユニットに近づいて、対象物を提供する。\nその過程で生物に危害が加わることはない。\n\n収穫した農産物は手または<TECHNOLOGY>自動フィーダー<>によって収穫される。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -20.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/19.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -601,10 +620,11 @@
     "Description": "メッセージを残したり、残されたメッセージや情報を確認するための、利用しやすい小さな情報コンテナ。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/20.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -630,10 +650,11 @@
     "Description": "他のトラベラーへのメッセージを作成し、伝達する為のターミナル。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/21.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -655,10 +676,11 @@
     "Description": "ノーマッド小型エクソクラフト用の安全な地下駐車施設。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/22.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 8,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -688,10 +710,11 @@
     "Description": "ローマー中型エクソクラフト用の安全な地下駐車施設。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/23.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 4,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -721,10 +744,11 @@
     "Description": "コロッサス大型エクソクラフト用の安全な地下駐車施設。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/24.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 8,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -754,10 +778,11 @@
     "Description": "ピルグリム型小型エクソクラフト用の安全な地下駐車施設。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/25.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -787,10 +812,11 @@
     "Description": "ノーティロン潜水艦用の高度な\nエア・ロック型ドッキングステーション。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/26.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -820,10 +846,11 @@
     "Description": "建設すると所有するエクソクラフトを\n\n惑星のどこからでも召喚可能になる。\n<STELLAR>エクソクラフトクイックコマンドメニュー<>で\n簡単に使用できる。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/27.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 12,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -853,10 +880,11 @@
     "Description": "建築監督官のニーズに応えた研究所。建築工学のデザインソフトウェアが組み込まれている。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/28.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -882,10 +910,11 @@
     "Description": "機械工のニーズに合わせた研究所。特注の車両デザインソフトウェアの設備が整っている。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/29.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -911,10 +940,11 @@
     "Description": "武器職人のニーズに合わせた研究所。厳選された一般的なテクノロジーは勿論、軍需品や爆発物の開発設備が整っている。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/30.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -940,10 +970,11 @@
     "Description": "科学者のニーズに合わせた研究所。\n科学的設計図の研究開発の\n設備が整っている。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/31.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -969,10 +1000,11 @@
     "Description": "農家のニーズに合わせた研究所。栽培可能な作物の分析と栽培の設備が整っている。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/32.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -998,11 +1030,12 @@
     "Description": "農耕作物を屋内栽培するための自己完結型の栽培システム。\n\n建築条件：屋内にのみ設置できる",
     "BaseValueUnits": 3.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -5.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/33.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 3,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1032,11 +1065,12 @@
     "Description": "農耕作物を屋内栽培するための自己完結型の栽培システム。\n\n建築条件：屋内にのみ設置できる",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -20.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/34.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1066,11 +1100,12 @@
     "Description": "<TECHNOLOGY>個人用のテレポート装置<>で、ネットワークに接続された自分の基地と宇宙ステーションのターミナルを素早く移動できる。\n\n分離することのできない物質を挿入する場合は、使用前にネットワークの整合性を検証すること。",
     "BaseValueUnits": 2.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -20.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/35.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1100,10 +1135,11 @@
     "Description": "レース走行中のエクソクラフトにブーストをかける。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/38.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1129,10 +1165,11 @@
     "Description": "エクソクラフトレースに刺激的な試練を加える。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/39.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1154,10 +1191,11 @@
     "Description": "この台はエクソクラフトフィールドテスト開始地点や終了地点として使用される。トラベラーはこれを利用して操縦やスピード走行を練習できる。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/40.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1187,10 +1225,11 @@
     "Description": "緊急時のサバイバル用モジュール。\n\n酸素の不足を始めとするエクソスーツの\n生命維持の危機が発生した際には\nすぐに海底に設置でき、\n一時的なシェルターとして機能する。\n深海で発生するあらゆる危険や肉食動物、\nその他の敵対する勢力から保護される。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/41.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1220,10 +1259,11 @@
     "Description": "宇宙で最も完璧なスフィアを\n見つけるために開発された、\n非常に特別な製造デバイス。\n\n使用には<STELLAR>電力<>が必要となる。\n必要なあらゆる実験に対応する、\n大きなスフィアを作り出す。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/42.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1253,11 +1293,12 @@
     "Description": "高周波のノイズを発するように\n設計された、特別な建築用モジュール。\n使用者の要求に合わせてピッチを\n調整可能。\n\n使用には<STELLAR>電力<>が必要となる。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -1.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/43.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1287,11 +1328,12 @@
     "Description": "<TECHNOLOGY>自動大気抽出装置<>で、大気から酸素を収集して浄化してくれる。使用時には燃料残量を監視して、運転が停止しないようにする必要がある。\n\n収集された気体は圧縮及び加工され、すべての標準的な<FUEL>生命維持システム<>ですぐに使用できる。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/44.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1321,11 +1363,12 @@
     "Description": "資源を自動で採掘する掘削機。起動すると操作を必要とせず鉱物の収拾が可能。資源が枯渇するまで定期的に採集を行う。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/45.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1355,12 +1398,13 @@
     "Description": "自動化された鉱物収集機。\n<TECHNOLOGY>調査<>アップグレードをした<TECHNOLOGY>分析レンズ<>で\n場所の特定が可能。鉱物の抽出レートと\n量は場所によって異なる。\n\n使用には<STELLAR>電力<>が必要になる。\n<TECHNOLOGY>パイプライン<>で<TECHNOLOGY>サイロ<>と接続することで、\nより便利な場所での収集が可能になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "Power": -50.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/46.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1386,12 +1430,13 @@
     "Description": "自動化されたガス収集機。\n<TECHNOLOGY>調査<>アップグレードをした<TECHNOLOGY>分析レンズ<>で\n場所の特定が可能。ガスの抽出レートと\n量は場所によって異なる。\n\n使用には<STELLAR>電力<>が必要になる。\n<TECHNOLOGY>パイプライン<>で<TECHNOLOGY>サイロ<>と接続することで、\nより便利な場所での収集が可能になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "Power": 100.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/47.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1417,11 +1462,12 @@
     "Description": "自動化された貯蔵ユニット。\n<TECHNOLOGY>パイプライン<>を使って<TRADEABLE>供給グリッド<>に\n接続する。\n\n様々な<STELLAR>鉱物<>と<STELLAR>ガス抽出装置<>を自動的に\n貯蔵し、より多くの容量とより効果的な\n稼働を実現する。抽出場所から\n遠く離れていても問題ない。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/48.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1443,11 +1489,12 @@
     "Description": "フレキシブルで強度の高いパイプ。\n高圧力の内部環境に耐えることができる。\n\n様々な<STELLAR>鉱物<>と<STELLAR>ガス抽出装置<>を<TECHNOLOGY>サイロ<>に\n接続するために使用される。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/49.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1473,12 +1520,13 @@
     "Description": "効率のよい<STELLAR>発電機<>。ソーラーアレイに\nよって、太陽光を基地の建築物に必要な\n電力へと変える。\n\n<FUEL>夜は電力を生み出さない<>。\n<TECHNOLOGY>バッテリー<>と組み合わせることで、\n夜間に使用するためのエネルギーを\n貯めておくことができる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "Power": 50.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/50.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 8,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1508,12 +1556,13 @@
     "Description": "フィールド強度の高いエリアに\n配置すると、電磁ダイナモが効果的に\n使用されて<STELLAR>無限に近い電力<>を生み出す。\n\n<TECHNOLOGY>調査<>アップグレードを<TECHNOLOGY>分析レンズ<>に\n行うことで、適当な場所を発見できる。\nまた出力は場所によって異なる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "Power": 1.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/51.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1543,12 +1592,13 @@
     "Description": "小型の<STELLAR>発電機<>。<TECHNOLOGY>溶鉱炉タンク<>で\n炭素系燃料を燃やして使用可能な電力に変換する。\n\n<TECHNOLOGY>送電線<>を使って発電機を基地の建築物や\nテクノロジーと接続できる。\n多くのパーツは使用に電力が必要になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "Power": -1.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/52.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1574,11 +1624,12 @@
     "Description": "高電圧に耐える導電体のワイヤー。\n<TECHNOLOGY>発電機<>を基地に接続するのに使う。\nほとんどのテクノロジーおよび\n照明システムを備えた建造物は、\n電力供給がないと稼働しない。\n\nまた、<TECHNOLOGY>各種スイッチ<>に接続すれば\n電力供給を部分的にオン/オフできる。",
     "BaseValueUnits": 0.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/53.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 0,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1595,11 +1646,12 @@
     "Description": "高度な光ファイバーケーブル配線で、一つ以上の<TECHNOLOGY>短距離テレポーター<>に接続できる。",
     "BaseValueUnits": 0.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/54.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 0,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1616,11 +1668,12 @@
     "Description": "スイッチで電力使用時のフローを\n切り替えできる、<STELLAR>電力管理デバイス<>。\n\nデバイスを操作するには、スイッチへの\n電力と信号ワイヤーが必要になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/55.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1646,11 +1699,12 @@
     "Description": "起動時にスイッチで電力使用時のフローを\n切り替えできる、<STELLAR>電力管理デバイス<>。\n\nデバイスを操作するには、スイッチへの\n電力と信号ワイヤーが必要になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/56.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1676,11 +1730,12 @@
     "Description": "非常に効率のよい<TECHNOLOGY>エネルギー貯蔵装置<>。\n電力グリッドに接続し、オンボードの\n電力管理回路は<STELLAR>余った電力を自動的に\n引き出して<>充電に回すことができる。\n\n供給されている以上の電力をグリッドを\n引き出そうとした場合、バッテリーから\n<STELLAR>自動的に電力が供給されて<>不足分を補う。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/57.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 3,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1706,11 +1761,12 @@
     "Description": "付近に存在を検知した際に、スイッチで\n電力使用時のフローを切り替えできる、\n<STELLAR>電力管理デバイス<>。\n\nデバイスを操作するには、スイッチへの\n電力と信号ワイヤーが必要になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/58.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1732,11 +1788,12 @@
     "Description": "スイッチで電力使用時のフローを\n切り替えできる、<STELLAR>電力管理デバイス<>。\n\nデバイスを操作するには、スイッチへの\n電力と信号ワイヤーが必要になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/59.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1758,11 +1815,12 @@
     "Description": "スイッチで電力使用時のフローを\n切り替えできる、<STELLAR>電力管理デバイス<>。\n\nデバイスを操作するには、スイッチへの\n電力と信号ワイヤーが必要になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/60.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1788,11 +1846,12 @@
     "Description": "信号を受信することで電力使用時の\nフローを切り替えできる、\n<STELLAR>電力管理デバイス<>。\n\nデバイスを操作するには、\nスイッチへの電力と\n信号ワイヤーが必要になる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/61.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1818,11 +1877,12 @@
     "Description": "短い距離を一瞬で移動するために\n作られた、省電力テレポーター。\n\n電力源とほかの短距離テレポーターと\n<STELLAR>ワイヤーでつながれる<>と、\n付近の場所にほぼ一瞬で移動できる。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/62.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1852,10 +1912,11 @@
     "Description": "<STELLAR>ミノタウロス・重エクソスーツハイブリッド<>用の\n安全な駐車施設。呼び出しやカスタマイズも可能。\n\nクイックメニューからミノタウロスを展開する。\n貨物船に取り付けられた<TECHNOLOGY>軌道エクソクラフト具現化装置<>を\n用いると、母船がいる星系内ならどこでもミノタウロスを\n即座に展開できる。",
     "BaseValueUnits": 10.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/63.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1885,10 +1946,12 @@
     "Description": "柔軟なアップグレード回路。すべての<STELLAR>マルチツール<>と互換性がある。\n\n宇宙ステーションの<STELLAR>マルチツールアップグレードラック<>でマルチツールに装着できるこのモジュールは、マルチツールの内部レイアウトにさらなる空きを作ってくれるため、アップグレードやテクノロジー特性をさらに追加できるようになる。",
     "BaseValueUnits": 85000.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": true,
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1905,10 +1968,11 @@
     "Description": "在庫アイテム用の広々とした追加倉庫。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -5.0,
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1934,10 +1998,11 @@
     "Description": "在庫アイテム用の広々とした追加倉庫。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -5.0,
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1963,10 +2028,11 @@
     "Description": "在庫アイテム用の広々とした追加倉庫。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -5.0,
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -1992,10 +2058,11 @@
     "Description": "在庫アイテム用の広々とした追加倉庫。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -5.0,
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -2021,10 +2088,11 @@
     "Description": "在庫アイテム用の広々とした追加倉庫。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -5.0,
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -2050,10 +2118,11 @@
     "Description": "在庫アイテム用の広々とした追加倉庫。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -5.0,
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -2079,10 +2148,11 @@
     "Description": "在庫アイテム用の広々とした追加倉庫。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -5.0,
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -2108,10 +2178,11 @@
     "Description": "在庫アイテム用の広々とした追加倉庫。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -5.0,
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -2137,10 +2208,11 @@
     "Description": "在庫アイテム用の広々とした追加倉庫。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -5.0,
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -2166,10 +2238,11 @@
     "Description": "在庫アイテム用の広々とした追加倉庫。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "Power": -5.0,
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "SalvagedData",
     "BlueprintSource": 0,
@@ -2195,9 +2268,10 @@
     "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2223,9 +2297,10 @@
     "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2251,9 +2326,10 @@
     "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2279,9 +2355,10 @@
     "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2307,9 +2384,10 @@
     "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2335,9 +2413,10 @@
     "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2363,9 +2442,10 @@
     "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2391,9 +2471,10 @@
     "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2419,9 +2500,10 @@
     "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2447,9 +2529,10 @@
     "Description": "ハイブリッド型の多容量貯蔵箱で、\n星間貨物船にインストールできる\nストック用棚の素材。\n\n基本的な生命維持機能と互換性がある。",
     "BaseValueUnits": 5.0,
     "CurrencyType": "None",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,

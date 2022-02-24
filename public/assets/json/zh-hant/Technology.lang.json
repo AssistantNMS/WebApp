@@ -7,9 +7,11 @@
     "Description": "強化套裝的<CATALYST>風險防護<>系統會持續監控並穩定使用者的環境。 \n\n一般活性防護可用<TECHNOLOGY>環境防護罩<>強化，為特定情況提供加強防護。\n\n裝置須以<CATALYST>鈉基物質<>充能。提醒使用者，若風險防護系統充能失敗，使用者的環境可能變得不適生存。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -31,9 +33,10 @@
     "Description": "增加<COMMODITY>危險防護<>系統的基本容量，允許用戶在危險環境中停留更長時間而無需為強化套裝充能。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -59,9 +62,11 @@
     "Description": "<TECHNOLOGY>維生系統<>是強化套裝的核心，會持續過濾並打入可吸入的<FUEL>氧氣<>。\n\n維生系統元件除了維持強化套裝使用者的生命以外，也會使用過剩的氧氣替次要系統提供能量，例如<TECHNOLOGY>噴射背包<>、<TECHNOLOGY>速度強化<>及<TECHNOLOGY>照明<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -83,9 +88,10 @@
     "Description": "增加<COMMODITY>維生<>系統的基本容量，允許用戶在再次充能前存活更長時間。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -107,9 +113,10 @@
     "Description": "使強化套裝獲得<TECHNOLOGY>進階移動能力<>，包括短暫飛行。\n\n按 <IMG>JUMP<> 控制推進力道。飛行背包利用<FUEL>強化套裝維生<>系統的能量，加壓並釋放氣體，將使用者推向空中。\n\n收集<TECHNOLOGY>含氘量高植物<>可以暫時使噴射背包超載，大幅提升可用的推進力量。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -131,9 +138,10 @@
     "Description": "增加強化套裝的<STELLAR>噴氣背包罐<>和<STELLAR>腎上腺泵儲備<>的容量，允許用戶更加持久地飛行和衝刺。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -159,9 +167,10 @@
     "Description": "為強化套裝噴氣背包配備<STELLAR>高級跳躍功能<>，允許用戶輕鬆高跳。\n\n通過快按<IMG>JUMP<>啟用跳躍系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 200,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -187,9 +196,11 @@
     "Description": "可保護使用者不受焦土世界的極熱傷害。\n\n藉由分布於皮膚上的交織網路釋放降溫液，舒緩刺激環境或太陽熱量造成的不適。\n\n裝置需使用可在炎熱環境中取得的<EARTH>礦物萃取物<>補充。建造於使用者的強化套裝道具欄後便會自動啟用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -219,9 +230,11 @@
     "Description": "可保護使用者在冰凍世界不受極寒傷害。\n\n交織在使用者套裝中的導熱管網路，會將加熱液均勻分配，維持舒適的體溫。\n\n裝置需使用可在冰凍環境中取得的<EARTH>礦物萃取物<>補充。建造於使用者的強化套裝道具欄後便會自動啟用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -251,9 +264,11 @@
     "Description": "可保護使用者不受毒傷害。\n\n抑制器內的反應性化合物會去除落在使用者身上的有毒液體，進而減少死亡與窒息的風險。\n\n裝置需使用可在有毒環境中取得的<EARTH>礦物萃取物<>補充。建造於使用者的強化套裝道具欄後便會自動啟用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -283,9 +298,11 @@
     "Description": "可替使用者擋下輻射傷害。\n\n能夠大幅降低使用者探索輻射世界時的風險。藉由微振動增加電磁波反射效果，進而減少輻射吸收。\n\n裝置需使用可在輻射環境中取得的<EARTH>礦物萃取物<>補充。建造於使用者的強化套裝道具欄後便會自動啟用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -315,9 +332,10 @@
     "Description": "可讓使用者在水下游泳的時間增長。\n\n能透過黏膜吸收器吸收溶解在水中的氣體。如果使用者是身體結構普通的物種，黏膜吸收器就會安裝在口部或臉部呼吸孔上。\n\n建造於使用者的強化套裝道具欄後便會自動啟用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -347,9 +365,10 @@
     "Description": "升級<TECHNOLOGY>強化套裝手套<>的金屬防護層。\n\n強化金屬與催化防護層兩者的改良混合產品，能讓使用者安全處理<CATALYST>危險物質<>，也能施展採集特定<TRADEABLE>可栽種植物<>時所需的必要能力。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -375,9 +394,10 @@
     "Description": "你知道的所有東西都在裡頭。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -403,9 +423,10 @@
     "Description": "最微弱的亮光，存放在來源不明的隔離場裡。\n\n這顆種子閃著生命的光芒，急著要逃出去，展現自己真正的潛力。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -435,9 +456,10 @@
     "Description": "因寰宇的干擾而受損的<TECHNOLOGY>科技<>。\n\n能回收成可用元件。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -463,9 +485,10 @@
     "Description": "可改善噴射背包的海洋噴射器<STELLAR>燃油效率<>，降低對強化套裝維生系統的壓力。\n\n水壓縮機安裝在噴射背包的渦輪中，可省去水底點燃引擎的大量能量需求。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 350,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -495,9 +518,10 @@
     "Description": "可升級強化套裝的<TECHNOLOGY>曝氣黏膜<>，在呼吸緊急狀況下採用維生系統的氧氣，讓使用者可以浮上水面並尋找傳統燃料補給品。\n\n注意：不建議將維生系統能量長期改為可呼吸氣體，可能導致維生系統功能無法持續。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 240,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -527,9 +551,10 @@
     "Description": "自動翻譯裝置，可記錄、分析附近的談話，再將資料輸入情境式學習系統，判斷其意涵。\n\n初級型號記憶容量低，翻譯量有限。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -551,9 +576,10 @@
     "Description": "自動翻譯裝置，可記錄、分析附近的談話，再將資料輸入情境式學習系統，判斷其意涵。\n\n具備平行語言處理器，可翻譯更高比例的談話內容。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 310,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -583,9 +609,10 @@
     "Description": "自動翻譯裝置，可記錄、分析附近的談話，再將資料輸入情境式學習系統，判斷其意涵。\n\n大型記憶陣列、超頻語言處理器，可以即時翻譯大量談話內容。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 580,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -615,9 +642,10 @@
     "Description": "自動翻譯裝置。本裝置必須事先調校，讀取現有翻譯資料。本裝置必須<STELLAR>與阿耳忒彌斯保持網路連線<>，才能正常使用。\n\n若無法連線翻譯服務主機，裝置的內建電路，可以進行有限即時翻譯，但僅能翻譯少數單字。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -643,9 +671,11 @@
     "Description": "太空飛行推進器，能在當地星系加速並發動脈衝跳躍。\n \n提醒使用者，替脈衝引擎充能時需要<EXOTIC>氚<>。<COMMODITY>近太空的小行星帶<>可以找到大量氚。\n\n按住 <IMG>PULSEJUMP<> 發動脈衝跳躍。\n按住 <IMG>BOOST<> 啟動飛行中加速。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -671,9 +701,10 @@
     "Description": "增加太空飛行期間的操控穩定性和強化時間。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -699,9 +730,11 @@
     "Description": "重要的起飛與降落輪組系統。\n\n建議使用二氫製的特殊燃料補充推進器。發射程序啟動前需有充足燃料。\n\n按住 <IMG>THRUST<> 自星球起飛。\n按住 <IMG>BOOST<> 啟動飛行中加速。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -727,9 +760,10 @@
     "Description": "升級太空船起飛系統，減少升空的<STELLAR>燃料花費<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -759,9 +793,10 @@
     "Description": "安裝在太空船<TECHNOLOGY>啟動推進器<>上的光電板，讓太空船待命時，可以緩慢充能。\n\n充能器收集光線，自大氣中融合生成二氫，即可<STELLAR>自動補充啟動推進器所需能量<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -791,9 +826,10 @@
     "Description": "將標準太空傳通訊訊號模組化、以<TECHNOLOGY>啟用物質及資料傳輸<>的裝置。\n\n配備了這種裝置的太空船可以<VAL_ON>遠端<>傳送並接收使用者強化套裝的產品與物質。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -819,9 +855,11 @@
     "Description": "能讓太空船達到空間跳躍速度、並於鄰近星系間跳躍的超光速推進器。\n\n建議使用者從銀河地圖進入超空間驅動器系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -847,9 +885,10 @@
     "Description": "升級超空間驅動器核心融合磁鐵，試圖接近罕見等級<FUEL>紅色恆星體<>時，能防止迅速分解。\n\n建議使用者透過<VAL_ON>銀河地圖<>存取超空間驅動器系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -875,9 +914,10 @@
     "Description": "升級超空間驅動器防護罩強度，試圖接近罕見等級<TRADEABLE>綠色恆星體<>時，能防止現實失常。\n\n建議使用者透過<VAL_ON>銀河地圖<>存取超空間驅動器系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -903,9 +943,10 @@
     "Description": "升級超空間驅動器防護矩陣，試圖接近罕見等級<TECHNOLOGY>藍色恆星體<>時，能防止現實失常。\n\n建議使用者透過<VAL_ON>銀河地圖<>存取超空間驅動器系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 200,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -931,9 +972,11 @@
     "Description": "保護太空船不受雷射火焰、飛行中射彈武器與偶然擦撞的太空垃圾傷害的能量防護罩。\n\n建議使用<CATALYST>催化元素<>補充裝置。\n\n在使用者的太空船道具欄建造後便會自動啟用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -959,9 +1002,10 @@
     "Description": "在太空船防禦陣形上增加一層過熱防護罩，汽化掉敵方攻擊。\n\n顯著提升<STELLAR>太空船防護罩性能<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 85,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -991,9 +1035,10 @@
     "Description": "毀滅力強大的武器，有利快速粉碎敵對太空船。\n\n按下 <IMG>SHIPFIRE<> 啟用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 100,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1019,9 +1064,10 @@
     "Description": "擴大太空船的<TECHNOLOGY>火箭發射器<>裝載室，改善排氣性能並顯著提升<STELLAR>過熱恢復<>速度。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 50,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1047,9 +1093,10 @@
     "Description": "毀滅力強大的武器，有利於迅速摧毀敵對太空船。\n\n按下 <IMG>SHIPFIRE<> 啟用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1075,9 +1122,10 @@
     "Description": "太空船銀河規模偵測器升級。此裝置能讓使用者不用探訪星系，即可獲取詳盡的經濟資料。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1103,9 +1151,10 @@
     "Description": "太空船銀河規模偵測器升級。此裝置能讓使用者不用冒生命危險，即可在銀河系地圖獲取詳盡的衝突資料。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1131,9 +1180,10 @@
     "Description": "太空航行用雷射武器，兼為採礦裝置。\n\n需使用<FUEL>有機元素<>補充裝置。\n\n按 <IMG>SHIPFIRE<> 啟用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1159,9 +1209,10 @@
     "Description": "用基於奈米的電路系統重裝<TECHNOLOGY>相位光束<>，繞過雷射功率的常規現實限制。\n\n顯著提升<STELLAR>熱性能<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1187,9 +1238,10 @@
     "Description": "射擊可造成寬範圍的圓錐形殺傷。\n\n由於射程較短、射擊速度較慢，建議使用者用於近距離目標。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1215,9 +1267,10 @@
     "Description": "改進<TECHNOLOGY>正電子彈射器<>的點火機制，從而產生更加快速和精確的粒子。\n\n提升<STELLAR>半徑<>和<STELLAR>精度<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1243,9 +1296,10 @@
     "Description": "可持續快速連續射擊。\n\n建議使用者不要射擊太多次，否則武器很快就會過熱。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1271,9 +1325,10 @@
     "Description": "用實驗性玻璃陣列取代常規的<TECHNOLOGY>光子砲<>光學系統，提升戰鬥性能。\n\n顯著提升<STELLAR>散熱能力<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 75,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1303,9 +1358,10 @@
     "Description": "能對前方目標射擊高強度的大型帶電粒子球，造成巨大傷害。這種砲彈屬非導向式，只要還沒撞到物體，就會持續順著彈道飛行。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1331,9 +1387,10 @@
     "Description": "用吸熱巨型結構包圍整個裝置，取代<TECHNOLOGY>迴旋加速弩砲<>的提示接收器。回收熱量輸出以提升戰鬥效率。\n\n顯著提升<STELLAR>熱性能<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1359,9 +1416,11 @@
     "Description": "能讓太空船達到空間跳躍速度、並於鄰近星系間跳躍的超光速推進器。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1391,9 +1450,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1415,9 +1475,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1443,9 +1504,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1467,9 +1529,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1495,9 +1558,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1527,9 +1591,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1555,9 +1620,10 @@
     "Description": "專家<TECHNOLOGY>發現<>與<TECHNOLOGY>調查<>單元。\n\n能強化標準的<TECHNOLOGY>掃描器<>，將詳細的環境資料直接投影至使用者的護目鏡。允許辨識<STELLAR>遙遠的重要地點<>。\n\n使用護目鏡研究<TRADEABLE>植物<>、<FUEL>動物<>及<TECHNOLOGY>礦物<>時，會產出<COMMODITY>珍貴資料<>。\n\n按住 <IMG>AIM<> 操作。按下 <IMG>ZOOM<> 縮放。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1579,9 +1645,10 @@
     "Description": "工具組的<TECHNOLOGY>個人用地表雷達<>擴充元件。\n\n掃描器能釋放高能量脈衝，找出當前區域的任何<COMMODITY>關鍵維生資源<>。資料會經由強化套裝，直接傳送至使用者的視覺神經系統。\n\n按 <IMG>SCAN<> 啟動當地掃描。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1603,9 +1670,10 @@
     "Description": "一個嵌入工具組<TECHNOLOGY>掃描系統<>的強大橫向處理器，顯著提升裝置的充能速度。\n\n增加<STELLAR>潛在掃描頻率<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1631,9 +1699,10 @@
     "Description": "<TECHNOLOGY>分析護目鏡<>的電路升級，是獨立系統，為掃描器陣列增加即時地形分析。\n\n可用<IMG>SURVEYFILTERL<>/<IMG>SURVEYFILTERR<>開關不同護目鏡模式。利用<STELLAR>調查模式<>即可偵測隱藏地形資源。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 320,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1663,9 +1732,10 @@
     "Description": "先進環境改造裝置。此模組裝載了大量現有的工具組系統，可讓使用者隨心所欲替地區重新塑形。\n\n以<EARTH>金屬元素<>充能。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 50,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1691,9 +1761,10 @@
     "Description": "啟動時，本模組會從<VAL_ON>強化套裝維生系統<>吸取能量使工具組超載，扭曲使用者周遭的磁場並創造出<COMMODITY強大的個人防護罩<>。\n\n雖然這種防護罩足以抵禦雷射槍攻擊，但還是建議使用者在為防護罩充能時，不要使用工具組的其他功能。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1719,9 +1790,10 @@
     "Description": "一款後座力穩定的武器所用的瞄準鏡，以利發揮精準戰鬥。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1747,9 +1819,11 @@
     "Description": "工具組<TECHNOLOGY>採礦光束<>能量來源為<FUEL>碳基元素<>。按 <IMG>ATTACK<> 發射光束。\n\n在工具組內安裝聚焦光學儀器，讓工具組能發射<STELLAR>高能光束<>。光束經過校正，能刺激常見<STELLAR>有機或地形物件<>內的分子，因此可作為高效能採礦裝置使用。\n\n<FUEL>警告<>：摧毀植物、動物或礦物可能會引起巡警注意。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1771,9 +1845,10 @@
     "Description": "以高階活玻璃取代標準<TECHNOLOGY>採礦光束<>光學儀器，讓光束能夠有效處理<STELLAR>大型及罕見資源產地<>。\n\n鏡頭會依據光束波型的微小起伏自動調整，減低分散並<STELLAR>提升裝置的採礦潛能<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 75,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1803,9 +1878,10 @@
     "Description": "極薄的透鏡排列成精心調校的矩陣，讓<TECHNOLOGY>採礦光束<>在原子尺度下亦可精準聚焦。\n\n如此精準度，可大幅提升採礦效率。元素萃取效率更高，工具組採集道具時<STELLAR>產量也更高<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1835,9 +1911,10 @@
     "Description": "<TECHNOLOGY>工具組<>的通用武器附加裝置。按 <IMG>CYCLEWEAPON<> 進入射擊模式，按 <IMG>ATTACK<> 發射武器。\n\n<TECHNOLOGY>雷霆砲<>會重新設定工具組，讓工具組過量充能<EARTH>金屬元素<>，再把這些金屬當成可造成極大傷害的<STELLAR>高速子彈<>射出。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1863,9 +1940,10 @@
     "Description": "在<TECHNOLOGY>雷霆砲<>的槍管中嵌入一個強大的場電離裝置，增加射彈在空中的穩定性。\n\n提高<STELLAR>裝置準確度<>並允許用戶進行更長時間的射擊而不降低戰鬥性能。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1891,9 +1969,10 @@
     "Description": "雷霆砲彈在接觸敵人後會增加物理傷害。\n\n讓使用者的離子化電漿配流系統增加動能。\n\n建造於使用者的工具組道具欄後便會自動啟用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1915,9 +1994,10 @@
     "Description": "<TECHNOLOGY>採礦光束<>的<TECHNOLOGY>重大<>升級。\n\n加入額外的反射元件至採礦雷射光束的主要結晶槍膛，提升核心<STELLAR>光束能量<>同時減少不必要的<STELLAR>熱溢散<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1939,9 +2019,11 @@
     "Description": "高衝擊射彈武器。發射持續將彈殼彈回的電漿彈，直到內部計時器啟動大爆炸。\n\n使用<FUEL>不穩定電漿<>補充。使用時如果不小心，可能會傷害使用者。\n\n按 <IMG>ATTACK<> 啟動。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1971,9 +2053,11 @@
     "Description": "大口徑射彈發射器。能射出電漿砲彈，專為<STELLAR>迅速地表開挖<>而設計。\n \n以<FUEL>不穩定電漿<>充能。警告：開鑿出會爆炸的洞口可能傷及鄰近有機物質。\n \n按下 <IMG>ALTATTACK<> 來發動。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1999,9 +2083,11 @@
     "Description": "<TECHNOLOGY>工具組<>的侵略性武器附加裝置。按 <IMG>CYCLEWEAPON<> 進入射擊模式，按 <IMG>ATTACK<> 發射武器。\n\n火焰標槍可對目標造成立即傷害。\n\n電漿填充程序會創造出一道離子化氣體電弧，進而以超高速度推動射彈。使用者扣下扳機的同時就會觀測到破壞結果。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2031,9 +2117,10 @@
     "Description": "擴大<TECHNOLOGY>火焰標槍<>的燃燒室，允許內部的粒子加速器達到更大的質量和更高的速度。\n\n顯著提升<STELLAR>武器傷害<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2059,9 +2146,10 @@
     "Description": "<TECHNOLOGY>工具組<>的專家<STELLAR>近戰<>武器附加裝置。按 <IMG>CYCLEWEAPON<> 進入射擊模式，按 <IMG>ATTACK<> 發射武器。\n\n<TECHNOLOGY>雙管霰彈槍<>會重新設定工具組，讓工具組加熱並打碎<METAL>金屬元素<>，再以<STELLAR>大範圍掃射<>的方式射出。射程有限，但碎片在短距離之內殺傷力強。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2087,9 +2175,10 @@
     "Description": "先進的自潤滑元件，可減少<TECHNOLOGY>雙管霰彈槍<>的內部摩擦，顯著提升<STELLAR>裝彈時間<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2115,9 +2204,10 @@
     "Description": "<TECHNOLOGY>工具組<>的專家<STELLAR>快速射擊<>武器附加裝置。按 <IMG>CYCLEWEAPON<> 進入射擊模式，按 <IMG>ATTACK<> 發射武器。\n\n<TECHNOLOGY>脈衝槍<>會調整工具組的光學儀器，使其能將填入的<EARTH>金屬元素<>離子化。這些子彈會以高速掃射的方式發射，以<STELLAR>高能電漿波<>轟炸潛在目標。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2143,9 +2233,10 @@
     "Description": "專業的諧波諧振器，允許<TECHNOLOGY>脈衝槍<>分離嵌入的彈藥，從而用更少的材料製造出更多的彈藥。\n\n提升<STELLAR>武器彈匣容量<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2171,9 +2262,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2195,9 +2287,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2219,9 +2312,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2251,9 +2345,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2275,9 +2370,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2307,9 +2403,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2339,9 +2436,10 @@
     "Description": "強化艇通用的小型核融合反應爐心。\n\n需要燃料以運轉。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2367,9 +2465,10 @@
     "Description": "結合軟體微調、壓力調整，並將微重力穴插入重要懸吊元件，來改良強化艇操縱值。\n\n特別經過校正，以提高強化艇的功能，以利<STELLAR>飄移<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2399,9 +2498,10 @@
     "Description": "結合軟體微調、壓力調整，並將微重力穴插入重要懸吊元件，來改良強化艇操縱值。\n\n特別經過校正，以提高強化艇的功能，以利<STELLAR>過急彎<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2431,9 +2531,10 @@
     "Description": "結合軟體微調、壓力調整，並將微重力穴插入重要懸吊元件，來改良強化艇操縱值。\n\n特別經過校正，以提高強化艇的功能，以利<STELLAR>滑行<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2463,9 +2564,10 @@
     "Description": "大型複合精密亞空間雷達。\n\n由於需消耗大量能源，且運作時會產生亞原子不穩定問題，只能安裝於強化艇上。\n按 <IMG>QUICK_MENU<> 來啟動信號推進器。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2491,9 +2593,10 @@
     "Description": "可用以建造更多類型的強化艇訊號強化器。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 320,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2523,9 +2626,10 @@
     "Description": "與引擎搭配的高效能等離子發射器，能提供短程加速。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2555,9 +2659,10 @@
     "Description": "沉重而無法手持操作的採礦雷射，只能安裝於強化艇上。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2587,9 +2692,10 @@
     "Description": "提昇強化艇採礦雷射的力量。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2615,9 +2721,10 @@
     "Description": "這款強大的武器非常耗能，只能裝設於強化艇上射擊。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2643,9 +2750,11 @@
     "Description": "具備熱效力，可防逆溫的反應爐引擎，可驅動巡洋龍前往極深之處。\n\n由<FUEL>熱液燃料電池<>驅動。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2671,9 +2780,10 @@
     "Description": "特別針對<STELLAR>巡洋龍潛艇<>設計的含基座砲口。\n\n高能量武器系統，會把少數液體高度加熱，快速朝目標發射。\n\n主要功能是造成生物體傷害，作為採礦裝備並無明顯作用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2703,9 +2813,10 @@
     "Description": "特別針對<STELLAR>巡洋龍<>設計的含基座雷射系統。\n\n針對目標發射高度濃縮的電漿光束，然後加以點燃。這樣的啟動機制可以在液體媒介中使用高能量光學採礦系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 450,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2735,9 +2846,10 @@
     "Description": "可呈現高度細節的聲納裝置，可以將巡洋龍等級潛艇上的掃描器技術升級為分析護目鏡等級。\n按 <IMG>SCAN<> 啟用高功率聲納。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2767,9 +2879,10 @@
     "Description": "安裝於<STELLAR>巡洋龍潛艇<>的驅動器系統中。\n\n利用深海環境的鹽份差異擷取能量，在燃料緊急情況下可以緩慢為<TECHNOLOGY>洪保德驅動器<>充電。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 350,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2799,9 +2912,10 @@
     "Description": "簡單的鎖鑰裝置，設計用來擋下越界的小偷。裝置遭到破壞，再也打不開。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2823,9 +2937,10 @@
     "Description": "先進的鎖鑰裝置。極性意外導致裝置再也無法開啟。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2847,9 +2962,10 @@
     "Description": "非常先進的鎖鑰裝置。磁鐵供應電路損毀，導致裝置再也打不開。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2871,9 +2987,10 @@
     "Description": "終端站的設計允許人工操作裝置，但毀損後再也無法接收指令。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2899,9 +3016,10 @@
     "Description": "先進控制元件，設計讓裝置可與生物互動。毀損後無法正常運作，不建議在此狀態下連接元件。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2923,9 +3041,10 @@
     "Description": "小型鍋爐，能在險峻氣候中產生熱能。運轉失常導致溢流，毀損鍋爐。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2947,9 +3066,10 @@
     "Description": "極小馬達，設計能為極小零件提供電力。已遭腐蝕，滿是極小的鐵鏽。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2971,9 +3091,10 @@
     "Description": "泵和熱能交換系統，設計用來防止裝置過熱。系統本身已過熱，無法正常運轉。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2999,9 +3120,10 @@
     "Description": "顯示終端站，設計用來與使用者溝通裝置狀態。終端站已損毀，無法通知使用者終端站已損毀。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3023,9 +3145,10 @@
     "Description": "倘若裝置遭不明人士入侵，元件的設計會摧毀重要系統。可惜此元件已出現異常，在修復前，會不斷毀損其他系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3047,9 +3170,10 @@
     "Description": "小型燈光／警笛兩用裝置，其設計會在裝置遭受不明存取時發出警告。警報器毀損導致電路超載，也造成鄰近電路短路。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3071,9 +3195,10 @@
     "Description": "強力彈狂的殼罩。殼罩已破損，導致彈簧射出，毀損裝置內其他零件。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3095,9 +3220,10 @@
     "Description": "控制元件，設計能讓裝置內各處溫度維持穩定。感應元件已毀損，導致元件在不當時機抽風或生熱。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3119,9 +3245,10 @@
     "Description": "強力泵，能確保燃料在任何重力環境下都能送達裝置各處。濾篩遭異物堵塞，導致電力喪失。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3147,9 +3274,10 @@
     "Description": "小型機械接頭，用來修正裝置各處細微的機械錯誤。運轉失常導致接頭將正常部件推入錯誤位置，造成更多損害。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3171,9 +3299,10 @@
     "Description": "繼電器開關，用來協助裝置發電。連接器已腐蝕，螺線管也無法正常運作。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3195,9 +3324,10 @@
     "Description": "小型壓力腔，設計用來製造裝置運轉必需的壓縮氣體。腔體已出現裂縫，導致氣體外洩。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3219,9 +3349,10 @@
     "Description": "裝置內所有部件的控制電路。電路損毀，後果不堪設想。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3243,9 +3374,10 @@
     "Description": "裝置中心發電元件。元件損毀導致目前電力全部送往單一電路，造成嚴重短路。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3271,9 +3403,10 @@
     "Description": "小型元件，設計用來調節裝置內電流。運轉異常導致裝置短路，毀損其他部件。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3295,9 +3428,10 @@
     "Description": "通用網路介面，允許裝置連結至遠端操控中心。介面毀損導致介面將背景輻射視為網路訊號，毀損其他電路的資料。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3323,9 +3457,10 @@
     "Description": "安全面板在運作異常時能封鎖可能造成危險的部件。啟動裝置過度靈敏導致面板發動，使裝置無法運作。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3351,9 +3486,10 @@
     "Description": "交流發電機為裝置發電並調節電力。發電機出現腐蝕，無法正常運轉。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3379,9 +3515,10 @@
     "Description": "小型但高效能的面板，設計用來採集光線，再轉換成電力。不過面板出現裂縫又滿是灰塵，已不堪用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3407,9 +3544,10 @@
     "Description": "裝置的齒輪結構。原本用來維持裝置正常運轉的潤滑劑換成了詭異的綠色黏液，齒輪現在卡住了。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3431,9 +3569,10 @@
     "Description": "神秘鎖鑰上有數個鑰匙孔，這遺物內肯定藏有珍貴的寶藏。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3455,9 +3594,10 @@
     "Description": "寶箱需要<SPECIAL>活珍珠<>方能開啟，活珍珠可於生長在海底的巨大蚌中取得。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3479,9 +3619,10 @@
     "Description": "此<TECHNOLOGY>強化套裝升級模組<>嚴重受損。修復系統以恢復升級功能。\n\n如果修復完成，使用者的任何強化套裝升級都<STELLAR>不需付費<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3503,9 +3644,10 @@
     "Description": "此<TECHNOLOGY>強化套裝升級模組<>嚴重受損。修復系統以恢復升級功能。\n\n如果修復完成，使用者的任何強化套裝升級都<STELLAR>不需付費<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3527,9 +3669,10 @@
     "Description": "此<TECHNOLOGY>強化套裝升級模組<>嚴重受損。修復系統以恢復升級功能。\n\n如果修復完成，使用者的任何強化套裝升級都<STELLAR>不需付費<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3551,9 +3694,10 @@
     "Description": "<STELLAR>星際貨船<>的巨大超空間驅動器的強化工具。\n\n量子共振可以改善超光速旅行時的驅動器強度，使其可以跳躍至先前無法抵達星系的能力。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 4,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3583,9 +3727,10 @@
     "Description": "<STELLAR>星際貨船<>的巨大超空間驅動器的強化工具。\n\n超空間驅動器利用先進融合技術，讓太空船能達到更高的空間跳躍速度與強度。使用者的太空船能跳躍至太空更深的地方，還能抵達更遙遠的行星系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 8,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3615,9 +3760,10 @@
     "Description": "<STELLAR>星際貨船<>的巨大超空間驅動器的強化工具。\n\n未加保護蓋，但仍穩定的融合系統，藉由改裝與使用者的超空間驅動器合而為一。能讓太空船在太空深處跳躍的距離更長。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 12,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3647,9 +3793,10 @@
     "Description": "升級超空間驅動器核心融合磁鐵，試圖接近罕見等級<FUEL>紅色恆星體<>時，能防止迅速分解。\n\n建議使用者透過<VAL_ON>銀河地圖<>存取超空間驅動器系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 4,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3679,9 +3826,10 @@
     "Description": "升級超空間驅動器防護罩強度，試圖接近罕見等級<TRADEABLE>綠色恆星體<>時，能防止現實失常。\n\n建議使用者透過<VAL_ON>銀河地圖<>存取超空間驅動器系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 8,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3711,9 +3859,10 @@
     "Description": "升級超空間驅動器防護矩陣，試圖接近罕見等級<TECHNOLOGY>藍色恆星體<>時，能防止現實失常。\n\n建議使用者透過<VAL_ON>銀河地圖<>存取超空間驅動器系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 12,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3743,9 +3892,10 @@
     "Description": "<TECHNOLOGY>強化套裝噴射背包<>的強大升級項目，能在空中提供有限的<STELLAR>噴射背包補充能量<>。\n\n噴射背包排氣管周圍的高效能壓縮器能善用<STELLAR>持續下降<>的風流，回收該能量來補充噴射背包。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3775,9 +3925,10 @@
     "Description": "強化套裝的小型額外套件，能安裝小型<TECHNOLOGY>可攜式精製機<>，可直接從使用者的強化套裝介面使用。\n\n該裝置需要<FUEL>燃料<>，一次僅限精製一種物質。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 360,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3803,9 +3954,10 @@
     "Description": "<TECHNOLOGY>脈衝引擎<>的極致先進升級項目，能大幅提升<STELLAR>燃料效率<>。\n\n氚補給會重新導向迷你黑洞的循環，形成的微重力波動能用來加速太空船推進力，遠超出傳統的燃燒引擎更強。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3835,9 +3987,10 @@
     "Description": "<TECHNOLOGY>脈衝引擎<>的極致先進升級項目，能大幅提升<STELLAR>跨星球速度<>。\n\n氚共振器會加強脈衝引擎內自然產生的框架轉移效應，增加次光速的上限。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3867,9 +4020,10 @@
     "Description": "<TECHNOLOGY>超空間驅動器<>的重要升級項目，即使傳統系統在<WARNING>太空船戰鬥<>遭到阻擋時還是能進行<STELLAR>瞬間空間跳躍<>。從<STELLAR>快捷選單<>可使用緊急空間跳躍系統。\n\n<FUEL>警告：<>快速緊急行動系統代表使用者無法選擇目的地。未經計算的光速活動會損害裝置，需要<STELLAR>經常維修<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 240,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3899,9 +4053,10 @@
     "Description": "升級<TECHNOLOGY>紅外線刀<>，壓縮內部波形以便在常規射擊模式中增加一次額外的射擊。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3931,9 +4086,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3959,9 +4115,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3987,9 +4144,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4011,9 +4169,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4039,9 +4198,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4071,9 +4231,10 @@
     "Description": "太空船子系統<FUEL>嚴重受損<>。損害修復前，欄位無法用於<STELLAR>儲存<>或<TECHNOLOGY>科技<>。使用<IMG>REPAIR<>開始進行修復。\n\n太空船的核心功能不會受到影響。修復毀損部分後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4103,9 +4264,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4131,9 +4293,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4163,9 +4326,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4191,9 +4355,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4219,9 +4384,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4251,9 +4417,10 @@
     "Description": "工具組系統<FUEL>嚴重受損<>。\n\n損害修復前，欄位無法使用。使用 <IMG>REPAIR<> 開始進行修復。\n\n修復後欄位即可供一般使用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4283,9 +4450,11 @@
     "Description": "纖維狀的金屬附加結構，用來將這個溫暖的重要器官和太空船的核心連結在一起。少了心臟，太空船就會失去功能，剩下沒有生命的空殼。\n\n按住 <IMG>PULSEJUMP<> 向心臟請求脈衝跳躍。\n按住 <IMG>BOOST<> 請求加速。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4311,9 +4480,11 @@
     "Description": "大量神經元經過融合後分布在布滿金屬線的板子上。複雜的電子訊號在表面穿梭，藉此連接太空船的所有系統。\n \n按住 <IMG>THRUST<> 詢問太空船願不願意起飛。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4339,9 +4510,11 @@
     "Description": "直接嵌入反物質心臟的複雜生物金屬主幹，在星際跳躍時會有大量活動。它似乎很享受超光速旅行所需的複雜計算。\n\n透過銀河地圖使用長途導航系統，定期在星系之間跳躍就能讓太空船保持好心情。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4367,9 +4540,11 @@
     "Description": "這是太空船自動防禦系統的小型配件，彷彿像是獨立存在的生物。位於肉體中心的小型口腔渴望<SPECIAL>搏<>。\n\n戰鬥時，尖叫抑制器會控制神經陣列，避免恐懼或疼痛對太空船的其他部位造成創傷。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4395,9 +4570,10 @@
     "Description": "噴射口由大量囊袋和括約肌組成，可以分泌並排出滴狀電漿。和太空船的武器系統融合後，會過熱噴射出高壓電漿。\n\n按下 <IMG>SHIPFIRE<> 詢問太空船願不願意將噴射口瞄準目前的目標。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4423,9 +4599,10 @@
     "Description": "由鏡頭和黏膜組合而成的複雜結構，融合在高能雷射陣列上方。只要和這雙眼睛四目相交，就會被燒成灰燼。\n按下 <IMG>SHIPFIRE<> 請求眼睛看向附近的目標。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4451,9 +4628,10 @@
     "Description": "將標準貨船傳通訊訊號模組化、以啟用<TECHNOLOGY>跨星球物質傳輸裝置<>及資料傳輸。\n\n配備了這種裝置的貨船可以<STELLAR>遠端<>傳送並接收使用者<STELLAR>強化套裝<>的產品與物質。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4483,9 +4661,10 @@
     "Description": "工具組採礦功能的專門額外功能，能將<STELLAR>地形資源產地<>轉變成<STELLAR>液體太陽<>。\n\n強大的雷射陣列能強化當地的太陽輻射，讓附近的礦物快速重組。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4511,9 +4690,11 @@
     "Description": "工具組標準採礦雷射的獨特過載。光束頻率根據發射目標產生的 δ 波經由回饋迴路精準控制。\n\n目標體驗的紀錄會刻在小塊金屬碎片上作為<STELLAR>分裂感質<>。無法保證收集的碎片都能讀取。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4539,9 +4720,10 @@
     "Description": "在所有結構面板加裝昇華冷卻通風管以及高熱質量緩衝器，即便在最嚴峻的火焰風暴中，強化艇駕駛員也不會身處致命的溫度。\n\n在<FUEL>灼熱環境<>下待在強化艇中，能避免任何損害或能量消耗。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4571,9 +4753,10 @@
     "Description": "在強化艇內安裝強力發熱器，即便在最為嚴寒的情況下，也能將機艙溫度維持在適合人居的範圍。\n\n在<TEMPERATURE>嚴寒環境<>下待在強化艇中，能避免任何損害或能量消耗。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4603,9 +4786,10 @@
     "Description": "雙真空空氣過濾系統，能徹底清潔任何進入強化艇機艙的星球大氣。\n\n在<TRADEABLE>有毒環境<>下待在強化艇中，能避免任何損害或能量消耗。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4635,9 +4819,10 @@
     "Description": "將高效能控制物質注入強化艇骨架中，能中和接收到的危險能量波。\n\n在<COMMODITY>輻射環境<>下待在強化艇中，能避免任何損害或能量消耗。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4667,9 +4852,10 @@
     "Description": "伊卡洛斯系統利用了現有的金屬嵌版，並升級為光電表層。此活性塗層會在日照時間生成能量，抵銷燃料耗損。\n\n能在<STELLAR>日間<>開啟<STELLAR>自動引擎充能<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4699,9 +4885,10 @@
     "Description": "可用以建造更多類型的強化艇訊號強化器。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4731,9 +4918,10 @@
     "Description": "精巧的反應器裝置，此引擎是彌諾陶洛斯的核心。安裝於陀螺儀上，以避免快速移動發生燃料意外。\n\n動力來源為傳統<FUEL>碳基燃料<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4763,9 +4951,10 @@
     "Description": "有自動調節功能的潤滑劑分注器，能安裝到彌諾陶洛斯腿部關節，減少摩擦，能節省行動消耗的燃料。\n\n針對彌諾陶洛斯的代達洛斯引擎，大幅<STELLAR>降低燃料消耗<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4795,9 +4984,10 @@
     "Description": "精細的雷達裝置，能將彌諾陶洛斯上的掃描器科技升級到分析護目鏡的等級。\n\n按 <IMG>SCAN<> 啟動雷達掃測，顯示出工具組掃描器無法找出的<STELLAR>額外重要地點<>。\n\n使用快捷選單調整雷達找出<TECHNOLOGY>特定建築<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4827,9 +5017,10 @@
     "Description": "一整組靈敏的強力噴射推進器，能安裝到彌諾陶洛斯尾部。準確使用，彌諾陶洛斯就能快速有力地通過任何地形。\n\n按住 <IMG>JUMP<> 即可啟動。在飛行中能進行有限的控制。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4859,9 +5050,10 @@
     "Description": "專為<STELLAR>彌諾陶洛斯重型強化套裝混合體<>設計的加裝雷射系統。\n\n能執行一般採礦。在戰鬥中並無效用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4891,9 +5083,10 @@
     "Description": "<STELLAR>彌諾陶洛斯重型強化套裝混合體<>的雷射陣列系統升級。\n\n能強化採礦光束輸出的能量，加快採礦速度，還能處理開採難度高的原物料。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4919,9 +5112,10 @@
     "Description": "特別針對<STELLAR>彌諾陶洛斯重型強化套裝混合體<>設計的含基座砲口\n\n主要功能是造成生物體傷害，作為採礦裝備並無明顯作用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4951,9 +5145,10 @@
     "Description": "在<STELLAR>彌諾陶洛斯重型強化套裝混合體<>的雷射陣列新增<STELLAR>地形改造<>功能。\n\n這特殊配件能快速部署高能量地形挖掘機，不會害彌諾陶洛斯精密的關節和伺服卡灰塵。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4983,9 +5178,10 @@
     "Description": "彌諾陶洛斯駕駛員控制機甲時，強力環境中和系統會直接插入駕駛員。此系統的動能由彌諾陶洛斯主引擎裝置提供，無須額外使用者輸入。插入位置可能會出現輕微疼痛。\n\n能使彌諾陶洛斯駕駛員不受<STELLAR>任何惡劣環境<>影響。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5015,9 +5211,10 @@
     "Description": "在<TECHNOLOGY>雷霆砲<>彈藥的四周製造出反物質力場，彈藥碰上並未毀損的表面就會反彈。\n\n能造成<STELLAR>反射<>，彈藥打中目標但未造成損害就會反彈。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5043,9 +5240,10 @@
     "Description": "在<TECHNOLOGY>脈衝槍<>彈藥的四周製造出反物質力場，彈藥碰上並未毀損的表面就會反彈。\n\n能造成<STELLAR>反射<>，彈藥打中目標但未造成損害就會反彈。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5075,9 +5273,10 @@
     "Description": "<TECHNOLOGY>工具組<>的專業<FUEL>高溫<>武器配件。按下 <IMG>CYCLEWEAPON<> 進入火焰模式後按 <IMG>ATTACK<> 發射武器。\n\n<TECHNOLOGY>焚化槍<>能將內部雷射集中打向工具組自然產生的廢氣。點燃後可在近距離範圍內創造極具破壞性的烈火煉獄。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5103,9 +5302,11 @@
     "Description": "高效能太空船適用的自訂<TECHNOLOGY>發射控制<>系統。裝備可大幅提升發射<STELLAR>速度<>和<STELLAR>效率<>的敏感陀螺儀與專用控制電路圖客製化起飛程序。\n \n需使用<TECHNOLOGY>氘製專屬燃料<>補充推進器能源。需有充足燃料才能夠啟動發射程序。\n \n按住<IMG>THRUST<>從星球起飛。按住<IMG>BOOST<>啟動飛行加速功能。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5131,9 +5332,11 @@
     "Description": "經高度調整的常規太空船<TECHNOLOGY>脈衝引擎<>。波陣面使用率已達到極限，可產生<STELLAR>高效率<>與<STELLAR>高響應<>的脈衝事件。\n\n提醒使用者，驅動器需使用<EXOTIC>氚<>充能。在<COMMODITY>近太空的小行星帶<>可以找到大量氚。\n\n按住 <IMG>PULSEJUMP<> 發動脈衝跳躍。按住 <IMG>BOOST<> 啟動飛行加速功能。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5159,9 +5362,11 @@
     "Description": "一款實驗性十足的驅動器，藉扭曲空間跳躍起始時間點的局部幾何結構，增強一般<TECHNOLOGY>超空間驅動器<>科技的威力，其<STELLAR>距離<>和<STELLAR>效率<>遠超過標準驅動器。\n\n建議使用者透過<STELLAR>銀河地圖<>存取超空間驅動器系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5191,9 +5396,11 @@
     "Description": "舉足輕重的太空船安全構件，對外軌道飛行起至關重要的作用。\n\n加壓膠囊這款專門元件，既能確保<STELLAR>可呼吸空氣環境<>，也可預防非傳統式駕駛艙發生災難性爆炸。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5219,9 +5426,10 @@
     "Description": "一項來自異界的科技。柔軟、具膠質感的誘人薄膜，脈動著柔和的緋紅微光。\n\n其溫暖的環抱，讓使用者從<SPECIAL>飢渴觸手<>的胚囊上取下<STELLAR>汙穢之卵<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5251,9 +5459,10 @@
     "Description": "一道<TECHNOLOGY>生物技術防火牆<>，被開發用以防止暴露於文本所造成的認知危險。被包覆在某種濕滑物質中，表面已開始冒泡。\n\n嵌入皮下組織後，能授予<SPECIAL>星球資料庫<>古老禁忌文本冊的管理者存取權限。\n<FUEL>警告<>：請勿解開禁忌文本。暴露在禁忌文本之下，會帶來極大風險。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5283,9 +5492,10 @@
     "Description": "繼電器開關，用來協助裝置發電。連接器已腐蝕，螺線管也無法正常運作。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5311,9 +5521,10 @@
     "Description": "極小馬達，設計能為極小零件提供電力。已遭腐蝕，滿是極小的鐵鏽。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5339,9 +5550,10 @@
     "Description": "泵和熱能交換系統，設計用來防止裝置過熱。系統本身已過熱，無法正常運轉。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5363,9 +5575,10 @@
     "Description": "控制元件，設計能讓裝置內各處溫度維持穩定。感應元件已毀損，導致元件在不當時機抽風或生熱。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5391,9 +5604,10 @@
     "Description": "小型機械接頭，用來修正裝置各處細微的機械錯誤。運轉失常導致接頭將正常部件推入錯誤位置，造成更多損害。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5415,9 +5629,10 @@
     "Description": "小型壓力腔，設計用來製造裝置運轉必需的壓縮氣體。腔體已出現裂縫，導致氣體外洩。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5443,9 +5658,10 @@
     "Description": "裝置內所有部件的控制電路。電路損毀，後果不堪設想。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5467,9 +5683,10 @@
     "Description": "裝置中心發電元件。元件損毀導致目前電力全部送往單一電路，造成嚴重短路。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5495,9 +5712,10 @@
     "Description": "裝置的齒輪結構。原本用來維持裝置正常運轉的潤滑劑換成了詭異的綠色黏液，齒輪現在卡住了。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5523,9 +5741,10 @@
     "Description": "小型但高效能的面板，設計用來採集光線，再轉換成電力。不過面板出現裂縫又滿是灰塵，已不堪用。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5555,9 +5774,10 @@
     "Description": "寶箱需要<TECHNOLOGY>三叉鑰匙<>方能開啟。研究深海中的神祕遺址方可獲得鑰匙。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5579,9 +5799,10 @@
     "Description": "啟動後，此模組會從<VAL_ON>強化套裝維生<>系統中抽取能量，控制使用者周遭的重力力場，折射光線並創造一個<STELLAR>主動迷彩效果<>。\n\n這個<STELLAR>暫時的<>效果可用於逃離非必要的敵對注意。警告：主動迷彩可能會因激烈的強化套裝動作而中止，像是啟動噴射背包或是啟動工具組武器系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5611,9 +5832,11 @@
     "Description": "「非暴力」射彈武器。發射的射彈會發出一道電能癱瘓附近的目標。對生物和電子存在體都有效。\n\n使用<FUEL>不穩定電漿<>充能。\n\n按下 <IMG>ALTATTACK<> 啟動。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5643,9 +5866,10 @@
     "Description": "使<TECHNOLOGY>火焰標槍<>所產生的能量光束超載，在其衝擊點釋放能量電子充能。\n\n將會短暫<STELLAR>暈眩<>和火焰標槍光束交會的有機和無機存在體。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5675,9 +5899,10 @@
     "Description": "<TECHNOLOGY>脈衝槍<>的強大戰鬥升級。此模組在燃燒室中安裝了一系列經過精密校準的燃料噴射噴嘴，用於在其電漿射彈的範圍內造成可控制的燃燒。\n\n讓脈衝槍擊中的目標在短時間內<STELLAR>燃燒<>，造成額外傷害。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5707,9 +5932,11 @@
     "Description": "<TECHNOLOGY>工具組<>的<STELLAR>高能量武器<>配件。中子砲會將大氣粒子充能後，向敵對目標推進，造成<STELLAR>重大區域傷害<>\n\n按下 <IMG>CYCLEWEAPON<> 進入開火模式。按下 <IMG>ATTACK<> 替武器充能，放開後即可釋放<STELLAR>電離粒子群<>。\n\n雖然大砲可瞬間單發射擊，但<TECHNOLOGY>較長的充能時間<>會顯著增加<TECHNOLOGY>釋放粒子的速度和數量<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5739,9 +5966,10 @@
     "Description": "<TECHNOLOGY>中子砲<>的強力升級。額外的共振壓縮機能夠使大幅能量通過大砲的中央核心，顯著增加操作功率。\n\n安裝後，能夠讓充滿能量的中子砲用<STELLAR>更快的速度<>發射<STELLAR>額外射彈<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5771,9 +5999,10 @@
     "Description": "工具組<TECHNOLOGY>武器系統<>的通用升級，讓射彈在與任何適當的電磁力場碰撞時，產生劇烈的共振。\n\n對所有處於<STELLAR>暈眩<>狀態的有機和無機存在體，將會顯著提高其受到的<STELLAR>傷害<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5803,9 +6032,10 @@
     "Description": "一種半自主<TECHNOLOGY>人工駕駛員外掛程式<>，用於彌諾陶洛斯重型混合強化艇。安裝後能讓彌諾陶洛斯<STELLAR>獨自穿越星球<>並進行<STELLAR>戰鬥<>或者<STELLAR>採礦<>活動，以支援其主要操作員。\n\n主要操作員進入駕駛艙後，人工駕駛員將會交付控制權。\n\n飛行程序高度在地化。無法發展出情感連結，也無法自由控制彌諾陶洛斯。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 480,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5835,9 +6065,10 @@
     "Description": "從巡警硬體結構中回收的一系列元件，經過翻新後用於<TECHNOLOGY>彌諾陶洛斯<>重型混合強化艇。\n\n當和<TECHNOLOGY>彌諾陶洛斯雷射<>一起安裝時，可增強彌諾陶洛斯<TECHNOLOGY>採礦雷射<>系統的<STELLAR>威力<>和<STELLAR>效率<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5867,9 +6098,10 @@
     "Description": "從巡警硬體結構中回收的一系列元件，經過翻新後用於<TECHNOLOGY>彌諾陶洛斯<>重型混合強化艇。\n\n替彌諾陶洛斯<STELLAR>武器系統<>提供顯著的<TECHNOLOGY>火力升級<>。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5899,9 +6131,10 @@
     "Description": "從巡警硬體結構中回收的一系列元件，經過翻新後用於<TECHNOLOGY>彌諾陶洛斯<>重型混合強化艇。\n\n安裝後會顯著提升<TECHNOLOGY>引擎和機動性<>系統。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5927,9 +6160,10 @@
     "Description": "從巡警硬體結構中回收的一系列元件，經過翻新後用於<TECHNOLOGY>彌諾陶洛斯<>重型混合強化艇。\n\n可作為半自主的<TECHNOLOGY>人工駕駛員外掛程式<>使用。安裝後能讓彌諾陶洛斯<STELLAR>獨自穿越星球<>並進行<STELLAR>戰鬥<>或者<STELLAR>採礦<>活動，以支援其主要操作員。\n\n主要操作員進入駕駛艙後，人工駕駛員將會交付控制權。",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 480,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,

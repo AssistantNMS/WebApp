@@ -1,16 +1,18 @@
 [
   {
     "Id": "other1",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "Mapa planet",
     "Group": "Dane kartograficzne",
     "Description": "Mapa pobliskiej planety. Zaznaczono na niej współrzędne <TECHNOLOGY>sygnału SOS<>.\n\nWybierz mapę i użyj wytyczania trasy (<IMG>FE_ALT1<>), by przypiąć lokalizację na wyświetlaczu egzokombinezonu.\n\nNowe mapy można zdobyć, wymieniając <COMMODITY>dane nawigacyjne<> z kartografem na stacji kosmicznej.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -21,17 +23,19 @@
   },
   {
     "Id": "other2",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "Mapa planet",
     "Group": "Dane kartograficzne",
     "Description": "Mapa pobliskiego miejsca otrzymana w <STELLAR>Repozytorium informacji lokalnych<> w budynku Archiwum planetarnego.\n\nOznaczono <SPECIAL>starożytne ruiny<>. Rozpoczęcie wykopalisk na tym terenie może zapewnić cenne skarby.\n\nWybierz mapę i użyj wytyczania trasy (<IMG>FE_ALT1<>), by przypiąć lokalizację na wyświetlaczu egzokombinezonu.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/2.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -48,11 +52,14 @@
     "Description": "Ciężki klucz - ten stary kawałek kutego żelaza musi pasować do pobliskiego zamka...",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/other/3.png",
+    "Usages": {
+      "HasUsedToCraft": true,
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -69,11 +76,14 @@
     "Description": "Dziwny klucz w kształcie trójzęba. Lśni światłem ultrafioletowym.\n\nMimo prymitywnego kształtu, systemy skanujące egzokombinezonu ujawniają na zębach ślady pianki nanitowej.",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/other/4.png",
+    "Usages": {
+      "HasUsedToCraft": true,
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -90,11 +100,13 @@
     "Description": "Zakodowane dane nawigacyjne. Ta przenośna jednostka danych zawiera wszelkie ważne dane kartograficzne określonego regionu planetarnego.\n\nMożna wymienić u <TRADEABLE>kartografa<> na pokładzie stacji kosmicznej w zamian za <STELLAR>użyteczne mapy gwiezdne<>.",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "0063B7",
     "CdnUrl": "https://cdn.nmsassistant.com/other/5.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -111,11 +123,13 @@
     "Description": "Zakodowane dane nawigacyjne do wprowadzenia do <TECHNOLOGY>wzmacniacza sygnału<>.\n\nPo właściwym odszyfrowaniu, ujawnią położenie <TECHNOLOGY>kapsuł desantowych<>, zawierających <SPECIAL>ulepszenia egzokombinezonu<>.",
     "BaseValueUnits": 85000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/6.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -132,11 +146,13 @@
     "Description": "Fragment sekwencji deszyfrującej do <TECHNOLOGY>dziennika awaryjnego frachtowca<>.\n\nPełny dostęp do danych może wymagać kilku części sekwencji.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/7.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -153,11 +169,13 @@
     "Description": "Kupon, którego użycie zapewnia pomoc ze strony władz układu w przypadku starcia z piratami.",
     "BaseValueUnits": 10000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/8.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -174,10 +192,11 @@
     "Description": "Wyjątkowy gest.\nMożesz go wybrać z <VAL_ON>szybkiego menu<>, by dzielić się z innymi badaczami chwilami zachwytu i rozmyślań nad istnieniem.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/9.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -194,10 +213,11 @@
     "Description": "Wyjątkowy gest.\nMożesz go wybrać z <VAL_ON>szybkiego menu<>, by dzielić się z innymi badaczami chwilami radości i świętowania.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/10.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -214,10 +234,11 @@
     "Description": "Wyjątkowy gest.\nMożesz go wybrać z <VAL_ON>szybkiego menu<>, by dzielić się z innymi badaczami chwilami rozbawienia.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/11.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -234,10 +255,11 @@
     "Description": "Gest na wyłączność.\nMożna wybrać z <VAL_ON>szybkiego menu<>. Podziwiaj wielkie budowle, faunę, florę lub same gwiazdy i zachwycaj się cudem braku znaczenia jednego małego istnienia wobec całego wszechświata.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/12.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -254,10 +276,11 @@
     "Description": "Gest na wyłączność.\nMożna wybrać z <VAL_ON>szybkiego menu<>, będąc pod wodą, aby zasygnalizować, że „nie ma problemu” innym odkrywcom podwodnym.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/13.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -274,10 +297,11 @@
     "Description": "Gest na wyłączność.\nMożna wybrać z <VAL_ON>szybkiego menu<>. Patrz w horyzont i szukaj kolejnej przygody.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/14.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -294,10 +318,11 @@
     "Description": "Gest na wyłączność.\nMożna wybrać z <VAL_ON>szybkiego menu<>. Przyjmij dramatyczną pozę przed opuszczonym budynkiem, potężną formacją skalną czy ogromnymi drapieżnymi formami życia.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/15.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -314,10 +339,11 @@
     "Description": "Gest na wyłączność.\nMożna wybrać z <VAL_ON>szybkiego menu<>. Padnij na kolana w niedowierzaniu - jakież cuda udało ci się zobaczyć!",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/16.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -334,10 +360,11 @@
     "Description": "Ekskluzywna <STELLAR>zmiana wyglądu egzokombinezonu<>.\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/17.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -354,10 +381,11 @@
     "Description": "Wyjątkowe <STELLAR>nadpisanie wyglądu egzokombinezonu<>.\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/18.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -374,10 +402,11 @@
     "Description": "Wyjątkowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/19.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -394,10 +423,11 @@
     "Description": "Agresywna <STELLAR>personalizacja wyglądu egzokombinezonu<> stworzona na wzór hełmów bojowych starożytnych Geków.\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/20.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -414,10 +444,11 @@
     "Description": "Ta modyfikacja egzokombinezonu stanowi potężną ochronę ramion. Wpina się ją poprzez połączenia wysokonapięciowe do układu szkieletowego użytkownika. Prąd elektryczny przepływa przez ciało użytkownika wedle potrzeby, stymulując mięśnie do zachowania optymalnej postawy obronnej.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/21.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -434,10 +465,11 @@
     "Description": "Wzmocniony, acz stylowy, ten napierśnik do egzokombinezonu zapewnia doskonałą ochronę torsu, nie psując ogólnego wyglądu.",
     "BaseValueUnits": 750.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/22.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -454,10 +486,11 @@
     "Description": "Pancerne rękawice, idealne do dzierżenia broni, wywierania wrażenia na kulturach agresywnych i zbierania szczególnie kolczastych roślin.",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/23.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -474,10 +507,11 @@
     "Description": "Misternie tkane nanowłókna czynią te getry jednocześnie elastycznymi i odpornymi na ostrzał z broni małokalibrowej.\n\nPranie wymaga użycia specjalistycznego sprzętu.",
     "BaseValueUnits": 750.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/24.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -494,10 +528,11 @@
     "Description": "Wzmocniony system ochrony stóp ze zintegrowanymi żyroskopami kompensującymi wahania.\n\nDo tego obuwia zaimplementowano technologie badane przez setki lat.",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/25.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -514,10 +549,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/26.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -534,10 +570,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/27.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -554,10 +591,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/28.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -574,10 +612,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/29.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -594,10 +633,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/30.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -614,10 +654,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/31.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -634,10 +675,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/32.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -654,10 +696,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/33.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -674,10 +717,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/34.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -694,10 +738,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/35.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -714,10 +759,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/36.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -734,10 +780,11 @@
     "Description": "Unikatowe <STELLAR>unieważnienie wyglądu egzokombinezonu<>.\n\nTen częściowo krzemowy, częściowo biologiczny hełm, potrafi wykrywać i odtwarzać ruchy mięśni twarzy noszącego, co wywołuje efekt naturalnej głowy. Jest w pełni zgodny z technologią egzokombinezonu i zapewnia ochronę tradycyjnego hełmu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/37.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -754,10 +801,12 @@
     "Description": "Moduł technologiczny zebrany ze szczątków <STELLAR>odzyskanego statku gwiezdnego<>. Można go też zebrać z <STELLAR>wraków frachtowców<> albo podczas <STELLAR>ekspedycji fregat<>.\n\nMoże zostać użyty, aby rozszerzyć pojemność magazynową statku gwiezdnego u <TECHNOLOGY>dealera statków gwiezdnych<> na stacji kosmicznej.",
     "BaseValueUnits": 125000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": true,
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -774,10 +823,11 @@
     "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w <TECHNOLOGY>terminalu wyposażenia statków gwiezdnych<> na <TRADEABLE>stacji kosmicznej<>.\n\nMożna go jedynie sprzedać w <VAL_ON>terminalu handlowym<>.",
     "BaseValueUnits": 100000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 25.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -794,10 +844,12 @@
     "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w <TECHNOLOGY>terminalu wyposażenia statków gwiezdnych<> na <TRADEABLE>stacji kosmicznej<>.\n\nMożna go jedynie sprzedać w <VAL_ON>terminalu handlowym<>.",
     "BaseValueUnits": 200000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 25.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsEggIngredient": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -814,10 +866,11 @@
     "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w <TECHNOLOGY>terminalu wyposażenia statków gwiezdnych<> na <TRADEABLE>stacji kosmicznej<>.\n\nMożna go jedynie sprzedać w <VAL_ON>terminalu handlowym<>.",
     "BaseValueUnits": 400000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -834,10 +887,11 @@
     "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w <TECHNOLOGY>terminalu wyposażenia statków gwiezdnych<> na <TRADEABLE>stacji kosmicznej<>.\n\nMożna go jedynie sprzedać w <VAL_ON>terminalu handlowym<>.",
     "BaseValueUnits": 600000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 15.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -854,10 +908,11 @@
     "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w <TECHNOLOGY>terminalu wyposażenia statków gwiezdnych<> na <TRADEABLE>stacji kosmicznej<>.\n\nMożna go jedynie sprzedać w <VAL_ON>terminalu handlowym<>.",
     "BaseValueUnits": 800000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 10.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -874,10 +929,11 @@
     "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w <TECHNOLOGY>terminalu wyposażenia statków gwiezdnych<> na <TRADEABLE>stacji kosmicznej<>.\n\nMożna go jedynie sprzedać w <VAL_ON>terminalu handlowym<>.",
     "BaseValueUnits": 3000000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -894,10 +950,11 @@
     "Description": "Cenny element zniszczonego statku gwiezdnego, stworzony w <TECHNOLOGY>terminalu wyposażenia statków gwiezdnych<> na <TRADEABLE>stacji kosmicznej<>.\n\nMożna go jedynie sprzedać w <VAL_ON>terminalu handlowym<>.",
     "BaseValueUnits": 50000000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -914,10 +971,11 @@
     "Description": "Syntetyczny towarzysz z polimeru, przedstawiający Podróżnika Apollo, do postawienia w kokpicie statku.\n\nZainstaluj w <TECHNOLOGY>polu ekwipunku<>, by ozdobić wnętrze swojego statku.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/46.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -939,10 +997,11 @@
     "Description": "Syntetyczny towarzysz z polimeru, przedstawiający Podróżniczkę Artemis, do postawienia w kokpicie statku.\n\nZainstaluj w <TECHNOLOGY>polu ekwipunku<>, by ozdobić wnętrze swojego statku.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/47.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -964,10 +1023,11 @@
     "Description": "Syntetyczna ozdoba z polimeru, przedstawiająca interfejs Atlasa, do postawienia w kokpicie statku.\n\nZainstaluj w <TECHNOLOGY>polu ekwipunku<>, by ozdobić wnętrze swojego statku.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/48.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -989,10 +1049,11 @@
     "Description": "Syntetyczny towarzysz z polimeru, przedstawiający istotę kapłańską Nadę, do postawienia w kokpicie statku.\n\nZainstaluj w <TECHNOLOGY>polu ekwipunku<>, by ozdobić wnętrze swojego statku.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/49.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1014,10 +1075,11 @@
     "Description": "Syntetyczny towarzysz z polimeru, przedstawiający Podróżnika -null-, do postawienia w kokpicie statku.\n\nZainstaluj w <TECHNOLOGY>polu ekwipunku<>, by ozdobić wnętrze swojego statku.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/50.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1039,10 +1101,11 @@
     "Description": "Syntetyczny towarzysz z polimeru, przedstawiający specjalistę Polo, do postawienia w kokpicie statku.\n\nZainstaluj w <TECHNOLOGY>polu ekwipunku<>, by ozdobić wnętrze swojego statku.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/51.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1064,10 +1127,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający lojalność wobec <STELLAR>Obywatelskiej Ligi Naukowej<>.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1084,10 +1148,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, przywołujący senne wspomnienia o odległych satelitach.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1104,10 +1169,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, akceptujący czyjąś anormalną egzystencję.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1124,10 +1190,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający przyjaźń ze specjalistą Polo.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1144,10 +1211,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający przyjaźń z istotą kapłańską Nadą.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1164,10 +1232,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający przyjaźń z iteracją Hesperus.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1184,10 +1253,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający przyjaźń z iteracją Ariadne.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1204,10 +1274,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, który woli podróżować samotnie.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1224,10 +1295,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, kontemplujący deterministyczną naturę egzystencji.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1244,10 +1316,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, kontemplujący jego miejsce we wszechświecie.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1264,10 +1337,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, kontemplujący jego miejsce we wszechświecie.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1284,10 +1358,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, z przymrużeniem oka oznaczający stopień sławy międzygalaktycznej.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1304,10 +1379,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, który woli podróżować samotnie.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1324,10 +1400,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający przyjaźń ze specjalistą Polo.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1344,10 +1421,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający przyjaźń z istotą kapłańską Nadą.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1364,10 +1442,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający przyjaźń z iteracją Ariadne.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1384,10 +1463,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający przyjaźń z iteracją Gemini.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1404,10 +1484,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający przyjaźń z iteracją Merkury.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1424,10 +1505,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający przyjaźń z iteracją Tethys.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1444,10 +1526,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, oznaczający przyjaźń z iteracją Hesperus.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1464,10 +1547,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, kontemplujący deterministyczną naturę egzystencji.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1484,10 +1568,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, kontemplujący jego miejsce we wszechświecie.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1504,10 +1589,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, podkreślający jego niezależność we wszechświecie.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1524,10 +1610,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, który akceptuje desygnację vy'keeńską.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1544,10 +1631,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, który jest na tyle odważny, aby zwiedzić mroczne zakątki wszechświata.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1564,10 +1652,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, który jest na tyle odważny, aby zwiedzić mroczne zakątki wszechświata.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1584,10 +1673,11 @@
     "Description": "Naturalnie zmień swój wygląd poprzez zastosowanie żądnego mięsa pasożyta. Ta żywa istota częściowo łączy się z pniem mózgowym gospodarza, dokonując symbiozy.\n\nOstrożnie zmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1604,10 +1694,11 @@
     "Description": "Uchwycona esencja głębinowego okropieństwa, do zastosowań naukowych i dekoracyjnych.\n\nUtrzymujące ją pole siłowe jest najwyższej jakości. Towarzysz nie może uciec. Towarzysz nie ucieknie. Uciekać.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1633,10 +1724,11 @@
     "Description": "Ten gatunek grzyba znany jest z gęstej sieci kapilar i właściwości bioluminescencyjnych. Zamknięty obwód reakcji chemicznych skutkuje nocnym świeceniem muchomora\n\nZapewnia możliwość przystrojenia bazy.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1658,10 +1750,11 @@
     "Description": "Ten starożytny pieniek został zebrany z kolonii drzew i datowany jest na setkę tysiącleci. Jego kora uwalnia przyjemny, mszysty zapach.\n\nZapewnia możliwość przystrojenia bazy.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1683,10 +1776,11 @@
     "Description": "Ta prosta błotna chata została zaprojektowana na podstawie tajemniczego obiektu odkrytego w mgłach planety Saxm A13. Podobne obiekty znajdowano w całym wszechświecie i nie ma udowodnionej hipotezy odnośnie ich pochodzenia.\n\nZapewnia możliwość przystrojenia bazy.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1708,10 +1802,11 @@
     "Description": "Białkowa formacja nieznanego pochodzenia, odtworzona na pokładzie kosmicznej anomalii. Jej szkieletowa struktura często zawiera komory powietrzne, przez co temperatura w środku klatki może być nieco wyższa lub niższa.\n\nZapewnia możliwość przystrojenia bazy.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1733,10 +1828,11 @@
     "Description": "Niezwykła forma życia, zdominowana przez koło fotoforowych gruczołów. Trudno ją sklasyfikować jednoznacznie jako florę lub faunę. Grube kolumny cierni chronią smakowite gruczoły przed drapieżnikami.\n\nZapewnia możliwość przystrojenia bazy.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1758,10 +1854,11 @@
     "Description": "Podobne do oczu wypustki tego dziwacznego organizmu są zdolne do przetwarzania światła i wykonywania prostych obliczeń, choć nie wiadomo, co tak naprawdę obserwują...\n\nZapewnia możliwość przystrojenia bazy.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1783,10 +1880,11 @@
     "Description": "Podobna do skorupy jaja, szepcze delikatną pieśń, jakby była połączona z odległym chórem...\n\nZapewnia możliwość przystrojenia bazy.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1808,10 +1906,11 @@
     "Description": "Szerokie, płatowe liście tego drzewa doskonale przeprowadzają fotosyntezę, a dzikie okazy dorastają do ogromnych wysokości. Odmiana domowa jest na tyle mała, że można ją hodować we wnętrzach.\n\nZapewnia możliwość przystrojenia bazy.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1833,10 +1932,11 @@
     "Description": "Ten obiekt wegetatywny zawiera mnóstwo przeciwutleniaczy, choć gruba warstwa łusek uniemożliwia efektywną uprawę.\n\nZapewnia możliwość przystrojenia bazy.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1858,10 +1958,11 @@
     "Description": "Wykorzystaj tę wyjątkową metodę nadania <STELLAR>osobistego szlifu<> i wesprzyj nomadyczne odkrywcze podróże kosmiczne.\n\nUmieść ten sztandar w swoim profilu, używając <TECHNOLOGY>modyfikatora wyglądu<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1878,10 +1979,11 @@
     "Description": "Wykorzystaj tę wyjątkową metodę nadania <STELLAR>osobistego szlifu<> i doceń społeczność, przygody i odkrycia.\n\nUmieść ten sztandar w swoim profilu, używając <TECHNOLOGY>modyfikatora wyglądu<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1898,10 +2000,11 @@
     "Description": "Witamy w Café! Wykorzystaj tę wyjątkową metodę nadania identyfikacji <STELLAR>osobistego szlifu<> w duchu znajomych, zabawy i dobrych wibracji.\n\nUmieść ten sztandar w swoim profilu, używając <TECHNOLOGY>modyfikatora wyglądu<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1918,10 +2021,11 @@
     "Description": "Wykorzystaj tę wyjątkową metodę nadania <STELLAR>osobistego szlifu<> i wesprzyj zjednoczony wszechświat. Dokumentuj, pomagaj, twórz, komunikuj się.\n\nUmieść ten sztandar w swoim profilu, używając <TECHNOLOGY>modyfikatora wyglądu<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1938,9 +2042,10 @@
     "Description": "Żywe, płodne jajo, %READY%\n\n%MODIFIED%.\n\nSkany wskazują, że istota w środku ma potencjał genetyczny na to, by być: %SIZE% i: %TRAIT%.",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "311A49",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1957,10 +2062,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nPrzedstawia Sojusz Podróżników Galaktycznych oraz zalety eksploracji nomadycznej.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1982,10 +2088,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nPrzedstawia Centrum amino oraz idee społeczności, poszukiwania przygód i odkryć.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2007,10 +2114,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nPrzedstawia Café 42 oraz ducha przyjaciół, zabawy i pozytywnych wibracji. Witamy w kawiarni!",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2032,10 +2140,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nPrzedstawia Zjednoczoną Federację Podróżników. Dokumentuj, pomagaj, twórz, porozumiewaj się.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2057,10 +2166,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nPrzedstawia Cesarstwo Qitanian oraz ducha dobroczynności, uprzejmości i rozsądku.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2082,10 +2192,11 @@
     "Description": "Luksusowy fajerwerk z potrójnym wystrzałem symfonii kolorów. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2102,10 +2213,11 @@
     "Description": "Luksusowy fajerwerk wystrzeliwujący skrzące się fragmenty indu i kadmu. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2122,10 +2234,11 @@
     "Description": "Luksusowy fajerwerk. Po aktywacji, ten cud pirotechniki obraca się i wiruje w postaci hipnotyzującej spirali. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2142,10 +2255,11 @@
     "Description": "Wykorzystaj tę wyjątkową metodę nadania identyfikacji <STELLAR>osobistego szlifu<> w duchu dobroczynności, uczynności i rozsądku.\n\nUmieść ten sztandar w swoim profilu, używając <TECHNOLOGY>modyfikatora wyglądu<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2162,10 +2276,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, „egzotyczny”, z dumą podkreślający jego status outsidera.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2182,10 +2297,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, „wulkaniczny”, podkreślający jego wybuchowe skłonności, dosłownie i w przenośni.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2202,10 +2318,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, „miłośnik bagien”, podkreślający, że znajduje on radość w miejscach, których inni unikają.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2222,10 +2339,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, „szesnasty”, podkreślający jego wiedzę o najgłębszych tajemnicach wszechświata.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2242,10 +2360,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, który wskazuje na zrozumienie tych, którzy żyli we wszechświecie przed nami.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2262,10 +2381,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, „fotograf”, podkreślający tych, którzy lubią przepięknie dokumentować swoje wyprawy po wszechświecie.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2282,10 +2402,11 @@
     "Description": "Wyjątkowe <STELLAR>rozszerzenie wyglądu towarzysza<>. Ten przegubowy laser wydobywczy jest izolowany lekkim żelem, co zapewnia wyjątkowy komfort dla towarzyszy pomagających przy wydobyciu zasobów.\n\nZyskaj zaufanie dzikich zwierząt, aby przysposobić towarzyszy. Wejdź w interakcje z towarzyszami, aby zmodyfikować ich wygląd.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2302,10 +2423,11 @@
     "Description": "Wyjątkowe <STELLAR>rozszerzenie wyglądu towarzysza<>. To niewielkie urządzenie generuje szczegółowe raporty analityczne na temat przyzwyczajeń stworzeń jeśli chodzi o ich przemieszczanie się. Dzięki temu odkrywcy mogą zajrzeć do tajemniczego świata swoich zwierzęcych towarzyszy.\n\nZyskaj zaufanie dzikich zwierząt, aby przysposobić towarzyszy. Wejdź w interakcje z towarzyszami, aby zmodyfikować ich wygląd.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2322,10 +2444,11 @@
     "Description": "Wyjątkowe <STELLAR>rozszerzenie wyglądu towarzysza<>. Ten laser podwójnego przeznaczenia odpowiada na biologiczne sygnały noszącego i zapewnia odpowiedni poziom oświetlenia i ciepła. Do tego delikatnie pulsuje, aby złagodzić nerwy.\n\nZyskaj zaufanie dzikich zwierząt, aby przysposobić towarzyszy. Wejdź w interakcje z towarzyszami, aby zmodyfikować ich wygląd.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2342,10 +2465,12 @@
     "Description": "Zaawansowany moduł technologii przetrwania, który umożliwia zwiększenie <STELLAR>pojemności egzokombinezonu<>.\n\nJest wypełniony nanoekspanderami, które tworzą w egzokombinezonie stabilne subwarpowe strefy próżniowe, tym samym zwiększając <STELLAR>miejsce na ekwipunek<>. Zastosuj tę modyfikację, używając terminalu ulepszeń egzokombinezonu na <STELLAR>stacji kosmicznej<>.",
     "BaseValueUnits": 155000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": true,
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2362,10 +2487,11 @@
     "Description": "Unikatowa <STELLAR>personalizacja wyglądu egzokombinezonu<>.\n\nTa opływowa i lekka jednostka plecakowa stworzona została według eleganckiego projektu o jednej dyszy. Ta unikatowa personalizacja wyglądu egzokombinezonu upamiętnia inauguracyjną <STELLAR>ekspedycję<>, „Pionierzy”.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3500.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2382,10 +2508,11 @@
     "Description": "Agresywna <STELLAR>personalizacja wyglądu egzokombinezonu<> stworzona na wzór hełmów bojowych starożytnych Geków. Ta edycja specjalna została odlana z wytrzymałego i cennego stopu.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2402,10 +2529,11 @@
     "Description": "Wyjątkowa złota edycja kultowego <STELLAR>statku gwiezdnego Alpha Vector<> upamiętniająca inauguracyjną <STELLAR>ekspedycję<>, „Pionierzy”.\n\nTen doskonale manewrujący statek kosmiczny zbudowany jest z wytrzymałego i cennego stopu, a kadłub został powleczony twardą powłoką włóknistej izolacji, aby przetrwać szereg trudnych wypraw kosmicznych.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2422,10 +2550,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, upamiętniający zakończenie inauguracyjnej <STELLAR>ekspedycji<>, „Pionierzy”.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2442,10 +2571,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nNaklejka ta zawiera złotą edycję kultowego statku gwiezdnego Alpha Vector i upamiętnia zakończenie inauguracyjnej <STELLAR>ekspedycji<>, „Pionierzy”.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2467,10 +2597,11 @@
     "Description": "Wykorzystaj tę wyjątkową metodę nadania identyfikacji <STELLAR>osobistego szlifu<>, która ma uczcić inauguracyjną <STELLAR>ekspedycję<>, „Pionierzy”.\nUmieść ten sztandar w swoim profilu, używając <TECHNOLOGY>modyfikatora wyglądu<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2487,10 +2618,11 @@
     "Description": "Pakiet trzech różnorodnych, luksusowych fajerwerków. Te niesamowite elementy pirotechniczne zapalają na niebie wizerunek interfejsu Atlas w wybuchach <TECHNOLOGY>indu<>, <COMMODITY>złota<> i <FUEL>kadmu<>. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2507,10 +2639,11 @@
     "Description": "Niesamowity pirotechniczny pokaz interfejsu Atlasa, w wybuchach <TECHNOLOGY>indu<> i <FUEL>kadmu<>. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2527,10 +2660,11 @@
     "Description": "Niesamowity pirotechniczny pokaz interfejsu Atlasa, w wybuchach <COMMODITY>złota<> i <TECHNOLOGY>indu<>. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2547,10 +2681,11 @@
     "Description": "Niesamowity pirotechniczny pokaz interfejsu Atlasa, w wybuchach <FUEL>kadmu<> i <COMMODITY>złota<>. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2567,10 +2702,11 @@
     "Description": "Wyjątkowa ozdoba do wybudowania w bazie.\nTa skomplikowana, <STELLAR>wyszywana złotem flaga<> zawiera wizerunek kultowego statku gwiezdnego Alpha Vector. Umieść w bazie mieszkalnej, aby upamiętnić ukończenie inauguracyjnej <STELLAR>ekspedycji<>, „Pionierzy”.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2592,10 +2728,11 @@
     "Description": "Wyjątkowy <STELLAR>statek gwiezdny<> wyposażony w ulepszony <TECHNOLOGY>hipernapęd<> ułatwiający eksplorowanie galaktyki.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na niego obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2612,10 +2749,11 @@
     "Description": "Wyjątkowy <STELLAR>statek gwiezdny<> wyposażony w ulepszony <TECHNOLOGY>infra-nóż<> umożliwiający skuteczniejsze niszczenie wrogich statków.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na niego obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2632,10 +2770,11 @@
     "Description": "Wyjątkowy <STELLAR>statek gwiezdny<> wyposażony w ulepszoną <TECHNOLOGY>strumienicę pozytronów<> umożliwiającą skuteczniejsze niszczenie wrogich statków.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na niego obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2652,10 +2791,11 @@
     "Description": "Wyjątkowy <STELLAR>statek gwiezdny<> z przestrzenną ładownią, wyposażony w ulepszone <TECHNOLOGY>tarcze odbijające<> i <TECHNOLOGY>katapultę cyklotronową<>.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na niego obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2672,10 +2812,11 @@
     "Description": "Wyjątkowy <STELLAR>statek gwiezdny<> wyposażony w potężny <TECHNOLOGY>promień fazowy<> i ulepszony <TECHNOLOGY>silnik pulsacyjny<> ułatwiający eksplorację kosmosu. Dodatkowo <TECHNOLOGY>skaner gospodarczy<> pozwala zdalnie pozyskiwać szczegółowe dane na temat gospodarki danego układu, co przydaje się podczas wytyczania galaktycznych szlaków handlowych.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na niego obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2692,10 +2833,11 @@
     "Description": "Wyjątkowe <STELLAR>multinarzędzie<>. Ten karabin jest wyposażony w śmiercionośny <TECHNOLOGY>oszczep rozbłysku<> i stabilizujący odrzut <TECHNOLOGY>celownik bojowy<>.\n\n<STELLAR>Weź<> to multinarzędzie i dodaj je do swojej kolekcji albo <STELLAR>wymień<> na nie obecne multinarzędzie. Wymieniaj aktywne multinarzędzia poprzez sekcję Użytkowe w szybkim menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2712,10 +2854,11 @@
     "Description": "Wyjątkowe <STELLAR>multinarzędzie<>. Ten pistolet jest wyposażony w ofensywny <TECHNOLOGY>błyskacz<> i defensywne <TECHNOLOGY>osobiste pole siłowe<>.\n\n<STELLAR>Weź<> to multinarzędzie i dodaj je do swojej kolekcji albo <STELLAR>wymień<> na nie obecne multinarzędzie. Wymieniaj aktywne multinarzędzia poprzez sekcję Użytkowe w szybkim menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2732,10 +2875,11 @@
     "Description": "Wyjątkowe <STELLAR>multinarzędzie<>. To specjalistyczne narzędzie jest wyposażone w <TECHNOLOGY>zaawansowany laser wydobywczy<> i potężne ulepszenie <TECHNOLOGY>świdra optycznego<>.\n\n<STELLAR>Weź<> to multinarzędzie i dodaj je do swojej kolekcji albo <STELLAR>wymień<> na nie obecne multinarzędzie. Wymieniaj aktywne multinarzędzia poprzez sekcję Użytkowe w szybkim menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2752,10 +2896,11 @@
     "Description": "Wyjątkowe <STELLAR>multinarzędzie<>. To specjalistyczne narzędzie jest wyposażone w kilka ulepszeń <TECHNOLOGY>skanera<>, które zwiększają skuteczność i dochodowość skanowania odkryć na planetach.\n\n<STELLAR>Weź<> to multinarzędzie i dodaj je do swojej kolekcji albo <STELLAR>wymień<> na nie obecne multinarzędzie. Wymieniaj aktywne multinarzędzia poprzez sekcję Użytkowe w szybkim menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2772,10 +2917,11 @@
     "Description": "Wyjątkowe <STELLAR>multinarzędzie<>. Ten karabin jest wyposażony w śmiercionośny <TECHNOLOGY>PM pulsacyjny<> i <TECHNOLOGY>wyrzutnię plazmy<> strzelającą wybuchowymi pociskami.\n\n<STELLAR>Weź<> to multinarzędzie i dodaj je do swojej kolekcji albo <STELLAR>wymień<> na nie obecne multinarzędzie. Wymieniaj aktywne multinarzędzia poprzez sekcję Użytkowe w szybkim menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2792,10 +2938,11 @@
     "Description": "Pakiet ulepszeń kompatybilnych ze wszystkimi modelami <STELLAR>osobistego multinarzędzia<>.\n\nZawiera <TECHNOLOGY>pole rozbudowy multinarzędzia<>, które można wpiąć w multinarzędzie, korzystając ze <STELLAR>stojaka ulepszeń multinarzędzia<> na stacji kosmicznej. Oprócz tego zawiera unikatowy <TECHNOLOGY>moduł ulepszający<>, który można natychmiast zainstalować ręcznie, aby wzmocnić istniejącą technologię multinarzędzia.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2812,10 +2959,11 @@
     "Description": "Pakiet trzech luksusowych fajerwerków. Zawiera dużo <FUEL>kadmu<>, <TRADEABLE>emerylu<> i <TECHNOLOGY>indu<>. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2832,9 +2980,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2851,9 +2998,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2870,9 +3016,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2889,9 +3034,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2908,9 +3052,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2927,9 +3070,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2946,9 +3088,10 @@
     "Description": "Wynik badań Nady nad nietypowymi wzorami zaobserwowanymi w historii <TRANS_TRA>Geków<>, <TRANS_EXP>Korvaxów<> i <TRANS_WAR>Vy'keenów<>.\n\nOgniwo transmituje <STELLAR>echo sygnału<> dostrojone do zmian <SPECIAL>strumieni historiograficznych<> oznaczonych przez współpracujących z Nadą Podróżników.\n\nSpecjalista Polo nie kwapi się do oceny skutków transmisji.",
     "BaseValueUnits": 80.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2965,9 +3108,10 @@
     "Description": "Nada wykryła nowy wzór w historii <TRANS_TRA>Geków<>, <TRANS_EXP>Korvaxów<> i <TRANS_WAR>Vy'keenów<>.\n\nDozymetr dokonuje pomiaru ekspozycji na <SPECIAL>strumienie historiograficzne<> w pobliżu miejsc ukrycia kluczowych artefaktów. Rejestry nietypowych zmian historii pozwolą Nadzie namierzyć sygnał.\n\nPomóż Nadzie i Polo w ich badaniach, korzystając z tego urządzenia, aby <STELLAR>przesyłać im dane historyczne<> z miejsc ukrycia artefaktów obcych.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2984,10 +3128,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<> upamiętniający zakończenie <STELLAR>ekspedycji<> „Przyczółek” i pomyślne namierzenie <SPECIAL>zbuntowanego echa historycznego<>.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3004,10 +3149,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<> upamiętniający zakończenie <STELLAR>ekspedycji<> „Przyczółek” i pomyślne namierzenie <SPECIAL>zbuntowanego echa historycznego<>.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3024,10 +3170,11 @@
     "Description": "<TECHNOLOGY>SSV Normandia SR1<> to jedyna w swoim rodzaju fregata „dalekiego rozpoznania”. Ten legendarny statek jest symbolem pokoju oraz międzyrasowej współpracy i upamiętnia ukończenie <STELLAR>ekspedycji<> „Przyczółek”.\n\nZwerbuj tę fregatę, by dodać ją do swojej floty. Zarządzaj flotą fregat z <TECHNOLOGY>sali dowodzenia flotą<> na swoim frachtowcu. Skonsultuj się z <TECHNOLOGY>nawigatorem<>, by wysłać fregaty na dochodowe ekspedycje.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3044,8 +3191,6 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 0.0,
     "Colour": "2C7C9F",
     "BlueprintCost": 0,
@@ -3064,10 +3209,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<> upamiętniający zakończenie <STELLAR>ekspedycji<> „Kartografowie” i pomyślne udokumentowanie planety stanowiącej cel ekspedycji i ucieczkę z niej.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3084,10 +3230,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\n\nTa naklejka upamiętnia twoje pomyślne udokumentowanie planety stanowiącej cel ekspedycji i ucieczkę z niej.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3109,10 +3256,11 @@
     "Description": "Wykorzystaj ten wyjątkowy przedmiot, by nadać swojemu profilowi <STELLAR>osobisty sznyt<> i upamiętnić zakończenie <STELLAR>ekspedycji<> „Kartografowie” i pomyślne udokumentowanie planety stanowiącej cel ekspedycji i ucieczkę z niej.\n\nUmieść ten sztandar w swoim profilu, używając <TECHNOLOGY>modyfikatora wyglądu<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3129,10 +3277,11 @@
     "Description": "Ekskluzywna <STELLAR>zmiana wyglądu egzokombinezonu<>.\n\nSpecjalny olej dodany do wydechu plecaka odrzutowego tworzy strumień lśniących bąbelków.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3149,10 +3298,11 @@
     "Description": "Żywe, płodne jajo, <TRADEABLE>gotowe do wyklucia!<>\n\nPod ochronną membraną jaja wije się cień.\n\nSkany wskazują, że istota w środku ma potencjał genetyczny na to, by być: <FUEL>koszmarna<> i <FUEL>pożerająca duszę<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3169,10 +3319,11 @@
     "Description": "Wyjątkowy <STELLAR>statek gwiezdny<> wyposażony w potężny <TECHNOLOGY>promień fazowy<> i ulepszony <TECHNOLOGY>silnik pulsacyjny<> ułatwiający eksplorację kosmosu. Dodatkowo <TECHNOLOGY>odbiornik teleportacji<> pozwala na łatwe teleportowanie zebranych produktów i materiałów na <STELLAR>dalekie odległości<>.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na niego obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3189,10 +3340,11 @@
     "Description": "Wyjątkowy <STELLAR>statek gwiezdny<> wyposażony w ulepszony <TECHNOLOGY>hipernapęd<> ułatwiający eksplorowanie galaktyki.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na niego obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3209,10 +3361,11 @@
     "Description": "Wyjątkowy <STELLAR>statek gwiezdny<> wyposażony w ulepszony <TECHNOLOGY>infra-nóż<> umożliwiający skuteczniejsze niszczenie wrogich statków.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na niego obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3229,10 +3382,11 @@
     "Description": "Wyjątkowy <STELLAR>statek gwiezdny<> z przestrzenną ładownią, wyposażony w ulepszone <TECHNOLOGY>tarcze odbijające<> i <TECHNOLOGY>katapultę cyklotronową<>.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na niego obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3249,10 +3403,11 @@
     "Description": "Wyjątkowy <STELLAR>statek gwiezdny<> wyposażony w ulepszoną <TECHNOLOGY>strumienicę pozytronów<> umożliwiającą skuteczniejsze niszczenie wrogich statków.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na niego obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3269,10 +3424,11 @@
     "Description": "Żywe, płodne jajo, <TRADEABLE>gotowe do wyklucia!<>\n\nOpancerzone stworzenie wewnątrz – po części kryształowe, po części organiczne – delikatnie postukuje w skorupę.\n\nSkany wskazują, że istota w środku ma potencjał genetyczny na to, by być wyjątkowo <TRADEABLE>oddana<> ochronie swojego właściciela.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3289,10 +3445,11 @@
     "Description": "Żywe, płodne jajo, <TRADEABLE>gotowe do wyklucia!<>\n\nZgrabne stworzenie wewnątrz delikatnie uderza skrzydłami w skorupę, oczekując z niecierpliwością na wyklucie.\n\nSkany wskazują, że istota w środku ma potencjał genetyczny na to, by być wyjątkowo <STELLAR>gorliwym<> towarzyszem, wyszukującym zasoby z dużych wysokości.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3309,10 +3466,11 @@
     "Description": "Żywe, płodne jajo, <TRADEABLE>gotowe do wyklucia!<>\n\nŚrodek ciężkości stale się zmienia, jakby istota wewnątrz ciągle energicznie się poruszała.\n\nSkany wskazują, że osobnik w środku ma potencjał genetyczny na to, by być towarzyszem <TRADEABLE>łagodnym<>, uspokajającym się podczas delikatnej zabawy.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3329,10 +3487,11 @@
     "Description": "Żywe, płodne jajo, <TRADEABLE>gotowe do wyklucia!<>\n\nŁuskowaty gad drapie pazurami skorupę od wewnątrz, by udowodnić swoją dzikość.\n\nSkany wskazują, że istota w środku ma potencjał genetyczny na to, by być <FUEL>dzikim<> łowcą, pokonującym ofiary i wrogie stworzenia za pomocą potężnych szczęk.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3349,10 +3508,11 @@
     "Description": "Żywe, płodne jajo, <TRADEABLE>gotowe do wyklucia!<>\n\nInsekt wewnątrz stuka wielkimi rogami, wyczekując na wyklucie i szansę na eksplorację kosmosu.\n\nSkany wskazują, że istota w środku ma potencjał genetyczny na to, by być <TECHNOLOGY>żądna przygód<>, chętna do odkrywania planet poza jej rodzimą planetą pokrytą mokradłami.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3369,10 +3529,11 @@
     "Description": "Pakiet trzech luksusowych fajerwerków. Zawiera dużo <FUEL>kadmu<>, <TRADEABLE>emerylu<> i <TECHNOLOGY>indu<>. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3389,10 +3550,11 @@
     "Description": "Pakiet trzech luksusowych fajerwerków. Zawiera dużo <FUEL>kadmu<>, <TRADEABLE>emerylu<> i <TECHNOLOGY>indu<>. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3409,10 +3571,11 @@
     "Description": "Pakiet trzech luksusowych fajerwerków. Zawiera dużo <FUEL>kadmu<>, <TRADEABLE>emerylu<> i <TECHNOLOGY>indu<>. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3429,10 +3592,11 @@
     "Description": "Pakiet trzech luksusowych fajerwerków. Zawiera dużo <FUEL>kadmu<>, <TRADEABLE>emerylu<> i <TECHNOLOGY>indu<>. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3449,10 +3613,11 @@
     "Description": "Pakiet trzech luksusowych fajerwerków. Zawiera dużo <FUEL>kadmu<>, <TRADEABLE>emerylu<> i <TECHNOLOGY>indu<>. Zapal, aby utworzyć błyszczące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3469,10 +3634,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nPrzedstawia odkrywcę spoglądającego w gwiazdy na błękitnym niebie.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3494,10 +3660,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nPrzedstawia gigantycznego obcego kroczącego wśród rdzawych krajobrazów.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3519,10 +3686,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nPrzedstawia statek gwiezdny oczekujący na powrót swojego pilota.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3544,10 +3712,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nPrzedstawia parę statków gwiezdnych zmierzających w stronę galaktycznego rdzenia.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3569,10 +3738,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nPrzedstawia legendarny, nawiedzony sprzęt do nurkowania.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3594,10 +3764,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\nPrzedstawia gwiezdny statek przemykający obok anomalii, przy której mieszkali Nada i Polo.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3619,10 +3790,11 @@
     "Description": "Ten rozłożony żagiel oparto na projektach starożytnych morskich jednostek handlowych Geków. Świetna marynistyczna dekoracja domu.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3644,10 +3816,11 @@
     "Description": "Te wyostrzone żagle oparto na projektach starożytnych morskich jednostek handlowych Geków. Świetna marynistyczna dekoracja domu.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3669,10 +3842,11 @@
     "Description": "Te asymetryczne żagle oparto na projektach starożytnych morskich jednostek handlowych Geków. Świetna marynistyczna dekoracja domu.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3694,10 +3868,11 @@
     "Description": "Ten udrapowany żagiel oparto na projektach starożytnych morskich jednostek handlowych Geków. Świetna marynistyczna dekoracja domu.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3719,10 +3894,11 @@
     "Description": "Ekskluzywna, samoprzylepna, niegnięcąca się ozdoba ściany.\nTen wystawny czarno-złoty plakat przedstawia Podróżnika na podobieństwo Apolla.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3744,10 +3920,11 @@
     "Description": "Ekskluzywna, samoprzylepna, niegnięcąca się ozdoba ściany.\nTen jaskrawy plakat przedstawia szkic kosmicznej anomalii.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3769,10 +3946,11 @@
     "Description": "Ekskluzywna, samoprzylepna, niegnięcąca się ozdoba ściany.\nTen plakat przedstawia szklankę kremowego, ciepłego proto-mleka.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3794,10 +3972,11 @@
     "Description": "Przezroczysty arkusz <STELLAR>robaczego pergaminu<> zapisany fanatycznym tekstem. Wije się po dotknięciu.\n\n„Dzieci zauważyły pierwsze.\nŁup, łup, łup, grzmiące głęboko pod piaskiem.\nPierwszy robal przeciął niebiosa niczym czarny piorun przelatujący nad głowami.\nRobale powoli wychodziły z piachu. Migrowały.\nGdy nadchodzi sezon burz, każdy z nas chce być wybrańcem. Stajemy w rzędzie na pustyni, z rękoma wyciągniętymi do nieba.\nKażdy może wejść do paszczy.\nDla wielkich robali wszyscy jesteśmy równi”.",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3814,10 +3993,12 @@
     "Description": "Pozwijane resztki układu trawiennego <SPECIAL>wygłodniałej macki<>. Choć mięsiste ścianki wciąż drgają, wyrośnięcie nowej macki z tak nędznych szczątków wydaje się niemożliwe...\n\nTakie wyjątkowe podroby rzadko pojawiają się na giełdzie galaktycznej, dlatego są <STELLAR>bardzo cenne<>.",
     "BaseValueUnits": 160016.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasRefinedToCreate": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3834,10 +4015,12 @@
     "Description": "Delikatny embrion <SPECIAL>wygłodniałej macki<>, wciąż ociekający śluzowatą masą. Zawodzi i rzuca się po dotknięciu.\n\nMoże zostać wydobyty z woreczków embrionalnych za pomocą <TECHNOLOGY>syntezatora trzewnego<>.",
     "BaseValueUnits": 16.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasRefinedToCreate": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3854,10 +4037,11 @@
     "Description": "Luksusowy organiczny fajerwerk, który wybuchając, wyrzuca z siebie śluz, plazmę i robaki. Zapal, aby utworzyć obrzydliwy pokaz na niebie.\n\nUmieść rurę startową, korzystając z <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3874,10 +4058,11 @@
     "Description": "Paczka luksusowych organicznych fajerwerków, które wybuchając, wyrzucają z siebie śluz, wydzieliny i robaki. Zapal, aby utworzyć obrzydliwy pokaz na niebie.\n\nUmieść rurę startową, korzystając z <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3894,10 +4079,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, upamiętniający zakończenie ekspedycji <STELLAR>Powstanie<>.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3914,10 +4100,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\n\nUpamiętnia zakończenie ekspedycji <STELLAR>Powstanie<>.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3939,10 +4126,11 @@
     "Description": "Wykorzystaj tę wyjątkową metodę nadania <STELLAR>osobistego szlifu<> identyfikacji, która ma uczcić ekspedycję <STELLAR>Powstanie<>.\nUmieść ten sztandar w swoim profilu, używając <TECHNOLOGY>modyfikatora wyglądu<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3959,10 +4147,11 @@
     "Description": "Wyjątkowe <STELLAR>nadpisanie wyglądu egzokombinezonu<>.\n\nDołącza aktywną bio-komorę do dysz plecaka odrzutowego. Podczas lotu silniki nagrzewają się i wyrzucają ukrytą wewnątrz śluzowatą ciecz.\n<STELLAR>Uwaga<>: zawiera żywe robale. Wyrzucone robale mogą skazić lokalny ekosystem.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3979,10 +4168,11 @@
     "Description": "Żywe, płodne jajo, <TRADEABLE>gotowe do wyklucia!<>\n\nWewnątrz znajduje się głodny robaczek, który bezustannie się wije.\n\nSkany wskazują, że istota w środku ma potencjał genetyczny na to, by być: <FUEL>przeklęta<> i <FUEL>nienasycona<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3999,10 +4189,11 @@
     "Description": "Wyjątkowa ozdoba bazy.\n\nTa wielozębna czaszka należała do wielkiego, beznogiego kręgowca, kuzyna tytanicznego czerwia piaskowego. Uścisk tych potężnych szczęk jest na tyle silny, że może zmiażdżyć multinarzędzie i kości większości stworzeń.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4024,10 +4215,11 @@
     "Description": "Wyjątkowe <STELLAR>nadpisanie wyglądu egzokombinezonu<>.\n\nPoprzestawiaj swoje narządy twarzy i wzbudź niepokój u innych odkrywców, przybierając wygląd kultysty pustynnych czerwi. Ten biosilikonowy hełm zabezpiecza przed wszystkimi znanymi zagrożeniami planetarnymi, ale może trochę uciskać użytkownika.\n\nRytualnie zmień swoją <STELLAR>Vy'keeńską<> aparycję w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4044,8 +4236,6 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
@@ -4062,10 +4252,11 @@
     "Description": "W tym <STELLAR>żyjącym dokumencie<> wyryto słowa:\n\n„Robaczy władca góruje nad piaszczystą powierzchnią; jego ciało zasłania niebo.\nNasze żałosne powłoki nie mogą za nim podążać, nie mogą go dosięgnąć ani nie mogą dotrzeć do jego wnętrza.\nOfiarujemy ziemi siebie.\nProsimy, by nasza ofiara została przyjęta”.",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4082,10 +4273,11 @@
     "Description": "W tym <STELLAR>żyjącym dokumencie<> wyryto słowa:\n\n„Pył nas dusił. \nNasze oczy były zaczerwienione i załzawione. \nAle nie było co uciekać przed prawdą.\nŻyły Atlasa wyszły na powierzchnię”.",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4102,10 +4294,11 @@
     "Description": "W tym <STELLAR>żyjącym dokumencie<> wyryto słowa:\n\n„Z każdą burzą modlimy się, abyśmy byli wybrańcami.\nRęce do twarzy, twarze na ziemię, wołamy z całych sił!\nGdy spadają wielkie krople deszczu, żyły Atlasa odpowiadają.\nEkstaza tej konsumpcji jest wręcz nie do opisania”.",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4122,10 +4315,11 @@
     "Description": "W tym <STELLAR>żyjącym dokumencie<> wyryto słowa:\n\n„Toczymy się, gdy nas połyka, ale próbujemy chwycić się śliskich ścian – \nOch! – by jeszcze żywymi dotrzeć do żołądka. \nNasze płuca świszczą.\nŚluz zatyka nasze nozdrza i szczypie w oczy, \nchoć w tej ciepłej ciemności i tak jesteśmy ślepi”.",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4142,10 +4336,11 @@
     "Description": "W tym <STELLAR>żyjącym dokumencie<> wyryto słowa:\n\n„Niech będzie przeklęta agonia przełykania, \nniech będzie przeklęte to delikatne ciało, które jest moim więzieniem!\nMoi bracia się odrodzili, powstając ze świętego pyłu jako nowe macki. \nBłyszczące naczynia włosowate wielkich żył, wślizgujących się w piasek.\nBędę cierpliwy. Do następnej burzy”.",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4156,16 +4351,18 @@
   },
   {
     "Id": "other205",
-    "Icon": "other/2.png",
+    "Icon": "other/205.png",
     "Name": "Mapa planet",
     "Group": "Tajne dane kartograficzne",
     "Description": "Mapa pobliskiej planety. Zaznaczono na niej <FUEL>zabezpieczone miejsce godne zwiedzenia<>. W takich miejscach często można znaleźć <TECHNOLOGY>schematy<> <STELLAR>nowych produktów<>.\n\nWybierz mapę i użyj wytyczania trasy (<IMG>FE_ALT1<>), by przypiąć lokalizację na wyświetlaczu egzokombinezonu.\n\nNowe mapy można zdobyć, wymieniając <COMMODITY>dane nawigacyjne<> z kartografem na stacji kosmicznej.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4176,16 +4373,18 @@
   },
   {
     "Id": "other206",
-    "Icon": "other/2.png",
+    "Icon": "other/206.png",
     "Name": "Mapa planet",
     "Group": "Awaryjne dane kartograficzne",
     "Description": "Mapa pobliskiej planety. Zaznaczono na niej współrzędne <TECHNOLOGY>sygnału SOS<>.\n\nWybierz mapę i użyj wytyczania trasy (<IMG>FE_ALT1<>), by przypiąć lokalizację na wyświetlaczu egzokombinezonu.\n\nNowe mapy można zdobyć, wymieniając <COMMODITY>dane nawigacyjne<> z kartografem na stacji kosmicznej.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4196,16 +4395,18 @@
   },
   {
     "Id": "other207",
-    "Icon": "other/2.png",
+    "Icon": "other/207.png",
     "Name": "Mapa planet",
     "Group": "Komercyjne dane kartograficzne",
     "Description": "Mapa pobliskiej planety. Zaznaczono na niej <COMMODITY>zamieszkany posterunek<>.\n\nWybierz mapę i użyj wytyczania trasy (<IMG>FE_ALT1<>), by przypiąć lokalizację na wyświetlaczu egzokombinezonu.\n\nNowe mapy można zdobyć, wymieniając <COMMODITY>dane nawigacyjne<> z kartografem na stacji kosmicznej.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4216,16 +4417,18 @@
   },
   {
     "Id": "other208",
-    "Icon": "other/2.png",
+    "Icon": "other/208.png",
     "Name": "Mapa planet",
     "Group": "Obce dane kartograficzne",
     "Description": "Mapa pobliskiej planety. Zaznaczono na niej <SPECIAL>miejsce ukrycia starożytnego artefaktu<>.\n\nWybierz mapę i użyj wytyczania trasy (<IMG>FE_ALT1<>), by przypiąć lokalizację na wyświetlaczu egzokombinezonu.\n\nNowe mapy można zdobyć, wymieniając <COMMODITY>dane nawigacyjne<> z kartografem na stacji kosmicznej.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4236,16 +4439,18 @@
   },
   {
     "Id": "other209",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "Mapa planet",
     "Group": "Dane kartograficzne",
     "Description": "Mapa pobliskiej planety. Zaznaczono na niej <SPECIAL>miejsce ukrycia starożytnego artefaktu<>.\n\nWybierz mapę i użyj wytyczania trasy (<IMG>FE_ALT1<>), by przypiąć lokalizację na wyświetlaczu egzokombinezonu.\n\nNowe mapy można zdobyć, wymieniając <COMMODITY>dane nawigacyjne<> z kartografem na stacji kosmicznej.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4262,10 +4467,11 @@
     "Description": "Wyjątkowe <STELLAR>rozszerzenie wyglądu towarzysza<>. Idealny dla towarzyszy o wybuchowym temperamencie – stylowa zbroja płytowa chroni organy wewnętrzne przed pociskami i promieniami lasera. Ultracienka, oddychająca wyściółka sprawia, że towarzysz nie wyśliźnie się z tego akcesorium.\n\nZyskaj zaufanie dzikich zwierząt, aby przysposobić towarzyszy. Wejdź w interakcje z towarzyszami, aby zmodyfikować ich wygląd.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4282,10 +4488,11 @@
     "Description": "Unikatowa <STELLAR>personalizacja wyglądu egzokombinezonu<>.\n\nElegancki plecak odrzutowy ze skrzydłami, inspirowany projektami egzotycznych statków gwiezdnych. To ekskluzywne ulepszenie egzokombinezonu upamiętnia ukończenie <STELLAR>ekspedycji<> „Egzobiologia”.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 3500.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4302,10 +4509,11 @@
     "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, upamiętniający zakończenie ekspedycji <STELLAR>Egzobiologia<>.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4322,10 +4530,11 @@
     "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\n\nUpamiętnia zakończenie ekspedycji <STELLAR>Egzobiologia<> oraz pokojową koegzystencję Podróżników z niezliczonymi formami życia zamieszkującymi wszechświat.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4347,10 +4556,11 @@
     "Description": "Wykorzystaj tę wyjątkową metodę nadania <STELLAR>osobistego szlifu<> identyfikacji, która ma uczcić ekspedycję <STELLAR>Egzobiologia<> oraz twoje badania nad zróżnicowanym życiem zamieszkującym wszechświat.\n\nUmieść ten sztandar w swoim profilu, używając <TECHNOLOGY>modyfikatora wyglądu<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4367,10 +4577,11 @@
     "Description": "Metalowa kapsuła w kształcie jaja, <TRADEABLE>gotowa do wyklucia!<>\n\nSkorupa skrzy się energią elektroniczną.\n\nSkany wskazują, że istota w środku została zaprogramowana do bycia <SPECIAL>niestrudzoną<> i <SPECIAL>uważną<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
