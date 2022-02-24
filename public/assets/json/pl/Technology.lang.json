@@ -7,9 +7,11 @@
     "Description": "System <CATALYST>ochrony przed zagrożeniami<> egzokombinezonu stale monitoruje i stabilizuje otoczenie użytkownika. \n\nStandardowa ochrona reaktywna może zostać wzmocniona przez <TECHNOLOGY>tarcze środowiskowe<>, zapewniające lepszą ochronę przed konkretnymi warunkami.\n\nUrządzenie jest ładowane <CATALYST>substancjami na bazie sodu<>. Użytkownik powinien pamiętać, że brak zasilania systemu ochrony przed zagrożeniami może spowodować brak zgodności pomiędzy otoczeniem a jego życiem.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -31,9 +33,10 @@
     "Description": "Zwiększa pojemność układu <COMMODITY>ochrony przed zagrożeniami<>, dzięki czemu użytkownik może spędzić więcej czasu w niebezpiecznym otoczeniu, bez konieczności doładowywania egzokombinezonu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -59,9 +62,11 @@
     "Description": "Rdzeń egzokombinezonu, <TECHNOLOGY>system podtrzymania życia<>, stale filtruje i pompuje <FUEL>tlen<> potrzebny do oddychania.\n\nOprócz zapewnienia przetrwania użytkownikowi egzokombinezonu, jednostka podtrzymania życia korzysta też z nadwyżki tlenu do generowania zasilania systemów dodatkowych, takich jak <TECHNOLOGY>plecak odrzutowy<>, <TECHNOLOGY>wzmocnienie szybkości<> czy <TECHNOLOGY>reflektor<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -83,9 +88,10 @@
     "Description": "Zwiększa podstawową pojemność systemu <FUEL>podtrzymania życia<>, dzięki czemu użytkownik może poruszać się dłużej bez konieczności ładowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -107,9 +113,10 @@
     "Description": "Dodaje do egzokombinezonu <TECHNOLOGY>zaawansowane możliwości poruszania się<>, w tym czasową zdolność lotu.\n\nKontroluj ciąg za pomocą <IMG>JUMP<>. Latający plecak używa energii z systemu <FUEL>podtrzymania życia egzokombinezonu<>, aby zwiększyć ciśnienie i wyrzucać krótkie obłoki gazu, wystrzeliwując użytkownika w powietrze.\n\nPlecak odrzutowy można chwilowo przeładować, zbierając <TECHNOLOGY>rośliny zasobne w deuter<>, co dramatycznie zwiększa dostępny ciąg.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -131,9 +138,10 @@
     "Description": "Zwiększa pojemność <STELLAR>zbiorników plecaka odrzutowego<> oraz <STELLAR>rezerw pomp przynerkowych<> egzokombinezonu, dzięki czemu użytkownik może dłużej latać i biec sprintem.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -159,9 +167,10 @@
     "Description": "Wyposaża plecak odrzutowy egzokombinezonu w <STELLAR>zaawansowane zdolności skoku<>, dzięki czemu użytkownik może z łatwością wykonywać dalekie susy.\n\nAktywuj układy skoku, szybko naciskając <IMG>JUMP<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 200,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -187,9 +196,11 @@
     "Description": "Użytkownik jest chroniony przed obrażeniami związanymi z ciepłem na gorących planetach.\n\nZapewnia ulgę od ciepła atmosferycznego i słonecznego dzięki rozprowadzeniu płynnego frenu po powłoce egzokombinezonu.\n\nUrządzenie jest zasilane <EARTH>ekstraktami mineralnymi<>, które znaleźć można w gorących ekosystemach. Działa automatycznie po skonstruowaniu w ekwipunku egzokombinezonu użytkownika.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -219,9 +230,11 @@
     "Description": "Użytkownik jest chroniony przed obrażeniami związanymi z wychłodzeniem na zamarzniętych planetach.\n\nKapilary cieplne przeprowadzone przez egzokombinezon użytkownika rozprowadzają kalid po całym ciele, co gwarantuje właściwą jego temperaturę.\n\nUrządzenie jest zasilane <EARTH>ekstraktami mineralnymi<>, które znaleźć można w zamarzniętych ekosystemach. Działa automatycznie po skonstruowaniu w ekwipunku egzokombinezonu użytkownika.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -251,9 +264,11 @@
     "Description": "Użytkownik jest chroniony przed toksycznością.\n\nAktywne związki zawarte w supresorze usuwają toksyczne płyny spadające na użytkownika, tym samym zmniejszając zagrożenie obrażeniami i zadławieniem.\n\nUrządzenie jest zasilane <EARTH>ekstraktami mineralnymi<>, które można znaleźć w toksycznych ekosystemach. Działa automatycznie po skonstruowaniu w ekwipunku egzokombinezonu użytkownika.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -283,9 +298,11 @@
     "Description": "Użytkownik jest chroniony przed radiacją.\n\nZnacznie zmniejsza niebezpieczeństwo związane z badaniem radiacyjnych układów planetarnych. Mikrowibracje zwiększają częstotliwość fal elektromagnetycznych, co wiąże się z mniejszym wchłanianiem szkodliwego promieniowania.\n\nUrządzenie jest zasilane <EARTH>ekstraktami mineralnymi<>, które można znaleźć w radioaktywnych ekosystemach. Działa automatycznie po skonstruowaniu w ekwipunku egzokombinezonu użytkownika.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -315,9 +332,10 @@
     "Description": "Wydłużony czas pozostawania pod wodą.\n\nPochłanianie gazów rozpuszczonych w wodzie poprzez specjalną membranę umieszczoną na ustach lub otworze oddechowym użytkownika (jeśli jest on przedstawicielem rasy o tradycyjnej budowie).\n\nDziała automatycznie po skonstruowaniu w ekwipunku egzokombinezonu użytkownika.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -347,9 +365,10 @@
     "Description": "Ulepsza metalowe ekranowanie <TECHNOLOGY>rękawic egzokombinezonu<>.\n\nZaawansowana mieszanka wzmocnionego metalu i katalitycznych osłon pozwala użytkownikowi bezpiecznie przenosić <CATALYST>niebezpieczne substancje<>, a także wzmacnia jego siłę, która jest potrzebna do zbierania niektórych rodzajów <TRADEABLE>flory uprawnej<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -375,9 +394,10 @@
     "Description": "Wewnątrz znajduje się wszystko, cokolwiek udało ci się poznać.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -403,9 +423,10 @@
     "Description": "Mikroskopijna iskra zawieszona w polu ochronnym nieznanego pochodzenia.\n\nZiarno migocze życiem, desperacko próbując uciec i zrealizować swój potencjał.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -435,9 +456,10 @@
     "Description": "<TECHNOLOGY>Technologia<> zniszczona przez zakłócenia ze strony Atlasa.\n\nMożna ją przetworzyć na użyteczne komponenty.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -463,9 +485,10 @@
     "Description": "Zmniejszają <STELLAR>zużycie paliwa<> dysz wodnych plecaka odrzutowego, a tym samym obciążenie systemów podtrzymania życia egzokombinezonu.\n\nW turbinach plecaka odrzutowego zainstalowane zostają jednostki akwa-kompresora, dzięki czemu nie są już konieczne duże nakłady energii na zapłon podwodny.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 350,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -495,9 +518,10 @@
     "Description": "Ulepszenie <TECHNOLOGY>membrany powietrznej<> egzokombinezonu, pozwalające na pozyskanie tlenu z systemu podtrzymania życia w przypadku awaryjnego problemu z oddychaniem. Pozwala użytkownikowi wynurzyć się i poszukać konwencjonalnych źródeł zasilania.\n\nUwaga: Długotrwała konwersja energii podtrzymania życia na powietrze nie jest zalecana. Może spowodować, że życie nie będzie dłużej podtrzymywane.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 240,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -527,9 +551,10 @@
     "Description": "Urządzenie do automatycznego tłumaczenia. Nagrywa i analizuje pobliskie rozmowy, a następnie przepuszcza dane przez kontekstualny system uczący się, aby określić znaczenie.\n\nModel ten ma stosunkowo niewiele pamięci, a więc jego możliwości tłumaczeniowe są ograniczone.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -551,9 +576,10 @@
     "Description": "Urządzenie do automatycznego tłumaczenia. Nagrywa i analizuje pobliskie rozmowy, a następnie przepuszcza dane przez kontekstualny system uczący się, aby określić znaczenie.\n\nRównoległe procesory języka pozwalają na tłumaczenie większej ilości nagranej mowy.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 310,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -583,9 +609,10 @@
     "Description": "Urządzenie do automatycznego tłumaczenia. Nagrywa i analizuje pobliskie rozmowy, a następnie przepuszcza dane przez kontekstualny system uczący się, aby określić znaczenie.\n\nDuża macierz pamięci oraz podkręcone procesory językowe pozwalają na tłumaczenie dużych partii mowy w czasie rzeczywistym.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 580,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -615,9 +642,10 @@
     "Description": "Urządzenie do automatycznego tłumaczenia. Należy je wykalibrować, przesyłając istniejące dane tłumaczeniowe. Aby działać, urządzenie musi posiadać <STELLAR>połączenie sieciowe z Artemis<>.\n\nBez dostępu do usługi tłumaczeniowej hosta, obwody wewnętrzne ograniczają tłumaczenie w czasie rzeczywistym do niewielkiej liczby słów.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -643,9 +671,11 @@
     "Description": "Zapewnia napęd do lotów kosmicznych, dopalaczy i skoków impulsowych w lokalnym układzie.\n \nUżytkownik powinien zwrócić uwagę, że do naładowania silnika pulsacyjnego wymagany jest <EXOTIC>tryt<>. Tryt występuje w obfitości w <COMMODITY>polach asteroid w pobliskiej przestrzeni kosmicznej<>.\n\nPrzytrzymaj <IMG>PULSEJUMP<>, aby włączyć skok impulsowy.\nPrzytrzymaj <IMG>BOOST<>, aby włączyć dopalanie w trakcie lotu w kosmosie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -671,9 +701,10 @@
     "Description": "Zwiększa manewrowość statku i pozwala na dłuższe dopalanie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -699,9 +730,11 @@
     "Description": "Nieodzowny system startu i lądowania.\n \nDo ładowania silnika wymagane jest specjalne paliwo, pochodzące z diwodoru. Uruchomienie procedur wymaga wystarczającej ilości paliwa przed aktywacją.\n \nPrzytrzymaj <IMG>THRUST<>, aby wystartować z powierzchni planety.\nPrzytrzymaj <IMG>BOOST<>, aby włączyć dopalacz w locie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -727,9 +760,10 @@
     "Description": "Ulepsza układy statku gwiezdnego, zmniejszając <STELLAR>zużycie paliwa<> podczas startu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -759,9 +793,10 @@
     "Description": "Fotowoltaiczne panele, przytwierdzone do <TECHNOLOGY>silników startowych<>, pozwalają na powolne ładowanie w czasie, gdy statek nie jest używany.\n\nPobrane światło pozyskuje diwodór z atmosfery i z czasem <STELLAR>automatycznie napełnia paliwem silniki startowe<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -791,9 +826,10 @@
     "Description": "Urządzenie modulujące standardowe sygnały komunikacji statku gwiezdnego, co pozwala przesyłać nie tylko dane, ale <TECHNOLOGY>także materię<>.\n\nStatki gwiezdne wyposażone w takie urządzenie, mogą wysyłać i odbierać produkty i substancje do i z egzokombinezonu użytkownika na <VAL_ON>dalekie odległości<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -819,9 +855,11 @@
     "Description": "Napęd nadświetlny FTL jest efektywnym sposobem osiągnięcia prędkości warp i dokonywania skoków pomiędzy sąsiednimi układami.\n\nUżytkownikowi zaleca się używanie systemów hipernapędu poprzez mapę galaktyki.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -847,9 +885,10 @@
     "Description": "Magnesy ekranujące rdzeń hipernapędu zostają ulepszone, co zapobiega szybkiemu rozpadowi przy próbach dotarcia do rzadkich <FUEL>ciał niebieskich klasy czerwonej<>.\n\nDostęp do systemów hipernapędu zalecany jest poprzez <VAL_ON>mapę galaktyki<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -875,9 +914,10 @@
     "Description": "Ekranowanie hipernapędu zostaje ulepszone, co zapobiega czasowym anomaliom przy próbach dotarcia do rzadkich ciał niebieskich <TRADEABLE>klasy zielonej<>.\n\nDostęp do systemów hipernapędu zalecany jest poprzez <VAL_ON>mapę galaktyki<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -903,9 +943,10 @@
     "Description": "Macierz obliczeniowa hipernapędu zostaje ulepszona, co zapobiega błędom czasoprzestrzeni przy próbach dotarcia do rzadkich ciał niebieskich <TECHNOLOGY>klasy błękitnej<>.\n\nDostęp do systemów hipernapędu zalecany jest poprzez <VAL_ON>mapę galaktyki<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 200,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -931,9 +972,11 @@
     "Description": "Tarcza energetyczna, chroniąca statek użytkownika przed ostrzałem laserowym, pociskami i przypadkowymi zderzeniami z kosmicznymi odłamkami.\n\nDo przeładowania urządzenia wykorzystywane są <CATALYST>pierwiastki katalityczne<>.\n\nDziała automatycznie po skonstruowaniu w ekwipunku statku użytkownika.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -959,9 +1002,10 @@
     "Description": "Dodaje do systemów defensywnych statku gwiezdnego warstwę superpodgrzanej tarczy, która odparowuje nadlatujący ostrzał.\n\nZnacznie zwiększa <STELLAR>wydajność tarczy statku gwiezdnego<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 85,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -991,9 +1035,10 @@
     "Description": "Niszczycielska, ale niezbyt szybkostrzelna broń, która wywołuje ekstremalną destrukcję w trakcie walk statków.\n\nNaciśnij <IMG>SHIPFIRE<>, aby aktywować.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 100,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1019,9 +1064,10 @@
     "Description": "Rozszerza komorę ładunkową <TECHNOLOGY>wyrzutni rakiet<> statku gwiezdnego, co przekłada się na lepszą prędkość wylotową i znacznie szybsze <STELLAR>odprowadzanie ciepła<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 50,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1047,9 +1093,10 @@
     "Description": "Niszczycielska broń, która gwarantuje szybkie zniszczenie celu w trakcie walk pomiędzy statkami.\n\nNaciśnij <IMG>SHIPFIRE<>, aby aktywować.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1075,9 +1122,10 @@
     "Description": "Ulepszenie czujników galaktycznych statku kosmicznego. To urządzenie daje użytkownikowi dostęp do szczegółowych danych gospodarczych dotyczących systemu bez konieczności odwiedzania go.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1103,9 +1151,10 @@
     "Description": "Ulepszenie czujników galaktycznych statku kosmicznego. To urządzenie daje użytkownikowi dostęp do szczegółowych danych o konfliktach na mapie galaktyki, bez konieczności narażania się.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1131,9 +1180,10 @@
     "Description": "Kosmiczna broń promieniowa i narzędzie wydobywcze do użycia na asteroidach.\n\nDo przeładowania urządzenia wykorzystywane są <FUEL>pierwiastki organiczne<>.\n\nNaciśnij <IMG>SHIPFIRE<>, aby aktywować.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1159,9 +1209,10 @@
     "Description": "Wyposaża <TECHNOLOGY>promień fazowy<> w obwody oparte o nanity, dzięki czemu ograniczenia konwencjonalnej rzeczywistości odnośnie mocy lasera znikają.\n\nZnacząco ulepsza <STELLAR>wydajność cieplną<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1187,9 +1238,10 @@
     "Description": "Strzały sieją zniszczenie na szerszym obszarze.\n\nZmniejsza zasięg i szybkostrzelność, zachęcając użytkownika do walki na krótszym dystansie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1215,9 +1267,10 @@
     "Description": "Modernizuje mechanizm spustowy <TECHNOLOGY>strumienicy pozytronów<>, co przekłada się na szybsze i celniejsze wystrzeliwanie cząstek.\n\nUlepsza <STELLAR>zasięg<> i <STELLAR>celność<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1243,9 +1296,10 @@
     "Description": "Wystrzeliwuje ciągłe i szybkie serie.\n\nUżytkownik powinien ograniczyć liczbę serii, gdyż może dojść do bardzo szybkiego przegrzania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1271,9 +1325,10 @@
     "Description": "Zastępuje konwencjonalną optykę <TECHNOLOGY>działka fotonowego<> eksperymentalnym układem szklanym, co zwiększa wydajność w walce.\n\nZnacząco ulepsza <STELLAR>wydajność radiatora<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 75,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1303,9 +1358,10 @@
     "Description": "Wystrzeliwuje w kierunku celu dużą, skoncentrowaną kulę naładowanych cząstek, powodując ciężkie uszkodzenia. Ładunek jest niekierowany i będzie leciał zgodnie z trajektorią tak długo, aż natrafi na przeszkodę.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1331,9 +1387,10 @@
     "Description": "Wymienia radiator <TECHNOLOGY>katapulty cyklotronowej<>, zmieniając całą jednostkę w megastrukturę absorbującą ciepło. Ciepło jest następnie zamieniane w energię, aby zwiększyć wydajność w walce.\n\nZnacząco ulepsza <STELLAR>wydajność cieplną<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1359,9 +1416,11 @@
     "Description": "Napęd nadświetlny FTL jest efektywnym sposobem osiągnięcia prędkości warp i dokonywania skoków pomiędzy sąsiednimi układami.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1391,9 +1450,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1415,9 +1475,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1443,9 +1504,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1467,9 +1529,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1495,9 +1558,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1527,9 +1591,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1555,9 +1620,10 @@
     "Description": "Specjalistyczna jednostka <TECHNOLOGY>odkrywcza<> i <TECHNOLOGY>badawcza<>.\n\nModyfikuje standardowy <TECHNOLOGY>skaner<>, dzięki czemu przesyła on dane o środowisku bezpośrednio do wizjera użytkownika. Pozwala identyfikować <STELLAR>odległe miejsca godne zwiedzenia<>.\n\nWizjer generuje <COMMODITY>cenne dane<> w trakcie badania <TRADEABLE>flory<>, <FUEL>fauny<> i <TECHNOLOGY>minerałów<>.\n\nPrzytrzymaj <IMG>AIM<>, aby użyć. Naciśnij <IMG>ZOOM<>, aby przybliżyć.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1579,9 +1645,10 @@
     "Description": "Modyfikacja <TECHNOLOGY>osobistego radaru powierzchniowego<> do multinarzędzia. \n\nSkaner wysyła wysokoenergetyczny impuls, który odkrywa wokół <COMMODITY>zasoby potrzebne do przetrwania<>. Dane są przesyłane bezpośrednio do egzokombinezonu, a następnie do wzrokowego układu nerwowego użytkownika.\n \nNaciśnij <IMG>SCAN<>, aby aktywować lokalne skanowanie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1603,9 +1670,10 @@
     "Description": "Potężny procesor poprzeczny, włożony do <TECHNOLOGY>układu skanowania<> multinarzędzia pozwala urządzeniu ładować się znacznie szybciej.\n\nZwiększa <STELLAR>potencjalną częstotliwość skanowania<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1631,9 +1699,10 @@
     "Description": "Samodzielne ulepszenie obwodów <TECHNOLOGY>wizjera analitycznego<>, dodające do układu skanującego analizę terenu w czasie rzeczywistym.\n\nPrzełączaj pomiędzy trybami wizjera, używając <IMG>SURVEYFILTERL<>/<IMG>SURVEYFILTERR<>. Użyj <STELLAR>trybu badawczego<>, aby wykryć zasoby ukryte w terenie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 320,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1663,9 +1732,10 @@
     "Description": "Zaawansowane urządzenie do przekształcania terenu. Moduł przeładowuje istniejące systemy multinarzędzia, pozwalając użytkownikowi przekształcać teren jak zechce.\n\nDoładuj <EARTH>pierwiastkami metalicznymi<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 50,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1691,9 +1761,10 @@
     "Description": "Po aktywacji, moduł pobiera moc z <VAL_ON>systemów podtrzymania życia egzokombinezonu<> i przeładowuje multinarzędzie, zakłócając pole elektromagnetyczne wokół użytkownika. Powoduje to wytworzenie <COMMODITY>potężnej osobistej tarczy<>.\n\nChoć pole to gwarantuje znaczącą ochronę przed ostrzałem laserowym, użytkownik powinien pamiętać, że w trakcie zasilania tarczy, multinarzędzia nie można używać w innych celach.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1719,9 +1790,10 @@
     "Description": "Celownik stabilizujący odrzut, umożliwiający precyzyjną walkę.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1747,9 +1819,11 @@
     "Description": "<TECHNOLOGY>Promień wydobywczy<> multinarzędzia, zasilany <FUEL>pierwiastkami węglopochodnymi<>. Użyj promienia za pomocą <IMG>ATTACK<>.\n\nInstaluje w multinarzędziu system optyki koncentrującej wiązkę, dzięki czemu może ono emitować <STELLAR>wysokoenergetyczny promień<>. Promień jest tak wykalibrowany, aby wzbudzać cząsteczki w pospolitych <STELLAR>obiektach organicznych lub geologicznych<>, dzięki czemu multinarzędzie staje się niezwykle efektywnym sprzętem wydobywczym.\n\n<FUEL>UWAGA<>: Niszczenie flory, fauny lub minerałów może przyciągnąć uwagę Strażników.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1771,9 +1845,10 @@
     "Description": "Zastępuje standardową optykę <TECHNOLOGY>promienia wydobywczego<> wysokiej jakości żywym szkłem, dzięki czemu promień staje się efektywny przy wydobyciu z <STELLAR>dużych i/lub rzadkich złóż zasobów<>.\n\nSzkło automatycznie dostraja się do minimalnych wahań kształtu fali promienia, zmniejszając rozproszenie i <STELLAR>zwiększając potencjał wydobywczy urządzenia<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 75,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1803,9 +1878,10 @@
     "Description": "Układy cienkich jak bibuła soczewek, ułożone w idealnie wykalibrowaną macierz sterującą <TECHNOLOGY>promieniem wydobywczym<> na poziomie atomowym.\n\nTa dodatkowa precyzja pozwala na niezwykle wydajne wydobycie. Pierwiastki też są pozyskiwane szybciej, co <STELLAR>zwiększa<> liczbę przedmiotów zbieranych multinarzędziem.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1835,9 +1911,10 @@
     "Description": "Uniwersalny dodatek uzbrojenia do <TECHNOLOGY>multinarzędzia<>. Zmień tryb ostrzału, naciskając <IMG>CYCLEWEAPON<> i strzelaj za pomocą <IMG>ATTACK<>.\n\n<TECHNOLOGY>Błyskacz<> tak modyfikuje multinarzędzie, aby przeładowywało <EARTH>pierwiastki metaliczne<> i wystrzeliwało je jako <STELLAR>niezwykle szybkie pociski<>, zdolne do zadawania ekstremalnych obrażeń.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1863,9 +1940,10 @@
     "Description": "Umieszcza potężne urządzenie jonizujące w lufie <TECHNOLOGY>błyskacza<>, co zwiększa stabilność pocisku, lecącego w powietrzu.\n\nZwiększa <STELLAR>celność urządzenia<> i pozwala graczowi strzelać dłużej bez zmniejszenia wydajności w walce.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1891,9 +1969,10 @@
     "Description": "Strzały z błyskacza zadają większe obrażenia fizyczne.\n\nNadaje dodatkową energię kinetyczną jonizowanym pociskom plazmowym.\n\nDziała automatycznie po skonstruowaniu w ekwipunku multinarzędzia użytkownika.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1915,9 +1994,10 @@
     "Description": "<TECHNOLOGY>Znaczące<> ulepszenie <TECHNOLOGY>promienia wydobywczego<>.\n\nDo głównej komory kryształów lasera wydobywczego wkładane są dodatkowe elementy odbijające, dzięki czemu wzmacniana jest <STELLAR>energia promienia<> oraz zmniejszane są niepożądane <STELLAR>straty ciepła<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1939,9 +2019,11 @@
     "Description": "Wybuchowa broń dystansowa. Wystrzeliwane ładunki plazmowe odbijają się od powierzchni do momentu, gdy wbudowany stoper osiągnie zero. Uruchamia to potężną eksplozję.\n\nŁadowane <FUEL>niestabilną plazmą<>. Nieostrożne użytkowanie może wiązać się z obrażeniami użytkownika.\n\nNaciśnij <IMG>ALTATTACK<>, aby aktywować.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1971,9 +2053,11 @@
     "Description": "Wyrzutnia pocisków wielkoświdrujących. Wystrzeliwuje pociski plazmowe, zaprojektowane do <STELLAR>szybkiego wiercenia w gruncie<>.\n \nŁadowane <FUEL>niestabilną plazmą<>. Uwaga: Wiercenie otworów metodą eksplozji może też uszkodzić pobliską materię organiczną.\n \nNaciśnij <IMG>ALTATTACK<>, aby aktywować.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -1999,9 +2083,11 @@
     "Description": "Agresywny dodatek uzbrojenia do <TECHNOLOGY>multinarzędzia<>. Zmień tryb ostrzału naciskając <IMG>CYCLEWEAPON<> i strzelaj za pomocą <IMG>ATTACK<>.\n\n<TECHNOLOGY>Oszczep rozbłysku<> zadaje natychmiastowe obrażenia celom.\n\nW procesie ładowania plazmy powstaje zjonizowany łuk gazowy, który wystrzeliwuje pociski z ogromną prędkością. Użytkownik zauważy niszczycielskie efekty dokładnie w momencie naciśnięcia spustu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2031,9 +2117,10 @@
     "Description": "Rozszerza komorę <TECHNOLOGY>oszczepu rozbłysku<>, dzięki czemu wewnętrzne akceleratory cząstek osiągają większą masę i prędkość.\n\nZnacznie zwiększa <STELLAR>obrażenia zadawane przez broń<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2059,9 +2146,10 @@
     "Description": "Specjalistyczny dodatek <STELLAR>krótkodystansowego<> uzbrojenia do <TECHNOLOGY>multinarzędzia<>. Zmień tryb ostrzału, naciskając <IMG>CYCLEWEAPON<> i strzelaj za pomocą <IMG>ATTACK<>.\n\n<TECHNOLOGY>Blaster rozproszony<> tak modyfikuje multinarzędzie, aby rozgrzewało i rozpryskiwało <EARTH>pierwiastki metaliczne<>, wystrzeliwując je w <STELLAR>szerokim stożku destrukcji<>. Zasięg jest ograniczony, ale odłamki są niezwykle efektywne z bliskiej odległości.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2087,9 +2175,10 @@
     "Description": "Zaawansowane komponenty samosmarujące zmniejszają tarcie w <TECHNOLOGY>blasterze rozproszonym<>, co przekłada się na znaczne skrócenie <STELLAR>czasu przeładowania<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2115,9 +2204,10 @@
     "Description": "Specjalistyczny dodatek <STELLAR>szybkostrzelnego<> uzbrojenia do <TECHNOLOGY>multinarzędzia<>. Zmień tryb ostrzału, naciskając <IMG>CYCLEWEAPON<> i strzelaj za pomocą <IMG>ATTACK<>.\n\n<TECHNOLOGY>PM pulsacyjny<> przekierowuje optykę multinarzędzia i jonizuje wprowadzone <EARTH>pierwiastki metaliczne<>. Pociski te są wystrzeliwane z ogromną częstotliwością i bombardują potencjalne cele <STELLAR>falą wysokoenergetycznej plazmy<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2143,9 +2233,10 @@
     "Description": "Specjalistyczne rezonatory harmoniczne pozwalają <TECHNOLOGY>PMowi pulsacyjnemu<> dzielić włożoną amunicję, efektywnie wytwarzając więcej strzałów z mniejszej ilości materiałów.\n\nZwiększa <STELLAR>pojemność magazynka broni<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2171,9 +2262,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2195,9 +2287,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2219,9 +2312,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2251,9 +2345,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2275,9 +2370,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2307,9 +2403,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2339,9 +2436,10 @@
     "Description": "Przenośny rdzeń syntezy, wspólny dla wszystkich egzopojazdów.\n\nDo działania wymaga paliwa.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2367,9 +2465,10 @@
     "Description": "Zmienia parametry prowadzenia egzopojazdu poprzez połączenie regulacji oprogramowania, zmiany ciśnienia oraz dodanie studni mikrograwitacyjnych do kluczowych komponentów zawieszenia.\n\nSpecjalnie wyregulowane, aby zwiększyć zdolność egzopojazdu do <STELLAR>driftowania<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2399,9 +2498,10 @@
     "Description": "Zmienia parametry prowadzenia egzopojazdu poprzez połączenie regulacji oprogramowania, zmian w ciśnieniu oraz dodaniu studni mikrograwitacyjnych do kluczowych komponentów zawieszenia.\n\nSpecjalnie wyregulowane, aby zwiększyć zdolność egzopojazdu do <STELLAR>ostrego skręcania<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2431,9 +2531,10 @@
     "Description": "Zmienia parametry prowadzenia egzopojazdu poprzez połączenie regulacji oprogramowania, zmian w ciśnieniu oraz dodaniu studni mikrograwitacyjnych do kluczowych komponentów zawieszenia.\n\nSpecjalnie wyregulowane, aby zwiększyć zdolność egzopojazdu do <STELLAR>wykonywania ślizgów<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2463,9 +2564,10 @@
     "Description": "Duży i skomplikowany polowy radar podprzestrzenny.\n\nZe względu na duże zużycie mocy i dużą niestabilność subatomową, można go zainstalować wyłącznie na egzopojeździe.\n\nNaciśnij <IMG>QUICK_MENU<> , aby aktywować Wzmacniacz sygnału.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2491,9 +2593,10 @@
     "Description": "Pozwala na wykrywanie wzmacniaczem sygnału egzopojazdu dodatkowych rodzajów budynków.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 320,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2523,9 +2626,10 @@
     "Description": "Wydajny wtryskiwacz plazmy podłączony do silnika, pozwalający uzyskać krótkie, ale gwałtowne przyspieszenie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2555,9 +2659,10 @@
     "Description": "Laser wydobywczy zbyt nieporęczny, by przenosić go osobiście - należy zainstalować go na egzopojeździe.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2587,9 +2692,10 @@
     "Description": "Zwiększa moc lasera wydobywczego egzopojazdu",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2615,9 +2721,10 @@
     "Description": "Broń wymagająca zbyt dużego ładunku energii, by przenosić ją osobiście. Należy ją zamocować na egzopojeździe.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2643,9 +2750,11 @@
     "Description": "Wydajny temperaturowo, odporny na inwersję reaktor, zdolny do napędzania Nautilona nawet na ekstremalnych głębokościach.\n\nZasilany <FUEL>hydrotermalnymi ogniwami paliwowymi<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2671,9 +2780,10 @@
     "Description": "Działko stacjonarne, zaprojektowane specjalnie z myślą o <STELLAR>łodzi podwodnej Nautilon<>.\n\nWysokoenergetyczny system uzbrojenia, rozgrzewający do ekstremalnie wysokiej temperatury niewielkie pociski wodne, a następnie wystrzeliwujące je błyskawicznie w kierunku celu.\n\nZaprojektowany głównie z myślą o walce z istotami biologicznymi, jest też niezbyt wydajnym urządzeniem wydobywczym.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2703,9 +2813,10 @@
     "Description": "Stacjonarny system laserowy, zaprojektowany specjalnie z myślą o <STELLAR>łodzi podwodnej Nautilon<>.\n\nWystrzeliwuje w kierunku celu skoncentrowany promień plazmy, który następnie ulega zapłonowi. Taki system odpalania pozwala na użycie wysokoenergetycznych optycznych systemów wydobywczych w środowisku płynnym.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 450,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2735,9 +2846,10 @@
     "Description": "Niezwykle precyzyjny sonar, będący ulepszeniem technologii skanujących łodzi podwodnej klasy Nautilon do poziomów wizjera analitycznego.\nNaciśnij <IMG>SCAN<>, aby aktywować sonar dużej mocy.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 10,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2767,9 +2879,10 @@
     "Description": "Zainstalowany w systemie napędowym <STELLAR>łodzi podwodnej Nautilon<>.\n\nPobiera energię z wody morskiej w głębinach, co pozwala na powolne zasilanie <TECHNOLOGY>napędu Humboldta<> w przypadku awaryjnego braku paliwa.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 350,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -2799,9 +2912,10 @@
     "Description": "Proste urządzenie blokujące, zaprojektowane do powstrzymywania nieautoryzowanych rzezimieszków. Uszkodzenie spowodowało, że nie można go otworzyć.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2823,9 +2937,10 @@
     "Description": "Zaawansowane urządzenie blokujące. Problem z polaryzacją spowodował, że zostało zamknięte na amen.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2847,9 +2962,10 @@
     "Description": "Niezwykle zaawansowane urządzenie blokujące. Uszkodzenie obwodów zasilających elektromagnes spowodowało stałe zamknięcie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2871,9 +2987,10 @@
     "Description": "Terminal zaprojektowany do ręcznego sterowania urządzeniem. Został uszkodzony i nie odbiera sygnałów.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2899,9 +3016,10 @@
     "Description": "Zaawansowana jednostka kontrolna, zaprojektowana do interakcji urządzenie-istota cielesna. Usterka uniemożliwia prawidłowe działanie. Korzystanie w obecnej sytuacji jest niewskazane.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2923,9 +3041,10 @@
     "Description": "Mały bojler, wytwarzający ciepło, dzięki któremu urządzenie może pracować w trudnym klimacie. W wyniku usterki bojler się przepełnił i uszkodził.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2947,9 +3066,10 @@
     "Description": "Bardzo mały silniczek, zaprojektowany do zasilania małych części. Skorodował i jest pełen małych płatków rdzy.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2971,9 +3091,10 @@
     "Description": "Pompa i system wymiany cieplnej, zaprojektowane aby przeciwdziałać przegrzaniu się urządzenia. System sam się przegrzał i przestał działać.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2999,9 +3120,10 @@
     "Description": "Terminal z ekranem, komunikujący status urządzenia użytkownikowi. Terminal jest zepsuty, a więc użytkownik nie dowie się, że terminal jest zepsuty.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3023,9 +3145,10 @@
     "Description": "Jednostka zaprojektowana do zniszczenia najważniejszych systemów w przypadku, gdyby nieautoryzowany użytkownik próbował nimi manipulować. Niestety, jednostka uległa uszkodzeniu i do czasu naprawy kontynuuje stałe niszczenie systemów.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3047,9 +3170,10 @@
     "Description": "Niewielki system świetlno-dźwiękowy, zaprojektowany do ostrzegania przed nieautoryzowanym dostępem do urządzenia. Usterka alarmu spowodowała przeładowanie i zwarcie pobliskich obwodów.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3071,9 +3195,10 @@
     "Description": "Obudowa ściśniętej sprężyny. Pękła, przez co sprężyna wystrzeliła i uszkodziła resztę urządzenia.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3095,9 +3220,10 @@
     "Description": "Jednostka kontrolna zaprojektowana do utrzymywania równej temperatury w całym urządzeniu. Jej czujnik został uszkodzony, w związku z czym odprowadza ona ciepło lub generuje je w niewłaściwych momentach.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3119,9 +3245,10 @@
     "Description": "Wysokowydajna pompa, zapewniająca dostawy paliwa do każdej części urządzenia we wszystkich warunkach grawitacyjnych. Filtr został zatkany dziwną substancją, przez co pompa straciła zasilanie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3147,9 +3274,10 @@
     "Description": "Niewielki mechaniczny przegub, używany do niwelowania niewielkich błędów mechanicznych w całym urządzeniu. Usterka powoduje, że pobiera on komponenty funkcjonalne i wpycha je w niewłaściwe miejsce, powodując jeszcze większe uszkodzenia.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3171,9 +3299,10 @@
     "Description": "Przekaźnik, pomagający w zasilaniu urządzenia. Niestety, jego styki skorodowały, a cewka przestała działać.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3195,9 +3324,10 @@
     "Description": "Niewielka komora ciśnieniowa, wytwarzająca skompresowany gaz potrzebny urządzeniu do działania. Na komorze pojawiły się pęknięcia, powodujące wyciek.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3219,9 +3349,10 @@
     "Description": "Obwód kontrolujący wszystkie pozostałe komponenty urządzenia. Uszkodzenia obwodu są krytyczne.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3243,9 +3374,10 @@
     "Description": "Centralna jednostka zasilająca urządzenie. Jej uszkodzenie oznacza, że zakłóca ona obecnie zasilanie pewnego obwodu, powodując niebezpieczne spięcie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3271,9 +3403,10 @@
     "Description": "Niewielka jednostka zaprojektowana do regulacji przepływu mocy w całym urządzeniu. Usterka wywołuje spięcie i uszkodzenie pozostałych komponentów.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3295,9 +3428,10 @@
     "Description": "Uniwersalny interfejs sieciowy, pozwalający urządzeniu łączyć się ze zdalnym centrum kontroli. Uszkodzenie interfejsu powoduje interpretację radiacji tła jako sygnałów sieciowych. Dane w innych obwodach zostają przez to uszkodzone.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3323,9 +3457,10 @@
     "Description": "Panel bezpieczeństwa odcina potencjalnie niebezpieczne komponenty w przypadku uszkodzenia. Nadwrażliwy czujnik spowodował aktywację i zapobiega działaniu całego urządzenia.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3351,9 +3486,10 @@
     "Description": "Alternator generuje i reguluje zasilanie w całym urządzeniu. Uległ jednak tajemniczej korozji, która uniemożliwia działanie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3379,9 +3515,10 @@
     "Description": "Niewielki, ale wydajny panel, pobierający światło i przekształcający je na zasilanie. Panel pękł i jest skurzony, a więc nie można na nim polegać.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3407,9 +3544,10 @@
     "Description": "Mechanizm przekładni urządzenia. Smar, dzięki któremu przekładnia działa, został zastąpiony zielonym szlamem i tryby się zatarły.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3431,9 +3569,10 @@
     "Description": "Tajemniczy zamek z kilkoma dziurkami - ten artefakt musi strzec cennego skarbu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3455,9 +3594,10 @@
     "Description": "Skrzynia żąda <SPECIAL>żywej perły<>, którą można zebrać z gigantycznych matek-mięczaków, rosnących na dnie oceanu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3479,9 +3619,10 @@
     "Description": "Ten <TECHNOLOGY>moduł ulepszenia egzokombinezonu<> jest krytycznie uszkodzony. Napraw systemy, by przywrócić działanie ulepszenia.\n\nNaprawa <STELLAR>nie pociągnie za sobą opłat<> za ulepszenie egzokombinezonu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3503,9 +3644,10 @@
     "Description": "Ten <TECHNOLOGY>moduł ulepszenia egzokombinezonu<> jest krytycznie uszkodzony. Napraw systemy, by przywrócić działanie ulepszenia.\n\nNaprawa <STELLAR>nie pociągnie za sobą opłat<> za ulepszenie egzokombinezonu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3527,9 +3669,10 @@
     "Description": "Ten <TECHNOLOGY>moduł ulepszenia egzokombinezonu<> jest krytycznie uszkodzony. Napraw systemy, by przywrócić działanie ulepszenia.\n\nNaprawa <STELLAR>nie pociągnie za sobą opłat<> za ulepszenie egzokombinezonu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3551,9 +3694,10 @@
     "Description": "Modyfikacja gigantycznego silnika hipernapędu <STELLAR>frachtowca międzygwiezdnego<>.\n\nRezonans kwantowy zwiększa niezawodność napędu podczas podróży z prędkością nadświetlną i pozwala sięgnąć gwiazd, które poprzednio były poza zasięgiem.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 4,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3583,9 +3727,10 @@
     "Description": "Modyfikacja gigantycznego silnika hipernapędu <STELLAR>frachtowca międzygwiezdnego<>.\n\nHipernapęd zostaje wyposażony w zaawansowane technologie syntezy, dzięki którym statek osiąga wyższą prędkość warp. Statek użytkownika może skakać dalej w przestrzeń kosmiczną, ku odległym układom gwiezdnym.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 8,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3615,9 +3760,10 @@
     "Description": "Modyfikacja gigantycznego silnika hipernapędu <STELLAR>frachtowca międzygwiezdnego<>.\n\nDo hipernapędu statku dołączone zostają nieograniczane, ale stabilizowane, systemy syntezy. Pozwala to wykonywać skoki jeszcze dalej, w głęboki kosmos.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 12,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3647,9 +3793,10 @@
     "Description": "Magnesy ekranujące rdzeń hipernapędu zostają ulepszone, co zapobiega szybkiemu rozpadowi przy próbach dotarcia do rzadkich <FUEL>ciał niebieskich klasy czerwonej<>.\n\nDostęp do systemów hipernapędu zalecany jest poprzez <VAL_ON>mapę galaktyki<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 4,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3679,9 +3826,10 @@
     "Description": "Ekranowanie hipernapędu zostaje ulepszone, co zapobiega czasowym anomaliom przy próbach dotarcia do rzadkich ciał niebieskich <TRADEABLE>klasy zielonej<>.\n\nDostęp do systemów hipernapędu zalecany jest poprzez <VAL_ON>mapę galaktyki<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 8,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3711,9 +3859,10 @@
     "Description": "Macierz obliczeniowa hipernapędu zostaje ulepszona, co zapobiega błędom czasoprzestrzeni przy próbach dotarcia do rzadkich ciał niebieskich <TECHNOLOGY>klasy błękitnej<>.\n\nDostęp do systemów hipernapędu zalecany jest poprzez <VAL_ON>mapę galaktyki<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 12,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3743,9 +3892,10 @@
     "Description": "Potężne ulepszenie <TECHNOLOGY>plecaka odrzutowego egzokombinezonu<>, pozwalające na ograniczone <STELLAR>doładowywanie plecaka odrzutowego<> w trakcie lotu.\n\nNiezwykle wydajne kompresory umieszczone wokół wydechu plecaka odrzutowego wykorzystują podmuchy generowane przez <STELLAR>ciągłe spadanie<> i przetwarzają tę energię w paliwo do plecaka odrzutowego.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3775,9 +3925,10 @@
     "Description": "Przenośne rozszerzenie egzokombinezonu, instalujące niewielki <TECHNOLOGY>mobilny rafinator<>, dostępny bezpośrednio z interfejsu egzokombinezonu użytkownika.\n\nJednostka wymaga <FUEL>paliwa<> i może rafinować tylko jedną substancję jednocześnie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 360,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3803,9 +3954,10 @@
     "Description": "Niezwykle zaawansowane ulepszenie <TECHNOLOGY>silnika pulsacyjnego<>, znacznie zmniejszające <STELLAR>zużycie paliwa<>.\n\nZapasy trytu są przekierowane do serii miniaturowych czarnych dziur, w związku z czym przejmowane są fluktuacje mikrograwitacji, pozwalające uzyskać napęd znacznie wydajniejszy niż w przypadku standardowego podejścia, opartego o spalanie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3835,9 +3987,10 @@
     "Description": "Niezwykle zaawansowane ulepszenie <TECHNOLOGY>silnika pulsacyjnego<>, znacznie zwiększające <STELLAR>prędkość międzyplanetarną<>.\n\nZjawisko przesunięcia ramki, zachodzące naturalnie w silniku pulsacyjnym, zostaje wzmocnione rezonatorami opartymi o tryt, co zwiększa maksymalną prędkość podświetlną.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 460,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3867,9 +4020,10 @@
     "Description": "Ważne ulepszenie <TECHNOLOGY>hipernapędu<>, pozwalające na <STELLAR>natychmiastowy warp<> nawet gdy konwencjonalne systemy są zablokowane przez <WARNING>walkę statków gwiezdnych<>. Dostęp do awaryjnego systemu warp uzyskuje się poprzez <STELLAR>szybkie menu<>.\n\n<FUEL>UWAGA:<> Systemy szybkiego uruchomienia nie pozwalają użytkownikowi wytyczyć celu skoku. Nieprzeliczone wcześniej wydarzenia prędkości świetlnej uszkadzają jednostkę i wymagają <STELLAR>częstych napraw<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 240,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3899,9 +4053,10 @@
     "Description": "Ulepsza <TECHNOLOGY>akceleratora infra-noża<>, kompresując wewnętrzne kształty fali, co przekłada się na możliwość wplecenia dodatkowego strzału do konwencjonalnych macierzy.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -3931,9 +4086,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3959,9 +4115,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3987,9 +4144,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4011,9 +4169,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4039,9 +4198,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4071,9 +4231,10 @@
     "Description": "Podsystem statku <FUEL>mocno uszkodzony<>. Pole nie może zostać wykorzystane jako <STELLAR>magazyn<> ani <TECHNOLOGY>miejsce na technologię<>, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNie ma to wpływu na podstawowe funkcjonowanie statku gwiezdnego. Naprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4103,9 +4264,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4131,9 +4293,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4163,9 +4326,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4191,9 +4355,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4219,9 +4384,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4251,9 +4417,10 @@
     "Description": "Podsystem multinarzędzia <FUEL>krytycznie uszkodzony<>.\n\nPole nie może zostać wykorzystane, dopóki nie przeprowadzisz naprawy. Użyj <IMG>REPAIR<>, by ją rozpocząć.\n\nNaprawa zwolni pole do ogólnego użytkowania.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "7B0000",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4283,9 +4450,11 @@
     "Description": "Włóknista, metaliczna superstruktura łączy ten organ z rdzeniem statku. Bez niego, okręt ten byłby jedynie pustą skorupą.\n\nPrzytrzymaj <IMG>PULSEJUMP<>, by poprosić serce o wykonanie skoku pulsacyjnego.\nPrzytrzymaj <IMG>BOOST<>, by poprosić o zwiększenie prędkości.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4311,9 +4480,11 @@
     "Description": "Rozproszona sieć neuronów połączona ze statkiem za pomocą metalicznych włókien. Ich powierzchnia przewodzi złożone impulsy elektryczne, umożliwiając harmonijne działanie wszystkich systemów.\n \nPrzytrzymaj <IMG>THRUST<>, by spytać, czy statek chciałby wyruszyć.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4339,9 +4510,11 @@
     "Description": "Złożony, biometaliczny twór wetknięty w samo serce antymaterii. Rejestruje aktywność podczas skoków międzygwiezdnych. Wydaje się zachwycony możliwością przeprowadzania złożonych obliczeń wymaganych do podróży nadświetlnej.\n\nUżyj mapy galaktyki, by zyskać dostęp do dalekosiężnych systemów nawigacyjnych. Utrzymaj zadowolenie statku, regularnie podróżując pomiędzy układami słonecznymi.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4367,9 +4540,11 @@
     "Description": "Niewielka część zautomatyzowanej sieci obronnej statku wydaje się być autonomicznym organizmem. Nieduża paszcza na samym jej środku zdaje się stale łaknąć <SPECIAL>pugneum<>.\n\nW czasie walki system ten przejmuje sieć neurologiczną, niwelując wpływ strachu i bólu na pozostałe elementy statku.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4395,9 +4570,10 @@
     "Description": "Mieszanina pęcherzy i zwieraczy, które tworzą i wypluwają z siebie kule plazmy. Po podłączeniu ich do systemów uzbrojenia statku, zostają one przegrzane, a następnie wyrzucone pod wysokim ciśnieniem.\n\nNaciśnij <IMG>SHIPFIRE<>, by poprosić statek o skierowanie kanałów w stronę obecnego celu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4423,9 +4599,10 @@
     "Description": "Skomplikowany system membran i soczewek, scalony z laserem o dużej mocy. Spali wszystko, na czym spocznie ich spojrzenie.\nNaciśnij <IMG>SHIPFIRE<>, by poprosić oczy, by spojrzały na pobliskie cele.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4451,9 +4628,10 @@
     "Description": "Urządzenie modulujące standardowe sygnały komunikacyjne frachtowca tak, aby umożliwić <TECHNOLOGY>międzyplanetarny transport materii<>, a nie tylko danych.\n\nStatki gwiezdne, wyposażone w takie urządzenie, mogą wysyłać i odbierać produkty i substancje do i z <STELLAR>egzokombinezonu<> użytkownika na <STELLAR>dalekie odległości<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 5,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4483,9 +4661,10 @@
     "Description": "Wysoko wyspecjalizowany dodatek do zdolności wydobywczych multinarzędzia, przekształcający <STELLAR>złoża terenowe<> w <STELLAR>ciekłe słońce<>.\n\nPotężny układ laserów wzmacnia miejscowe promieniowanie słoneczne i pozwala na szybką rekonfigurację pobliskich rud mineralnych.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4511,9 +4690,11 @@
     "Description": "Wyjątkowe przeładowanie standardowego lasera wydobywczego multinarzędzia. Częstotliwość promienia jest modulowana precyzyjnie w pętli zwrotnej, a fale delta są generowane przez cel uderzenia.\n\nZapisy wrażeń celu są więc wycinane na niewielkich fragmentach metalu i renderowane jako <STELLAR>pofragmentowane Qualia<>. Czytelność zebranych fragmentów nie jest gwarantowana.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 160,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4539,9 +4720,10 @@
     "Description": "Na wszystkich panelach strukturalnych instalowane są sublimacyjne przewody chłodzące oraz wysokotemperaturowe bufory masy, dzięki czemu pilot egzopojazdu przebywa w znośnej temperaturze nawet w obliczu burzy ogniowej.\n\nCałkowicie zapobiega wszelkim obrażeniom lub spadkom energii podczas poruszania się egzopojazdem w <FUEL>palących środowiskach<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4571,9 +4753,10 @@
     "Description": "Instaluje w egzopojeździe potężny podgrzewacz, dzięki czemu kabina zachowuje znośną temperaturę nawet w ekstremalnie mroźnych warunkach.\n\nCałkowicie zapobiega wszelkim obrażeniom lub spadkom energii podczas poruszania się egzopojazdem w <TEMPERATURE>mroźnych środowiskach<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4603,9 +4786,10 @@
     "Description": "Układy filtracji powietrza z technologią podwójnej próżni nie wpuszczają nawet najmniejszych cząstek atmosfery planetarnej do wnętrza kabiny egzopojazdu, bez uprzedniego oczyszczenia ich.\n\nCałkowicie zapobiega wszelkim obrażeniom lub spadkom energii podczas poruszania się egzopojazdem w <TRADEABLE>toksycznych środowiskach<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4635,9 +4819,10 @@
     "Description": "Rama egzopojazdu zostaje osłonięta niezwykle wydajnymi materiałami kontrolnymi, co neutralizuje niebezpieczne fale energetyczne pochodzące z zewnątrz.\n\nCałkowicie zapobiega wszelkim obrażeniom lub spadkom energii podczas poruszania się egzopojazdem w <COMMODITY>radioaktywnych środowiskach<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4667,9 +4852,10 @@
     "Description": "Układ Ikar wykorzystuje istniejące panele metalowe i nadaje im właściwości fotowoltaiczne. Ta reaktywna powłoka generuje energię za dnia i zmniejsza zużycie paliwa.\n\nWłącza <STELLAR>automatyczne ładowanie silnika<> za <STELLAR>dnia<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4699,9 +4885,10 @@
     "Description": "Pozwala na wykrywanie wzmacniaczem sygnału egzopojazdu dodatkowych rodzajów budynków.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4731,9 +4918,10 @@
     "Description": "Niewielka jednostka reaktora, będąca sercem Minotaura. Zamocowana na żyroskopie, aby zapobiec problemom z paliwem podczas gwałtownych ruchów.\n\nZasilana konwencjonalnymi <FUEL>paliwami węglopochodnymi<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4763,9 +4951,10 @@
     "Description": "Automatycznie regulowany dozownik smaru, przytwierdzony do przegubów w nogach Minotaura. Jego zadaniem jest zmniejszanie tarcia i wspomaganie ruchu wydajnego paliwowo.\n\nZnacząco <STELLAR>zmniejsza spalanie paliwa<> w silniku Dedal Minotaura.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4795,9 +4984,10 @@
     "Description": "Niezwykle czułe urządzenie radarowe, zdolne ulepszyć technologie skanowania na pokładzie Minotaura do poziomów wizjera analitycznego.\n\nNaciśnij <IMG>SCAN<>, aby aktywować skan radarowy i ujawnić <STELLAR>dodatkowe miejsca godne zwiedzenia<>, których nie można zlokalizować przy pomocy skanera multinarzędzia.\n\nUżyj szybkiego menu, aby dostroić radar do <TECHNOLOGY>konkretnych budynków<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4827,9 +5017,10 @@
     "Description": "Seria zwinnych silników manewrowych wysokiej mocy, zamontowanych z tyłu Minotaura. Precyzyjne użytkowanie pozwala Minotaurowi szybko i z mocą przemierzać każdego rodzaju teren.\n\nNaciśnij i przytrzymaj <IMG>JUMP<>, aby aktywować. Możliwe jest ograniczone kontrolowanie lotu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4859,9 +5050,10 @@
     "Description": "Stacjonarny system laserowy zaprojektowany specjalnie z myślą o <STELLAR>hybrydzie ciężkiego egzokombinezonu Minotaur<>.\n\nPozwala przeprowadzać konwencjonalne operacje wydobywcze. Nieprzydatny w warunkach bojowych.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4891,9 +5083,10 @@
     "Description": "Ulepszenie układu laserowego <STELLAR>hybrydy ciężkiego egzokombinezonu Minotaur<>.\n\nWzmacnia promień wydobywczy, zwiększając szybkość wydobycia i umożliwiając przetwarzanie trudnych do wydobycia surowców.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4919,9 +5112,10 @@
     "Description": "Stacjonarne działko zaprojektowane specjalnie dla <STELLAR>hybrydy ciężkiego egzokombinezonu Minotaur<>.\n\nPowstało głównie z myślą o walce z istotami biologicznymi, przez co jest niezbyt wydajne jako urządzenie wydobywcze.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4951,9 +5145,10 @@
     "Description": "Dodaje układowi lasera <STELLAR>hybrydy ciężkiego egzokombinezonu Minotaur<> zdolność <STELLAR>niwelacji terenu<>.\n\nSpecjalny uchwyt pozwala szybko rozmieścić wysokoenergetyczną koparkę terenową, bez ryzyka zatkania delikatnych stawów i serwomechanizmów Minotaura glebą.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 210,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -4983,9 +5178,10 @@
     "Description": "Potężny układ neutralizacji otoczenia zostaje podłączony bezpośrednio do pilota Minotaura, kiedy ten przejmuje kontrolę nad pojazdem. Układ zasilany jest poprzez główną jednostkę napędową Minotaura i nie wymaga dodatkowego sterowania przez użytkownika. W miejscu podłączenia może być wyczuwalny niewielki ból.\n\nDzięki temu pilot Minotaura jest odporny na <STELLAR>wszelkie zagrożenia środowiskowe<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 120,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5015,9 +5211,10 @@
     "Description": "Tworzy pole antymaterii otaczające strzały <TECHNOLOGY>błyskacza<>, wywołując ich odpychanie przez nieuszkodzone powierzchnie.\n\nUmożliwia <STELLAR>rykoszet<>, wywołując odbijanie się pocisków, jeśli trafiony cel nie zostanie przez nie uszkodzony.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5043,9 +5240,10 @@
     "Description": "Tworzy pole antymaterii otaczające strzały z <TECHNOLOGY>PM-a pulsacyjnego<>, wywołując ich odpychanie przez nieuszkodzone powierzchnie.\n\nUmożliwia <STELLAR>rykoszet<>, wywołując odbijanie się pocisków, jeśli trafiony cel nie zostanie przez nie uszkodzony.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5075,9 +5273,10 @@
     "Description": "Specjalne, <FUEL>wysokotemperaturowe<> akcesorium broni do <TECHNOLOGY>multinarzędzia<>. Zyskaj dostęp do trybu ostrzału, naciskając <IMG>CYCLEWEAPON<>. Strzel z broni, używając <IMG>ATTACK<>.\n\n<TECHNOLOGY>Spalarka<> skupia wewnętrzne lasery na naturalnie występujących gazach wydechowych, wytwarzanych przez multinarzędzie. Zapłon wywołuje niezwykle niszczycielską burzę ogniową na krótkim dystansie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5103,9 +5302,11 @@
     "Description": "Zrobiony na zamówienie system <TECHNOLOGY>kontroli startu<> dla statków gwiezdnych o dużych osiągach. Czułe żyroskopy i wyspecjalizowane układy kontrolne przeprowadzają nietypowe procedury startu, zwiększające <STELLAR>szybkość<> i <STELLAR>wydajność<> startu.\n \nDo ładowania silnika wymagane jest specjalne <TECHNOLOGY>paliwo, pochodzące z diwodoru<>. Uruchomienie procedur wymaga wystarczającej ilości paliwa przed aktywacją.\n \nPrzytrzymaj <IMG>THRUST<>, aby wystartować z powierzchni planety. Przytrzymaj <IMG>BOOST<>, aby włączyć dopalacz w locie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5131,9 +5332,11 @@
     "Description": "Wybitnie zmodyfikowana wersja konwencjonalnego <TECHNOLOGY>silnika pulsacyjnego<> statku. Wykorzystanie fali zostało zmaksymalizowane, tworząc <STELLAR>wydajny<> i <STELLAR>wyjątkowo responsywny<> impuls.\n\nUżytkownik powinien zwrócić uwagę, że do naładowania silnika pulsacyjnego wymagany jest <EXOTIC>tryt<>. Tryt występuje w obfitości w <COMMODITY>polach asteroid w pobliskiej przestrzeni kosmicznej<>.\n\nPrzytrzymaj <IMG>PULSEJUMP<>, aby włączyć skok impulsowy. Przytrzymaj <IMG>BOOST<>, aby włączyć dopalanie w trakcie lotu w kosmosie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5159,9 +5362,11 @@
     "Description": "Ten eksperymentalny napęd wzmacnia konwencjonalną technologię <TECHNOLOGY>hipernapędu<> zakłócając miejscową geometrię do momentu zainicjowania skoku warp, wybitnie zwiększając <STELLAR>zasięg<> i <STELLAR>wydajność<> względem tradycyjnych napędów.\n\nUżytkownik powinien uzyskać dostęp do układów hipernapędu za pośrednictwem <STELLAR>mapy galaktyki<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5191,9 +5396,11 @@
     "Description": "Kluczowy element bezpieczeństwa na statku, wybitnie ważny dla lotów poza orbitą\n\nKapsuła ciśnieniowa to dedykowane urządzenie zapewniające <STELLAR>wdychalną atmosferę<> i zapobiegające katastrofalnym eksplozjom nietypowych kokpitów.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5219,9 +5426,10 @@
     "Description": "Fragment technologii z innego świata. Jego kuszące błony są miękkie, żelowate i pulsują delikatną, karmazynową poświatą.\n\nJego ciepłe objęcia pozwalają użytkownikowi ekstrahować <STELLAR>paskudne pomioty<> z woreczków embrionalnych <SPECIAL>wygłodniałych macek<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5251,9 +5459,10 @@
     "Description": "<TECHNOLOGY>Biotechnologiczny firewall<> będący zabezpieczeniem przed tekstowymi zagrożeniami dla świadomości. Jest pokryty czymś śliskim, a na powierzchni pojawiły się bąbelki.\n\nPo wprowadzeniu pod skórę daje dostęp administratorski do zakazanych tekstów zamkniętych w <SPECIAL>archiwum planetarnym<>.\n<FUEL>Uwaga<>: Nie otwieraj zakazanych tekstów. Kontakt z zakazanymi tekstami to ogromne ryzyko!",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 90,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5283,9 +5492,10 @@
     "Description": "Przekaźnik, pomagający w zasilaniu urządzenia. Niestety, jego styki skorodowały, a cewka przestała działać.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5311,9 +5521,10 @@
     "Description": "Bardzo mały silniczek, zaprojektowany do zasilania małych części. Skorodował i jest pełen małych płatków rdzy.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5339,9 +5550,10 @@
     "Description": "Pompa i system wymiany cieplnej, zaprojektowane aby przeciwdziałać przegrzaniu się urządzenia. System sam się przegrzał i przestał działać.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5363,9 +5575,10 @@
     "Description": "Jednostka kontrolna zaprojektowana do utrzymywania równej temperatury w całym urządzeniu. Jej czujnik został uszkodzony, w związku z czym odprowadza ona ciepło lub generuje je w niewłaściwych momentach.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5391,9 +5604,10 @@
     "Description": "Niewielki mechaniczny przegub, używany do niwelowania niewielkich błędów mechanicznych w całym urządzeniu. Usterka powoduje, że pobiera on komponenty funkcjonalne i wpycha je w niewłaściwe miejsce, powodując jeszcze większe uszkodzenia.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5415,9 +5629,10 @@
     "Description": "Niewielka komora ciśnieniowa, wytwarzająca skompresowany gaz potrzebny urządzeniu do działania. Na komorze pojawiły się pęknięcia, powodujące wyciek.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5443,9 +5658,10 @@
     "Description": "Obwód kontrolujący wszystkie pozostałe komponenty urządzenia. Uszkodzenia obwodu są krytyczne.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5467,9 +5683,10 @@
     "Description": "Centralna jednostka zasilająca urządzenie. Jej uszkodzenie oznacza, że zakłóca ona obecnie zasilanie pewnego obwodu, powodując niebezpieczne spięcie.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5495,9 +5712,10 @@
     "Description": "Mechanizm przekładni urządzenia. Smar, dzięki któremu przekładnia działa, został zastąpiony zielonym szlamem i tryby się zatarły.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5523,9 +5741,10 @@
     "Description": "Niewielki, ale wydajny panel, pobierający światło i przekształcający je na zasilanie. Panel pękł i jest skurzony, a więc nie można na nim polegać.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5555,9 +5774,10 @@
     "Description": "Skrzynia żąda <TECHNOLOGY>trójzębnego klucza<>, wręczanego tym, którzy badają tajemnicze miejsca w głębinach oceanu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5579,9 +5799,10 @@
     "Description": "Po aktywacji moduł pobiera moc z systemów <VAL_ON>podtrzymywania życia<> i manipuluje polem grawitacyjnym wokół użytkownika, by zaginać światło, tworząc <STELLAR>aktywny kamuflaż<>.\n\nTen <STELLAR>tymczasowy<> efekt pozwala uniknąć niezamierzonego kontaktu z wrogiem. UWAGA: aktywny kamuflaż może się wyłączyć po wykonaniu gwałtownych manewrów w egzokombinezonie, na przykład podczas aktywacji plecaka odrzutowego lub systemów uzbrojenia multinarzędzia.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 80,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5611,9 +5832,11 @@
     "Description": "Niezabijająca broń miotająca. Wystrzelone pociski ogłuszają pobliskie cele ładunkiem energii elektrycznej. Działają zarówno przeciw istotom biologicznym, jak i elektronicznym.\n \nOręż ładowany <FUEL>niestabilną plazmą<>.\n \nWciśnij <IMG>ALTATTACK<>, by uruchomić.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 150,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5643,9 +5866,10 @@
     "Description": "Doładowuje promień energii generowany przez <TECHNOLOGY>oszczep rozbłysku<>, tworząc potężny ładunek elektryczny w miejscu uderzenia.\n\nNa chwilę <STELLAR>ogłusza<> wszystkie organiczne i nieorganiczne istoty mające kontakt z promieniem oszczepu rozbłysku.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5675,9 +5899,10 @@
     "Description": "Potężne ulepszenie bojowe dla <TECHNOLOGY>spluwacza pulsacyjnego<>. Moduł ten instaluje w lufie serię delikatnie skalibrowanych dysz wtryskowych paliwa, które inicjują kontrolowane spalanie w pociskach plazmowych.\n\nSprawia, że cele trafione pulsatorem <STELLAR>płoną<> przez krótką chwilę i otrzymują dodatkowe obrażenia.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5707,9 +5932,11 @@
     "Description": "<STELLAR>Broń energetyczna<>, dodatek do <TECHNOLOGY>multinarzędzia<>. Działko neutronowe energetyzuje cząsteczki atmosferyczne, po czym wystrzeliwuje je w stronę wrogich celów, zadając <STELLAR>znaczne obrażenia obszarowe<>\n\nZmień tryb ostrzału, naciskając <IMG>CYCLEWEAPON<>. Naładuj broń, przytrzymując <IMG>ATTACK<>, a potem puść, by wystrzelić <STELLAR>salwę jonizowanych cząstek<>.\n\nChoć działko może strzelać szybkim ogniem pojedynczym, <TECHNOLOGY>dłuższe naładowanie<> znacząco zwiększa <TECHNOLOGY>szybkość i objętość wypuszczonych cząstek<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasChargedBy": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 250,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5739,9 +5966,10 @@
     "Description": "Potężne ulepszenie <TECHNOLOGY>działka neutronowego<>. Dodatkowe kompresory rezonansowe pozwalają na przepuszczenie przez rdzeń działka o wiele większej energii, zauważalnie zwiększając moc broni.\n\nPo instalacji w pełni naładowane działko neutronowe wystrzeli <STELLAR>dodatkowe pociski<> z większą <STELLAR>szybkością<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5771,9 +5999,10 @@
     "Description": "Ogólne ulepszenie wszystkich <TECHNOLOGY>systemów uzbrojenia<> multinarzędzia, dzięki któremu pociski po uderzeniu wpadają w rezonans elektromagnetyczny.\n\nZnacząco zwiększa <STELLAR>obrażenia<> zadawane wszystkim <STELLAR>ogłuszonym<> istotom organicznym i nieorganicznym.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2177C8",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 180,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5803,9 +6032,10 @@
     "Description": "Półautonomiczna <TECHNOLOGY>wtyczka autopilota<> do ciężkiej hybrydy egzopojazdu Minotaur. Po instalacji Minotaur może <STELLAR>samodzielnie poruszać się po planetach<>, brać udział w <STELLAR>walce<> lub przeprowadzać <STELLAR>wydobycie<>, by wesprzeć swojego głównego operatora.\n\nPilot SI zawsze oddaje kontrolę nad pojazdem operatorowi, gdy ten wejdzie do kokpitu.\n\nProcedury pilotażu mają wymiar lokalny. SI nie jest w stanie nawiązać więzi emocjonalnej ani objąć samodzielnej kontroli nad Minotaurem.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 480,
     "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
@@ -5835,9 +6065,10 @@
     "Description": "Zestaw różnych komponentów zebranych ze szczątków mecha Strażnika i przerobionych tak, by pasowały do ciężkiej hybrydy egzopojazdu <TECHNOLOGY>Minotaur<>.\n\nJeśli są zainstalowane razem z <TECHNOLOGY>laserem Minotaura<>, zwiększają <STELLAR>moc<> i <STELLAR>wydajność<> <TECHNOLOGY>laserów górniczych<> Minotaura.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5867,9 +6098,10 @@
     "Description": "Zestaw różnych komponentów zebranych ze szczątków mecha Strażnika i przerobionych tak, by pasowały do ciężkiej hybrydy egzopojazdu <TECHNOLOGY>Minotaur<>.\n\nZapewniają znaczne <STELLAR>ulepszenie siły ognia<> <TECHNOLOGY>systemów uzbrojenia<> Minotaura.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5899,9 +6131,10 @@
     "Description": "Zestaw różnych komponentów zebranych ze szczątków mecha Strażnika i przerobionych tak, by pasowały do ciężkiej hybrydy egzopojazdu <TECHNOLOGY>Minotaur<>.\n\nInstalacja znacząco poprawia działanie <TECHNOLOGY>silnika i systemów napędowych<>.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 500,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -5927,9 +6160,10 @@
     "Description": "Zestaw różnych komponentów zebranych ze szczątków mecha Strażnika i przerobionych tak, by pasowały do ciężkiej hybrydy egzopojazdu <TECHNOLOGY>Minotaur<>.\n\nFunkcjonuje jako półautonomiczna <TECHNOLOGY>wtyczka autopilota<>. Po instalacji Minotaur może <STELLAR>samodzielnie poruszać się po planetach<>, brać udział w <STELLAR>walce<> lub przeprowadzać <STELLAR>wydobycie<>, by wesprzeć swojego głównego operatora.\n\nPilot SI zawsze oddaje kontrolę nad pojazdem operatorowi, gdy ten wejdzie do kokpitu.",
     "BaseValueUnits": 1.0,
     "CurrencyType": "None",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "095C77",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 480,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,

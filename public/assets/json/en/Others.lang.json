@@ -1,16 +1,18 @@
 [
   {
     "Id": "other1",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "Planetary Chart",
     "Group": "Cartographic Data",
     "Description": "A map of a nearby planet. The coordinates of a <TECHNOLOGY>distress signal<> have been marked.\n\nSelect the map and use Plot Route (<IMG>FE_ALT1<>) to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging <COMMODITY>Navigation Data<> with a Space Station Cartographer.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -21,18 +23,20 @@
   },
   {
     "Id": "other2",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "Planetary Chart",
     "Group": "Cartographic Data",
     "Description": "A map of a nearby location, retrieved from the <STELLAR>Local Information Repository<> at a Planetary Archive building.\n\nAn <SPECIAL>ancient ruined site<> has been marked. Excavating this site is likely to yield valuable treasures.\n\nSelect the map and use Plot Route (<IMG>FE_ALT1<>) to pin the location in your Exosuit display.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/2.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -50,11 +54,14 @@
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/other/3.png",
+    "Usages": {
+      "HasUsedToCraft": true,
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -72,11 +79,14 @@
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/other/4.png",
+    "Usages": {
+      "HasUsedToCraft": true,
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -94,11 +104,13 @@
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "0063B7",
     "CdnUrl": "https://cdn.nmsassistant.com/other/5.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -116,11 +128,13 @@
     "BaseValueUnits": 85000.0,
     "CurrencyType": "Credits",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/6.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -138,11 +152,13 @@
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Credits",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/7.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -160,11 +176,13 @@
     "BaseValueUnits": 10000.0,
     "CurrencyType": "Credits",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/8.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -182,10 +200,11 @@
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/9.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -203,10 +222,11 @@
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/10.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -224,10 +244,11 @@
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/11.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -245,10 +266,11 @@
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/12.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -266,10 +288,11 @@
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/13.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -287,10 +310,11 @@
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/14.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -308,10 +332,11 @@
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/15.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -329,10 +354,11 @@
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/16.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -350,10 +376,11 @@
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/17.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -371,10 +398,11 @@
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/18.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -392,10 +420,11 @@
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/19.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -413,10 +442,11 @@
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/20.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -434,10 +464,11 @@
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/21.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -455,10 +486,11 @@
     "BaseValueUnits": 750.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/22.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -476,10 +508,11 @@
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/23.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -497,10 +530,11 @@
     "BaseValueUnits": 750.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/24.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -518,10 +552,11 @@
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/25.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -539,10 +574,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/26.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -560,10 +596,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/27.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -581,10 +618,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/28.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -602,10 +640,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/29.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -623,10 +662,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/30.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -644,10 +684,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/31.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -665,10 +706,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/32.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -686,10 +728,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/33.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -707,10 +750,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/34.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -728,10 +772,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/35.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -749,10 +794,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/36.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -770,10 +816,11 @@
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
     "Additional": "",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/37.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -790,10 +837,12 @@
     "Description": "A technology module harvested from the remains of a <STELLAR>salvaged starship<>. May also be collected from <STELLAR>freighter crash sites<> or salvaged during <STELLAR>frigate expeditions<>.\n\nCan be used to expand starship storage capacity at the Space Station's <TECHNOLOGY>Starship Outfitter<>.",
     "BaseValueUnits": 125000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": true,
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -810,10 +859,11 @@
     "Description": "A valuable piece of broken down starship, created by a <TECHNOLOGY>Starship Outfitting Terminal<> at a <TRADEABLE>Space Station<>.\n\nComponent is useful only as scrap to be sold at a <VAL_ON>Trade Terminal<>.",
     "BaseValueUnits": 100000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 25.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -830,10 +880,12 @@
     "Description": "A valuable piece of broken down starship, created by a <TECHNOLOGY>Starship Outfitting Terminal<> at a <TRADEABLE>Space Station<>.\n\nComponent is useful only as scrap to be sold at a <VAL_ON>Trade Terminal<>.",
     "BaseValueUnits": 200000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 25.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsEggIngredient": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -850,10 +902,11 @@
     "Description": "A valuable piece of broken down starship, created by a <TECHNOLOGY>Starship Outfitting Terminal<> at a <TRADEABLE>Space Station<>.\n\nComponent is useful only as scrap to be sold at a <VAL_ON>Trade Terminal<>.",
     "BaseValueUnits": 400000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -870,10 +923,11 @@
     "Description": "A valuable piece of broken down starship, created by a <TECHNOLOGY>Starship Outfitting Terminal<> at a <TRADEABLE>Space Station<>.\n\nComponent is useful only as scrap to be sold at a <VAL_ON>Trade Terminal<>.",
     "BaseValueUnits": 600000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 15.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -890,10 +944,11 @@
     "Description": "A valuable piece of broken down starship, created by a <TECHNOLOGY>Starship Outfitting Terminal<> at a <TRADEABLE>Space Station<>.\n\nComponent is useful only as scrap to be sold at a <VAL_ON>Trade Terminal<>.",
     "BaseValueUnits": 800000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 10.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -910,10 +965,11 @@
     "Description": "A valuable piece of broken down starship, created by a <TECHNOLOGY>Starship Outfitting Terminal<> at a <TRADEABLE>Space Station<>.\n\nComponent is useful only as scrap to be sold at a <VAL_ON>Trade Terminal<>.",
     "BaseValueUnits": 3000000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -930,10 +986,11 @@
     "Description": "A valuable piece of broken down starship, created by a <TECHNOLOGY>Starship Outfitting Terminal<> at a <TRADEABLE>Space Station<>.\n\nComponent is useful only as scrap to be sold at a <VAL_ON>Trade Terminal<>.",
     "BaseValueUnits": 50000000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -950,10 +1007,11 @@
     "Description": "A synthetic polymer companion for your starship's cockpit, fashioned in the likeness of the Traveller Apollo.\n\nInstall to an <TECHNOLOGY>Inventory Slot<> to decorate your ship's interior.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/46.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -982,10 +1040,11 @@
     "Description": "A synthetic polymer companion for your starship's cockpit, fashioned in the likeness of the Traveller Artemis.\n\nInstall to an <TECHNOLOGY>Inventory Slot<> to decorate your ship's interior.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/47.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1014,10 +1073,11 @@
     "Description": "A synthetic polymer adornment for your starship's cockpit, fashioned in the likeness of an Atlas Interface.\n\nInstall to an <TECHNOLOGY>Inventory Slot<> to decorate your ship's interior.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/48.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1046,10 +1106,11 @@
     "Description": "A synthetic polymer companion for your starship's cockpit, fashioned in the likeness of Priest Entity Nada.\n\nInstall to an <TECHNOLOGY>Inventory Slot<> to decorate your ship's interior.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/49.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1078,10 +1139,11 @@
     "Description": "A synthetic polymer companion for your starship's cockpit, fashioned in the likeness of the Traveller -null-.\n\nInstall to an <TECHNOLOGY>Inventory Slot<> to decorate your ship's interior.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/50.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1110,10 +1172,11 @@
     "Description": "A synthetic polymer companion for your starship's cockpit, fashioned in the likeness of Specialist Polo.\n\nInstall to an <TECHNOLOGY>Inventory Slot<> to decorate your ship's interior.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/51.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1142,10 +1205,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring loyalty to the <STELLAR>Citizen Science Division<>.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1162,10 +1226,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, conjuring dreamy memories of distant satellites.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1182,10 +1247,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, embracing one's anomalous existence.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1202,10 +1268,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring friendship with Specialist Polo.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1222,10 +1289,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring friendship with Priest Entity Nada.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1242,10 +1310,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring friendship with Iteration Hesperus.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1262,10 +1331,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring friendship with Iteration Ariadne.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1282,10 +1352,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, for those who prefer to travel alone.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1302,10 +1373,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, contemplating the deterministic nature of existence.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1322,10 +1394,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, contemplating one's place in the universe.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1342,10 +1415,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, contemplating one's place in the universe.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1362,10 +1436,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, playfully declaring a degree of intergalactic fame.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1382,10 +1457,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, for those who prefer to travel alone.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1402,10 +1478,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring friendship with Specialist Polo.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1422,10 +1499,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring friendship with Priest Entity Nada.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1442,10 +1520,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring friendship with Iteration Ariadne.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1462,10 +1541,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring friendship with Iteration Gemini.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1482,10 +1562,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring friendship with Iteration Mercury.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1502,10 +1583,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring friendship with Iteration Tethys.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1522,10 +1604,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring friendship with Iteration Hesperus.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1542,10 +1625,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, contemplating the deterministic nature of existence.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1562,10 +1646,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, contemplating one's place in the universe.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1582,10 +1667,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, declaring one's independence in the universe.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1602,10 +1688,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, for those who accept the designation of the Vy'keen.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1622,10 +1709,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, for those who brave the dark places of the universe.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1642,10 +1730,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, for those who brave the dark places of the universe.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1662,10 +1751,11 @@
     "Description": "Naturally transform your appearance via the application of a flesh-hungry parasite. This living being partially fuses with the brainstem of its host, sealing their symbiosis.\n\nCautiously transform the appearance of your Exosuit at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1682,10 +1772,11 @@
     "Description": "The captured essence of an abyssal horror, contained for scientific and decorative use.\n\nThe bounding forcefield is of the very highest quality. The companion cannot escape. The companion will not escape. Escape.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1711,10 +1802,11 @@
     "Description": "This species of fungus is notable for its dense capillary network and bioluminescent qualities. A circulating chain of chemical reactions produces the toadstool's nocturnal glow.\n\nProvides decorative landscaping opportunities for bases.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1736,10 +1828,11 @@
     "Description": "This ancient stump was harvested from a clonal tree colony, estimated to have lived for over a hundred millennia. Its bark releases a pleasant mossy fragrance.\n\nProvides decorative landscaping opportunities for bases.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1761,10 +1854,11 @@
     "Description": "This simple mud hut was modelled after a mysterious structure discovered in the mists of planet Saxm A13. Similar structures have been found throughout the universe, with no proven hypothesis regarding their origin.\n\nProvides decorative landscaping opportunities for bases.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1786,10 +1880,11 @@
     "Description": "A proteinous formation of unknown origin, replicated aboard the Space Anomaly. Its skeletal structure often retains pockets of air, leading to slightly warmer or cooler temperatures in the centre of the cage.\n\nProvides decorative landscaping opportunities for bases.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1811,10 +1906,11 @@
     "Description": "This unusual lifeform, dominated by a wheel of photophore glands, is difficult to classify neatly into flora or fauna. The thick columns of thorns help protect the flavoursome glands from predators.\n\nProvides decorative landscaping opportunities for bases.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1836,10 +1932,11 @@
     "Description": "The eye-like protrusions on this bizarre organism are capable of both processing light and performing simple calculations, although it is unclear what they are watching for...\n\nProvides decorative landscaping opportunities for bases.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1861,10 +1958,11 @@
     "Description": "This eggshell still whispers a faint song, as though connected to a distant chorus...\n\nProvides decorative landscaping opportunities for bases.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1886,10 +1984,11 @@
     "Description": "The broad, plate-like leaf topping this tree is highly efficient for photosynthesis, and wild specimens can grow to extraordinary heights. This domestic variety is cultivated to be suitable to furnish habitations.\n\nProvides decorative landscaping opportunities for bases.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1911,10 +2010,11 @@
     "Description": "This vegetative structure is high in antioxidants, though a thick layer of scales makes it impractical for farming.\n\nProvides decorative landscaping opportunities for bases.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1936,10 +2036,11 @@
     "Description": "Equip this exclusive <STELLAR>Personal Flair<> in support of nomadic and exploratory space travel.\n\nApply this banner to your profile at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1956,10 +2057,11 @@
     "Description": "Equip this exclusive <STELLAR>Personal Flair<> in support of community, adventure and discovery.\n\nApply this banner to your profile at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1976,10 +2078,11 @@
     "Description": "Welcome to the Café! Equip this exclusive <STELLAR>Personal Flair<> in the spirit of friends, fun and good vibes.\n\nApply this banner to your profile at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1996,10 +2099,11 @@
     "Description": "Equip this exclusive <STELLAR>Personal Flair<> in support of a united universe. Document, aid, create, communicate.\n\nApply this banner to your profile at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2016,9 +2120,10 @@
     "Description": "A living, fertile egg, %READY%%EXTRA%\n\n%MODIFIED%\n\nScans indicate the being within has the genetic potential to be %SIZE% and %TRAIT%.",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "311A49",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2035,10 +2140,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal represents the Alliance of Galactic Travellers, and the value of nomadic exploration.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2060,10 +2166,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal represents the Amino Hub, and the principles of community, adventure and discovery.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2085,10 +2192,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal represents Café 42, and the spirit of friends, fun and good vibes. Welcome to the Café!",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2110,10 +2218,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal represents the United Federation of Travelers. Document, aid, create, communicate.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2135,10 +2244,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal represents the Qitanian Empire, and the spirit of charity, kindness, peace and reason.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2160,10 +2270,11 @@
     "Description": "A luxury firework, featuring a triple-burst symphony of colour. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2180,10 +2291,11 @@
     "Description": "A luxury firework, exploding into sparkling wedges of indium and cadmium. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2200,10 +2312,11 @@
     "Description": "A luxury firework. When activated, this pyrotechnic marvel turns and whorls in a mesmerising spiral. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2220,10 +2333,11 @@
     "Description": "Equip this exclusive <STELLAR>Personal Flair<> in the spirit of charity, kindness, peace and reason.\n\nApply this banner to your profile at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2240,10 +2354,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, 'Exotic', proudly declaring one's status as an outlier.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2260,10 +2375,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, 'Volcanic', declaring one's taste for fiery explosions both literal and metaphorical.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2280,10 +2396,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, 'Swamp-Dweller', for those who find joy in places others do not.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2300,10 +2417,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, 'Sixteenth',  for those who know the deepest secrets of the universe.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2320,10 +2438,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<> that will represent your understanding of those who have come before you.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2340,10 +2459,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, 'Photographer', for those Travellers committed to beautifully documenting their trips through the universe.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2360,10 +2480,11 @@
     "Description": "An exclusive <STELLAR>Companion Appearance Enhancement<>. This articulated mining laser is insulated with a lightweight gel, ensuring ultimate comfort for companions assisting with resource harvesting.\n\nEarn the trust of wild animals to adopt companions. Interact with companions to customise their appearance.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2380,10 +2501,11 @@
     "Description": "An exclusive <STELLAR>Companion Appearance Enhancement<>. This compact device generates detailed analytics reports of creature traversal habits, to provide explorers with insight into the secret lives of their animal companions.\n\nEarn the trust of wild animals to adopt companions. Interact with companions to customise their appearance.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2400,10 +2522,11 @@
     "Description": "An exclusive <STELLAR>Companion Appearance Enhancement<>. This dual-purpose laser responds to the biological vitals of its wearer, providing an adaptive level of warmth and light, as well as soft pulses to soothe anxiety.\n\nEarn the trust of wild animals to adopt companions. Interact with companions to customise their appearance.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2420,10 +2543,12 @@
     "Description": "An advanced survival technology module that allows expansion of a user's <STELLAR>Exosuit Storage<>.\n\nPre-packed nano-expanders create stablised sub-warp voids within the Exosuit, increasing its <STELLAR>inventory capacity<>. Apply this augmentation at the Exosuit upgrade terminal on board a <STELLAR>Space Station<>.",
     "BaseValueUnits": 155000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": true,
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2440,10 +2565,11 @@
     "Description": "An exclusive <STELLAR>Exosuit Appearance Override<>.\n\nA streamlined and lightweight backpack unit, featuring an elegant single-thruster design. This exclusive exosuit augmentation commemorates completion of the inaugural <STELLAR>Expedition<>, 'Pioneers'.\n\nTransform the appearance of your Exosuit at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 3500.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2460,10 +2586,11 @@
     "Description": "An aggressive <STELLAR>Exosuit Appearance Override<>, modeled on the war helmets of the ancient Gek. This special edition is cast in a durable and precious alloy.\n\nTransform the appearance of your Exosuit at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2480,10 +2607,11 @@
     "Description": "An exclusive golden edition of the iconic <STELLAR>Alpha Vector Starship<>, commemorating completion of the inaugural <STELLAR>Expedition<>, 'Pioneers'.\n\nThis highly-manoeuvrable spacecraft is constructed from a durable and precious alloy, and coated in a tough layer of fibrous insulation to endure many lifetimes' worth of rigorous space exploration.\n\n<STELLAR>Claim<> this ship to add it to your collection, or <STELLAR>Exchange<> it with your current ship. While on a planet, summon ships from the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2500,10 +2628,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, commemorating completion of the inaugural <STELLAR>Expedition<>, 'Pioneers'.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2520,10 +2649,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal features the golden edition of the iconic Alpha Vector Starship, and commemorates completion of the inaugural <STELLAR>Expedition<>, 'Pioneers'.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2545,10 +2675,11 @@
     "Description": "Equip this exclusive <STELLAR>Personal Flair<> in commemoration of the inaugural <STELLAR>Expedition<>, 'Pioneers'.\nApply this banner to your profile at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2565,10 +2696,11 @@
     "Description": "A three-variety pack of luxury fireworks. These stunning pyrotechnics render the likeness of an Atlas Interface, in bursts of <TECHNOLOGY>indium<>, <COMMODITY>gold<> and <FUEL>cadmium<>. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2585,10 +2717,11 @@
     "Description": "A stunning pyrotechnic rendition of an Atlas Interface, rendered in a burst of <TECHNOLOGY>indium<> and <FUEL>cadmium<>. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2605,10 +2738,11 @@
     "Description": "A stunning pyrotechnic rendition of an Atlas Interface, rendered in a burst of <COMMODITY>gold<> and <TECHNOLOGY>indium<>. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2625,10 +2759,11 @@
     "Description": "A stunning pyrotechnic rendition of an Atlas Interface, rendered in a burst of <FUEL>cadmium<> and <COMMODITY>gold<>. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2645,10 +2780,11 @@
     "Description": "An exclusive buildable base ornament.\nThis elaborate, <STELLAR>gold-fringed flag<> features a rendition of the iconic Alpha Vector Starship. Plant in a habitable base to commemorate completion of the inaugural <STELLAR>Expedition<>, 'Pioneers'.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2670,10 +2806,11 @@
     "Description": "An exclusive <STELLAR>Starship<>, pre-fitted with an upgraded <TECHNOLOGY>Hyperdrive<> for efficient galactic exploration.\n\n<STELLAR>Claim<> this ship to add it to your collection, or <STELLAR>Exchange<> it with your current ship. While on a planet, summon ships from the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2690,10 +2827,11 @@
     "Description": "An exclusive <STELLAR>Starship<>, pre-fitted with an upgraded <TECHNOLOGY>Infra-Knife<> for efficient destruction of hostile ships.\n\n<STELLAR>Claim<> this ship to add it to your collection, or <STELLAR>Exchange<> it with your current ship. While on a planet, summon ships from the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2710,10 +2848,11 @@
     "Description": "An exclusive <STELLAR>Starship<>, pre-fitted with an upgraded <TECHNOLOGY>Positron Ejector<> for efficient destruction of hostile ships.\n\n<STELLAR>Claim<> this ship to add it to your collection, or <STELLAR>Exchange<> it with your current ship. While on a planet, summon ships from the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2730,10 +2869,11 @@
     "Description": "An exclusive <STELLAR>Starship<> with a spacious cargo hold, and pre-fitted with upgraded <TECHNOLOGY>Deflector Shields<> and a <TECHNOLOGY>Cyclotron Ballista<>.\n\n<STELLAR>Claim<> this ship to add it to your collection, or <STELLAR>Exchange<> it with your current ship. While on a planet, summon ships from the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2750,10 +2890,11 @@
     "Description": "An exclusive <STELLAR>Starship<>, pre-fitted with a powerful <TECHNOLOGY>Phase Beam<> and upgraded <TECHNOLOGY>Pulse Engine<> for efficient space exploration. The <TECHNOLOGY>Economy Scanner<> also allows for remote access to detailed economic data about a system, assisting in planning galactic trade routes.\n\n<STELLAR>Claim<> this ship to add it to your collection, or <STELLAR>Exchange<> it with your current ship. While on a planet, summon ships from the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2770,10 +2911,11 @@
     "Description": "An exclusive <STELLAR>Multi-Tool<>. This rifle comes with the lethal <TECHNOLOGY>Blaze Javelin<> and recoil-stabilising <TECHNOLOGY>Combat Scope<> pre-installed.\n\n<STELLAR>Take<> this Multi-Tool to add it to your collection, or <STELLAR>Exchange<> it with your current Multi-Tool. Swap between active Multi-Tools from the Utilities section of the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2790,10 +2932,11 @@
     "Description": "An exclusive <STELLAR>Multi-Tool<>. This pistol comes with the offensive <TECHNOLOGY>Boltcaster<> and defensive <TECHNOLOGY>Personal Forcefield<> pre-installed.\n\n<STELLAR>Take<> this Multi-Tool to add it to your collection, or <STELLAR>Exchange<> it with your current Multi-Tool. Swap between active Multi-Tools from the Utilities section of the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2810,10 +2953,11 @@
     "Description": "An exclusive <STELLAR>Multi-Tool<>. This specialised tool comes with an <TECHNOLOGY>Advanced Mining Laser<> and powerful <TECHNOLOGY>Optical Drill<> upgrade pre-installed.\n\n<STELLAR>Take<> this Multi-Tool to add it to your collection, or <STELLAR>Exchange<> it with your current Multi-Tool. Swap between active Multi-Tools from the Utilities section of the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2830,10 +2974,11 @@
     "Description": "An exclusive <STELLAR>Multi-Tool<>. This specialised tool comes with several <TECHNOLOGY>scanning<> upgrades pre-installed, to increase the efficiency and profitability of scanning planetary discoveries.\n\n<STELLAR>Take<> this Multi-Tool to add it to your collection, or <STELLAR>Exchange<> it with your current Multi-Tool. Swap between active Multi-Tools from the Utilities section of the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2850,10 +2995,11 @@
     "Description": "An exclusive <STELLAR>Multi-Tool<>. This rifle comes with the deadly <TECHNOLOGY>Pulse Spitter<> and explosive <TECHNOLOGY>Plasma Launcher<> pre-installed.\n\n<STELLAR>Take<> this Multi-Tool to add it to your collection, or <STELLAR>Exchange<> it with your current Multi-Tool. Swap between active Multi-Tools from the Utilities section of the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2870,10 +3016,11 @@
     "Description": "A bundle of upgrades compatible with all <STELLAR>person Multi-Tools<>.\n\nIncludes a <TECHNOLOGY>Multi-Tool Expansion Slot<>, which may be wired into a Multi-Tool at a Space Station <STELLAR>Multi-Tool Upgrade Rack<>, as well as a unique <TECHNOLOGY>Upgrade Module<>, which can be immediately installed by hand to enhance an existing Multi-Tool technology.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2890,10 +3037,11 @@
     "Description": "A three-variety pack of luxury fireworks. Rich in <FUEL>cadmium<>, <TRADEABLE>emeril<> and <TECHNOLOGY>indium<>. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2909,9 +3057,8 @@
     "Group": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2926,9 +3073,8 @@
     "Group": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2943,9 +3089,8 @@
     "Group": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2960,9 +3105,8 @@
     "Group": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2977,9 +3121,8 @@
     "Group": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2994,9 +3137,8 @@
     "Group": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3012,9 +3154,10 @@
     "Description": "The result of Nada's research into unusual patterns detected in the stories of the <TRANS_TRA>Gek<>, <TRANS_EXP>Korvax<>, and <TRANS_WAR>Vy'keen<>.\n\nThe beacon broadcasts a <STELLAR>signal echo<> attuned to the shift <SPECIAL>historiographical flux<> mapped by Nada's Traveller companions.\n\nSpecialist Polo is unwilling to predict the results of the broadcast.",
     "BaseValueUnits": 80.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3031,9 +3174,10 @@
     "Description": "Nada has detected a new pattern emerging in the stories of the <TRANS_TRA>Gek<>, <TRANS_EXP>Korvax<>, and <TRANS_WAR>Vy'keen<>.\n\nThe dosimeter measures exposure to <SPECIAL>historiographical flux<> around key artifact sites. Recordings of unusual historical shifts will enable Nada to trace the signal.\n\nAssist Nada and Polo in their research by using this device to <STELLAR>transmit historial data<> from alien artifact sites.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3050,10 +3194,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, commemorating completion of the 'Beachhead' <STELLAR>Expedition<>, and your success in tracking the <SPECIAL>renegade historical echo<>.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3070,10 +3215,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, commemorating completion of the 'Beachhead' <STELLAR>Expedition<>, and your success in tracking the <SPECIAL>renegade historical echo<>.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3090,10 +3236,11 @@
     "Description": "The <TECHNOLOGY>SSV Normandy SR1<> is a one-of-a-kind 'deep scout' frigate. This legendary ship represents peace and cooperation between races, and commemorates completion of the 'Beachhead' <STELLAR>Expedition<>.\n\nRecruiting this frigate will add it to your fleet. Manage your frigate fleet from a <TECHNOLOGY>Fleet Command Room<> aboard your freighter, and consult your <TECHNOLOGY>Navigator<> to deploy frigates on lucrative expeditions.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3110,8 +3257,6 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 0.0,
     "Colour": "2C7C9F",
     "BlueprintCost": 0,
@@ -3130,10 +3275,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, commemorating completion of the 'Cartographers' <STELLAR>Expedition<>, and your success in documenting and then escaping from the expedition planet.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3150,10 +3296,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\n\nThis decal commemorates your success in documenting and then escaping from the expedition planet.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3175,10 +3322,11 @@
     "Description": "Equip this exclusive <STELLAR>Personal Flair<> in commemoration of the 'Cartographers' <STELLAR>Expedition<>, and your success in documenting and then escaping from the expedition planet.\n\nApply this banner to your profile at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3195,10 +3343,11 @@
     "Description": "An exclusive <STELLAR>Exosuit Appearance Override<>.\n\nSpecially conditioned oil is added to the jetpack's exhaust jets, creating a stream of pearlescent bubbles as it operates.\n\nTransform the appearance of your Exosuit at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3215,10 +3364,11 @@
     "Description": "A living, fertile egg, <TRADEABLE>ready to hatch!<>\n\nA shadow writhes beneath the egg's protective membrane.\n\nScans indicate the being within has the genetic potential to be <FUEL>nightmarish<> and <FUEL>soul-consuming<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3235,10 +3385,11 @@
     "Description": "An exclusive <STELLAR>Starship<>, pre-fitted with a powerful <TECHNOLOGY>Phase Beam<> and upgraded <TECHNOLOGY>Pulse Engine<> for efficient space exploration. The <TECHNOLOGY>Teleport Receiver<> also allows for gathered products and materials to be efficiently teleported back to the ship over <STELLAR>long distances<>.\n\n<STELLAR>Claim<> this ship to add it to your collection, or <STELLAR>Exchange<> it with your current ship. While on a planet, summon ships from the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3255,10 +3406,11 @@
     "Description": "An exclusive <STELLAR>Starship<>, pre-fitted with an upgraded <TECHNOLOGY>Hyperdrive<> for efficient galactic exploration.\n\n<STELLAR>Claim<> this ship to add it to your collection, or <STELLAR>Exchange<> it with your current ship. While on a planet, summon ships from the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3275,10 +3427,11 @@
     "Description": "An exclusive <STELLAR>Starship<>, pre-fitted with an upgraded <TECHNOLOGY>Infra-Knife<> for efficient destruction of hostile ships.\n\n<STELLAR>Claim<> this ship to add it to your collection, or <STELLAR>Exchange<> it with your current ship. While on a planet, summon ships from the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3295,10 +3448,11 @@
     "Description": "An exclusive <STELLAR>Starship<> with a spacious cargo hold, and pre-fitted with upgraded <TECHNOLOGY>Deflector Shields<> and a <TECHNOLOGY>Cyclotron Ballista<>.\n\n<STELLAR>Claim<> this ship to add it to your collection, or <STELLAR>Exchange<> it with your current ship. While on a planet, summon ships from the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3315,10 +3469,11 @@
     "Description": "An exclusive <STELLAR>Starship<>, pre-fitted with an upgraded <TECHNOLOGY>Positron Ejector<> for efficient destruction of hostile ships.\n\n<STELLAR>Claim<> this ship to add it to your collection, or <STELLAR>Exchange<> it with your current ship. While on a planet, summon ships from the Quick Menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3335,10 +3490,11 @@
     "Description": "A living, fertile egg, <TRADEABLE>ready to hatch!<>\n\nThe armoured beast within - part crystal, part flesh - rattles gently against the egg.\n\nScans indicate the being within has the genetic potential to be deeply <TRADEABLE>devoted<> to protecting its master.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3355,10 +3511,11 @@
     "Description": "A living, fertile egg, <TRADEABLE>ready to hatch!<>\n\nThe graceful creature within beats its soft wings against the egg, impatient to be hatched.\n\nScans indicate the being within has the genetic potential to be a <STELLAR>diligent<> companion, scouting for resources from great heights.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3375,10 +3532,11 @@
     "Description": "A living, fertile egg, <TRADEABLE>ready to hatch!<>\n\nThe weight inside this egg shifts constantly, as though the creature within is bouncing energetically.\n\nScans indicate the being within has the genetic potential to be a <TRADEABLE>sweet tempered<> companion, soothed by gentle interactions.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3395,10 +3553,11 @@
     "Description": "A living, fertile egg, <TRADEABLE>ready to hatch!<>\n\nThe scaly reptile within scrapes its claws against the egg, hungry to prove its ferocity.\n\nScans indicate the being within has the genetic potential to be a <FUEL>fierce<> hunter, defeating prey and rival creatures with powerful jaws.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3415,10 +3574,11 @@
     "Description": "A living, fertile egg, <TRADEABLE>ready to hatch!<>\n\nThe insect within clicks its great horns, eager to hatch and explore the universe.\n\nScans indicate the being within has the genetic potential to be deeply <TECHNOLOGY>adventurous<>, curious to explore planets beyond its marshy homeworld.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3435,10 +3595,11 @@
     "Description": "A three-variety pack of luxury fireworks. Rich in <FUEL>cadmium<>, <TRADEABLE>emeril<> and <TECHNOLOGY>indium<>. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3455,10 +3616,11 @@
     "Description": "A three-variety pack of luxury fireworks. Rich in <FUEL>cadmium<>, <TRADEABLE>emeril<> and <TECHNOLOGY>indium<>. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3475,10 +3637,11 @@
     "Description": "A three-variety pack of luxury fireworks. Rich in <FUEL>cadmium<>, <TRADEABLE>emeril<> and <TECHNOLOGY>indium<>. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3495,10 +3658,11 @@
     "Description": "A three-variety pack of luxury fireworks. Rich in <FUEL>cadmium<>, <TRADEABLE>emeril<> and <TECHNOLOGY>indium<>. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3515,10 +3679,11 @@
     "Description": "A three-variety pack of luxury fireworks. Rich in <FUEL>cadmium<>, <TRADEABLE>emeril<> and <TECHNOLOGY>indium<>. Ignite to create glittering displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3535,10 +3700,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal depicts an explorer gazing toward the stars in a soft blue sky.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3560,10 +3726,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal depicts a colossal alien beast striding across a rust-coloured landscape.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3585,10 +3752,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal depicts a landed starship, awaiting the return of its pilot.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3610,10 +3778,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal depicts a pair of starships journeying towards a galactic core.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3635,10 +3804,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal depicts a legendary haunted diving mask.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3660,10 +3830,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\nThis decal depicts a starship pulsing past Nada and Polo's anomalous home.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3685,10 +3856,11 @@
     "Description": "This full sail replicates the design of the ancient maritime trade vessels of the Gek, and makes for a striking nautical-themed home decoration.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3710,10 +3882,11 @@
     "Description": "These offset sails replicate the design of the ancient maritime trade vessels of the Gek, and make for a striking nautical-themed home decoration.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3735,10 +3908,11 @@
     "Description": "These asymmetrical sails replicate the design of the ancient maritime trade vessels of the Gek, and make for a striking nautical-themed home decoration.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3760,10 +3934,11 @@
     "Description": "This draped canvas half-sail replicates the design of the ancient maritime trade vessels of the Gek, and makes for a striking nautical-themed home decoration.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3785,10 +3960,11 @@
     "Description": "An exclusive piece of self-adhesive, crease-proof wall art.\nThis sumptuous black and gold poster depicts a Traveller in the likeness of Apollo.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3810,10 +3986,11 @@
     "Description": "An exclusive piece of self-adhesive, crease-proof wall art.\nThis brightly-coloured poster depicts a wireframe illustration of the Space Anomaly.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3835,10 +4012,11 @@
     "Description": "An exclusive piece of self-adhesive, crease-proof wall art.\nThis poster depicts a delicious, creamy glass of warm Proto-Milk.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3860,10 +4038,11 @@
     "Description": "A translucent sheet of <STELLAR>worm-vellum<>, inscribed with a fanatical text. It writhes when touched.\n\n'The children were the first to notice.\nA thump thump thump, thundering deep below the sand.\nThe first worm split the sky like black lightning as it leapt overhead. \nWorm by worm, they rose from the desert. Migrating.\nEvery storm season, we each hope to be chosen. We arrange ourselves in lines across the desert, arms lifted to the sky.\nAnyone may enter the maw.\nWe are all equal under the great worms.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3880,10 +4059,12 @@
     "Description": "The coiled remains of a <SPECIAL>Hungering Tendril<>'s digestive tract. Though its meaty walls still convulse, there is surely no way for a fresh tendril to regrow from these meagre scraps...\n\nSuch specialist offal is rarely traded on the Galactic Exchange and is thus <STELLAR>highly valuable<>.",
     "BaseValueUnits": 160016.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasRefinedToCreate": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3900,10 +4081,12 @@
     "Description": "The fragile embryo of a <SPECIAL>Hungering Tendril<>, still dripping with mucal butter. It wails and recoils when touched.\n\nMay be extracted from embryotic sacs with the aid of a <TECHNOLOGY>Visceral Synthesiser<>.",
     "BaseValueUnits": 16.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasRefinedToCreate": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3920,10 +4103,11 @@
     "Description": "A luxury firework. These organic pyrotechnics rocket into the sky and explode in a splatter of slime, plasma and wormlets. Ignite to create disgusting displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3940,10 +4124,11 @@
     "Description": "A pack of luxury fireworks. These organic pyrotechnics rocket into the sky and explode in a splatter of slime, mucus, and wormlets. Ignite to create disgusting displays in the sky.\n\nPlace launch tube via the <VAL_ON>Build Menu<> (<IMG>BUILD_MENU<>). <FUEL>Warning<>: Aim away from living creatures. Not recommended for indoor use.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3960,10 +4145,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, commemorating completion of the <STELLAR>Emergence<> expedition.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3980,10 +4166,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\n\nThis decal commemorates completion of the <STELLAR>Emergence<> expedition.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4005,10 +4192,11 @@
     "Description": "Equip this exclusive <STELLAR>Personal Flair<> in commemoration of the <STELLAR>Emergence<> expedition.\nApply this banner to your profile at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4025,10 +4213,11 @@
     "Description": "An exclusive <STELLAR>Exosuit Appearance Override<>.\n\nAttaches an active bio-chamber to the Jetpack's exhaust nozzles. During flight, the thrusters warm and expel the slimy juice contained within.\n<STELLAR>Note<>: Contains living worms. Ejected worms may infest local ecosystems.\n\nTransform the appearance of your Exosuit at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4045,10 +4234,11 @@
     "Description": "A living, fertile egg, <TRADEABLE>ready to hatch!<>\n\nCurled within the shell is a hungry wormlet, its coils rippling restlessly.\n\nScans indicate the being within has the genetic potential to be <FUEL>cursed<> and <FUEL>insatiable<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4065,10 +4255,11 @@
     "Description": "An exclusive buildable base ornament.\n\nThis many-toothed skull once belonged to a large legless vertebrate, cousin to the titan sandworm. The powerful jaws can exert enough force to crush a Multi-Tool, and the bones of most creatures.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4090,10 +4281,11 @@
     "Description": "An exclusive <STELLAR>Exosuit Appearance Override<>.\n\nRedistribute your facial organs and alarm other explorers by assuming the appearance of a sandworm cultist. This bio-silicone helmet is sealed against all known planetary hazards, but may feel slightly clammy to the wearer.\n\nRitualistically transform the head of your <STELLAR>Vy'keen<> appearance at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4110,8 +4302,6 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
@@ -4128,10 +4318,11 @@
     "Description": "Ancient words are carved into this <STELLAR>living document<>. They read:\n\n'The worm lord towers above the dusty earth; its flesh becomes the sky.\nOur pathetic shells cannot follow, cannot reach its height, cannot reach its depths.\nWe offer ourselves to the ground.\nWe beg our sacrifice accepted.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4148,10 +4339,11 @@
     "Description": "Ancient words are carved into this <STELLAR>living document<>. They read:\n\n'The dust was choking. \nOur eyes reddened and watered. \nBut the truth was inescapable.\nThe veins of the Atlas had surfaced.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4168,10 +4360,11 @@
     "Description": "Ancient words are carved into this <STELLAR>living document<>. They read:\n\n'Now with every storm we beg to be chosen;\nArms to the sky, faces to the dirt, calling out with all we have!\nWhen heavy raindrops hit the earth, the veins of Atlas answer.\nThe rapture of our consumption is beyond words.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4188,10 +4381,11 @@
     "Description": "Ancient words are carved into this <STELLAR>living document<>. They read:\n\n'We tumble as it swallows, but grip the slick walls as best we can - \nOh! - to reach the gizzard still awake. \nBreathe it deeply! How our lungs gurgle!\nThe slime clogs our noses and stings our eyes, \nthough in this warm darkness, we are already blind.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4208,10 +4402,11 @@
     "Description": "Ancient words are carved into this <STELLAR>living document<>. They read:\n\n'Curse the agony of regurgitation, \nCurse this this feeble flesh that still confines me!\nMy brethren were reborn, rising from the blessed dust as fresh tendrils. \nGlistening capillaries to the great veins, slithering away into the sand.\nI will be patient. Until the next storm.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4222,16 +4417,18 @@
   },
   {
     "Id": "other205",
-    "Icon": "other/2.png",
+    "Icon": "other/205.png",
     "Name": "Planetary Chart",
     "Group": "Secret Cartographic Data",
     "Description": "A map of a nearby planet. A <FUEL>secure site of interest<> has been marked. Such sites often hold <TECHNOLOGY>blueprints<> for <STELLAR>new products<>.\n\nSelect the map and use Plot Route (<IMG>FE_ALT1<>) to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging <COMMODITY>Navigation Data<> with a Space Station Cartographer.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4242,16 +4439,18 @@
   },
   {
     "Id": "other206",
-    "Icon": "other/2.png",
+    "Icon": "other/206.png",
     "Name": "Planetary Chart",
     "Group": "Emergency Cartographic Data",
     "Description": "A map of a nearby planet. The coordinates of a <TECHNOLOGY>distress signal<> have been marked.\n\nSelect the map and use Plot Route (<IMG>FE_ALT1<>) to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging <COMMODITY>Navigation Data<> with a Space Station Cartographer.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4262,16 +4461,18 @@
   },
   {
     "Id": "other207",
-    "Icon": "other/2.png",
+    "Icon": "other/207.png",
     "Name": "Planetary Chart",
     "Group": "Commercial Cartographic Data",
     "Description": "A map of a nearby planet. An <COMMODITY>inhabited outpost<> of some kind has been marked.\n\nSelect the map and use Plot Route (<IMG>FE_ALT1<>) to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging <COMMODITY>Navigation Data<> with a Space Station Cartographer.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4282,16 +4483,18 @@
   },
   {
     "Id": "other208",
-    "Icon": "other/2.png",
+    "Icon": "other/208.png",
     "Name": "Planetary Chart",
     "Group": "Alien Cartographic Data",
     "Description": "A map of a nearby planet. An <SPECIAL>ancient artifact site<> has been marked.\n\nSelect the map and use Plot Route (<IMG>FE_ALT1<>) to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging <COMMODITY>Navigation Data<> with a Space Station Cartographer.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4302,16 +4505,18 @@
   },
   {
     "Id": "other209",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "Planetary Chart",
     "Group": "Cartographic Data",
     "Description": "A map of a nearby planet. An <SPECIAL>ancient artifact site<> has been marked.\n\nSelect the map and use Plot Route (<IMG>FE_ALT1<>) to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging <COMMODITY>Navigation Data<> with a Space Station Cartographer.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4328,10 +4533,11 @@
     "Description": "An exclusive <STELLAR>Companion Appearance Enhancement<>. Ideal for fierce-tempered companions, this stylish plate armour protects vital organs against laser and projectile fire. Ultra-soft breathable padding reduces the likelihood of companions wriggling out of the accessory.\n\nEarn the trust of wild animals to adopt companions. Interact with companions to customise their appearance.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4348,10 +4554,11 @@
     "Description": "An exclusive <STELLAR>Exosuit Appearance Override<>.\n\nAn elegant wing-assisted jetpack, inspired by the design philosophy of exotic starships. This exclusive exosuit augmentation commemorates completion of the 'Exobiology' <STELLAR>Expedition<>.\n\nTransform the appearance of your Exosuit at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 3500.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4368,10 +4575,11 @@
     "Description": "An exclusive <STELLAR>Explorer Title<>, commemorating completion of the <STELLAR>Exobiology<> expedition.\n\nApply this title to your banner at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4388,10 +4596,11 @@
     "Description": "An exclusive placeable decal, to add flair and decoration to bases.\n\nThis decal commemorates completion of the <STELLAR>Exobiology<> expedition, and celebrates the peaceful co-existence of Travellers with the countless species of wildlife inhabiting the universe.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4413,10 +4622,11 @@
     "Description": "Equip this exclusive <STELLAR>Personal Flair<> in commemoration of the 'Exobiology' <STELLAR>Expedition<>, and your explorations into the diverse wildlife inhabiting the universe.\n\nApply this banner to your profile at an <TECHNOLOGY>Appearance Modifier<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4433,10 +4643,11 @@
     "Description": "A metal 'egg' capsule, <TRADEABLE>ready to hatch!<>\n\nThe shell crackles with an electronic energy.\n\nScans indicate the being within is programmed to be <SPECIAL>tireless<> and <SPECIAL>watchful<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,

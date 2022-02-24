@@ -1,16 +1,18 @@
 [
   {
     "Id": "other1",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "星图",
     "Group": "制图资料",
     "Description": "一张附近行星的地图，标有一个<TECHNOLOGY>求救信号<>的坐标。\n\n选择地图并使用规划航线（<IMG>FE_ALT1<>）以在你的套装屏幕中固定该地点。\n\n新地图可以通过与空间站制图师交换<COMMODITY>导航数据<>获取。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -21,17 +23,19 @@
   },
   {
     "Id": "other2",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "星图",
     "Group": "制图资料",
     "Description": "一张附近位置的地图，取自一座行星档案建筑的<STELLAR>本地信息库<>。\n\n标有一个<SPECIAL>远古废墟地点<>。挖掘此地点就有可能获得珍贵宝藏。\n\n选择地图并使用规划路线（<IMG>FE_ALT1<>）以在你的套装屏幕中固定该地点。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/2.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -48,11 +52,14 @@
     "Description": "一把有些重的钥匙，这块经过锻造的铁块一定属于附近的某把锁......",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/other/3.png",
+    "Usages": {
+      "HasUsedToCraft": true,
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -69,11 +76,14 @@
     "Description": "一把奇怪的叉状钥匙，散发出一种紫外光。\n\n尽管它看上去很原始，套装扫描系统却在其尖端发现了纳米泡沫的痕迹。",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/other/4.png",
+    "Usages": {
+      "HasUsedToCraft": true,
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -90,11 +100,13 @@
     "Description": "编码导航数据。这种极其便携的数据装置包含某个行星区域的所有相关制图信息。\n\n可以用来跟空间站上的一个<TRADEABLE>制图师<>交换<STELLAR>实用的星图<>。",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "0063B7",
     "CdnUrl": "https://cdn.nmsassistant.com/other/5.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -111,11 +123,13 @@
     "Description": "输入<TECHNOLOGY>信号增强器<>即可编码导航数据。\n\n正确解码后能揭示一处含有<SPECIAL>套装升级<>的<TECHNOLOGY>空降舱<>的位置。",
     "BaseValueUnits": 85000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/6.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -132,11 +146,13 @@
     "Description": "<TECHNOLOGY>货船紧急登录日志<>上某块加密超驰程序的碎片。\n\n可能需要数块程序碎片才能完全访问记录的信息。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/7.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -153,11 +169,13 @@
     "Description": "一种代币，可使持有人在面对海盗攻击时获得系统当局的支援。",
     "BaseValueUnits": 10000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/8.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -174,10 +192,11 @@
     "Description": "专属的手势。\n你可以在空闲时从<VAL_ON>快速菜单<>中选择此手势，与其他探险家分享奇妙和愉快的心情。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/9.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -194,10 +213,11 @@
     "Description": "专属的手势。\n你可以在空闲时从<VAL_ON>快速菜单<>中选择此手势，与其他探险家分享庆祝时光。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/10.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -214,10 +234,11 @@
     "Description": "专属的手势。\n你可以在空闲时从<VAL_ON>快速菜单<>中选择此手势，与其他探险家分享欢乐时光。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/11.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -234,10 +255,11 @@
     "Description": "专属的手势。\n你可以从<VAL_ON>快速菜单<>中选择此手势，仰望大型结构、动物、植物或群星，感叹一个小生命在浩瀚的宇宙中是如此的微不足道。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/12.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -254,10 +276,11 @@
     "Description": "专属的手势。\n你可以在水下时从<VAL_ON>快捷菜单<>中选择此手势，向其他水下探险家发出“没问题”的信号。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/13.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -274,10 +297,11 @@
     "Description": "专属的手势。\n你可以从<VAL_ON>快捷菜单<>中选择此手势。看向远方的地平线，寻找你的下一次冒险。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/14.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -294,10 +318,11 @@
     "Description": "专属的手势。\n你可以从<VAL_ON>快捷菜单<>中选择此手势。在废弃的建筑物、高耸的矿物岩层或是巨大的猎食动物前摆出夸张的姿势。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/15.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -314,10 +339,11 @@
     "Description": "专属的手势。\n你可以从<VAL_ON>快捷菜单<>中选择此手势。对面前所见的奇观感到难以置信，并跪倒在地。",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/16.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -334,10 +360,11 @@
     "Description": "专属的<STELLAR>套装外观<>。\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/17.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -354,10 +381,11 @@
     "Description": "专属的<STELLAR>套装外观<>。\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/18.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -374,10 +402,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/19.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -394,10 +423,11 @@
     "Description": "好斗的<STELLAR>套装外观覆盖<>，设计基于古代吉克人的战争头盔。\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/20.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -414,10 +444,11 @@
     "Description": "强大的肩甲。这款套装增强附带连通用户骨骼系统的高压连接，按需用电流刺激用户身体，将肌肉调节至最佳防御状态。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/21.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -434,10 +465,11 @@
     "Description": "增强型时尚套装胸甲，能在不损害外观的情况下提供出色的腹部保护。",
     "BaseValueUnits": 750.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/22.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -454,10 +486,11 @@
     "Description": "装甲手套，适于挥舞武器，使尚武种族刮目相看，以及采摘尖刺植物。",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/23.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -474,10 +507,11 @@
     "Description": "精心编织的纳米纤维，使这款护腿既柔软又能抵御小型枪械的攻击。\n\n洗涤需使用专业设备。",
     "BaseValueUnits": 750.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/24.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -494,10 +528,11 @@
     "Description": "增强型足部保护系统，集成了步伐平衡陀螺仪。\n\n将数百年高科技研究的成果应用于此鞋类。",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/25.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -514,10 +549,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/26.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -534,10 +570,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/27.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -554,10 +591,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/28.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -574,10 +612,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/29.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -594,10 +633,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/30.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -614,10 +654,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/31.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -634,10 +675,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/32.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -654,10 +696,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/33.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -674,10 +717,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/34.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -694,10 +738,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/35.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -714,10 +759,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/36.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -734,10 +780,11 @@
     "Description": "专属的<STELLAR>套装外观覆盖<>。\n\n这个半硅质、半生物质的头盔能够检测和复制穿戴者的面部肌肉运动，创造出自然的头部外观。它与套装技术完全兼容，并能完全起到传统头盔的防护作用。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/37.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -754,10 +801,12 @@
     "Description": "从<STELLAR>飞船残骸<>里采集出来的技术模块。也可以从<STELLAR>货船失事地点<>获得，或在<STELLAR>护卫舰远征<>期间回收。\n\n你可以前往空间站的<TECHNOLOGY>飞船装备装置<>使用它来扩充飞船的仓储容量。",
     "BaseValueUnits": 125000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": true,
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -774,10 +823,11 @@
     "Description": "毁损飞船的一部分，还有使用价值，由<TRADEABLE>空间站<>的一个<TECHNOLOGY>飞船装备站<>打造。\n\n部件只能作为废品在<VAL_ON>交易终端<>出售。",
     "BaseValueUnits": 100000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 25.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -794,10 +844,12 @@
     "Description": "毁损飞船的一部分，还有使用价值，由<TRADEABLE>空间站<>的一个<TECHNOLOGY>飞船装备站<>打造。\n\n部件只能作为废品在<VAL_ON>交易终端<>出售。",
     "BaseValueUnits": 200000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 25.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsEggIngredient": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -814,10 +866,11 @@
     "Description": "毁损飞船的一部分，还有使用价值，由<TRADEABLE>空间站<>的一个<TECHNOLOGY>飞船装备站<>打造。\n\n部件只能作为废品在<VAL_ON>交易终端<>出售。",
     "BaseValueUnits": 400000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -834,10 +887,11 @@
     "Description": "毁损飞船的一部分，还有使用价值，由<TRADEABLE>空间站<>的一个<TECHNOLOGY>飞船装备站<>打造。\n\n部件只能作为废品在<VAL_ON>交易终端<>出售。",
     "BaseValueUnits": 600000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 15.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -854,10 +908,11 @@
     "Description": "毁损飞船的一部分，还有使用价值，由<TRADEABLE>空间站<>的一个<TECHNOLOGY>飞船装备站<>打造。\n\n部件只能作为废品在<VAL_ON>交易终端<>出售。",
     "BaseValueUnits": 800000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 10.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -874,10 +929,11 @@
     "Description": "毁损飞船的一部分，还有使用价值，由<TRADEABLE>空间站<>的一个<TECHNOLOGY>飞船装备站<>打造。\n\n部件只能作为废品在<VAL_ON>交易终端<>出售。",
     "BaseValueUnits": 3000000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -894,10 +950,11 @@
     "Description": "毁损飞船的一部分，还有使用价值，由<TRADEABLE>空间站<>的一个<TECHNOLOGY>飞船装备站<>打造。\n\n部件只能作为废品在<VAL_ON>交易终端<>出售。",
     "BaseValueUnits": 50000000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -914,10 +971,11 @@
     "Description": "飞船驾驶舱的合成高分子玩具摆件，原型是旅行者阿波罗。\n\n安装到<TECHNOLOGY>库存栏位<>中来装饰你的飞船内部。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/46.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -939,10 +997,11 @@
     "Description": "飞船驾驶舱的合成高分子玩具摆件，原型是旅行者阿耳特弥斯。\n\n安装到<TECHNOLOGY>库存栏位<>中来装饰你的飞船内部。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/47.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -964,10 +1023,11 @@
     "Description": "飞船驾驶舱的合成高分子玩具摆件，原型是阿特拉斯。\n\n安装到<TECHNOLOGY>库存栏位<>中来装饰你的飞船内部。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/48.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -989,10 +1049,11 @@
     "Description": "飞船驾驶舱的合成高分子玩具摆件，原型是神父实体纳达。\n\n安装到<TECHNOLOGY>库存栏位<>中来装饰你的飞船内部。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/49.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1014,10 +1075,11 @@
     "Description": "飞船驾驶舱的合成高分子玩具摆件，原型是旅行者-（无名）-。\n\n安装到一个<TECHNOLOGY>库存栏位<>中来装饰你的飞船内部。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/50.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1039,10 +1101,11 @@
     "Description": "飞船驾驶舱的合成高分子玩具摆件，原型是保罗专家。\n\n安装到<TECHNOLOGY>库存栏位<>中来装饰你的飞船内部。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/51.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1064,10 +1127,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，向<STELLAR>平民科学部<>宣誓效忠。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1084,10 +1148,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，可唤起遥远卫星的梦幻回忆。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1104,10 +1169,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，可拥抱个人的异象存在。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1124,10 +1190,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明与保罗专家的友谊。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1144,10 +1211,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明与神父实体纳达的友谊。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1164,10 +1232,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明与迭代：赫斯珀洛斯的友谊。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1184,10 +1253,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明与迭代：阿里阿德涅的友谊。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1204,10 +1274,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明喜欢一个人旅行。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1224,10 +1295,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，沉思存在确定性的本质。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1244,10 +1316,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，沉思一个人在宇宙中的位置。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1264,10 +1337,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，沉思一个人在宇宙中的位置。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1284,10 +1358,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，戏谑式地表明自己的星系声望等级。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1304,10 +1379,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明喜欢一个人旅行。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1324,10 +1400,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明与保罗专家的友谊。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1344,10 +1421,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明与神父实体纳达的友谊。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1364,10 +1442,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明与迭代：阿里阿德涅的友谊。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1384,10 +1463,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明与迭代：双子的友谊。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1404,10 +1484,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明与迭代：墨丘利的友谊。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1424,10 +1505,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明与迭代：特提斯的友谊。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1444,10 +1526,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明与迭代：赫斯珀洛斯的友谊。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1464,10 +1547,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，沉思存在确定性的本质。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1484,10 +1568,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，沉思一个人在宇宙中的位置。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1504,10 +1589,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明一个人在宇宙中的茕茕孑立。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1524,10 +1610,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，表明自己接受维吉恩给出的名号。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1544,10 +1631,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，授予勇闯宇宙黑暗之地的人物。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1564,10 +1652,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，授予勇闯宇宙黑暗之地的人物。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1584,10 +1673,11 @@
     "Description": "你可以应用一种嗜肉的寄生虫来自然地改变你的外观。这种生物会与宿主的脑干部分融合以稳固共生关系。\n\n在<TECHNOLOGY>外观修改器<>中改变你套装的外观，改变时请谨慎小心。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1604,10 +1694,11 @@
     "Description": "所俘获的深渊惧兽之精华，以备科学和装饰之用。\n\n边界力场质量极高。同伴无法逃跑。同伴不会逃跑。逃跑。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1633,10 +1724,11 @@
     "Description": "这种真菌以其密集的毛细管网络和生物发光特性而闻名。它在夜间散发的光亮来自于不断循环的化学反应。\n\n可以作为基地的装饰景观。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1658,10 +1750,11 @@
     "Description": "这个古老的树桩采自一个无性繁殖的树群，估计它已经存活了超过10万年。它的树皮散发着一种令人愉悦的苔藓香味。\n\n可以作为基地的装饰景观。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1683,10 +1776,11 @@
     "Description": "这个朴实的泥土屋是根据一个在Saxm A13星球的云雾中发现的神秘结构而建造的。同样的结构在宇宙多处屡次发现，但关于其起源的假说却一直未得到证实。\n\n可以作为基地的装饰景观。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1708,10 +1802,11 @@
     "Description": "一种未知来源的蛋白物质，太空异象负责对其进行复制。它的骨骼结构之间存在一些气体，使得牢笼中心的温度相对表面较稳定。\n\n可以作为基地的装饰景观。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1733,10 +1828,11 @@
     "Description": "这种奇特的生命体主要由一圈发光腺构成，你很难将它直接归类为植物或动物。密集的尖刺可保护美味的腺体不被掠食者食用。\n\n可以作为基地的装饰景观。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1758,10 +1854,11 @@
     "Description": "这种怪诞生物的表面有一层像眼睛一样的突起，这些突起能处理光线和进行简单的思维。不过它也不知道自己在警惕什么......\n\n可以作为基地的装饰景观。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1783,10 +1880,11 @@
     "Description": "这个空空如也的蛋壳一直在低声吟唱着，似乎与一首古老的合唱有关......\n\n可以作为基地的装饰景观。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1808,10 +1906,11 @@
     "Description": "这棵树的顶部有一片盘状的大树叶，能有效进行光合作用。它的野生品种可以长到惊人的高度，而这个由人类培育的品种则适宜于居所装饰。\n\n可以作为基地的装饰景观。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1833,10 +1932,11 @@
     "Description": "这种植物富含抗氧化剂，但厚厚的鳞片使得它不适合用于大面积耕种。\n\n可以作为基地的装饰景观。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1858,10 +1958,11 @@
     "Description": "装备上这枚专属的<STELLAR>个人旗帜<>，畅快地漫游和探索宇宙。\n\n在<TECHNOLOGY>外观修改器<>中将这面旗帜应用至你的个人档案。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1878,10 +1979,11 @@
     "Description": "装备上这枚专属的<STELLAR>个人旗帜<>，用它来支持你的社区、冒险和探索之旅。\n\n在<TECHNOLOGY>外观修改器<>中将这面旗帜应用至你的个人档案。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1898,10 +2000,11 @@
     "Description": "欢迎光临咖啡厅！装备上这枚专属的<STELLAR>个人旗帜<>，以展示你的友好、风趣和气质。\n\n在<TECHNOLOGY>外观修改器<>中将这面旗帜应用至你的个人档案。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1918,10 +2021,11 @@
     "Description": "装备这枚专属的<STELLAR>个人旗帜<>，以促进宇宙的和谐与团结。记录、援助、创造和交流。\n\n在<TECHNOLOGY>外观修改器<>中将这面旗帜应用至你的个人档案。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1938,9 +2042,10 @@
     "Description": "一个有生命的、可生育的卵，%READY%\n\n%MODIFIED%\n\n扫描表明其中的生命拥有%SIZE%和%TRAIT%的遗传基因。",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "311A49",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1957,10 +2062,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n此贴花代表着银河旅行者联盟，以及游牧探险的价值观。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1982,10 +2088,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n此贴花代表着氨基中心，以及社区、冒险和发现的原则。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2007,10 +2114,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n此贴花代表着42号咖啡厅，以及友谊、乐趣和良好氛围的精神。欢迎来到咖啡厅！",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2032,10 +2140,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n此贴花代表着旅行者联盟。记录、协助、创造、交流。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2057,10 +2166,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n此贴花代表着基坦尼亚帝国，以及仁慈、善良、和平和理性的精神。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2082,10 +2192,11 @@
     "Description": "一枚奢华的烟花，以三重爆破的色彩交响乐为特色。点燃后在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2102,10 +2213,11 @@
     "Description": "一枚奢华的烟花，爆炸形成铟和镉的闪亮楔形。点燃后在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2122,10 +2234,11 @@
     "Description": "一枚奢华的烟花。激活时，这枚烟火奇迹将沿着迷人的螺旋转动，点燃后在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2142,10 +2255,11 @@
     "Description": "装备上这面专属的<STELLAR>个人旗帜<>，以展示你的仁慈、善良、和平和理性。\n\n在<TECHNOLOGY>外观修改器<>中将这面旗帜应用至你的个人档案。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2162,10 +2276,11 @@
     "Description": "专属<STELLAR>探险家头衔<>：异星，自豪地宣称自己是外星来客。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2182,10 +2297,11 @@
     "Description": "专属<STELLAR>探险家头衔<>：火山，无论是口头上还是在现实中都喜欢激烈的爆炸。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2202,10 +2318,11 @@
     "Description": "专属<STELLAR>探险家头衔<>：沼民，适合那些地域品味与众不同的人物。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2222,10 +2339,11 @@
     "Description": "专属<STELLAR>探险家头衔<>：十六世，授予了解宇宙最深邃的秘密的人物。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2242,10 +2360,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，代表着你对先行者的理解。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2262,10 +2381,11 @@
     "Description": "专属<STELLAR>探险家头衔<>：摄影师，授予致力于完美记录自己宇宙之旅的旅行者。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2282,10 +2402,11 @@
     "Description": "专属<STELLAR>同伴外观强化<>。这种铰接式开采激光采用轻质凝胶隔热，能确保协助资源采集的同伴获得极致的舒适感。\n\n赢得野生动物的信任来收养同伴。与同伴互动来自定义它们的外观。",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2302,10 +2423,11 @@
     "Description": "专属<STELLAR>同伴外观强化<>。这种小巧的设备可以生成详细的生物穿越习性分析报告，帮助探险家深入了解其动物同伴的秘密生活。\n\n赢得野生动物的信任来收养同伴。与同伴互动来自定义它们的外观。",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2322,10 +2444,11 @@
     "Description": "专属<STELLAR>同伴外观强化<>。这种两用激光能对佩戴者的重要生物指标做出响应，提供相应的热量和光照，以及舒缓焦虑的软脉冲。\n\n赢得野生动物的信任来收养同伴。与同伴互动来自定义它们的外观。",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2342,10 +2465,12 @@
     "Description": "用以扩展使用者<STELLAR>套装存储空间<>的高级生存技术模块。\n\n预装的纳米扩张器能在套装内生成稳定的次曲速虚空，从而增加<STELLAR>库存容量<>。你可以在<STELLAR>空间站<>内的套装升级终端处安装这个增强部件。",
     "BaseValueUnits": 155000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": true,
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2362,10 +2487,11 @@
     "Description": "专属的<STELLAR>装置套装外观<>。\n\n一款流线型轻量背包，优雅的单助推器设计是它的亮点。这款专属的套装外观纪念了你完成的第一次<STELLAR>远征<>。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3500.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2382,10 +2508,11 @@
     "Description": "咄咄逼人的<STELLAR>装置套装外观<>，根据古代吉克人的战争头盔设计。这款是特别版，使用耐久的贵重合金制作。\n\n可以在<TECHNOLOGY>外观修改器<>中使用以更改你的套装外观。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2402,10 +2529,11 @@
     "Description": "标志性的<STELLAR>A 型制导飞船<>的专属黄金版本，纪念你完成第一次<STELLAR>远征<>，“先驱”。\n\n这艘宇宙具有高机动性，使用耐久的贵重合金制作，表面涂了一层坚韧的纤维绝缘层，能够经受住需多次谨慎的太空探险。\n\n<STELLAR>收取<>这艘飞船，将它加入你的收藏，或与你现在的飞船<STELLAR>交换<>。在行星上时，使用快捷菜单（<IMG>QUICK_MENU<>）召唤飞船。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2422,10 +2550,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，纪念你完成的第一次<STELLAR>远征<>，“先驱”。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2442,10 +2571,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和品味。\n这是标志性的 A 型制导飞船黄金版本的贴花，纪念你完成第一次<STELLAR>远征<>，“先驱”。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2467,10 +2597,11 @@
     "Description": "装备上这枚专属的<STELLAR>个人旗帜<>，纪念你完成第一次<STELLAR>远征<>，“先驱”。\n在<TECHNOLOGY>外观修改器<>中将这面旗帜应用至你的个人档案。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2487,10 +2618,11 @@
     "Description": "一包包含三种奢华烟花的组合包。这些惊人的烟花含有<TECHNOLOGY>铟<>、<COMMODITY>金<>和<FUEL>镉<>，在空中爆发后，呈现出阿特拉斯表层界面。点燃它，你就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2507,10 +2639,11 @@
     "Description": "一枚含有<TECHNOLOGY>铟<>和<FUEL>镉<>的奢华烟花，在空中爆发后，呈现出阿特拉斯表层界面。点燃它，你就可以在天空开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2527,10 +2660,11 @@
     "Description": "一枚含有<COMMODITY>金<>和<TECHNOLOGY>铟<>的奢华烟花，在空中爆发后，呈现出阿特拉斯表层界面。点燃它，你就可以在天空开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2547,10 +2681,11 @@
     "Description": "一枚含有<FUEL>镉<>和<COMMODITY>金<>的奢华烟花，在空中爆发后，呈现出阿特拉斯表层界面。点燃它，你就可以在天空开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2567,10 +2702,11 @@
     "Description": "专属可建造基地装饰。\n这面华丽的<STELLAR>金边旗<>上绘制了标志性的 A 型制导飞船。将这面大旗立在宜居基地内，纪念你完成第一次<STELLAR>远征<>，“先驱”。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2592,10 +2728,11 @@
     "Description": "一艘专属<STELLAR>飞船<>，预装有能够高效探索星系的升级版<TECHNOLOGY>超光速推进器<>。\n\n<STELLAR>收取<>这艘飞船，将它加入你的收藏，或与你现在的飞船<STELLAR>交换<>。在行星上时，使用快捷菜单（<IMG>QUICK_MENU<>）召唤飞船。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2612,10 +2749,11 @@
     "Description": "一艘专属<STELLAR>飞船<>，预装有能够高效摧毁敌对飞船的升级版<TECHNOLOGY>红外切割机<>。\n\n<STELLAR>收取<>这艘飞船，将它加入你的收藏，或与你现在的飞船<STELLAR>交换<>。在行星上时，使用快捷菜单（<IMG>QUICK_MENU<>）召唤飞船。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2632,10 +2770,11 @@
     "Description": "一艘专属<STELLAR>飞船<>，预装有能够高效摧毁敌对飞船的升级版<TECHNOLOGY>正电子冲击波<>。\n\n<STELLAR>收取<>这艘飞船，将它加入你的收藏，或与你现在的飞船<STELLAR>交换<>。在行星上时，使用快捷菜单（<IMG>QUICK_MENU<>）召唤飞船。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2652,10 +2791,11 @@
     "Description": "一艘拥有大容量货仓的专属<STELLAR>飞船<>，预装有升级版<TECHNOLOGY>偏导护盾<>和<TECHNOLOGY>回旋加速弩炮<>。\n\n<STELLAR>收取<>这艘飞船，将它加入你的收藏，或与你现在的飞船<STELLAR>交换<>。在行星上时，使用快捷菜单（<IMG>QUICK_MENU<>）召唤飞船。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2672,10 +2812,11 @@
     "Description": "一艘专属<STELLAR>飞船<>，预装有能够高效探索太空的强大<TECHNOLOGY>相位光束<>和升级版<TECHNOLOGY>脉冲驱动器<>。<TECHNOLOGY>经济扫描仪<>可远程访问星系的详细经济数据，协助规划星际贸易路线。\n\n<STELLAR>收取<>这艘飞船，将它加入你的收藏，或与你现在的飞船<STELLAR>交换<>。在行星上时，使用快捷菜单（<IMG>QUICK_MENU<>）召唤飞船。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2692,10 +2833,11 @@
     "Description": "一台专属<STELLAR>多用途工具<>。这把步枪装有致命<TECHNOLOGY>火焰标枪<>，并预装有降低后座力的<TECHNOLOGY>战斗瞄准镜<>。\n\n<STELLAR>收下<>这个多用途工具，将它加入你的收藏，或与你现在的多用途工具<STELLAR>交换<>。在快捷菜单（<IMG>QUICK_MENU<>）中的工具部分切换可用的多用途工具。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2712,10 +2854,11 @@
     "Description": "一台专属<STELLAR>多用途工具<>。这把手枪预装有进攻用<TECHNOLOGY>离子闪电发射器<>和防御用<TECHNOLOGY>个人力场<>。\n\n<STELLAR>收下<>这个多用途工具，将它加入你的收藏，或与你现在的多用途工具<STELLAR>交换<>。在快捷菜单（<IMG>QUICK_MENU<>）中的工具部分切换可用的多用途工具。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2732,10 +2875,11 @@
     "Description": "一台专属<STELLAR>多用途工具<>。这件专门工具预装有<TECHNOLOGY>高级开采激光<>和强力<TECHNOLOGY>光学钻头<>升级部件。\n\n<STELLAR>收下<>这个多用途工具，将它加入你的收藏，或与你现在的多用途工具<STELLAR>交换<>。在快捷菜单（<IMG>QUICK_MENU<>）中的工具部分切换可用的多用途工具。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2752,10 +2896,11 @@
     "Description": "一台专属<STELLAR>多用途工具<>。这件专门工具预装有多个<TECHNOLOGY>扫描<>升级部件，能够有效提高扫描星球发现物的效率与收益。\n\n<STELLAR>收下<>这个多用途工具，将它加入你的收藏，或与你现在的多用途工具<STELLAR>交换<>。在快捷菜单（<IMG>QUICK_MENU<>）中的工具部分切换可用的多用途工具。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2772,10 +2917,11 @@
     "Description": "一台专属<STELLAR>多用途工具<>。这把步枪预装有致命<TECHNOLOGY>脉冲喷射器<>和爆炸性<TECHNOLOGY>等离子发射器<>。\n\n<STELLAR>收下<>这个多用途工具，将它加入你的收藏，或与你现在的多用途工具<STELLAR>交换<>。在快捷菜单（<IMG>QUICK_MENU<>）中的工具部分切换可用的多用途工具。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2792,10 +2938,11 @@
     "Description": "与所有<STELLAR>个人多用途工具<>兼容的升级部件包。\n\n内附一个<TECHNOLOGY>多用途工具扩展栏位<>，可在空间站<STELLAR>多用途工具升级架<>将其装到选中的多用途工具上。除此以外该部件包还含有一项独特<TECHNOLOGY>升级模块<>，能够随时手动安装并强化一种现有的多用途工具技术。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2812,10 +2959,11 @@
     "Description": "一包包含三种烟花的奢华烟花包，内含大量的<FUEL>镉<>、<TRADEABLE>艾梅里尔<>和<TECHNOLOGY>铟<>。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2832,9 +2980,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2851,9 +2998,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2870,9 +3016,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2889,9 +3034,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2908,9 +3052,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2927,9 +3070,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2946,9 +3088,10 @@
     "Description": "纳达对<TRANS_TRA>吉克<>，<TRANS_EXP>科尔瓦克斯<>和<TRANS_WAR>维吉恩<>故事中不寻常的模式的研究结果。\n\n该信标广播了一个<STELLAR>信号回音<>，与纳达的旅行者同伴绘制的<SPECIAL>史学波动<>变化相适应。\n\n保罗专家不愿意预测广播的结果。",
     "BaseValueUnits": 80.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2965,9 +3108,10 @@
     "Description": "纳达从<TRANS_TRA>吉克<>，<TRANS_EXP>科尔瓦克斯<>和<TRANS_WAR>维吉恩<>的故事中找到了一种新的模式。\n\n剂量仪能够测量关键遗物地点周围<SPECIAL>史学波动<>的暴露情况。记录不寻常的历史转变将使纳达能够追踪信号。\n\n在研究中协助纳达和保罗，使用该设备从外星遗物地点<STELLAR>传输历史数据<>。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2984,10 +3128,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，纪念你完成“抢滩”<STELLAR>远征<>，以及成功追踪了<SPECIAL>反叛者历史回音<>。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3004,10 +3149,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，纪念你完成“抢滩”<STELLAR>远征<>，以及成功追踪了<SPECIAL>反叛者历史回音<>。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3024,10 +3170,11 @@
     "Description": "<TECHNOLOGY>SSV Normandy SR1<>是独一无二的“深渊侦查”护卫舰。这艘传奇飞船代表种族间的和平与合作，同时纪念了“抢滩”<STELLAR>远征<>的完成。\n\n招募这艘护卫舰，它将加入你的舰队。在货船上的<TECHNOLOGY>舰队指挥室<>管理你的护卫舰队， 与<TECHNOLOGY>领航员<>交谈，在奖励丰厚的远征中部署护卫舰。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3044,8 +3191,6 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 0.0,
     "Colour": "2C7C9F",
     "BlueprintCost": 0,
@@ -3064,10 +3209,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，纪念你完成“制图师”<STELLAR>远征<>，以及成功记录并逃离了远征星球。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3084,10 +3230,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n\n此贴花谨为纪念你成功记录并逃离了远征行星。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3109,10 +3256,11 @@
     "Description": "装备上这枚专属的<STELLAR>个人旗帜<>，纪念你完成了“制图师”<STELLAR>远征<>，以及成功记录并逃离了远征行星。\n\n在<TECHNOLOGY>外观修改器<>中将这面旗帜应用至你的个人档案。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3129,10 +3277,11 @@
     "Description": "专属的<STELLAR>套装外观<>。\n\n喷气背包排出的废气中添加了一种特殊油脂，启动之后就能在身后留下一串带有珍珠光泽的泡泡。\n\n可以在<TECHNOLOGY>外观修改器<>中调整你的套装外观。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3149,10 +3298,11 @@
     "Description": "一颗活生生的受精卵，<TRADEABLE>已可孵化！<>\n\n一道黑影正在卵的保护膜内扭动。\n\n根据扫描结果显示，里面的生物拥有特殊的基因潜质，如果好好培养，日后将能成为<FUEL>噩梦般的<><FUEL>噬魂<>存在。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3169,10 +3319,11 @@
     "Description": "一艘专属<STELLAR>飞船<>，预装有能够高校探索太空的强大<TECHNOLOGY>相位光束<>和升级版<TECHNOLOGY>脉冲驱动器<>。<TECHNOLOGY>传送接收器<>还将允许驾驶员将收集的产品与材料<STELLAR>远程<>传送回飞船。\n\n<STELLAR>收取<>这艘飞船，将它加入你的收藏，或与你现在的飞船<STELLAR>交换<>。在行星上时，使用快捷菜单（<IMG>QUICK_MENU<>）召唤飞船。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3189,10 +3340,11 @@
     "Description": "一艘专属<STELLAR>飞船<>，预装有能够高效探索星系的升级版<TECHNOLOGY>超光速推进器<>。\n\n<STELLAR>收取<>这艘飞船，将它加入你的收藏，或与你现在的飞船<STELLAR>交换<>。在行星上时，使用快捷菜单（<IMG>QUICK_MENU<>）召唤飞船。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3209,10 +3361,11 @@
     "Description": "一艘专属<STELLAR>飞船<>，预装有能够高效摧毁敌对飞船的升级版<TECHNOLOGY>红外切割机<>。\n\n<STELLAR>收取<>这艘飞船，将它加入你的收藏，或与你现在的飞船<STELLAR>交换<>。在行星上时，使用快捷菜单（<IMG>QUICK_MENU<>）召唤飞船。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3229,10 +3382,11 @@
     "Description": "一艘拥有大容量货仓的专属<STELLAR>飞船<>，预装有升级版<TECHNOLOGY>偏导护盾<>和<TECHNOLOGY>回旋加速弩炮<>。\n\n<STELLAR>收取<>这艘飞船，将它加入你的收藏，或与你现在的飞船<STELLAR>交换<>。在行星上时，使用快捷菜单（<IMG>QUICK_MENU<>）召唤飞船。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3249,10 +3403,11 @@
     "Description": "一艘专属<STELLAR>飞船<>，预装有能够高效摧毁敌对飞船的升级版<TECHNOLOGY>正电子冲击波<>。\n\n<STELLAR>收取<>这艘飞船，将它加入你的收藏，或与你现在的飞船<STELLAR>交换<>。在行星上时，使用快捷菜单（<IMG>QUICK_MENU<>）召唤飞船。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3269,10 +3424,11 @@
     "Description": "一颗活生生的受精卵，<TRADEABLE>已可孵化！<>\n\n里面寄宿着一头由水晶与肉体组成的装甲野兽，此刻它正在卵中轻轻翻动。\n\n根据扫描结果显示，里面的生物拥有特殊的基因潜质，如果好好培养，日后将会无比<TRADEABLE>热忱<>地保护自己的主人。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3289,10 +3445,11 @@
     "Description": "一颗活生生的受精卵，<TRADEABLE>已可孵化！<>\n\n此刻，寄宿在其中的优雅生物正轻轻拨动着自己的柔软翅膀，看来是迫不及待地想要出来了。\n\n根据扫描结果显示，里面的生物拥有特殊的基因潜质，如果好好培养，日后将会成为一位能够从高空侦查资源的<STELLAR>勤勉<>同伴。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3309,10 +3466,11 @@
     "Description": "一颗活生生的受精卵，<TRADEABLE>已可孵化！<>\n\n这颗卵不停晃动，仿佛里面的生物正在兴奋地摇摆。\n\n根据扫描结果显示，里面的生物拥有特殊的基因潜质，如果好好培养，日后将成为可通过温柔地安抚来进行互动的<TRADEABLE>温婉<>同伴。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3329,10 +3487,11 @@
     "Description": "一颗活生生的受精卵，<TRADEABLE>已可孵化！<>\n\n其中有鳞片的爬行动物正用爪子刮着蛋壳，迫不及待地想证明它强悍的实力。\n\n根据扫描结果显示，里面的生物拥有特殊的基因潜质，如果好好培养，日后将成为一位能够用强大下颚击败敌对生物与猎物的<FUEL>凶猛<>猎手。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3349,10 +3508,11 @@
     "Description": "一颗活生生的受精卵，<TRADEABLE>已可孵化！<>\n\n此刻，寄宿其中的昆虫正在敲击着自己的巨角，看来是迫不及待想要探索这个宇宙了。\n\n根据扫描结果显示，里面的生物拥有特殊的基因潜质，如果好好培养，日后将变得极度<TECHNOLOGY>热爱冒险<>，乐于探索沼泽母星之外的行星。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3369,10 +3529,11 @@
     "Description": "一包包含三种烟花的奢华烟花包，内含大量的<FUEL>镉<>、<TRADEABLE>艾梅里尔<>和<TECHNOLOGY>铟<>。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3389,10 +3550,11 @@
     "Description": "一包包含三种烟花的奢华烟花包，内含大量的<FUEL>镉<>、<TRADEABLE>艾梅里尔<>和<TECHNOLOGY>铟<>。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3409,10 +3571,11 @@
     "Description": "一包包含三种烟花的奢华烟花包，内含大量的<FUEL>镉<>、<TRADEABLE>艾梅里尔<>和<TECHNOLOGY>铟<>。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3429,10 +3592,11 @@
     "Description": "一包包含三种烟花的奢华烟花包，内含大量的<FUEL>镉<>、<TRADEABLE>艾梅里尔<>和<TECHNOLOGY>铟<>。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3449,10 +3613,11 @@
     "Description": "一包包含三种烟花的奢华烟花包，内含大量的<FUEL>镉<>、<TRADEABLE>艾梅里尔<>和<TECHNOLOGY>铟<>。点燃就可以在天空中开启一场炫丽的光影表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3469,10 +3634,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n此贴花上画有一个在柔和的蓝色天空中凝视着星星的探险家。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3494,10 +3660,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n此贴花上画有一只在深红色的风景中大步走过巨大外星野兽。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3519,10 +3686,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n此贴花上画有一艘着陆的飞船，正在等待飞行员返回。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3544,10 +3712,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n此贴花上画有两艘星际飞船，正在向银河系核心航行。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3569,10 +3738,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n此贴花上画有一个传说中闹鬼的潜水面具。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3594,10 +3764,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n此贴花上画有一艘飞船，正在冲过纳达和保罗的异常家园。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3619,10 +3790,11 @@
     "Description": "这块完全展开的船帆复制了吉克族的古代贸易船设计，是一个令人瞩目的航海主题家庭装饰品。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3644,10 +3816,11 @@
     "Description": "这些偏移的船帆复制了吉克族的古代贸易船设计，是一个令人瞩目的航海主题家庭装饰品。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3669,10 +3842,11 @@
     "Description": "这些不对称的船帆复制了吉克族的古代贸易船设计，是一个令人瞩目的航海主题家庭装饰品。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3694,10 +3868,11 @@
     "Description": "这块悬挂的半船帆复制了吉克族的古代贸易船设计，是一个令人瞩目的航海主题家庭装饰品。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3719,10 +3894,11 @@
     "Description": "一幅自附着且无褶皱的专属墙壁艺术。\n这幅豪华的黑金色调的大型绘画描绘的是酷似阿波罗的旅行者。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3744,10 +3920,11 @@
     "Description": "一幅自附着且无褶皱的专属墙壁艺术。\n这幅色彩鲜艳的大型绘画描绘的是太空异象的线框图。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3769,10 +3946,11 @@
     "Description": "一幅自附着且无褶皱的专属墙壁艺术。\n这幅大型绘画描绘的是一杯醇香浓郁的温热原型奶。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3794,10 +3972,11 @@
     "Description": "一卷半透明的<STELLAR>虫经<>，上面写着疯狂的文字。经书一被碰到就会扭动翻腾。\n\n“孩子们是第一个意识到的。\n就在沙土之下，什么东西在轰鸣着，咚、咚、咚。\n一跃而出的蠕虫就像是一道撕裂天空的黑色闪电。\n蠕虫们一只接一只地钻出地表，它们在迁徙。\n每当风暴季来临，我们就会在荒漠中排起长队，大家一起张开双手拥抱天空。\n所有人都可能会成为下一个进入那张巨口的祭品。\n巨虫面前人人平等。”",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3814,10 +3993,12 @@
     "Description": "一根<SPECIAL>饥饿的触手<>的消化道残骸。虽然上面的肉壁依旧在不停抽搐，但是这些残渣绝不可能复原成真正的触手......\n\n银河交易所中极少能见到这种特殊脏器，因此拥有着<STELLAR>十分宝贵<>的价值。",
     "BaseValueUnits": 160016.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasRefinedToCreate": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3834,10 +4015,12 @@
     "Description": "一根<SPECIAL>饥饿的触手<>的脆弱胚胎，依旧在不停往外渗着分泌液。一被触碰到就会悲鸣抖动。\n\n可以借助<TECHNOLOGY>脏腑合成器<>从发育囊中提取这种器官。",
     "BaseValueUnits": 16.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasRefinedToCreate": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3854,10 +4037,11 @@
     "Description": "一枚奢华的烟花。这种有机火箭烟花可升入天空，引爆无数黏质、血浆和蠕虫，让血肉漫天飞溅。点燃就可以在天空中开启一场令人作呕的表演。\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3874,10 +4058,11 @@
     "Description": "一捆奢华的烟花。这种有机火箭烟花可升入天空，引爆无数黏质、黏液和蠕虫，让血肉漫天飞溅。点燃就可以在天空中开启一场令人作呕的表演\n\n可以通过<VAL_ON>建造菜单<>（<IMG>BUILD_MENU<>）来放置发射筒。<FUEL>警告<>：不可瞄准活体生物。不建议在室内使用。",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3894,10 +4079,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，纪念你完成<STELLAR>浮现<>远征。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3914,10 +4100,11 @@
     "Description": "专属的可放置贴花，为你的基地增添风格和美观。\n\n此贴花为完成<STELLAR>浮现<>远征的纪念品。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3939,10 +4126,11 @@
     "Description": "装备上这枚专属的<STELLAR>个人旗帜<>，纪念你完成<STELLAR>浮现<>远征。\n在<TECHNOLOGY>外观修改器<>中将这面旗帜应用至你的个人档案。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3959,10 +4147,11 @@
     "Description": "专属的<STELLAR>套装外观<>。\n\n在你的喷气背包排气口上加装一个生化室。在飞行过程中，推进器将会加热并排出里面存放的粘滑脓汁。\n<STELLAR>注意<>：内含活体蠕虫。喷射出的蠕虫有可能会感染当地的生态环境。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3979,10 +4168,11 @@
     "Description": "一个有生命的、可生育的卵，<TRADEABLE>已可孵化！<>\n\n壳里蜷缩着一条饥肠辘辘的小虫，正在不安地扭动。\n\n根据扫描结果显示，里面的生物拥有<FUEL>受到诅咒<>以及<FUEL>贪心<>的基因潜质。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3999,10 +4189,11 @@
     "Description": "一件专属的可建造基地装饰。\n\n这个长满利齿的头骨曾经属于外形酷似巨型沙虫的大型无腿有脊椎动物。强有力的下颚足以粉碎多用途工具以及绝大多数生物的骨骼。",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4024,10 +4215,11 @@
     "Description": "专属的<STELLAR>套装外观<>。\n\n能够重新调整你的面部器官，模拟出来的沙虫邪教徒面容绝对能让其他探险家心惊胆战。这顶使用有机硅酮制作的头盔采用了密封设计，能够抵挡所有已知的行星危害，就是带上去容易满头大汗。\n\n可以在<TECHNOLOGY>外观修改器<>虔诚地更改你头部的<STELLAR>维吉恩<>外观。",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4044,8 +4236,6 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
@@ -4062,10 +4252,11 @@
     "Description": "这份<STELLAR>活经文<>上刻着古老的文字。上面写道：\n\n“蠕虫领主的身影徘徊于尘土之上，躯体则化为了天空。\n吾等肉体凡胎无法追随，无法到达那种高度，更无法触及那渊底。\n吾等将自身献给大地。\n吾等乞求自我的牺牲能被接受。”",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4082,10 +4273,11 @@
     "Description": "这份<STELLAR>活经文<>上刻着古老的文字。上面写道：\n\n“沙尘蔽日。\n吾等之眼不禁红肿泪流。\n但真相岂能轻易逃避。\n阿特拉斯的血脉再次现身。”",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4102,10 +4294,11 @@
     "Description": "这份<STELLAR>活经文<>上刻着古老的文字。上面写道：\n\n“每当风暴声响起，吾等都乞求被选召；\n手伸天空，脸面尘土，声嘶力竭！\n待到磅礴大雨洗刷大地，阿特拉斯的血脉终于回应。\n吾等消逝时的狂喜溢于言表。”",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4122,10 +4315,11 @@
     "Description": "这份<STELLAR>活经文<>上刻着古老的文字。上面写道：\n\n“吞噬之时，吾等瑟瑟发抖，然依旧尽力攀爬粘液之墙，\n呜呼哀哉！只为在清醒时分到达砂囊。\n尽力喘息！吾等咳呛不已！\n黏质堵住了吾等的鼻腔，刺痛了眼睛，\n但是在这温暖的黑暗之中，光明又与吾等何干。”",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4142,10 +4336,11 @@
     "Description": "这份<STELLAR>活经文<>上刻着古老的文字。上面写道：\n\n“诅咒那反刍的痛苦，\n诅咒这依旧禁锢着我的软弱肉身！\n吾之同胞皆已重生，在神圣的尘土之中化为了新生的触须。\n就像那伟大血脉的闪烁血管，慢慢划入了沙土之中。\n不过吾将耐心等待，直至下一场风暴到来。”",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4156,16 +4351,18 @@
   },
   {
     "Id": "other205",
-    "Icon": "other/2.png",
+    "Icon": "other/205.png",
     "Name": "星图",
     "Group": "秘密制图资料",
     "Description": "一张附近行星的地图，标有一个<FUEL>安全的兴趣点<>。这些地点一般拥有<STELLAR>新产品<>的<TECHNOLOGY>设计图<>。\n\n选择地图并使用规划航线（<IMG>FE_ALT1<>）以在你的套装屏幕中固定该地点。\n\n新地图可以通过与空间站制图师交换<COMMODITY>导航数据<>获取。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4176,16 +4373,18 @@
   },
   {
     "Id": "other206",
-    "Icon": "other/2.png",
+    "Icon": "other/206.png",
     "Name": "星图",
     "Group": "紧急制图资料",
     "Description": "一张附近行星的地图，标有一个<TECHNOLOGY>求救信号<>的坐标。\n\n选择地图并使用规划航线（<IMG>FE_ALT1<>）以在你的套装屏幕中固定该地点。\n\n新地图可以通过与空间站制图师交换<COMMODITY>导航数据<>获取。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4196,16 +4395,18 @@
   },
   {
     "Id": "other207",
-    "Icon": "other/2.png",
+    "Icon": "other/207.png",
     "Name": "星图",
     "Group": "商业制图资料",
     "Description": "一张附近行星的地图，标有一个<COMMODITY>外星前哨基站<>。\n\n选择地图并使用规划航线（<IMG>FE_ALT1<>）以在你的套装屏幕中固定该地点。\n\n新地图可以通过与空间站制图师交换<COMMODITY>导航数据<>获取。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4216,16 +4417,18 @@
   },
   {
     "Id": "other208",
-    "Icon": "other/2.png",
+    "Icon": "other/208.png",
     "Name": "星图",
     "Group": "外星制图资料",
     "Description": "一张附近行星的地图，标有一个<SPECIAL>古代遗物地点<>。\n\n选择地图并使用规划航线（<IMG>FE_ALT1<>）以在你的套装屏幕中固定该地点。\n\n新地图可以通过与空间站制图师交换<COMMODITY>导航数据<>获取。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4236,16 +4439,18 @@
   },
   {
     "Id": "other209",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "星图",
     "Group": "制图资料",
     "Description": "一张附近行星的地图，标有一个<SPECIAL>古代遗物地点<>。\n\n选择地图并使用规划航线（<IMG>FE_ALT1<>）以在你的套装屏幕中固定该地点。\n\n新地图可以通过与空间站制图师交换<COMMODITY>导航数据<>获取。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4262,10 +4467,11 @@
     "Description": "专属<STELLAR>同伴外观强化<>。这套风格别致的板甲最适合习性凶猛的同伴，能够有效帮助重要器官抵挡激光与投射物攻击。无比柔软的可呼吸护垫能够降低同伴挣脱装饰品的可能性。\n\n获取野生动物的信任以将其收养为同伴。与同伴互动以为其调整外观。",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4282,10 +4488,11 @@
     "Description": "专属的<STELLAR>装置套装外观<>。\n\n造型优雅的飞翼型喷气背包，灵感来源于异星飞船的奇异设计理念。这款专属的套装外观纪念了你完成“异星生物学”<STELLAR>远征<>。\n\n可以在<TECHNOLOGY>外观修改器<>使用以更改你的套装外观。",
     "BaseValueUnits": 3500.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4302,10 +4509,11 @@
     "Description": "专属<STELLAR>探险家头衔<>，纪念你完成<STELLAR>异星生物学<>远征。\n\n请使用<TECHNOLOGY>外观修改器<>在你的旗帜上应用此头衔。",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4322,10 +4530,11 @@
     "Description": "专属的可放置贴花，可以为你的基地增添风格和美观。\n\n此贴花为完成<STELLAR>异星生物学<>远征的纪念品，谨献给那些与苍穹之间无数璀璨生命和谐共处的旅行者们。",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4347,10 +4556,11 @@
     "Description": "装备上这枚专属的<STELLAR>个人旗帜<>，纪念你完成了“异星生物学”<STELLAR>远征<>，以及深入探索苍穹之间无数野生动物的壮举。\n\n在<TECHNOLOGY>外观修改器<>中将这面旗帜应用至你的个人档案。",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4367,10 +4577,11 @@
     "Description": "一枚金属“卵“胶囊，<TRADEABLE>已可孵化！<>\n\n表面正激荡着电力。\n\n扫描显示寄宿其中的存在已被编入<SPECIAL>不懈<>与<SPECIAL>警惕<>的行为模式。",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,

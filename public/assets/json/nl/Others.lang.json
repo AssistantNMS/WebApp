@@ -1,16 +1,18 @@
 [
   {
     "Id": "other1",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "Planetaire kaart",
     "Group": "Cartografische gegevens",
     "Description": "Een kaart van een planeet in de buurt. De coördinaten van een <TECHNOLOGY>noodsignaal<> zijn gemarkeerd.\n\nSelecteer de kaart en gebruik 'Route bepalen' (<IMG>FE_ALT1<>) om de locatie weer te geven op het display van je exopak.\n\nJe kunt nieuwe kaarten verkrijgen door <COMMODITY>navigatiegegevens<> uit te wisselen met een cartograaf in een ruimtestation.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -21,17 +23,19 @@
   },
   {
     "Id": "other2",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "Planetaire kaart",
     "Group": "Cartografische gegevens",
     "Description": "Een kaart van een locatie in de buurt, gevonden in de <STELLAR>opslagplaats voor lokale informatie<> van een planetair archief.\n\nEr is een <SPECIAL>oude verwoeste locatie<> gemarkeerd. Opgravingen op deze locatie leveren waarschijnlijk waardevolle schatten op.\n\nSelecteer de kaart en gebruik 'Route bepalen' (<IMG>FE_ALT1<>) om de locatie weer te geven op het display van je exopak.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/2.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -48,11 +52,14 @@
     "Description": "Een vrij zware, verwrongen sleutel van ijzer uit lang vervlogen tijden. Er moet hier ergens een slot zijn...",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/other/3.png",
+    "Usages": {
+      "HasUsedToCraft": true,
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -69,11 +76,14 @@
     "Description": "Een vreemde, gevorkte sleutel die ultraviolet licht afgeeft.\n\nZiet er primitief uit, maar de scanners van het exopak geven aan dat er sporen van naniethoudend schuim op de tanden zitten.",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/other/4.png",
+    "Usages": {
+      "HasUsedToCraft": true,
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -90,11 +100,13 @@
     "Description": "Versleutelde navigatiegegevens. Deze zeer mobiele gegevens-unit bevat alle relevante cartografische informatie over een planetaire regio.\n\nKan worden geruild bij een <TRADEABLE>cartograaf<> aan boord van een ruimtestation voor <STELLAR>bruikbare sterrenkaarten<>.",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "0063B7",
     "CdnUrl": "https://cdn.nmsassistant.com/other/5.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -111,11 +123,13 @@
     "Description": "Versleutelde navigatiegegevens die kunnen worden ingevoerd in een <TECHNOLOGY>signaalversterker<>.\n\nNa ontcijfering onthullen ze de locatie van een <TECHNOLOGY>noodcapsule<> met <SPECIAL>exopak-upgrades<>.",
     "BaseValueUnits": 85000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/6.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -132,11 +146,13 @@
     "Description": "Een fragment van de sequentie voor het overschrijven van de encryptie voor het <TECHNOLOGY>noodlogboek van een vrachtschip<>.\n\nEr kunnen meerdere delen van de sequentie nodig zijn om volledig toegang te krijgen tot de vastgelegde gegevens.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/7.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -153,11 +169,13 @@
     "Description": "Een coupon die de eigenaar recht geeft op de steun van de lokale autoriteiten bij aanvallen door piraten.",
     "BaseValueUnits": 10000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "CdnUrl": "https://cdn.nmsassistant.com/other/8.png",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -174,10 +192,11 @@
     "Description": "Een exclusief gebaar.\nSelecteer het in het <VAL_ON>snelmenu<> om momenten van existentiële verwondering en opwinding te delen met andere verkenners.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/9.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -194,10 +213,11 @@
     "Description": "Een exclusief gebaar.\nSelecteer het in het <VAL_ON>snelmenu<> om feestelijke momenten te delen met andere verkenners.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/10.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -214,10 +234,11 @@
     "Description": "Een exclusief gebaar.\nSelecteer het in het <VAL_ON>snelmenu<> om amusante momenten te delen met andere verkenners.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/11.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -234,10 +255,11 @@
     "Description": "Een exclusief gebaar.\nSelecteer het in het <VAL_ON>snelmenu<>. Staar verwonderd naar grote constructies, fauna, flora of de sterren zelf en sta stil bij de onbeduidendheid van één kleine levensvorm in dat grote universum.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/12.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -254,10 +276,11 @@
     "Description": "Een exclusief gebaar.\nSelecteer het in het <VAL_ON>snelmenu<> terwijl je onder water bent om 'geen probleem' te gebaren naar andere onderwaterverkenners.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/13.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -274,10 +297,11 @@
     "Description": "Een exclusief gebaar.\nSelecteer het in het <VAL_ON>snelmenu<>. Tuur naar de horizon, op zoek naar je volgende avontuur.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/14.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -294,10 +318,11 @@
     "Description": "Een exclusief gebaar.\nSelecteer het in het <VAL_ON>snelmenu<>. Neem een heldhaftige pose aan voor een verlaten gebouw, gigantische mineraalformaties en kolossale roofdieren.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/15.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -314,10 +339,11 @@
     "Description": "Een exclusief gebaar.\nSelecteer het in het <VAL_ON>snelmenu<>. Val op je knieën, verbluft over alle wonderen die je hebt aanschouwd.",
     "BaseValueUnits": 1500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/16.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -334,10 +360,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/17.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -354,10 +381,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/18.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -374,10 +402,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/19.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -394,10 +423,11 @@
     "Description": "Een agressieve <STELLAR>uiterlijke aanpassing van het exopak<>, gemodelleerd naar de oorlogshelmen van de oude Gek.\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/20.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -414,10 +444,11 @@
     "Description": "Deze sterke exopakbepantsering voor je schouders bevat aansluitingen met een hoog voltage die verbinding maken met je skelet. De stroomstoten zorgen ervoor dat je lichaam zoals vereist beweegt, zodat de spieren de optimale defensieve houding aannemen.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/21.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -434,10 +465,11 @@
     "Description": "Dit versterkte maar stijlvolle borstpantser voor het exopak biedt uitstekende bescherming en ziet er toch cool uit.",
     "BaseValueUnits": 750.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/22.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -454,10 +486,11 @@
     "Description": "Bepantserde handschoenen. Ideaal voor het hanteren van wapens, het uitdagen van vijanden en het plukken van planten met scherpe doorns.",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/23.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -474,10 +507,11 @@
     "Description": "Deze met nanovezels geweven leggings zijn flexibel en bieden bescherming tegen laagkaliberwapens.\n\nVoor het wassen is gespecialiseerde apparatuur vereist.",
     "BaseValueUnits": 750.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/24.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -494,10 +528,11 @@
     "Description": "Een verstevigd voetbeschermingssysteem met geïntegreerde gyroscopische tredbalansapparatuur.\n\nHonderden jaren aan hightechonderzoek komen tot uiting in dit schoeisel.",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/25.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -514,10 +549,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/26.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -534,10 +570,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/27.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -554,10 +591,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/28.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -574,10 +612,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/29.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -594,10 +633,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/30.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -614,10 +654,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/31.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -634,10 +675,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/32.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -654,10 +696,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/33.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -674,10 +717,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/34.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -694,10 +738,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/35.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -714,10 +759,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/36.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -734,10 +780,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nDeze helm is deels van siliconen gemaakt en deels biologisch. Hij kan de bewegingen van de gezichtsspieren van de drager detecteren en reproduceren, waardoor de helm het uiterlijk van een natuurlijk hoofd krijgt. Hij is volledig compatibel met exopaktechnologie en is net zo veilig als een traditionele helm.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "007951",
     "CdnUrl": "https://cdn.nmsassistant.com/other/37.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -754,10 +801,12 @@
     "Description": "Een technologiemodule die afkomstig is uit de restanten van een <STELLAR>geborgen ruimteschip<STELLAR>. Kan ook worden gevonden op <STELLAR>crashlocaties van vrachtschepen<> of worden geborgen tijdens <STELLAR>fregatexpedities<>.\n\nKan worden gebruikt om de opslagcapaciteit van een ruimteschip te vergroten bij een <TECHNOLOGY>terminal voor ruimteschipbenodigdheden<> in een ruimtestation.",
     "BaseValueUnits": 125000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": true,
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -774,10 +823,11 @@
     "Description": "Een waardevol deel van een ontmanteld ruimteschip, gemaakt door een <TECHNOLOGY>ruimteschip-uitrustingsstation<> in een <TRADEABLE>ruimtestation<>.\n\nHet onderdeel kan alleen als schroot worden verkocht bij een <VAL_ON>handelsterminal<>.",
     "BaseValueUnits": 100000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 25.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -794,10 +844,12 @@
     "Description": "Een waardevol deel van een ontmanteld ruimteschip, gemaakt door een <TECHNOLOGY>ruimteschip-uitrustingsstation<> in een <TRADEABLE>ruimtestation<>.\n\nHet onderdeel kan alleen als schroot worden verkocht bij een <VAL_ON>handelsterminal<>.",
     "BaseValueUnits": 200000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 25.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsEggIngredient": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -814,10 +866,11 @@
     "Description": "Een waardevol deel van een ontmanteld ruimteschip, gemaakt door een <TECHNOLOGY>ruimteschip-uitrustingsstation<> in een <TRADEABLE>ruimtestation<>.\n\nHet onderdeel kan alleen als schroot worden verkocht bij een <VAL_ON>handelsterminal<>.",
     "BaseValueUnits": 400000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -834,10 +887,11 @@
     "Description": "Een waardevol deel van een ontmanteld ruimteschip, gemaakt door een <TECHNOLOGY>ruimteschip-uitrustingsstation<> in een <TRADEABLE>ruimtestation<>.\n\nHet onderdeel kan alleen als schroot worden verkocht bij een <VAL_ON>handelsterminal<>.",
     "BaseValueUnits": 600000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 15.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -854,10 +908,11 @@
     "Description": "Een waardevol deel van een ontmanteld ruimteschip, gemaakt door een <TECHNOLOGY>ruimteschip-uitrustingsstation<> in een <TRADEABLE>ruimtestation<>.\n\nHet onderdeel kan alleen als schroot worden verkocht bij een <VAL_ON>handelsterminal<>.",
     "BaseValueUnits": 800000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 10.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -874,10 +929,11 @@
     "Description": "Een waardevol deel van een ontmanteld ruimteschip, gemaakt door een <TECHNOLOGY>ruimteschip-uitrustingsstation<> in een <TRADEABLE>ruimtestation<>.\n\nHet onderdeel kan alleen als schroot worden verkocht bij een <VAL_ON>handelsterminal<>.",
     "BaseValueUnits": 3000000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -894,10 +950,11 @@
     "Description": "Een waardevol deel van een ontmanteld ruimteschip, gemaakt door een <TECHNOLOGY>ruimteschip-uitrustingsstation<> in een <TRADEABLE>ruimtestation<>.\n\nHet onderdeel kan alleen als schroot worden verkocht bij een <VAL_ON>handelsterminal<>.",
     "BaseValueUnits": 50000000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -914,10 +971,11 @@
     "Description": "Een beeldje van synthetisch polymeer in de vorm van Reiziger Apollo, om in de cockpit van je ruimteschip te zetten.\n\nPlaats het in een <TECHNOLOGY>inventarisvak<> om het interieur van je schip te verfraaien.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/46.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -939,10 +997,11 @@
     "Description": "Een beeldje van synthetisch polymeer in de vorm van Reiziger Artemis, om in de cockpit van je ruimteschip te zetten.\n\nPlaats het in een <TECHNOLOGY>inventarisvak<> om het interieur van je schip te verfraaien.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/47.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -964,10 +1023,11 @@
     "Description": "Een beeldje van synthetisch polymeer in de vorm van een Atlas-interface, om in de cockpit van je ruimteschip te zetten.\n\nPlaats het in een <TECHNOLOGY>inventarisvak<> om het interieur van je schip te verfraaien.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/48.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -989,10 +1049,11 @@
     "Description": "Een beeldje van synthetisch polymeer in de vorm van Priester-entiteit Nada, om in de cockpit van je ruimteschip te zetten.\n\nPlaats het in een <TECHNOLOGY>inventarisvak<> om het interieur van je schip te verfraaien.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/49.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1014,10 +1075,11 @@
     "Description": "Een beeldje van synthetisch polymeer in de vorm van Reiziger -null-, om in de cockpit van je ruimteschip te zetten.\n\nPlaats het in een <TECHNOLOGY>inventarisvak<> om het interieur van je schip te verfraaien.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/50.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1039,10 +1101,11 @@
     "Description": "Een beeldje van synthetisch polymeer in de vorm van Specialist Polo, om in de cockpit van je ruimteschip te zetten.\n\nPlaats het in een <TECHNOLOGY>inventarisvak<> om het interieur van je schip te verfraaien.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/51.png",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1064,10 +1127,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je trouw zweert aan de <STELLAR>divisie Amateurwetenschap<>.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1084,10 +1148,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> die dromerige herinneringen aan verre satellieten oproept.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1104,10 +1169,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je laat zien dat je trots bent op je bestaan als anomalie.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1124,10 +1190,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je vriendschap met Polo bezegelt.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1144,10 +1211,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je vriendschap met priester-entiteit Nada bezegelt.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1164,10 +1232,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je vriendschap met iteratie Hesperus bezegelt.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1184,10 +1253,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je vriendschap met iteratie Ariadne bezegelt.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1204,10 +1274,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> voor hen die liever alleen reizen.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1224,10 +1295,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> die de deterministische aard van het bestaan reflecteert\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1244,10 +1316,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> die betrekking heeft op je plek in het universum\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1264,10 +1337,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> die betrekking heeft op je plek in het universum\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1284,10 +1358,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> die op speelse wijze je intergalactische reputatie reflecteert.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1304,10 +1379,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> voor hen die liever alleen reizen.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1324,10 +1400,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je vriendschap met Polo bezegelt.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1344,10 +1421,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je vriendschap met priester-entiteit Nada bezegelt.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1364,10 +1442,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je vriendschap met iteratie Ariadne bezegelt.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1384,10 +1463,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je vriendschap met iteratie Gemini bezegelt.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1404,10 +1484,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je vriendschap met iteratie Mercury bezegelt.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1424,10 +1505,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je vriendschap met iteratie Tethys bezegelt.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1444,10 +1526,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je vriendschap met iteratie Hesperus bezegelt.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1464,10 +1547,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> die de deterministische aard van het bestaan reflecteert\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1484,10 +1568,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> die betrekking heeft op je plek in het universum\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1504,10 +1589,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> waarmee je je onafhankelijk van het universum laat zien.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1524,10 +1610,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> voor hen die de aanstelling van de Vy'keen aanvaarden.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1544,10 +1631,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> voor hen die de duistere hoeken van het universum hebben getrotseerd.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1564,10 +1652,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> voor hen die de duistere hoeken van het universum hebben getrotseerd.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1584,10 +1673,11 @@
     "Description": "Transformeer je uiterlijk op een natuurlijke manier met deze vleesetende parasiet. Dit levende wezen versmelt gedeeltelijk met je hersenstam, waardoor symbiose ontstaat.\n\nVerander voorzichtig het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1604,10 +1694,11 @@
     "Description": "Opgevangen extract van een vreselijk gedrocht, bewaard voor wetenschappelijk en decoratief gebruik.\n\nZijn krachtveld is van de allerhoogste kwaliteit. De metgezel mag niet ontsnappen. De metgezel zal niet ontsnappen. Ontsnappen.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1633,10 +1724,11 @@
     "Description": "Deze schimmelsoort valt op door zijn vele haarvaten en lichtgevende eigenschappen. Een circulerende keten van chemische reacties zorgt voor de nachtelijke gloed van de zwam.\n\nBiedt mogelijkheden voor de inrichting van tuinen voor basissen.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1658,10 +1750,11 @@
     "Description": "Deze oude stronk is afkomstig uit een kolonie van gekloonde bomen, die naar schatting meer dan honderd millennia hebben geleefd. De bast geeft een aangename mosgeur af.\n\nBiedt mogelijkheden voor de inrichting van tuinen voor basissen.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1683,10 +1776,11 @@
     "Description": "Deze eenvoudige lemen hut is gemodelleerd naar een mysterieus bouwwerk dat is ontdekt in de mist van de planeet Saxm A13. Vergelijkbare constructies zijn overal in het universum aangetroffen. Hun herkomst is nog niet bewezen.\n\nBiedt mogelijkheden voor de inrichting van tuinen voor basissen.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1708,10 +1802,11 @@
     "Description": "Een proteïneformatie van onbekende oorsprong, gerepliceerd aan boord van de anomalie in de ruimte. De skeletstructuur kan luchtbellen vasthouden, wat zorgt voor iets hogere of lagere temperaturen in het midden van de kooi.\n\nBiedt mogelijkheden voor de inrichting van tuinen voor basissen.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1733,10 +1828,11 @@
     "Description": "Het is lastig om te bepalen of deze ongewone levensvorm met zijn opvallende rad van fotofoorklieren tot de flora of de fauna behoort. De dikke stengels met doornen beschermen de smakelijke klieren tegen roofdieren.\n\nBiedt mogelijkheden voor de inrichting van tuinen voor basissen.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1758,10 +1854,11 @@
     "Description": "De oogachtige uitsteeksels op dit bizarre organisme kunnen zowel licht verwerken als eenvoudige berekeningen uitvoeren, hoewel het niet duidelijk is waar ze naar kijken.\n\nBiedt mogelijkheden voor de inrichting van tuinen voor basissen.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1783,10 +1880,11 @@
     "Description": "Deze eierschaal fluistert nog altijd een zwak lied, alsof hij van grote afstand is verbonden met een koor.\n\nBiedt mogelijkheden voor de inrichting van tuinen voor basissen.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1808,10 +1906,11 @@
     "Description": "Het brede, plaatachtige blad van deze boom is zeer geschikt voor fotosynthese. In het wild kunnen deze bomen gigantisch groot worden. Deze inheemse soort wordt gekweekt voor de inrichting van woonomgevingen.\n\nBiedt mogelijkheden voor de inrichting van tuinen voor basissen.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1833,10 +1932,11 @@
     "Description": "Deze vegetatieve structuur bevat veel antioxidanten, hoewel hij door de dikke schubbenlaag niet geschikt is voor de landbouw.\n\nBiedt mogelijkheden voor de inrichting van tuinen voor basissen.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1858,10 +1958,11 @@
     "Description": "Rust jezelf uit met deze exclusieve <STELLAR>persoonlijke versiering<>, als blijk van waardering voor rondtrekkende en verkennende ruimtereizigers.\n\nVoeg dit vaandel toe aan je profiel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1878,10 +1979,11 @@
     "Description": "Rust jezelf uit met deze exclusieve <STELLAR>persoonlijke versiering<>, als blijk van waardering voor de gemeenschap, avontuur en ontdekkingen.\n\nVoeg dit vaandel toe aan je profiel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1898,10 +2000,11 @@
     "Description": "Welkom in het café! Rust jezelf uit met deze exclusieve <STELLAR>persoonlijke versiering<> ter ere van de vriendschap, plezier en goede vibes.\n\nVoeg dit vaandel toe aan je profiel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1918,10 +2021,11 @@
     "Description": "Rust jezelf uit met deze exclusieve <STELLAR>persoonlijke versiering<> voor een verenigd universum. Documenteer, help, maak en communiceer.\n\nVoeg dit vaandel toe aan je profiel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1938,9 +2042,10 @@
     "Description": "Een levend, bevrucht ei, %READY%\n\n%MODIFIED%\n\nScans geven aan dat het wezen binnenin het genetisch potentieel heeft om %SIZE% en %TRAIT% te worden.",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "311A49",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1957,10 +2062,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nDeze sticker van de Alliantie van Galactische Reizigers staat voor het belang van nomadische verkenning.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -1982,10 +2088,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nDeze sticker van het aminocentrum staat voor de principes van gemeenschap, avontuur en ontdekking.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2007,10 +2114,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nDeze sticker van Café 42 staat voor vriendschap, plezier en goede vibes. Welkom in het café!",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2032,10 +2140,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nDeze sticker staat voor de Verenigde Federatie van Reizigers. Documenteer, help, maak en communiceer.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2057,10 +2166,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nDeze sticker van het Qitaniaanse rijk staat voor naastenliefde, vriendelijkheid, vrede en redelijkheid.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2082,10 +2192,11 @@
     "Description": "Luxueus vuurwerk met een drievoudige kleurensymfonie. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>Bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2102,10 +2213,11 @@
     "Description": "Luxueus vuurwerk dat explodeert in sprankelende stukjes indium en cadmium. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>Bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2122,10 +2234,11 @@
     "Description": "Luxueus vuurwerk. Eenmaal geactiveerd draait dit pyrotechnische wonder rond in een betoverende spiraal. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>Bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 60.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2142,10 +2255,11 @@
     "Description": "Rust jezelf uit met deze exclusieve <STELLAR>persoonlijke versiering<> ter ere van de naastenliefde, vriendelijkheid, vrede en redelijkheid.\n\nVoeg dit vaandel toe aan je profiel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2162,10 +2276,11 @@
     "Description": "Exotisch' is een exclusieve <STELLAR>verkennerstitel<>, waarmee je laat zien dat je trots bent op je status als buitenstaander.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2182,10 +2297,11 @@
     "Description": "Vulkanisch' is een exclusieve <STELLAR>verkennerstitel<>, waarmee je laat zien dat je letterlijk en figuurlijk dol bent op uitbarstingen. \n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2202,10 +2318,11 @@
     "Description": "Moerasbewoner' is een exclusieve <STELLAR>verkennerstitel<> voor hen die graag op plekken komen waar anderen liever wegblijven.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2222,10 +2339,11 @@
     "Description": "Zestiende' is een exclusieve <STELLAR>verkennerstitel<> voor hen die de grootste geheimen van het universum kennen.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2242,10 +2360,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> die laat zien hoeveel je weet over hen die voor jou kwamen.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2262,10 +2381,11 @@
     "Description": "Fotograaf' is een exclusieve <STELLAR>verkennerstitel<> voor Reizigers die hun avonturen in het universum graag op een aantrekkelijke manier vastleggen.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2282,10 +2402,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke verbetering voor gezelschapsdieren<>. Deze mijnlaser is geïsoleerd met een lichte gel, wat zorgt voor ultiem comfort voor gezelschapsdieren die helpen bij het verzamelen van grondstoffen.\n\nWin het vertrouwen van wilde dieren om gezelschapsdieren te adopteren. Ga interactie aan met gezelschapsdieren om hun uiterlijk aan te passen.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2302,10 +2423,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke verbetering voor gezelschapsdieren<>. Dit compacte apparaat genereert gedetailleerde analyserapporten van de verplaatsingsgewoonten van wezens. Hiermee krijgen verkenners inzicht in het geheime leven van hun gezelschapsdieren.\n\nWin het vertrouwen van wilde dieren om gezelschapsdieren te adopteren. Ga interactie aan met gezelschapsdieren om hun uiterlijk aan te passen.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2322,10 +2444,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke verbetering voor gezelschapsdieren<>. Deze multifunctionele laser reageert op de biosignalen van de drager en past warmte en licht automatisch aan, terwijl subtiele impulsen het dier geruststellen.\n\nWin het vertrouwen van wilde dieren om gezelschapsdieren te adopteren. Ga interactie aan met gezelschapsdieren om hun uiterlijk aan te passen.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2342,10 +2465,12 @@
     "Description": "Een geavanceerde, technologische overlevingsmodule waarmee je de <STELLAR>exopakopslag<> vergroot.\n\nVoorverpakte nano-expanders creëren gestabiliseerde subwarpgaten in het exopak, wat de <STELLAR>inventariscapaciteit<> vergroot. Voer deze verbetering uit bij de upgradeterminal voor het exopak aan boord van een <STELLAR>ruimtestation<>.",
     "BaseValueUnits": 155000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": true,
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2362,10 +2487,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nEen gestroomlijnde en lichte rugzak-unit met een elegant ontwerp met enkele aandrijving. Dit is een exclusieve exopak-uitbreiding ter ere van de voltooiing van de eerste <STELLAR>expeditie<>, 'Pioniers'.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3500.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2382,10 +2508,11 @@
     "Description": "Een agressieve <STELLAR>uiterlijke aanpassing van het exopak<>, gemodelleerd naar de oorlogshelmen van de oude Gek. Deze speciale uitvoering is gegoten in een duurzame en kostbare legering.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2402,10 +2529,11 @@
     "Description": "Dit is een exclusieve gouden uitvoering van het iconische <STELLAR>ruimteschip Alpha Vector<> ter ere van de voltooiing van de eerste <STELLAR>expeditie<>, 'Pioniers'.\n\nDit zeer wendbare ruimteschip is gemaakt van een duurzame en kostbare legering en voorzien van een stevige laag vezelachtige isolatie. Hierdoor is het langdurig bestand tegen de gevaren van ruimteverkenning.\n\n<STELLAR>Claim<> dit schip om het toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige schip er voor in. Op een planeet kun je schepen oproepen via het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2422,10 +2550,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> ter ere van de voltooiing van de eerste <STELLAR>expeditie<>, 'Pioniers'.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2442,10 +2571,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nDit is een sticker met de gouden uitvoering van het iconische ruimteschip Alpha Vector, ter ere van de voltooiing van de eerste <STELLAR>expeditie<>, 'Pioniers'.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2467,10 +2597,11 @@
     "Description": "Rust jezelf uit met deze exclusieve <STELLAR>persoonlijke versiering<> ter ere van je eerste <STELLAR>expeditie<>, 'Pioniers'.\nVoeg dit vaandel toe aan je profiel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2487,10 +2618,11 @@
     "Description": "Een pakket met drie soorten luxe vuurwerk. Dit adembenemende vuurwerk creëert de beeltenis van een Atlas-interface met behulp van <TECHNOLOGY>indium<>, <COMMODITY>goud<> en <FUEL>cadmium<>. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2507,10 +2639,11 @@
     "Description": "Deze ademende vuurwerkversie van een Atlas-interface maakt gebruik van <TECHNOLOGY>indium<> en <FUEL>cadmium<>. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2527,10 +2660,11 @@
     "Description": "Deze ademende vuurwerkversie van een Atlas-interface maakt gebruik van <COMMODITY>goud<> en <TECHNOLOGY>indium<>. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2547,10 +2681,11 @@
     "Description": "Deze ademende vuurwerkversie van een Atlas-interface maakt gebruik van <FUEL>cadmium<> en <COMMODITY>goud<>. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2567,10 +2702,11 @@
     "Description": "Een exclusieve basisdecoratie.\nDeze grote <STELLAR>met goud omrande vlag<> bevat een afbeelding van het iconische ruimteschip Alpha Vector. Plaats de vlag in een bewoonbare basis ter ere van de voltooiing van de eerste <STELLAR>expeditie<>, 'Pioniers'.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2592,10 +2728,11 @@
     "Description": "Een exclusief <STELLAR>ruimteschip<>, uitgerust met een verbeterde <TECHNOLOGY>hyperdrive<>, waarmee het sterrenstelsel efficiënt kan worden verkend.\n\n<STELLAR>Claim<> dit schip om het toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige schip er voor in. Op een planeet kun je schepen oproepen via het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2612,10 +2749,11 @@
     "Description": "Een exclusief <STELLAR>ruimteschip<>, uitgerust met een verbeterde <TECHNOLOGY>infraversneller<>, waarmee vijandelijke schepen efficiënt kunnen worden vernietigd.\n\n<STELLAR>Claim<> dit schip om het toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige schip er voor in. Op een planeet kun je schepen oproepen via het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2632,10 +2770,11 @@
     "Description": "Een exclusief <STELLAR>ruimteschip<>, uitgerust met een verbeterde <TECHNOLOGY>positronuitwerper<>, waarmee vijandelijke schepen efficiënt kunnen worden vernietigd.\n\n<STELLAR>Claim<> dit schip om het toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige schip er voor in. Op een planeet kun je schepen oproepen via het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2652,10 +2791,11 @@
     "Description": "Een exclusief <STELLAR>ruimteschip<> met een groot vrachtruim en verbeterde <TECHNOLOGY>afweerschilden<> en een <TECHNOLOGY>cyclotron-ballista<>.\n\n<STELLAR>Claim<> dit schip om het toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige schip er voor in. Op een planeet kun je schepen oproepen via het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2672,10 +2812,11 @@
     "Description": "Een exclusief <STELLAR>ruimteschip<>, uitgerust met een krachtige <TECHNOLOGY>faselaser<> en een verbeterde <TECHNOLOGY>pulsmotor<> om de ruimte efficiënt mee te verkennen. Met de <TECHNOLOGY>economiescanner<> kun je ook op afstand toegang krijgen tot gedetailleerde economische informatie over een stelsel. Dan kan handig zijn het plannen van galactische handelsroutes.\n\n<STELLAR>Claim<> dit schip om het toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige schip er voor in. Op een planeet kun je schepen oproepen via het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2692,10 +2833,11 @@
     "Description": "Een exclusieve <STELLAR>multitool<>. Dit geweer is uitgerust met de dodelijke <TECHNOLOGY>vuurspeer<> en het <TECHNOLOGY>conflictvizier<>, dat de terugslag vermindert.\n\n<STELLAR>Pak<> deze multitool om 'm toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige multitool er voor in. Wissel tussen actieve multitools via het gedeelte Functies van het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2712,10 +2854,11 @@
     "Description": "Een exclusieve <STELLAR>multitool<>. Dit pistool beschikt over de offensieve <TECHNOLOGY>Boltcaster<> en een defensief <TECHNOLOGY>persoonlijke krachtveld<>.\n\n<STELLAR>Pak<> deze multitool om 'm toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige multitool er voor in. Wissel tussen actieve multitools via het gedeelte Functies van het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2732,10 +2875,11 @@
     "Description": "Een exclusieve <STELLAR>multitool<>. Dit gespecialiseerde gereedschap heeft een <TECHNOLOGY>geavanceerde mijnlaser<> en een krachtigere <TECHNOLOGY>optische boor<>.\n\n<STELLAR>Pak<> deze multitool om 'm toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige multitool er voor in. Wissel tussen actieve multitools via het gedeelte Functies van het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2752,10 +2896,11 @@
     "Description": "Een exclusieve <STELLAR>multitool<>. Dit gespecialiseerde gereedschap heeft meerdere <TECHNOLOGY>scanupgrades<>, waardoor het scannen naar interessante objecten op planeten efficiënter en lucratiever wordt.\n\n<STELLAR>Pak<> deze multitool om 'm toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige multitool er voor in. Wissel tussen actieve multitools via het gedeelte Functies van het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2772,10 +2917,11 @@
     "Description": "Een exclusieve <STELLAR>multitool<>. Dit geweer is uitgerust met de dodelijke <TECHNOLOGY>pulsspitter<> en explosieve <TECHNOLOGY>plasmagranaatwerper<>.\n\n<STELLAR>Pak<> deze multitool om 'm toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige multitool er voor in. Wissel tussen actieve multitools via het gedeelte Functies van het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2792,10 +2938,11 @@
     "Description": "Een bundel met upgrades die compatibel zijn met alle <STELLAR>persoonlijke multitools<>.\n\nBevat een <TECHNOLOGY>vak voor multitool-uitbreiding<>, dat kan worden aangesloten op een multitool in een <STELLAR>upgrade-rek voor multitools<> op een ruimteschip, maar ook een unieke <TECHNOLOGY>upgrademodule<> die je meteen handmatig kunt installeren om bestaande multitool-technologie te verbeteren.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2812,10 +2959,11 @@
     "Description": "Een pakket met drie soorten luxe vuurwerk. Met volop <FUEL>cadmium<>, <TRADEABLE>emeril<> en <TECHNOLOGY>indium<>. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2832,9 +2980,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2851,9 +2998,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2870,9 +3016,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2889,9 +3034,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2908,9 +3052,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2927,9 +3070,8 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
+    "Usages": {},
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2946,9 +3088,10 @@
     "Description": "Voortgekomen uit Nada's onderzoek naar ongebruikelijke patronen in de verhalen de <TRANS_TRA>Gek<>, <TRANS_EXP>Korvax<> en <TRANS_WAR>Vy'keen<>.\n\nHet baken zendt een <STELLAR>signaalecho<> uit, afgestemd op de <SPECIAL>historiografische flux<> die in kaart is gebracht door Nada's bevriende Reizigers.\n\nSpecialist Polo waagt zich niet aan voorspellingen over het resultaat van de uitzending.",
     "BaseValueUnits": 80.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2965,9 +3108,10 @@
     "Description": "Nada heeft een nieuw patroon gedetecteerd in de verhalen van de <TRANS_TRA>Gek<>, <TRANS_EXP>Korvax<> en <TRANS_WAR>Vy'keen<>.\n\nMet de dosimeter kun je de blootstelling aan de <SPECIAL>historiografische flux<> rond belangrijke artefactlocaties meten. Aan de hand van opnamen van ongebruikelijke historische veranderingen kan Nada het signaal traceren.\n\nHelp Nada en Polo met hun onderzoek door met dit apparaat <STELLAR>historische gegevens te versturen<> over locaties met buitenaardse artefacten.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -2984,10 +3128,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> ter ere van de voltooiing van de <STELLAR>expeditie<> 'Obstakels' en je succesvolle opsporing van de <SPECIAL>afwijkende historische echo<>.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3004,10 +3149,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> ter ere van de voltooiing van de <STELLAR>expeditie<> 'Obstakels' en je succesvolle opsporing van de <SPECIAL>afwijkende historische echo<>.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3024,10 +3170,11 @@
     "Description": "De <TECHNOLOGY>SSV Normandy SR1<> is een uniek fregat voor grondige verkenning. Dit legendarische schip staat voor vrede en samenwerking tussen rassen en herdenkt de voltooiing van de <STELLAR>expeditie<> 'Obstakels'.\n\nAls je dit fregat accepteert, wordt het aan je vloot toegevoegd. Beheer je fregatvloot in een <TECHNOLOGY>vlootcommandokamer<> aan boord van je vrachtschip en raadpleeg je <TECHNOLOGY>navigator<> om fregatten in te zetten voor winstgevende expedities.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3044,8 +3191,6 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 0.0,
     "Colour": "2C7C9F",
     "BlueprintCost": 0,
@@ -3064,10 +3209,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> ter ere van de voltooiing van de <STELLAR>expeditie<> 'Cartografen' en het succesvol documenteren en ontsnappen van de planeet.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3084,10 +3230,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\n\nDeze sticker krijg je voor het succesvol documenteren en ontsnappen van de planeet.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3109,10 +3256,11 @@
     "Description": "Rust jezelf uit met deze exclusieve <STELLAR>persoonlijke versiering<> ter ere van de <STELLAR>expeditie<> 'Cartografen' en het succesvol documenteren en ontsnappen van de planeet.\n\nVoeg dit vaandel toe aan je profiel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3129,10 +3277,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nEr wordt speciale olie toegevoegd aan de straalmotoren van het jetpack, waardoor er een stroom parelachtige bubbels uit de uitlaat komt.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3149,10 +3298,11 @@
     "Description": "Een levend, bevrucht ei, <TRADEABLE>klaar om uit te komen!<>\n\nEen schaduw kronkelt onder het beschermende membraan van het ei.\n\nScans geven aan dat het wezen het genetisch potentieel heeft om een <FUEL>nachtmerrieachtige<> <FUEL>zielenverslinder<> te worden.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3169,10 +3319,11 @@
     "Description": "Een exclusief <STELLAR>ruimteschip<>, uitgerust met een krachtige <TECHNOLOGY>faselaser<> en een verbeterde <TECHNOLOGY>pulsmotor<> om de ruimte efficiënt mee te verkennen. Met de <TECHNOLOGY>teleportontvanger<> kun je ook verzamelde producten en materialen op een efficiënte manier <STELLAR>over grote afstand<> naar je schip teleporteren.\n\n<STELLAR>Claim<> dit schip om het toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige schip er voor in. Op een planeet kun je schepen oproepen via het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3189,10 +3340,11 @@
     "Description": "Een exclusief <STELLAR>ruimteschip<>, uitgerust met een verbeterde <TECHNOLOGY>hyperdrive<>, waarmee het sterrenstelsel efficiënt kan worden verkend.\n\n<STELLAR>Claim<> dit schip om het toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige schip er voor in. Op een planeet kun je schepen oproepen via het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3209,10 +3361,11 @@
     "Description": "Een exclusief <STELLAR>ruimteschip<>, uitgerust met een verbeterde <TECHNOLOGY>infraversneller<>, waarmee vijandelijke schepen efficiënt kunnen worden vernietigd.\n\n<STELLAR>Claim<> dit schip om het toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige schip er voor in. Op een planeet kun je schepen oproepen via het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3229,10 +3382,11 @@
     "Description": "Een exclusief <STELLAR>ruimteschip<> met een groot vrachtruim en verbeterde <TECHNOLOGY>afweerschilden<> en een <TECHNOLOGY>cyclotron-ballista<>.\n\n<STELLAR>Claim<> dit schip om het toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige schip er voor in. Op een planeet kun je schepen oproepen via het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3249,10 +3403,11 @@
     "Description": "Een exclusief <STELLAR>ruimteschip<>, uitgerust met een verbeterde <TECHNOLOGY>positronuitwerper<>, waarmee vijandelijke schepen efficiënt kunnen worden vernietigd.\n\n<STELLAR>Claim<> dit schip om het toe te voegen aan je verzameling of <STELLAR>ruil<> je huidige schip er voor in. Op een planeet kun je schepen oproepen via het snelmenu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3269,10 +3424,11 @@
     "Description": "Een levend, bevrucht ei, <TRADEABLE>klaar om uit te komen!<>\n\nHet gepantserde wezen erin, dat deels kristal en deels vlees is, tikt zachtjes tegen het ei.\n\nScans geven aan dat het wezen het genetisch potentieel heeft om zeer <TRADEABLE>toegewijd<> te worden aan het beschermen van zijn baasje.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3289,10 +3445,11 @@
     "Description": "Een levend, bevrucht ei, <TRADEABLE>klaar om uit te komen!<>\n\nHet elegante wezen erin slaat met zijn zachte vleugels tegen het ei, ongeduldig als hij is om eruit te komen.\n\nScans geven aan dat het wezen het genetisch potentieel heeft om een <STELLAR>ijverig<> gezelschapsdier te worden dat van grote hoogte naar grondstoffen zoekt.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3309,10 +3466,11 @@
     "Description": "Een levend, bevrucht ei, <TRADEABLE>klaar om uit te komen!<>\n\nHet gewicht in het ei verplaatst zich voortdurend, alsof het embryo nu al stuitert van de levenslust.\n\nScans geven aan dat het wezen het genetisch potentieel heeft om een <TRADEABLE>lief<> gezelschapsdier te worden dat zich graag laat knuffelen.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3329,10 +3487,11 @@
     "Description": "Een levend, bevrucht ei, <TRADEABLE>klaar om uit te komen!<>\n\nHet schubbige reptiel schraapt zijn klauwen tegen de binnenkant van het ei, alsof hij wil laten zien hoe bloeddorstig hij is.\n\nScans geven aan dat het wezen het genetisch potentieel heeft om <FUEL>vurige<> jager te worden die met zijn krachtige kaken prooien en vijandige wezens kan doden.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3349,10 +3508,11 @@
     "Description": "Een levend, bevrucht ei, <TRADEABLE>klaar om uit te komen!<>\n\nHet insect erin tikt met zijn grote horens, popelend om eruit te komen en het universum te verkennen.\n\nScans geven aan dat het wezen het genetisch potentieel heeft om zeer <TECHNOLOGY>avontuurlijk<> te worden en verder wil kijken dan zijn moerassige thuisplaneet.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3369,10 +3529,11 @@
     "Description": "Een pakket met drie soorten luxe vuurwerk. Met volop <FUEL>cadmium<>, <TRADEABLE>emeril<> en <TECHNOLOGY>indium<>. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3389,10 +3550,11 @@
     "Description": "Een pakket met drie soorten luxe vuurwerk. Met volop <FUEL>cadmium<>, <TRADEABLE>emeril<> en <TECHNOLOGY>indium<>. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3409,10 +3571,11 @@
     "Description": "Een pakket met drie soorten luxe vuurwerk. Met volop <FUEL>cadmium<>, <TRADEABLE>emeril<> en <TECHNOLOGY>indium<>. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3429,10 +3592,11 @@
     "Description": "Een pakket met drie soorten luxe vuurwerk. Met volop <FUEL>cadmium<>, <TRADEABLE>emeril<> en <TECHNOLOGY>indium<>. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3449,10 +3613,11 @@
     "Description": "Een pakket met drie soorten luxe vuurwerk. Met volop <FUEL>cadmium<>, <TRADEABLE>emeril<> en <TECHNOLOGY>indium<>. Ontsteek het en geniet van het spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3469,10 +3634,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nOp deze sticker staat een ontdekkingsreiziger die naar de sterren staart onder een blauwe hemel.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3494,10 +3660,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nOp deze sticker staat een kolossaal, buitenaards beest dat door een roestkleurig landschap draaft.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3519,10 +3686,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nOp deze sticker staat een geland ruimteschip dat wacht op de terugkeer van zijn piloot.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3544,10 +3712,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nOp deze sticker staan twee ruimteschepen die naar het centrum van een sterrenstelsel vliegen.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3569,10 +3738,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nOp deze sticker staat een legendarisch, spookachtig duikmasker.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3594,10 +3764,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\nOp deze sticker staat een ruimteschip dat langs het vreemde thuis van Nada en Polo raast.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3619,10 +3790,11 @@
     "Description": "Dit volledige zeil is een replica van de zeilen van de oude handelsschepen van de Gek. Het zorgt voor een levendige nautische sfeer in huis.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3644,10 +3816,11 @@
     "Description": "Deze reeks zeilen zijn replica's van de zeilen van de oude handelsschepen van de Gek. Ze zorgen voor een levendige nautische sfeer in huis.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3669,10 +3842,11 @@
     "Description": "Deze asymmetrische zeilen zijn replica's van de zeilen van de oude handelsschepen van de Gek. Ze zorgen voor een levendige nautische sfeer in huis.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3694,10 +3868,11 @@
     "Description": "Dit canvas halfzeil is een replica van de zeilen van de oude handelsschepen van de Gek. Het zorgt voor een levendige nautische sfeer in huis.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3719,10 +3894,11 @@
     "Description": "Een exclusieve, zelfklevende, kreukvrije wandversiering.\nEen weelderige zwart-gouden poster waarop een Reiziger is afgebeeld als Apollo.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3744,10 +3920,11 @@
     "Description": "Een exclusieve, zelfklevende, kreukvrije wandversiering.\nEen felgekleurde poster van een draadframeafbeelding van de anomalie in de ruimte.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3769,10 +3946,11 @@
     "Description": "Een exclusieve, zelfklevende, kreukvrije wandversiering.\nEen poster met daarop een heerlijk, romig glas warme protomelk.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Quicksilver",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3794,10 +3972,11 @@
     "Description": "Een doorzichtig vel <STELLAR>worm-velijn<>, beschreven door een fanaticus. Het kronkelt als je het aanraakt.\n\n'De kinderen merkten ze als eersten op.\nEen bonzend en donderend geluid, diep onder het zand.\nDe eerste worm sprong door de lucht als een zwarte bliksemschicht. \nDe ene worm na de andere verrees uit de woestijn. Ze migreerden.\nElk stormseizoen hopen we dat we worden uitverkoren. We gaan in de woestijn in lange rijen staan, met onze armen naar de lucht geheven.\nIedereen mag de muil in.\nVoor de grote wormen zijn we allemaal gelijk.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3814,10 +3993,12 @@
     "Description": "De opgerolde overblijfselen van het <SPECIAL>spijsverteringskanaal<> van een hongerige tentakel. Hoewel de vlezige wanden nog steeds stuiptrekkingen vertonen, kunnen er met geen mogelijkheid nieuwe tentakels uit groeien.\n\nDit soort bijzonder slachtafval wordt zelden verhandeld op de galactische markt en is dus <STELLAR>zeer waardevol<>.",
     "BaseValueUnits": 160016.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasRefinedToCreate": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3834,10 +4015,12 @@
     "Description": "Het kwetsbare embryo van een <SPECIAL>hongerig tentakel<>, nog druipend van de slijmboter. Het kreunt en deinst terug als je het aanraakt.\n\nKan worden gewonnen uit embryonale blazen met behulp van een <TECHNOLOGY>viscerale synthesizer<>.",
     "BaseValueUnits": 16.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
+    "Usages": {
+      "HasRefinedToCreate": true,
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3854,10 +4037,11 @@
     "Description": "Luxueus vuurwerk. Dit organisch siervuurwerk schiet de lucht in en spettert uiteen in een brij van slijm, plasma en wormen. Ontsteek het voor een weerzinwekkend spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 50.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 20.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3874,10 +4058,11 @@
     "Description": "Een pakket met luxueus vuurwerk. Dit organisch siervuurwerk schiet de lucht in en spettert uiteen in een brij van slijm, klodders en wormen. Ontsteek het voor een weerzinwekkend spektakel in de lucht.\n\nPlaats de lanceerbuis via het <VAL_ON>bouwmenu<> (<IMG>BUILD_MENU<>). <FUEL>Waarschuwing<>: niet richten op levende wezens. Niet geschikt voor gebruik binnenshuis.",
     "BaseValueUnits": 250.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "262626",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3894,10 +4079,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> ter ere van de voltooiing van de expeditie <STELLAR>Verschijning<>.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3914,10 +4100,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\n\nDeze sticker krijg je na de voltooiing van de expeditie <STELLAR>Verschijning<>.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3939,10 +4126,11 @@
     "Description": "Rust jezelf uit met deze exclusieve <STELLAR>persoonlijke versiering<> ter ere van de expeditie <STELLAR>Verschijning<>.\nVoeg dit vaandel toe aan je profiel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3959,10 +4147,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nBevestigt een actieve biokamer aan de uitlaatpijpen van het jetpack. Tijdens de vlucht worden de stuwraketten warm en stoten ze slijmerig sap uit.\n<STELLAR>Opmerking<>: bevat levende wormen. Uitgestoten wormen kunnen lokale ecosystemen besmetten.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3979,10 +4168,11 @@
     "Description": "Een levend, bevrucht ei, <TRADEABLE>klaar om uit te komen!<>\n\nHet bevat een hongerig wormpje dat rusteloos ligt te kronkelen.\n\nScans geven aan dat het wezen het genetisch potentieel heeft om <FUEL>vervloekt<> en <FUEL>onverzadigbaar<> te worden.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -3999,10 +4189,11 @@
     "Description": "Een exclusieve basisdecoratie.\n\nDeze schedel met veel tanden is van een groot pootloos gewerveld dier, de neef van de Titan-worm. De kaken zijn krachtig genoeg om een multitool en de botten van de meeste wezens te verbrijzelen.",
     "BaseValueUnits": 500.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4024,10 +4215,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nVerwissel je gezichtsorganen en jaag andere verkenners de stuipen op het lijf door het uiterlijk van een lid van de zandwormsekte aan te nemen. Deze helm van bio-siliconen beschermt je tegen alle bekende planetaire gevaren, maar kan wel wat klam aanvoelen.\n\nTransformeer op rituele wijze het hoofd van je <STELLAR>Vy'keen<>-uiterlijk bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4044,8 +4236,6 @@
     "Description": "",
     "BaseValueUnits": 0.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "Colour": "2C7C9F",
     "BlueprintCost": 0,
     "BlueprintCostType": "None",
@@ -4062,10 +4252,11 @@
     "Description": "Dit <STELLAR>levende document<> is beschreven met eeuwenoude woorden. Er staat:\n\n'De wormheer torent hoog boven de stoffige aarde uit. Zijn vlees vult de lucht.\nOnze meelijwekkende omhulsels kunnen hem niet volgen, kunnen zijn hoogte niet bereiken, kunnen zijn diepte niet bereiken.\nWe offeren onszelf aan de grond.\nWe smeken dat ons offer wordt aanvaard.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4082,10 +4273,11 @@
     "Description": "Dit <STELLAR>levende document<> is beschreven met eeuwenoude woorden. Er staat:\n\n'Het stof was verstikkend. \nOnze ogen werden rood en waterig. \nMaar de waarheid was onvermijdelijk.\nDe aderen van de Atlas waren verschenen.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4102,10 +4294,11 @@
     "Description": "Dit <STELLAR>levende document<> is beschreven met eeuwenoude woorden. Er staat:\n\n'Nu smeken we bij elke storm om te worden uitverkoren.\nArmen naar de lucht, gezichten naar het stof, roepend met alles wat we hebben!\nAls de zware regendruppels de aarde raken, antwoorden de aderen van de Atlas.\nDe extase van onze consumptie is onbeschrijfelijk.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4122,10 +4315,11 @@
     "Description": "Dit <STELLAR>levende document<> is beschreven met eeuwenoude woorden. Er staat:\n\n'We vallen als hij slikt, maar grijpen de gladde muren zo goed mogelijk vast... \nO! om de nog waakzame maag te bereiken. \nAdem het diep in! Hoor onze longen gorgelen!\nHet slijm verstopt onze neuzen en prikt in onze ogen, \nal kunnen we niets meer zien in deze warme duisternis.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4142,10 +4336,11 @@
     "Description": "Dit <STELLAR>levende document<> is beschreven met eeuwenoude woorden. Er staat:\n\n'Vervloekt zij de pijn van het uitbraken. \nVervloekt zij dit zwakke vlees dat mij nog steeds opsluit!\nMijn soortgenoten zijn herboren, verrezen als verse tentakels uit het gezegende stof. \nGlinsterende haarvaten naar de grote aderen, wegzakkend in het zand.\nIk zal geduldig zijn. Tot de volgende storm.'",
     "BaseValueUnits": 1616.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4156,16 +4351,18 @@
   },
   {
     "Id": "other205",
-    "Icon": "other/2.png",
+    "Icon": "other/205.png",
     "Name": "Planetaire kaart",
     "Group": "Geheime cartografische gegevens",
     "Description": "Een kaart van een planeet in de buurt. Er is een <FUEL>veilige interessante locatie<> gemarkeerd. Op dergelijke locaties vind je vaak <TECHNOLOGY>blauwdrukken<> van <STELLAR>nieuwe producten<>.\n\nSelecteer de kaart en gebruik 'Route bepalen' (<IMG>FE_ALT1<>) om de locatie weer te geven op het display van je exopak.\n\nJe kunt nieuwe kaarten verkrijgen door <COMMODITY>navigatiegegevens<> uit te wisselen met een cartograaf in een ruimtestation.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4176,16 +4373,18 @@
   },
   {
     "Id": "other206",
-    "Icon": "other/2.png",
+    "Icon": "other/206.png",
     "Name": "Planetaire kaart",
     "Group": "Cartografische noodgegevens",
     "Description": "Een kaart van een planeet in de buurt. De coördinaten van een <TECHNOLOGY>noodsignaal<> zijn gemarkeerd.\n\nSelecteer de kaart en gebruik 'Route bepalen' (<IMG>FE_ALT1<>) om de locatie weer te geven op het display van je exopak.\n\nJe kunt nieuwe kaarten verkrijgen door <COMMODITY>navigatiegegevens<> uit te wisselen met een cartograaf in een ruimtestation.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4196,16 +4395,18 @@
   },
   {
     "Id": "other207",
-    "Icon": "other/2.png",
+    "Icon": "other/207.png",
     "Name": "Planetaire kaart",
     "Group": "Commerciële cartografische gegevens",
     "Description": "Een kaart van een planeet in de buurt. Er is een <COMMODITY>bewoonde buitenpost<> gemarkeerd.\n\nSelecteer de kaart en gebruik 'Route bepalen' (<IMG>FE_ALT1<>) om de locatie weer te geven op het display van je exopak.\n\nJe kunt nieuwe kaarten verkrijgen door <COMMODITY>navigatiegegevens<> uit te wisselen met een cartograaf in een ruimtestation.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4216,16 +4417,18 @@
   },
   {
     "Id": "other208",
-    "Icon": "other/2.png",
+    "Icon": "other/208.png",
     "Name": "Planetaire kaart",
     "Group": "Buitenaardse cartografische gegevens",
     "Description": "Een kaart van een planeet in de buurt. Er is een <SPECIAL>locatie met een oud artefact<> gemarkeerd.\n\nSelecteer de kaart en gebruik 'Route bepalen' (<IMG>FE_ALT1<>) om de locatie weer te geven op het display van je exopak.\n\nJe kunt nieuwe kaarten verkrijgen door <COMMODITY>navigatiegegevens<> uit te wisselen met een cartograaf in een ruimtestation.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4236,16 +4439,18 @@
   },
   {
     "Id": "other209",
-    "Icon": "other/2.png",
+    "Icon": "other/1.png",
     "Name": "Planetaire kaart",
     "Group": "Cartografische gegevens",
     "Description": "Een kaart van een planeet in de buurt. Er is een <SPECIAL>locatie met een oud artefact<> gemarkeerd.\n\nSelecteer de kaart en gebruik 'Route bepalen' (<IMG>FE_ALT1<>) om de locatie weer te geven op het display van je exopak.\n\nJe kunt nieuwe kaarten verkrijgen door <COMMODITY>navigatiegegevens<> uit te wisselen met een cartograaf in een ruimtestation.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": true,
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
+    "Usages": {
+      "HasDevProperties": true,
+      "IsConsumable": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4262,10 +4467,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke verbetering voor gezelschapsdieren<>. Dit stijlvolle pantser is ideaal voor temperamentvolle gezelschapsdieren. Het beschermt de vitale organen tegen lasers en projectielen. De ultrazachte ademende vulling verkleint de kans dat gezelschapsdieren zich uit dit accessoire wurmen.\n\nWin het vertrouwen van wilde dieren om gezelschapsdieren te adopteren. Ga interactie aan met gezelschapsdieren om hun uiterlijk aan te passen.",
     "BaseValueUnits": 1600.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4282,10 +4488,11 @@
     "Description": "Een exclusieve <STELLAR>uiterlijke aanpassing van het exopak<>.\n\nEen elegant jetpack met vleugels, geïnspireerd door de ontwerpfilosofie van exotische ruimteschepen. Deze exclusieve exopak-uitbreiding herinnert aan de voltooiing van de <STELLAR>expeditie<> 'Exobiologie'.\n\nVerander het uiterlijk van je exopak bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 3500.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4302,10 +4509,11 @@
     "Description": "Een exclusieve <STELLAR>verkennerstitel<> ter ere van de voltooiing van de expeditie <STELLAR>Exobiologie<>.\n\nZet deze titel op je vaandel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4322,10 +4530,11 @@
     "Description": "Een exclusieve sticker om je basis wat te verfraaien.\n\nDeze sticker herinnert aan de voltooiing van de expeditie <STELLAR>Exobiologie<> en is een eerbetoon aan het vreedzaam samenleven van reizigers met de talloze diersoorten in het universum.",
     "BaseValueUnits": 400.0,
     "CurrencyType": "Credits",
-    "IsCraftable": true,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4347,10 +4556,11 @@
     "Description": "Rust jezelf uit met deze exclusieve <STELLAR>persoonlijke versiering<> ter ere van de <STELLAR>expeditie<> 'Exobiologie' en je verkenningen van de diverse dieren in het universum.\n\nVoeg dit vaandel toe aan je profiel bij een <TECHNOLOGY>gedaantemodulator<>.",
     "BaseValueUnits": 220.0,
     "CurrencyType": "Nanites",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "007951",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
@@ -4367,10 +4577,11 @@
     "Description": "Een metalen 'ei'-capsule, <TRADEABLE>klaar om uit te komen!<>\n\nDe schaal knettert van de elektronische energie.\n\nUit scans blijkt dat het wezen dat erin zit geprogrammeerd is om <SPECIAL>onvermoeibaar<> en <SPECIAL>oplettend<> te zijn.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
-    "IsCraftable": false,
-    "IsConsumable": false,
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "Usages": {
+      "HasDevProperties": true
+    },
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
