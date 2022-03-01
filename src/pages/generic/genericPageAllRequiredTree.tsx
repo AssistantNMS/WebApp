@@ -11,7 +11,7 @@ interface IProps {
 export const GenericPageAllRequiredTree: React.FC<IProps> = (props: IProps) => {
 
     return (
-        <div className="generic-item-list tree">
+        <div className="generic-item-list tree" data-id="GenericPageAllRequiredTree">
             {
                 props.list.map((item: Tree<RequiredItemDetails>, index: number) => (
                     <GenericPageAllRequiredTreeItem
@@ -33,7 +33,7 @@ export const GenericPageAllRequiredTreeItem: React.FC<IGenericPageAllRequiredTre
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
     const hasChildren = (props.detail.children.length > 0);
     return (
-        <div className="tree-view">
+        <div className="tree-view" data-id="GenericPageAllRequiredTreeItem">
             <div className="tree-view-parent row">
                 <div className="tree-view-parent-icon" onClick={() => setIsExpanded(!isExpanded)}>
                     {

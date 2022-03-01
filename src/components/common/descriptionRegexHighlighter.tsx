@@ -49,15 +49,14 @@ const getColourValueFromTag = (tag: string) => {
 }
 
 export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) => {
-    const groupRegex = new RegExp(/(<\w+>(\w+\s*)*<>)/);
     const doubleTagRegex = new RegExp(/<\w+>(<\w+>(\w+\s*)*<>)<>/);
     const tagStartRegex = new RegExp(/(.*)<(\w+)>(.*)/);
     const tagEndRegex = new RegExp(/(.*)<>(.*)/);
 
     let currentColourValue = '';
     let paragraphNodes: Array<ReactNode> = [];
-    let groupMatches: Array<any> | null = groupRegex.exec(props.orig);
-    if (groupMatches == null) return (<>{props.orig}</>);
+    let groupMatches = props.orig.includes('<>');
+    if (!groupMatches) return (<>{props.orig}</>);
 
     const renderNode = (paragraphIndex: number, wordIndex: number, word: string, colour: string, wordChain: string) => (
         <span key={`paragraph-${paragraphIndex}-word-${wordIndex}-${word}`} style={{ color: colour }}>{wordChain}</span>
