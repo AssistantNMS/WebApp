@@ -24,6 +24,7 @@ import { RechargeByService } from '../../services/json/RechargeByService';
 import { ToastService } from '../../services/toastService';
 import { mapDispatchToProps, mapStateToProps, IReduxProps } from './catalogueItem.Redux';
 import { CatalogueItemPresenter } from './catalogueItemPresenter';
+import { optionalListTask, optionalTask } from '../../helper/promiseHelper';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -36,23 +37,42 @@ interface IWithoutDepInj { }
 
 interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
 
+interface IState {
+    item: GameItemModel,
+    requiredItems: Array<RequiredItemDetails>,
+    usedToCreate: Array<GameItemModel>,
+    refined: Array<Processor>,
+    usedToRefine: Array<Processor>,
+    cooking: Array<Processor>,
+    usedToCook: Array<Processor>,
+    rechargedBy: Recharge,
+    usedToRecharge: Array<Recharge>,
+    eggTrait: Array<EggNeuralTrait>,
+    controlLookup: Array<PlatformControlMapping>,
+    additionalData: Array<any>,
+}
+
 
 const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     let { langCode, itemId } = useParams();
 
-    const [item, setItem] = useState<GameItemModel>(anyObject);
-    const [resArray, setResArray] = useState<Array<RequiredItemDetails>>([]);
-    const [usedToCreateArray, setUsedToCreateArray] = useState<Array<GameItemModel>>([]);
-    const [refArray, setRefArray] = useState<Array<Processor>>([]);
-    const [usedToRefArray, setUsedToRefArray] = useState<Array<Processor>>([]);
-    const [cookArray, setCookArray] = useState<Array<Processor>>([]);
-    const [usedToCookArray, setUsedToCookArray] = useState<Array<Processor>>([]);
-    const [rechargedBy, setRechargedBy] = useState<Recharge>(anyObject);
-    const [usedToRechargeArray, setUsedToRechargeArray] = useState<Array<Recharge>>([]);
-    const [eggTraitArray, setEggTraitArray] = useState<Array<EggNeuralTrait>>([]);
-    const [controlLookup, setControlLookup] = useState<Array<PlatformControlMapping>>([]);
+    const defaultMetaState = {
+        item: anyObject,
+        requiredItems: [],
+        usedToCreate: [],
+        refined: [],
+        usedToRefine: [],
+        cooking: [],
+        usedToCook: [],
+        rechargedBy: anyObject,
+        usedToRecharge: [],
+        eggTrait: [],
+        controlLookup: [],
+        additionalData: [],
+    };
+
     const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
-    const [additionalData, setAdditionalData] = useState<Array<any>>([]);
+    const [itemMeta, setItemMeta] = useState<IState>(defaultMetaState);
 
     useEffect(() => {
         if (langCode != null) {
@@ -74,16 +94,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     }, [langCode, itemId, props.selectedLanguage]);
 
     const clearData = async () => {
-        setResArray([]);
-        setUsedToCreateArray([]);
-        setRefArray([]);
-        setUsedToRefArray([]);
-        setCookArray([]);
-        setUsedToCookArray([]);
-        setRechargedBy(anyObject);
-        setUsedToRechargeArray([]);
-        setControlLookup([]);
-        setAdditionalData([]);
+        setItemMeta(defaultMetaState);
         setNetworkState(NetworkState.Loading);
     }
 
@@ -100,82 +111,91 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             return;
         }
 
-        const resArray = await getResArray(itemResult.value.Id);
-        const usedToCreateArray = await getUsedToCreateArray(itemResult.value.Id);
-        const refArray = await getRefArray(itemResult.value.Id);
-        const usedToRefArray = await getUsedToRefArray(itemResult.value.Id);
-        const cookArray = await getCookArray(itemResult.value.Id);
-        const usedToCookArray = await getUsedToCookArray(itemResult.value.Id);
-        const rechargedBy = await getRechargeByArray(itemResult.value.Id);
-        const usedToRechargeArray = await getUsedToRechargeArray(itemResult.value.Id);
-        const eggTraitArray = await getEggTraitArray(itemResult.value.Id);
-        const controlLookup = await getControlLookup(props.controlPlatform);
+        const item = itemResult.value;
+        const usage = itemResult.value.Usages;
 
-        setItem(itemResult.value);
-        setResArray(resArray ?? []);
-        setUsedToCreateArray(usedToCreateArray ?? []);
-        setRefArray(refArray ?? []);
-        setUsedToRefArray(usedToRefArray ?? []);
-        setCookArray(cookArray ?? []);
-        setUsedToCookArray(usedToCookArray ?? []);
-        setRechargedBy(rechargedBy ?? anyObject);
-        setUsedToRechargeArray(usedToRechargeArray ?? []);
-        setEggTraitArray(eggTraitArray ?? []);
-        setControlLookup(controlLookup ?? []);
-        setAdditionalData(getAdditionalData(itemResult.value));
+        const reqItemsTask = optionalListTask(true, () => getReqItems(itemId));
+        const usedToCreateTask = optionalListTask(usage.HasUsedToCraft, () => getUsedToCreate(itemId));
 
+        const refineTask = optionalListTask(usage.HasRefinedUsing, () => getRefined(itemId));
+        const usedToRefineTask = optionalListTask(usage.HasRefinedToCreate, () => getUsedToRefine(itemId));
+
+        const cookTask = optionalListTask(usage.HasCookUsing, () => getCook(itemId));
+        const usedToCookTask = optionalListTask(usage.HasCookToCreate, () => getUsedToCook(itemId));
+
+        const rechargedByTask = optionalTask(usage.HasChargedBy, () => getRechargeBy(itemId));
+        const usedToRechargeTask = optionalListTask(usage.HasUsedToRecharge, () => getUsedToRecharge(itemId));
+
+        const eggTraitTask = optionalListTask(true, () => getEggTrait(itemId));
+        const controlLookupTask = optionalListTask(true, () => getControlLookup(props.controlPlatform));
+
+        const newMeta = {
+            item: item,
+            requiredItems: await reqItemsTask,
+            usedToCreate: await usedToCreateTask,
+            refined: await refineTask,
+            usedToRefine: await usedToRefineTask,
+            cooking: await cookTask,
+            usedToCook: await usedToCookTask,
+            rechargedBy: await rechargedByTask,
+            usedToRecharge: await usedToRechargeTask,
+            eggTrait: await eggTraitTask,
+            controlLookup: await controlLookupTask,
+            additionalData: getAdditionalData(item),
+        };
+        setItemMeta(newMeta);
         setNetworkState(NetworkState.Success);
     }
 
-    const getResArray = async (itemId: string) => {
+    const getReqItems = async (itemId: string) => {
         const resArrayResult = await props.gameItemService.getRequiredItems(itemId);
         if (!resArrayResult.isSuccess) return [];
         return resArrayResult.value;
     }
 
-    const getUsedToCreateArray = async (itemId: string) => {
+    const getUsedToCreate = async (itemId: string) => {
         const usedToCreateArrayResult = await props.allGameItemsService.getByInputsId(itemId);
         if (!usedToCreateArrayResult.isSuccess) return [];
         return usedToCreateArrayResult.value;
     }
 
-    const getRechargeByArray = async (itemId: string) => {
+    const getRechargeBy = async (itemId: string): Promise<Recharge> => {
         const rechargeByResult = await props.rechargeByService.getRechargeById(itemId);
         if (!rechargeByResult.isSuccess) return anyObject;
         return rechargeByResult.value;
     }
 
-    const getUsedToRechargeArray = async (itemId: string) => {
+    const getUsedToRecharge = async (itemId: string) => {
         const usedToRechargeResult = await props.rechargeByService.getRechargeByChargeById(itemId);
         if (!usedToRechargeResult.isSuccess) return [];
         return usedToRechargeResult.value;
     }
 
-    const getRefArray = async (itemId: string) => {
+    const getRefined = async (itemId: string) => {
         const refArray = await props.gameItemService.getRefinedByOutput(itemId);
         if (!refArray.isSuccess) return [];
         return refArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
-    const getUsedToRefArray = async (itemId: string) => {
+    const getUsedToRefine = async (itemId: string) => {
         const usedToRefArray = await props.gameItemService.getRefinedByInput(itemId);
         if (!usedToRefArray.isSuccess) return [];
         return usedToRefArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
-    const getCookArray = async (itemId: string) => {
+    const getCook = async (itemId: string) => {
         const cookArray = await props.gameItemService.getCookingByOutput(itemId);
         if (!cookArray.isSuccess) return [];
         return cookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
-    const getUsedToCookArray = async (itemId: string) => {
+    const getUsedToCook = async (itemId: string) => {
         const usedToCookArray = await props.gameItemService.getCookingByInput(itemId);
         if (!usedToCookArray.isSuccess) return [];
         return usedToCookArray.value.sort((a: Processor, b: Processor) => a.Inputs.length - b.Inputs.length);
     }
 
-    const getEggTraitArray = async (itemId: string) => {
+    const getEggTrait = async (itemId: string) => {
         const eggTraitsArray = await props.dataJsonService.getEggNeuralTraits();
         if (!eggTraitsArray.isSuccess) return [];
         return eggTraitsArray.value.filter(egg => egg.AppId === itemId);
@@ -263,19 +283,34 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         props.toastService.success('Removed from Favourites');
     }
 
+    const {
+        item,
+        requiredItems,
+        usedToCreate,
+        refined,
+        usedToRefine,
+        cooking,
+        usedToCook,
+        rechargedBy,
+        usedToRecharge,
+        eggTrait,
+        controlLookup,
+        additionalData,
+    } = itemMeta;
+
     return (
         <CatalogueItemPresenter
             {...props}
             item={item}
-            resArray={resArray}
-            usedToCreateArray={usedToCreateArray}
-            refArray={refArray}
-            usedToRefArray={usedToRefArray}
-            cookArray={cookArray}
-            usedToCookArray={usedToCookArray}
+            requiredItems={requiredItems}
+            usedToCreate={usedToCreate}
+            refined={refined}
+            usedToRefine={usedToRefine}
+            cooking={cooking}
+            usedToCook={usedToCook}
             rechargedBy={rechargedBy}
-            usedToRechargeArray={usedToRechargeArray}
-            eggTraitArray={eggTraitArray}
+            usedToRecharge={usedToRecharge}
+            eggTrait={eggTrait}
             controlLookup={controlLookup}
             networkState={networkState}
             additionalData={additionalData}

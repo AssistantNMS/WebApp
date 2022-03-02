@@ -67,16 +67,16 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                         </h5>
                         : null
                 }
+                {props.children}
                 {
                     props?.Link
-                        ? <div style={{ marginBottom: '.25em', textAlign: 'left' }}>
+                        ? <div style={{ marginTop: '2em', marginBottom: '.25em', textAlign: 'left' }}>
                             <AdditionalInfoChip text={name + '  '} onClick={props.Link}>
                                 <i className="material-icons noselect" style={{ verticalAlign: 'middle' }}>read_more</i>
                             </AdditionalInfoChip>
                         </div>
                         : null
                 }
-                {props.children}
             </div>
         </div>
     );

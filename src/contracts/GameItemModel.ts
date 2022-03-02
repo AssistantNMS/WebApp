@@ -6,7 +6,6 @@ import { StatBonus } from './StatBonus';
 import { ProceduralStatBonus } from './ProceduralStatBonus';
 
 export interface GameItemModel {
-  TypeName: string;
   Id: string;
   Icon: string;
   Name: string;
@@ -15,8 +14,6 @@ export interface GameItemModel {
   Symbol: string;
   Colour: string;
   CdnUrl: string;
-  Craftable: boolean;
-  Consumable: boolean;
   Additional: string;
   Description: string;
   CookingValue: number;
@@ -36,6 +33,19 @@ export interface GameItemModel {
   ProceduralStatBonuses: Array<ProceduralStatBonus>;
   NumStatsMax: number;
   NumStatsMin: number;
-  ExpeditionAlphabetTranslation: string;
+  ConsumableRewardTexts: Array<string>;
+  Usages: GameItemModelUsage;
+}
+
+export interface GameItemModelUsage {
+  HasUsedToCraft: boolean;
+  HasChargedBy: boolean;
+  HasUsedToRecharge: boolean;
+  HasRefinedUsing: boolean;
+  HasRefinedToCreate: boolean;
+  HasCookUsing: boolean;
+  HasCookToCreate: boolean;
   HasDevProperties: boolean;
+  IsConsumable: boolean;
+  IsEggIngredient: boolean;
 }

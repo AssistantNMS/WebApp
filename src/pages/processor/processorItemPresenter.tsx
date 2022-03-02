@@ -45,7 +45,7 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
                         <h3>{i18next.t(LocaleKey.inputs)}</h3>
                     </div>
                     <div className="col-12">
-                        <GenericListPresenter list={requiredItems} presenter={RequiredItemDetailsListTile} />
+                        <GenericListPresenter list={requiredItems} presenter={RequiredItemDetailsListTile} isCentered={true} />
                     </div>
                 </div>
                 <hr className="mt-3em" />
@@ -56,6 +56,8 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
     const outputId = (props?.item?.Id || '');
     const outputName = (props?.outputDetails?.Name || '');
     const operation = (props?.item?.Operation || '');
+    const timeToMake = i18next.t(LocaleKey.timeToMake);
+    const procInSeconds = i18next.t(LocaleKey.seconds).replaceAll('{0}', props?.item?.Time || '');
 
     const title = `${outputId.includes("ref") ? i18next.t(LocaleKey.refinedUsing) : i18next.t(LocaleKey.cooking)} - ${outputName}`;
     const description = `${outputName} - ${operation}`;
@@ -63,14 +65,16 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
         <DefaultAnimation>
             <HeadComponent title={title} description={description} />
             <NavBar title={title} />
-            <div className="content">
+            <div className="content" data-id="ProcessorItemPresenter">
                 <ItemHeaderRow
                     Colour={props.outputDetails.Colour}
                     Icon={props.outputDetails.Icon}
                     Name={props.outputDetails.Name}
                     Group={props.item.Operation}
                     Link={() => navigate(`${Route.catalogueItem}/${props.outputDetails.Id}`)}
-                />
+                >
+                    <h3>{`${timeToMake} ${procInSeconds}`}</h3>
+                </ItemHeaderRow>
                 {displayInputs(props.inputDetails)}
             </div>
         </DefaultAnimation>

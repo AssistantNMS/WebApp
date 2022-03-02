@@ -10,7 +10,6 @@ import { GameItemModel } from '../../contracts/GameItemModel';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { SpotlightSearch } from '../../components/common/spotlight/spotlightSearch';
 import { DataJsonService } from '../../services/json/DataJsonService';
-import { toggleHtmlNodeClass } from '../../helper/documentHelper';
 import { Error } from '../../components/core/error/error';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 
@@ -35,13 +34,8 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
 
     const getNavActionButtons = (): Array<any> => {
         const components: any[] = [];
-        components.push(<GameIdSearchFloatingActionButton key="gameIdSearch" onClick={setSpotlight(true)} />);
+        components.push(<GameIdSearchFloatingActionButton key="gameIdSearch" onClick={() => setSpotlightOpen(true)} />);
         return components;
-    }
-
-    const setSpotlight = (newValue: boolean) => () => {
-        toggleHtmlNodeClass('.main-panel', 'noscroll');
-        setSpotlightOpen(newValue);
     }
 
     const renderContent = () => {
@@ -58,7 +52,7 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
         <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} additionalItems={getNavActionButtons()} />
-            <div className="content">
+            <div className="content" data-id="CatalogueListPresenter">
                 <form id="searchBar" className="searchbar row noselect" onSubmit={(e) => props.search(e, props.searchTerm)}>
                     <input type="text"
                         className="form-control"
@@ -74,7 +68,7 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
             </div>
             <SpotlightSearch
                 isOpen={isSpotlightOpen}
-                onClose={setSpotlight(false)}
+                onClose={() => setSpotlightOpen(false)}
                 dataJsonService={props.dataJsonService}
             />
         </DefaultAnimation>

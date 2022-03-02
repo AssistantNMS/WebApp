@@ -25,21 +25,23 @@ import { ToastService } from '../../services/toastService';
 import { displayCookItems, displayEggTraits, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
 import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 import { IReduxProps } from './catalogueItem.Redux';
+import { DecriptionRegexHighlightText } from '../../components/common/descriptionRegexHighlighter';
 
 interface IProps extends IReduxProps {
-    // Container State
-    item: GameItemModel;
-    resArray: Array<RequiredItemDetails>;
-    usedToCreateArray: Array<GameItemModel>;
-    refArray: Array<Processor>;
-    usedToRefArray: Array<Processor>;
-    cookArray: Array<Processor>;
-    usedToCookArray: Array<Processor>;
-    rechargedBy: Recharge;
-    usedToRechargeArray: Array<Recharge>;
-    eggTraitArray: Array<EggNeuralTrait>;
-    controlLookup: Array<PlatformControlMapping>;
-    additionalData: Array<any>;
+    // Container State    
+    item: GameItemModel,
+    requiredItems: Array<RequiredItemDetails>,
+    usedToCreate: Array<GameItemModel>,
+    refined: Array<Processor>,
+    usedToRefine: Array<Processor>,
+    cooking: Array<Processor>,
+    usedToCook: Array<Processor>,
+    rechargedBy: Recharge,
+    usedToRecharge: Array<Recharge>,
+    eggTrait: Array<EggNeuralTrait>,
+    controlLookup: Array<PlatformControlMapping>,
+    additionalData: Array<any>,
+
     networkState: NetworkState;
 
     toastService: ToastService;
@@ -95,20 +97,34 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                         openDevProperties={() => setDetailPaneOpen(!isDetailPaneOpen)}
                     >
                         <ExpeditionAlphabetDecoder id={props.item.Id} />
+                        {
+                            (props.item.ConsumableRewardTexts != null && props.item.ConsumableRewardTexts.length > 0) &&
+                            <div className="consumable-rewards">
+                                {
+                                    props.item.ConsumableRewardTexts.map(consRew => (
+                                        <DecriptionRegexHighlightText
+                                            key={consRew}
+                                            orig={consRew}
+                                            controlLookup={props.controlLookup}
+                                        />
+                                    ))
+                                }
+                            </div>
+                        }
                     </ItemHeaderRow>
                     <AdditionalInfoChipRow additionalData={props.additionalData} />
 
-                    {displayRequiredItems(props.resArray)}
-                    {displayUsedToCreateItems(props.usedToCreateArray)}
+                    {displayRequiredItems(props.requiredItems)}
+                    {displayUsedToCreateItems(props.usedToCreate)}
                     {displayRechargedByItems(props.rechargedBy)}
-                    {displayUsedToRechargeItems(props.item.Id, props.item.Name, props.usedToRechargeArray)}
-                    {displayRefItems(props.refArray)}
-                    {displayUsedToRefItems(props.item.Name, props.usedToRefArray)}
-                    {displayCookItems(props.cookArray)}
-                    {displayUsedToCookItems(props.item.Name, props.usedToCookArray)}
+                    {displayUsedToRechargeItems(props.item.Id, props.item.Name, props.usedToRecharge)}
+                    {displayRefItems(props.refined)}
+                    {displayUsedToRefItems(props.item.Name, props.usedToRefine)}
+                    {displayCookItems(props.cooking)}
+                    {displayUsedToCookItems(props.item.Name, props.usedToCook)}
                     {displayStatBonuses(props.item.StatBonuses)}
                     {displayProceduralStatBonuses(props.item.NumStatsMin, props.item.NumStatsMax, props.item.ProceduralStatBonuses)}
-                    {displayEggTraits(props.eggTraitArray)}
+                    {displayEggTraits(props.eggTrait)}
                 </div>
                 <DevDetailsBottomModalSheet
                     appId={props.item.Id}
