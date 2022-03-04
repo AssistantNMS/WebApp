@@ -1,6 +1,7 @@
 :root {
     // AssistantApps WebComponents
-    --assistantapps-font-family: "Roboto", Helvetica, Arial, sans-serif;
+    --assistantapps-font-family: $defaultFont;
+    --assistantapps-font-weight: "300";
     --assistantapps-team-member-link-text-colour: #{$brand-secondary};
 }
 
@@ -10,7 +11,7 @@
 
 #app,
 body {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: $defaultFont;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -27,10 +28,12 @@ body {
 
 #app.nmsThemed {
     font-family: $nmsAlphaThemed;
+    --assistantapps-font-family: $nmsAlphaThemed;
 }
 
 #app.expAlphaThemed {
     font-family: $expAlphaThemed;
+    --assistantapps-font-family: $expAlphaThemed;
 }
 
 #nav {
