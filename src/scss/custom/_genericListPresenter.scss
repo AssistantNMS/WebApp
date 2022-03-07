@@ -1,4 +1,5 @@
 $gen-item-radius: 0.25em;
+$gen-item-extra-radius: 0.5em;
 
 .generic-item-list {
     // justify-content: center;
@@ -10,7 +11,7 @@ $gen-item-radius: 0.25em;
             display: flex;
             padding-right: 100px;
             width: 100%;
-            border-radius: $gen-item-radius;
+            border-radius: $gen-item-extra-radius $gen-item-radius $gen-item-radius $gen-item-extra-radius;
 
             &.w-full {
                 padding-right: 0;
@@ -49,12 +50,12 @@ $gen-item-radius: 0.25em;
                     height: 100px;
                     min-width: 100px;
 
-                    >span {
+                    > span {
                         height: 100%;
                         width: 100%;
                         position: relative;
 
-                        >img {
+                        > img {
                             object-fit: cover;
                             height: 100%;
                             width: 100%;
@@ -175,14 +176,14 @@ $gen-item-radius: 0.25em;
                         // padding-right: 1em;
                         // margin-top: 1rem;
 
-                        >* {
+                        > * {
                             // margin-top: .25em;
                             margin-right: 0.5em;
                             display: block;
                             color: white;
                         }
 
-                        >.not-centered {
+                        > .not-centered {
                             margin-top: 50%;
                         }
                     }
