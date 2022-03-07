@@ -7,7 +7,9 @@ import { ProcessorItemListTile } from '../../components/tilePresenter/processorI
 import { ChargeByItemListTile } from '../../components/tilePresenter/recharge/chargeByItemListTile';
 import { RechargeItemListTile } from '../../components/tilePresenter/recharge/rechargeItemListTile';
 import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
+import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { ProceduralStatBonusItemListTile, StatBonusItemListTile } from '../../components/tilePresenter/statBonusTile/statBonusItemListTile';
+import { UsageKey } from '../../constants/UsageKey';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { ProceduralStatBonus } from '../../contracts/ProceduralStatBonus';
@@ -18,6 +20,8 @@ import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { StatBonus } from '../../contracts/StatBonus';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { RewardFromSeasonalExpeditionTile } from '../../components/tilePresenter/rewardFromTile/rewardFromSeasonalExpeditionPresenter';
+import { RewardFromTwitchTile } from '../../components/tilePresenter/rewardFromTile/rewardFromTwitchPresenter';
 
 export const displayRequiredItems = (resArray: Array<RequiredItemDetails>) => {
     if (resArray == null || resArray.length < 1) return null;
@@ -216,6 +220,72 @@ export const displayEggTraits = (eggTraitArray: Array<EggNeuralTrait>) => {
                     list={eggTraitArray}
                     presenter={EggTraitListTile}
                     isCentered={shouldListBeCentered(eggTraitArray.length)}
+                />
+            }
+        />
+    );
+}
+
+export const displayObsoleteTech = (usages: Array<string>) => {
+    if (usages == null || usages.length < 1) return null;
+    if (!usages.includes(UsageKey.isNoLongerObtainable)) return null;
+
+    return (
+        <CommonSection
+            heading={''}
+            content={
+                <GenericListPresenter
+                    list={[{
+                        Id: 'tech16',
+                        Quantity: 0,
+                    }]}
+                    presenter={RequiredItemListTile}
+                    isCentered={true}
+                />
+            }
+        />
+    );
+}
+
+export const displayRewardFrom = (usages: Array<string>) => {
+    if (usages == null || usages.length < 1) return null;
+    // if (!usages.includes(UsageKey.isNoLongerObtainable)) return null;
+
+    const nodes: Array<JSX.Element> = [];
+
+    try {
+        const expSeasonKeySplit = UsageKey.isExpeditionSeason.split("{0}");
+        if (usages.filter((u) => u.includes(expSeasonKeySplit[0])).length > 0) {
+            const expSeasUsageKey =
+                usages.filter((u) => u.includes(expSeasonKeySplit[0]));
+            const expSeasonNum = expSeasUsageKey[0]
+                .replaceAll(expSeasonKeySplit[0], '')
+                .replaceAll(expSeasonKeySplit[1], '');
+            nodes.push(<RewardFromSeasonalExpeditionTile seasId={`seas-${expSeasonNum}`} />);
+        }
+
+        const twitchCampaignKeySplit = UsageKey.isTwitchCapaign.split("{0}");
+        if (usages.filter((u) => u.includes(twitchCampaignKeySplit[0]))) {
+            const expSeasUsageKey =
+                usages.filter((u) => u.includes(twitchCampaignKeySplit[0]));
+            const expSeasonNum = expSeasUsageKey[0]
+                .replaceAll(twitchCampaignKeySplit[0], '')
+                .replaceAll(twitchCampaignKeySplit[1], '');
+            nodes.push(<RewardFromTwitchTile campaignId={expSeasonNum} />);
+        }
+    } catch (ex) {
+
+    }
+
+    if (nodes == null || nodes.length < 1) return null;
+    return (
+        <CommonSection
+            heading={i18next.t(LocaleKey.rewardFrom)}
+            content={
+                <GenericListPresenter
+                    list={nodes}
+                    presenter={(node: JSX.Element, _: number) => node}
+                    isCentered={true}
                 />
             }
         />

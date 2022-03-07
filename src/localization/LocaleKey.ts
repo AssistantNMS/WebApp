@@ -561,4 +561,7 @@ export enum LocaleKey {
   completedCommunityMission = 'completedCommunityMission',
   viewMoreOnNmsWiki = 'viewMoreOnNmsWiki',
   platform = 'platform',
+  translators = 'translators',
+  rewardFrom = 'rewardFrom',
+  twitchCampaignNum = 'twitchCampaignNum',
 }

@@ -22,7 +22,7 @@ import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { ToastService } from '../../services/toastService';
-import { displayCookItems, displayEggTraits, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
+import { displayCookItems, displayEggTraits, displayObsoleteTech, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayRewardFrom, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
 import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 import { IReduxProps } from './catalogueItem.Redux';
 import { DecriptionRegexHighlightText } from '../../components/common/descriptionRegexHighlighter';
@@ -114,6 +114,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     </ItemHeaderRow>
                     <AdditionalInfoChipRow additionalData={props.additionalData} />
 
+                    {displayObsoleteTech(props.item.Usages)}
                     {displayRequiredItems(props.requiredItems)}
                     {displayUsedToCreateItems(props.usedToCreate)}
                     {displayRechargedByItems(props.rechargedBy)}
@@ -124,6 +125,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     {displayUsedToCookItems(props.item.Name, props.usedToCook)}
                     {displayStatBonuses(props.item.StatBonuses)}
                     {displayProceduralStatBonuses(props.item.NumStatsMin, props.item.NumStatsMax, props.item.ProceduralStatBonuses)}
+                    {displayRewardFrom(props.item.Usages)}
                     {displayEggTraits(props.eggTrait)}
                 </div>
                 <DevDetailsBottomModalSheet
