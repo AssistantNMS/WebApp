@@ -25,6 +25,7 @@ import { ToastService } from '../../services/toastService';
 import { mapDispatchToProps, mapStateToProps, IReduxProps } from './catalogueItem.Redux';
 import { CatalogueItemPresenter } from './catalogueItemPresenter';
 import { optionalListTask, optionalTask } from '../../helper/promiseHelper';
+import { UsageKey } from '../../constants/UsageKey';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -112,22 +113,22 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         }
 
         const item = itemResult.value;
-        const usage = itemResult.value.Usages;
+        const usages = itemResult.value.Usages ?? [];
 
-        const reqItemsTask = optionalListTask(true, () => getReqItems(itemId));
-        const usedToCreateTask = optionalListTask(usage.HasUsedToCraft, () => getUsedToCreate(itemId));
+        const reqItemsTask = optionalListTask(['true'], 'true', () => getReqItems(itemId));
+        const usedToCreateTask = optionalListTask(usages, UsageKey.hasUsedToCraft, () => getUsedToCreate(itemId));
 
-        const refineTask = optionalListTask(usage.HasRefinedUsing, () => getRefined(itemId));
-        const usedToRefineTask = optionalListTask(usage.HasRefinedToCreate, () => getUsedToRefine(itemId));
+        const refineTask = optionalListTask(usages, UsageKey.hasRefinedUsing, () => getRefined(itemId));
+        const usedToRefineTask = optionalListTask(usages, UsageKey.hasRefinedToCreate, () => getUsedToRefine(itemId));
 
-        const cookTask = optionalListTask(usage.HasCookUsing, () => getCook(itemId));
-        const usedToCookTask = optionalListTask(usage.HasCookToCreate, () => getUsedToCook(itemId));
+        const cookTask = optionalListTask(usages, UsageKey.hasCookUsing, () => getCook(itemId));
+        const usedToCookTask = optionalListTask(usages, UsageKey.hasCookToCreate, () => getUsedToCook(itemId));
 
-        const rechargedByTask = optionalTask(usage.HasChargedBy, () => getRechargeBy(itemId));
-        const usedToRechargeTask = optionalListTask(usage.HasUsedToRecharge, () => getUsedToRecharge(itemId));
+        const rechargedByTask = optionalTask(usages, UsageKey.hasChargedBy, () => getRechargeBy(itemId));
+        const usedToRechargeTask = optionalListTask(usages, UsageKey.hasUsedToRecharge, () => getUsedToRecharge(itemId));
 
-        const eggTraitTask = optionalListTask(true, () => getEggTrait(itemId));
-        const controlLookupTask = optionalListTask(true, () => getControlLookup(props.controlPlatform));
+        const eggTraitTask = optionalListTask(['true'], 'true', () => getEggTrait(itemId));
+        const controlLookupTask = optionalListTask(['true'], 'true', () => getControlLookup(props.controlPlatform));
 
         const newMeta = {
             item: item,

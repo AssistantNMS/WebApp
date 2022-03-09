@@ -34,18 +34,5 @@ export interface GameItemModel {
   NumStatsMax: number;
   NumStatsMin: number;
   ConsumableRewardTexts: Array<string>;
-  Usages: GameItemModelUsage;
-}
-
-export interface GameItemModelUsage {
-  HasUsedToCraft: boolean;
-  HasChargedBy: boolean;
-  HasUsedToRecharge: boolean;
-  HasRefinedUsing: boolean;
-  HasRefinedToCreate: boolean;
-  HasCookUsing: boolean;
-  HasCookToCreate: boolean;
-  HasDevProperties: boolean;
-  IsConsumable: boolean;
-  IsEggIngredient: boolean;
+  Usages: Array<string>;
 }
