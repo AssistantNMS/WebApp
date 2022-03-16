@@ -26,7 +26,6 @@ interface IProps {
 
     // Container Specific
     onSearchTextChange: (e: any) => void;
-    search: (e: any, searchText: string) => void;
 }
 
 export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
@@ -53,7 +52,7 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
             <HeadComponent title={title} />
             <NavBar title={title} additionalItems={getNavActionButtons()} />
             <div className="content" data-id="CatalogueListPresenter">
-                <form id="searchBar" className="searchbar row noselect" onSubmit={(e) => props.search(e, props.searchTerm)}>
+                <form id="searchBar" className="searchbar row noselect">
                     <input type="text"
                         className="form-control"
                         placeholder={i18next.t(LocaleKey.search)}

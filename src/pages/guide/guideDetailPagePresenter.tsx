@@ -71,9 +71,13 @@ export const GuideDetailPagePresenter: React.FC<IProps> = (props: IProps) => {
 
     const displaySection = (section: GuideSection, index: number) => {
         return <div key={`${section.heading}-${index}`} className="section row">
-            <h3 className="col-xl-7 col-lg-10 col-md-12 col-sm-12 col-xs-12 heading">
-                {section.heading}
-            </h3>
+            {
+                (section.heading?.length > 0) && (
+                    <h3 className="col-xl-7 col-lg-10 col-md-12 col-sm-12 col-xs-12 heading">
+                        {section.heading}
+                    </h3>
+                )
+            }
             {
                 section.items.map(displaySectionItem)
             }

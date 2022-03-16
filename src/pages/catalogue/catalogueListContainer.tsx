@@ -24,7 +24,6 @@ export const CatalogueListContainerUnconnected: React.FC<IProps> = (props: IProp
     let { types } = useParams();
 
     const [items, setItems] = useState<Array<GameItemModel>>(new Array<GameItemModel>());
-    const [displayItems, setDisplayItems] = useState<Array<GameItemModel>>(new Array<GameItemModel>());
     const [searchTerm, setSearchTerm] = useState<string>('');
     const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
 
@@ -39,12 +38,10 @@ export const CatalogueListContainerUnconnected: React.FC<IProps> = (props: IProp
             // Error
             return;
         }
-        forceCheck();
 
         setItems(itemsResult.value);
-        setDisplayItems(itemsResult.value);
         setNetworkState(NetworkState.Success);
-        search(null, itemsResult.value, '');
+        forceCheck();
     }
 
     const onSearchTextChange = (e: any) => {
@@ -53,25 +50,25 @@ export const CatalogueListContainerUnconnected: React.FC<IProps> = (props: IProp
         const searchValue = e?.target?.value || '';
         if (searchTerm === searchValue) return;
 
-        search(null, items, searchValue);
+        setSearchTerm(searchValue);
+        forceCheck();
     }
 
-    const search = (e: any, localItems: Array<GameItemModel>, searchText: string) => {
-        e?.preventDefault?.();
-
+    const getDisplayItems = (localItems: Array<GameItemModel>, searchText?: string): Array<GameItemModel> => {
         const newDisplayItems = new Array<GameItemModel>();
         for (const itemIndex in localItems) {
             if (localItems.hasOwnProperty(itemIndex)) {
                 const item = localItems[itemIndex];
-                if (!item.Name.toLowerCase().includes(searchText.toLowerCase())) continue;
+                if (searchText != null) {
+                    if (!item.Name.toLowerCase().includes(searchText.toLowerCase())) continue;
+                }
                 newDisplayItems.push(item);
             }
         }
-        setDisplayItems(newDisplayItems);
-        if (searchText.length > 0) setSearchTerm(searchText);
-        forceCheck();
+        return newDisplayItems;
     }
 
+    const displayItems = getDisplayItems(items, searchTerm);
     return (
         <CatalogueListPresenter
             {...props}
@@ -80,7 +77,6 @@ export const CatalogueListContainerUnconnected: React.FC<IProps> = (props: IProp
             searchTerm={searchTerm}
             networkState={networkState}
             onSearchTextChange={onSearchTextChange}
-            search={(e: any, searchText: string) => search(e, items, searchText)}
         />
     );
 }
