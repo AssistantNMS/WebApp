@@ -7,12 +7,13 @@ import { initialFavouriteState } from './modules/favourite';
 import { StateSettingReducer } from './state/StateSettingReducer';
 
 
-export const loadStateFromLocalStorage = () => {
+export const loadStateFromLocalStorage = (): any => {
     let settingReducer = initialSettingState;
     let storedSettingReducer = localStorage.getItem(CacheKey.SettingReducerKey);
     if (storedSettingReducer && storedSettingReducer !== "undefined") {
         settingReducer = JSON.parse(storedSettingReducer || '{}');
     }
+    settingReducer.menuIsVisible = false;
 
     let cartReducer = initialCartState;
     let storedCartReducer = localStorage.getItem(CacheKey.CartReducerKey);

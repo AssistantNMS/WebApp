@@ -1,7 +1,7 @@
 import React, { DOMAttributes } from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
-import { Provider } from 'react-redux';
+import { Provider as StateProvider } from 'react-redux';
 import { toast, ToastContainer } from 'react-toastify';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -12,6 +12,7 @@ import { DependencyInjectionProvider } from './integration/dependencyInjection';
 import { initLocalization } from './integration/i18n';
 import { initAnalytics } from './integration/analytics';
 import { updateServiceWorker } from './integration/serviceWorker';
+import { getCurrentLanguage } from './redux/modules/setting/selector';
 import { getJSON, defaultConfig } from './utils';
 
 import { loadStateFromLocalStorage, saveStateToLocalStorage } from './redux/stateFromLocalStorage';
@@ -23,6 +24,7 @@ import './index.scss';
 import 'react-tippy/dist/tippy.css';
 import 'react-vertical-timeline-component/style.min.css';
 import 'flag-icons/css/flag-icons.min.css';
+import { anyObject } from './helper/typescriptHacks';
 
 type CustomElement<T> = Partial<T & DOMAttributes<T> & { children: any }>;
 
@@ -38,38 +40,33 @@ declare global {
 
 const reactAppId = 'nms-app';
 
-let persistedState: any = loadStateFromLocalStorage();
-persistedState.settingReducer.menuIsVisible = false;
-
-const store = createStore(
-    reducer,
-    persistedState,
-);
-
+const persistedState = loadStateFromLocalStorage();
+const store = createStore(reducer, persistedState);
 store.subscribe(() => saveStateToLocalStorage(store));
 
 window.config = window.config || {};
 getJSON('/assets/config.json', (status: boolean, response: string) => {
     window.config = (status === true)
-        ? response || {}
+        ? (response || anyObject)
         : defaultConfig;
 
     if (window.config.consoleLogDebug) console.log('Config', window.config);
 
     initAnalytics();
-    initLocalization(store.getState()?.settingReducer?.selectedLanguage ?? 'en');
+    initLocalization(getCurrentLanguage(store.getState()));
     modalSetup(reactAppId);
 
-    ReactDOM.render(
+    const appNode = (
         <DependencyInjectionProvider>
-            <Provider store={store}>
+            <StateProvider store={store}>
                 <BrowserRouter>
                     <App />
                     <ToastContainer newestOnTop={false} theme="colored" />
                 </BrowserRouter>
-            </Provider>
+            </StateProvider>
         </DependencyInjectionProvider>
-        , document.getElementById(reactAppId));
+    );
+    ReactDOM.render(appNode, document.getElementById(reactAppId));
 
     if (window.config.useServiceWorker) {
         serviceWorker.register({
