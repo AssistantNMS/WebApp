@@ -118,6 +118,13 @@ export const getMenuSection3 = () => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
+  menuItems.push({
+    name: i18next.t(LocaleKey.techTree).toString(),
+    link: routes.techTree,
+    icon: '/assets/images/drawer/techTree.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
   menuItems.push(menuItemSeperator);
   return menuItems;
 }

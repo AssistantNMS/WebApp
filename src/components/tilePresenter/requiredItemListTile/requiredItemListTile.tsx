@@ -1,6 +1,7 @@
 
 import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
+import { ReactNode } from 'react-markdown/lib/react-markdown';
 import { Link } from 'react-router-dom';
 
 import { catalogueItem } from '../../../constants/Route';
@@ -19,6 +20,8 @@ interface IWithDepInj {
 }
 
 interface IWithoutDepInj extends RequiredItem {
+    quantityLabel?: string;
+    quantityIconSuffix?: ReactNode;
     editItem?: () => void;
     removeItem?: () => void;
 }
@@ -67,16 +70,23 @@ const RequiredItemListTileClass: React.FC<IProps> = (props: IProps) => {
         return (<TileLoading />);
     }
 
+    const hasQuantity = (props.Quantity != null && props.Quantity > 0);
+    const additionalCss = hasQuantity ? "" : "full";
+    const quantityRenderer = (hasQ: boolean, localProps: IProps) => {
+        if (!hasQ) return null;
+
+        const label = localProps.quantityLabel ?? i18next.t(LocaleKey.quantity);
+        return (
+            <div className="quantity-container">{label}: {localProps.Quantity} {localProps.quantityIconSuffix}</div>
+        );
+    }
+
     return (
         <Link to={`${catalogueItem}/${props.Id}`} data-id="RequiredItemListTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} />
             <div className="gen-item-content-container">
-                <TextContainer text={item.Name} additionalCss={(props.Quantity != null && props.Quantity > 0) ? "" : "full"} />
-                {
-                    (props.Quantity != null && props.Quantity > 0)
-                        ? <div className="quantity-container">{i18next.t(LocaleKey.quantity)}: {props.Quantity}</div>
-                        : null
-                }
+                <TextContainer text={item.Name} additionalCss={additionalCss} />
+                {quantityRenderer(hasQuantity, { ...props })}
                 <ActionContainer actions={getActions()} />
             </div>
         </Link>
