@@ -1,8 +1,6 @@
 import classNames from 'classnames';
 import i18next from 'i18next';
 import React, { ReactNode, useState } from 'react';
-import { LazyLoadImage } from '../../components/core/lazyLoadImage/lazyLoadImage';
-
 import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { AppImage } from '../../constants/AppImage';
 import { CurrencyType, TechTree, TechTreeNode, UnlockableTechTree } from '../../contracts/tree/techTree';

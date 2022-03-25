@@ -119,6 +119,13 @@ export const getMenuSection3 = () => {
     isActive: false
   });
   menuItems.push({
+    name: i18next.t(LocaleKey.titles).toString(),
+    link: routes.titles,
+    icon: 'edit_attributes_sharp',
+    iconType: DrawerIconType.Material,
+    isActive: false
+  });
+  menuItems.push({
     name: i18next.t(LocaleKey.techTree).toString(),
     link: routes.techTree,
     icon: '/assets/images/drawer/techTree.png',

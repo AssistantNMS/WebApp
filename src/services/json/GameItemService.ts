@@ -8,6 +8,7 @@ import { Processor } from '../../contracts/Processor';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
+import { TitleData } from '../../contracts/TitleData';
 import { UnlockableTechTree } from '../../contracts/tree/techTree';
 import { getHashForObject } from '../../helper/hashHelper';
 import { anyObject } from '../../helper/typescriptHacks';
@@ -384,6 +385,21 @@ export class GameItemService extends BaseJsonService {
   async _getTechTree(): Promise<ResultWithValue<Array<UnlockableTechTree>>> {
     const path = i18next.t(LocaleKey.techTreeJson).toString();
     const jsonResult = await this.getAsset<Array<UnlockableTechTree>>(`json/${path}.json`);
+    if (!jsonResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: jsonResult.errorMessage };
+
+    return {
+      isSuccess: true,
+      value: jsonResult.value,
+      errorMessage: ''
+    }
+  }
+
+  async getTitles(): Promise<ResultWithValue<Array<TitleData>>> {
+    return this._getOrAdd(() => this._getTitles(), ['_getTitles']);
+  }
+  async _getTitles(): Promise<ResultWithValue<Array<TitleData>>> {
+    const path = i18next.t(LocaleKey.titlesJson).toString();
+    const jsonResult = await this.getAsset<Array<TitleData>>(`json/${path}.json`);
     if (!jsonResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: jsonResult.errorMessage };
 
     return {

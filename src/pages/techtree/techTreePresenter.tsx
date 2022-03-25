@@ -19,11 +19,6 @@ interface IProps {
 
 export const TechTreePresenter: React.FC<IProps> = (props: IProps) => {
 
-    const getFloatingActionButtons = (): Array<any> => {
-        const components: any[] = [];
-        return components;
-    }
-
     const handleLoadingOrError = () => {
         if (props.networkState === NetworkState.Loading) return <div className="pt-5"><SmallLoading /></div>;
         if (props.networkState === NetworkState.Error) {
@@ -49,10 +44,8 @@ export const TechTreePresenter: React.FC<IProps> = (props: IProps) => {
                 description={i18next.t(LocaleKey.techTree)}
                 selectedLanguage={props.selectedLanguage}
             />
-            <NavBar title={i18next.t(LocaleKey.techTree)} additionalItems={getFloatingActionButtons()} />
+            <NavBar title={i18next.t(LocaleKey.techTree)} />
             {handleLoadingOrError()}
-
-            {getFloatingActionButtons()}
             <div className="col-12" style={{ marginTop: '8em' }}></div>
         </>
     );

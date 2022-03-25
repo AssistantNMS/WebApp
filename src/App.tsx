@@ -40,6 +40,7 @@ import { SettingPresenter } from './pages/setting/settingPresenter';
 import { SocialPresenter } from './pages/social/socialPresenter';
 import { SyncContainer } from './pages/sync/syncContainer';
 import { TechTreeContainer } from './pages/techtree/techTreeContainer';
+import { TitlesContainer } from './pages/titles/titlesContainer';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
 import { StateSettingReducer } from './redux/state/StateSettingReducer';
 
@@ -105,6 +106,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={route.weekendMission} element={<WeekendMissionMenuPresenter />} />
 
               <Route path={route.techTree} element={<TechTreeContainer />} />
+              <Route path={route.titles} element={<TitlesContainer />} />
 
               <Route path={route.social} element={<SocialPresenter />} />
               <Route path={route.sync} element={<SyncContainer />} />
