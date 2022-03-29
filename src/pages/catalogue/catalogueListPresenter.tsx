@@ -12,6 +12,7 @@ import { SpotlightSearch } from '../../components/common/spotlight/spotlightSear
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { Error } from '../../components/core/error/error';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
+import { SearchBar } from '../../components/common/searchBar';
 
 interface IProps {
     // Container Props
@@ -26,7 +27,6 @@ interface IProps {
 
     // Container Specific
     onSearchTextChange: (e: any) => void;
-    search: (e: any, searchText: string) => void;
 }
 
 export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
@@ -53,17 +53,10 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
             <HeadComponent title={title} />
             <NavBar title={title} additionalItems={getNavActionButtons()} />
             <div className="content" data-id="CatalogueListPresenter">
-                <form id="searchBar" className="searchbar row noselect" onSubmit={(e) => props.search(e, props.searchTerm)}>
-                    <input type="text"
-                        className="form-control"
-                        placeholder={i18next.t(LocaleKey.search)}
-                        value={props.searchTerm}
-                        onChange={props.onSearchTextChange}
-                    />
-                    <button className="icon-container pointer" type="submit">
-                        <i className="material-icons">search</i>
-                    </button>
-                </form>
+                <SearchBar
+                    searchTerm={props.searchTerm}
+                    onSearchTextChange={props.onSearchTextChange}
+                />
                 {renderContent()}
             </div>
             <SpotlightSearch

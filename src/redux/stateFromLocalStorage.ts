@@ -5,14 +5,16 @@ import { initialCartState } from './modules/cart/index';
 import { initialPortalState } from './modules/portal/index';
 import { initialFavouriteState } from './modules/favourite';
 import { StateSettingReducer } from './state/StateSettingReducer';
+import { initialTitleState } from './modules/titles';
 
 
-export const loadStateFromLocalStorage = () => {
+export const loadStateFromLocalStorage = (): any => {
     let settingReducer = initialSettingState;
     let storedSettingReducer = localStorage.getItem(CacheKey.SettingReducerKey);
     if (storedSettingReducer && storedSettingReducer !== "undefined") {
         settingReducer = JSON.parse(storedSettingReducer || '{}');
     }
+    settingReducer.menuIsVisible = false;
 
     let cartReducer = initialCartState;
     let storedCartReducer = localStorage.getItem(CacheKey.CartReducerKey);
@@ -32,11 +34,18 @@ export const loadStateFromLocalStorage = () => {
         favouriteReducer = JSON.parse(storedFavouriteReducer || '{}');
     }
 
+    let titleReducer = initialTitleState;
+    let storedTitleReducer = localStorage.getItem(CacheKey.TitleReducerKey);
+    if (storedTitleReducer && storedTitleReducer !== "undefined") {
+        titleReducer = JSON.parse(storedTitleReducer || '{}');
+    }
+
     let persistedState: any = {
         settingReducer,
         cartReducer,
         portalReducer,
-        favouriteReducer
+        favouriteReducer,
+        titleReducer,
     }
     return persistedState;
 }
@@ -49,6 +58,7 @@ export const saveStateToLocalStorage = (store: any) => {
         || storedSettingReducer.useAltGlyphs !== currentSettingReducer.useAltGlyphs
         || storedSettingReducer.selectedFont !== currentSettingReducer.selectedFont
         || storedSettingReducer.chosenPlatform !== currentSettingReducer.chosenPlatform
+        || storedSettingReducer.playerName !== currentSettingReducer.playerName
     ) {
         localStorage.setItem(CacheKey.SettingReducerKey, JSON.stringify(currentSettingReducer));
     }
@@ -72,5 +82,12 @@ export const saveStateToLocalStorage = (store: any) => {
     if (storedFavouriteReducer == null
         || storedFavouriteReducer !== JSON.stringify(currentFavouriteReducer?.favouriteItems || [])) {
         localStorage.setItem(CacheKey.FavouriteReducerKey, JSON.stringify(currentFavouriteReducer));
+    }
+
+    const currentTitleReducer = store.getState().titleReducer;
+    const storedTitleReducer = localStorage.getItem(CacheKey.TitleReducerKey);
+    if (storedTitleReducer == null
+        || storedTitleReducer !== JSON.stringify(currentTitleReducer?.titles || [])) {
+        localStorage.setItem(CacheKey.TitleReducerKey, JSON.stringify(currentTitleReducer));
     }
 }

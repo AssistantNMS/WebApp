@@ -33,3 +33,10 @@ export const setFont = (font: string) => {
         type: type.SETFONT,
     }
 }
+
+export const setPlayerName = (playerName: string) => {
+    return {
+        playerName,
+        type: type.SETPLAYERNAME,
+    }
+}

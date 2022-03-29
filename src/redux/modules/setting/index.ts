@@ -12,6 +12,7 @@ export const initialSettingState: StateSettingReducer = {
     chosenPlatform: ControllerPlatformType.WIN,
     useAltGlyphs: true,
     selectedFont: LocaleKey.defaultFont.toString(),
+    playerName: '',
 }
 
 export const settingReducer = (state = initialSettingState, action: any) => {
@@ -37,6 +38,10 @@ export const settingReducer = (state = initialSettingState, action: any) => {
         case type.SETFONT:
             return Object.assign({}, state, {
                 selectedFont: action.font
+            });
+        case type.SETPLAYERNAME:
+            return Object.assign({}, state, {
+                playerName: action.playerName
             });
         default:
             return state

@@ -25,6 +25,11 @@
         .tree-view-parent-content {
             flex-grow: 1;
             max-width: 25vw;
+            text-align: left;
+
+            h3 {
+                margin: 10px;
+            }
 
             @media screen and (max-width: 1200px) {
                 max-width: 33vw;

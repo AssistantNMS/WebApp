@@ -6,4 +6,5 @@ export class StateSettingReducer {
     public chosenPlatform!: ControllerPlatformType;
     public useAltGlyphs!: boolean;
     public selectedFont!: string;
+    public playerName!: string;
 }
