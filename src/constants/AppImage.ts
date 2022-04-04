@@ -2,7 +2,8 @@ export class AppImage {
     static base: string = 'assets/images/';
     static controls: string = AppImage.base + 'buttons/';
 
-    static twitch: string = 'special/twitch.png';
+    static twitch: string = 'special/twitchAlt.png';
+    static quicksilver: string = 'special/quicksilverAlt.png';
 
     static expeditionSeasonBackground1: string = AppImage.base + 'special/expeditionsCoverUnused.jpg';
     static expeditionSeasonBackground2: string = AppImage.base + 'special/expeditionsCover.jpg';

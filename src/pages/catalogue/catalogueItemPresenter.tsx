@@ -125,7 +125,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     {displayUsedToCookItems(props.item.Name, props.usedToCook)}
                     {displayStatBonuses(props.item.StatBonuses)}
                     {displayProceduralStatBonuses(props.item.NumStatsMin, props.item.NumStatsMax, props.item.ProceduralStatBonuses)}
-                    {displayRewardFrom(props.item.Usages)}
+                    {displayRewardFrom(props.item)}
                     {displayEggTraits(props.eggTrait)}
                 </div>
                 <DevDetailsBottomModalSheet
