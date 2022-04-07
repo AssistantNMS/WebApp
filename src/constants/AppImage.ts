@@ -21,6 +21,9 @@ export class AppImage {
     static platformPc: string = '/' + AppImage.base + 'platformPc.png';
     static platformPsn: string = '/' + AppImage.base + 'platformPs4.png';
     static platformXbx: string = '/' + AppImage.base + 'platformXb1.png';
+    static platformPcAlt: string = '/' + AppImage.base + 'platformPcAlt.png';
+    static platformPsnAlt: string = '/' + AppImage.base + 'platformPs4Alt.png';
+    static platformXbxAlt: string = '/' + AppImage.base + 'platformXb1Alt.png';
     static unknownButton: string = 'unknown.png';
 
     static nanites: string = AppImage.base + '/nanites.png';

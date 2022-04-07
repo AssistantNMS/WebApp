@@ -178,7 +178,7 @@ export const ControlPlatformSettingTile: React.FC<IControlPlatformProp> = (props
         setIsVisible(!isVisible);
     }
 
-    const options = availableControlPlatforms();
+    const options = availableControlPlatforms(false);
 
     return (
         <div className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12-xsmall pointer" onClick={toggleDropdown}>

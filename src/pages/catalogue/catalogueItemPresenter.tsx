@@ -26,6 +26,8 @@ import { displayCookItems, displayEggTraits, displayObsoleteTech, displayProcedu
 import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 import { IReduxProps } from './catalogueItem.Redux';
 import { DecriptionRegexHighlightText } from '../../components/common/descriptionRegexHighlighter';
+import { PlatformFloatingActionButton } from '../../components/floatingActionButton/platformFloatingActionButton';
+import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
 
 interface IProps extends IReduxProps {
     // Container State    
@@ -51,14 +53,29 @@ interface IProps extends IReduxProps {
     addThisItemToCart: () => void;
     addThisItemToFavourites: () => void;
     removeThisItemToFavourites: () => void;
+    updateControlLookup: (newPlatform: ControllerPlatformType) => void;
 }
 
 export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
     const [isDetailPaneOpen, setDetailPaneOpen] = useState<boolean>(false);
 
-    const getFloatingActionButtons = (): Array<any> => {
+    const getFloatingActionButtons = (allItems: boolean): Array<any> => {
         const components: any[] = [];
         if (props.item == null || props.item.Id == null) return components;
+
+        if (allItems === true && props.item.Description.includes('<IMG>')) {
+            components.push(
+                <PlatformFloatingActionButton
+                    key="platform-dialog"
+                    value={props.controlPlatform}
+                    onClick={(newPlatform: ControllerPlatformType) => {
+                        props.setPlatform(newPlatform);
+                        props.updateControlLookup(newPlatform);
+                    }}
+                />
+            );
+        }
+
         const shareDialogProps = {
             id: props.item.Id,
             itemName: props.item.Name,
@@ -148,10 +165,10 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                 selectedLanguage={props.selectedLanguage}
             // updateUrl={true}
             />
-            <NavBar title={title} additionalItems={getFloatingActionButtons()} />
+            <NavBar title={title} additionalItems={getFloatingActionButtons(true)} />
             {handleLoadingOrError()}
 
-            {getFloatingActionButtons()}
+            {getFloatingActionButtons(false)}
             <div className="col-12" style={{ marginTop: '8em' }}></div>
         </>
     );

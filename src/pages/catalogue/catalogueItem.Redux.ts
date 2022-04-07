@@ -9,7 +9,7 @@ import { addItemToFavourite, removeItemFromFavourite } from '../../redux/modules
 
 import { getChosenPlatform, getCurrentLanguage } from '../../redux/modules/setting/selector';
 import { getFavouriteItems } from '../../redux/modules/favourite/selector';
-import { setLanguage } from '../../redux/modules/setting/action';
+import { setLanguage, setPlatform } from '../../redux/modules/setting/action';
 import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
 
 export interface IReduxProps {
@@ -20,6 +20,7 @@ export interface IReduxProps {
     addItemToFavourites?: (item: GameItemModel) => void;
     removeItemToFavourites?: (itemId: string) => void;
     setLanguage: (langCode: string) => void;
+    setPlatform: (platform: ControllerPlatformType) => void;
 }
 
 export const mapStateToProps = (state: State) => {
@@ -38,7 +39,6 @@ export const mapDispatchToProps = (dispatch: any) => {
             Icon: item.Icon,
             Id: item.Id,
             RequiredItems: item.RequiredItems,
-            TypeName: item.TypeName,
             Quantity: quantity
         }
         dispatch(addItemToCart(cartItem));
@@ -55,6 +55,9 @@ export const mapDispatchToProps = (dispatch: any) => {
     };
     newProps.setLanguage = (langCode: string) => {
         dispatch(setLanguage(langCode));
+    };
+    newProps.setPlatform = (platform: ControllerPlatformType) => {
+        dispatch(setPlatform(platform));
     };
     return { ...newProps };
 }

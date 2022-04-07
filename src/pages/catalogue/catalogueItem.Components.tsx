@@ -259,7 +259,7 @@ export const displayRewardFrom = (item: GameItemModel) => {
     try {
         if (usages.filter((u) => u.includes(UsageKey.isQuicksilver))) {
             if (item.BaseValueUnits > 0 &&
-                item.CurrencyType == CurrencyType.QUICKSILVER) {
+                item.CurrencyType === CurrencyType.QUICKSILVER) {
                 nodes.push(
                     <RewardFromQuicksilverTile
                         qsQuantity={item.BaseValueUnits.toString()}
