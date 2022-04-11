@@ -1,7 +1,9 @@
 
 import i18next from 'i18next';
-import React, { } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { AppImage } from '../../../constants/AppImage';
+import { communityMission } from '../../../constants/Route';
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { TextContainer } from '../../common/tile/textContainer';
@@ -13,7 +15,7 @@ interface IProps {
 export const RewardFromQuicksilverTile: React.FC<IProps> = (props: IProps) => {
     const text = i18next.t(LocaleKey.quicksilverPrice);
     return (
-        <div data-id="RewardFromTwitchTile" className="gen-item-container" draggable={false}>
+        <Link to={communityMission} data-id="RewardFromQuicksilverTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name="Twitch" Icon={AppImage.quicksilver} Colour="#2092CC" />
             <div className="gen-item-content-container">
                 <TextContainer text={text} />
@@ -22,6 +24,6 @@ export const RewardFromQuicksilverTile: React.FC<IProps> = (props: IProps) => {
                     <img src="/assets/images/rawMaterials/57.png" alt="Quicksilver" style={{ maxHeight: '20px', marginLeft: '5px' }} />
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }

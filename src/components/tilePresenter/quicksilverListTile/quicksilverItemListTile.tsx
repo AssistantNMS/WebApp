@@ -22,6 +22,7 @@ interface IWithDepInj {
 
 export interface IQuicksilverItemWithoutDepInj extends QuicksilverItem {
     isDisabled: boolean;
+    showPrice?: boolean;
 }
 
 export interface IQuicksilverItemProps extends IWithDepInj, IQuicksilverItemWithoutDepInj { }
@@ -57,9 +58,15 @@ const QuicksilverItemListTileClass: React.FC<IQuicksilverItemProps> = (props: IQ
             <div className="gen-item-content-container">
                 <TextContainer text={item.Name} additionalCss={(props.Tier != null && props.Tier > 0) ? "" : "full"} />
                 {
-                    (props.Tier != null && props.Tier > 0)
-                        ? <div className="quantity-container">Tier: {props.Tier}</div>
-                        : null
+                    (props.Tier != null && props.Tier > 0) &&
+                    <div className="quantity-container">Tier: {props.Tier}</div>
+                }
+                {
+                    (props.showPrice == true) &&
+                    <div className="quantity-container">
+                        {item.BaseValueUnits.toString()}
+                        <img src="/assets/images/rawMaterials/57.png" alt="Quicksilver" style={{ maxHeight: '20px', marginLeft: '5px' }} />
+                    </div>
                 }
                 <ActionContainer actions={getActions()} />
             </div>
