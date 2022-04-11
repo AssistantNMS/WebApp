@@ -62,7 +62,7 @@ const QuicksilverItemListTileClass: React.FC<IQuicksilverItemProps> = (props: IQ
                     <div className="quantity-container">Tier: {props.Tier}</div>
                 }
                 {
-                    (props.showPrice == true) &&
+                    (props.showPrice === true) &&
                     <div className="quantity-container">
                         {item.BaseValueUnits.toString()}
                         <img src="/assets/images/rawMaterials/57.png" alt="Quicksilver" style={{ maxHeight: '20px', marginLeft: '5px' }} />
