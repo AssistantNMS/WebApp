@@ -9,6 +9,8 @@ import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTr
 import { anyObject } from '../../helper/typescriptHacks';
 import { getHashForObject } from '../../helper/hashHelper';
 import i18next from 'i18next';
+import { ContributorViewModel } from '../../contracts/generated/Model/Contributor/contributorViewModel';
+import { CommunityLinkViewModel } from '../../contracts/generated/Model/Community/communityLinkViewModel';
 
 export class ApiService extends BaseApiService {
 
@@ -61,5 +63,13 @@ export class ApiService extends BaseApiService {
 
     async getCurrentExpedition(): Promise<ResultWithValue<ExpeditionSeasonViewModel>> {
         return await this.get<ExpeditionSeasonViewModel>('HelloGames/Expedition');
+    }
+
+    async getContributors(): Promise<ResultWithValue<Array<ContributorViewModel>>> {
+        return await this.get<Array<ContributorViewModel>>('Contributor');
+    }
+
+    async getCommunityLinks(): Promise<ResultWithValue<Array<CommunityLinkViewModel>>> {
+        return await this.get<Array<CommunityLinkViewModel>>('CommunityLink');
     }
 }

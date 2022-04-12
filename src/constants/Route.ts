@@ -28,3 +28,4 @@ export const titles = '/titles';
 export const patreon = '/patreon';
 export const nmsfm = '/nmsfm';
 export const whatIsNew = '/what-is-new';
+export const communityLinks = '/community-links';

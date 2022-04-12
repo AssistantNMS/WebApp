@@ -132,6 +132,13 @@ export const getMenuSection3 = () => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
+  menuItems.push({
+    name: i18next.t(LocaleKey.communityLinks).toString(),
+    link: routes.communityLinks,
+    icon: '/assets/images/drawer/communityLinks.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
   menuItems.push(menuItemSeperator);
   return menuItems;
 }
