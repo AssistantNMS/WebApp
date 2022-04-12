@@ -230,21 +230,23 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             }
         }
 
-        switch (itemDetail.BlueprintCostType) {
-            case CurrencyType.NANITES:
-                const bpCostText = i18next.t(LocaleKey.blueprintCost);
-                const bpCost = itemDetail.BlueprintCost;
-                additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: '/assets/images/nanites.png', tooltip: 'Nanites' });
-                break;
-            case CurrencyType.SALVAGEDDATA:
-                additionalData.push({ text: itemDetail.BlueprintCost, image: '/assets/images/curiosities/16.png', tooltip: 'Salvaged Data' });
-                break;
-            case CurrencyType.FACTORYOVERRIDE:
-                additionalData.push({ text: itemDetail.BlueprintCost, image: '/assets/images/special/factoryOverride.png', tooltip: 'Factory Override Unit' });
-                break;
-            case CurrencyType.NONE:
-            default:
-                break;
+        const bpCost = itemDetail.BlueprintCost;
+        if (bpCost > 0) {
+            switch (itemDetail.BlueprintCostType) {
+                case CurrencyType.NANITES:
+                    const bpCostText = i18next.t(LocaleKey.blueprintCost);
+                    additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: '/assets/images/nanites.png', tooltip: 'Nanites' });
+                    break;
+                case CurrencyType.SALVAGEDDATA:
+                    additionalData.push({ text: itemDetail.BlueprintCost, image: '/assets/images/curiosities/16.png', tooltip: 'Salvaged Data' });
+                    break;
+                case CurrencyType.FACTORYOVERRIDE:
+                    additionalData.push({ text: itemDetail.BlueprintCost, image: '/assets/images/special/factoryOverride.png', tooltip: 'Factory Override Unit' });
+                    break;
+                case CurrencyType.NONE:
+                default:
+                    break;
+            }
         }
 
         if (itemDetail.CookingValue != null && itemDetail.CookingValue > 0.0) {
