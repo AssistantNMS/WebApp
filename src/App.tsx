@@ -32,6 +32,7 @@ import { LanguagePresenter } from './pages/language/languagePresenter';
 import { NmsfmContainer } from './pages/misc/nmsfmContainer';
 import { PatreonPresenter } from './pages/misc/patreonPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
+import { CommunityLinksPage } from './pages/other/communityLinks';
 import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2020Container';
 import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
 import { PortalListContainer } from './pages/portal/portalListContainer';
@@ -39,6 +40,8 @@ import { ProcessorItemContainer } from './pages/processor/processorItemContainer
 import { SettingPresenter } from './pages/setting/settingPresenter';
 import { SocialPresenter } from './pages/social/socialPresenter';
 import { SyncContainer } from './pages/sync/syncContainer';
+import { TechTreeContainer } from './pages/techtree/techTreeContainer';
+import { TitlesContainer } from './pages/titles/titlesContainer';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
 import { StateSettingReducer } from './redux/state/StateSettingReducer';
 
@@ -103,9 +106,13 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={route.weekendMissionDetails} element={<WeekendMissionContainer />} />
               <Route path={route.weekendMission} element={<WeekendMissionMenuPresenter />} />
 
+              <Route path={route.techTree} element={<TechTreeContainer />} />
+              <Route path={route.titles} element={<TitlesContainer />} />
+
               <Route path={route.social} element={<SocialPresenter />} />
               <Route path={route.sync} element={<SyncContainer />} />
               <Route path={route.onlineMeetup2020} element={<OnlineMeetup2020SubmissionContainer />} />
+              <Route path={route.communityLinks} element={<CommunityLinksPage />} />
 
               <Route element={<NotFoundPresenter />} />
             </Routes>

@@ -5,17 +5,17 @@ export interface IControlPlatformsOptions {
     value: ControllerPlatformType;
 }
 
-export const availableControlPlatforms = (): Array<IControlPlatformsOptions> => [
+export const availableControlPlatforms = (useAlt: boolean): Array<IControlPlatformsOptions> => [
     {
-        imgUrl: ToImgUrl(ControllerPlatformType.WIN),
+        imgUrl: ToImgUrl(useAlt, ControllerPlatformType.WIN),
         value: ControllerPlatformType.WIN,
     },
     {
-        imgUrl: ToImgUrl(ControllerPlatformType.PSN),
+        imgUrl: ToImgUrl(useAlt, ControllerPlatformType.PSN),
         value: ControllerPlatformType.PSN,
     },
     {
-        imgUrl: ToImgUrl(ControllerPlatformType.XBX),
+        imgUrl: ToImgUrl(useAlt, ControllerPlatformType.XBX),
         value: ControllerPlatformType.XBX,
     }
 ];

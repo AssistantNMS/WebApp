@@ -17,7 +17,17 @@ export const ToJsonProperty = (plat: ControllerPlatformType) => {
     }
 }
 
-export const ToImgUrl = (plat: ControllerPlatformType) => {
+export const ToImgUrl = (useAlt: boolean, plat: ControllerPlatformType) => {
+    if (useAlt) {
+        switch (plat) {
+            case ControllerPlatformType.WIN: return AppImage.platformPcAlt;
+            case ControllerPlatformType.PSN: return AppImage.platformPsnAlt;
+            case ControllerPlatformType.XBX: return AppImage.platformXbxAlt;
+
+            default: return AppImage.platformPcAlt;
+        }
+    }
+
     switch (plat) {
         case ControllerPlatformType.WIN: return AppImage.platformPc;
         case ControllerPlatformType.PSN: return AppImage.platformPsn;

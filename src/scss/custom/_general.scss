@@ -84,6 +84,11 @@ img.grayscale {
     /* Chrome 19+ & Safari 6+ */
 }
 
+img.tiny {
+    height: 30px;
+    width: 30px;
+}
+
 .material-icons.small {
     font-size: 16px !important;
 }
@@ -329,7 +334,8 @@ img.grayscale {
     }
 }
 
-.settings {
+.settings,
+.platform-fab {
     .platform-img {
         max-width: 2rem;
         max-height: 2rem;

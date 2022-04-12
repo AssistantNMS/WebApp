@@ -10,6 +10,7 @@ import { settingReducer } from './modules/setting';
 import { cartReducer } from './modules/cart';
 import { portalReducer } from './modules/portal';
 import { favouriteReducer } from './modules/favourite';
+import { titleReducer } from './modules/titles';
 
 
 export const reducer = combineReducers({
@@ -18,6 +19,7 @@ export const reducer = combineReducers({
     cartReducer,
     portalReducer,
     favouriteReducer,
+    titleReducer,
 });
 
 export const commonMapDispatchToProps = (dispatch: any): ICommonFunctions => {

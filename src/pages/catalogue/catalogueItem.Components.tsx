@@ -22,6 +22,8 @@ import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { RewardFromSeasonalExpeditionTile } from '../../components/tilePresenter/rewardFromTile/rewardFromSeasonalExpeditionPresenter';
 import { RewardFromTwitchTile } from '../../components/tilePresenter/rewardFromTile/rewardFromTwitchPresenter';
+import { RewardFromQuicksilverTile } from '../../components/tilePresenter/rewardFromTile/rewardTilePresenter';
+import { CurrencyType } from '../../contracts/enum/CurrencyType';
 
 export const displayRequiredItems = (resArray: Array<RequiredItemDetails>) => {
     if (resArray == null || resArray.length < 1) return null;
@@ -247,13 +249,25 @@ export const displayObsoleteTech = (usages: Array<string>) => {
     );
 }
 
-export const displayRewardFrom = (usages: Array<string>) => {
+export const displayRewardFrom = (item: GameItemModel) => {
+    const usages: Array<string> = item.Usages;
     if (usages == null || usages.length < 1) return null;
     // if (!usages.includes(UsageKey.isNoLongerObtainable)) return null;
 
     const nodes: Array<JSX.Element> = [];
 
     try {
+        if (usages.filter((u) => u.includes(UsageKey.isQuicksilver))) {
+            if (item.BaseValueUnits > 0 &&
+                item.CurrencyType === CurrencyType.QUICKSILVER) {
+                nodes.push(
+                    <RewardFromQuicksilverTile
+                        qsQuantity={item.BaseValueUnits.toString()}
+                    />
+                );
+            }
+        }
+
         const expSeasonKeySplit = UsageKey.isExpeditionSeason.split("{0}");
         if (usages.filter((u) => u.includes(expSeasonKeySplit[0])).length > 0) {
             const expSeasUsageKey =

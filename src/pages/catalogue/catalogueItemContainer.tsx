@@ -286,6 +286,15 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         props.toastService.success('Removed from Favourites');
     }
 
+    const updateControlLookup = async (newPlatform: ControllerPlatformType) => {
+        const controlLookupTask = optionalListTask(['true'], 'true', () => getControlLookup(newPlatform));
+        const newControlLookup = await controlLookupTask;
+        setItemMeta(oldMeta => ({
+            ...oldMeta,
+            controlLookup: newControlLookup,
+        }));
+    }
+
     const {
         item,
         requiredItems,
@@ -320,6 +329,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             addThisItemToCart={addThisItemToCart}
             addThisItemToFavourites={addThisItemToFavourites}
             removeThisItemToFavourites={removeThisItemToFavourites}
+            updateControlLookup={updateControlLookup}
         />
     );
 }

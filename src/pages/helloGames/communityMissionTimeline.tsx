@@ -58,7 +58,7 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
 
     const renderQuickSilverContent = (items: Array<QuicksilverItem>): ReactNode => {
         const customQuicksilverItemListTile = (props: QuicksilverItem, index: number) => {
-            const customProps: IQuicksilverItemWithoutDepInj = { ...props, isDisabled: false };
+            const customProps: IQuicksilverItemWithoutDepInj = { ...props, isDisabled: false, showPrice: true };
             return QuicksilverItemListTile(customProps, index);
         }
 
@@ -66,7 +66,7 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
             <div key={items.map(i => i.ItemId).join(',')} className="">
                 <GenericListPresenter
                     list={items}
-                    bootstrapClasses="col-12"
+                    bootstrapClasses="col-12 qs-timeline"
                     presenter={customQuicksilverItemListTile}
                     isCentered={true}
                 />
