@@ -10,6 +10,7 @@ export const UsageKey = {
     isConsumable: 'IsConsumable',
     isEggIngredient: 'IsEggIngredient',
     isNoLongerObtainable: 'IsNoLongerObtainable',
+    isQuicksilver: 'IsQuicksilver',
 
     isExpeditionSeason: 'IsExpeditionSeason{0}Reward',
     isTwitchCapaign: 'IsTwitchCapaign{0}Reward',

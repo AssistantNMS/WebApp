@@ -16,7 +16,10 @@ export const RewardFromTwitchTile: React.FC<IProps> = (props: IProps) => {
         <div data-id="RewardFromTwitchTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name="Twitch" Icon={AppImage.twitch} />
             <div className="gen-item-content-container">
-                <TextContainer text={text} additionalCss={"full"} />
+                <TextContainer text={text} />
+                <div className="quantity-container">
+                    Twitch drop
+                </div>
             </div>
         </div>
     );

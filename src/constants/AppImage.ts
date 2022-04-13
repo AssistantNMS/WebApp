@@ -2,7 +2,8 @@ export class AppImage {
     static base: string = 'assets/images/';
     static controls: string = AppImage.base + 'buttons/';
 
-    static twitch: string = 'special/twitch.png';
+    static twitch: string = 'special/twitchAlt.png';
+    static quicksilver: string = 'special/quicksilverAlt.png';
 
     static expeditionSeasonBackground1: string = AppImage.base + 'special/expeditionsCoverUnused.jpg';
     static expeditionSeasonBackground2: string = AppImage.base + 'special/expeditionsCover.jpg';
@@ -20,6 +21,9 @@ export class AppImage {
     static platformPc: string = '/' + AppImage.base + 'platformPc.png';
     static platformPsn: string = '/' + AppImage.base + 'platformPs4.png';
     static platformXbx: string = '/' + AppImage.base + 'platformXb1.png';
+    static platformPcAlt: string = '/' + AppImage.base + 'platformPcAlt.png';
+    static platformPsnAlt: string = '/' + AppImage.base + 'platformPs4Alt.png';
+    static platformXbxAlt: string = '/' + AppImage.base + 'platformXb1Alt.png';
     static unknownButton: string = 'unknown.png';
 
     static nanites: string = AppImage.base + '/nanites.png';

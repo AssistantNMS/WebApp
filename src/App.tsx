@@ -32,6 +32,7 @@ import { LanguagePresenter } from './pages/language/languagePresenter';
 import { NmsfmContainer } from './pages/misc/nmsfmContainer';
 import { PatreonPresenter } from './pages/misc/patreonPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
+import { CommunityLinksPage } from './pages/other/communityLinks';
 import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2020Container';
 import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
 import { PortalListContainer } from './pages/portal/portalListContainer';
@@ -111,6 +112,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={route.social} element={<SocialPresenter />} />
               <Route path={route.sync} element={<SyncContainer />} />
               <Route path={route.onlineMeetup2020} element={<OnlineMeetup2020SubmissionContainer />} />
+              <Route path={route.communityLinks} element={<CommunityLinksPage />} />
 
               <Route element={<NotFoundPresenter />} />
             </Routes>

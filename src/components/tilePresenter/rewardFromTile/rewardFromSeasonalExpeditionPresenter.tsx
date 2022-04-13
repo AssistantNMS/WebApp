@@ -1,4 +1,5 @@
 
+import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NetworkState } from '../../../constants/NetworkState';
@@ -6,6 +7,7 @@ import { catalogueItem } from '../../../constants/Route';
 import { ExpeditionSeason } from '../../../contracts/helloGames/expeditionSeason';
 import { anyObject } from '../../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
+import { LocaleKey } from '../../../localization/LocaleKey';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { TextContainer } from '../../common/tile/textContainer';
@@ -64,7 +66,10 @@ const RewardFromSeasonalExpeditionTileClass: React.FC<IProps> = (props: IProps) 
         <Link to={`${catalogueItem}/${props.seasId}`} data-id="RewardFromSeasonalExpeditionTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name={expedition.Title} Icon={expedition.Icon} />
             <div className="gen-item-content-container">
-                <TextContainer text={expedition.Title} additionalCss={"full"} />
+                <TextContainer text={expedition.Title} />
+                <div className="quantity-container">
+                    {i18next.t(LocaleKey.seasonalExpeditionSeasons)}
+                </div>
             </div>
         </Link>
     );

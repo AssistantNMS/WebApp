@@ -122,7 +122,7 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
                     nodes.push(
                         <CustomTooltip
                             key={`paragraph-${paragraphIndex}-word-${wordIndex}-${word}-${lookupResKey}`}
-                            tooltipText="Not the right platform? Change your platform on the settings page!" theme="transparent"
+                            tooltipText="Not the right platform? Change your platform at the top of the page or in the settings page!" theme="transparent"
                         >
                             <img
                                 className="descrip-img"
