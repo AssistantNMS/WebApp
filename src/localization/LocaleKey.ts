@@ -564,4 +564,9 @@ export enum LocaleKey {
   translators = 'translators',
   rewardFrom = 'rewardFrom',
   twitchCampaignNum = 'twitchCampaignNum',
+  milestones = 'milestones',
+  viewGuildMissions = 'viewGuildMissions',
+  creative = 'creative',
+  twitchDrop = 'twitchDrop',
+  quicksilverCompanion = 'quicksilverCompanion'
 }
