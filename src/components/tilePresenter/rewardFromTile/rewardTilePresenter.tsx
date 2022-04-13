@@ -13,7 +13,7 @@ interface IProps {
 }
 
 export const RewardFromQuicksilverTile: React.FC<IProps> = (props: IProps) => {
-    const text = i18next.t(LocaleKey.quicksilverPrice);
+    const text = i18next.t(LocaleKey.quicksilverCompanion);
     return (
         <Link to={communityMission} data-id="RewardFromQuicksilverTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name="Twitch" Icon={AppImage.quicksilver} Colour="#2092CC" />
