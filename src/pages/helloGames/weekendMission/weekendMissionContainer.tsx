@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { useLocation } from 'react-router';
-import { Error } from '../../../components/core/error/error';
-import { SmallLoading } from '../../../components/core/loading/loading';
 import { NetworkState } from '../../../constants/NetworkState';
 import { IWeekendMissionMeta, WeekendMissions } from '../../../constants/WeekendMission';
 import { WeekendMissionStage } from '../../../contracts/helloGames/weekendMissionStage';
@@ -69,14 +67,6 @@ export const WeekendMissionContainerUnconnected: React.FC<IProps> = (props: IPro
         setWeekendMissionStatus(NetworkState.Loading);
         fetchWeekendMissionStage(newLevel);
     }
-
-
-    if (weekendMissionStatus === NetworkState.Loading || weekendMissionMeta == null)
-        return (<SmallLoading />);
-
-    if (weekendMissionStatus === NetworkState.Error)
-        return (<Error />);
-
 
     return (
         <WeekendMissionPresenter
