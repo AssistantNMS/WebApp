@@ -3,7 +3,7 @@ import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NetworkState } from '../../../constants/NetworkState';
-import { catalogueItem } from '../../../constants/Route';
+import { seasonExpedition } from '../../../constants/Route';
 import { ExpeditionSeason } from '../../../contracts/helloGames/expeditionSeason';
 import { anyObject } from '../../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
@@ -63,7 +63,7 @@ const RewardFromSeasonalExpeditionTileClass: React.FC<IProps> = (props: IProps) 
     }
 
     return (
-        <Link to={`${catalogueItem}/${props.seasId}`} data-id="RewardFromSeasonalExpeditionTile" className="gen-item-container" draggable={false}>
+        <Link to={`${seasonExpedition}/${props.seasId}`} data-id="RewardFromSeasonalExpeditionTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name={expedition.Title} Icon={expedition.Icon} />
             <div className="gen-item-content-container">
                 <TextContainer text={expedition.Title} />
