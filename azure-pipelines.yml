@@ -20,10 +20,14 @@ steps:
     workingDir: 'webpack'
   displayName: 'npm install for webpack folder'
 
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'cd ./webpack'
+
 - task: Npm@1
   inputs:
     command: 'custom'
-    workingDir: 'webpack'
     customCommand: 'run build'
   displayName: 'Build Seo Files'
 
