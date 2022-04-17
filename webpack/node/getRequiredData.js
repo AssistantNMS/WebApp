@@ -7,12 +7,29 @@ async function generateFullJson() {
     const siteDataContents = await readFile('./data/site.json', 'utf8');
     const siteData = JSON.parse(siteDataContents);
 
+    const cspContents = await readFile('./data/csp.json', 'utf8');
+    const cspContent = JSON.parse(cspContents);
+    const headerList = cspContent.options.map(opt =>
+        opt.name +
+        ((opt.values != null && opt.values.length > 0) ? ' ' : '') +
+        opt.values.join(' ')
+    );
+    const header = headerList.join('; ') + ';';
+
     const allItemFolders = fs.readdirSync('../public/assets/json', { withFileTypes: true });
     const directories = allItemFolders.filter(dirent => dirent.isDirectory()).map(dirent => dirent.name);
 
-    await writeProjectJson('en', siteData, 'project');
+    const siteDataFull = {
+        ...siteData,
+        headers: [
+            ...cspContent.headers.map(csp => ({ "name": csp, "value": header })),
+            ...siteData.headers,
+        ]
+    };
+
+    await writeProjectJson('en', siteDataFull, 'project');
     for (const dir of directories) {
-        await writeProjectJson(dir, siteData, `project-${dir}`);
+        await writeProjectJson(dir, siteDataFull, `project-${dir}`);
     }
 }
 

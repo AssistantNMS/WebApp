@@ -26,9 +26,9 @@ interface IProps {
     status: NetworkState;
 
     // Container Specific
-    level: number;
-    maxLevel: number;
-    minLevel: number;
+    level?: number;
+    maxLevel?: number;
+    minLevel?: number;
     navigateToWeekendMissionLevel: (newLevel: number) => void;
 }
 
@@ -52,8 +52,8 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
             Id: weekendMission.AppId,
             Quantity: weekendMission.Quantity,
         });
-        const hasPrev = props.level > props.minLevel;
-        const hasNext = props.level < props.maxLevel;
+        const hasPrev = (props.level ?? 0) > (props.minLevel ?? 0);
+        const hasNext = (props.level ?? 0) < (props.maxLevel ?? 0);
         return (
             <>
                 <div className="row">
@@ -102,21 +102,21 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                 <hr />
                 <div className="row justify noselect">
                     {
-                        hasPrev &&
+                        (props.level != null && hasPrev) &&
                         <div className="col-6">
                             <PositiveButton additionalClass={hasNext ? 'right' : ''}
                                 icon="arrow_back_ios" iconPosition="left"
-                                onClick={() => { props.navigateToWeekendMissionLevel(props.level - 1) }} >
+                                onClick={() => { props.navigateToWeekendMissionLevel((props.level ?? 0) - 1) }} >
                                 <span>&nbsp;{i18next.t(LocaleKey.previousWeekendMission).toString()}</span>
                             </PositiveButton>
                         </div>
                     }
                     {
-                        hasNext &&
+                        (props.level != null && hasNext) &&
                         <div className="col-6">
                             <PositiveButton additionalClass={hasPrev ? 'left' : ''}
                                 icon="arrow_forward_ios" iconPosition="right"
-                                onClick={() => { props.navigateToWeekendMissionLevel(props.level + 1) }} >
+                                onClick={() => { props.navigateToWeekendMissionLevel((props.level ?? 0) + 1) }} >
                                 <span>{i18next.t(LocaleKey.nextWeekendMission).toString()}&nbsp;</span>
                             </PositiveButton>
                         </div>}
