@@ -1,0 +1,124 @@
+{
+    "headers": [
+        "Content-Security-Policy",
+        "X-Content-Security-Policy",
+        "X-WebKit-CSP"
+    ],
+    "options": [
+        {
+            "name": "default-src",
+            "values": [
+                "'none'"
+            ]
+        },
+        {
+            "name": "script-src",
+            "values": [
+                "'self'",
+                "'report-sample'",
+                "'unsafe-inline'",
+                "www.google-analytics.com",
+                "assistantapps.github.io"
+            ]
+        },
+        {
+            "name": "style-src",
+            "values": [
+                "'self'",
+                "'report-sample'",
+                "'unsafe-inline'",
+                "fonts.googleapis.com",
+                "nmscd.github.io",
+                "raw.githubusercontent.com"
+            ]
+        },
+        {
+            "name": "img-src",
+            "values": [
+                "'self'",
+                "data:",
+                "nmsassistant.com",
+                "cdn.nmsassistant.com",
+                "cdn.assistantapps.com",
+                "static.wikia.nocookie.net",
+                "i.imgur.com",
+                "www.google-analytics.com",
+                "cdn.discordapp.com",
+                "yt3.ggpht.com",
+                "gamepedia.cursecdn.com",
+                "aws1.discourse-cdn.com",
+                "nmsportals.github.io",
+                "j50n.github.io",
+                "db.blackholesuns.com"
+            ]
+        },
+        {
+            "name": "font-src",
+            "values": [
+                "'self'",
+                "data:",
+                "nmscd.github.io",
+                "fonts.gstatic.com",
+                "raw.githubusercontent.com"
+            ]
+        },
+        {
+            "name": "connect-src",
+            "values": [
+                "app.nmsassistant.com",
+                "api.nmsassistant.com",
+                "api.assistantapps.com",
+                "www.google-analytics.com"
+            ]
+        },
+        {
+            "name": "manifest-src",
+            "values": [
+                "https://app.nmsassistant.com/manifest.json"
+            ]
+        },
+        {
+            "name": "base-uri",
+            "values": [
+                "'self'"
+            ]
+        },
+        {
+            "name": "form-action",
+            "values": [
+                "'none'"
+            ]
+        },
+        {
+            "name": "report-uri",
+            "values": [
+                "'none'"
+            ]
+        },
+        {
+            "name": "media-src",
+            "values": [
+                "'self'",
+                "stream.zenolive.com",
+                "*.zeno.fm"
+            ]
+        },
+        {
+            "name": "frame-src",
+            "values": [
+                "'none'"
+            ]
+        },
+        {
+            "name": "frame-ancestors",
+            "values": [
+                "kurtlourens.com",
+                "playground.kurtlourens.com"
+            ]
+        },
+        {
+            "name": "upgrade-insecure-requests",
+            "values": []
+        }
+    ]
+}
