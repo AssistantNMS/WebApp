@@ -21,8 +21,6 @@ async function generateItemPage() {
     const allItemFolders = fs.readdirSync('../public/assets/json', { withFileTypes: true });
     const directories = allItemFolders.filter(dirent => dirent.isDirectory()).map(dirent => dirent.name);
 
-    console.log(directories);
-
     const template = await readFile('./handlebar/itemDetailPage.hbs', 'utf8');
     const templateFunc = Handlebars.compile(template);
 
