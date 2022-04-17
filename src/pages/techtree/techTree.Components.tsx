@@ -174,7 +174,7 @@ export const ExpandableRow: React.FC<IExpandableRowProps> = (props: IExpandableR
                 </div>
             </div>
             {
-                props.hasChildren &&
+                (props.hasChildren && isExpanded) &&
                 (
                     <div className={classNames('tree-view-children', { 'is-expanded': isExpanded })} style={{ marginLeft: '3em' }}>
                         {props.children}

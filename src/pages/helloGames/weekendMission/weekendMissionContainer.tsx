@@ -74,9 +74,9 @@ export const WeekendMissionContainerUnconnected: React.FC<IProps> = (props: IPro
             {...props}
             weekendMissionStage={weekendMission!}
             status={weekendMissionStatus}
-            level={(weekendMissionMeta!).level}
-            maxLevel={(weekendMissionMeta!).maxLevel}
-            minLevel={(weekendMissionMeta!).minLevel}
+            level={weekendMissionMeta?.level}
+            maxLevel={weekendMissionMeta?.maxLevel}
+            minLevel={weekendMissionMeta?.minLevel}
             navigateToWeekendMissionLevel={navigateToWeekendMissionLevel}
         />
     );
