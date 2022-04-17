@@ -23,13 +23,9 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'cd ./webpack'
-
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    customCommand: 'run build'
+    script: 'cd ./webpack && npm run build'
   displayName: 'Build Seo Files'
+
 
 - task: Npm@1
   inputs:
