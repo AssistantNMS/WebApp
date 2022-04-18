@@ -10,6 +10,7 @@ export class AppImage {
     static expeditionSeasonBackground3: string = AppImage.base + 'special/expeditionsCover1.jpg';
     static expeditionSeasonBackground4: string = AppImage.base + 'special/expeditionsCover2.jpg';
     static expeditionSeasonBackground5: string = AppImage.base + 'special/expeditionsCover3.jpg';
+    static expeditionSeasonBackground6: string = AppImage.base + 'special/expeditionsCover6.jpg';
 
     static milestonePatches: string = AppImage.base + 'milestonePatches/';
     static expeditionsUnusedPatches: string = AppImage.milestonePatches + 'ENCRYPTED.PATCH.2.png';
