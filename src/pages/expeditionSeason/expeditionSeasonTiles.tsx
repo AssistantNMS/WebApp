@@ -51,7 +51,7 @@ export const ExpeditionSeasonTiles: React.FC<IExpeditionSeasonTilesProps> = (pro
                             seasonId={data.Id}
                             seasonNum={data.Id.replaceAll('seas-', '').replaceAll('-redux', '')}
                             name={data.Title}
-                            icon={getPatchForExpedition(data.Id)}
+                            icon={getPatchForExpedition(data.Icon)}
                             background={getBackgroundForExpedition(data.Id)}
                         />
                     );

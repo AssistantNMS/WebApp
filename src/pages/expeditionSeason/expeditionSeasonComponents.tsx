@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import i18next from 'i18next';
 import React, { ReactNode } from 'react';
 import { PositiveButton } from '../../components/common/button/positiveButton';
@@ -85,7 +86,7 @@ export const ExpeditionSeasonHeader: React.FC<IExpeditionSeasonHeaderProps> = (p
                 />
             </div>
             {
-                props.seasonDetails?.Rewards != null &&
+                (props.seasonDetails?.Rewards != null && props.seasonDetails?.Rewards?.length > 0) &&
                 (
                     <>
                         <div className="col-12">
@@ -149,7 +150,10 @@ interface IExpeditionSeasonPhaseWithMilestonesProps {
 export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhaseWithMilestonesProps> = (props: IExpeditionSeasonPhaseWithMilestonesProps) => {
     if (props.phase == null) return (<span></span>);
 
+    const disabled = (props.phase.Rewards.length < 1);
+
     const openDetailPane = () => {
+        if (disabled) return;
         if (props.phase == null) return;
 
         props.setDetailPane(
@@ -168,7 +172,13 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
             <div className="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-3">
                 <LazyLoadImage src={`/${AppImage.base}${props.phase.Icon}`} alt={props.phase.Title} className="phase-icon" style={{ width: '100%', maxWidth: '250px' }} />
                 <h3 className="phase-title">{props.phase.Title}</h3>
-                <PositiveButton icon="info" iconPosition="left" additionalClass="mt-2em mb-2em" onClick={openDetailPane}>
+                <PositiveButton
+                    icon="info"
+                    iconPosition="left"
+                    additionalClass="mt-2em mb-2em"
+                    disabled={disabled}
+                    onClick={openDetailPane}
+                >
                     <span>{i18next.t(LocaleKey.rewards).toString()}</span>
                 </PositiveButton>
             </div>
@@ -195,7 +205,10 @@ interface IExpeditionSeasonPhaseMilestonesProps {
 export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMilestonesProps> = (props: IExpeditionSeasonPhaseMilestonesProps) => {
     if (props.milestone == null) return (<span></span>);
 
+    const disabled = (props.milestone.Rewards.length < 1);
+
     const openDetailPane = () => {
+        if (disabled) return;
         if (props.milestone == null) return;
 
         props.setDetailPane(
@@ -210,18 +223,21 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
     }
 
     return (
-        <div data-id="ExpeditionSeasonPhaseMilestone" className="expedition-season-milestone noselect">
+        <div data-id="ExpeditionSeasonPhaseMilestone" className={classNames('expedition-season-milestone noselect', { 'pointer': !disabled })}>
             <ImageContainer Icon={props.milestone.Icon} Name={props.milestone.Title} />
-            <div className="text-container pointer" onClick={openDetailPane}>
+            <div className="text-container" onClick={openDetailPane}>
                 <h3>{props.milestone.Title}</h3>
                 <p>{props.milestone.Description}</p>
             </div>
-            <div className="text-container rewards pointer" onClick={openDetailPane}>
+            <div className="text-container rewards" onClick={openDetailPane}>
                 <ExpeditionSeasonRewardsOnlyTile rewards={props.milestone.Rewards} />
             </div>
-            <div className="rewards-container">
-                <i className="material-icons x2 pointer" onClick={openDetailPane}>info</i>
-            </div>
+            {
+                (disabled === false) &&
+                <div className="rewards-container">
+                    <i className="material-icons x2 pointer" onClick={openDetailPane}>info</i>
+                </div>
+            }
         </div>
     );
 }

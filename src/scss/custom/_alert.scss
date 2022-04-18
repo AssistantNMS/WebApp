@@ -1,0 +1,12 @@
+.alert {
+    justify-content: center;
+
+    &.alert-full {
+        border-radius: 0;
+    }
+
+    &.alert-error {
+        background-color: rgba(200, 0, 0, 0.5);
+        color: white;
+    }
+}

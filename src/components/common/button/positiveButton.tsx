@@ -7,6 +7,7 @@ interface IProps {
     additionalClass?: string;
     children?: any;
     icon?: string;
+    disabled?: boolean;
     iconPosition?: 'left' | 'right';
     onClick?: () => void;
 }
@@ -19,7 +20,7 @@ export const PositiveButton: React.FC<IProps> = (props: IProps) => {
     };
     return (
         <>
-            <div className={classNames('customButton noselect', props.additionalClass || '')}
+            <div className={classNames('customButton noselect', props.additionalClass || '', { 'disabled': props.disabled ?? false })}
                 draggable={false}
                 onClick={props.onClick}>
                 {

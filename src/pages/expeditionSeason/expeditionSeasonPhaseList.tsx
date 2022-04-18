@@ -83,12 +83,21 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
         setSnapPoint(snapPoint);
     }
 
+    const infoNotComplete = (expedition?.Rewards?.length ?? 0) < 1;
     const title = i18next.t(LocaleKey.seasonalExpedition);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div className="content">
+                {
+                    infoNotComplete &&
+                    <div className="alert alert-full alert-error row">
+                        <i className="material-icons">error</i>&nbsp;&nbsp;
+                        <span style={{ paddingTop: '0.15em' }}>This data is incomplete and we are working on getting accurate information!</span>
+                        &nbsp;&nbsp;<i className="material-icons">error</i>
+                    </div>
+                }
                 <div className="container full pt1 pb5">
                     <ExpeditionSeasonHeader
                         networkState={expeditionStatus}
@@ -113,7 +122,7 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
                     {detailPane}
                 </div>
             </BottomModalSheet>
-        </DefaultAnimation>
+        </DefaultAnimation >
     );
 }
 
