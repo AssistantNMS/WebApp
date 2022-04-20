@@ -278,7 +278,7 @@ export const displayRewardFrom = (item: GameItemModel) => {
             nodes.push(<RewardFromSeasonalExpeditionTile seasId={`seas-${expSeasonNum}`} />);
         }
 
-        const twitchCampaignKeySplit = UsageKey.isTwitchCapaign.split("{0}");
+        const twitchCampaignKeySplit = UsageKey.isTwitchCampaign.split("{0}");
         if (usages.filter((u) => u.includes(twitchCampaignKeySplit[0]))) {
             const expSeasUsageKey =
                 usages.filter((u) => u.includes(twitchCampaignKeySplit[0]));
