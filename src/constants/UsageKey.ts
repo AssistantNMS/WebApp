@@ -13,5 +13,5 @@ export const UsageKey = {
     isQuicksilver: 'IsQuicksilver',
 
     isExpeditionSeason: 'IsExpeditionSeason{0}Reward',
-    isTwitchCapaign: 'IsTwitchCapaign{0}Reward',
+    isTwitchCampaign: 'IsTwitchCampaign{0}Reward',
 }
