@@ -24,20 +24,40 @@ import { RewardFromSeasonalExpeditionTile } from '../../components/tilePresenter
 import { RewardFromTwitchTile } from '../../components/tilePresenter/rewardFromTile/rewardFromTwitchPresenter';
 import { RewardFromQuicksilverTile } from '../../components/tilePresenter/rewardFromTile/rewardTilePresenter';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
+import { PositiveButton } from '../../components/common/button/positiveButton';
+import * as Route from '../../constants/Route';
+import { IdPrefix } from '../../constants/IdPrefix';
 
-export const displayRequiredItems = (resArray: Array<RequiredItemDetails>) => {
+export const displayRequiredItems = (resArray: Array<RequiredItemDetails>, navigate: (url: string, data: any) => void) => {
     if (resArray == null || resArray.length < 1) return null;
 
     return (
         <CommonSection
             heading={i18next.t(LocaleKey.craftedUsing)}
             content={
-                <GenericListPresenter
-                    list={resArray}
-                    presenter={RequiredItemDetailsListTile}
-                    isCentered={shouldListBeCentered(resArray.length)}
-                    limitResultsTo={9}
-                />
+                <>
+                    <GenericListPresenter
+                        list={resArray}
+                        presenter={RequiredItemDetailsListTile}
+                        isCentered={shouldListBeCentered(resArray.length)}
+                        limitResultsTo={9}
+                    />
+                    {
+                        (resArray.filter(r => !r.Id.includes(IdPrefix.RawMaterial)).length > 0) &&
+                        <PositiveButton
+                            additionalClass="mt-1em"
+                            children={<span>{i18next.t(LocaleKey.viewAllRawMaterialsRequired)}</span>}
+                            onClick={() => navigate(Route.genericAllRequirements,
+                                {
+                                    state: {
+                                        typeName: i18next.t(LocaleKey.cart),
+                                        requiredItems: resArray,
+                                    }
+                                }
+                            )}
+                        />
+                    }
+                </>
             }
         />
     );

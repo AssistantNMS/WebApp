@@ -9,6 +9,7 @@ import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requ
 import { NetworkState } from '../../constants/NetworkState';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { Tree } from '../../contracts/tree/tree';
+import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { GenericPageAllRequiredTree } from './genericPageAllRequiredTree';
 const SegmentedControl = require('segmented-control');
@@ -41,6 +42,7 @@ export const GenericPageAllRequiredPresenter: React.FC<IProps> = (props: IProps)
             <GenericListPresenter
                 list={requiredItems}
                 presenter={RequiredItemDetailsListTile}
+                isCentered={shouldListBeCentered(requiredItems.length)}
             />
         );
     }

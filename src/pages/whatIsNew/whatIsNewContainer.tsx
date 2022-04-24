@@ -32,7 +32,7 @@ export class WhatIsNewContainerUnconnected extends React.Component<IProps, IStat
             whatIsNewStatus: NetworkState.Loading,
             whatIsNewSearchObj: {
                 appGuid: window.config?.assistantAppsAppGuid ?? defaultConfig.assistantAppsAppGuid,
-                platforms: [PlatformType.web, PlatformType.android, PlatformType.iOS],
+                platforms: [PlatformType.web],
                 languageCode: props.language,
                 page: 1,
             },
