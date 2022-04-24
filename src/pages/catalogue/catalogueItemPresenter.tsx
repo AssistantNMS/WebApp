@@ -28,6 +28,7 @@ import { IReduxProps } from './catalogueItem.Redux';
 import { DecriptionRegexHighlightText } from '../../components/common/descriptionRegexHighlighter';
 import { PlatformFloatingActionButton } from '../../components/floatingActionButton/platformFloatingActionButton';
 import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
+import { useNavigate } from 'react-router-dom';
 
 interface IProps extends IReduxProps {
     // Container State    
@@ -57,6 +58,7 @@ interface IProps extends IReduxProps {
 }
 
 export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
+    const navigate = useNavigate();
     const [isDetailPaneOpen, setDetailPaneOpen] = useState<boolean>(false);
 
     const getFloatingActionButtons = (allItems: boolean): Array<any> => {
@@ -132,7 +134,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     <AdditionalInfoChipRow additionalData={props.additionalData} />
 
                     {displayObsoleteTech(props.item.Usages)}
-                    {displayRequiredItems(props.requiredItems)}
+                    {displayRequiredItems(props.requiredItems, navigate)}
                     {displayUsedToCreateItems(props.usedToCreate)}
                     {displayRechargedByItems(props.rechargedBy)}
                     {displayUsedToRechargeItems(props.item.Id, props.item.Name, props.usedToRecharge)}
