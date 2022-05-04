@@ -61,7 +61,15 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
             <StateProvider store={store}>
                 <BrowserRouter>
                     <App />
-                    <ToastContainer newestOnTop={false} theme="colored" />
+                    <ToastContainer
+                        position="bottom-right"
+                        theme="colored"
+                        autoClose={false}
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        draggable
+                    />
                 </BrowserRouter>
             </StateProvider>
         </DependencyInjectionProvider>

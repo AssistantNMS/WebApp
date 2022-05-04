@@ -4,7 +4,6 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useLocation } from 'react-router';
 import { Route, Routes } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
 import { mapDispatchToProps, mapStateToProps } from './App.Redux';
 import { Drawer } from './components/core/drawer/drawer';
 import { NavBarFake } from './components/core/navbar/navbarFake';
@@ -118,16 +117,8 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             </Routes>
           </AnimatePresence>
         </div>
-      </ScrollToTop >
-      <ToastContainer
-        position="bottom-left"
-        autoClose={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        draggable
-      />
-    </div >
+      </ScrollToTop>
+    </div>
   );
 }
 
