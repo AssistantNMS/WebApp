@@ -7,6 +7,7 @@ import { AdditionalInfoChip } from '../common/chip/additionalInfoChip';
 import { LazyLoadImage } from './lazyLoadImage/lazyLoadImage';
 import { DecriptionRegexHighlightText } from '../common/descriptionRegexHighlighter';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
+import { UsageKey } from '../../constants/UsageKey';
 
 interface IWithDepInj {
     toastService: ToastService;
@@ -18,7 +19,7 @@ interface IWithoutDepInj {
     Name?: string;
     Group?: string;
     CdnUrl?: string;
-    HasDevProperties?: boolean;
+    Usages?: Array<string>;
     Description?: string;
     Link?: any;
     controlLookup?: Array<PlatformControlMapping>;
@@ -48,7 +49,7 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                     </a>
                 }
                 {
-                    props.HasDevProperties &&
+                    props.Usages?.includes(UsageKey.hasDevProperties) &&
                     <i className="material-icons pointer"
                         onClick={props.openDevProperties}
                         style={{ position: 'absolute', top: '.5em', left: '.5em', color: invertColor(props.Colour || '000000') }}>code</i>
