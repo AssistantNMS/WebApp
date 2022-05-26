@@ -91,7 +91,7 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
             <NavBar title={title} />
             <div className="content">
                 {
-                    infoNotComplete &&
+                    (infoNotComplete && expeditionStatus === NetworkState.Success) &&
                     <div className="alert alert-full alert-error row noselect">
                         <i className="material-icons">error</i>&nbsp;&nbsp;
                         <span style={{ paddingTop: '0.15em' }}>This data is incomplete and we are working on getting accurate information!</span>
