@@ -37,9 +37,10 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
         return result;
     }
 
-    const requiredItemsToNodeArray = (rowIndex: number, startIndex: number, endIndex: number, row: RequiredItemDetails | CustomizedRequiredItemDetails): Array<ReactNode> => {
+    const requiredItemsToNodeArray = (rowIndex: number, startIndex: number, endIndex: number, rows: Array<RequiredItemDetails | CustomizedRequiredItemDetails>): Array<ReactNode> => {
         const result: Array<ReactNode> = [];
         const baseKey = `${rowIndex}-${startIndex}`;
+        const row: RequiredItemDetails | CustomizedRequiredItemDetails = rows[rowIndex];
 
         if (rowIndex > startIndex) {
             result.push(<span key={`${baseKey}-+`}>&nbsp;+&nbsp;</span>);
@@ -50,7 +51,10 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
         }
 
         if (row.Quantity === 0) {
-            result.push(<span key={`${baseKey}-name-no-quantity`} className="item-name">{row.Name}&nbsp;</span>);
+            result.push(<span key={`${baseKey}-name-no-quantity`} className="item-name">{row.Name}</span>);
+            if (rows.length > 1) {
+                result.push(<span key={`${baseKey}-name-no-space`} className="item-name">&nbsp;</span>);
+            }
             result.push(<span key={`${baseKey}-blueprint`}>{i18next.t(LocaleKey.blueprint)}</span>);
         } else {
             const quantityRange = (row as CustomizedRequiredItemDetails).QuantityRange;
@@ -64,7 +68,7 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
         }
 
         if (props.addExtraPadding) {
-            if ((rowIndex === endIndex)) {
+            if ((rows.length > 1) && (rowIndex === endIndex)) {
                 result.push(<span key={`${baseKey}-space`} style={{ opacity: 0 }}>&nbsp;+&nbsp;</span>);
             }
         }
@@ -82,7 +86,7 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
 
         let localEndIndex = (inputIndex === ((props.limitRequiredItems ?? 0) - 1)) ? inputIndex : endIndex;
         if (props.limitRequiredItems == null || inputIndex < props.limitRequiredItems) {
-            const tempArray = requiredItemsToNodeArray(inputIndex, startIndex, localEndIndex, props.requiredItems[inputIndex]);
+            const tempArray = requiredItemsToNodeArray(inputIndex, startIndex, localEndIndex, props.requiredItems);
             for (const temp of tempArray) {
                 quantities.push(temp);
             }

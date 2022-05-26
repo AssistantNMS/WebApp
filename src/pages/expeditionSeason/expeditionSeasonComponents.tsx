@@ -14,7 +14,7 @@ import { ExpeditionSeasonRewardTile } from '../../components/tilePresenter/rewar
 import { AppImage } from '../../constants/AppImage';
 import { NetworkState } from '../../constants/NetworkState';
 import { ExpeditionSeasonViewModel } from '../../contracts/generated/Model/HelloGames/expeditionSeasonViewModel';
-import { ExpeditionSeason, ExpeditionSeasonPhase, ExpeditionSeasonReward } from '../../contracts/helloGames/expeditionSeason';
+import { ExpeditionSeason, ExpeditionSeasonPhase, ExpeditionSeasonMilestone, ExpeditionSeasonReward, MilestoneType } from '../../contracts/helloGames/expeditionSeason';
 import { friendlyTimeLeft, guideFormatDate, percentageProgress } from '../../helper/dateHelper';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
@@ -184,7 +184,7 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
             </div>
             <div className="col-12 col-lg-9 col-md-9 col-sm-12 col-xs-9">
                 {
-                    (props.phase.Milestones ?? []).map((milestone: ExpeditionSeasonPhase, index: number) => (
+                    (props.phase.Milestones ?? []).map((milestone: ExpeditionSeasonMilestone, index: number) => (
                         <ExpeditionSeasonPhaseMilestone
                             key={`${milestone?.Id}-${index}`}
                             milestone={milestone}
@@ -198,7 +198,7 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
 }
 
 interface IExpeditionSeasonPhaseMilestonesProps {
-    milestone?: ExpeditionSeasonPhase;
+    milestone?: ExpeditionSeasonMilestone;
     setDetailPane: (newNode: ReactNode, snapPoint: number) => void;
 }
 
@@ -222,21 +222,56 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
         );
     }
 
+    const isEncrypted = props.milestone?.Encryption != null;
+    const classes = classNames(
+        'expedition-season-milestone noselect',
+        {
+            'encrypted': isEncrypted,
+            'pointer': !disabled
+        }
+    );
+    // const encDescrip = props.milestone?.Encryption?.Description ?? '';
+
     return (
-        <div data-id="ExpeditionSeasonPhaseMilestone" className={classNames('expedition-season-milestone noselect', { 'pointer': !disabled })}>
-            <ImageContainer Icon={props.milestone.Icon} Name={props.milestone.Title} />
-            <div className="text-container" onClick={openDetailPane}>
-                <h3>{props.milestone.Title}</h3>
-                <p>{props.milestone.Description}</p>
-            </div>
-            <div className="text-container rewards" onClick={openDetailPane}>
-                <ExpeditionSeasonRewardsOnlyTile rewards={props.milestone.Rewards} />
+        <div data-id="ExpeditionSeasonPhaseMilestone" className={classes}>
+            <div className="milestone-content">
+                <ImageContainer
+                    Icon={props.milestone.Icon}
+                    Name={props.milestone.Title}
+                />
+                <div className="text-container" onClick={openDetailPane}>
+                    <h3>{props.milestone.Title}</h3>
+                    <p>{props.milestone.Description}</p>
+                </div>
+                <div className="text-container rewards" onClick={openDetailPane}>
+                    <ExpeditionSeasonRewardsOnlyTile rewards={props.milestone.Rewards} />
+                </div>
+                {
+                    (disabled === false) &&
+                    <div className="rewards-container">
+                        <i className="material-icons x2 pointer" onClick={openDetailPane}>info</i>
+                    </div>
+                }
+                {
+                    (props.milestone.Type === MilestoneType.Optional) &&
+                    <div className="middle-ribbon">Optional</div>
+                }
             </div>
             {
-                (disabled === false) &&
-                <div className="rewards-container">
-                    <i className="material-icons x2 pointer" onClick={openDetailPane}>info</i>
-                </div>
+                isEncrypted && (
+                    <div className="milestone-encr-content noselect">
+                        <ImageContainer
+                            Icon={props.milestone.Encryption.Icon}
+                            Name={props.milestone?.Encryption?.Title ?? 'encrypted'}
+                        />
+                        <div className="text-container full">
+                            <h3>{props.milestone?.Encryption?.Title}</h3>
+                            {/* <DecriptionRegexHighlightText
+                                orig={encDescrip.replace('%DESC%', '')}
+                            /> */}
+                        </div>
+                    </div>
+                )
             }
         </div>
     );
