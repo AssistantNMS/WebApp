@@ -5,12 +5,8 @@ export class AppImage {
     static twitch: string = 'special/twitchAlt.png';
     static quicksilver: string = 'special/quicksilverAlt.png';
 
-    static expeditionSeasonBackground1: string = AppImage.base + 'special/expeditionsCoverUnused.jpg';
-    static expeditionSeasonBackground2: string = AppImage.base + 'special/expeditionsCover.jpg';
-    static expeditionSeasonBackground3: string = AppImage.base + 'special/expeditionsCover1.jpg';
-    static expeditionSeasonBackground4: string = AppImage.base + 'special/expeditionsCover2.jpg';
-    static expeditionSeasonBackground5: string = AppImage.base + 'special/expeditionsCover3.jpg';
-    static expeditionSeasonBackground6: string = AppImage.base + 'special/expeditionsCover6.jpg';
+    static expeditionSeasonBackgroundPrefix: string = AppImage.base + 'special/expedition-';
+    static expeditionSeasonBackgroundBackup: string = AppImage.base + 'special/expeditionsCoverUnused.jpg';
 
     static milestonePatches: string = AppImage.base + 'milestonePatches/';
     static expeditionsUnusedPatches: string = AppImage.milestonePatches + 'ENCRYPTED.PATCH.2.png';

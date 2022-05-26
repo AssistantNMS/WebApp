@@ -1,13 +1,11 @@
 import { AppImage } from '../constants/AppImage';
 
 export const getBackgroundForExpedition = (seasId: string) => {
-    if (seasId.includes('seas-1')) return AppImage.expeditionSeasonBackground2;
-    if (seasId.includes('seas-2')) return AppImage.expeditionSeasonBackground3;
-    if (seasId.includes('seas-3')) return AppImage.expeditionSeasonBackground4;
-    if (seasId.includes('seas-4')) return AppImage.expeditionSeasonBackground5;
-    if (seasId.includes('seas-5')) return AppImage.expeditionSeasonBackground1;
-    if (seasId.includes('seas-6')) return AppImage.expeditionSeasonBackground6;
-    return AppImage.expeditionSeasonBackground1;
+    const localSeasId = seasId.replace('-redux', '');
+    if (localSeasId.includes('seas-')) {
+        return AppImage.expeditionSeasonBackgroundPrefix + localSeasId + '.jpg';
+    }
+    return AppImage.expeditionSeasonBackgroundBackup;
 }
 
 export const getPatchForExpedition = (icon: string) => {
