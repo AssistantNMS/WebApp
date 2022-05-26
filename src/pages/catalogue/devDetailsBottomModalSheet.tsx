@@ -53,7 +53,7 @@ export const DevDetailsBottomModalSheet: React.FC<IProps> = (props: IProps) => {
             return (<TileLoading />);
         }
         if (networkState === NetworkState.Error || devDetail == null) {
-            return (<Error />);
+            return (<div className="col-12"><Error /></div>);
         }
 
         const details = [];
