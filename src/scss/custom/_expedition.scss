@@ -25,8 +25,6 @@
 
     .expedition-season-milestone {
         position: relative;
-        overflow: hidden;
-        display: flex;
         width: 100%;
         border-top: 5px solid rgba(0, 0, 0, 0.1);
 
@@ -38,14 +36,73 @@
         //     transform: scale(1.25);
         // }
 
+        .milestone-content {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            width: 100%;
+        }
+
+        .milestone-encr-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            transition: opacity 250ms ease-in-out;
+            display: flex;
+            width: 100%;
+
+            .text-container {
+                overflow: hidden;
+
+                &.full {
+                    padding-top: 0;
+
+                    h3 {
+                        line-height: 75px;
+                    }
+                }
+            }
+
+            .highlight-text {
+                .pb1 {
+                    display: inline-block;
+                }
+            }
+        }
+
+        &.encrypted .milestone-content {
+            filter: blur(20px);
+            transition: filter 250ms ease-in-out;
+        }
+
+        &:hover.encrypted {
+            .milestone-content {
+                filter: unset;
+
+                .encrypted-content {
+                    opacity: 0;
+                }
+            }
+
+            .milestone-encr-content {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+
 
         .image-container {
             min-width: 100px;
-        }
 
-        img {
-            width: 100%;
-            max-width: 100px;
+            img {
+                width: 100%;
+                max-width: 100px;
+            }
         }
 
         .text-container {
