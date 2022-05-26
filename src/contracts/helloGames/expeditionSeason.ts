@@ -16,8 +16,31 @@ export interface ExpeditionSeasonPhase {
     Title: string;
     Description: string;
     DescriptionDone: string;
-    Milestones?: Array<ExpeditionSeasonPhase>;
+    Milestones?: Array<ExpeditionSeasonMilestone>;
     Rewards: Array<ExpeditionSeasonReward>;
+}
+
+export interface ExpeditionSeasonMilestone {
+    Id: string;
+    Icon: string;
+    Title: string;
+    Description: string;
+    DescriptionDone: string;
+    Type: string,
+    Encryption: ExpeditionSeasonMilestoneEncryption,
+    Rewards: Array<ExpeditionSeasonReward>;
+}
+
+export const MilestoneType = {
+    Normal: 'Normal',
+    Rendezvous: 'Rendezvous',
+    Optional: 'Optional',
+}
+
+export interface ExpeditionSeasonMilestoneEncryption {
+    Icon: string;
+    Title: string;
+    Description: string;
 }
 
 export interface ExpeditionSeasonReward {

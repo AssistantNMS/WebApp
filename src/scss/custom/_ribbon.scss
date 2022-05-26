@@ -17,3 +17,17 @@
     /* Centerize the text content */
     text-align: center;
 }
+
+
+.middle-ribbon {
+    width: 160px;
+    padding: 15px 0 10px 0;
+    position: absolute;
+    top: -6px;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}

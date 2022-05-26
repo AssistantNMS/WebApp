@@ -14,7 +14,7 @@ import { ExpeditionSeasonRewardTile } from '../../components/tilePresenter/rewar
 import { AppImage } from '../../constants/AppImage';
 import { NetworkState } from '../../constants/NetworkState';
 import { ExpeditionSeasonViewModel } from '../../contracts/generated/Model/HelloGames/expeditionSeasonViewModel';
-import { ExpeditionSeason, ExpeditionSeasonPhase, ExpeditionSeasonReward } from '../../contracts/helloGames/expeditionSeason';
+import { ExpeditionSeason, ExpeditionSeasonPhase, ExpeditionSeasonMilestone, ExpeditionSeasonReward, MilestoneType } from '../../contracts/helloGames/expeditionSeason';
 import { friendlyTimeLeft, guideFormatDate, percentageProgress } from '../../helper/dateHelper';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
@@ -184,7 +184,7 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
             </div>
             <div className="col-12 col-lg-9 col-md-9 col-sm-12 col-xs-9">
                 {
-                    (props.phase.Milestones ?? []).map((milestone: ExpeditionSeasonPhase, index: number) => (
+                    (props.phase.Milestones ?? []).map((milestone: ExpeditionSeasonMilestone, index: number) => (
                         <ExpeditionSeasonPhaseMilestone
                             key={`${milestone?.Id}-${index}`}
                             milestone={milestone}
@@ -198,7 +198,7 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
 }
 
 interface IExpeditionSeasonPhaseMilestonesProps {
-    milestone?: ExpeditionSeasonPhase;
+    milestone?: ExpeditionSeasonMilestone;
     setDetailPane: (newNode: ReactNode, snapPoint: number) => void;
 }
 
@@ -222,6 +222,8 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
         );
     }
 
+    console.log({ ...props.milestone });
+
     return (
         <div data-id="ExpeditionSeasonPhaseMilestone" className={classNames('expedition-season-milestone noselect', { 'pointer': !disabled })}>
             <ImageContainer Icon={props.milestone.Icon} Name={props.milestone.Title} />
@@ -238,6 +240,10 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
                     <i className="material-icons x2 pointer" onClick={openDetailPane}>info</i>
                 </div>
             }
-        </div>
+            {
+                (props.milestone.Type === MilestoneType.Optional) &&
+                <div className="middle-ribbon">Optional</div>
+            }
+        </div >
     );
 }

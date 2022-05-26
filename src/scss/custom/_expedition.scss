@@ -24,6 +24,8 @@
     // }
 
     .expedition-season-milestone {
+        position: relative;
+        overflow: hidden;
         display: flex;
         width: 100%;
         border-top: 5px solid rgba(0, 0, 0, 0.1);
@@ -73,7 +75,7 @@
             display: flex;
             align-items: center;
             margin-left: 1em;
-            margin-right: 1em;
+            margin-right: 2em;
 
             i {
                 color: $brand-secondary;
