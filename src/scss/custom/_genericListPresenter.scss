@@ -21,6 +21,13 @@ $gen-item-extra-radius: 0.5em;
                 height: 100%;
             }
 
+            &.qs-special {
+                .text-container.full p {
+                    margin: 0;
+                    font-size: 20px;
+                }
+            }
+
             .smol-image-container {
                 height: 100px;
                 padding-left: 10px;
@@ -50,12 +57,12 @@ $gen-item-extra-radius: 0.5em;
                     height: 100px;
                     min-width: 100px;
 
-                    > span {
+                    >span {
                         height: 100%;
                         width: 100%;
                         position: relative;
 
-                        > img {
+                        >img {
                             object-fit: cover;
                             height: 100%;
                             width: 100%;
@@ -176,14 +183,14 @@ $gen-item-extra-radius: 0.5em;
                         // padding-right: 1em;
                         // margin-top: 1rem;
 
-                        > * {
+                        >* {
                             // margin-top: .25em;
                             margin-right: 0.5em;
                             display: block;
                             color: white;
                         }
 
-                        > .not-centered {
+                        >.not-centered {
                             margin-top: 50%;
                         }
                     }
