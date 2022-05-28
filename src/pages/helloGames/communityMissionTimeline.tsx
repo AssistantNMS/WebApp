@@ -4,12 +4,16 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
+import { ImageContainer } from '../../components/common/tile/imageContainer';
+import { TextContainer } from '../../components/common/tile/textContainer';
 import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
 import { BasicLink } from '../../components/core/link';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { IQuicksilverItemWithoutDepInj, QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
+import { QuicksilverRequiredItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemRequiredListTile';
+import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { NetworkState } from '../../constants/NetworkState';
 import { QuicksilverItem, QuicksilverStore } from '../../contracts/data/quicksilver';
 import { CommunityMissionViewModel } from '../../contracts/generated/Model/HelloGames/communityMissionViewModel';
@@ -56,14 +60,51 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
         setStatus(NetworkState.Success);
     }
 
-    const renderQuickSilverContent = (items: Array<QuicksilverItem>): ReactNode => {
+    const renderQuickSilverContent = (qs: QuicksilverStore): ReactNode => {
         const customQuicksilverItemListTile = (props: QuicksilverItem, index: number) => {
             const customProps: IQuicksilverItemWithoutDepInj = { ...props, isDisabled: false, showPrice: true };
             return QuicksilverItemListTile(customProps, index);
         }
 
+        const items: Array<QuicksilverItem> = qs.Items;
+
+        if (qs.Name != null && qs.Icon != null) {
+            return (
+                <div key={items.map(i => i.ItemId).join(',')} data-id="QS-timepine-item">
+
+                    <div className="generic-item-list row justify">
+                        <div className="gen-item col-12">
+                            <div data-id="QS-Special" className="gen-item-container qs-special" draggable={false}>
+                                <ImageContainer Name={qs.Name} Icon={qs.Icon} />
+                                <div className="gen-item-content-container">
+                                    <TextContainer text={qs.Name} additionalCss="full" />
+                                    <div className="quantity-container">{i18next.t(LocaleKey.communityMission)}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="generic-item-list row justify pt-3">
+                        <div>{i18next.t(LocaleKey.requiresTheFollowing)}</div>
+                    </div>
+                    <div className="generic-item-list row justify">
+                        {
+                            (qs.ItemsRequired ?? []).map((appId: string, index: number) => {
+                                return (
+                                    <div key={`generic-item ${index} ${appId}`} data-key={appId} className="gen-item col-12">
+                                        <QuicksilverRequiredItemListTile
+                                            Id={appId}
+                                            Quantity={0}
+                                        />
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+            );
+        }
         return (
-            <div key={items.map(i => i.ItemId).join(',')} className="">
+            <div key={items.map(i => i.ItemId).join(',')} data-id="QS-timepine-item">
                 <GenericListPresenter
                     list={items}
                     bootstrapClasses="col-12 qs-timeline"
@@ -99,7 +140,7 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
                                     iconStyle={{ background: '#80cbc4', color: '#000' }}
                                     icon={<p style={{ paddingTop: '1em' }}>{qs.MissionId}</p>}
                                 >
-                                    {renderQuickSilverContent(qs.Items)}
+                                    {renderQuickSilverContent(qs)}
                                 </VerticalTimelineElement>
                             );
                         })

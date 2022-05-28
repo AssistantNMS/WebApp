@@ -9,10 +9,13 @@ import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { IQuicksilverItemWithoutDepInj, QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
+import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
+import { AppImage } from '../../constants/AppImage';
 import { NetworkState } from '../../constants/NetworkState';
 import { communityMissionTimeline } from '../../constants/Route';
 import { QuicksilverItem, QuicksilverStore } from '../../contracts/data/quicksilver';
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
+import { RequiredItem } from '../../contracts/RequiredItem';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 interface IProps {
@@ -75,7 +78,6 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
     const displayQuicksilverData = (communityMission: CommunityMissionViewModel, quicksilverRewards: Array<QuicksilverStore>, title?: LocaleKey) => {
         const qsRewards = quicksilverRewards.filter(qs => qs.MissionId === communityMission.missionId);
         const qsReward = (qsRewards != null && qsRewards.length > 0) ? qsRewards[0] : null;
-        if (qsReward == null) return null;
 
         const customQuicksilverItemListTile = (communityMission: CommunityMissionViewModel) => (props: QuicksilverItem, index: number) => {
             let isDisabled = props.Tier >= communityMission.currentTier;
@@ -86,25 +88,63 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
             return QuicksilverItemListTile(customProps, index);
         }
 
+        const customRequiredItemListTile = (communityMission: CommunityMissionViewModel) => (appId: string, index: number) => {
+            const customProps: RequiredItem = {
+                Id: appId,
+                Quantity: 0,
+            };
+            return RequiredItemListTile(customProps);
+        }
+
+        let localTitle: string | undefined = title !== null
+            ? i18next.t(title!)
+            : title;
+        if (qsReward?.Name != null) {
+            localTitle = qsReward?.Name;
+        }
+
         return (
             <>
                 {
-                    title &&
+                    localTitle &&
                     <>
                         <hr />
-                        <h3 className="noselect">{i18next.t(title)}</h3>
+                        <h3 className="noselect">
+                            {
+                                (qsReward?.Icon != null) &&
+                                <span>
+                                    <img src={'/' + AppImage.base + qsReward.Icon} alt="special community mission" height="50px" />
+                                    &nbsp;&nbsp;
+                                </span>
+                            }
+                            {localTitle}
+                        </h3>
                     </>
                 }
                 <div className="row noselect pt-3">
                     <div className="col-12">
                         <GenericListPresenter
-                            list={qsReward.Items}
+                            list={qsReward?.Items ?? []}
                             presenter={customQuicksilverItemListTile(communityMission)}
                             identifier={(comM: QuicksilverItem) => comM.ItemId}
                             isCentered={true}
                         />
                     </div>
                 </div>
+                {
+                    ((qsReward?.ItemsRequired ?? []).length > 0) &&
+                    <div className="row noselect">
+                        <div className="col-12 pb-2">{i18next.t(LocaleKey.requiresTheFollowing)}</div>
+                        <div className="col-12 pb-3">
+                            <GenericListPresenter
+                                list={qsReward?.ItemsRequired ?? []}
+                                presenter={customRequiredItemListTile(communityMission)}
+                                identifier={(appId: string) => appId}
+                                isCentered={true}
+                            />
+                        </div>
+                    </div>
+                }
             </>
         );
     }
