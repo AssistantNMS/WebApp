@@ -1,11 +1,11 @@
-import { ResultWithValue } from '../../contracts/results/ResultWithValue';
-import { GameItemModel } from '../../contracts/GameItemModel';
-import { GameItemService } from './GameItemService';
 import { CatalogueType } from '../../constants/CatalogueType';
-import { anyObject } from '../../helper/typescriptHacks';
-import { getHashForObject } from '../../helper/hashHelper';
+import { GameItemModel } from '../../contracts/GameItemModel';
 import { RequiredItem } from '../../contracts/RequiredItem';
-import i18next from 'i18next';
+import { ResultWithValue } from '../../contracts/results/ResultWithValue';
+import { getHashForObject } from '../../helper/hashHelper';
+import { anyObject } from '../../helper/typescriptHacks';
+import { getCurrentLang } from '../../localization/Translate';
+import { GameItemService } from './GameItemService';
 
 export class AllGameItemsService {
   private typesArray = [
@@ -31,7 +31,7 @@ export class AllGameItemsService {
   }
 
   async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
-    const hash = getHashForObject([argsArray, i18next.language]);
+    const hash = getHashForObject([argsArray, getCurrentLang()]);
 
     if (this._hashLookup != null && this._hashLookup[hash] != null) {
       return this._hashLookup[hash];

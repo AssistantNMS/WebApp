@@ -1,5 +1,5 @@
 import * as React from 'react';
-import i18next from 'i18next';
+import { translate } from '../../../localization/Translate';
 import { Link } from 'react-router-dom';
 
 import { LocaleKey } from '../../../localization/LocaleKey';
@@ -19,7 +19,6 @@ interface IWithDepInj {
     gameItemService: GameItemService;
 }
 interface IWithoutDepInj {
-    TypeName: string;
     Icon: string;
     Id: string;
     RequiredItems: Array<RequiredItem>;
@@ -76,13 +75,12 @@ class CartItemListTileClass extends React.Component<IProps, IState> {
     editItem = async (e: any) => {
         e.preventDefault();
         if (this.props.editItemInCart) {
-            const quantityResult = await getQuantityDialog(i18next.t(LocaleKey.quantity), this.props.Quantity);
+            const quantityResult = await getQuantityDialog(translate(LocaleKey.quantity), this.props.Quantity);
             if (quantityResult.isSuccess === false) return;
 
             const newCartItem = {
                 Id: this.props.Id,
                 Icon: this.props.Icon,
-                TypeName: this.props.TypeName,
                 RequiredItems: this.props.RequiredItems,
                 Quantity: quantityResult.value
             }
@@ -103,7 +101,7 @@ class CartItemListTileClass extends React.Component<IProps, IState> {
                 <ImageContainer Name={this.state.name} Icon={this.state.icon} Colour={this.state.colour} />
                 <div className="gen-item-content-container">
                     <TextContainer text={this.state.name} />
-                    <div className="quantity-container">{i18next.t(LocaleKey.quantity)}: {this.props.Quantity}</div>
+                    <div className="quantity-container">{translate(LocaleKey.quantity)}: {this.props.Quantity}</div>
                     <ActionContainer actions={this.getActions()} />
                 </div>
             </Link>

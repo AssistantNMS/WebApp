@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import { translate } from '../../localization/Translate';
 import React from 'react';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -22,7 +22,7 @@ export const TechTreePresenter: React.FC<IProps> = (props: IProps) => {
     const handleLoadingOrError = () => {
         if (props.networkState === NetworkState.Loading) return <div className="pt-5"><SmallLoading /></div>;
         if (props.networkState === NetworkState.Error) {
-            return (<h2>{i18next.t(LocaleKey.error)}</h2>);
+            return (<h2>{translate(LocaleKey.error)}</h2>);
         }
         return displayDetails();
     }
@@ -40,11 +40,11 @@ export const TechTreePresenter: React.FC<IProps> = (props: IProps) => {
     return (
         <>
             <HeadComponent
-                title={i18next.t(LocaleKey.techTree)}
-                description={i18next.t(LocaleKey.techTree)}
+                title={translate(LocaleKey.techTree)}
+                description={translate(LocaleKey.techTree)}
                 selectedLanguage={props.selectedLanguage}
             />
-            <NavBar title={i18next.t(LocaleKey.techTree)} />
+            <NavBar title={translate(LocaleKey.techTree)} />
             {handleLoadingOrError()}
             <div className="col-12" style={{ marginTop: '8em' }}></div>
         </>

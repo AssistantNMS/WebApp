@@ -1,6 +1,6 @@
-import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -20,7 +20,7 @@ export const FavouritePresenterUnconnected: React.FC<IProps> = (props: IProps) =
 
     const displayFavourites = (favourites: Array<FavouriteItem>) => {
         if (favourites == null || favourites.length === 0) return (
-            <h2>{i18next.t(LocaleKey.noItems)}</h2>
+            <h2>{translate(LocaleKey.noItems)}</h2>
         );
 
         const connectedPresenter = (localProps: RequiredItem | any, index: number) => {
@@ -33,7 +33,7 @@ export const FavouritePresenterUnconnected: React.FC<IProps> = (props: IProps) =
         return <GenericListPresenter list={favourites} presenter={connectedPresenter} identifier={(item: FavouriteItem) => item.Id} />;
     };
 
-    const title = i18next.t(LocaleKey.favourites);
+    const title = translate(LocaleKey.favourites);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

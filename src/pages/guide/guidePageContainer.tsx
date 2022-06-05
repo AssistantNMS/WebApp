@@ -1,6 +1,6 @@
-import i18next from 'i18next';
 import React from 'react';
 
+import { translate } from '../../localization/Translate';
 import { NetworkState } from '../../constants/NetworkState';
 import { Guide } from '../../contracts/guide/guide';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
@@ -29,7 +29,7 @@ export class GuidePageContainerUnconnected extends React.Component<IProps, IStat
         super(props);
 
         this.state = {
-            title: i18next.t(LocaleKey.guides),
+            title: translate(LocaleKey.guides),
             guideItems: [],
             status: NetworkState.Loading,
         }

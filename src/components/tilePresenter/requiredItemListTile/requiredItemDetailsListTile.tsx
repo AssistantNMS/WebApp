@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import i18next from 'i18next';
+import { translate } from '../../../localization/Translate';
 import { Link } from 'react-router-dom';
 
 import { LocaleKey } from '../../../localization/LocaleKey';
@@ -15,7 +15,7 @@ export const RequiredItemDetailsListTile: (props: RequiredItemDetails, index: nu
         <ImageContainer {...props} />
         <div className="gen-item-content-container">
             <TextContainer text={props.Name} />
-            <div className="quantity-container">{i18next.t(LocaleKey.quantity)}: {props.Quantity}</div>
+            <div className="quantity-container">{translate(LocaleKey.quantity)}: {props.Quantity}</div>
         </div>
     </Link>
 );

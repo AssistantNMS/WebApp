@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React from 'react';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -11,7 +11,7 @@ interface IProps {
 }
 
 export const PatreonPresenter: React.FC<IProps> = (props: IProps) => {
-    const title = i18next.t(LocaleKey.patreon);
+    const title = translate(LocaleKey.patreon);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

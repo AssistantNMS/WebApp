@@ -1,8 +1,8 @@
-import i18next from 'i18next';
 import React, { ReactNode } from 'react';
 
 import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
 import { LocaleKey } from '../../../localization/LocaleKey';
+import { translate } from '../../../localization/Translate';
 import { CustomTooltip } from '../tooltip/tooltip';
 
 export interface CustomizedRequiredItemDetails extends RequiredItemDetails {
@@ -23,7 +23,7 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
         result += (rowIndex > startIndex ? ' + ' : '');
 
         if (row.Quantity === 0) {
-            result += row.Name + ' ' + i18next.t(LocaleKey.blueprint);
+            result += row.Name + ' ' + translate(LocaleKey.blueprint);
         } else {
             const quantityRange = (row as CustomizedRequiredItemDetails).QuantityRange;
             if (quantityRange == null) {
@@ -55,7 +55,7 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
             if (rows.length > 1) {
                 result.push(<span key={`${baseKey}-name-no-space`} className="item-name">&nbsp;</span>);
             }
-            result.push(<span key={`${baseKey}-blueprint`}>{i18next.t(LocaleKey.blueprint)}</span>);
+            result.push(<span key={`${baseKey}-blueprint`}>{translate(LocaleKey.blueprint)}</span>);
         } else {
             const quantityRange = (row as CustomizedRequiredItemDetails).QuantityRange;
             if (quantityRange == null) {
@@ -97,7 +97,7 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
         quantities.pop();
         quantities.push(<span key="quantity-etc-+">&nbsp;+&nbsp;</span>);
         quantities.push(<br key="quantity-etc-br" />);
-        quantities.push(<span key="quantity-etc">{i18next.t(LocaleKey.more)}...</span>);
+        quantities.push(<span key="quantity-etc">{translate(LocaleKey.more)}...</span>);
     }
 
     return (

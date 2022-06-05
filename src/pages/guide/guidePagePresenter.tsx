@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React from 'react';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -22,7 +22,7 @@ export const GuidePagePresenter: React.FC<IProps> = (props: IProps) => {
         if (props.status === NetworkState.Error ||
             !props.guideItems ||
             props.guideItems.length < 1) {
-            return (<h2>{i18next.t(LocaleKey.noItems)}</h2>);
+            return (<h2>{translate(LocaleKey.noItems)}</h2>);
         }
         return (<GenericListPresenter list={props.guideItems} presenter={GuideCardListTile} />);
     }

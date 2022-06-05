@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import i18next from 'i18next';
+import { translate } from '../../../localization/Translate';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { DefaultAnimation } from '../../../components/common/animation/defaultAnim';
@@ -38,8 +38,8 @@ export const WeekendMissionMenuPresenter: React.FC<IProps> = (props: IProps) => 
 
     return (
         <DefaultAnimation>
-            <HeadComponent title={i18next.t(LocaleKey.weekendMission)} />
-            <NavBar title={i18next.t(LocaleKey.weekendMission)} />
+            <HeadComponent title={translate(LocaleKey.weekendMission)} />
+            <NavBar title={translate(LocaleKey.weekendMission)} />
             <div className="content no-spacing">
                 <div className="container full">
                     <div className="row weekend-mission">

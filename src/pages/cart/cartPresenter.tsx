@@ -1,6 +1,6 @@
-import i18next from 'i18next';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
@@ -24,7 +24,7 @@ export const CartPresenter: React.FC<IProps> = (props: IProps) => {
 
     const displayCartItems = (cartItems: Array<CartItem>) => {
         if (cartItems == null || cartItems.length === 0) return (
-            <h2>{i18next.t(LocaleKey.noCartItems)}</h2>
+            <h2>{translate(LocaleKey.noCartItems)}</h2>
         );
 
         const connectedPresenter = (localProps: CartItem, index: number) => {
@@ -48,18 +48,18 @@ export const CartPresenter: React.FC<IProps> = (props: IProps) => {
                 onClick={() => navigate(Route.genericAllRequirements,
                     {
                         state: {
-                            typeName: i18next.t(LocaleKey.cart),
+                            typeName: translate(LocaleKey.cart),
                             requiredItems: props.cartItems.map(ci => requiredItemFromCart(ci))
                         }
                     }
                 )}
             >
-                <span>{i18next.t(LocaleKey.viewAllRawMaterialsRequired)}</span>
+                <span>{translate(LocaleKey.viewAllRawMaterialsRequired)}</span>
             </PositiveButton>
         );
     };
 
-    const title = i18next.t(LocaleKey.cart);
+    const title = translate(LocaleKey.cart);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

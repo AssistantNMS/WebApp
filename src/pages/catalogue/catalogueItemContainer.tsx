@@ -1,7 +1,7 @@
-import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { translate } from '../../localization/Translate';
 import { NetworkState } from '../../constants/NetworkState';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
@@ -212,11 +212,11 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         const additionalData = [];
         if (itemDetail.BlueprintSource !== null && itemDetail.BlueprintSource !== BlueprintSource.unknown) {
             const bpSourceLangKey = blueprintToLocalKey(itemDetail.BlueprintSource);
-            additionalData.push({ text: `${i18next.t(LocaleKey.blueprintFrom).toString()}: ${i18next.t(bpSourceLangKey).toString()}` });
+            additionalData.push({ text: `${translate(LocaleKey.blueprintFrom).toString()}: ${translate(bpSourceLangKey).toString()}` });
         }
 
         if (itemDetail.MaxStackSize !== null && itemDetail.MaxStackSize > 0.1) {
-            additionalData.push({ text: `${i18next.t(LocaleKey.maxStackSize).toString()}: ${itemDetail.MaxStackSize}` });
+            additionalData.push({ text: `${translate(LocaleKey.maxStackSize).toString()}: ${itemDetail.MaxStackSize}` });
         }
 
         if (itemDetail.BaseValueUnits > 1) {
@@ -234,7 +234,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         if (bpCost > 0) {
             switch (itemDetail.BlueprintCostType) {
                 case CurrencyType.NANITES:
-                    const bpCostText = i18next.t(LocaleKey.blueprintCost);
+                    const bpCostText = translate(LocaleKey.blueprintCost);
                     additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: '/assets/images/nanites.png', tooltip: 'Nanites' });
                     break;
                 case CurrencyType.SALVAGEDDATA:
@@ -250,7 +250,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         }
 
         if (itemDetail.CookingValue != null && itemDetail.CookingValue > 0.0) {
-            const cookingVText = i18next.t(LocaleKey.cookingValue);
+            const cookingVText = translate(LocaleKey.cookingValue);
             const cookingV = (itemDetail.CookingValue * 100.0);
             additionalData.push({ text: `${cookingVText}: ${cookingV}%`, icon: 'fastfood' });
         }
@@ -263,7 +263,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     }
 
     const addThisItemToCart = async () => {
-        const quantityResult = await getQuantityDialog(i18next.t(LocaleKey.quantity));
+        const quantityResult = await getQuantityDialog(translate(LocaleKey.quantity));
         if (quantityResult.isSuccess === false) return;
 
         if (props.addItemToCart == null) return;

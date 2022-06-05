@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React from 'react';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { CardButton } from '../../components/common/button/cardButton';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -10,9 +10,9 @@ import { LocaleKey } from '../../localization/LocaleKey';
 
 export const LanguagePresenter: React.FC = () => {
     const buttons = [
-        { title: i18next.t(LocaleKey.useTranslationTool), event: AnalyticsEvent.externalLinkTranslationTool, url: ExternalUrls.translationTool },
+        { title: translate(LocaleKey.useTranslationTool), event: AnalyticsEvent.externalLinkTranslationTool, url: ExternalUrls.translationTool },
     ];
-    const title = i18next.t(LocaleKey.language);
+    const title = translate(LocaleKey.language);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />
@@ -21,7 +21,7 @@ export const LanguagePresenter: React.FC = () => {
                 <div className="container full pt1">
                     <div className="row">
                         <div className="col-12">
-                            <h3>{i18next.t(LocaleKey.languageContent)}</h3>
+                            <h3>{translate(LocaleKey.languageContent)}</h3>
                         </div>
                     </div>
                     <div className="row justify">

@@ -1,4 +1,3 @@
-import i18next from 'i18next';
 import React from 'react';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
@@ -11,6 +10,7 @@ import { TitleItemListTile } from '../../components/tilePresenter/titleListTile/
 import { NetworkState } from '../../constants/NetworkState';
 import { TitleData } from '../../contracts/TitleData';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { translate } from '../../localization/Translate';
 import { IReduxProps } from './titles.Redux';
 
 interface IProps extends IReduxProps {
@@ -37,7 +37,7 @@ export const TitlesPresenter: React.FC<IProps> = (props: IProps) => {
     const handleLoadingOrError = () => {
         if (props.networkState === NetworkState.Loading) return <div className="pt-5"><SmallLoading /></div>;
         if (props.networkState === NetworkState.Error) {
-            return (<h2>{i18next.t(LocaleKey.error)}</h2>);
+            return (<h2>{translate(LocaleKey.error)}</h2>);
         }
         return displayDetails();
     }
@@ -75,15 +75,15 @@ export const TitlesPresenter: React.FC<IProps> = (props: IProps) => {
     }
 
     const titlesTotals = '{0} - {1} / {2}'
-        .replace('{0}', i18next.t(LocaleKey.titles))
+        .replace('{0}', translate(LocaleKey.titles))
         .replace('{1}', props.ownedTitles?.length?.toString?.() ?? '0')
         .replace('{2}', props.titles?.length?.toString?.() ?? '0');
 
     return (
         <>
             <HeadComponent
-                title={i18next.t(LocaleKey.titles)}
-                description={i18next.t(LocaleKey.titles)}
+                title={translate(LocaleKey.titles)}
+                description={translate(LocaleKey.titles)}
                 selectedLanguage={props.selectedLanguage}
             />
             <NavBar title={titlesTotals} additionalItems={getFloatingActionButtons()} />

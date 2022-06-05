@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import { translate } from '../../localization/Translate';
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { NetworkState } from '../../constants/NetworkState';
@@ -38,7 +38,7 @@ const TitlesContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     }
 
     const setPlayerName = async () => {
-        const playerName = await getStringDialog(i18next.t(LocaleKey.playerName), props.playerName ?? '');
+        const playerName = await getStringDialog(translate(LocaleKey.playerName), props.playerName ?? '');
         if (props.setPlayerName == null) return;
         props.setPlayerName(playerName);
     }

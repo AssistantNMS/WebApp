@@ -1,6 +1,6 @@
-import i18next from 'i18next';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { PortalGlyphGridDisplay, PortalGlyphKeypadGrid } from '../../components/common/portal/portalGlyphGrid';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -83,7 +83,7 @@ export const AddEditPortalPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                     <div className="col-12 col-md-4 togglebutton">
                         <label style={{ color: 'white' }}>
-                            {i18next.t(LocaleKey.useAltGlyphs)}&nbsp;
+                            {translate(LocaleKey.useAltGlyphs)}&nbsp;
                             <input type="checkbox" checked={props.useAltGlyphs} onChange={(e: any) => {
                                 if (props.toggleAltGlyphs) props.toggleAltGlyphs();
                             }} />

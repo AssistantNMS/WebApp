@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import { translate } from '../localization/Translate';
 
 import { LocaleKey } from '../localization/LocaleKey';
 
@@ -9,11 +9,11 @@ interface IAvailableFontProps {
 
 export const availableFonts = (): Array<IAvailableFontProps> => [
     {
-        title: i18next.t(LocaleKey.defaultFont),
+        title: translate(LocaleKey.defaultFont),
         value: LocaleKey.defaultFont.toString(),
     },
     {
-        title: i18next.t(LocaleKey.nmsThemed),
+        title: translate(LocaleKey.nmsThemed),
         value: LocaleKey.nmsThemed.toString(),
     }
 ];

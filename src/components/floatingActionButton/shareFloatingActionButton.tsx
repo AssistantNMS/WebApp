@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React from 'react';
+import { translate } from '../../localization/Translate';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 import { BaseFloatingActionButton } from './baseFloatingActionButton';
@@ -9,7 +9,7 @@ export const ShareFloatingActionButton = (openShareDialog: () => void) => {
         <BaseFloatingActionButton
             key="ShareFloatingActionButton"
             keyString="ShareFloatingActionButton"
-            tooltipText={i18next.t(LocaleKey.share)}
+            tooltipText={translate(LocaleKey.share)}
             icon={<i className="material-icons">share</i>}
             onClick={openShareDialog}
         />

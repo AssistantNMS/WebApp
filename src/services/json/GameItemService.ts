@@ -1,4 +1,3 @@
-import i18next from 'i18next';
 import { CatalogueType } from '../../constants/CatalogueType';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { ExpeditionSeason } from '../../contracts/helloGames/expeditionSeason';
@@ -13,6 +12,7 @@ import { UnlockableTechTree } from '../../contracts/tree/techTree';
 import { getHashForObject } from '../../helper/hashHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { getCurrentLang, translate } from '../../localization/Translate';
 import { getCatalogueFromItemId, mapToLocale } from '../../mapper/CatalogueMapper';
 import { BaseJsonService } from './BaseJsonService';
 
@@ -26,7 +26,7 @@ export class GameItemService extends BaseJsonService {
   }
 
   async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
-    const hash = getHashForObject([argsArray, i18next.language]);
+    const hash = getHashForObject([argsArray, getCurrentLang()]);
 
     if (this._hashLookup != null && this._hashLookup[hash] != null) {
       return this._hashLookup[hash];
@@ -334,7 +334,7 @@ export class GameItemService extends BaseJsonService {
     if (!seasonId) return { isSuccess: false, value: result, errorMessage: 'seasonId specified is invallid' };
     if (!levelId) return { isSuccess: false, value: result, errorMessage: 'levelId specified is invallid' };
 
-    const path = i18next.t(weekendMissionJson).toString();
+    const path = translate(weekendMissionJson).toString();
     const weekendMissionsResult = await this.getAsset<Array<WeekendMission>>(`json/${path}.json`);
     if (!weekendMissionsResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: result.errorMessage };
 
@@ -368,7 +368,7 @@ export class GameItemService extends BaseJsonService {
     return this._getOrAdd(() => this._getAllSeasonExpeditions(), ['_getAllSeasons']);
   }
   async _getAllSeasonExpeditions(): Promise<ResultWithValue<Array<ExpeditionSeason>>> {
-    const path = i18next.t(LocaleKey.seasonalExpeditionJson).toString();
+    const path = translate(LocaleKey.seasonalExpeditionJson).toString();
     const seasonExpeditionResult = await this.getAsset<Array<ExpeditionSeason>>(`json/${path}.json`);
     if (!seasonExpeditionResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: seasonExpeditionResult.errorMessage };
 
@@ -383,7 +383,7 @@ export class GameItemService extends BaseJsonService {
     return this._getOrAdd(() => this._getTechTree(), ['_getTechTree']);
   }
   async _getTechTree(): Promise<ResultWithValue<Array<UnlockableTechTree>>> {
-    const path = i18next.t(LocaleKey.techTreeJson).toString();
+    const path = translate(LocaleKey.techTreeJson).toString();
     const jsonResult = await this.getAsset<Array<UnlockableTechTree>>(`json/${path}.json`);
     if (!jsonResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: jsonResult.errorMessage };
 
@@ -398,7 +398,7 @@ export class GameItemService extends BaseJsonService {
     return this._getOrAdd(() => this._getTitles(), ['_getTitles']);
   }
   async _getTitles(): Promise<ResultWithValue<Array<TitleData>>> {
-    const path = i18next.t(LocaleKey.titlesJson).toString();
+    const path = translate(LocaleKey.titlesJson).toString();
     const jsonResult = await this.getAsset<Array<TitleData>>(`json/${path}.json`);
     if (!jsonResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: jsonResult.errorMessage };
 

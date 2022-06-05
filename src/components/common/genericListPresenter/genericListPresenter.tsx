@@ -2,9 +2,9 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import { useState } from 'react';
-import i18next from 'i18next';
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { PositiveButton } from '../button/positiveButton';
+import { translate } from '../../../localization/Translate';
 
 interface IProps<T> {
     hideViewMoreButton?: boolean;
@@ -44,7 +44,7 @@ export function GenericListPresenter<T>(props: IProps<T>) {
             return (
                 <div className="col-12 mt-1em">
                     <PositiveButton onClick={() => setShowMore(true)}>
-                        {i18next.t(LocaleKey.viewXMore).replace('{0}', xRecordsLeft)}
+                        {translate(LocaleKey.viewXMore).replace('{0}', xRecordsLeft)}
                     </PositiveButton>
                 </div>
             );

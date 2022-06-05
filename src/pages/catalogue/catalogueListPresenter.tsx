@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React, { useState } from 'react';
+import { translate } from '../../localization/Translate';
 import { GameItemList } from '../../components/common/gameItemList/gameItemList';
 import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
@@ -47,7 +47,7 @@ export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
         );
     }
 
-    const title = i18next.t(LocaleKey.catalogue);
+    const title = translate(LocaleKey.catalogue);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

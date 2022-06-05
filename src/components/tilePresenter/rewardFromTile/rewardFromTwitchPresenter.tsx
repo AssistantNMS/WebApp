@@ -1,6 +1,5 @@
-
-import i18next from 'i18next';
 import React, { } from 'react';
+import { translate } from '../../../localization/Translate';
 import { AppImage } from '../../../constants/AppImage';
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { ImageContainer } from '../../common/tile/imageContainer';
@@ -11,8 +10,8 @@ interface IProps {
 }
 
 export const RewardFromTwitchTile: React.FC<IProps> = (props: IProps) => {
-    const text = i18next.t(LocaleKey.twitchCampaignNum).replace('{0}', props.campaignId);
-    const descrip = i18next.t(LocaleKey.twitchDrop);
+    const text = translate(LocaleKey.twitchCampaignNum).replace('{0}', props.campaignId);
+    const descrip = translate(LocaleKey.twitchDrop);
     return (
         <div data-id="RewardFromTwitchTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name="Twitch" Icon={AppImage.twitch} />

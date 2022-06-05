@@ -1,5 +1,5 @@
 
-import i18next from 'i18next';
+import { translate } from '../../../localization/Translate';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NetworkState } from '../../../constants/NetworkState';
@@ -68,7 +68,7 @@ const RewardFromSeasonalExpeditionTileClass: React.FC<IProps> = (props: IProps) 
             <div className="gen-item-content-container">
                 <TextContainer text={expedition.Title} />
                 <div className="quantity-container">
-                    {i18next.t(LocaleKey.seasonalExpeditionSeasons)}
+                    {translate(LocaleKey.seasonalExpeditionSeasons)}
                 </div>
             </div>
         </Link>

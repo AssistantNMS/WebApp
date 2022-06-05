@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React, { ReactNode, useEffect, useState } from 'react';
+import { translate } from '../../localization/Translate';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { PositiveButton } from '../../components/common/button/positiveButton';
@@ -13,7 +13,6 @@ import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { IQuicksilverItemWithoutDepInj, QuicksilverItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemListTile';
 import { QuicksilverRequiredItemListTile } from '../../components/tilePresenter/quicksilverListTile/quicksilverItemRequiredListTile';
-import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { NetworkState } from '../../constants/NetworkState';
 import { QuicksilverItem, QuicksilverStore } from '../../contracts/data/quicksilver';
 import { CommunityMissionViewModel } from '../../contracts/generated/Model/HelloGames/communityMissionViewModel';
@@ -78,13 +77,13 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
                                 <ImageContainer Name={qs.Name} Icon={qs.Icon} />
                                 <div className="gen-item-content-container">
                                     <TextContainer text={qs.Name} additionalCss="full" />
-                                    <div className="quantity-container">{i18next.t(LocaleKey.communityMission)}</div>
+                                    <div className="quantity-container">{translate(LocaleKey.communityMission)}</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="generic-item-list row justify pt-3">
-                        <div>{i18next.t(LocaleKey.requiresTheFollowing)}</div>
+                        <div>{translate(LocaleKey.requiresTheFollowing)}</div>
                     </div>
                     <div className="generic-item-list row justify">
                         {
@@ -125,10 +124,10 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
                     {
                         quicksilverStoreItems.map((qs: QuicksilverStore) => {
                             let status = qs.MissionId > communityMission.missionId
-                                ? i18next.t(LocaleKey.futureCommunityMission)
-                                : i18next.t(LocaleKey.completedCommunityMission);
+                                ? translate(LocaleKey.futureCommunityMission)
+                                : translate(LocaleKey.completedCommunityMission);
                             if (qs.MissionId === communityMission.missionId) {
-                                status = i18next.t(LocaleKey.inProgressCommunityMission);
+                                status = translate(LocaleKey.inProgressCommunityMission);
                             }
                             return (
                                 <VerticalTimelineElement
@@ -149,7 +148,7 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
                 <div className="col-12">
                     <PositiveButton additionalClass="customButton noselect">
                         <BasicLink href="https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion">
-                            <span style={{ color: 'black' }}>{i18next.t(LocaleKey.viewMoreOnNmsWiki)}</span>
+                            <span style={{ color: 'black' }}>{translate(LocaleKey.viewMoreOnNmsWiki)}</span>
                         </BasicLink>
                     </PositiveButton>
                 </div>
@@ -157,7 +156,7 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
         );
     }
 
-    const title = i18next.t(LocaleKey.communityMission);
+    const title = translate(LocaleKey.communityMission);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

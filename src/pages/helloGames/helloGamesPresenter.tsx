@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React from 'react';
+import { translate } from '../../localization/Translate';
 import { Link } from 'react-router-dom';
 import { ImageContainer } from '../../components/common/tile/imageContainer';
 import { TextContainer } from '../../components/common/tile/textContainer';
@@ -15,13 +15,13 @@ export const HelloGamesPresenter: React.FC = () => {
     const tilePresenter = (link: string, name: LocaleKey, image: string) => {
         return (
             <Link to={link} className="guide item card">
-                <ImageContainer Icon={image} Name={i18next.t(name)} Colour="" />
-                <TextContainer text={i18next.t(name)} additionalCss="title" />
+                <ImageContainer Icon={image} Name={translate(name)} Colour="" />
+                <TextContainer text={translate(name)} additionalCss="title" />
             </Link>
         );
     }
 
-    const title = i18next.t(LocaleKey.helloGames);
+    const title = translate(LocaleKey.helloGames);
     return (
         <>
             <HeadComponent title={title} />
@@ -33,13 +33,13 @@ export const HelloGamesPresenter: React.FC = () => {
                             {tilePresenter(routes.communityMission, LocaleKey.news, '')}
                         </div>
                         <div className="col-12 col-lg-3 col-md-4 col-sm-4">
-                            <p>{i18next.t(LocaleKey.releaseNotes)}</p>
+                            <p>{translate(LocaleKey.releaseNotes)}</p>
                         </div>
                         <div className="col-12 col-lg-3 col-md-4 col-sm-4">
-                            <p>{i18next.t(LocaleKey.communityMission)}</p>
+                            <p>{translate(LocaleKey.communityMission)}</p>
                         </div>
                         <div className="col-12 col-lg-3 col-md-4 col-sm-4">
-                            <p>{i18next.t(LocaleKey.nmsWebsite)}</p>
+                            <p>{translate(LocaleKey.nmsWebsite)}</p>
                         </div>
                     </div>
                 </div>

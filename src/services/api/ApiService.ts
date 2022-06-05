@@ -8,9 +8,9 @@ import { ExpeditionSeasonViewModel } from '../../contracts/generated/Model/Hello
 import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTrackDataViewModel';
 import { anyObject } from '../../helper/typescriptHacks';
 import { getHashForObject } from '../../helper/hashHelper';
-import i18next from 'i18next';
 import { ContributorViewModel } from '../../contracts/generated/Model/Contributor/contributorViewModel';
 import { CommunityLinkViewModel } from '../../contracts/generated/Model/Community/communityLinkViewModel';
+import { getCurrentLang } from '../../localization/Translate';
 
 export class ApiService extends BaseApiService {
 
@@ -22,7 +22,7 @@ export class ApiService extends BaseApiService {
     }
 
     async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
-        const hash = getHashForObject([argsArray, i18next.language]);
+        const hash = getHashForObject([argsArray, getCurrentLang()]);
 
         if (this._hashLookup != null && this._hashLookup[hash] != null) {
             return this._hashLookup[hash];

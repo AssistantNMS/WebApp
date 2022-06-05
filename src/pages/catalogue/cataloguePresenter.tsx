@@ -1,6 +1,6 @@
-import i18next from 'i18next';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { SpotlightSearch } from '../../components/common/spotlight/spotlightSearch';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -38,7 +38,7 @@ export const CataloguePresenterUnconnected: React.FC<IProps> = (props: IProps) =
         return null;
     }
 
-    const title = i18next.t(LocaleKey.catalogue);
+    const title = translate(LocaleKey.catalogue);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { forceCheck } from 'react-lazyload';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { NetworkState } from '../../constants/NetworkState';
@@ -41,7 +40,6 @@ export const CatalogueListContainerUnconnected: React.FC<IProps> = (props: IProp
 
         setItems(itemsResult.value);
         setNetworkState(NetworkState.Success);
-        forceCheck();
     }
 
     const onSearchTextChange = (e: any) => {
@@ -51,7 +49,6 @@ export const CatalogueListContainerUnconnected: React.FC<IProps> = (props: IProp
         if (searchTerm === searchValue) return;
 
         setSearchTerm(searchValue);
-        forceCheck();
     }
 
     const getDisplayItems = (localItems: Array<GameItemModel>, searchText?: string): Array<GameItemModel> => {

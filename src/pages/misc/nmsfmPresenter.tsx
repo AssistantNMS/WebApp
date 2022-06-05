@@ -1,7 +1,7 @@
-import i18next from 'i18next';
 import React, { ReactNode } from 'react';
-import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
+import { translate } from '../../localization/Translate';
 import { BottomModalSheet } from '../../components/common/dialog/bottomModalSheet';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { CustomTooltip } from '../../components/common/tooltip/tooltip';
@@ -40,8 +40,8 @@ export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
 
     return (
         <DefaultAnimation>
-            <HeadComponent title={`${i18next.t(LocaleKey.nmsfm)} - ${i18next.t(LocaleKey.nmsfmSubtitle)}`} />
-            <NavBar title={`${i18next.t(LocaleKey.nmsfm)} - ${i18next.t(LocaleKey.nmsfmSubtitle)}`} />
+            <HeadComponent title={`${translate(LocaleKey.nmsfm)} - ${translate(LocaleKey.nmsfmSubtitle)}`} />
+            <NavBar title={`${translate(LocaleKey.nmsfm)} - ${translate(LocaleKey.nmsfmSubtitle)}`} />
             <div className="content">
                 <div className="container full pt1">
                     <div className="row">
@@ -57,8 +57,8 @@ export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            <h2 className="mt-2 mb-0">{i18next.t(LocaleKey.nmsfm)}</h2>
-                            <h3 className="mt-0">{i18next.t(LocaleKey.nmsfmSubtitle)}</h3>
+                            <h2 className="mt-2 mb-0">{translate(LocaleKey.nmsfm)}</h2>
+                            <h3 className="mt-0">{translate(LocaleKey.nmsfmSubtitle)}</h3>
                         </div>
                     </div>
                     <div className="row">

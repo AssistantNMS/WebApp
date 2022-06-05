@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import i18next from 'i18next';
+import { translate } from '../../localization/Translate';
 import React, { ReactNode, useState } from 'react';
 import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { AppImage } from '../../constants/AppImage';
@@ -10,7 +10,7 @@ interface IUnlockableTreesProps {
     trees: Array<UnlockableTechTree>
 }
 export const UnlockableTreesRenderer: React.FC<IUnlockableTreesProps> = (props: IUnlockableTreesProps) => {
-    if (props.trees == null || props.trees.length < 1) return <p>{i18next.t(LocaleKey.noItems)}</p>;
+    if (props.trees == null || props.trees.length < 1) return <p>{translate(LocaleKey.noItems)}</p>;
 
     return (
         <div className="tree-view generic-item-list tree p1" data-key="unlockableTreeRenderer" >

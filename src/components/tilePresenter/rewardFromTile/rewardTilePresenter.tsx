@@ -1,7 +1,6 @@
-
-import i18next from 'i18next';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { translate } from '../../../localization/Translate';
 import { AppImage } from '../../../constants/AppImage';
 import { communityMission } from '../../../constants/Route';
 import { LocaleKey } from '../../../localization/LocaleKey';
@@ -13,7 +12,7 @@ interface IProps {
 }
 
 export const RewardFromQuicksilverTile: React.FC<IProps> = (props: IProps) => {
-    const text = i18next.t(LocaleKey.quicksilverCompanion);
+    const text = translate(LocaleKey.quicksilverCompanion);
     return (
         <Link to={communityMission} data-id="RewardFromQuicksilverTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name="Twitch" Icon={AppImage.quicksilver} Colour="#2092CC" />

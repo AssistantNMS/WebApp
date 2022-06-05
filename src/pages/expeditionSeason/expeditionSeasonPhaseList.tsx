@@ -1,10 +1,9 @@
-import i18next from 'i18next';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { BottomModalSheet } from '../../components/common/dialog/bottomModalSheet';
-
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
@@ -84,7 +83,7 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
     }
 
     const infoNotComplete = (expedition?.Rewards?.length ?? 0) < 1;
-    const title = i18next.t(LocaleKey.seasonalExpedition);
+    const title = translate(LocaleKey.seasonalExpedition);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

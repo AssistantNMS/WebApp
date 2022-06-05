@@ -1,6 +1,6 @@
-import i18next from 'i18next';
 import React, { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { ProgressBar } from '../../components/common/progressBar/progressBar';
@@ -43,7 +43,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                 <div className="row noselect">
                     <div className="col-12">
                         <h3>
-                            {i18next.t(LocaleKey.researchProgress)}<br />
+                            {translate(LocaleKey.researchProgress)}<br />
                             {communityMission.currentTier} / {communityMission.totalTiers}
                         </h3>
                     </div>
@@ -54,7 +54,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                 <div className="row noselect">
                     <div className="col-12">
                         {
-                            i18next.t(LocaleKey.communityMissionContent).split('\n').map((text: string, index: number) => (
+                            translate(LocaleKey.communityMissionContent).split('\n').map((text: string, index: number) => (
                                 <h3 key={`communityMissionContent-${index}`}>
                                     {text}
                                 </h3>
@@ -68,7 +68,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                 <div className="row justify noselect">
                     <Link to={communityMissionTimeline} draggable={false}
                         className="customButton center full mt-3em mh-1em noselect">
-                        <span style={{ color: 'black' }}>{i18next.t(LocaleKey.prevCommunityMission)}</span>
+                        <span style={{ color: 'black' }}>{translate(LocaleKey.prevCommunityMission)}</span>
                     </Link>
                 </div>
             </>
@@ -97,7 +97,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
         }
 
         let localTitle: string | undefined = title !== null
-            ? i18next.t(title!)
+            ? translate(title!)
             : title;
         if (qsReward?.Name != null) {
             localTitle = qsReward?.Name;
@@ -134,7 +134,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                 {
                     ((qsReward?.ItemsRequired ?? []).length > 0) &&
                     <div className="row noselect">
-                        <div className="col-12 pb-2">{i18next.t(LocaleKey.requiresTheFollowing)}</div>
+                        <div className="col-12 pb-2">{translate(LocaleKey.requiresTheFollowing)}</div>
                         <div className="col-12 pb-3">
                             <GenericListPresenter
                                 list={qsReward?.ItemsRequired ?? []}

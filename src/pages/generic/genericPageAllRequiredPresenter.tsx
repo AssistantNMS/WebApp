@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React from 'react';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { Error } from '../../components/core/error/error';
@@ -28,7 +28,7 @@ export const GenericPageAllRequiredPresenter: React.FC<IProps> = (props: IProps)
         if (props.status === NetworkState.Error) return (<Error />);
         if (!props.requiredItems ||
             props.requiredItems.length === 0) {
-            return (<h2>{i18next.t(LocaleKey.noItems)}</h2>);
+            return (<h2>{translate(LocaleKey.noItems)}</h2>);
         }
         return (renderRequiredItemsPages(treeRequiredItems, requiredItems));
     }
@@ -52,7 +52,7 @@ export const GenericPageAllRequiredPresenter: React.FC<IProps> = (props: IProps)
         LocaleKey.tree,
     ];
 
-    const title = i18next.t(LocaleKey.allRawMaterialsRequired);
+    const title = translate(LocaleKey.allRawMaterialsRequired);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />
@@ -64,7 +64,7 @@ export const GenericPageAllRequiredPresenter: React.FC<IProps> = (props: IProps)
                             <SegmentedControl.SegmentedControl
                                 name="allMaterialRequired"
                                 options={options.map((opt) => ({
-                                    label: i18next.t(opt),
+                                    label: translate(opt),
                                     value: opt,
                                     default: props.selectedOption === opt,
                                 }))}

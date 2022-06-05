@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
+import { translate } from '../../localization/Translate';
 import { useParams } from 'react-router-dom';
 import { NetworkState } from '../../constants/NetworkState';
 import { GuideMetaViewModel } from '../../contracts/generated/guideMetaViewModel';
@@ -60,7 +60,7 @@ export const GuideDetailPageContainerUnconnected: React.FC<IProps> = (props: IPr
             newGuideMeta.likes = (guideMeta?.likes ?? 0) + 1;
             setGuideMeta(newGuideMeta);
         } else {
-            errorDialog(i18next.t(LocaleKey.error), 'Your \'like\' was not submitted');
+            errorDialog(translate(LocaleKey.error), 'Your \'like\' was not submitted');
         }
     }
 

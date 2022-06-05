@@ -1,6 +1,6 @@
 
 import classNames from 'classnames';
-import i18next from 'i18next';
+import { translate } from '../../localization/Translate';
 import React, { ReactNode, useState } from 'react';
 import { LanguageListTile } from '../../components/tilePresenter/languageTilePresenter';
 import { AppImage } from '../../constants/AppImage';
@@ -130,7 +130,7 @@ export const LangSettingTile: React.FC<ILangProp> = (props: ILangProp) => {
     return (
         <BaseDropDownSettingTile
             title={props.title}
-            value={i18next.t(localeMap.find(opt => opt.code === props.value)?.name ?? LocaleKey.unknown)}
+            value={translate(localeMap.find(opt => opt.code === props.value)?.name ?? LocaleKey.unknown)}
             optionsRenderer={(dropDownIsVisible: boolean) => (
                 <div className={classNames('dropdown-menu dropdown-menu-right noselect', { 'show': dropDownIsVisible })}>
                     {

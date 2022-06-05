@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React, { ReactNode } from 'react';
+import { translate } from '../../localization/Translate';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { EggTraitListTile } from '../../components/tilePresenter/eggTraitTile/eggTraitListTile';
 import { GenericItemWithRequirementsListTile } from '../../components/tilePresenter/genericItemListTile/genericItemWithRequirementsListTile';
@@ -33,7 +33,7 @@ export const displayRequiredItems = (resArray: Array<RequiredItemDetails>, navig
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.craftedUsing)}
+            heading={translate(LocaleKey.craftedUsing)}
             content={
                 <>
                     <GenericListPresenter
@@ -46,11 +46,11 @@ export const displayRequiredItems = (resArray: Array<RequiredItemDetails>, navig
                         (resArray.filter(r => !r.Id.includes(IdPrefix.RawMaterial)).length > 0) &&
                         <PositiveButton
                             additionalClass="mt-1em"
-                            children={<span>{i18next.t(LocaleKey.viewAllRawMaterialsRequired)}</span>}
+                            children={<span>{translate(LocaleKey.viewAllRawMaterialsRequired)}</span>}
                             onClick={() => navigate(Route.genericAllRequirements,
                                 {
                                     state: {
-                                        typeName: i18next.t(LocaleKey.cart),
+                                        typeName: translate(LocaleKey.cart),
                                         requiredItems: resArray,
                                     }
                                 }
@@ -68,7 +68,7 @@ export const displayUsedToCreateItems = (usedToCreateArray: Array<GameItemModel>
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.usedToCreate)}
+            heading={translate(LocaleKey.usedToCreate)}
             content={
                 <GenericListPresenter
                     list={usedToCreateArray}
@@ -87,7 +87,7 @@ export const displayRechargedByItems = (rechargedBy: Recharge) => {
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.rechargeThisUsing)}
+            heading={translate(LocaleKey.rechargeThisUsing)}
             content={
                 <GenericListPresenter
                     list={orderedChargeBy}
@@ -106,7 +106,7 @@ export const displayUsedToRechargeItems = (id: string, name: string, usedToRecha
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.useXToRecharge).replace('{0}', name)}
+            heading={translate(LocaleKey.useXToRecharge).replace('{0}', name)}
             content={
                 <GenericListPresenter
                     list={orderedUsedToRechargeArray}
@@ -125,7 +125,7 @@ export const displayRefItems = (refRecipesArray: Array<Processor>) => {
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.refinedUsing)}
+            heading={translate(LocaleKey.refinedUsing)}
             content={
                 <GenericListPresenter
                     list={orderedRefRecipesArray}
@@ -144,7 +144,7 @@ export const displayUsedToRefItems = (name: string, usedToRefArray: Array<Proces
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.refineToCreate).replace('{0}', name)}
+            heading={translate(LocaleKey.refineToCreate).replace('{0}', name)}
             content={
                 <GenericListPresenter
                     list={orderedUsedToRefArray}
@@ -163,7 +163,7 @@ export const displayCookItems = (cookRecipesArray: Array<Processor>) => {
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.cookingRecipe)}
+            heading={translate(LocaleKey.cookingRecipe)}
             content={
                 <GenericListPresenter
                     list={orderedCookRecipesArray}
@@ -182,7 +182,7 @@ export const displayUsedToCookItems = (name: string, usedToCookArray: Array<Proc
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.cookToCreate).replace('{0}', name)}
+            heading={translate(LocaleKey.cookToCreate).replace('{0}', name)}
             content={
                 <GenericListPresenter
                     list={orderedUsedToCookArray}
@@ -200,7 +200,7 @@ export const displayStatBonuses = (statBonuses: Array<StatBonus>) => {
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.stats)}
+            heading={translate(LocaleKey.stats)}
             content={
                 <GenericListPresenter
                     list={statBonuses}
@@ -217,7 +217,7 @@ export const displayProceduralStatBonuses = (numStatsMin: number, numStatsMax: n
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.proceduralStats)
+            heading={translate(LocaleKey.proceduralStats)
                 .replace('{0}', numStatsMin.toString())
                 .replace('{1}', numStatsMax.toString())}
             content={
@@ -236,7 +236,7 @@ export const displayEggTraits = (eggTraitArray: Array<EggNeuralTrait>) => {
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.eggModification)}
+            heading={translate(LocaleKey.eggModification)}
             content={
                 <GenericListPresenter
                     list={eggTraitArray}
@@ -314,7 +314,7 @@ export const displayRewardFrom = (item: GameItemModel) => {
     if (nodes == null || nodes.length < 1) return null;
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.rewardFrom)}
+            heading={translate(LocaleKey.rewardFrom)}
             content={
                 <GenericListPresenter
                     list={nodes}

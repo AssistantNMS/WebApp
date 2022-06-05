@@ -1,6 +1,6 @@
-import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
+import { translate } from '../../localization/Translate';
 import { NetworkState } from '../../constants/NetworkState';
 import { QuicksilverStore } from '../../contracts/data/quicksilver';
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
@@ -37,7 +37,7 @@ export class CommunityMissionContainerUnconnected extends React.Component<IProps
         super(props);
 
         this.state = {
-            title: i18next.t(LocaleKey.communityMission),
+            title: translate(LocaleKey.communityMission),
             communityMission: anyObject,
             quicksilverStoreItems: [],
             status: NetworkState.Loading

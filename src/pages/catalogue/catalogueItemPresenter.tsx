@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React, { useState } from 'react';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { AdditionalInfoChipRow } from '../../components/common/chip/additionalInfoChip';
 import { ExpeditionAlphabetDecoder } from '../../components/common/expeditionAlphabetDecoder';
@@ -102,7 +102,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
     const handleLoadingOrError = () => {
         if (props.networkState === NetworkState.Loading) return <div className="pt-5"><SmallLoading /></div>;
         if (props.networkState === NetworkState.Error) {
-            return (<h2>{i18next.t(LocaleKey.error)}</h2>);
+            return (<h2>{translate(LocaleKey.error)}</h2>);
         }
         return displayDetails();
     }
