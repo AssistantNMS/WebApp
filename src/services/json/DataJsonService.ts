@@ -10,6 +10,7 @@ import { AssistantAppLinks } from '../../contracts/data/assistantAppLinks';
 import { ControlMappingList, PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { ControllerPlatformType, ToJsonProperty } from '../../contracts/enum/ControllerPlatformType';
 import { BaseJsonService } from './BaseJsonService';
+import { StarshipScrap } from '../../contracts/data/starshipScrap';
 
 export class DataJsonService extends BaseJsonService {
 
@@ -68,8 +69,33 @@ export class DataJsonService extends BaseJsonService {
         }
     }
 
+    async getStarshipScrapData(): Promise<ResultWithValue<Array<StarshipScrap>>> {
+        return this._getOrAdd(() => this._getStarshipScrapData(), ['_getStarshipScrapData']);
+    }
+    async _getStarshipScrapData(): Promise<ResultWithValue<Array<StarshipScrap>>> {
+        return this.getDataJsonBasic<Array<StarshipScrap>>('starshipScrap.json');
+    }
+
+    async getStarshipScrapDataForItem(itemId: string): Promise<ResultWithValue<Array<StarshipScrap>>> {
+        return this._getOrAdd(() => this._getStarshipScrapDataForItem(itemId), ['_getStarshipScrapDataForItem', itemId]);
+    }
+    async _getStarshipScrapDataForItem(itemId: string): Promise<ResultWithValue<Array<StarshipScrap>>> {
+        const allItemsresult = await this.getDataJsonBasic<Array<StarshipScrap>>('starshipScrap.json');
+
+        if (!allItemsresult.isSuccess) return { isSuccess: false, value: [], errorMessage: allItemsresult.errorMessage };
+
+        const specificToItemId = allItemsresult.value.filter(sc =>
+            ((sc.ItemDetails ?? []).filter((itemD) => itemD.Id === itemId)?.length > 0)
+        );
+        return {
+            isSuccess: true,
+            value: specificToItemId,
+            errorMessage: ''
+        }
+    }
+
     getAlphabetTranslations = () => this.getDataJsonBasic<Array<AlphabetTranslation>>('alphabetTranslations.json');
-    getssistantAppLinks = () => this.getDataJsonBasic<Array<QuicksilverStore>>('assistantAppLinks.json');
+    getAssistantAppLinks = () => this.getDataJsonBasic<Array<AssistantAppLinks>>('assistantAppLinks.json');
     getDeveloperDetails = () => this.getDataJsonBasic<Array<DevDetail>>('developerDetails.json');
     getDonationsBackup = () => this.getDataJsonBasic<Array<QuicksilverStore>>('donationsBackup.json');
     getEggNeuralTraits = () => this.getDataJsonBasic<Array<EggNeuralTrait>>('eggNeuralTraits.json');
@@ -79,5 +105,4 @@ export class DataJsonService extends BaseJsonService {
     getQuicksilverStore = () => this.getDataJsonBasic<Array<QuicksilverStore>>('quicksilverStore.json');
     getSocial = () => this.getDataJsonBasic<Array<QuicksilverStore>>('social.json');
     getUnusedMilestonePatches = () => this.getDataJsonBasic<Array<QuicksilverStore>>('unusedMilestonePatches.json');
-    getAssistantAppLinks = () => this.getDataJsonBasic<Array<AssistantAppLinks>>('assistantAppLinks.json');
 }

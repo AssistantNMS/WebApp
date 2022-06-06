@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { translate } from '../../localization/Translate';
+import { useNavigate } from 'react-router-dom';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { AdditionalInfoChipRow } from '../../components/common/chip/additionalInfoChip';
+import { DecriptionRegexHighlightText } from '../../components/common/descriptionRegexHighlighter';
 import { ExpeditionAlphabetDecoder } from '../../components/common/expeditionAlphabetDecoder';
 import { HeadComponent } from '../../components/core/headComponent';
 import { ItemHeaderRow } from '../../components/core/itemHeaderRow';
@@ -9,26 +10,26 @@ import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { CartFloatingActionButton } from '../../components/floatingActionButton/cartFloatingActionButton';
 import { FavouriteFloatingActionButton } from '../../components/floatingActionButton/favouriteFloatingActionButton';
+import { PlatformFloatingActionButton } from '../../components/floatingActionButton/platformFloatingActionButton';
 import { ShareDialog } from '../../components/shareDialog';
 import { IdPrefix } from '../../constants/IdPrefix';
 import { NetworkState } from '../../constants/NetworkState';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
+import { StarshipScrap } from '../../contracts/data/starshipScrap';
+import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { Recharge } from '../../contracts/recharge/recharge';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { translate } from '../../localization/Translate';
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { ToastService } from '../../services/toastService';
 import { displayCookItems, displayEggTraits, displayObsoleteTech, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayRewardFrom, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
-import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 import { IReduxProps } from './catalogueItem.Redux';
-import { DecriptionRegexHighlightText } from '../../components/common/descriptionRegexHighlighter';
-import { PlatformFloatingActionButton } from '../../components/floatingActionButton/platformFloatingActionButton';
-import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
-import { useNavigate } from 'react-router-dom';
+import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 
 interface IProps extends IReduxProps {
     // Container State    
@@ -43,6 +44,7 @@ interface IProps extends IReduxProps {
     usedToRecharge: Array<Recharge>,
     eggTrait: Array<EggNeuralTrait>,
     controlLookup: Array<PlatformControlMapping>,
+    starshipScrapItems: Array<StarshipScrap>,
     additionalData: Array<any>,
 
     networkState: NetworkState;
@@ -144,7 +146,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     {displayUsedToCookItems(props.item.Name, props.usedToCook)}
                     {displayStatBonuses(props.item.StatBonuses)}
                     {displayProceduralStatBonuses(props.item.NumStatsMin, props.item.NumStatsMax, props.item.ProceduralStatBonuses)}
-                    {displayRewardFrom(props.item)}
+                    {displayRewardFrom(props.item, props.starshipScrapItems)}
                     {displayEggTraits(props.eggTrait)}
                 </div>
                 <DevDetailsBottomModalSheet

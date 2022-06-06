@@ -55,7 +55,7 @@ export function GenericListPresenter<T>(props: IProps<T>) {
         <div className={classNames('generic-item-list row', { justify: props.isCentered })}>
             {
                 list.map((item: T, index: number) => {
-                    const key = props.identifier ? props.identifier(item) : '';
+                    const key = props.identifier != null ? props.identifier(item) : index;
                     return (
                         <div key={`generic-item-list ${index} ${key}`} data-key={key} className={classNames('gen-item', bootstrapClasses)}>
                             {props.presenter(item, index)}

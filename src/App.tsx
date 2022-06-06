@@ -38,6 +38,7 @@ import { PortalListContainer } from './pages/portal/portalListContainer';
 import { ProcessorItemContainer } from './pages/processor/processorItemContainer';
 import { SettingPresenter } from './pages/setting/settingPresenter';
 import { SocialPresenter } from './pages/social/socialPresenter';
+import { StarshipScrapPage } from './pages/starshipScrap/starshipScrapPage';
 import { SyncContainer } from './pages/sync/syncContainer';
 import { TechTreeContainer } from './pages/techtree/techTreeContainer';
 import { TitlesContainer } from './pages/titles/titlesContainer';
@@ -107,6 +108,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
 
               <Route path={route.techTree} element={<TechTreeContainer />} />
               <Route path={route.titles} element={<TitlesContainer />} />
+              <Route path={route.starshipScrap} element={<StarshipScrapPage />} />
 
               <Route path={route.social} element={<SocialPresenter />} />
               <Route path={route.sync} element={<SyncContainer />} />

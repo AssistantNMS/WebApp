@@ -128,7 +128,7 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
                                 className="descrip-img"
                                 src={`/${AppImage.controls}${lookupResIcon}`}
                                 alt={lookupResKey}
-                                data-lookupKey={lookupKey}
+                                data-lookup-key={lookupKey}
                             />
                         </CustomTooltip>
                     );

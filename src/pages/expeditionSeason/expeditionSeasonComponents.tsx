@@ -234,22 +234,22 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
 
     return (
         <div data-id="ExpeditionSeasonPhaseMilestone" className={classes}>
-            <div className="milestone-content">
+            <div className="milestone-content" onClick={openDetailPane}>
                 <ImageContainer
                     Icon={props.milestone.Icon}
                     Name={props.milestone.Title}
                 />
-                <div className="text-container" onClick={openDetailPane}>
+                <div className="text-container">
                     <h3>{props.milestone.Title}</h3>
                     <p>{props.milestone.Description}</p>
                 </div>
-                <div className="text-container rewards hidden-in-mobile" onClick={openDetailPane}>
+                <div className="text-container rewards hidden-in-mobile">
                     <ExpeditionSeasonRewardsOnlyTile rewards={props.milestone.Rewards} />
                 </div>
                 {
                     (disabled === false) &&
                     <div className="rewards-container">
-                        <i className="material-icons x2 pointer" onClick={openDetailPane}>info</i>
+                        <i className="material-icons x2 pointer">info</i>
                     </div>
                 }
                 {

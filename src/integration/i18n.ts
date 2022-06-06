@@ -15,9 +15,9 @@ export const initLocalization = (currentLanguage: string) => {
 
 
 function loadLocaleMessages(): any {
-  const locales = require.context('../assets/lang', true, /[A-Za-z0-9-_,\s]+\.json$/i);
+  const locales = (require as any).context('../assets/lang', true, /[A-Za-z0-9-_,\s]+\.json$/i);
   const messages: any = {};
-  locales.keys().forEach(key => {
+  locales.keys().forEach((key: any) => {
     const matched = key.match(/language.([A-Za-z0-9-_]+)\./i);
     if (matched && matched.length > 1) {
       // const locale = matched[1];

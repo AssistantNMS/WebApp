@@ -26,6 +26,7 @@ import { mapDispatchToProps, mapStateToProps, IReduxProps } from './catalogueIte
 import { CatalogueItemPresenter } from './catalogueItemPresenter';
 import { optionalListTask, optionalTask } from '../../helper/promiseHelper';
 import { UsageKey } from '../../constants/UsageKey';
+import { StarshipScrap } from '../../contracts/data/starshipScrap';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -50,6 +51,7 @@ interface IState {
     usedToRecharge: Array<Recharge>,
     eggTrait: Array<EggNeuralTrait>,
     controlLookup: Array<PlatformControlMapping>,
+    starshipScrapItems: Array<StarshipScrap>,
     additionalData: Array<any>,
 }
 
@@ -69,6 +71,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         usedToRecharge: [],
         eggTrait: [],
         controlLookup: [],
+        starshipScrapItems: [],
         additionalData: [],
     };
 
@@ -127,10 +130,12 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         const rechargedByTask = optionalTask(usages, UsageKey.hasChargedBy, () => getRechargeBy(itemId));
         const usedToRechargeTask = optionalListTask(usages, UsageKey.hasUsedToRecharge, () => getUsedToRecharge(itemId));
 
+        const scrapDataTask = optionalTask(usages, UsageKey.isRewardFromShipScrap, () => getScrapDataForItem(itemId));
+
         const eggTraitTask = optionalListTask(['true'], 'true', () => getEggTrait(itemId));
         const controlLookupTask = optionalListTask(['true'], 'true', () => getControlLookup(props.controlPlatform));
 
-        const newMeta = {
+        const newMeta: IState = {
             item: item,
             requiredItems: await reqItemsTask,
             usedToCreate: await usedToCreateTask,
@@ -142,6 +147,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             usedToRecharge: await usedToRechargeTask,
             eggTrait: await eggTraitTask,
             controlLookup: await controlLookupTask,
+            starshipScrapItems: await scrapDataTask,
             additionalData: getAdditionalData(item),
         };
         setItemMeta(newMeta);
@@ -206,6 +212,12 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         const controlsArray = await props.dataJsonService.getControlMapping(platform);
         if (!controlsArray.isSuccess) return [];
         return controlsArray.value;
+    }
+
+    const getScrapDataForItem = async (itemId: string) => {
+        const starshipScrapsArray = await props.dataJsonService.getStarshipScrapDataForItem(itemId);
+        if (!starshipScrapsArray.isSuccess) return [];
+        return starshipScrapsArray.value;
     }
 
     const getAdditionalData = (itemDetail: GameItemModel): Array<any> => {
@@ -307,6 +319,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         usedToRecharge,
         eggTrait,
         controlLookup,
+        starshipScrapItems,
         additionalData,
     } = itemMeta;
 
@@ -324,8 +337,9 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             usedToRecharge={usedToRecharge}
             eggTrait={eggTrait}
             controlLookup={controlLookup}
-            networkState={networkState}
+            starshipScrapItems={starshipScrapItems}
             additionalData={additionalData}
+            networkState={networkState}
             addThisItemToCart={addThisItemToCart}
             addThisItemToFavourites={addThisItemToFavourites}
             removeThisItemToFavourites={removeThisItemToFavourites}

@@ -1,9 +1,16 @@
 export class AppImage {
     static base: string = 'assets/images/';
     static controls: string = AppImage.base + 'buttons/';
+    static unknown: string = 'unknown.png';
 
     static twitch: string = 'special/twitchAlt.png';
     static quicksilver: string = 'special/quicksilverAlt.png';
+    static starshipScrap: string = 'special/starshipScrap.png';
+
+    static sclass: string = 'special/sclass.png';
+    static aclass: string = 'special/aclass.png';
+    static bclass: string = 'special/bclass.png';
+    static cclass: string = 'special/cclass.png';
 
     static expeditionSeasonBackgroundPrefix: string = AppImage.base + 'special/expedition-';
     static expeditionSeasonBackgroundBackup: string = AppImage.base + 'special/expeditionsCoverUnused.jpg';

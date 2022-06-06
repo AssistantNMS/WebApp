@@ -34,7 +34,7 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
     const group = props?.Group ?? '...';
 
     return (
-        <div className="row border-bottom pos-rel">
+        <div data-id="ItemHeaderRow" className="row border-bottom pos-rel header-row">
             <div className="col-12 col-lg-2 col-md-2 col-sm-4 col-xs-3 image-container generic-item-image-container noselect"
                 style={{ backgroundColor: `#${props.Colour}`, position: 'relative' }}>
                 {

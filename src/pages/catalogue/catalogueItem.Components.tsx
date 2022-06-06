@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { translate } from '../../localization/Translate';
+import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { EggTraitListTile } from '../../components/tilePresenter/eggTraitTile/eggTraitListTile';
 import { GenericItemWithRequirementsListTile } from '../../components/tilePresenter/genericItemListTile/genericItemWithRequirementsListTile';
@@ -8,9 +8,17 @@ import { ChargeByItemListTile } from '../../components/tilePresenter/recharge/ch
 import { RechargeItemListTile } from '../../components/tilePresenter/recharge/rechargeItemListTile';
 import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
 import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
+import { RewardFromSeasonalExpeditionTile } from '../../components/tilePresenter/rewardFromTile/rewardFromSeasonalExpeditionPresenter';
+import { RewardFromStarshipScrapTile } from '../../components/tilePresenter/rewardFromTile/rewardFromStarshipScrapPresenter';
+import { RewardFromTwitchTile } from '../../components/tilePresenter/rewardFromTile/rewardFromTwitchPresenter';
+import { RewardFromQuicksilverTile } from '../../components/tilePresenter/rewardFromTile/rewardTilePresenter';
 import { ProceduralStatBonusItemListTile, StatBonusItemListTile } from '../../components/tilePresenter/statBonusTile/statBonusItemListTile';
+import { IdPrefix } from '../../constants/IdPrefix';
+import * as Route from '../../constants/Route';
 import { UsageKey } from '../../constants/UsageKey';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
+import { StarshipScrap } from '../../contracts/data/starshipScrap';
+import { CurrencyType } from '../../contracts/enum/CurrencyType';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { ProceduralStatBonus } from '../../contracts/ProceduralStatBonus';
 import { Processor } from '../../contracts/Processor';
@@ -20,13 +28,7 @@ import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { StatBonus } from '../../contracts/StatBonus';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { RewardFromSeasonalExpeditionTile } from '../../components/tilePresenter/rewardFromTile/rewardFromSeasonalExpeditionPresenter';
-import { RewardFromTwitchTile } from '../../components/tilePresenter/rewardFromTile/rewardFromTwitchPresenter';
-import { RewardFromQuicksilverTile } from '../../components/tilePresenter/rewardFromTile/rewardTilePresenter';
-import { CurrencyType } from '../../contracts/enum/CurrencyType';
-import { PositiveButton } from '../../components/common/button/positiveButton';
-import * as Route from '../../constants/Route';
-import { IdPrefix } from '../../constants/IdPrefix';
+import { translate } from '../../localization/Translate';
 
 export const displayRequiredItems = (resArray: Array<RequiredItemDetails>, navigate: (url: string, data: any) => void) => {
     if (resArray == null || resArray.length < 1) return null;
@@ -272,7 +274,7 @@ export const displayObsoleteTech = (usages: Array<string>) => {
 const usageContains = (usages: Array<string>, usageKey: string): boolean =>
     usages.filter((u) => u.includes(usageKey)).length > 0;
 
-export const displayRewardFrom = (item: GameItemModel) => {
+export const displayRewardFrom = (item: GameItemModel, starshipScrapItems: Array<StarshipScrap>) => {
     const usages: Array<string> = item.Usages;
     if (usages == null || usages.length < 1) return null;
     // if (!usages.includes(UsageKey.isNoLongerObtainable)) return null;
@@ -291,30 +293,30 @@ export const displayRewardFrom = (item: GameItemModel) => {
             }
         }
 
-        const expSeasonKeySplit = UsageKey.isExpeditionSeason.split("{0}");
-        if (usageContains(usages, expSeasonKeySplit[0])) {
-            const expSeasUsageKey =
-                usages.filter((u) => u.includes(expSeasonKeySplit[0]));
-            const expSeasonNum = expSeasUsageKey[0]
-                .replaceAll(expSeasonKeySplit[0], '')
-                .replaceAll(expSeasonKeySplit[1], '');
-            nodes.push(<RewardFromSeasonalExpeditionTile seasId={`seas-${expSeasonNum}`} />);
+        for (const usageKey of usages) {
+            const expSeasonKeySplit = UsageKey.isExpeditionSeason.split("{0}");
+            if (usageKey.includes(expSeasonKeySplit[0])) {
+                const expSeasonNum = usageKey
+                    .replaceAll(expSeasonKeySplit[0], '')
+                    .replaceAll(expSeasonKeySplit[1], '');
+                nodes.push(<RewardFromSeasonalExpeditionTile seasId={`seas-${expSeasonNum}`} />);
+            }
+
+            const twitchCampaignKeySplit = UsageKey.isTwitchCampaign.split("{0}");
+            if (usageKey.includes(twitchCampaignKeySplit[0])) {
+                const expSeasonNum = usageKey
+                    .replaceAll(twitchCampaignKeySplit[0], '')
+                    .replaceAll(twitchCampaignKeySplit[1], '');
+                nodes.push(<RewardFromTwitchTile campaignId={expSeasonNum} />);
+            }
         }
 
-        const twitchCampaignKeySplit = UsageKey.isTwitchCampaign.split("{0}");
-        if (usageContains(usages, twitchCampaignKeySplit[0])) {
-            const expSeasUsageKey =
-                usages.filter((u) => u.includes(twitchCampaignKeySplit[0]));
-            const expSeasonNum = expSeasUsageKey[0]
-                .replaceAll(twitchCampaignKeySplit[0], '')
-                .replaceAll(twitchCampaignKeySplit[1], '');
-            nodes.push(<RewardFromTwitchTile campaignId={expSeasonNum} />);
+        if (usageContains(usages, UsageKey.isRewardFromShipScrap)) {
+            nodes.push(<RewardFromStarshipScrapTile
+                itemId={item.Id}
+                starshipScrapItems={starshipScrapItems}
+            />);
         }
-
-        // if (usageContains(usages, UsageKey.isRewardFromShipScrap)) {
-        //     nodes.push(<h1>Hi</h1>);
-        // }
-        // TODO Starship rewards
     } catch (ex) {
 
     }
