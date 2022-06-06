@@ -169,7 +169,7 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
 
     return (
         <div data-id="ExpeditionSeasonPhaseWithMilestones" className="row expedition-season-phase noselect">
-            <div className="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-3">
+            <div className="col-12 col-lg-3 col-md-12 col-sm-12 col-xs-12">
                 <LazyLoadImage src={`/${AppImage.base}${props.phase.Icon}`} alt={props.phase.Title} className="phase-icon" style={{ width: '100%', maxWidth: '250px' }} />
                 <h3 className="phase-title">{props.phase.Title}</h3>
                 <PositiveButton
@@ -182,7 +182,7 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
                     <span>{translate(LocaleKey.rewards).toString()}</span>
                 </PositiveButton>
             </div>
-            <div className="col-12 col-lg-9 col-md-9 col-sm-12 col-xs-9">
+            <div className="col-12 col-lg-9 col-md-12 col-sm-12 col-xs-12">
                 {
                     (props.phase.Milestones ?? []).map((milestone: ExpeditionSeasonMilestone, index: number) => (
                         <ExpeditionSeasonPhaseMilestone
@@ -243,7 +243,7 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
                     <h3>{props.milestone.Title}</h3>
                     <p>{props.milestone.Description}</p>
                 </div>
-                <div className="text-container rewards" onClick={openDetailPane}>
+                <div className="text-container rewards hidden-in-mobile" onClick={openDetailPane}>
                     <ExpeditionSeasonRewardsOnlyTile rewards={props.milestone.Rewards} />
                 </div>
                 {
@@ -259,7 +259,7 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
             </div>
             {
                 isEncrypted && (
-                    <div className="milestone-encr-content noselect">
+                    <div className="milestone-encr-content noselect ">
                         <ImageContainer
                             Icon={props.milestone.Encryption.Icon}
                             Name={props.milestone?.Encryption?.Title ?? 'encrypted'}

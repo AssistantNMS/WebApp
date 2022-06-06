@@ -75,6 +75,18 @@ body {
     }
 }
 
+.hidden-in-desktop {
+    @media screen and (min-width: 980px) {
+        display: none !important;
+    }
+}
+
+.hidden-in-mobile {
+    @media screen and (max-width: 980px) {
+        display: none !important;
+    }
+}
+
 img.grayscale {
     // filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
     /* Firefox 3.5+ */
@@ -202,7 +214,7 @@ img.tiny {
 }
 
 .m-0-child {
-    > * {
+    >* {
         margin: 0;
     }
 }

@@ -11,6 +11,7 @@ export const UsageKey = {
     isEggIngredient: 'IsEggIngredient',
     isNoLongerObtainable: 'IsNoLongerObtainable',
     isQuicksilver: 'IsQuicksilver',
+    isRewardFromShipScrap: 'IsRewardFromShipScrap',
 
     isExpeditionSeason: 'IsExpeditionSeason{0}Reward',
     isTwitchCampaign: 'IsTwitchCampaign{0}Reward',

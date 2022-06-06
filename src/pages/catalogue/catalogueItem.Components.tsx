@@ -269,6 +269,9 @@ export const displayObsoleteTech = (usages: Array<string>) => {
     );
 }
 
+const usageContains = (usages: Array<string>, usageKey: string): boolean =>
+    usages.filter((u) => u.includes(usageKey)).length > 0;
+
 export const displayRewardFrom = (item: GameItemModel) => {
     const usages: Array<string> = item.Usages;
     if (usages == null || usages.length < 1) return null;
@@ -277,7 +280,7 @@ export const displayRewardFrom = (item: GameItemModel) => {
     const nodes: Array<JSX.Element> = [];
 
     try {
-        if (usages.filter((u) => u.includes(UsageKey.isQuicksilver))) {
+        if (usageContains(usages, UsageKey.isQuicksilver)) {
             if (item.BaseValueUnits > 0 &&
                 item.CurrencyType === CurrencyType.QUICKSILVER) {
                 nodes.push(
@@ -289,7 +292,7 @@ export const displayRewardFrom = (item: GameItemModel) => {
         }
 
         const expSeasonKeySplit = UsageKey.isExpeditionSeason.split("{0}");
-        if (usages.filter((u) => u.includes(expSeasonKeySplit[0])).length > 0) {
+        if (usageContains(usages, expSeasonKeySplit[0])) {
             const expSeasUsageKey =
                 usages.filter((u) => u.includes(expSeasonKeySplit[0]));
             const expSeasonNum = expSeasUsageKey[0]
@@ -299,7 +302,7 @@ export const displayRewardFrom = (item: GameItemModel) => {
         }
 
         const twitchCampaignKeySplit = UsageKey.isTwitchCampaign.split("{0}");
-        if (usages.filter((u) => u.includes(twitchCampaignKeySplit[0]))) {
+        if (usageContains(usages, twitchCampaignKeySplit[0])) {
             const expSeasUsageKey =
                 usages.filter((u) => u.includes(twitchCampaignKeySplit[0]));
             const expSeasonNum = expSeasUsageKey[0]
@@ -307,6 +310,11 @@ export const displayRewardFrom = (item: GameItemModel) => {
                 .replaceAll(twitchCampaignKeySplit[1], '');
             nodes.push(<RewardFromTwitchTile campaignId={expSeasonNum} />);
         }
+
+        // if (usageContains(usages, UsageKey.isRewardFromShipScrap)) {
+        //     nodes.push(<h1>Hi</h1>);
+        // }
+        // TODO Starship rewards
     } catch (ex) {
 
     }
