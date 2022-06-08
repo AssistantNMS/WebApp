@@ -7,6 +7,7 @@ import { CommunityLinkViewModel } from '../../contracts/generated/Model/Communit
 import { ExternalUrls } from '../../constants/ExternalUrls';
 import { AppImage } from '../../constants/AppImage';
 import { BasicLink } from '../core/link';
+import { ActionContainer } from '../common/tile/actionContainer';
 
 export const CommunityLinkListTile = (props: CommunityLinkViewModel, index: number) => {
     const hasQuantity = props.subtitle.length > 1;
@@ -28,6 +29,13 @@ export const CommunityLinkListTile = (props: CommunityLinkViewModel, index: numb
 }
 
 export const CommunityMissionProgressListTile = () => {
+
+    const getActions = () => {
+        const result = [
+            <i key="locked" className="material-icons x2">query_stats</i>
+        ];
+        return result;
+    }
     return (
         <BasicLink key={ExternalUrls.communityMissionProgress} data-id="CommunityMissionProgressListTile"
             href={ExternalUrls.communityMissionProgress} additionalClassNames="contributor gen-item-container">
@@ -37,6 +45,7 @@ export const CommunityMissionProgressListTile = () => {
                 <div className="quantity-container">
                     View progress over time
                 </div>
+                <ActionContainer actions={getActions()} />
             </div>
         </BasicLink>
     );
