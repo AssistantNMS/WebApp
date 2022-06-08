@@ -55,7 +55,7 @@ const ExpeditionSeasonRewardTileInternal: React.FC<IProps> = (props: IProps) => 
             <ImageContainer {...item} />
             <div className="gen-item-content-container">
                 <TextContainer text={item.Name} />
-                <RequiredItemsQuantityContainer requiredItems={[customizedReqItem]} />
+                <RequiredItemsQuantityContainer requiredItems={[customizedReqItem]} addTrailingSpace={true} />
             </div>
         </Link>
     );

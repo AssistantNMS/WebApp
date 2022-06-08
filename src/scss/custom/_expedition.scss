@@ -95,7 +95,6 @@
             }
         }
 
-
         .image-container {
             min-width: 100px;
 
@@ -139,7 +138,6 @@
             }
         }
 
-
         @media only screen and (min-width: 768px) {
             &:first-child {
                 border-top: none;
@@ -163,6 +161,26 @@
                 display: none;
             }
         }
+    }
+}
+
+.milestone-reward-content {
+    padding-top: 2em;
+
+    img.milestone-patch {
+        position: absolute;
+        top: -1em;
+        left: 0;
+        max-width: 256px;
+        transform: translateY(-50%);
+    }
+
+    .milestone-reward-title {
+        position: absolute;
+        top: -2.5em;
+        left: 0;
+        padding: 0.5em 0.5em 0.5em 275px;
+        border-top-right-radius: 0.5em;
     }
 }
 

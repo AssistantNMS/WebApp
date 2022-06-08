@@ -212,12 +212,21 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
         if (props.milestone == null) return;
 
         props.setDetailPane(
-            <GenericListPresenter
-                isCentered={shouldListBeCentered(props.milestone.Rewards.length)}
-                list={props.milestone.Rewards}
-                presenter={ExpeditionSeasonRewardTile}
-                identifier={(item: ExpeditionSeasonReward) => item.Id}
-            />,
+            <div className="milestone-reward-content">
+                <GenericListPresenter
+                    isCentered={shouldListBeCentered(props.milestone.Rewards.length)}
+                    list={props.milestone.Rewards}
+                    presenter={ExpeditionSeasonRewardTile}
+                    identifier={(item: ExpeditionSeasonReward) => item.Id}
+                />
+                {/* <h3 className="hidden-in-mobile milestone-reward-title">{props.milestone.Title}</h3> */}
+                <img
+                    src={`/assets/images/${props.milestone.Icon}`}
+                    className="hidden-in-mobile milestone-patch"
+                    alt={props.milestone.Title}
+                    draggable={false}
+                />
+            </div>,
             props.milestone.Rewards.length > 6 ? 600 : 400,
         );
     }

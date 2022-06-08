@@ -12,6 +12,7 @@ export interface CustomizedRequiredItemDetails extends RequiredItemDetails {
 interface IRequiredItemQuantityProps {
     requiredItems: Array<RequiredItemDetails | CustomizedRequiredItemDetails>;
     limitRequiredItems?: number;
+    addTrailingSpace?: boolean;
     addExtraPadding?: boolean;
     addBreakLines?: boolean;
 }
@@ -55,6 +56,9 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
             if (rows.length > 1) {
                 result.push(<span key={`${baseKey}-name-no-space`} className="item-name">&nbsp;</span>);
             }
+            if (props.addTrailingSpace) {
+                result.push(<span key={`${baseKey}-trailing-space`} style={{ opacity: 0 }}>&nbsp;</span>);
+            }
             result.push(<span key={`${baseKey}-blueprint`}>{translate(LocaleKey.blueprint)}</span>);
         } else {
             const quantityRange = (row as CustomizedRequiredItemDetails).QuantityRange;
@@ -65,6 +69,10 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
             }
             result.push(<span key={`${baseKey}-x`}>x&nbsp;</span>);
             result.push(<span key={`${baseKey}-name`} className="item-name">{row.Name}</span>);
+
+            if (props.addTrailingSpace) {
+                result.push(<span key={`${baseKey}-trailing-space`} style={{ opacity: 0 }}>&nbsp;test</span>);
+            }
         }
 
         if (props.addExtraPadding) {
