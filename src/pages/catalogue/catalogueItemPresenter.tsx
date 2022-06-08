@@ -27,7 +27,7 @@ import { LocaleKey } from '../../localization/LocaleKey';
 import { translate } from '../../localization/Translate';
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { ToastService } from '../../services/toastService';
-import { displayCookItems, displayEggTraits, displayObsoleteTech, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayRewardFrom, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
+import { displayCookItems, displayEggTraits, displayExtraDetailsSection, displayObsoleteTech, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayRewardFrom, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
 import { IReduxProps } from './catalogueItem.Redux';
 import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 
@@ -134,6 +134,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                         }
                     </ItemHeaderRow>
                     <AdditionalInfoChipRow additionalData={props.additionalData} />
+                    {displayExtraDetailsSection(props.item)}
 
                     {displayObsoleteTech(props.item.Usages)}
                     {displayRequiredItems(props.requiredItems, navigate)}

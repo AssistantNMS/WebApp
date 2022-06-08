@@ -3,6 +3,7 @@ import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { EggTraitListTile } from '../../components/tilePresenter/eggTraitTile/eggTraitListTile';
 import { GenericItemWithRequirementsListTile } from '../../components/tilePresenter/genericItemListTile/genericItemWithRequirementsListTile';
+import { CronusCookingListTile } from '../../components/tilePresenter/processorItemListTile/cronusCookingTile';
 import { ProcessorItemListTile } from '../../components/tilePresenter/processorItemListTile/processorItemListTile';
 import { ChargeByItemListTile } from '../../components/tilePresenter/recharge/chargeByItemListTile';
 import { RechargeItemListTile } from '../../components/tilePresenter/recharge/rechargeItemListTile';
@@ -268,6 +269,24 @@ export const displayObsoleteTech = (usages: Array<string>) => {
                 />
             }
         />
+    );
+}
+
+export const displayExtraDetailsSection = (gameItem: GameItemModel) => {
+    const displayItems = [];
+
+    if ((gameItem?.CookingValue ?? 0) > 0.0) {
+        displayItems.push(<div key="cronus-cooking" className="gen-item col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <CronusCookingListTile cookingValue={gameItem.CookingValue} />
+        </div>)
+    }
+
+    if (displayItems.length < 1) return null;
+
+    return (
+        <div className="generic-item-list row justify">
+            {displayItems}
+        </div>
     );
 }
 

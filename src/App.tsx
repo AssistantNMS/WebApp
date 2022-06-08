@@ -124,5 +124,4 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
   );
 }
 
-// export const App = connect(mapStateToProps)(AppUnconnected);
 export const App = connect(mapStateToProps, mapDispatchToProps)(AppUnconnected);

@@ -261,12 +261,6 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             }
         }
 
-        if (itemDetail.CookingValue != null && itemDetail.CookingValue > 0.0) {
-            const cookingVText = translate(LocaleKey.cookingValue);
-            const cookingV = (itemDetail.CookingValue * 100.0);
-            additionalData.push({ text: `${cookingVText}: ${cookingV}%`, icon: 'fastfood' });
-        }
-
         if (itemDetail.Power != null && itemDetail.Power !== 0) {
             additionalData.push({ text: itemDetail.Power.toString(), icon: 'flash_on' });
         }

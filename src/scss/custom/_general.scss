@@ -109,6 +109,12 @@ img.tiny {
     font-size: 36px !important;
 }
 
+.cronus {
+    img {
+        padding: 0.5em 0;
+    }
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -214,7 +220,7 @@ img.tiny {
 }
 
 .m-0-child {
-    >* {
+    > * {
         margin: 0;
     }
 }

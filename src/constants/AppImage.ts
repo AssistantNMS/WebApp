@@ -7,6 +7,7 @@ export class AppImage {
     static quicksilver: string = 'special/quicksilverAlt.png';
     static starshipScrap: string = 'special/starshipScrap.png';
     static communityMissionProgress: string = 'special/communityMissionProgress.png';
+    static cronus: string = 'special/cronus.png';
 
     static sclass: string = 'special/sclass.png';
     static aclass: string = 'special/aclass.png';
