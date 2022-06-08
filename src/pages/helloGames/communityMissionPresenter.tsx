@@ -17,6 +17,7 @@ import { QuicksilverItem, QuicksilverStore } from '../../contracts/data/quicksil
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { CommunityMissionProgressListTile } from '../../components/tilePresenter/communityLinkListTile';
 
 interface IProps {
     // Container State
@@ -60,6 +61,11 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                                 </h3>
                             ))
                         }
+                    </div>
+                </div>
+                <div className="generic-item-list row justify noselect">
+                    <div key="community-mission-progress" className="gen-item col-xl-5 col-lg-7 col-md-8 col-sm-12 col-xs-12">
+                        <CommunityMissionProgressListTile />
                     </div>
                 </div>
                 {displayQuicksilverData(communityMission, quicksilverRewards)}
