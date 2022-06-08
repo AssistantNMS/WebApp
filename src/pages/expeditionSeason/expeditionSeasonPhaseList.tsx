@@ -116,6 +116,7 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
                 isOpen={isDetailPaneOpen}
                 onClose={() => setDetailPaneOpen(false)}
                 snapPoints={[snapPoint]}
+                className="expedition-bottom-modal-sheet"
             >
                 <div className="container">
                     {detailPane}

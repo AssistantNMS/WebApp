@@ -70,14 +70,14 @@ export const DevDetailsBottomModalSheet: React.FC<IProps> = (props: IProps) => {
         }
 
         return (
-            <>
+            <div className="row scrollable">
                 <div className="col-12">
                     {details}
                 </div>
                 <div className="col-12">
                     <br /><br />
                 </div>
-            </>
+            </div>
         );
     }
 
@@ -89,9 +89,7 @@ export const DevDetailsBottomModalSheet: React.FC<IProps> = (props: IProps) => {
         >
             <div className="content">
                 <div className="container full pt1">
-                    <div className="row">
-                        {renderContent(devItem)}
-                    </div>
+                    {renderContent(devItem)}
                 </div>
             </div>
         </BottomModalSheet>
