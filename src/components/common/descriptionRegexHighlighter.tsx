@@ -115,7 +115,7 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
                     }
                     let lookupResKey = 'Unknown';
                     let lookupResIcon = AppImage.unknownButton;
-                    if (lookupResult != null && lookupResult.length > 0) {
+                    if (lookupResult != null && lookupResult.length > 0 && lookupResult[0].Icon.length > 0) {
                         lookupResKey = lookupResult[0].Key;
                         lookupResIcon = lookupResult[0].Icon;
                     }
