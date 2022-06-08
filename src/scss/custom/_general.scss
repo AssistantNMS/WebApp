@@ -110,8 +110,13 @@ img.tiny {
 }
 
 .cronus {
-    img {
+    .image-container img {
         padding: 0.5em 0;
+    }
+    .text-container {
+        p {
+            margin-bottom: 0.5em;
+        }
     }
 }
 

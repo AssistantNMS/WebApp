@@ -10,6 +10,7 @@ import { AppImage } from '../../../constants/AppImage';
 import { translate } from '../../../localization/Translate';
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { ReactNode } from 'react-markdown/lib/react-markdown';
+import { CustomTooltip } from '../../common/tooltip/tooltip';
 
 interface IWithDepInj {
 }
@@ -50,12 +51,14 @@ const CronusCookingListTileClass: React.FC<ICronusCookingProps> = (props: ICronu
 
     const getActions = () => {
         const result = [
-            <div key="nanite approx" className="mr-3">
-                <span>±</span>
-                <span>&nbsp;</span>
-                {cookingPerc}
-                <img src="/assets/images/rawMaterials/56.png" alt="Nanites" style={{ maxHeight: '20px', marginLeft: '5px' }} />
-            </div>
+            <CustomTooltip key="nanite approx" tooltipText="Nanites" theme="transparent">
+                <div key="nanite approx" className="mr-2">
+                    <span>±</span>
+                    <span>&nbsp;</span>
+                    {cookingPerc}
+                    <img src="/assets/images/rawMaterials/56.png" alt="Nanites" style={{ maxHeight: '20px', marginLeft: '5px' }} />
+                </div>
+            </CustomTooltip>
         ];
         return result;
     }
