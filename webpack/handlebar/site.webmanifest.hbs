@@ -1,0 +1,27 @@
+{
+"name": "{{{meta.appName}}}",
+"short_name": "{{jasonPlays.name}}",
+"description": "{{meta.description}}",
+"lang": "en-US",
+"manifest_version": 2,
+"version": "{{version}}",
+"background_color": "#1b1f22",
+"theme_color": "{{theme.colour}}",
+"display": "standalone",
+"scope": "/",
+"start_url": "/?standalone",
+"developer": {
+"name": "Kurt Lourens",
+"url": "https://kurtlourens.com"
+},
+"icons": [
+{{#each images.manifest as |img index|}}
+{{#if @index}},{{/if}}
+{
+"src": "{{rootUrl}}{{img.path}}",
+"sizes": "{{img.size}}",
+"type": "image/png"
+}
+{{/each}}
+]
+}
