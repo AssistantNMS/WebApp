@@ -53,9 +53,13 @@ const ExpeditionSeasonRewardTileInternal: React.FC<IProps> = (props: IProps) => 
     return (
         <Link to={`${catalogueItem}/${props.Id}`} data-id="ExpeditionSeasonRewardTile" className="gen-item-container" draggable={false}>
             <ImageContainer {...item} />
-            <div className="gen-item-content-container">
+            <div className="gen-item-content-container" data-type={props.Type}>
                 <TextContainer text={item.Name} />
-                <RequiredItemsQuantityContainer requiredItems={[customizedReqItem]} addTrailingSpace={true} />
+                <RequiredItemsQuantityContainer
+                    requiredItems={[customizedReqItem]}
+                    addTrailingSpace={true}
+                    hideBlueprint={props.Type !== 1}
+                />
             </div>
         </Link>
     );
