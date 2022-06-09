@@ -29,7 +29,8 @@ steps:
 
 - task: Npm@1
   inputs:
-    command: 'install'
+    command: 'custom'
+    customCommand: 'install --force'
   displayName: 'npm install'
 
 - task: Npm@1
