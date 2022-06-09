@@ -1,8 +1,8 @@
-import i18next from 'i18next';
 import React, { ReactNode } from 'react';
 
 import { RequiredItemDetails } from '../../../contracts/RequiredItemDetails';
 import { LocaleKey } from '../../../localization/LocaleKey';
+import { translate } from '../../../localization/Translate';
 import { CustomTooltip } from '../tooltip/tooltip';
 
 export interface CustomizedRequiredItemDetails extends RequiredItemDetails {
@@ -12,8 +12,10 @@ export interface CustomizedRequiredItemDetails extends RequiredItemDetails {
 interface IRequiredItemQuantityProps {
     requiredItems: Array<RequiredItemDetails | CustomizedRequiredItemDetails>;
     limitRequiredItems?: number;
+    addTrailingSpace?: boolean;
     addExtraPadding?: boolean;
     addBreakLines?: boolean;
+    hideBlueprint?: boolean;
 }
 
 export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps> = (props: IRequiredItemQuantityProps) => {
@@ -23,7 +25,7 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
         result += (rowIndex > startIndex ? ' + ' : '');
 
         if (row.Quantity === 0) {
-            result += row.Name + ' ' + i18next.t(LocaleKey.blueprint);
+            result += row.Name + ' ' + translate(LocaleKey.blueprint);
         } else {
             const quantityRange = (row as CustomizedRequiredItemDetails).QuantityRange;
             if (quantityRange == null) {
@@ -55,7 +57,13 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
             if (rows.length > 1) {
                 result.push(<span key={`${baseKey}-name-no-space`} className="item-name">&nbsp;</span>);
             }
-            result.push(<span key={`${baseKey}-blueprint`}>{i18next.t(LocaleKey.blueprint)}</span>);
+            if (props.addTrailingSpace) {
+                result.push(<span key={`${baseKey}-trailing-space`} style={{ opacity: 0 }}>&nbsp;</span>);
+            }
+
+            if (!props.hideBlueprint) {
+                result.push(<span key={`${baseKey}-blueprint`}>{translate(LocaleKey.blueprint)}</span>);
+            }
         } else {
             const quantityRange = (row as CustomizedRequiredItemDetails).QuantityRange;
             if (quantityRange == null) {
@@ -65,6 +73,10 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
             }
             result.push(<span key={`${baseKey}-x`}>x&nbsp;</span>);
             result.push(<span key={`${baseKey}-name`} className="item-name">{row.Name}</span>);
+
+            if (props.addTrailingSpace) {
+                result.push(<span key={`${baseKey}-trailing-space`} style={{ opacity: 0 }}>&nbsp;test</span>);
+            }
         }
 
         if (props.addExtraPadding) {
@@ -97,7 +109,7 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
         quantities.pop();
         quantities.push(<span key="quantity-etc-+">&nbsp;+&nbsp;</span>);
         quantities.push(<br key="quantity-etc-br" />);
-        quantities.push(<span key="quantity-etc">{i18next.t(LocaleKey.more)}...</span>);
+        quantities.push(<span key="quantity-etc">{translate(LocaleKey.more)}...</span>);
     }
 
     return (

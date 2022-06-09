@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import { translate } from '../../localization/Translate';
 import React, { useEffect, useState } from 'react';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { CardButton } from '../../components/common/button/cardButton';
@@ -51,7 +51,7 @@ const SocialPresenterUnconnect: React.FC<IProps> = (props: IProps) => {
         )
     }
 
-    const title = i18next.t(LocaleKey.social);
+    const title = translate(LocaleKey.social);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

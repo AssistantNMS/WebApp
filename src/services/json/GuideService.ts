@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import { translate } from '../../localization/Translate';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 import { GuideListItem } from '../../contracts/guide/guideListItem';
@@ -9,7 +9,7 @@ import { dateIsBefore } from '../../helper/dateHelper';
 
 export class GuideService extends BaseJsonService {
     async getListOfGuides(): Promise<ResultWithValue<Array<Guide>>> {
-        const guidesDir = await this.getAsset<Array<GuideListItem>>(`json/${i18next.t(LocaleKey.guidesJson).toString()}.json`)
+        const guidesDir = await this.getAsset<Array<GuideListItem>>(`json/${translate(LocaleKey.guidesJson).toString()}.json`)
         if (!guidesDir.isSuccess) return {
             isSuccess: false,
             value: [],

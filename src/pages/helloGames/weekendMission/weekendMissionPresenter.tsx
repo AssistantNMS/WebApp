@@ -1,5 +1,5 @@
-import i18next from 'i18next';
-import React from 'react';
+import { translate } from '../../../localization/Translate';
+import React, { ReactNode } from 'react';
 import { PositiveButton } from '../../../components/common/button/positiveButton';
 import { GameItemImage } from '../../../components/common/gameItem/gameItemImage';
 import { GenericListPresenter } from '../../../components/common/genericListPresenter/genericListPresenter';
@@ -36,7 +36,7 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
     const [isOpen, setOpen] = React.useState(false);
     const [currentMessageFlow, setMessageFlow] = React.useState(anyObject);
 
-    const handleLoadingOrError = (displayFunc: (props: IProps) => void) => {
+    const handleLoadingOrError = (displayFunc: (props: IProps) => ReactNode): ReactNode => {
         if (props.status === NetworkState.Loading) return <SmallLoading />;
         if (props.status === NetworkState.Error ||
             !props.weekendMissionStage ||
@@ -74,14 +74,14 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                             setMessageFlow({ ...weekendMission.NpcMessageFlows, timeStamp });
                             setOpen(true)
                         }}>
-                            <span>{i18next.t(LocaleKey.readConversation).toString()}</span>
+                            <span>{translate(LocaleKey.readConversation).toString()}</span>
                         </PositiveButton>
                     </div>
                 </div >
                 <hr />
                 <div className="row">
                     <div className="col-12">
-                        {i18next.t(LocaleKey.requiresTheFollowing)}
+                        {translate(LocaleKey.requiresTheFollowing)}
                     </div>
                     <div className="col-12">
                         <GenericListPresenter
@@ -95,7 +95,7 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                             setMessageFlow(weekendMission.PortalMessageFlows);
                             setOpen(true)
                         }}>
-                            <span>{i18next.t(LocaleKey.readConversation).toString()}</span>
+                            <span>{translate(LocaleKey.readConversation).toString()}</span>
                         </PositiveButton>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                             <PositiveButton additionalClass={hasNext ? 'right' : ''}
                                 icon="arrow_back_ios" iconPosition="left"
                                 onClick={() => { props.navigateToWeekendMissionLevel((props.level ?? 0) - 1) }} >
-                                <span>&nbsp;{i18next.t(LocaleKey.previousWeekendMission).toString()}</span>
+                                <span>&nbsp;{translate(LocaleKey.previousWeekendMission).toString()}</span>
                             </PositiveButton>
                         </div>
                     }
@@ -117,7 +117,7 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                             <PositiveButton additionalClass={hasPrev ? 'left' : ''}
                                 icon="arrow_forward_ios" iconPosition="right"
                                 onClick={() => { props.navigateToWeekendMissionLevel((props.level ?? 0) + 1) }} >
-                                <span>{i18next.t(LocaleKey.nextWeekendMission).toString()}&nbsp;</span>
+                                <span>{translate(LocaleKey.nextWeekendMission).toString()}&nbsp;</span>
                             </PositiveButton>
                         </div>}
                 </div>
@@ -125,7 +125,7 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
         );
     }
 
-    const title = i18next.t(LocaleKey.weekendMission);
+    const title = translate(LocaleKey.weekendMission);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

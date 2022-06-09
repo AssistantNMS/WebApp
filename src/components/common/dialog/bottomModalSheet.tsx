@@ -5,6 +5,7 @@ interface IProps {
     isOpen: boolean;
     children: ReactNode;
     snapPoints?: Array<number>;
+    className?: string;
     onClose: () => void;
 }
 

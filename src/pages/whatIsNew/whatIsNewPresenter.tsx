@@ -1,4 +1,3 @@
-import i18next from 'i18next';
 import React, { ReactNode } from 'react';
 
 import { HeadComponent } from '../../components/core/headComponent';
@@ -11,6 +10,7 @@ import { GenericListPresenter } from '../../components/common/genericListPresent
 import { WhatIsNewListTile } from '../../components/tilePresenter/whatIsNewListTile';
 import { VersionViewModel } from '../../contracts/generated/AssistantApps/ViewModel/Version/versionViewModel';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
+import { translate } from '../../localization/Translate';
 
 interface IProps {
     whatIsNewItems: Array<VersionViewModel>;
@@ -26,7 +26,7 @@ export const WhatIsNewPresenter: React.FC<IProps> = (props: IProps) => {
         }
         if (props.whatIsNewItems == null ||
             props.whatIsNewItems.length < 1) {
-            return (<h2>{i18next.t(LocaleKey.noItems)}</h2>);
+            return (<h2>{translate(LocaleKey.noItems)}</h2>);
         }
         return displayFunc(props);
     }
@@ -47,7 +47,7 @@ export const WhatIsNewPresenter: React.FC<IProps> = (props: IProps) => {
         );
     }
 
-    const title = i18next.t(LocaleKey.whatIsNew);
+    const title = translate(LocaleKey.whatIsNew);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

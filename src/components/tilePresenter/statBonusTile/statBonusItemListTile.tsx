@@ -1,6 +1,5 @@
-
-import i18next from 'i18next';
 import * as React from 'react';
+import { translate } from '../../../localization/Translate';
 import { ProceduralStatBonus } from '../../../contracts/ProceduralStatBonus';
 import { StatBonus } from '../../../contracts/StatBonus';
 import { ImageContainer } from '../../common/tile/imageContainer';
@@ -10,7 +9,7 @@ import { TextContainer } from '../../common/tile/textContainer';
 const StatBonusItemListTileClass: React.FC<StatBonus> = (props: StatBonus) => {
     let subTitle = props.Value?.toString() ?? '';
     if (props.LocaleKeyTemplate !== 'defaultTemplate') {
-        subTitle = i18next.t(props.LocaleKeyTemplate)
+        subTitle = translate(props.LocaleKeyTemplate)
             .replace('{0}', subTitle);
     }
     return (
@@ -35,13 +34,13 @@ const ProceduralStatBonusItemListTileClass: React.FC<ProceduralStatBonus> = (pro
     let subTitle = props.MinValue + ' => ' + props.MaxValue;
     if (props.LocaleKeyTemplate !== 'defaultTemplate') {
         if (props.MinValue === props.MaxValue) {
-            subTitle = i18next.t(props.LocaleKeyTemplate)
+            subTitle = translate(props.LocaleKeyTemplate)
                 .replace('{0}', props.MinValue.toString());
         } else {
-            subTitle = i18next.t(props.LocaleKeyTemplate)
+            subTitle = translate(props.LocaleKeyTemplate)
                 .replace('{0}', props.MinValue.toString()) +
                 ' => ' +
-                i18next.t(props.LocaleKeyTemplate)
+                translate(props.LocaleKeyTemplate)
                     .replace('{0}', props.MaxValue.toString());
         }
     }

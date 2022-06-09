@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import i18next from 'i18next';
+import { translate } from '../../../localization/Translate';
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { withServices } from '../../../integration/dependencyInjection';
@@ -64,7 +64,7 @@ const NavBarUnconnected: React.FC<IProps> = (props: IProps) => {
                         <li className="nav-item dropdown noselect" draggable={false}>
                             <BaseFloatingActionButton
                                 keyString="LanguageDropdownFloatingActionButton"
-                                tooltipText={i18next.t(LocaleKey.appLanguage)}
+                                tooltipText={translate(LocaleKey.appLanguage)}
                                 icon={<i className="material-icons">language</i>}
                                 onClick={showLangDropdown}
                             />

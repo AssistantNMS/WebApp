@@ -1,6 +1,6 @@
-import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
 
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { Error } from '../../components/core/error/error';
@@ -53,13 +53,13 @@ export const CommunityLinksPageUnconnected: React.FC<IProps> = (props: IProps) =
         }
 
         if (communityLinks == null || communityLinks.length === 0) return (
-            <h2>{i18next.t(LocaleKey.noItems)}</h2>
+            <h2>{translate(LocaleKey.noItems)}</h2>
         );
 
         return <GenericListPresenter list={communityLinks} presenter={CommunityLinkListTile} identifier={(item: CommunityLinkViewModel) => item.name + item.subtitle} />;
     };
 
-    const title = i18next.t(LocaleKey.communityLinks);
+    const title = translate(LocaleKey.communityLinks);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

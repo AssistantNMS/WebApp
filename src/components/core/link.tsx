@@ -17,7 +17,7 @@ export const BasicLink = (props: IProps) => {
     };
 
     return (
-        <a
+        <a  {...props}
             href={appendRef(props.href)}
             target="_blank"
             rel="noopener noreferrer"

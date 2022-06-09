@@ -4,13 +4,16 @@ import * as React from 'react';
 import { TextContainer } from '../common/tile/textContainer';
 import { ImageContainer } from '../common/tile/imageContainer';
 import { CommunityLinkViewModel } from '../../contracts/generated/Model/Community/communityLinkViewModel';
+import { ExternalUrls } from '../../constants/ExternalUrls';
+import { AppImage } from '../../constants/AppImage';
+import { BasicLink } from '../core/link';
+import { ActionContainer } from '../common/tile/actionContainer';
 
 export const CommunityLinkListTile = (props: CommunityLinkViewModel, index: number) => {
     const hasQuantity = props.subtitle.length > 1;
     return (
-        <a key={props.externalUrl + ' ' + index} data-id="ContributorListTile"
-            href={props.externalUrl} target="_blank" rel="noopener noreferrer"
-            className="contributor gen-item-container" draggable={false}>
+        <BasicLink key={props.externalUrl + ' ' + index} data-id="ContributorListTile"
+            href={props.externalUrl} additionalClassNames="contributor gen-item-container">
             <ImageContainer Name={props.name} Icon={props.iconUrl} IsExternal={true} />
             <div className="gen-item-content-container">
                 <TextContainer text={props.name} additionalCss={hasQuantity ? '' : 'full'} />
@@ -21,6 +24,29 @@ export const CommunityLinkListTile = (props: CommunityLinkViewModel, index: numb
                     </div>
                 }
             </div>
-        </a>
+        </BasicLink>
+    );
+}
+
+export const CommunityMissionProgressListTile = () => {
+
+    const getActions = () => {
+        const result = [
+            <i key="locked" className="material-icons x2">query_stats</i>
+        ];
+        return result;
+    }
+    return (
+        <BasicLink key={ExternalUrls.communityMissionProgress} data-id="CommunityMissionProgressListTile"
+            href={ExternalUrls.communityMissionProgress} additionalClassNames="contributor gen-item-container">
+            <ImageContainer Name="CommunityMissionProgress" Icon={AppImage.communityMissionProgress} />
+            <div className="gen-item-content-container">
+                <TextContainer text="Community Mission Progress Tracker" />
+                <div className="quantity-container">
+                    View progress over time
+                </div>
+                <ActionContainer actions={getActions()} />
+            </div>
+        </BasicLink>
     );
 }

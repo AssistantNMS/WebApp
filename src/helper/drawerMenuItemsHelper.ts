@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import { translate } from '../localization/Translate';
 import { AppImage } from '../constants/AppImage';
 import { ExistingExpeditions, IExistingExpeditions } from '../constants/Expedition';
 import * as routes from '../constants/Route';
@@ -22,28 +22,28 @@ export const menuItemSeperator = {
 export const getMenuSection1 = () => {
   const menuItems: Array<DrawerMenuItem> = [];
   menuItems.push({
-    name: i18next.t(LocaleKey.whatIsNew).toString(),
+    name: translate(LocaleKey.whatIsNew).toString(),
     link: routes.whatIsNew,
     icon: '/assets/images/drawer/whatIsNew.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.language).toString(),
+    name: translate(LocaleKey.language).toString(),
     link: routes.language,
     icon: '/assets/images/drawer/language.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.patrons).toString(),
+    name: translate(LocaleKey.patrons).toString(),
     link: routes.patreon,
     icon: '/assets/images/patreon.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.donation).toString(),
+    name: translate(LocaleKey.donation).toString(),
     link: routes.donation,
     icon: '/assets/images/drawer/donation.png',
     iconType: DrawerIconType.Custom,
@@ -56,14 +56,14 @@ export const getMenuSection1 = () => {
 export const getMenuSection2 = () => {
   const menuItems: Array<DrawerMenuItem> = [];
   menuItems.push({
-    name: i18next.t(LocaleKey.favourites).toString(),
+    name: translate(LocaleKey.favourites).toString(),
     link: routes.favourites,
     icon: 'star',
     iconType: DrawerIconType.Material,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.catalogue).toString(),
+    name: translate(LocaleKey.catalogue).toString(),
     link: routes.catalogue,
     icon: '/assets/images/drawer/catalogue.png',
     iconType: DrawerIconType.Custom,
@@ -71,7 +71,7 @@ export const getMenuSection2 = () => {
     subs: getCatalogueMenuItems()
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.nmsfm).toString(),
+    name: translate(LocaleKey.nmsfm).toString(),
     link: routes.nmsfm,
     icon: 'radio',
     iconType: DrawerIconType.Material,
@@ -91,49 +91,49 @@ export const getMenuSection2 = () => {
 export const getMenuSection3 = () => {
   const menuItems: Array<DrawerMenuItem> = [];
   menuItems.push({
-    name: i18next.t(LocaleKey.cart).toString(),
+    name: translate(LocaleKey.cart).toString(),
     link: routes.cart,
     icon: '/assets/images/drawer/cart.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.guides).toString(),
+    name: translate(LocaleKey.guides).toString(),
     link: routes.guides,
     icon: '/assets/images/drawer/guide.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.portalLibrary).toString(),
+    name: translate(LocaleKey.portalLibrary).toString(),
     link: routes.portal,
     icon: '/assets/images/drawer/portal.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.communityMission).toString(),
+    name: translate(LocaleKey.communityMission).toString(),
     link: routes.communityMission,
     icon: '/assets/images/drawer/communityMission.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.titles).toString(),
+    name: translate(LocaleKey.titles).toString(),
     link: routes.titles,
     icon: 'edit_attributes_sharp',
     iconType: DrawerIconType.Material,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.techTree).toString(),
+    name: translate(LocaleKey.techTree).toString(),
     link: routes.techTree,
     icon: '/assets/images/drawer/techTree.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.communityLinks).toString(),
+    name: translate(LocaleKey.communityLinks).toString(),
     link: routes.communityLinks,
     icon: '/assets/images/drawer/communityLinks.png',
     iconType: DrawerIconType.Custom,
@@ -146,7 +146,7 @@ export const getMenuSection3 = () => {
 export const getMenuSection4 = (): Array<DrawerMenuItem> => {
   const menuItems: Array<DrawerMenuItem> = [];
   menuItems.push({
-    name: i18next.t(LocaleKey.seasonalExpeditionSeasons).toString(),
+    name: translate(LocaleKey.seasonalExpeditionSeasons).toString(),
     link: routes.seasonExpedition,
     icon: 'map',
     iconType: DrawerIconType.Material,
@@ -162,7 +162,7 @@ export const getMenuSection4 = (): Array<DrawerMenuItem> => {
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.weekendMission).toString(),
+    name: translate(LocaleKey.weekendMission).toString(),
     link: routes.weekendMission,
     icon: '/assets/images/drawer/weekendMission.png',
     iconType: DrawerIconType.Custom,
@@ -210,7 +210,7 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
   }
 
   menuItems.push({
-    name: i18next.t(LocaleKey.seasonalExpeditionSeasons).toString(),
+    name: translate(LocaleKey.seasonalExpeditionSeasons).toString(),
     link: routes.seasonExpedition,
     icon: 'map',
     iconType: DrawerIconType.Material,
@@ -218,7 +218,7 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.weekendMission).toString(),
+    name: translate(LocaleKey.weekendMission).toString(),
     link: routes.weekendMission,
     icon: '/assets/images/drawer/weekendMission.png',
     iconType: DrawerIconType.Custom,
@@ -240,35 +240,35 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
 export const getMenuSection5 = (): Array<DrawerMenuItem> => {
   const menuItems: Array<DrawerMenuItem> = [];
   // menuItems.push({
-  //   name: i18next.t(LocaleKey.synchronize).toString(),
+  //   name: translate(LocaleKey.synchronize).toString(),
   //   link: routes.sync,
   //   icon: 'sync',
   //   iconType: DrawerIconType.Material,
   //   isActive: false
   // });
   menuItems.push({
-    name: i18next.t(LocaleKey.about).toString(),
+    name: translate(LocaleKey.about).toString(),
     link: routes.about,
     icon: '/assets/images/drawer/about.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.feedback).toString(),
+    name: translate(LocaleKey.feedback).toString(),
     link: "https://tools.nmsassistant.com/feedback",
     icon: 'feedback',
     iconType: DrawerIconType.Material,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.social).toString(),
+    name: translate(LocaleKey.social).toString(),
     link: routes.social,
     icon: '/assets/images/twitter.png',
     iconType: DrawerIconType.Custom,
     isActive: false
   });
   menuItems.push({
-    name: i18next.t(LocaleKey.settings).toString(),
+    name: translate(LocaleKey.settings).toString(),
     link: routes.setting,
     icon: 'settings',
     iconType: DrawerIconType.Material,

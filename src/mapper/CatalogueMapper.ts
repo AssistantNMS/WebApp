@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import { translate } from '../localization/Translate';
 import { CatalogueType } from '../constants/CatalogueType';
 import { LocaleKey } from '../localization/LocaleKey';
 import { IdPrefix } from '../constants/IdPrefix';
@@ -6,31 +6,31 @@ import { IdPrefix } from '../constants/IdPrefix';
 export const mapToLocale = (catalogueType: string): string => {
   switch (catalogueType) {
     case CatalogueType.rawMaterials.toString():
-      return i18next.t(LocaleKey.rawMaterialsJson).toString();
+      return translate(LocaleKey.rawMaterialsJson).toString();
     case CatalogueType.craftedProducts.toString():
-      return i18next.t(LocaleKey.productsJson).toString();
+      return translate(LocaleKey.productsJson).toString();
     case CatalogueType.tradeItems.toString():
-      return i18next.t(LocaleKey.tradeItemsJson).toString();
+      return translate(LocaleKey.tradeItemsJson).toString();
     case CatalogueType.buildings.toString():
-      return i18next.t(LocaleKey.buildingsJson).toString();
+      return translate(LocaleKey.buildingsJson).toString();
     case CatalogueType.curiosity.toString():
-      return i18next.t(LocaleKey.curiosityJson).toString();
+      return translate(LocaleKey.curiosityJson).toString();
     case CatalogueType.cooking.toString():
-      return i18next.t(LocaleKey.cookingJson).toString();
+      return translate(LocaleKey.cookingJson).toString();
     case CatalogueType.technology.toString():
-      return i18next.t(LocaleKey.technologiesJson).toString();
+      return translate(LocaleKey.technologiesJson).toString();
     case CatalogueType.technologyModule.toString():
-      return i18next.t(LocaleKey.technologyModulesJson).toString();
+      return translate(LocaleKey.technologyModulesJson).toString();
     case CatalogueType.constructedTechnology.toString():
-      return i18next.t(LocaleKey.constructedTechnologyJson).toString();
+      return translate(LocaleKey.constructedTechnologyJson).toString();
     case CatalogueType.others.toString():
-      return i18next.t(LocaleKey.otherItemsJson).toString();
+      return translate(LocaleKey.otherItemsJson).toString();
     case CatalogueType.refinery.toString():
-      return i18next.t(LocaleKey.refineryJson).toString();
+      return translate(LocaleKey.refineryJson).toString();
     case CatalogueType.nutrientProcessor.toString():
-      return i18next.t(LocaleKey.nutrientProcessorJson).toString();
+      return translate(LocaleKey.nutrientProcessorJson).toString();
     case CatalogueType.proceduralProducts.toString():
-      return i18next.t(LocaleKey.proceduralProductsJson).toString();
+      return translate(LocaleKey.proceduralProductsJson).toString();
   }
   return '';
 }

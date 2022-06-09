@@ -1,5 +1,5 @@
 import * as type from './type';
-import i18next from 'i18next';
+import { changeLanguage } from '../../../localization/Translate';
 
 import { ControllerPlatformType } from '../../../contracts/enum/ControllerPlatformType';
 import { StateSettingReducer } from '../../state/StateSettingReducer';
@@ -18,7 +18,7 @@ export const initialSettingState: StateSettingReducer = {
 export const settingReducer = (state = initialSettingState, action: any) => {
     switch (action.type) {
         case type.LANGUAGE:
-            i18next.changeLanguage(action.langCode);
+            changeLanguage(action.langCode);
             return Object.assign({}, state, {
                 selectedLanguage: action.langCode
             });

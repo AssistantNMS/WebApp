@@ -1,7 +1,7 @@
-import i18next from 'i18next';
 import React from 'react';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 
+import { translate } from '../../localization/Translate';
 import { CardButton } from '../../components/common/button/cardButton';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -65,7 +65,7 @@ export const SyncPresenter: React.FC<IProps> = (props: IProps) => {
         }
     }
 
-    const title = i18next.t(LocaleKey.synchronize);
+    const title = translate(LocaleKey.synchronize);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />
@@ -77,7 +77,7 @@ export const SyncPresenter: React.FC<IProps> = (props: IProps) => {
                             (props.status === GoogleSignedInState.Loading)
                                 ? <h1>Loading</h1>
                                 : <>
-                                    <div className="col-12"><h3>{i18next.t(LocaleKey.account)}</h3></div>
+                                    <div className="col-12"><h3>{translate(LocaleKey.account)}</h3></div>
                                     {displayAccount()}
                                 </>
                         }

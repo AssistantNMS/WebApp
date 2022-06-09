@@ -9,6 +9,7 @@ export const BottomModalSheetImpl = (props) => {
                 onClose={props.onClose}
                 snapPoints={props.snapPoints}
                 initialSnap={0}
+                className={props.className}
             >
                 <Sheet.Container>
                     <Sheet.Header />

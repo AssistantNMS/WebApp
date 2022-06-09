@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React from 'react';
+import { translate } from '../../localization/Translate';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 import { BaseFloatingActionButton } from './baseFloatingActionButton';
@@ -9,7 +9,7 @@ export const CartFloatingActionButton = (addThisItemToCart: any) => {
         <BaseFloatingActionButton
             key="CartFloatingActionButton"
             keyString="CartFloatingActionButton"
-            tooltipText={i18next.t(LocaleKey.cart)}
+            tooltipText={translate(LocaleKey.cart)}
             icon={<i className="material-icons">shopping_basket</i>}
             onClick={addThisItemToCart}
         />

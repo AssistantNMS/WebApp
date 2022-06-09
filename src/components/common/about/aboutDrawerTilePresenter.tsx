@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React, { useEffect, useState } from "react";
+import { translate } from '../../../localization/Translate';
 import { MetaData } from '../../../contracts/data/metaData';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { LocaleKey } from '../../../localization/LocaleKey';
@@ -29,8 +29,8 @@ export const AboutDrawerTilePresenterUnconnected: React.FC<IProps> = (props: IPr
         if (metaJson.isSuccess) setMetaJson(metaJson.value);
     }
 
-    const versionString = i18next.t(LocaleKey.appVersion).replace('{0}', process.env.REACT_APP_VERSION ?? '');
-    const gameVersionString = i18next.t(LocaleKey.gameVersion).replace('{0}', (metaJson?.GameVersion ?? ''));
+    const versionString = translate(LocaleKey.appVersion).replace('{0}', process.env.REACT_APP_VERSION ?? '');
+    const gameVersionString = translate(LocaleKey.gameVersion).replace('{0}', (metaJson?.GameVersion ?? ''));
     const gameVersionGeneratedDate = (metaJson?.GeneratedDate ?? '') + ' '; // dont know why this is needed
     const gameBuildNumber = (metaJson?.GameBuildNumber ?? '') + ' '; // dont know why this is needed
 

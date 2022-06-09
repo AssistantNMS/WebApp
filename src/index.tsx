@@ -8,15 +8,15 @@ import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import { UpdateButton } from './components/updateButton';
 import { modalSetup } from './components/common/dialog/baseDialog';
+import { anyObject } from './helper/typescriptHacks';
 import { DependencyInjectionProvider } from './integration/dependencyInjection';
 import { initLocalization } from './integration/i18n';
 import { initAnalytics } from './integration/analytics';
 import { updateServiceWorker } from './integration/serviceWorker';
 import { getCurrentLanguage } from './redux/modules/setting/selector';
-import { getJSON, defaultConfig } from './utils';
-
 import { loadStateFromLocalStorage, saveStateToLocalStorage } from './redux/stateFromLocalStorage';
 import { reducer } from './redux';
+import { getJSON, defaultConfig } from './utils';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -24,7 +24,7 @@ import './index.scss';
 import 'react-tippy/dist/tippy.css';
 import 'react-vertical-timeline-component/style.min.css';
 import 'flag-icons/css/flag-icons.min.css';
-import { anyObject } from './helper/typescriptHacks';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 type CustomElement<T> = Partial<T & DOMAttributes<T> & { children: any }>;
 

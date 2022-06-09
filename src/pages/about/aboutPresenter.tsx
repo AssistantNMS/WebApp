@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React, { ReactNode, useState } from 'react';
+import { translate } from '../../localization/Translate';
 import { AssistantAppsContent } from '../../components/common/about/assistantAppsContent';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -31,7 +31,7 @@ export const AboutPresenter: React.FC = () => {
     ];
 
     const [selectedOption, setSelectedOption] = useState<IAboutTabs>(options[0]);
-    const title = i18next.t(LocaleKey.about);
+    const title = translate(LocaleKey.about);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />
@@ -43,7 +43,7 @@ export const AboutPresenter: React.FC = () => {
                             <SegmentedControl.SegmentedControl
                                 name="aboutTabs"
                                 options={options.map((opt) => ({
-                                    label: i18next.t(opt.text),
+                                    label: translate(opt.text),
                                     value: opt.text,
                                     default: selectedOption.text === opt.text,
                                 }))}

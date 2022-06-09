@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import { translate } from '../../../localization/Translate';
 import React, { useEffect, useState } from 'react';
 import { TileLoading } from '../../../components/core/loading/loading';
 import { EggNeuralTrait } from '../../../contracts/data/eggNeuralTrait';
@@ -48,8 +48,8 @@ const EggTraitListTileInternal: React.FC<IProps> = (props: IProps) => {
                 <ImageContainer Name={item.Description} Icon={`other/93.png`} />
             </div>
             <div className="gen-item-content-container">
-                <TextContainer text={i18next.t(props.TraitType)} />
-                <div className="quantity-container">{i18next.t(props.Trait)}</div>
+                <TextContainer text={translate(props.TraitType)} />
+                <div className="quantity-container">{translate(props.Trait)}</div>
                 <ActionContainer actions={getActions()} />
             </div>
         </div>

@@ -1,5 +1,5 @@
 
-import i18next from 'i18next';
+import { translate } from '../../localization/Translate';
 import * as React from 'react';
 
 import { Markdown } from '../../components/markdown';
@@ -43,7 +43,7 @@ export class WhatIsNewListTile extends React.Component<IProps, IState> {
         return (
             <div className="gen-item-container w-full" draggable={false}>
                 <div className="gen-item-content-container pointer" onClick={() => this.toggleIsOpen(true)}>
-                    <TextContainer text={i18next.t(LocaleKey.release).replace('{0}', version.buildName)}
+                    <TextContainer text={translate(LocaleKey.release).replace('{0}', version.buildName)}
                         additionalCss="m-0-child f-1"
                     />
                     <div className="quantity-container mb-2">{formatDate(version.activeDate)}</div>

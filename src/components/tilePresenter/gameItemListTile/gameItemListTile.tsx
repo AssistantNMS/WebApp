@@ -1,8 +1,8 @@
-import i18next from 'i18next';
 import * as React from 'react';
 import { useRef } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { translate } from '../../../localization/Translate';
 import { catalogueItem } from '../../../constants/Route';
 import { CartItem } from '../../../contracts/cart/cartItem';
 import { FavouriteItem } from '../../../contracts/favourite/favouriteItem';
@@ -70,13 +70,12 @@ export const GameItemListTileUnconnected: React.FC<IProps> = (props: IProps) => 
                     {
                         content: <span><i className="material-icons">shopping_basket</i>&nbsp;&nbsp;Add to Cart</span>,
                         onClick: async () => {
-                            const quantityResult = await getQuantityDialog(i18next.t(LocaleKey.quantity));
+                            const quantityResult = await getQuantityDialog(translate(LocaleKey.quantity));
                             if (quantityResult.isSuccess === false) return;
                             const cartItem: CartItem = {
                                 Icon: props.item.Icon,
                                 Id: props.item.Id,
                                 RequiredItems: props.item.RequiredItems,
-                                TypeName: props.item.TypeName,
                                 Quantity: quantityResult.value
                             }
                             props.addItemToCart?.(cartItem);

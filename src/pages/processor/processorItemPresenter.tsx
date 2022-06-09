@@ -1,6 +1,6 @@
-import i18next from 'i18next';
 import React from 'react';
 import { useNavigate } from 'react-router';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { Error } from '../../components/core/error/error';
@@ -42,7 +42,7 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
             <>
                 <div className="row">
                     <div className="col-12">
-                        <h3>{i18next.t(LocaleKey.inputs)}</h3>
+                        <h3>{translate(LocaleKey.inputs)}</h3>
                     </div>
                     <div className="col-12">
                         <GenericListPresenter list={requiredItems} presenter={RequiredItemDetailsListTile} isCentered={true} />
@@ -56,10 +56,10 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
     const outputId = (props?.item?.Id || '');
     const outputName = (props?.outputDetails?.Name || '');
     const operation = (props?.item?.Operation || '');
-    const timeToMake = i18next.t(LocaleKey.timeToMake);
-    const procInSeconds = i18next.t(LocaleKey.seconds).replaceAll('{0}', props?.item?.Time || '');
+    const timeToMake = translate(LocaleKey.timeToMake);
+    const procInSeconds = translate(LocaleKey.seconds).replaceAll('{0}', props?.item?.Time || '');
 
-    const title = `${outputId.includes("ref") ? i18next.t(LocaleKey.refinedUsing) : i18next.t(LocaleKey.cooking)} - ${outputName}`;
+    const title = `${outputId.includes("ref") ? translate(LocaleKey.refinedUsing) : translate(LocaleKey.cooking)} - ${outputName}`;
     const description = `${outputName} - ${operation}`;
     return (
         <DefaultAnimation>

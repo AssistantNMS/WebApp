@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -14,7 +14,7 @@ interface IProps {
 }
 
 export const OnlineMeetup2020SubmissionPresenter: React.FC<IProps> = (props: IProps) => {
-    const handleLoadingOrError = (displayFunc: (props: IProps) => void) => {
+    const handleLoadingOrError = (displayFunc: (props: IProps) => ReactNode): ReactNode => {
         if (props.status === NetworkState.Loading) return <SmallLoading />;
         if (props.status === NetworkState.Error ||
             props.items == null || props.items.length < 1) {

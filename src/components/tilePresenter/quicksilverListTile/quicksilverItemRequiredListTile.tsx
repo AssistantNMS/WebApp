@@ -1,16 +1,11 @@
-
-import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
-import { ReactNode } from 'react-markdown/lib/react-markdown';
 import { Link } from 'react-router-dom';
 
 import { catalogueItem } from '../../../constants/Route';
 import { GameItemModel } from '../../../contracts/GameItemModel';
 import { RequiredItem } from '../../../contracts/RequiredItem';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
-import { LocaleKey } from '../../../localization/LocaleKey';
 import { GameItemService } from '../../../services/json/GameItemService';
-import { ActionContainer } from '../../common/tile/actionContainer';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { TextContainer } from '../../common/tile/textContainer';
 import { TileLoading } from '../../core/loading/loading';

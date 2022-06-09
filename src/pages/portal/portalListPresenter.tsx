@@ -1,7 +1,7 @@
-import i18next from 'i18next';
 import React from 'react';
 import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -24,7 +24,7 @@ export const PortalListPresenterUnconnected: React.FC<IProps> = (props: IProps) 
     const displayPortals = (portals: Array<PortalRecord>) => {
         if (portals == null || portals.length === 0) return (
             <div className="col-12">
-                <h2>{i18next.t(LocaleKey.noItems)}</h2>
+                <h2>{translate(LocaleKey.noItems)}</h2>
             </div>
         );
         return portals.map((item: PortalRecord, index: number) => {
@@ -44,7 +44,7 @@ export const PortalListPresenterUnconnected: React.FC<IProps> = (props: IProps) 
         });
     }
 
-    const title = i18next.t(LocaleKey.portalLibrary);
+    const title = translate(LocaleKey.portalLibrary);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

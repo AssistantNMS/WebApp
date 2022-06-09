@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import { translate } from '../../../localization/Translate';
 import * as React from 'react';
 import { TextContainer } from '../../common/tile/textContainer';
 import { LocaleKey } from '../../../localization/LocaleKey';
@@ -62,7 +62,7 @@ export const TileLoading = () => {
                 }} />
             </div>
             <div className="gen-item-content-container">
-                <TextContainer text={i18next.t(LocaleKey.loading)} additionalCss="full" />
+                <TextContainer text={translate(LocaleKey.loading)} additionalCss="full" />
             </div>
         </div>
     );

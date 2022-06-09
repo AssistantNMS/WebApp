@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React from 'react';
+import { translate } from '../../localization/Translate';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 import { BaseFloatingActionButton } from './baseFloatingActionButton';
@@ -9,7 +9,7 @@ export const NameFloatingActionButton = (getPlayerName: any) => {
         <BaseFloatingActionButton
             key="NameFloatingActionButton"
             keyString="NameFloatingActionButton"
-            tooltipText={i18next.t(LocaleKey.playerName)}
+            tooltipText={translate(LocaleKey.playerName)}
             icon={<i className="material-icons">edit</i>}
             onClick={getPlayerName}
         />

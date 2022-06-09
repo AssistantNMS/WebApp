@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-// import i18next from 'i18next';
+// import { translate } from '../../../localization/Translate';
 import { Link } from 'react-router-dom';
 
 import { catalogueItem } from '../../../constants/Route';

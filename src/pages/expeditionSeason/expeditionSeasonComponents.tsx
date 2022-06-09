@@ -1,6 +1,6 @@
-import classNames from 'classnames';
-import i18next from 'i18next';
 import React, { ReactNode } from 'react';
+import classNames from 'classnames';
+import { translate } from '../../localization/Translate';
 import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { PortalGlyphGridDisplay } from '../../components/common/portal/portalGlyphGrid';
@@ -15,7 +15,7 @@ import { AppImage } from '../../constants/AppImage';
 import { NetworkState } from '../../constants/NetworkState';
 import { ExpeditionSeasonViewModel } from '../../contracts/generated/Model/HelloGames/expeditionSeasonViewModel';
 import { ExpeditionSeason, ExpeditionSeasonPhase, ExpeditionSeasonMilestone, ExpeditionSeasonReward, MilestoneType } from '../../contracts/helloGames/expeditionSeason';
-import { friendlyTimeLeft, guideFormatDate, percentageProgress } from '../../helper/dateHelper';
+import { friendlyTimeLeft, formatDate, percentageProgress } from '../../helper/dateHelper';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 
@@ -45,8 +45,8 @@ export const CurrentExpeditionSeasonHeader: React.FC<ICurrentExpeditionSeasonHea
                         additionalText={friendlyTimeLeft(new Date(), new Date(props.seasonDetails.endDate))}
                     />
                     <div className="mt-2em">
-                        <h4 style={{ display: 'inline-block', float: 'left' }}>{guideFormatDate(props.seasonDetails.startDate)}</h4>
-                        <h4 style={{ display: 'inline-block', float: 'right' }}>{guideFormatDate(props.seasonDetails.endDate)}</h4>
+                        <h4 style={{ display: 'inline-block', float: 'left' }}>{formatDate(props.seasonDetails.startDate, 'YYYY-MM-DD')}</h4>
+                        <h4 style={{ display: 'inline-block', float: 'right' }}>{formatDate(props.seasonDetails.endDate, 'YYYY-MM-DD')}</h4>
                     </div>
                 </div>
             </div>
@@ -74,8 +74,8 @@ export const ExpeditionSeasonHeader: React.FC<IExpeditionSeasonHeaderProps> = (p
         <div data-id="ExpeditionSeasonHeader" className="row expedition-season-header noselect">
             <div className="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-3">
                 <LazyLoadImage src={`/${AppImage.base}${props.seasonDetails.Icon}`} alt={props.seasonDetails.Title} style={{ width: '100%', maxWidth: '250px' }} />
-                <h4><b>{i18next.t(LocaleKey.startDate)}:</b>&nbsp;{guideFormatDate(props.seasonDetails.StartDate)}</h4>
-                <h4><b>{i18next.t(LocaleKey.endDate)}:</b>&nbsp;{guideFormatDate(props.seasonDetails.EndDate)}</h4>
+                <h4><b>{translate(LocaleKey.startDate)}:</b>&nbsp;{formatDate(props.seasonDetails.StartDate, 'YYYY-MM-DD')}</h4>
+                <h4><b>{translate(LocaleKey.endDate)}:</b>&nbsp;{formatDate(props.seasonDetails.EndDate, 'YYYY-MM-DD')}</h4>
             </div>
             <div className="col-12 col-lg-9 col-md-9 col-sm-12 col-xs-9">
                 <h2>{props.seasonDetails.Title}</h2>
@@ -93,7 +93,7 @@ export const ExpeditionSeasonHeader: React.FC<IExpeditionSeasonHeaderProps> = (p
                             <hr className="mt-2em" />
                         </div>
                         <div className="col-12">
-                            <h3 style={{ margin: 0 }}>{i18next.t(LocaleKey.rewards)}</h3>
+                            <h3 style={{ margin: 0 }}>{translate(LocaleKey.rewards)}</h3>
                         </div>
                         <div className="col-12 mt-1em mb-1em">
                             <GenericListPresenter
@@ -169,7 +169,7 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
 
     return (
         <div data-id="ExpeditionSeasonPhaseWithMilestones" className="row expedition-season-phase noselect">
-            <div className="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-3">
+            <div className="col-12 col-lg-3 col-md-12 col-sm-12 col-xs-12">
                 <LazyLoadImage src={`/${AppImage.base}${props.phase.Icon}`} alt={props.phase.Title} className="phase-icon" style={{ width: '100%', maxWidth: '250px' }} />
                 <h3 className="phase-title">{props.phase.Title}</h3>
                 <PositiveButton
@@ -179,10 +179,10 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
                     disabled={disabled}
                     onClick={openDetailPane}
                 >
-                    <span>{i18next.t(LocaleKey.rewards).toString()}</span>
+                    <span>{translate(LocaleKey.rewards).toString()}</span>
                 </PositiveButton>
             </div>
-            <div className="col-12 col-lg-9 col-md-9 col-sm-12 col-xs-9">
+            <div className="col-12 col-lg-9 col-md-12 col-sm-12 col-xs-12">
                 {
                     (props.phase.Milestones ?? []).map((milestone: ExpeditionSeasonMilestone, index: number) => (
                         <ExpeditionSeasonPhaseMilestone
@@ -212,12 +212,21 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
         if (props.milestone == null) return;
 
         props.setDetailPane(
-            <GenericListPresenter
-                isCentered={shouldListBeCentered(props.milestone.Rewards.length)}
-                list={props.milestone.Rewards}
-                presenter={ExpeditionSeasonRewardTile}
-                identifier={(item: ExpeditionSeasonReward) => item.Id}
-            />,
+            <div className="milestone-reward-content">
+                <GenericListPresenter
+                    isCentered={shouldListBeCentered(props.milestone.Rewards.length)}
+                    list={props.milestone.Rewards}
+                    presenter={ExpeditionSeasonRewardTile}
+                    identifier={(item: ExpeditionSeasonReward) => item.Id}
+                />
+                {/* <h3 className="hidden-in-mobile milestone-reward-title">{props.milestone.Title}</h3> */}
+                <img
+                    src={`/assets/images/${props.milestone.Icon}`}
+                    className="hidden-in-mobile milestone-patch"
+                    alt={props.milestone.Title}
+                    draggable={false}
+                />
+            </div>,
             props.milestone.Rewards.length > 6 ? 600 : 400,
         );
     }
@@ -234,22 +243,22 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
 
     return (
         <div data-id="ExpeditionSeasonPhaseMilestone" className={classes}>
-            <div className="milestone-content">
+            <div className="milestone-content" onClick={openDetailPane}>
                 <ImageContainer
                     Icon={props.milestone.Icon}
                     Name={props.milestone.Title}
                 />
-                <div className="text-container" onClick={openDetailPane}>
+                <div className="text-container">
                     <h3>{props.milestone.Title}</h3>
                     <p>{props.milestone.Description}</p>
                 </div>
-                <div className="text-container rewards" onClick={openDetailPane}>
+                <div className="text-container rewards hidden-in-mobile">
                     <ExpeditionSeasonRewardsOnlyTile rewards={props.milestone.Rewards} />
                 </div>
                 {
                     (disabled === false) &&
                     <div className="rewards-container">
-                        <i className="material-icons x2 pointer" onClick={openDetailPane}>info</i>
+                        <i className="material-icons x2 pointer">info</i>
                     </div>
                 }
                 {
@@ -259,7 +268,7 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
             </div>
             {
                 isEncrypted && (
-                    <div className="milestone-encr-content noselect">
+                    <div className="milestone-encr-content noselect ">
                         <ImageContainer
                             Icon={props.milestone.Encryption.Icon}
                             Name={props.milestone?.Encryption?.Title ?? 'encrypted'}

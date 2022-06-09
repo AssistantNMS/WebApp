@@ -1,7 +1,7 @@
-import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+import { translate } from '../../localization/Translate';
 import { PortalRecord } from '../../contracts/portal/portalRecord';
 import { getStringDialog } from '../../helper/dialogHelper';
 import { newGuid } from '../../helper/guidHelper';
@@ -30,7 +30,7 @@ export const AddEditPortalContainerUnconnected: React.FC<IProps> = (props: IProp
             portalItem.Uuid = newGuid();
         }
         if (portalItem.Name == null) {
-            portalItem.Name = i18next.t(LocaleKey.newPortalEntry);
+            portalItem.Name = translate(LocaleKey.newPortalEntry);
         }
 
         setIsEdit(isEdit);
@@ -39,7 +39,7 @@ export const AddEditPortalContainerUnconnected: React.FC<IProps> = (props: IProp
     }, []);
 
     const editName = async () => {
-        const newName = await getStringDialog(i18next.t(LocaleKey.name), record.Name);
+        const newName = await getStringDialog(translate(LocaleKey.name), record.Name);
         if (newName == null) return;
         setRecord({ ...record, Name: newName });
     }
@@ -60,7 +60,7 @@ export const AddEditPortalContainerUnconnected: React.FC<IProps> = (props: IProp
     }
 
     const addTag = async () => {
-        const newTag = await getStringDialog(i18next.t(LocaleKey.name), record.Name);
+        const newTag = await getStringDialog(translate(LocaleKey.name), record.Name);
         if (newTag == null) return;
         const tags = record.Tags || [];
         setRecord({ ...record, Tags: [...tags, newTag] });

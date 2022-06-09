@@ -1,6 +1,5 @@
 
 import * as React from 'react';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import { ILazyLoadImageProps } from './ILazyLoadImageProps';
 const ReactLazy = require('react-lazy-load-image-component');
 

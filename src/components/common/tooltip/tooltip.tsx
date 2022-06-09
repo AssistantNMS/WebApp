@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Tooltip } from 'react-tippy';
+import { CustomTooltipInternal } from './tooltipInternal';
 
 export type Position =
     | "top"
@@ -25,7 +25,7 @@ interface IProps {
 
 export const CustomTooltip: React.FC<IProps> = (props: IProps) => {
     return (
-        <Tooltip
+        <CustomTooltipInternal
             title={props.tooltipText}
             arrow={true}
             theme={props.theme ?? "dark"}
@@ -33,6 +33,6 @@ export const CustomTooltip: React.FC<IProps> = (props: IProps) => {
             className="noselect"
         >
             {props.children}
-        </Tooltip>
+        </CustomTooltipInternal>
     );
 }

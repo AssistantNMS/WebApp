@@ -29,3 +29,4 @@ export const patreon = '/patreon';
 export const nmsfm = '/nmsfm';
 export const whatIsNew = '/what-is-new';
 export const communityLinks = '/community';
+export const starshipScrap = '/starship-scrap';

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import i18next from 'i18next';
 
+import { translate } from '../localization/Translate';
 import { LocaleKey } from '../localization/LocaleKey';
 import { ToastService } from '../services/toastService';
 import { LazyLoadImage } from './core/lazyLoadImage/lazyLoadImage';
@@ -33,8 +33,8 @@ export const ShareDialog: React.FC<IProps> = (props: IProps) => {
     if (props.selectedLanguage === 'en') {
         fullLink = `${baseShareableLink}/${props.id}.html${paramString}`;
     }
-    const shareContent: string = i18next.t(LocaleKey.shareContent) + ' \n' + fullLink;
-    const waShareContent: string = i18next.t(LocaleKey.shareContent).replace(/\s{1}[#]\w+/g, '');
+    const shareContent: string = translate(LocaleKey.shareContent) + ' \n' + fullLink;
+    const waShareContent: string = translate(LocaleKey.shareContent).replace(/\s{1}[#]\w+/g, '');
     const fbShareContent: string = 'https://www.facebook.com/sharer/sharer.php?u=https://nmsassistant.com';
 
     const copyFunc = (e: any) => {

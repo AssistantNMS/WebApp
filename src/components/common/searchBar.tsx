@@ -1,6 +1,6 @@
-import i18next from 'i18next';
 import React from 'react';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { translate } from '../../localization/Translate';
 
 interface IProps {
     searchTerm: string;
@@ -12,7 +12,7 @@ export const SearchBar: React.FC<IProps> = (props: IProps) => {
         <form id="searchBar" className="searchbar row noselect">
             <input type="text"
                 className="form-control"
-                placeholder={i18next.t(LocaleKey.search)}
+                placeholder={translate(LocaleKey.search)}
                 value={props.searchTerm}
                 onChange={props.onSearchTextChange}
             />

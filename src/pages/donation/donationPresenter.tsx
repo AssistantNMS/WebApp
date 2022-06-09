@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React from 'react';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { CardButton } from '../../components/common/button/cardButton';
 import { HeadComponent } from '../../components/core/headComponent';
@@ -10,14 +10,14 @@ import { LocaleKey } from '../../localization/LocaleKey';
 
 export const DonationPresenter: React.FC = () => {
     const paymentOptions = [];
-    paymentOptions.push({ title: i18next.t(LocaleKey.buyMeACoffee).toString(), event: AnalyticsEvent.externalLinkBuyMeACoffee, url: ExternalUrls.buyMeACoffee, image: '/assets/images/buyMeACoffee.png' });
-    paymentOptions.push({ title: i18next.t(LocaleKey.patreon).toString(), event: AnalyticsEvent.externalLinkPatreon, url: ExternalUrls.patreon, image: '/assets/images/patreon.png' });
-    paymentOptions.push({ title: i18next.t(LocaleKey.paypal).toString(), event: AnalyticsEvent.externalLinkPayPal, url: ExternalUrls.payPal, image: '/assets/images/payPal.png' });
-    paymentOptions.push({ title: i18next.t(LocaleKey.kofi).toString(), event: AnalyticsEvent.externalLinkkofi, url: ExternalUrls.kofi, image: '/assets/images/kofi.png' });
+    paymentOptions.push({ title: translate(LocaleKey.buyMeACoffee).toString(), event: AnalyticsEvent.externalLinkBuyMeACoffee, url: ExternalUrls.buyMeACoffee, image: '/assets/images/buyMeACoffee.png' });
+    paymentOptions.push({ title: translate(LocaleKey.patreon).toString(), event: AnalyticsEvent.externalLinkPatreon, url: ExternalUrls.patreon, image: '/assets/images/patreon.png' });
+    paymentOptions.push({ title: translate(LocaleKey.paypal).toString(), event: AnalyticsEvent.externalLinkPayPal, url: ExternalUrls.payPal, image: '/assets/images/payPal.png' });
+    paymentOptions.push({ title: translate(LocaleKey.kofi).toString(), event: AnalyticsEvent.externalLinkkofi, url: ExternalUrls.kofi, image: '/assets/images/kofi.png' });
     paymentOptions.push({ title: 'Brave', event: AnalyticsEvent.externalLinkBat, url: ExternalUrls.bat, image: '/assets/images/bat.png' });
-    paymentOptions.push({ title: i18next.t(LocaleKey.openCollective), event: AnalyticsEvent.externalLinkOpenCollective, url: ExternalUrls.openCollective, image: '/assets/images/openCollective.png' });
+    paymentOptions.push({ title: translate(LocaleKey.openCollective), event: AnalyticsEvent.externalLinkOpenCollective, url: ExternalUrls.openCollective, image: '/assets/images/openCollective.png' });
 
-    const title = i18next.t(LocaleKey.donation);
+    const title = translate(LocaleKey.donation);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />
@@ -26,7 +26,7 @@ export const DonationPresenter: React.FC = () => {
                 <div className="container full pt1">
                     <div className="row">
                         <div className="col-12">
-                            <h3>{i18next.t(LocaleKey.donationDescrip)}</h3>
+                            <h3>{translate(LocaleKey.donationDescrip)}</h3>
                         </div>
                     </div>
                     <div className="row justify">

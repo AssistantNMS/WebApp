@@ -1,16 +1,25 @@
-import i18next from 'i18next';
 import React, { ReactNode } from 'react';
+import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { EggTraitListTile } from '../../components/tilePresenter/eggTraitTile/eggTraitListTile';
 import { GenericItemWithRequirementsListTile } from '../../components/tilePresenter/genericItemListTile/genericItemWithRequirementsListTile';
+import { CronusCookingListTile } from '../../components/tilePresenter/processorItemListTile/cronusCookingTile';
 import { ProcessorItemListTile } from '../../components/tilePresenter/processorItemListTile/processorItemListTile';
 import { ChargeByItemListTile } from '../../components/tilePresenter/recharge/chargeByItemListTile';
 import { RechargeItemListTile } from '../../components/tilePresenter/recharge/rechargeItemListTile';
 import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
 import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
+import { RewardFromSeasonalExpeditionTile } from '../../components/tilePresenter/rewardFromTile/rewardFromSeasonalExpeditionPresenter';
+import { RewardFromStarshipScrapTile } from '../../components/tilePresenter/rewardFromTile/rewardFromStarshipScrapPresenter';
+import { RewardFromTwitchTile } from '../../components/tilePresenter/rewardFromTile/rewardFromTwitchPresenter';
+import { RewardFromQuicksilverTile } from '../../components/tilePresenter/rewardFromTile/rewardTilePresenter';
 import { ProceduralStatBonusItemListTile, StatBonusItemListTile } from '../../components/tilePresenter/statBonusTile/statBonusItemListTile';
+import { IdPrefix } from '../../constants/IdPrefix';
+import * as Route from '../../constants/Route';
 import { UsageKey } from '../../constants/UsageKey';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
+import { StarshipScrap } from '../../contracts/data/starshipScrap';
+import { CurrencyType } from '../../contracts/enum/CurrencyType';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { ProceduralStatBonus } from '../../contracts/ProceduralStatBonus';
 import { Processor } from '../../contracts/Processor';
@@ -20,20 +29,14 @@ import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { StatBonus } from '../../contracts/StatBonus';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { RewardFromSeasonalExpeditionTile } from '../../components/tilePresenter/rewardFromTile/rewardFromSeasonalExpeditionPresenter';
-import { RewardFromTwitchTile } from '../../components/tilePresenter/rewardFromTile/rewardFromTwitchPresenter';
-import { RewardFromQuicksilverTile } from '../../components/tilePresenter/rewardFromTile/rewardTilePresenter';
-import { CurrencyType } from '../../contracts/enum/CurrencyType';
-import { PositiveButton } from '../../components/common/button/positiveButton';
-import * as Route from '../../constants/Route';
-import { IdPrefix } from '../../constants/IdPrefix';
+import { translate } from '../../localization/Translate';
 
 export const displayRequiredItems = (resArray: Array<RequiredItemDetails>, navigate: (url: string, data: any) => void) => {
     if (resArray == null || resArray.length < 1) return null;
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.craftedUsing)}
+            heading={translate(LocaleKey.craftedUsing)}
             content={
                 <>
                     <GenericListPresenter
@@ -46,11 +49,11 @@ export const displayRequiredItems = (resArray: Array<RequiredItemDetails>, navig
                         (resArray.filter(r => !r.Id.includes(IdPrefix.RawMaterial)).length > 0) &&
                         <PositiveButton
                             additionalClass="mt-1em"
-                            children={<span>{i18next.t(LocaleKey.viewAllRawMaterialsRequired)}</span>}
+                            children={<span>{translate(LocaleKey.viewAllRawMaterialsRequired)}</span>}
                             onClick={() => navigate(Route.genericAllRequirements,
                                 {
                                     state: {
-                                        typeName: i18next.t(LocaleKey.cart),
+                                        typeName: translate(LocaleKey.cart),
                                         requiredItems: resArray,
                                     }
                                 }
@@ -68,7 +71,7 @@ export const displayUsedToCreateItems = (usedToCreateArray: Array<GameItemModel>
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.usedToCreate)}
+            heading={translate(LocaleKey.usedToCreate)}
             content={
                 <GenericListPresenter
                     list={usedToCreateArray}
@@ -87,7 +90,7 @@ export const displayRechargedByItems = (rechargedBy: Recharge) => {
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.rechargeThisUsing)}
+            heading={translate(LocaleKey.rechargeThisUsing)}
             content={
                 <GenericListPresenter
                     list={orderedChargeBy}
@@ -106,7 +109,7 @@ export const displayUsedToRechargeItems = (id: string, name: string, usedToRecha
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.useXToRecharge).replace('{0}', name)}
+            heading={translate(LocaleKey.useXToRecharge).replace('{0}', name)}
             content={
                 <GenericListPresenter
                     list={orderedUsedToRechargeArray}
@@ -125,7 +128,7 @@ export const displayRefItems = (refRecipesArray: Array<Processor>) => {
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.refinedUsing)}
+            heading={translate(LocaleKey.refinedUsing)}
             content={
                 <GenericListPresenter
                     list={orderedRefRecipesArray}
@@ -144,7 +147,7 @@ export const displayUsedToRefItems = (name: string, usedToRefArray: Array<Proces
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.refineToCreate).replace('{0}', name)}
+            heading={translate(LocaleKey.refineToCreate).replace('{0}', name)}
             content={
                 <GenericListPresenter
                     list={orderedUsedToRefArray}
@@ -163,7 +166,7 @@ export const displayCookItems = (cookRecipesArray: Array<Processor>) => {
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.cookingRecipe)}
+            heading={translate(LocaleKey.cookingRecipe)}
             content={
                 <GenericListPresenter
                     list={orderedCookRecipesArray}
@@ -182,7 +185,7 @@ export const displayUsedToCookItems = (name: string, usedToCookArray: Array<Proc
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.cookToCreate).replace('{0}', name)}
+            heading={translate(LocaleKey.cookToCreate).replace('{0}', name)}
             content={
                 <GenericListPresenter
                     list={orderedUsedToCookArray}
@@ -200,7 +203,7 @@ export const displayStatBonuses = (statBonuses: Array<StatBonus>) => {
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.stats)}
+            heading={translate(LocaleKey.stats)}
             content={
                 <GenericListPresenter
                     list={statBonuses}
@@ -217,7 +220,7 @@ export const displayProceduralStatBonuses = (numStatsMin: number, numStatsMax: n
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.proceduralStats)
+            heading={translate(LocaleKey.proceduralStats)
                 .replace('{0}', numStatsMin.toString())
                 .replace('{1}', numStatsMax.toString())}
             content={
@@ -236,7 +239,7 @@ export const displayEggTraits = (eggTraitArray: Array<EggNeuralTrait>) => {
 
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.eggModification)}
+            heading={translate(LocaleKey.eggModification)}
             content={
                 <GenericListPresenter
                     list={eggTraitArray}
@@ -269,7 +272,28 @@ export const displayObsoleteTech = (usages: Array<string>) => {
     );
 }
 
-export const displayRewardFrom = (item: GameItemModel) => {
+export const displayExtraDetailsSection = (gameItem: GameItemModel) => {
+    const displayItems = [];
+
+    if ((gameItem?.CookingValue ?? 0) > 0.0) {
+        displayItems.push(<div key="cronus-cooking" className="gen-item col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <CronusCookingListTile cookingValue={gameItem.CookingValue} />
+        </div>)
+    }
+
+    if (displayItems.length < 1) return null;
+
+    return (
+        <div className="generic-item-list row justify">
+            {displayItems}
+        </div>
+    );
+}
+
+const usageContains = (usages: Array<string>, usageKey: string): boolean =>
+    usages.filter((u) => u.includes(usageKey)).length > 0;
+
+export const displayRewardFrom = (item: GameItemModel, starshipScrapItems: Array<StarshipScrap>) => {
     const usages: Array<string> = item.Usages;
     if (usages == null || usages.length < 1) return null;
     // if (!usages.includes(UsageKey.isNoLongerObtainable)) return null;
@@ -277,7 +301,7 @@ export const displayRewardFrom = (item: GameItemModel) => {
     const nodes: Array<JSX.Element> = [];
 
     try {
-        if (usages.filter((u) => u.includes(UsageKey.isQuicksilver))) {
+        if (usageContains(usages, UsageKey.isQuicksilver)) {
             if (item.BaseValueUnits > 0 &&
                 item.CurrencyType === CurrencyType.QUICKSILVER) {
                 nodes.push(
@@ -288,24 +312,29 @@ export const displayRewardFrom = (item: GameItemModel) => {
             }
         }
 
-        const expSeasonKeySplit = UsageKey.isExpeditionSeason.split("{0}");
-        if (usages.filter((u) => u.includes(expSeasonKeySplit[0])).length > 0) {
-            const expSeasUsageKey =
-                usages.filter((u) => u.includes(expSeasonKeySplit[0]));
-            const expSeasonNum = expSeasUsageKey[0]
-                .replaceAll(expSeasonKeySplit[0], '')
-                .replaceAll(expSeasonKeySplit[1], '');
-            nodes.push(<RewardFromSeasonalExpeditionTile seasId={`seas-${expSeasonNum}`} />);
+        for (const usageKey of usages) {
+            const expSeasonKeySplit = UsageKey.isExpeditionSeason.split("{0}");
+            if (usageKey.includes(expSeasonKeySplit[0])) {
+                const expSeasonNum = usageKey
+                    .replaceAll(expSeasonKeySplit[0], '')
+                    .replaceAll(expSeasonKeySplit[1], '');
+                nodes.push(<RewardFromSeasonalExpeditionTile seasId={`seas-${expSeasonNum}`} />);
+            }
+
+            const twitchCampaignKeySplit = UsageKey.isTwitchCampaign.split("{0}");
+            if (usageKey.includes(twitchCampaignKeySplit[0])) {
+                const expSeasonNum = usageKey
+                    .replaceAll(twitchCampaignKeySplit[0], '')
+                    .replaceAll(twitchCampaignKeySplit[1], '');
+                nodes.push(<RewardFromTwitchTile campaignId={expSeasonNum} />);
+            }
         }
 
-        const twitchCampaignKeySplit = UsageKey.isTwitchCampaign.split("{0}");
-        if (usages.filter((u) => u.includes(twitchCampaignKeySplit[0]))) {
-            const expSeasUsageKey =
-                usages.filter((u) => u.includes(twitchCampaignKeySplit[0]));
-            const expSeasonNum = expSeasUsageKey[0]
-                .replaceAll(twitchCampaignKeySplit[0], '')
-                .replaceAll(twitchCampaignKeySplit[1], '');
-            nodes.push(<RewardFromTwitchTile campaignId={expSeasonNum} />);
+        if (usageContains(usages, UsageKey.isRewardFromShipScrap)) {
+            nodes.push(<RewardFromStarshipScrapTile
+                itemId={item.Id}
+                starshipScrapItems={starshipScrapItems}
+            />);
         }
     } catch (ex) {
 
@@ -314,7 +343,7 @@ export const displayRewardFrom = (item: GameItemModel) => {
     if (nodes == null || nodes.length < 1) return null;
     return (
         <CommonSection
-            heading={i18next.t(LocaleKey.rewardFrom)}
+            heading={translate(LocaleKey.rewardFrom)}
             content={
                 <GenericListPresenter
                     list={nodes}

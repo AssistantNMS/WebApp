@@ -1,6 +1,6 @@
-import classNames from 'classnames';
-import i18next from 'i18next';
 import React, { useState } from 'react';
+import classNames from 'classnames';
+import { translate } from '../../localization/Translate';
 import { AppImage } from '../../constants/AppImage';
 import { availableControlPlatforms, IControlPlatformsOptions } from '../../constants/ControlPlatforms';
 import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
@@ -31,7 +31,7 @@ export const PlatformFloatingActionButton: React.FC<IPlatformFabProp> = (props: 
         <div className="platform-fab">
             <BaseFloatingActionButton
                 keyString={props.key}
-                tooltipText={i18next.t(LocaleKey.platform)}
+                tooltipText={translate(LocaleKey.platform)}
                 icon={<img style={{ height: '80%', width: '80%' }} src={optionsAlt.find(opt => opt.value === props.value)?.imgUrl ?? AppImage.platformPc} alt="platform" />}
                 onClick={toggleDropdown}
             />

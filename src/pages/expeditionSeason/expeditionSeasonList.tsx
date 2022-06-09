@@ -1,6 +1,6 @@
-import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
 
+import { translate } from '../../localization/Translate';
 import { NetworkState } from '../../constants/NetworkState';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
@@ -44,7 +44,7 @@ const ExpeditionSeasonListUnconnected: React.FC<IProps> = (props: IProps) => {
         setCurrentExpeditionStatus(NetworkState.Success);
     }
 
-    const title = i18next.t(LocaleKey.seasonalExpeditionSeasons);
+    const title = translate(LocaleKey.seasonalExpeditionSeasons);
     return (
         <DefaultAnimation>
             <HeadComponent title={title} />

@@ -1,7 +1,7 @@
-import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { translate } from '../../localization/Translate';
 import { NetworkState } from '../../constants/NetworkState';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
@@ -26,6 +26,7 @@ import { mapDispatchToProps, mapStateToProps, IReduxProps } from './catalogueIte
 import { CatalogueItemPresenter } from './catalogueItemPresenter';
 import { optionalListTask, optionalTask } from '../../helper/promiseHelper';
 import { UsageKey } from '../../constants/UsageKey';
+import { StarshipScrap } from '../../contracts/data/starshipScrap';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -50,6 +51,7 @@ interface IState {
     usedToRecharge: Array<Recharge>,
     eggTrait: Array<EggNeuralTrait>,
     controlLookup: Array<PlatformControlMapping>,
+    starshipScrapItems: Array<StarshipScrap>,
     additionalData: Array<any>,
 }
 
@@ -69,6 +71,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         usedToRecharge: [],
         eggTrait: [],
         controlLookup: [],
+        starshipScrapItems: [],
         additionalData: [],
     };
 
@@ -127,10 +130,12 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         const rechargedByTask = optionalTask(usages, UsageKey.hasChargedBy, () => getRechargeBy(itemId));
         const usedToRechargeTask = optionalListTask(usages, UsageKey.hasUsedToRecharge, () => getUsedToRecharge(itemId));
 
+        const scrapDataTask = optionalTask(usages, UsageKey.isRewardFromShipScrap, () => getScrapDataForItem(itemId));
+
         const eggTraitTask = optionalListTask(['true'], 'true', () => getEggTrait(itemId));
         const controlLookupTask = optionalListTask(['true'], 'true', () => getControlLookup(props.controlPlatform));
 
-        const newMeta = {
+        const newMeta: IState = {
             item: item,
             requiredItems: await reqItemsTask,
             usedToCreate: await usedToCreateTask,
@@ -142,6 +147,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             usedToRecharge: await usedToRechargeTask,
             eggTrait: await eggTraitTask,
             controlLookup: await controlLookupTask,
+            starshipScrapItems: await scrapDataTask,
             additionalData: getAdditionalData(item),
         };
         setItemMeta(newMeta);
@@ -208,15 +214,21 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         return controlsArray.value;
     }
 
+    const getScrapDataForItem = async (itemId: string) => {
+        const starshipScrapsArray = await props.dataJsonService.getStarshipScrapDataForItem(itemId);
+        if (!starshipScrapsArray.isSuccess) return [];
+        return starshipScrapsArray.value;
+    }
+
     const getAdditionalData = (itemDetail: GameItemModel): Array<any> => {
         const additionalData = [];
         if (itemDetail.BlueprintSource !== null && itemDetail.BlueprintSource !== BlueprintSource.unknown) {
             const bpSourceLangKey = blueprintToLocalKey(itemDetail.BlueprintSource);
-            additionalData.push({ text: `${i18next.t(LocaleKey.blueprintFrom).toString()}: ${i18next.t(bpSourceLangKey).toString()}` });
+            additionalData.push({ text: `${translate(LocaleKey.blueprintFrom).toString()}: ${translate(bpSourceLangKey).toString()}` });
         }
 
         if (itemDetail.MaxStackSize !== null && itemDetail.MaxStackSize > 0.1) {
-            additionalData.push({ text: `${i18next.t(LocaleKey.maxStackSize).toString()}: ${itemDetail.MaxStackSize}` });
+            additionalData.push({ text: `${translate(LocaleKey.maxStackSize).toString()}: ${itemDetail.MaxStackSize}` });
         }
 
         if (itemDetail.BaseValueUnits > 1) {
@@ -234,7 +246,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         if (bpCost > 0) {
             switch (itemDetail.BlueprintCostType) {
                 case CurrencyType.NANITES:
-                    const bpCostText = i18next.t(LocaleKey.blueprintCost);
+                    const bpCostText = translate(LocaleKey.blueprintCost);
                     additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: '/assets/images/nanites.png', tooltip: 'Nanites' });
                     break;
                 case CurrencyType.SALVAGEDDATA:
@@ -249,12 +261,6 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             }
         }
 
-        if (itemDetail.CookingValue != null && itemDetail.CookingValue > 0.0) {
-            const cookingVText = i18next.t(LocaleKey.cookingValue);
-            const cookingV = (itemDetail.CookingValue * 100.0);
-            additionalData.push({ text: `${cookingVText}: ${cookingV}%`, icon: 'fastfood' });
-        }
-
         if (itemDetail.Power != null && itemDetail.Power !== 0) {
             additionalData.push({ text: itemDetail.Power.toString(), icon: 'flash_on' });
         }
@@ -263,7 +269,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     }
 
     const addThisItemToCart = async () => {
-        const quantityResult = await getQuantityDialog(i18next.t(LocaleKey.quantity));
+        const quantityResult = await getQuantityDialog(translate(LocaleKey.quantity));
         if (quantityResult.isSuccess === false) return;
 
         if (props.addItemToCart == null) return;
@@ -307,6 +313,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         usedToRecharge,
         eggTrait,
         controlLookup,
+        starshipScrapItems,
         additionalData,
     } = itemMeta;
 
@@ -324,8 +331,9 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             usedToRecharge={usedToRecharge}
             eggTrait={eggTrait}
             controlLookup={controlLookup}
-            networkState={networkState}
+            starshipScrapItems={starshipScrapItems}
             additionalData={additionalData}
+            networkState={networkState}
             addThisItemToCart={addThisItemToCart}
             addThisItemToFavourites={addThisItemToFavourites}
             removeThisItemToFavourites={removeThisItemToFavourites}

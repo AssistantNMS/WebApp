@@ -1,4 +1,4 @@
-import i18next from 'i18next';
+import { translate } from '../../localization/Translate';
 import React from 'react';
 import { connect } from 'react-redux';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
@@ -17,7 +17,7 @@ interface IWithoutDepInj { }
 interface IProps extends IWithoutDepInj, IReduxProps { }
 
 const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
-    const title = i18next.t(LocaleKey.settings);
+    const title = translate(LocaleKey.settings);
 
     const selectLanguage = (locale: LocalizationMap) => {
         if (props.setLanguage != null) {
@@ -33,21 +33,21 @@ const SettingPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
                 <div className="container full pt1">
                     <div className="row">
                         <LangSettingTile
-                            title={i18next.t(LocaleKey.appLanguage)}
+                            title={translate(LocaleKey.appLanguage)}
                             value={props.selectedLanguage}
                             onClick={selectLanguage}
                         />
                         <BoolSettingTile
-                            title={i18next.t(LocaleKey.useAltGlyphs)}
+                            title={translate(LocaleKey.useAltGlyphs)}
                             value={props.useAltGlyphs}
                             onClick={props.toggleAltGlyphs}
                         />
-                        <FontSettingTile title={i18next.t(LocaleKey.settingsFont)}
+                        <FontSettingTile title={translate(LocaleKey.settingsFont)}
                             value={props.selectedFont}
                             onClick={props.setFont}
                         />
                         <ControlPlatformSettingTile
-                            title={i18next.t(LocaleKey.platform)}
+                            title={translate(LocaleKey.platform)}
                             value={props.selectedPlatform}
                             onClick={props.setPlatform}
                         />

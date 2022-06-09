@@ -1,9 +1,8 @@
-
-import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
 import { ReactNode } from 'react-markdown/lib/react-markdown';
 import { Link } from 'react-router-dom';
 
+import { translate } from '../../../localization/Translate';
 import { catalogueItem } from '../../../constants/Route';
 import { GameItemModel } from '../../../contracts/GameItemModel';
 import { RequiredItem } from '../../../contracts/RequiredItem';
@@ -75,7 +74,7 @@ const RequiredItemListTileClass: React.FC<IProps> = (props: IProps) => {
     const quantityRenderer = (hasQ: boolean, localProps: IProps) => {
         if (!hasQ) return null;
 
-        const label = localProps.quantityLabel ?? i18next.t(LocaleKey.quantity);
+        const label = localProps.quantityLabel ?? translate(LocaleKey.quantity);
         return (
             <div className="quantity-container">{label}: {localProps.Quantity} {localProps.quantityIconSuffix}</div>
         );

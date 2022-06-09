@@ -1,5 +1,5 @@
-import i18next from 'i18next';
 import React from 'react';
+import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
@@ -33,7 +33,7 @@ export const GuideDetailPagePresenter: React.FC<IProps> = (props: IProps) => {
         if (props.status === NetworkState.Error ||
             !props.guide ||
             !props.guide.sections) {
-            return (<h2>{i18next.t(LocaleKey.noItems)}</h2>);
+            return (<h2>{translate(LocaleKey.noItems)}</h2>);
         }
         return displayGuide(props.guide);
     }
@@ -94,7 +94,7 @@ export const GuideDetailPagePresenter: React.FC<IProps> = (props: IProps) => {
         return null;
     }
 
-    const title = props.guide?.title ?? i18next.t(LocaleKey.guides) ?? 'Guide';
+    const title = props.guide?.title ?? translate(LocaleKey.guides) ?? 'Guide';
     const description = props.guide?.author ?? 'Unknown' +
         guideFormatDate(props.guide?.date ?? Date()) ?? 'Unknown' +
         props.guide?.title ?? 'Unknown' +

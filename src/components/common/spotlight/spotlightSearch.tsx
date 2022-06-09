@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
-import i18next from 'i18next';
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { knownKeyCodes } from '../../../constants/Keybind';
@@ -9,6 +8,7 @@ import * as Route from '../../../constants/Route';
 import { DevDetail } from '../../../contracts/data/devDetail';
 import { ResultWithValue } from '../../../contracts/results/ResultWithValue';
 import { LocaleKey } from '../../../localization/LocaleKey';
+import { translate } from '../../../localization/Translate';
 import { DataJsonService } from '../../../services/json/DataJsonService';
 import { Error } from '../../core/error/error';
 import { Loading } from '../../core/loading/loading';
@@ -151,7 +151,7 @@ export const SpotlightSearch: React.FC<IProps> = (props: IProps) => {
                 onClick={() => { }}
             >
                 <div className="spotlight-group" onClick={onSpotlightGroupClick}>
-                    <p>GameId {i18next.t(LocaleKey.search)}</p>
+                    <p>GameId {translate(LocaleKey.search)}</p>
                     <input
                         ref={input => {
                             input && props.isOpen && input.focus();
