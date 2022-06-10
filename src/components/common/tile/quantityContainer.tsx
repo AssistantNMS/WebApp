@@ -15,6 +15,7 @@ interface IRequiredItemQuantityProps {
     addTrailingSpace?: boolean;
     addExtraPadding?: boolean;
     addBreakLines?: boolean;
+    hideBlueprint?: boolean;
 }
 
 export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps> = (props: IRequiredItemQuantityProps) => {
@@ -59,7 +60,10 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
             if (props.addTrailingSpace) {
                 result.push(<span key={`${baseKey}-trailing-space`} style={{ opacity: 0 }}>&nbsp;</span>);
             }
-            result.push(<span key={`${baseKey}-blueprint`}>{translate(LocaleKey.blueprint)}</span>);
+
+            if (!props.hideBlueprint) {
+                result.push(<span key={`${baseKey}-blueprint`}>{translate(LocaleKey.blueprint)}</span>);
+            }
         } else {
             const quantityRange = (row as CustomizedRequiredItemDetails).QuantityRange;
             if (quantityRange == null) {
