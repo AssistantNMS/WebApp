@@ -35,7 +35,7 @@ export class DataJsonService extends BaseJsonService {
 
     getDataJsonBasic = async <T>(fileName: string): Promise<ResultWithValue<T>> => {
         return this._getOrAdd(
-            async () => await this.getAsset<Array<QuicksilverStore>>(`data/${fileName}`),
+            async () => await this.getAsset<Array<T>>(`data/${fileName}`),
             [fileName]
         );
     }

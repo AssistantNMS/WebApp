@@ -82,8 +82,6 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         if (langCode != null) {
             const indexOfLang = localeMap.findIndex(l => l.code === langCode);
             if (indexOfLang > -1) {
-                // console.log('Language currently set to: "' + (props.selectedLanguage ?? '') + '"');
-                // console.log('Language forced to: "' + langCode + '"');
                 if (langCode !== props.selectedLanguage) props.setLanguage(langCode);
             }
         }

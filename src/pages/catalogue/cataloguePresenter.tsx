@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { SpotlightSearch } from '../../components/common/spotlight/spotlightSearch';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { GameIdSearchFloatingActionButton } from '../../components/floatingActionButton/gameIdSearchFloatingActionButton';
-import { DrawerMenuItem } from '../../contracts/DrawerMenuItem';
-import { DrawerIconType } from '../../contracts/enum/DrawerIconType';
+import { MenuGridItemPresenter } from '../../components/tilePresenter/menuGridPresenter';
 import { getCatalogueMenuItems } from '../../helper/catalogueMenuItemsHelper';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { translate } from '../../localization/Translate';
 import { DataJsonService } from '../../services/json/DataJsonService';
 
 interface IWithDepInj {
@@ -31,13 +29,6 @@ export const CataloguePresenterUnconnected: React.FC<IProps> = (props: IProps) =
 
     const menuItems = getCatalogueMenuItems();
 
-    const renderIcon = (item: DrawerMenuItem) => {
-        if (item.iconType === DrawerIconType.Material) return (<i className="material-icons">{item.icon}</i>);
-        if (item.iconType === DrawerIconType.Custom) return (<img className="custom-icons" src={item.icon} alt={item.icon} />);
-
-        return null;
-    }
-
     const title = translate(LocaleKey.catalogue);
     return (
         <DefaultAnimation>
@@ -47,18 +38,9 @@ export const CataloguePresenterUnconnected: React.FC<IProps> = (props: IProps) =
                 <div className="container full pt1">
                     <div className="catalogue-container">
                         {
-                            menuItems.map((item) => {
-                                return (
-                                    <div className="catalogue-item noselect" key={item.name}>
-                                        <Link to={item.link} className="nav-link">
-                                            {
-                                                renderIcon(item)
-                                            }
-                                            <p>{item.name}</p>
-                                        </Link>
-                                    </div>
-                                );
-                            })
+                            menuItems.map((item) => (
+                                <MenuGridItemPresenter key={item.name} {...item} />
+                            ))
                         }
                     </div>
                 </div>

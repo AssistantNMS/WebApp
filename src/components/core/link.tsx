@@ -4,6 +4,7 @@ import { site } from "../../constants/Site";
 
 interface IProps {
     href: string;
+    title?: string;
     additionalClassNames?: string;
     children?: ReactNode;
 }
@@ -16,14 +17,15 @@ export const BasicLink = (props: IProps) => {
         return baseUrl + `?ref=${site.ref}`;
     };
 
+    const { href, additionalClassNames, children, ...aProps } = props;
     return (
-        <a  {...props}
-            href={appendRef(props.href)}
+        <a  {...aProps}
+            href={appendRef(href)}
             target="_blank"
             rel="noopener noreferrer"
-            className={classNames(props.additionalClassNames ?? '')}
+            className={classNames(additionalClassNames ?? '')}
             draggable={false}>
-            {props.children}
+            {children}
         </a>
     );
 }

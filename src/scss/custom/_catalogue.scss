@@ -25,8 +25,16 @@ $gen-item-radius: 2px;
         border-radius: 10px;
         min-height: 100px;
 
-        img.custom-icons {
-            min-height: 75px;
+        img.custom-icons,
+        i.material-icons {
+            width: 75px;
+            height: 75px;
+            font-size: 4.75em;
+            color: $brand-secondary;
+        }
+
+        p {
+            margin-bottom: 0.5em;
         }
     }
 }
@@ -35,8 +43,8 @@ $gen-item-radius: 2px;
     aspect-ratio: 1/1;
     padding: 0;
 
-    > .lazy-load-image-background,
-    > .lazy-load-image-loaded {
+    >.lazy-load-image-background,
+    >.lazy-load-image-loaded {
         width: 100%;
 
         img {
@@ -58,7 +66,7 @@ $gen-item-radius: 2px;
     }
 }
 
-.game-item-list > div > div > div {
+.game-item-list>div>div>div {
     padding-top: 1em;
     padding-bottom: 3em;
     margin-bottom: 3em;
@@ -163,7 +171,7 @@ $gen-item-radius: 2px;
                 order: 1;
             }
 
-            > span {
+            >span {
                 width: 100%;
             }
         }

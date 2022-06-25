@@ -40,6 +40,7 @@ export const GenericPageAllRequiredPresenter: React.FC<IProps> = (props: IProps)
 
         return (
             <GenericListPresenter
+                key={Date.now().toString()}
                 list={requiredItems}
                 presenter={RequiredItemDetailsListTile}
                 isCentered={shouldListBeCentered(requiredItems.length)}

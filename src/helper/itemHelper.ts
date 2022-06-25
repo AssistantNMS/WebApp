@@ -53,7 +53,7 @@ export const getRequiredItems = async (gameItemService: GameItemService, require
         return [];
     }
 
-    tempRawMaterials = genericResult.value.RequiredItems;
+    tempRawMaterials = [...genericResult.value.RequiredItems];
     let requiredItemDetails: RequiredItemDetails = toRequiredItemDetails(requiredItem, genericResult.value);
 
     const rawMaterialsResult: Array<RequiredItemDetails> = [];
@@ -69,8 +69,11 @@ export const getRequiredItems = async (gameItemService: GameItemService, require
         requiredIndex < tempRawMaterials.length;
         requiredIndex++) {
         const rawMaterial: RequiredItem = tempRawMaterials[requiredIndex];
-        rawMaterial.Quantity *= requiredItem.Quantity;
-        const requiredItems: Array<RequiredItemDetails> = await getRequiredItems(gameItemService, rawMaterial);
+        const rawMaterialToPassFurther: RequiredItem = {
+            ...rawMaterial,
+            Quantity: rawMaterial.Quantity * requiredItem.Quantity
+        }
+        const requiredItems: Array<RequiredItemDetails> = await getRequiredItems(gameItemService, rawMaterialToPassFurther);
         for (const requiredItem of requiredItems) {
             rawMaterialsResult.push(requiredItem);
         }
@@ -122,8 +125,12 @@ export const getRequiredItemsForTreeItem = async (gameItemService: GameItemServi
 
     const reqItemsDetails: Array<Tree<RequiredItemDetails>> = [];
     for (let reqInput = 0; reqInput < genericResult.value.RequiredItems.length; reqInput++) {
-        const refinerInput: RequiredItem = genericResult.value.RequiredItems[reqInput];
-        const treeReq = await getRequiredItemsForTreeItem(gameItemService, refinerInput);
+        const reqItem: RequiredItem = genericResult.value.RequiredItems[reqInput];
+        const reqItemToPassFurther: RequiredItem = {
+            ...reqItem,
+            Quantity: reqItem.Quantity * requiredItem.Quantity
+        }
+        const treeReq = await getRequiredItemsForTreeItem(gameItemService, reqItemToPassFurther);
         if (treeReq != null) reqItemsDetails.push(treeReq);
     }
 

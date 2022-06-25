@@ -79,7 +79,6 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
 
             let doubleMatches: Array<any> | null = doubleTagRegex.exec(word)
             if (doubleMatches != null && doubleMatches.length > 0) {
-                console.log(doubleMatches);
                 word = doubleMatches[1];
             }
 

@@ -1,6 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
@@ -9,17 +9,17 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { CartListTile } from '../../components/tilePresenter/cartListTile/cartListTile';
 import * as Route from '../../constants/Route';
 import { CartItem } from '../../contracts/cart/cartItem';
+import { withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { translate } from '../../localization/Translate';
 import { requiredItemFromCart } from '../../mapper/CartMapper';
+import { IReduxProps, mapDispatchToProps, mapStateToProps } from './cart.Redux';
 
-interface IProps {
-    // Container Props
-    cartItems: Array<CartItem>
-    editItemInCart?: (cartItemIndex: number, cartItem: CartItem) => void;
-    removeItemFromCart: (cartItemId: string) => void;
-}
+interface IWithDepInj { }
+interface IWithoutDepInj { }
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
 
-export const CartPresenter: React.FC<IProps> = (props: IProps) => {
+const CartPresenterConnected: React.FC<IProps> = (props: IProps) => {
     const navigate = useNavigate();
 
     const displayCartItems = (cartItems: Array<CartItem>) => {
@@ -45,14 +45,13 @@ export const CartPresenter: React.FC<IProps> = (props: IProps) => {
         return (
             <PositiveButton
                 additionalClass="button-active-bg center full"
-                onClick={() => navigate(Route.genericAllRequirements,
-                    {
-                        state: {
-                            typeName: translate(LocaleKey.cart),
-                            requiredItems: props.cartItems.map(ci => requiredItemFromCart(ci))
-                        }
-                    }
-                )}
+                onClick={() => {
+                    const state = {
+                        typeName: translate(LocaleKey.cart),
+                        requiredItems: props.cartItems.map(ci => requiredItemFromCart(ci))
+                    };
+                    navigate(Route.genericAllRequirements, { state: { ...state } });
+                }}
             >
                 <span>{translate(LocaleKey.viewAllRawMaterialsRequired)}</span>
             </PositiveButton>
@@ -79,3 +78,9 @@ export const CartPresenter: React.FC<IProps> = (props: IProps) => {
         </DefaultAnimation>
     );
 };
+
+export const CartPresenter = withServices<IWithoutDepInj, IWithDepInj>(
+    connect(mapStateToProps, mapDispatchToProps)(CartPresenterConnected),
+    () => ({})
+);
+

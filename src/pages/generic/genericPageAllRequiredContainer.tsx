@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { NetworkState } from '../../constants/NetworkState';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
-import { getAllRequiredItemsForMultiple, getAllRequiredItemsForTree } from '../../helper/itemHelper';
-import { GenericPageAllRequiredPresenter } from './genericPageAllRequiredPresenter';
-import { NetworkState } from '../../constants/NetworkState';
-import { GameItemService } from '../../services/json/GameItemService';
-import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { Tree } from '../../contracts/tree/tree';
+import { getAllRequiredItemsForMultiple, getAllRequiredItemsForTree } from '../../helper/itemHelper';
+import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { useLocation } from 'react-router-dom';
+import { GameItemService } from '../../services/json/GameItemService';
+import { GenericPageAllRequiredPresenter } from './genericPageAllRequiredPresenter';
 
 interface IWithDepInj {
     gameItemService: GameItemService;

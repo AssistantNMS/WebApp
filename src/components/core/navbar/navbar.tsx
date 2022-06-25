@@ -58,7 +58,9 @@ const NavBarUnconnected: React.FC<IProps> = (props: IProps) => {
                     <ul className="navbar-nav">
                         {
                             (props.additionalItems != null && props.additionalItems.length > 0)
-                                ? props.additionalItems
+                                ? props.additionalItems.map((child, index) => (
+                                    <li key={`additionalItems: ${index}`} data-id={`additionalItems: ${index}`}>{child}</li>
+                                ))
                                 : null
                         }
                         <li className="nav-item dropdown noselect" draggable={false}>

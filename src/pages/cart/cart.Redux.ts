@@ -1,21 +1,27 @@
 import { State } from '../../redux/state';
-
-import { addItemToCart, editItemInCart, removeItemFromCart, removeAllItems } from '../../redux/modules/cart/action';
 import { CartItem } from '../../contracts/cart/cartItem';
+import { addItemToCart, editItemInCart, removeAllItems, removeItemFromCart } from '../../redux/modules/cart/action';
 
-export interface IReduxProps {
-    cartItems: Array<CartItem>
-    editItemInCart?: (cartItemIndex: number, cartItem: CartItem) => void;
-    removeItemFromCart: (cartItemId: string) => void;
+export interface IReduxFromStateProps {
+    cartItems: Array<CartItem>;
 }
 
-export const mapStateToProps = (state: State) => {
+export interface IReduxActionsProps {
+    addItemToCart: (cartItem: CartItem) => void;
+    editItemInCart: (cartItemIndex: number, cartItem: CartItem) => void;
+    removeItemFromCart: (cartItemId: string) => void;
+    removeAllItems: () => void;
+}
+
+export interface IReduxProps extends IReduxFromStateProps, IReduxActionsProps { }
+
+export const mapStateToProps = (state: State): IReduxFromStateProps => {
     return {
-        cartItems: state.cartReducer?.cartItems || [],
+        cartItems: state.cartReducer?.cartItems || []
     };
 };
 
-export const mapDispatchToProps = (dispatch: any) => {
+export const mapDispatchToProps = (dispatch: any): IReduxActionsProps => {
 
     let newProps: any = {};
     newProps.addItemToCart = (cartItem: CartItem) => {
