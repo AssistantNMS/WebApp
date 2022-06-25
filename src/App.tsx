@@ -11,7 +11,7 @@ import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
 import * as route from './constants/Route';
 import { trackPageView } from './integration/analytics';
 import { AboutPresenter } from './pages/about/aboutPresenter';
-import { CartContainer } from './pages/cart/cartContainer';
+import { CartPresenter } from './pages/cart/cartPresenter';
 import { CatalogueItemContainer } from './pages/catalogue/catalogueItemContainer';
 import { CatalogueListContainer } from './pages/catalogue/catalogueListContainer';
 import { CataloguePresenter } from './pages/catalogue/cataloguePresenter';
@@ -32,6 +32,7 @@ import { NmsfmContainer } from './pages/misc/nmsfmContainer';
 import { PatreonPresenter } from './pages/misc/patreonPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 import { CommunityLinksPage } from './pages/other/communityLinks';
+import { CommunitySpotlightPage } from './pages/other/communitySpotlight';
 import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2020Container';
 import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
 import { PortalListContainer } from './pages/portal/portalListContainer';
@@ -89,7 +90,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={`${route.catalogueItem}/:itemId`} element={<CatalogueItemContainer />} />
 
               <Route path={`${route.processorItem}/:itemId`} element={<ProcessorItemContainer />} />
-              <Route path={route.cart} element={<CartContainer />} />
+              <Route path={route.cart} element={<CartPresenter />} />
               <Route path={route.favourites} element={<FavouritePresenter />} />
               <Route path={route.genericAllRequirements} element={<GenericPageAllRequiredContainer />} />
 
@@ -114,6 +115,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={route.sync} element={<SyncContainer />} />
               <Route path={route.onlineMeetup2020} element={<OnlineMeetup2020SubmissionContainer />} />
               <Route path={route.communityLinks} element={<CommunityLinksPage />} />
+              <Route path={route.communitySpotlight} element={<CommunitySpotlightPage />} />
 
               <Route element={<NotFoundPresenter />} />
             </Routes>

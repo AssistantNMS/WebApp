@@ -28,7 +28,7 @@
             // white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            padding-right: 1.5em;
+            padding-right: 1em;
         }
 
         &.sub {
@@ -56,6 +56,11 @@
 
         li.nav-item {
             position: relative;
+            overflow: hidden;
+
+            &.separator {
+                overflow: unset;
+            }
         }
 
         .material-icons.align-right {

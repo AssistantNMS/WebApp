@@ -1,0 +1,22 @@
+.generic-item-list .gen-item .gen-item-container.community-spotlight {
+    flex-direction: column;
+    padding-right: 0;
+    padding-bottom: 1em;
+    border-radius: 0.5em;
+
+    .image-container {
+        height: unset;
+
+        img {
+            width: 100%;
+            max-height: unset;
+            border-top-left-radius: 0.5em;
+            border-top-right-radius: 0.5em;
+        }
+    }
+
+    .text-container,
+    .quantity-container {
+        text-align: center;
+    }
+}

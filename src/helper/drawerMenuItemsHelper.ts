@@ -9,6 +9,7 @@ import { ExpeditionSeason } from '../contracts/helloGames/expeditionSeason';
 import { LocaleKey } from '../localization/LocaleKey';
 import { GameItemService } from '../services/json/GameItemService';
 import { getCatalogueMenuItems } from './catalogueMenuItemsHelper';
+import { catalogueMenuItem, communityMissionMenuItem, expeditionMenuItem, favouritesMenuItem, nmsfmMenuItem, patreonMenuItem, whatIsNewMenuItem } from '../constants/MenuItems';
 
 export const menuItemSeperator = {
   name: 'Separator',
@@ -21,13 +22,7 @@ export const menuItemSeperator = {
 
 export const getMenuSection1 = () => {
   const menuItems: Array<DrawerMenuItem> = [];
-  menuItems.push({
-    name: translate(LocaleKey.whatIsNew).toString(),
-    link: routes.whatIsNew,
-    icon: '/assets/images/drawer/whatIsNew.png',
-    iconType: DrawerIconType.Custom,
-    isActive: false
-  });
+  menuItems.push(whatIsNewMenuItem());
   menuItems.push({
     name: translate(LocaleKey.language).toString(),
     link: routes.language,
@@ -35,13 +30,7 @@ export const getMenuSection1 = () => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
-  menuItems.push({
-    name: translate(LocaleKey.patrons).toString(),
-    link: routes.patreon,
-    icon: '/assets/images/patreon.png',
-    iconType: DrawerIconType.Custom,
-    isActive: false
-  });
+  menuItems.push(patreonMenuItem());
   menuItems.push({
     name: translate(LocaleKey.donation).toString(),
     link: routes.donation,
@@ -55,28 +44,12 @@ export const getMenuSection1 = () => {
 
 export const getMenuSection2 = () => {
   const menuItems: Array<DrawerMenuItem> = [];
+  menuItems.push(favouritesMenuItem());
   menuItems.push({
-    name: translate(LocaleKey.favourites).toString(),
-    link: routes.favourites,
-    icon: 'star',
-    iconType: DrawerIconType.Material,
-    isActive: false
-  });
-  menuItems.push({
-    name: translate(LocaleKey.catalogue).toString(),
-    link: routes.catalogue,
-    icon: '/assets/images/drawer/catalogue.png',
-    iconType: DrawerIconType.Custom,
-    isActive: false,
+    ...catalogueMenuItem(),
     subs: getCatalogueMenuItems()
   });
-  menuItems.push({
-    name: translate(LocaleKey.nmsfm).toString(),
-    link: routes.nmsfm,
-    icon: 'radio',
-    iconType: DrawerIconType.Material,
-    isActive: false
-  });
+  menuItems.push(nmsfmMenuItem());
   // menuItems.push({
   //   name: 'Online Meetup 2020',
   //   link: routes.onlineMeetup2020,
@@ -111,13 +84,7 @@ export const getMenuSection3 = () => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
-  menuItems.push({
-    name: translate(LocaleKey.communityMission).toString(),
-    link: routes.communityMission,
-    icon: '/assets/images/drawer/communityMission.png',
-    iconType: DrawerIconType.Custom,
-    isActive: false
-  });
+  menuItems.push(communityMissionMenuItem());
   menuItems.push({
     name: translate(LocaleKey.titles).toString(),
     link: routes.titles,
@@ -139,6 +106,13 @@ export const getMenuSection3 = () => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
+  menuItems.push({
+    name: translate(LocaleKey.communitySpotlight).toString(),
+    link: routes.communitySpotlight,
+    icon: 'military_tech_rounded',
+    iconType: DrawerIconType.Material,
+    isActive: false
+  });
   menuItems.push(menuItemSeperator);
   return menuItems;
 }
@@ -146,10 +120,7 @@ export const getMenuSection3 = () => {
 export const getMenuSection4 = (): Array<DrawerMenuItem> => {
   const menuItems: Array<DrawerMenuItem> = [];
   menuItems.push({
-    name: translate(LocaleKey.seasonalExpeditionSeasons).toString(),
-    link: routes.seasonExpedition,
-    icon: 'map',
-    iconType: DrawerIconType.Material,
+    ...expeditionMenuItem(),
     subs: ExistingExpeditions.map((ee: IExistingExpeditions) => {
       return {
         name: ee.name,
@@ -159,7 +130,6 @@ export const getMenuSection4 = (): Array<DrawerMenuItem> => {
         isActive: false,
       };
     }),
-    isActive: false
   });
   menuItems.push({
     name: translate(LocaleKey.weekendMission).toString(),

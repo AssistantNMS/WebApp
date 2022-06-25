@@ -61,34 +61,27 @@ export class GameItemService extends BaseJsonService {
     return this._getOrAdd(() => this._getItemDetails(itemId), ['_getItemDetails', itemId]);
   }
   async _getItemDetails(itemId: string): Promise<ResultWithValue<GameItemModel>> {
-    let result: any = {};
-
-    if (!itemId) return { isSuccess: false, value: result, errorMessage: 'itemId specified is invallid' };
+    if (!itemId) return { isSuccess: false, value: anyObject, errorMessage: 'itemId specified is invallid' };
 
     const catalogue = getCatalogueFromItemId(itemId);
     const list = await this.getListfromJson(catalogue);
-    if (!list.isSuccess) return { isSuccess: false, value: result, errorMessage: list.errorMessage };
+    if (!list.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: list.errorMessage };
 
-    let found = false;
     for (const item of list.value) {
       if (item.Id !== itemId) continue;
 
-      result = item;
-      found = true;
-    }
-    if (!found) {
       return {
-        isSuccess: false,
-        value: result,
-        errorMessage: 'no matching item found',
-      };
+        isSuccess: true,
+        value: item,
+        errorMessage: ''
+      }
     }
 
     return {
-      isSuccess: true,
-      value: result,
-      errorMessage: ''
-    }
+      isSuccess: false,
+      value: anyObject,
+      errorMessage: 'no matching item found',
+    };
   }
 
 

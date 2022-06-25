@@ -11,6 +11,7 @@ import { getHashForObject } from '../../helper/hashHelper';
 import { ContributorViewModel } from '../../contracts/generated/Model/Contributor/contributorViewModel';
 import { CommunityLinkViewModel } from '../../contracts/generated/Model/Community/communityLinkViewModel';
 import { getCurrentLang } from '../../localization/Translate';
+import { CommunitySpotlightViewModel } from '../../contracts/generated/Model/Community/communitySpotlightViewModel';
 
 export class ApiService extends BaseApiService {
 
@@ -71,5 +72,9 @@ export class ApiService extends BaseApiService {
 
     async getCommunityLinks(): Promise<ResultWithValue<Array<CommunityLinkViewModel>>> {
         return await this.get<Array<CommunityLinkViewModel>>('CommunityLink');
+    }
+
+    async getCommunitySpotlight(): Promise<ResultWithValue<Array<CommunitySpotlightViewModel>>> {
+        return await this.get<Array<CommunitySpotlightViewModel>>('CommunitySpotlight');
     }
 }
