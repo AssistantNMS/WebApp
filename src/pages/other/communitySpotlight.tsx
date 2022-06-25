@@ -8,7 +8,6 @@ import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { CommunitySpotlightListTile } from '../../components/tilePresenter/communitySpotlightListTile';
 import { NetworkState } from '../../constants/NetworkState';
-import { CommunityLinkViewModel } from '../../contracts/generated/Model/Community/communityLinkViewModel';
 import { CommunitySpotlightViewModel } from '../../contracts/generated/Model/Community/communitySpotlightViewModel';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
