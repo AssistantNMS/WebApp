@@ -20,8 +20,8 @@ export class ExternalUrls {
   static openCollective = 'https://opencollective.com/assistantnms';
   static nmsWeekendMissionWiki = 'https://nomanssky.gamepedia.com/Weekend_Missions_-_Lore';
   static translationTool = 'https://tools.assistantapps.com/translation';
-  static expeditionAlphabet = 'https://nmscd.github.io/expedition-alphabet/';
-  static expeditionAlphabetDisplay = 'https://nmscd.github.io/expedition-alphabet/#/display?text=';
+  static expeditionAlphabet = 'https://alphabet.nmscd.com/';
+  static expeditionAlphabetDisplay = 'https://alphabet.nmscd.com/#/display?text=';
   static communityMissionProgress =
     'https://nmscd.github.io/CommunityMission-Progress-Viewer/';
 }
