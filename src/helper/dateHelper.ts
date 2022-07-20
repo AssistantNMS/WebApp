@@ -1,3 +1,6 @@
+import { LocaleKey } from "../localization/LocaleKey";
+import { translate } from "../localization/Translate";
+
 const dayjs = require('dayjs');
 const relativeTime = require('dayjs/plugin/relativeTime');
 
@@ -32,6 +35,10 @@ export const percentageProgress = (startDate: Date, endDate: Date): number => {
         return 100;
     }
 
+    if (startDateMilli < endDateMilli) {
+        return 0;
+    }
+
     const progressMilli = currDateMilli - startDateMilli;
     const goalMilli = endDateMilli - startDateMilli;
     const percentage = (progressMilli / goalMilli) * 100;
@@ -40,8 +47,11 @@ export const percentageProgress = (startDate: Date, endDate: Date): number => {
 }
 
 export const friendlyTimeLeft = (startDate: Date, endDate: Date): string => {
+    if (startDate > (new Date())) {
+        return translate(LocaleKey.notStarted);
+    }
     if (endDate < (new Date())) {
-        return 'Complete';
+        return translate(LocaleKey.completed);
     }
 
     dayjs.extend(relativeTime);

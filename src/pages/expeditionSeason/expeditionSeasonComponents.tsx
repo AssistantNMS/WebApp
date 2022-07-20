@@ -42,7 +42,7 @@ export const CurrentExpeditionSeasonHeader: React.FC<ICurrentExpeditionSeasonHea
                     <h2>{props.seasonDetails.name}</h2>
                     <ProgressBar
                         percentage={percentageProgress(props.seasonDetails.startDate, props.seasonDetails.endDate)}
-                        additionalText={friendlyTimeLeft(new Date(), new Date(props.seasonDetails.endDate))}
+                        additionalText={friendlyTimeLeft(new Date(props.seasonDetails.startDate), new Date(props.seasonDetails.endDate))}
                     />
                     <div className="mt-2em">
                         <h4 style={{ display: 'inline-block', float: 'left' }}>{formatDate(props.seasonDetails.startDate, 'YYYY-MM-DD')}</h4>
