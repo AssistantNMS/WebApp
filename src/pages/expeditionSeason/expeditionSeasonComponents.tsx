@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react';
 import classNames from 'classnames';
-import { translate } from '../../localization/Translate';
+import React, { ReactNode } from 'react';
 import { PositiveButton } from '../../components/common/button/positiveButton';
+import { DecriptionRegexHighlightText } from '../../components/common/descriptionRegexHighlighter';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
 import { PortalGlyphGridDisplay } from '../../components/common/portal/portalGlyphGrid';
 import { ProgressBar } from '../../components/common/progressBar/progressBar';
@@ -14,10 +14,11 @@ import { ExpeditionSeasonRewardTile } from '../../components/tilePresenter/rewar
 import { AppImage } from '../../constants/AppImage';
 import { NetworkState } from '../../constants/NetworkState';
 import { ExpeditionSeasonViewModel } from '../../contracts/generated/Model/HelloGames/expeditionSeasonViewModel';
-import { ExpeditionSeason, ExpeditionSeasonPhase, ExpeditionSeasonMilestone, ExpeditionSeasonReward, MilestoneType } from '../../contracts/helloGames/expeditionSeason';
-import { friendlyTimeLeft, formatDate, percentageProgress } from '../../helper/dateHelper';
+import { ExpeditionSeason, ExpeditionSeasonMilestone, ExpeditionSeasonPhase, ExpeditionSeasonReward, MilestoneType } from '../../contracts/helloGames/expeditionSeason';
+import { formatDate, friendlyTimeLeft, percentageProgress } from '../../helper/dateHelper';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { translate } from '../../localization/Translate';
 
 interface ICurrentExpeditionSeasonHeaderProps {
     seasonDetails?: ExpeditionSeasonViewModel;
@@ -250,7 +251,10 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
                 />
                 <div className="text-container">
                     <h3>{props.milestone.Title}</h3>
-                    <p>{props.milestone.Description}</p>
+                    <DecriptionRegexHighlightText
+                        orig={props.milestone.Description}
+                        controlLookup={[]}
+                    />
                 </div>
                 <div className="text-container rewards hidden-in-mobile">
                     <ExpeditionSeasonRewardsOnlyTile rewards={props.milestone.Rewards} />
