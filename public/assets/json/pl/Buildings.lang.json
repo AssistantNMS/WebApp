@@ -19716,6 +19716,32 @@
     "ConsumableRewardTexts": []
   },
   {
+    "Id": "build961",
+    "Icon": "building/961.png",
+    "Name": "Naklejka Ekspedycji Powstanie",
+    "Group": "Dekoracja",
+    "Description": "Wyjątkowa naklejka, którą możesz umieścić na bazach, by je udekorować i dodać im szyku.\n\nUpamiętnia zakończenie ekspedycji <STELLAR>Powstanie<>.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
     "Id": "build962",
     "Icon": "building/962.png",
     "Name": "Tytaniczne trofeum",
@@ -20572,6 +20598,7 @@
   },
   {
     "Id": "build994",
+    "Icon": "building/994.png",
     "Name": "Wzmocnione okno",
     "Group": "Główny moduł frachtowca",
     "Description": "Szyba ze szkła o niskiej rozszerzalności cieplnej.\n\nMoże być zamontowana w kadłubie frachtowca, aby zapewnić widok na kosmos.",
@@ -20579,7 +20606,8 @@
     "CurrencyType": "None",
     "Colour": "2C7C9F",
     "Usages": [
-      "HasDevProperties"
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -20599,6 +20627,7 @@
   },
   {
     "Id": "build995",
+    "Icon": "building/995.png",
     "Name": "Drzwi grodziowe",
     "Group": "Główny moduł frachtowca",
     "Description": "Grube, solidne drzwi.\n\nHermetycznie uszczelnione do montażu w kadłubie frachtowca lub pomiędzy wewnętrznymi korytarzami i pomieszczeniami.",
@@ -20606,7 +20635,8 @@
     "CurrencyType": "None",
     "Colour": "2C7C9F",
     "Usages": [
-      "HasDevProperties"
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",

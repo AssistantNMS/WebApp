@@ -19716,6 +19716,32 @@
     "ConsumableRewardTexts": []
   },
   {
+    "Id": "build961",
+    "Icon": "building/961.png",
+    "Name": "Рисунок экспедиции «Появление»",
+    "Group": "Украшение",
+    "Description": "Эксклюзивный размещаемый рисунок, добавляющий шарма базе.\n\nЭтот рисунок отмечает завершение экспедиции <STELLAR>«Появление»<>.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
     "Id": "build962",
     "Icon": "building/962.png",
     "Name": "Титанический трофей",
@@ -20572,6 +20598,7 @@
   },
   {
     "Id": "build994",
+    "Icon": "building/994.png",
     "Name": "Укрепленное окно",
     "Group": "Основной модуль грузового судна",
     "Description": "Стекло с низким коэффициентом теплового расширения.\n\nМожет быть встроено в корпус грузового судна для наблюдения за космосом.",
@@ -20579,7 +20606,8 @@
     "CurrencyType": "None",
     "Colour": "2C7C9F",
     "Usages": [
-      "HasDevProperties"
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -20599,6 +20627,7 @@
   },
   {
     "Id": "build995",
+    "Icon": "building/995.png",
     "Name": "Дверь в переборке",
     "Group": "Основной модуль грузового судна",
     "Description": "Толстая и надежная дверь.\n\nГерметичная дверь для установки в корпус грузового судна или между внутренними коридорами и отсеками.",
@@ -20606,7 +20635,8 @@
     "CurrencyType": "None",
     "Colour": "2C7C9F",
     "Usages": [
-      "HasDevProperties"
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
