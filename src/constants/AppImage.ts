@@ -32,7 +32,9 @@ export class AppImage {
     static platformXbxAlt: string = '/' + AppImage.base + 'platformXb1Alt.png';
     static unknownButton: string = 'unknown.png';
 
-    static nanites: string = AppImage.base + '/nanites.png';
-    static salvagedData: string = AppImage.base + '/constructedTechnology/90.png';
-    static factoryOverride: string = AppImage.base + '/special/factoryOverride.png';
+    static nanites: string = '/' + AppImage.base + 'nanites.png';
+    static units: string = '/' + AppImage.base + 'credits.png';
+    static quicksilverForChips: string = '/' + AppImage.base + 'rawMaterials/57.png';
+    static salvagedData: string = '/' + AppImage.base + 'constructedTechnology/90.png';
+    static factoryOverride: string = '/' + AppImage.base + 'special/factoryOverride.png';
 }

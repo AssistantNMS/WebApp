@@ -27,6 +27,7 @@ import { CatalogueItemPresenter } from './catalogueItemPresenter';
 import { optionalListTask, optionalTask } from '../../helper/promiseHelper';
 import { UsageKey } from '../../constants/UsageKey';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
+import { AppImage } from '../../constants/AppImage';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -232,10 +233,10 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         if (itemDetail.BaseValueUnits > 1) {
             switch (itemDetail.CurrencyType) {
                 case CurrencyType.CREDITS:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/credits.png', tooltip: 'Units' });
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.units, tooltip: 'Units' });
                     break;
                 case CurrencyType.QUICKSILVER:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: '/assets/images/rawMaterials/57.png', tooltip: 'Quicksilver' });
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.quicksilverForChips, tooltip: 'Quicksilver' });
                     break;
             }
         }
@@ -245,13 +246,13 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             switch (itemDetail.BlueprintCostType) {
                 case CurrencyType.NANITES:
                     const bpCostText = translate(LocaleKey.blueprintCost);
-                    additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: '/assets/images/nanites.png', tooltip: 'Nanites' });
+                    additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: AppImage.nanites, tooltip: 'Nanites' });
                     break;
                 case CurrencyType.SALVAGEDDATA:
-                    additionalData.push({ text: itemDetail.BlueprintCost, image: '/assets/images/curiosities/16.png', tooltip: 'Salvaged Data' });
+                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.salvagedData, tooltip: 'Salvaged Data' });
                     break;
                 case CurrencyType.FACTORYOVERRIDE:
-                    additionalData.push({ text: itemDetail.BlueprintCost, image: '/assets/images/special/factoryOverride.png', tooltip: 'Factory Override Unit' });
+                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.factoryOverride, tooltip: 'Factory Override Unit' });
                     break;
                 case CurrencyType.NONE:
                 default:
