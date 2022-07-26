@@ -1,3 +1,10 @@
+.expedition-season-header,
+.expedition-season-phases {
+    img {
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    }
+}
+
 .expedition-season-header {
     .row.full.glyphgrid {
         max-width: 850px;
@@ -173,6 +180,7 @@
         left: 0;
         max-width: 256px;
         transform: translateY(-50%);
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
     }
 
     .milestone-reward-title {
