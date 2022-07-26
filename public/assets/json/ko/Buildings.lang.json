@@ -19716,6 +19716,32 @@
     "ConsumableRewardTexts": []
   },
   {
+    "Id": "build961",
+    "Icon": "building/961.png",
+    "Name": "태동 원정 데칼",
+    "Group": "장식",
+    "Description": "독점 데칼로, 기지에 멋과 장식을 더할 수 있습니다.\n\n이 데칼은 <STELLAR>태동<> 원정의 완료를 기념하고 있습니다.",
+    "BaseValueUnits": 400.0,
+    "CurrencyType": "None",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw1",
+        "Quantity": 20
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
     "Id": "build962",
     "Icon": "building/962.png",
     "Name": "타이탄의 트로피",
@@ -20572,6 +20598,7 @@
   },
   {
     "Id": "build994",
+    "Icon": "building/994.png",
     "Name": "강화 창문",
     "Group": "코어 화물선 모듈",
     "Description": "열 팽창도가 낮은 유리판입니다.\n\n화물선 선체에 장착하여 우주를 지켜볼 수 있습니다.",
@@ -20579,7 +20606,8 @@
     "CurrencyType": "None",
     "Colour": "2C7C9F",
     "Usages": [
-      "HasDevProperties"
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -20599,6 +20627,7 @@
   },
   {
     "Id": "build995",
+    "Icon": "building/995.png",
     "Name": "격벽 출입문",
     "Group": "코어 화물선 모듈",
     "Description": "두껍고 튼튼한 출입문입니다.\n\n화물선의 선체, 또는 내부 복도와 공간 사이에 설치하기 위해 완전히 밀폐됩니다.",
@@ -20606,7 +20635,8 @@
     "CurrencyType": "None",
     "Colour": "2C7C9F",
     "Usages": [
-      "HasDevProperties"
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
