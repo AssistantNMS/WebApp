@@ -33,6 +33,6 @@ export class AppImage {
     static unknownButton: string = 'unknown.png';
 
     static nanites: string = AppImage.base + '/nanites.png';
-    static salvagedData: string = AppImage.base + '/curiosities/16.png';
+    static salvagedData: string = AppImage.base + '/constructedTechnology/90.png';
     static factoryOverride: string = AppImage.base + '/special/factoryOverride.png';
 }
