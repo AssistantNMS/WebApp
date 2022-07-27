@@ -67,7 +67,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
         const components: any[] = [];
         if (props.item == null || props.item.Id == null) return components;
 
-        if (allItems === true && props.item.Description.includes('<IMG>')) {
+        if (allItems === true && (props.item.Description ?? '').includes('<IMG>')) {
             components.push(
                 <PlatformFloatingActionButton
                     key="platform-dialog"
