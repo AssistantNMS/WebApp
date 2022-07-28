@@ -72,7 +72,7 @@ export const ExpeditionSeasonHeader: React.FC<IExpeditionSeasonHeaderProps> = (p
         return (<Error />);
 
     return (
-        <div data-id="ExpeditionSeasonHeader" className="row expedition-season-header noselect">
+        <div data-id="ExpeditionSeasonHeader" className="row expedition-season-header">
             <div className="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-3">
                 <LazyLoadImage src={`/${AppImage.base}${props.seasonDetails.Icon}`} alt={props.seasonDetails.Title} style={{ width: '100%', maxWidth: '250px' }} />
                 <h4><b>{translate(LocaleKey.startDate)}:</b>&nbsp;{formatDate(props.seasonDetails.StartDate, 'YYYY-MM-DD')}</h4>
@@ -96,7 +96,7 @@ export const ExpeditionSeasonHeader: React.FC<IExpeditionSeasonHeaderProps> = (p
                         <div className="col-12">
                             <h3 style={{ margin: 0 }}>{translate(LocaleKey.rewards)}</h3>
                         </div>
-                        <div className="col-12 mt-1em mb-1em">
+                        <div className="col-12 mt-1em mb-1em noselect">
                             <GenericListPresenter
                                 isCentered={shouldListBeCentered(props.seasonDetails.Rewards.length)}
                                 list={props.seasonDetails.Rewards}
