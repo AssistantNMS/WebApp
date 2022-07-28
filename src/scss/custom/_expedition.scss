@@ -171,8 +171,9 @@
     }
 }
 
-.milestone-reward-content {
-    padding-top: 2em;
+.expedition-bottom-modal-sheet-content {
+    overflow: auto;
+    max-height: 100%;
 
     img.milestone-patch {
         position: absolute;
@@ -182,6 +183,10 @@
         transform: translateY(-50%);
         filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
     }
+}
+
+.milestone-reward-content {
+    padding-top: 2em;
 
     .milestone-reward-title {
         position: absolute;
@@ -196,6 +201,7 @@
     .react-modal-sheet-container {
         .react-modal-sheet-content {
             overflow: visible !important;
+            max-height: 100%;
         }
     }
 }

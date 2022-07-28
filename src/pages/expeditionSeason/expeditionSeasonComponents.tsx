@@ -25,6 +25,8 @@ interface ICurrentExpeditionSeasonHeaderProps {
     networkState: NetworkState;
 }
 
+const lowRewardsGenericListPresenterClasses = 'col-xl-5 col-lg-6 col-md-6 col-sm-6 col-xs-12';
+
 export const CurrentExpeditionSeasonHeader: React.FC<ICurrentExpeditionSeasonHeaderProps> = (props: ICurrentExpeditionSeasonHeaderProps) => {
 
     if (props.networkState === NetworkState.Loading)
@@ -60,7 +62,7 @@ interface IExpeditionSeasonHeaderProps {
     seasonDetails?: ExpeditionSeason;
     useAltGlyphs: boolean;
     networkState: NetworkState;
-    setDetailPane: (newNode: ReactNode, snapPoint: number) => void;
+    setDetailPane: (newNode: ReactNode, expPatch: ReactNode, snapPoint: number) => void;
 }
 
 export const ExpeditionSeasonHeader: React.FC<IExpeditionSeasonHeaderProps> = (props: IExpeditionSeasonHeaderProps) => {
@@ -115,7 +117,7 @@ export const ExpeditionSeasonHeader: React.FC<IExpeditionSeasonHeaderProps> = (p
 interface IExpeditionSeasonPhaseProps {
     networkState: NetworkState;
     phases?: Array<ExpeditionSeasonPhase>;
-    setDetailPane: (newNode: ReactNode, snapPoint: number) => void;
+    setDetailPane: (newNode: ReactNode, expPatch: ReactNode, snapPoint: number) => void;
 }
 
 export const ExpeditionSeasonPhases: React.FC<IExpeditionSeasonPhaseProps> = (props: IExpeditionSeasonPhaseProps) => {
@@ -143,9 +145,33 @@ export const ExpeditionSeasonPhases: React.FC<IExpeditionSeasonPhaseProps> = (pr
     );
 }
 
+const rewardsPresenter = (rewards: Array<ExpeditionSeasonReward>) => {
+    const lowNumRewards = (rewards.length < 3);
+    return (
+        <GenericListPresenter
+            isCentered={lowNumRewards || shouldListBeCentered(rewards.length)}
+            list={rewards}
+            presenter={ExpeditionSeasonRewardTile}
+            identifier={(item: ExpeditionSeasonReward) => item.Id}
+            bootstrapClasses={lowNumRewards ? lowRewardsGenericListPresenterClasses : undefined}
+        />
+    );
+}
+
+const rewardsIconPresenter = (icon: string, title: string) => {
+    return (
+        <img
+            src={`/assets/images/${icon}`}
+            className="hidden-in-mobile milestone-patch"
+            alt={title}
+            draggable={false}
+        />
+    );
+}
+
 interface IExpeditionSeasonPhaseWithMilestonesProps {
     phase: ExpeditionSeasonPhase;
-    setDetailPane: (newNode: ReactNode, snapPoint: number) => void;
+    setDetailPane: (newNode: ReactNode, expPatch: ReactNode, snapPoint: number) => void;
 }
 
 export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhaseWithMilestonesProps> = (props: IExpeditionSeasonPhaseWithMilestonesProps) => {
@@ -158,12 +184,8 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
         if (props.phase == null) return;
 
         props.setDetailPane(
-            <GenericListPresenter
-                isCentered={shouldListBeCentered(props.phase.Rewards.length)}
-                list={props.phase.Rewards}
-                presenter={ExpeditionSeasonRewardTile}
-                identifier={(item: ExpeditionSeasonReward) => item.Id}
-            />,
+            rewardsPresenter(props.phase.Rewards),
+            rewardsIconPresenter(props.phase.Icon, props.phase.Title),
             props.phase.Rewards.length > 6 ? 600 : 400,
         );
     }
@@ -200,7 +222,7 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
 
 interface IExpeditionSeasonPhaseMilestonesProps {
     milestone?: ExpeditionSeasonMilestone;
-    setDetailPane: (newNode: ReactNode, snapPoint: number) => void;
+    setDetailPane: (newNode: ReactNode, expPatch: ReactNode, snapPoint: number) => void;
 }
 
 export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMilestonesProps> = (props: IExpeditionSeasonPhaseMilestonesProps) => {
@@ -214,20 +236,10 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
 
         props.setDetailPane(
             <div className="milestone-reward-content">
-                <GenericListPresenter
-                    isCentered={shouldListBeCentered(props.milestone.Rewards.length)}
-                    list={props.milestone.Rewards}
-                    presenter={ExpeditionSeasonRewardTile}
-                    identifier={(item: ExpeditionSeasonReward) => item.Id}
-                />
+                {rewardsPresenter(props.milestone.Rewards)}
                 {/* <h3 className="hidden-in-mobile milestone-reward-title">{props.milestone.Title}</h3> */}
-                <img
-                    src={`/assets/images/${props.milestone.Icon}`}
-                    className="hidden-in-mobile milestone-patch"
-                    alt={props.milestone.Title}
-                    draggable={false}
-                />
             </div>,
+            rewardsIconPresenter(props.milestone.Icon, props.milestone.Title),
             props.milestone.Rewards.length > 6 ? 600 : 400,
         );
     }

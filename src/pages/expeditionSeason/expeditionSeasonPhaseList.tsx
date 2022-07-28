@@ -40,6 +40,7 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
     const [expeditionStatus, setExpeditionStatus] = useState<NetworkState>(NetworkState.Loading);
     const [isDetailPaneOpen, setDetailPaneOpen] = useState<boolean>(false);
     const [detailPane, setDetailPane] = useState<ReactNode>(<></>);
+    const [expBadge, setExpBadge] = useState<ReactNode>(<></>);
     const [snapPoint, setSnapPoint] = useState<number>(400);
 
     useEffect(() => {
@@ -76,7 +77,8 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
         }
     }
 
-    const openDetailPaneFunc = (newNode: ReactNode, snapPoint: number = 400) => {
+    const openDetailPaneFunc = (newNode: ReactNode, expPatch: ReactNode, snapPoint: number = 400) => {
+        setExpBadge(expPatch);
         setDetailPane(newNode);
         setDetailPaneOpen(true);
         setSnapPoint(snapPoint);
@@ -118,8 +120,9 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
                 snapPoints={[snapPoint]}
                 className="expedition-bottom-modal-sheet"
             >
-                <div className="container">
+                <div className="container expedition-bottom-modal-sheet-content">
                     {detailPane}
+                    {expBadge != null && (expBadge)}
                 </div>
             </BottomModalSheet>
         </DefaultAnimation >
