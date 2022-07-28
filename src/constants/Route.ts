@@ -31,3 +31,6 @@ export const whatIsNew = '/what-is-new';
 export const communityLinks = '/community';
 export const starshipScrap = '/starship-scrap';
 export const communitySpotlight = '/community-spotlight';
+export const twitchDrops = '/twitch-drops';
+export const twitchDropsParam = ':dayId';
+export const twitchDropsDetails = `${twitchDrops}/${twitchDropsParam}`;

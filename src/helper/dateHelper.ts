@@ -17,12 +17,25 @@ export const guideFormatDate = (date: Date | string): string => {
     return formatDate(date as any, 'DD MMM YYYY');
 }
 
+export const twitchDate = (date: Date | string): string => {
+    return formatDate(date as any, 'YYYY-MM-DD');
+}
+
 export const dateIsBefore = (firstDate: Date, secondDate: Date): boolean => {
     try {
         return dayjs(firstDate).isBefore(secondDate);
     }
     catch {
         return false;
+    }
+}
+
+export const dateAdd = (date: Date, numberOfDays: number): Date => {
+    try {
+        return dayjs(date).add(numberOfDays, 'day');
+    }
+    catch {
+        return date;
     }
 }
 

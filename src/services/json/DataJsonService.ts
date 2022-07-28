@@ -11,6 +11,7 @@ import { ControlMappingList, PlatformControlMapping } from '../../contracts/data
 import { ControllerPlatformType, ToJsonProperty } from '../../contracts/enum/ControllerPlatformType';
 import { BaseJsonService } from './BaseJsonService';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
+import { TwitchDrop } from '../../contracts/data/twitchDrop';
 
 export class DataJsonService extends BaseJsonService {
 
@@ -105,4 +106,5 @@ export class DataJsonService extends BaseJsonService {
     getQuicksilverStore = () => this.getDataJsonBasic<Array<QuicksilverStore>>('quicksilverStore.json');
     getSocial = () => this.getDataJsonBasic<Array<QuicksilverStore>>('social.json');
     getUnusedMilestonePatches = () => this.getDataJsonBasic<Array<QuicksilverStore>>('unusedMilestonePatches.json');
+    getTwitchDrops = () => this.getDataJsonBasic<Array<TwitchDrop>>('twitchDrops.json');
 }

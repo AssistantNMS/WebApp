@@ -120,7 +120,7 @@ const ExpeditionSeasonPhaseListUnconnected: React.FC<IProps> = (props: IProps) =
                 snapPoints={[snapPoint]}
                 className="expedition-bottom-modal-sheet"
             >
-                <div className="container expedition-bottom-modal-sheet-content">
+                <div className="container expedition-bottom-modal-sheet-content noselect">
                     {detailPane}
                     {expBadge != null && (expBadge)}
                 </div>
