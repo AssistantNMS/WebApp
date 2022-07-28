@@ -53,10 +53,8 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
         }
 
         if (row.Quantity === 0) {
-            result.push(<span key={`${baseKey}-name-no-quantity`} className="item-name">{row.Name}</span>);
-            if (rows.length > 1) {
-                result.push(<span key={`${baseKey}-name-no-space`} className="item-name">&nbsp;</span>);
-            }
+            result.push(<span key={`${baseKey}-name-no-quantity`} className="item-name">{row.Name}&nbsp;</span>);
+
             if (props.addTrailingSpace) {
                 result.push(<span key={`${baseKey}-trailing-space`} style={{ opacity: 0 }}>&nbsp;</span>);
             }

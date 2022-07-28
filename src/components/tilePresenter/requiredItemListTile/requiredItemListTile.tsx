@@ -21,6 +21,7 @@ interface IWithDepInj {
 interface IWithoutDepInj extends RequiredItem {
     quantityLabel?: string;
     quantityIconSuffix?: ReactNode;
+    quantityTemplate?: (quantity: number) => ReactNode;
     editItem?: () => void;
     removeItem?: () => void;
 }
@@ -73,6 +74,12 @@ const RequiredItemListTileClass: React.FC<IProps> = (props: IProps) => {
     const additionalCss = hasQuantity ? "" : "full";
     const quantityRenderer = (hasQ: boolean, localProps: IProps) => {
         if (!hasQ) return null;
+
+        if (localProps.quantityTemplate != null) {
+            return (
+                <div className="quantity-container">{localProps.quantityTemplate(localProps.Quantity)}</div>
+            );
+        }
 
         const label = localProps.quantityLabel ?? translate(LocaleKey.quantity);
         return (
