@@ -17155,7 +17155,7 @@
     "RequiredItems": [
       {
         "Id": "raw32",
-        "Quantity": 10
+        "Quantity": 30
       }
     ],
     "StatBonuses": [],
@@ -18380,7 +18380,7 @@
   {
     "Id": "build908",
     "Icon": "building/908.png",
-    "Name": "AFFICHE Étoile polaire",
+    "Name": "Affiche Étoile polaire",
     "Group": "Décoration",
     "Description": "Une œuvre d'art mural exclusive, adhésive et infroissable.\n\nCette affiche est dédiée aux explorateurs et aux aventuriers audacieux en quête de nouveaux horizons.",
     "BaseValueUnits": 400.0,
@@ -20669,7 +20669,63 @@
     "RequiredItems": [
       {
         "Id": "raw32",
-        "Quantity": 40
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "build996",
+    "Icon": "building/996.png",
+    "Name": "Verre Escaliers De Cargo",
+    "Group": "Module de cargo principal",
+    "Description": "Ce module d'extension permet une construction d'espaces habitables rapide à l'intérieur des vaisseaux de grande taille.\n\nL'unité de construction préfabriquée comprend une cloison de pressurisation ainsi que tous les points d'ancrage nécessaires.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 30
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "build997",
+    "Icon": "building/997.png",
+    "Name": "Plateforme Extérieure Escaliers De Cargo",
+    "Group": "Module de cargo principal",
+    "Description": "Ce module d'extension permet une construction d'espaces habitables rapide à l'intérieur des vaisseaux de grande taille.\n\nL'unité de construction préfabriquée comprend une cloison de pressurisation ainsi que tous les points d'ancrage nécessaires.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 5
+      },
+      {
+        "Id": "raw32",
+        "Quantity": 30
       }
     ],
     "StatBonuses": [],
