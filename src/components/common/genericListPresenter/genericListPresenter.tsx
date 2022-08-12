@@ -16,10 +16,12 @@ interface IProps<T> {
     presenter: (props: T, index: number) => JSX.Element;
 }
 
+export const defaultGenericListPresenterClasses = 'col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12';
+
 export function GenericListPresenter<T>(props: IProps<T>) {
     const [showMore, setShowMore] = useState<boolean>(false);
 
-    const bootstrapClasses = props.bootstrapClasses || 'col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12';
+    const bootstrapClasses = props.bootstrapClasses || defaultGenericListPresenterClasses;
     const list = props.list.slice(0, showMore
         ? props.list.length
         : (props.limitResultsTo ?? props.list.length)

@@ -43,6 +43,8 @@ import { StarshipScrapPage } from './pages/starshipScrap/starshipScrapPage';
 import { SyncContainer } from './pages/sync/syncContainer';
 import { TechTreeContainer } from './pages/techtree/techTreeContainer';
 import { TitlesContainer } from './pages/titles/titlesContainer';
+import { TwitchDropPage } from './pages/twitchDrops/twitchDropPage';
+import { TwitchDropViewerPage } from './pages/twitchDrops/twitchDropViewerPage';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
 import { StateSettingReducer } from './redux/state/StateSettingReducer';
 
@@ -110,6 +112,8 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={route.techTree} element={<TechTreeContainer />} />
               <Route path={route.titles} element={<TitlesContainer />} />
               <Route path={route.starshipScrap} element={<StarshipScrapPage />} />
+              <Route path={route.twitchDrops} element={<TwitchDropPage />} />
+              <Route path={route.twitchDropsDetails} element={<TwitchDropViewerPage />} />
 
               <Route path={route.social} element={<SocialPresenter />} />
               <Route path={route.sync} element={<SyncContainer />} />

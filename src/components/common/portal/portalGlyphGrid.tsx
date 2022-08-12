@@ -12,14 +12,20 @@ interface IPortalGlyphGridDisplayProps extends IProps {
 
 export const PortalGlyphGridDisplay: React.FC<IPortalGlyphGridDisplayProps> = (props: IPortalGlyphGridDisplayProps) => {
     const type = getPortalImageType(props.useAltGlyphs);
-    const portalImages: Array<string> = [];
+    const portalImages: Array<any> = [];
     for (let displayIndex = 0; displayIndex < 12; displayIndex++) {
         if (props.codes.length <= displayIndex) {
-            portalImages.push(getPortalEmptyImage(type));
+            portalImages.push({
+                url: getPortalEmptyImage(type),
+                code: '',
+            });
         }
         if (props.codes.length > displayIndex) {
             const code = props.codes[displayIndex];
-            portalImages.push(getPortalImage(type, code));
+            portalImages.push({
+                url: getPortalImage(type, code),
+                code: code.toString(16).toUpperCase(),
+            });
         }
     }
 
@@ -35,9 +41,9 @@ export const PortalGlyphGridDisplay: React.FC<IPortalGlyphGridDisplayProps> = (p
 
     return (
         <div className="row full justify p1 glyphgrid">
-            {portalImages.map((image: string, index: number) => (
-                <div key={image + index} draggable={false} className={columnMultiplierHelper(columnDefs)} >
-                    <img src={image} style={{ width: '100%' }} className="noselect" draggable={false} alt={image} />
+            {portalImages.map((imageObj: any, index: number) => (
+                <div key={imageObj.url + index} draggable={false} className={columnMultiplierHelper(columnDefs)} >
+                    <img src={imageObj.url} style={{ width: '100%' }} draggable={false} alt={imageObj.code} />
                 </div>
             ))}
         </div>

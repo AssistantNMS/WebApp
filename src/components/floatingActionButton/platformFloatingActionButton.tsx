@@ -9,7 +9,7 @@ import { LocaleKey } from '../../localization/LocaleKey';
 import { BaseFloatingActionButton } from './baseFloatingActionButton';
 
 interface IPlatformFabProp {
-    key: string;
+    dataKey: string;
     value: ControllerPlatformType;
     onClick: (newPlatform: ControllerPlatformType) => void;
 }
@@ -30,7 +30,7 @@ export const PlatformFloatingActionButton: React.FC<IPlatformFabProp> = (props: 
     return (
         <div className="platform-fab">
             <BaseFloatingActionButton
-                keyString={props.key}
+                keyString={props.dataKey}
                 tooltipText={translate(LocaleKey.platform)}
                 icon={<img style={{ height: '80%', width: '80%' }} src={optionsAlt.find(opt => opt.value === props.value)?.imgUrl ?? AppImage.platformPc} alt="platform" />}
                 onClick={toggleDropdown}

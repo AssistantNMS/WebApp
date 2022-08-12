@@ -70,7 +70,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
         if (allItems === true && (props.item.Description ?? '').includes('<IMG>')) {
             components.push(
                 <PlatformFloatingActionButton
-                    key="platform-dialog"
+                    dataKey="platform-dialog"
                     value={props.controlPlatform}
                     onClick={(newPlatform: ControllerPlatformType) => {
                         props.setPlatform(newPlatform);
