@@ -28,7 +28,7 @@ steps:
 
   - task: Npm@1
     inputs:
-      command: 'ci'
+      command: 'ci --force'
     displayName: 'npm install'
 
   - task: Npm@1
