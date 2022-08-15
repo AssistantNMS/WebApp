@@ -1,54 +1,52 @@
 trigger:
-- master
-- staging
+  - master
+  - staging
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '10.x'
+    displayName: 'Install Node.js'
 
-- pwsh:  ./setBuildName.ps1 $(Build.BuildId)
-  displayName: 'Set Build Name'
+  - pwsh: ./src/setBuildName.ps1 $(Build.BuildId)
+    displayName: 'Set Build Name'
 
-- task: Npm@1
-  inputs:
-    command: 'ci'
-    workingDir: 'webpack'
-  displayName: 'npm install for webpack folder'
+  - task: Npm@1
+    inputs:
+      command: 'ci'
+      workingDir: 'webpack'
+    displayName: 'npm install for webpack folder'
 
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    workingDir: 'webpack'
-    customCommand: 'run build'
-  displayName: 'Build Seo Files'
+  - task: Npm@1
+    inputs:
+      command: 'custom'
+      workingDir: 'webpack'
+      customCommand: 'run build'
+    displayName: 'Build Seo Files'
 
-- task: Npm@1
-  inputs:
-    command: 'ci'
-  displayName: 'npm install'
+  - task: Npm@1
+    inputs:
+      command: 'ci'
+    displayName: 'npm install'
 
-- task: Npm@1
-  inputs:
-    command: custom
-    customCommand: run build-prod
-  displayName: 'Build React Files'
+  - task: Npm@1
+    inputs:
+      command: custom
+      customCommand: run build-prod
+    displayName: 'Build React Files'
 
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: 'build'
-    includeRootFolder: false
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/reactDrop.zip'
-    replaceExistingArchive: true
+  - task: ArchiveFiles@2
+    inputs:
+      rootFolderOrFile: 'build'
+      includeRootFolder: false
+      archiveType: 'zip'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/reactDrop.zip'
+      replaceExistingArchive: true
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)/reactDrop.zip' 
-    artifactName: 'reactDrop'
-
-
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: '$(Build.ArtifactStagingDirectory)/reactDrop.zip'
+      artifactName: 'reactDrop'

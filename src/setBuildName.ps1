@@ -1,5 +1,5 @@
 $buildName=$args[0]
 $buildNameString = '"' + $buildName + '"'
-$Path = "./src/buildName.json"
+$Path = "./buildName.json"
 
 $buildNameString | Out-File -FilePath $Path
