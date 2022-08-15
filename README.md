@@ -18,7 +18,7 @@
 
   ![Latest version](https://api.assistantapps.com/badge/version/589405b4-e40f-4cd9-b793-6bf37944ee09.svg?platforms=2)
   
-  ![Build Status](https://dev.azure.com/khaoznet/NMS%20Assistant/_apis/build/status/AssistantNMS.WebApp?branchName=main)
+  ![Build Status](https://img.shields.io/azure-devops/build/khaoznet/b8fd530f-a5ad-4a72-bdf7-c0346b9759ee/85?style=for-the-badge)
   
   <br /> 
 </div>
