@@ -36,7 +36,7 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
 
     const displayInputs = (requiredItems: Array<RequiredItemDetails>) => {
         if (props.status === NetworkState.Loading) return (<TileLoading />);
-        if (requiredItems == null || requiredItems.length < 1) return (<Error />);
+        if (props.status === NetworkState.Error) return (<Error />);
 
         return (
             <>
