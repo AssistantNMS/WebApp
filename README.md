@@ -7,7 +7,9 @@
   <br />
   
   ![madeWithLove](./.github/img/made-with-love.svg)
-  [![licence](./.github/img/licence-badge.svg)](https://github.com/AssistantNMS/App/blob/master/LICENCE.md)<br />
+  [![licence](./.github/img/licence-badge.svg)](https://github.com/AssistantNMS/App/blob/master/LICENCE.md)
+  ![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge)
+  
   [![Supported by the No Man's Sky Community Developers & Designers](https://raw.githubusercontent.com/NMSCD/About/master/badge/purple-ftb.svg)][nmscd] 
   ![Profile views](https://komarev.com/ghpvc/?username=AssistantNMS&color=green&style=for-the-badge)
 
@@ -31,13 +33,13 @@ After 3 years of development and maintenance, the app was made open source so th
 
 <div align="center">
   <h3>
-    <a href="#%EF%B8%8F-running-the-project">Getting Started</a>
+    <a href="https://github.com/AssistantNMS/App/blob/main/README.md#requirements">Getting Started</a>
     <span> · </span>
     <a href="https://github.com/AssistantNMS/App/blob/main/.github/CONTRIBUTING.md">Contributing Guidelines</a>
     <span> · </span>
     <a href="#-links">More Links</a>
     <span> · </span>
-    <a href="https://github.com/AssistantNMS/WebApp/blob/main/.github/SUPPORT.md">Support</a>
+    <a href="https://github.com/AssistantNMS/App/blob/main/.github/SUPPORT.md">Support</a>
   </h3>
 </div>
 
