@@ -44,13 +44,19 @@ export const percentageProgress = (startDate: Date, endDate: Date): number => {
     const currDateMilli = dayjs(new Date()).valueOf();
     const endDateMilli = dayjs(endDate).valueOf();
 
+    console.log(
+        startDateMilli,
+        currDateMilli,
+        endDateMilli,
+    );
+
     if (currDateMilli > endDateMilli) {
         return 100;
     }
 
-    if (startDateMilli < endDateMilli) {
-        return 0;
-    }
+    // if (startDateMilli < endDateMilli) {
+    //     return 0;
+    // }
 
     const progressMilli = currDateMilli - startDateMilli;
     const goalMilli = endDateMilli - startDateMilli;
