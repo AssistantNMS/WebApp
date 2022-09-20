@@ -2,7 +2,7 @@
   
   # Assistant for No Man's Sky
   ### WebApp built with React  
-  ![header](./.github/img/header.png)
+  ![header](https://github.com/AssistantNMS/.github/blob/main/img/banner.png?raw=true)
   
   <br />
   
@@ -33,13 +33,13 @@ After 3 years of development and maintenance, the app was made open source so th
 
 <div align="center">
   <h3>
-    <a href="https://github.com/AssistantNMS/App/blob/main/README.md#requirements">Getting Started</a>
+    <a href="https://github.com/AssistantNMS/WebApp#%EF%B8%8F-running-the-project">Getting Started</a>
     <span> · </span>
-    <a href="https://github.com/AssistantNMS/App/blob/main/.github/CONTRIBUTING.md">Contributing Guidelines</a>
+    <a href="https://github.com/AssistantNMS/WebApp/blob/main/.github/CONTRIBUTING.md">Contributing Guidelines</a>
     <span> · </span>
     <a href="#-links">More Links</a>
     <span> · </span>
-    <a href="https://github.com/AssistantNMS/App/blob/main/.github/SUPPORT.md">Support</a>
+    <a href="https://github.com/AssistantNMS/WebApp/blob/main/.github/SUPPORT.md">Support</a>
   </h3>
 </div>
 

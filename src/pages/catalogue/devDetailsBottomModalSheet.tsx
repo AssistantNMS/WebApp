@@ -56,7 +56,12 @@ export const DevDetailsBottomModalSheet: React.FC<IProps> = (props: IProps) => {
             return (<div className="col-12"><Error /></div>);
         }
 
-        const details = [];
+        const details = [
+            <React.Fragment key={`frag-appId`}>
+                <p key="appId"><b>AppId:&nbsp;&nbsp;</b>{props.appId}</p>
+                <hr />
+            </React.Fragment>
+        ];
         for (let devPropIndex = 0; devPropIndex < devDetail.Properties.length; devPropIndex++) {
             const devProp = devDetail.Properties[devPropIndex];
 

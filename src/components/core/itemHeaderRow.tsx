@@ -18,6 +18,7 @@ interface IWithoutDepInj {
     Icon?: string;
     Name?: string;
     Group?: string;
+    Abbrev?: string;
     CdnUrl?: string;
     Usages?: Array<string>;
     Description?: string;
@@ -32,6 +33,9 @@ interface IProps extends IWithDepInj, IWithoutDepInj { }
 const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
     const name = props?.Name ?? '...';
     const group = props?.Group ?? '...';
+
+    const hasSymbol = ((props?.Abbrev?.length ?? 0) > 0);
+    console.log(props);
 
     return (
         <div data-id="ItemHeaderRow" className="row border-bottom pos-rel header-row">
@@ -56,7 +60,12 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                 }
             </div>
             <div className="col-12 col-lg-10 col-md-10 col-sm-8 col-xs-9 ta-left ta-center-sm">
-                <h2 className="ta-left ta-center-sm" style={{ marginBottom: 0 }}>{name}</h2>
+                <h2 className="ta-left ta-center-sm" style={{ marginBottom: 0 }}>
+                    <span>{name}</span>
+                    {
+                        hasSymbol && (<span>&nbsp;({props.Abbrev})</span>)
+                    }
+                </h2>
                 <h3 className="ta-left ta-center-sm" style={{ marginTop: 0 }}>{group}</h3>
                 {
                     props?.Description

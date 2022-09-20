@@ -1,1 +1,1 @@
-﻿export enum NmsfmTrackType { unknown, track, jingle, advert, radioShow, }
+export enum NmsfmTrackType { unknown, track, jingle, advert, radioShow, }
