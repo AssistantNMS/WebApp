@@ -1,6 +1,4 @@
 import React from 'react';
-import { Fab } from '@material/react-fab'
-
 import { CustomTooltip } from '../common/tooltip/tooltip';
 
 interface IProps {
@@ -12,11 +10,12 @@ interface IProps {
 
 export const BaseFloatingActionButton = (props: IProps) => {
     const child = (
-        <Fab className="fab-bg-color fab-margin"
-            key={props.keyString}
-            icon={props.icon}
+        <button
+            className="mdc-fab fab-bg-color fab-margin"
             onClick={props.onClick}
-        />
+        >
+            {props.icon}
+        </button>
     );
 
     if (props.tooltipText != null) {

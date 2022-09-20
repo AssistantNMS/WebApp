@@ -1,0 +1,56 @@
+.mdc-fab:not(.mdc-fab--extended) {
+    border-radius: 50%;
+}
+.fab-margin {
+    margin: 0.5em;
+}
+
+.mdc-fab {
+    fill: currentColor;
+    align-items: center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    color: #fff;
+    color: var(--mdc-theme-on-secondary, #fff);
+    cursor: pointer;
+    display: inline-flex;
+    height: 56px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms,
+        -webkit-transform 0.27s cubic-bezier(0, 0, 0.2, 1) 0ms;
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms,
+        transform 0.27s cubic-bezier(0, 0, 0.2, 1) 0ms;
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms,
+        transform 0.27s cubic-bezier(0, 0, 0.2, 1) 0ms, -webkit-transform 0.27s cubic-bezier(0, 0, 0.2, 1) 0ms;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 56px;
+}
+
+.mdc-fab:after,
+.mdc-fab:before {
+    height: 200%;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+}
+
+.mdc-fab:before {
+    transition: opacity 15ms linear, background-color 15ms linear;
+    z-index: 1;
+}
+.mdc-fab:after,
+.mdc-fab:before {
+    border-radius: 50%;
+    content: "";
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}

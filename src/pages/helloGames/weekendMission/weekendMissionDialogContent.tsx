@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ChatBubblesPresenter } from '../../../components/tilePresenter/chatBubble/chatBubblePresenter';
 import { NpcMessageFlows } from '../../../contracts/helloGames/weekendMissionStage';
-import { Fab } from '@material/react-fab';
+import { BaseFloatingActionButton } from '../../../components/floatingActionButton/baseFloatingActionButton';
 
 enum ChatType {
     Outgoing = 0,
@@ -72,10 +72,10 @@ export class WeekendMissionDialogContent extends React.Component<IProps, IState>
                 <ChatBubblesPresenter chatBubbles={localChatBubbles} />
                 {
                     this.state.currentMessageFlow.Options == null || this.state.currentMessageFlow.Options.length === 0
-                        ? <Fab className="fab-bg-color fab-margin"
-                            key="closeChatFAB"
+                        ? <BaseFloatingActionButton
+                            keyString="close-chat"
                             icon={<i className="material-icons"><i className="material-icons">close</i></i>}
-                            onClick={this.props.close}
+                            onClick={(_) => this.props.close?.()}
                         />
                         : null
                 }

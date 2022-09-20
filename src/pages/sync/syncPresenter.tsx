@@ -1,5 +1,5 @@
 import React from 'react';
-import { GoogleLogin, GoogleLogout } from 'react-google-login';
+import { GoogleLogin, GoogleLogout } from '@leecheuk/react-google-login';
 
 import { translate } from '../../localization/Translate';
 import { CardButton } from '../../components/common/button/cardButton';
