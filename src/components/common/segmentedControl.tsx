@@ -30,10 +30,11 @@ export const SegmentedControl: React.FC<ISegmentedControlProps> = (props: ISegme
             componentReady.current = true;
             setIsReady(true);
         }, 250);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect(() => {
-        if (isReady == false) return;
+        if (isReady === false) return;
         const activeSegmentRef = props.options[activeIndex].ref;
         const { offsetWidth, offsetLeft } = activeSegmentRef.current;
         const { style } = props.controlRef.current;
