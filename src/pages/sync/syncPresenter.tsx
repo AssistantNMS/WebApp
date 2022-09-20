@@ -1,5 +1,4 @@
 import React from 'react';
-import { GoogleLogin, GoogleLogout } from '@leecheuk/react-google-login';
 
 import { translate } from '../../localization/Translate';
 import { CardButton } from '../../components/common/button/cardButton';
@@ -27,7 +26,7 @@ export const SyncPresenter: React.FC<IProps> = (props: IProps) => {
         if (props.status === GoogleSignedInState.Default || props.status === GoogleSignedInState.Failed) {
             return (<>
                 <div className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    <GoogleLogin
+                    {/* <GoogleLogin
                         theme="dark"
                         scope="email https://www.googleapis.com/auth/drive.file"
                         clientId={window.config.googleClientId}
@@ -35,7 +34,7 @@ export const SyncPresenter: React.FC<IProps> = (props: IProps) => {
                         onFailure={props.failedSignIn}
                         cookiePolicy={'single_host_origin'}
                         isSignedIn={true}
-                    />
+                    /> */}
                 </div>
             </>
             );
@@ -53,11 +52,11 @@ export const SyncPresenter: React.FC<IProps> = (props: IProps) => {
                     </div>
                     <div className="col-12"></div>
                     <div className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                        <GoogleLogout
+                        {/* <GoogleLogout
                             {...{ theme: 'dark' }}
                             clientId={window.config.googleClientId}
                             onLogoutSuccess={props.logout}
-                        />
+                        /> */}
                     </div>
                     <div className="col-12"><hr style={{ marginTop: '2em' }} /></div>
                 </>
