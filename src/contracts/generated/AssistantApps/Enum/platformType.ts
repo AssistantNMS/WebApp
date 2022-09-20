@@ -1,4 +1,4 @@
-﻿/* Auto Generated */
+/* Auto Generated */
 
 export enum PlatformType {
     android,
