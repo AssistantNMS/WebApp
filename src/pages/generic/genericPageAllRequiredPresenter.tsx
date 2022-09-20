@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
@@ -12,7 +12,7 @@ import { Tree } from '../../contracts/tree/tree';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { GenericPageAllRequiredTree } from './genericPageAllRequiredTree';
-const SegmentedControl = require('segmented-control');
+import { SegmentedControl } from '../../components/common/segmentedControl';
 
 interface IProps {
     status: NetworkState;
@@ -48,9 +48,15 @@ export const GenericPageAllRequiredPresenter: React.FC<IProps> = (props: IProps)
         );
     }
 
-    const options = [
-        LocaleKey.flatList,
-        LocaleKey.tree,
+    const options: any = [
+        {
+            title: LocaleKey.flatList,
+            ref: useRef(),
+        },
+        {
+            title: LocaleKey.tree,
+            ref: useRef(),
+        },
     ];
 
     const title = translate(LocaleKey.allRawMaterialsRequired);
@@ -62,14 +68,18 @@ export const GenericPageAllRequiredPresenter: React.FC<IProps> = (props: IProps)
                 <div className="container full pt1">
                     <div className="row justify mb-1em">
                         <div className="col-12 col-xl-6 col-lg-8 col-md-8 col-sm-10 col-xs-10">
-                            <SegmentedControl.SegmentedControl
+                            <SegmentedControl
                                 name="allMaterialRequired"
-                                options={options.map((opt) => ({
-                                    label: translate(opt),
-                                    value: opt,
-                                    default: props.selectedOption === opt,
+                                controlRef={useRef()}
+                                defaultIndex={options.findIndex((opt: any) => opt.title === props.selectedOption)}
+                                options={options.map((opt: any) => ({
+                                    label: translate(opt.title),
+                                    value: opt.title,
+                                    ref: opt.ref,
+                                    // default: props.selectedOption === opt,
                                 }))}
-                                setValue={props.setSelectedOption}
+                                callback={props.setSelectedOption}
+                            // setValue={props.setSelectedOption}
                             />
                         </div>
                     </div>
