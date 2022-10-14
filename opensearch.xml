@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+  xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Assistant for No Man&#x27;s Sky</ShortName>
+  <Description>Available on the Google Play and Apple App Store. Get Crafting, Refining and Cooking Recipes for the game No Man&amp;#39;s Sky!!</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://nmsassistant.com/favicon.ico</Image>
+  <Url type="text/html" template="https://nmsassistant.com?q={searchTerms}">
+    <Param name="searchTerms" value="{searchTerms}" />
+  </Url>
+  <Url type="application/x-suggestions+json" template="https://nmsassistant.com?q={searchTerms}" />
+</OpenSearchDescription>

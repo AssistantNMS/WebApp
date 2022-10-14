@@ -1,0 +1,1785 @@
+[
+  {
+    "Id": "cur1",
+    "Icon": "curiosities/1.png",
+    "Name": "四核伺服",
+    "Group": "異常材料",
+    "Description": "從巡警巡邏單位中回收的一具高度彎曲的機械手臂。它偶爾會抽搐，彷彿還殘有戰鬥的影響。",
+    "BaseValueUnits": 20000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/1.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur2",
+    "Icon": "curiosities/2.png",
+    "Name": "步行機腦",
+    "Group": "異常材料",
+    "Description": "這塊電路板用搏絲將會變形的奈米機群縫在一起，非常燙而難以觸碰。\n\n從線路深處洩出邪惡的紫色燈光，映照持有者時便會改變閃爍頻率。",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/2.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur3",
+    "Icon": "curiosities/3.png",
+    "Name": "思維弧",
+    "Group": "精工改良產品",
+    "Description": "奇怪的科技，是來自群星彼方的贈禮。它閃爍光芒的樣子透露出它不完全屬於這世界。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/3.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur20",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod54",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur4",
+    "Icon": "curiosities/4.png",
+    "Name": "捕到的訥結",
+    "Group": "獨一無二又珍貴的好奇心",
+    "Description": "含有移區半星系基質的寰宇之種。警告：不允許矩陣與次元空間交流。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/4.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur5",
+    "Icon": "curiosities/5.png",
+    "Name": "球狀影",
+    "Group": "獨一無二又珍貴的好奇心",
+    "Description": "此寰宇之殼裝了寄生太空生命體的殘骸，很可能來自其他次元。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/5.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur4",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur6",
+    "Icon": "curiosities/6.png",
+    "Name": "智慧球",
+    "Group": "獨一無二又珍貴的好奇心",
+    "Description": "可以與類人生物心電頻率共鳴的寰宇之種；靠近次等智慧的話可能會試圖將之吸收。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/6.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur5",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur7",
+    "Icon": "curiosities/7.png",
+    "Name": "暗物質",
+    "Group": "獨一無二又珍貴的好奇心",
+    "Description": "寰宇之種的殼，包含了上個宇宙崩毀留下來的空元素。吸入身體會中毒。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/7.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur8",
+    "Icon": "curiosities/8.png",
+    "Name": "黎明之終",
+    "Group": "獨一無二又珍貴的好奇心",
+    "Description": "修正過的 tau 微中子-玻色子矩陣，以無法取代的寰宇之種殼所固定。可能具有初階感知。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/8.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur7",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur9",
+    "Icon": "curiosities/9.png",
+    "Name": "光子玉",
+    "Group": "獨一無二又珍貴的好奇心",
+    "Description": "此寰宇之種無法取代，是以不明方式融合進物理世界的物質適應光子。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/9.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur8",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw19",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur10",
+    "Icon": "curiosities/10.png",
+    "Name": "靜態非薛子",
+    "Group": "獨一無二又珍貴的好奇心",
+    "Description": "出於未知的原因，這個獨一無二的寰宇之種被排除在此量子現實之外。無法判斷內容。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/10.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur9",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw20",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur11",
+    "Icon": "curiosities/11.png",
+    "Name": "超新星殘骸",
+    "Group": "獨一無二又珍貴的好奇心",
+    "Description": "寰宇之種，裡頭的中子元素出自於先前世代抹除了感知文化的超新星災難事件。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/11.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur10",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw21",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur12",
+    "Icon": "curiosities/12.png",
+    "Name": "修正量子",
+    "Group": "獨一無二又珍貴的好奇心",
+    "Description": "這個獨一無二的寰宇之種帶有美麗的數學構造，是從平行現實的模擬搶救回來的。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/12.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur11",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw22",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur13",
+    "Icon": "curiosities/13.png",
+    "Name": "太陽之心",
+    "Group": "獨一無二又珍貴的好奇心",
+    "Description": "一顆寰宇之種，裡頭有個上了時間鎖的光子殼，裝了量子纖毛。據知，這是唯一的一個。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/13.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur12",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur14",
+    "Icon": "curiosities/14.png",
+    "Name": "酒韭芽",
+    "Group": "藥用物質",
+    "Description": "酒韭上採得的芽株，味道辛辣，常用於製造吉客餅。",
+    "BaseValueUnits": 17776.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "383838",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/14.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur15",
+    "Icon": "curiosities/15.png",
+    "Name": "蟲核",
+    "Group": "怪物",
+    "Description": "脈衝膠狀球體，這個黏膩的球體觸感溫暖。其惡臭會觸發凡人的原始恐懼，彷彿從深處噬咬著你，求你快放下它逃之夭夭。",
+    "BaseValueUnits": 65000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CookingValue": 0.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/15.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasCookToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur17",
+    "Icon": "curiosities/17.png",
+    "Name": "活珍珠",
+    "Group": "具有微量意識的寶石",
+    "Description": "生存在深海的巨大發光蚌中心。\n\n與多數珍珠不同，這個樣本是有生命的方解石。寶石保有母蚌的微量意識，讓它帶有令人難以忘懷的美。",
+    "BaseValueUnits": 5050.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 15.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/17.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur18",
+    "Icon": "curiosities/18.png",
+    "Name": "催眠之眼",
+    "Group": "恐怖樣本",
+    "Description": "眼睛摸起來是寒冷的，幾乎像冰塊。然而，卻讓人無法擺脫眼睛似乎還活著的感覺。\n\n不建議長期接觸。請勿直接回視眼睛。請勿回視。請勿回視。",
+    "BaseValueUnits": 60000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CookingValue": 0.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/18.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasCookToCreate",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur19",
+    "Icon": "curiosities/19.png",
+    "Name": "海溝核心",
+    "Group": "恐怖樣本",
+    "Description": "高度受壓、充滿肉感的圓球。\n\n觸碰時可以感受到回彈的力量，這神秘物體的墨黑色核心中，隱隱透出生物性的微光。",
+    "BaseValueUnits": 97500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/19.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur20",
+    "Icon": "curiosities/20.png",
+    "Name": "靈魂引擎",
+    "Group": "精工改良產品",
+    "Description": "一種強大的有機運算裝置。\n\n某種受干擾的節奏驅動了這種奇蹟電路，其計算迴路的循環永不止息。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/20.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur17",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw20",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur21",
+    "Icon": "curiosities/21.png",
+    "Name": "風暴晶",
+    "Group": "獨特珍貴的奇珍異寶",
+    "Description": "罕見且高度珍貴的風暴晶群。這些晶體在風暴環境中更形旺盛，且會自然吸引閃電，在離子化後自然發光。僅可在<FUEL>極端天氣星球<>上找到。",
+    "BaseValueUnits": 206000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/21.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur22",
+    "Icon": "curiosities/22.png",
+    "Name": "蛋白珍珠",
+    "Group": "貿易物資",
+    "Description": "自一種超級卵生物種的蛋中，耗時數百年生成的寶石。此種寶石極具裝飾價值，且本身即為有生命的種子，猶如光亮的稻穗一般，生命潛能飽滿。\n\n可在<TECHNOLOGY>銀河交易終端站<>出售。",
+    "BaseValueUnits": 11200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/22.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur23",
+    "Icon": "curiosities/23.png",
+    "Name": "伴重力子球",
+    "Group": "貿易物資",
+    "Description": "超對稱粒子群集，是發散型異端超級重力所產生。此種粒子群集生成時，亦會產生<STELLAR>微裂痕<>，將其取出即會導致當地現實弱化。<FUEL>巡警部隊<>會立即反應，穩定化此類異常。\n\n可在<TECHNOLOGY>銀河交易終端站<>出售。",
+    "BaseValueUnits": 42130.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/23.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur24",
+    "Icon": "curiosities/24.png",
+    "Name": "囊袋毒液",
+    "Group": "貿易物資",
+    "Description": "穩定化的毒腺，取自一種陸生海膽生物。其宿主海膽其實是小型原生生物的群落，是多年緩慢生長與合作而成的結構體。\n\n可用於製藥，也有某些高風險料理將其視為珍饈。\n\n可在<TECHNOLOGY>銀河交易終端站<>出售。",
+    "BaseValueUnits": 64000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/24.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur25",
+    "Icon": "curiosities/25.png",
+    "Name": "漩渦箱體",
+    "Group": "貿易物資",
+    "Description": "從星球洞穴系統深處出土的古老物體。其表面觸感冰涼，雖然年代久遠，卻異常光滑。\n\n此類箱體為金屬與岩石融合而成，經證實難以進行工業處理，因此僅有收藏價值。\n\n可在<TECHNOLOGY>銀河交易終端站<>出售。",
+    "BaseValueUnits": 5800.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/25.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur26",
+    "Icon": "curiosities/26.png",
+    "Name": "寰宇石",
+    "Group": "極高等價值珍奇物品",
+    "Description": "一個圓球狀寶石，中心似乎閃著紅光。\n\n非常罕見的物品，一般看見會聯想到古老巨石地點。",
+    "BaseValueUnits": 68750.0,
+    "CurrencyType": "Credits",
+    "Colour": "007951",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/26.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur27",
+    "Icon": "rawMaterials/4.png",
+    "Name": "六核",
+    "Group": "含有真實故障",
+    "Description": "這個奇怪的能量球不停地振動並發出低頻的嗡嗡聲。有著細微變化的模式不斷重複，就好像是在試圖傳遞資訊。",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/27.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur28",
+    "Icon": "curiosities/28.png",
+    "Name": "晶球",
+    "Group": "珍貴礦資源產地",
+    "Description": "顏色特別鮮艷、可能極為珍貴的一塊岩石。\n\n在道具欄（<IMG>INVENTORY<>）中選取，再用 <IMG>FE_ALT1<> 敲開。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/28.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsNoLongerObtainable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "將晶球分解為可使用的原料"
+    ]
+  },
+  {
+    "Id": "cur29",
+    "Icon": "curiosities/29.png",
+    "Name": "水晶碎片",
+    "Group": "濃縮元素碎片",
+    "Description": "結構特別緊密的水晶碎片，可能極為珍貴。\n\n在道具欄（<IMG>INVENTORY<>）中選取，再用 <IMG>FE_ALT1<> 敲開。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/29.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "將水晶分解為可使用的原料"
+    ]
+  },
+  {
+    "Id": "cur30",
+    "Icon": "curiosities/30.png",
+    "Name": "超氚團",
+    "Group": "高能碎片",
+    "Description": "一片純<EXOTIC>氚<>結晶。\n\n在道具欄（<IMG>INVENTORY<>）中選取，再用 <IMG>FE_ALT1<> 敲開。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/30.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "將晶群分解為可使用的原料"
+    ]
+  },
+  {
+    "Id": "cur31",
+    "Icon": "curiosities/31.png",
+    "Name": "金塊",
+    "Group": "珍貴礦石",
+    "Description": "價值極高的一塊礦石，可加工成<EXOTIC>金<>。\n\n在道具欄（<IMG>INVENTORY<>）中選取，再用 <IMG>FE_ALT1<> 敲開。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/31.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "將礦石製成可使用的原料"
+    ]
+  },
+  {
+    "Id": "cur32",
+    "Icon": "curiosities/32.png",
+    "Name": "水晶硫化物",
+    "Group": "壓縮礦藏",
+    "Description": "在星球核心的高壓高熱環境中產生，富含礦質含量，幾乎像是玻璃一般的質感。\n\n擁有高度工業利用價值，可以同時利用其礦物含量與承受高壓的特性。",
+    "BaseValueUnits": 7800.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/32.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur33",
+    "Icon": "curiosities/33.png",
+    "Name": "維金族石碑",
+    "Group": "赫克交流儀式",
+    "Description": "石碑上刻著一行行精細的符文，我們無法解讀這些文字，因為除了最老的維金族長者之外，其他族人都已經遺忘這門古老的方言。\n\n雕刻此石碑的巧手絕對出自不凡，其工藝既準確又精緻，又完美地傳達了作者本身驍勇不屈的精神。",
+    "BaseValueUnits": 1250.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/33.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur34",
+    "Icon": "curiosities/34.png",
+    "Name": "議會箱體",
+    "Group": "異常資料單元",
+    "Description": "資料單元出現干擾，不停閃爍，看似不屬於這個現實中。\n\n此箱體讓人感覺到一種無聲的尖叫，好像有上百個發瘋的生物體困在箱中，發出凍結的慘叫聲。",
+    "BaseValueUnits": 3015.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/34.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur35",
+    "Icon": "curiosities/35.png",
+    "Name": "吉客族遺物",
+    "Group": "中等價值珍奇物品",
+    "Description": "一個生物的小雕像，生物的喙上有一枚銅板。\n\n這類雕像深受貿易商喜愛，在他們心中是公平交易與和平的象徵。",
+    "BaseValueUnits": 23375.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/35.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur36",
+    "Icon": "curiosities/36.png",
+    "Name": "吉客餅",
+    "Group": "貿易物資",
+    "Description": "吉客族非常愛吃的食品。\n \n能讓這些有喙嘴的商人延長噴出甜美香氣的時間。\n\n食用吉客餅製造出的香氣是一種藝術，也是吉客族靈魂的真正象徵。",
+    "BaseValueUnits": 20625.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/36.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur37",
+    "Icon": "curiosities/37.png",
+    "Name": "維金族雕像",
+    "Group": "中等價值珍奇物品",
+    "Description": "一個小型的木頭雕像，刻的是巡警機器人的樣子。\n\n戰士使用這個雕像，可以暫時進入恍神狀態，讓牠們不需要睡眠。",
+    "BaseValueUnits": 24750.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/37.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur38",
+    "Icon": "curiosities/38.png",
+    "Name": "維金族匕首",
+    "Group": "貿易物資",
+    "Description": "主要用於儀式的武器。維金族傳統和文化的重要元素。",
+    "BaseValueUnits": 11688.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/38.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur39",
+    "Icon": "curiosities/39.png",
+    "Name": "科瓦族頭套",
+    "Group": "高等價值珍奇物品",
+    "Description": "一個已經斷電的電子生命體金屬外殼，生命體離同類太遠，無法接受新的存在體。\n\n所有物種均視為珍品，科瓦族本身也不例外。",
+    "BaseValueUnits": 22000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/39.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur40",
+    "Icon": "curiosities/40.png",
+    "Name": "議會箱體",
+    "Group": "貿易物資",
+    "Description": "科瓦族用來存放歷史文化資訊的裝置。",
+    "BaseValueUnits": 13063.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/40.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur46",
+    "Icon": "curiosities/46.png",
+    "Name": "虛空蛋",
+    "Group": "珍奇生物",
+    "Description": "一種異常的蛋，其外殼為堅硬的皮革，觸摸時會顫動。\n\n可以聽到從內部傳來的輕拍聲，有時就像在唱歌。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Quicksilver",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/46.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsQuicksilver",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur47",
+    "Icon": "curiosities/47.png",
+    "Name": "活性虛空蛋",
+    "Group": "躁動的奇珍異寶",
+    "Description": "一顆異常的蛋。自從遭遇詭異外太空「生物」之後，蛋裡頭傳出的奇怪音樂越來越活躍和躁動。\n\n觸摸時會出現強大幻象，讓人看到被<SPECIAL>強大異常<>以及<STELLAR>奇怪顏色<>包圍的世界。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur48",
+    "Icon": "curiosities/48.png",
+    "Name": "活躍虛空蛋",
+    "Group": "躁動的奇珍異寶",
+    "Description": "一顆異常的蛋。自從遭遇詭異外太空「生物」之後，蛋裡頭傳出的奇怪音樂越來越活躍和躁動。\n\n觸摸時會出現強大幻象，讓人看到因<FUEL>極端風暴<>肆虐而<STELLAR>塵土飛楊的世界<>。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur49",
+    "Icon": "curiosities/49.png",
+    "Name": "覺醒虛空蛋",
+    "Group": "躁動的奇珍異寶",
+    "Description": "一顆異常的蛋。自從遇見詭異外太空「生物」之後，蛋裡頭傳出的奇怪音樂越來越活躍和躁動。\n\n觸摸時會出現強大幻象，讓人看到<TRADEABLE>植物茂盛蓊鬱<>的<TECHNOLOGY>水中世界<>。",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur50",
+    "Icon": "curiosities/50.png",
+    "Name": "碎裂虛空蛋",
+    "Group": "躁動的奇珍異寶",
+    "Description": "一顆異常的蛋。自從遭遇詭異外太空「生物」之後，蛋裡頭傳出的奇怪音樂越來越活躍和躁動。\n\n觸摸時會出現強大幻象，讓人看到充滿奇怪異常的星球，上一秒還是長滿草的世界，下一秒就變成怪異菇類遍布的世界......",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur51",
+    "Icon": "curiosities/51.png",
+    "Name": "異常偵測器",
+    "Group": "異常追蹤裝置",
+    "Description": "一種<STELLAR>單次使用<>的幾何信標，探測周圍的區域，尋找附近太空中的<SPECIAL>異常<>。這樣的物體變幻莫測。\n\n選擇偵測器，再使用「開始掃描」（<IMG>FE_ALT1<>）功能，即可開始尋找。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "搜尋罕見深空物體"
+    ]
+  },
+  {
+    "Id": "cur52",
+    "Icon": "curiosities/52.png",
+    "Name": "緊急訊號掃描器",
+    "Group": "座標資料",
+    "Description": "一種<STELLAR>單次使用<>的接收器，用來掃描<TECHNOLOGY>貨船頻率<>是否有求救訊號。棄守或廢棄的貨船，通常載有<STELLAR>高價值回收物<>。\n\n選擇接收器，再使用「調整訊號頻率」（<IMG>FE_ALT1<>）功能，即可開始尋找。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "搜尋一艘廢棄貨船"
+    ]
+  },
+  {
+    "Id": "cur53",
+    "Icon": "curiosities/52.png",
+    "Name": "緊急訊號掃描器 (啟動)",
+    "Group": "座標資料",
+    "Description": "一種<STELLAR>單次使用<>的接收器，用來掃描<TECHNOLOGY>貨船頻率<>是否有求救訊號。棄守或廢棄的貨船，通常載有<STELLAR>高價值回收物<>。\n\n選擇接收器，再使用「調整訊號頻率」（<IMG>FE_ALT1<>）功能，即可開始尋找。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur55",
+    "Icon": "curiosities/55.png",
+    "Name": "加密導航電腦",
+    "Group": "太空船元件",
+    "Description": "先進奈米電腦，能處理太空船導航、飛行穩定與外部感應相關的任務。\n\n此零件必須<SPECIAL>解密<>後才能運作，並安裝到新的太空船上。可經由強化套裝分析找出對應的<STELLAR>解密終端站<>。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "找出對應的解密終端站"
+    ]
+  },
+  {
+    "Id": "cur56",
+    "Icon": "curiosities/55.png",
+    "Name": "加密導航電腦",
+    "Group": "太空船元件",
+    "Description": "先進奈米電腦，能處理太空船導航、飛行穩定與外部感應相關的任務。\n\n此零件必須<SPECIAL>解密<>後才能運作，並安裝到新的太空船上。可經由強化套裝分析找出對應的<STELLAR>解密終端站<>。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur57",
+    "Icon": "curiosities/55.png",
+    "Name": "導航電腦",
+    "Group": "太空船元件",
+    "Description": "先進奈米電腦，能處理太空船導航、飛行穩定與外部感應相關的任務。\n\n此零件完好，可正常運作，能夠安裝到新的太空船上。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur58",
+    "Icon": "curiosities/55.png",
+    "Name": "加密通訊控制器",
+    "Group": "太空船元件",
+    "Description": "先進奈米電腦，能處理太空船通訊、量子傳輸與座標追蹤相關的任務。\n\n此零件必須<SPECIAL>解密<>後才能運作，並安裝到新的太空船上。可經由強化套裝分析找出對應的<STELLAR>解密終端站<>。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "找出對應的解密終端站"
+    ]
+  },
+  {
+    "Id": "cur59",
+    "Icon": "curiosities/55.png",
+    "Name": "加密通訊控制器",
+    "Group": "太空船元件",
+    "Description": "先進奈米電腦，能處理太空船通訊、量子傳輸與座標追蹤相關的任務。\n\n此零件必須<SPECIAL>解密<>後才能運作，並安裝到新的太空船上。可經由強化套裝分析找出對應的<STELLAR>解密終端站<>。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur60",
+    "Icon": "curiosities/55.png",
+    "Name": "通訊控制器",
+    "Group": "太空船元件",
+    "Description": "先進奈米電腦，能處理太空船通訊、量子傳輸與座標追蹤相關的任務。\n\n此零件完好，可正常運作，能夠安裝到新的太空船上。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur61",
+    "Icon": "curiosities/55.png",
+    "Name": "加密使用者鑑別器",
+    "Group": "太空船元件",
+    "Description": "先進奈米電腦，能處理太空船及強化套裝同步與保全相關的任務。\n\n此零件必須<SPECIAL>解密<>後才能運作，並安裝到新的太空船上。可經由強化套裝分析找出對應的<STELLAR>解密終端站<>。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "找出對應的解密終端站"
+    ]
+  },
+  {
+    "Id": "cur62",
+    "Icon": "curiosities/55.png",
+    "Name": "加密使用者鑑別器",
+    "Group": "太空船元件",
+    "Description": "先進奈米電腦，能處理太空船及強化套裝同步與保全相關的任務。\n\n此零件必須<SPECIAL>解密<>後才能運作，並安裝到新的太空船上。可經由強化套裝分析找出對應的<STELLAR>解密終端站<>。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur63",
+    "Icon": "curiosities/55.png",
+    "Name": "使用者鑑別器",
+    "Group": "太空船元件",
+    "Description": "先進奈米電腦，能處理太空船及強化套裝同步與保全相關的任務。\n\n此零件完好，可正常運作，能夠安裝到新的太空船上。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur64",
+    "Icon": "curiosities/64.png",
+    "Name": "貨船重新上色",
+    "Group": "貨船客製化選項",
+    "Description": "解鎖這款顏色進行<STELLAR>貨船客製化<>。\n\n由色彩飽和的奈米機器人組成無性生殖的團塊包圍主力太空船，改變太空船外觀。",
+    "BaseValueUnits": 12300.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "DEDCD1",
+    "Usages": [
+      "HasDevProperties",
+      "IsExpeditionSeason2Reward"
+    ],
+    "BlueprintCost": 5000,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur65",
+    "Icon": "curiosities/65.png",
+    "Name": "站台覆寫",
+    "Group": "AI 總金鑰",
+    "Description": "包含 <STELLAR>AI 覆寫代碼<>的可攜式資料驅動器，能用於太空站台核心。\n\n站台 AI 核心的重要性，讓此類金鑰既受到高度管控，在黑市上又充滿價值。",
+    "BaseValueUnits": 256000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur66",
+    "Icon": "curiosities/66.png",
+    "Name": "追鯨者斗篷",
+    "Group": "可解鎖的披風",
+    "Description": "特殊的<STELLAR>強化套裝外觀覆寫<>。\n\n這件長至拖地的斗篷曾屬於一名命運多舛的旅行者，一心只想捕捉到宇宙龐然大物，注定在永恆的時光中不斷追尋。\n\n在<TECHNOLOGY>外觀改造器<>改變你的強化套裝外觀。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason7Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur67",
+    "Icon": "curiosities/67.png",
+    "Name": "有機巡防艦",
+    "Group": "宇宙龐然大物",
+    "Description": "這種愛好和平的太空巨物是生物和太空船的突變物，可以在馴服後，和巡防艦隊一起遨遊星海。\n\n將此生物招募至你的巡防艦隊。登上貨船的<TECHNOLOGY>艦隊指揮處<>管理你的艦隊，並徵詢<TECHNOLOGY>領航員<>的意見，將巡防艦部署到有利可圖的探險中。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason7Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur69",
+    "Icon": "other/52.png",
+    "Name": "頭銜：「迴圈者」",
+    "Group": "量身訂製個人識別",
+    "Description": "特殊<STELLAR>探險家頭銜<>，紀念<STELLAR>龐然大物<>探險的完成，以及延續世世代代詛咒的終結。\n\n在<TECHNOLOGY>外觀改造器<>將此頭銜套用至旗幟上。",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason7Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur72",
+    "Icon": "curiosities/72.png",
+    "Name": "扭曲手稿",
+    "Group": "教派成員文件",
+    "Description": "一片晶瑩剔透的<STELLAR>巨蟲皮紙<>，上頭刻寫著狂熱無比的文字。受到觸碰時，紙張會變得扭曲。\n\n「孩子是最先發現的。\n轟隆轟隆轟隆地在沙土深處鳴響著。\n第一隻巨蟲越過我們頭頂上空時，就如同黑色閃電般劈開天際。\n一隻接著一隻，從沙漠中突起。遷徙著。\n每次風暴季來臨，我們都希望被選中。我們在沙漠排成長長的列隊，雙手朝天乞求。\n任何人都能獻身其胃袋之中。\n我們眾生平等於巨蟲之下。」",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason4Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur73",
+    "Icon": "curiosities/73.png",
+    "Name": "血肉之繩",
+    "Group": "腸壁碎片",
+    "Description": "一根<SPECIAL>飢渴觸手<>消化束的蜷曲殘骸。儘管它多肉的內壁依舊在蠕動，但這堆貧弱的遺骸不可能再長出一根新觸手的......\n\n如此特殊的內臟遺骸在銀河交易所內相當罕見，因此<STELLAR>極度珍貴<>。",
+    "BaseValueUnits": 16016.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur74",
+    "Icon": "curiosities/74.png",
+    "Name": "汙穢之卵",
+    "Group": "飢渴胚胎",
+    "Description": "<SPECIAL>飢渴觸手<>的脆弱胚胎，仍在不斷滴流黏液油。當被碰觸時，會慟哭並且蜷縮起來。\n\n可使用<TECHNOLOGY>內臟合成器<>從胚囊內取出。",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "Usages": [
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur75",
+    "Icon": "curiosities/75.png",
+    "Name": "偽造護照",
+    "Group": "覆蓋數位記錄",
+    "Description": "偽造的<TECHNOLOGY>太空船註冊文件<>。此數位簽名保證不含以前的犯罪或不端行為紀錄。\n\n可用於在<TECHNOLOGY>太空站台核心<>重設任何負面<STELLAR>陣營評價<>記錄。",
+    "BaseValueUnits": 256000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason6Reward",
+      "IsExpeditionSeason7Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur76",
+    "Icon": "curiosities/76.png",
+    "Name": "海盜地圖",
+    "Group": "非法地理資料",
+    "Description": "重新拼湊起來的<COMMODITY>寶藏座標資料<>，從海盜陣營<SPECIAL>「毀滅」<>的受害者身上取得。",
+    "BaseValueUnits": 888.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "other217",
+        "Quantity": 1
+      },
+      {
+        "Id": "other218",
+        "Quantity": 1
+      },
+      {
+        "Id": "other219",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "將資料轉換成強化套裝導航記號"
+    ]
+  },
+  {
+    "Id": "cur77",
+    "Icon": "curiosities/77.png",
+    "Name": "夢境天線",
+    "Group": "潛意識存取裝置",
+    "Description": "一個訊號接收器和放大器，調諧至無意識思維的波長。它同時呈現出每一種顏色，將周圍的光線分成閃閃發光的彩虹。\n\n<FUEL>警告：<>攜帶此天線進入深空可能會引起<SPECIAL>宇宙巨型動物<>的注意。",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod58",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur78",
+    "Icon": "curiosities/78.png",
+    "Name": "母星中繼器",
+    "Group": "最後連結的家",
+    "Description": "一種臨時性裝置，由保存多年的回收電子元件拼湊而成。這些雜亂無章的電線會試圖與貨船母星最後已知的殘存體取得聯繫。\n\n選擇裝置並選擇廣播 (<IMG>FE_ALT1<>) 來開始定位程序。",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 60
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 20
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "嘗試聯繫"
+    ]
+  },
+  {
+    "Id": "cur79",
+    "Icon": "products/32.png",
+    "Name": "發光礦物",
+    "Group": "珍貴岩石樣本",
+    "Description": "雖然表面骯髒暗沉，將岩石拋光後能看到深層的內部光澤，輕微虹光的表面下閃耀著光彩。\n\n在道具欄（<IMG>INVENTORY<>）中選取，再用 <IMG>FE_ALT1<> 敲開。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "將晶球分解為可使用的原料"
+    ]
+  },
+  {
+    "Id": "cur80",
+    "Icon": "curiosities/80.png",
+    "Name": "回收玻璃",
+    "Group": "尋獲的巡警元件",
+    "Description": "一塊邪惡的<SPECIAL>紫色玻璃<>碎片，從被毀壞的巡警機械殘骸中回收而來。它的外壁很薄，也許可以被分解成珍貴的巡警元件。\n\n在道具欄 (<IMG>INVENTORY<>) 中選擇並按下<IMG>FE_ALT1<>分解。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "從巡警廢料中回收有價值的物品"
+    ]
+  },
+  {
+    "Id": "cur81",
+    "Icon": "curiosities/81.png",
+    "Name": "硬體結構引擎",
+    "Group": "異常材料",
+    "Description": "這個複雜的機械單元曾經是<SPECIAL>巡警硬體結構<>單元核心中的中央壓縮艙。\n\n雖然現在冷卻到可以觸碰，仍然散發著險惡的紅熱......",
+    "BaseValueUnits": 28000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur82",
+    "Icon": "curiosities/82.png",
+    "Name": "巡警照明彈 (關閉)",
+    "Group": "巡警通訊器",
+    "Description": "由迭代：忒堤斯製作的專家裝置。主要功能是呼喚<TECHNOLOGY>重建的巡警無人機<>。\n\n選擇裝置並使用<STELLAR>啟動照明彈<> (<IMG>FE_ALT1<>)，對 [<TECHNOLOGY>無人機<>] 發出訊號。\n\n在你的<STELLAR>強化套裝道具欄<>中開啟這個照明彈後，無人機就會在星球空間內伴隨著你。",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "廣播信號即可引起 [哨兵] 注意"
+    ]
+  },
+  {
+    "Id": "cur83",
+    "Icon": "curiosities/83.png",
+    "Name": "光芒閃耀的腦",
+    "Group": "異常材料",
+    "Description": "這塊電路板用<SPECIAL>搏絲<>將會變形的奈米機群縫在一起，非常燙且難以觸碰。從其線路中滲透出來的紫色燈光已經減弱，看起來敵意降低許多。\n\n原本內嵌於巡警步行機中，這台半有機電腦已經被<STELLAR>迭代：忒堤斯<>及<FUEL>寰宇的使者<>修改過。",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  }
+]

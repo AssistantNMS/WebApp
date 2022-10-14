@@ -1,0 +1,1785 @@
+[
+  {
+    "Id": "cur1",
+    "Icon": "curiosities/1.png",
+    "Name": "Servo cuádruple",
+    "Group": "Material anómalo",
+    "Description": "Un servobrazo motor de resortes recuperado del interior de una unidad de patrulla Centinela. A veces da sacudidas, como si experimentara el recuerdo del combate.",
+    "BaseValueUnits": 20000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/1.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur2",
+    "Icon": "curiosities/2.png",
+    "Name": "Cerebro de caminante",
+    "Group": "Material anómalo",
+    "Description": "Este circuito, formado por cúmulos de nanites cambiantes soldados sobre un filamento de púgneo, está extremadamente caliente al tacto.\n\nUna luz púrpura siniestra se filtra desde el interior de su cableado, cambiando de intensidad al mirar a quien lo sostiene.",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/2.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur3",
+    "Icon": "curiosities/3.png",
+    "Name": "Arca mental",
+    "Group": "Producto creado avanzado",
+    "Description": "Una extraña pieza de tecnología, un regalo de más allá de las estrellas. Brilla de una forma que sugiere que no pertenece por completo a este mundo.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/3.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur20",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod54",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod81",
+        "Quantity": 3
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur4",
+    "Icon": "curiosities/4.png",
+    "Name": "Nanodo capturado",
+    "Group": "Curiosidad valiosa única",
+    "Description": "Semilla del Atlas que contiene sustrato de desplazamiento zonal cuasi estelar. Aviso: no permitir que la matriz esté en contacto con este espacio dimensional.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/4.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw23",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur5",
+    "Icon": "curiosities/5.png",
+    "Name": "Sombra englobada",
+    "Group": "Curiosidad valiosa única",
+    "Description": "Esta Carcasa del Atlas contiene los restos de una forma de vida parasitaria del espacio, probablemente de origen extradimensional.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/5.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur4",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw9",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur6",
+    "Icon": "curiosities/6.png",
+    "Name": "Orbe noosférico",
+    "Group": "Curiosidad valiosa única",
+    "Description": "Semilla del Atlas capaz de resonar en frecuencias telepáticas humanoides. Puede intentar subsumir cualquier intelecto subordinado en las cercanías más próximas.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/6.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur5",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw15",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur7",
+    "Icon": "curiosities/7.png",
+    "Name": "Materia oscura",
+    "Group": "Curiosidad valiosa única",
+    "Description": "Carcasa de una Semilla del Atlas que encierra un elemento de vacío cosechado de la caída del universo anterior. Su ingesta es tóxica.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/7.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur6",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw10",
+        "Quantity": 5
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur8",
+    "Icon": "curiosities/8.png",
+    "Name": "Los Confines del Anochecer",
+    "Group": "Curiosidad valiosa única",
+    "Description": "Matriz de bosón de neutrinos Tau esculpida dentro de una carcasa de Semilla del Atlas irremplazable. Podría ser semiconsciente.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/8.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur7",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 25
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur9",
+    "Icon": "curiosities/9.png",
+    "Name": "Jade fótico",
+    "Group": "Curiosidad valiosa única",
+    "Description": "Esta Semilla del Atlas irreemplazable es una forma de fotones adaptados a la materia fusionados en una solidificación física por medios desconocidos.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/9.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur8",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw19",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur10",
+    "Icon": "curiosities/10.png",
+    "Name": "Estado Phasure",
+    "Group": "Curiosidad valiosa única",
+    "Description": "Por razones desconocidas, esta Semilla del Atlas única ha sido gradualmente eliminada de la convergencia con esta realidad cuántica. No se pueden determinar sus contenidos.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/10.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur9",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw20",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur11",
+    "Icon": "curiosities/11.png",
+    "Name": "Reclamo novae",
+    "Group": "Curiosidad valiosa única",
+    "Description": "Semilla del Atlas que contiene elementos de neutronio de una supernova catastrófica que extinguió una civilización inteligente en una era anterior.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/11.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur10",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw21",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur12",
+    "Icon": "curiosities/12.png",
+    "Name": "Quanta modificada",
+    "Group": "Curiosidad valiosa única",
+    "Description": "Esta Semilla del Atlas única en su especie muestra una construcción estética matemáticamente agradable, rescatada de una realidad alternativa simulada.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/12.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur11",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw22",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur13",
+    "Icon": "curiosities/13.png",
+    "Name": "Corazón del Sol",
+    "Group": "Curiosidad valiosa única",
+    "Description": "Semilla del Atlas que contiene un cilio cuántico atrapado en el tiempo suspendido en una carcasa fotónica. No se sabe de la existencia de otras.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/13.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur12",
+        "Quantity": 1
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 100
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur14",
+    "Icon": "curiosities/14.png",
+    "Name": "Brotes de NipNip",
+    "Group": "Sustancia medicinal",
+    "Description": "Brote áspero cosechado de la planta NipNip que se usa a menudo para producir Gekitos.",
+    "BaseValueUnits": 17776.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "383838",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/14.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur15",
+    "Icon": "curiosities/15.png",
+    "Name": "Núcleo larvario",
+    "Group": "Monstruosidad",
+    "Description": "Un orbe vibrante y gelatinoso, una esfera viscosa caliente al tacto. Su olor desencadena un miedo primitivo en los seres mortales, un remordimiento arraigado que te suplica que lo sueltes y huyas.",
+    "BaseValueUnits": 65000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CookingValue": 0.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/15.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasCookToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur17",
+    "Icon": "curiosities/17.png",
+    "Name": "Perla viva",
+    "Group": "Piedra preciosa semiconsciente",
+    "Description": "Crece en el interior de los enormes moluscos brillantes que se encuentran en las profundidades submarinas.\n\nA diferencia de la mayoría de las perlas, esta muestra no se compone de calcita inerte. Ciertos vestigios de la consciencia de la almeja madre permanecen en el interior de la gema, lo que la proporciona de una belleza persistente y cautivadora.",
+    "BaseValueUnits": 5050.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 15.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/17.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur18",
+    "Icon": "curiosities/18.png",
+    "Name": "Ojo hipnótico",
+    "Group": "Muestra horrorosa",
+    "Description": "El ojo es frío, casi helado, al tacto. No obstante, no se puede evitar sentir que de algún modo está vivo.\n\nNo se recomienda una exposición prolongada. No mirar fijamente al ojo. No mirar fijamente. No mirar fijamente.",
+    "BaseValueUnits": 60000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CookingValue": 0.0,
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/18.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasCookToCreate",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur19",
+    "Icon": "curiosities/19.png",
+    "Name": "Núcleo hadal",
+    "Group": "Muestra horrorosa",
+    "Description": "Un orbe carnoso altamente presurizado.\n\nCuando se toca, se puede sentir cómo devuelve el movimiento, un destello de bioluminiscencia que gira en el núcleo negruzco de este misterioso objeto.",
+    "BaseValueUnits": 97500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/19.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur20",
+    "Icon": "curiosities/20.png",
+    "Name": "Motor anímico",
+    "Group": "Producto creado avanzado",
+    "Description": "Una potente unidad de computación orgánica.\n\nEste circuito milagroso que funciona a base de fallos produce un ciclo tras otro en un frenético bucle de cálculos sin fin.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "Colour": "0063B7",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/20.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "cur17",
+        "Quantity": 1
+      },
+      {
+        "Id": "prod6",
+        "Quantity": 3
+      },
+      {
+        "Id": "raw20",
+        "Quantity": 120
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur21",
+    "Icon": "curiosities/21.png",
+    "Name": "Cristal de tormenta",
+    "Group": "Curiosidad valiosa única",
+    "Description": "Un raro y muy valioso cúmulo de cristales de tormenta. Estas estructuras cristalinas medran en condiciones de tormenta y atraen de forma natural los relámpagos, volviéndose especialmente luminiscentes cuando están ionizados. Se encuentran exclusivamente en <FUEL>planetas de clima extremo<>.",
+    "BaseValueUnits": 206000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/21.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur22",
+    "Icon": "curiosities/22.png",
+    "Name": "Perla albuminosa",
+    "Group": "Producto comerciable",
+    "Description": "Piedra preciosa formada durante el transcurso de siglos dentro del huevo de una especie superincubadora. Estas gemas, principalmente ornamentales, son en sí mismas semillas vivientes, granos lucientes de vida potencial.\n\nSe puede vender en una <TECHNOLOGY>terminal de comercio galáctico<>.",
+    "BaseValueUnits": 11200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/22.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur23",
+    "Icon": "curiosities/23.png",
+    "Name": "Bola de gravitino",
+    "Group": "Producto comerciable",
+    "Description": "Un cúmulo de partículas supersimétricas producto de fuerzas supergravitacionales divergentes. Al formarse, se crea una <STELLAR>microgrieta<> y la extracción del orbe da pie a una debilitación de la realidad localizada. Las <FUEL>fuerzas de Centinelas<> responderán para estabilizar cualquier anomalía de este tipo.\n\nSe puede vender en una <TECHNOLOGY>terminal de comercio galáctico<>.",
+    "BaseValueUnits": 42130.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/23.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur24",
+    "Icon": "curiosities/24.png",
+    "Name": "Saco de veneno",
+    "Group": "Producto comerciable",
+    "Description": "Una glándula venenosa estabilizada, extraída de un erizo terrestre. El erizo huésped es, de hecho, una colonia de protocriaturas más pequeñas, una formación creada durante años de crecimiento lento y cooperación.\n\nSe emplea con fines medicinales y como exquisitez en algunas cocinas arriesgadas.\n\nSe puede vender en una <TECHNOLOGY>terminal de comercio galáctico<>.",
+    "BaseValueUnits": 64000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/24.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur25",
+    "Icon": "curiosities/25.png",
+    "Name": "Cubo vórtice",
+    "Group": "Producto comerciable",
+    "Description": "Un antiguo objeto, desenterrado de las profundidades de un sistema de cuevas planetario. Su superficie es fría al tacto y, a pesar de su edad, está extrañamente pulido.\n\nEstos cubos, que son una fusión de metal y roca, han demostrado ser resistentes al proceso industrial y, como tal, gozan de gran valor para los coleccionistas.\n\nSe puede vender en una <TECHNOLOGY>terminal de comercio galáctico<>.",
+    "BaseValueUnits": 5800.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/25.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur26",
+    "Icon": "curiosities/26.png",
+    "Name": "Piedra del Atlas",
+    "Group": "Curiosidad de valor muy alto",
+    "Description": "Una gema esférica que parece latir con una luz roja en el centro.\n \nElemento extremadamente extraño que a menudo se asocia con antiguos lugares monolíticos.",
+    "BaseValueUnits": 68750.0,
+    "CurrencyType": "Credits",
+    "Colour": "007951",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/26.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur27",
+    "Icon": "rawMaterials/4.png",
+    "Name": "Hexanúcleo",
+    "Group": "Fallo de realidad contenido",
+    "Description": "Este extraño orbe de energía vibra constantemente y emite un zumbido de baja frecuencia. Hay pequeñas variaciones en el patrón que se repiten una y otra vez, como si quisiera transmitir un mensaje.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/27.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur28",
+    "Icon": "curiosities/28.png",
+    "Name": "Geoda",
+    "Group": "Depósito mineral valioso",
+    "Description": "Un trozo de roca inusualmente vibrante y potencialmente valioso.\n\nSelecciónalo en el inventario (<IMG>INVENTORY<>) y ábrelo con <IMG>FE_ALT1<>.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/28.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsNoLongerObtainable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Descomponer geoda en materiales utilizables"
+    ]
+  },
+  {
+    "Id": "cur29",
+    "Icon": "curiosities/29.png",
+    "Name": "Fragmento de cristal",
+    "Group": "Esquirla de elemento concentrado",
+    "Description": "Una esquirla cristalina con una estructura inusualmente densa. De un valor potencialmente alto\n\nSelecciónala en el inventario (<IMG>INVENTORY<>) y ábrela con <IMG>FE_ALT1<>.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/29.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Descomponer cristal en materiales utilizables"
+    ]
+  },
+  {
+    "Id": "cur30",
+    "Icon": "curiosities/30.png",
+    "Name": "Hipercúmulo de tritio",
+    "Group": "Fragmento energético",
+    "Description": "Un fragmento de <EXOTIC>tritio<> puro cristalizado.\n\nSelecciónalo en el inventario (<IMG>INVENTORY<>) y ábrelo con <IMG>FE_ALT1<>.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/30.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Descomponer cúmulo en materiales utilizables"
+    ]
+  },
+  {
+    "Id": "cur31",
+    "Icon": "curiosities/31.png",
+    "Name": "Pepita de oro",
+    "Group": "Mineral valioso",
+    "Description": "Un pedazo de mineral de gran valor, listo para ser procesado en <EXOTIC>oro<>.\n\nSelecciónalo en el inventario (<IMG>INVENTORY<>) y ábrelo con <IMG>FE_ALT1<>.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/31.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Procesar mena en materiales utilizables"
+    ]
+  },
+  {
+    "Id": "cur32",
+    "Icon": "curiosities/32.png",
+    "Name": "Cristal de sulfuro",
+    "Group": "Mineral comprimido",
+    "Description": "Estos depósitos ricos en minerales, formados en los ardientes e increíbles núcleos planetarios de alta presión, tienen una calidad similar al vidrio.\n\nTienen una gran variedad de usos industriales, al aprovechar tanto su contenido mineral como su fuerza extrema bajo presión.",
+    "BaseValueUnits": 7800.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/32.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur33",
+    "Icon": "curiosities/33.png",
+    "Name": "Losa de piedra Vy'keen",
+    "Group": "Comunión de Hirk",
+    "Description": "Una losa de piedra que muestra líneas y líneas de runas complejas. Las palabras son ininteligibles, pertenecen a un dialecto que han olvidado todos menos los más ancianos de los ancianos de los Vy'keen.\n\nQuienquiera que haya tallado la piedra debió haber sido extremadamente hábil. El trabajo es preciso y delicado, pero aun así es capaz de transmitir a la perfección la agresión incesante de su tallador.",
+    "BaseValueUnits": 1250.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/33.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur34",
+    "Icon": "curiosities/34.png",
+    "Name": "Cubo de divergencia",
+    "Group": "Unidad de datos anómala",
+    "Description": "Una unidad de datos vibrante que falla. No parece que pertenezca a esta realidad.\n\nEl cubo parece albergar un grito silencioso; los llantos congelados de cientos de mentes perdidas y atrapadas en su interior.",
+    "BaseValueUnits": 3015.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/34.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur35",
+    "Icon": "curiosities/35.png",
+    "Name": "Reliquia Gek",
+    "Group": "Curiosidad de valor medio",
+    "Description": "Una estatuilla de metal de una criatura con una moneda colocada en su pico.\n \nPopular entre muchos mercaderes que la ven como un emblema del comercio justo y la paz.",
+    "BaseValueUnits": 23375.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/35.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur36",
+    "Icon": "curiosities/36.png",
+    "Name": "Gekito",
+    "Group": "Producto comerciable",
+    "Description": "Producto comestible adorado por los Gek.\n \nPermite a los mercaderes picudos liberar dosis de un gas delicioso durante un tiempo prolongado. \n\nLas dosis de gas Gekitos se consideran un arte y la auténtica representación del alma Gek.",
+    "BaseValueUnits": 20625.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/36.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsEggIngredient"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur37",
+    "Icon": "curiosities/37.png",
+    "Name": "Efigie Vy'keen",
+    "Group": "Curiosidad de valor medio",
+    "Description": "Un pequeño símbolo de madera tallado en forma de un dron Centinela.\n \nUtilizado por muchos guerreros para entrar en una especie de estado de trance temporal que elimina la necesidad de dormir de su especie.",
+    "BaseValueUnits": 24750.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/37.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur38",
+    "Icon": "curiosities/38.png",
+    "Name": "Daga Vy'keen",
+    "Group": "Producto comerciable",
+    "Description": "Arma principalmente ritual. Es una parte vital de la tradición y la cultura Vy'keen.",
+    "BaseValueUnits": 11688.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/38.png",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur39",
+    "Icon": "curiosities/39.png",
+    "Name": "Carcasa Korvax",
+    "Group": "Curiosidad de alto valor",
+    "Description": "La carcasa metálica de un ser vivo electrónico desconectado muy alejado de los de su especie para que un nuevo ente lo sustituyera.\n \nMuy valorada por todas las especies, sin olvidar la suya.",
+    "BaseValueUnits": 22000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/39.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur40",
+    "Icon": "curiosities/40.png",
+    "Name": "Cubo de convergencia",
+    "Group": "Producto comerciable",
+    "Description": "Dispositivo que usan los Korvax para almacenar información histórica y cultural.",
+    "BaseValueUnits": 13063.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/40.png",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur46",
+    "Icon": "curiosities/46.png",
+    "Name": "Huevo del vacío",
+    "Group": "Curiosidad viviente",
+    "Description": "Un huevo anómalo. La cáscara es dura y correosa, y se retuerce al tocarla.\n\nPuede escucharse un leve golpeteo proveniente del interior. De vez en cuando, parece que canta.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Quicksilver",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "CdnUrl": "https://cdn.nmsassistant.com/curiosities/46.png",
+    "Usages": [
+      "HasDevProperties",
+      "IsQuicksilver",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur47",
+    "Icon": "curiosities/47.png",
+    "Name": "Huevo del vacío activo",
+    "Group": "Curiosidad agitada",
+    "Description": "Un huevo anómalo. Desde el encuentro con la singular «criatura» del espacio profundo, su extraña música se ha vuelto más activa y más agitada.\n\nAl tocarlo, conjura una poderosa visión de un mundo asolado por <SPECIAL>potentes anomalías<> y <STELLAR>extraños colores<>.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur48",
+    "Icon": "curiosities/48.png",
+    "Name": "Huevo del vacío estimulante",
+    "Group": "Curiosidad agitada",
+    "Description": "Un huevo anómalo. Desde el encuentro con la singular «criatura» del espacio profundo, su extraña música se ha vuelto más activa y más agitada.\n\nAl tocarlo, conjura una poderosa visión de un <STELLAR>mundo cubierto en polvo<> de <FUEL>tormentas extremas<>.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur49",
+    "Icon": "curiosities/49.png",
+    "Name": "Huevo del vacío despierto",
+    "Group": "Curiosidad agitada",
+    "Description": "Un huevo anómalo. Desde el encuentro con la singular 'criatura' del espacio profundo, su extraña música se ha vuelto más activa y más agitada.\n\nAl tocarlo, conjura una poderosa visión de un <TECHNOLOGY>mundo con agua<> cubierto de una <TRADEABLE>vegetación exuberante y frondosa<>.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur50",
+    "Icon": "curiosities/50.png",
+    "Name": "Huevo del vacío resquebrajado",
+    "Group": "Curiosidad agitada",
+    "Description": "Un huevo anómalo. Desde el encuentro con la singular «criatura» del espacio profundo, su extraña música se ha vuelto más activa y más agitada.\n\nAl tocarlo, conjura unas poderosas visiones de un planeta con extrañas anomalías, un momento es un mundo repleto de hierba, al otro un próximo mundo de grotescos crecimientos fúngicos...",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur51",
+    "Icon": "curiosities/51.png",
+    "Name": "Detector de anomalías",
+    "Group": "Dispositivo de guiado anómalo",
+    "Description": "Una baliza geométrica de <STELLAR>un solo uso<> que rastrea los alrededores en busca de <SPECIAL>anomalías<> en el espacio cercano. Dichos objetos son altamente impredecibles.\n\nSelecciona el detector y usa Iniciar escaneo (<IMG>FE_ALT1<>) para iniciar el proceso de localización.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Busca un objeto raro del espacio profundo"
+    ]
+  },
+  {
+    "Id": "cur52",
+    "Icon": "curiosities/52.png",
+    "Name": "Escáner de señales de emergencia",
+    "Group": "Datos de coordenadas",
+    "Description": "Un receptor de <STELLAR>un solo uso<> que escanea en busca de señales de emergencia en <TECHNOLOGY>frecuencias de cargueros<>. Los cargueros en ruinas o abandonados suelen contener <STELLAR>objetos de gran valor<>.\n\nSelecciona el receptor y usa Ajustar señal (<IMG>FE_ALT1<>) para iniciar el proceso de localización.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Busca un carguero abandonado"
+    ]
+  },
+  {
+    "Id": "cur53",
+    "Icon": "curiosities/52.png",
+    "Name": "Escáner de señales de emergencia (activo)",
+    "Group": "Datos de coordenadas",
+    "Description": "Un receptor de <STELLAR>un solo uso<> que escanea en busca de señales de emergencia en <TECHNOLOGY>frecuencias de cargueros<>. Los cargueros en ruinas o abandonados suelen contener <STELLAR>objetos de gran valor<>.\n\nSelecciona el receptor y usa Ajustar señal (<IMG>FE_ALT1<>) para iniciar el proceso de localización.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur55",
+    "Icon": "curiosities/55.png",
+    "Name": "Ordenador de navegación encriptado",
+    "Group": "Componente de nave",
+    "Description": "Un nanoordenador avanzado que realiza tareas de procesamiento relacionadas con la navegación de la nave, la estabilización de vuelo y los sensores externos.\n\nEsta pieza podría estar en condiciones operativas, pero hará falta <SPECIAL>desencriptarla<> antes de instalarla en una nueva nave. Puedes localizar una <STELLAR>terminal de desencriptado<> emparejada a través de un análisis del exotraje.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Localizar terminal de desencriptado emparejada"
+    ]
+  },
+  {
+    "Id": "cur56",
+    "Icon": "curiosities/55.png",
+    "Name": "Ordenador de navegación encriptado",
+    "Group": "Componente de nave",
+    "Description": "Un nanoordenador avanzado que realiza tareas de procesamiento relacionadas con la navegación de la nave, la estabilización de vuelo y los sensores externos.\n\nEsta pieza podría estar en condiciones operativas, pero hará falta <SPECIAL>desencriptarla<> antes de instalarla en una nueva nave. Puedes localizar una <STELLAR>terminal de desencriptado<> emparejada a través de un análisis del exotraje.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur57",
+    "Icon": "curiosities/55.png",
+    "Name": "Ordenador de navegación",
+    "Group": "Componente de nave",
+    "Description": "Un nanoordenador avanzado que realiza tareas de procesamiento relacionadas con la navegación de la nave, la estabilización de vuelo y los sensores externos.\n\nLa pieza parece intacta y lista para instalarla en una nueva nave.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur58",
+    "Icon": "curiosities/55.png",
+    "Name": "Unidad de control de comunicador encriptada",
+    "Group": "Componente de nave",
+    "Description": "Un nanoordenador avanzado que realiza tareas de procesamiento relacionadas con la comunicación entre naves, el transporte cuántico y el seguimiento de coordenadas.\n\nEsta pieza podría estar en condiciones operativas, pero hará falta <SPECIAL>desencriptarla<> antes de instalarla en una nueva nave. Puedes localizar una <STELLAR>terminal de desencriptado<> emparejada a través de un análisis del exotraje.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Localizar terminal de desencriptado emparejada"
+    ]
+  },
+  {
+    "Id": "cur59",
+    "Icon": "curiosities/55.png",
+    "Name": "Unidad de control de comunicador encriptada",
+    "Group": "Componente de nave",
+    "Description": "Un nanoordenador avanzado que realiza tareas de procesamiento relacionadas con la comunicación entre naves, el transporte cuántico y el seguimiento de coordenadas.\n\nEsta pieza podría estar en condiciones operativas, pero hará falta <SPECIAL>desencriptarla<> antes de instalarla en una nueva nave. Puedes localizar una <STELLAR>terminal de desencriptado<> emparejada a través de un análisis del exotraje.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur60",
+    "Icon": "curiosities/55.png",
+    "Name": "Unidad de control de comunicador",
+    "Group": "Componente de nave",
+    "Description": "Un nanoordenador avanzado que realiza tareas de procesamiento relacionadas con la comunicación entre naves, el transporte cuántico y el seguimiento de coordenadas.\n\nLa pieza parece intacta y lista para instalarla en una nueva nave.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur61",
+    "Icon": "curiosities/55.png",
+    "Name": "Autenticador de usuario encriptado",
+    "Group": "Componente de nave",
+    "Description": "Un nanoordenador avanzado que realiza tareas de procesamiento relacionadas con la sincronización y seguridad entre nave y exotraje.\n\nEsta pieza podría estar en condiciones operativas, pero hará falta <SPECIAL>desencriptarla<> antes de instalarla en una nueva nave. Puedes localizar una <STELLAR>terminal de desencriptado<> emparejada a través de un análisis del exotraje.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Localizar terminal de desencriptado emparejada"
+    ]
+  },
+  {
+    "Id": "cur62",
+    "Icon": "curiosities/55.png",
+    "Name": "Autenticador de usuario encriptado",
+    "Group": "Componente de nave",
+    "Description": "Un nanoordenador avanzado que realiza tareas de procesamiento relacionadas con la sincronización y seguridad entre nave y exotraje.\n\nEsta pieza podría estar en condiciones operativas, pero hará falta <SPECIAL>desencriptarla<> antes de instalarla en una nueva nave. Puedes localizar una <STELLAR>terminal de desencriptado<> emparejada a través de un análisis del exotraje.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur63",
+    "Icon": "curiosities/55.png",
+    "Name": "Autenticador de usuario",
+    "Group": "Componente de nave",
+    "Description": "Un nanoordenador avanzado que realiza tareas de procesamiento relacionadas con la sincronización y seguridad entre nave y exotraje.\n\nLa pieza parece intacta y lista para instalarla en una nueva nave.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur64",
+    "Icon": "curiosities/64.png",
+    "Name": "Repintar carguero",
+    "Group": "Opción de personalización de carguero",
+    "Description": "Desbloquea este color para la <STELLAR>personalización del carguero<>.\n\nUn enjambre de nanorrobots de alta pigmentación autorreplicantes inunda la nave principal, cambiando su aspecto exterior.",
+    "BaseValueUnits": 12300.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "DEDCD1",
+    "Usages": [
+      "HasDevProperties",
+      "IsExpeditionSeason2Reward"
+    ],
+    "BlueprintCost": 5000,
+    "BlueprintCostType": "Nanites",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur65",
+    "Icon": "curiosities/65.png",
+    "Name": "Anulación de estación",
+    "Group": "Clave maestra de IA",
+    "Description": "Un dispositivo de datos portátil que contiene los <STELLAR>códigos de anulación de la IA<> para un núcleo de estación espacial.\n\nLa importancia del núcleo de IA de la estación hace que las claves de este tipo estén extremadamente controladas y sean altamente rentables en el mercado negro.",
+    "BaseValueUnits": 256000.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur66",
+    "Icon": "curiosities/66.png",
+    "Name": "Capa del acechaballenas",
+    "Group": "Capa desbloqueable",
+    "Description": "Una exclusiva <STELLAR>manipulación de apariencia de exotraje<>.\n\nEsta capa de protección la usó una vez un viajero desafortunado, obsesionado con capturar un leviatán cósmico y condenado a repetir la persecución por toda la eternidad.\n\nTransforma la apariencia de tu exotraje en un <TECHNOLOGY>modificador de apariencia<>.",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason7Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur67",
+    "Icon": "curiosities/67.png",
+    "Name": "Fragata orgánica",
+    "Group": "Leviatán cósmico",
+    "Description": "Este pacífico gigante espacial es una mutación entre un organismo y una nave estelar, y se puede domesticar para que navegue a través de las estrellas junto a una flota de fragatas.\n\nAl reclutarla, se añadirá a tu flota. Gestiona tu flota de fragatas desde un <TECHNOLOGY>puesto de mando de flota<> en tu carguero y consulta el <TECHNOLOGY>navegador<> para enviar fragatas a expedición lucrativas.",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason7Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur69",
+    "Icon": "other/52.png",
+    "Name": "Título: «En bucle»",
+    "Group": "Identificación personal a medida",
+    "Description": "Un <STELLAR>título de explorador<> exclusivo que conmemora la finalización de la expedición <STELLAR>Leviatán<> y la desaparición de la maldición generacional.\n\nAplica este título a tu estandarte en un <TECHNOLOGY>modificador de apariencia<>.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason7Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur72",
+    "Icon": "curiosities/72.png",
+    "Name": "Manuscrito retorcido",
+    "Group": "Documento sectario",
+    "Description": "Una hoja de <STELLAR>vitela de gusano<> translúcida en la que aparece escrito un texto fanático. Se retuerce al tocarla.\n\n'Los niños fueron los primeros en advertirlos.\nUn latido, bum, tras otro, retumbando desde las profundidades de las arenas.\nEl primer gusano resquebrajó el cielo como un relámpago negro mientras se alzaba ante nosotros. \nUn gusano tras otro, todos emergían del desierto. Migrando.\nAguardábamos la época de la tormenta con la esperanza de ser los elegidos. Nos colocábamos en línea por todo el desierto, con los brazos alzados al cielo.\nSus fauces podían devorar a cualquiera.\nTodos éramos iguales ante los ojos de los enormes gusanos'.",
+    "BaseValueUnits": 1616.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason4Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur73",
+    "Icon": "curiosities/73.png",
+    "Name": "Tripas carnosas",
+    "Group": "Fragmentos de intestinos",
+    "Description": "Los restos retorcidos del tracto digestivo de un <SPECIAL>tentáculo hambriento<>. Aunque sus paredes aún se mueven, es imposible que nazca un nuevo tentáculo de esta carroña.\n\nEs muy complicado encontrar este tipo de despojos en el Intercambio galáctico y por tanto es <STELLAR>realmente valioso<>.",
+    "BaseValueUnits": 16016.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur74",
+    "Icon": "curiosities/74.png",
+    "Name": "Vil progenie",
+    "Group": "Embrión hambriento",
+    "Description": "El frágil embrión de un <SPECIAL>tentáculo hambriento<> del que aún gotea moco embriótico. Produce un extraño sonido y se encoge al tocarlo.\n\nSe puede extraer del saco embriótico con la ayuda de un <TECHNOLOGY>sintetizador visceral<>.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "CCCCCC",
+    "Usages": [
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur75",
+    "Icon": "curiosities/75.png",
+    "Name": "Pasaporte falsificado",
+    "Group": "Registro digital sobrescrito",
+    "Description": "Un <TECHNOLOGY>documento de registro de nave<> falsificado. Se garantiza que esta firma digital está libre de delitos o faltas anteriores.\n\nSe puede utilizar para restablecer cualquier registro de <STELLAR>estatus en una facción<> negativo desde el <TECHNOLOGY>núcleo de una estación espacial<>.",
+    "BaseValueUnits": 256000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason6Reward",
+      "IsExpeditionSeason7Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur76",
+    "Icon": "curiosities/76.png",
+    "Name": "Mapa pirata",
+    "Group": "Datos geográficos ilícitos",
+    "Description": "Se han restaurado los <COMMODITY>datos de las coordenadas del tesoro<> recuperados de las víctimas de la facción pirata <SPECIAL>la Ruina<>.",
+    "BaseValueUnits": 888.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "other217",
+        "Quantity": 1
+      },
+      {
+        "Id": "other218",
+        "Quantity": 1
+      },
+      {
+        "Id": "other219",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Convertir datos en indicador de navegación de exotraje"
+    ]
+  },
+  {
+    "Id": "cur77",
+    "Icon": "curiosities/77.png",
+    "Name": "Antena onírica",
+    "Group": "Dispositivo de acceso al subconsciente",
+    "Description": "Un receptor y amplificador de señales, sintonizado con la longitud de onda de la mente inconsciente. Es de todos los colores a la vez, dividiendo la luz circundante en un brillante arco iris.\n\n<FUEL>Advertencia:<> llevar esta antena al espacio profundo puede atraer la atención de la <SPECIAL>megafauna cósmica<>.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "prod58",
+        "Quantity": 3
+      },
+      {
+        "Id": "prod116",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur78",
+    "Icon": "curiosities/78.png",
+    "Name": "Repetidor del mundo natal",
+    "Group": "El último vínculo con el hogar",
+    "Description": "Un dispositivo improvisado, hecho a partir de componentes electrónicos recuperados guardados celosamente durante muchos años. Este revoltijo de cables intentará contactar con los últimos restos conocidos del planeta natal del carguero.\n\nSelecciona el dispositivo y selecciona Emisión (<IMG>FE_ALT1<>) para comenzar el proceso de localización.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 60
+      },
+      {
+        "Id": "raw33",
+        "Quantity": 20
+      },
+      {
+        "Id": "prod113",
+        "Quantity": 1
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Intentar contactar"
+    ]
+  },
+  {
+    "Id": "cur79",
+    "Icon": "products/32.png",
+    "Name": "Mineral brillante",
+    "Group": "Muestra de roca valiosa",
+    "Description": "Aunque su superficie está sucia y es opaca, si se pule, esta roca revela un brillo interior bajo esa superficie iridiscente.\n\nSelecciónalo en el inventario (<IMG>INVENTORY<>) y ábrelo en dos con <IMG>FE_ALT1<>.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 25.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Descomponer geoda en materiales utilizables"
+    ]
+  },
+  {
+    "Id": "cur80",
+    "Icon": "curiosities/80.png",
+    "Name": "Vidrio recuperado",
+    "Group": "Componentes de centinela recuperados",
+    "Description": "Un fragmento siniestro de <SPECIAL>vidrio morado<> rescatado de los restos destruidos de maquinaria centinela. Sus paredes son finas y se pueden romper para acceder a valiosos componentes de centinela.\n\nSelecciónalo en el inventario (<IMG>INVENTORY<>) y rompe con <IMG>FE_ALT1<>.",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Recupera objetos valiosos de la chatarra de los centinelas"
+    ]
+  },
+  {
+    "Id": "cur81",
+    "Icon": "curiosities/81.png",
+    "Name": "Motor blindado",
+    "Group": "Material anómalo",
+    "Description": "Esta compleja unidad mecánica fue en su día la cámara de combustión central en el núcleo de una unidad <SPECIAL>centinela blindada<>.\n\nAunque ahora está frío al tacto, aún brilla con un siniestro calor rojo...",
+    "BaseValueUnits": 28000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur82",
+    "Icon": "curiosities/82.png",
+    "Name": "Bengala centinela (desactivada)",
+    "Group": "Comunicador centinela",
+    "Description": "Un dispositivo especializado creado por Iteración Tetis. Su función principal es llamar a tu <TECHNOLOGY>dron centinela reconstruido<>.\n\nSelecciona el dispositivo y usa <STELLAR>Activar bengala<> (<IMG>FE_ALT1<>) para señalar [<TECHNOLOGY>el dron<>].\n\nMientras la bengala esté activa en el <STELLAR>inventario del exotraje<>, el dron permanecerá a tu lado durante el tiempo que estés en el planeta.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Emitir una señal para atraer a [El Vigía]"
+    ]
+  },
+  {
+    "Id": "cur83",
+    "Icon": "curiosities/83.png",
+    "Name": "Cerebro radiante",
+    "Group": "Material anómalo",
+    "Description": "Este circuito, formado por cúmulos de nanites cambiantes soldados sobre un <SPECIAL>filamento de púgneo<>, está extremadamente caliente al tacto. La luz púrpura que se filtra desde el interior de su cableado se ha atenuado, como si se hubiera vuelto menos hostil.\n\nIncrustado previamente en el interior de un caminante centinela, este ordenador semiorgánico ha sido modificado por <STELLAR>Iteración: Tetis<> y un <FUEL>Mensajero del Atlas<>.",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  }
+]
