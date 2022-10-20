@@ -1,7 +1,6 @@
 .navbar {
   border: 0;
   border-radius: $border-radius-base;
-  padding: 0.625rem 0;
   height: auto !important;
   @include navbar-colors($white-color, $navbar-color);
 
@@ -65,7 +64,6 @@
     }
 
     .nav-item.active .nav-link {
-
       &,
       &:hover,
       &:focus {
@@ -93,7 +91,7 @@
       display: block;
       border-radius: 1px;
 
-      &+.navbar-toggler-icon {
+      & + .navbar-toggler-icon {
         margin-top: 4px;
       }
     }
@@ -124,7 +122,7 @@
     margin-left: 1rem;
   }
 
-  >.container {
+  > .container {
     flex: 1;
   }
 
@@ -161,15 +159,14 @@
     box-shadow: none;
   }
 
-
   .notification {
     position: absolute;
     top: 5px;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     right: 10px;
     font-size: 9px;
     background: #f44336;
-    color: #FFFFFF;
+    color: #ffffff;
     min-width: 20px;
     padding: 0px 5px;
     height: 20px;

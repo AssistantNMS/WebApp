@@ -56,9 +56,9 @@ body {
         background-color: white;
     }
 
-    li.nav-item {
+    .navbar-nav li.nav-item.dropdown {
         @media screen and (max-width: 800px) {
-            margin-top: 0.5em;
+            margin-top: 0.25em;
         }
     }
 

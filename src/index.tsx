@@ -1,5 +1,5 @@
 import React, { DOMAttributes } from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { createStore } from 'redux';
 import { Provider as StateProvider } from 'react-redux';
 import { toast, ToastContainer } from 'react-toastify';
@@ -56,7 +56,10 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
     initLocalization(getCurrentLanguage(store.getState()));
     modalSetup(reactAppId);
 
-    const appNode = (
+    const container = document.getElementById(reactAppId);
+    const root = createRoot(container!);
+
+    root.render(
         <DependencyInjectionProvider>
             <StateProvider store={store}>
                 <BrowserRouter>
@@ -74,7 +77,6 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
             </StateProvider>
         </DependencyInjectionProvider>
     );
-    ReactDOM.render(appNode, document.getElementById(reactAppId));
 
     if (window.config.useServiceWorker) {
         serviceWorker.register({

@@ -59,6 +59,7 @@ export const saveStateToLocalStorage = (store: any) => {
         || storedSettingReducer.selectedFont !== currentSettingReducer.selectedFont
         || storedSettingReducer.chosenPlatform !== currentSettingReducer.chosenPlatform
         || storedSettingReducer.playerName !== currentSettingReducer.playerName
+        || storedSettingReducer.mobileTipHidden !== currentSettingReducer.mobileTipHidden
     ) {
         localStorage.setItem(CacheKey.SettingReducerKey, JSON.stringify(currentSettingReducer));
     }

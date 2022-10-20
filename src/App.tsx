@@ -46,11 +46,10 @@ import { TitlesContainer } from './pages/titles/titlesContainer';
 import { TwitchDropPage } from './pages/twitchDrops/twitchDropPage';
 import { TwitchDropViewerPage } from './pages/twitchDrops/twitchDropViewerPage';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
-import { StateSettingReducer } from './redux/state/StateSettingReducer';
+import { IStateProps, IStateDispatch } from './App.Redux';
+import { UseNativeApp } from './components/common/useNativeAppPopup';
 
-interface IProps extends StateSettingReducer {
-  toggleMenu: () => void;
-}
+interface IProps extends IStateProps, IStateDispatch { }
 
 const AppUnconnected: React.FC<any> = (props: IProps) => {
   let location = useLocation();
@@ -124,6 +123,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route element={<NotFoundPresenter />} />
             </Routes>
           </AnimatePresence>
+          <UseNativeApp />
         </div>
       </ScrollToTop>
     </div>
