@@ -27,12 +27,12 @@ export const HomePresenter: React.FC = () => {
         },
         {
             name: 'Download on the Apple App Store',
-            link: 'https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes',
+            link: 'https://apps.apple.com/us/app/id1480287625?platform=iphone',
             img: '/assets/images/store/AppStore.png',
         },
         {
             name: 'Download on the Windows Store',
-            link: 'https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes',
+            link: 'https://apps.microsoft.com/store/detail/assistant-for-no-mans-sky/9NQLF7XD0LF3',
             img: '/assets/images/store/WindowsStore.png',
         }
     ];
@@ -62,7 +62,7 @@ export const HomePresenter: React.FC = () => {
                 <div className="row justify">
                     {
                         storeItems.map(storeItem => (
-                            <BasicLink additionalClassNames="image store mb-2em" href={storeItem.link} title={storeItem.name}>
+                            <BasicLink additionalClassNames="image store mb-2em" key={storeItem.link} href={storeItem.link} title={storeItem.name}>
                                 <img draggable="false" style={{ maxHeight: '6em' }} src={storeItem.img} alt={storeItem.name} />
                             </BasicLink>
                         ))

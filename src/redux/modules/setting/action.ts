@@ -40,3 +40,9 @@ export const setPlayerName = (playerName: string) => {
         type: type.SETPLAYERNAME,
     }
 }
+
+export const hideMobile = () => {
+    return {
+        type: type.HIDEMOBILE,
+    }
+}

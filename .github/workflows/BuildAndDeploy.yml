@@ -24,9 +24,25 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
-      - name: Build TS
+      - name: Set up gitIgnore for GithubPages
         run: |
-          npm ci
+          rm -f .gitignore
+          mv githubpages.gitignore .gitignore
+
+      - name: PowerShell script
+        uses: Amadevus/pwsh-script@v2.0.3
+        with:
+          script: ./src/setBuildName.ps1 ${{github.run_number}}
+
+      - name: Build SEO pages
+        run: |
+          cd webpack
+          npm ci --force
+          npm run build
+
+      - name: Build ReactApp
+        run: |
+          npm ci --force
           npm run build-prod
 
       - name: Deploy to GitHub Pages

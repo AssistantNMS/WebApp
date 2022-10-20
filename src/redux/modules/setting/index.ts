@@ -13,6 +13,7 @@ export const initialSettingState: StateSettingReducer = {
     useAltGlyphs: true,
     selectedFont: LocaleKey.defaultFont.toString(),
     playerName: '',
+    mobileTipHidden: false,
 }
 
 export const settingReducer = (state = initialSettingState, action: any) => {
@@ -42,6 +43,10 @@ export const settingReducer = (state = initialSettingState, action: any) => {
         case type.SETPLAYERNAME:
             return Object.assign({}, state, {
                 playerName: action.playerName
+            });
+        case type.HIDEMOBILE:
+            return Object.assign({}, state, {
+                mobileTipHidden: true,
             });
         default:
             return state

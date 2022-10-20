@@ -7,4 +7,5 @@ export class StateSettingReducer {
     public useAltGlyphs!: boolean;
     public selectedFont!: string;
     public playerName!: string;
+    public mobileTipHidden!: boolean;
 }

@@ -37,4 +37,5 @@ export class AppImage {
     static quicksilverForChips: string = '/' + AppImage.base + 'rawMaterials/57.png';
     static salvagedData: string = '/' + AppImage.base + 'constructedTechnology/90.png';
     static factoryOverride: string = '/' + AppImage.base + 'special/factoryOverride.png';
+    static nativeApp: string = '/' + AppImage.base + 'nativeApp.png';
 }
