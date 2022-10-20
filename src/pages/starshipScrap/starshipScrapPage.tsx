@@ -43,7 +43,59 @@ export const StarshipScrapPageUnconnected: React.FC<IProps> = (props: IProps) =>
         setStatus(NetworkState.Success);
     }
 
-    const displayComunityLinks = (localStarshipScrapItems: Array<StarshipScrap>) => {
+    const displayStarshipScrapRow = (star: StarshipScrap, index: number) => {
+        const scrapKey = `${star.ShipType}:${star.ShipClassType}`;
+        const currentIsExpanded = isExpanded === scrapKey;
+        return (
+            <div className="row pb1" key={scrapKey} data-key={scrapKey}>
+                <div className="gen-item col-12 col-xl-3 col-lg-4 col-md-5 col-sm-6 col-xs-6">
+                    <StarshipScrapListTile
+                        scrap={star}
+                        index={index}
+                        isExpanded={currentIsExpanded}
+                        setIsExpanded={(newVal: boolean) => {
+                            if (newVal === false) {
+                                setExpanded('');
+                            }
+                            else {
+                                setExpanded(scrapKey);
+                            }
+                        }}
+                    />
+                </div>
+                <div className="gen-item col-12 col-xl-9 col-lg-8 col-md-7 col-sm-6 col-xs-6">
+                    <div className="row">
+                        {
+                            (currentIsExpanded ? star.ItemDetails : star.ItemDetails.slice(0, 2)).map((item: StarshipScrapItemDetail, index: number) => (
+                                <div key={`${item.Id}-${index}`} className="gen-item col-12 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <StarshipScrapItemDetailListTile
+                                        details={item}
+                                        index={index}
+                                    />
+                                </div>
+                            ))
+                        }
+                        {
+                            (currentIsExpanded === false) && (
+                                <div className="gen-item col-12 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <div className="gen-item-container pointer" draggable={false} onClick={() => setExpanded(scrapKey)}>
+                                        <div className="gen-item-content-container">
+                                            <TextContainer text={translate(LocaleKey.viewXMore).replace('{0}', (star.ItemDetails.length - 2).toString())} additionalCss="full" />
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        }
+                    </div>
+                </div>
+                <div className="col-12">
+                    <hr />
+                </div>
+            </div>
+        );
+    }
+
+    const displayStarshipScrap = (localStarshipScrapItems: Array<StarshipScrap>) => {
 
         if (networkStatus === NetworkState.Loading) {
             return <SmallLoading />
@@ -59,60 +111,7 @@ export const StarshipScrapPageUnconnected: React.FC<IProps> = (props: IProps) =>
 
         return (
             <div className="generic-item-list">
-                {
-                    localStarshipScrapItems.map((star: StarshipScrap, index: number) => {
-                        const scrapKey = `${star.ShipType}:${star.ShipClassType}`;
-                        const currentIsExpanded = isExpanded === scrapKey;
-                        return (
-                            <div className="row pb1" data-key={scrapKey}>
-                                <div className="gen-item col-12 col-xl-3 col-lg-4 col-md-5 col-sm-6 col-xs-6">
-                                    <StarshipScrapListTile
-                                        scrap={star}
-                                        index={index}
-                                        isExpanded={currentIsExpanded}
-                                        setIsExpanded={(newVal: boolean) => {
-                                            if (newVal === false) {
-                                                setExpanded('');
-                                            }
-                                            else {
-                                                setExpanded(scrapKey);
-                                            }
-                                        }}
-                                    />
-                                </div>
-                                <div className="gen-item col-12 col-xl-9 col-lg-8 col-md-7 col-sm-6 col-xs-6">
-                                    <div className="row">
-                                        {
-                                            (currentIsExpanded ? star.ItemDetails : star.ItemDetails.slice(0, 2)).map((item: StarshipScrapItemDetail, index: number) => (
-                                                <div className="gen-item col-12 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                                    <StarshipScrapItemDetailListTile
-                                                        details={item}
-                                                        index={index}
-                                                    />
-                                                </div>
-                                            ))
-                                        }
-                                        {
-                                            (currentIsExpanded === false) && (
-                                                <div className="gen-item col-12 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                                    <div className="gen-item-container pointer" draggable={false} onClick={() => setExpanded(scrapKey)}>
-                                                        <div className="gen-item-content-container">
-                                                            <TextContainer text={translate(LocaleKey.viewXMore).replace('{0}', (star.ItemDetails.length - 2).toString())} additionalCss="full" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            )
-                                        }
-                                    </div>
-                                </div>
-                                <div className="col-12">
-                                    <hr />
-                                </div>
-                            </div>
-                        )
-                    })
-                }
-
+                {localStarshipScrapItems.map(displayStarshipScrapRow)}
             </div>
         );
     };
@@ -125,7 +124,7 @@ export const StarshipScrapPageUnconnected: React.FC<IProps> = (props: IProps) =>
             <div data-id="StarshipScrapPage" className="content">
                 <div className="row full pt1 pb5">
                     <div className="col-12">
-                        {displayComunityLinks(starshipScrapItems)}
+                        {displayStarshipScrap(starshipScrapItems)}
                     </div>
                 </div>
             </div>
