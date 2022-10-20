@@ -65,7 +65,7 @@ export const StarshipScrapPageUnconnected: React.FC<IProps> = (props: IProps) =>
                         const currentIsExpanded = isExpanded === scrapKey;
                         return (
                             <div className="row pb1" data-key={scrapKey}>
-                                <div className="gen-item col-3">
+                                <div className="gen-item col-12 col-xl-3 col-lg-4 col-md-5 col-sm-6 col-xs-6">
                                     <StarshipScrapListTile
                                         scrap={star}
                                         index={index}
@@ -80,11 +80,11 @@ export const StarshipScrapPageUnconnected: React.FC<IProps> = (props: IProps) =>
                                         }}
                                     />
                                 </div>
-                                <div className="gen-item col-9">
+                                <div className="gen-item col-12 col-xl-9 col-lg-8 col-md-7 col-sm-6 col-xs-6">
                                     <div className="row">
                                         {
                                             (currentIsExpanded ? star.ItemDetails : star.ItemDetails.slice(0, 2)).map((item: StarshipScrapItemDetail, index: number) => (
-                                                <div className="gen-item col-4">
+                                                <div className="gen-item col-12 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                     <StarshipScrapItemDetailListTile
                                                         details={item}
                                                         index={index}
@@ -94,7 +94,7 @@ export const StarshipScrapPageUnconnected: React.FC<IProps> = (props: IProps) =>
                                         }
                                         {
                                             (currentIsExpanded === false) && (
-                                                <div className="gen-item col-4">
+                                                <div className="gen-item col-12 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                                     <div className="gen-item-container pointer" draggable={false} onClick={() => setExpanded(scrapKey)}>
                                                         <div className="gen-item-content-container">
                                                             <TextContainer text={translate(LocaleKey.viewXMore).replace('{0}', (star.ItemDetails.length - 2).toString())} additionalCss="full" />
