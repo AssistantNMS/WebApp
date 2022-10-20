@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { AppImage } from "../../constants/AppImage";
 import { hideMobile } from "../../redux/modules/setting/action";
@@ -19,7 +19,7 @@ interface ISegmentedControlProps extends IStateProps, IStateDispatch { }
 
 export const UseNativeAppUnconnected: React.FC<ISegmentedControlProps> = (props: ISegmentedControlProps) => {
 
-    if (props.showMobileTip == false) {
+    if (props.showMobileTip === false) {
         return (<></>);
     }
 
