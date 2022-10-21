@@ -49,14 +49,14 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                 {
                     props.CdnUrl &&
                     <a href={props.CdnUrl} title="HD image" rel="noopener noreferrer" target="_blank">
-                        <i className="material-icons" style={{ position: 'absolute', top: '.5em', right: '.5em', color: invertColor(props.Colour || '000000') }}>hd</i>
+                        <i className="material-icons" style={{ position: 'absolute', top: '.5em', right: '.5em', color: invertColor(props.Colour || '000000', true) }}>hd</i>
                     </a>
                 }
                 {
                     props.Usages?.includes(UsageKey.hasDevProperties) &&
                     <i className="material-icons pointer"
                         onClick={props.openDevProperties}
-                        style={{ position: 'absolute', top: '.5em', left: '.5em', color: invertColor(props.Colour || '000000') }}>code</i>
+                        style={{ position: 'absolute', top: '.5em', left: '.5em', color: invertColor(props.Colour || '000000', true) }}>code</i>
                 }
             </div>
             <div className="col-12 col-lg-10 col-md-10 col-sm-8 col-xs-9 ta-left ta-center-sm">
