@@ -62,7 +62,7 @@ export class DataJsonService extends BaseJsonService {
         const getAllResult = await this.getAllControls();
         if (!getAllResult.isSuccess) return { isSuccess: false, value: result, errorMessage: getAllResult.errorMessage };
 
-        const controlItem = getAllResult.value?.[jsonProp] ?? [];
+        const controlItem: Array<any> = getAllResult.value?.[jsonProp] ?? [];
         return {
             isSuccess: true,
             value: controlItem,

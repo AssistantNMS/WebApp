@@ -17,5 +17,9 @@ export const availableControlPlatforms = (useAlt: boolean): Array<IControlPlatfo
     {
         imgUrl: ToImgUrl(useAlt, ControllerPlatformType.XBX),
         value: ControllerPlatformType.XBX,
+    },
+    {
+        imgUrl: ToImgUrl(useAlt, ControllerPlatformType.NSW),
+        value: ControllerPlatformType.NSW,
     }
 ];
