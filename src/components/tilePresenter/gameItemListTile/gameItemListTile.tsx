@@ -39,7 +39,7 @@ export const GameItemListTileUnconnected: React.FC<IProps> = (props: IProps) => 
             <ImageContainer {...props.item} Name={removeXmlTags(props.item.Description)} />
             {
                 itemIsFavourited &&
-                <i className="material-icons top-right" style={{ color: invertColor(props.item.Colour || '000000') }}>{iconString}</i>
+                <i className="material-icons top-right" style={{ color: invertColor(props.item.Colour || '000000', true) }}>{iconString}</i>
             }
 
             <CustomContextMenu

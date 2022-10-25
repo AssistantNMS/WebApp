@@ -125,13 +125,26 @@
 			text-rendering: optimizeLegibility;
 		}
 	</style>
+
+	<script>
+		const millisecondsBeforeCheck = 2500;
+		var checkIfAppHasLoaded = () => {
+			const loadingElement = document.getElementById('app-loading');
+			if (loadingElement != null) {
+				console.error(`Page has not loaded after ${millisecondsBeforeCheck}`);
+				document.location.reload(true);
+			}
+		}
+
+		setTimeout(checkIfAppHasLoaded, millisecondsBeforeCheck);
+	</script>
 </head>
 
 <body>
 	<noscript>You need to enable JavaScript to run this app.</noscript>
 	<div id="nms-app">
 		<div class="full-page-loader opacity80"></div>
-		<div class="full-page-loader">
+		<div id="app-loading" class="full-page-loader">
 			<div class="cssload-container">
 				<ul class="cssload-flex-container">
 					<li style="list-style-type: none;">
