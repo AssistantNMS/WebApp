@@ -52,7 +52,7 @@ export class GameItemService extends BaseJsonService {
 
     return {
       isSuccess: true,
-      value: langResult.value,
+      value: langResult.value.filter(item => item.Name.length > 0),
       errorMessage: ''
     }
   }
