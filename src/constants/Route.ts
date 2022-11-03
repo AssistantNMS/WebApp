@@ -34,3 +34,4 @@ export const communitySpotlight = '/community-spotlight';
 export const twitchDrops = '/twitch-drops';
 export const twitchDropsParam = ':dayId';
 export const twitchDropsDetails = `${twitchDrops}/${twitchDropsParam}`;
+export const contributors = 'contributors';

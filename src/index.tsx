@@ -34,6 +34,7 @@ declare global {
         interface IntrinsicElements {
             ['assistant-apps-patreon-list']: CustomElement<any>;
             ['assistant-apps-team-list']: CustomElement<any>;
+            ['assistant-apps-translation-leaderboard']: CustomElement<any>;
         }
     }
 }
