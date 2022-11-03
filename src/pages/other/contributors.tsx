@@ -1,25 +1,18 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 
-import { translate } from '../../localization/Translate';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
-import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
+import { SegmentedControl } from '../../components/common/segmentedControl';
 import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
-import { NetworkState } from '../../constants/NetworkState';
-import { CommunitySearchViewModel } from '../../contracts/other/communitySearchViewModel';
-import { CommunitySearchChipColourViewModel } from '../../contracts/other/communitySearchChipColourViewModel';
+import { ContributorListTile, DonatorListTile } from '../../components/tilePresenter/contributorListTile';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { translate } from '../../localization/Translate';
 import { ApiService } from '../../services/api/ApiService';
-import { CommunitySearchListTile } from '../../components/tilePresenter/community/communitySearchListTile';
-import { SearchBar } from '../../components/common/searchBar';
-import { CommunitySearchBottomModalSheet } from '../../components/tilePresenter/community/communitySearchBottomModalSheet';
-import { SegmentedControl } from '../../components/common/segmentedControl';
-import { ContributorComponent } from './contributorComponents';
-import { ContributorListTile, DonatorListTile } from '../../components/tilePresenter/contributorListTile';
 import { AssistantAppsApiService } from '../../services/api/AssistantAppsApiService';
+import { ContributorComponent } from './contributorComponents';
 
 interface IWithDepInj {
     apiService: ApiService;
@@ -71,7 +64,7 @@ export const ContributorsPageUnconnected: React.FC<IProps> = (props: IProps) => 
                     </div>
                     <div className="row full pb5">
                         {
-                            (selectedOption == options[0].title) &&
+                            (selectedOption === options[0].title) &&
                             <div className="col-12">
                                 <ContributorComponent
                                     apiCall={() => props.apiService.getContributors()}
@@ -81,7 +74,7 @@ export const ContributorsPageUnconnected: React.FC<IProps> = (props: IProps) => 
                             </div>
                         }
                         {
-                            (selectedOption == options[1].title) &&
+                            (selectedOption === options[1].title) &&
                             <div className="col-12">
                                 <assistant-apps-translation-leaderboard>
                                     <span slot="loading">
@@ -94,18 +87,18 @@ export const ContributorsPageUnconnected: React.FC<IProps> = (props: IProps) => 
                             </div>
                         }
                         {
-                            (selectedOption == options[2].title) &&
+                            (selectedOption === options[2].title) &&
                             <div className="col-12">
                                 <ContributorComponent
                                     apiCall={async () => {
                                         let allDonations = [];
                                         const firstCall = await props.assistantAppsApiService.getDonators(1);
-                                        if (firstCall.isSuccess == false) return firstCall;
+                                        if (firstCall.isSuccess === false) return firstCall;
 
                                         allDonations = [...firstCall.value];
                                         for (let donationIndex = 2; donationIndex < firstCall.totalPages; donationIndex++) {
                                             const pageCall = await props.assistantAppsApiService.getDonators(donationIndex);
-                                            if (pageCall.isSuccess == false) continue;
+                                            if (pageCall.isSuccess === false) continue;
                                             allDonations = [...allDonations, ...pageCall.value];
                                         }
 

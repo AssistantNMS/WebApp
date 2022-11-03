@@ -77,7 +77,7 @@ export const CommunityLinksPageUnconnected: React.FC<IProps> = (props: IProps) =
         for (const item of localItems) {
             if (searchText != null) {
                 if (
-                    (item.name.toLowerCase().includes(searchText.toLowerCase()) == false) &&
+                    (item.name.toLowerCase().includes(searchText.toLowerCase()) === false) &&
                     (item.tags.findIndex(t => t.toLowerCase().includes(searchText.toLowerCase())) < 0)
                 ) continue;
             }

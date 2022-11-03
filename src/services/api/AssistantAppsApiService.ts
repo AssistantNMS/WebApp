@@ -1,4 +1,4 @@
-import { ResultWithValue, ResultWithValueAndPagination } from '../../contracts/results/ResultWithValue';
+import { ResultWithValueAndPagination } from '../../contracts/results/ResultWithValue';
 import { BaseApiService } from './BaseApiService';
 import { VersionViewModel } from '../../contracts/generated/AssistantApps/ViewModel/Version/versionViewModel';
 import { VersionSearchViewModel } from '../../contracts/generated/AssistantApps/ViewModel/Version/versionSearchViewModel';
