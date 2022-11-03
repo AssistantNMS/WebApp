@@ -6,7 +6,7 @@ import { CommunitySearchChipColourViewModel } from '../../../contracts/other/com
 export const communitySearchTags = (chipColours: Array<CommunitySearchChipColourViewModel>, tags: Array<string>) => {
 
     const getColourForTag = (chipColours: Array<CommunitySearchChipColourViewModel>, tagName: string) => {
-        const foundColourObj = chipColours.find(cc => cc.name.toLocaleLowerCase() == tagName.toLocaleLowerCase());
+        const foundColourObj = chipColours.find(cc => cc.name.toLocaleLowerCase() === tagName.toLocaleLowerCase());
         if (foundColourObj != null) return foundColourObj.colour;
 
         return '';

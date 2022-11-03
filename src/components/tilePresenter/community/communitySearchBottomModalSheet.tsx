@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { CommunitySearchChipColourViewModel } from "../../../contracts/other/communitySearchChipColourViewModel";
 import { CommunitySearchViewModel } from "../../../contracts/other/communitySearchViewModel";
 import { BottomModalSheet } from "../../common/dialog/bottomModalSheet";
@@ -20,14 +20,14 @@ export const CommunitySearchBottomModalSheet: React.FC<IProps> = (props: IProps)
         let cleanLink = 'Unsupported link';
         let linkComment = '';
 
-        const markdownLinkRegex = new RegExp(/^\[(.+)\]\((.+)\)/);
+        const markdownLinkRegex = new RegExp(/^[(.+)]((.+))/);
         const markdownRegexArr = markdownLinkRegex.exec(link);
         if ((markdownRegexArr?.length ?? 0) > 2) {
             linkComment = `(${markdownRegexArr![1]})`;
             localLink = markdownRegexArr![2];
         }
 
-        const linkRegex = new RegExp('^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)');
+        const linkRegex = new RegExp('^(?:https?://)?(?:[^@/]+@)?(?:www.)?([^:/?]+)');
         const preCleanLink = localLink
             .replaceAll('https://', '')
             .replaceAll('http://', '')
@@ -51,7 +51,7 @@ export const CommunitySearchBottomModalSheet: React.FC<IProps> = (props: IProps)
     }
 
     const renderContent = () => {
-        if (props.isModalOpen != true) return (<div></div>);
+        if (props.isModalOpen !== true) return (<div></div>);
 
         return (
             <div className="row justify scrollable community-search-bottom-modal-sheet">
