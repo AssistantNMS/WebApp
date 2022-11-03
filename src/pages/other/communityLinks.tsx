@@ -74,14 +74,14 @@ export const CommunityLinksPageUnconnected: React.FC<IProps> = (props: IProps) =
 
     const getDisplayItems = (localItems: Array<CommunitySearchViewModel>, searchText?: string): Array<CommunitySearchViewModel> => {
         const newDisplayItems = new Array<CommunitySearchViewModel>();
-        for (const itemIndex in localItems) {
-            if (localItems.hasOwnProperty(itemIndex)) {
-                const item = localItems[itemIndex];
-                if (searchText != null) {
-                    if (!item.name.toLowerCase().includes(searchText.toLowerCase())) continue;
-                }
-                newDisplayItems.push(item);
+        for (const item of localItems) {
+            if (searchText != null) {
+                if (
+                    (item.name.toLowerCase().includes(searchText.toLowerCase()) == false) &&
+                    (item.tags.findIndex(t => t.toLowerCase().includes(searchText.toLowerCase())) < 0)
+                ) continue;
             }
+            newDisplayItems.push(item);
         }
         return newDisplayItems;
     }
