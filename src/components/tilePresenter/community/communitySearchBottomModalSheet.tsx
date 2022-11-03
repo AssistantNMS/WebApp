@@ -21,7 +21,7 @@ export const CommunitySearchBottomModalSheet: React.FC<IProps> = (props: IProps)
         let cleanLink = 'Unsupported link';
         let linkComment = '';
 
-        const markdownLinkRegex = new RegExp(/^[(.+)]((.+))/);
+        const markdownLinkRegex = new RegExp(/^\[(.+)\]\((.+)\)/);
         const markdownRegexArr = markdownLinkRegex.exec(link);
         if ((markdownRegexArr?.length ?? 0) > 2) {
             linkComment = `(${markdownRegexArr![1]})`;

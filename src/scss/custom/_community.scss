@@ -66,8 +66,8 @@ $community-search-icon-border-radius: 5px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
-            line-clamp: 2;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
             -webkit-box-orient: vertical;
         }
     }
@@ -168,6 +168,7 @@ $community-search-modal-icon-size: 2.5em;
 
     .community-search-banner img {
         border-radius: $community-search-icon-border-radius;
+        max-width: 100%;
     }
 
     .comment {
