@@ -17,7 +17,7 @@ import { QuicksilverItem, QuicksilverStore } from '../../contracts/data/quicksil
 import { CommunityMissionViewModel } from '../../contracts/generated/communityMissionViewModel';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { CommunityMissionProgressListTile } from '../../components/tilePresenter/communityLinkListTile';
+import { CommunityMissionProgressListTile } from '../../components/tilePresenter/community/communityLinkListTile';
 
 interface IProps {
     // Container State

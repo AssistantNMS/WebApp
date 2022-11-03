@@ -1,10 +1,10 @@
 
 import * as React from 'react';
 
-import { TextContainer } from '../common/tile/textContainer';
-import { ImageContainer } from '../common/tile/imageContainer';
-import { BasicLink } from '../core/link';
-import { CommunitySpotlightViewModel } from '../../contracts/generated/Model/Community/communitySpotlightViewModel';
+import { TextContainer } from '../../common/tile/textContainer';
+import { ImageContainer } from '../../common/tile/imageContainer';
+import { BasicLink } from '../../core/link';
+import { CommunitySpotlightViewModel } from '../../../contracts/generated/Model/Community/communitySpotlightViewModel';
 
 export const CommunitySpotlightListTile = (props: CommunitySpotlightViewModel, index: number) => {
     const hasQuantity = props.subtitle.length > 1;

@@ -7,12 +7,15 @@ import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
-import { CommunityLinkListTile } from '../../components/tilePresenter/communityLinkListTile';
 import { NetworkState } from '../../constants/NetworkState';
-import { CommunityLinkViewModel } from '../../contracts/generated/Model/Community/communityLinkViewModel';
+import { CommunitySearchViewModel } from '../../contracts/other/communitySearchViewModel';
+import { CommunitySearchChipColourViewModel } from '../../contracts/other/communitySearchChipColourViewModel';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { ApiService } from '../../services/api/ApiService';
+import { CommunitySearchListTile } from '../../components/tilePresenter/community/communitySearchListTile';
+import { SearchBar } from '../../components/common/searchBar';
+import { CommunitySearchBottomModalSheet } from '../../components/tilePresenter/community/communitySearchBottomModalSheet';
 
 interface IWithDepInj {
     apiService: ApiService;
@@ -22,27 +25,68 @@ interface IProps extends IWithDepInj, IWithoutDepInj { }
 
 
 export const CommunityLinksPageUnconnected: React.FC<IProps> = (props: IProps) => {
-    const [communityLinks, setCommunityLinks] = useState<Array<CommunityLinkViewModel>>([]);
+    const [communityLinks, setCommunityLinks] = useState<Array<CommunitySearchViewModel>>([]);
+    const [chipColours, setChipColours] = useState<Array<CommunitySearchChipColourViewModel>>([]);
     const [networkStatus, setStatus] = useState<NetworkState>(NetworkState.Loading);
+    const [searchTerm, setSearchTerm] = useState<string>('');
+    const [selectedItem, setSelectedItem] = useState<CommunitySearchViewModel>();
+
+    const gridPresenter = CommunitySearchListTile(chipColours, (newItem: CommunitySearchViewModel) => setSelectedItem(newItem));
 
     useEffect(() => {
         fetchCommunityLinks();
+        fetchCommunityLinkChipColours();
         // eslint-disable-next-line
     }, []);
 
     const fetchCommunityLinks = async () => {
-        const CommunityLinksResult = await props.apiService.getCommunityLinks();
-        if (!CommunityLinksResult.isSuccess) {
+        const communityLinksResult = await props.apiService.getCommunityLinks();
+        if (!communityLinksResult.isSuccess) {
             setCommunityLinks([]);
             setStatus(NetworkState.Error);
             return;
         }
 
-        setCommunityLinks(CommunityLinksResult.value);
+        setCommunityLinks(communityLinksResult.value);
         setStatus(NetworkState.Success);
     }
 
-    const displayComunityLinks = (communityLinks: Array<CommunityLinkViewModel>) => {
+    const fetchCommunityLinkChipColours = async () => {
+        const communityLinkChipColoursResult = await props.apiService.getCommunityLinksChipColours();
+        if (!communityLinkChipColoursResult.isSuccess) {
+            setChipColours([]);
+            setStatus(NetworkState.Error);
+            return;
+        }
+
+        setChipColours(communityLinkChipColoursResult.value);
+        setStatus(NetworkState.Success);
+    }
+
+    const onSearchTextChange = (e: any) => {
+        e?.persist?.();
+
+        const searchValue = e?.target?.value || '';
+        if (searchTerm === searchValue) return;
+
+        setSearchTerm(searchValue);
+    }
+
+    const getDisplayItems = (localItems: Array<CommunitySearchViewModel>, searchText?: string): Array<CommunitySearchViewModel> => {
+        const newDisplayItems = new Array<CommunitySearchViewModel>();
+        for (const itemIndex in localItems) {
+            if (localItems.hasOwnProperty(itemIndex)) {
+                const item = localItems[itemIndex];
+                if (searchText != null) {
+                    if (!item.name.toLowerCase().includes(searchText.toLowerCase())) continue;
+                }
+                newDisplayItems.push(item);
+            }
+        }
+        return newDisplayItems;
+    }
+
+    const displayComunityLinks = (communityLinks: Array<CommunitySearchViewModel>) => {
 
         if (networkStatus === NetworkState.Loading) {
             return <SmallLoading />
@@ -56,7 +100,13 @@ export const CommunityLinksPageUnconnected: React.FC<IProps> = (props: IProps) =
             <h2>{translate(LocaleKey.noItems)}</h2>
         );
 
-        return <GenericListPresenter list={communityLinks} presenter={CommunityLinkListTile} identifier={(item: CommunityLinkViewModel) => item.name + item.subtitle} />;
+        return (
+            <GenericListPresenter
+                list={getDisplayItems(communityLinks, searchTerm)}
+                presenter={gridPresenter}
+                identifier={(item: CommunitySearchViewModel) => item.name + item.tags.join(',')}
+            />
+        );
     };
 
     const title = translate(LocaleKey.communityLinks);
@@ -65,11 +115,21 @@ export const CommunityLinksPageUnconnected: React.FC<IProps> = (props: IProps) =
             <HeadComponent title={title} />
             <NavBar title={title} />
             <div data-id="CommunityLinks" className="content">
-                <div className="row full pt1 pb5">
-                    <div className="col-12">
+                <SearchBar
+                    searchTerm={searchTerm}
+                    onSearchTextChange={onSearchTextChange}
+                />
+                <div className="row full pb5">
+                    <div className="col-12 community-search-list">
                         {displayComunityLinks(communityLinks)}
                     </div>
                 </div>
+                <CommunitySearchBottomModalSheet
+                    isModalOpen={selectedItem != null}
+                    itemToDisplay={selectedItem!}
+                    chipColours={chipColours}
+                    setModalClosed={() => setSelectedItem(undefined)}
+                />
             </div>
         </DefaultAnimation>
     );

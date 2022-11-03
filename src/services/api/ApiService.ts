@@ -9,9 +9,10 @@ import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTr
 import { anyObject } from '../../helper/typescriptHacks';
 import { getHashForObject } from '../../helper/hashHelper';
 import { ContributorViewModel } from '../../contracts/generated/Model/Contributor/contributorViewModel';
-import { CommunityLinkViewModel } from '../../contracts/generated/Model/Community/communityLinkViewModel';
+import { CommunitySearchViewModel } from '../../contracts/other/communitySearchViewModel';
 import { getCurrentLang } from '../../localization/Translate';
 import { CommunitySpotlightViewModel } from '../../contracts/generated/Model/Community/communitySpotlightViewModel';
+import { CommunitySearchChipColourViewModel } from '../../contracts/other/communitySearchChipColourViewModel';
 
 export class ApiService extends BaseApiService {
 
@@ -70,8 +71,12 @@ export class ApiService extends BaseApiService {
         return await this.get<Array<ContributorViewModel>>('Contributor');
     }
 
-    async getCommunityLinks(): Promise<ResultWithValue<Array<CommunityLinkViewModel>>> {
-        return await this.get<Array<CommunityLinkViewModel>>('CommunityLink');
+    async getCommunityLinks(): Promise<ResultWithValue<Array<CommunitySearchViewModel>>> {
+        return await this.get<Array<CommunitySearchViewModel>>('CommunityLink/NMSCD');
+    }
+
+    async getCommunityLinksChipColours(): Promise<ResultWithValue<Array<CommunitySearchChipColourViewModel>>> {
+        return await this.get<Array<CommunitySearchChipColourViewModel>>('CommunityLink/NMSCD-Chips');
     }
 
     async getCommunitySpotlight(): Promise<ResultWithValue<Array<CommunitySpotlightViewModel>>> {

@@ -1,13 +1,13 @@
 
 import * as React from 'react';
 
-import { TextContainer } from '../common/tile/textContainer';
-import { ImageContainer } from '../common/tile/imageContainer';
-import { CommunityLinkViewModel } from '../../contracts/generated/Model/Community/communityLinkViewModel';
-import { ExternalUrls } from '../../constants/ExternalUrls';
-import { AppImage } from '../../constants/AppImage';
-import { BasicLink } from '../core/link';
-import { ActionContainer } from '../common/tile/actionContainer';
+import { TextContainer } from '../../common/tile/textContainer';
+import { ImageContainer } from '../../common/tile/imageContainer';
+import { CommunityLinkViewModel } from '../../../contracts/generated/Model/Community/communityLinkViewModel';
+import { ExternalUrls } from '../../../constants/ExternalUrls';
+import { AppImage } from '../../../constants/AppImage';
+import { BasicLink } from '../../core/link';
+import { ActionContainer } from '../../common/tile/actionContainer';
 
 export const CommunityLinkListTile = (props: CommunityLinkViewModel, index: number) => {
     const hasQuantity = props.subtitle.length > 1;
