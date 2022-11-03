@@ -1,4 +1,5 @@
 import React from "react";
+import { ExternalUrls } from "../../../constants/ExternalUrls";
 import { CommunitySearchChipColourViewModel } from "../../../contracts/other/communitySearchChipColourViewModel";
 import { CommunitySearchViewModel } from "../../../contracts/other/communitySearchViewModel";
 import { BottomModalSheet } from "../../common/dialog/bottomModalSheet";
@@ -59,7 +60,7 @@ export const CommunitySearchBottomModalSheet: React.FC<IProps> = (props: IProps)
                     <div className="community-search-top pb1">
                         <div className="community-icon">
                             <LazyLoadImage
-                                src={`https://community.nmscd.com${props.itemToDisplay.icon}`}
+                                src={`${ExternalUrls.communitySearch}${props.itemToDisplay.icon}`}
                                 alt={props.itemToDisplay.name ?? props.itemToDisplay.icon}
                                 draggable={false}
                             />
@@ -73,7 +74,7 @@ export const CommunitySearchBottomModalSheet: React.FC<IProps> = (props: IProps)
                     ((props.itemToDisplay.banners ?? []).length > 0) && (
                         <div className="col-6 pt1 community-search-banner">
                             <LazyLoadImage
-                                src={`https://community.nmscd.com${props.itemToDisplay.banners![0]}`}
+                                src={`${ExternalUrls.communitySearch}${props.itemToDisplay.banners![0]}`}
                                 alt={props.itemToDisplay.banners![0]}
                                 draggable={false}
                             />

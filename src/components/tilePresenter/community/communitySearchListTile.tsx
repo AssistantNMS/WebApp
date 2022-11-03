@@ -5,6 +5,7 @@ import { CommunitySearchViewModel } from '../../../contracts/other/communitySear
 import { CommunitySearchChipColourViewModel } from '../../../contracts/other/communitySearchChipColourViewModel';
 import { LazyLoadImage } from '../../core/lazyLoadImage/lazyLoadImage';
 import { communitySearchTags } from './communitySearchTags';
+import { ExternalUrls } from '../../../constants/ExternalUrls';
 
 export const CommunitySearchListTile = (
     chipColours: Array<CommunitySearchChipColourViewModel>,
@@ -19,7 +20,7 @@ export const CommunitySearchListTile = (
                     <div className="community-search-top">
                         <div className="community-icon">
                             <LazyLoadImage
-                                src={`https://community.nmscd.com${props.icon}`}
+                                src={`${ExternalUrls.communitySearch}${props.icon}`}
                                 alt={props.name ?? props.icon}
                                 draggable={false}
                             />
