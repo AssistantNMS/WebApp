@@ -48,6 +48,7 @@ import { TwitchDropViewerPage } from './pages/twitchDrops/twitchDropViewerPage';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
 import { IStateProps, IStateDispatch } from './App.Redux';
 import { UseNativeApp } from './components/common/useNativeAppPopup';
+import { ContributorsPage } from './pages/other/contributors';
 
 interface IProps extends IStateProps, IStateDispatch { }
 
@@ -82,6 +83,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={route.patreon} element={<PatreonPresenter />} />
               <Route path={route.whatIsNew} element={<WhatIsNewContainer />} />
               <Route path={route.nmsfm} element={<NmsfmContainer />} />
+              <Route path={route.contributors} element={<ContributorsPage />} />
 
               <Route path={`${route.catalogue}/:types`} element={<CatalogueListContainer />} />
               <Route path={route.catalogue} element={<CataloguePresenter />} />

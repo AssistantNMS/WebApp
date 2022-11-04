@@ -30,6 +30,13 @@ export const getMenuSection1 = () => {
     iconType: DrawerIconType.Custom,
     isActive: false
   });
+  menuItems.push({
+    name: translate(LocaleKey.contributors).toString(),
+    link: routes.contributors,
+    icon: '/assets/images/drawer/contributors.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false
+  });
   menuItems.push(patreonMenuItem());
   menuItems.push({
     name: translate(LocaleKey.donation).toString(),

@@ -22,6 +22,6 @@ export class ExternalUrls {
   static translationTool = 'https://tools.assistantapps.com/translation';
   static expeditionAlphabet = 'https://alphabet.nmscd.com/';
   static expeditionAlphabetDisplay = 'https://alphabet.nmscd.com/#/display?text=';
-  static communityMissionProgress =
-    'https://nmscd.github.io/CommunityMission-Progress-Viewer/';
+  static communityMissionProgress = 'https://nmscd.github.io/CommunityMission-Progress-Viewer/';
+  static communitySearch = 'https://community.nmscd.com';
 }

@@ -6,7 +6,7 @@ import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
-import { CommunitySpotlightListTile } from '../../components/tilePresenter/communitySpotlightListTile';
+import { CommunitySpotlightListTile } from '../../components/tilePresenter/community/communitySpotlightListTile';
 import { NetworkState } from '../../constants/NetworkState';
 import { CommunitySpotlightViewModel } from '../../contracts/generated/Model/Community/communitySpotlightViewModel';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
