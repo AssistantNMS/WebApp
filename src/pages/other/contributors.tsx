@@ -75,7 +75,7 @@ export const ContributorsPageUnconnected: React.FC<IProps> = (props: IProps) => 
                         }
                         {
                             (selectedOption === options[1].title) &&
-                            <div className="col-12">
+                            <div className="col-12" style={{ overflowX: 'hidden' }}>
                                 <assistant-apps-translation-leaderboard>
                                     <span slot="loading">
                                         <SmallLoading />
