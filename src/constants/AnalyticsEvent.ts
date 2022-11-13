@@ -61,6 +61,7 @@ export class AnalyticsEvent {
   static externalLinkBuyMeACoffee = 'BuyMeACoffee';
   static externalLinkPayPal = 'PayPal';
   static externalLinkPatreon = 'Patreon';
+  static externalLinkGithubSponsors = 'GithubSponsors';
   static externalLinkkofi = 'Ko-fi';
   static externalLinkKurtLourensEmail = 'Email_hi@kurtlourens.com';
   static externalLinkGitHubGeneral = 'Go_to_General_Repository';

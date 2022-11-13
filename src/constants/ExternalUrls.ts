@@ -5,6 +5,7 @@ export class ExternalUrls {
   static buyMeACoffee = 'https://www.buymeacoffee.com/kurt';
   static payPal = 'https://paypal.me/KurtLourens';
   static patreon = 'https://www.patreon.com/AssistantApps';
+  static githubSponsors = 'https://github.com/sponsors/AssistantNMS';
   static kofi = 'https://ko-fi.com/AssistantNMS';
   static kurtLourensEmail = 'mailto:nms@kurtlourens.com?subject=NMS Assistant Translation';
   static githubLanguageRepo = 'https://github.com/AssistantNMS/Languages';
