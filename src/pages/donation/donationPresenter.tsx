@@ -9,13 +9,50 @@ import { ExternalUrls } from '../../constants/ExternalUrls';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 export const DonationPresenter: React.FC = () => {
-    const paymentOptions = [];
-    paymentOptions.push({ title: translate(LocaleKey.buyMeACoffee).toString(), event: AnalyticsEvent.externalLinkBuyMeACoffee, url: ExternalUrls.buyMeACoffee, image: '/assets/images/buyMeACoffee.png' });
-    paymentOptions.push({ title: translate(LocaleKey.patreon).toString(), event: AnalyticsEvent.externalLinkPatreon, url: ExternalUrls.patreon, image: '/assets/images/patreon.png' });
-    paymentOptions.push({ title: translate(LocaleKey.paypal).toString(), event: AnalyticsEvent.externalLinkPayPal, url: ExternalUrls.payPal, image: '/assets/images/payPal.png' });
-    paymentOptions.push({ title: translate(LocaleKey.kofi).toString(), event: AnalyticsEvent.externalLinkkofi, url: ExternalUrls.kofi, image: '/assets/images/kofi.png' });
-    paymentOptions.push({ title: 'Brave', event: AnalyticsEvent.externalLinkBat, url: ExternalUrls.bat, image: '/assets/images/bat.png' });
-    paymentOptions.push({ title: translate(LocaleKey.openCollective), event: AnalyticsEvent.externalLinkOpenCollective, url: ExternalUrls.openCollective, image: '/assets/images/openCollective.png' });
+    const paymentOptions = [
+        {
+            title: translate(LocaleKey.buyMeACoffee).toString(),
+            event: AnalyticsEvent.externalLinkBuyMeACoffee,
+            url: ExternalUrls.buyMeACoffee,
+            image: '/assets/images/buyMeACoffee.png'
+        },
+        {
+            title: translate(LocaleKey.patreon).toString(),
+            event: AnalyticsEvent.externalLinkPatreon,
+            url: ExternalUrls.patreon,
+            image: '/assets/images/patreon.png'
+        },
+        {
+            title: 'Github Sponsors',
+            event: AnalyticsEvent.externalLinkGithubSponsors,
+            url: ExternalUrls.githubSponsors,
+            image: '/assets/images/githubSponsors.png'
+        },
+        {
+            title: translate(LocaleKey.paypal).toString(),
+            event: AnalyticsEvent.externalLinkPayPal,
+            url: ExternalUrls.payPal,
+            image: '/assets/images/payPal.png'
+        },
+        {
+            title: translate(LocaleKey.kofi).toString(),
+            event: AnalyticsEvent.externalLinkkofi,
+            url: ExternalUrls.kofi,
+            image: '/assets/images/kofi.png'
+        },
+        {
+            title: 'Brave',
+            event: AnalyticsEvent.externalLinkBat,
+            url: ExternalUrls.bat,
+            image: '/assets/images/bat.png'
+        },
+        {
+            title: translate(LocaleKey.openCollective),
+            event: AnalyticsEvent.externalLinkOpenCollective,
+            url: ExternalUrls.openCollective,
+            image: '/assets/images/openCollective.png'
+        },
+    ];
 
     const title = translate(LocaleKey.donation);
     return (
