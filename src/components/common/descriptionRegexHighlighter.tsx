@@ -69,7 +69,7 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
 
         let nodes: Array<ReactNode> = [];
         let wordChain = '';
-        const words = paragraph.split(' ');
+        const words = paragraph.split(/ |\//);
         for (let wordIndex = 0; wordIndex < words.length; wordIndex++) {
             let word = words[wordIndex];
             let displayWord = word;
