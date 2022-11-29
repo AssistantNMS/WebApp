@@ -46,7 +46,7 @@ export const RandomPortalUnconnected: React.FC<IProps> = (props: IProps) => {
         for (const slotRef of slotRefs) {
             const options = slotRef.current.children;
             const randomOption = Math.floor(
-                Math.random() * portalList.length
+                Math.random() * options.length
             );
             const choosenOption = options[randomOption];
             portalCode.push(choosenOption.getAttribute('data-id'));
@@ -64,32 +64,37 @@ export const RandomPortalUnconnected: React.FC<IProps> = (props: IProps) => {
     }
 
     const displaySlots = () => {
-        return slotArr.map((uuid: string, index: number) => (
-            <div key={`slot-${uuid}-${index}`} className="portal-slot col-2 col-xl-2 col-lg-2 col-md-2 col-sm-3">
-                <div className="portal-slot-wheel noselect">
-                    <div className="wheel-content">
-                        <img
-                            src="/assets/images/portals/dot.png"
-                            alt="portal-spacer"
-                            className="portal-slot-item-placeholder"
-                        />
-                        <div ref={slotRefs[index]} className="disc">
-                            {
-                                portalList.map((portalCode: string, index: number) => (
-                                    <div
-                                        key={`${portalCode}-${index}`}
-                                        data-id={portalCode.toUpperCase()}
-                                        className={`portal-slot-item item-${index}`}
-                                    >
-                                        <img src={getPortalImage(glyphType, index)} alt={portalCode} />
-                                    </div>
-                                ))
-                            }
+        return slotArr.map((uuid: string, index: number) => {
+            let localList = [...portalList, ...portalList];
+            if (index == 0) localList = [portalList[0]];
+            if (index == 1) localList = ['0', '1', '2'];
+            return (
+                <div key={`slot-${uuid}-${index}`} className="portal-slot col-2 col-xl-2 col-lg-2 col-md-2 col-sm-3">
+                    <div className="portal-slot-wheel noselect">
+                        <div className="wheel-content">
+                            <img
+                                src="/assets/images/portals/dot.png"
+                                alt="portal-spacer"
+                                className="portal-slot-item-placeholder"
+                            />
+                            <div ref={slotRefs[index]} className="disc">
+                                {
+                                    localList.map((portalCode: string, index: number) => (
+                                        <div
+                                            key={`${portalCode}-${index}`}
+                                            data-id={portalCode.toUpperCase()}
+                                            className={`portal-slot-item item-${index}`}
+                                        >
+                                            <img src={getPortalImage(glyphType, (index % 16))} alt={portalCode} />
+                                        </div>
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        ));
+            );
+        });
     }
 
     const title = translate(LocaleKey.portalLibrary);

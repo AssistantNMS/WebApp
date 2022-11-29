@@ -145,6 +145,15 @@ body {
         li.active > a {
             background-color: $brand-primary;
         }
+
+        .nav-item:not(.active) {
+            .nav-link {
+                transition: all 250ms ease-in-out;
+                &:hover {
+                    background: #424242;
+                }
+            }
+        }
     }
 
     #searchBar {
