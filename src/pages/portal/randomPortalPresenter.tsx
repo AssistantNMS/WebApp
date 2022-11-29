@@ -32,6 +32,7 @@ export const RandomPortalUnconnected: React.FC<IProps> = (props: IProps) => {
     const portalList = Array.from(Array(16).keys()).map((_: any, index: number) => index.toString(16));
     const glyphType = getPortalImageType(props.useAltGlyphs);
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => getRandomAddressInternal(), []);
 
     const getRandomAddress = () => {
@@ -66,8 +67,8 @@ export const RandomPortalUnconnected: React.FC<IProps> = (props: IProps) => {
     const displaySlots = () => {
         return slotArr.map((uuid: string, index: number) => {
             let localList = [...portalList, ...portalList];
-            if (index == 0) localList = [portalList[0]];
-            if (index == 1) localList = ['0', '1', '2'];
+            if (index === 0) localList = [portalList[0]];
+            if (index === 1) localList = ['0', '1', '2'];
             return (
                 <div key={`slot-${uuid}-${index}`} className="portal-slot col-2 col-xl-2 col-lg-2 col-md-2 col-sm-3">
                     <div className="portal-slot-wheel noselect">
