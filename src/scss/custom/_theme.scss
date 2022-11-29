@@ -185,6 +185,11 @@ body {
 
     .fab-bg-color {
         background-color: $brand-primary;
+        transition: opacity 250ms ease-in-out;
+
+        &.is-disabled {
+            opacity: 0.4;
+        }
     }
 
     .navbar-nav .fab-bg-color,
@@ -286,6 +291,13 @@ body {
     .community-search-bottom-modal-sheet .community-search-chip {
         background-color: lighten($brand-secondary, 10%);
         color: #000;
+    }
+
+    .portal-slot-wheel {
+        .portal-slot-item {
+            border: 1px solid $brand-secondary;
+            background-color: $brand-primary-background !important;
+        }
     }
 }
 
