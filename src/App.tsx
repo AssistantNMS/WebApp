@@ -49,6 +49,7 @@ import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
 import { IStateProps, IStateDispatch } from './App.Redux';
 import { UseNativeApp } from './components/common/useNativeAppPopup';
 import { ContributorsPage } from './pages/other/contributors';
+import { RandomPortal } from './pages/portal/randomPortalPresenter';
 
 interface IProps extends IStateProps, IStateDispatch { }
 
@@ -102,6 +103,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
 
               <Route path={route.portal} element={<PortalListContainer />} />
               <Route path={route.addEditPortal} element={<AddEditPortalContainer />} />
+              <Route path={route.randomPortal} element={<RandomPortal />} />
 
               <Route path={route.communityMission} element={<CommunityMissionContainer />} />
               <Route path={route.communityMissionTimeline} element={<CommunityMissionTimeline />} />

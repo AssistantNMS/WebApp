@@ -599,4 +599,9 @@ export enum LocaleKey {
   foodPreferences = 'foodPreferences',
   favourite = 'favourite',
   hated = 'hated',
+  instructions = 'instructions',
+  nomNomCollaboration = 'nomNomCollaboration',
+  nomNomCollaborationDesc = 'nomNomCollaborationDesc',
+  portalCodeCopied = 'portalCodeCopied',
+  randomPortal = 'randomPortal',
 }

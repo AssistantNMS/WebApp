@@ -1,5 +1,6 @@
 import React from 'react';
 import { columnMultiplierHelper } from '../../../helper/columnHelper';
+import { getPortalEmptyImage, getPortalImage, getPortalImageType } from '../../../helper/portalHelper';
 
 interface IProps {
     useAltGlyphs: boolean;
@@ -75,12 +76,3 @@ export const PortalGlyphKeypadGrid: React.FC<IPortalGlyphGridProps> = (props: IP
         </div>
     );
 }
-
-const getPortalImageType = (useAltGlyph: boolean) => {
-    let type: string = 'white';
-    if (useAltGlyph) type = 'alt';
-    return type;
-};
-const getPortalImage = (type: string, portalImageCode: number) => `/assets/images/portals/${type}/${portalImageCode.toString(16)}.png`;
-const getPortalEmptyImage = (type: string) => `/assets/images/portals/${type}/dot.png`;
-

@@ -28,14 +28,14 @@ export const getMenuSection1 = () => {
     link: routes.language,
     icon: '/assets/images/drawer/language.png',
     iconType: DrawerIconType.Custom,
-    isActive: false
+    isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.contributors).toString(),
     link: routes.contributors,
     icon: '/assets/images/drawer/contributors.png',
     iconType: DrawerIconType.Custom,
-    isActive: false
+    isActive: false,
   });
   menuItems.push(patreonMenuItem());
   menuItems.push({
@@ -43,7 +43,7 @@ export const getMenuSection1 = () => {
     link: routes.donation,
     icon: '/assets/images/drawer/donation.png',
     iconType: DrawerIconType.Custom,
-    isActive: false
+    isActive: false,
   });
   menuItems.push(menuItemSeperator);
   return menuItems;
@@ -75,21 +75,28 @@ export const getMenuSection3 = () => {
     link: routes.cart,
     icon: '/assets/images/drawer/cart.png',
     iconType: DrawerIconType.Custom,
-    isActive: false
+    isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.guides).toString(),
     link: routes.guides,
     icon: '/assets/images/drawer/guide.png',
     iconType: DrawerIconType.Custom,
-    isActive: false
+    isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.portalLibrary).toString(),
     link: routes.portal,
     icon: '/assets/images/drawer/portal.png',
     iconType: DrawerIconType.Custom,
-    isActive: false
+    isActive: false,
+  });
+  menuItems.push({
+    name: translate(LocaleKey.randomPortal).toString(),
+    link: routes.randomPortal,
+    icon: '/assets/images/drawer/randomPortal.png',
+    iconType: DrawerIconType.Custom,
+    isActive: false,
   });
   menuItems.push(communityMissionMenuItem());
   menuItems.push({
@@ -97,28 +104,28 @@ export const getMenuSection3 = () => {
     link: routes.titles,
     icon: 'edit_attributes_sharp',
     iconType: DrawerIconType.Material,
-    isActive: false
+    isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.techTree).toString(),
     link: routes.techTree,
     icon: '/assets/images/drawer/techTree.png',
     iconType: DrawerIconType.Custom,
-    isActive: false
+    isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.communityLinks).toString(),
     link: routes.communityLinks,
     icon: '/assets/images/drawer/communityLinks.png',
     iconType: DrawerIconType.Custom,
-    isActive: false
+    isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.communitySpotlight).toString(),
     link: routes.communitySpotlight,
     icon: 'military_tech_rounded',
     iconType: DrawerIconType.Material,
-    isActive: false
+    isActive: false,
   });
   menuItems.push(menuItemSeperator);
   return menuItems;
@@ -228,28 +235,28 @@ export const getMenuSection5 = (): Array<DrawerMenuItem> => {
     link: routes.about,
     icon: '/assets/images/drawer/about.png',
     iconType: DrawerIconType.Custom,
-    isActive: false
+    isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.feedback).toString(),
     link: "https://tools.nmsassistant.com/feedback",
     icon: 'feedback',
     iconType: DrawerIconType.Material,
-    isActive: false
+    isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.social).toString(),
     link: routes.social,
     icon: '/assets/images/twitter.png',
     iconType: DrawerIconType.Custom,
-    isActive: false
+    isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.settings).toString(),
     link: routes.setting,
     icon: 'settings',
     iconType: DrawerIconType.Material,
-    isActive: false
+    isActive: false,
   });
   return menuItems;
 }
