@@ -17,11 +17,11 @@ export const ExpeditionSeasonTiles: React.FC<IExpeditionSeasonTilesProps> = (pro
     const [pastExpeditionStatus, setPastExpeditionStatus] = useState<NetworkState>(NetworkState.Loading);
 
     useEffect(() => {
-        fetchCurrentExpedition();
+        fetchAllPastExpeditions();
         // eslint-disable-next-line
     }, []);
 
-    const fetchCurrentExpedition = async () => {
+    const fetchAllPastExpeditions = async () => {
         const expeditionsResult = await props.gameItemService.getAllSeasonExpeditions();
         if (!expeditionsResult.isSuccess) {
             setPastExpeditions([]);
@@ -29,7 +29,7 @@ export const ExpeditionSeasonTiles: React.FC<IExpeditionSeasonTilesProps> = (pro
             return;
         }
 
-        setPastExpeditions(expeditionsResult.value.sort((a, b) => new Date(a.StartDate) > new Date(b.EndDate) ? -1 : 1));
+        setPastExpeditions(expeditionsResult.value.sort((a, b) => new Date(a.StartDate) > new Date(b.StartDate) ? -1 : 1));
         setPastExpeditionStatus(NetworkState.Success);
     }
 
