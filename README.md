@@ -53,7 +53,7 @@ After 3 years of development and maintenance, the app was made open source so th
 ### Steps:
 1. Clone this repository
 2. In the directory where the `package.json` file is, run `npm i`
-3. Run the webApp `npm run dev`
+3. Run the webApp `npm start`
 4. View it on [localhost:3000](http://localhost:3000)
 
 <br />
