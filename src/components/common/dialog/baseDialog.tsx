@@ -9,8 +9,8 @@ const customStyles = {
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
-		backgroundColor: '#4a4a4a',
-		borderColor: '#AAA',
+        backgroundColor: '#4a4a4a',
+        borderColor: '#AAA',
     },
 };
 
