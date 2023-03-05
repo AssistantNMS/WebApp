@@ -16,7 +16,7 @@ interface IProps {
 export const RewardFromStarshipScrapTile: React.FC<IProps> = (props: IProps) => {
     const subtitle = starshipScrapHeading(props.starshipScrapItems[0]);
     return (
-        <Link to={route.starshipScrap} data-id="RewardFromStarshipScrapTile" key={`starship-scrap-${props.itemId}`} className="gen-item-container" draggable={false}>
+        <Link to={route.starshipScrap} data-id="RewardFromStarshipScrapTile" key={`starship-scrap-${props.itemId}`} className="gen-item-container noselect" draggable={false}>
             <ImageContainer Name="starshipScrap" Icon={AppImage.starshipScrap} />
             <div className="gen-item-content-container">
                 <TextContainer text={translate(LocaleKey.starshipScrap)} />

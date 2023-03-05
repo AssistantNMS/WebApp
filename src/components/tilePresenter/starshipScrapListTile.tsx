@@ -24,7 +24,7 @@ interface IProps {
 
 export const StarshipScrapListTile: React.FC<IProps> = (props: IProps) => {
     return (
-        <div key={props.scrap.ShipType + props.scrap.ShipClassType + ' ' + props.index} data-id="StarshipScrapListTile" className="gen-item-container pointer" draggable={false} onClick={() => props.setIsExpanded(!props.isExpanded)}>
+        <div key={props.scrap.ShipType + props.scrap.ShipClassType + ' ' + props.index} data-id="StarshipScrapListTile" className="gen-item-container noselect pointer" draggable={false} onClick={() => props.setIsExpanded(!props.isExpanded)}>
             <div className="image-container starship">
                 <img
                     src={AppImage.base + starshipScrapShipImage(props.scrap.ShipType)}
@@ -105,7 +105,7 @@ export const StarshipScrapItemDetailListTileClass: React.FC<IDetailListProps> = 
     }
 
     return (
-        <Link to={`${catalogueItem}/${props.details.Id}`} data-id="StarshipScrapItemDetailListTile" className="gen-item-container" draggable={false}>
+        <Link to={`${catalogueItem}/${props.details.Id}`} data-id="StarshipScrapItemDetailListTile" className="gen-item-container noselect" draggable={false}>
             <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} />
             <div className="gen-item-content-container">
                 <TextContainer text={item.Name} additionalCss={additionalCss + ' mr-4'} />

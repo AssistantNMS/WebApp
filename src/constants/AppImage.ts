@@ -6,6 +6,8 @@ export class AppImage {
     static twitch: string = 'special/twitchAlt.png';
     static quicksilver: string = 'special/quicksilverAlt.png';
     static starshipScrap: string = 'special/starshipScrap.png';
+    static creatureHarvest: string = 'special/creatureHarvest.png';
+    static creatureKill: string = 'special/creatureKill.png';
     static communityMissionProgress: string = 'special/communityMissionProgress.png';
     static cronus: string = 'special/cronus.png';
 

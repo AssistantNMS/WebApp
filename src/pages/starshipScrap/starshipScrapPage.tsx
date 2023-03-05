@@ -79,7 +79,7 @@ export const StarshipScrapPageUnconnected: React.FC<IProps> = (props: IProps) =>
                             (currentIsExpanded === false) && (
                                 <div className="gen-item col-12 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                     <div className="gen-item-container pointer" draggable={false} onClick={() => setExpanded(scrapKey)}>
-                                        <div className="gen-item-content-container">
+                                        <div className="gen-item-content-container noselect">
                                             <TextContainer text={translate(LocaleKey.viewXMore).replace('{0}', (star.ItemDetails.length - 2).toString())} additionalCss="full" />
                                         </div>
                                     </div>

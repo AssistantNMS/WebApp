@@ -9,6 +9,7 @@ import { ChargeByItemListTile } from '../../components/tilePresenter/recharge/ch
 import { RechargeItemListTile } from '../../components/tilePresenter/recharge/rechargeItemListTile';
 import { RequiredItemDetailsListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemDetailsListTile';
 import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
+import { RewardFromCreatureHarvestTile } from '../../components/tilePresenter/rewardFromTile/rewardFromCreatureHarvestPresenter';
 import { RewardFromSeasonalExpeditionTile } from '../../components/tilePresenter/rewardFromTile/rewardFromSeasonalExpeditionPresenter';
 import { RewardFromStarshipScrapTile } from '../../components/tilePresenter/rewardFromTile/rewardFromStarshipScrapPresenter';
 import { RewardFromTwitchTile } from '../../components/tilePresenter/rewardFromTile/rewardFromTwitchPresenter';
@@ -17,6 +18,7 @@ import { ProceduralStatBonusItemListTile, StatBonusItemListTile } from '../../co
 import { IdPrefix } from '../../constants/IdPrefix';
 import * as Route from '../../constants/Route';
 import { UsageKey } from '../../constants/UsageKey';
+import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
@@ -293,7 +295,11 @@ export const displayExtraDetailsSection = (gameItem: GameItemModel) => {
 const usageContains = (usages: Array<string>, usageKey: string): boolean =>
     usages.filter((u) => u.includes(usageKey)).length > 0;
 
-export const displayRewardFrom = (item: GameItemModel, starshipScrapItems: Array<StarshipScrap>) => {
+export const displayRewardFrom = (
+    item: GameItemModel,
+    starshipScrapItems: Array<StarshipScrap>,
+    creatureHarvests: Array<CreatureHarvest>
+) => {
     const usages: Array<string> = item.Usages;
     if (usages == null || usages.length < 1) return null;
     // if (!usages.includes(UsageKey.isNoLongerObtainable)) return null;
@@ -335,6 +341,17 @@ export const displayRewardFrom = (item: GameItemModel, starshipScrapItems: Array
                 itemId={item.Id}
                 starshipScrapItems={starshipScrapItems}
             />);
+        }
+
+        if (usageContains(usages, UsageKey.hasCreatureHarvest)) {
+            const localCreatureHarvs = creatureHarvests ?? [];
+            if (localCreatureHarvs.length > 0) {
+                for (const localCreatureHarv of localCreatureHarvs) {
+                    nodes.push(<RewardFromCreatureHarvestTile
+                        creatureHarvest={localCreatureHarv}
+                    />);
+                }
+            }
         }
     } catch (ex) {
 
