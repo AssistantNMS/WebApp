@@ -126,7 +126,7 @@
 		}
 	</style>
 
-	<script>
+	<script id="has-loaded-check">
 		const millisecondsBeforeCheck = 2500;
 		var checkIfAppHasLoaded = () => {
 			const loadingElement = document.getElementById('app-loading');
@@ -142,6 +142,7 @@
 
 <body>
 	<noscript>You need to enable JavaScript to run this app.</noscript>
+	<div id="overwolf-header"></div>
 	<div id="nms-app">
 		<div class="full-page-loader opacity80"></div>
 		<div id="app-loading" class="full-page-loader">
