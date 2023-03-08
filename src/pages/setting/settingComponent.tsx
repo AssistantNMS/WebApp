@@ -191,7 +191,7 @@ export const ControlPlatformSettingTile: React.FC<IControlPlatformProp> = (props
                 <div className="form-check">
                     <label className="form-check-label custom">
                         <p>{props.title}:</p>&nbsp;
-                        <img className="platform-img" src={options.find(opt => opt.value === props.value)?.imgUrl ?? AppImage.platformPc} alt="platform" />
+                        <img className="platform-img" src={options.find(opt => opt.value === props.value)?.imgUrl ?? AppImage.platformPc()} alt="platform" />
                     </label>
                 </div>
                 <div className="dropdown">

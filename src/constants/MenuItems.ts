@@ -2,13 +2,14 @@ import { DrawerMenuItem } from "../contracts/DrawerMenuItem";
 import { DrawerIconType } from "../contracts/enum/DrawerIconType";
 import { LocaleKey } from "../localization/LocaleKey";
 import { translate } from "../localization/Translate";
+import { AppImage } from "./AppImage";
 import { CatalogueType } from "./CatalogueType";
 import { catalogue, communityMission, favourites, nmsfm, patreon, seasonExpedition, whatIsNew } from "./Route";
 
 export const allItemsMenuItem = (): DrawerMenuItem => ({
     name: translate(LocaleKey.allItems).toString(),
     link: `${catalogue}/${CatalogueType.rawMaterials}-${CatalogueType.craftedProducts}-${CatalogueType.tradeItems}-${CatalogueType.buildings}-${CatalogueType.curiosity}-${CatalogueType.cooking}-${CatalogueType.technology}-${CatalogueType.technologyModule}-${CatalogueType.constructedTechnology}-${CatalogueType.others}-${CatalogueType.proceduralProducts}`,
-    icon: '/assets/images/drawer/crafted.png',
+    icon: `${AppImage.drawer()}/crafted.png`,
     iconType: DrawerIconType.Custom,
     isActive: false
 });
@@ -16,7 +17,7 @@ export const allItemsMenuItem = (): DrawerMenuItem => ({
 export const whatIsNewMenuItem = (): DrawerMenuItem => ({
     name: translate(LocaleKey.whatIsNew).toString(),
     link: whatIsNew,
-    icon: '/assets/images/drawer/whatIsNew.png',
+    icon: `${AppImage.drawer()}/whatIsNew.png`,
     iconType: DrawerIconType.Custom,
     isActive: false
 });
@@ -24,7 +25,7 @@ export const whatIsNewMenuItem = (): DrawerMenuItem => ({
 export const patreonMenuItem = (): DrawerMenuItem => ({
     name: translate(LocaleKey.patrons).toString(),
     link: patreon,
-    icon: '/assets/images/patreon.png',
+    icon: `${AppImage.base()}/patreon.png`,
     iconType: DrawerIconType.Custom,
     isActive: false
 });
@@ -32,7 +33,7 @@ export const patreonMenuItem = (): DrawerMenuItem => ({
 export const communityMissionMenuItem = (): DrawerMenuItem => ({
     name: translate(LocaleKey.communityMission).toString(),
     link: communityMission,
-    icon: '/assets/images/drawer/communityMission.png',
+    icon: `${AppImage.drawer()}/communityMission.png`,
     iconType: DrawerIconType.Custom,
     isActive: false
 });
@@ -40,7 +41,7 @@ export const communityMissionMenuItem = (): DrawerMenuItem => ({
 export const catalogueMenuItem = (): DrawerMenuItem => ({
     name: translate(LocaleKey.catalogue).toString(),
     link: catalogue,
-    icon: '/assets/images/drawer/catalogue.png',
+    icon: `${AppImage.drawer()}/catalogue.png`,
     iconType: DrawerIconType.Custom,
     isActive: false,
 });

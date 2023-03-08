@@ -76,7 +76,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
           <NavBarFake />
           <AnimatePresence exitBeforeEnter>
             <Routes location={location} key={location.key + props.selectedLanguage}>
-              <Route path={route.home} element={<HomePresenter />} />
+              <Route path={route.home()} element={<HomePresenter />} />
               <Route path={route.setting} element={<SettingPresenter />} />
               <Route path={route.about} element={<AboutPresenter />} />
               <Route path={route.language} element={<LanguagePresenter />} />

@@ -8,6 +8,7 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { DataJsonService } from '../../services/json/DataJsonService';
+import { AppImage } from '../../constants/AppImage';
 
 interface IWithDepInj {
     dataJsonService: DataJsonService;
@@ -41,7 +42,7 @@ const SocialPresenterUnconnect: React.FC<IProps> = (props: IProps) => {
                                 <CardButton
                                     title={social.name}
                                     url={social.link}
-                                    imageUrl={`/assets/images/${social.icon}`}
+                                    imageUrl={`${AppImage.base()}${social.icon}`}
                                 />
                             </div>
                         );

@@ -29,7 +29,7 @@ export const UseNativeAppUnconnected: React.FC<ISegmentedControlProps> = (props:
             <div className="use-mobile-popup use-mobile-popup-visibility" key={props.showMobileTip.toString()}>
                 <div className="use-mobile-popup-content">
                     <div className="image-content">
-                        <img src={AppImage.nativeApp} alt="Native app" />
+                        <img src={AppImage.nativeApp()} alt="Native app" />
                     </div>
                     <div className="text-content">
                         <h3>Do you want a better mobile experience?</h3>

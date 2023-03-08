@@ -113,7 +113,7 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
                         lookupResult = props.controlLookup?.filter?.(cl => cl.Key.includes(lookupKey));
                     }
                     let lookupResKey = 'Unknown';
-                    let lookupResIcon = AppImage.unknownButton;
+                    let lookupResIcon = AppImage.unknownButton();
                     if (lookupResult != null && lookupResult.length > 0 && lookupResult[0].Icon.length > 0) {
                         lookupResKey = lookupResult[0].Key;
                         lookupResIcon = lookupResult[0].Icon;
@@ -125,7 +125,7 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
                         >
                             <img
                                 className="descrip-img"
-                                src={`/${AppImage.controls}${lookupResIcon}`}
+                                src={`/${AppImage.controls()}${lookupResIcon}`}
                                 alt={lookupResKey}
                                 data-lookup-key={lookupKey}
                             />

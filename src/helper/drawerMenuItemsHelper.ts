@@ -26,14 +26,14 @@ export const getMenuSection1 = () => {
   menuItems.push({
     name: translate(LocaleKey.language).toString(),
     link: routes.language,
-    icon: '/assets/images/drawer/language.png',
+    icon: `${AppImage.drawer()}/language.png`,
     iconType: DrawerIconType.Custom,
     isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.contributors).toString(),
     link: routes.contributors,
-    icon: '/assets/images/drawer/contributors.png',
+    icon: `${AppImage.drawer()}/contributors.png`,
     iconType: DrawerIconType.Custom,
     isActive: false,
   });
@@ -41,7 +41,7 @@ export const getMenuSection1 = () => {
   menuItems.push({
     name: translate(LocaleKey.donation).toString(),
     link: routes.donation,
-    icon: '/assets/images/drawer/donation.png',
+    icon: `${AppImage.drawer()}/donation.png`,
     iconType: DrawerIconType.Custom,
     isActive: false,
   });
@@ -73,28 +73,28 @@ export const getMenuSection3 = () => {
   menuItems.push({
     name: translate(LocaleKey.cart).toString(),
     link: routes.cart,
-    icon: '/assets/images/drawer/cart.png',
+    icon: `${AppImage.drawer()}/cart.png`,
     iconType: DrawerIconType.Custom,
     isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.guides).toString(),
     link: routes.guides,
-    icon: '/assets/images/drawer/guide.png',
+    icon: `${AppImage.drawer()}/guide.png`,
     iconType: DrawerIconType.Custom,
     isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.portalLibrary).toString(),
     link: routes.portal,
-    icon: '/assets/images/drawer/portal.png',
+    icon: `${AppImage.drawer()}/portal.png`,
     iconType: DrawerIconType.Custom,
     isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.randomPortal).toString(),
     link: routes.randomPortal,
-    icon: '/assets/images/drawer/randomPortal.png',
+    icon: `${AppImage.drawer()}/randomPortal.png`,
     iconType: DrawerIconType.Custom,
     isActive: false,
   });
@@ -109,14 +109,14 @@ export const getMenuSection3 = () => {
   menuItems.push({
     name: translate(LocaleKey.techTree).toString(),
     link: routes.techTree,
-    icon: '/assets/images/drawer/techTree.png',
+    icon: `${AppImage.drawer()}/techTree.png`,
     iconType: DrawerIconType.Custom,
     isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.communityLinks).toString(),
     link: routes.communityLinks,
-    icon: '/assets/images/drawer/communityLinks.png',
+    icon: `${AppImage.drawer()}/communityLinks.png`,
     iconType: DrawerIconType.Custom,
     isActive: false,
   });
@@ -139,7 +139,7 @@ export const getMenuSection4 = (): Array<DrawerMenuItem> => {
       return {
         name: ee.name,
         link: routes.seasonExpedition + '/' + ee.seasonId,
-        icon: `/${ee.icon}`,
+        icon: `${ee.icon}`,
         iconType: DrawerIconType.Custom,
         isActive: false,
       };
@@ -148,13 +148,13 @@ export const getMenuSection4 = (): Array<DrawerMenuItem> => {
   menuItems.push({
     name: translate(LocaleKey.weekendMission).toString(),
     link: routes.weekendMission,
-    icon: '/assets/images/drawer/weekendMission.png',
+    icon: `${AppImage.drawer()}/weekendMission.png`,
     iconType: DrawerIconType.Custom,
     subs: WeekendMissions.map((wm: IWeekendMission) => {
       return {
         name: wm.name,
         link: routes.weekendMissionDetails.replace(routes.weekendMissionParam, wm.id),
-        icon: '/assets/images/drawer/weekendMission.png',
+        icon: `${AppImage.drawer()}/weekendMission.png`,
         iconType: DrawerIconType.Custom,
         isActive: false,
       };
@@ -173,7 +173,7 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
     return {
       name: ee.name,
       link: routes.seasonExpedition + '/' + ee.seasonId,
-      icon: `/${ee.icon}`,
+      icon: `${ee.icon}`,
       iconType: DrawerIconType.Custom,
       isActive: false,
     };
@@ -186,7 +186,7 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
         return {
           name: es.Title,
           link: routes.seasonExpedition + '/' + es.Id,
-          icon: `/${AppImage.base}${es.Icon}`,
+          icon: `${AppImage.base()}${es.Icon}`,
           iconType: DrawerIconType.Custom,
           isActive: false,
         };
@@ -204,13 +204,13 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
   menuItems.push({
     name: translate(LocaleKey.weekendMission).toString(),
     link: routes.weekendMission,
-    icon: '/assets/images/drawer/weekendMission.png',
+    icon: `${AppImage.drawer()}/weekendMission.png`,
     iconType: DrawerIconType.Custom,
     subs: WeekendMissions.map((wm: IWeekendMission) => {
       return {
         name: wm.name,
         link: routes.weekendMissionDetails.replace(routes.weekendMissionParam, wm.id),
-        icon: '/assets/images/drawer/weekendMission.png',
+        icon: `${AppImage.drawer()}/weekendMission.png`,
         iconType: DrawerIconType.Custom,
         isActive: false,
       };
@@ -233,7 +233,7 @@ export const getMenuSection5 = (): Array<DrawerMenuItem> => {
   menuItems.push({
     name: translate(LocaleKey.about).toString(),
     link: routes.about,
-    icon: '/assets/images/drawer/about.png',
+    icon: `${AppImage.drawer()}/about.png`,
     iconType: DrawerIconType.Custom,
     isActive: false,
   });
@@ -247,7 +247,7 @@ export const getMenuSection5 = (): Array<DrawerMenuItem> => {
   menuItems.push({
     name: translate(LocaleKey.social).toString(),
     link: routes.social,
-    icon: '/assets/images/twitter.png',
+    icon: './assets/images/twitter.png',
     iconType: DrawerIconType.Custom,
     isActive: false,
   });

@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect, useState } from 'react';
+import { AppImage } from '../../../constants/AppImage';
 import { AssistantAppLinkItem, AssistantAppLinks } from '../../../contracts/data/assistantAppLinks';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { DataJsonService } from '../../../services/json/DataJsonService';
@@ -32,7 +33,7 @@ const AssistantAppsContentUnconnected: React.FC<IProps> = (props: IProps) => {
         <>
             <div className="generic-item-list row mb-2em">
                 <div className="col-12">
-                    <img src="/assets/images/assistantApps.png" alt="AssistantApps" style={{ maxWidth: '100px' }} />
+                    <img src={`${AppImage.base()}assistantApps.png`} alt="AssistantApps" style={{ maxWidth: '100px' }} />
                     <br />
                     <h3>AssistantApps</h3>
                     <p>This app is part of the AssistantApps range</p>

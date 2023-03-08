@@ -14,7 +14,7 @@ export const TwitchCampaignTile = (props: TwitchDrop, index: number) => {
     return (
         <Link key={props.Id + ' ' + index} data-id="TwitchCampaignTile" className="gen-item-container"
             to={route.twitchDropsDetails.replaceAll(route.twitchDropsParam, props.Id.toString())}>
-            <ImageContainer Name="TwitchDrop" Icon={AppImage.twitch} />
+            <ImageContainer Name="TwitchDrop" Icon={AppImage.twitch()} />
             <div className="gen-item-content-container">
                 <TextContainer text={translate(LocaleKey.twitchCampaignNum).replaceAll('{0}', props.Id.toString())} />
                 <div className="quantity-container">

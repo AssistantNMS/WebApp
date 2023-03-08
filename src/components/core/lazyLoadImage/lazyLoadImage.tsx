@@ -1,5 +1,6 @@
 
 import * as React from 'react';
+import { AppImage } from '../../../constants/AppImage';
 import { ILazyLoadImageProps } from './ILazyLoadImageProps';
 const ReactLazy = require('react-lazy-load-image-component');
 
@@ -24,11 +25,11 @@ export class LazyLoadImage extends React.Component<ILazyLoadImageProps, IState> 
 
     render() {
         const { src, notFoundImageSrc, effect, ...unused } = this.props;
-        const notFoundImageSource = notFoundImageSrc || '/assets/images/unknown.png';
+        const notFoundImageSource = notFoundImageSrc || `${AppImage.base()}unknown.png`;
         const imageSource = (src && src.length > 5) ? src : notFoundImageSrc;
         return (
             <ReactLazy.LazyLoadImage
-                placeholderSrc={'/assets/images/loader.svg'}
+                placeholderSrc={`${AppImage.base()}loader.svg`}
                 src={this.state.imageNotFound ? notFoundImageSource : imageSource}
                 title={this.props.title ? this.props.title : this.props.alt}
                 height={this.props.height}

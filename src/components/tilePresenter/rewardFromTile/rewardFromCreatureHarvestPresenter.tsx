@@ -34,7 +34,7 @@ export const RewardFromCreatureHarvestTile: React.FC<IProps> = (props: IProps) =
 
     const content = (
         <>
-            <ImageContainer Name="creatureHarvest" Icon={(props.creatureHarvest.HarvestType === 0) ? AppImage.creatureKill : AppImage.creatureHarvest} />
+            <ImageContainer Name="creatureHarvest" Icon={(props.creatureHarvest.HarvestType === 0) ? AppImage.creatureKill() : AppImage.creatureHarvest()} />
             <div className="gen-item-content-container" data-id="RewardFromCreatureHarvestTile">
                 <TextContainer text={props.creatureHarvest.CreatureType} additionalCss={displayTextFull ? 'full' : ''} />
                 {

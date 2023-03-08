@@ -119,7 +119,7 @@ export const CommunityMissionPresenter: React.FC<IProps> = (props: IProps) => {
                             {
                                 (qsReward?.Icon != null) &&
                                 <span>
-                                    <img src={'/' + AppImage.base + qsReward.Icon} alt="special community mission" height="50px" />
+                                    <img src={'/' + AppImage.base() + qsReward.Icon} alt="special community mission" height="50px" />
                                     &nbsp;&nbsp;
                                 </span>
                             }

@@ -39,7 +39,7 @@ export const CommunityMissionProgressListTile = () => {
     return (
         <BasicLink key={ExternalUrls.communityMissionProgress} data-id="CommunityMissionProgressListTile"
             href={ExternalUrls.communityMissionProgress} additionalClassNames="contributor gen-item-container">
-            <ImageContainer Name="CommunityMissionProgress" Icon={AppImage.communityMissionProgress} />
+            <ImageContainer Name="CommunityMissionProgress" Icon={AppImage.communityMissionProgress()} />
             <div className="gen-item-content-container">
                 <TextContainer text="Community Mission Progress Tracker" />
                 <div className="quantity-container">

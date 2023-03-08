@@ -244,10 +244,10 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         if (itemDetail.BaseValueUnits > 1) {
             switch (itemDetail.CurrencyType) {
                 case CurrencyType.CREDITS:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.units, tooltip: 'Units' });
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.units(), tooltip: 'Units' });
                     break;
                 case CurrencyType.QUICKSILVER:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.quicksilverForChips, tooltip: 'Quicksilver' });
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.quicksilverForChips(), tooltip: 'Quicksilver' });
                     break;
             }
         }
@@ -257,13 +257,13 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             switch (itemDetail.BlueprintCostType) {
                 case CurrencyType.NANITES:
                     const bpCostText = translate(LocaleKey.blueprintCost);
-                    additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: AppImage.nanites, tooltip: 'Nanites' });
+                    additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: AppImage.nanites(), tooltip: 'Nanites' });
                     break;
                 case CurrencyType.SALVAGEDDATA:
-                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.salvagedData, tooltip: 'Salvaged Data' });
+                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.salvagedData(), tooltip: 'Salvaged Data' });
                     break;
                 case CurrencyType.FACTORYOVERRIDE:
-                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.factoryOverride, tooltip: 'Factory Override Unit' });
+                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.factoryOverride(), tooltip: 'Factory Override Unit' });
                     break;
                 case CurrencyType.NONE:
                 default:

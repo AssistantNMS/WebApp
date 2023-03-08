@@ -5,9 +5,10 @@ import { Guide } from '../../contracts/guide/guide';
 
 export class BaseJsonService {
   protected async getAsset<T>(url: string): Promise<ResultWithValue<T>> {
+    const urlPrefix = (window.config?.useOverwolfRoutes) ? 'https://app.nmsassistant.com/assets' : '/assets';
     try {
       const result = await axios.request<T>({
-        url: `/assets/${url}`
+        url: `${urlPrefix}/${url}`
       });
       return {
         isSuccess: true,
@@ -30,8 +31,9 @@ export class BaseJsonService {
   }
 
   protected async getJsonFromAssets<T>(jsonFileName: string) {
+    const urlPrefix = (window.config?.useOverwolfRoutes) ? 'https://app.nmsassistant.com/assets' : '/assets';
     const jsonString = await axios.request<T>({
-      url: `/assets/${jsonFileName}.json`
+      url: `${urlPrefix}/${jsonFileName}.json`
     });
     return jsonString.data;
   }

@@ -8,6 +8,7 @@ import { HeadComponent } from '../../components/core/headComponent';
 import { BasicLink } from '../../components/core/link';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { BaseFloatingActionButton } from '../../components/floatingActionButton/baseFloatingActionButton';
+import { AppImage } from '../../constants/AppImage';
 import { ExternalUrls } from '../../constants/ExternalUrls';
 import { newGuid } from '../../helper/guidHelper';
 import { getPortalImage, getPortalImageType } from '../../helper/portalHelper';
@@ -74,7 +75,7 @@ export const RandomPortalUnconnected: React.FC<IProps> = (props: IProps) => {
                     <div className="portal-slot-wheel noselect">
                         <div className="wheel-content">
                             <img
-                                src="/assets/images/portals/dot.png"
+                                src={`${AppImage.base()}portals/dot.png`}
                                 alt="portal-spacer"
                                 className="portal-slot-item-placeholder"
                             />

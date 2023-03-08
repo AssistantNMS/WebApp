@@ -17,7 +17,7 @@ export const RewardFromStarshipScrapTile: React.FC<IProps> = (props: IProps) => 
     const subtitle = starshipScrapHeading(props.starshipScrapItems[0]);
     return (
         <Link to={route.starshipScrap} data-id="RewardFromStarshipScrapTile" key={`starship-scrap-${props.itemId}`} className="gen-item-container noselect" draggable={false}>
-            <ImageContainer Name="starshipScrap" Icon={AppImage.starshipScrap} />
+            <ImageContainer Name="starshipScrap" Icon={AppImage.starshipScrap()} />
             <div className="gen-item-content-container">
                 <TextContainer text={translate(LocaleKey.starshipScrap)} />
                 <div className="quantity-container">{subtitle}</div>
@@ -64,7 +64,7 @@ export const starshipScrapClassType = (shipClassType: string): string => {
 }
 
 export const starshipScrapShipImage = (shipType: string): string => {
-    let icon = AppImage.starshipScrap;
+    let icon = AppImage.starshipScrap();
     if (shipType != null) {
         if (shipType === 'Fighter') icon = 'other/162.png';
         if (shipType === 'Science') icon = 'other/129.png';
@@ -77,10 +77,10 @@ export const starshipScrapShipImage = (shipType: string): string => {
 export const starshipScrapShipClassImage = (shipClassType: string): string => {
     let icon: string = '';
     if (shipClassType != null) {
-        if (shipClassType === 'S') icon = AppImage.sclass;
-        if (shipClassType === 'A') icon = AppImage.aclass;
-        if (shipClassType === 'B') icon = AppImage.bclass;
-        if (shipClassType === 'C') icon = AppImage.cclass;
+        if (shipClassType === 'S') icon = AppImage.sclass();
+        if (shipClassType === 'A') icon = AppImage.aclass();
+        if (shipClassType === 'B') icon = AppImage.bclass();
+        if (shipClassType === 'C') icon = AppImage.cclass();
     }
     return icon;
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AppImage } from "../../../constants/AppImage";
 import { BottomModalSheet } from '../dialog/bottomModalSheet';
 import { AssistantAppsContent } from './assistantAppsContent';
 
@@ -17,7 +18,7 @@ export const AssistantAppsAboutDrawerTilePresenter: React.FC<IProps> = (props: I
         <>
             <li className="nav-item" draggable="false" onClick={toggleOpenModal}>
                 <a href="https://assistantapps.com" target="_blank" rel="noopener noreferrer" className="nav-link">
-                    <img className="custom-icons" src="/assets/images/assistantApps.png" alt="/assets/images/assistantApps.png" />
+                    <img className="custom-icons" src={`${AppImage.base()}assistantApps.png`} alt="AssistantApps" />
                     <p>AssistantApps</p>
                 </a>
             </li>

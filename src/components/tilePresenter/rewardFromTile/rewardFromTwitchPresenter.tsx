@@ -18,7 +18,7 @@ export const RewardFromTwitchTile: React.FC<IProps> = (props: IProps) => {
 
     return (
         <Link to={url} data-id="RewardFromTwitchTile" key={`twitch-${props.campaignId}`} className="gen-item-container" draggable={false}>
-            <ImageContainer Name="Twitch" Icon={AppImage.twitch} />
+            <ImageContainer Name="Twitch" Icon={AppImage.twitch()} />
             <div className="gen-item-content-container">
                 <TextContainer text={text} />
                 <div className="quantity-container">{descrip}</div>

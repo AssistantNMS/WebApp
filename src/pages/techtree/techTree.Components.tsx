@@ -112,15 +112,15 @@ export const TechTreeNodeRenderer: React.FC<ITechTreeNodeProps> = (props: ITechT
     const costType: any = CurrencyType[props.costType];
     if (costType === Number(CurrencyType.Nanites)) {
         costTypeString = 'Nanites';
-        costReactNode = (<img src={AppImage.nanites} className="tiny" alt={costTypeString} draggable={false} />);
+        costReactNode = (<img src={AppImage.nanites()} className="tiny" alt={costTypeString} draggable={false} />);
     }
     if (costType === Number(CurrencyType.SalvagedData)) {
         costTypeString = 'Salvaged Data';
-        costReactNode = (<img src={AppImage.salvagedData} className="tiny" alt={costTypeString} draggable={false} />);
+        costReactNode = (<img src={AppImage.salvagedData()} className="tiny" alt={costTypeString} draggable={false} />);
     }
     if (costType === Number(CurrencyType.FactoryOverride)) {
         costTypeString = 'Factory Override';
-        costReactNode = (<img src={AppImage.factoryOverride} className="tiny" alt={costTypeString} draggable={false} />);
+        costReactNode = (<img src={AppImage.factoryOverride()} className="tiny" alt={costTypeString} draggable={false} />);
     }
 
     return (

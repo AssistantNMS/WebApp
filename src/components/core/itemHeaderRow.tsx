@@ -8,6 +8,7 @@ import { LazyLoadImage } from './lazyLoadImage/lazyLoadImage';
 import { DecriptionRegexHighlightText } from '../common/descriptionRegexHighlighter';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { UsageKey } from '../../constants/UsageKey';
+import { AppImage } from '../../constants/AppImage';
 
 interface IWithDepInj {
     toastService: ToastService;
@@ -43,7 +44,7 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                 style={{ backgroundColor: `#${props.Colour}`, position: 'relative' }}>
                 {
                     (props?.Icon != null)
-                        ? <LazyLoadImage src={`/assets/images/${props?.Icon ?? ''}`} alt={name} style={{ maxWidth: '100%' }} />
+                        ? <LazyLoadImage src={`${AppImage.gameItem()}/${props?.Icon ?? ''}`} alt={name} style={{ maxWidth: '100%' }} />
                         : null
                 }
                 {

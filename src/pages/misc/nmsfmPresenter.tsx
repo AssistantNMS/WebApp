@@ -13,6 +13,7 @@ import { NmsfmTrackListTile } from '../../components/tilePresenter/nmsfmTrackLis
 import { NetworkState } from '../../constants/NetworkState';
 import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTrackDataViewModel';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { AppImage } from '../../constants/AppImage';
 
 interface IProps {
     trackListIsOpen: boolean;
@@ -46,7 +47,7 @@ export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
                 <div className="container full pt1">
                     <div className="row">
                         <div className="col-12">
-                            <img src="/assets/images/special/nmsfm.png" alt="nmsfm" style={{ maxHeight: '50vh' }} />
+                            <img src={`${AppImage.base()}special/nmsfm.png`} alt="nmsfm" style={{ maxHeight: '50vh' }} />
                             <div className="view-queue">
                                 <CustomTooltip tooltipText="View tracks" position="left" theme="light">
                                     <i className="material-icons action-icon noselect pointer"

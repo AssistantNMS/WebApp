@@ -1,14 +1,13 @@
 import React, { DOMAttributes } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createStore } from 'redux';
+import { legacy_createStore as createStore } from 'redux';
 import { Provider as StateProvider } from 'react-redux';
 import { toast, ToastContainer } from 'react-toastify';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 import { App } from './App';
 import { UpdateButton } from './components/updateButton';
 import { modalSetup } from './components/common/dialog/baseDialog';
-import { anyObject } from './helper/typescriptHacks';
 import { DependencyInjectionProvider } from './integration/dependencyInjection';
 import { initLocalization } from './integration/i18n';
 import { initAnalytics } from './integration/analytics';
@@ -48,7 +47,7 @@ store.subscribe(() => saveStateToLocalStorage(store));
 window.config = window.config || {};
 getJSON('/assets/config.json', (status: boolean, response: string) => {
     window.config = (status === true)
-        ? (response || anyObject)
+        ? (response ?? defaultConfig)
         : defaultConfig;
 
     if (window.config.consoleLogDebug) console.log('Config', window.config);
@@ -60,21 +59,29 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
     const container = document.getElementById(reactAppId);
     const root = createRoot(container!);
 
+    const innerApp = (
+        <>
+            <App />
+            <ToastContainer
+                position="bottom-right"
+                theme="colored"
+                autoClose={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                draggable
+            />
+        </>
+    );
+
+    let appWithRouter = (window.config.useOverwolfRoutes || true)
+        ? (<HashRouter>{innerApp}</HashRouter>)
+        : (<BrowserRouter>{innerApp}</BrowserRouter>);
+
     root.render(
         <DependencyInjectionProvider>
             <StateProvider store={store}>
-                <BrowserRouter>
-                    <App />
-                    <ToastContainer
-                        position="bottom-right"
-                        theme="colored"
-                        autoClose={false}
-                        newestOnTop={false}
-                        closeOnClick
-                        rtl={false}
-                        draggable
-                    />
-                </BrowserRouter>
+                {appWithRouter}
             </StateProvider>
         </DependencyInjectionProvider>
     );

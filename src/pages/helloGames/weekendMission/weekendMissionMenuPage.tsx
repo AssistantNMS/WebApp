@@ -9,6 +9,7 @@ import { ExternalUrls } from '../../../constants/ExternalUrls';
 import * as Routes from '../../../constants/Route';
 import { WeekendMissions } from '../../../constants/WeekendMission';
 import { LocaleKey } from '../../../localization/LocaleKey';
+import { AppImage } from '../../../constants/AppImage';
 
 interface IProps { }
 
@@ -17,7 +18,7 @@ export const WeekendMissionMenuPresenter: React.FC<IProps> = (props: IProps) => 
     const weekendMissionCard = (title: string, imageName: string, credits: string, seasonId: any, external?: string) => {
         if (external != null) {
             return (
-                <a href={external} target="_blank" rel="noopener noreferrer" className={classNames('col-12 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-cs-12 weekend-mission-card')} style={{ backgroundImage: `url(/assets/images/${imageName})` }}>
+                <a href={external} target="_blank" rel="noopener noreferrer" className={classNames('col-12 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-cs-12 weekend-mission-card')} style={{ backgroundImage: `url(${AppImage.base()}${imageName})` }}>
                     <p className="mt-2 mr-1 noselect">{credits}</p>
                     <h3 className="noselect bottom-text">{title}</h3>
                 </a>
@@ -28,7 +29,7 @@ export const WeekendMissionMenuPresenter: React.FC<IProps> = (props: IProps) => 
             <Link
                 to={Routes.weekendMissionDetails.replace(Routes.weekendMissionParam, seasonId)}
                 className={classNames('col-12 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-cs-12 weekend-mission-card pointer')}
-                style={{ backgroundImage: `url(/assets/images/${imageName})` }}
+                style={{ backgroundImage: `url(${AppImage.base()}${imageName})` }}
             >
                 <p className="mt-2 mr-1 noselect">{credits}</p>
                 <h3 className="noselect bottom-text">{title}</h3>

@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import React, { ReactNode, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
+import { AppImage } from '../../../constants/AppImage';
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
 import { getMenuSection1, getMenuSection2, getMenuSection3, getMenuSection4, getMenuSection4Async, getMenuSection5, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
@@ -133,7 +134,7 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
             <div className="sidebar-wrapper ps-theme-default">
                 <ul className="nav">
                     <div className="logo">
-                        <Link to="/" draggable={false}><img src="/assets/images/DrawerHeader.png" draggable={false} alt="drawerHeader" /></Link>
+                        <Link to="/" draggable={false}><img src={`${AppImage.base()}DrawerHeader.png`} draggable={false} alt="drawerHeader" /></Link>
                     </div>
                     {renderMenuItems(menuItems ?? [])}
                     <AssistantAppsAboutDrawerTilePresenter />

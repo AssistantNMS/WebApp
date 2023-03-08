@@ -3,6 +3,7 @@ import * as React from 'react';
 import { TextContainer } from '../../common/tile/textContainer';
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { LazyLoadImage } from '../lazyLoadImage/lazyLoadImage';
+import { AppImage } from '../../../constants/AppImage';
 
 
 export const Loading: React.FC = () => {
@@ -14,7 +15,7 @@ export const Loading: React.FC = () => {
                     <ul className="cssload-flex-container">
                         <li style={{ listStyleType: 'none' }}>
                             <img
-                                src="/assets/images/loader.svg"
+                                src={`${AppImage.base()}loader.svg`}
                                 draggable="false"
                                 alt="loading-animation"
                             />
@@ -37,7 +38,7 @@ export const SmallLoading: React.FC<ISmallLoadingProps> = (props: ISmallLoadingP
             <div className="row">
                 <div className="col-12" style={{ textAlign: 'center' }}>
                     <img
-                        src="/assets/images/loader.svg"
+                        src={`${AppImage.base()}loader.svg`}
                         draggable="false"
                         alt="loading-animation"
                         style={{ maxWidth: props?.maxWidth ?? '100px' }}
@@ -56,7 +57,7 @@ export const TileLoading = () => {
     return (
         <div className="gen-item-container">
             <div className="image-container" style={{ paddingRight: '1em' }}>
-                <LazyLoadImage src="/assets/images/loader.svg" alt="loading" draggable={false} style={{
+                <LazyLoadImage src={`${AppImage.base()}loader.svg`} alt="loading" draggable={false} style={{
                     width: '100px', maxHeight: '100px',
                     padding: '0.25em 1em'
                 }} />

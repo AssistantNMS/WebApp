@@ -32,7 +32,7 @@ export const PlatformFloatingActionButton: React.FC<IPlatformFabProp> = (props: 
             <BaseFloatingActionButton
                 keyString={props.dataKey}
                 tooltipText={translate(LocaleKey.platform)}
-                icon={<img style={{ height: '80%', width: '80%' }} src={optionsAlt.find(opt => opt.value === props.value)?.imgUrl ?? AppImage.platformPc} alt="platform" />}
+                icon={<img style={{ height: '80%', width: '80%' }} src={optionsAlt.find(opt => opt.value === props.value)?.imgUrl ?? AppImage.platformPc()} alt="platform" />}
                 onClick={toggleDropdown}
             />
             <div className="dropdown">

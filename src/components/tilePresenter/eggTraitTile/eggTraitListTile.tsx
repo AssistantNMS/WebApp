@@ -8,6 +8,7 @@ import { GameItemService } from '../../../services/json/GameItemService';
 import { ActionContainer } from '../../common/tile/actionContainer';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { TextContainer } from '../../common/tile/textContainer';
+import { AppImage } from '../../../constants/AppImage';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -37,9 +38,9 @@ const EggTraitListTileInternal: React.FC<IProps> = (props: IProps) => {
 
     const getActions = () => {
         if (props.IsPositiveEffect) {
-            return [<img key="increasing" alt="increase" src="/assets/images/special/increasing.png" />];
+            return [<img key="increasing" alt="increase" src={AppImage.eggIncreasing()} />];
         }
-        return [<img key="decreasing" alt="decrease" src="/assets/images/special/decreasing.png" />];
+        return [<img key="decreasing" alt="decrease" src={AppImage.eggDecreasing()} />];
     }
 
     return (

@@ -1,6 +1,7 @@
 
 import classNames from 'classnames';
 import * as React from 'react';
+import { AppImage } from '../../../constants/AppImage';
 
 import { LazyLoadImage } from '../../core/lazyLoadImage/lazyLoadImage';
 import { BadgeContainer } from './badgeContainer';
@@ -18,7 +19,7 @@ interface IProps {
 }
 
 export const ImageContainer = (props: IProps) => {
-    let imageString = props.Directory ? `${props.Directory}${props.Icon}` : `/assets/images/${props.Icon}`
+    let imageString = props.Directory ? `${props.Directory}${props.Icon}` : `${AppImage.gameItem()}/${props.Icon}`;
     if (props.IsExternal === true) {
         imageString = props.Icon;
     }

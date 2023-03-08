@@ -3,17 +3,17 @@ import { AppImage } from '../constants/AppImage';
 export const getBackgroundForExpedition = (seasId: string) => {
     const localSeasId = seasId.replace('-redux', '');
     if (localSeasId.includes('seas-')) {
-        return AppImage.expeditionSeasonBackgroundPrefix + localSeasId + '.jpg';
+        return AppImage.expeditionSeasonBackgroundPrefix() + localSeasId + '.jpg';
     }
-    return AppImage.expeditionSeasonBackgroundBackup;
+    return AppImage.expeditionSeasonBackgroundBackup();
 }
 
 export const getPatchForExpedition = (icon: string) => {
-    // if (seasId.includes('seas-1')) return AppImage.expeditionSeason1Patch;
-    // if (seasId.includes('seas-2')) return AppImage.expeditionSeason2Patch;
-    // if (seasId.includes('seas-3')) return AppImage.expeditionSeason3Patch;
-    // if (seasId.includes('seas-4')) return AppImage.expeditionSeason4Patch;
-    return AppImage.base + icon;
+    // if (seasId.includes('seas-1')) return AppImage.expeditionSeason1Patch();
+    // if (seasId.includes('seas-2')) return AppImage.expeditionSeason2Patch();
+    // if (seasId.includes('seas-3')) return AppImage.expeditionSeason3Patch();
+    // if (seasId.includes('seas-4')) return AppImage.expeditionSeason4Patch();
+    return AppImage.base() + icon;
 }
 
 export const getExpeditionSeasonNum = (seasId: string): string => seasId.replaceAll('seas-', '').replaceAll('-redux', '');

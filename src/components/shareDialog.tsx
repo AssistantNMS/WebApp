@@ -7,6 +7,7 @@ import { LazyLoadImage } from './core/lazyLoadImage/lazyLoadImage';
 import { BaseDialog } from './common/dialog/baseDialog';
 import { ShareFloatingActionButton } from './floatingActionButton/shareFloatingActionButton';
 import { itemNameUrlMapper } from '../helper/stringHelper';
+import { AppImage } from '../constants/AppImage';
 
 interface IProps {
     id: string;
@@ -80,17 +81,17 @@ export const ShareDialog: React.FC<IProps> = (props: IProps) => {
                         </li>
                         <li>
                             <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareContent)}`} className="share-button twitter" title="twitter" target="_blank" rel="noopener noreferrer">
-                                <LazyLoadImage src="/assets/images/twitter.svg" alt="Twitter" />
+                                <LazyLoadImage src={`${AppImage.gameItem()}/twitter.svg`} alt="Twitter" />
                             </a>
                         </li>
                         <li>
                             <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(waShareContent)}`} className="share-button whatsapp" title="Whatsapp" target="_blank" rel="noopener noreferrer">
-                                <LazyLoadImage src="/assets/images/whatsapp.svg" alt="Whatsapp" />
+                                <LazyLoadImage src={`${AppImage.gameItem()}/whatsapp.svg`} alt="Whatsapp" />
                             </a>
                         </li>
                         <li>
                             <a href={fbShareContent} className="share-button facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
-                                <LazyLoadImage src="/assets/images/facebook.svg" alt="Facebook" />
+                                <LazyLoadImage src={`${AppImage.gameItem()}/facebook.svg`} alt="Facebook" />
                             </a>
                         </li>
                     </ul>

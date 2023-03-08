@@ -15,6 +15,7 @@ import { IDependencyInjection, withServices } from '../../../integration/depende
 import { useEffect, useState } from 'react';
 import { GameItemModel } from '../../../contracts/GameItemModel';
 import { TileLoading } from '../../core/loading/loading';
+import { AppImage } from '../../../constants/AppImage';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -65,7 +66,7 @@ const QuicksilverItemListTileClass: React.FC<IQuicksilverItemProps> = (props: IQ
                     (props.showPrice === true) &&
                     <div className="quantity-container">
                         {(item.BaseValueUnits ?? 0).toString()}
-                        <img src="/assets/images/rawMaterials/57.png" alt="Quicksilver" style={{ maxHeight: '20px', marginLeft: '5px' }} />
+                        <img src={AppImage.quicksilver()} alt="Quicksilver" style={{ maxHeight: '20px', marginLeft: '5px' }} />
                     </div>
                 }
                 <ActionContainer actions={getActions()} />

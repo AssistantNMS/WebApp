@@ -56,7 +56,7 @@ const CronusCookingListTileClass: React.FC<ICronusCookingProps> = (props: ICronu
                     <span>±</span>
                     <span>&nbsp;</span>
                     {cookingPerc}
-                    <img src="/assets/images/rawMaterials/56.png" alt="Nanites" style={{ maxHeight: '20px', marginLeft: '5px' }} />
+                    <img src={AppImage.nanites()} alt="Nanites" style={{ maxHeight: '20px', marginLeft: '5px' }} />
                 </div>
             </CustomTooltip>
         ];
@@ -65,7 +65,7 @@ const CronusCookingListTileClass: React.FC<ICronusCookingProps> = (props: ICronu
 
     return (
         <div data-id="CronusCookingListTile" className="gen-item-container cronus noselect" draggable={false}>
-            <ImageContainer Name="Cronus" Icon={AppImage.cronus} />
+            <ImageContainer Name="Cronus" Icon={AppImage.cronus()} />
             <div className="gen-item-content-container">
                 <TextContainer text={translate(LocaleKey.cookingValue)} />
                 <div className="quantity-container">

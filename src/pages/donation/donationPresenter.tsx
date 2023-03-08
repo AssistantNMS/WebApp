@@ -7,6 +7,7 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { AnalyticsEvent } from '../../constants/AnalyticsEvent';
 import { ExternalUrls } from '../../constants/ExternalUrls';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { AppImage } from '../../constants/AppImage';
 
 export const DonationPresenter: React.FC = () => {
     const paymentOptions = [
@@ -14,43 +15,43 @@ export const DonationPresenter: React.FC = () => {
             title: translate(LocaleKey.buyMeACoffee).toString(),
             event: AnalyticsEvent.externalLinkBuyMeACoffee,
             url: ExternalUrls.buyMeACoffee,
-            image: '/assets/images/buyMeACoffee.png'
+            image: `${AppImage.base()}buyMeACoffee.png`,
         },
         {
             title: translate(LocaleKey.patreon).toString(),
             event: AnalyticsEvent.externalLinkPatreon,
             url: ExternalUrls.patreon,
-            image: '/assets/images/patreon.png'
+            image: `${AppImage.base()}patreon.png`,
         },
         {
             title: 'Github Sponsors',
             event: AnalyticsEvent.externalLinkGithubSponsors,
             url: ExternalUrls.githubSponsors,
-            image: '/assets/images/githubSponsors.png'
+            image: `${AppImage.base()}githubSponsors.png`,
         },
         {
             title: translate(LocaleKey.paypal).toString(),
             event: AnalyticsEvent.externalLinkPayPal,
             url: ExternalUrls.payPal,
-            image: '/assets/images/payPal.png'
+            image: `${AppImage.base()}payPal.png`,
         },
         {
             title: translate(LocaleKey.kofi).toString(),
             event: AnalyticsEvent.externalLinkkofi,
             url: ExternalUrls.kofi,
-            image: '/assets/images/kofi.png'
+            image: `${AppImage.base()}kofi.png`,
         },
         {
             title: 'Brave',
             event: AnalyticsEvent.externalLinkBat,
             url: ExternalUrls.bat,
-            image: '/assets/images/bat.png'
+            image: `${AppImage.base()}bat.png`,
         },
         {
             title: translate(LocaleKey.openCollective),
             event: AnalyticsEvent.externalLinkOpenCollective,
             url: ExternalUrls.openCollective,
-            image: '/assets/images/openCollective.png'
+            image: `${AppImage.base()}openCollective.png`,
         },
     ];
 
