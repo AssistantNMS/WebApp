@@ -7,7 +7,7 @@ import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 import { addItemToCart } from '../../redux/modules/cart/action';
 import { addItemToFavourite, removeItemFromFavourite } from '../../redux/modules/favourite/action';
 
-import { getChosenPlatform, getCurrentLanguage } from '../../redux/modules/setting/selector';
+import { getChosenPlatform, getCurrentLanguage, getIsPatron } from '../../redux/modules/setting/selector';
 import { getFavouriteItems } from '../../redux/modules/favourite/selector';
 import { setLanguage, setPlatform } from '../../redux/modules/setting/action';
 import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
@@ -28,6 +28,7 @@ export const mapStateToProps = (state: State) => {
         selectedLanguage: getCurrentLanguage(state),
         controlPlatform: getChosenPlatform(state),
         favourites: getFavouriteItems(state),
+        isPatron: getIsPatron(state),
     };
 };
 

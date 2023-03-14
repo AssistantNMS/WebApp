@@ -121,6 +121,7 @@ export const WeekendMissionPresenter: React.FC<IProps> = (props: IProps) => {
                             </PositiveButton>
                         </div>}
                 </div>
+                <div className="col-12" style={{ marginTop: '8em' }}></div>
             </>
         );
     }

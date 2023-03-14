@@ -8,4 +8,5 @@ export class StateSettingReducer {
     public selectedFont!: string;
     public playerName!: string;
     public mobileTipHidden!: boolean;
+    public isPatron!: boolean;
 }

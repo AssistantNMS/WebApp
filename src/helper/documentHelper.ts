@@ -26,3 +26,43 @@ export const updateUrl = (id: string, title: string, selectedLanguage?: string) 
         `/catalogue-item/${id}/${urlSuffix}`
     );
 };
+
+export const addScriptToHead = (id: string, url: string, onLoad?: () => void) => {
+    const existingScript = document.getElementById(id);
+    if (existingScript != null) {
+        if (onLoad != null) {
+            onLoad();
+        }
+        return;
+    }
+
+    try {
+        const scriptNode = document.createElement('script');
+        scriptNode.id = id;
+        scriptNode.type = 'text/javascript';
+        scriptNode.async = true;
+        if (onLoad != null) {
+            scriptNode.onload = onLoad;
+        }
+
+        scriptNode.src = url;
+        document.head?.appendChild?.(scriptNode);
+    }
+    catch (err) {
+        console.error(err);
+    }
+};
+
+export const removeScriptFromHead = (id: string) => {
+    const existingScript = document.getElementById(id);
+    if (existingScript == null) {
+        return;
+    }
+
+    try {
+        existingScript.remove();
+    }
+    catch (err) {
+        console.error(err);
+    }
+};

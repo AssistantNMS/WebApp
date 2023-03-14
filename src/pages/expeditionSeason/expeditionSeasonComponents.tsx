@@ -76,7 +76,7 @@ export const ExpeditionSeasonHeader: React.FC<IExpeditionSeasonHeaderProps> = (p
     return (
         <div data-id="ExpeditionSeasonHeader" className="row expedition-season-header">
             <div className="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-3 noselect">
-                <LazyLoadImage src={`/${AppImage.base()}${props.seasonDetails.Icon}`} alt={props.seasonDetails.Title} style={{ width: '100%', maxWidth: '250px' }} />
+                <LazyLoadImage src={`${AppImage.gameItem()}/${props.seasonDetails.Icon}`} alt={props.seasonDetails.Title} style={{ width: '100%', maxWidth: '250px' }} />
                 <h4><b>{translate(LocaleKey.startDate)}:</b>&nbsp;{formatDate(props.seasonDetails.StartDate, 'YYYY-MM-DD')}</h4>
                 <h4><b>{translate(LocaleKey.endDate)}:</b>&nbsp;{formatDate(props.seasonDetails.EndDate, 'YYYY-MM-DD')}</h4>
             </div>
@@ -161,7 +161,7 @@ const rewardsPresenter = (rewards: Array<ExpeditionSeasonReward>) => {
 const rewardsIconPresenter = (icon: string, title: string) => {
     return (
         <img
-            src={`${AppImage.base()}${icon}`}
+            src={`${AppImage.gameItem()}/${icon}`}
             className="hidden-in-mobile milestone-patch"
             alt={title}
             draggable={false}
@@ -193,7 +193,7 @@ export const ExpeditionSeasonPhaseWithMilestones: React.FC<IExpeditionSeasonPhas
     return (
         <div data-id="ExpeditionSeasonPhaseWithMilestones" className="row expedition-season-phase noselect">
             <div className="col-12 col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                <LazyLoadImage src={`/${AppImage.base()}${props.phase.Icon}`} alt={props.phase.Title} className="phase-icon" style={{ width: '100%', maxWidth: '250px' }} />
+                <LazyLoadImage src={`${AppImage.gameItem()}/${props.phase.Icon}`} alt={props.phase.Title} className="phase-icon" style={{ width: '100%', maxWidth: '250px' }} />
                 <h3 className="phase-title">{props.phase.Title}</h3>
                 <PositiveButton
                     icon="info"

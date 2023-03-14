@@ -43,7 +43,7 @@ export const AboutPresenter: React.FC = () => {
             <div className="content">
                 <div className="container full pt1">
                     <div className="row justify">
-                        <div className="col-12 col-xl-6 col-lg-8 col-md-8 col-sm-10 col-xs-10 mt-1em mb-2em">
+                        <div className="col-12 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12 mt-1em mb-2em">
                             <SegmentedControl
                                 name="aboutTabs"
                                 controlRef={useRef()}

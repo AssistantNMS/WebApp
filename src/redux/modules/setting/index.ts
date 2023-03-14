@@ -14,6 +14,7 @@ export const initialSettingState: StateSettingReducer = {
     selectedFont: LocaleKey.defaultFont.toString(),
     playerName: '',
     mobileTipHidden: false,
+    isPatron: false,
 }
 
 export const settingReducer = (state = initialSettingState, action: any) => {

@@ -66,7 +66,7 @@ const QuicksilverItemListTileClass: React.FC<IQuicksilverItemProps> = (props: IQ
                     (props.showPrice === true) &&
                     <div className="quantity-container">
                         {(item.BaseValueUnits ?? 0).toString()}
-                        <img src={AppImage.quicksilver()} alt="Quicksilver" style={{ maxHeight: '20px', marginLeft: '5px' }} />
+                        <img src={AppImage.quicksilverForChips()} alt="Quicksilver" style={{ maxHeight: '20px', marginLeft: '5px' }} />
                     </div>
                 }
                 <ActionContainer actions={getActions()} />

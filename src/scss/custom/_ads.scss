@@ -1,0 +1,28 @@
+.ad-container {
+    position: relative;
+    margin: 0 auto;
+
+    &.ad-main-panel {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        background-color: #232323;
+    }
+}
+
+.ad-text {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ad-div-ref {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}

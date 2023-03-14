@@ -41,7 +41,7 @@ export const TitleItemListTile: React.FC<IProps> = (props: IProps) => {
         >
             <ImageContainer Icon={props.AppIcon} Name={props.Title} />
             <div className="gen-item-content-container">
-                <TextContainer text={title} additionalCss="pt2" />
+                <TextContainer text={title} additionalCss="pt2 action-container-space" />
                 <div className="quantity-container">{descrip}</div>
                 <ActionContainer actions={getActions()} />
             </div>

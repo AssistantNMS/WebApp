@@ -140,6 +140,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
 
                     {displayObsoleteTech(props.item.Usages)}
                     {displayRequiredItems(props.requiredItems, navigate)}
+
                     {displayUsedToCreateItems(props.usedToCreate)}
                     {displayRechargedByItems(props.rechargedBy)}
                     {displayUsedToRechargeItems(props.item.Id, props.item.Name, props.usedToRecharge)}

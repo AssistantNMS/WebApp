@@ -1,29 +1,33 @@
 import React, { DOMAttributes } from 'react';
 import { createRoot } from 'react-dom/client';
-import { legacy_createStore as createStore } from 'redux';
 import { Provider as StateProvider } from 'react-redux';
-import { toast, ToastContainer } from 'react-toastify';
 import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { legacy_createStore as createStore } from 'redux';
 
 import { App } from './App';
-import { UpdateButton } from './components/updateButton';
 import { modalSetup } from './components/common/dialog/baseDialog';
+import { AppToastContainer } from './components/core/appToastContainer';
+import { UpdateButton } from './components/updateButton';
+import { adScriptId, adScriptUrl } from './constants/Overwolf';
+import { addScriptToHead } from './helper/documentHelper';
+import { initAnalytics } from './integration/analytics';
 import { DependencyInjectionProvider } from './integration/dependencyInjection';
 import { initLocalization } from './integration/i18n';
-import { initAnalytics } from './integration/analytics';
 import { updateServiceWorker } from './integration/serviceWorker';
+import { reducer } from './redux';
 import { getCurrentLanguage } from './redux/modules/setting/selector';
 import { loadStateFromLocalStorage, saveStateToLocalStorage } from './redux/stateFromLocalStorage';
-import { reducer } from './redux';
-import { getJSON, defaultConfig } from './utils';
+import { defaultConfig, getJSON } from './utils';
 
 import * as serviceWorker from './serviceWorker';
 
-import './index.scss';
-import 'react-tippy/dist/tippy.css';
-import 'react-vertical-timeline-component/style.min.css';
 import 'flag-icons/css/flag-icons.min.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import 'react-tippy/dist/tippy.css';
+import 'react-vertical-timeline-component/style.min.css';
+import { isRunningInOverwolf } from './helper/overwolfHelper';
+import './index.scss';
 
 type CustomElement<T> = Partial<T & DOMAttributes<T> & { children: any }>;
 
@@ -59,24 +63,13 @@ getJSON('/assets/config.json', (status: boolean, response: string) => {
     const container = document.getElementById(reactAppId);
     const root = createRoot(container!);
 
-    const innerApp = (
-        <>
-            <App />
-            <ToastContainer
-                position="bottom-right"
-                theme="colored"
-                autoClose={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                draggable
-            />
-        </>
-    );
-
-    let appWithRouter = (window.config.useOverwolfRoutes || true)
-        ? (<HashRouter>{innerApp}</HashRouter>)
-        : (<BrowserRouter>{innerApp}</BrowserRouter>);
+    let appWithRouter;
+    if (isRunningInOverwolf()) {
+        appWithRouter = (<HashRouter><App /><AppToastContainer /></HashRouter>);
+        addScriptToHead(adScriptId, adScriptUrl);
+    } else {
+        appWithRouter = (<BrowserRouter><App /><AppToastContainer /></BrowserRouter>);
+    }
 
     root.render(
         <DependencyInjectionProvider>

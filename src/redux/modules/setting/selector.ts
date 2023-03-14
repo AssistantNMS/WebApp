@@ -9,3 +9,4 @@ export const getChosenPlatform = (state: State): ControllerPlatformType => state
 export const getSelectedFont = (state: State): string => state?.settingReducer?.selectedFont ?? LocaleKey.defaultFont.toString();
 export const getPlayerName = (state: State): string => state?.settingReducer?.playerName ?? '';
 export const getMobileHide = (state: State): boolean => state?.settingReducer?.mobileTipHidden ?? false;
+export const getIsPatron = (state: State): boolean => state?.settingReducer?.isPatron ?? false;

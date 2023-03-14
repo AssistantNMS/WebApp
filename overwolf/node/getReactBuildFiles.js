@@ -11,6 +11,7 @@ async function copyBuildFiles() {
         `${destFolder}`,
         `${destFolder}/assets`,
         `${destFolder}/assets/images`,
+        `${destFolder}/assets/images/rawMaterials`,
         `${destFolder}/static`,
     ];
     for (const folder of foldersThatShouldExist) {
@@ -26,8 +27,10 @@ async function copyBuildFiles() {
         { src: 'assets/images/bat.png', dst: 'assets/images/bat.png' },
         { src: 'assets/images/buyMeACoffee.png', dst: 'assets/images/buyMeACoffee.png' },
         { src: 'assets/images/credits.png', dst: 'assets/images/credits.png' },
+        { src: 'assets/images/discord.png', dst: 'assets/images/discord.png' },
         { src: 'assets/images/DrawerHeader.png', dst: 'assets/images/DrawerHeader.png' },
         { src: 'assets/images/error.png', dst: 'assets/images/error.png' },
+        { src: 'assets/images/facebook.png', dst: 'assets/images/facebook.png' },
         { src: 'assets/images/github.png', dst: 'assets/images/github.png' },
         { src: 'assets/images/githubSponsors.png', dst: 'assets/images/githubSponsors.png' },
         { src: 'assets/images/googlePay.png', dst: 'assets/images/googlePay.png' },
@@ -45,6 +48,7 @@ async function copyBuildFiles() {
         { src: 'assets/images/patreonFeature.png', dst: 'assets/images/patreonFeature.png' },
         { src: 'assets/images/patreonFeatureWhite.png', dst: 'assets/images/patreonFeatureWhite.png' },
         { src: 'assets/images/payPal.png', dst: 'assets/images/payPal.png' },
+        { src: 'assets/images/reddit.png', dst: 'assets/images/reddit.png' },
         { src: 'assets/images/refiner.png', dst: 'assets/images/refiner.png' },
         { src: 'assets/images/refinerMedium.png', dst: 'assets/images/refinerMedium.png' },
         { src: 'assets/images/refinerLarge.png', dst: 'assets/images/refinerLarge.png' },
@@ -61,6 +65,7 @@ async function copyBuildFiles() {
         { src: 'assets/images/trello.png', dst: 'assets/images/trello.png' },
         { src: 'assets/images/twitter.png', dst: 'assets/images/twitter.png' },
         { src: 'assets/images/youtube.png', dst: 'assets/images/youtube.png' },
+        { src: 'assets/images/rawMaterials/57.png', dst: 'assets/images/rawMaterials/57.png' },
     ];
     for (const basicFile of basicFilesToCopy) {
         copyFile(`../build/${basicFile.src}`, `${destFolder}/${basicFile.dst}`)
@@ -76,7 +81,6 @@ async function copyBuildFiles() {
         { src: 'assets/images/search', dst: 'assets/images/search' },
         { src: 'assets/images/special', dst: 'assets/images/special' },
         { src: 'assets/images/stats', dst: 'assets/images/stats' },
-        { src: 'assets/images/store', dst: 'assets/images/store' },
         { src: 'assets/images/store', dst: 'assets/images/store' },
         { src: 'static/js', dst: 'static/js' },
         { src: 'static/css', dst: 'static/css' },
@@ -94,6 +98,7 @@ async function copyBuildFiles() {
 
     resultIndexFile += reactIndexContent.substring(0, checkIfLoadedScriptIndex);
     resultIndexFile += '\n\r<link rel="stylesheet" href="./assets/css/header.css" />\n\r';
+    resultIndexFile += '\n\r<script defer src="js/desktop.js"></script>\n\r';
 
     const overwolfHeaderText = '<div id="overwolf-header"></div>';
     const overwolfHeaderIndex = reactIndexContent.indexOf(overwolfHeaderText);
@@ -101,12 +106,12 @@ async function copyBuildFiles() {
     resultIndexFile += reactIndexContent.substring(checkIfLoadedScriptEndIndex, overwolfHeaderIndex);
     resultIndexFile += `\n
         <header id="header" class="app-header">
-            <img src="../../img/header_icon.svg" />
+            <img src="../../assets/images/header_icon.png" />
             <h1>Assistant for No Man's Sky</h1>
             <div class="window-controls-group">
-                <button id="minimizeButton" class="window-control window-control-minimize" />
-                <button id="maximizeButton" class="window-control window-control-maximize" />
-                <button id="closeButton" class="window-control window-control-close" />
+                <button id="minimizeButton" class="window-control window-control-minimize"></button>
+                <button id="maximizeButton" class="window-control window-control-maximize"></button>
+                <button id="closeButton" class="window-control window-control-close"></button>
             </div>
         </header>
     \n`;

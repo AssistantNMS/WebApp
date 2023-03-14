@@ -17,7 +17,7 @@ export const defaultConfig = {
     googleAnalyticsEnabled: false,
     consoleLogDebug: true,
     useServiceWorker: false,
-    useOverwolfRoutes: false,
+    isRunningInOverwolf: false,
     apiUrl: "https://api.nmsassistant.com",
     assistantAppsUrl: "https://api.assistantapps.com",
     assistantAppsAppGuid: "589405b4-e40f-4cd9-b793-6bf37944ee09",

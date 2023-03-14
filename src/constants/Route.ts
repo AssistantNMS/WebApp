@@ -1,4 +1,4 @@
-export const home = () => (window.config?.useOverwolfRoutes) ? '#' : '/';
+export const home = '/';
 export const catalogue = '/catalogue';
 export const catalogueItem = '/catalogue-item';
 export const processorItem = '/processor';

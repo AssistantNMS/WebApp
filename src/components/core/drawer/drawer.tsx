@@ -85,7 +85,7 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
 
         return (
             // eslint-disable-next-line jsx-a11y/anchor-is-valid
-            <a onClick={menuItemClick} href="#" className="nav-link" draggable={false}>{icon}<p>{menuItem.name}</p></a>
+            <a onClick={menuItemClick} href={menuItem.link} className="nav-link" draggable={false}>{icon}<p>{menuItem.name}</p></a>
         );
     }
 
@@ -142,6 +142,7 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
                     <br />
                     <AboutDrawerTilePresenter />
                 </ul>
+                <div className="col-12" style={{ marginTop: '2em' }}></div>
             </div>
         </div>
     );

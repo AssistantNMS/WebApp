@@ -1,8 +1,10 @@
+import { isRunningInOverwolf } from "../helper/overwolfHelper";
+
 export class AppImage {
     // static base = (): string => './assets/images/';
-    static base = (): string => (window.config?.useOverwolfRoutes) ? './assets/images/' : '/assets/images/';
-    static gameItem = (): string => (window.config?.useOverwolfRoutes) ? 'https://app.nmsassistant.com/assets/images' : '/assets/images';
-    static controls = (): string => AppImage.base() + 'buttons/';
+    static base = (): string => isRunningInOverwolf() ? './assets/images/' : '/assets/images/';
+    static gameItem = (): string => isRunningInOverwolf() ? 'https://app.nmsassistant.com/assets/images' : '/assets/images';
+    static controls = (): string => AppImage.gameItem() + '/buttons/';
     static drawer = (): string => AppImage.base() + 'drawer';
     static unknown = (): string => 'unknown.png';
 
@@ -21,8 +23,8 @@ export class AppImage {
     static bclass = (): string => 'special/bclass.png';
     static cclass = (): string => 'special/cclass.png';
 
-    static expeditionSeasonBackgroundPrefix = (): string => AppImage.base() + 'special/expedition-';
-    static expeditionSeasonBackgroundBackup = (): string => AppImage.base() + 'special/expeditionsCoverUnused.jpg';
+    static expeditionSeasonBackgroundPrefix = (): string => AppImage.gameItem() + '/special/expedition-';
+    static expeditionSeasonBackgroundBackup = (): string => AppImage.gameItem() + '/special/expeditionsCoverUnused.jpg';
 
     static milestonePatches = (): string => AppImage.base() + 'milestonePatches/';
     static expeditionsUnusedPatches = (): string => AppImage.milestonePatches() + 'ENCRYPTED.PATCH.2.png';
@@ -43,7 +45,7 @@ export class AppImage {
 
     static nanites = (): string => AppImage.base() + 'nanites.png';
     static units = (): string => AppImage.base() + 'credits.png';
-    static quicksilverForChips = (): string => AppImage.gameItem() + '/rawMaterials/57.png';
+    static quicksilverForChips = (): string => AppImage.base() + 'rawMaterials/57.png';
     static salvagedData = (): string => AppImage.gameItem() + '/constructedTechnology/90.png';
     static factoryOverride = (): string => AppImage.base() + 'special/factoryOverride.png';
     static nativeApp = (): string => AppImage.base() + 'nativeApp.png';

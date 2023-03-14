@@ -71,7 +71,10 @@ const RequiredItemListTileClass: React.FC<IProps> = (props: IProps) => {
     }
 
     const hasQuantity = (props.Quantity != null && props.Quantity > 0);
-    const additionalCss = hasQuantity ? "" : "full";
+    let additionalCss = hasQuantity ? '' : 'full';
+    if (getActions().length > 0) {
+        additionalCss += ' action-container-space ';
+    }
     const quantityRenderer = (hasQ: boolean, localProps: IProps) => {
         if (!hasQ) return null;
 

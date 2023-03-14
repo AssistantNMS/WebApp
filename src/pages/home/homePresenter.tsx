@@ -70,6 +70,7 @@ export const HomePresenter: React.FC = () => {
                     }
                 </div>
             </div>
+            <div className="col-12" style={{ marginTop: '8em' }}></div>
         </DefaultAnimation>
     );
 }

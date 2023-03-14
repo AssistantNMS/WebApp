@@ -36,7 +36,6 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
     const group = props?.Group ?? '...';
 
     const hasSymbol = ((props?.Abbrev?.length ?? 0) > 0);
-    console.log(props);
 
     return (
         <div data-id="ItemHeaderRow" className="row border-bottom pos-rel header-row">

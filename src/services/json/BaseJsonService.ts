@@ -1,11 +1,13 @@
 import axios from 'axios';
-import { ResultWithValue } from '../../contracts/results/ResultWithValue';
-import { anyObject } from '../../helper/typescriptHacks';
+
 import { Guide } from '../../contracts/guide/guide';
+import { ResultWithValue } from '../../contracts/results/ResultWithValue';
+import { isRunningInOverwolf } from '../../helper/overwolfHelper';
+import { anyObject } from '../../helper/typescriptHacks';
 
 export class BaseJsonService {
   protected async getAsset<T>(url: string): Promise<ResultWithValue<T>> {
-    const urlPrefix = (window.config?.useOverwolfRoutes) ? 'https://app.nmsassistant.com/assets' : '/assets';
+    const urlPrefix = isRunningInOverwolf() ? 'https://app.nmsassistant.com/assets' : '/assets';
     try {
       const result = await axios.request<T>({
         url: `${urlPrefix}/${url}`
@@ -31,7 +33,7 @@ export class BaseJsonService {
   }
 
   protected async getJsonFromAssets<T>(jsonFileName: string) {
-    const urlPrefix = (window.config?.useOverwolfRoutes) ? 'https://app.nmsassistant.com/assets' : '/assets';
+    const urlPrefix = isRunningInOverwolf() ? 'https://app.nmsassistant.com/assets' : '/assets';
     const jsonString = await axios.request<T>({
       url: `${urlPrefix}/${jsonFileName}.json`
     });

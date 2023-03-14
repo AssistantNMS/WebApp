@@ -13,7 +13,7 @@ export const getPatchForExpedition = (icon: string) => {
     // if (seasId.includes('seas-2')) return AppImage.expeditionSeason2Patch();
     // if (seasId.includes('seas-3')) return AppImage.expeditionSeason3Patch();
     // if (seasId.includes('seas-4')) return AppImage.expeditionSeason4Patch();
-    return AppImage.base() + icon;
+    return `${AppImage.gameItem()}/${icon}`;
 }
 
 export const getExpeditionSeasonNum = (seasId: string): string => seasId.replaceAll('seas-', '').replaceAll('-redux', '');

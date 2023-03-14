@@ -20,7 +20,7 @@ export const RewardFromQuicksilverTile: React.FC<IProps> = (props: IProps) => {
                 <TextContainer text={text} />
                 <div className="quantity-container">
                     {props.qsQuantity}
-                    <img src={AppImage.quicksilver()} alt="Quicksilver" style={{ maxHeight: '20px', marginLeft: '5px' }} />
+                    <img src={AppImage.quicksilverForChips()} alt="Quicksilver" style={{ maxHeight: '20px', marginLeft: '5px' }} />
                 </div>
             </div>
         </Link>

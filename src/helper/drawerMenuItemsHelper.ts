@@ -139,7 +139,7 @@ export const getMenuSection4 = (): Array<DrawerMenuItem> => {
       return {
         name: ee.name,
         link: routes.seasonExpedition + '/' + ee.seasonId,
-        icon: `${ee.icon}`,
+        icon: `${AppImage.gameItem()}/${AppImage.unknown()}`,
         iconType: DrawerIconType.Custom,
         isActive: false,
       };
@@ -169,15 +169,7 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
   const expeditionsTask = gameItemService.getAllSeasonExpeditions();
 
   const menuItems: Array<DrawerMenuItem> = [];
-  let subs = ExistingExpeditions.map((ee: IExistingExpeditions) => {
-    return {
-      name: ee.name,
-      link: routes.seasonExpedition + '/' + ee.seasonId,
-      icon: `${ee.icon}`,
-      iconType: DrawerIconType.Custom,
-      isActive: false,
-    };
-  });
+  let subs: Array<any> = [];
   const expeditionsResult = await expeditionsTask;
   if (expeditionsResult.isSuccess) {
     subs = (expeditionsResult.value ?? [])
@@ -186,7 +178,7 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
         return {
           name: es.Title,
           link: routes.seasonExpedition + '/' + es.Id,
-          icon: `${AppImage.base()}${es.Icon}`,
+          icon: `${AppImage.gameItem()}/${es.Icon}`,
           iconType: DrawerIconType.Custom,
           isActive: false,
         };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Error } from '../../components/core/error/error';
 import { SmallLoading } from '../../components/core/loading/loading';
+import { AppImage } from '../../constants/AppImage';
 import { getBackgroundForExpedition, getPatchForExpedition } from '../../constants/Expedition';
 import { NetworkState } from '../../constants/NetworkState';
 import * as routes from '../../constants/Route';
@@ -81,10 +82,10 @@ export const ExpeditionSeasonTile: React.FC<IExpeditionSeasonTileProps> = (props
         <div data-id="SeasonExpeditionCard" className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div className="card exp pointer noselect" onClick={navigateToExpSeason(props.seasonId)} draggable={false}>
                 <div className="card-image exp">
-                    <img src={`/${props.background}`} draggable={false} alt={props.name} />
+                    <img src={props.background} draggable={false} alt={props.name} />
                 </div>
 
-                <img src={`/${props.icon}`} className="card-image-overlay" draggable={false} alt={props.name + ' icon'} />
+                <img src={props.icon} className="card-image-overlay" draggable={false} alt={props.name + ' icon'} />
 
                 <div className="card-top-right-content">
                     <span>Season {props.seasonNum}</span>

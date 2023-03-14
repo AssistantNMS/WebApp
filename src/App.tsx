@@ -50,6 +50,8 @@ import { IStateProps, IStateDispatch } from './App.Redux';
 import { UseNativeApp } from './components/common/useNativeAppPopup';
 import { ContributorsPage } from './pages/other/contributors';
 import { RandomPortal } from './pages/portal/randomPortalPresenter';
+import { isRunningInOverwolf } from './helper/overwolfHelper';
+import { AdContainer, OwAdSize } from './components/overwolf/adContainer';
 
 interface IProps extends IStateProps, IStateDispatch { }
 
@@ -76,7 +78,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
           <NavBarFake />
           <AnimatePresence exitBeforeEnter>
             <Routes location={location} key={location.key + props.selectedLanguage}>
-              <Route path={route.home()} element={<HomePresenter />} />
+              <Route path={route.home} element={<HomePresenter />} />
               <Route path={route.setting} element={<SettingPresenter />} />
               <Route path={route.about} element={<AboutPresenter />} />
               <Route path={route.language} element={<LanguagePresenter />} />
@@ -128,6 +130,16 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
             </Routes>
           </AnimatePresence>
           <UseNativeApp />
+
+          {
+            isRunningInOverwolf() && (
+              <AdContainer
+                size={OwAdSize.LongRectangle}
+                containerId="ad-main-panel"
+              />
+            )
+          }
+          <div className="mt-1em"></div>
         </div>
       </ScrollToTop>
     </div>
