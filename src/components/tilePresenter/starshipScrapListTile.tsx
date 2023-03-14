@@ -27,7 +27,7 @@ export const StarshipScrapListTile: React.FC<IProps> = (props: IProps) => {
         <div key={props.scrap.ShipType + props.scrap.ShipClassType + ' ' + props.index} data-id="StarshipScrapListTile" className="gen-item-container noselect pointer" draggable={false} onClick={() => props.setIsExpanded(!props.isExpanded)}>
             <div className="image-container starship">
                 <img
-                    src={AppImage.base() + starshipScrapShipImage(props.scrap.ShipType)}
+                    src={AppImage.gameItem() + '/' + starshipScrapShipImage(props.scrap.ShipType)}
                     alt={props.scrap.ShipType + '-' + props.scrap.ShipClassType}
                     className="ship-type"
                     draggable={false}
@@ -35,7 +35,7 @@ export const StarshipScrapListTile: React.FC<IProps> = (props: IProps) => {
                 {
                     (starshipScrapShipClassImage(props.scrap.ShipClassType).length > 3) && (
                         <img
-                            src={AppImage.base() + starshipScrapShipClassImage(props.scrap.ShipClassType)}
+                            src={AppImage.gameItem() + '/' + starshipScrapShipClassImage(props.scrap.ShipClassType)}
                             alt={props.scrap.ShipType + '-' + props.scrap.ShipClassType}
                             className="ship-class"
                             draggable={false}

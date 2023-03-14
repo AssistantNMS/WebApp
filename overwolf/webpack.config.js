@@ -29,7 +29,7 @@ module.exports = env => ({
         filename: 'js/[name].js'
     },
     plugins: [
-        // new CleanWebpackPlugin,
+        new CleanWebpackPlugin,
         new CopyPlugin({
             patterns: [{ from: "public", to: "./", priority: 1 }],
         }),

@@ -12,6 +12,7 @@ async function copyBuildFiles() {
         `${destFolder}/assets`,
         `${destFolder}/assets/images`,
         `${destFolder}/assets/images/rawMaterials`,
+        `${destFolder}/assets/images/special`,
         `${destFolder}/static`,
     ];
     for (const folder of foldersThatShouldExist) {
@@ -79,7 +80,7 @@ async function copyBuildFiles() {
         { src: 'assets/images/portals', dst: 'assets/images/portals' },
         { src: 'assets/images/screenshots', dst: 'assets/images/screenshots' },
         { src: 'assets/images/search', dst: 'assets/images/search' },
-        { src: 'assets/images/special', dst: 'assets/images/special' },
+        // { src: 'assets/images/special', dst: 'assets/images/special' },
         { src: 'assets/images/stats', dst: 'assets/images/stats' },
         { src: 'assets/images/store', dst: 'assets/images/store' },
         { src: 'static/js', dst: 'static/js' },
