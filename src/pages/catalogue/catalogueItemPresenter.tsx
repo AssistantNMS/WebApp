@@ -15,6 +15,7 @@ import { ShareDialog } from '../../components/shareDialog';
 import { IdPrefix } from '../../constants/IdPrefix';
 import { NetworkState } from '../../constants/NetworkState';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
+import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
 import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
@@ -33,19 +34,20 @@ import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 
 interface IProps extends IReduxProps {
     // Container State    
-    item: GameItemModel,
-    requiredItems: Array<RequiredItemDetails>,
-    usedToCreate: Array<GameItemModel>,
-    refined: Array<Processor>,
-    usedToRefine: Array<Processor>,
-    cooking: Array<Processor>,
-    usedToCook: Array<Processor>,
-    rechargedBy: Recharge,
-    usedToRecharge: Array<Recharge>,
-    eggTrait: Array<EggNeuralTrait>,
-    controlLookup: Array<PlatformControlMapping>,
-    starshipScrapItems: Array<StarshipScrap>,
-    additionalData: Array<any>,
+    item: GameItemModel;
+    requiredItems: Array<RequiredItemDetails>;
+    usedToCreate: Array<GameItemModel>;
+    refined: Array<Processor>;
+    usedToRefine: Array<Processor>;
+    cooking: Array<Processor>;
+    usedToCook: Array<Processor>;
+    rechargedBy: Recharge;
+    usedToRecharge: Array<Recharge>;
+    eggTrait: Array<EggNeuralTrait>;
+    controlLookup: Array<PlatformControlMapping>;
+    starshipScrapItems: Array<StarshipScrap>;
+    creatureHarvests: Array<CreatureHarvest>;
+    additionalData: Array<any>;
 
     networkState: NetworkState;
 
@@ -147,7 +149,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     {displayUsedToCookItems(props.item.Name, props.usedToCook)}
                     {displayStatBonuses(props.item.StatBonuses)}
                     {displayProceduralStatBonuses(props.item.NumStatsMin, props.item.NumStatsMax, props.item.ProceduralStatBonuses)}
-                    {displayRewardFrom(props.item, props.starshipScrapItems)}
+                    {displayRewardFrom(props.item, props.starshipScrapItems, props.creatureHarvests)}
                     {displayEggTraits(props.eggTrait)}
                 </div>
                 <DevDetailsBottomModalSheet

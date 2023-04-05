@@ -1,4 +1,5 @@
 import { CatalogueType } from '../../constants/CatalogueType';
+import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { ExpeditionSeason } from '../../contracts/helloGames/expeditionSeason';
 import { WeekendMission } from '../../contracts/helloGames/weekendMission';
@@ -398,6 +399,24 @@ export class GameItemService extends BaseJsonService {
     return {
       isSuccess: true,
       value: jsonResult.value,
+      errorMessage: ''
+    }
+  }
+
+
+  async getCreatureHarvestForItem(itemId: string): Promise<ResultWithValue<Array<CreatureHarvest>>> {
+    return this._getOrAdd(() => this._getCreatureHarvestForItem(itemId), ['_getCreatureHarvestForItem', itemId]);
+  }
+  async _getCreatureHarvestForItem(itemId: string): Promise<ResultWithValue<Array<CreatureHarvest>>> {
+    const path = translate(LocaleKey.creatureHarvestJson).toString();
+    const jsonResult = await this.getAsset<Array<CreatureHarvest>>(`json/${path}.json`);
+
+    if (!jsonResult.isSuccess) return { isSuccess: false, value: [], errorMessage: jsonResult.errorMessage };
+
+    const specificToItemId = jsonResult.value.filter((creatureHarvest) => creatureHarvest.ItemId === itemId);
+    return {
+      isSuccess: true,
+      value: specificToItemId,
       errorMessage: ''
     }
   }

@@ -113,6 +113,7 @@ img.tiny {
     .image-container img {
         padding: 0.5em 0;
     }
+
     .text-container {
         p {
             margin-bottom: 0.5em;
@@ -225,7 +226,7 @@ img.tiny {
 }
 
 .m-0-child {
-    > * {
+    >* {
         margin: 0;
     }
 }
@@ -359,6 +360,10 @@ img.tiny {
     .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
         width: unset !important;
     }
+}
+
+.max-w-150 {
+    max-width: 150px;
 }
 
 .settings,
