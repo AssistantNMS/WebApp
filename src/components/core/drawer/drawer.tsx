@@ -6,10 +6,12 @@ import { AppImage } from '../../../constants/AppImage';
 import { DrawerMenuItem } from '../../../contracts/DrawerMenuItem';
 import { DrawerIconType } from '../../../contracts/enum/DrawerIconType';
 import { getMenuSection1, getMenuSection2, getMenuSection3, getMenuSection4, getMenuSection4Async, getMenuSection5, menuItemSeperator } from '../../../helper/drawerMenuItemsHelper';
+import { isRunningInOverwolf } from '../../../helper/overwolfHelper';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { AboutDrawerTilePresenter } from '../../common/about/aboutDrawerTilePresenter';
 import { AssistantAppsAboutDrawerTilePresenter } from '../../common/about/assistantAppsAboutDrawerTilePresenter';
+import { AdContainer, OwAdSize } from '../../overwolf/adContainer';
 import { mapDispatchToProps, mapStateToProps } from './drawer.Redux';
 
 interface IWithDepInj {
@@ -142,8 +144,19 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
                     <br />
                     <AboutDrawerTilePresenter />
                 </ul>
-                <div className="col-12" style={{ marginTop: '2em' }}></div>
+                <div className="col-12 mt-1em"></div>
             </div>
+
+            {
+                isRunningInOverwolf()
+                    ? (
+                        <AdContainer
+                            size={OwAdSize.SmallSquare}
+                            containerId="ad-main-panel"
+                        />
+                    )
+                    : (<div className="mt-1em"></div>)
+            }
         </div>
     );
 };

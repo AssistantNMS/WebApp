@@ -110,6 +110,12 @@ async function copyBuildFiles() {
             <img src="../../assets/images/header_icon.png" />
             <h1>Assistant for No Man's Sky</h1>
             <div class="window-controls-group">
+                <a href="https://nmsassistant.freshdesk.com" target="_blank" rel="noopener noreferrer">
+                    <button id="supportButton" class="window-control window-control-support"></button>
+                </a>
+                <a href="https://assistantapps.com/discord" target="_blank" rel="noopener noreferrer">
+                    <button id="discordButton" class="window-control window-control-discord"></button>
+                </a>
                 <button id="minimizeButton" class="window-control window-control-minimize"></button>
                 <button id="maximizeButton" class="window-control window-control-maximize"></button>
                 <button id="closeButton" class="window-control window-control-close"></button>

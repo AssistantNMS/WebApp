@@ -1,3 +1,13 @@
+:root {
+    --sidebar-width: 300px !important;
+    --sidebar-ad-height: 250px !important;
+}
+
+body,
+html {
+    overflow: hidden !important;
+}
+
 .toggle-icons svg {
     position: absolute;
     top: 0;
@@ -72,15 +82,16 @@
 }
 
 #nms-app {
-    margin-top: 2em;
+    margin-top: 40px;
 }
 
 #nms-app .sidebar {
-    top: 2em;
+    top: 40px;
 }
 
 #app .main-panel {
-    height: calc(100vh - 2em) !important;
+    height: calc(100vh - 40px) !important;
+    overflow: auto;
 }
 
 .expedition-bottom-modal-sheet {
@@ -91,7 +102,7 @@
     z-index: 99999 !important;
 }
 
-.main-panel>.navbar-bg+div {
+.main-panel>.default-animation {
     min-height: calc(100% - 6em);
 }
 
@@ -99,7 +110,6 @@
     display: flex;
     z-index: 1001;
     margin-left: auto;
-    margin-right: 0.5em;
 }
 
 .window-control {
@@ -110,7 +120,7 @@
 
 .window-control:hover,
 .window-control:active {
-    background-color: var(--background-colour, #303030);
+    background-color: var(--background-colour-highlight, #303030);
 }
 
 .window-control:before {
@@ -127,6 +137,26 @@
 .window-control:hover:before,
 .window-control:active:before {
     background-color: #dedede;
+}
+
+#supportButton,
+#discordButton {
+    height: 100%;
+}
+
+.window-control-support:before {
+    mask-image: url('../images/window_support.svg');
+    -webkit-mask-image: url('../images/window_support.svg');
+}
+
+.window-control-discord:before {
+    mask-image: url('../images/discord_icon.svg');
+    -webkit-mask-image: url('../images/discord_icon.svg');
+}
+
+.window-control-discord:hover,
+.window-control-discord:active {
+    background-color: #7289DA;
 }
 
 .window-control-minimize:before {

@@ -39,6 +39,15 @@ export const dateAdd = (date: Date, numberOfDays: number): Date => {
     }
 }
 
+export const dateAddMin = (date: Date, numberOfMinutes: number): Date | any => {
+    try {
+        return dayjs(date).add(numberOfMinutes, 'minute');
+    }
+    catch {
+        return date;
+    }
+}
+
 export const percentageProgress = (startDate: Date, endDate: Date): number => {
     const startDateMilli = dayjs(startDate).valueOf();
     const currDateMilli = dayjs(new Date()).valueOf();

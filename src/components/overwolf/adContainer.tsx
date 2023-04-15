@@ -51,9 +51,10 @@ export const AdContainer: React.FC<IProps> = (props: IProps) => {
             style={sizeLookup[props.size]}
         >
             <div className="ad-text">
-                Ads support the development of this app.
+                Ads support the development and maintenance of this app.
                 <br />
-                Become a Patreon supporter to deactivate ads 💗.
+                <br />
+                Become a supporter to deactivate ads 💗
             </div>
             <div ref={containerRef} className="ad-div-ref" />
         </aside>

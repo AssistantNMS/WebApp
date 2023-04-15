@@ -26,6 +26,7 @@ export const DefaultAnimation: React.FC<IProps> = (props: IProps) => {
             exit="out"
             transition={{ duration: 0.15 }}
             variants={defaultPageVariants}
+            className="default-animation"
         >
             {props.children}
         </motion.div>

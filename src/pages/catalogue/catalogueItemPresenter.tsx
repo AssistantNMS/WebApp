@@ -153,6 +153,9 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     {displayRewardFrom(props.item, props.starshipScrapItems, props.creatureHarvests)}
                     {displayEggTraits(props.eggTrait)}
                 </div>
+
+                {getFloatingActionButtons(false)}
+
                 <DevDetailsBottomModalSheet
                     appId={props.item.Id}
                     isDetailPaneOpen={isDetailPaneOpen}
@@ -176,7 +179,6 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
             <NavBar title={title} additionalItems={getFloatingActionButtons(true)} />
             {handleLoadingOrError()}
 
-            {getFloatingActionButtons(false)}
             <div className="col-12" style={{ marginTop: '8em' }}></div>
         </>
     );

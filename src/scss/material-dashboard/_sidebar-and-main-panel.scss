@@ -10,7 +10,7 @@
     bottom: 0;
     left: 0;
     z-index: 2;
-    width: 260px;
+    width: var(--sidebar-width);
     background: $white-color;
     @include shadow-big();
 
@@ -32,9 +32,9 @@
 
     .sidebar-wrapper {
         position: relative;
-        height: 100vh;
+        height: calc(100vh - var(--sidebar-ad-height, 0px));
         overflow: auto;
-        width: 260px;
+        width: var(--sidebar-width);
         z-index: 4;
 
         padding-bottom: 30px;
@@ -55,9 +55,9 @@
             }
         }
 
-        >.nav,
+        > .nav,
         .user .user-info {
-            [data-toggle="collapse"]~div>ul>li>a {
+            [data-toggle="collapse"] ~ div > ul > li > a {
                 span {
                     display: inline-block;
                     @extend .animation-transition-general;
@@ -70,7 +70,6 @@
                     opacity: 1;
                     white-space: nowrap;
                     display: block;
-
                 }
 
                 .sidebar-mini {
@@ -114,7 +113,7 @@
             //     }
             // }
 
-            &:first-child>a {
+            &:first-child > a {
                 margin: 0 15px;
             }
 
@@ -127,14 +126,14 @@
             //     box-shadow: none;
             // }
 
-            &.active>[data-toggle="collapse"] {
+            &.active > [data-toggle="collapse"] {
                 i {
                     color: #a9afbb;
                 }
             }
 
-            &.active>a,
-            &.active>a i {
+            &.active > a,
+            &.active > a i {
                 color: $white-color;
             }
 
@@ -147,10 +146,10 @@
                     position: absolute;
                     height: 1px;
                     left: 15px;
-                    background-color: rgba(180, 180, 180, .3);
+                    background-color: rgba(180, 180, 180, 0.3);
                 }
 
-                &+li {
+                & + li {
                     margin-top: 31px;
                 }
             }
@@ -182,7 +181,6 @@
         text-align: start;
     }
 
-
     .sidebar-background {
         position: absolute;
         z-index: 1;
@@ -201,8 +199,8 @@
             height: 100%;
             content: "";
             display: block;
-            background: #FFFFFF;
-            opacity: .93;
+            background: #ffffff;
+            opacity: 0.93;
         }
     }
 
@@ -264,47 +262,44 @@
 
     @include set-background-color-button($brand-primary);
 
-
     &[data-image]:after,
     &.has-image:after {
-        opacity: .77;
+        opacity: 0.77;
     }
 }
 
 .off-canvas-sidebar .navbar-collapse {
     .nav {
-
-        >li>a,
-        >li>a:hover {
+        > li > a,
+        > li > a:hover {
             color: $white-color;
             margin: 0 15px;
         }
 
-        >li>a:focus,
-        >li>a:hover {
+        > li > a:focus,
+        > li > a:hover {
             background: rgba(200, 200, 200, 0.2);
         }
     }
 }
 
-
 .main-panel {
     position: relative;
     float: right;
     width: $sidebar-width;
-    @include transition (0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+    @include transition(0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
-    >.content {
+    > .content {
         margin-top: 40px;
         padding: 30px 15px;
         // min-height: 50vh;
     }
 
-    >.footer {
+    > .footer {
         border-top: 1px solid #e7e7e7;
     }
 
-    >.navbar {
+    > .navbar {
         margin-bottom: 0;
     }
 
@@ -319,7 +314,6 @@
 }
 
 .perfect-scrollbar-on {
-
     .sidebar,
     .main-panel {
         height: 100%;
@@ -327,14 +321,13 @@
     }
 }
 
-
 .sidebar,
 .main-panel,
 .sidebar-wrapper {
     -webkit-transition-property: top, bottom, width;
     transition-property: top, bottom, width;
-    -webkit-transition-duration: .2s, .2s, .35s;
-    transition-duration: .2s, .2s, .35s;
+    -webkit-transition-duration: 0.2s, 0.2s, 0.35s;
+    transition-duration: 0.2s, 0.2s, 0.35s;
     -webkit-transition-timing-function: linear, linear, ease;
     transition-timing-function: linear, linear, ease;
     -webkit-overflow-scrolling: touch;
@@ -373,11 +366,10 @@
             z-index: 9999;
 
             .sidebar-wrapper {
-
-                >.nav [data-toggle="collapse"]~div>ul>li>a .sidebar-normal,
-                .user .user-info [data-toggle="collapse"]~div>ul>li>a .sidebar-normal,
-                .user .user-info>a>span,
-                >.nav li>a p {
+                > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+                .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+                .user .user-info > a > span,
+                > .nav li > a p {
                     @include transform-translate-x(-25px);
                     opacity: 0;
                 }
@@ -385,15 +377,15 @@
         }
 
         .sidebar:hover {
-            width: 260px;
+            width: var(--sidebar-width);
 
             .sidebar-wrapper {
-                width: 260px;
+                width: var(--sidebar-width);
 
-                >.nav li>a p,
-                >.nav [data-toggle="collapse"]~div>ul>li>a .sidebar-normal,
-                .user .user-info [data-toggle="collapse"]~div>ul>li>a .sidebar-normal,
-                .user .user-info>a>span {
+                > .nav li > a p,
+                > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+                .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+                .user .user-info > a > span {
                     @include transform-translate-x(0px);
                     opacity: 1;
                 }

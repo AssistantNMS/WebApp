@@ -4,6 +4,9 @@
     --assistantapps-font-weight: "300";
     --assistantapps-team-member-link-text-colour: #{$brand-secondary};
     --background-colour: #{$brand-primary-background};
+    --background-colour-highlight: #{lighten($brand-primary-background, 10%)};
+    --sidebar-width: 260px;
+    --sidebar-ad-height: 0px;
 }
 
 .main-panel.noscroll {
@@ -203,6 +206,10 @@ img.tiny {
 
 .mb-2em {
     margin-bottom: 2em;
+}
+
+.mb-5em {
+    margin-bottom: 5em;
 }
 
 // #app {

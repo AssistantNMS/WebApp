@@ -26,7 +26,7 @@ export const GameItemListWithoutScrollTracking = (props: IProps) => {
     }
 
     return (
-        <div id="game-item-list" className="game-item-list noselect">
+        <div id="game-item-list" className="game-item-list mb-5em noselect">
             <ReactList
                 itemRenderer={(index: number) => {
                     const item = props.items[index];

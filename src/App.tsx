@@ -4,11 +4,16 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useLocation } from 'react-router';
 import { Route, Routes } from 'react-router-dom';
-import { mapDispatchToProps, mapStateToProps } from './App.Redux';
+import { IStateDispatch, IStateProps, mapDispatchToProps, mapStateToProps } from './App.Redux';
+import { OnlineNotification } from './components/common/onlineNotification';
+import { SizeComponent } from './components/common/sizeComponent';
+import { UseNativeApp } from './components/common/useNativeAppPopup';
 import { Drawer } from './components/core/drawer/drawer';
 import { NavBarFake } from './components/core/navbar/navbarFake';
 import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
+import { AdContainer, OwAdSize } from './components/overwolf/adContainer';
 import * as route from './constants/Route';
+import { isRunningInOverwolf } from './helper/overwolfHelper';
 import { trackPageView } from './integration/analytics';
 import { AboutPresenter } from './pages/about/aboutPresenter';
 import { CartPresenter } from './pages/cart/cartPresenter';
@@ -33,9 +38,11 @@ import { PatreonPresenter } from './pages/misc/patreonPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 import { CommunityLinksPage } from './pages/other/communityLinks';
 import { CommunitySpotlightPage } from './pages/other/communitySpotlight';
+import { ContributorsPage } from './pages/other/contributors';
 import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2020Container';
 import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
 import { PortalListContainer } from './pages/portal/portalListContainer';
+import { RandomPortal } from './pages/portal/randomPortalPresenter';
 import { ProcessorItemContainer } from './pages/processor/processorItemContainer';
 import { SettingPresenter } from './pages/setting/settingPresenter';
 import { SocialPresenter } from './pages/social/socialPresenter';
@@ -46,12 +53,7 @@ import { TitlesContainer } from './pages/titles/titlesContainer';
 import { TwitchDropPage } from './pages/twitchDrops/twitchDropPage';
 import { TwitchDropViewerPage } from './pages/twitchDrops/twitchDropViewerPage';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
-import { IStateProps, IStateDispatch } from './App.Redux';
-import { UseNativeApp } from './components/common/useNativeAppPopup';
-import { ContributorsPage } from './pages/other/contributors';
-import { RandomPortal } from './pages/portal/randomPortalPresenter';
-import { isRunningInOverwolf } from './helper/overwolfHelper';
-import { AdContainer, OwAdSize } from './components/overwolf/adContainer';
+import { OverwolfHomePresenter } from './pages/home/overwolfHomePresenter';
 
 interface IProps extends IStateProps, IStateDispatch { }
 
@@ -76,9 +78,14 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
         <div className="main-panel ps-theme-default">
           <div id="sidebar-main-content-overlay" className="full-page-loader opacity80" onClick={() => toggleMenu()}></div>
           <NavBarFake />
+          {isRunningInOverwolf() ? <OnlineNotification /> : null}
           <AnimatePresence exitBeforeEnter>
             <Routes location={location} key={location.key + props.selectedLanguage}>
-              <Route path={route.home} element={<HomePresenter />} />
+              {
+                isRunningInOverwolf()
+                  ? <Route path={route.home} element={<HomePresenter />} />
+                  : <Route path={route.home} element={<OverwolfHomePresenter />} />
+              }
               <Route path={route.setting} element={<SettingPresenter />} />
               <Route path={route.about} element={<AboutPresenter />} />
               <Route path={route.language} element={<LanguagePresenter />} />
@@ -88,20 +95,20 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={route.nmsfm} element={<NmsfmContainer />} />
               <Route path={route.contributors} element={<ContributorsPage />} />
 
-              <Route path={`${route.catalogue}/:types`} element={<CatalogueListContainer />} />
+              <Route path={route.catalogueTypes} element={<CatalogueListContainer />} />
               <Route path={route.catalogue} element={<CataloguePresenter />} />
 
               <Route path={`${route.catalogueItem}/:itemId/:langCode/:name`} element={<CatalogueItemContainer />} />
               <Route path={`${route.catalogueItem}/:itemId/:langCode`} element={<CatalogueItemContainer />} />
               <Route path={`${route.catalogueItem}/:itemId`} element={<CatalogueItemContainer />} />
 
-              <Route path={`${route.processorItem}/:itemId`} element={<ProcessorItemContainer />} />
+              <Route path={route.processorItemDetail} element={<ProcessorItemContainer />} />
               <Route path={route.cart} element={<CartPresenter />} />
               <Route path={route.favourites} element={<FavouritePresenter />} />
               <Route path={route.genericAllRequirements} element={<GenericPageAllRequiredContainer />} />
 
               <Route path={route.guides} element={<GuidePageContainer />} />
-              <Route path={`${route.guides}/:guid`} element={<GuideDetailPageContainer />} />
+              <Route path={route.guidesWithGuid} element={<GuideDetailPageContainer />} />
 
               <Route path={route.portal} element={<PortalListContainer />} />
               <Route path={route.addEditPortal} element={<AddEditPortalContainer />} />
@@ -110,7 +117,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={route.communityMission} element={<CommunityMissionContainer />} />
               <Route path={route.communityMissionTimeline} element={<CommunityMissionTimeline />} />
               <Route path={route.seasonExpedition} element={<ExpeditionSeasonList />} />
-              <Route path={`${route.seasonExpedition}/:seasId`} element={<ExpeditionSeasonPhaseList />} />
+              <Route path={route.seasonExpeditionDetail} element={<ExpeditionSeasonPhaseList />} />
               <Route path={route.weekendMissionDetails} element={<WeekendMissionContainer />} />
               <Route path={route.weekendMission} element={<WeekendMissionMenuPresenter />} />
 
@@ -132,14 +139,21 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
           <UseNativeApp />
 
           {
-            isRunningInOverwolf() && (
-              <AdContainer
-                size={OwAdSize.LongRectangle}
-                containerId="ad-main-panel"
-              />
-            )
+            isRunningInOverwolf()
+              ? (
+                <SizeComponent render={(width, height) => (width < 980)
+                  ? (
+                    <AdContainer
+                      size={OwAdSize.LongRectangle}
+                      containerId="ad-main-panel"
+                    />
+                  )
+                  : (<div className="mt-1em"></div>)}
+                />
+              )
+              : (<div className="mt-1em"></div>)
           }
-          <div className="mt-1em"></div>
+
         </div>
       </ScrollToTop>
     </div>
