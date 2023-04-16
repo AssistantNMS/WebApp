@@ -71,6 +71,7 @@ export const ProcessorItemPresenter: React.FC<IProps> = (props: IProps) => {
                     Icon={props.outputDetails.Icon}
                     Name={props.outputDetails.Name}
                     Group={props.item.Operation}
+                    Quantity={props.item?.Output?.Quantity}
                     Link={() => navigate(`${Route.catalogueItem}/${props.outputDetails.Id}`)}
                 >
                     <h3>{`${timeToMake} ${procInSeconds}`}</h3>

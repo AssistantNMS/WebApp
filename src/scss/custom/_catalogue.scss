@@ -43,8 +43,8 @@ $gen-item-radius: 2px;
     aspect-ratio: 1/1;
     padding: 0;
 
-    >.lazy-load-image-background,
-    >.lazy-load-image-loaded {
+    > .lazy-load-image-background,
+    > .lazy-load-image-loaded {
         width: 100%;
 
         img {
@@ -66,7 +66,7 @@ $gen-item-radius: 2px;
     }
 }
 
-.game-item-list>div>div>div {
+.game-item-list > div > div > div {
     padding-top: 1em;
     padding-bottom: 3em;
     margin-bottom: 3em;
@@ -171,7 +171,7 @@ $gen-item-radius: 2px;
                 order: 1;
             }
 
-            >span {
+            > span {
                 width: 100%;
             }
         }
