@@ -8,7 +8,6 @@ import { LazyLoadImage } from './lazyLoadImage/lazyLoadImage';
 import { DecriptionRegexHighlightText } from '../common/descriptionRegexHighlighter';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { UsageKey } from '../../constants/UsageKey';
-import { BadgeContainer } from '../common/tile/badgeContainer';
 
 interface IWithDepInj {
     toastService: ToastService;
