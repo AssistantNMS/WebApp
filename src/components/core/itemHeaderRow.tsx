@@ -21,6 +21,7 @@ interface IWithoutDepInj {
     Group?: string;
     Abbrev?: string;
     CdnUrl?: string;
+    Quantity?: number;
     Usages?: Array<string>;
     Description?: string;
     Link?: any;
@@ -64,6 +65,17 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                     <span>{name}</span>
                     {
                         hasSymbol && (<span>&nbsp;({props.Abbrev})</span>)
+                    }
+                    {
+                        (props.Quantity != null && props.Quantity > 0)
+                            ? (
+                                <span style={{ display: 'inline-block', fontSize: '0.5em', lineHeight: '1em', width: '6em', position: 'relative' }}>
+                                    <p className="secondary chip" style={{ position: 'absolute', top: '-1.4em', left: '0.5em' }}>
+                                        x {props.Quantity}
+                                    </p>
+                                </span>
+                            )
+                            : null
                     }
                 </h2>
                 <h3 className="ta-left ta-center-sm" style={{ marginTop: 0 }}>{group}</h3>
