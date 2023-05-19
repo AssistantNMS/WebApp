@@ -1,17 +1,17 @@
+import { AlphabetTranslation } from '../../contracts/data/alphabetTranslation';
+import { AssistantAppLinks } from '../../contracts/data/assistantAppLinks';
+import { ControlMappingList, PlatformControlMapping } from '../../contracts/data/controlMapping';
+import { DevDetail } from '../../contracts/data/devDetail';
+import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
+import { MetaData } from '../../contracts/data/metaData';
+import { QuicksilverStore } from '../../contracts/data/quicksilver';
+import { StarshipScrap } from '../../contracts/data/starshipScrap';
+import { TwitchDrop } from '../../contracts/data/twitchDrop';
+import { ControllerPlatformType, ToJsonProperty } from '../../contracts/enum/ControllerPlatformType';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { getHashForObject } from '../../helper/hashHelper';
 import { anyObject } from '../../helper/typescriptHacks';
-import { QuicksilverStore } from '../../contracts/data/quicksilver';
-import { DevDetail } from '../../contracts/data/devDetail';
-import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
-import { AlphabetTranslation } from '../../contracts/data/alphabetTranslation';
-import { MetaData } from '../../contracts/data/metaData';
-import { AssistantAppLinks } from '../../contracts/data/assistantAppLinks';
-import { ControlMappingList, PlatformControlMapping } from '../../contracts/data/controlMapping';
-import { ControllerPlatformType, ToJsonProperty } from '../../contracts/enum/ControllerPlatformType';
 import { BaseJsonService } from './BaseJsonService';
-import { StarshipScrap } from '../../contracts/data/starshipScrap';
-import { TwitchDrop } from '../../contracts/data/twitchDrop';
 
 export class DataJsonService extends BaseJsonService {
 

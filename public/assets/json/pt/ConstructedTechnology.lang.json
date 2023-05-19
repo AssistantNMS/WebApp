@@ -1355,7 +1355,7 @@
     "CurrencyType": "None",
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
-    "Power": 100.0,
+    "Power": -50.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/47.png",
     "Usages": [
       "HasDevProperties"
@@ -1852,7 +1852,7 @@
     "Group": "Unidade de atualização",
     "Description": "Um circuito de atualização flexível, compatível com todas as <STELLAR>Multiferramentas pessoais<>.\n\nEste módulo pode ser ligado a uma Multiferramenta no <STELLAR>Suporte de Atualização de Multiferramenta<> de uma estação espacial, oferecendo mais espaço ao utilizador na estrutura interna da Multiferramenta, para acrescentar atualizações ou especializações tecnológicas.",
     "BaseValueUnits": 85000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2685,7 +2685,6 @@
     "CurrencyType": "None",
     "Colour": "0063B7",
     "Usages": [
-      "HasUsedToCraft",
       "HasDevProperties"
     ],
     "BlueprintCost": 1,
@@ -2711,7 +2710,7 @@
     "Group": "Módulo de pesquisa avançada",
     "Description": "Uma unidade de dados portátil, compatível com a maioria das <STELLAR>instalações de fabricadores planetárias<>.\n\nUma vez obtido o acesso a um terminal de controlo central, a Unidade de Substituição pode desviar os recursos das instalações para a pesquisa de receitas de novos produtos.",
     "BaseValueUnits": 50000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2732,7 +2731,7 @@
     "Group": "Plataforma de Cablagem de Nave Capital",
     "Description": "Um módulo de tecnologia recolhido dos restos de uma grande nave interestelar. Pode ser recolhido de <STELLAR>acidentes de cargueiros<> ou recuperados durante <STELLAR>expedições de fragatas<>.\n\nInútil na sua forma atual, uma <TECHNOLOGY>Estação de Pesquisa<> a bordo de um cargueiro pode convertê-lo em tecnologia utilizável.",
     "BaseValueUnits": 95000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2753,7 +2752,7 @@
     "Group": "Módulo de Cargueiro auto-extensível",
     "Description": "Um módulo tecnológico recolhido dos restos de um <STELLAR>cargueiro abandonado<> encontrado a vaguear no espaço. Pode também ser recuperado durante <STELLAR>expedições de fragatas<>.\n\nNano-expansores pré-embalados preenchem esta unidade portátil e enxertam-na num cargueiro existente, aumentando a sua <STELLAR>capacidade de inventário<>. Aplica no <TECHNOLOGY>Terminal de Atualização<> do teu cargueiro.",
     "BaseValueUnits": 105000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2775,7 +2774,7 @@
     "Group": "Cápsula de Armazenamento da Nave Senciente",
     "Description": "Um <SPECIAL>nódulo de armazenamento adicional<> para naves espaciais <TECHNOLOGY>Sencientes<>. Ao eclodir, o parasita dentro desta cápsula é enxertado na nave, trocando a utilização das suas vísceras cavernosas por nutrientes vitais do hospedeiro.\n\nUtiliza <VAL_ON><IMG>FE_ALT1<><> para ativar o crescimento e iniciar o <VAL_ON>processo de eclosão<>.",
     "BaseValueUnits": 125000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2799,7 +2798,7 @@
     "Group": "Cápsula de Gema Pulsante",
     "Description": "Uma cápsula de fluido genético, concebida para promover a criação de uma nova <TECHNOLOGY>tecnologia bio-infundida<> para uma <TECHNOLOGY>nave espacial senciente<>.\n\nO embrião tornar-se-á numa <TECHNOLOGY>atualização de biotecnologia<>. <STELLAR>Começa a biogénese<> com <VAL_ON><IMG>FE_ALT1<><>.",
     "BaseValueUnits": 126000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2823,7 +2822,7 @@
     "Group": "Módulo de Expansão da Nave Espacial",
     "Description": "Um módulo de tecnologia recolhido dos restos de uma <STELLAR>nave espacial recuperada<>. Pode ser recolhido de <STELLAR>locais de acidentes de cargueiros<> ou recuperado em <STELLAR>expedições de fragatas<>.\n\nNas <TECHNOLOGY>Lojas de Naves Espaciais<> apropriadas, pode ser usado para expandir a capacidade de armazenamento da nave.",
     "BaseValueUnits": 125000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2867,7 +2866,7 @@
     "Group": "Dados de Navegação Criptografados",
     "Description": "Dados de navegação codificados que, ao serem desencriptados, irão revelar a localização de uma <TECHNOLOGY>Cápsula de Escape<> que contém uma <STELLAR>Atualização do Inventário<> do Exofato.\n\nSeleciona as coordenadas no inventário e usa <TECHNOLOGY>Traçar Rota<> (<IMG>FE_ALT1<>) para afixar a localização no visor do Exofato.",
     "BaseValueUnits": 85000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2890,7 +2889,7 @@
     "Group": "Sequência de Dados Incompleta",
     "Description": "Um fragmento da sequência de encriptação de sobrecarga para um <TECHNOLOGY>registo de emergência de um cargueiro<>.\n\nPodem ser necessárias várias partes da sequência para aceder aos dados guardados.",
     "BaseValueUnits": 1500.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "Usages": [
@@ -3008,6 +3007,173 @@
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
     "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech108",
+    "Icon": "constructedTechnology/108.png",
+    "Name": "Unidade de Expansão do Exofato",
+    "Group": "Unidade de atualização",
+    "Description": "Um módulo de tecnologia de sobrevivência avançada que permite a expansão do <STELLAR>Armazenamento do Exofato<>.\n\nOs nano-expansores pré-embalados criam espaços vazios de sub-warp no Exofato, aumentando a <STELLAR>capacidade de inventário<>. Aplica este aumento no terminal de atualização do Exofato a bordo da <STELLAR>Estação Espacial<>.",
+    "BaseValueUnits": 155000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 15.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech109",
+    "Icon": "constructedTechnology/109.png",
+    "Name": "Estação de Exofato de Utopia",
+    "Group": "Estação de Investigação de Exofato Portátil",
+    "Description": "Os Supervisores de Utopia desejam que os seus corajosos colonizadores sejam <STELLAR>fortes<> e <STELLAR>bem-equipados<>!\n\nEsta <TECHNOLOGY>Estação de Investigação Portátil Oficial<> permite aceder a uma vasta gama de <TECHNOLOGY>atualizações tecnológicas<>, facilmente adquiridas com a moeda correspondente!\n\nConstrói e visita a tua própria <STELLAR>Estação de Exofato de Utopia<> ainda hoje!",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 15,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech110",
+    "Icon": "constructedTechnology/110.png",
+    "Name": "Estação de Multiferramenta de Utopia",
+    "Group": "Estação de Investigação de Multiferramenta Portátil",
+    "Description": "Os Supervisores de Utopia desejam que os seus colonizadores corajosos sejam <STELLAR>fortes<> e <STELLAR>estejam bem-equipados<>!\n\nEsta <TECHNOLOGY>estação de investigação portátil oficial<> permite aceder a uma vasta gama de <TECHNOLOGY>atualizações tecnológicas<>, facilmente adquiridas com a moeda correspondente!\n\nConstrói e visita a tua própria <STELLAR>Estação de Multiferramenta de Utopia<> ainda hoje!",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 15,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw11",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech111",
+    "Icon": "constructedTechnology/111.png",
+    "Name": "Estação de Investigação de Exonave Portátil",
+    "Group": "Estação de Investigação de Exonave Portátil",
+    "Description": "Os Supervisores de Utopia desejam que os seus corajosos colonizadores sejam <STELLAR>fortes<> e <STELLAR>bem-equipados<>!\n\nEsta <TECHNOLOGY>Estação de Investigação Portátil Oficial<> permite aceder a uma vasta gama de <TECHNOLOGY>atualizações tecnológicas<>, facilmente adquiridas com a moeda correspondente!\n\nConstrói e visita a tua própria <STELLAR>Estação de Exonave de Utopia<> ainda hoje!",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 15,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech112",
+    "Icon": "constructedTechnology/112.png",
+    "Name": "Estação de Naves de Utopia",
+    "Group": "Estação de Investigação de Nave Espacial Portátil",
+    "Description": "Os Supervisores de Utopia desejam que os seus corajosos colonizadores sejam <STELLAR>fortes<> e <STELLAR>bem-equipados<>!\n\nEsta <TECHNOLOGY>Estação de Investigação Portátil Oficial<> permite aceder a uma vasta gama de <TECHNOLOGY>atualizações tecnológicas<>, facilmente adquiridas com a moeda correspondente!\n\nConstrói e visita a tua própria <STELLAR>Estação de Nave Espacial de Utopia<> ainda hoje!",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 15,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech113",
+    "Icon": "constructedTechnology/113.png",
+    "Name": "Estação de Construção de Utopia",
+    "Group": "Terminal do Portal de Esquema de Construção",
+    "Description": "Os Supervisores de Utopia desejam que os seus colonizadores estejam <STELLAR>abrigados<> e <STELLAR>felizes<>! Juntos, iremos tornar Bakkin em algo verdadeiramente deslumbrante!\n\nEsta <TECHNOLOGY>Estação de Investigação Portátil Oficial<> permite aceder a uma vasta gama de <TECHNOLOGY>esquemas de construção<>, facilmente adquiridos com a moeda correspondente!\n\nConstrói e visita a tua própria <STELLAR>Estação de Construção de Utopia<> ainda hoje!",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 15,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
     "StatBonuses": [],
     "ConsumableRewardTexts": []
   }

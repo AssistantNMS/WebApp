@@ -1355,7 +1355,7 @@
     "CurrencyType": "None",
     "MaxStackSize": 5.0,
     "Colour": "2C7C9F",
-    "Power": 100.0,
+    "Power": -50.0,
     "CdnUrl": "https://cdn.nmsassistant.com/constructedTechnology/47.png",
     "Usages": [
       "HasDevProperties"
@@ -1852,7 +1852,7 @@
     "Group": "アップグレードユニット",
     "Description": "柔軟なアップグレード回路。すべての<STELLAR>マルチツール<>と互換性がある。\n\n宇宙ステーションの<STELLAR>マルチツールアップグレードラック<>でマルチツールに装着できるこのモジュールは、マルチツールの内部レイアウトにさらなる空きを作ってくれるため、アップグレードやテクノロジー特性をさらに追加できるようになる。",
     "BaseValueUnits": 85000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2685,7 +2685,6 @@
     "CurrencyType": "None",
     "Colour": "0063B7",
     "Usages": [
-      "HasUsedToCraft",
       "HasDevProperties"
     ],
     "BlueprintCost": 1,
@@ -2711,7 +2710,7 @@
     "Group": "高機能リサーチモジュール",
     "Description": "ほとんどの<STELLAR>惑星ファブリケータ施設<>と\n互換性を持つ、携帯式データユニット。\n\n中央コントロールターミナルへの\nアクセスが確立されると、上書きユニット\nは施設の資源を、新しいアイテムレシピの\n研究へと変換する。",
     "BaseValueUnits": 50000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2732,7 +2731,7 @@
     "Group": "主力艦配線プラットフォーム",
     "Description": "大型の宇宙船の残骸から回収した\nモジュール。<STELLAR>貨物船の墜落現場<>あるいは\n<STELLAR>フリゲート探索<>の最中に\n手に入れることができる。\n\nこういう形状をしているが、貨物船の\n<TECHNOLOGY>研究所<>において有効なテクノロジーに\n変えられることもある。",
     "BaseValueUnits": 95000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2753,7 +2752,7 @@
     "Group": "自動拡張貨物船モジュール",
     "Description": "宇宙空間を漂っていた<STELLAR>放棄貨物船<>の残骸から 入手したテクノロジーモジュール。<STELLAR>フリゲート探索<>の最中にも手に入ることがある。\n\nあらかじめパックされたナノ拡張剤によって 膨らみ、既存の貨物船に接続すると、<STELLAR>アイテムケースの容量<>が増加する。貨物船の<TECHNOLOGY>アップグレードターミナル<>で適用できる。",
     "BaseValueUnits": 105000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2775,7 +2774,7 @@
     "Group": "知的生命船の保管嚢",
     "Description": "<TECHNOLOGY>知的生命<>船用の<SPECIAL>追加保管小結節<>。 孵化すると、この嚢内にいた寄生体が船の船体にくっつき、ホストから生命維持に必要な栄養を受け取るのと引き換えに、洞窟のような体内を使用できるようにする。\n\n<VAL_ON><IMG>FE_ALT1<><>で成長と<VAL_ON>孵化プロセスを<>を開始させられる。",
     "BaseValueUnits": 125000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2799,7 +2798,7 @@
     "Group": "脈動する卵黄嚢",
     "Description": "遺伝子の液体が入った蠢く袋。<TECHNOLOGY>知覚宇宙船<>の新たな<TECHNOLOGY>生体融合テクノロジー<>作成を促進するべく作られたもの。\n\n胚は<TECHNOLOGY>バイオテクノロジーアップグレード<>へと成長する。<VAL_ON><IMG>FE_ALT1<><>で<STELLAR>生合成を始める<>ことができる。",
     "BaseValueUnits": 126000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2823,7 +2822,7 @@
     "Group": "宇宙船拡張モジュール",
     "Description": "宇宙船の残骸からサルベージされた\nモジュール型機械。\n<STELLAR>貨物船の墜落現場<>から回収、\nあるいは<STELLAR>フリゲートでの探検<>中に\nサルベージできる場合もある。\n\n適切な<TECHNOLOGY>宇宙船艤装場<>で使えば、\n宇宙船の積載量を増やすことができる。",
     "BaseValueUnits": 125000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2867,7 +2866,7 @@
     "Group": "暗号化されたナビゲーションデータ",
     "Description": "暗号化されたナビゲーションデータ。正しく復号化すると、エクススーツ<STELLAR>アイテムケースのアップグレード<>が入った<TECHNOLOGY>投下ポッド<>の座標を示す。\n\nアイテムケースで座標を選択し、<TECHNOLOGY>ルート設定<>(<IMG>FE_ALT1<>)を行うと、エクソスーツのディスプレイに場所がブックマークされる。",
     "BaseValueUnits": 85000.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 20.0,
     "Colour": "1A2733",
     "Usages": [
@@ -2890,7 +2889,7 @@
     "Group": "データプロセス未完了",
     "Description": "<TECHNOLOGY>貨物船の緊急事態ログ<>の暗号化\nオーバーライドプロセスの一部。\n\nプロセスの中には、記録データへの\nフルアクセス許可が必要なものもある。",
     "BaseValueUnits": 1500.0,
-    "CurrencyType": "None",
+    "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "1A2733",
     "Usages": [
@@ -3008,6 +3007,173 @@
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
     "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech108",
+    "Icon": "constructedTechnology/108.png",
+    "Name": "エクソスーツ拡張ユニット",
+    "Group": "アップグレードユニット",
+    "Description": "<STELLAR>エクソスーツの保管容量<>を拡張できる高度なサバイバルテクノロジーモジュール。\n\nあらかじめパックされたナノ拡張剤がエクソスーツの中に安定した空間を作製し、<STELLAR>アイテムケースの容量<>が増加する。<STELLAR>宇宙ステーション<>にあるエクソスーツのアップグレードターミナルで拡張を適用できる。",
+    "BaseValueUnits": 155000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 15.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech109",
+    "Icon": "constructedTechnology/109.png",
+    "Name": "ユートピアエクソスーツステーション",
+    "Group": "携帯用エクソスーツ研究ステーション",
+    "Description": "ユートピアの監督官たちは、勇敢な開拓者が<STELLAR>強く<>なり、<STELLAR>装備が整っている<>ことを望んでいます！\n\nこの公式ライセンスを受けた<TECHNOLOGY>携帯用研究ステーション<>があれば、簡単に適正価格で、さまざまな<TECHNOLOGY>テクノロジーアップグレード<>を利用できるようになります！\n\n早速、自分の<STELLAR>ユートピアエクソスーツステーション<>を作成して訪れてみよう！",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 15,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw10",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech110",
+    "Icon": "constructedTechnology/110.png",
+    "Name": "ユートピアマルチツールステーション",
+    "Group": "携帯用マルチツール研究ステーション",
+    "Description": "ユートピアの監督官たちは、勇敢な開拓者が<STELLAR>強く<>なり、<STELLAR>装備が整っている<>ことを望んでいます！\n\nこの公式ライセンスを受けた<TECHNOLOGY>携帯用研究ステーション<>があれば、簡単に適正価格で、さまざまな<TECHNOLOGY>テクノロジーアップグレード<>を利用できるようになります！\n\n早速、自分の<STELLAR>ユートピアマルチツールステーション<>を作成して訪れてみよう！",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 15,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw11",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech111",
+    "Icon": "constructedTechnology/111.png",
+    "Name": "携帯用エクソクラフト研究ステーション",
+    "Group": "携帯用エクソクラフト研究ステーション",
+    "Description": "ユートピアの監督官たちは、勇敢な開拓者が<STELLAR>強く<>なり、<STELLAR>装備が整っている<>ことを望んでいます！\n\nこの公式ライセンスを受けた<TECHNOLOGY>携帯用研究ステーション<>があれば、簡単に適正価格で、さまざまな<TECHNOLOGY>テクノロジーアップグレード<>を利用できるようになります！\n\n早速、自分の<STELLAR>ユートピアエクソクラフトステーション<>を作成して訪れてみよう！",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 15,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw5",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech112",
+    "Icon": "constructedTechnology/112.png",
+    "Name": "ユートピア宇宙船ステーション",
+    "Group": "携帯用宇宙船研究ステーション",
+    "Description": "ユートピアの監督官たちは、勇敢な開拓者が<STELLAR>強く<>なり、<STELLAR>装備が整っている<>ことを望んでいます！\n\nこの公式ライセンスを受けた<TECHNOLOGY>携帯用研究ステーション<>があれば、簡単に適正価格で、さまざまな<TECHNOLOGY>テクノロジーアップグレード<>を利用できるようになります！\n\n早速、自分の<STELLAR>ユートピア宇宙船ステーション<>を作成して訪れてみよう！",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 15,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw7",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "conTech113",
+    "Icon": "constructedTechnology/113.png",
+    "Name": "ユートピア建設ステーション",
+    "Group": "ポータル建設設計図ターミナル",
+    "Description": "ユートピアの監督官たちは、勇敢な開拓者が<STELLAR>保護され<>、<STELLAR>幸せ<>になることを望んでいます！一緒に、バッキンを美しくしましょう！\n\nこの公式ライセンスを受けた<TECHNOLOGY>携帯用研究ステーション<>があれば、簡単に適正価格で、さまざまな<TECHNOLOGY>建設設計図<>を利用できるようになります。\n\n早速、自分の<STELLAR>ユートピア建設ステーション<>を作成して訪れてみよう！",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 15,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw2",
+        "Quantity": 25
+      },
+      {
+        "Id": "raw23",
+        "Quantity": 40
+      }
+    ],
     "StatBonuses": [],
     "ConsumableRewardTexts": []
   }

@@ -441,7 +441,7 @@
     "Name": "Pérola Viva",
     "Group": "Pedra Preciosa Semiconsciente",
     "Description": "Nascida nos corações de enormes moluscos brilhantes encontrados debaixo de água.\n\nAo contrário da maioria das pérolas, esta amostra não é um calcite sem vida. Algum traço da consciência da concha-mãe permanece dentro da gema, dando-lhe uma beleza persistente e assombrosa.",
-    "BaseValueUnits": 4797.5,
+    "BaseValueUnits": 4798.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "CCCCCC",
@@ -499,6 +499,7 @@
     "Usages": [
       "HasUsedToCraft",
       "HasRefinedToCreate",
+      "HasCookToCreate",
       "HasDevProperties",
       "IsEggIngredient"
     ],
@@ -595,7 +596,7 @@
     "Name": "Bola Gravitino",
     "Group": "Produto comercial",
     "Description": "Um aglomerado de partículas extremamente simétricas criado por forças divergentes super-gravitacionais. É criada uma <STELLAR>microfenda<> à medida que se formam, e a extração da esfera provoca um enfraquecimento localizado da realidade. <FUEL>Forças sentinela<> irão responder para estabilizar qualquer anomalia.\n\nPode ser vendido num <TECHNOLOGY>Terminal Comercial Galáctico<>.",
-    "BaseValueUnits": 40023.5,
+    "BaseValueUnits": 40024.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
@@ -898,6 +899,7 @@
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/curiosities/36.png",
     "Usages": [
+      "HasUsedToCraft",
       "HasDevProperties",
       "IsEggIngredient"
     ],
@@ -1506,9 +1508,12 @@
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "CookingValue": 0.0,
     "Usages": [
       "HasRefinedToCreate",
+      "HasCookToCreate",
       "HasDevProperties",
+      "IsEggIngredient",
       "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 1,
@@ -1700,6 +1705,7 @@
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "Usages": [
+      "HasUsedToCraft",
       "HasDevProperties",
       "IsConsumable",
       "IsAddedInTrackedUpdate"
@@ -1742,7 +1748,7 @@
     "Name": "Sinalizador de Sentinela (Desligado)",
     "Group": "Comunicador de Sentinela",
     "Description": "Um dispositivo especializado, criado pela Iteração Tétis. A sua função principal é contactar o teu <TECHNOLOGY>drone Sentinela reconstruído<>.\n\nSeleciona o dispositivo e utiliza <STELLAR>Ativar Sinalizador<> (<IMG>FE_ALT1<>) para sinalizar [<TECHNOLOGY>O Drone<>].\n\nSe este sinalizador estiver ativo no <STELLAR>Inventário do Exofato<>, o drone ficará ao teu lado enquanto estiveres num planeta.",
-    "BaseValueUnits": 16.4,
+    "BaseValueUnits": 16.0,
     "CurrencyType": "Credits",
     "Colour": "1A2733",
     "Usages": [
@@ -1781,5 +1787,442 @@
     "RequiredItems": [],
     "StatBonuses": [],
     "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur84",
+    "Icon": "other/207.png",
+    "Name": "Mapa Planetário",
+    "Group": "Dados Cartográficos Comerciais",
+    "Description": "Um mapa de um planeta próximo. Um <COMMODITY>posto avançado não habitado<> foi marcado.\n\nSeleciona o mapa e usa <VAL_ON>Traçar Rota (<IMG>FE_ALT1<>)<> para fixar a localização no visor do Exofato.\n\nNovos mapas podem ser obtidos ao trocar <COMMODITY>Dados de Navegação<> por um Cartógrafo da Estação Espacial.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Converter dados para o marcador de navegação do Exofato"
+    ]
+  },
+  {
+    "Id": "cur85",
+    "Icon": "other/3.png",
+    "Name": "Chave Anciã",
+    "Group": "Artefacto Intemporal",
+    "Description": "Este pedaço envelhecido de ferro forjado, uma chave com algum peso, deve pertencer a uma fechadura próxima...",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur86",
+    "Icon": "other/4.png",
+    "Name": "Chave Tridente",
+    "Group": "Relíquia Aquática",
+    "Description": "Uma estranha chave bifurcada, brilha com uma luz ultravioleta.\n\nApesar de sua aparência primitiva, os sistemas de deteção do Exofato revelam traços de espuma de nanite nos seus dentes.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur87",
+    "Icon": "products/156.png",
+    "Name": "Sinalizador de Sentinela",
+    "Group": "Comunicador de Sentinela",
+    "Description": "Um dispositivo especializado, criado pela Iteração Tétis. A sua função principal é contactar o teu <TECHNOLOGY>drone Sentinela reconstruído<>.\n\nSeleciona o dispositivo e utiliza Desativar Transmissão (<IMG>FE_ALT1<>) para parar de sinalizar [ O Vigia ].\n\nSe este sinalizador estiver ativo no <STELLAR>Inventário do Exofato<>, o drone ficará ao teu lado enquanto estiveres num planeta.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Desativar o sinal e dispensar [ O Vigia ]"
+    ]
+  },
+  {
+    "Id": "cur88",
+    "Icon": "curiosities/88.png",
+    "Name": "Fornecimento de Materiais Beta de Utopia",
+    "Group": "Cache de Fornecimentos da Fundação de Utopia",
+    "Description": "Para apoiar os trabalhadores que, corajosamente, estão a terraformar os espaços vazios repletos de lava do planeta Pehaelump, os Supervisores de Utopia têm o prazer de fornecer este cache de bens vitais.\n\nSeleciona o pacote de fornecimentos e usa <VAL_ON>Abrir Pacote<> (<IMG>FE_ALT1<>) para recolher os materiais da Fundação de Utopia, bem como os detalhes da tua <STELLAR>próxima tarefa<>.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Receber materiais da Fundação de Utopia"
+    ]
+  },
+  {
+    "Id": "cur89",
+    "Icon": "curiosities/88.png",
+    "Name": "Fornecimento de Materiais Gama de Utopia",
+    "Group": "Cache de Fornecimentos da Fundação de Utopia",
+    "Description": "Para apoiar os trabalhadores que, de forma valente, trabalham nas montanhas inclinadas e expostas do planeta New Sesto, os Supervisores de Utopia têm o prazer de fornecer este cache de bens vitais.\n\nSeleciona o pacote de fornecimentos e usa <VAL_ON>Abrir Pacote<> (<IMG>FE_ALT1<>) para recolher os materiais da Fundação de Utopia, bem como os detalhes da tua <STELLAR>próxima tarefa<>.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Receber materiais da Fundação de Utopia"
+    ]
+  },
+  {
+    "Id": "cur90",
+    "Icon": "curiosities/88.png",
+    "Name": "Fornecimento de Materiais Delta de Utopia",
+    "Group": "Cache de Fornecimentos da Fundação de Utopia",
+    "Description": "Para apoiar os trabalhadores sobreviventes que agora confrontam [ <SPECIAL>CENSURADO<> ] do planeta Idalth XIV, os Supervisores de Utopia têm o prazer de fornecer este cache de bens vitais.\n\nSeleciona o pacote de fornecimentos e usa <VAL_ON>Abrir Pacote<> (<IMG>FE_ALT1<>) para recolher os materiais da Fundação de Utopia, bem como os detalhes da tua <STELLAR>próxima tarefa<>.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Receber materiais da Fundação de Utopia"
+    ]
+  },
+  {
+    "Id": "cur91",
+    "Icon": "curiosities/88.png",
+    "Name": "Fornecimento de Materiais Épsilon de Utopia",
+    "Group": "Cache de Fornecimentos da Fundação de Utopia",
+    "Description": "Para apoiar os trabalhadores que, de forma tão nobre, reconstruíram os pântanos aspirantes do planeta Endil A8, os Supervisores de Utopia têm o prazer de fornecer este cache de bens vitais.\n\nSeleciona o pacote de fornecimentos e usa <VAL_ON>Abrir Pacote<> (<IMG>FE_ALT1<>) para recolher os materiais da Fundação de Utopia, bem como os detalhes da tua <STELLAR>próxima tarefa<>.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Receber materiais da Fundação de Utopia"
+    ]
+  },
+  {
+    "Id": "cur92",
+    "Icon": "curiosities/92.png",
+    "Name": "Coordenadas Beta do Povoamento",
+    "Group": "Mapa do Povoamento da Fundação de Utopia",
+    "Description": "Um mapa da Fundação de Utopia onde é possível ver <STELLAR>coordenadas personalizadas<> do teu local de construção.\n\nSeleciona o mapa e usa <VAL_ON>Traçar Rota<> (<IMG>FE_ALT1<>) para assinalar a localização no visor do Exofato.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Receber as coordenadas de construção da Fundação de Utopia"
+    ]
+  },
+  {
+    "Id": "cur93",
+    "Icon": "curiosities/92.png",
+    "Name": "Coordenadas Gama do Povoamento",
+    "Group": "Mapa do Povoamento da Fundação de Utopia",
+    "Description": "Um mapa da Fundação de Utopia onde é possível ver <STELLAR>coordenadas personalizadas<> do teu local de construção.\n\nSeleciona o mapa e usa <VAL_ON>Traçar Rota<> (<IMG>FE_ALT1<>) para assinalar a localização no visor do Exofato.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Receber as coordenadas de construção da Fundação de Utopia"
+    ]
+  },
+  {
+    "Id": "cur94",
+    "Icon": "curiosities/92.png",
+    "Name": "Coordenadas Delta do Povoamento",
+    "Group": "Mapa do Povoamento da Fundação de Utopia",
+    "Description": "Um mapa da Fundação de Utopia onde é possível ver <STELLAR>coordenadas personalizadas<> do teu local de construção.\n\nSeleciona o mapa e usa <VAL_ON>Traçar Rota<> (<IMG>FE_ALT1<>) para assinalar a localização no visor do Exofato.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Receber as coordenadas de construção da Fundação de Utopia"
+    ]
+  },
+  {
+    "Id": "cur95",
+    "Icon": "curiosities/92.png",
+    "Name": "Coordenadas Épsilon do Povoamento",
+    "Group": "Mapa do Povoamento da Fundação de Utopia",
+    "Description": "Um mapa da Fundação de Utopia onde é possível ver <STELLAR>coordenadas personalizadas<> do teu local de construção.\n\nSeleciona o mapa e usa <VAL_ON>Traçar Rota<> (<IMG>FE_ALT1<>) para assinalar a localização no visor do Exofato.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Receber as coordenadas de construção da Fundação de Utopia"
+    ]
+  },
+  {
+    "Id": "cur96",
+    "Icon": "curiosities/33.png",
+    "Name": "Histórico de Construção",
+    "Group": "Arquivo Confidencial",
+    "Description": "Este relatório regista a história de uma instalação planetária que faz parte do <EXPED>Projeto Utopia<>. Curiosamente, várias secções estão ausentes.\n\nDS 2368 :: <STELLAR>Instalação <><TRADEABLE>fundada<><STELLAR>. Perfuradora profunda a plasma operacional.<>\nDS 2384 :: <STELLAR>Crescimento do retorno estável em 1%.<>\nDS 2400 :: <STELLAR>Supervisores a consultar a taxa de crescimento.<>\nDS 2416 :: <STELLAR>Exp. orbital aprovada. Comércio da estação em crescimento.<>\nDS 2432 :: <SPECIAL>[Censurado]<> <STELLAR>perigo encontrado.<>\nDS 2448 :: <SPECIAL>[Censurado]<>\nDS 2464 :: <STELLAR>Projeto Utopia iniciado.<>\nDS 2464 :: <STELLAR>Instalação <><TRADEABLE>restaurada<><STELLAR>. Perfuradora profunda a plasma operacional. Rotas comerciais reabertas.<>\nDS 2480 :: <SPECIAL>[Censurado]<>\nDS 2496 :: <STELLAR>Instalação <><TRADEABLE>restaurada<><STELLAR>. Perfuradora profunda a plasma operacional. Rotas comerciais reabertas.<>\nDS 2512 :: <SPECIAL>[Censurado]<>\n\nA duas últimas entradas são repetidas ao longo de centenas de páginas.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur97",
+    "Icon": "curiosities/97.png",
+    "Name": "Coração Cristalizado",
+    "Group": "Núcleo Aerónico Corrompido",
+    "Description": "O núcleo funcional de uma unidade quadruplicada Sentinela, mas deformado para lá de todo o reconhecimento. Toda a máquina está infestada com um material cristalino que pulsa de forma selvagem aquando da inspeção.\n\nUma análise atenta revela que a própria maquinaria parece ter sido reconfigurada, esticando-se e deformando-se numa forma totalmente nova, contorcendo-se na presença destes cascos de vidro radiantes.",
+    "BaseValueUnits": 37000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur98",
+    "Icon": "curiosities/98.png",
+    "Name": "Cérebro Hialino",
+    "Group": "Nave Senciente",
+    "Description": "A unidade central de processamento de uma nave intercetora Sentinela. O circuito contorce-se microscopicamente, reorganizando-se constantemente, à medida que procura anomalias.\n\nUm componente vital para qualquer entidade que pretenda construir a sua própria <TECHNOLOGY>Interface do Piloto<> para um Intercetor Sentinela.\n\nEstado: <FUEL>VOLÁTIL<>",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Localiza o local milenar nos sonhos desta mente"
+    ]
+  },
+  {
+    "Id": "cur99",
+    "Icon": "curiosities/99.png",
+    "Name": "Fragmento de IA de Couraçado",
+    "Group": "Vestígio do Núcleo da Nave de Guerra",
+    "Description": "Um único fragmento da estrutura colossal no coração da nave capital Sentinela. Pisca, o seu olho solitário treinado com o único pedaço de dados que retém, a última localização conhecida de uma das suas frotas de Intercetores.\n\nSeleciona o Fragmento de IA e usa o Arquivo de Sonda (<IMG>FE_ALT1<>) para traduzir informação sobre o local do acidente do Intercetor para os sistemas de navegação da tua nave espacial.",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Arquivo de sonda para intercetores perdidos"
+    ]
+  },
+  {
+    "Id": "cur100",
+    "Icon": "curiosities/100.png",
+    "Name": "Espelho Invertido",
+    "Group": "Vestígios Vítreos Ardentes",
+    "Description": "Um painel de <SPECIAL>v i d r o<> vigilante, recuperado dos restos de fumo dos <TECHNOLOGY>Ressonadores de Dissonância<> do enxame corrompido. Emite mais luz do que reflete, lançando uma ligeira tonalidade púrpura sobre o seu entorno.\n\nAltamente procurado para operações de recuperação, uma vez que pode ser utilizado para contornar os sistemas de segurança das principais <TECHNOLOGY>tecnologias das naves Sentinela<>.",
+    "BaseValueUnits": 17000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur101",
+    "Icon": "curiosities/101.png",
+    "Name": "Casco Radiante",
+    "Group": "Intrusão de Realidade Vítrea",
+    "Description": "Um fragmento de força vital vítrea, lascado a partir de uma formação maior. A ligação intermolecular dinâmica dá ao casco uma qualidade estranhamente flexível e sinuosa. Contorce-se suavemente, quase como se estivesse à procura de algo...\n\nAltamente procurado para operações de recuperação, uma vez que pode ser utilizado para contornar os sistemas de segurança das principais <TECHNOLOGY>tecnologias das naves Sentinela<>.",
+    "BaseValueUnits": 1900.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasUsedToRecharge",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur102",
+    "Icon": "curiosities/102.png",
+    "Name": "Localizador de Eco",
+    "Group": "Rastreador de Localização Harmónica",
+    "Description": "Uma curiosa mistura de tecnologia antiga e nova, um híbrido entre dois métodos de criação inteiramente separados. No entanto, este <STELLAR>dispositivo de rastreamento de localização<> parece estar totalmente funcional.\n\nSeleciona este dispositivo e utiliza <VAL_ON>Ressoar (<IMG>FE_ALT1<>)<> para rastrear a sua origem harmónica.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Converter dados para o marcador de navegação do Exofato"
+    ]
   }
 ]

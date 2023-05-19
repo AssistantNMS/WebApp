@@ -441,7 +441,7 @@
     "Name": "活体珍珠",
     "Group": "半意识宝石",
     "Description": "发现于深海的巨大发光软体动物的核心产物。\n\n与大多数珍珠不同，该样本并非是无生命的方解石。母蚌的部分意识残留在宝石里，使它拥有了一种滞留不去的诡异之美。",
-    "BaseValueUnits": 4797.5,
+    "BaseValueUnits": 4798.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "CCCCCC",
@@ -499,6 +499,7 @@
     "Usages": [
       "HasUsedToCraft",
       "HasRefinedToCreate",
+      "HasCookToCreate",
       "HasDevProperties",
       "IsEggIngredient"
     ],
@@ -595,7 +596,7 @@
     "Name": "引力微子球",
     "Group": "交易商品",
     "Description": "在发散超重力作用下形成的超对称粒子簇。它们形成时会产生一个<STELLAR>微型裂缝<>，提取球体会促生局部现实弱化。<FUEL>护卫部队<>会做出反应来稳定这种异象。\n\n可以在<TECHNOLOGY>银河交易终端<>出售。",
-    "BaseValueUnits": 40023.5,
+    "BaseValueUnits": 40024.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
@@ -898,6 +899,7 @@
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/curiosities/36.png",
     "Usages": [
+      "HasUsedToCraft",
       "HasDevProperties",
       "IsEggIngredient"
     ],
@@ -1506,9 +1508,12 @@
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "CookingValue": 0.0,
     "Usages": [
       "HasRefinedToCreate",
+      "HasCookToCreate",
       "HasDevProperties",
+      "IsEggIngredient",
       "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 1,
@@ -1700,6 +1705,7 @@
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "Usages": [
+      "HasUsedToCraft",
       "HasDevProperties",
       "IsConsumable",
       "IsAddedInTrackedUpdate"
@@ -1742,7 +1748,7 @@
     "Name": "护卫信号器（关闭）",
     "Group": "护卫通讯器",
     "Description": "迭代：特提斯创造的特殊设备。主要用于呼叫你的<TECHNOLOGY>重构护卫无人机<>。\n\n选择设备并使用<STELLAR>激活信号器<>（<IMG>FE_ALT1<>）呼叫[<TECHNOLOGY>无人机<>]。\n\n在<STELLAR>套装库存<>中激活信号器后，无人机将会在行星表面陪伴你。",
-    "BaseValueUnits": 16.4,
+    "BaseValueUnits": 16.0,
     "CurrencyType": "Credits",
     "Colour": "1A2733",
     "Usages": [
@@ -1781,5 +1787,442 @@
     "RequiredItems": [],
     "StatBonuses": [],
     "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur84",
+    "Icon": "other/207.png",
+    "Name": "星图",
+    "Group": "商业制图资料",
+    "Description": "一张附近行星的地图，标有一个<COMMODITY>外星前哨基站<>。\n\n选择地图并使用<VAL_ON>规划路线（<IMG>FE_ALT1<>）<>以在你的套装屏幕中标记该地点。\n\n新地图可以通过与空间站制图师交换<COMMODITY>导航数据<>获取。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "将数据转换为套装导航标记"
+    ]
+  },
+  {
+    "Id": "cur85",
+    "Icon": "other/3.png",
+    "Name": "古代的钥匙",
+    "Group": "永恒的遗物",
+    "Description": "一把有些分量的钥匙，这块经过锻造的铁块一定能用来打开附近的某把锁......",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur86",
+    "Icon": "other/4.png",
+    "Name": "三叉戟钥匙",
+    "Group": "水中遗物",
+    "Description": "一把奇怪的叉状钥匙，散发出一种紫外光。\n\n尽管它看上去很原始，套装扫描系统却在其尖端发现了纳米泡沫的痕迹。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur87",
+    "Icon": "products/156.png",
+    "Name": "护卫信号器",
+    "Group": "护卫通讯器",
+    "Description": "迭代：特提斯创造的特殊设备。主要用于呼叫你的<TECHNOLOGY>重构护卫无人机<>。\n\n选择设备并使用关闭广播（<IMG>FE_ALT1<>）以停止向[哨兵]发送信号。\n\n在<STELLAR>套装库存<>中激活信号器后，无人机将会在行星表面陪伴你。",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "关闭信号器并解散[哨兵]"
+    ]
+  },
+  {
+    "Id": "cur88",
+    "Icon": "curiosities/88.png",
+    "Name": "乌托邦补给投送B",
+    "Group": "乌托邦基金会物资贮存箱",
+    "Description": "为支援肩负改造被熔岩废土覆盖的贝黑伦普星任务的勇敢建造者，乌托邦监督者很荣幸能够提供这份包含必要物资的贮存箱。\n\n选择补给包并使用<VAL_ON>打开包裹（<>FE_ALT1<IMG>）<>领取你的乌托邦基金会补给，以及有关<STELLAR>下一步任务<>的细节信息。",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "获取乌托邦基金会补给"
+    ]
+  },
+  {
+    "Id": "cur89",
+    "Icon": "curiosities/88.png",
+    "Name": "乌托邦补给投送G",
+    "Group": "乌托邦基金会物资贮存箱",
+    "Description": "为支援肩负改造被突兀陡峭的群山覆盖的新塞斯托星任务的勤劳建造者，乌托邦监督者很荣幸能够提供这份包含必要物资的贮存箱。\n\n选择补给包并使用<VAL_ON>打开包裹（<>FE_ALT1<IMG>）<>领取你的乌托邦基金会补给，以及有关<STELLAR>下一步任务<>的细节信息。",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "获取乌托邦基金会补给"
+    ]
+  },
+  {
+    "Id": "cur90",
+    "Icon": "curiosities/88.png",
+    "Name": "乌托邦补给投送D",
+    "Group": "乌托邦基金会物资贮存箱",
+    "Description": "为支援正在艾达斯十四星的[<SPECIAL>已修订<>]中艰难求生的建造者，乌托邦监督者很荣幸能够提供这份包含必要物资的贮存箱。\n\n选择补给包并使用<VAL_ON>打开包裹（<>FE_ALT1<IMG>）<>领取你的乌托邦基金会补给，以及有关<STELLAR>下一步任务<>的细节信息。",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "获取乌托邦基金会补给"
+    ]
+  },
+  {
+    "Id": "cur91",
+    "Icon": "curiosities/88.png",
+    "Name": "乌托邦补给投送E",
+    "Group": "乌托邦基金会物资贮存箱",
+    "Description": "为支援在恩迪尔A8星中寸步难行的沼泽中英勇重建的建造者们，乌托邦监督者很荣幸能够提供这份包含必要物资的贮存箱。\n\n选择补给包并使用<VAL_ON>打开包裹（<>FE_ALT1<IMG>）<>领取你的乌托邦基金会补给，以及有关<STELLAR>下一步任务<>的细节信息。",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "获取乌托邦基金会补给"
+    ]
+  },
+  {
+    "Id": "cur92",
+    "Icon": "curiosities/92.png",
+    "Name": "定居点坐标B",
+    "Group": "乌托邦基金会定居点图标",
+    "Description": "乌托邦基金会提供的地图，上面显示着你的目标建筑地点的<STELLAR>个性化坐标<>。\n\n选择地图并使用<VAL_ON>规划路线（<>FE_ALT1<IMG>）<>在你的套装界面标记位置。",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "获取乌托邦基金会建造坐标"
+    ]
+  },
+  {
+    "Id": "cur93",
+    "Icon": "curiosities/92.png",
+    "Name": "定居点坐标G",
+    "Group": "乌托邦基金会定居点图标",
+    "Description": "乌托邦基金会提供的地图，上面显示着你的目标建筑地点的<STELLAR>个性化坐标<>。\n\n选择地图并使用<VAL_ON>规划路线（<>FE_ALT1<IMG>）<>在你的套装界面标记位置。",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "获取乌托邦基金会建造坐标"
+    ]
+  },
+  {
+    "Id": "cur94",
+    "Icon": "curiosities/92.png",
+    "Name": "定居点坐标D",
+    "Group": "乌托邦基金会定居点图标",
+    "Description": "乌托邦基金会提供的地图，上面显示着你的目标建筑地点的<STELLAR>个性化坐标<>。\n\n选择地图并使用<VAL_ON>规划路线（<>FE_ALT1<IMG>）<>在你的套装界面标记位置。",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "获取乌托邦基金会建造坐标"
+    ]
+  },
+  {
+    "Id": "cur95",
+    "Icon": "curiosities/92.png",
+    "Name": "定居点坐标E",
+    "Group": "乌托邦基金会定居点图标",
+    "Description": "乌托邦基金会提供的地图，上面显示着你的目标建筑地点的<STELLAR>个性化坐标<>。\n\n选择地图并使用<VAL_ON>规划路线（<>FE_ALT1<IMG>）<>在你的套装界面标记位置。",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "获取乌托邦基金会建造坐标"
+    ]
+  },
+  {
+    "Id": "cur96",
+    "Icon": "curiosities/33.png",
+    "Name": "建造历史",
+    "Group": "机密文件",
+    "Description": "这份报告记录了作为<EXPED>乌托邦项目<>一部分的一处行星设施的历史。令人好奇的是，记录中缺失了多个部分。\n\nDS2368 :: <STELLAR>设施<><TRADEABLE>建立<><STELLAR>。等离子深层钻井运作正常。<>\nDS2384 :: <STELLAR>回归增长率稳定在1%。<>\nDS2400 :: <STELLAR>监督者们对增长率进行了问询。<>\nDS2416 :: <STELLAR>轨道层扩建已得到批准。空间站贸易如火如荼。<>\nDS2432 :: 遭遇<SPECIAL>[已修订]<><STELLAR>危害<>\nDS2448 :: <SPECIAL>[已修订]<>\nDS2464 :: <STELLAR>启动乌托邦项目。<>\nDS2464 :: <STELLAR>设施<><TRADEABLE>修复<><STELLAR>。等离子深层钻井运作正常。贸易路线重启。<>\nDS2480 :: <SPECIAL>[已修订]<>\nDS2496 :: <STELLAR>设施<><TRADEABLE>修复<><STELLAR>。等离子深层钻井运作正常。贸易路线重启。<>\nDS2512 :: <SPECIAL>[已修订]<>\n\n接下来长达数百页的内容都在反复重复日志中的最后两行条目。",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur97",
+    "Icon": "curiosities/97.png",
+    "Name": "结晶心脏",
+    "Group": "腐化艾伦核心",
+    "Description": "一台护卫四足机甲的运作核心，但是现在已经被扭曲得面目全非。护卫机器已经彻底被一种晶体材料感染，观察显示那些晶体都在不停脉动。\n\n近距离分析显示，机器本身似乎都已经被篡改，并且已经被扭曲延伸为了一种全新的形态，感受到这些玻璃光耀碎片的存在便会不停扭动。",
+    "BaseValueUnits": 37000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur98",
+    "Icon": "curiosities/98.png",
+    "Name": "透明质脑部",
+    "Group": "智慧飞船",
+    "Description": "一艘护卫拦截机的中央处理单元。在显微镜角度下，上面的电路永远在扭动重组，不停扫描着潜在的异象。\n\n对任何想为护卫拦截机构建属于自己的<TECHNOLOGY>驾驶员接口<>的实体而言，这都是至关重要的构件。\n\n状态：<FUEL>不稳定<>",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "寻找这个意识梦中的远古之地"
+    ]
+  },
+  {
+    "Id": "cur99",
+    "Icon": "curiosities/99.png",
+    "Name": "无畏舰人工智能碎片",
+    "Group": "战舰核心遗物",
+    "Description": "护卫主力飞船中心的巨型主机的单个碎片。它闪烁着，那鲜活的独眼盯着它所保留的最后数据，也就是拦截机舰队的最后已知位置。\n\n选择人工智能碎片并使用调查档案（<IMG>FE_ALT1<>）将关于拦截机失事地点的信息翻译至你的飞船导航系统。",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "调查档案搜寻失落的拦截机"
+    ]
+  },
+  {
+    "Id": "cur100",
+    "Icon": "curiosities/100.png",
+    "Name": "反转镜面",
+    "Group": "火热的玻璃遗物",
+    "Description": "一面永远凝视着的<SPECIAL>玻璃<>，来源于腐化群集浓烟滚滚的残骸中的<TECHNOLOGY>不谐共振器<>。玻璃施放着超出反射量的光芒，因此位于其周遭的一切都被染上了淡淡的紫色。\n\n此物是各类回收作业人心目中的抢手货，因为它能够被用于破解关键<TECHNOLOGY>护卫飞船技术<>的安全系统。",
+    "BaseValueUnits": 17000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur101",
+    "Icon": "curiosities/101.png",
+    "Name": "光耀碎片",
+    "Group": "玻璃现实入侵物",
+    "Description": "从大型结构上掉落的一块玻璃生命力碎片。动态的分子间键合给碎片带来了不同寻常的柔韧度与坚韧性。碎片不停轻轻扭动着，仿佛就像是在搜索着什么......\n\n此物是各类回收作业人心目中的抢手货，因为它能够被用于破解关键<TECHNOLOGY>护卫飞船技术<>的安全系统。",
+    "BaseValueUnits": 1900.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasUsedToRecharge",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur102",
+    "Icon": "curiosities/102.png",
+    "Name": "回音定位器",
+    "Group": "谐波定位器",
+    "Description": "新旧科技的独特融合，其中混合着两种截然不同的制作工艺。无论如何，这台<STELLAR>定位装置<>似乎能够正常运作。\n\n选择此装置并使用<VAL_ON>共鸣（<IMG>FE_ALT1<>）<>追踪最初的谐波来源。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "将数据转换为套装导航标记"
+    ]
   }
 ]
