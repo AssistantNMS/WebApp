@@ -128,11 +128,11 @@ body {
                 color: $brand-secondary;
             }
         }
+    }
 
-        .badge-container {
-            color: black;
-            background-color: $brand-secondary;
-        }
+    .badge-container {
+        color: black;
+        background-color: $brand-secondary;
     }
 
     .sidebar {
@@ -149,6 +149,7 @@ body {
         .nav-item:not(.active) {
             .nav-link {
                 transition: all 250ms ease-in-out;
+
                 &:hover {
                     background: #424242;
                 }
@@ -292,7 +293,7 @@ body {
         color: $body-color;
 
         &.dark {
-            color: #606060;
+            color: #fff;
         }
     }
 
@@ -307,6 +308,14 @@ body {
             border: 1px solid $brand-secondary;
             background-color: $brand-primary-background !important;
         }
+    }
+
+    .form-check .form-check-input:checked + .form-check-sign .check:before {
+        color: #4a4a4a;
+    }
+
+    .form-check .form-check-input:checked + .form-check-sign .check {
+        background: lighten($brand-primary, 10%);
     }
 }
 

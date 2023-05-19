@@ -411,7 +411,7 @@
   {
     "Id": "cur15",
     "Icon": "curiosities/15.png",
-    "Name": "Núcleo larvario",
+    "Name": "Núcleo de larva",
     "Group": "Monstruosidad",
     "Description": "Un orbe vibrante y gelatinoso, una esfera viscosa caliente al tacto. Su olor desencadena un miedo primitivo en los seres mortales, un remordimiento arraigado que te suplica que lo sueltes y huyas.",
     "BaseValueUnits": 69875.0,
@@ -441,7 +441,7 @@
     "Name": "Perla viva",
     "Group": "Piedra preciosa semiconsciente",
     "Description": "Crece en el interior de los enormes moluscos brillantes que se encuentran en las profundidades submarinas.\n\nA diferencia de la mayoría de las perlas, esta muestra no se compone de calcita inerte. Ciertos vestigios de la consciencia de la almeja madre permanecen en el interior de la gema, lo que la proporciona de una belleza persistente y cautivadora.",
-    "BaseValueUnits": 4797.5,
+    "BaseValueUnits": 4798.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "CCCCCC",
@@ -499,6 +499,7 @@
     "Usages": [
       "HasUsedToCraft",
       "HasRefinedToCreate",
+      "HasCookToCreate",
       "HasDevProperties",
       "IsEggIngredient"
     ],
@@ -595,7 +596,7 @@
     "Name": "Bola de gravitino",
     "Group": "Producto comerciable",
     "Description": "Un cúmulo de partículas supersimétricas producto de fuerzas supergravitacionales divergentes. Al formarse, se crea una <STELLAR>microgrieta<> y la extracción del orbe da pie a una debilitación de la realidad localizada. Las <FUEL>fuerzas de Centinelas<> responderán para estabilizar cualquier anomalía de este tipo.\n\nSe puede vender en una <TECHNOLOGY>terminal de comercio galáctico<>.",
-    "BaseValueUnits": 40023.5,
+    "BaseValueUnits": 40024.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
@@ -898,6 +899,7 @@
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/curiosities/36.png",
     "Usages": [
+      "HasUsedToCraft",
       "HasDevProperties",
       "IsEggIngredient"
     ],
@@ -1506,9 +1508,12 @@
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "CookingValue": 0.0,
     "Usages": [
       "HasRefinedToCreate",
+      "HasCookToCreate",
       "HasDevProperties",
+      "IsEggIngredient",
       "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 1,
@@ -1700,6 +1705,7 @@
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "Usages": [
+      "HasUsedToCraft",
       "HasDevProperties",
       "IsConsumable",
       "IsAddedInTrackedUpdate"
@@ -1742,7 +1748,7 @@
     "Name": "Bengala centinela (desactivada)",
     "Group": "Comunicador centinela",
     "Description": "Un dispositivo especializado creado por Iteración Tetis. Su función principal es llamar a tu <TECHNOLOGY>dron centinela reconstruido<>.\n\nSelecciona el dispositivo y usa <STELLAR>Activar bengala<> (<IMG>FE_ALT1<>) para señalar [<TECHNOLOGY>el dron<>].\n\nMientras la bengala esté activa en el <STELLAR>inventario del exotraje<>, el dron permanecerá a tu lado durante el tiempo que estés en el planeta.",
-    "BaseValueUnits": 16.4,
+    "BaseValueUnits": 16.0,
     "CurrencyType": "Credits",
     "Colour": "1A2733",
     "Usages": [
@@ -1781,5 +1787,442 @@
     "RequiredItems": [],
     "StatBonuses": [],
     "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur84",
+    "Icon": "other/207.png",
+    "Name": "Carta de navegación planetaria",
+    "Group": "Datos cartográficos comerciales",
+    "Description": "Un mapa de un planeta cercano. Se ha marcado una especie de <COMMODITY>puesto deshabitado<>.\n\nSelecciona el mapa y usa <VAL_ON>Trazar rumbo (<IMG>FE_ALT1<>)<> para fijar la ubicación en la pantalla de tu exotraje.\n\nSe pueden conseguir nuevos mapas intercambiando <COMMODITY>datos de navegación<> con un cartógrafo de una estación espacial.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Convertir datos en indicador de navegación de exotraje"
+    ]
+  },
+  {
+    "Id": "cur85",
+    "Icon": "other/3.png",
+    "Name": "Llave antigua",
+    "Group": "Artefacto intemporal",
+    "Description": "Una llave bastante pesada y antigua hecha de hierro forjado que debe de pertenecer a una cerradura cercana...",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur86",
+    "Icon": "other/4.png",
+    "Name": "Llave tridente",
+    "Group": "Reliquia acuática",
+    "Description": "Una extraña llave bifurcada que brilla con una luz ultravioleta.\n\nA pesar de su primitivo aspecto, los sistemas de escaneo del exotraje revelan trazas de espuma de nanite en sus dientes.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur87",
+    "Icon": "products/156.png",
+    "Name": "Bengala centinela",
+    "Group": "Comunicador centinela",
+    "Description": "Un dispositivo especializado creado por Iteración Tetis. Su función principal es llamar a tu <TECHNOLOGY>dron centinela reconstruido<>.\n\nSelecciona el dispositivo y usa Desactivar transmisión (<IMG>FE_ALT1<>) para detener las señales a [el Vigía].\n\nMientras la bengala esté activa en el<STELLAR>inventario del exotraje<>, el dron permanecerá a tu lado durante el tiempo que estés en el planeta.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Desactivar señal y despedir a [El Vigía]"
+    ]
+  },
+  {
+    "Id": "cur88",
+    "Icon": "curiosities/88.png",
+    "Name": "Entrega de suministros de Utopía beta",
+    "Group": "Almacén de suministros de la Fundación Utopía",
+    "Description": "Para apoyar a los trabajadores que valientemente terraforman los páramos llenos de lava del planeta Pehaelump, los supervisores de Utopía se complacen en proporcionar este suministro de bienes vitales.\n\nSelecciona el paquete de suministros y usa <VAL_ON>Abrir paquete<> (<IMG>FE_ALT1<>) para recoger tus suministros de la Fundación Utopía, así como detalles de tu <STELLAR>próxima tarea<>.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Recibe suministros de la Fundación Utopía"
+    ]
+  },
+  {
+    "Id": "cur89",
+    "Icon": "curiosities/88.png",
+    "Name": "Entrega de suministros de Utopía gamma",
+    "Group": "Almacén de suministros de la Fundación Utopía",
+    "Description": "Para apoyar a los trabajadores que valientemente trabajan en las expuestas y empinadas montañas del planeta Nuevo Sesto, los supervisores de Utopía se complacen en proporcionar este suministro de bienes vitales.\n\nSelecciona el paquete de suministros y usa <VAL_ON>Abrir paquete<> (<IMG>FE_ALT1<>) para recoger tus suministros de la Fundación Utopía, así como detalles de tu <STELLAR>próxima tarea<>.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Recibe suministros de la Fundación Utopía"
+    ]
+  },
+  {
+    "Id": "cur90",
+    "Icon": "curiosities/88.png",
+    "Name": "Entrega de suministros de Utopía delta",
+    "Group": "Almacén de suministros de la Fundación Utopía",
+    "Description": "Para apoyar a los trabajadores que supervivientes que ahora se enfrentan a los [ <SPECIAL>REDACTED<> ] del planeta Idalth XIV, los supervisores de Utopía se complacen en proporcionar este suministro de bienes vitales.\n\nSelecciona el paquete de suministros y usa <VAL_ON>Abrir paquete<> (<IMG>FE_ALT1<>) para recoger tus suministros de la Fundación Utopía, así como detalles de tu <STELLAR>próxima tarea<>.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Recibe suministros de la Fundación Utopía"
+    ]
+  },
+  {
+    "Id": "cur91",
+    "Icon": "curiosities/88.png",
+    "Name": "Entrega de suministros de Utopía épsilon",
+    "Group": "Almacén de suministros de la Fundación Utopía",
+    "Description": "Para apoyar a los trabajadores que noblemente se dedican a la reconstrucción en las ciénagas absorbentes del planeta Endil A8, los supervisores de Utopía se complacen en proporcionar este suministro de bienes vitales.\n\nSelecciona el paquete de suministros y usa <VAL_ON>Abrir paquete<> (<IMG>FE_ALT1<>) para recoger tus suministros de la Fundación Utopía, así como detalles de tu <STELLAR>próxima tarea<>.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Recibe suministros de la Fundación Utopía"
+    ]
+  },
+  {
+    "Id": "cur92",
+    "Icon": "curiosities/92.png",
+    "Name": "Coordenadas de asentamiento beta",
+    "Group": "Cuadro de asentamiento de la Fundación Utopía",
+    "Description": "Un mapa de la Fundación Utopía, que muestra <STELLAR>coordenadas personalizadas<> para tu lugar de construcción de destino.\n\nSelecciona el mapa y usa <VAL_ON>Trazar rumbo<> (<IMG>FE_ALT1<>) para fijar la ubicación en la pantalla de tu exotraje.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Recibe las coordenadas de construcción de la Fundación Utopía"
+    ]
+  },
+  {
+    "Id": "cur93",
+    "Icon": "curiosities/92.png",
+    "Name": "Coordenadas de asentamiento gamma",
+    "Group": "Cuadro de asentamiento de la Fundación Utopía",
+    "Description": "Un mapa de la Fundación Utopía, que muestra <STELLAR>coordenadas personalizadas<> para tu lugar de construcción de destino.\n\nSelecciona el mapa y usa <VAL_ON>Trazar rumbo<> (<IMG>FE_ALT1<>) para fijar la ubicación en la pantalla de tu exotraje.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Recibe las coordenadas de construcción de la Fundación Utopía"
+    ]
+  },
+  {
+    "Id": "cur94",
+    "Icon": "curiosities/92.png",
+    "Name": "Coordenadas de asentamiento delta",
+    "Group": "Cuadro de asentamiento de la Fundación Utopía",
+    "Description": "Un mapa de la Fundación Utopía, que muestra <STELLAR>coordenadas personalizadas<> para tu lugar de construcción de destino.\n\nSelecciona el mapa y usa <VAL_ON>Trazar rumbo<> (<IMG>FE_ALT1<>) para fijar la ubicación en la pantalla de tu exotraje.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Recibe las coordenadas de construcción de la Fundación Utopía"
+    ]
+  },
+  {
+    "Id": "cur95",
+    "Icon": "curiosities/92.png",
+    "Name": "Coordenadas de asentamiento épsilon",
+    "Group": "Cuadro de asentamiento de la Fundación Utopía",
+    "Description": "Un mapa de la Fundación Utopía, que muestra <STELLAR>coordenadas personalizadas<> para tu lugar de construcción de destino.\n\nSelecciona el mapa y usa <VAL_ON>Trazar rumbo<> (<IMG>FE_ALT1<>) para fijar la ubicación en la pantalla de tu exotraje.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Recibe las coordenadas de construcción de la Fundación Utopía"
+    ]
+  },
+  {
+    "Id": "cur96",
+    "Icon": "curiosities/33.png",
+    "Name": "Historial de construcción",
+    "Group": "Expediente clasificado",
+    "Description": "Este informe contiene registros de la historia de una instalación planetaria que forma parte del <EXPED>Proyecto Utopía<>. Resulta llamativo que faltan secciones.\n\nDS 2368 :: <STELLAR>Instalación <><TRADEABLE>fundada<><STELLAR>. Taladro de perforación profunda de plasma operativo.<>\nDS 2384 :: <STELLAR>Regresamos a un crecimiento estable al 1 %<>\nDS 2400 :: <STELLAR>Los supervisores están consultando la tasa de crecimiento.<>\nDS 2416 :: <STELLAR>Expansión orbital aprobada. El comercio de la estación se ha disparado.<>\nDS 2432 :: <SPECIAL>Hemos encontrado un peligro extraterrestre <>\nDS 2448 :: <SPECIAL>[Borrado]<>\nDS 2464 :: <STELLAR>Iniciado el Proyecto Utopía.<>\nDS 2464 :: <STELLAR>Instalación <><TRADEABLE>restaurada<><STELLAR>. Taladro de perforación profunda de plasma operativo. Rutas de comercio reabiertas.<>\nDS 2480 :: <SPECIAL>[Borrado]<>\nDS 2496 :: <STELLAR>Instalación <><TRADEABLE>restaurada<><STELLAR>.Taladro de perforación profunda de plasma operativo. Rutas de comercio reabiertas.<>\nDS 2512 :: <SPECIAL>[Borrado]<>",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur97",
+    "Icon": "curiosities/97.png",
+    "Name": "Corazón cristalizado",
+    "Group": "Núcleo aerónico corrupto",
+    "Description": "Núcleo funcional de una unidad cuadrúpeda Centinela, alterada hasta ser irreconocible. La máquina está completamente infestada por un material cristalino que palpita intensamente al inspeccionarla.\n\nUn análisis más minucioso revela que la propia maquinaria parece haberse reconfigurado, estirándose y curvándose hasta alcanzar una forma completamente nueva que se retuerce en presencia de las esquirlas radiantes de cristal.",
+    "BaseValueUnits": 37000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur98",
+    "Icon": "curiosities/98.png",
+    "Name": "Cerebro Hyaline",
+    "Group": "Nave de conciencia",
+    "Description": "Unidad de procesado central de una nave Interceptor Centinela. Los circuitos se retuercen a nivel microscópico, recolocándose de forma constante mientras escanea su entorno en busca de anomalías.\n\nUn componente vital para cualquier entidad que quiera construir su propia <TECHNOLOGY>interfaz de piloto<> para un Interceptor Centinela.\n\nEstado: <FUEL>VOLÁTIL<>.",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Localizar el lugar ancestral en los sueños de esta mente"
+    ]
+  },
+  {
+    "Id": "cur99",
+    "Icon": "curiosities/99.png",
+    "Name": "Fragmento de IA de acorazado",
+    "Group": "Remanente de núcleo de nave de guerra",
+    "Description": "Un fragmento del colosal ordenador central de la nave principal Centinela. Parpadea y su ojo vivo solitario está entrenado con los datos que conserva: la última ubicación conocida de una de sus flotas de Interceptores.\n\nSelecciona el fragmento de IA y usa el archivo de sondas (<IMG>FE_ALT1<>) para traducir información acerca del lugar del accidente del Interceptor a los sistemas de navegación de tu nave.",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Archivo de sondas para interceptores"
+    ]
+  },
+  {
+    "Id": "cur100",
+    "Icon": "curiosities/100.png",
+    "Name": "Espejo invertido",
+    "Group": "Remanente vítreo ardiente",
+    "Description": "Un panel de <SPECIAL>v i d r i o<> vigilante recuperado de los restos humeantes de los <TECHNOLOGY>resonadores de disonancia<> del enjambre corrupto. Emite más luz de la que refleja, por lo que da un tono violáceo pálido a sus alrededores.\n\nMuy buscado para operaciones de recuperación, ya que puede usarse para sortear los sistemas de seguridad de ciertas <TECHNOLOGY>tecnologías de nave Centinela<> clave.",
+    "BaseValueUnits": 17000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur101",
+    "Icon": "curiosities/101.png",
+    "Name": "Esquirla radiante",
+    "Group": "Intrusión de realidad vítrea",
+    "Description": "Fragmento de fuerza vital vítrea astillada de una formación mayor. Los vínculos dinámicos intermoleculares hacen que el fragmento sea extrañamente flexible y fibroso. Se retuerce de forma sutil, casi parece que busca algo...\n\nMuy buscado para operaciones de recuperación, ya que puede usarse para sortear los sistemas de seguridad de ciertas <TECHNOLOGY>tecnologías de nave Centinela<> clave.",
+    "BaseValueUnits": 1900.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasUsedToRecharge",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur102",
+    "Icon": "curiosities/102.png",
+    "Name": "Ecolocalizador",
+    "Group": "Rastreador de ubicación armónica",
+    "Description": "A pesar de ser una curiosa fusión de tecnología antigua y reciente, un híbrido entre dos métodos de creación completamente distintos, este <STELLAR>dispositivo de rastreo de ubicación<> parece funcionar a la perfección.\n\nSelecciona este dispositivo y usa <VAL_ON>Resonar (<IMG>FE_ALT1)<>)<> para rastrear su origen armónico.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Convertir datos en indicador de navegación de exotraje"
+    ]
   }
 ]

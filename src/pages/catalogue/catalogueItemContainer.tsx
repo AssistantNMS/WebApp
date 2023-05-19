@@ -28,6 +28,7 @@ import { optionalListTask, optionalTask } from '../../helper/promiseHelper';
 import { UsageKey } from '../../constants/UsageKey';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
 import { AppImage } from '../../constants/AppImage';
+import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -41,19 +42,20 @@ interface IWithoutDepInj { }
 interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
 
 interface IState {
-    item: GameItemModel,
-    requiredItems: Array<RequiredItemDetails>,
-    usedToCreate: Array<GameItemModel>,
-    refined: Array<Processor>,
-    usedToRefine: Array<Processor>,
-    cooking: Array<Processor>,
-    usedToCook: Array<Processor>,
-    rechargedBy: Recharge,
-    usedToRecharge: Array<Recharge>,
-    eggTrait: Array<EggNeuralTrait>,
-    controlLookup: Array<PlatformControlMapping>,
-    starshipScrapItems: Array<StarshipScrap>,
-    additionalData: Array<any>,
+    item: GameItemModel;
+    requiredItems: Array<RequiredItemDetails>;
+    usedToCreate: Array<GameItemModel>;
+    refined: Array<Processor>;
+    usedToRefine: Array<Processor>;
+    cooking: Array<Processor>;
+    usedToCook: Array<Processor>;
+    rechargedBy: Recharge;
+    usedToRecharge: Array<Recharge>;
+    eggTrait: Array<EggNeuralTrait>;
+    controlLookup: Array<PlatformControlMapping>;
+    starshipScrapItems: Array<StarshipScrap>;
+    creatureHarvests: Array<CreatureHarvest>;
+    additionalData: Array<any>;
 }
 
 
@@ -73,6 +75,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         eggTrait: [],
         controlLookup: [],
         starshipScrapItems: [],
+        creatureHarvests: [],
         additionalData: [],
     };
 
@@ -130,6 +133,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         const usedToRechargeTask = optionalListTask(usages, UsageKey.hasUsedToRecharge, () => getUsedToRecharge(itemId));
 
         const scrapDataTask = optionalTask(usages, UsageKey.isRewardFromShipScrap, () => getScrapDataForItem(itemId));
+        const creatureHarvestsTask = optionalTask(usages, UsageKey.hasCreatureHarvest, () => getCreatureHarvestsForItem(itemId));
 
         const eggTraitTask = optionalListTask(['true'], 'true', () => getEggTrait(itemId));
         const controlLookupTask = optionalListTask(['true'], 'true', () => getControlLookup(props.controlPlatform));
@@ -147,6 +151,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             eggTrait: await eggTraitTask,
             controlLookup: await controlLookupTask,
             starshipScrapItems: await scrapDataTask,
+            creatureHarvests: await creatureHarvestsTask,
             additionalData: getAdditionalData(item),
         };
         setItemMeta(newMeta);
@@ -217,6 +222,12 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         const starshipScrapsArray = await props.dataJsonService.getStarshipScrapDataForItem(itemId);
         if (!starshipScrapsArray.isSuccess) return [];
         return starshipScrapsArray.value;
+    }
+
+    const getCreatureHarvestsForItem = async (itemId: string) => {
+        const harvestArray = await props.gameItemService.getCreatureHarvestForItem(itemId);
+        if (!harvestArray.isSuccess) return [];
+        return harvestArray.value;
     }
 
     const getAdditionalData = (itemDetail: GameItemModel): Array<any> => {
@@ -313,6 +324,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         eggTrait,
         controlLookup,
         starshipScrapItems,
+        creatureHarvests,
         additionalData,
     } = itemMeta;
 
@@ -331,6 +343,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             eggTrait={eggTrait}
             controlLookup={controlLookup}
             starshipScrapItems={starshipScrapItems}
+            creatureHarvests={creatureHarvests}
             additionalData={additionalData}
             networkState={networkState}
             addThisItemToCart={addThisItemToCart}

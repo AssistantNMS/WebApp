@@ -441,7 +441,7 @@
     "Name": "Lebende Perle",
     "Group": "Halbbewusster Edelstein",
     "Description": "Geboren in den Herzen riesiger leuchtender Mollusken in den Untiefen des Ozeans.\n\nIm Gegensatz zu den meisten Perlen besteht dieses Exemplar nicht aus leblosem Calcit. Spuren des Bewusstseins der Muttermuschel bleiben in der Perle bestehen, was ihr eine nachhaltige, unvergessliche Schönheit verleiht.",
-    "BaseValueUnits": 4797.5,
+    "BaseValueUnits": 4798.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "CCCCCC",
@@ -499,6 +499,7 @@
     "Usages": [
       "HasUsedToCraft",
       "HasRefinedToCreate",
+      "HasCookToCreate",
       "HasDevProperties",
       "IsEggIngredient"
     ],
@@ -595,7 +596,7 @@
     "Name": "Gravitino-Ball",
     "Group": "Verbrauchsgut zum Handeln",
     "Description": "Eine supersymmetrische Partikelanhäufung, die durch unterschiedliche Supergravitationskräfte entstanden ist. Wenn sie sich bildet, entsteht ein <STELLAR>Mikroriss<>. Extrahiert man die Kugel, wird eine lokal begrenzte Realitätsschwächung angezeigt. <FUEL>Wächter<> werden auf Versuche, solche Anomalien zu stabilisieren, reagieren.\n\nKann an einem <TECHNOLOGY>galaktischen Handelsterminal<> verkauft werden.",
-    "BaseValueUnits": 40023.5,
+    "BaseValueUnits": 40024.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
@@ -898,6 +899,7 @@
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/curiosities/36.png",
     "Usages": [
+      "HasUsedToCraft",
       "HasDevProperties",
       "IsEggIngredient"
     ],
@@ -1506,9 +1508,12 @@
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "CookingValue": 0.0,
     "Usages": [
       "HasRefinedToCreate",
+      "HasCookToCreate",
       "HasDevProperties",
+      "IsEggIngredient",
       "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 1,
@@ -1700,6 +1705,7 @@
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "Usages": [
+      "HasUsedToCraft",
       "HasDevProperties",
       "IsConsumable",
       "IsAddedInTrackedUpdate"
@@ -1742,7 +1748,7 @@
     "Name": "Wächter-Signalfackel (Aus)",
     "Group": "Wächterkommunikator",
     "Description": "Ein durch Iteration: Tethys geschaffenes Spezialgerät, dessen Hauptfunktion im Rufen deiner <TECHNOLOGY>rekonstruierten Wächterdrohne<> besteht.\n\nWähle das Gerät aus und verwende <STELLAR>Signal aktivieren<> (<IMG>FE_ALT1<>), um [<TECHNOLOGY>der Drohne<>] ein Signal zu geben.\n\nSolange diese Fackel in deinem <STELLAR>Exo-Anzug-Inventar<> aktiv ist, bleibt die Drohne an deiner Seite, wenn du dich auf dem Planeten befindest.",
-    "BaseValueUnits": 16.4,
+    "BaseValueUnits": 16.0,
     "CurrencyType": "Credits",
     "Colour": "1A2733",
     "Usages": [
@@ -1781,5 +1787,442 @@
     "RequiredItems": [],
     "StatBonuses": [],
     "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur84",
+    "Icon": "other/207.png",
+    "Name": "Planetenkarte",
+    "Group": "Kartografische Handelsdaten",
+    "Description": "Eine Karte von einem Planeten in der Nähe. Ein <COMMODITY>bewohnter Außenposten<> wurde markiert.\n\nWähle die Karte aus und nutze <VAL_ON>„Route planen“ (<IMG>FE_ALT1<>)<>, um den Ort in der Anzeige deines Exo-Anzugs einzustellen.\n\nNeue Karten erhält man, indem man <COMMODITY>Navigationsdaten<> mit einem Raumstation-Kartografen austauscht.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Daten in Exo-Anzug-Navigationsmarkierung umwandeln."
+    ]
+  },
+  {
+    "Id": "cur85",
+    "Icon": "other/3.png",
+    "Name": "Uralter Schlüssel",
+    "Group": "Zeitloses Artefakt",
+    "Description": "Ein schwerer Schlüssel aus altem Schmiedeeisen, der in ein Schloss in der Nähe passen muss ...",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur86",
+    "Icon": "other/4.png",
+    "Name": "Dreizackschlüssel",
+    "Group": "Wasserrelikt",
+    "Description": "Ein seltsamer, gezackter Schlüssel, der in einem ultravioletten Licht leuchtet.\n\nTrotz seines primitiven Aussehens offenbaren die Scansysteme des Exo-Anzugs auf seinen Zacken Spuren von Nanit-Schaum.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur87",
+    "Icon": "products/156.png",
+    "Name": "Wächter-Signalfackel",
+    "Group": "Wächterkommunikator",
+    "Description": "Ein durch Iteration: Tethys geschaffenes Spezialgerät, dessen Hauptfunktion im Rufen deiner <TECHNOLOGY>rekonstruierten Wächterdrohne<> besteht.\n\nWähle das Gerät aus und verwende Signal deaktivieren (<IMG>FE_ALT1<>), um [ der Wache ] nicht länger ein Signal zu geben.\n\nSolange diese Fackel in deinem <STELLAR>Exo-Anzug-Inventar<> aktiv ist, bleibt die Drohne an deiner Seite, wenn du dich auf dem Planeten befindest.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Signal deaktivieren und [ die Wache ] freigeben"
+    ]
+  },
+  {
+    "Id": "cur88",
+    "Icon": "curiosities/88.png",
+    "Name": "Utopia-Nachschublieferung Beta",
+    "Group": "Vorratslager der Utopia Foundation",
+    "Description": "Um die Arbeiter zu unterstützen, die tapfer die lavagefüllten Wüsten des Planeten Pehaelump terraformen, stellen die Utopia-Aufseher mit Freude diesen Vorrat an lebenswichtigen Gütern zur Verfügung.\n\nWähle die Nachschublieferung aus und benutze\n<VAL_ON>Paket öffnen<> (<IMG>FE_ALT1<>), um deine Vorräte der Utopia Foundation sowie Details zu deinem <STELLAR>nächsten Auftrag<> zu erhalten.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Lieferungen der Utopia Foundation erhalten"
+    ]
+  },
+  {
+    "Id": "cur89",
+    "Icon": "curiosities/88.png",
+    "Name": "Utopia-Nachschublieferung Gamma",
+    "Group": "Vorratslager der Utopia Foundation",
+    "Description": "Um die Arbeiter zu unterstützen, die sich tapfer in den steilen, exponierten Bergen des Planeten New Sesto abmühen, stellen die Utopia-Aufseher mit Freude diesen Vorrat an lebenswichtigen Gütern zur Verfügung.\n\nWähle die Nachschublieferung aus und benutze\n<VAL_ON>Paket öffnen<> (<IMG>FE_ALT1<>), um deine Vorräte der Utopia Foundation sowie Details zu deinem <STELLAR>nächsten Auftrag<> zu erhalten.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Lieferungen der Utopia Foundation erhalten"
+    ]
+  },
+  {
+    "Id": "cur90",
+    "Icon": "curiosities/88.png",
+    "Name": "Utopia-Nachschublieferung Delta",
+    "Group": "Vorratslager der Utopia Foundation",
+    "Description": "Um die überlebenden Arbeiter zu unterstützen, die nun mit den\n[ <SPECIAL>ZENSIERT<> ] des Planeten Idalth XIV konfrontiert sind, stellen die Utopia-Aufseher mit Freude diesen Vorrat an lebenswichtigen Gütern zur Verfügung.\n\nWähle die Nachschublieferung aus und benutze <VAL_ON>Paket öffnen<>\n(<IMG>FE_ALT1<>), um deine Vorräte der Utopia Foundation sowie Details zu deinem <STELLAR>nächsten Auftrag<> zu erhalten.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Lieferungen der Utopia Foundation erhalten"
+    ]
+  },
+  {
+    "Id": "cur91",
+    "Icon": "curiosities/88.png",
+    "Name": "Utopia-Nachschublieferung Epsilon",
+    "Group": "Vorratslager der Utopia Foundation",
+    "Description": "Um die Arbeiter zu unterstützen, die so edel im Sumpf des Planeten Endil A8 am Wiederaufbau arbeiten, stellen die Utopia-Aufseher mit Freude diesen Vorrat an lebenswichtigen Gütern zur Verfügung.\n\nWähle die Nachschublieferung aus und benutze\n<VAL_ON>Paket öffnen<> (<IMG>FE_ALT1<>), um deine Vorräte der Utopia Foundation sowie Details zu deinem <STELLAR>nächsten Auftrag<> zu erhalten.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Lieferungen der Utopia Foundation erhalten"
+    ]
+  },
+  {
+    "Id": "cur92",
+    "Icon": "curiosities/92.png",
+    "Name": "Siedlungskoordinaten Beta",
+    "Group": "Siedlungsplan der Utopia Foundation",
+    "Description": "Eine Karte der Utopia Foundation mit <STELLAR>personalisierten Koordinaten<> für deine Zielbaustelle.\n\nWähle die Karte aus und verwende <VAL_ON>Route planen<> (<IMG>FE_ALT1<>), um den Ort in der Anzeige deines Exo-Anzugs einzustellen.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Baukoordinaten der Utopia Foundation erhalten"
+    ]
+  },
+  {
+    "Id": "cur93",
+    "Icon": "curiosities/92.png",
+    "Name": "Siedlungskoordinaten Gamma",
+    "Group": "Siedlungsplan der Utopia Foundation",
+    "Description": "Eine Karte der Utopia Foundation mit <STELLAR>personalisierten Koordinaten<> für deine Zielbaustelle.\n\nWähle die Karte aus und verwende <VAL_ON>Route planen<> (<IMG>FE_ALT1<>), um den Ort in der Anzeige deines Exo-Anzugs einzustellen.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Baukoordinaten der Utopia Foundation erhalten"
+    ]
+  },
+  {
+    "Id": "cur94",
+    "Icon": "curiosities/92.png",
+    "Name": "Siedlungskoordinaten Delta",
+    "Group": "Siedlungsplan der Utopia Foundation",
+    "Description": "Eine Karte der Utopia Foundation mit <STELLAR>personalisierten Koordinaten<> für deine Zielbaustelle.\n\nWähle die Karte aus und verwende <VAL_ON>Route planen<> (<IMG>FE_ALT1<>), um den Ort in der Anzeige deines Exo-Anzugs einzustellen.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Baukoordinaten der Utopia Foundation erhalten"
+    ]
+  },
+  {
+    "Id": "cur95",
+    "Icon": "curiosities/92.png",
+    "Name": "Siedlungskoordinaten Epsilon",
+    "Group": "Siedlungsplan der Utopia Foundation",
+    "Description": "Eine Karte der Utopia Foundation mit <STELLAR>personalisierten Koordinaten<> für deine Zielbaustelle.\n\nWähle die Karte aus und verwende <VAL_ON>Route planen<> (<IMG>FE_ALT1<>), um den Ort in der Anzeige deines Exo-Anzugs einzustellen.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Baukoordinaten der Utopia Foundation erhalten"
+    ]
+  },
+  {
+    "Id": "cur96",
+    "Icon": "curiosities/33.png",
+    "Name": "Baugeschichte",
+    "Group": "Geheimdossier",
+    "Description": "Dieser Bericht zeichnet die Geschichte einer planetaren Einrichtung auf, die Teil des <EXPED>Utopia-Projekts<> ist. Einige Abschnitte fehlen seltsamerweise.\n\nDS 2368 :: <STELLAR>Einrichtung <><TRADEABLE>gegründet<><STELLAR>. Plasma-Tiefbohranlage in Betrieb.<>\nDS 2384 :: <STELLAR>Ertragswachstum konstant bei 1 %.<>\nDS 2400 :: <STELLAR>Aufseher beanstanden Wachstumsrate.<>\nDS 2416 :: <STELLAR>Orbitaler Ausb. genehmigt. Stationshandel boomt.<>\nDS 2432 :: <SPECIAL>[Zensiert]<> <STELLAR>Gefahr entdeckt.<>\nDS 2448 :: <SPECIAL>[Zensiert]<>\nDS 2464 :: <STELLAR>Utopia-Projekt gestartet.<>\nDS 2464 :: <STELLAR>Einrichtung <><TRADEABLE>wiederhergestellt<><STELLAR>. Plasma-Tiefbohranlage betriebsbereit. Handelsrouten abermals geöffnet.<>\nDS 2480 :: <SPECIAL>[Zensiert]<>\nDS 2496 :: <STELLAR>Einrichtung <><TRADEABLE>wiederhergestellt<><STELLAR>. Plasma-Tiefbohranlage betriebsbereit. Handelsrouten abermals geöffnet.<>\nDS 2512 :: <SPECIAL>[Zensiert]<>\n\nDie letzten beiden Einträge wiederholen sich immer wieder, über Hunderte von Seiten hinweg.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur97",
+    "Icon": "curiosities/97.png",
+    "Name": "Kristallisiertes Herz",
+    "Group": "Verdorbener Aeronischer Kern",
+    "Description": "Der funktionale Kern einer vierbeinigen Wächter-Einheit, aber bis zur Unkenntlichkeit entstellt. Die gesamte Maschine ist von einem kristallinen Material befallen, das bei Inspektion wild pulsiert.\n\nBei näherer Prüfung wird deutlich, dass die Maschinerie selbst neu konfiguriert zu sein scheint, sich dehnt und verformt und in der Gegenwart der leuchtenden Glassplitter eine völlig neue Form annimmt.",
+    "BaseValueUnits": 37000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur98",
+    "Icon": "curiosities/98.png",
+    "Name": "Hyaline-Gehirn",
+    "Group": "Empfindungsfähiges Schiff",
+    "Description": "Die zentrale Recheneinheit eines Wächter-Abfangjägers. Die Schaltkreise winden sich in mikroskopisch kleinen Dimensionen und ordnen sich immer wieder neu an, während sie nach Anomalien suchen.\n\nEine wichtige Komponente für jede Entität, die eine eigene <TECHNOLOGY>Piloten-Schnittstelle<> für einen Wächter-Abfangjäger konstruieren möchte.\n\nStatus: <FUEL>UNBESTÄNDIG<>",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Die uralte Stätte in den Träumen dieses Geistes finden"
+    ]
+  },
+  {
+    "Id": "cur99",
+    "Icon": "curiosities/99.png",
+    "Name": "Schlachtschiff-KI-Fragment",
+    "Group": "Kampfschiffkern-Überrest",
+    "Description": "Ein einzelner Splitter des gigantischen Großrechners im Herzen eines Wächter-Hauptschiffs. Das Fragment blinkt und sein einziges lebendiges Auge ist auf die eine Dateninformation trainiert, die es enthält: die letzte bekannte Position einer seiner Abfangjägerflotten.\n\nWähle das KI-Fragment aus und benutze das Sondenarchiv (<IMG>FE_ALT1<>), um die Information über die Absturzstelle des Abfangjägers in die Navigationssysteme deines Raumschiffs zu speisen.",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Sondenarchiv für verlorene Abfangjäger"
+    ]
+  },
+  {
+    "Id": "cur100",
+    "Icon": "curiosities/100.png",
+    "Name": "Umgekehrter Spiegel",
+    "Group": "Brennender gläserner Überrest",
+    "Description": "Eine Scheibe aus wachsamem <SPECIAL>G l a s<>, die aus den rauchenden Überresten der <TECHNOLOGY>Dissonanz-Resonatoren<> des verdorbenen Schwarms geborgen wurde. Sie strahlt mehr Licht aus, als sie reflektiert, und verleiht ihrer Umgebung einen schwach violetten Farbton.\n\nHochbegehrt für Bergungsaktionen, da sie dazu verwendet werden kann, die Sicherheitssysteme der wichtigsten <TECHNOLOGY>Wächter-Schiffstechnologien<> zu umgehen.",
+    "BaseValueUnits": 17000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur101",
+    "Icon": "curiosities/101.png",
+    "Name": "Strahlender Splitter",
+    "Group": "Gläserner Wirklichkeitseingriff",
+    "Description": "Ein Fragment aus glasartiger Lebenskraft, das von einer größeren Formation abgesplittert ist. Dynamische intermolekulare Bindungen verleihen dem Splitter eine seltsam flexible, sehnige Qualität. Er windet sich sanft, fast so, als würde er etwas suchen ...\n\nSehr begehrt für Bergungsoperationen, da er dazu verwendet werden kann, die Sicherheitssysteme der wichtigsten <TECHNOLOGY>Wächter-Schiffstechnologien<> zu umgehen.",
+    "BaseValueUnits": 1900.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasUsedToRecharge",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur102",
+    "Icon": "curiosities/102.png",
+    "Name": "Echoortungsgerät",
+    "Group": "Harmonischer Standorttracker",
+    "Description": "Ein seltsames Geflecht aus alter und neuer Technologie, ein Hybrid aus zwei völlig unterschiedlichen Methoden der Schöpfung. Nichtsdestotrotz scheint dieses <STELLAR>Ortungsgerät<> voll funktionsfähig zu sein.\n\nWähle dieses Gerät aus und verwende <VAL_ON>Resonieren (<IMG>FE_ALT1<>)<>, um seinen harmonischen Ursprung zu verfolgen.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "Daten in Exo-Anzug-Navigationsmarkierung umwandeln."
+    ]
   }
 ]

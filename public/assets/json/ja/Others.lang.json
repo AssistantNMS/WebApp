@@ -48,19 +48,17 @@
   },
   {
     "Id": "other3",
-    "Icon": "other/3.png",
-    "Name": "古代の鍵",
-    "Group": "時を超越する遺物",
-    "Description": "鍛鉄でできた重みのある鍵。近くに錠があるはずだが...",
+    "Icon": "building/272.png",
+    "Name": "X.O.スーツ",
+    "Group": "",
+    "Description": "",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
-    "Colour": "4D2957",
+    "Colour": "262626",
     "CdnUrl": "https://cdn.nmsassistant.com/other/3.png",
     "Usages": [
-      "HasUsedToCraft",
-      "HasDevProperties",
-      "IsConsumable"
+      "HasDevProperties"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -72,23 +70,49 @@
   {
     "Id": "other4",
     "Icon": "other/4.png",
-    "Name": "三又鉾の鍵",
-    "Group": "水中遺跡",
-    "Description": "三又鉾があしらわれた鍵。 紫色に光っている。\n\nかなり古いもののように見えるが、エクソスーツのスキャンシステムによると歯の部分にナノマシンが使用されているのが分かる。",
-    "BaseValueUnits": 1000.0,
+    "Name": "タワーモジュール",
+    "Group": "建設モジュール",
+    "Description": "積み重ね可能な構造のタワーモジュール。側面は頑丈に強化されておりどのような環境にも対応できるよう耐気候性が加えられている。",
+    "BaseValueUnits": 2.0,
     "CurrencyType": "Credits",
-    "MaxStackSize": 5.0,
-    "Colour": "4D2957",
+    "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/4.png",
     "Usages": [
-      "HasUsedToCraft",
-      "HasDevProperties",
-      "IsConsumable"
+      "HasDevProperties"
     ],
-    "BlueprintCost": 1,
+    "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
-    "RequiredItems": [],
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other5",
+    "Icon": "other/5.png",
+    "Name": "招集ポイント",
+    "Group": "船舶招集ビーコン",
+    "Description": "自分の宇宙船をどの場所からでも招集することができる建設可能な装置。",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 10,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 10
+      }
+    ],
     "StatBonuses": [],
     "ConsumableRewardTexts": []
   },
@@ -1998,7 +2022,8 @@
     "Usages": [
       "HasDevProperties",
       "IsQuicksilver",
-      "IsAddedInTrackedUpdate"
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -3098,7 +3123,8 @@
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
-      "IsExpeditionSeason4Reward"
+      "IsExpeditionSeason4Reward",
+      "IsTwitchCampaign6Reward"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -3120,7 +3146,8 @@
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
-      "IsExpeditionSeason4Reward"
+      "IsExpeditionSeason4Reward",
+      "IsTwitchCampaign6Reward"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -3283,9 +3310,9 @@
   {
     "Id": "other207",
     "Icon": "other/207.png",
-    "Name": "星系図",
-    "Group": "商用地図データ",
-    "Description": "近くの惑星の地図。何らかの<COMMODITY>居住者のいるアウトポスト<>がマークされている。\n\n地図を選択して<VAL_ON>ルート設定（<IMG>FE_ALT1<>）<>を使うと、エクソスーツの画面に位置をブックマークできる。\n\n新しい地図は、宇宙ステーションの地図製作者と<COMMODITY>ナビゲーションデータ<>を交換すると手に入る。",
+    "Name": "Planetary Chart",
+    "Group": "Commercial Cartographic Data",
+    "Description": "A map of a nearby planet. An <COMMODITY>inhabited outpost<> of some kind has been marked.\n\nSelect the map and use <VAL_ON>Plot Route (<IMG>FE_ALT1<>)<> to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging <COMMODITY>Navigation Data<> with a Space Station Cartographer.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 20.0,
@@ -3300,7 +3327,7 @@
     "RequiredItems": [],
     "StatBonuses": [],
     "ConsumableRewardTexts": [
-      "データをエクソスーツ誘導マーカーに変換"
+      "Convert data to Exosuit navigation marker"
     ]
   },
   {
@@ -3362,7 +3389,8 @@
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
-      "IsExpeditionSeason5Reward"
+      "IsExpeditionSeason5Reward",
+      "IsTwitchCampaign6Reward"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -3614,7 +3642,8 @@
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
-      "IsExpeditionSeason6Reward"
+      "IsExpeditionSeason6Reward",
+      "IsTwitchCampaign6Reward"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -4536,7 +4565,7 @@
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
     "MaxStackSize": 5.0,
-    "Colour": "008951",
+    "Colour": "007951",
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
@@ -4558,7 +4587,7 @@
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
     "MaxStackSize": 5.0,
-    "Colour": "008951",
+    "Colour": "007951",
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
@@ -5347,6 +5376,637 @@
     "CurrencyType": "Quicksilver",
     "MaxStackSize": 5.0,
     "Colour": "008951",
+    "Usages": [
+      "HasDevProperties",
+      "IsQuicksilver",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other332",
+    "Icon": "other/332.png",
+    "Name": "恐怖のレンズ",
+    "Group": "アンロック可能なヘルメット",
+    "Description": "特製の<STELLAR>エクソスーツ外見変更モジュール<>。\n\nこの酸化物で強化されたヘルメットで敵の心に恐怖をぶつけよう。\n\n<TECHNOLOGY>外見変更モジュール<>でエクソスーツの外見を変身させよう。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason9Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other333",
+    "Icon": "other/333.png",
+    "Name": "ユートピアスピーダー",
+    "Group": "特製宇宙船",
+    "Description": "探検「<STELLAR>ユートピア<>」の達成と、ユートピア財団の共同居住プロジェクトへの貢献を記念した特別な<STELLAR>宇宙船<>。\n\nこの汎用性の高い宇宙船は、放射線に耐性のある装甲が張られ、大気圏での飛行中も機敏に動けるように空力特性を考慮して設計されている。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上でクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason9Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other334",
+    "Icon": "other/52.png",
+    "Name": "称号：「ユートピアの高官」",
+    "Group": "オーダーメイド個人識別",
+    "Description": "探検「<STELLAR>ユートピア<>」の達成と、ユートピア財団の共同居住プロジェクトへの貢献を記念した特別な<STELLAR>探検家の称号<>。\n\n<TECHNOLOGY>外見変更モジュール<>でバナーに適用できる。",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason9Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other335",
+    "Icon": "other/335.png",
+    "Name": "ユートピア探検バナー",
+    "Group": "オーダーメイド個人識別バナー（旗）",
+    "Description": "探検「<STELLAR>ユートピア<>」の達成と、ユートピア財団の共同居住プロジェクトへの貢献を記念した<STELLAR>自己表現用アイテム<>。\n\n<TECHNOLOGY>外見変更モジュール<>で自分のプロフィールにこのバナーを適用できる。",
+    "BaseValueUnits": 220.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason9Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other336",
+    "Icon": "other/336.png",
+    "Name": "ロボウォーデンの卵",
+    "Group": "ロボティックスポーンカプセル",
+    "Description": "金属製の「卵」カプセル。<TRADEABLE>すぐに孵化できます！<>\n\n卵の中から定期的に電子ビープ音がして、その音は優しくて、どういうわけか安心できます。\n\nスキャンすると、<SPECIAL><>その中にいる存在が細心の注意を払い、<SPECIAL>信頼されるようにプログラムされていることがわかります<>。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2987",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason9Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other337",
+    "Icon": "other/337.png",
+    "Name": "イカワジの敗北",
+    "Group": "特製宇宙船",
+    "Description": "特別製の<STELLAR>宇宙船<>。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other338",
+    "Icon": "other/338.png",
+    "Name": "破壊の灰",
+    "Group": "特製宇宙船",
+    "Description": "特別製の<STELLAR>宇宙船<>。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other339",
+    "Icon": "other/339.png",
+    "Name": "モロザワの究極の手",
+    "Group": "特製宇宙船",
+    "Description": "特別製の<STELLAR>宇宙船<>。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other340",
+    "Icon": "other/340.png",
+    "Name": "TV2アエバシ",
+    "Group": "特製宇宙船",
+    "Description": "特別製の<STELLAR>宇宙船<>。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other341",
+    "Icon": "other/341.png",
+    "Name": "タハマの底無しの後悔",
+    "Group": "特製宇宙船",
+    "Description": "特別製の<STELLAR>宇宙船<>。\n\nこの宇宙船は<STELLAR>取得<>して手持ちに加えるか、現在の宇宙船と<STELLAR>交換<>できる。惑星上ではクイックメニュー（<IMG>QUICK_MENU<>）から宇宙船を招集できる。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other342",
+    "Icon": "other/342.png",
+    "Name": "E. パンセイビーの卵",
+    "Group": "限定コンパニオンの卵",
+    "Description": "生きている受精卵で、<TRADEABLE>孵化の準備万端！<>\n\n内側の大きな獣が結晶質の手足を卵にカチカチとぶつけている。\n\nスキャンによれば、見た目の恐ろしさに反して、中の生き物は遺伝上、<TRADEABLE>大人しく<>、優しい性格を備えている。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other343",
+    "Icon": "other/343.png",
+    "Name": "I. ベアリカティーの卵",
+    "Group": "限定コンパニオンの卵",
+    "Description": "生きている受精卵で、<TRADEABLE>孵化の準備万端！<>\n\n内側にいる繊細な生き物が自由になろうと、自分の重なった翼を震わせている。\n\nスキャンによれば、中の生き物は遺伝上、<TRADEABLE>愛情深い<>コンパニオンで、主の近くを飛んでいるときに最高の幸せを感じる。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other344",
+    "Icon": "other/344.png",
+    "Name": "手作りのライトコンデンサ",
+    "Group": "特製多機能サバイバルデバイス",
+    "Description": "特別製の<STELLAR>マルチツール<>。\n\nこのマルチツールは<STELLAR>取得<>して手持ちに加えるか、現在のマルチツールと<STELLAR>交換<>できる。クイックメニュー（<IMG>QUICK_MENU<>）の機能の項目から使用するマルチツールを切り替えられる。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other345",
+    "Icon": "other/345.png",
+    "Name": "タッチオブサイレンス8-T",
+    "Group": "特製多機能サバイバルデバイス",
+    "Description": "特別製の<STELLAR>マルチツール<>。\n\nこのマルチツールは<STELLAR>取得<>して手持ちに加えるか、現在のマルチツールと<STELLAR>交換<>できる。クイックメニュー（<IMG>QUICK_MENU<>）の機能の項目から使用するマルチツールを切り替えられる。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other346",
+    "Icon": "other/346.png",
+    "Name": "リミックス花火パック",
+    "Group": "パイロテクニクスマルチパック",
+    "Description": "見事な演出の詰め合わせ花火3点セット。<SPECIAL>色彩<>タイプ、<FUEL>アトラス<>タイプ、<COMMODITY>模様<>タイプが入っている。着火するときらびやかな光景を\n空に打ち上げる。\n<VAL_ON>ビルドメニュー<>（<IMG>BUILD_MENU<>）から打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて使わないこと。室内での使用は推奨しない。",
+    "BaseValueUnits": 250.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other347",
+    "Icon": "other/346.png",
+    "Name": "リミックス花火パック",
+    "Group": "パイロテクニクスマルチパック",
+    "Description": "見事な演出の詰め合わせ花火3点セット。<SPECIAL>色彩<>タイプ、<FUEL>アトラス<>タイプ、<COMMODITY>模様<>タイプが入っている。着火するときらびやかな光景を\n空に打ち上げる。\n<VAL_ON>ビルドメニュー<>（<IMG>BUILD_MENU<>）から打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて使わないこと。室内での使用は推奨しない。",
+    "BaseValueUnits": 250.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other348",
+    "Icon": "other/346.png",
+    "Name": "リミックス花火パック",
+    "Group": "パイロテクニクスマルチパック",
+    "Description": "見事な演出の詰め合わせ花火3点セット。<SPECIAL>色彩<>タイプ、<FUEL>アトラス<>タイプ、<COMMODITY>模様<>タイプが入っている。着火するときらびやかな光景を\n空に打ち上げる。\n<VAL_ON>ビルドメニュー<>（<IMG>BUILD_MENU<>）から打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて使わないこと。室内での使用は推奨しない。",
+    "BaseValueUnits": 250.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other349",
+    "Icon": "other/346.png",
+    "Name": "リミックス花火パック",
+    "Group": "パイロテクニクスマルチパック",
+    "Description": "見事な演出の詰め合わせ花火3点セット。<SPECIAL>色彩<>タイプ、<FUEL>アトラス<>タイプ、<COMMODITY>模様<>タイプが入っている。着火するときらびやかな光景を\n空に打ち上げる。\n<VAL_ON>ビルドメニュー<>（<IMG>BUILD_MENU<>）から打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて使わないこと。室内での使用は推奨しない。",
+    "BaseValueUnits": 250.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other350",
+    "Icon": "other/346.png",
+    "Name": "リミックス花火パック",
+    "Group": "パイロテクニクスマルチパック",
+    "Description": "見事な演出の詰め合わせ花火3点セット。<SPECIAL>色彩<>タイプ、<FUEL>アトラス<>タイプ、<COMMODITY>模様<>タイプが入っている。着火するときらびやかな光景を\n空に打ち上げる。\n<VAL_ON>ビルドメニュー<>（<IMG>BUILD_MENU<>）から打ち上げチューブを設置できる。<FUEL>警告<>：生物に向けて使わないこと。室内での使用は推奨しない。",
+    "BaseValueUnits": 250.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other351",
+    "Icon": "other/351.png",
+    "Name": "ホログラム：球体",
+    "Group": "アンロック可能なジェスチャー",
+    "Description": "特製ジェスチャー。\n\n<VAL_ON>クイックメニュー<>から選択して、可愛らしい小型球体クリーチャーの手持ちホログラムを生成できます。",
+    "BaseValueUnits": 1500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other352",
+    "Icon": "other/352.png",
+    "Name": "ホログラム：フリゲート",
+    "Group": "アンロック可能なジェスチャー",
+    "Description": "特製ジェスチャー。\n\n<VAL_ON>クイックメニュー<>から選択して、流麗でパワフルなフリゲートの手持ちホログラムを生成できます。",
+    "BaseValueUnits": 1500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other353",
+    "Icon": "other/353.png",
+    "Name": "ホログラム：宇宙船",
+    "Group": "アンロック可能なジェスチャー",
+    "Description": "特製ジェスチャー。\n\n<VAL_ON>クイックメニュー<>から選択して、クラシックな戦闘機型宇宙船の手持ちホログラムを生成できます。",
+    "BaseValueUnits": 1500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other354",
+    "Icon": "other/354.png",
+    "Name": "ホログラム：マルチツール",
+    "Group": "アンロック可能なジェスチャー",
+    "Description": "特製ジェスチャー。\n\n<VAL_ON>クイックメニュー<>から選択して、マルチツールピストルの手持ちホログラムを生成できます。",
+    "BaseValueUnits": 1500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other355",
+    "Icon": "other/355.png",
+    "Name": "ホログラム：星系",
+    "Group": "アンロック可能なジェスチャー",
+    "Description": "特製ジェスチャー。\n\n<VAL_ON>クイックメニュー<>から選択して、ミニチュア恒星系の手持ちホログラムを生成できます。",
+    "BaseValueUnits": 1500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other356",
+    "Icon": "curiosities/46.png",
+    "Name": "虚無の卵",
+    "Group": "生ける不思議",
+    "Description": "奇妙で異常な卵。殻は硬く革のようで、\n触れると小刻みに振動する。 \n  \n内側から殻を叩く、かすかな音が聞こえてくる。\nときどき、歌っているようだ。 ",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other358",
+    "Icon": "other/358.png",
+    "Name": "調和する脳",
+    "Group": "利用された知覚体",
+    "Description": "センチネル迎撃機の中央処理ユニット。回路は安定しているようで、一定のリズムでパルスを発している。私の存在に対して怒りを向けてくることはもうない。\n\nステータス：<TRADEABLE>従順<>\n\nこのユニットを動作不能になったセンチネルの宇宙船にインストールして、退化したコックピットを開き、<STELLAR>手動操縦<>を可能にしよう。",
+    "BaseValueUnits": 480016.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other359",
+    "Icon": "other/359.png",
+    "Name": "エーロンターボジェット",
+    "Group": "エクソスーツ外装カスタマイズ",
+    "Description": "限定の<STELLAR>エクソスーツ外見変更モジュール<>。\n\nセンチネルの軍勢から盗んだ技術によって組み見立てられたチタニウム製のジェットパック。エンジンはプジナムと窒素の安定的な循環によって予冷されていて、高い燃焼効率と完全な静音稼働を実現している。\n\n<FUEL>警告<>：プジナムの格納室を防護装備なしで開けないで下さい。\n\nエクソスーツの見た目を<TECHNOLOGY>外見変更モジュール<>で変えよう。",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other360",
+    "Icon": "other/360.png",
+    "Name": "幾何学的なケープ",
+    "Group": "アンロック可能なケープ",
+    "Description": "特製の<STELLAR>エクソスーツ外見変更モジュール<>。\n\nスターシルク混紡素材で織られたヴィンテージの服で、クラシックな幾何学模様のデザインが施されています。\n\n<TECHNOLOGY>外見変更モジュール<>でエクソスーツの外見を変身させよう。",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Quicksilver",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsQuicksilver",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other361",
+    "Icon": "other/361.png",
+    "Name": "産卵フード",
+    "Group": "アンロック可能なフード",
+    "Description": "尊重すべきパートナーと卑しい雇われの身とを区別するため、イベントや会議などで高位のゲックが身に着ける豪華なフード。\n\n<TECHNOLOGY>外見変更モジュール<>で、エクソスーツの外見をこの特別な<STELLAR>デザインオーバーライド<>に変更しよう。",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Quicksilver",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
     "Usages": [
       "HasDevProperties",
       "IsQuicksilver",

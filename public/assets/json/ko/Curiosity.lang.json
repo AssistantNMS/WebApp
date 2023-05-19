@@ -441,7 +441,7 @@
     "Name": "살아있는 진주",
     "Group": "반의식이 있는 보석",
     "Description": "심해에서 서식하는 빛을 발하는 거대 연체 동물의 심장에서 태어난 물건입니다.\n\n대다수의 진주와는 다르게 이 표본은 단순한 방해석이 아닙니다. 보석 내부에 담겨있는 모체 조개의 의식 잔류물로 인해 뇌리에서 잘 잊혀지지 않는 아름다움을 자랑합니다.",
-    "BaseValueUnits": 4797.5,
+    "BaseValueUnits": 4798.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 15.0,
     "Colour": "CCCCCC",
@@ -499,6 +499,7 @@
     "Usages": [
       "HasUsedToCraft",
       "HasRefinedToCreate",
+      "HasCookToCreate",
       "HasDevProperties",
       "IsEggIngredient"
     ],
@@ -595,7 +596,7 @@
     "Name": "중력 미자 공",
     "Group": "무역 상품",
     "Description": "발산하는 초중력이 만들어낸 초대칭형의 입자 덩어리입니다. 형성될 때 <STELLAR>극소량의 균열<>이 발생하며 공을 추출하면 국부적인 현실 약화를 야기합니다. 어떤 변칙이라도 생긴다면 <FUEL>센티널 군<>이 즉각 대응합니다.\n\n\n<TECHNOLOGY>은하계 무역망<>에서 희귀한 고가치 상품으로 거래됩니다.",
-    "BaseValueUnits": 40023.5,
+    "BaseValueUnits": 40024.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "CCCCCC",
@@ -898,6 +899,7 @@
     "Colour": "4D2957",
     "CdnUrl": "https://cdn.nmsassistant.com/curiosities/36.png",
     "Usages": [
+      "HasUsedToCraft",
       "HasDevProperties",
       "IsEggIngredient"
     ],
@@ -1506,9 +1508,12 @@
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
+    "CookingValue": 0.0,
     "Usages": [
       "HasRefinedToCreate",
+      "HasCookToCreate",
       "HasDevProperties",
+      "IsEggIngredient",
       "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 1,
@@ -1700,6 +1705,7 @@
     "MaxStackSize": 5.0,
     "Colour": "4D2957",
     "Usages": [
+      "HasUsedToCraft",
       "HasDevProperties",
       "IsConsumable",
       "IsAddedInTrackedUpdate"
@@ -1742,7 +1748,7 @@
     "Name": "센티널 조명탄(꺼짐)",
     "Group": "센티널 교신기",
     "Description": "반복 테티스가 만든 특수 장치. 주요 기능은 <TECHNOLOGY>재구성된 센티널 드론<>을 맞이하는 것입니다.\n\n장치를 선택하고 <STELLAR>조명탄 활성화<>(<IMG>FE_ALT1<>)를 사용해 [<TECHNOLOGY>드론<>]에 신호를 보내십시오.\n\n조명탄을 <STELLAR>엑소슈트 인벤토리<>에서 사용 중인 경우, 행성 표면에 있을 때 드론이 곁에 머물 것입니다.",
-    "BaseValueUnits": 16.4,
+    "BaseValueUnits": 16.0,
     "CurrencyType": "Credits",
     "Colour": "1A2733",
     "Usages": [
@@ -1781,5 +1787,442 @@
     "RequiredItems": [],
     "StatBonuses": [],
     "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur84",
+    "Icon": "other/207.png",
+    "Name": "행성 도표",
+    "Group": "상업용 지도 데이터",
+    "Description": "인근 행성의 지도입니다. <COMMODITY>거주자 존재 전초기지<> 위치가 표시되어 있습니다.\n\n지도를 선택하고 <VAL_ON>경로 구성(<IMG>FE_ALT1<>)<>을 사용해 엑소슈트 화면에 위치를 지정하세요.\n\n우주정거장의 지도제작자와 <COMMODITY>항법 데이터<>를 교환해 새로운 지도를 획득할 수 있습니다.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "데이터를 엑소슈트 항법 마커로 변환"
+    ]
+  },
+  {
+    "Id": "cur85",
+    "Icon": "other/3.png",
+    "Name": "고대 열쇠",
+    "Group": "변치 않는 유물",
+    "Description": "무게가 좀 나가는 열쇠입니다. 이 오래된 철 조각은 분명히 근처에 있는 자물쇠에 들어맞을 것입니다...",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur86",
+    "Icon": "other/4.png",
+    "Name": "삼지창 열쇠",
+    "Group": "해양 유물",
+    "Description": "자외선을 발하는 특이한 갈퀴 모양의 열쇠입니다.\n\n원시적인 형태에도 불구하고 엑소슈트 스캔 시스템으로 조사한 결과, 이빨 부분에서 나노로봇 거품의 흔적이 발견됐습니다.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur87",
+    "Icon": "products/156.png",
+    "Name": "센티널 조명탄",
+    "Group": "센티널 교신기",
+    "Description": "반복 테티스가 만든 특수 장치. 주요 기능은 <TECHNOLOGY>재구성된 센티널 드론<>을 맞이하는 것입니다.\n\n장치를 선택하고 신호 비활성화(<IMG>FE_ALT1<>)를 사용해 [ 초병 ]에 보내는 신호를 중단하십시오.\n\n조명탄을 <STELLAR>엑소슈트 인벤토리<>에서 사용 중인 경우, 행성 표면에 있을 때 드론이 곁에 머물 것입니다.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "신호 비활성화 및 [ 초병 ] 해산"
+    ]
+  },
+  {
+    "Id": "cur88",
+    "Icon": "curiosities/88.png",
+    "Name": "유토피아 보급품 베타",
+    "Group": "유토피아 파운데이션 보급품 은닉처",
+    "Description": "페할럼프(Pehaelump) 행성의 용암으로 가득한 황무지를 용감하게 테라포밍하는 일꾼들을 지원하기 위해 유토피아 감독관이 은닉처의 이 중요한 물품을 기꺼이 공급합니다.\n\n공급품 팩을 선택하고 <VAL_ON>패키지 열기<>(<IMG>FE_ALT1<>)를 사용하여 유토피아 파운데이션 보급품을 수집하십시오. <STELLAR>다음 임무<>에 대한 세부 정보도 포함되어 있습니다.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "유토피아 파운데이션 보급품 받기"
+    ]
+  },
+  {
+    "Id": "cur89",
+    "Icon": "curiosities/88.png",
+    "Name": "유토피아 보급품 감마",
+    "Group": "유토피아 파운데이션 보급품 은닉처",
+    "Description": "뉴 세스토(New Sesto) 행성의 가파르고 황량한 산악지대에서 힘들게 일하는 일꾼들을 지원하기 위해 유토피아 감독관이 은닉처의 이 중요한 물품을 기꺼이 공급합니다.\n\n공급품 팩을 선택하고 <VAL_ON>패키지 열기<>(<IMG>FE_ALT1<>)를 사용하여 유토피아 파운데이션 보급품을 수집하십시오. <STELLAR>다음 임무<>에 대한 세부 정보도 포함되어 있습니다.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "유토피아 파운데이션 보급품 받기"
+    ]
+  },
+  {
+    "Id": "cur90",
+    "Icon": "curiosities/88.png",
+    "Name": "유토피아 보급품 델타",
+    "Group": "유토피아 파운데이션 보급품 은닉처",
+    "Description": "지금 아이달스(Idalth) XIV 행성의 [ <SPECIAL>내용 삭제<> ]에 맞서 살아남은 일꾼들을 지원하기 위해 유토피아 감독관이 은닉처의 이 중요한 물품을 기꺼이 공급합니다.\n\n공급품 팩을 선택하고 <VAL_ON>패키지 열기<>(<IMG>FE_ALT1<>)를 사용하여 유토피아 파운데이션 보급품을 수집하십시오. <STELLAR>다음 임무<>에 대한 세부 정보도 포함되어 있습니다.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "유토피아 파운데이션 보급품 받기"
+    ]
+  },
+  {
+    "Id": "cur91",
+    "Icon": "curiosities/88.png",
+    "Name": "유토피아 보급품 엡실론",
+    "Group": "유토피아 파운데이션 보급품 은닉처",
+    "Description": "엔딜(Endil) A8 행성의 찐득거리는 수렁 속에서도 고귀한 재건 활동을 수행하는 일꾼들을 지원하기 위해 유토피아 감독관이 은닉처의 이 중요한 물품을 기꺼이 공급합니다.\n\n공급품 팩을 선택하고 <VAL_ON>패키지 열기<>(<IMG>FE_ALT1<>)를 사용하여 유토피아 파운데이션 보급품을 수집하세요. <STELLAR>다음 임무<>에 대한 세부 정보도 포함되어 있습니다.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "311A49",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "유토피아 파운데이션 보급품 받기"
+    ]
+  },
+  {
+    "Id": "cur92",
+    "Icon": "curiosities/92.png",
+    "Name": "거주지 좌표 베타",
+    "Group": "유토피아 파운데이션 거주지 차트",
+    "Description": "유토피아 파운데이션의 지도로, 목표 건설 현장의 <STELLAR>맞춤 좌표<>를 보여줍니다.\n\n지도를 선택하고 <VAL_ON>경로 구성<>(<IMG>FE_ALT1<>)를 사용하여 엑소슈트 디스플레이에 해당 위치를 고정할 수 있습니다.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "유토피아 파운데이션 건설 좌표 받기"
+    ]
+  },
+  {
+    "Id": "cur93",
+    "Icon": "curiosities/92.png",
+    "Name": "거주지 좌표 감마",
+    "Group": "유토피아 파운데이션 거주지 차트",
+    "Description": "유토피아 파운데이션의 지도로, 목표 건설 현장의 <STELLAR>맞춤 좌표<>를 보여줍니다.\n\n지도를 선택하고 <VAL_ON>경로 구성<>(<IMG>FE_ALT1<>)를 사용하여 엑소슈트 디스플레이에 해당 위치를 고정할 수 있습니다.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "유토피아 파운데이션 건설 좌표 받기"
+    ]
+  },
+  {
+    "Id": "cur94",
+    "Icon": "curiosities/92.png",
+    "Name": "거주지 좌표 델타",
+    "Group": "유토피아 파운데이션 거주지 차트",
+    "Description": "유토피아 파운데이션의 지도로, 목표 건설 현장의 <STELLAR>맞춤 좌표<>를 보여줍니다.\n\n지도를 선택하고 <VAL_ON>경로 구성<>(<IMG>FE_ALT1<>)를 사용하여 엑소슈트 디스플레이에 해당 위치를 고정할 수 있습니다.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "유토피아 파운데이션 건설 좌표 받기"
+    ]
+  },
+  {
+    "Id": "cur95",
+    "Icon": "curiosities/92.png",
+    "Name": "거주지 좌표 엡실론",
+    "Group": "유토피아 파운데이션 거주지 차트",
+    "Description": "유토피아 파운데이션의 지도로, 목표 건설 현장의 <STELLAR>맞춤 좌표<>를 보여줍니다.\n\n지도를 선택하고 <VAL_ON>경로 구성<>(<IMG>FE_ALT1<>)를 사용하여 엑소슈트 디스플레이에 해당 위치를 고정할 수 있습니다.",
+    "BaseValueUnits": 2613.0,
+    "CurrencyType": "Credits",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "유토피아 파운데이션 건설 좌표 받기"
+    ]
+  },
+  {
+    "Id": "cur96",
+    "Icon": "curiosities/33.png",
+    "Name": "건설 내역",
+    "Group": "기밀 서류",
+    "Description": "해당 보고서에는 <EXPED>유토피아 프로젝트<>의 일부였던 행성 표면에 위치한 시설의 역사가 기록되어 있습니다. 의문스럽게도 일부 부분이 생략되어 있습니다.\n\nDS 2368 :: <STELLAR>시설 <><TRADEABLE>건립<><STELLAR>. 플라스마 심층 굴착기 가동 중.<>\nDS 2384 :: <STELLAR>성장률 꾸준히 1% 유지 중.<>\nDS 2400 :: <STELLAR>감독관이 성장률에 대해 의문을 표함.<>\nDS 2416 :: <STELLAR>궤도 확장 승인됨. 정거장 무역 크게 호황 중.<>\nDS 2432 :: <SPECIAL>[내용 삭제]<> <STELLAR>위협과 조우함.<>\nDS 2448 :: <SPECIAL>[내용 삭제]<>\nDS 2464 :: <STELLAR>유토피아 프로젝트 시작됨.<>\nDS 2464 :: <STELLAR>시설 <><TRADEABLE>복구됨<><STELLAR>. 플라스마 심층 굴착기 가동 중. 무역로 다시 개방.<>\nDS 2480 :: <SPECIAL>[내용 삭제]<>\nDS 2496 :: <STELLAR>시설 <><TRADEABLE>복구됨<><STELLAR>. 플라스마 심층 굴착기 가동 중. 무역로 다시 개방.<>\nDS 2512 :: <SPECIAL>[내용 삭제]<>\n\n맨 마지막 두 항목은 몇백 페이지에 걸쳐 계속 반복되고 있습니다.",
+    "BaseValueUnits": 16.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur97",
+    "Icon": "curiosities/97.png",
+    "Name": "결정화된 심장",
+    "Group": "오염된 에어론 코어",
+    "Description": "센티널 쿼드 유닛의 기능 코어이지만, 알아볼 수 없을 정도로 뒤틀려 있습니다. 살펴보면 기계 전체가 거칠게 맥동하는 결정질의 물질로 뒤덮여 있습니다.\n\n자세히 분석해 보니, 기계 자체를 늘리고 비틀어서 재구성한 결과 완전히 새로운 형태를 취하게 되었으며, 빛나는 유리 파편의 존재에 몸부림치고 있습니다.",
+    "BaseValueUnits": 37000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur98",
+    "Icon": "curiosities/98.png",
+    "Name": "유리질 두뇌",
+    "Group": "지성체 함선",
+    "Description": "센티널 요격함의 중앙처리장치 유닛입니다. 회로가 지속적으로 이상 현상을 찾아 스스로 배치를 바꾸며 미세하게 꿈틀거리고 있습니다.\n\n센티널 요격함에 나만의 <TECHNOLOGY>파일럿 인터페이스<>를 제작하려면 필수적인 부품입니다.\n\n상태: <FUEL>불안정<>",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "정신의 꿈속에서 고대 유적지 찾기"
+    ]
+  },
+  {
+    "Id": "cur99",
+    "Icon": "curiosities/99.png",
+    "Name": "드레드노트 AI 조각",
+    "Group": "전함 코어 잔해",
+    "Description": "센티널 주력함의 중심에 있는 거대한 메인프레임의 파편입니다. 아직 살아 있는 단 하나의 눈은 깜빡이며 남아 있는 단 하나의 정보, 즉 요격함 함대 중 하나의 마지막 위치만을 지켜보고 있습니다.\n\nAI 파편을 선택하고 프로브 기록 보관소(<IMG>FE_ALT1<>)를 사용하여 요격함의 추락 지점에 대한 정보를 함선 항법 시스템으로 전송하십시오.",
+    "BaseValueUnits": 35000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "사라진 요격함을 찾아 기록 조사하기"
+    ]
+  },
+  {
+    "Id": "cur100",
+    "Icon": "curiosities/100.png",
+    "Name": "반전 거울",
+    "Group": "불타는 유리 같은 잔해",
+    "Description": "연기가 피어오르는 오염된 무리의 <SPECIAL>부조화 공명기<> 잔해에서 회수한 경계 <TECHNOLOGY>g l a s s<> 한 장입니다. 빛의 반사량보다 발산량이 더 많아, 주위를 희미한 보라색으로 물들입니다.\n\n주요 <TECHNOLOGY>센티널 함선 기술<>의 보안 시스템을 우회하는 데 사용할 수 있어 인양 작업에 매우 수요가 높습니다.",
+    "BaseValueUnits": 17000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur101",
+    "Icon": "curiosities/101.png",
+    "Name": "빛나는 파편",
+    "Group": "유리질 현실 침입",
+    "Description": "더 큰 형성물에서 떼어낸 유리질의 생명력 조각입니다. 분자 간 동적 결합 덕분에 파편은 이상하리만치 유연하고 질긴 특성을 가집니다. 마치 무언가를 찾는 것처럼 부드럽게 꿈틀거리고 있습니다...\n\n주요 <TECHNOLOGY>센티널 함선 기술<>의 보안 시스템을 우회하는 데 사용할 수 있어 인양 작업에 매우 수요가 높습니다.",
+    "BaseValueUnits": 1900.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasUsedToRecharge",
+      "HasRefinedToCreate",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "cur102",
+    "Icon": "curiosities/102.png",
+    "Name": "반향 위치 탐지기",
+    "Group": "조화 위치 추적 장치",
+    "Description": "완전히 별개인 두 가지 창작 방식의 혼합체이자, 구식 및 최신 기술을 섞은 특이한 물건입니다. 그럼에도 이 <STELLAR>위치 추적 장치<>는 완벽하게 작동합니다.\n\n이 장치를 선택하고 <VAL_ON>공명(<IMG>FE_ALT1<>)<>을 사용해 그 조화의 근원을 추적하십시오.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 20.0,
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsConsumable",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": [
+      "데이터를 엑소슈트 항법 마커로 변환"
+    ]
   }
 ]

@@ -48,19 +48,17 @@
   },
   {
     "Id": "other3",
-    "Icon": "other/3.png",
-    "Name": "Starożytny klucz",
-    "Group": "Ponadczasowy artefakt",
-    "Description": "Ciężki klucz - ten stary kawałek kutego żelaza musi pasować do pobliskiego zamka...",
+    "Icon": "building/272.png",
+    "Name": "Wizjer egzoskafandra X.O.",
+    "Group": "",
+    "Description": "",
     "BaseValueUnits": 1000.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
-    "Colour": "4D2957",
+    "Colour": "262626",
     "CdnUrl": "https://cdn.nmsassistant.com/other/3.png",
     "Usages": [
-      "HasUsedToCraft",
-      "HasDevProperties",
-      "IsConsumable"
+      "HasDevProperties"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -72,23 +70,49 @@
   {
     "Id": "other4",
     "Icon": "other/4.png",
-    "Name": "Trójzębny klucz",
-    "Group": "Wodny artefakt",
-    "Description": "Dziwny klucz w kształcie trójzęba. Lśni światłem ultrafioletowym.\n\nMimo prymitywnego kształtu, systemy skanujące egzokombinezonu ujawniają na zębach ślady pianki nanitowej.",
-    "BaseValueUnits": 1000.0,
+    "Name": "Moduł wieży",
+    "Group": "Moduł budowlany",
+    "Description": "Wysoki moduł wieży ze wzmocnionymi bokami i dodatkowym zabezpieczeniem przed niekorzystnymi warunkami atmosferycznymi. Kolejne moduły można nakładać na siebie.",
+    "BaseValueUnits": 2.0,
     "CurrencyType": "Credits",
-    "MaxStackSize": 5.0,
-    "Colour": "4D2957",
+    "Colour": "2C7C9F",
     "CdnUrl": "https://cdn.nmsassistant.com/other/4.png",
     "Usages": [
-      "HasUsedToCraft",
-      "HasDevProperties",
-      "IsConsumable"
+      "HasDevProperties"
     ],
-    "BlueprintCost": 1,
+    "BlueprintCost": 2,
     "BlueprintCostType": "None",
     "BlueprintSource": 0,
-    "RequiredItems": [],
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 40
+      }
+    ],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other5",
+    "Icon": "other/5.png",
+    "Name": "Punkt cumowania",
+    "Group": "Ogniwo przywołujące statek",
+    "Description": "Urządzenie, do którego możesz wezwać swój statek gwiezdny z dowolnego miejsca.",
+    "BaseValueUnits": 10.0,
+    "CurrencyType": "Credits",
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 10,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw9",
+        "Quantity": 10
+      }
+    ],
     "StatBonuses": [],
     "ConsumableRewardTexts": []
   },
@@ -1998,7 +2022,8 @@
     "Usages": [
       "HasDevProperties",
       "IsQuicksilver",
-      "IsAddedInTrackedUpdate"
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -3098,7 +3123,8 @@
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
-      "IsExpeditionSeason4Reward"
+      "IsExpeditionSeason4Reward",
+      "IsTwitchCampaign6Reward"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -3120,7 +3146,8 @@
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
-      "IsExpeditionSeason4Reward"
+      "IsExpeditionSeason4Reward",
+      "IsTwitchCampaign6Reward"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -3283,9 +3310,9 @@
   {
     "Id": "other207",
     "Icon": "other/207.png",
-    "Name": "Mapa planet",
-    "Group": "Komercyjne dane kartograficzne",
-    "Description": "Mapa pobliskiej planety. Zaznaczono na niej <COMMODITY>zamieszkany posterunek<>.\n\nWybierz mapę i użyj <VAL_ON>wytyczania trasy (<IMG>FE_ALT1<>)<>, by przypiąć lokalizację na wyświetlaczu egzokombinezonu.\n\nNowe mapy można zdobyć, wymieniając <COMMODITY>dane nawigacyjne<> z kartografem na stacji kosmicznej.",
+    "Name": "Planetary Chart",
+    "Group": "Commercial Cartographic Data",
+    "Description": "A map of a nearby planet. An <COMMODITY>inhabited outpost<> of some kind has been marked.\n\nSelect the map and use <VAL_ON>Plot Route (<IMG>FE_ALT1<>)<> to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging <COMMODITY>Navigation Data<> with a Space Station Cartographer.",
     "BaseValueUnits": 3200.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 20.0,
@@ -3300,7 +3327,7 @@
     "RequiredItems": [],
     "StatBonuses": [],
     "ConsumableRewardTexts": [
-      "Przekonwertuj dane na znacznik nawigacyjny egzokombinezonu"
+      "Convert data to Exosuit navigation marker"
     ]
   },
   {
@@ -3362,7 +3389,8 @@
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
-      "IsExpeditionSeason5Reward"
+      "IsExpeditionSeason5Reward",
+      "IsTwitchCampaign6Reward"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -3614,7 +3642,8 @@
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
-      "IsExpeditionSeason6Reward"
+      "IsExpeditionSeason6Reward",
+      "IsTwitchCampaign6Reward"
     ],
     "BlueprintCost": 1,
     "BlueprintCostType": "None",
@@ -4536,7 +4565,7 @@
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Nanites",
     "MaxStackSize": 5.0,
-    "Colour": "008951",
+    "Colour": "007951",
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
@@ -4558,7 +4587,7 @@
     "BaseValueUnits": 800.0,
     "CurrencyType": "Nanites",
     "MaxStackSize": 5.0,
-    "Colour": "008951",
+    "Colour": "007951",
     "Usages": [
       "HasDevProperties",
       "IsAddedInTrackedUpdate",
@@ -5145,7 +5174,7 @@
     "Icon": "other/322.png",
     "Name": "Szepty z Otchłani 4-F33-QP4",
     "Group": "Unikatowe wielofunkcyjne urządzenie przetrwania",
-    "Description": "Wyjątkowe <STELLAR>multinarzędzie<>. <TECHNOLOGY>Oszczep rozbłysku<> w tym karabinie razi odległe cele precyzyjnymi, potężnymi wiązkami energii, które zadają <STELLAR>obrażenia<> i jednocześnie <STELLAR>ogłuszają<>.\n\n<STELLAR>Weź<> to multinarzędzie i dodaj je do swojej kolekcji albo <STELLAR>wymień<> je na obecne. Wymieniaj aktywne multinarzędzia poprzez sekcję Użytkowe w szybkim menu (<IMG>QUICK_MENU<>).",
+    "Description": "Wyjątkowe <STELLAR>multinarzędzie<>.<TECHNOLOGY>Oszczep rozbłysku<> w tym karabinie razi odległe cele precyzyjnymi, potężnymi wiązkami energii, które zadają <STELLAR>obrażenia<> i jednocześnie <STELLAR>ogłuszają<>.\n\n<STELLAR>Weź<> to multinarzędzie i dodaj je do swojej kolekcji albo <STELLAR>wymień<> je na obecne. Wymieniaj aktywne multinarzędzia poprzez sekcję Użytkowe w szybkim menu (<IMG>QUICK_MENU<>).",
     "BaseValueUnits": 3000.0,
     "CurrencyType": "Credits",
     "MaxStackSize": 5.0,
@@ -5347,6 +5376,637 @@
     "CurrencyType": "Quicksilver",
     "MaxStackSize": 5.0,
     "Colour": "008951",
+    "Usages": [
+      "HasDevProperties",
+      "IsQuicksilver",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other332",
+    "Icon": "other/332.png",
+    "Name": "Przerażający wizjer",
+    "Group": "Hełm do odblokowania",
+    "Description": "Wyjątkowa <STELLAR>zmiana wyglądu egzokombinezonu<>.\n\nWywołaj przerażenie w sercach wrogów dzięki temu wzmocnionemu tlenkiem hełmowi.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason9Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other333",
+    "Icon": "other/333.png",
+    "Name": "Śmigacz Utopia",
+    "Group": "Unikatowy statek kosmiczny",
+    "Description": "Wyjątkowy i ekskluzywny <STELLAR>statek gwiezdny<> upamiętniający ukończenie ekspedycji <STELLAR>Utopii<> oraz wkład w projekt społecznego schronienia Fundacji Utopia.\n\nTen wszechstronny pojazd jest pokryty pancerzem odpornym na promieniowanie i zaprojektowany z aerodynamicznym profilem zapewniającym zwinność podczas lotu w atmosferze.\n\n<STELLAR>Odbierz<> ten statek, aby dodać go do swojej kolekcji, lub <STELLAR>wymień<> na swój obecny statek. Będąc na planecie, przywołaj statki z szybkiego menu (<IMG>QUICK_MENU<>).",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason9Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other334",
+    "Icon": "other/52.png",
+    "Name": "Tytuł: „Dygnitarz Utopii”",
+    "Group": "Opcje identyfikacji personalnej",
+    "Description": "Wyjątkowy <STELLAR>tytuł dla odkrywcy<>, upamiętniający zakończenie ekspedycji <STELLAR>Utopia<> oraz wkład w projekt społecznego schronienia Fundacji Utopia.\n\nDodaj ten tytuł do swojego sztandaru w <TECHNOLOGY>modyfikatorze wyglądu<>.",
+    "BaseValueUnits": 800.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason9Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other335",
+    "Icon": "other/335.png",
+    "Name": "Sztandar ekspedycji Utopia",
+    "Group": "Opcje identyfikacji personalnej",
+    "Description": "Wykorzystaj tę wyjątkową metodę nadania identyfikacji <STELLAR>osobistego szlifu<>, która ma uczcić ekspedycję <STELLAR>Utopia<> oraz wkład w projekt społecznego schronienia Fundacji Utopia.\n\nUmieść ten sztandar w swoim profilu, używając <TECHNOLOGY>modyfikatora wyglądu<>.",
+    "BaseValueUnits": 220.0,
+    "CurrencyType": "Nanites",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason9Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other336",
+    "Icon": "other/336.png",
+    "Name": "Jajo robo-opiekuna",
+    "Group": "Kapsuła odrodzenia robota",
+    "Description": "Metalowa kapsuła w kształcie jaja, <TRADEABLE>gotowa do wyklucia!<>\n\nZ wnętrza jaja dobiega regularne, delikatne i uspokajające elektroniczne pikanie.\n\nSkany wskazują, że istota w środku została zaprogramowana do bycia <SPECIAL>skrupulatną<> i <SPECIAL>niezawodną<>.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2987",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsExpeditionSeason9Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other337",
+    "Icon": "other/337.png",
+    "Name": "Porażka Ikawajiego",
+    "Group": "Unikatowy statek kosmiczny",
+    "Description": "Wyjątkowy <STELLAR>statek gwiezdny<>.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other338",
+    "Icon": "other/338.png",
+    "Name": "Popioły zniszczenia",
+    "Group": "Unikatowy statek kosmiczny",
+    "Description": "Wyjątkowy <STELLAR>statek gwiezdny<>.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other339",
+    "Icon": "other/339.png",
+    "Name": "Ostateczna ręka Morozawy",
+    "Group": "Unikatowy statek kosmiczny",
+    "Description": "Wyjątkowy <STELLAR>statek gwiezdny<>.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other340",
+    "Icon": "other/340.png",
+    "Name": "TV2 Aebashi",
+    "Group": "Unikatowy statek kosmiczny",
+    "Description": "Wyjątkowy <STELLAR>statek gwiezdny<>.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other341",
+    "Icon": "other/341.png",
+    "Name": "Bezgraniczny żal Tahamy",
+    "Group": "Unikatowy statek kosmiczny",
+    "Description": "Wyjątkowy <STELLAR>statek gwiezdny<>.\n\n<STELLAR>Odbierz<> ten statek i dodaj go do kolekcji albo <STELLAR>wymień<> na obecny statek. Będąc na planecie, przywołaj statki poprzez szybkie menu (<IMG>QUICK_MENU<>).",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other342",
+    "Icon": "other/342.png",
+    "Name": "Jajo E. Pantheibea",
+    "Group": "Ekskluzywne jajo towarzysza",
+    "Description": "Żywe, płodne jajo, <TRADEABLE>gotowe do wyklucia!<>\n\nW jego wnętrzu potężna bestia stuka krystalicznymi kończynami w skorupę.\n\nSkany wskazują, że istota w środku ma potencjał genetyczny na to, by być <TRADEABLE>spokojna<> i delikatna, pomimo groźnego wyglądu.",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other343",
+    "Icon": "other/343.png",
+    "Name": "Jajo I. Bearicatea",
+    "Group": "Ekskluzywne jajo towarzysza",
+    "Description": "Żywe, płodne jajo, <TRADEABLE>gotowe do wyklucia!<>\n\nW jego wnętrzu trzepoczą wielowarstwowe skrzydła delikatnego stworzenia żądnego wolności.\n\nSkany wskazują, że istota w środku ma potencjał genetyczny na to, by być <TRADEABLE>oddane<> i najszczęśliwsze w pobliżu swojego właściciela.",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other344",
+    "Icon": "other/344.png",
+    "Name": "Wykonany ręcznie kondensator światła",
+    "Group": "Unikatowe wielofunkcyjne urządzenie przetrwania",
+    "Description": "Wyjątkowe <STELLAR>multinarzędzie<>.\n\n<STELLAR>Weź<> to multinarzędzie i dodaje je do swojej kolekcji albo <STELLAR>wymień<> je na obecne. Wymieniaj aktywne multinarzędzia poprzez sekcję Użytkowe w szybkim menu (<IMG>QUICK_MENU<>).",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other345",
+    "Icon": "other/345.png",
+    "Name": "Dotyk ciszy 8-T",
+    "Group": "Unikatowe wielofunkcyjne urządzenie przetrwania",
+    "Description": "Wyjątkowe <STELLAR>multinarzędzie<>.\n\n<STELLAR>Weź<> to multinarzędzie i dodaje je do swojej kolekcji albo <STELLAR>wymień<> je na obecne. Wymieniaj aktywne multinarzędzia poprzez sekcję Użytkowe w szybkim menu (<IMG>QUICK_MENU<>).",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "2C7C9F",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other346",
+    "Icon": "other/346.png",
+    "Name": "Remiksowany pakiet fajerwerków",
+    "Group": "Multipakiet pirotechniczny",
+    "Description": "Pakiet trzech różnych fajerwerków. Zawiera <SPECIAL>chromatyczny fajerwerk<>, <FUEL>fajerwerk Atlasa<> i <COMMODITY>fajerwerk z wzorem<>. Zapal, aby utworzyć lśniące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
+    "BaseValueUnits": 250.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other347",
+    "Icon": "other/346.png",
+    "Name": "Remiksowany pakiet fajerwerków",
+    "Group": "Multipakiet pirotechniczny",
+    "Description": "Pakiet trzech różnych fajerwerków. Zawiera <SPECIAL>chromatyczny fajerwerk<>, <FUEL>fajerwerk Atlasa<> i <COMMODITY>fajerwerk z wzorem<>. Zapal, aby utworzyć lśniące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
+    "BaseValueUnits": 250.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other348",
+    "Icon": "other/346.png",
+    "Name": "Remiksowany pakiet fajerwerków",
+    "Group": "Multipakiet pirotechniczny",
+    "Description": "Pakiet trzech różnych fajerwerków. Zawiera <SPECIAL>chromatyczny fajerwerk<>, <FUEL>fajerwerk Atlasa<> i <COMMODITY>fajerwerk z wzorem<>. Zapal, aby utworzyć lśniące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
+    "BaseValueUnits": 250.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other349",
+    "Icon": "other/346.png",
+    "Name": "Remiksowany pakiet fajerwerków",
+    "Group": "Multipakiet pirotechniczny",
+    "Description": "Pakiet trzech różnych fajerwerków. Zawiera <SPECIAL>chromatyczny fajerwerk<>, <FUEL>fajerwerk Atlasa<> i <COMMODITY>fajerwerk z wzorem<>. Zapal, aby utworzyć lśniące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
+    "BaseValueUnits": 250.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other350",
+    "Icon": "other/346.png",
+    "Name": "Remiksowany pakiet fajerwerków",
+    "Group": "Multipakiet pirotechniczny",
+    "Description": "Pakiet trzech różnych fajerwerków. Zawiera <SPECIAL>chromatyczny fajerwerk<>, <FUEL>fajerwerk Atlasa<> i <COMMODITY>fajerwerk z wzorem<>. Zapal, aby utworzyć lśniące pokazy na niebie.\n\nUmieść rurę startową poprzez <VAL_ON>menu budowy<> (<IMG>BUILD_MENU<>). <FUEL>Uwaga<>: Nie celuj w żywe stworzenia. Zalecamy używanie na zewnątrz.",
+    "BaseValueUnits": 250.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate",
+      "IsTwitchCampaign6Reward"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other351",
+    "Icon": "other/351.png",
+    "Name": "Hologram: Masa",
+    "Group": "Gest do odblokowania",
+    "Description": "Wyjątkowy gest.\n\nMożna go wybrać z <VAL_ON>szybkiego menu<>, aby wygenerować podręczny hologram uroczej, miniaturowej masy.",
+    "BaseValueUnits": 1500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other352",
+    "Icon": "other/352.png",
+    "Name": "Hologram: Fregata",
+    "Group": "Gest do odblokowania",
+    "Description": "Wyjątkowy gest.\n\nMożna go wybrać z <VAL_ON>szybkiego menu<>, aby wygenerować podręczny hologram eleganckiej i potężnej fregaty.",
+    "BaseValueUnits": 1500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other353",
+    "Icon": "other/353.png",
+    "Name": "Hologram: Statek gwiezdny",
+    "Group": "Gest do odblokowania",
+    "Description": "Wyjątkowy gest.\n\nMożna go wybrać z <VAL_ON>szybkiego menu<>, aby wygenerować podręczny hologram klasycznego myśliwskiego statku gwiezdnego.",
+    "BaseValueUnits": 1500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other354",
+    "Icon": "other/354.png",
+    "Name": "Hologram: Multinarzędzie",
+    "Group": "Gest do odblokowania",
+    "Description": "Wyjątkowy gest.\n\nMożna go wybrać z <VAL_ON>szybkiego menu<>, aby wygenerować podręczny hologram pistoletu multinarzędzia.",
+    "BaseValueUnits": 1500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other355",
+    "Icon": "other/355.png",
+    "Name": "Hologram: Układ",
+    "Group": "Gest do odblokowania",
+    "Description": "Wyjątkowy gest.\n\nMożna go wybrać z <VAL_ON>szybkiego menu<>, aby wygenerować podręczny hologram miniaturowego systemu gwiezdnego.",
+    "BaseValueUnits": 1500.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other356",
+    "Icon": "curiosities/46.png",
+    "Name": "Jajo próżniowe",
+    "Group": "Żywa ciekawostka",
+    "Description": "Anomalne jajo. Jego skorupka jest twarda i skórzasta, a ono samo drga przy dotknięciu.\n\nZ wnętrza jaja dochodzi ciche postukiwanie. Od czasu do czasu wydaje się śpiewać.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "4D2957",
+    "Usages": [
+      "HasDevProperties"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other358",
+    "Icon": "other/358.png",
+    "Name": "Harmonijny mózg",
+    "Group": "Ujarzmiona świadomość",
+    "Description": "Centralny procesor myśliwca Strażników. Jego układy wyglądają stabilnie, pulsując regularnie elektrycznym biciem serca. Nie reaguje gniewnie na moją obecność.\n\nStatus: <TRADEABLE>POSŁUSZNY<>\n\nZainstaluj w wyłączonym statku Strażników, by odblokować jego szczątkowy kokpit i umożliwić <STELLAR>ręczne sterowanie<>.",
+    "BaseValueUnits": 480016.0,
+    "CurrencyType": "Credits",
+    "Colour": "4D2957",
+    "Usages": [
+      "HasUsedToCraft",
+      "HasDevProperties",
+      "IsConsumable",
+      "IsEggIngredient",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other359",
+    "Icon": "other/359.png",
+    "Name": "Turboodrzutowiec Aeron",
+    "Group": "Ulepszenie wizualne egzokombinezonu",
+    "Description": "Wyjątkowe <STELLAR>nadpisanie wyglądu egzokombinezonu<>.\n\nTytanowy latający plecak, złożony z technologii skradzionej hordzie Strażników. Jego silniki są chłodzone stałym przepływem pugenum i azotu, zapewniając wydajność paliwową i absolutnie ciche działanie.\n\n<FUEL>Ostrzeżenie<>: nie otwierać komory pugenum bez wyposażenia ochronnego.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
+    "BaseValueUnits": 1000.0,
+    "CurrencyType": "Credits",
+    "MaxStackSize": 5.0,
+    "Colour": "262626",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other360",
+    "Icon": "other/360.png",
+    "Name": "Geometryczna peleryna",
+    "Group": "Peleryna do odblokowania",
+    "Description": "Wyjątkowa <STELLAR>zmiana wyglądu egzokombinezonu<>.\n\nStrój w stylu vintage utkany z mieszanki gwiezdnego jedwabiu, z klasycznym geometrycznym wzorem.\n\nZmień wygląd swojego egzokombinezonu w <TECHNOLOGY>modyfikatorze wyglądu<>.",
+    "BaseValueUnits": 3000.0,
+    "CurrencyType": "Quicksilver",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
+    "Usages": [
+      "HasDevProperties",
+      "IsQuicksilver",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [],
+    "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "other361",
+    "Icon": "other/361.png",
+    "Name": "Kaptur rozrodowy",
+    "Group": "Kaptur do odblokowania",
+    "Description": "Ten wielki kaptur jest noszony przez wysokie rangą istoty z rasy Geków podczas wydarzeń i zlotów, pozwalajac łatwo odróżnić szacownego władcę handlowego od przeciętnego najmity.\n\nZmień wygląd swojego egzokombinezonu dzięki tej wyjątkowej <STELLAR>personalizacji wyglądu<> w <TECHNOLOGY>modyfikatorze wyglądu<>.",
+    "BaseValueUnits": 3200.0,
+    "CurrencyType": "Quicksilver",
+    "MaxStackSize": 5.0,
+    "Colour": "007951",
     "Usages": [
       "HasDevProperties",
       "IsQuicksilver",
