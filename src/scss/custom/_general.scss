@@ -52,6 +52,10 @@ body {
 #app .main-panel #navbar.navbar {
     max-height: 80px;
 
+    @media screen and (min-width: 500px) and (max-width: 991px) {
+        padding-top: 0 !important;
+    }
+
     .navbar-toggler .icon-bar {
         background-color: white;
     }
@@ -113,6 +117,7 @@ img.tiny {
     .image-container img {
         padding: 0.5em 0;
     }
+
     .text-container {
         p {
             margin-bottom: 0.5em;
@@ -225,7 +230,7 @@ img.tiny {
 }
 
 .m-0-child {
-    > * {
+    >* {
         margin: 0;
     }
 }
@@ -304,12 +309,6 @@ img.tiny {
 .store {
     padding-left: 0.5em;
     padding-right: 0.5em;
-}
-
-#app .main-panel #navbar.navbar {
-    @media screen and (min-width: 500px) and (max-width: 991px) {
-        padding-top: 0 !important;
-    }
 }
 
 .colour-swatch {
