@@ -65,7 +65,7 @@ export const CatalogueListContainerUnconnected: React.FC<IProps> = (props: IProp
         return newDisplayItems;
     }
 
-    const displayItems = getDisplayItems(items, searchTerm);
+    const displayItems = getDisplayItems(items, searchTerm.trim());
     return (
         <CatalogueListPresenter
             {...props}

@@ -52,6 +52,10 @@ body {
 #app .main-panel #navbar.navbar {
     max-height: 80px;
 
+    @media screen and (min-width: 500px) and (max-width: 991px) {
+        padding-top: 0 !important;
+    }
+
     .navbar-toggler .icon-bar {
         background-color: white;
     }
@@ -305,12 +309,6 @@ img.tiny {
 .store {
     padding-left: 0.5em;
     padding-right: 0.5em;
-}
-
-#app .main-panel #navbar.navbar {
-    @media screen and (min-width: 500px) and (max-width: 991px) {
-        padding-top: 0 !important;
-    }
 }
 
 .colour-swatch {
