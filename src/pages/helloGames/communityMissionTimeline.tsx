@@ -82,23 +82,30 @@ export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IPr
                             </div>
                         </div>
                     </div>
-                    <div className="generic-item-list row justify pt-3">
-                        <div>{translate(LocaleKey.requiresTheFollowing)}</div>
-                    </div>
-                    <div className="generic-item-list row justify">
-                        {
-                            (qs.ItemsRequired ?? []).map((appId: string, index: number) => {
-                                return (
-                                    <div key={`generic-item ${index} ${appId}`} data-key={appId} className="gen-item col-12">
-                                        <QuicksilverRequiredItemListTile
-                                            Id={appId}
-                                            Quantity={0}
-                                        />
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
+
+                    {
+                        ((qs.ItemsRequired ?? []).length > 0) && (
+                            <>
+                                <div className="generic-item-list row justify pt-3">
+                                    <div>{translate(LocaleKey.requiresTheFollowing)}</div>
+                                </div>
+                                <div className="generic-item-list row justify">
+                                    {
+                                        (qs.ItemsRequired ?? []).map((appId: string, index: number) => {
+                                            return (
+                                                <div key={`generic-item ${index} ${appId}`} data-key={appId} className="gen-item col-12">
+                                                    <QuicksilverRequiredItemListTile
+                                                        Id={appId}
+                                                        Quantity={0}
+                                                    />
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+                            </>
+                        )
+                    }
                 </div>
             );
         }
