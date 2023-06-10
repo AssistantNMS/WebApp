@@ -7,6 +7,7 @@ import { MetaData } from '../../contracts/data/metaData';
 import { QuicksilverStore } from '../../contracts/data/quicksilver';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
 import { TwitchDrop } from '../../contracts/data/twitchDrop';
+import { UpdateItem } from '../../contracts/data/updateItem';
 import { ControllerPlatformType, ToJsonProperty } from '../../contracts/enum/ControllerPlatformType';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { getHashForObject } from '../../helper/hashHelper';
@@ -107,4 +108,5 @@ export class DataJsonService extends BaseJsonService {
     getSocial = () => this.getDataJsonBasic<Array<QuicksilverStore>>('social.json');
     getUnusedMilestonePatches = () => this.getDataJsonBasic<Array<QuicksilverStore>>('unusedMilestonePatches.json');
     getTwitchDrops = () => this.getDataJsonBasic<Array<TwitchDrop>>('twitchDrops.json');
+    getUpdateItems = () => this.getDataJsonBasic<Array<UpdateItem>>('updates.json');
 }

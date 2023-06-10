@@ -1,0 +1,51 @@
+.update.item {
+    padding-bottom: 1em;
+    background-color: transparent !important;
+    box-shadow: unset;
+    transition: transform 250ms ease-in-out;
+
+    &:hover {
+        transform: translateY(-0.5em);
+    }
+
+    &.card {
+        padding: 0;
+        margin-bottom: 0;
+
+        .image-container {
+            min-height: 280px;
+        }
+
+        .text-container {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            margin: 0 1px;
+            background-color: rgba(0, 0, 0, 0.2);
+
+            &.title p {
+                margin-top: 0.75em;
+                font-size: 1.5em;
+                font-weight: 500;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+.new-item.content {
+    .header-row {
+        padding-top: 0.5em;
+
+        .image-container {
+            padding-left: 0.75em;
+
+            img {
+                border-radius: 0.5em;
+            }
+        }
+    }
+}

@@ -36,3 +36,6 @@ export const twitchDrops = '/twitch-drops';
 export const twitchDropsParam = ':dayId';
 export const twitchDropsDetails = `${twitchDrops}/${twitchDropsParam}`;
 export const contributors = '/contributors';
+export const newItemsAdded = '/new-items-added';
+export const newItemsAddedParam = ':id';
+export const newItemsAddedDetails = `${newItemsAdded}/${newItemsAddedParam}`;
