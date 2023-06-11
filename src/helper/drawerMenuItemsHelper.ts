@@ -100,6 +100,13 @@ export const getMenuSection3 = () => {
   });
   menuItems.push(communityMissionMenuItem());
   menuItems.push({
+    name: translate(LocaleKey.newItemsAdded).toString(),
+    link: routes.newItemsAdded,
+    icon: 'new_releases_sharp',
+    iconType: DrawerIconType.Material,
+    isActive: false,
+  });
+  menuItems.push({
     name: translate(LocaleKey.titles).toString(),
     link: routes.titles,
     icon: 'edit_attributes_sharp',

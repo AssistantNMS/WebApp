@@ -3,11 +3,11 @@
     background-color: $brand-primary-background;
 }
 
-.main-panel>#sidebar-main-content-overlay {
+.main-panel > #sidebar-main-content-overlay {
     display: none;
 }
 
-.nav-open .main-panel>#sidebar-main-content-overlay {
+.nav-open .main-panel > #sidebar-main-content-overlay {
     @media (max-width: 991px) {
         display: block;
     }
@@ -18,7 +18,7 @@
     color: $brand-secondary;
 }
 
-.nav .nav-item.active>.nav-link .material-icons {
+.nav .nav-item.active > .nav-link .material-icons {
     color: $brand-secondary;
 }
 
@@ -36,7 +36,6 @@
             height: 0;
             overflow: hidden;
             transition: height 150ms ease-in-out;
-
 
             &.expanded {
                 height: unset;
@@ -61,6 +60,10 @@
             &.separator {
                 overflow: unset;
             }
+
+            // &.active img {
+            //     filter: grayscale(1);
+            // }
         }
 
         .material-icons.align-right {
