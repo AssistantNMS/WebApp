@@ -54,19 +54,19 @@ export const NewItemsDetailPresenterUnconnected: React.FC<IProps> = (props: IPro
     const loadUpdateItems = async (updateId: string) => {
         const dataServ = props.dataJsonService;
         const updatesResult = await dataServ.getUpdateItems();
-        if (updatesResult.isSuccess == false) {
+        if (updatesResult.isSuccess === false) {
             setNetworkState(NetworkState.Error);
             return;
         }
 
-        const updateItem = updatesResult.value.find(ur => ur.guid == updateId);
+        const updateItem = updatesResult.value.find(ur => ur.guid === updateId);
         if (updateId == null) {
             setNetworkState(NetworkState.Error);
             return;
         }
 
         const detailsResult = await props.gameItemService.getItemDetailsFromIdList(updateItem?.itemIds ?? []);
-        if (detailsResult.isSuccess == false) return;
+        if (detailsResult.isSuccess === false) return;
 
         const gameItems = detailsResult.value.map((g: any) => g.value);
         setGameDetails(gameItems.sort(gameItemModelSortByName));
