@@ -3,6 +3,7 @@ import { GameItemModel } from '../../contracts/GameItemModel';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { getHashForObject } from '../../helper/hashHelper';
+import { gameItemModelSortByName } from '../../helper/sortHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { getCurrentLang } from '../../localization/Translate';
 import { GameItemService } from './GameItemService';
@@ -71,10 +72,10 @@ export class AllGameItemsService {
           result.push(item);
         }
       }
-      result.sort(this.compare)
+      const ordered = result.sort(gameItemModelSortByName);
       return {
         isSuccess: true,
-        value: result,
+        value: ordered,
         errorMessage: ''
       }
     } catch (ex) {
@@ -115,19 +116,6 @@ export class AllGameItemsService {
         errorMessage: (exception as any).errorMessage,
       };
     }
-  }
-
-  compare(a: GameItemModel, b: GameItemModel) {
-    const nameA = a.Name.toUpperCase();
-    const nameB = b.Name.toUpperCase();
-
-    let comparison = 0;
-    if (nameA > nameB) {
-      comparison = 1;
-    } else if (nameA < nameB) {
-      comparison = -1;
-    }
-    return comparison;
   }
 
   typeExist(possibleType: string) {

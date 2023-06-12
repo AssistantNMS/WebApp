@@ -50,6 +50,8 @@ import { IStateProps, IStateDispatch } from './App.Redux';
 import { UseNativeApp } from './components/common/useNativeAppPopup';
 import { ContributorsPage } from './pages/other/contributors';
 import { RandomPortal } from './pages/portal/randomPortalPresenter';
+import { NewItemsPresenter } from './pages/misc/newItemsPresenter';
+import { NewItemsDetailPresenter } from './pages/misc/newItemsDetailPresenter';
 
 interface IProps extends IStateProps, IStateDispatch { }
 
@@ -111,6 +113,8 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={`${route.seasonExpedition}/:seasId`} element={<ExpeditionSeasonPhaseList />} />
               <Route path={route.weekendMissionDetails} element={<WeekendMissionContainer />} />
               <Route path={route.weekendMission} element={<WeekendMissionMenuPresenter />} />
+              <Route path={route.newItemsAdded} element={<NewItemsPresenter />} />
+              <Route path={route.newItemsAddedDetails} element={<NewItemsDetailPresenter />} />
 
               <Route path={route.techTree} element={<TechTreeContainer />} />
               <Route path={route.titles} element={<TitlesContainer />} />
