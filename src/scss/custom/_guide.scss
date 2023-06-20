@@ -8,13 +8,6 @@
             margin: 0 auto;
         }
 
-        .heading {
-            padding: .5em;
-            background-color: $brand-secondary;
-            border-radius: 5px;
-            margin-bottom: .25em;
-        }
-
         .item {
             padding-left: .5em;
             padding-right: .5em;
@@ -58,4 +51,12 @@
         }
     }
 
+}
+
+
+.guide .section .heading,
+.section .heading {
+    padding: .5em;
+    border-radius: 5px;
+    margin: 0 auto 0.25em auto;
 }

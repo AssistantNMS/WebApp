@@ -39,3 +39,4 @@ export const contributors = '/contributors';
 export const newItemsAdded = '/new-items-added';
 export const newItemsAddedParam = ':id';
 export const newItemsAddedDetails = `${newItemsAdded}/${newItemsAddedParam}`;
+export const solarPanel = 'solar-panel';

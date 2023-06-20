@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { PositiveButton } from '../../components/common/button/positiveButton';
@@ -9,17 +8,16 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { CartListTile } from '../../components/tilePresenter/cartListTile/cartListTile';
 import * as Route from '../../constants/Route';
 import { CartItem } from '../../contracts/cart/cartItem';
-import { withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { translate } from '../../localization/Translate';
 import { requiredItemFromCart } from '../../mapper/CartMapper';
-import { IReduxProps, mapDispatchToProps, mapStateToProps } from './cart.Redux';
+import { IReduxProps } from './cart.Redux';
 
 interface IWithDepInj { }
 interface IWithoutDepInj { }
 interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
 
-const CartPresenterConnected: React.FC<IProps> = (props: IProps) => {
+export const CartPresenter: React.FC<IProps> = (props: IProps) => {
     const navigate = useNavigate();
 
     const displayCartItems = (cartItems: Array<CartItem>) => {
@@ -78,9 +76,4 @@ const CartPresenterConnected: React.FC<IProps> = (props: IProps) => {
         </DefaultAnimation>
     );
 };
-
-export const CartPresenter = withServices<IWithoutDepInj, IWithDepInj>(
-    connect(mapStateToProps, mapDispatchToProps)(CartPresenterConnected),
-    () => ({})
-);
 

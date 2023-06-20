@@ -99,8 +99,8 @@ body {
             margin-top: 1em;
         }
 
-        .table > thead > tr > th,
-        .table > tbody > tr > td {
+        .table>thead>tr>th,
+        .table>tbody>tr>td {
             border-color: white;
         }
     }
@@ -142,7 +142,7 @@ body {
             color: white;
         }
 
-        li.active > a {
+        li.active>a {
             background-color: $brand-primary;
         }
 
@@ -161,7 +161,7 @@ body {
         input {
             color: $white-color;
             background-image: linear-gradient(to top, #{$brand-primary} 2px, rgba(63, 81, 181, 0) 2px),
-                linear-gradient(to top, #{$white-color} 1px, rgba(210, 210, 210, 0) 1px);
+            linear-gradient(to top, #{$white-color} 1px, rgba(210, 210, 210, 0) 1px);
 
             $placeholderColor: rgba(255, 255, 255, 0.9);
             $placeholderFontSize: 0.75em;
@@ -241,7 +241,8 @@ body {
         color: $brand-secondary !important;
     }
 
-    .guide .section .heading {
+    .guide .section .heading,
+    .section .heading {
         background-color: $brand-secondary;
     }
 
@@ -266,7 +267,7 @@ body {
     }
 
     .discussion {
-        > .bubble.sender {
+        >.bubble.sender {
             background-color: #606060;
             color: #fff;
 
@@ -275,7 +276,7 @@ body {
             }
         }
 
-        > .bubble.recipient {
+        >.bubble.recipient {
             background-color: $brand-primary;
 
             &:before {
@@ -283,7 +284,7 @@ body {
             }
         }
 
-        > .bubble.option {
+        >.bubble.option {
             background-color: $brand-secondary;
             color: black;
         }
@@ -310,11 +311,11 @@ body {
         }
     }
 
-    .form-check .form-check-input:checked + .form-check-sign .check:before {
+    .form-check .form-check-input:checked+.form-check-sign .check:before {
         color: #4a4a4a;
     }
 
-    .form-check .form-check-input:checked + .form-check-sign .check {
+    .form-check .form-check-input:checked+.form-check-sign .check {
         background: lighten($brand-primary, 10%);
     }
 }

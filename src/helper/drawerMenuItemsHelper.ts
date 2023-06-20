@@ -134,6 +134,13 @@ export const getMenuSection3 = () => {
     iconType: DrawerIconType.Material,
     isActive: false,
   });
+  menuItems.push({
+    name: translate(LocaleKey.solarPanelBatteryCalculator).toString(),
+    link: routes.solarPanel,
+    icon: 'offline_bolt',
+    iconType: DrawerIconType.Material,
+    isActive: false,
+  });
   menuItems.push(menuItemSeperator);
   return menuItems;
 }
