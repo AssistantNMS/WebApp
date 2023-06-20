@@ -256,7 +256,7 @@ const SolarPanelPageConnected: React.FC<IProps> = (props: IProps) => {
                                 type="number"
                                 className="form-control ta-center"
                                 placeholder="..."
-                                value={requiredKP}
+                                value={requiredKP ?? ''}
                                 onChange={onSearchTextChange}
                             />
                         </form>
