@@ -4,14 +4,15 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useLocation } from 'react-router';
 import { Route, Routes } from 'react-router-dom';
-import { mapDispatchToProps, mapStateToProps } from './App.Redux';
+import { IStateDispatch, IStateProps, mapDispatchToProps, mapStateToProps } from './App.Redux';
+import { UseNativeApp } from './components/common/useNativeAppPopup';
 import { Drawer } from './components/core/drawer/drawer';
 import { NavBarFake } from './components/core/navbar/navbarFake';
 import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
 import * as route from './constants/Route';
 import { trackPageView } from './integration/analytics';
 import { AboutPresenter } from './pages/about/aboutPresenter';
-import { CartPresenter } from './pages/cart/cartPresenter';
+import { CartContainer } from './pages/cart/cartContainer';
 import { CatalogueItemContainer } from './pages/catalogue/catalogueItemContainer';
 import { CatalogueListContainer } from './pages/catalogue/catalogueListContainer';
 import { CataloguePresenter } from './pages/catalogue/cataloguePresenter';
@@ -28,14 +29,19 @@ import { WeekendMissionContainer } from './pages/helloGames/weekendMission/weeke
 import { WeekendMissionMenuPresenter } from './pages/helloGames/weekendMission/weekendMissionMenuPage';
 import { HomePresenter } from './pages/home/homePresenter';
 import { LanguagePresenter } from './pages/language/languagePresenter';
+import { NewItemsDetailPresenter } from './pages/misc/newItemsDetailPresenter';
+import { NewItemsPresenter } from './pages/misc/newItemsPresenter';
 import { NmsfmContainer } from './pages/misc/nmsfmContainer';
 import { PatreonPresenter } from './pages/misc/patreonPresenter';
 import { NotFoundPresenter } from './pages/notFound/notFoundPresenter';
 import { CommunityLinksPage } from './pages/other/communityLinks';
 import { CommunitySpotlightPage } from './pages/other/communitySpotlight';
+import { ContributorsPage } from './pages/other/contributors';
 import { OnlineMeetup2020SubmissionContainer } from './pages/other/onlineMeetup2020Container';
 import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
 import { PortalListContainer } from './pages/portal/portalListContainer';
+import { RandomPortal } from './pages/portal/randomPortalPresenter';
+import { SolarPanelPage } from './pages/power/solarPanelPage';
 import { ProcessorItemContainer } from './pages/processor/processorItemContainer';
 import { SettingPresenter } from './pages/setting/settingPresenter';
 import { SocialPresenter } from './pages/social/socialPresenter';
@@ -46,12 +52,6 @@ import { TitlesContainer } from './pages/titles/titlesContainer';
 import { TwitchDropPage } from './pages/twitchDrops/twitchDropPage';
 import { TwitchDropViewerPage } from './pages/twitchDrops/twitchDropViewerPage';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
-import { IStateProps, IStateDispatch } from './App.Redux';
-import { UseNativeApp } from './components/common/useNativeAppPopup';
-import { ContributorsPage } from './pages/other/contributors';
-import { RandomPortal } from './pages/portal/randomPortalPresenter';
-import { NewItemsPresenter } from './pages/misc/newItemsPresenter';
-import { NewItemsDetailPresenter } from './pages/misc/newItemsDetailPresenter';
 
 interface IProps extends IStateProps, IStateDispatch { }
 
@@ -96,7 +96,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={`${route.catalogueItem}/:itemId`} element={<CatalogueItemContainer />} />
 
               <Route path={`${route.processorItem}/:itemId`} element={<ProcessorItemContainer />} />
-              <Route path={route.cart} element={<CartPresenter />} />
+              <Route path={route.cart} element={<CartContainer />} />
               <Route path={route.favourites} element={<FavouritePresenter />} />
               <Route path={route.genericAllRequirements} element={<GenericPageAllRequiredContainer />} />
 
@@ -115,6 +115,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
               <Route path={route.weekendMission} element={<WeekendMissionMenuPresenter />} />
               <Route path={route.newItemsAdded} element={<NewItemsPresenter />} />
               <Route path={route.newItemsAddedDetails} element={<NewItemsDetailPresenter />} />
+              <Route path={route.solarPanel} element={<SolarPanelPage />} />
 
               <Route path={route.techTree} element={<TechTreeContainer />} />
               <Route path={route.titles} element={<TitlesContainer />} />

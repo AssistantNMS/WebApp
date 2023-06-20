@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
+import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
+import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { UpdateItemCardListTile } from '../../components/tilePresenter/updateItemTilePresenter';
 import { NetworkState } from '../../constants/NetworkState';
@@ -10,10 +12,6 @@ import { IDependencyInjection, withServices } from '../../integration/dependency
 import { LocaleKey } from '../../localization/LocaleKey';
 import { translate } from '../../localization/Translate';
 import { DataJsonService } from '../../services/json/DataJsonService';
-import { Error } from '../../components/core/error/error';
-import { catalogueItem, newItemsAddedDetails, newItemsAddedParam } from '../../constants/Route';
-import { Link } from 'react-router-dom';
-import { SmallLoading } from '../../components/core/loading/loading';
 
 interface IWithDepInj {
     dataJsonService: DataJsonService;
@@ -38,7 +36,7 @@ export const NewItemsPresenterUnconnected: React.FC<IProps> = (props: IProps) =>
     const loadUpdateItems = async () => {
         const dataServ = props.dataJsonService;
         const updatesResult = await dataServ.getUpdateItems();
-        if (updatesResult.isSuccess == false) {
+        if (updatesResult.isSuccess === false) {
             setNetworkState(NetworkState.Error);
             return;
         }

@@ -1,0 +1,63 @@
+.solar-calc-page {
+
+    .heading {
+        color: white;
+    }
+
+    .solar-calc {
+        padding-left: 0;
+        padding-right: 0;
+
+        table {
+            margin: 1em;
+
+            tbody {
+
+                tr {
+
+                    td {
+                        padding-top: 0.25em;
+                    }
+
+                    td.icon {
+                        width: 2em;
+                        color: white;
+
+                        .table-icon {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                    }
+
+                    td.text {
+
+                        &.left {
+                            text-align: left;
+                            padding-left: 0.5em;
+                        }
+
+                        &.right {
+                            text-align: right;
+                        }
+
+                        .table-text,
+                        .table-heading {
+                            padding: 0;
+                            margin: 0;
+                            font-size: 125%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .solar-calc-warning {
+        color: darkorange;
+    }
+
+    .not-recommended {
+        opacity: 0.5;
+    }
+}
