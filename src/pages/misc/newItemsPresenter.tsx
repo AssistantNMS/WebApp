@@ -7,7 +7,7 @@ import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { UpdateItemCardListTile } from '../../components/tilePresenter/updateItemTilePresenter';
 import { NetworkState } from '../../constants/NetworkState';
-import { UpdateItem } from '../../contracts/data/updateItem';
+import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { translate } from '../../localization/Translate';
@@ -25,7 +25,7 @@ interface IProps extends IWithDepInj, IWithoutDepInj {
 
 export const NewItemsPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
 
-    const [updates, setUpdates] = useState<Array<UpdateItem>>([]);
+    const [updates, setUpdates] = useState<Array<MajorUpdateItem>>([]);
     const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
 
     useEffect(() => {
@@ -35,7 +35,7 @@ export const NewItemsPresenterUnconnected: React.FC<IProps> = (props: IProps) =>
 
     const loadUpdateItems = async () => {
         const dataServ = props.dataJsonService;
-        const updatesResult = await dataServ.getUpdateItems();
+        const updatesResult = await dataServ.getMajorUpdateItems();
         if (updatesResult.isSuccess === false) {
             setNetworkState(NetworkState.Error);
             return;
@@ -44,13 +44,13 @@ export const NewItemsPresenterUnconnected: React.FC<IProps> = (props: IProps) =>
         setNetworkState(NetworkState.Success);
     }
 
-    const displayUpdateItems = (updates: Array<UpdateItem>) => {
+    const displayUpdateItems = (updates: Array<MajorUpdateItem>) => {
         if (updates == null || updates.length === 0) return (
             <div className="col-12 mt-3em">
                 <h2>{translate(LocaleKey.noItems)}</h2>
             </div>
         );
-        return updates.map((item: UpdateItem, index: number) => (
+        return updates.map((item: MajorUpdateItem, index: number) => (
             <div
                 key={`update-${item.guid}-${index}`}
                 className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6"
@@ -62,7 +62,7 @@ export const NewItemsPresenterUnconnected: React.FC<IProps> = (props: IProps) =>
         ));
     }
 
-    const renderContent = (updates: Array<UpdateItem>) => {
+    const renderContent = (updates: Array<MajorUpdateItem>) => {
         if (networkState === NetworkState.Loading) return (<SmallLoading />);
         if (networkState === NetworkState.Error) return (<Error />);
 

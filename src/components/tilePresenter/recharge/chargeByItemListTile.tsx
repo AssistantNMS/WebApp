@@ -12,6 +12,8 @@ import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { TextContainer } from '../../common/tile/textContainer';
 import { TileLoading } from '../../core/loading/loading';
+import { translate } from '../../../localization/Translate';
+import { LocaleKey } from '../../../localization/LocaleKey';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -40,12 +42,12 @@ const ChargeByItemListTileClass: React.FC<IProps> = (props: IProps) => {
         return (<TileLoading />);
     }
 
-    const childName = roundDecimalNum(props.totalChargeAmount / props.Value) + 'x ' + item.Name;
     return (
         <Link to={`${catalogueItem}/${props.Id}`} data-id="ChargeByItemListTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} />
             <div className="gen-item-content-container">
-                <TextContainer text={childName} additionalCss="full" />
+                <TextContainer text={item.Name} additionalCss="full" />
+                <div className="quantity-container">{translate(LocaleKey.quantity)}: {roundDecimalNum(props.totalChargeAmount / props.Value)}</div>
             </div>
         </Link>
     );

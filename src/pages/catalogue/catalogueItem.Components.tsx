@@ -32,6 +32,8 @@ import { StatBonus } from '../../contracts/StatBonus';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { translate } from '../../localization/Translate';
+import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
+import { UpdateItemListTile } from '../../components/tilePresenter/updateItemTilePresenter';
 
 export const displayRequiredItems = (resArray: Array<RequiredItemDetails>, navigate: (url: string, data: any) => void) => {
     if (resArray == null || resArray.length < 1) return null;
@@ -247,6 +249,23 @@ export const displayEggTraits = (eggTraitArray: Array<EggNeuralTrait>) => {
                     list={eggTraitArray}
                     presenter={EggTraitListTile}
                     isCentered={shouldListBeCentered(eggTraitArray.length)}
+                />
+            }
+        />
+    );
+}
+
+export const displayFromUpdate = (addedInUpdateArray: Array<MajorUpdateItem>) => {
+    if (addedInUpdateArray == null || addedInUpdateArray.length < 1) return null;
+
+    return (
+        <CommonSection
+            heading={translate(LocaleKey.addedInUpdate)}
+            content={
+                <GenericListPresenter
+                    list={addedInUpdateArray}
+                    presenter={(listItem) => <UpdateItemListTile {...listItem} />}
+                    isCentered={shouldListBeCentered(addedInUpdateArray.length)}
                 />
             }
         />

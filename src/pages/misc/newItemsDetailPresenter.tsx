@@ -10,7 +10,7 @@ import { SmallLoading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { NetworkState } from '../../constants/NetworkState';
 import { newItemsAdded } from '../../constants/Route';
-import { UpdateItem } from '../../contracts/data/updateItem';
+import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
 import { formatDate } from '../../helper/dateHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
@@ -36,7 +36,7 @@ interface IProps extends IWithDepInj, IWithoutDepInj {
 export const NewItemsDetailPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
     let location = useLocation();
 
-    const [update, setUpdate] = useState<UpdateItem>(anyObject);
+    const [update, setUpdate] = useState<MajorUpdateItem>(anyObject);
     const [gameDetails, setGameDetails] = useState<Array<GameItemModel>>([]);
     const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
 
@@ -53,7 +53,7 @@ export const NewItemsDetailPresenterUnconnected: React.FC<IProps> = (props: IPro
 
     const loadUpdateItems = async (updateId: string) => {
         const dataServ = props.dataJsonService;
-        const updatesResult = await dataServ.getUpdateItems();
+        const updatesResult = await dataServ.getMajorUpdateItems();
         if (updatesResult.isSuccess === false) {
             setNetworkState(NetworkState.Error);
             return;

@@ -14,21 +14,22 @@ import { PlatformFloatingActionButton } from '../../components/floatingActionBut
 import { ShareDialog } from '../../components/shareDialog';
 import { IdPrefix } from '../../constants/IdPrefix';
 import { NetworkState } from '../../constants/NetworkState';
+import { GameItemModel } from '../../contracts/GameItemModel';
+import { Processor } from '../../contracts/Processor';
+import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
+import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
 import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
-import { GameItemModel } from '../../contracts/GameItemModel';
-import { Processor } from '../../contracts/Processor';
 import { Recharge } from '../../contracts/recharge/recharge';
-import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { translate } from '../../localization/Translate';
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { ToastService } from '../../services/toastService';
-import { displayCookItems, displayEggTraits, displayExtraDetailsSection, displayObsoleteTech, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayRewardFrom, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
+import { displayCookItems, displayEggTraits, displayExtraDetailsSection, displayFromUpdate, displayObsoleteTech, displayProceduralStatBonuses, displayRechargedByItems, displayRefItems, displayRequiredItems, displayRewardFrom, displayStatBonuses, displayUsedToCookItems, displayUsedToCreateItems, displayUsedToRechargeItems, displayUsedToRefItems } from './catalogueItem.Components';
 import { IReduxProps } from './catalogueItem.Redux';
 import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
 
@@ -47,6 +48,7 @@ interface IProps extends IReduxProps {
     controlLookup: Array<PlatformControlMapping>;
     starshipScrapItems: Array<StarshipScrap>;
     creatureHarvests: Array<CreatureHarvest>;
+    addedInUpdate: Array<MajorUpdateItem>;
     additionalData: Array<any>;
 
     networkState: NetworkState;
@@ -151,6 +153,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
                     {displayProceduralStatBonuses(props.item.NumStatsMin, props.item.NumStatsMax, props.item.ProceduralStatBonuses)}
                     {displayRewardFrom(props.item, props.starshipScrapItems, props.creatureHarvests)}
                     {displayEggTraits(props.eggTrait)}
+                    {displayFromUpdate(props.addedInUpdate)}
                 </div>
                 <DevDetailsBottomModalSheet
                     appId={props.item.Id}

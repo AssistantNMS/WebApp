@@ -9,8 +9,8 @@
         }
 
         .item {
-            padding-left: .5em;
-            padding-right: .5em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
 
             p,
             .content {
@@ -19,11 +19,10 @@
             }
 
             .content {
-                margin-top: .5em;
+                margin-top: 0.5em;
             }
 
             &.minHeight {
-
                 // min-height: 45px;
                 a {
                     display: inline-block;
@@ -32,14 +31,14 @@
 
             h3.metaData {
                 display: inline-block;
-                margin-top: -.5em;
+                margin-top: -0.5em;
                 padding: 1em;
             }
         }
 
         .link {
-            padding: .5em;
-            margin-bottom: .5em;
+            padding: 0.5em;
+            margin-bottom: 0.5em;
             color: $white-color;
             background-color: $gray-600;
             border-radius: 5px;
@@ -50,13 +49,11 @@
             max-width: 100%;
         }
     }
-
 }
-
 
 .guide .section .heading,
 .section .heading {
-    padding: .5em;
+    padding: 0.5em;
     border-radius: 5px;
     margin: 0 auto 0.25em auto;
 }
