@@ -28,11 +28,6 @@ export const ImageContainer = (props: IProps) => {
     }
     return (
         <div className="image-container" style={styleObj}>
-            {/* <img
-                src={imageString}
-                alt={props.Name ?? props.Icon}
-                draggable={false}
-            /> */}
             <LazyLoadImage
                 src={imageString}
                 className={classNames({ grayscale: props.greyScale === true })}

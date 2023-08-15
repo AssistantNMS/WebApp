@@ -7,7 +7,7 @@ import { MetaData } from '../../contracts/data/metaData';
 import { QuicksilverStore } from '../../contracts/data/quicksilver';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
 import { TwitchDrop } from '../../contracts/data/twitchDrop';
-import { UpdateItem } from '../../contracts/data/updateItem';
+import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
 import { ControllerPlatformType, ToJsonProperty } from '../../contracts/enum/ControllerPlatformType';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { getHashForObject } from '../../helper/hashHelper';
@@ -96,6 +96,30 @@ export class DataJsonService extends BaseJsonService {
         }
     }
 
+    async getMajorUpdateItems(): Promise<ResultWithValue<Array<MajorUpdateItem>>> {
+        return this._getOrAdd(() => this._getMajorUpdateItems(), ['_getMajorUpdateItems']);
+    }
+    async _getMajorUpdateItems(): Promise<ResultWithValue<Array<MajorUpdateItem>>> {
+        return this.getDataJsonBasic<Array<MajorUpdateItem>>('updates.json');
+    }
+
+    async getMajorUpdateForItem(itemId: string): Promise<ResultWithValue<Array<MajorUpdateItem>>> {
+        return this._getOrAdd(() => this._getMajorUpdateForItem(itemId), ['_getMajorUpdateForItem', itemId]);
+    }
+    async _getMajorUpdateForItem(itemId: string): Promise<ResultWithValue<Array<MajorUpdateItem>>> {
+        const allItemsresult = await this.getMajorUpdateItems();
+        if (!allItemsresult.isSuccess) return { isSuccess: false, value: [], errorMessage: allItemsresult.errorMessage };
+
+        const specificToItemId = allItemsresult.value.filter(sc =>
+            ((sc.itemIds ?? []).filter((itemD) => itemD === itemId)?.length > 0)
+        );
+        return {
+            isSuccess: true,
+            value: specificToItemId,
+            errorMessage: ''
+        }
+    }
+
     getAlphabetTranslations = () => this.getDataJsonBasic<Array<AlphabetTranslation>>('alphabetTranslations.json');
     getAssistantAppLinks = () => this.getDataJsonBasic<Array<AssistantAppLinks>>('assistantAppLinks.json');
     getDeveloperDetails = () => this.getDataJsonBasic<Array<DevDetail>>('developerDetails.json');
@@ -108,5 +132,4 @@ export class DataJsonService extends BaseJsonService {
     getSocial = () => this.getDataJsonBasic<Array<QuicksilverStore>>('social.json');
     getUnusedMilestonePatches = () => this.getDataJsonBasic<Array<QuicksilverStore>>('unusedMilestonePatches.json');
     getTwitchDrops = () => this.getDataJsonBasic<Array<TwitchDrop>>('twitchDrops.json');
-    getUpdateItems = () => this.getDataJsonBasic<Array<UpdateItem>>('updates.json');
 }

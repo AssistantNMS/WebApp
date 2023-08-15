@@ -29,6 +29,7 @@ import { UsageKey } from '../../constants/UsageKey';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
 import { AppImage } from '../../constants/AppImage';
 import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
+import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -55,6 +56,7 @@ interface IState {
     controlLookup: Array<PlatformControlMapping>;
     starshipScrapItems: Array<StarshipScrap>;
     creatureHarvests: Array<CreatureHarvest>;
+    addedInUpdate: Array<MajorUpdateItem>;
     additionalData: Array<any>;
 }
 
@@ -76,6 +78,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         controlLookup: [],
         starshipScrapItems: [],
         creatureHarvests: [],
+        addedInUpdate: [],
         additionalData: [],
     };
 
@@ -135,6 +138,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         const scrapDataTask = optionalTask(usages, UsageKey.isRewardFromShipScrap, () => getScrapDataForItem(itemId));
         const creatureHarvestsTask = optionalTask(usages, UsageKey.hasCreatureHarvest, () => getCreatureHarvestsForItem(itemId));
 
+        const addedInUpdateTask = optionalTask(usages, UsageKey.isAddedInTrackedUpdate, () => getAddedInUpdateForItem(itemId));
         const eggTraitTask = optionalListTask(['true'], 'true', () => getEggTrait(itemId));
         const controlLookupTask = optionalListTask(['true'], 'true', () => getControlLookup(props.controlPlatform));
 
@@ -152,6 +156,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             controlLookup: await controlLookupTask,
             starshipScrapItems: await scrapDataTask,
             creatureHarvests: await creatureHarvestsTask,
+            addedInUpdate: await addedInUpdateTask,
             additionalData: getAdditionalData(item),
         };
         setItemMeta(newMeta);
@@ -228,6 +233,12 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         const harvestArray = await props.gameItemService.getCreatureHarvestForItem(itemId);
         if (!harvestArray.isSuccess) return [];
         return harvestArray.value;
+    }
+
+    const getAddedInUpdateForItem = async (itemId: string) => {
+        const majorUpdates = await props.dataJsonService.getMajorUpdateForItem(itemId);
+        if (!majorUpdates.isSuccess) return [];
+        return majorUpdates.value;
     }
 
     const getAdditionalData = (itemDetail: GameItemModel): Array<any> => {
@@ -325,6 +336,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         controlLookup,
         starshipScrapItems,
         creatureHarvests,
+        addedInUpdate,
         additionalData,
     } = itemMeta;
 
@@ -344,6 +356,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             controlLookup={controlLookup}
             starshipScrapItems={starshipScrapItems}
             creatureHarvests={creatureHarvests}
+            addedInUpdate={addedInUpdate}
             additionalData={additionalData}
             networkState={networkState}
             addThisItemToCart={addThisItemToCart}

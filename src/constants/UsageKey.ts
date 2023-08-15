@@ -12,6 +12,7 @@ export const UsageKey = {
     isNoLongerObtainable: 'IsNoLongerObtainable',
     isQuicksilver: 'IsQuicksilver',
     isRewardFromShipScrap: 'IsRewardFromShipScrap',
+    isAddedInTrackedUpdate: 'IsAddedInTrackedUpdate',
     hasCreatureHarvest: 'HasCreatureHarvest',
 
     isExpeditionSeason: 'IsExpeditionSeason{0}Reward',

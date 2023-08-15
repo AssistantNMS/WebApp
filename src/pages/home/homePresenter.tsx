@@ -39,7 +39,7 @@ export const HomePresenter: React.FC = () => {
 
     return (
         <DefaultAnimation>
-            <HeadComponent title={"Home"} />
+            <HeadComponent title="Home" />
             <NavBar title="Home" />
             <div className="container full" data-id="HomePresenter">
                 <div className="row" style={{ display: 'block' }}>
