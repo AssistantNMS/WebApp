@@ -22,13 +22,14 @@ export function GenericListPresenter<T>(props: IProps<T>) {
     const [showMore, setShowMore] = useState<boolean>(false);
 
     const bootstrapClasses = props.bootstrapClasses || defaultGenericListPresenterClasses;
-    const list = props.list.slice(0, showMore
-        ? props.list.length
-        : (props.limitResultsTo ?? props.list.length)
+    const safeList = (props.list ?? []);
+    const list = safeList.slice(0, showMore
+        ? safeList.length
+        : (props.limitResultsTo ?? safeList.length)
     );
 
-    const renderShowHideMore = () => {
-        if (props.limitResultsTo == null || props.list.length <= props.limitResultsTo || props.hideViewMoreButton === true) {
+    const renderShowHideMore = (localList: Array<T>) => {
+        if (props.limitResultsTo == null || localList.length <= props.limitResultsTo || props.hideViewMoreButton === true) {
             return (<span></span>);
         }
 
@@ -42,7 +43,7 @@ export function GenericListPresenter<T>(props: IProps<T>) {
                 </div>
             );
         } else {
-            const xRecordsLeft = (props.list.length - props.limitResultsTo).toString();
+            const xRecordsLeft = (localList.length - props.limitResultsTo).toString();
             return (
                 <div className="col-12 mt-1em">
                     <PositiveButton onClick={() => setShowMore(true)}>
@@ -65,7 +66,7 @@ export function GenericListPresenter<T>(props: IProps<T>) {
                     )
                 })
             }
-            {renderShowHideMore()}
+            {renderShowHideMore(safeList)}
         </div>
     );
 }

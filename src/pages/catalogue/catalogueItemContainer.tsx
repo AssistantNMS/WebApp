@@ -138,7 +138,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         const scrapDataTask = optionalTask(usages, UsageKey.isRewardFromShipScrap, () => getScrapDataForItem(itemId));
         const creatureHarvestsTask = optionalTask(usages, UsageKey.hasCreatureHarvest, () => getCreatureHarvestsForItem(itemId));
 
-        const addedInUpdateTask = optionalTask(usages, UsageKey.isAddedInTrackedUpdate, () => getAddedInUpdateForItem(itemId));
+        const addedInUpdateTask = optionalListTask(usages, UsageKey.isAddedInTrackedUpdate, () => getAddedInUpdateForItem(itemId));
         const eggTraitTask = optionalListTask(['true'], 'true', () => getEggTrait(itemId));
         const controlLookupTask = optionalListTask(['true'], 'true', () => getControlLookup(props.controlPlatform));
 
