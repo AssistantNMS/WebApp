@@ -13,8 +13,9 @@ export const ProgressBar = (props: IProps) => {
                 aria-valuenow={props.percentage} aria-valuemin={0} aria-valuemax={100}
                 style={{ width: percentageString }}>
             </div>
-            <span className="text">{percentageString}
-                {props.additionalText != null && <span>&nbsp;-&nbsp;{props.additionalText}</span>}
+            <span className="text">
+                {props.percentage > 0 && (<span>percentageString&nbsp;-&nbsp;</span>)}
+                {props.additionalText != null && <span>{props.additionalText}</span>}
             </span>
         </div>
     )
