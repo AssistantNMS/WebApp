@@ -14,8 +14,8 @@ export const ProgressBar = (props: IProps) => {
                 style={{ width: percentageString }}>
             </div>
             <span className="text">
-                {props.percentage > 0 && (<span>{percentageString}&nbsp;-&nbsp;</span>)}
-                {props.additionalText != null && <span>{props.additionalText}</span>}
+                {props.percentage > 0 && (<span>{percentageString}</span>)}
+                {props.additionalText != null && <span>&nbsp;-&nbsp;{props.additionalText}</span>}
             </span>
         </div>
     )
