@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Error } from '../../components/core/error/error';
 import { SmallLoading } from '../../components/core/loading/loading';
 import { getBackgroundForExpedition, getPatchForExpedition } from '../../constants/Expedition';
@@ -72,14 +72,9 @@ interface IExpeditionSeasonTileProps {
 }
 
 export const ExpeditionSeasonTile: React.FC<IExpeditionSeasonTileProps> = (props: IExpeditionSeasonTileProps) => {
-    const navigate = useNavigate();
-
-    const navigateToExpSeason = (seasId: string) => () => {
-        navigate(`${routes.seasonExpedition}/${seasId}`);
-    }
     return (
         <div data-id="SeasonExpeditionCard" className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div className="card exp pointer noselect" onClick={navigateToExpSeason(props.seasonId)} draggable={false}>
+            <Link to={`${routes.seasonExpedition}/${props.seasonId}`} className="card exp noselect" draggable={false}>
                 <div className="card-image exp">
                     <img src={`/${props.background}`} draggable={false} alt={props.name} />
                 </div>
@@ -99,7 +94,7 @@ export const ExpeditionSeasonTile: React.FC<IExpeditionSeasonTileProps> = (props
                         </div>
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 }
