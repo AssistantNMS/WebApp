@@ -60,7 +60,6 @@ interface IState {
     additionalData: Array<any>;
 }
 
-
 const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     let { langCode, itemId } = useParams();
 
@@ -157,7 +156,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             starshipScrapItems: await scrapDataTask,
             creatureHarvests: await creatureHarvestsTask,
             addedInUpdate: await addedInUpdateTask,
-            additionalData: getAdditionalData(item),
+            additionalData: await getAdditionalData(item),
         };
         setItemMeta(newMeta);
         setNetworkState(NetworkState.Success);
@@ -241,7 +240,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         return majorUpdates.value;
     }
 
-    const getAdditionalData = (itemDetail: GameItemModel): Array<any> => {
+    const getAdditionalData = async (itemDetail: GameItemModel): Promise<Array<any>> => {
         const additionalData = [];
         if (itemDetail.BlueprintSource !== null && itemDetail.BlueprintSource !== BlueprintSource.unknown) {
             const bpSourceLangKey = blueprintToLocalKey(itemDetail.BlueprintSource);
@@ -252,13 +251,23 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             additionalData.push({ text: `${translate(LocaleKey.maxStackSize).toString()}: ${itemDetail.MaxStackSize}` });
         }
 
+		const getCurrencyName = async (itemId: string): Promise<string> => await new GameItemService().getItemDetails(itemId).then(r => r.value.Name);
+		const bpCurrency = {
+			units: await getCurrencyName('raw58').then(n => capitaliseItemName(n)),
+			nanites: await getCurrencyName('raw56'),
+			quicksilver: await getCurrencyName('raw57').then(n => capitaliseItemName(n)),
+			data: await getCurrencyName('conTech90'),
+			factoryModule: await getCurrencyName('conTech94'),
+			frigateModule: await getCurrencyName('conTech95'),
+		}
+
         if (itemDetail.BaseValueUnits > 1) {
             switch (itemDetail.CurrencyType) {
                 case CurrencyType.CREDITS:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.units, tooltip: 'Units' });
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.units, tooltip: bpCurrency.units });
                     break;
                 case CurrencyType.QUICKSILVER:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.quicksilverForChips, tooltip: 'Quicksilver' });
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.quicksilverForChips, tooltip: bpCurrency.quicksilver });
                     break;
             }
         }
@@ -268,13 +277,13 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             switch (itemDetail.BlueprintCostType) {
                 case CurrencyType.NANITES:
                     const bpCostText = translate(LocaleKey.blueprintCost);
-                    additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: AppImage.nanites, tooltip: 'Nanites' });
+                    additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: AppImage.nanites, tooltip: bpCurrency.nanites });
                     break;
                 case CurrencyType.SALVAGEDDATA:
-                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.salvagedData, tooltip: 'Salvaged Data' });
+                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.salvagedData, tooltip: bpCurrency.data });
                     break;
                 case CurrencyType.FACTORYOVERRIDE:
-                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.factoryOverride, tooltip: 'Factory Override Unit' });
+                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.factoryOverride, tooltip: bpCurrency.factoryModule });
                     break;
                 case CurrencyType.NONE:
                 default:
@@ -377,3 +386,9 @@ export const CatalogueItemContainer = withServices<IWithoutDepInj, IWithDepInj>(
         toastService: services.toastService,
     })
 );
+
+function capitaliseItemName(name: string): string {
+	const firstLetter = name.slice(0, 1).toUpperCase();
+	const rest = name.slice(1).toLowerCase();
+	return firstLetter + rest;
+}
