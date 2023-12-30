@@ -251,13 +251,14 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             additionalData.push({ text: `${translate(LocaleKey.maxStackSize).toString()}: ${itemDetail.MaxStackSize}` });
         }
 
+		const getCurrencyName = async (itemId: string): Promise<string> => await new GameItemService().getItemDetails(itemId).then(r => r.value.Name);
 		const bpCurrency = {
-			units: await new GameItemService().getItemDetails('raw58').then(r => capitaliseItemName(r.value.Name)),
-			nanites: await new GameItemService().getItemDetails('raw56').then(r => capitaliseItemName(r.value.Name)),
-			quicksilver: await new GameItemService().getItemDetails('raw57').then(r => capitaliseItemName(r.value.Name)),
-			data: await new GameItemService().getItemDetails('conTech90').then(r => r.value.Name),
-			factoryModule: await new GameItemService().getItemDetails('conTech94').then(r => r.value.Name),
-			frigateModule: await new GameItemService().getItemDetails('conTech95').then(r => r.value.Name),
+			units: await getCurrencyName('raw58').then(n => capitaliseItemName(n)),
+			nanites: await getCurrencyName('raw56'),
+			quicksilver: await getCurrencyName('raw57').then(n => capitaliseItemName(n)),
+			data: await getCurrencyName('conTech90'),
+			factoryModule: await getCurrencyName('conTech94'),
+			frigateModule: await getCurrencyName('conTech95'),
 		}
 
         if (itemDetail.BaseValueUnits > 1) {
