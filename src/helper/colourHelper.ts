@@ -30,7 +30,7 @@ export const invertColor = (hex: string, blackOrWhite: boolean = false) => {
 }
 
 
-export const padZero = (str: string, len?: string) => {
+export const padZero = (str: string, len?: number) => {
     const localLen = len || 2;
     const zeros = new Array(localLen).join('0');
     return (zeros + str).slice(-localLen);
