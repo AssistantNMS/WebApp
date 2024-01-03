@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Error } from '../../components/core/error/error';
 import { SmallLoading } from '../../components/core/loading/loading';
-import { getBackgroundForExpedition, getPatchForExpedition } from '../../constants/Expedition';
+import { getPatchForExpedition } from '../../constants/Expedition';
 import { NetworkState } from '../../constants/NetworkState';
 import * as routes from '../../constants/Route';
 import { ExpeditionSeason } from '../../contracts/helloGames/expeditionSeason';
 import { GameItemService } from '../../services/json/GameItemService';
+import { detailsFromExpeditionId } from './expeditionSeasonHelper';
 
 interface IExpeditionSeasonTilesProps {
     gameItemService: GameItemService;
@@ -45,14 +46,15 @@ export const ExpeditionSeasonTiles: React.FC<IExpeditionSeasonTilesProps> = (pro
         <div data-id="SeasonExpeditionCards" className="row">
             {
                 (pastExpeditions ?? []).map((data) => {
+                    const detailsFromId = detailsFromExpeditionId(data);
                     return (
                         <ExpeditionSeasonTile
                             key={data.Id}
                             seasonId={data.Id}
-                            seasonNum={data.Id.replaceAll('seas-', '').replaceAll('-redux', '')}
+                            seasonNum={detailsFromId.id}
                             name={data.Title}
                             icon={getPatchForExpedition(data.Icon)}
-                            background={getBackgroundForExpedition(data.Id)}
+                            background={detailsFromId.background}
                         />
                     );
                 })
