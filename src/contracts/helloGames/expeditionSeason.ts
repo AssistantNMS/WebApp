@@ -57,3 +57,12 @@ export interface ExpeditionSeasonReward {
     ProcProdRarity?: string;
 }
 
+
+export interface ExpeditionSeasonDetailsFromId {
+    id: string;
+    background: string;
+    isRedux: boolean;
+    reduxNum: number;
+    reduxSuffix: string;
+}
+

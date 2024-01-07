@@ -12,6 +12,7 @@ import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { TextContainer } from '../../common/tile/textContainer';
 import { TileLoading } from '../../core/loading/loading';
+import { formatDate } from '../../../helper/dateHelper';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -27,8 +28,12 @@ const RewardFromSeasonalExpeditionTileClass: React.FC<IProps> = (props: IProps) 
     const [expedition, setExpedition] = useState<ExpeditionSeason>();
     const [expeditionStatus, setExpeditionStatus] = useState<NetworkState>(NetworkState.Loading);
 
+    const correctedSeasId = props.seasId
+        .replace('seas-0', 'seas-')
+        .replace('Redux', '-redux');
+
     useEffect(() => {
-        fetchExpeditionData(props.seasId);
+        fetchExpeditionData(correctedSeasId);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -63,12 +68,13 @@ const RewardFromSeasonalExpeditionTileClass: React.FC<IProps> = (props: IProps) 
     }
 
     return (
-        <Link to={`${seasonExpedition}/${props.seasId}`} data-id="RewardFromSeasonalExpeditionTile" className="gen-item-container" draggable={false}>
+        <Link to={`${seasonExpedition}/${correctedSeasId}`} data-id="RewardFromSeasonalExpeditionTile" className="gen-item-container" draggable={false}>
             <ImageContainer Name={expedition.Title} Icon={expedition.Icon} />
             <div className="gen-item-content-container">
                 <TextContainer text={expedition.Title} />
                 <div className="quantity-container">
-                    {translate(LocaleKey.seasonalExpeditionSeasons)}
+                    <span>{formatDate(expedition.StartDate, 'YYYY-MM-DD')}</span>
+                    <span className="float-right">{formatDate(expedition.EndDate, 'YYYY-MM-DD')}</span>
                 </div>
             </div>
         </Link>

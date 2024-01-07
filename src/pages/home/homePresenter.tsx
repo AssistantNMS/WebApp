@@ -34,7 +34,12 @@ export const HomePresenter: React.FC = () => {
             name: 'Download on the Windows Store',
             link: 'https://apps.microsoft.com/store/detail/assistant-for-no-mans-sky/9NQLF7XD0LF3',
             img: '/assets/images/store/WindowsStore.png',
-        }
+        },
+        // {
+        //     name: 'Download for Windows',
+        //     link: 'https://github.com/AssistantNMS/App/releases',
+        //     img: '/assets/images/store/WindowsVersion.png',
+        // },
     ];
 
     return (

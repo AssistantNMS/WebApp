@@ -343,6 +343,7 @@ export const displayRewardFrom = (
                 const expSeasonNum = usageKey
                     .replaceAll(expSeasonKeySplit[0], '')
                     .replaceAll(expSeasonKeySplit[1], '');
+
                 nodes.push(<RewardFromSeasonalExpeditionTile seasId={`seas-${expSeasonNum}`} />);
             }
 

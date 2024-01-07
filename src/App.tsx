@@ -7,7 +7,6 @@ import { Route, Routes } from 'react-router-dom';
 import { IStateDispatch, IStateProps, mapDispatchToProps, mapStateToProps } from './App.Redux';
 import { UseNativeApp } from './components/common/useNativeAppPopup';
 import { Drawer } from './components/core/drawer/drawer';
-import { NavBarFake } from './components/core/navbar/navbarFake';
 import { ScrollToTop } from './components/core/scrollToTop/scrollToTop';
 import * as route from './constants/Route';
 import { trackPageView } from './integration/analytics';
@@ -75,7 +74,6 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
         <Drawer key={props.selectedLanguage} />
         <div className="main-panel ps-theme-default">
           <div id="sidebar-main-content-overlay" className="full-page-loader opacity80" onClick={() => toggleMenu()}></div>
-          <NavBarFake />
           <AnimatePresence exitBeforeEnter>
             <Routes location={location} key={location.key + props.selectedLanguage}>
               <Route path={route.home} element={<HomePresenter />} />
