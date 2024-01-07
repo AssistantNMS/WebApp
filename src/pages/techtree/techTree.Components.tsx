@@ -1,10 +1,15 @@
 import classNames from 'classnames';
 import { translate } from '../../localization/Translate';
-import React, { ReactNode, useState } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import { RequiredItemListTile } from '../../components/tilePresenter/requiredItemListTile/requiredItemListTile';
 import { AppImage } from '../../constants/AppImage';
 import { CurrencyType, TechTree, TechTreeNode, UnlockableTechTree } from '../../contracts/tree/techTree';
 import { LocaleKey } from '../../localization/LocaleKey';
+import { CurrencyGameItems } from '../../constants/Currency';
+import { getCurrencyName } from '../../helper/gameItemHelper';
+import { GameItemService } from '../../services/json/GameItemService';
+import { NetworkState } from '../../constants/NetworkState';
+import { TileLoading } from '../../components/core/loading/loading';
 
 interface IUnlockableTreesProps {
     trees: Array<UnlockableTechTree>
@@ -106,21 +111,35 @@ interface ITechTreeNodeProps {
     tree: TechTreeNode;
 }
 export const TechTreeNodeRenderer: React.FC<ITechTreeNodeProps> = (props: ITechTreeNodeProps) => {
+    const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
+    const [costTypeString, setCostTypeString] = useState<string>('???');
+    const [costTypeImg, setCostTypeImg] = useState<string>(AppImage.nanites);
+
     const hasChildren = (props.tree.Children.length > 0);
-    let costTypeString = '';
-    let costReactNode: ReactNode | undefined;
     const costType: any = CurrencyType[props.costType];
-    if (costType === Number(CurrencyType.Nanites)) {
-        costTypeString = 'Nanites';
-        costReactNode = (<img src={AppImage.nanites} className="tiny" alt={costTypeString} draggable={false} />);
-    }
-    if (costType === Number(CurrencyType.SalvagedData)) {
-        costTypeString = 'Salvaged Data';
-        costReactNode = (<img src={AppImage.salvagedData} className="tiny" alt={costTypeString} draggable={false} />);
-    }
-    if (costType === Number(CurrencyType.FactoryOverride)) {
-        costTypeString = 'Factory Override';
-        costReactNode = (<img src={AppImage.factoryOverride} className="tiny" alt={costTypeString} draggable={false} />);
+    const gameItemService = new GameItemService();
+
+    useEffect(() => {
+        getNodeLocalised();
+    })
+
+    const getNodeLocalised = async () => {
+        if (costType === Number(CurrencyType.Nanites)) {
+            const nanites = await getCurrencyName(gameItemService, CurrencyGameItems.nanites, 'Nanites');
+            setCostTypeString(nanites);
+            setCostTypeImg(AppImage.nanites);
+        }
+        if (costType === Number(CurrencyType.SalvagedData)) {
+            const salvagedData = await getCurrencyName(gameItemService, CurrencyGameItems.salvagedData, 'Salvaged Data');
+            setCostTypeString(salvagedData);
+            setCostTypeImg(AppImage.salvagedData);
+        }
+        if (costType === Number(CurrencyType.FactoryOverride)) {
+            const factoryOverride = await getCurrencyName(gameItemService, CurrencyGameItems.factoryModule, 'Factory Override');
+            setCostTypeString(factoryOverride);
+            setCostTypeImg(AppImage.factoryOverride);
+        }
+        setNetworkState(NetworkState.Success);
     }
 
     return (
@@ -129,12 +148,20 @@ export const TechTreeNodeRenderer: React.FC<ITechTreeNodeProps> = (props: ITechT
             dataKey={props.tree.Id}
             hasChildren={hasChildren}
             headerChildren={
-                <RequiredItemListTile
-                    Id={props.tree.Id}
-                    Quantity={props.tree.Cost}
-                    quantityLabel={costTypeString}
-                    quantityIconSuffix={costReactNode}
-                />
+                networkState === NetworkState.Success
+                    ? (<RequiredItemListTile
+                        Id={props.tree.Id}
+                        Quantity={props.tree.Cost}
+                        quantityLabel={costTypeString}
+                        quantityIconSuffix={
+                            <img
+                                src={costTypeImg}
+                                className="tiny"
+                                alt={costTypeString}
+                                draggable={false}
+                            />}
+                    />)
+                    : <TileLoading />
             }
         >
             {

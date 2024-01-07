@@ -18,8 +18,8 @@ import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformT
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
 import { Recharge } from '../../contracts/recharge/recharge';
 import { getQuantityDialog } from '../../helper/dialogHelper';
+import { getCurrencyName } from '../../helper/gameItemHelper';
 import { optionalListTask, optionalTask } from '../../helper/promiseHelper';
-import { lowercaseAllButCapitaliseFirstChar } from '../../helper/stringHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
@@ -242,14 +242,6 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         return majorUpdates.value;
     }
 
-    const getCurrencyName = async (itemId: string, fallback: string): Promise<string> => {
-        const gameItemResult = await props.gameItemService.getItemDetails(itemId);
-        if (gameItemResult.isSuccess === false) return fallback;
-
-        const name = gameItemResult.value?.Name ?? fallback;
-        return lowercaseAllButCapitaliseFirstChar(name);
-    }
-
     const getAdditionalData = async (itemDetail: GameItemModel): Promise<Array<any>> => {
         const additionalData = [];
         if (itemDetail.BlueprintSource !== null && itemDetail.BlueprintSource !== BlueprintSource.unknown) {
@@ -264,11 +256,11 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
         if (itemDetail.BaseValueUnits > 1) {
             switch (itemDetail.CurrencyType) {
                 case CurrencyType.CREDITS:
-                    const units = await getCurrencyName(CurrencyGameItems.units, 'Units');
+                    const units = await getCurrencyName(props.gameItemService, CurrencyGameItems.units, 'Units');
                     additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.units, tooltip: units });
                     break;
                 case CurrencyType.QUICKSILVER:
-                    const quicksilver = await getCurrencyName(CurrencyGameItems.quicksilver, 'Quicksilver');
+                    const quicksilver = await getCurrencyName(props.gameItemService, CurrencyGameItems.quicksilver, 'Quicksilver');
                     additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.quicksilverForChips, tooltip: quicksilver });
                     break;
             }
@@ -279,15 +271,15 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             switch (itemDetail.BlueprintCostType) {
                 case CurrencyType.NANITES:
                     const bpCostText = translate(LocaleKey.blueprintCost);
-                    const nanites = await getCurrencyName(CurrencyGameItems.nanites, 'Nanites');
+                    const nanites = await getCurrencyName(props.gameItemService, CurrencyGameItems.nanites, 'Nanites');
                     additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: AppImage.nanites, tooltip: nanites });
                     break;
                 case CurrencyType.SALVAGEDDATA:
-                    const salvagedData = await getCurrencyName(CurrencyGameItems.salvagedData, 'Salvaged Data');
+                    const salvagedData = await getCurrencyName(props.gameItemService, CurrencyGameItems.salvagedData, 'Salvaged Data');
                     additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.salvagedData, tooltip: salvagedData });
                     break;
                 case CurrencyType.FACTORYOVERRIDE:
-                    const factoryModule = await getCurrencyName(CurrencyGameItems.factoryModule, 'Factory Module');
+                    const factoryModule = await getCurrencyName(props.gameItemService, CurrencyGameItems.factoryModule, 'Factory Module');
                     additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.factoryOverride, tooltip: factoryModule });
                     break;
                 case CurrencyType.NONE:
