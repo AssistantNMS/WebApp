@@ -35,6 +35,7 @@ declare global {
             ['assistant-apps-patreon-list']: CustomElement<any>;
             ['assistant-apps-team-list']: CustomElement<any>;
             ['assistant-apps-translation-leaderboard']: CustomElement<any>;
+            ['assistant-apps-store-tile']: CustomElement<any>;
         }
     }
 }

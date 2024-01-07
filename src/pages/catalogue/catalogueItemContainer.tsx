@@ -1,35 +1,37 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { translate } from '../../localization/Translate';
+import { AppImage } from '../../constants/AppImage';
+import { CurrencyGameItems } from '../../constants/Currency';
 import { NetworkState } from '../../constants/NetworkState';
+import { UsageKey } from '../../constants/UsageKey';
+import { GameItemModel } from '../../contracts/GameItemModel';
+import { Processor } from '../../contracts/Processor';
+import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
+import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
+import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
+import { StarshipScrap } from '../../contracts/data/starshipScrap';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
 import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
-import { GameItemModel } from '../../contracts/GameItemModel';
-import { Processor } from '../../contracts/Processor';
 import { Recharge } from '../../contracts/recharge/recharge';
-import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { getQuantityDialog } from '../../helper/dialogHelper';
+import { getCurrencyName } from '../../helper/gameItemHelper';
+import { optionalListTask, optionalTask } from '../../helper/promiseHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { localeMap } from '../../localization/Localization';
+import { translate } from '../../localization/Translate';
 import { AllGameItemsService } from '../../services/json/AllGameItemsService';
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { GameItemService } from '../../services/json/GameItemService';
 import { RechargeByService } from '../../services/json/RechargeByService';
 import { ToastService } from '../../services/toastService';
-import { mapDispatchToProps, mapStateToProps, IReduxProps } from './catalogueItem.Redux';
+import { IReduxProps, mapDispatchToProps, mapStateToProps } from './catalogueItem.Redux';
 import { CatalogueItemPresenter } from './catalogueItemPresenter';
-import { optionalListTask, optionalTask } from '../../helper/promiseHelper';
-import { UsageKey } from '../../constants/UsageKey';
-import { StarshipScrap } from '../../contracts/data/starshipScrap';
-import { AppImage } from '../../constants/AppImage';
-import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
-import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
@@ -251,23 +253,15 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             additionalData.push({ text: `${translate(LocaleKey.maxStackSize).toString()}: ${itemDetail.MaxStackSize}` });
         }
 
-		const getCurrencyName = async (itemId: string): Promise<string> => await new GameItemService().getItemDetails(itemId).then(r => r.value.Name);
-		const bpCurrency = {
-			units: await getCurrencyName('raw58').then(n => capitaliseItemName(n)),
-			nanites: await getCurrencyName('raw56'),
-			quicksilver: await getCurrencyName('raw57').then(n => capitaliseItemName(n)),
-			data: await getCurrencyName('conTech90'),
-			factoryModule: await getCurrencyName('conTech94'),
-			frigateModule: await getCurrencyName('conTech95'),
-		}
-
         if (itemDetail.BaseValueUnits > 1) {
             switch (itemDetail.CurrencyType) {
                 case CurrencyType.CREDITS:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.units, tooltip: bpCurrency.units });
+                    const units = await getCurrencyName(props.gameItemService, CurrencyGameItems.units, 'Units');
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.units, tooltip: units });
                     break;
                 case CurrencyType.QUICKSILVER:
-                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.quicksilverForChips, tooltip: bpCurrency.quicksilver });
+                    const quicksilver = await getCurrencyName(props.gameItemService, CurrencyGameItems.quicksilver, 'Quicksilver');
+                    additionalData.push({ text: itemDetail.BaseValueUnits, image: AppImage.quicksilverForChips, tooltip: quicksilver });
                     break;
             }
         }
@@ -277,13 +271,16 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
             switch (itemDetail.BlueprintCostType) {
                 case CurrencyType.NANITES:
                     const bpCostText = translate(LocaleKey.blueprintCost);
-                    additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: AppImage.nanites, tooltip: bpCurrency.nanites });
+                    const nanites = await getCurrencyName(props.gameItemService, CurrencyGameItems.nanites, 'Nanites');
+                    additionalData.push({ text: `${bpCostText}: ${bpCost}`, image: AppImage.nanites, tooltip: nanites });
                     break;
                 case CurrencyType.SALVAGEDDATA:
-                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.salvagedData, tooltip: bpCurrency.data });
+                    const salvagedData = await getCurrencyName(props.gameItemService, CurrencyGameItems.salvagedData, 'Salvaged Data');
+                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.salvagedData, tooltip: salvagedData });
                     break;
                 case CurrencyType.FACTORYOVERRIDE:
-                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.factoryOverride, tooltip: bpCurrency.factoryModule });
+                    const factoryModule = await getCurrencyName(props.gameItemService, CurrencyGameItems.factoryModule, 'Factory Module');
+                    additionalData.push({ text: itemDetail.BlueprintCost, image: AppImage.factoryOverride, tooltip: factoryModule });
                     break;
                 case CurrencyType.NONE:
                 default:
@@ -386,9 +383,3 @@ export const CatalogueItemContainer = withServices<IWithoutDepInj, IWithDepInj>(
         toastService: services.toastService,
     })
 );
-
-function capitaliseItemName(name: string): string {
-	const firstLetter = name.slice(0, 1).toUpperCase();
-	const rest = name.slice(1).toLowerCase();
-	return firstLetter + rest;
-}

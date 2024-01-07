@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { HeadComponent } from '../../components/core/headComponent';
 import { BasicLink } from '../../components/core/link';
@@ -6,8 +7,13 @@ import { NavBar } from '../../components/core/navbar/navbar';
 import { MenuGridItemPresenter } from '../../components/tilePresenter/menuGridPresenter';
 import { allItemsMenuItem, catalogueMenuItem, communityMissionMenuItem, expeditionMenuItem, favouritesMenuItem, nmsfmMenuItem, patreonMenuItem, whatIsNewMenuItem } from '../../constants/MenuItems';
 import { DrawerMenuItem } from '../../contracts/DrawerMenuItem';
+import { getCurrentLanguage } from '../../redux/modules/setting/selector';
+import { State } from '../../redux/state';
 
-export const HomePresenter: React.FC = () => {
+interface IProps { }
+
+export const HomePresenter: React.FC<IProps> = (props: IProps) => {
+    const selectedLanguage = useSelector((state: State) => getCurrentLanguage(state))
     const menuItems: Array<DrawerMenuItem> = [
         allItemsMenuItem(),
         whatIsNewMenuItem(),
@@ -21,26 +27,30 @@ export const HomePresenter: React.FC = () => {
 
     const storeItems = [
         {
-            name: 'Download on the Play Store',
+            store: 'google',
             link: 'https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes',
-            img: '/assets/images/store/PlayStore.png',
         },
         {
-            name: 'Download on the Apple App Store',
+            store: 'apple',
             link: 'https://apps.apple.com/us/app/id1480287625?platform=iphone',
-            img: '/assets/images/store/AppStore.png',
         },
         {
-            name: 'Download on the Windows Store',
+            store: 'microsoft',
             link: 'https://apps.microsoft.com/store/detail/assistant-for-no-mans-sky/9NQLF7XD0LF3',
-            img: '/assets/images/store/WindowsStore.png',
         },
-        // {
-        //     name: 'Download for Windows',
-        //     link: 'https://github.com/AssistantNMS/App/releases',
-        //     img: '/assets/images/store/WindowsVersion.png',
-        // },
     ];
+
+    const renderStoreButton = (storeItem: any) => {
+        return (
+            <BasicLink additionalClassNames="image store mb-2em" key={storeItem.link} href={storeItem.link} title={storeItem.store}>
+                <assistant-apps-store-tile
+                    language={selectedLanguage}
+                    store={storeItem.store}
+                    alt="store badge"
+                />
+            </BasicLink>
+        );
+    }
 
     return (
         <DefaultAnimation>
@@ -65,13 +75,7 @@ export const HomePresenter: React.FC = () => {
             <br />
             <div className="container full mt-3em">
                 <div className="row justify">
-                    {
-                        storeItems.map(storeItem => (
-                            <BasicLink additionalClassNames="image store mb-2em" key={storeItem.link} href={storeItem.link} title={storeItem.name}>
-                                <img draggable="false" style={{ maxHeight: '6em' }} src={storeItem.img} alt={storeItem.name} />
-                            </BasicLink>
-                        ))
-                    }
+                    {storeItems.map(renderStoreButton)}
                 </div>
             </div>
         </DefaultAnimation>
