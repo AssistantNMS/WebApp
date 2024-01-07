@@ -26,7 +26,7 @@ import { CommunityMissionContainer } from './pages/helloGames/communityMissionCo
 import { CommunityMissionTimeline } from './pages/helloGames/communityMissionTimeline';
 import { WeekendMissionContainer } from './pages/helloGames/weekendMission/weekendMissionContainer';
 import { WeekendMissionMenuPresenter } from './pages/helloGames/weekendMission/weekendMissionMenuPage';
-import { HomePresenter } from './pages/home/homePresenter';
+import { HomeContainer } from './pages/home/homeContainer';
 import { LanguagePresenter } from './pages/language/languagePresenter';
 import { NewItemsDetailPresenter } from './pages/misc/newItemsDetailPresenter';
 import { NewItemsPresenter } from './pages/misc/newItemsPresenter';
@@ -76,7 +76,7 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
           <div id="sidebar-main-content-overlay" className="full-page-loader opacity80" onClick={() => toggleMenu()}></div>
           <AnimatePresence exitBeforeEnter>
             <Routes location={location} key={location.key + props.selectedLanguage}>
-              <Route path={route.home} element={<HomePresenter />} />
+              <Route path={route.home} element={<HomeContainer />} />
               <Route path={route.setting} element={<SettingPresenter />} />
               <Route path={route.about} element={<AboutPresenter />} />
               <Route path={route.language} element={<LanguagePresenter />} />

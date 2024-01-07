@@ -1,18 +1,15 @@
-
-import { translate } from '../../../localization/Translate';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NetworkState } from '../../../constants/NetworkState';
 import { seasonExpedition } from '../../../constants/Route';
 import { ExpeditionSeason } from '../../../contracts/helloGames/expeditionSeason';
+import { formatDate } from '../../../helper/dateHelper';
 import { anyObject } from '../../../helper/typescriptHacks';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
-import { LocaleKey } from '../../../localization/LocaleKey';
 import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { TextContainer } from '../../common/tile/textContainer';
 import { TileLoading } from '../../core/loading/loading';
-import { formatDate } from '../../../helper/dateHelper';
 
 interface IWithDepInj {
     gameItemService: GameItemService;
