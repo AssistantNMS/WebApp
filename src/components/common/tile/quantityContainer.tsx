@@ -107,7 +107,7 @@ export const RequiredItemsQuantityContainer: React.FC<IRequiredItemQuantityProps
         quantities.pop();
         quantities.push(<span key="quantity-etc-+">&nbsp;+&nbsp;</span>);
         quantities.push(<br key="quantity-etc-br" />);
-        quantities.push(<span key="quantity-etc">{translate(LocaleKey.more)}...</span>);
+        quantities.push(<span key="quantity-etc">{props.requiredItems.length - (props.limitRequiredItems ?? endIndex)} {translate(LocaleKey.more)}...</span>);
     }
 
     return (
