@@ -1,0 +1,2552 @@
+{
+  "Milestone": "MILESTONES",
+  "Category": "CATEGORIES",
+  "Categories": [
+    {
+      "Id": "journey",
+      "Icon": "faction/JOURNEY.ON.png",
+      "Name": "Journey Milestones",
+      "Description": "An infinite journey: explore and survive in a boundless universe",
+      "Missions": [],
+      "Additional": [
+        "NavigateToJourneyPage"
+      ]
+    },
+    {
+      "Id": "unknown: SeasonHistory,None",
+      "Icon": "faction/JOURNEY.ON.png",
+      "Name": "Previous Expeditions",
+      "Description": "",
+      "Missions": [],
+      "Additional": []
+    }
+  ],
+  "Lifeform": "LIFEFORMS",
+  "Lifeforms": [
+    {
+      "Id": "gek",
+      "Icon": "faction/FACTIONS.GEK.ON.png",
+      "Name": "The Gek",
+      "Description": "Small in stature, these beaked, reptilian lifeforms are the galaxy's foremost merchants. They are able to communicate via carefully released pheromones, conveying complex concepts and feelings via scent.\n\nHailing from the planet of Balaron, they are viewed with suspicion by other sentient lifeforms due to the actions of the Gek First Spawn, who conquered and slaughtered their way to a mighty empire.",
+      "Missions": [
+        {
+          "Name": "Standing",
+          "Icon": "faction/MEDAL.GEKGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.GEKNONE.png",
+              "Name": "Rival",
+              "RequiredProgress": -5
+            },
+            {
+              "Icon": "faction/MEDAL.GEKNONE.png",
+              "Name": "Competitor",
+              "RequiredProgress": -2
+            },
+            {
+              "Icon": "faction/MEDAL.GEKNONE.png",
+              "Name": "Customer",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.GEKBRONZE.png",
+              "Name": "Client",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.GEKBRONZE.png",
+              "Name": "Valued customer",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.GEKBRONZE.png",
+              "Name": "Colleague",
+              "RequiredProgress": 14
+            },
+            {
+              "Icon": "faction/MEDAL.GEKSILVER.png",
+              "Name": "Partner",
+              "RequiredProgress": 21
+            },
+            {
+              "Icon": "faction/MEDAL.GEKSILVER.png",
+              "Name": "Friend",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.GEKSILVER.png",
+              "Name": "Best Friend",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.GEKSILVER.png",
+              "Name": "Most Favored",
+              "RequiredProgress": 60
+            },
+            {
+              "Icon": "faction/MEDAL.GEKGOLD.png",
+              "Name": "Trade Lord",
+              "RequiredProgress": 100
+            }
+          ]
+        },
+        {
+          "Name": "Missions Completed",
+          "Icon": "faction/MEDAL.MEDALGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.MEDALOFF.png",
+              "Name": "Outsider",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Initiate",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Recognised",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Journeyman",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Associate",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Senior",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Master",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Advisor",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Veteran",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Exalted",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALGOLD.png",
+              "Name": "Ambassador",
+              "RequiredProgress": 60
+            }
+          ]
+        },
+        {
+          "Name": "Words Learned",
+          "Icon": "faction/MEDAL.WORDSGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.WORDSOFF.png",
+              "Name": "Incomprehensible",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Beginner",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Student",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Understood",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Familiar",
+              "RequiredProgress": 100
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Conversationalist",
+              "RequiredProgress": 150
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Total: %AMOUNT%",
+              "RequiredProgress": 250
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Interpreter",
+              "RequiredProgress": 350
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Scholar",
+              "RequiredProgress": 450
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Linguist",
+              "RequiredProgress": 550
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSGOLD.png",
+              "Name": "Universal Translator",
+              "RequiredProgress": 650
+            }
+          ]
+        },
+        {
+          "Name": "Systems Visited",
+          "Icon": "faction/MEDAL.PLANETGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.PLANETOFF.png",
+              "Name": "Uncharted",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Trailblazer",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Scout",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Warp Engaged",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Surveyor",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Rover",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Voyager",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Pioneer",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Explorer",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Overseer",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETGOLD.png",
+              "Name": "Discoverer",
+              "RequiredProgress": 60
+            }
+          ]
+        },
+        {
+          "Name": "Smuggling Run",
+          "Icon": "faction/MEDAL.SMUGGLEGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.SMUGGLENONE.png",
+              "Name": "Good as Gold",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEBRONZE.png",
+              "Name": "Clerical Errors",
+              "RequiredProgress": 10000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEBRONZE.png",
+              "Name": "On the Run",
+              "RequiredProgress": 100000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEBRONZE.png",
+              "Name": "Fence",
+              "RequiredProgress": 200000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEBRONZE.png",
+              "Name": "Bootlegger",
+              "RequiredProgress": 500000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEBRONZE.png",
+              "Name": "Smuggler",
+              "RequiredProgress": 1000000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLESILVER.png",
+              "Name": "Lawbreaker",
+              "RequiredProgress": 2000000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLESILVER.png",
+              "Name": "The Agent",
+              "RequiredProgress": 5000000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLESILVER.png",
+              "Name": "Master Smuggler",
+              "RequiredProgress": 10000000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLESILVER.png",
+              "Name": "Uncatchable",
+              "RequiredProgress": 20000000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEGOLD.png",
+              "Name": "Blockade Runner",
+              "RequiredProgress": 50000000
+            }
+          ]
+        }
+      ],
+      "Additional": []
+    },
+    {
+      "Id": "vykeen",
+      "Icon": "faction/FACTIONS.VYKEEN.ON.png",
+      "Name": "The Vy'keen",
+      "Description": "The Vy'keen are warlike beings from the Dryn'dargh system, obsessed with the defeat of the Sentinels. Controlled by the Vy'keen High Command, they fight the Sentinel menace across the galaxy.\n\nDespite their aggressive appearances, the Vy'keen are bound by a strict code of honor. They value loyalty, sacrifice and a good death above material goods or knowledge, and are sworn to aid the Traveler whenever possible.",
+      "Missions": [
+        {
+          "Name": "Standing",
+          "Icon": "faction/MEDAL.VYKEENGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.VYKEENOFF.png",
+              "Name": "Enemy",
+              "RequiredProgress": -5
+            },
+            {
+              "Icon": "faction/MEDAL.VYKEENOFF.png",
+              "Name": "Detractor",
+              "RequiredProgress": -2
+            },
+            {
+              "Icon": "faction/MEDAL.VYKEENOFF.png",
+              "Name": "Neutral",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.VYKEENBRONZE.png",
+              "Name": "Accomplice",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.VYKEENBRONZE.png",
+              "Name": "Ally",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.VYKEENBRONZE.png",
+              "Name": "Close Ally",
+              "RequiredProgress": 14
+            },
+            {
+              "Icon": "faction/MEDAL.VYKEENSILVER.png",
+              "Name": "Comrade",
+              "RequiredProgress": 21
+            },
+            {
+              "Icon": "faction/MEDAL.VYKEENSILVER.png",
+              "Name": "Preceptor",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.VYKEENSILVER.png",
+              "Name": "Adjutant",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.VYKEENSILVER.png",
+              "Name": "Commandant",
+              "RequiredProgress": 60
+            },
+            {
+              "Icon": "faction/MEDAL.VYKEENGOLD.png",
+              "Name": "Templar",
+              "RequiredProgress": 100
+            }
+          ]
+        },
+        {
+          "Name": "Missions Completed",
+          "Icon": "faction/MEDAL.MEDALGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.MEDALOFF.png",
+              "Name": "Outsider",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Initiate",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Recognised",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Journeyman",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Associate",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Senior",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Master",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Advisor",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Veteran",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Exalted",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALGOLD.png",
+              "Name": "Ambassador",
+              "RequiredProgress": 60
+            }
+          ]
+        },
+        {
+          "Name": "Words Learned",
+          "Icon": "faction/MEDAL.WORDSGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.WORDSOFF.png",
+              "Name": "Incomprehensible",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Beginner",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Student",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Understood",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Familiar",
+              "RequiredProgress": 100
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Conversationalist",
+              "RequiredProgress": 150
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Fluent",
+              "RequiredProgress": 250
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Interpreter",
+              "RequiredProgress": 350
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Scholar",
+              "RequiredProgress": 450
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Linguist",
+              "RequiredProgress": 550
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSGOLD.png",
+              "Name": "Universal Translator",
+              "RequiredProgress": 650
+            }
+          ]
+        },
+        {
+          "Name": "Systems Visited",
+          "Icon": "faction/MEDAL.PLANETGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.PLANETOFF.png",
+              "Name": "Uncharted",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Trailblazer",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Scout",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Warp Engaged",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Surveyor",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Rover",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Voyager",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Pioneer",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Explorer",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Overseer",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETGOLD.png",
+              "Name": "Discoverer",
+              "RequiredProgress": 60
+            }
+          ]
+        },
+        {
+          "Name": "Walkers Destroyed",
+          "Icon": "faction/MEDAL.WALKERSGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.WALKERSOFF.png",
+              "Name": "Untested",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.WALKERSBRONZE.png",
+              "Name": "Beheaded",
+              "RequiredProgress": 1
+            },
+            {
+              "Icon": "faction/MEDAL.WALKERSBRONZE.png",
+              "Name": "The Coup",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.WALKERSBRONZE.png",
+              "Name": "Triumph",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.WALKERSBRONZE.png",
+              "Name": "Victory",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.WALKERSBRONZE.png",
+              "Name": "Vanquisher",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.WALKERSSILVER.png",
+              "Name": "Battle Hardened",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.WALKERSSILVER.png",
+              "Name": "Unstoppable",
+              "RequiredProgress": 25
+            },
+            {
+              "Icon": "faction/MEDAL.WALKERSSILVER.png",
+              "Name": "Hunter-Killer",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.WALKERSSILVER.png",
+              "Name": "Ascendant",
+              "RequiredProgress": 35
+            },
+            {
+              "Icon": "faction/MEDAL.WALKERSGOLD.png",
+              "Name": "Pillar of Glass",
+              "RequiredProgress": 40
+            }
+          ]
+        }
+      ],
+      "Additional": []
+    },
+    {
+      "Id": "explorer",
+      "Icon": "faction/FACTIONS.KORVAX.ON.png",
+      "Name": "The Korvax",
+      "Description": "Korvax entities are inorganic lifeforms that inhabit metallic casings passed down from generation to generation. They believe that through mathematical study they can be raised to the level of the Atlas, and that the path to this is through the study of the Sentinels.\n\nEach Korvax is a pure mind, a drop in their great collective Convergence. The shell they inhabit is of little significance compared to their connection to this group consciousness.",
+      "Missions": [
+        {
+          "Name": "Standing",
+          "Icon": "faction/MEDAL.KORVAXGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.KORVAXNONE.png",
+              "Name": "Annoyance",
+              "RequiredProgress": -5
+            },
+            {
+              "Icon": "faction/MEDAL.KORVAXNONE.png",
+              "Name": "Irritation",
+              "RequiredProgress": -2
+            },
+            {
+              "Icon": "faction/MEDAL.KORVAXNONE.png",
+              "Name": "Unstudied",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.KORVAXBRONZE.png",
+              "Name": "Point of interest",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.KORVAXBRONZE.png",
+              "Name": "Test subject",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.KORVAXBRONZE.png",
+              "Name": "Research focus",
+              "RequiredProgress": 14
+            },
+            {
+              "Icon": "faction/MEDAL.KORVAXSILVER.png",
+              "Name": "Trial Candidate",
+              "RequiredProgress": 21
+            },
+            {
+              "Icon": "faction/MEDAL.KORVAXSILVER.png",
+              "Name": "Significance",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.KORVAXSILVER.png",
+              "Name": "Savior",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.KORVAXSILVER.png",
+              "Name": "Singularity",
+              "RequiredProgress": 60
+            },
+            {
+              "Icon": "faction/MEDAL.KORVAXGOLD.png",
+              "Name": "Traveler of the Atlas",
+              "RequiredProgress": 100
+            }
+          ]
+        },
+        {
+          "Name": "Missions Completed",
+          "Icon": "faction/MEDAL.MEDALGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.MEDALOFF.png",
+              "Name": "Outsider",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Initiate",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Recognised",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Journeyman",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Associate",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Senior",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Master",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Advisor",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Veteran",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Exalted",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALGOLD.png",
+              "Name": "Ambassador",
+              "RequiredProgress": 60
+            }
+          ]
+        },
+        {
+          "Name": "Words Learned",
+          "Icon": "faction/MEDAL.WORDSGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.WORDSOFF.png",
+              "Name": "Incomprehensible",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Beginner",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Student",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Understood",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Familiar",
+              "RequiredProgress": 100
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Conversationalist",
+              "RequiredProgress": 150
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Fluent",
+              "RequiredProgress": 250
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Interpreter",
+              "RequiredProgress": 350
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Scholar",
+              "RequiredProgress": 450
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Linguist",
+              "RequiredProgress": 550
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSGOLD.png",
+              "Name": "Universal Translator",
+              "RequiredProgress": 650
+            }
+          ]
+        },
+        {
+          "Name": "Systems Visited",
+          "Icon": "faction/MEDAL.PLANETGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.PLANETOFF.png",
+              "Name": "Uncharted",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Trailblazer",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Scout",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Warp Engaged",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Surveyor",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETBRONZE.png",
+              "Name": "Rover",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Voyager",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Pioneer",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Explorer",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETSILVER.png",
+              "Name": "Overseer",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.PLANETGOLD.png",
+              "Name": "Discoverer",
+              "RequiredProgress": 60
+            }
+          ]
+        },
+        {
+          "Name": "Nanite Clusters",
+          "Icon": "faction/MEDAL.NANITESGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.NANITESOFF.png",
+              "Name": "Untainted",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.NANITESBRONZE.png",
+              "Name": "Glittered",
+              "RequiredProgress": 250
+            },
+            {
+              "Icon": "faction/MEDAL.NANITESBRONZE.png",
+              "Name": "Shifting Clusters",
+              "RequiredProgress": 500
+            },
+            {
+              "Icon": "faction/MEDAL.NANITESBRONZE.png",
+              "Name": "Creeping Light",
+              "RequiredProgress": 1000
+            },
+            {
+              "Icon": "faction/MEDAL.NANITESBRONZE.png",
+              "Name": "Like Sand",
+              "RequiredProgress": 5000
+            },
+            {
+              "Icon": "faction/MEDAL.NANITESBRONZE.png",
+              "Name": "Harvest of Light",
+              "RequiredProgress": 10000
+            },
+            {
+              "Icon": "faction/MEDAL.NANITESSILVER.png",
+              "Name": "Cluster Horde",
+              "RequiredProgress": 20000
+            },
+            {
+              "Icon": "faction/MEDAL.NANITESSILVER.png",
+              "Name": "Impossibly Fragmented",
+              "RequiredProgress": 40000
+            },
+            {
+              "Icon": "faction/MEDAL.NANITESSILVER.png",
+              "Name": "Drawn to Glass",
+              "RequiredProgress": 60000
+            },
+            {
+              "Icon": "faction/MEDAL.NANITESSILVER.png",
+              "Name": "Awash with Foam",
+              "RequiredProgress": 80000
+            },
+            {
+              "Icon": "faction/MEDAL.NANITESGOLD.png",
+              "Name": "Reality Grains",
+              "RequiredProgress": 100000
+            }
+          ]
+        }
+      ],
+      "Additional": []
+    }
+  ],
+  "Guild": "GUILDS",
+  "Guilds": [
+    {
+      "Id": "traGuild",
+      "Icon": "faction/FACTIONS.TRADEGUILD.ON.png",
+      "Name": "Merchants Guild",
+      "Description": "A collective organization representing trading companies and individual merchants across the galaxy. They help control and commission work for pilots-for-hire on behalf of their members.\n\nThe Merchants Guild is naturally dominated by the Gek, but it is not an exclusive club. All lifeforms are welcome under its umbrella, as long as they have the requisite capital reserves...",
+      "Missions": [
+        {
+          "Name": "Standing",
+          "Icon": "faction/MEDAL.MERCHGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.MERCHNONE.png",
+              "Name": "Hated",
+              "RequiredProgress": -5
+            },
+            {
+              "Icon": "faction/MEDAL.MERCHNONE.png",
+              "Name": "Hostile",
+              "RequiredProgress": -2
+            },
+            {
+              "Icon": "faction/MEDAL.MERCHNONE.png",
+              "Name": "Unknown",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.MERCHBRONZE.png",
+              "Name": "Initiate",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.MERCHBRONZE.png",
+              "Name": "Apprentice",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.MERCHBRONZE.png",
+              "Name": "Journeyman",
+              "RequiredProgress": 14
+            },
+            {
+              "Icon": "faction/MEDAL.MERCHSILVER.png",
+              "Name": "Associate",
+              "RequiredProgress": 21
+            },
+            {
+              "Icon": "faction/MEDAL.MERCHSILVER.png",
+              "Name": "Senior",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.MERCHSILVER.png",
+              "Name": "Master",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.MERCHSILVER.png",
+              "Name": "Elder",
+              "RequiredProgress": 60
+            },
+            {
+              "Icon": "faction/MEDAL.MERCHGOLD.png",
+              "Name": "Exalted",
+              "RequiredProgress": 100
+            }
+          ]
+        },
+        {
+          "Name": "Missions Completed",
+          "Icon": "faction/MEDAL.MEDALGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.MEDALOFF.png",
+              "Name": "Outsider",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Initiate",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Recognised",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Journeyman",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Associate",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Senior",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Master",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Advisor",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Veteran",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Exalted",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALGOLD.png",
+              "Name": "Ambassador",
+              "RequiredProgress": 60
+            }
+          ]
+        },
+        {
+          "Name": "Units Earned",
+          "Icon": "faction/MEDAL.UNITSGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.UNITSOFF.png",
+              "Name": "New Business",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.UNITSBRONZE.png",
+              "Name": "Space Trucker",
+              "RequiredProgress": 75000
+            },
+            {
+              "Icon": "faction/MEDAL.UNITSBRONZE.png",
+              "Name": "Trader",
+              "RequiredProgress": 100000
+            },
+            {
+              "Icon": "faction/MEDAL.UNITSBRONZE.png",
+              "Name": "Moneymaker",
+              "RequiredProgress": 150000
+            },
+            {
+              "Icon": "faction/MEDAL.UNITSBRONZE.png",
+              "Name": "Merchant",
+              "RequiredProgress": 250000
+            },
+            {
+              "Icon": "faction/MEDAL.UNITSBRONZE.png",
+              "Name": "Enterprising",
+              "RequiredProgress": 500000
+            },
+            {
+              "Icon": "faction/MEDAL.UNITSSILVER.png",
+              "Name": "Entrepreneur",
+              "RequiredProgress": 750000
+            },
+            {
+              "Icon": "faction/MEDAL.UNITSSILVER.png",
+              "Name": "Investor",
+              "RequiredProgress": 1000000
+            },
+            {
+              "Icon": "faction/MEDAL.UNITSSILVER.png",
+              "Name": "Capitalist",
+              "RequiredProgress": 1250000
+            },
+            {
+              "Icon": "faction/MEDAL.UNITSSILVER.png",
+              "Name": "Tycoon",
+              "RequiredProgress": 1500000
+            },
+            {
+              "Icon": "faction/MEDAL.UNITSGOLD.png",
+              "Name": "Magnate",
+              "RequiredProgress": 2000000
+            }
+          ]
+        },
+        {
+          "Name": "Plants Farmed",
+          "Icon": "faction/MEDAL.PLANTSGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.PLANTSOFF.png",
+              "Name": "Soft Handed",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSBRONZE.png",
+              "Name": "Forager",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSBRONZE.png",
+              "Name": "Farmhand",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSBRONZE.png",
+              "Name": "Harvester",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSBRONZE.png",
+              "Name": "Exo-Cropper",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSBRONZE.png",
+              "Name": "Agriculturist",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSSILVER.png",
+              "Name": "Botanist",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSSILVER.png",
+              "Name": "Soil Warrior",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSSILVER.png",
+              "Name": "Astro-Agronomy",
+              "RequiredProgress": 60
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSSILVER.png",
+              "Name": "Cropmaster",
+              "RequiredProgress": 70
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSGOLD.png",
+              "Name": "Born of Soil",
+              "RequiredProgress": 80
+            }
+          ]
+        },
+        {
+          "Name": "Rare Treasures",
+          "Icon": "faction/MEDAL.TREASUREGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.TREASUREOFF.png",
+              "Name": "Empty Handed",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.TREASUREBRONZE.png",
+              "Name": "On the Hunt",
+              "RequiredProgress": 1
+            },
+            {
+              "Icon": "faction/MEDAL.TREASUREBRONZE.png",
+              "Name": "Digger",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.TREASUREBRONZE.png",
+              "Name": "Seeker",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.TREASUREBRONZE.png",
+              "Name": "Collector",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.TREASUREBRONZE.png",
+              "Name": "Connoisseur",
+              "RequiredProgress": 25
+            },
+            {
+              "Icon": "faction/MEDAL.TREAURESILVER.png",
+              "Name": "Hoarder",
+              "RequiredProgress": 35
+            },
+            {
+              "Icon": "faction/MEDAL.TREAURESILVER.png",
+              "Name": "Treasure Hunter",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.TREAURESILVER.png",
+              "Name": "Ancient Restoration",
+              "RequiredProgress": 65
+            },
+            {
+              "Icon": "faction/MEDAL.TREAURESILVER.png",
+              "Name": "Gifts from History",
+              "RequiredProgress": 80
+            },
+            {
+              "Icon": "faction/MEDAL.TREASUREGOLD.png",
+              "Name": "All that Glitters",
+              "RequiredProgress": 100
+            }
+          ]
+        }
+      ],
+      "Additional": [
+        "ShowGuildMissions"
+      ]
+    },
+    {
+      "Id": "warGuild",
+      "Icon": "faction/FACTIONS.WARRIORGUILD.ON.png",
+      "Name": "Mercenaries Guild",
+      "Description": "A loose collective of mercenary organizations across the galaxy. The guild hosts a range of competing factions, many of whom would fight each other given the chance.\n\nPirates, vigilantes, undercover law enforcement, cults, rogues and crusaders - the Mercenaries Guild keeps galactic peace by ensuring the right jobs are given to the right group of armed opportunists.",
+      "Missions": [
+        {
+          "Name": "Standing",
+          "Icon": "faction/MEDAL.WARRIORGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.WARRIORNONE.png",
+              "Name": "Hated",
+              "RequiredProgress": -5
+            },
+            {
+              "Icon": "faction/MEDAL.WARRIORNONE.png",
+              "Name": "Hostile",
+              "RequiredProgress": -2
+            },
+            {
+              "Icon": "faction/MEDAL.WARRIORNONE.png",
+              "Name": "Unknown",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.WARRIORBRONZE.png",
+              "Name": "Initiate",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.WARRIORBRONZE.png",
+              "Name": "Apprentice",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.WARRIORBRONZE.png",
+              "Name": "Journeyman",
+              "RequiredProgress": 14
+            },
+            {
+              "Icon": "faction/MEDAL.WARRIORSILVER.png",
+              "Name": "Associate",
+              "RequiredProgress": 21
+            },
+            {
+              "Icon": "faction/MEDAL.WARRIORSILVER.png",
+              "Name": "Senior",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.WARRIORSILVER.png",
+              "Name": "Master",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.WARRIORSILVER.png",
+              "Name": "Elder",
+              "RequiredProgress": 60
+            },
+            {
+              "Icon": "faction/MEDAL.WARRIORGOLD.png",
+              "Name": "Exalted",
+              "RequiredProgress": 100
+            }
+          ]
+        },
+        {
+          "Name": "Missions Completed",
+          "Icon": "faction/MEDAL.MEDALGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.MEDALOFF.png",
+              "Name": "Outsider",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Initiate",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Recognised",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Journeyman",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Associate",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Senior",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Master",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Advisor",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Veteran",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Exalted",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALGOLD.png",
+              "Name": "Ambassador",
+              "RequiredProgress": 60
+            }
+          ]
+        },
+        {
+          "Name": "Sentinels Destroyed",
+          "Icon": "faction/MEDAL.SENTINELSGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.SENTINELSOFF.png",
+              "Name": "Untroubled",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.SENTINELSBRONZE.png",
+              "Name": "Novice",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.SENTINELSBRONZE.png",
+              "Name": "Targeted Anomaly",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.SENTINELSBRONZE.png",
+              "Name": "Hardened",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.SENTINELSBRONZE.png",
+              "Name": "Radical",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.SENTINELSBRONZE.png",
+              "Name": "Called by Fire",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.SENTINELSSILVER.png",
+              "Name": "Undying",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.SENTINELSSILVER.png",
+              "Name": "Champion",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.SENTINELSSILVER.png",
+              "Name": "Crusader",
+              "RequiredProgress": 60
+            },
+            {
+              "Icon": "faction/MEDAL.SENTINELSSILVER.png",
+              "Name": "Cleanser of Worlds",
+              "RequiredProgress": 70
+            },
+            {
+              "Icon": "faction/MEDAL.SENTINELSGOLD.png",
+              "Name": "Destroyer of Glass",
+              "RequiredProgress": 80
+            }
+          ]
+        },
+        {
+          "Name": "Pirates Killed",
+          "Icon": "faction/MEDAL.PIRATESGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.PIRATESOFF.png",
+              "Name": "Untested",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATESBRONZE.png",
+              "Name": "Novice",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATESBRONZE.png",
+              "Name": "Nuisance",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATESBRONZE.png",
+              "Name": "Scrapper",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATESBRONZE.png",
+              "Name": "Troublemaker",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATESBRONZE.png",
+              "Name": "Fighter",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATESSILVER.png",
+              "Name": "Menace",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATESSILVER.png",
+              "Name": "Notorious",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATESSILVER.png",
+              "Name": "Dangerous",
+              "RequiredProgress": 60
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATESSILVER.png",
+              "Name": "Expert",
+              "RequiredProgress": 70
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATESGOLD.png",
+              "Name": "Legend",
+              "RequiredProgress": 80
+            }
+          ]
+        },
+        {
+          "Name": "Horrors Eliminated",
+          "Icon": "faction/MEDAL.FIENDSGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.FIENDSOFF.png",
+              "Name": "Innocent",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.FIENDSBRONZE.png",
+              "Name": "Scarred",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.FIENDSBRONZE.png",
+              "Name": "Stained",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.FIENDSBRONZE.png",
+              "Name": "Tainted",
+              "RequiredProgress": 25
+            },
+            {
+              "Icon": "faction/MEDAL.FIENDSBRONZE.png",
+              "Name": "Haunted",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.FIENDSBRONZE.png",
+              "Name": "Consumed",
+              "RequiredProgress": 75
+            },
+            {
+              "Icon": "faction/MEDAL.FIENDSSILVER.png",
+              "Name": "Fiendish",
+              "RequiredProgress": 100
+            },
+            {
+              "Icon": "faction/MEDAL.FIENDSSILVER.png",
+              "Name": "Eradicator",
+              "RequiredProgress": 125
+            },
+            {
+              "Icon": "faction/MEDAL.FIENDSSILVER.png",
+              "Name": "Annihilator",
+              "RequiredProgress": 150
+            },
+            {
+              "Icon": "faction/MEDAL.FIENDSSILVER.png",
+              "Name": "Exterminator",
+              "RequiredProgress": 200
+            },
+            {
+              "Icon": "faction/MEDAL.FIENDSGOLD.png",
+              "Name": "Face of Death",
+              "RequiredProgress": 250
+            }
+          ]
+        }
+      ],
+      "Additional": [
+        "ShowGuildMissions"
+      ]
+    },
+    {
+      "Id": "expGuild",
+      "Icon": "faction/FACTIONS.EXPLORERGUILD.ON.png",
+      "Name": "Explorers Guild",
+      "Description": "A mutual association of researchers and explorers, the Explorers Guild serves to match up those who need data with those who would collect it.\n\nMembership is largely split between scientific institutions, geographical societies, and technology companies, with the occasional individual explorer. The Guild offers pooled resources, shared labs, lecture series and yearly medals.",
+      "Missions": [
+        {
+          "Name": "Standing",
+          "Icon": "faction/MEDAL.EXPLORERGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.EXPLORERNONE.png",
+              "Name": "Hated",
+              "RequiredProgress": -5
+            },
+            {
+              "Icon": "faction/MEDAL.EXPLORERNONE.png",
+              "Name": "Hostile",
+              "RequiredProgress": -2
+            },
+            {
+              "Icon": "faction/MEDAL.EXPLORERNONE.png",
+              "Name": "Unknown",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.EXPLORERBRONZE.png",
+              "Name": "Initiate",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.EXPLORERBRONZE.png",
+              "Name": "Apprentice",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.EXPLORERBRONZE.png",
+              "Name": "Journeyman",
+              "RequiredProgress": 14
+            },
+            {
+              "Icon": "faction/MEDAL.EXPLORERSILVER.png",
+              "Name": "Associate",
+              "RequiredProgress": 21
+            },
+            {
+              "Icon": "faction/MEDAL.EXPLORERSILVER.png",
+              "Name": "Senior",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.EXPLORERSILVER.png",
+              "Name": "Master",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.EXPLORERSILVER.png",
+              "Name": "Elder",
+              "RequiredProgress": 60
+            },
+            {
+              "Icon": "faction/MEDAL.EXPLORERGOLD.png",
+              "Name": "Exalted",
+              "RequiredProgress": 100
+            }
+          ]
+        },
+        {
+          "Name": "Missions Completed",
+          "Icon": "faction/MEDAL.MEDALGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.MEDALOFF.png",
+              "Name": "Outsider",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Initiate",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Recognised",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Journeyman",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Associate",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Senior",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Master",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Advisor",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Veteran",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Exalted",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALGOLD.png",
+              "Name": "Ambassador",
+              "RequiredProgress": 60
+            }
+          ]
+        },
+        {
+          "Name": "Rare Fauna Scanned",
+          "Icon": "faction/MEDAL.CREATURESGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.CREATUREOFF.png",
+              "Name": "Uneducated",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.CREATUREBRONZE.png",
+              "Name": "Naturalist",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.CREATUREBRONZE.png",
+              "Name": "Collector",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.CREATUREBRONZE.png",
+              "Name": "Scanner",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.CREATUREBRONZE.png",
+              "Name": "Analyst",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.CREATUREBRONZE.png",
+              "Name": "Researcher",
+              "RequiredProgress": 25
+            },
+            {
+              "Icon": "faction/MEDAL.CREATURESILVER.png",
+              "Name": "Compiler",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.CREATURESILVER.png",
+              "Name": "Archivist",
+              "RequiredProgress": 35
+            },
+            {
+              "Icon": "faction/MEDAL.CREATURESILVER.png",
+              "Name": "Classifier",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.CREATURESILVER.png",
+              "Name": "Zoologist",
+              "RequiredProgress": 45
+            },
+            {
+              "Icon": "faction/MEDAL.CREATURESGOLD.png",
+              "Name": "Encyclopedia",
+              "RequiredProgress": 50
+            }
+          ]
+        },
+        {
+          "Name": "Systems Mapped",
+          "Icon": "faction/MEDAL.WARPSGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.WARPSOFF.png",
+              "Name": "Stargazer",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.WARPSBRONZE.png",
+              "Name": "Trailblazer",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.WARPSBRONZE.png",
+              "Name": "Scout",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.WARPSBRONZE.png",
+              "Name": "Warp Engaged",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.WARPSBRONZE.png",
+              "Name": "Surveyor",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.WARPSBRONZE.png",
+              "Name": "Rover",
+              "RequiredProgress": 25
+            },
+            {
+              "Icon": "faction/MEDAL.WARPSSILVER.png",
+              "Name": "Voyager",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.WARPSSILVER.png",
+              "Name": "Pioneer",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.WARPSSILVER.png",
+              "Name": "Explorer",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.WARPSSILVER.png",
+              "Name": "Overseer",
+              "RequiredProgress": 60
+            },
+            {
+              "Icon": "faction/MEDAL.WARPSGOLD.png",
+              "Name": "Discoverer",
+              "RequiredProgress": 75
+            }
+          ]
+        },
+        {
+          "Name": "Plants Catalogued",
+          "Icon": "faction/MEDAL.PLANTSGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.PLANTSCANOFF.png",
+              "Name": "Plant Blind",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSCANBRONZE.png",
+              "Name": "Hobby Scanner",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSCANBRONZE.png",
+              "Name": "Enthusiast",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSCANBRONZE.png",
+              "Name": "Green Fingers",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSCANBRONZE.png",
+              "Name": "Plant Hunter",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSCANBRONZE.png",
+              "Name": "Ecologist",
+              "RequiredProgress": 75
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSCANSILVER.png",
+              "Name": "Floral Collector",
+              "RequiredProgress": 100
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSCANSILVER.png",
+              "Name": "Botanical Archive",
+              "RequiredProgress": 150
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSCANSILVER.png",
+              "Name": "Seed Bank",
+              "RequiredProgress": 200
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSCANSILVER.png",
+              "Name": "Exobotanist",
+              "RequiredProgress": 250
+            },
+            {
+              "Icon": "faction/MEDAL.PLANTSGOLD.png",
+              "Name": "Verdant Horde",
+              "RequiredProgress": 300
+            }
+          ]
+        }
+      ],
+      "Additional": [
+        "ShowGuildMissions"
+      ]
+    },
+    {
+      "Id": "unknown: Guild,Pirates",
+      "Icon": "faction/FACTIONS.PIRATE.ON.png",
+      "Name": "Outlaws",
+      "Description": "In some star systems, the dominant local authority has been <VAL_ON>overthrown<> by rebel outlaw forces. Such outlaw systems see unusually high levels of <FUEL>conflict<>, due to the lack of punishment for preying on trader starships. This presents a risk to those wishing to trade, but a substantial <STELLAR>opportunity<> to those who wish to engage in piracy themselves.\n\nProfitable acts of piracy include the smuggling of <SPECIAL>contraband<>, raiding <TECHNOLOGY>freighters<> and <TECHNOLOGY>traders<>, or performing missions for a <STELLAR>Bounty Master<> aboard a rebel station.",
+      "Missions": [
+        {
+          "Name": "Standing",
+          "Icon": "faction/MEDAL.PIRATEFACTIONGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.PIRATEFACTIONNONE.png",
+              "Name": "Traitor",
+              "RequiredProgress": -5
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATEFACTIONNONE.png",
+              "Name": "Turncoat",
+              "RequiredProgress": -2
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATEFACTIONNONE.png",
+              "Name": "Unknown",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATEFACTIONBRONZE.png",
+              "Name": "Bilge Rat",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATEFACTIONBRONZE.png",
+              "Name": "Privateer",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATEFACTIONBRONZE.png",
+              "Name": "Corsair",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATEFACTIONSILVER.png",
+              "Name": "Buccaneer",
+              "RequiredProgress": 32
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATEFACTIONSILVER.png",
+              "Name": "Scourge",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATEFACTIONSILVER.png",
+              "Name": "Legend",
+              "RequiredProgress": 75
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATEFACTIONSILVER.png",
+              "Name": "Dread-Pirate",
+              "RequiredProgress": 100
+            },
+            {
+              "Icon": "faction/MEDAL.PIRATEFACTIONGOLD.png",
+              "Name": "Admiral of the Black",
+              "RequiredProgress": 150
+            }
+          ]
+        },
+        {
+          "Name": "Missions Completed",
+          "Icon": "faction/MEDAL.MEDALGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.MEDALOFF.png",
+              "Name": "Outsider",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Initiate",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Recognised",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Journeyman",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Associate",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Senior",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Master",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Advisor",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Veteran",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Exalted",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALGOLD.png",
+              "Name": "Ambassador",
+              "RequiredProgress": 60
+            }
+          ]
+        },
+        {
+          "Name": "Smuggling Run",
+          "Icon": "faction/MEDAL.SMUGGLEGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.SMUGGLENONE.png",
+              "Name": "Good as Gold",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEBRONZE.png",
+              "Name": "Clerical Errors",
+              "RequiredProgress": 10000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEBRONZE.png",
+              "Name": "On the Run",
+              "RequiredProgress": 100000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEBRONZE.png",
+              "Name": "Fence",
+              "RequiredProgress": 200000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEBRONZE.png",
+              "Name": "Bootlegger",
+              "RequiredProgress": 500000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEBRONZE.png",
+              "Name": "Smuggler",
+              "RequiredProgress": 1000000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLESILVER.png",
+              "Name": "Lawbreaker",
+              "RequiredProgress": 2000000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLESILVER.png",
+              "Name": "The Agent",
+              "RequiredProgress": 5000000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLESILVER.png",
+              "Name": "Master Smuggler",
+              "RequiredProgress": 10000000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLESILVER.png",
+              "Name": "Uncatchable",
+              "RequiredProgress": 20000000
+            },
+            {
+              "Icon": "faction/MEDAL.SMUGGLEGOLD.png",
+              "Name": "Blockade Runner",
+              "RequiredProgress": 50000000
+            }
+          ]
+        },
+        {
+          "Name": "Bounties Completed",
+          "Icon": "faction/MEDAL.BOUNTIESGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.BOUNTIESOFF.png",
+              "Name": "Harmless",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.BOUNTIESBRONZE.png",
+              "Name": "Mostly Harmless",
+              "RequiredProgress": 1
+            },
+            {
+              "Icon": "faction/MEDAL.BOUNTIESBRONZE.png",
+              "Name": "Vigilante",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.BOUNTIESBRONZE.png",
+              "Name": "Bounty Hunter",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.BOUNTIESBRONZE.png",
+              "Name": "Marshal",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.BOUNTIESBRONZE.png",
+              "Name": "Bounty Master",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.BOUNTIESSILVER.png",
+              "Name": "Bloodhound",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.BOUNTIESSILVER.png",
+              "Name": "Enforcer",
+              "RequiredProgress": 25
+            },
+            {
+              "Icon": "faction/MEDAL.BOUNTIESSILVER.png",
+              "Name": "Retributor",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.BOUNTIESSILVER.png",
+              "Name": "Deadeye",
+              "RequiredProgress": 35
+            },
+            {
+              "Icon": "faction/MEDAL.BOUNTIESGOLD.png",
+              "Name": "Star Wolf",
+              "RequiredProgress": 40
+            }
+          ]
+        },
+        {
+          "Name": "Freighters Plundered",
+          "Icon": "faction/MEDAL.FREIGHTERKILLGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.SHIPKILLOFF.png",
+              "Name": "Lawful",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.FREIGHTERKILLBRONZE.png",
+              "Name": "Opportunist",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.FREIGHTERKILLBRONZE.png",
+              "Name": "Nuisance",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.FREIGHTERKILLBRONZE.png",
+              "Name": "Outlaw",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.FREIGHTERKILLBRONZE.png",
+              "Name": "Menace",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.FREIGHTERKILLBRONZE.png",
+              "Name": "Raider",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.FREIGHTERKILLSILVER.png",
+              "Name": "Marauder",
+              "RequiredProgress": 75
+            },
+            {
+              "Icon": "faction/MEDAL.FREIGHTERKILLSILVER.png",
+              "Name": "Star Pirate",
+              "RequiredProgress": 100
+            },
+            {
+              "Icon": "faction/MEDAL.FREIGHTERKILLSILVER.png",
+              "Name": "Most Wanted",
+              "RequiredProgress": 125
+            },
+            {
+              "Icon": "faction/MEDAL.FREIGHTERKILLSILVER.png",
+              "Name": "Wings of Peril",
+              "RequiredProgress": 150
+            },
+            {
+              "Icon": "faction/MEDAL.FREIGHTERKILLGOLD.png",
+              "Name": "Lord of Plunder",
+              "RequiredProgress": 200
+            }
+          ]
+        }
+      ],
+      "Additional": [
+        "ShowGuildMissions"
+      ]
+    },
+    {
+      "Id": "unknown: Guild,Builders",
+      "Icon": "faction/FACTIONS.BUILDER.ON.png",
+      "Name": "The Autophage",
+      "Description": "The Autophage are robotic lifeforms, divergent Korvax who were purged from the purity of the Convergence. Banished by deletion, they have been drawn out from the void by the <SPECIAL>atlantideum<> that erupts from deep within dissonant worlds.\n\nThe process of rebuilding is a slow and arduous rite undertaken by every Autophage, as they seek the parts necessary to assemble their own shell. Their shell, like their mind, is their own, and will not be taken from them again.",
+      "Missions": [
+        {
+          "Name": "Standing",
+          "Icon": "faction/MEDAL.BUILDERGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.BUILDERNONE.png",
+              "Name": "Convergence-Waste",
+              "RequiredProgress": -5
+            },
+            {
+              "Icon": "faction/MEDAL.BUILDERNONE.png",
+              "Name": "Banished",
+              "RequiredProgress": -2
+            },
+            {
+              "Icon": "faction/MEDAL.BUILDERNONE.png",
+              "Name": "Unregistered",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.BUILDERBRONZE.png",
+              "Name": "Pre-built",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.BUILDERBRONZE.png",
+              "Name": "Returned",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.BUILDERBRONZE.png",
+              "Name": "Reclaimed",
+              "RequiredProgress": 14
+            },
+            {
+              "Icon": "faction/MEDAL.BUILDERSILVER.png",
+              "Name": "Machinist",
+              "RequiredProgress": 21
+            },
+            {
+              "Icon": "faction/MEDAL.BUILDERSILVER.png",
+              "Name": "Disruptor",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.BUILDERSILVER.png",
+              "Name": "Artificer",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.BUILDERSILVER.png",
+              "Name": "Void-Eyes",
+              "RequiredProgress": 60
+            },
+            {
+              "Icon": "faction/MEDAL.BUILDERGOLD.png",
+              "Name": "Wild Spark",
+              "RequiredProgress": 100
+            }
+          ]
+        },
+        {
+          "Name": "Missions Completed",
+          "Icon": "faction/MEDAL.MEDALGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.MEDALOFF.png",
+              "Name": "Outsider",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Initiate",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Recognised",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Journeyman",
+              "RequiredProgress": 8
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Associate",
+              "RequiredProgress": 12
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALBRONZE.png",
+              "Name": "Senior",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Master",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Advisor",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Veteran",
+              "RequiredProgress": 40
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALSILVER.png",
+              "Name": "Exalted",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.MEDALGOLD.png",
+              "Name": "Ambassador",
+              "RequiredProgress": 60
+            }
+          ]
+        },
+        {
+          "Name": "Words Learned",
+          "Icon": "faction/MEDAL.WORDSGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.WORDSOFF.png",
+              "Name": "Incomprehensible",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Beginner",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Student",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Understood",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Familiar",
+              "RequiredProgress": 100
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSBRONZE.png",
+              "Name": "Conversationalist",
+              "RequiredProgress": 150
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Fluent",
+              "RequiredProgress": 250
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Interpreter",
+              "RequiredProgress": 350
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Scholar",
+              "RequiredProgress": 450
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSSILVER.png",
+              "Name": "Linguist",
+              "RequiredProgress": 550
+            },
+            {
+              "Icon": "faction/MEDAL.WORDSGOLD.png",
+              "Name": "Universal Translator",
+              "RequiredProgress": 650
+            }
+          ]
+        },
+        {
+          "Name": "Radiant Shards",
+          "Icon": "faction/MEDAL.CRYSTALGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.CRYSTALNONE.png",
+              "Name": "Compliant",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.CRYSTALBRONZE.png",
+              "Name": "Dissonant",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.CRYSTALBRONZE.png",
+              "Name": "Crystalline",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.CRYSTALBRONZE.png",
+              "Name": "Sparkling",
+              "RequiredProgress": 25
+            },
+            {
+              "Icon": "faction/MEDAL.CRYSTALBRONZE.png",
+              "Name": "Lucid",
+              "RequiredProgress": 50
+            },
+            {
+              "Icon": "faction/MEDAL.CRYSTALBRONZE.png",
+              "Name": "Re-Harmonized",
+              "RequiredProgress": 75
+            },
+            {
+              "Icon": "faction/MEDAL.CRYSTALSILVER.png",
+              "Name": "Melodic",
+              "RequiredProgress": 100
+            },
+            {
+              "Icon": "faction/MEDAL.CRYSTALSILVER.png",
+              "Name": "Void Seeker",
+              "RequiredProgress": 125
+            },
+            {
+              "Icon": "faction/MEDAL.CRYSTALSILVER.png",
+              "Name": "Void Harvester",
+              "RequiredProgress": 150
+            },
+            {
+              "Icon": "faction/MEDAL.CRYSTALSILVER.png",
+              "Name": "Radiant",
+              "RequiredProgress": 175
+            },
+            {
+              "Icon": "faction/MEDAL.CRYSTALGOLD.png",
+              "Name": "Atlantidian",
+              "RequiredProgress": 200
+            }
+          ]
+        },
+        {
+          "Name": "Autophage Salvage",
+          "Icon": "faction/MEDAL.REPAIRGOLD.png",
+          "Tiers": [
+            {
+              "Icon": "faction/MEDAL.REPAIRNONE.png",
+              "Name": "Null",
+              "RequiredProgress": 0
+            },
+            {
+              "Icon": "faction/MEDAL.REPAIRBRONZE.png",
+              "Name": "Fragmented",
+              "RequiredProgress": 1
+            },
+            {
+              "Icon": "faction/MEDAL.REPAIRBRONZE.png",
+              "Name": "Undeleted",
+              "RequiredProgress": 3
+            },
+            {
+              "Icon": "faction/MEDAL.REPAIRBRONZE.png",
+              "Name": "Defragmented",
+              "RequiredProgress": 5
+            },
+            {
+              "Icon": "faction/MEDAL.REPAIRBRONZE.png",
+              "Name": "Salvaged",
+              "RequiredProgress": 10
+            },
+            {
+              "Icon": "faction/MEDAL.REPAIRBRONZE.png",
+              "Name": "Reassembled",
+              "RequiredProgress": 15
+            },
+            {
+              "Icon": "faction/MEDAL.REPAIRSILVER.png",
+              "Name": "Recycled",
+              "RequiredProgress": 20
+            },
+            {
+              "Icon": "faction/MEDAL.REPAIRSILVER.png",
+              "Name": "Recovered",
+              "RequiredProgress": 25
+            },
+            {
+              "Icon": "faction/MEDAL.REPAIRSILVER.png",
+              "Name": "Optimized",
+              "RequiredProgress": 30
+            },
+            {
+              "Icon": "faction/MEDAL.REPAIRSILVER.png",
+              "Name": "Rebuilt",
+              "RequiredProgress": 35
+            },
+            {
+              "Icon": "faction/MEDAL.REPAIRGOLD.png",
+              "Name": "Returned",
+              "RequiredProgress": 40
+            }
+          ]
+        }
+      ],
+      "Additional": [
+        "ShowGuildMissions"
+      ]
+    }
+  ]
+}
