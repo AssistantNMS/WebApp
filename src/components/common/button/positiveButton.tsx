@@ -26,13 +26,13 @@ export const PositiveButton: React.FC<IProps> = (props: IProps) => {
         onClick={props.onClick}
       >
         {props.iconPosition === 'left' && (
-          <i className="material-icons" style={{ left: '0.75em' }}>
+          <i className="material-icons" style={{ left: '0.75em' }} title="previous">
             {props.icon}
           </i>
         )}
         <div style={styleObj}>{props.children}</div>
         {props.iconPosition === 'right' && (
-          <i className="material-icons" style={{ right: '0.75em' }}>
+          <i className="material-icons" style={{ right: '0.75em' }} title="next">
             {props.icon}
           </i>
         )}

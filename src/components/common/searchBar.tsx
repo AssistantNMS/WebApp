@@ -18,7 +18,9 @@ export const SearchBar: React.FC<IProps> = (props: IProps) => {
         onChange={props.onSearchTextChange}
       />
       <button className="icon-container pointer" type="submit">
-        <i className="material-icons">search</i>
+        <i className="material-icons" title="search">
+          search
+        </i>
       </button>
     </form>
   );

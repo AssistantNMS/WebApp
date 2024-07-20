@@ -70,7 +70,11 @@ const NavBarUnconnected: React.FC<IProps> = (props: IProps) => {
               <BaseFloatingActionButton
                 keyString="LanguageDropdownFloatingActionButton"
                 tooltipText={translate(LocaleKey.appLanguage)}
-                icon={<i className="material-icons">language</i>}
+                icon={
+                  <i className="material-icons" title="change language">
+                    language
+                  </i>
+                }
                 onClick={showLangDropdown}
               />
               <div className={classNames('dropdown-menu dropdown-menu-right noselect', { show: langDropdownVisible })} draggable={false}>

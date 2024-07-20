@@ -66,7 +66,9 @@ const ListTile: React.FC<IAssistantAppLinkListTileProps> = (props: IAssistantApp
               children.push(
                 <a key={l.type + index} href={l.url} className="uppercase secondary-colour" target="_blank" rel="noopener noreferrer">
                   <b>{l.type}</b>&nbsp;
-                  <i className="material-icons small">open_in_new</i>
+                  <i className="material-icons small" title="open">
+                    open_in_new
+                  </i>
                 </a>,
               );
 

@@ -59,7 +59,9 @@ export const ShareDialog: React.FC<IProps> = (props: IProps) => {
           <ul className="clearfix">
             <li>
               <a href="https://app.nmsassistant.com" onClick={copyFunc} className="share-button share">
-                <i className="material-icons">content_copy</i>
+                <i className="material-icons" title="copy">
+                  content_copy
+                </i>
               </a>
             </li>
             <li>
