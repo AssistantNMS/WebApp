@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -16,48 +15,46 @@ import { translate } from '../../../localization/Translate';
 import { LocaleKey } from '../../../localization/LocaleKey';
 
 interface IWithDepInj {
-    gameItemService: GameItemService;
+  gameItemService: GameItemService;
 }
 
 interface IWithoutDepInj extends ChargeBy {
-    totalChargeAmount: number;
+  totalChargeAmount: number;
 }
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 const ChargeByItemListTileClass: React.FC<IProps> = (props: IProps) => {
-    const [item, setItem] = useState<GameItemModel>();
+  const [item, setItem] = useState<GameItemModel>();
 
-    useEffect(() => {
-        fetchData(props.Id);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+  useEffect(() => {
+    fetchData(props.Id);
+  }, []);
 
-    const fetchData = async (itemId: string) => {
-        const itemDetails = await props.gameItemService.getItemDetails(itemId);
-        setItem(itemDetails.value);
-    }
+  const fetchData = async (itemId: string) => {
+    const itemDetails = await props.gameItemService.getItemDetails(itemId);
+    setItem(itemDetails.value);
+  };
 
-    if (item == null) {
-        return (<TileLoading />);
-    }
+  if (item == null) {
+    return <TileLoading />;
+  }
 
-    return (
-        <Link to={`${catalogueItem}/${props.Id}`} data-id="ChargeByItemListTile" className="gen-item-container" draggable={false}>
-            <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} />
-            <div className="gen-item-content-container">
-                <TextContainer text={item.Name} additionalCss="full" />
-                <div className="quantity-container">{translate(LocaleKey.quantity)}: {roundDecimalNum(props.totalChargeAmount / props.Value)}</div>
-            </div>
-        </Link>
-    );
-}
+  return (
+    <Link to={`${catalogueItem}/${props.Id}`} data-id="ChargeByItemListTile" className="gen-item-container" draggable={false}>
+      <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} />
+      <div className="gen-item-content-container">
+        <TextContainer text={item.Name} additionalCss="full" />
+        <div className="quantity-container">
+          {translate(LocaleKey.quantity)}: {roundDecimalNum(props.totalChargeAmount / props.Value)}
+        </div>
+      </div>
+    </Link>
+  );
+};
 
-const ChargeByItemListTileWithDepInj = withServices<IWithoutDepInj, IWithDepInj>(
-    ChargeByItemListTileClass,
-    (services: IDependencyInjection) => ({
-        gameItemService: services.gameItemService,
-    })
-);
+const ChargeByItemListTileWithDepInj = withServices<IWithoutDepInj, IWithDepInj>(ChargeByItemListTileClass, (services: IDependencyInjection) => ({
+  gameItemService: services.gameItemService,
+}));
 
 export const ChargeByItemListTile = (props: IWithoutDepInj): JSX.Element => <ChargeByItemListTileWithDepInj {...props} />;

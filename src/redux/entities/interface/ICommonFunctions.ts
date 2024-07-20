@@ -1,3 +1,3 @@
 export interface ICommonFunctions {
-    setLoadingStatus: (isLoading: boolean, text?: string) => void;
+  setLoadingStatus: (isLoading: boolean, text?: string) => void;
 }

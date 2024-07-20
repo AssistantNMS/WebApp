@@ -1,4 +1,4 @@
 export interface FavouriteItem {
-    Id: string;
-    Icon: string;
+  Id: string;
+  Icon: string;
 }

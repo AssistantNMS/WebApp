@@ -5,21 +5,21 @@ import { getFavouriteItems } from '../../redux/modules/favourite/selector';
 import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 
 export interface IReduxProps {
-    favourites: Array<FavouriteItem>
-    removeItemFromFavourites: (favouriteItemId: string) => void;
+  favourites: Array<FavouriteItem>;
+  removeItemFromFavourites: (favouriteItemId: string) => void;
 }
 
 export const mapStateToProps = (state: State) => {
-    return {
-        favourites: getFavouriteItems(state)
-    };
+  return {
+    favourites: getFavouriteItems(state),
+  };
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const mapDispatchToProps = (dispatch: any) => {
-
-    let newProps: any = {};
-    newProps.removeItemFromFavourites = (itemId: string) => {
-        dispatch(removeItemFromFavourite(itemId));
-    };
-    return { ...newProps };
-}
+  return {
+    removeItemFromFavourites: (itemId: string) => {
+      dispatch(removeItemFromFavourite(itemId));
+    },
+  };
+};

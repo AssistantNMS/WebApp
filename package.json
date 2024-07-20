@@ -6,11 +6,13 @@
     "start": "env-cmd --file ./.env.development react-scripts start",
     "build-prod": "env-cmd --file ./.env.production react-scripts build",
     "build-staging": "env-cmd --file ./.env.staging react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "lint": "npx eslint src/**",
+    "lint:fix": "npx eslint src/** --fix",
+    "prettier": "npx prettier src/**/*.ts src/**/*.tsx --write",
+    "test": "react-scripts test"
   },
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.7.2",
     "classnames": "^2.3.1",
     "dayjs": "^1.11.2",
     "env-cmd": "^10.1.0",
@@ -34,12 +36,14 @@
     "react-tippy": "^1.4.0",
     "react-toastify": "^9.0.3",
     "react-vertical-timeline-component": "^3.5.2",
-    "redux": "^4.2.0",
     "sass": "^1.72.0",
     "sweetalert2": "^11.4.17"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.1.1",
+    "@eslint/js": "^9.7.0",
     "@types/node": "^12.20.54",
+    "@types/object-hash": "^3.0.6",
     "@types/react": "^18.0.11",
     "@types/react-dom": "^18.0.5",
     "@types/react-helmet": "^6.1.5",
@@ -48,10 +52,9 @@
     "@types/react-redux": "^7.1.24",
     "@types/react-router-dom": "^5.3.3",
     "@types/react-vertical-timeline-component": "^3.3.3",
+    "globals": "^15.8.0",
+    "redux": "^4.2.0",
     "typescript": "^4.7.3"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [

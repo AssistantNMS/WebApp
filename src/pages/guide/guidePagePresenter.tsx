@@ -10,36 +10,32 @@ import { Guide } from '../../contracts/guide/guide';
 import { LocaleKey } from '../../localization/LocaleKey';
 
 interface IProps {
-    // Container State
-    title: string;
-    guideItems: Guide[];
-    status: NetworkState;
+  // Container State
+  title: string;
+  guideItems: Guide[];
+  status: NetworkState;
 }
 
 export const GuidePagePresenter: React.FC<IProps> = (props: IProps) => {
-    const displayGuides = () => {
-        if (props.status === NetworkState.Loading) return;
-        if (props.status === NetworkState.Error ||
-            !props.guideItems ||
-            props.guideItems.length < 1) {
-            return (<h2>{translate(LocaleKey.noItems)}</h2>);
-        }
-        return (<GenericListPresenter list={props.guideItems} presenter={GuideCardListTile} />);
+  const displayGuides = () => {
+    if (props.status === NetworkState.Loading) return;
+    if (props.status === NetworkState.Error || !props.guideItems || props.guideItems.length < 1) {
+      return <h2>{translate(LocaleKey.noItems)}</h2>;
     }
+    return <GenericListPresenter list={props.guideItems} presenter={GuideCardListTile} />;
+  };
 
-    return (
-        <DefaultAnimation>
-            <HeadComponent title={props.title} />
-            <NavBar title={props.title} />
-            <div className="content">
-                <div className="container full pt1">
-                    <div className="row">
-                        <div className="col-12">
-                            {displayGuides()}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </DefaultAnimation>
-    );
-}
+  return (
+    <DefaultAnimation>
+      <HeadComponent title={props.title} />
+      <NavBar title={props.title} />
+      <div className="content">
+        <div className="container full pt1">
+          <div className="row">
+            <div className="col-12">{displayGuides()}</div>
+          </div>
+        </div>
+      </div>
+    </DefaultAnimation>
+  );
+};

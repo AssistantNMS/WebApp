@@ -9,24 +9,26 @@ import { GoogleSignedInState } from '../../contracts/enum/GoogleSignedInState';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 
 interface IProps {
-    // Container props
-    name: string;
-    email: string;
-    imageUrl: string;
-    status: GoogleSignedInState;
+  // Container props
+  name: string;
+  email: string;
+  imageUrl: string;
+  status: GoogleSignedInState;
 
-    // Container specific
-    successfulSignIn: (googleSignInEvent: any) => void;
-    failedSignIn: () => void;
-    logout: () => void;
+  // Container specific
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  successfulSignIn: (googleSignInEvent: any) => void;
+  failedSignIn: () => void;
+  logout: () => void;
 }
 
 export const SyncPresenter: React.FC<IProps> = (props: IProps) => {
-    const displayAccount = () => {
-        if (props.status === GoogleSignedInState.Default || props.status === GoogleSignedInState.Failed) {
-            return (<>
-                <div className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                    {/* <GoogleLogin
+  const displayAccount = () => {
+    if (props.status === GoogleSignedInState.Default || props.status === GoogleSignedInState.Failed) {
+      return (
+        <>
+          <div className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+            {/* <GoogleLogin
                         theme="dark"
                         scope="email https://www.googleapis.com/auth/drive.file"
                         clientId={window.config.googleClientId}
@@ -35,54 +37,54 @@ export const SyncPresenter: React.FC<IProps> = (props: IProps) => {
                         cookiePolicy={'single_host_origin'}
                         isSignedIn={true}
                     /> */}
-                </div>
-            </>
-            );
-        }
+          </div>
+        </>
+      );
+    }
 
-        if (props.status === GoogleSignedInState.Success) {
-            return (
-                <>
-                    <div className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                        <CardButton
-                            title={props.name}
-                            url="/"
-                            imageUrl={props.imageUrl}
-                        />
-                    </div>
-                    <div className="col-12"></div>
-                    <div className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                        {/* <GoogleLogout
+    if (props.status === GoogleSignedInState.Success) {
+      return (
+        <>
+          <div className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+            <CardButton title={props.name} url="/" imageUrl={props.imageUrl} />
+          </div>
+          <div className="col-12"></div>
+          <div className="col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+            {/* <GoogleLogout
                             {...{ theme: 'dark' }}
                             clientId={window.config.googleClientId}
                             onLogoutSuccess={props.logout}
                         /> */}
-                    </div>
-                    <div className="col-12"><hr style={{ marginTop: '2em' }} /></div>
-                </>
-            );
-        }
+          </div>
+          <div className="col-12">
+            <hr style={{ marginTop: '2em' }} />
+          </div>
+        </>
+      );
     }
+  };
 
-    const title = translate(LocaleKey.synchronize);
-    return (
-        <DefaultAnimation>
-            <HeadComponent title={title} />
-            <NavBar title={title} />
-            <div className="content">
-                <div className="container full pt1">
-                    <div className="row justify">
-                        {
-                            (props.status === GoogleSignedInState.Loading)
-                                ? <h1>Loading</h1>
-                                : <>
-                                    <div className="col-12"><h3>{translate(LocaleKey.account)}</h3></div>
-                                    {displayAccount()}
-                                </>
-                        }
-                    </div>
+  const title = translate(LocaleKey.synchronize);
+  return (
+    <DefaultAnimation>
+      <HeadComponent title={title} />
+      <NavBar title={title} />
+      <div className="content">
+        <div className="container full pt1">
+          <div className="row justify">
+            {props.status === GoogleSignedInState.Loading ? (
+              <h1>Loading</h1>
+            ) : (
+              <>
+                <div className="col-12">
+                  <h3>{translate(LocaleKey.account)}</h3>
                 </div>
-            </div>
-        </DefaultAnimation>
-    );
-}
+                {displayAccount()}
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+    </DefaultAnimation>
+  );
+};

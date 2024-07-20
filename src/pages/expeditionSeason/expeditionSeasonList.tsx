@@ -15,61 +15,52 @@ import { ExpeditionSeasonTiles } from './expeditionSeasonTiles';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 
 interface IWithDepInj {
-    apiService: ApiService;
-    gameItemService: GameItemService;
+  apiService: ApiService;
+  gameItemService: GameItemService;
 }
-interface IWithoutDepInj {
-}
+interface IWithoutDepInj {}
 
-interface IProps extends IWithDepInj, IWithoutDepInj {
-}
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 const ExpeditionSeasonListUnconnected: React.FC<IProps> = (props: IProps) => {
-    const [currentExpedition, setCurrentExpedition] = useState<ExpeditionSeasonViewModel>();
-    const [currentExpeditionStatus, setCurrentExpeditionStatus] = useState<NetworkState>(NetworkState.Loading);
+  const [currentExpedition, setCurrentExpedition] = useState<ExpeditionSeasonViewModel>();
+  const [currentExpeditionStatus, setCurrentExpeditionStatus] = useState<NetworkState>(NetworkState.Loading);
 
-    useEffect(() => {
-        fetchCurrentExpedition();
-        // eslint-disable-next-line
-    }, []);
+  useEffect(() => {
+    fetchCurrentExpedition();
+  }, []);
 
-    const fetchCurrentExpedition = async () => {
-        const expeditionResult = await props.apiService.getCurrentExpedition();
-        if (!expeditionResult.isSuccess) {
-            setCurrentExpedition(anyObject);
-            setCurrentExpeditionStatus(NetworkState.Error);
-            return;
-        }
-        setCurrentExpedition(expeditionResult.value);
-        setCurrentExpeditionStatus(NetworkState.Success);
+  const fetchCurrentExpedition = async () => {
+    const expeditionResult = await props.apiService.getCurrentExpedition();
+    if (!expeditionResult.isSuccess) {
+      setCurrentExpedition(anyObject);
+      setCurrentExpeditionStatus(NetworkState.Error);
+      return;
     }
+    setCurrentExpedition(expeditionResult.value);
+    setCurrentExpeditionStatus(NetworkState.Success);
+  };
 
-    const title = translate(LocaleKey.seasonalExpeditionSeasons);
-    return (
-        <DefaultAnimation>
-            <HeadComponent title={title} />
-            <NavBar title={title} />
-            <div className="content">
-                <div className="container full pt1 pb5">
-                    <CurrentExpeditionSeasonHeader
-                        key={currentExpeditionStatus.toString()}
-                        networkState={currentExpeditionStatus}
-                        seasonDetails={currentExpedition}
-                    />
-                    <ExpeditionSeasonTiles
-                        gameItemService={props.gameItemService}
-                    />
-                </div>
-            </div>
-        </DefaultAnimation>
-    );
-}
+  const title = translate(LocaleKey.seasonalExpeditionSeasons);
+  return (
+    <DefaultAnimation>
+      <HeadComponent title={title} />
+      <NavBar title={title} />
+      <div className="content">
+        <div className="container full pt1 pb5">
+          <CurrentExpeditionSeasonHeader
+            key={currentExpeditionStatus.toString()}
+            networkState={currentExpeditionStatus}
+            seasonDetails={currentExpedition}
+          />
+          <ExpeditionSeasonTiles gameItemService={props.gameItemService} />
+        </div>
+      </div>
+    </DefaultAnimation>
+  );
+};
 
-
-export const ExpeditionSeasonList = withServices<IWithoutDepInj, IWithDepInj>(
-    ExpeditionSeasonListUnconnected,
-    (services: IDependencyInjection) => ({
-        apiService: services.apiService,
-        gameItemService: services.gameItemService,
-    })
-);
+export const ExpeditionSeasonList = withServices<IWithoutDepInj, IWithDepInj>(ExpeditionSeasonListUnconnected, (services: IDependencyInjection) => ({
+  apiService: services.apiService,
+  gameItemService: services.gameItemService,
+}));

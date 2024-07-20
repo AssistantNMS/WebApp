@@ -1,6 +1,6 @@
 ﻿/* Auto Generated */
 
 export interface TranslationImageViewModel {
-    guid: any;
-    imagePath: string;
+  guid: any;
+  imagePath: string;
 }

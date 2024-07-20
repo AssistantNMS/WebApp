@@ -1,9 +1,9 @@
 ﻿/* Auto Generated */
 
 export enum UserActivityActionType {
-    unknown,
-    create,
-    read,
-    update,
-    delete,
+  unknown,
+  create,
+  read,
+  update,
+  delete,
 }

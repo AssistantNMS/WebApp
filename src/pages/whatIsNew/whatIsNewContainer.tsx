@@ -12,63 +12,63 @@ import { AssistantAppsApiService } from '../../services/api/AssistantAppsApiServ
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
 
 interface IWithDepInj {
-    assistantAppsApiService: AssistantAppsApiService;
+  assistantAppsApiService: AssistantAppsApiService;
 }
-interface IWithoutDepInj { }
-interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
+interface IWithoutDepInj {}
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps {}
 
 interface IState {
-    whatIsNewItems: Array<VersionViewModel>;
-    whatIsNewStatus: NetworkState;
-    whatIsNewSearchObj: VersionSearchViewModel;
+  whatIsNewItems: Array<VersionViewModel>;
+  whatIsNewStatus: NetworkState;
+  whatIsNewSearchObj: VersionSearchViewModel;
 }
 
 export class WhatIsNewContainerUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+  constructor(props: IProps) {
+    super(props);
 
-        this.state = {
-            whatIsNewItems: [],
-            whatIsNewStatus: NetworkState.Loading,
-            whatIsNewSearchObj: {
-                appGuid: window.config?.assistantAppsAppGuid ?? defaultConfig.assistantAppsAppGuid,
-                platforms: [PlatformType.web],
-                languageCode: props.language,
-                page: 1,
-            },
+    this.state = {
+      whatIsNewItems: [],
+      whatIsNewStatus: NetworkState.Loading,
+      whatIsNewSearchObj: {
+        appGuid: window.config?.assistantAppsAppGuid ?? defaultConfig.assistantAppsAppGuid,
+        platforms: [PlatformType.web],
+        languageCode: props.language,
+        page: 1,
+      },
+    };
+
+    const { whatIsNewSearchObj } = this.state;
+    this.fetchWhatIsNewItems(whatIsNewSearchObj);
+  }
+
+  fetchWhatIsNewItems = async (whatIsNewSearchObj: VersionSearchViewModel) => {
+    const service = this.props.assistantAppsApiService;
+    const whatIsNewListResult = await service.getWhatIsNewItems(whatIsNewSearchObj);
+    if (!whatIsNewListResult.isSuccess) {
+      this.setState(() => {
+        return {
+          whatIsNewStatus: NetworkState.Error,
         };
-
-        const { whatIsNewSearchObj } = this.state;
-        this.fetchWhatIsNewItems(whatIsNewSearchObj);
+      });
+      return;
     }
+    this.setState(() => {
+      return {
+        whatIsNewItems: whatIsNewListResult.value,
+        whatIsNewStatus: NetworkState.Success,
+      };
+    });
+  };
 
-    fetchWhatIsNewItems = async (whatIsNewSearchObj: VersionSearchViewModel) => {
-        const service = this.props.assistantAppsApiService;
-        const whatIsNewListResult = await service.getWhatIsNewItems(whatIsNewSearchObj);
-        if (!whatIsNewListResult.isSuccess) {
-            this.setState(() => {
-                return {
-                    whatIsNewStatus: NetworkState.Error
-                }
-            });
-            return;
-        }
-        this.setState(() => {
-            return {
-                whatIsNewItems: whatIsNewListResult.value,
-                whatIsNewStatus: NetworkState.Success
-            }
-        });
-    }
-
-    render() {
-        return (<WhatIsNewPresenter {...this.state} />);
-    }
+  render() {
+    return <WhatIsNewPresenter {...this.state} />;
+  }
 }
 
 export const WhatIsNewContainer = withServices<IWithoutDepInj, IWithDepInj>(
-    connect(mapStateToProps, mapDispatchToProps)(WhatIsNewContainerUnconnected),
-    (services: IDependencyInjection) => ({
-        assistantAppsApiService: services.assistantAppsApiService,
-    })
+  connect(mapStateToProps, mapDispatchToProps)(WhatIsNewContainerUnconnected),
+  (services: IDependencyInjection) => ({
+    assistantAppsApiService: services.assistantAppsApiService,
+  }),
 );

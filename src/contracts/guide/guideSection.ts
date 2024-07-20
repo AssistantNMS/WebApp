@@ -1,6 +1,6 @@
-import { GuideSectionItem } from "./guideSectionItem";
+import { GuideSectionItem } from './guideSectionItem';
 
 export interface GuideSection {
-    heading: String;
-    items: Array<GuideSectionItem>;
+  heading: string;
+  items: Array<GuideSectionItem>;
 }

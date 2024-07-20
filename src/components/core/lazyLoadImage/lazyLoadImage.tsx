@@ -1,43 +1,42 @@
-
 import * as React from 'react';
 import { ILazyLoadImageProps } from './ILazyLoadImageProps';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const ReactLazy = require('react-lazy-load-image-component');
 
 interface IState {
-    imageNotFound: boolean
+  imageNotFound: boolean;
 }
 
 export class LazyLoadImage extends React.Component<ILazyLoadImageProps, IState> {
-    constructor(props: ILazyLoadImageProps) {
-        super(props);
+  constructor(props: ILazyLoadImageProps) {
+    super(props);
 
-        this.state = {
-            imageNotFound: false
-        }
-    }
+    this.state = {
+      imageNotFound: false,
+    };
+  }
 
-    errorLoadingImage = () => {
-        this.setState({
-            imageNotFound: true
-        })
-    }
+  errorLoadingImage = () => {
+    this.setState({
+      imageNotFound: true,
+    });
+  };
 
-    render() {
-        const { src, notFoundImageSrc, effect, ...unused } = this.props;
-        const notFoundImageSource = notFoundImageSrc || '/assets/images/unknown.png';
-        const imageSource = (src && src.length > 5) ? src : notFoundImageSrc;
-        return (
-            <ReactLazy.LazyLoadImage
-                placeholderSrc={'/assets/images/loader.svg'}
-                src={this.state.imageNotFound ? notFoundImageSource : imageSource}
-                title={this.props.title ? this.props.title : this.props.alt}
-                height={this.props.height}
-                effect={this.props.effect ? this.props.effect : "blur"}
-                onError={this.errorLoadingImage}
-                draggable={false}
-                {...unused}
-            />
-        );
-    }
-
+  render() {
+    const { src, notFoundImageSrc, ...unused } = this.props;
+    const notFoundImageSource = notFoundImageSrc || '/assets/images/unknown.png';
+    const imageSource = src && src.length > 5 ? src : notFoundImageSrc;
+    return (
+      <ReactLazy.LazyLoadImage
+        placeholderSrc={'/assets/images/loader.svg'}
+        src={this.state.imageNotFound ? notFoundImageSource : imageSource}
+        title={this.props.title ? this.props.title : this.props.alt}
+        height={this.props.height}
+        effect={this.props.effect ? this.props.effect : 'blur'}
+        onError={this.errorLoadingImage}
+        draggable={false}
+        {...unused}
+      />
+    );
+  }
 }

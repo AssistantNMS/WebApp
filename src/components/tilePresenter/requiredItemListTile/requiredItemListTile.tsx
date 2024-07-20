@@ -13,97 +13,105 @@ import { ActionContainer } from '../../common/tile/actionContainer';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { TextContainer } from '../../common/tile/textContainer';
 import { TileLoading } from '../../core/loading/loading';
+import { OnClickEvent } from '../../../helper/typescriptHacks';
 
 interface IWithDepInj {
-    gameItemService: GameItemService;
+  gameItemService: GameItemService;
 }
 
 interface IWithoutDepInj extends RequiredItem {
-    quantityLabel?: string;
-    quantityIconSuffix?: ReactNode;
-    quantityTemplate?: (quantity: number) => ReactNode;
-    editItem?: () => void;
-    removeItem?: () => void;
+  quantityLabel?: string;
+  quantityIconSuffix?: ReactNode;
+  quantityTemplate?: (quantity: number) => ReactNode;
+  editItem?: () => void;
+  removeItem?: () => void;
 }
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 const RequiredItemListTileClass: React.FC<IProps> = (props: IProps) => {
-    const [item, setItem] = useState<GameItemModel>();
+  const [item, setItem] = useState<GameItemModel>();
 
-    useEffect(() => {
-        fetchData(props.Id);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+  useEffect(() => {
+    fetchData(props.Id);
+  }, []);
 
-    const fetchData = async (itemId: string) => {
-        const itemDetails = await props.gameItemService.getItemDetails(itemId);
-        setItem(itemDetails.value);
+  const fetchData = async (itemId: string) => {
+    const itemDetails = await props.gameItemService.getItemDetails(itemId);
+    setItem(itemDetails.value);
+  };
+
+  const editItem = async (e: OnClickEvent) => {
+    e.preventDefault?.();
+    if (props.editItem != null) {
+      props.editItem();
+    }
+  };
+
+  const removeItem = (e: OnClickEvent) => {
+    e.preventDefault?.();
+    if (props.removeItem != null) {
+      props.removeItem();
+    }
+  };
+
+  const getActions = () => {
+    const result = [];
+    if (props.editItem) {
+      result.push(
+        <i key="edit" onClick={editItem} className="material-icons">
+          edit
+        </i>,
+      );
+    }
+    if (props.removeItem) {
+      result.push(
+        <i key="delete" onClick={removeItem} className="material-icons">
+          delete
+        </i>,
+      );
+    }
+    return result;
+  };
+
+  if (item == null) {
+    return <TileLoading />;
+  }
+
+  const hasQuantity = props.Quantity != null && props.Quantity > 0;
+  const additionalCss = hasQuantity ? '' : 'full';
+  const quantityRenderer = (hasQ: boolean, localProps: IProps) => {
+    if (!hasQ) return null;
+
+    if (localProps.quantityTemplate != null) {
+      return <div className="quantity-container">{localProps.quantityTemplate(localProps.Quantity)}</div>;
     }
 
-    const editItem = async (e: any) => {
-        e.preventDefault();
-        if (props.editItem != null) {
-            props.editItem();
-        }
-    }
-
-    const removeItem = (e: any) => {
-        e.preventDefault();
-        if (props.removeItem != null) {
-            props.removeItem();
-        }
-    }
-
-    const getActions = () => {
-        const result = [];
-        if (props.editItem) {
-            result.push(<i key="edit" onClick={editItem} className="material-icons">edit</i>);
-        }
-        if (props.removeItem) {
-            result.push(<i key="delete" onClick={removeItem} className="material-icons">delete</i>);
-        }
-        return result;
-    }
-
-    if (item == null) {
-        return (<TileLoading />);
-    }
-
-    const hasQuantity = (props.Quantity != null && props.Quantity > 0);
-    const additionalCss = hasQuantity ? "" : "full";
-    const quantityRenderer = (hasQ: boolean, localProps: IProps) => {
-        if (!hasQ) return null;
-
-        if (localProps.quantityTemplate != null) {
-            return (
-                <div className="quantity-container">{localProps.quantityTemplate(localProps.Quantity)}</div>
-            );
-        }
-
-        const label = localProps.quantityLabel ?? translate(LocaleKey.quantity);
-        return (
-            <div className="quantity-container">{label}: {localProps.Quantity} {localProps.quantityIconSuffix}</div>
-        );
-    }
-
+    const label = localProps.quantityLabel ?? translate(LocaleKey.quantity);
     return (
-        <Link to={`${catalogueItem}/${props.Id}`} data-id="RequiredItemListTile" className="gen-item-container" draggable={false}>
-            <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} />
-            <div className="gen-item-content-container">
-                <TextContainer text={item.Name} additionalCss={additionalCss} />
-                {quantityRenderer(hasQuantity, { ...props })}
-                <ActionContainer actions={getActions()} />
-            </div>
-        </Link>
+      <div className="quantity-container">
+        {label}: {localProps.Quantity} {localProps.quantityIconSuffix}
+      </div>
     );
-}
+  };
+
+  return (
+    <Link to={`${catalogueItem}/${props.Id}`} data-id="RequiredItemListTile" className="gen-item-container" draggable={false}>
+      <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} />
+      <div className="gen-item-content-container">
+        <TextContainer text={item.Name} additionalCss={additionalCss} />
+        {quantityRenderer(hasQuantity, { ...props })}
+        <ActionContainer actions={getActions()} />
+      </div>
+    </Link>
+  );
+};
 
 const RequiredItemListTileClassWithDepInj = withServices<IWithoutDepInj, IWithDepInj>(
-    RequiredItemListTileClass,
-    (services: IDependencyInjection) => ({
-        gameItemService: services.gameItemService,
-    })
+  RequiredItemListTileClass,
+  (services: IDependencyInjection) => ({
+    gameItemService: services.gameItemService,
+  }),
 );
 
 export const RequiredItemListTile = (props: IWithoutDepInj): JSX.Element => <RequiredItemListTileClassWithDepInj {...props} />;

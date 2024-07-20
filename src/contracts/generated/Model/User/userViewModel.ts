@@ -1,8 +1,8 @@
 ﻿/* Auto Generated */
 
 export interface UserViewModel {
-    guid: any;
-    username: string;
-    token: string;
-    joinDate: Date;
+  guid: any;
+  username: string;
+  token: string;
+  joinDate: Date;
 }

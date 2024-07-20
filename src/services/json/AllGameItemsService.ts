@@ -2,10 +2,9 @@ import { CatalogueType } from '../../constants/CatalogueType';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { RequiredItem } from '../../contracts/RequiredItem';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
-import { getHashForObject } from '../../helper/hashHelper';
+import { getOrAddFunc } from '../../helper/hashHelper';
 import { gameItemModelSortByName } from '../../helper/sortHelper';
 import { anyObject } from '../../helper/typescriptHacks';
-import { getCurrentLang } from '../../localization/Translate';
 import { GameItemService } from './GameItemService';
 
 export class AllGameItemsService {
@@ -24,31 +23,21 @@ export class AllGameItemsService {
   ];
 
   private _gameItemService: GameItemService;
-  private _hashLookup: any;
+  private _hashLookup: Record<string, unknown> = {};
 
   constructor(gameItemService: GameItemService) {
     this._gameItemService = gameItemService;
     this._hashLookup = anyObject;
   }
 
-  async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
-    const hash = getHashForObject([argsArray, getCurrentLang()]);
-
-    if (this._hashLookup != null && this._hashLookup[hash] != null) {
-      return this._hashLookup[hash];
-    }
-
-    const jsonResult = await promise();
-    this._hashLookup[hash] = jsonResult;
-    return jsonResult;
-  }
+  _getOrAdd = getOrAddFunc(this._hashLookup);
 
   async getAllItems(): Promise<ResultWithValue<Array<GameItemModel>>> {
     return this.getSelectedCatalogueItems(this.typesArray);
   }
 
   async getSelectedCatalogueItems(catalogueTypes: Array<string>): Promise<ResultWithValue<Array<GameItemModel>>> {
-    return this._getOrAdd(() => this._getSelectedCatalogueItems(catalogueTypes), ['getSelectedCatalogueItems', catalogueTypes]);
+    return this._getOrAdd(() => this._getSelectedCatalogueItems(catalogueTypes), ['getSelectedCatalogueItems', ...catalogueTypes]);
   }
 
   async _getSelectedCatalogueItems(catalogueTypes: Array<string>): Promise<ResultWithValue<Array<GameItemModel>>> {
@@ -76,14 +65,14 @@ export class AllGameItemsService {
       return {
         isSuccess: true,
         value: ordered,
-        errorMessage: ''
-      }
+        errorMessage: '',
+      };
     } catch (ex) {
       return {
         isSuccess: false,
         value: result,
-        errorMessage: (ex as any).message
-      }
+        errorMessage: (ex as Error).message,
+      };
     }
   }
 
@@ -102,8 +91,9 @@ export class AllGameItemsService {
       };
     }
     try {
-      const craftableItems = allGenericItemsResult.value
-        .filter((r: GameItemModel) => (r.RequiredItems ?? []).find((ri: RequiredItem) => ri.Id === itemId) != null);
+      const craftableItems = allGenericItemsResult.value.filter(
+        (r: GameItemModel) => (r.RequiredItems ?? []).find((ri: RequiredItem) => ri.Id === itemId) != null,
+      );
       return {
         isSuccess: true,
         value: craftableItems,
@@ -113,7 +103,7 @@ export class AllGameItemsService {
       return {
         isSuccess: false,
         value: anyObject,
-        errorMessage: (exception as any).errorMessage,
+        errorMessage: (exception as Error).message,
       };
     }
   }

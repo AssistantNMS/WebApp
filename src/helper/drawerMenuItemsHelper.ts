@@ -9,7 +9,15 @@ import { ExpeditionSeason } from '../contracts/helloGames/expeditionSeason';
 import { LocaleKey } from '../localization/LocaleKey';
 import { GameItemService } from '../services/json/GameItemService';
 import { getCatalogueMenuItems } from './catalogueMenuItemsHelper';
-import { catalogueMenuItem, communityMissionMenuItem, expeditionMenuItem, favouritesMenuItem, nmsfmMenuItem, patreonMenuItem, whatIsNewMenuItem } from '../constants/MenuItems';
+import {
+  catalogueMenuItem,
+  communityMissionMenuItem,
+  expeditionMenuItem,
+  favouritesMenuItem,
+  nmsfmMenuItem,
+  patreonMenuItem,
+  whatIsNewMenuItem,
+} from '../constants/MenuItems';
 
 export const menuItemSeperator = {
   name: 'Separator',
@@ -17,7 +25,7 @@ export const menuItemSeperator = {
   icon: 'separator',
   iconType: DrawerIconType.Material,
   isSeparator: true,
-  isActive: false
+  isActive: false,
 };
 
 export const getMenuSection1 = () => {
@@ -47,14 +55,14 @@ export const getMenuSection1 = () => {
   });
   menuItems.push(menuItemSeperator);
   return menuItems;
-}
+};
 
 export const getMenuSection2 = () => {
   const menuItems: Array<DrawerMenuItem> = [];
   menuItems.push(favouritesMenuItem());
   menuItems.push({
     ...catalogueMenuItem(),
-    subs: getCatalogueMenuItems()
+    subs: getCatalogueMenuItems(),
   });
   menuItems.push(nmsfmMenuItem());
   // menuItems.push({
@@ -66,7 +74,7 @@ export const getMenuSection2 = () => {
   // });
   menuItems.push(menuItemSeperator);
   return menuItems;
-}
+};
 
 export const getMenuSection3 = () => {
   const menuItems: Array<DrawerMenuItem> = [];
@@ -143,7 +151,7 @@ export const getMenuSection3 = () => {
   });
   menuItems.push(menuItemSeperator);
   return menuItems;
-}
+};
 
 export const getMenuSection4 = (): Array<DrawerMenuItem> => {
   const menuItems: Array<DrawerMenuItem> = [];
@@ -173,11 +181,11 @@ export const getMenuSection4 = (): Array<DrawerMenuItem> => {
         isActive: false,
       };
     }),
-    isActive: false
+    isActive: false,
   });
   menuItems.push(menuItemSeperator);
   return menuItems;
-}
+};
 
 export const getMenuSection4Async = async (gameItemService: GameItemService): Promise<Array<DrawerMenuItem>> => {
   const expeditionsTask = gameItemService.getAllSeasonExpeditions();
@@ -213,7 +221,7 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
     icon: 'map',
     iconType: DrawerIconType.Material,
     subs: subs,
-    isActive: false
+    isActive: false,
   });
   menuItems.push({
     name: translate(LocaleKey.weekendMission).toString(),
@@ -229,11 +237,11 @@ export const getMenuSection4Async = async (gameItemService: GameItemService): Pr
         isActive: false,
       };
     }),
-    isActive: false
+    isActive: false,
   });
   menuItems.push(menuItemSeperator);
   return menuItems;
-}
+};
 
 export const getMenuSection5 = (): Array<DrawerMenuItem> => {
   const menuItems: Array<DrawerMenuItem> = [];
@@ -253,7 +261,7 @@ export const getMenuSection5 = (): Array<DrawerMenuItem> => {
   });
   menuItems.push({
     name: translate(LocaleKey.feedback).toString(),
-    link: "https://tools.nmsassistant.com/feedback",
+    link: 'https://tools.nmsassistant.com/feedback',
     icon: 'feedback',
     iconType: DrawerIconType.Material,
     isActive: false,
@@ -273,4 +281,4 @@ export const getMenuSection5 = (): Array<DrawerMenuItem> => {
     isActive: false,
   });
   return menuItems;
-}
+};

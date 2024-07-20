@@ -1,5 +1,5 @@
 ﻿/* Auto Generated */
 
 export interface TwitterMessageViewModel {
-    message: string;
+  message: string;
 }

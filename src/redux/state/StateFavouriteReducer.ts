@@ -1,5 +1,5 @@
-import { FavouriteItem } from "../../contracts/favourite/favouriteItem";
+import { FavouriteItem } from '../../contracts/favourite/favouriteItem';
 
 export class StateFavouriteReducer {
-    public favouriteItems!: Array<FavouriteItem>;
+  public favouriteItems!: Array<FavouriteItem>;
 }

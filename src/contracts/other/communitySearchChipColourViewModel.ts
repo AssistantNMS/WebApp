@@ -1,4 +1,4 @@
 ﻿export interface CommunitySearchChipColourViewModel {
-    name: string;
-    colour: string;
+  name: string;
+  colour: string;
 }

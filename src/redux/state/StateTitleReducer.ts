@@ -1,4 +1,3 @@
-
 export class StateTitleReducer {
-    public titles!: Array<string>;
+  public titles!: Array<string>;
 }

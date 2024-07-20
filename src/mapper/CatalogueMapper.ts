@@ -33,7 +33,7 @@ export const mapToLocale = (catalogueType: string): string => {
       return translate(LocaleKey.proceduralProductsJson).toString();
   }
   return '';
-}
+};
 
 export const getCatalogueFromItemId = (itemId: string): string => {
   if (itemId.includes(IdPrefix.RawMaterial)) return CatalogueType.rawMaterials;
@@ -49,4 +49,4 @@ export const getCatalogueFromItemId = (itemId: string): string => {
   if (itemId.includes(IdPrefix.ConTech)) return CatalogueType.constructedTechnology;
   if (itemId.includes(IdPrefix.Other)) return CatalogueType.others;
   return '';
-}
+};

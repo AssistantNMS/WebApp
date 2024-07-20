@@ -16,76 +16,66 @@ import { translate } from '../../localization/Translate';
 import { DataJsonService } from '../../services/json/DataJsonService';
 
 interface IWithDepInj {
-    dataService: DataJsonService;
+  dataService: DataJsonService;
 }
-interface IWithoutDepInj { }
-interface IProps extends IWithDepInj, IWithoutDepInj { }
-
+interface IWithoutDepInj {}
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 export const TwitchDropPageUnconnected: React.FC<IProps> = (props: IProps) => {
-    const [twitchDropItems, setTwitchDropItems] = useState<Array<TwitchDrop>>([]);
-    const [networkStatus, setStatus] = useState<NetworkState>(NetworkState.Loading);
+  const [twitchDropItems, setTwitchDropItems] = useState<Array<TwitchDrop>>([]);
+  const [networkStatus, setStatus] = useState<NetworkState>(NetworkState.Loading);
 
-    useEffect(() => {
-        fetchTwitchDrop();
-        // eslint-disable-next-line
-    }, []);
+  useEffect(() => {
+    fetchTwitchDrop();
+  }, []);
 
-    const fetchTwitchDrop = async () => {
-        const twitchDropsResult = await props.dataService.getTwitchDrops();
-        if (!twitchDropsResult.isSuccess) {
-            setTwitchDropItems([]);
-            setStatus(NetworkState.Error);
-            return;
-        }
-
-        setTwitchDropItems(twitchDropsResult.value);
-        setStatus(NetworkState.Success);
+  const fetchTwitchDrop = async () => {
+    const twitchDropsResult = await props.dataService.getTwitchDrops();
+    if (!twitchDropsResult.isSuccess) {
+      setTwitchDropItems([]);
+      setStatus(NetworkState.Error);
+      return;
     }
 
-    const displayTwitchDrops = (localTwitchDropItems: Array<TwitchDrop>) => {
+    setTwitchDropItems(twitchDropsResult.value);
+    setStatus(NetworkState.Success);
+  };
 
-        if (networkStatus === NetworkState.Loading) {
-            return <SmallLoading />
-        }
+  const displayTwitchDrops = (localTwitchDropItems: Array<TwitchDrop>) => {
+    if (networkStatus === NetworkState.Loading) {
+      return <SmallLoading />;
+    }
 
-        if (networkStatus === NetworkState.Error) {
-            return <Error />
-        }
+    if (networkStatus === NetworkState.Error) {
+      return <Error />;
+    }
 
-        if (localTwitchDropItems == null || localTwitchDropItems.length === 0) return (
-            <h2>{translate(LocaleKey.noItems)}</h2>
-        );
+    if (localTwitchDropItems == null || localTwitchDropItems.length === 0) return <h2>{translate(LocaleKey.noItems)}</h2>;
 
-        return (
-            <GenericListPresenter
-                list={localTwitchDropItems}
-                presenter={TwitchCampaignTile}
-                isCentered={shouldListBeCentered(localTwitchDropItems.length)}
-                limitResultsTo={12}
-            />
-        );
-    };
-
-    const title = translate(LocaleKey.twitchDrop);
     return (
-        <DefaultAnimation>
-            <HeadComponent title={title} />
-            <NavBar title={title} />
-            <div data-id="TwitchDropPage" className="content">
-                <div className="row full pt1 pb5">
-                    <div className="col-12">
-                        {displayTwitchDrops(twitchDropItems)}
-                    </div>
-                </div>
-            </div>
-        </DefaultAnimation>
+      <GenericListPresenter
+        list={localTwitchDropItems}
+        presenter={TwitchCampaignTile}
+        isCentered={shouldListBeCentered(localTwitchDropItems.length)}
+        limitResultsTo={12}
+      />
     );
-}
+  };
 
-export const TwitchDropPage = withServices<IWithoutDepInj, IWithDepInj>(
-    TwitchDropPageUnconnected,
-    (services: IDependencyInjection) => ({
-        dataService: services.dataJsonService,
-    })
-);
+  const title = translate(LocaleKey.twitchDrop);
+  return (
+    <DefaultAnimation>
+      <HeadComponent title={title} />
+      <NavBar title={title} />
+      <div data-id="TwitchDropPage" className="content">
+        <div className="row full pt1 pb5">
+          <div className="col-12">{displayTwitchDrops(twitchDropItems)}</div>
+        </div>
+      </div>
+    </DefaultAnimation>
+  );
+};
+
+export const TwitchDropPage = withServices<IWithoutDepInj, IWithDepInj>(TwitchDropPageUnconnected, (services: IDependencyInjection) => ({
+  dataService: services.dataJsonService,
+}));

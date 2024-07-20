@@ -18,126 +18,115 @@ import { SearchBar } from '../../components/common/searchBar';
 import { CommunitySearchBottomModalSheet } from '../../components/tilePresenter/community/communitySearchBottomModalSheet';
 
 interface IWithDepInj {
-    apiService: ApiService;
+  apiService: ApiService;
 }
-interface IWithoutDepInj { }
-interface IProps extends IWithDepInj, IWithoutDepInj { }
-
+interface IWithoutDepInj {}
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 export const CommunityLinksPageUnconnected: React.FC<IProps> = (props: IProps) => {
-    const [communityLinks, setCommunityLinks] = useState<Array<CommunitySearchViewModel>>([]);
-    const [chipColours, setChipColours] = useState<Array<CommunitySearchChipColourViewModel>>([]);
-    const [networkStatus, setStatus] = useState<NetworkState>(NetworkState.Loading);
-    const [searchTerm, setSearchTerm] = useState<string>('');
-    const [selectedItem, setSelectedItem] = useState<CommunitySearchViewModel>();
+  const [communityLinks, setCommunityLinks] = useState<Array<CommunitySearchViewModel>>([]);
+  const [chipColours, setChipColours] = useState<Array<CommunitySearchChipColourViewModel>>([]);
+  const [networkStatus, setStatus] = useState<NetworkState>(NetworkState.Loading);
+  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [selectedItem, setSelectedItem] = useState<CommunitySearchViewModel>();
 
-    const gridPresenter = CommunitySearchListTile(chipColours, (newItem: CommunitySearchViewModel) => setSelectedItem(newItem));
+  const gridPresenter = CommunitySearchListTile(chipColours, (newItem: CommunitySearchViewModel) => setSelectedItem(newItem));
 
-    useEffect(() => {
-        fetchCommunityLinks();
-        fetchCommunityLinkChipColours();
-        // eslint-disable-next-line
-    }, []);
+  useEffect(() => {
+    fetchCommunityLinks();
+    fetchCommunityLinkChipColours();
+  }, []);
 
-    const fetchCommunityLinks = async () => {
-        const communityLinksResult = await props.apiService.getCommunityLinks();
-        if (!communityLinksResult.isSuccess) {
-            setCommunityLinks([]);
-            setStatus(NetworkState.Error);
-            return;
-        }
-
-        setCommunityLinks(communityLinksResult.value);
-        setStatus(NetworkState.Success);
+  const fetchCommunityLinks = async () => {
+    const communityLinksResult = await props.apiService.getCommunityLinks();
+    if (!communityLinksResult.isSuccess) {
+      setCommunityLinks([]);
+      setStatus(NetworkState.Error);
+      return;
     }
 
-    const fetchCommunityLinkChipColours = async () => {
-        const communityLinkChipColoursResult = await props.apiService.getCommunityLinksChipColours();
-        if (!communityLinkChipColoursResult.isSuccess) {
-            setChipColours([]);
-            setStatus(NetworkState.Error);
-            return;
-        }
+    setCommunityLinks(communityLinksResult.value);
+    setStatus(NetworkState.Success);
+  };
 
-        setChipColours(communityLinkChipColoursResult.value);
-        setStatus(NetworkState.Success);
+  const fetchCommunityLinkChipColours = async () => {
+    const communityLinkChipColoursResult = await props.apiService.getCommunityLinksChipColours();
+    if (!communityLinkChipColoursResult.isSuccess) {
+      setChipColours([]);
+      setStatus(NetworkState.Error);
+      return;
     }
 
-    const onSearchTextChange = (e: any) => {
-        e?.persist?.();
+    setChipColours(communityLinkChipColoursResult.value);
+    setStatus(NetworkState.Success);
+  };
 
-        const searchValue = e?.target?.value || '';
-        if (searchTerm === searchValue) return;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const onSearchTextChange = (e: any) => {
+    e?.persist?.();
 
-        setSearchTerm(searchValue);
+    const searchValue = e?.target?.value || '';
+    if (searchTerm === searchValue) return;
+
+    setSearchTerm(searchValue);
+  };
+
+  const getDisplayItems = (localItems: Array<CommunitySearchViewModel>, searchText?: string): Array<CommunitySearchViewModel> => {
+    const newDisplayItems = new Array<CommunitySearchViewModel>();
+    for (const item of localItems) {
+      if (searchText != null) {
+        if (
+          item.name.toLowerCase().includes(searchText.toLowerCase()) === false &&
+          item.tags.findIndex((t) => t.toLowerCase().includes(searchText.toLowerCase())) < 0
+        )
+          continue;
+      }
+      newDisplayItems.push(item);
+    }
+    return newDisplayItems;
+  };
+
+  const displayComunityLinks = (communityLinks: Array<CommunitySearchViewModel>) => {
+    if (networkStatus === NetworkState.Loading) {
+      return <SmallLoading />;
     }
 
-    const getDisplayItems = (localItems: Array<CommunitySearchViewModel>, searchText?: string): Array<CommunitySearchViewModel> => {
-        const newDisplayItems = new Array<CommunitySearchViewModel>();
-        for (const item of localItems) {
-            if (searchText != null) {
-                if (
-                    (item.name.toLowerCase().includes(searchText.toLowerCase()) === false) &&
-                    (item.tags.findIndex(t => t.toLowerCase().includes(searchText.toLowerCase())) < 0)
-                ) continue;
-            }
-            newDisplayItems.push(item);
-        }
-        return newDisplayItems;
+    if (networkStatus === NetworkState.Error) {
+      return <Error />;
     }
 
-    const displayComunityLinks = (communityLinks: Array<CommunitySearchViewModel>) => {
+    if (communityLinks == null || communityLinks.length === 0) return <h2>{translate(LocaleKey.noItems)}</h2>;
 
-        if (networkStatus === NetworkState.Loading) {
-            return <SmallLoading />
-        }
-
-        if (networkStatus === NetworkState.Error) {
-            return <Error />
-        }
-
-        if (communityLinks == null || communityLinks.length === 0) return (
-            <h2>{translate(LocaleKey.noItems)}</h2>
-        );
-
-        return (
-            <GenericListPresenter
-                list={getDisplayItems(communityLinks, searchTerm)}
-                presenter={gridPresenter}
-                identifier={(item: CommunitySearchViewModel) => item.name + item.tags.join(',')}
-            />
-        );
-    };
-
-    const title = translate(LocaleKey.communityLinks);
     return (
-        <DefaultAnimation>
-            <HeadComponent title={title} />
-            <NavBar title={title} />
-            <div data-id="CommunityLinks" className="content">
-                <SearchBar
-                    searchTerm={searchTerm}
-                    onSearchTextChange={onSearchTextChange}
-                />
-                <div className="row full pb5">
-                    <div className="col-12 community-search-list">
-                        {displayComunityLinks(communityLinks)}
-                    </div>
-                </div>
-                <CommunitySearchBottomModalSheet
-                    isModalOpen={selectedItem != null}
-                    itemToDisplay={selectedItem!}
-                    chipColours={chipColours}
-                    setModalClosed={() => setSelectedItem(undefined)}
-                />
-            </div>
-        </DefaultAnimation>
+      <GenericListPresenter
+        list={getDisplayItems(communityLinks, searchTerm)}
+        presenter={gridPresenter}
+        identifier={(item: CommunitySearchViewModel) => item.name + item.tags.join(',')}
+      />
     );
-}
+  };
 
-export const CommunityLinksPage = withServices<IWithoutDepInj, IWithDepInj>(
-    CommunityLinksPageUnconnected,
-    (services: IDependencyInjection) => ({
-        apiService: services.apiService,
-    })
-);
+  const title = translate(LocaleKey.communityLinks);
+  return (
+    <DefaultAnimation>
+      <HeadComponent title={title} />
+      <NavBar title={title} />
+      <div data-id="CommunityLinks" className="content">
+        <SearchBar searchTerm={searchTerm} onSearchTextChange={onSearchTextChange} />
+        <div className="row full pb5">
+          <div className="col-12 community-search-list">{displayComunityLinks(communityLinks)}</div>
+        </div>
+        <CommunitySearchBottomModalSheet
+          isModalOpen={selectedItem != null}
+          itemToDisplay={selectedItem!}
+          chipColours={chipColours}
+          setModalClosed={() => setSelectedItem(undefined)}
+        />
+      </div>
+    </DefaultAnimation>
+  );
+};
+
+export const CommunityLinksPage = withServices<IWithoutDepInj, IWithDepInj>(CommunityLinksPageUnconnected, (services: IDependencyInjection) => ({
+  apiService: services.apiService,
+}));

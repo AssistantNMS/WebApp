@@ -1,9 +1,9 @@
 ﻿/* Auto Generated */
 
 export interface UserViewModel {
-    guid: any;
-    profileImageUrl: string;
-    username: string;
-    joinDate: Date;
-    isAdmin: boolean;
+  guid: any;
+  profileImageUrl: string;
+  username: string;
+  joinDate: Date;
+  isAdmin: boolean;
 }

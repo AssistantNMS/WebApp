@@ -14,78 +14,65 @@ import { translate } from '../../localization/Translate';
 import { DataJsonService } from '../../services/json/DataJsonService';
 
 interface IWithDepInj {
-    dataJsonService: DataJsonService;
+  dataJsonService: DataJsonService;
 }
 
-interface IWithoutDepInj {
-}
+interface IWithoutDepInj {}
 
-interface IProps extends IWithDepInj, IWithoutDepInj {
-}
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 export const NewItemsPresenterUnconnected: React.FC<IProps> = (props: IProps) => {
+  const [updates, setUpdates] = useState<Array<MajorUpdateItem>>([]);
+  const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
 
-    const [updates, setUpdates] = useState<Array<MajorUpdateItem>>([]);
-    const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
+  useEffect(() => {
+    loadUpdateItems();
+  }, []);
 
-    useEffect(() => {
-        loadUpdateItems();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
-    const loadUpdateItems = async () => {
-        const dataServ = props.dataJsonService;
-        const updatesResult = await dataServ.getMajorUpdateItems();
-        if (updatesResult.isSuccess === false) {
-            setNetworkState(NetworkState.Error);
-            return;
-        }
-        setUpdates(updatesResult.value);
-        setNetworkState(NetworkState.Success);
+  const loadUpdateItems = async () => {
+    const dataServ = props.dataJsonService;
+    const updatesResult = await dataServ.getMajorUpdateItems();
+    if (updatesResult.isSuccess === false) {
+      setNetworkState(NetworkState.Error);
+      return;
     }
+    setUpdates(updatesResult.value);
+    setNetworkState(NetworkState.Success);
+  };
 
-    const displayUpdateItems = (updates: Array<MajorUpdateItem>) => {
-        if (updates == null || updates.length === 0) return (
-            <div className="col-12 mt-3em">
-                <h2>{translate(LocaleKey.noItems)}</h2>
-            </div>
-        );
-        return updates.map((item: MajorUpdateItem, index: number) => (
-            <div
-                key={`update-${item.guid}-${index}`}
-                className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6"
-            >
-                <UpdateItemCardListTile
-                    {...item}
-                />
-            </div>
-        ));
-    }
+  const displayUpdateItems = (updates: Array<MajorUpdateItem>) => {
+    if (updates == null || updates.length === 0)
+      return (
+        <div className="col-12 mt-3em">
+          <h2>{translate(LocaleKey.noItems)}</h2>
+        </div>
+      );
+    return updates.map((item: MajorUpdateItem, index: number) => (
+      <div key={`update-${item.guid}-${index}`} className="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-6">
+        <UpdateItemCardListTile {...item} />
+      </div>
+    ));
+  };
 
-    const renderContent = (updates: Array<MajorUpdateItem>) => {
-        if (networkState === NetworkState.Loading) return (<SmallLoading />);
-        if (networkState === NetworkState.Error) return (<Error />);
+  const renderContent = (updates: Array<MajorUpdateItem>) => {
+    if (networkState === NetworkState.Loading) return <SmallLoading />;
+    if (networkState === NetworkState.Error) return <Error />;
 
-        return displayUpdateItems(updates);
-    }
+    return displayUpdateItems(updates);
+  };
 
-    const title = translate(LocaleKey.newItemsAdded);
-    return (
-        <DefaultAnimation>
-            <HeadComponent title={title} />
-            <NavBar title={title} />
-            <div className="content">
-                <div className="row full pt1 pb5">
-                    {renderContent(updates)}
-                </div>
-            </div>
-        </DefaultAnimation>
-    );
-}
+  const title = translate(LocaleKey.newItemsAdded);
+  return (
+    <DefaultAnimation>
+      <HeadComponent title={title} />
+      <NavBar title={title} />
+      <div className="content">
+        <div className="row full pt1 pb5">{renderContent(updates)}</div>
+      </div>
+    </DefaultAnimation>
+  );
+};
 
-export const NewItemsPresenter = withServices<IWithoutDepInj, IWithDepInj>(
-    NewItemsPresenterUnconnected,
-    (services: IDependencyInjection) => ({
-        dataJsonService: services.dataJsonService,
-    })
-);
+export const NewItemsPresenter = withServices<IWithoutDepInj, IWithDepInj>(NewItemsPresenterUnconnected, (services: IDependencyInjection) => ({
+  dataJsonService: services.dataJsonService,
+}));

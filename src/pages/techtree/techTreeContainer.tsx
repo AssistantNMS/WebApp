@@ -8,44 +8,36 @@ import { mapStateToProps, IReduxProps } from './techTree.Redux';
 import { TechTreePresenter } from './techTreePresenter';
 
 interface IWithDepInj {
-    gameItemService: GameItemService;
+  gameItemService: GameItemService;
 }
-interface IWithoutDepInj { }
+interface IWithoutDepInj {}
 
-interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps {}
 
 const TechTreeContainerUnconnected: React.FC<IProps> = (props: IProps) => {
-    const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
-    const [trees, setTrees] = useState<Array<UnlockableTechTree>>([]);
+  const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
+  const [trees, setTrees] = useState<Array<UnlockableTechTree>>([]);
 
-    useEffect(() => {
-        fetchData();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-    const fetchData = async () => {
-        const techTreesResult = await props.gameItemService.getTechTree();
-        if (!techTreesResult.isSuccess) {
-            setNetworkState(NetworkState.Error);
-            return;
-        }
-        setTrees(techTreesResult.value);
-        setNetworkState(NetworkState.Success);
+  const fetchData = async () => {
+    const techTreesResult = await props.gameItemService.getTechTree();
+    if (!techTreesResult.isSuccess) {
+      setNetworkState(NetworkState.Error);
+      return;
     }
+    setTrees(techTreesResult.value);
+    setNetworkState(NetworkState.Success);
+  };
 
-    return (
-        <TechTreePresenter
-            {...props}
-            trees={trees}
-            networkState={networkState}
-            selectedLanguage={props.selectedLanguage}
-        />
-    );
-}
+  return <TechTreePresenter {...props} trees={trees} networkState={networkState} selectedLanguage={props.selectedLanguage} />;
+};
 
 export const TechTreeContainer = withServices<IWithoutDepInj, IWithDepInj>(
-    connect(mapStateToProps)(TechTreeContainerUnconnected),
-    (services: IDependencyInjection) => ({
-        gameItemService: services.gameItemService,
-    })
+  connect(mapStateToProps)(TechTreeContainerUnconnected),
+  (services: IDependencyInjection) => ({
+    gameItemService: services.gameItemService,
+  }),
 );

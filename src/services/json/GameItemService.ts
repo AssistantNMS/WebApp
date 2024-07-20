@@ -10,33 +10,22 @@ import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { TitleData } from '../../contracts/TitleData';
 import { UnlockableTechTree } from '../../contracts/tree/techTree';
-import { getHashForObject } from '../../helper/hashHelper';
+import { getOrAddFunc } from '../../helper/hashHelper';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
-import { getCurrentLang, translate } from '../../localization/Translate';
+import { translate } from '../../localization/Translate';
 import { getCatalogueFromItemId, mapToLocale } from '../../mapper/CatalogueMapper';
 import { BaseJsonService } from './BaseJsonService';
 
 export class GameItemService extends BaseJsonService {
-
-  private _hashLookup: any;
+  private _hashLookup: Record<string, unknown> = {};
 
   constructor() {
     super();
     this._hashLookup = anyObject;
   }
 
-  async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
-    const hash = getHashForObject([argsArray, getCurrentLang()]);
-
-    if (this._hashLookup != null && this._hashLookup[hash] != null) {
-      return this._hashLookup[hash];
-    }
-
-    const jsonResult = await promise();
-    this._hashLookup[hash] = jsonResult;
-    return jsonResult;
-  }
+  _getOrAdd = getOrAddFunc(this._hashLookup);
 
   async getListfromJson(catalogueType: string): Promise<ResultWithValue<Array<GameItemModel>>> {
     return this._getOrAdd(() => this._getListfromJson(catalogueType), ['_getListfromJson', catalogueType]);
@@ -49,24 +38,39 @@ export class GameItemService extends BaseJsonService {
     }
 
     const langResult = await this.getAsset<Array<GameItemModel>>(`json/${detailJson}.json`);
-    if (!langResult.isSuccess) return { isSuccess: false, value: [], errorMessage: langResult.errorMessage };
+    if (!langResult.isSuccess)
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: langResult.errorMessage,
+      };
 
     return {
       isSuccess: true,
-      value: langResult.value.filter(item => item.Name.length > 0),
-      errorMessage: ''
-    }
+      value: langResult.value.filter((item) => item.Name.length > 0),
+      errorMessage: '',
+    };
   }
 
   getItemDetails = async (itemId: string): Promise<ResultWithValue<GameItemModel>> => {
     return this._getOrAdd(() => this._getItemDetails(itemId), ['_getItemDetails', itemId]);
-  }
+  };
   async _getItemDetails(itemId: string): Promise<ResultWithValue<GameItemModel>> {
-    if (!itemId) return { isSuccess: false, value: anyObject, errorMessage: 'itemId specified is invallid' };
+    if (!itemId)
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: 'itemId specified is invallid',
+      };
 
     const catalogue = getCatalogueFromItemId(itemId);
     const list = await this.getListfromJson(catalogue);
-    if (!list.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: list.errorMessage };
+    if (!list.isSuccess)
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: list.errorMessage,
+      };
 
     for (const item of list.value) {
       if (item.Id !== itemId) continue;
@@ -74,8 +78,8 @@ export class GameItemService extends BaseJsonService {
       return {
         isSuccess: true,
         value: item,
-        errorMessage: ''
-      }
+        errorMessage: '',
+      };
     }
 
     return {
@@ -84,7 +88,6 @@ export class GameItemService extends BaseJsonService {
       errorMessage: 'no matching item found',
     };
   }
-
 
   async getRequiredItems(itemId: string): Promise<ResultWithValue<Array<RequiredItemDetails>>> {
     return this._getOrAdd(() => this._getRequiredItems(itemId), ['_getRequiredItems', itemId]);
@@ -100,8 +103,7 @@ export class GameItemService extends BaseJsonService {
         errorMessage: allGenericItemsResult.errorMessage,
       };
     }
-    const craftableItems = allGenericItemsResult.value
-      .filter((r: any) => r.Id === itemId);
+    const craftableItems = allGenericItemsResult.value.filter((r: GameItemModel) => r.Id === itemId);
     if (craftableItems.length < 1)
       return {
         isSuccess: false,
@@ -117,12 +119,12 @@ export class GameItemService extends BaseJsonService {
         Icon: itemDetails.value.Icon,
         Name: itemDetails.value.Name,
         Colour: itemDetails.value.Colour,
-        Quantity: item.Quantity
-      }
+        Quantity: item.Quantity,
+      };
       return requiredItemDetails;
     });
     const requiredItemsResults = await Promise.all(requiredItemsTasks);
-    const requiredItems: any = requiredItemsResults.filter(r => r);
+    const requiredItems = requiredItemsResults.filter((r) => r != null) as Array<RequiredItemDetails>;
 
     return {
       isSuccess: true,
@@ -142,13 +144,18 @@ export class GameItemService extends BaseJsonService {
     }
 
     const langResult = await this.getAsset<Array<Processor>>(`json/${detailJson}.json`);
-    if (!langResult.isSuccess) return { isSuccess: false, value: [], errorMessage: langResult.errorMessage };
+    if (!langResult.isSuccess)
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: langResult.errorMessage,
+      };
 
     return {
       isSuccess: true,
       value: langResult.value,
-      errorMessage: ''
-    }
+      errorMessage: '',
+    };
   }
 
   async getProcessorsByOutput(catalogueType: string, itemId: string): Promise<ResultWithValue<Array<Processor>>> {
@@ -165,7 +172,7 @@ export class GameItemService extends BaseJsonService {
       };
     }
 
-    const refFromOutputs = allGenericItemsResult.value.filter((ref => ref.Output.Id === itemId));
+    const refFromOutputs = allGenericItemsResult.value.filter((ref) => ref.Output.Id === itemId);
     if (refFromOutputs.length < 1)
       return {
         isSuccess: false,
@@ -180,8 +187,10 @@ export class GameItemService extends BaseJsonService {
     };
   }
 
-  getRefinedByOutput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByOutput(CatalogueType.refinery, itemId);
-  getCookingByOutput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByOutput(CatalogueType.nutrientProcessor, itemId);
+  getRefinedByOutput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> =>
+    await this.getProcessorsByOutput(CatalogueType.refinery, itemId);
+  getCookingByOutput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> =>
+    await this.getProcessorsByOutput(CatalogueType.nutrientProcessor, itemId);
 
   async getProcessorsByInput(catalogueType: string, itemId: string): Promise<ResultWithValue<Array<Processor>>> {
     return this._getOrAdd(() => this._getProcessorsByInput(catalogueType, itemId), ['_getProcessorsByInput', catalogueType, itemId]);
@@ -197,7 +206,7 @@ export class GameItemService extends BaseJsonService {
       };
     }
 
-    const refFromOutputs = allGenericItemsResult.value.filter((ref => ref.Inputs.find((inp: any) => inp.Id === itemId) != null));
+    const refFromOutputs = allGenericItemsResult.value.filter((ref) => ref.Inputs.find((inp: RequiredItem) => inp.Id === itemId) != null);
     if (refFromOutputs.length < 1)
       return {
         isSuccess: false,
@@ -212,8 +221,10 @@ export class GameItemService extends BaseJsonService {
     };
   }
 
-  getRefinedByInput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByInput(CatalogueType.refinery, itemId);
-  getCookingByInput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> => await this.getProcessorsByInput(CatalogueType.nutrientProcessor, itemId);
+  getRefinedByInput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> =>
+    await this.getProcessorsByInput(CatalogueType.refinery, itemId);
+  getCookingByInput = async (itemId: string): Promise<ResultWithValue<Array<Processor>>> =>
+    await this.getProcessorsByInput(CatalogueType.nutrientProcessor, itemId);
 
   async getProcessorById(catalogueType: string, itemId: string): Promise<ResultWithValue<Processor>> {
     return this._getOrAdd(() => this._getProcessorById(catalogueType, itemId), ['_getProcessorById', catalogueType, itemId]);
@@ -221,11 +232,11 @@ export class GameItemService extends BaseJsonService {
   async _getProcessorById(catalogueType: string, itemId: string): Promise<ResultWithValue<Processor>> {
     const allGenericItemsResult = await this.getProcessorListfromJson(catalogueType);
 
-    let result: any = {};
+    let result: Processor | undefined;
     if (!allGenericItemsResult.isSuccess) {
       return {
         isSuccess: false,
-        value: result,
+        value: anyObject,
         errorMessage: allGenericItemsResult.errorMessage,
       };
     }
@@ -240,28 +251,27 @@ export class GameItemService extends BaseJsonService {
     if (!found) {
       return {
         isSuccess: false,
-        value: result,
+        value: anyObject,
         errorMessage: 'no matching item found',
       };
     }
 
     return {
       isSuccess: true,
-      value: result,
+      value: result!,
       errorMessage: '',
     };
   }
 
   getRefinedById = async (itemId: string): Promise<ResultWithValue<Processor>> => await this.getProcessorById(CatalogueType.refinery, itemId);
-  getCookingById = async (itemId: string): Promise<ResultWithValue<Processor>> => await this.getProcessorById(CatalogueType.nutrientProcessor, itemId);
+  getCookingById = async (itemId: string): Promise<ResultWithValue<Processor>> =>
+    await this.getProcessorById(CatalogueType.nutrientProcessor, itemId);
 
   async getRequiredItemDetails(itemId: string): Promise<ResultWithValue<Array<RequiredItemDetails>>> {
     return this._getOrAdd(() => this._getRequiredItemDetails(itemId), ['_getRequiredItemDetails', itemId]);
   }
   async _getRequiredItemDetails(itemId: string): Promise<ResultWithValue<Array<RequiredItemDetails>>> {
-    let processorRecipe = (itemId.includes('ref'))
-      ? await this.getRefinedById(itemId)
-      : await this.getCookingById(itemId);
+    const processorRecipe = itemId.includes('ref') ? await this.getRefinedById(itemId) : await this.getCookingById(itemId);
 
     if (!processorRecipe.isSuccess) {
       return {
@@ -285,12 +295,12 @@ export class GameItemService extends BaseJsonService {
         Icon: itemDetails.value.Icon,
         Name: itemDetails.value.Name,
         Colour: itemDetails.value.Colour,
-        Quantity: item.Quantity
-      }
+        Quantity: item.Quantity,
+      };
       return requiredItemDetails;
     });
     const requiredItemsResults = await Promise.all(requiredItemsTasks);
-    const requiredItems: any = requiredItemsResults.filter(r => r);
+    const requiredItems = requiredItemsResults.filter((r) => r != null) as Array<RequiredItemDetails>;
 
     return {
       isSuccess: true,
@@ -300,7 +310,7 @@ export class GameItemService extends BaseJsonService {
   }
 
   async getItemDetailsFromIdList(itemIdsList: Array<string>): Promise<ResultWithValue<Array<GameItemModel>>> {
-    return this._getOrAdd(() => this._getItemDetailsFromIdList(itemIdsList), ['_getItemDetailsFromIdList', itemIdsList]);
+    return this._getOrAdd(() => this._getItemDetailsFromIdList(itemIdsList), ['_getItemDetailsFromIdList', ...itemIdsList]);
   }
   async _getItemDetailsFromIdList(itemIdsList: Array<string>): Promise<ResultWithValue<Array<GameItemModel>>> {
     const itemDetailsTask = itemIdsList.map(async (itemId: string) => {
@@ -310,7 +320,7 @@ export class GameItemService extends BaseJsonService {
       return itemDetails;
     });
     const itemDetailsResults = await Promise.all(itemDetailsTask);
-    const itemDetails: any = itemDetailsResults.filter(r => r);
+    const itemDetails = itemDetailsResults.map((r) => r?.value).filter((r) => r != null) as Array<GameItemModel>;
 
     return {
       isSuccess: true,
@@ -320,19 +330,36 @@ export class GameItemService extends BaseJsonService {
   }
 
   async getWeekendMissionStage(weekendMissionJson: LocaleKey, seasonId: string, levelId: number): Promise<ResultWithValue<WeekendMissionStage>> {
-    return this._getOrAdd(() => this._getWeekendMissionStage(weekendMissionJson, seasonId, levelId), ['_getWeekendMissionStage', weekendMissionJson, seasonId, levelId]);
+    return this._getOrAdd(
+      () => this._getWeekendMissionStage(weekendMissionJson, seasonId, levelId),
+      ['_getWeekendMissionStage', weekendMissionJson, seasonId, levelId.toString()],
+    );
   }
   async _getWeekendMissionStage(weekendMissionJson: LocaleKey, seasonId: string, levelId: number): Promise<ResultWithValue<WeekendMissionStage>> {
-    let result: any = {};
-
-    if (!seasonId) return { isSuccess: false, value: result, errorMessage: 'seasonId specified is invallid' };
-    if (!levelId) return { isSuccess: false, value: result, errorMessage: 'levelId specified is invallid' };
+    if (!seasonId)
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: 'seasonId specified is invallid',
+      };
+    if (!levelId)
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: 'levelId specified is invallid',
+      };
 
     const path = translate(weekendMissionJson).toString();
     const weekendMissionsResult = await this.getAsset<Array<WeekendMission>>(`json/${path}.json`);
-    if (!weekendMissionsResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: result.errorMessage };
+    if (!weekendMissionsResult.isSuccess)
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: weekendMissionsResult.errorMessage,
+      };
 
     let found = false;
+    let result: WeekendMissionStage | undefined;
     for (const item of weekendMissionsResult.value) {
       if (item.Id !== seasonId) continue;
 
@@ -346,16 +373,16 @@ export class GameItemService extends BaseJsonService {
     if (!found) {
       return {
         isSuccess: false,
-        value: result,
+        value: anyObject,
         errorMessage: 'no matching item found',
       };
     }
 
     return {
       isSuccess: true,
-      value: result,
-      errorMessage: ''
-    }
+      value: result!,
+      errorMessage: '',
+    };
   }
 
   async getAllSeasonExpeditions(): Promise<ResultWithValue<Array<ExpeditionSeason>>> {
@@ -364,13 +391,18 @@ export class GameItemService extends BaseJsonService {
   async _getAllSeasonExpeditions(): Promise<ResultWithValue<Array<ExpeditionSeason>>> {
     const path = translate(LocaleKey.seasonalExpeditionJson).toString();
     const seasonExpeditionResult = await this.getAsset<Array<ExpeditionSeason>>(`json/${path}.json`);
-    if (!seasonExpeditionResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: seasonExpeditionResult.errorMessage };
+    if (!seasonExpeditionResult.isSuccess)
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: seasonExpeditionResult.errorMessage,
+      };
 
     return {
       isSuccess: true,
       value: seasonExpeditionResult.value,
-      errorMessage: ''
-    }
+      errorMessage: '',
+    };
   }
 
   async getTechTree(): Promise<ResultWithValue<Array<UnlockableTechTree>>> {
@@ -379,13 +411,18 @@ export class GameItemService extends BaseJsonService {
   async _getTechTree(): Promise<ResultWithValue<Array<UnlockableTechTree>>> {
     const path = translate(LocaleKey.techTreeJson).toString();
     const jsonResult = await this.getAsset<Array<UnlockableTechTree>>(`json/${path}.json`);
-    if (!jsonResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: jsonResult.errorMessage };
+    if (!jsonResult.isSuccess)
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: jsonResult.errorMessage,
+      };
 
     return {
       isSuccess: true,
       value: jsonResult.value,
-      errorMessage: ''
-    }
+      errorMessage: '',
+    };
   }
 
   async getTitles(): Promise<ResultWithValue<Array<TitleData>>> {
@@ -394,15 +431,19 @@ export class GameItemService extends BaseJsonService {
   async _getTitles(): Promise<ResultWithValue<Array<TitleData>>> {
     const path = translate(LocaleKey.titlesJson).toString();
     const jsonResult = await this.getAsset<Array<TitleData>>(`json/${path}.json`);
-    if (!jsonResult.isSuccess) return { isSuccess: false, value: anyObject, errorMessage: jsonResult.errorMessage };
+    if (!jsonResult.isSuccess)
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: jsonResult.errorMessage,
+      };
 
     return {
       isSuccess: true,
       value: jsonResult.value,
-      errorMessage: ''
-    }
+      errorMessage: '',
+    };
   }
-
 
   async getCreatureHarvestForItem(itemId: string): Promise<ResultWithValue<Array<CreatureHarvest>>> {
     return this._getOrAdd(() => this._getCreatureHarvestForItem(itemId), ['_getCreatureHarvestForItem', itemId]);
@@ -411,13 +452,18 @@ export class GameItemService extends BaseJsonService {
     const path = translate(LocaleKey.creatureHarvestJson).toString();
     const jsonResult = await this.getAsset<Array<CreatureHarvest>>(`json/${path}.json`);
 
-    if (!jsonResult.isSuccess) return { isSuccess: false, value: [], errorMessage: jsonResult.errorMessage };
+    if (!jsonResult.isSuccess)
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: jsonResult.errorMessage,
+      };
 
     const specificToItemId = jsonResult.value.filter((creatureHarvest) => creatureHarvest.ItemId === itemId);
     return {
       isSuccess: true,
       value: specificToItemId,
-      errorMessage: ''
-    }
+      errorMessage: '',
+    };
   }
 }

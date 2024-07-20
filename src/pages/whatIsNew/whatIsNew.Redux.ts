@@ -1,23 +1,22 @@
 import { State } from '../../redux/state';
 
 import { getCurrentLanguage } from '../../redux/modules/setting/selector';
+import { anyObject } from '../../helper/typescriptHacks';
 
 export interface IReduxProps {
-    language: string;
+  language: string;
 }
 
 export const mapStateToProps = (state: State): IReduxProps => {
-    return {
-        language: getCurrentLanguage(state),
-    };
+  return {
+    language: getCurrentLanguage(state),
+  };
 };
 
 export interface IReduxDispatchProps {
-    language: string;
+  language: string;
 }
 
-export const mapDispatchToProps = (dispatch: any): IReduxDispatchProps => {
-
-    let newProps: any = {};
-    return { ...newProps };
-}
+export const mapDispatchToProps = (): IReduxDispatchProps => {
+  return { ...anyObject };
+};

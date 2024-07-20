@@ -1,7 +1,7 @@
 import { DrawerIconType } from './enum/DrawerIconType';
 
 export interface IDrawerProps {
-  history: any;
+  history: unknown;
 }
 
 export interface DrawerMenuItem {

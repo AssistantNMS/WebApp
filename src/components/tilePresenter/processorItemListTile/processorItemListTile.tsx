@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -14,73 +13,68 @@ import { TextContainer } from '../../common/tile/textContainer';
 import { TileLoading } from '../../core/loading/loading';
 
 interface IWithDepInj {
-    gameItemService: GameItemService;
+  gameItemService: GameItemService;
 }
 
 interface IWithoutDepInj extends Processor {
-    singleItemImage: string;
-    doubleItemImage: string;
-    tripleItemImage: string;
+  singleItemImage: string;
+  doubleItemImage: string;
+  tripleItemImage: string;
 }
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
-
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 const ProcessorItemListTileClass: React.FC<IProps> = (props: IProps) => {
-    const [requiredItems, setRequiredItems] = useState<Array<RequiredItemDetails>>([]);
+  const [requiredItems, setRequiredItems] = useState<Array<RequiredItemDetails>>([]);
 
-    useEffect(() => {
-        fetchData([props.Output, ...props.Inputs]);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+  useEffect(() => {
+    fetchData([props.Output, ...props.Inputs]);
+  }, []);
 
-    const fetchData = async (items: Array<RequiredItem>) => {
-        const requiredItemsTasks = items.map(async (item: RequiredItem) => {
-            const itemDetails = await props.gameItemService.getItemDetails(item.Id);
-            if (!itemDetails.isSuccess) return null;
+  const fetchData = async (items: Array<RequiredItem>) => {
+    const requiredItemsTasks = items.map(async (item: RequiredItem) => {
+      const itemDetails = await props.gameItemService.getItemDetails(item.Id);
+      if (!itemDetails.isSuccess) return null;
 
-            const requiredItemDetails: RequiredItemDetails = {
-                Id: itemDetails.value.Id,
-                Icon: itemDetails.value.Icon,
-                Name: itemDetails.value.Name,
-                Colour: itemDetails.value.Colour,
-                Quantity: item.Quantity
-            }
-            return requiredItemDetails;
-        });
-        const requiredItemsResults = await Promise.all(requiredItemsTasks);
-        const requiredItems: Array<RequiredItemDetails | any> = requiredItemsResults.filter(r => r);
+      const requiredItemDetails: RequiredItemDetails = {
+        Id: itemDetails.value.Id,
+        Icon: itemDetails.value.Icon,
+        Name: itemDetails.value.Name,
+        Colour: itemDetails.value.Colour,
+        Quantity: item.Quantity,
+      };
+      return requiredItemDetails;
+    });
+    const requiredItemsResults = await Promise.all(requiredItemsTasks);
+    const requiredItems = requiredItemsResults.filter((r) => r != null) as Array<RequiredItemDetails>;
 
-        if (requiredItems.length < 1) {
-            console.error('Could not fetch data for all refiner inputs');
-            return;
-        }
-
-        setRequiredItems(requiredItems);
+    if (requiredItems.length < 1) {
+      console.error('Could not fetch data for all refiner inputs');
+      return;
     }
 
-    if (!requiredItems || requiredItems.length === 0) {
-        return (<TileLoading />);
-    }
+    setRequiredItems(requiredItems);
+  };
 
-    const colour = requiredItems.length > 0 ? requiredItems[0].Colour : '';
-    const [output, ...requiredItemsToDisplay] = requiredItems;
-    return (
-        <Link to={`${processorItem}/${props.Id}`} data-id="ProcessorItemListTile" className="gen-item-container" draggable={false}>
-            <ImageContainer Name={output.Name} Icon={output.Icon} Colour={colour} OutputQuantity={output.Quantity} />
-            <div className="gen-item-content-container">
-                <TextContainer text={output.Name} />
-                <RequiredItemsQuantityContainer requiredItems={requiredItemsToDisplay} />
-            </div>
-        </Link>
-    );
-}
+  if (!requiredItems || requiredItems.length === 0) {
+    return <TileLoading />;
+  }
 
-const ProcessorItemListTileWithDepInj = withServices<IWithoutDepInj, IWithDepInj>(
-    ProcessorItemListTileClass,
-    (services: IDependencyInjection) => ({
-        gameItemService: services.gameItemService,
-    })
-);
+  const colour = requiredItems.length > 0 ? requiredItems[0].Colour : '';
+  const [output, ...requiredItemsToDisplay] = requiredItems;
+  return (
+    <Link to={`${processorItem}/${props.Id}`} data-id="ProcessorItemListTile" className="gen-item-container" draggable={false}>
+      <ImageContainer Name={output.Name} Icon={output.Icon} Colour={colour} OutputQuantity={output.Quantity} />
+      <div className="gen-item-content-container">
+        <TextContainer text={output.Name} />
+        <RequiredItemsQuantityContainer requiredItems={requiredItemsToDisplay} />
+      </div>
+    </Link>
+  );
+};
 
-export const ProcessorItemListTile = (props: any | Processor): JSX.Element => <ProcessorItemListTileWithDepInj {...props} />;
+const ProcessorItemListTileWithDepInj = withServices<IWithoutDepInj, IWithDepInj>(ProcessorItemListTileClass, (services: IDependencyInjection) => ({
+  gameItemService: services.gameItemService,
+}));
+
+export const ProcessorItemListTile = (props: Processor): JSX.Element => <ProcessorItemListTileWithDepInj {...(props as IWithoutDepInj)} />;

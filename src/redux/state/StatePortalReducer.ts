@@ -1,6 +1,6 @@
-import { PortalRecord } from "../../contracts/portal/portalRecord";
+import { PortalRecord } from '../../contracts/portal/portalRecord';
 
 export class StatePortalReducer {
-    public portals!: Array<PortalRecord>;
-    public availableTags!: Array<string>;
+  public portals!: Array<PortalRecord>;
+  public availableTags!: Array<string>;
 }

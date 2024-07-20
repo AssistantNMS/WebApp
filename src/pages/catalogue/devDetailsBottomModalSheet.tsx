@@ -10,93 +10,95 @@ import { DevPropertyType } from '../../constants/DevProperty';
 import { ColourSwatch } from '../../components/common/colourSwatch';
 
 interface IProps {
-    appId: string;
-    isDetailPaneOpen: boolean;
-    dataJsonService: DataJsonService;
-    setDetailPaneOpen: (isOpen: boolean) => void;
+  appId: string;
+  isDetailPaneOpen: boolean;
+  dataJsonService: DataJsonService;
+  setDetailPaneOpen: (isOpen: boolean) => void;
 }
 
 export const DevDetailsBottomModalSheet: React.FC<IProps> = (props: IProps) => {
-    const [devItem, setDevItem] = useState<DevDetail>();
-    const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
+  const [devItem, setDevItem] = useState<DevDetail>();
+  const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
 
-    useEffect(() => {
-        fetchData(props.appId);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+  useEffect(() => {
+    fetchData(props.appId);
+  }, []);
 
-    const fetchData = async (itemId: string) => {
-        const devResult: ResultWithValue<Array<DevDetail>> = await props.dataJsonService.getDeveloperDetails();
-        if (devResult.isSuccess === false) {
-            setNetworkState(NetworkState.Error);
-            return;
-        }
-
-        let devData: DevDetail | undefined;
-        for (const devItem of devResult.value) {
-            if (devItem.Id === itemId) {
-                devData = devItem;
-                break;
-            }
-        }
-
-        if (devData != null) {
-            setDevItem(devData);
-            setNetworkState(NetworkState.Success);
-            return;
-        }
-        setNetworkState(NetworkState.Error);
+  const fetchData = async (itemId: string) => {
+    const devResult: ResultWithValue<Array<DevDetail>> = await props.dataJsonService.getDeveloperDetails();
+    if (devResult.isSuccess === false) {
+      setNetworkState(NetworkState.Error);
+      return;
     }
 
-    const renderContent = (devDetail: DevDetail | undefined) => {
-        if (networkState === NetworkState.Loading) {
-            return (<TileLoading />);
-        }
-        if (networkState === NetworkState.Error || devDetail == null) {
-            return (<div className="col-12"><Error /></div>);
-        }
+    let devData: DevDetail | undefined;
+    for (const devItem of devResult.value) {
+      if (devItem.Id === itemId) {
+        devData = devItem;
+        break;
+      }
+    }
 
-        const details = [
-            <React.Fragment key={`frag-appId`}>
-                <p key="appId"><b>AppId:&nbsp;&nbsp;</b>{props.appId}</p>
-                <hr />
-            </React.Fragment>
-        ];
-        for (let devPropIndex = 0; devPropIndex < devDetail.Properties.length; devPropIndex++) {
-            const devProp = devDetail.Properties[devPropIndex];
+    if (devData != null) {
+      setDevItem(devData);
+      setNetworkState(NetworkState.Success);
+      return;
+    }
+    setNetworkState(NetworkState.Error);
+  };
 
-            details.push(<React.Fragment key={`frag-${devProp.Type}-${devProp.Name}-${devProp.Value}`}>
-                <p key={`${devProp.Type}-${devProp.Name}-${devProp.Value}`}>
-                    <b>{devProp.Name}:&nbsp;&nbsp;</b>{devProp.Value}
-                    {(devProp.Type === DevPropertyType.Colour) && <ColourSwatch hex={devProp.Value} />}
-                </p>
-                {(devPropIndex < (devDetail.Properties.length - 1)) && <hr />}
-            </React.Fragment>);
-        }
+  const renderContent = (devDetail: DevDetail | undefined) => {
+    if (networkState === NetworkState.Loading) {
+      return <TileLoading />;
+    }
+    if (networkState === NetworkState.Error || devDetail == null) {
+      return (
+        <div className="col-12">
+          <Error />
+        </div>
+      );
+    }
 
-        return (
-            <div className="row scrollable">
-                <div className="col-12">
-                    {details}
-                </div>
-                <div className="col-12">
-                    <br /><br />
-                </div>
-            </div>
-        );
+    const details = [
+      <React.Fragment key={`frag-appId`}>
+        <p key="appId">
+          <b>AppId:&nbsp;&nbsp;</b>
+          {props.appId}
+        </p>
+        <hr />
+      </React.Fragment>,
+    ];
+    for (let devPropIndex = 0; devPropIndex < devDetail.Properties.length; devPropIndex++) {
+      const devProp = devDetail.Properties[devPropIndex];
+
+      details.push(
+        <React.Fragment key={`frag-${devProp.Type}-${devProp.Name}-${devProp.Value}`}>
+          <p key={`${devProp.Type}-${devProp.Name}-${devProp.Value}`}>
+            <b>{devProp.Name}:&nbsp;&nbsp;</b>
+            {devProp.Value}
+            {devProp.Type === DevPropertyType.Colour && <ColourSwatch hex={devProp.Value} />}
+          </p>
+          {devPropIndex < devDetail.Properties.length - 1 && <hr />}
+        </React.Fragment>,
+      );
     }
 
     return (
-        <BottomModalSheet
-            isOpen={props.isDetailPaneOpen}
-            onClose={() => props.setDetailPaneOpen(false)}
-            snapPoints={[600]}
-        >
-            <div className="content">
-                <div className="container full pt1">
-                    {renderContent(devItem)}
-                </div>
-            </div>
-        </BottomModalSheet>
+      <div className="row scrollable">
+        <div className="col-12">{details}</div>
+        <div className="col-12">
+          <br />
+          <br />
+        </div>
+      </div>
     );
-}
+  };
+
+  return (
+    <BottomModalSheet isOpen={props.isDetailPaneOpen} onClose={() => props.setDetailPaneOpen(false)} snapPoints={[600]}>
+      <div className="content">
+        <div className="container full pt1">{renderContent(devItem)}</div>
+      </div>
+    </BottomModalSheet>
+  );
+};

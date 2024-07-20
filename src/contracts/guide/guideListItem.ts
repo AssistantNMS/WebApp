@@ -1,4 +1,4 @@
 export interface GuideListItem {
-    folder: string;
-    file: string;
+  folder: string;
+  file: string;
 }

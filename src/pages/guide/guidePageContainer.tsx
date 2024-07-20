@@ -9,81 +9,76 @@ import { GuideService } from '../../services/json/GuideService';
 import { GuidePagePresenter } from './guidePagePresenter';
 
 interface IWithDepInj {
-    guideService: GuideService;
+  guideService: GuideService;
 }
 interface IWithoutDepInj {
-    selectedLanguage?: string;
+  selectedLanguage?: string;
 }
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 interface IState {
-    title: string;
-    guideItems: Guide[];
-    status: NetworkState;
+  title: string;
+  guideItems: Guide[];
+  status: NetworkState;
 }
 
 // TODO make functional component
 export class GuidePageContainerUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+  constructor(props: IProps) {
+    super(props);
 
-        this.state = {
-            title: translate(LocaleKey.guides),
-            guideItems: [],
-            status: NetworkState.Loading,
-        }
-    }
+    this.state = {
+      title: translate(LocaleKey.guides),
+      guideItems: [],
+      status: NetworkState.Loading,
+    };
+  }
 
-    componentDidMount() {
-        this.fetchData();
-    }
+  componentDidMount() {
+    this.fetchData();
+  }
 
-    componentDidUpdate(prevProps: IProps, prevState: IState) {
-        const prevSelectedLanguage = prevProps.selectedLanguage;
-        if (this.props.selectedLanguage !== prevSelectedLanguage) {
-            this.clearData();
-            this.fetchData();
-        }
+  componentDidUpdate(prevProps: IProps) {
+    const prevSelectedLanguage = prevProps.selectedLanguage;
+    if (this.props.selectedLanguage !== prevSelectedLanguage) {
+      this.clearData();
+      this.fetchData();
     }
+  }
 
-    clearData = async () => {
-        this.setState(() => {
-            return {
-                status: NetworkState.Loading,
-                guideItems: []
-            }
-        });
-    }
+  clearData = async () => {
+    this.setState(() => {
+      return {
+        status: NetworkState.Loading,
+        guideItems: [],
+      };
+    });
+  };
 
-    fetchData = async () => {
-        const itemsResult = await this.props.guideService.getListOfGuides();
-        if (!itemsResult.isSuccess) {
-            this.setState(() => {
-                return {
-                    status: NetworkState.Error
-                }
-            });
-            return;
-        }
-        this.setState(() => {
-            return {
-                guideItems: itemsResult.value,
-                status: NetworkState.Success
-            }
-        });
+  fetchData = async () => {
+    const itemsResult = await this.props.guideService.getListOfGuides();
+    if (!itemsResult.isSuccess) {
+      this.setState(() => {
+        return {
+          status: NetworkState.Error,
+        };
+      });
+      return;
     }
+    this.setState(() => {
+      return {
+        guideItems: itemsResult.value,
+        status: NetworkState.Success,
+      };
+    });
+  };
 
-    render() {
-        return (
-            <GuidePagePresenter {...this.state} />
-        );
-    }
+  render() {
+    return <GuidePagePresenter {...this.state} />;
+  }
 }
 
-export const GuidePageContainer = withServices<IWithoutDepInj, IWithDepInj>(
-    GuidePageContainerUnconnected,
-    (services: IDependencyInjection) => ({
-        guideService: services.guideService,
-    })
-);
+export const GuidePageContainer = withServices<IWithoutDepInj, IWithDepInj>(GuidePageContainerUnconnected, (services: IDependencyInjection) => ({
+  guideService: services.guideService,
+}));

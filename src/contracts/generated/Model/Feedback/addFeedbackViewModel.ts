@@ -1,6 +1,6 @@
 ﻿/* Auto Generated */
 
 export interface AddFeedbackViewModel {
-    name: string;
-    questions: any[];
+  name: string;
+  questions: any[];
 }

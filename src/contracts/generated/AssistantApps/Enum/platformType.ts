@@ -1,8 +1,8 @@
 /* Auto Generated */
 
 export enum PlatformType {
-    android,
-    iOS,
-    web,
-    api,
+  android,
+  iOS,
+  web,
+  api,
 }

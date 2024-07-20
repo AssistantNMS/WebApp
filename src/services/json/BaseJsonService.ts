@@ -1,25 +1,23 @@
-import axios from 'axios';
+import { Guide } from '../../contracts/guide/guide';
 import { ResultWithValue } from '../../contracts/results/ResultWithValue';
 import { anyObject } from '../../helper/typescriptHacks';
-import { Guide } from '../../contracts/guide/guide';
 
 export class BaseJsonService {
   protected async getAsset<T>(url: string): Promise<ResultWithValue<T>> {
     try {
-      const result = await axios.request<T>({
-        url: `/assets/${url}`
-      });
+      const result = await fetch(`/assets/${url}`);
+      const data = await result.json();
       return {
         isSuccess: true,
-        value: result.data,
-        errorMessage: ''
-      }
+        value: data,
+        errorMessage: '',
+      };
     } catch (ex) {
       return {
         isSuccess: false,
         value: anyObject,
-        errorMessage: (ex as any).message
-      }
+        errorMessage: (ex as Error).message,
+      };
     }
   }
 
@@ -30,9 +28,8 @@ export class BaseJsonService {
   }
 
   protected async getJsonFromAssets<T>(jsonFileName: string) {
-    const jsonString = await axios.request<T>({
-      url: `/assets/${jsonFileName}.json`
-    });
-    return jsonString.data;
+    const result = await fetch(`/assets/${jsonFileName}.json`);
+    const data: T = await result.json();
+    return data;
   }
 }

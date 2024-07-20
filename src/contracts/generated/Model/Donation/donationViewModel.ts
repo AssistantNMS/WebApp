@@ -1,9 +1,9 @@
 ﻿/* Auto Generated */
 
-import { DonationType } from "./../../Enum/donationType";
+import { DonationType } from './../../Enum/donationType';
 
 export interface DonationViewModel {
-    name: string;
-    type: DonationType;
-    donationDate: Date;
+  name: string;
+  type: DonationType;
+  donationDate: Date;
 }

@@ -1,7 +1,7 @@
 ﻿/* Auto Generated */
 
 export interface SteamDepotItemViewModel {
-    name: string;
-    buildId: string;
-    lastUpdate: Date;
+  name: string;
+  buildId: string;
+  lastUpdate: Date;
 }

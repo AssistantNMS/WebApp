@@ -1,7 +1,7 @@
 ﻿/* Auto Generated */
 
 export enum AppRatingType {
-    all,
-    googlePlayStore,
-    appleAppStore,
+  all,
+  googlePlayStore,
+  appleAppStore,
 }

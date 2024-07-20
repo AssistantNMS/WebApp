@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 
 import { TextContainer } from '../../common/tile/textContainer';
@@ -10,43 +9,45 @@ import { BasicLink } from '../../core/link';
 import { ActionContainer } from '../../common/tile/actionContainer';
 
 export const CommunityLinkListTile = (props: CommunityLinkViewModel, index: number) => {
-    const hasQuantity = props.subtitle.length > 1;
-    return (
-        <BasicLink key={props.externalUrl + ' ' + index} data-id="ContributorListTile"
-            href={props.externalUrl} additionalClassNames="contributor gen-item-container">
-            <ImageContainer Name={props.name} Icon={props.iconUrl} IsExternal={true} />
-            <div className="gen-item-content-container">
-                <TextContainer text={props.name} additionalCss={hasQuantity ? '' : 'full'} />
-                {
-                    hasQuantity &&
-                    <div className="quantity-container">
-                        {props.subtitle}
-                    </div>
-                }
-            </div>
-        </BasicLink>
-    );
-}
+  const hasQuantity = props.subtitle.length > 1;
+  return (
+    <BasicLink
+      key={props.externalUrl + ' ' + index}
+      data-id="ContributorListTile"
+      href={props.externalUrl}
+      additionalClassNames="contributor gen-item-container"
+    >
+      <ImageContainer Name={props.name} Icon={props.iconUrl} IsExternal={true} />
+      <div className="gen-item-content-container">
+        <TextContainer text={props.name} additionalCss={hasQuantity ? '' : 'full'} />
+        {hasQuantity && <div className="quantity-container">{props.subtitle}</div>}
+      </div>
+    </BasicLink>
+  );
+};
 
 export const CommunityMissionProgressListTile = () => {
-
-    const getActions = () => {
-        const result = [
-            <i key="locked" className="material-icons x2">query_stats</i>
-        ];
-        return result;
-    }
-    return (
-        <BasicLink key={ExternalUrls.communityMissionProgress} data-id="CommunityMissionProgressListTile"
-            href={ExternalUrls.communityMissionProgress} additionalClassNames="contributor gen-item-container">
-            <ImageContainer Name="CommunityMissionProgress" Icon={AppImage.communityMissionProgress} />
-            <div className="gen-item-content-container">
-                <TextContainer text="Community Mission Progress Tracker" />
-                <div className="quantity-container">
-                    View progress over time
-                </div>
-                <ActionContainer actions={getActions()} />
-            </div>
-        </BasicLink>
-    );
-}
+  const getActions = () => {
+    const result = [
+      <i key="locked" className="material-icons x2">
+        query_stats
+      </i>,
+    ];
+    return result;
+  };
+  return (
+    <BasicLink
+      key={ExternalUrls.communityMissionProgress}
+      data-id="CommunityMissionProgressListTile"
+      href={ExternalUrls.communityMissionProgress}
+      additionalClassNames="contributor gen-item-container"
+    >
+      <ImageContainer Name="CommunityMissionProgress" Icon={AppImage.communityMissionProgress} />
+      <div className="gen-item-content-container">
+        <TextContainer text="Community Mission Progress Tracker" />
+        <div className="quantity-container">View progress over time</div>
+        <ActionContainer actions={getActions()} />
+      </div>
+    </BasicLink>
+  );
+};

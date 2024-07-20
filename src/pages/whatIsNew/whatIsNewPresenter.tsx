@@ -13,50 +13,44 @@ import { DefaultAnimation } from '../../components/common/animation/defaultAnim'
 import { translate } from '../../localization/Translate';
 
 interface IProps {
-    whatIsNewItems: Array<VersionViewModel>;
-    whatIsNewStatus: NetworkState;
+  whatIsNewItems: Array<VersionViewModel>;
+  whatIsNewStatus: NetworkState;
 }
 
 export const WhatIsNewPresenter: React.FC<IProps> = (props: IProps) => {
-
-    const handleLoadingOrError = (displayFunc: (props: IProps) => ReactNode): ReactNode => {
-        if (props.whatIsNewStatus === NetworkState.Loading) return <SmallLoading />;
-        if (props.whatIsNewStatus === NetworkState.Error) {
-            return (<Error />);
-        }
-        if (props.whatIsNewItems == null ||
-            props.whatIsNewItems.length < 1) {
-            return (<h2>{translate(LocaleKey.noItems)}</h2>);
-        }
-        return displayFunc(props);
+  const handleLoadingOrError = (displayFunc: (props: IProps) => ReactNode): ReactNode => {
+    if (props.whatIsNewStatus === NetworkState.Loading) return <SmallLoading />;
+    if (props.whatIsNewStatus === NetworkState.Error) {
+      return <Error />;
     }
-
-    const displayWhatIsNewData = (whatIsNewItems: Array<VersionViewModel>): ReactNode => {
-        const customWhatIsNewListTile = (currentItem: VersionViewModel, index: number) =>
-            <WhatIsNewListTile
-                version={currentItem}
-                currentWhatIsNewGuid={window.config.currentWhatIsNewGuid}
-            />;
-
-        return (
-            <div className="row">
-                <div className="col-12">
-                    <GenericListPresenter list={whatIsNewItems || []} presenter={customWhatIsNewListTile} />
-                </div>
-            </div>
-        );
+    if (props.whatIsNewItems == null || props.whatIsNewItems.length < 1) {
+      return <h2>{translate(LocaleKey.noItems)}</h2>;
     }
+    return displayFunc(props);
+  };
 
-    const title = translate(LocaleKey.whatIsNew);
-    return (
-        <DefaultAnimation>
-            <HeadComponent title={title} />
-            <NavBar title={title} />
-            <div className="content">
-                <div className="container full pt1 pb5">
-                    {handleLoadingOrError((localProps: IProps) => displayWhatIsNewData(localProps.whatIsNewItems))}
-                </div>
-            </div>
-        </DefaultAnimation>
+  const displayWhatIsNewData = (whatIsNewItems: Array<VersionViewModel>): ReactNode => {
+    const customWhatIsNewListTile = (currentItem: VersionViewModel) => (
+      <WhatIsNewListTile version={currentItem} currentWhatIsNewGuid={window.config.currentWhatIsNewGuid} />
     );
-}
+
+    return (
+      <div className="row">
+        <div className="col-12">
+          <GenericListPresenter list={whatIsNewItems || []} presenter={customWhatIsNewListTile} />
+        </div>
+      </div>
+    );
+  };
+
+  const title = translate(LocaleKey.whatIsNew);
+  return (
+    <DefaultAnimation>
+      <HeadComponent title={title} />
+      <NavBar title={title} />
+      <div className="content">
+        <div className="container full pt1 pb5">{handleLoadingOrError((localProps: IProps) => displayWhatIsNewData(localProps.whatIsNewItems))}</div>
+      </div>
+    </DefaultAnimation>
+  );
+};

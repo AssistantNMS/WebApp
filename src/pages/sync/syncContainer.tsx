@@ -4,75 +4,70 @@ import { GoogleSignedInState } from '../../contracts/enum/GoogleSignedInState';
 import { SyncPresenter } from './syncPresenter';
 import { mapStateToProps, mapDispatchToProps } from './sync.Redux';
 
-interface IProps {
-}
+interface IProps {}
 
 interface IState {
-    name: string;
-    email: string;
-    imageUrl: string;
-    status: GoogleSignedInState;
+  name: string;
+  email: string;
+  imageUrl: string;
+  status: GoogleSignedInState;
 }
 
 // https://developers.google.com/drive/api/v3/manage-downloads
 
 export class SyncContainerUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+  constructor(props: IProps) {
+    super(props);
 
-        this.state = {
-            name: '',
-            email: '',
-            imageUrl: '',
-            status: GoogleSignedInState.Default,
-        }
-    }
+    this.state = {
+      name: '',
+      email: '',
+      imageUrl: '',
+      status: GoogleSignedInState.Default,
+    };
+  }
 
-    componentDidMount() {
-    }
+  componentDidMount() {}
 
-    successfulSignIn = (googleSignInEvent: any) => {
-        this.setState(() => {
-            return {
-                name: googleSignInEvent.profileObj.name,
-                email: googleSignInEvent.profileObj.email,
-                imageUrl: googleSignInEvent.profileObj.imageUrl,
-                status: GoogleSignedInState.Success,
-            }
-        })
-    }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  successfulSignIn = (googleSignInEvent: any) => {
+    this.setState(() => {
+      return {
+        name: googleSignInEvent.profileObj.name,
+        email: googleSignInEvent.profileObj.email,
+        imageUrl: googleSignInEvent.profileObj.imageUrl,
+        status: GoogleSignedInState.Success,
+      };
+    });
+  };
 
-    failedSignIn = () => {
-        this.setState(() => {
-            return {
-                name: '',
-                email: '',
-                imageUrl: '',
-                status: GoogleSignedInState.Failed,
-            }
-        })
-    }
+  failedSignIn = () => {
+    this.setState(() => {
+      return {
+        name: '',
+        email: '',
+        imageUrl: '',
+        status: GoogleSignedInState.Failed,
+      };
+    });
+  };
 
-    logout = () => {
-        this.setState(() => {
-            return {
-                name: '',
-                email: '',
-                imageUrl: '',
-                status: GoogleSignedInState.Default,
-            }
-        })
-    }
+  logout = () => {
+    this.setState(() => {
+      return {
+        name: '',
+        email: '',
+        imageUrl: '',
+        status: GoogleSignedInState.Default,
+      };
+    });
+  };
 
-    render() {
-        return (
-            <SyncPresenter {...this.state} {...this.props}
-                successfulSignIn={this.successfulSignIn}
-                failedSignIn={this.failedSignIn}
-                logout={this.logout}
-            />
-        );
-    }
+  render() {
+    return (
+      <SyncPresenter {...this.state} {...this.props} successfulSignIn={this.successfulSignIn} failedSignIn={this.failedSignIn} logout={this.logout} />
+    );
+  }
 }
 
 export const SyncContainer = connect(mapStateToProps, mapDispatchToProps)(SyncContainerUnconnected);

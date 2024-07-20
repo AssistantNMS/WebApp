@@ -1,9 +1,9 @@
 ﻿/* Auto Generated */
 
 export enum GuideSectionItemType {
-    text,
-    link,
-    image,
-    markdown,
-    table,
+  text,
+  link,
+  image,
+  markdown,
+  table,
 }
