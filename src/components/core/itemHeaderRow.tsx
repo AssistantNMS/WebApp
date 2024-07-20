@@ -48,12 +48,8 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
           <a href={props.CdnUrl} title="HD image" rel="noopener noreferrer" target="_blank">
             <i
               className="material-icons"
-              style={{
-                position: 'absolute',
-                top: '.5em',
-                right: '.5em',
-                color: invertColor(props.Colour || '000000', true),
-              }}
+              style={{ position: 'absolute', top: '.5em', right: '.5em', color: invertColor(props.Colour || '000000', true) }}
+              title="HD image"
             >
               hd
             </i>
@@ -63,12 +59,8 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
           <i
             className="material-icons pointer"
             onClick={props.openDevProperties}
-            style={{
-              position: 'absolute',
-              top: '.5em',
-              left: '.5em',
-              color: invertColor(props.Colour || '000000', true),
-            }}
+            style={{ position: 'absolute', top: '.5em', left: '.5em', color: invertColor(props.Colour || '000000', true) }}
+            title="Developer Details"
           >
             code
           </i>
@@ -79,15 +71,7 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
           <span>{name}</span>
           {hasSymbol && <span>&nbsp;({props.Abbrev})</span>}
           {props.Quantity != null && props.Quantity > 0 ? (
-            <span
-              style={{
-                display: 'inline-block',
-                fontSize: '0.5em',
-                lineHeight: '1em',
-                width: '6em',
-                position: 'relative',
-              }}
-            >
+            <span style={{ display: 'inline-block', fontSize: '0.5em', lineHeight: '1em', width: '6em', position: 'relative' }}>
               <p className="secondary chip" style={{ position: 'absolute', top: '-1.4em', left: '0.5em' }}>
                 x {props.Quantity}
               </p>
@@ -104,15 +88,9 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
         ) : null}
         {props.children}
         {props?.Link ? (
-          <div
-            style={{
-              marginTop: '2em',
-              marginBottom: '.25em',
-              textAlign: 'left',
-            }}
-          >
+          <div style={{ marginTop: '2em', marginBottom: '.25em', textAlign: 'left' }}>
             <AdditionalInfoChip text={name + '  '} onClick={props.Link}>
-              <i className="material-icons noselect" style={{ verticalAlign: 'middle' }}>
+              <i className="material-icons noselect" style={{ verticalAlign: 'middle' }} title="read more">
                 read_more
               </i>
             </AdditionalInfoChip>
