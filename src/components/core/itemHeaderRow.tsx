@@ -56,7 +56,8 @@ const ItemHeaderRowUnconnected: React.FC<IProps> = (props: IProps) => {
                     props.Usages?.includes(UsageKey.hasDevProperties) &&
                     <i className="material-icons pointer"
                         onClick={props.openDevProperties}
-                        style={{ position: 'absolute', top: '.5em', left: '.5em', color: invertColor(props.Colour || '000000', true) }}>code</i>
+                        style={{ position: 'absolute', top: '.5em', left: '.5em', color: invertColor(props.Colour || '000000', true) }}
+						title="Developer Details">code</i>
                 }
             </div>
             <div className="col-12 col-lg-10 col-md-10 col-sm-8 col-xs-9 ta-left ta-center-sm">
