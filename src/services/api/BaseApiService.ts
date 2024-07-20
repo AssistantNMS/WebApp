@@ -55,7 +55,7 @@ export class BaseApiService {
     url: string,
     data: TK,
     manipulateHeaders?: () => { [prop: string]: string },
-    customMapper?: (data: Response) => ResultWithValue<T>,
+    customMapper?: (data: Response) => Promise<ResultWithValue<T>>,
   ): Promise<ResultWithValue<T>> {
     //
     let options = anyObject;
@@ -77,7 +77,7 @@ export class BaseApiService {
       });
 
       if (customMapper != null) {
-        return customMapper(result);
+        return await customMapper(result);
       }
     } catch (ex) {
       return {

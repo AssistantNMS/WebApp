@@ -10,13 +10,19 @@ export class AssistantAppsApiService extends BaseApiService {
   }
 
   async getWhatIsNewItems(search: VersionSearchViewModel): Promise<ResultWithValueAndPagination<Array<VersionViewModel>>> {
-    const result = await this.post<Array<VersionViewModel>, VersionSearchViewModel>('Version/Search', search, undefined, (response: Response) => {
-      return {
-        ...response.body,
-        isSuccess: true,
-        errorMessage: '',
-      } as ResultWithValueAndPagination<Array<VersionViewModel>>;
-    });
+    const result = await this.post<Array<VersionViewModel>, VersionSearchViewModel>(
+      'Version/Search',
+      search,
+      undefined,
+      async (response: Response) => {
+        const data = await response.json();
+        return {
+          ...data,
+          isSuccess: true,
+          errorMessage: '',
+        } as ResultWithValueAndPagination<Array<VersionViewModel>>;
+      },
+    );
 
     return result as ResultWithValueAndPagination<Array<VersionViewModel>>;
   }
