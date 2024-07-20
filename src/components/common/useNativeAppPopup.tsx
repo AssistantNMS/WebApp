@@ -53,7 +53,7 @@ export const UseNativeApp = connect(
   (state: State): IStateProps => ({
     showMobileTip: !getMobileHide(state),
   }),
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   (dispatch: any): IStateDispatch => {
     return {
       hideMobile: () => {

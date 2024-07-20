@@ -6,7 +6,6 @@ const initialState: StateCommonReducer = {
   title: 'Loading',
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const commonReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case type.LOADING:

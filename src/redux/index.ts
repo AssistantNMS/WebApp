@@ -21,7 +21,6 @@ export const reducer = combineReducers({
   titleReducer,
 });
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const commonMapDispatchToProps = (dispatch: any): ICommonFunctions => {
   const commonFunctions = new CommonFunctions();
   commonFunctions.setLoadingStatus = (isLoading: boolean, title?: string) => {

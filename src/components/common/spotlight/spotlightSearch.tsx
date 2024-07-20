@@ -68,7 +68,6 @@ export const SpotlightSearch: React.FC<IProps> = (props: IProps) => {
   };
 
   const onCloseSpotlight = () => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (inputRef as any)?.blur?.();
     setTimeout(() => {
       setText(undefined);
@@ -128,10 +127,9 @@ export const SpotlightSearch: React.FC<IProps> = (props: IProps) => {
     setText(e?.target?.value ?? text ?? '');
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSpotlightGroupClick = (e: any) => {
     if (e?.customEvent === 'spotlightSelect') return;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
     (inputRef as any)?.focus?.();
   };
 

@@ -4,14 +4,13 @@ interface ISegmentedControlProps {
   name: string;
   options: Array<ISegmentedControlOptionProps>;
   defaultIndex: number;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   controlRef: any;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   callback: (newValue: any, index: number) => void;
 }
 
 interface ISegmentedControlOptionProps {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ref: any;
   label: string;
   value: string;
@@ -24,7 +23,7 @@ interface ISegmentedControlOptionProps {
 export const SegmentedControl: React.FC<ISegmentedControlProps> = (props: ISegmentedControlProps) => {
   const [activeIndex, setActiveIndex] = useState(props?.defaultIndex ?? 0);
   const [isReady, setIsReady] = useState(false);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   const componentReady: any = useRef();
 
   // Determine when the component is "ready"
@@ -39,9 +38,9 @@ export const SegmentedControl: React.FC<ISegmentedControlProps> = (props: ISegme
   useEffect(() => {
     if (isReady === false) return;
     const activeSegmentRef = props.options[activeIndex].ref;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
     const { offsetWidth, offsetLeft } = activeSegmentRef?.current as any;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
     const { style } = props.controlRef?.current as any;
 
     style.setProperty('--highlight-width', `${offsetWidth}px`);

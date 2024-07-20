@@ -69,7 +69,6 @@ const SolarPanelPageConnected: React.FC<IProps> = (props: IProps) => {
     setNetworkState(NetworkState.Success);
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSearchTextChange = (e: any) => {
     e?.persist?.();
 
@@ -236,7 +235,6 @@ const SolarPanelPageConnected: React.FC<IProps> = (props: IProps) => {
               },
             ]}
             bootstrapClasses="col-12"
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             presenter={(data: any) => (
               <BasicLink key={data.link} href={data.link} additionalClassNames="gen-item-container">
                 <ImageContainer Icon={data.icon} Name={data.name} />

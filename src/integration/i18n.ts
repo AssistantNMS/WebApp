@@ -14,15 +14,14 @@ export const initLocalization = (currentLanguage: string) => {
 };
 
 function loadLocaleMessages(): Resource {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const locales = (require as any).context('../assets/lang', true, /[A-Za-z0-9-_,\s]+\.json$/i);
   const messages: Resource = {};
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   locales.keys().forEach((key: any) => {
     const matched = key.match(/language.([A-Za-z0-9-_]+)\./i);
     if (matched && matched.length > 1) {
       const locale = handlei18NextLangCode(matched[1]);
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
       const i18nextTranslationObject: any = { translation: {} };
       const currentLocaleObj = locales(key);
       for (const localeKey in currentLocaleObj) {

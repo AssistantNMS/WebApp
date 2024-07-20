@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { StateTitleReducer } from '../../state/StateTitleReducer';
 import * as type from './type';
 

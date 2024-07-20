@@ -26,7 +26,7 @@ interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps {}
 export const RandomPortalUnconnected: React.FC<IProps> = (props: IProps) => {
   const arr = Array.from(Array(12).keys());
   const [slotArr] = useState<Array<string>>(arr.map(() => newGuid()));
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   const [slotRefs] = useState<Array<any>>(arr.map(() => createRef()));
   const [isSpinning, setIsSpinning] = useState<boolean>(true);
   const [currentPortalCode, setCurrentPortalCode] = useState<string>('');
@@ -109,7 +109,6 @@ export const RandomPortalUnconnected: React.FC<IProps> = (props: IProps) => {
               },
             ]}
             bootstrapClasses="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             presenter={(data: any) => (
               <BasicLink key={data.link} href={data.link} additionalClassNames="gen-item-container">
                 <ImageContainer Icon={data.icon} Name={data.name} />

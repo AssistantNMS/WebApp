@@ -30,7 +30,6 @@ const ExpeditionAlphabetDecoderUnconnected: React.FC<IProps> = (props: IProps) =
     return () => {
       clearTimeout(timer);
     };
-     
   }, [counter, translation]);
 
   const getTranslationText = async (appId: string) => {

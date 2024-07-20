@@ -16,7 +16,7 @@ const customStyles = {
 
 export const modalSetup = (appId: string) => {
   Modal.setAppElement(`#${appId}`);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   (Modal as any).defaultStyles.overlay.backgroundColor = 'rgba(0,0,0,0.5)';
 };
 

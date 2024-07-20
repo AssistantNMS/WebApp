@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as type from './type';
 import { changeLanguage } from '../../../localization/Translate';
 

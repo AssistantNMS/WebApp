@@ -17,7 +17,6 @@ export const mapStateToProps = (state: State): IStateProps => {
   };
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const mapDispatchToProps = (dispatch: any): IStateDispatch => {
   return {
     toggleMenu: () => {

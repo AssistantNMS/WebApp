@@ -47,7 +47,6 @@ export const HomePresenter: React.FC = () => {
     },
   ];
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const renderStoreButton = (storeItem: any) => {
     return (
       <BasicLink additionalClassNames="image store mb-2em" key={storeItem.link} href={storeItem.link} title={storeItem.store}>

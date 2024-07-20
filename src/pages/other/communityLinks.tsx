@@ -61,7 +61,6 @@ export const CommunityLinksPageUnconnected: React.FC<IProps> = (props: IProps) =
     setStatus(NetworkState.Success);
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSearchTextChange = (e: any) => {
     e?.persist?.();
 

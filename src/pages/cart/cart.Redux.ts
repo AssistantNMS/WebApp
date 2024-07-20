@@ -21,7 +21,6 @@ export const mapStateToProps = (state: State): IReduxFromStateProps => {
   };
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const mapDispatchToProps = (dispatch: any): IReduxActionsProps => {
   return {
     addItemToCart: (cartItem: CartItem) => {

@@ -5,7 +5,6 @@ export const initialCartState: StateCartReducer = {
   cartItems: [],
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const cartReducer = (state = initialCartState, action: any) => {
   switch (action.type) {
     case type.ADDITEM: {

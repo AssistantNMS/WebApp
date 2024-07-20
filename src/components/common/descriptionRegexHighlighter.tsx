@@ -88,13 +88,11 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
       let leftOverDisplayWordFront = '';
       let leftOverDisplayWord = '';
 
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const doubleMatches: Array<any> | null = doubleTagRegex.exec(word);
       if (doubleMatches != null && doubleMatches.length > 0) {
         word = doubleMatches[1];
       }
 
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const startMatches: Array<any> | null = tagStartRegex.exec(word);
       if (startMatches != null && startMatches.length === 4) {
         leftOverDisplayWordFront = startMatches[1];
@@ -103,7 +101,6 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
         currentColourValue = getColourValueFromTag(startMatches[2]);
       }
 
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const endMatches: Array<any> | null = tagEndRegex.exec(word);
       const hasEndMatch = endMatches != null && endMatches.length >= 2;
       if (hasEndMatch) {

@@ -12,7 +12,6 @@
 //     });
 // }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const updateServiceWorker = (registration: any) => {
   if (registration && registration.waiting) {
     registration.waiting.postMessage({ type: 'SKIP_WAITING' });

@@ -22,7 +22,6 @@ export const mapStateToProps = (state: State) => {
   };
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const mapDispatchToProps = (dispatch: any) => {
   return {
     addPortal: (portalRecord: PortalRecord) => {

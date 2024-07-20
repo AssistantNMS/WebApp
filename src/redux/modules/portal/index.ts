@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { PortalRecord } from '../../../contracts/portal/portalRecord';
 import { StatePortalReducer } from '../../state/StatePortalReducer';
 import * as type from './type';

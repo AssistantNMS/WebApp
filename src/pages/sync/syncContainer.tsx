@@ -29,7 +29,6 @@ export class SyncContainerUnconnected extends React.Component<IProps, IState> {
 
   componentDidMount() {}
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   successfulSignIn = (googleSignInEvent: any) => {
     this.setState(() => {
       return {

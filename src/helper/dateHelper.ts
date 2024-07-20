@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-var-requires */
 import { LocaleKey } from '../localization/LocaleKey';
 import { translate } from '../localization/Translate';
 

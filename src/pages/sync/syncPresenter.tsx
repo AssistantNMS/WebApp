@@ -16,7 +16,7 @@ interface IProps {
   status: GoogleSignedInState;
 
   // Container specific
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   successfulSignIn: (googleSignInEvent: any) => void;
   failedSignIn: () => void;
   logout: () => void;

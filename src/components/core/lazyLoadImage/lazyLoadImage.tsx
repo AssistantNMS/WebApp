@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ILazyLoadImageProps } from './ILazyLoadImageProps';
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+
 const ReactLazy = require('react-lazy-load-image-component');
 
 interface IState {
