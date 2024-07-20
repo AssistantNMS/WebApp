@@ -13,67 +13,60 @@ import { translate } from '../../localization/Translate';
 import { requiredItemFromCart } from '../../mapper/CartMapper';
 import { IReduxProps } from './cart.Redux';
 
-interface IWithDepInj { }
-interface IWithoutDepInj { }
-interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
+interface IWithDepInj {}
+interface IWithoutDepInj {}
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps {}
 
 export const CartPresenter: React.FC<IProps> = (props: IProps) => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const displayCartItems = (cartItems: Array<CartItem>) => {
-        if (cartItems == null || cartItems.length === 0) return (
-            <h2>{translate(LocaleKey.noCartItems)}</h2>
-        );
+  const displayCartItems = (cartItems: Array<CartItem>) => {
+    if (cartItems == null || cartItems.length === 0) return <h2>{translate(LocaleKey.noCartItems)}</h2>;
 
-        const connectedPresenter = (localProps: CartItem, index: number) => {
-            const editItemInCart = (cartItem: CartItem) => {
-                if (props.editItemInCart) {
-                    props.editItemInCart(index, cartItem);
-                }
-            }
-            return CartListTile(localProps, editItemInCart, props.removeItemFromCart);
+    const connectedPresenter = (localProps: CartItem, index: number) => {
+      const editItemInCart = (cartItem: CartItem) => {
+        if (props.editItemInCart) {
+          props.editItemInCart(index, cartItem);
         }
-
-        return <GenericListPresenter list={cartItems} presenter={connectedPresenter} identifier={(item: CartItem) => item.Id} />;
+      };
+      return CartListTile(localProps, editItemInCart, props.removeItemFromCart);
     };
 
-    const displayCardButton = (cartItems: Array<CartItem>) => {
-        if (cartItems == null || cartItems.length === 0) return null;
+    return <GenericListPresenter list={cartItems} presenter={connectedPresenter} identifier={(item: CartItem) => item.Id} />;
+  };
 
-        return (
-            <PositiveButton
-                additionalClass="button-active-bg center full"
-                onClick={() => {
-                    const state = {
-                        typeName: translate(LocaleKey.cart),
-                        requiredItems: props.cartItems.map(ci => requiredItemFromCart(ci))
-                    };
-                    navigate(Route.genericAllRequirements, { state: { ...state } });
-                }}
-            >
-                <span>{translate(LocaleKey.viewAllRawMaterialsRequired)}</span>
-            </PositiveButton>
-        );
-    };
+  const displayCardButton = (cartItems: Array<CartItem>) => {
+    if (cartItems == null || cartItems.length === 0) return null;
 
-    const title = translate(LocaleKey.cart);
     return (
-        <DefaultAnimation>
-            <HeadComponent title={title} />
-            <NavBar title={title} />
-            <div className="content">
-                <div className="row full pt1">
-                    <div className="col-12">
-                        {displayCartItems(props.cartItems)}
-                    </div>
-                </div>
-                <div className="row justify">
-                    <div className="col-12 ta-center">
-                        {displayCardButton(props.cartItems)}
-                    </div>
-                </div>
-            </div>
-        </DefaultAnimation>
+      <PositiveButton
+        additionalClass="button-active-bg center full"
+        onClick={() => {
+          const state = {
+            typeName: translate(LocaleKey.cart),
+            requiredItems: props.cartItems.map((ci) => requiredItemFromCart(ci)),
+          };
+          navigate(Route.genericAllRequirements, { state: { ...state } });
+        }}
+      >
+        <span>{translate(LocaleKey.viewAllRawMaterialsRequired)}</span>
+      </PositiveButton>
     );
-};
+  };
 
+  const title = translate(LocaleKey.cart);
+  return (
+    <DefaultAnimation>
+      <HeadComponent title={title} />
+      <NavBar title={title} />
+      <div className="content">
+        <div className="row full pt1">
+          <div className="col-12">{displayCartItems(props.cartItems)}</div>
+        </div>
+        <div className="row justify">
+          <div className="col-12 ta-center">{displayCardButton(props.cartItems)}</div>
+        </div>
+      </div>
+    </DefaultAnimation>
+  );
+};

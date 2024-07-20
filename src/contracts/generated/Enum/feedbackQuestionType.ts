@@ -1,7 +1,7 @@
 ﻿/* Auto Generated */
 
 export enum FeedbackQuestionType {
-    plainText,
-    fiveOptionScale,
-    yesUnknownNo,
+  plainText,
+  fiveOptionScale,
+  yesUnknownNo,
 }

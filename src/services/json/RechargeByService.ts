@@ -5,85 +5,104 @@ import { anyObject } from '../../helper/typescriptHacks';
 import { BaseJsonService } from './BaseJsonService';
 
 export class RechargeByService extends BaseJsonService {
+  private _hashLookup: Record<string, unknown>;
 
-    private _hashLookup: any;
+  constructor() {
+    super();
+    this._hashLookup = anyObject;
+  }
 
-    constructor() {
-        super();
-        this._hashLookup = anyObject;
+  async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<string>): Promise<T> {
+    const hash = getHashForObject(argsArray);
+
+    if (this._hashLookup != null && this._hashLookup[hash] != null) {
+      return this._hashLookup[hash] as T;
     }
 
-    async _getOrAdd<T>(promise: () => Promise<T>, argsArray: Array<any>) {
-        const hash = getHashForObject(argsArray);
+    const jsonResult = await promise();
+    this._hashLookup[hash] = jsonResult;
+    return jsonResult;
+  }
 
-        if (this._hashLookup != null && this._hashLookup[hash] != null) {
-            return this._hashLookup[hash];
-        }
+  async getAllRechargeItems(): Promise<ResultWithValue<Array<Recharge>>> {
+    return this._getOrAdd(() => this._getAllRechargeItems(), ['_getAllRechargeItems']);
+  }
+  async _getAllRechargeItems(): Promise<ResultWithValue<Array<Recharge>>> {
+    const result = await this.getAsset<Array<Recharge>>(`data/Recharge.json`);
+    if (!result.isSuccess) return { isSuccess: false, value: [], errorMessage: result.errorMessage };
 
-        const jsonResult = await promise();
-        this._hashLookup[hash] = jsonResult;
-        return jsonResult;
+    return result;
+  }
+
+  async getRechargeById(itemId: string): Promise<ResultWithValue<Recharge>> {
+    return this._getOrAdd(() => this._getRechargeById(itemId), ['_getRechargeById', itemId]);
+  }
+  async _getRechargeById(itemId: string): Promise<ResultWithValue<Recharge>> {
+    const result = anyObject;
+
+    if (!itemId)
+      return {
+        isSuccess: false,
+        value: result,
+        errorMessage: 'itemId specified is invallid',
+      };
+
+    const getAllResult = await this.getAllRechargeItems();
+    if (!getAllResult.isSuccess)
+      return {
+        isSuccess: false,
+        value: result,
+        errorMessage: getAllResult.errorMessage,
+      };
+
+    const rechargeItem = getAllResult.value.filter((rech) => rech.Id === itemId);
+    if (rechargeItem.length < 1) {
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: 'recharge item not found',
+      };
     }
 
-    async getAllRechargeItems(): Promise<ResultWithValue<Array<Recharge>>> {
-        return this._getOrAdd(() => this._getAllRechargeItems(), ['_getAllRechargeItems']);
-    }
-    async _getAllRechargeItems(): Promise<ResultWithValue<Array<Recharge>>> {
-        const result = await this.getAsset<Array<Recharge>>(`data/Recharge.json`);
-        if (!result.isSuccess) return { isSuccess: false, value: [], errorMessage: result.errorMessage };
+    return {
+      isSuccess: true,
+      value: rechargeItem[0],
+      errorMessage: '',
+    };
+  }
 
-        return result;
-    }
+  async getRechargeByChargeById(itemId: string): Promise<ResultWithValue<Array<Recharge>>> {
+    return this._getOrAdd(() => this._getRechargeByChargeById(itemId), ['_getRechargeByChargeById', itemId]);
+  }
+  async _getRechargeByChargeById(itemId: string): Promise<ResultWithValue<Array<Recharge>>> {
+    if (!itemId)
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: 'itemId specified is invallid',
+      };
 
-    async getRechargeById(itemId: string): Promise<ResultWithValue<Recharge>> {
-        return this._getOrAdd(() => this._getRechargeById(itemId), ['_getRechargeById', itemId]);
-    }
-    async _getRechargeById(itemId: string): Promise<ResultWithValue<Recharge>> {
-        let result: any = {};
+    const getAllResult = await this.getAllRechargeItems();
+    if (!getAllResult.isSuccess)
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: getAllResult.errorMessage,
+      };
 
-        if (!itemId) return { isSuccess: false, value: result, errorMessage: 'itemId specified is invallid' };
-
-        const getAllResult = await this.getAllRechargeItems();
-        if (!getAllResult.isSuccess) return { isSuccess: false, value: result, errorMessage: getAllResult.errorMessage };
-
-        const rechargeItem = getAllResult.value.filter((rech => rech.Id === itemId));
-        if (rechargeItem.length < 1) {
-            return {
-                isSuccess: false,
-                value: anyObject,
-                errorMessage: 'recharge item not found',
-            };
-        }
-
-        return {
-            isSuccess: true,
-            value: rechargeItem[0],
-            errorMessage: ''
-        }
+    const chargeByItems = getAllResult.value.filter((rech) => rech.ChargeBy.findIndex((ch) => ch.Id === itemId) >= 0);
+    if (chargeByItems.length < 1) {
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: 'recharge item not found',
+      };
     }
 
-    async getRechargeByChargeById(itemId: string): Promise<ResultWithValue<Array<Recharge>>> {
-        return this._getOrAdd(() => this._getRechargeByChargeById(itemId), ['_getRechargeByChargeById', itemId]);
-    }
-    async _getRechargeByChargeById(itemId: string): Promise<ResultWithValue<Array<Recharge>>> {
-        if (!itemId) return { isSuccess: false, value: [], errorMessage: 'itemId specified is invallid' };
-
-        const getAllResult = await this.getAllRechargeItems();
-        if (!getAllResult.isSuccess) return { isSuccess: false, value: [], errorMessage: getAllResult.errorMessage };
-
-        const chargeByItems = getAllResult.value.filter((rech => rech.ChargeBy.findIndex(ch => ch.Id === itemId) >= 0));
-        if (chargeByItems.length < 1) {
-            return {
-                isSuccess: false,
-                value: [],
-                errorMessage: 'recharge item not found',
-            };
-        }
-
-        return {
-            isSuccess: true,
-            value: chargeByItems,
-            errorMessage: ''
-        }
-    }
+    return {
+      isSuccess: true,
+      value: chargeByItems,
+      errorMessage: '',
+    };
+  }
 }

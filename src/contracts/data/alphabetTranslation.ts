@@ -1,4 +1,4 @@
 export interface AlphabetTranslation {
-    AppId: string;
-    Text: string;
+  AppId: string;
+  Text: string;
 }

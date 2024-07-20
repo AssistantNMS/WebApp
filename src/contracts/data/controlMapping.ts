@@ -1,11 +1,11 @@
 export interface ControlMappingList {
-    Win: Array<PlatformControlMapping>;
-    Psn: Array<PlatformControlMapping>;
-    Xbx: Array<PlatformControlMapping>;
-    Nsw: Array<PlatformControlMapping>;
+  Win: Array<PlatformControlMapping>;
+  Psn: Array<PlatformControlMapping>;
+  Xbx: Array<PlatformControlMapping>;
+  Nsw: Array<PlatformControlMapping>;
 }
 
 export interface PlatformControlMapping {
-    Key: string;
-    Icon: string;
+  Key: string;
+  Icon: string;
 }

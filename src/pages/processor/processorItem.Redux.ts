@@ -1,11 +1,11 @@
 import { State } from '../../redux/state';
 
 export interface IReduxProps {
-    selectedLanguage?: string;
+  selectedLanguage?: string;
 }
 
 export const mapStateToProps = (state: State) => {
-    return {
-        selectedLanguage: state.settingReducer.selectedLanguage,
-    };
+  return {
+    selectedLanguage: state.settingReducer.selectedLanguage,
+  };
 };

@@ -3,7 +3,7 @@ import { LocaleKey } from '../../localization/LocaleKey';
 export enum BlueprintSource {
   unknown,
   manufacturingFacility,
-  manufacturingFacilityOrPolo
+  manufacturingFacilityOrPolo,
 }
 
 export const blueprintToLocalKey = (source: BlueprintSource): LocaleKey => {
@@ -15,4 +15,4 @@ export const blueprintToLocalKey = (source: BlueprintSource): LocaleKey => {
   }
 
   return LocaleKey.unknown;
-}
+};

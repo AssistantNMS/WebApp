@@ -13,77 +13,71 @@ import { mapDispatchToProps, mapStateToProps } from './communityMission.Redux';
 import { CommunityMissionPresenter } from './communityMissionPresenter';
 
 interface IWithDepInj {
-    apiService: ApiService;
-    dataJsonService: DataJsonService;
+  apiService: ApiService;
+  dataJsonService: DataJsonService;
 }
-interface IWithoutDepInj {
-}
+interface IWithoutDepInj {}
 
 interface IFromRedux {
-    selectedLanguage: string
+  selectedLanguage: string;
 }
 
-interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj { }
+interface IProps extends IFromRedux, IWithDepInj, IWithoutDepInj {}
 
 interface IState {
-    title: string;
-    communityMission: CommunityMissionViewModel;
-    quicksilverStoreItems: Array<QuicksilverStore>;
-    status: NetworkState;
+  title: string;
+  communityMission: CommunityMissionViewModel;
+  quicksilverStoreItems: Array<QuicksilverStore>;
+  status: NetworkState;
 }
 
 export class CommunityMissionContainerUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+  constructor(props: IProps) {
+    super(props);
 
-        this.state = {
-            title: translate(LocaleKey.communityMission),
-            communityMission: anyObject,
-            quicksilverStoreItems: [],
-            status: NetworkState.Loading
+    this.state = {
+      title: translate(LocaleKey.communityMission),
+      communityMission: anyObject,
+      quicksilverStoreItems: [],
+      status: NetworkState.Loading,
+    };
+    this.fetchCommunityMission();
+  }
+
+  fetchCommunityMission = async () => {
+    const communityMissionTask = this.props.apiService.getCommunityMission();
+    const quickSilverStoreItemsTask = this.props.dataJsonService.getQuicksilverStore();
+
+    const communityMissionResult = await communityMissionTask;
+    const quickSilverStoreItems = await quickSilverStoreItemsTask;
+
+    if ((communityMissionResult?.isSuccess ?? false) === false || (quickSilverStoreItems?.isSuccess ?? false) === false) {
+      this.setState(() => {
+        return {
+          status: NetworkState.Error,
         };
-        this.fetchCommunityMission();
+      });
+      return;
     }
 
-    fetchCommunityMission = async () => {
-        const communityMissionTask = this.props.apiService.getCommunityMission();
-        const quickSilverStoreItemsTask = this.props.dataJsonService.getQuicksilverStore();
+    this.setState(() => {
+      return {
+        quicksilverStoreItems: quickSilverStoreItems.value,
+        communityMission: communityMissionResult.value,
+        status: NetworkState.Success,
+      };
+    });
+  };
 
-        const communityMissionResult = await communityMissionTask;
-        const quickSilverStoreItems = await quickSilverStoreItemsTask;
-
-        if ((communityMissionResult?.isSuccess ?? false) === false || (quickSilverStoreItems?.isSuccess ?? false) === false) {
-            this.setState(() => {
-                return {
-                    status: NetworkState.Error
-                }
-            });
-            return;
-        }
-
-        this.setState(() => {
-            return {
-                quicksilverStoreItems: quickSilverStoreItems.value,
-                communityMission: communityMissionResult.value,
-                status: NetworkState.Success
-            }
-        });
-    }
-
-    render() {
-        return (
-            <CommunityMissionPresenter
-                key={this.props.selectedLanguage}
-                {...this.state} {...this.props}
-            />
-        );
-    }
+  render() {
+    return <CommunityMissionPresenter key={this.props.selectedLanguage} {...this.state} {...this.props} />;
+  }
 }
 
 export const CommunityMissionContainer = withServices<IWithoutDepInj, IWithDepInj>(
-    connect(mapStateToProps, mapDispatchToProps)(CommunityMissionContainerUnconnected),
-    (services: IDependencyInjection) => ({
-        apiService: services.apiService,
-        dataJsonService: services.dataJsonService,
-    })
+  connect(mapStateToProps, mapDispatchToProps)(CommunityMissionContainerUnconnected),
+  (services: IDependencyInjection) => ({
+    apiService: services.apiService,
+    dataJsonService: services.dataJsonService,
+  }),
 );

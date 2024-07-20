@@ -1,18 +1,12 @@
-import * as React from "react";
-import { useEffect, useState } from "react";
-import { NetworkState } from "../../../constants/NetworkState";
-import { GameItemModel } from "../../../contracts/GameItemModel";
-import { ExpeditionSeasonReward } from "../../../contracts/helloGames/expeditionSeason";
-import { anyObject } from "../../../helper/typescriptHacks";
-import {
-  IDependencyInjection,
-  withServices,
-} from "../../../integration/dependencyInjection";
-import { GameItemService } from "../../../services/json/GameItemService";
-import {
-  CustomizedRequiredItemDetails,
-  RequiredItemsQuantityContainer,
-} from "../../common/tile/quantityContainer";
+import * as React from 'react';
+import { useEffect, useState } from 'react';
+import { NetworkState } from '../../../constants/NetworkState';
+import { GameItemModel } from '../../../contracts/GameItemModel';
+import { ExpeditionSeasonReward } from '../../../contracts/helloGames/expeditionSeason';
+import { anyObject } from '../../../helper/typescriptHacks';
+import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
+import { GameItemService } from '../../../services/json/GameItemService';
+import { CustomizedRequiredItemDetails, RequiredItemsQuantityContainer } from '../../common/tile/quantityContainer';
 
 interface IWithDepInj {
   gameItemService: GameItemService;
@@ -24,17 +18,12 @@ interface IWithoutDepInj {
 
 interface IProps extends IWithDepInj, IWithoutDepInj {}
 
-const ExpeditionSeasonRewardsOnlyTileInternal: React.FC<IProps> = (
-  props: IProps
-) => {
+const ExpeditionSeasonRewardsOnlyTileInternal: React.FC<IProps> = (props: IProps) => {
   const [dataLookup, setDataLookup] = useState<Array<GameItemModel>>([]);
-  const [networkState, setNetworkState] = useState<NetworkState>(
-    NetworkState.Loading
-  );
+  const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
 
   useEffect(() => {
     fetchData(props.rewards);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchData = async (rewards: Array<ExpeditionSeasonReward>) => {
@@ -47,9 +36,7 @@ const ExpeditionSeasonRewardsOnlyTileInternal: React.FC<IProps> = (
     setNetworkState(NetworkState.Success);
   };
 
-  const mapToRequiredItems = (
-    lookup: Array<GameItemModel>
-  ): Array<CustomizedRequiredItemDetails> => {
+  const mapToRequiredItems = (lookup: Array<GameItemModel>): Array<CustomizedRequiredItemDetails> => {
     const rewardsAsRequiredItems: Array<CustomizedRequiredItemDetails> = [];
 
     for (const reward of props.rewards) {
@@ -60,7 +47,7 @@ const ExpeditionSeasonRewardsOnlyTileInternal: React.FC<IProps> = (
           break;
         }
       }
-      let newItem: CustomizedRequiredItemDetails = {
+      const newItem: CustomizedRequiredItemDetails = {
         Id: reward.Id,
         Icon: found.Icon,
         Colour: found.Colour,
@@ -73,14 +60,9 @@ const ExpeditionSeasonRewardsOnlyTileInternal: React.FC<IProps> = (
       rewardsAsRequiredItems.push(newItem);
     }
 
-    const orderedRewardsAsRequiredItems = rewardsAsRequiredItems.sort(
-      (
-        reqA: CustomizedRequiredItemDetails,
-        reqB: CustomizedRequiredItemDetails
-      ) => {
-        return reqB.Quantity - reqA.Quantity;
-      }
-    );
+    const orderedRewardsAsRequiredItems = rewardsAsRequiredItems.sort((reqA: CustomizedRequiredItemDetails, reqB: CustomizedRequiredItemDetails) => {
+      return reqB.Quantity - reqA.Quantity;
+    });
     return orderedRewardsAsRequiredItems;
   };
 
@@ -98,16 +80,11 @@ const ExpeditionSeasonRewardsOnlyTileInternal: React.FC<IProps> = (
   );
 };
 
-const ExpeditionSeasonRewardsOnlyTileWithDepInj = withServices<
-  IWithoutDepInj,
-  IWithDepInj
->(
+const ExpeditionSeasonRewardsOnlyTileWithDepInj = withServices<IWithoutDepInj, IWithDepInj>(
   ExpeditionSeasonRewardsOnlyTileInternal,
   (services: IDependencyInjection) => ({
     gameItemService: services.gameItemService,
-  })
+  }),
 );
 
-export const ExpeditionSeasonRewardsOnlyTile = (
-  props: IWithoutDepInj
-): JSX.Element => <ExpeditionSeasonRewardsOnlyTileWithDepInj {...props} />;
+export const ExpeditionSeasonRewardsOnlyTile = (props: IWithoutDepInj): JSX.Element => <ExpeditionSeasonRewardsOnlyTileWithDepInj {...props} />;

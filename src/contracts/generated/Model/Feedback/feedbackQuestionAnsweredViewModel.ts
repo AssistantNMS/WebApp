@@ -1,6 +1,6 @@
 ﻿/* Auto Generated */
 
 export interface FeedbackQuestionAnsweredViewModel {
-    feedbackQuestionGuid: any;
-    answer: string;
+  feedbackQuestionGuid: any;
+  answer: string;
 }

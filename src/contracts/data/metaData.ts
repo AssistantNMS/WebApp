@@ -1,5 +1,5 @@
 export interface MetaData {
-    GameVersion: string;
-    GameBuildNumber: number;
-    GeneratedDate: string;
+  GameVersion: string;
+  GameBuildNumber: number;
+  GeneratedDate: string;
 }

@@ -1,4 +1,4 @@
 export class StateCommonReducer {
-    public isLoading!: boolean;
-    public title!: string;
+  public isLoading!: boolean;
+  public title!: string;
 }

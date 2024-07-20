@@ -1,6 +1,6 @@
 ﻿/* Auto Generated */
 
 export interface TranslationSubmittedDetailSearchViewModel {
-    searchText: string;
-    page: number;
+  searchText: string;
+  page: number;
 }

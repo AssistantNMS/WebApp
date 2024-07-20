@@ -23,166 +23,153 @@ import { ApiService } from '../../services/api/ApiService';
 import { DataJsonService } from '../../services/json/DataJsonService';
 
 interface IWithDepInj {
-    apiService: ApiService;
-    dataJsonService: DataJsonService;
+  apiService: ApiService;
+  dataJsonService: DataJsonService;
 }
-interface IWithoutDepInj {
-}
+interface IWithoutDepInj {}
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 export const CommunityMissionTimelineUnconnected: React.FC<IProps> = (props: IProps) => {
-    const [status, setStatus] = useState(NetworkState.Loading);
-    const [quicksilverStoreItems, setQuicksilverStoreItems] = useState<Array<QuicksilverStore>>([]);
-    const [communityMission, setCommunityMission] = useState<CommunityMissionViewModel>(anyObject);
+  const [status, setStatus] = useState(NetworkState.Loading);
+  const [quicksilverStoreItems, setQuicksilverStoreItems] = useState<Array<QuicksilverStore>>([]);
+  const [communityMission, setCommunityMission] = useState<CommunityMissionViewModel>(anyObject);
 
-    useEffect(() => {
-        fetchQuicksilverItems();
-        // eslint-disable-next-line
-    }, []);
+  useEffect(() => {
+    fetchQuicksilverItems();
+  }, []);
 
-    const fetchQuicksilverItems = async () => {
-        const communityMissionResult = await props.apiService.getCommunityMission();
-        const quickSilverStoreItemResult = await props.dataJsonService.getQuicksilverStore();
+  const fetchQuicksilverItems = async () => {
+    const communityMissionResult = await props.apiService.getCommunityMission();
+    const quickSilverStoreItemResult = await props.dataJsonService.getQuicksilverStore();
 
-        if (communityMissionResult.isSuccess === false || quickSilverStoreItemResult.isSuccess === false) {
-            setStatus(NetworkState.Error);
-            return;
-        }
-        const orderedList = quickSilverStoreItemResult.value
-            .sort((a: QuicksilverStore, b: QuicksilverStore) =>
-                b.MissionId - a.MissionId
-            );
-
-        setCommunityMission(communityMissionResult.value);
-        setQuicksilverStoreItems(orderedList);
-        setStatus(NetworkState.Success);
+    if (communityMissionResult.isSuccess === false || quickSilverStoreItemResult.isSuccess === false) {
+      setStatus(NetworkState.Error);
+      return;
     }
+    const orderedList = quickSilverStoreItemResult.value.sort((a: QuicksilverStore, b: QuicksilverStore) => b.MissionId - a.MissionId);
 
-    const renderQuickSilverContent = (qs: QuicksilverStore): ReactNode => {
-        const customQuicksilverItemListTile = (props: QuicksilverItem, index: number) => {
-            const customProps: IQuicksilverItemWithoutDepInj = { ...props, isDisabled: false, showPrice: true };
-            return QuicksilverItemListTile(customProps, index);
-        }
+    setCommunityMission(communityMissionResult.value);
+    setQuicksilverStoreItems(orderedList);
+    setStatus(NetworkState.Success);
+  };
 
-        const items: Array<QuicksilverItem> = qs.Items;
+  const renderQuickSilverContent = (qs: QuicksilverStore): ReactNode => {
+    const customQuicksilverItemListTile = (props: QuicksilverItem) => {
+      const customProps: IQuicksilverItemWithoutDepInj = {
+        ...props,
+        isDisabled: false,
+        showPrice: true,
+      };
+      return QuicksilverItemListTile(customProps);
+    };
 
-        if (qs.Name != null && qs.Icon != null) {
-            return (
-                <div key={items.map(i => i.ItemId).join(',')} data-id="QS-timepine-item">
+    const items: Array<QuicksilverItem> = qs.Items;
 
-                    <div className="generic-item-list row justify">
-                        <div className="gen-item col-12">
-                            <div data-id="QS-Special" className="gen-item-container qs-special" draggable={false}>
-                                <ImageContainer Name={qs.Name} Icon={qs.Icon} />
-                                <div className="gen-item-content-container">
-                                    <TextContainer text={qs.Name} additionalCss="full" />
-                                    <div className="quantity-container">{translate(LocaleKey.communityMission)}</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {
-                        ((qs.ItemsRequired ?? []).length > 0) && (
-                            <>
-                                <div className="generic-item-list row justify pt-3">
-                                    <div>{translate(LocaleKey.requiresTheFollowing)}</div>
-                                </div>
-                                <div className="generic-item-list row justify">
-                                    {
-                                        (qs.ItemsRequired ?? []).map((appId: string, index: number) => {
-                                            return (
-                                                <div key={`generic-item ${index} ${appId}`} data-key={appId} className="gen-item col-12">
-                                                    <QuicksilverRequiredItemListTile
-                                                        Id={appId}
-                                                        Quantity={0}
-                                                    />
-                                                </div>
-                                            )
-                                        })
-                                    }
-                                </div>
-                            </>
-                        )
-                    }
+    if (qs.Name != null && qs.Icon != null) {
+      return (
+        <div key={items.map((i) => i.ItemId).join(',')} data-id="QS-timepine-item">
+          <div className="generic-item-list row justify">
+            <div className="gen-item col-12">
+              <div data-id="QS-Special" className="gen-item-container qs-special" draggable={false}>
+                <ImageContainer Name={qs.Name} Icon={qs.Icon} />
+                <div className="gen-item-content-container">
+                  <TextContainer text={qs.Name} additionalCss="full" />
+                  <div className="quantity-container">{translate(LocaleKey.communityMission)}</div>
                 </div>
-            );
-        }
-        return (
-            <div key={items.map(i => i.ItemId).join(',')} data-id="QS-timepine-item">
-                <GenericListPresenter
-                    list={items}
-                    bootstrapClasses="col-12 qs-timeline"
-                    presenter={customQuicksilverItemListTile}
-                    isCentered={true}
-                />
+              </div>
             </div>
-        );
-    }
+          </div>
 
-    const renderMainContent = () => {
-        if (status === NetworkState.Loading) return <SmallLoading />;
-        if (status === NetworkState.Error) return (<Error />);
-
-        return (
+          {(qs.ItemsRequired ?? []).length > 0 && (
             <>
-                <VerticalTimeline>
-                    {
-                        quicksilverStoreItems.map((qs: QuicksilverStore) => {
-                            let status = qs.MissionId > communityMission.missionId
-                                ? translate(LocaleKey.futureCommunityMission)
-                                : translate(LocaleKey.completedCommunityMission);
-                            if (qs.MissionId === communityMission.missionId) {
-                                status = translate(LocaleKey.inProgressCommunityMission);
-                            }
-                            return (
-                                <VerticalTimelineElement
-                                    key={qs.MissionId}
-                                    className="vertical-timeline-element"
-                                    contentStyle={{ background: 'rgba(0,0,0,0.15)', color: '#fff' }}
-                                    contentArrowStyle={{ borderRight: '1px solid rgba(0,0,0,0.15)' }}
-                                    date={status}
-                                    iconStyle={{ background: '#80cbc4', color: '#000' }}
-                                    icon={<p style={{ paddingTop: '1em' }}>{qs.MissionId}</p>}
-                                >
-                                    {renderQuickSilverContent(qs)}
-                                </VerticalTimelineElement>
-                            );
-                        })
-                    }
-                </VerticalTimeline>
-                <div className="col-12">
-                    <PositiveButton additionalClass="customButton noselect">
-                        <BasicLink href="https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion">
-                            <span style={{ color: 'black' }}>{translate(LocaleKey.viewMoreOnNmsWiki)}</span>
-                        </BasicLink>
-                    </PositiveButton>
-                </div>
-            </>
-        );
-    }
-
-    const title = translate(LocaleKey.communityMission);
-    return (
-        <DefaultAnimation>
-            <HeadComponent title={title} />
-            <NavBar title={title} />
-            <div className="content">
-                <div className="container full pt1 pb5">
-                    <div className="row justify noselect" style={{ overflowX: 'hidden' }}>
-                        {renderMainContent()}
+              <div className="generic-item-list row justify pt-3">
+                <div>{translate(LocaleKey.requiresTheFollowing)}</div>
+              </div>
+              <div className="generic-item-list row justify">
+                {(qs.ItemsRequired ?? []).map((appId: string, index: number) => {
+                  return (
+                    <div key={`generic-item ${index} ${appId}`} data-key={appId} className="gen-item col-12">
+                      <QuicksilverRequiredItemListTile Id={appId} Quantity={0} />
                     </div>
-                </div>
-            </div>
-        </DefaultAnimation>
+                  );
+                })}
+              </div>
+            </>
+          )}
+        </div>
+      );
+    }
+    return (
+      <div key={items.map((i) => i.ItemId).join(',')} data-id="QS-timepine-item">
+        <GenericListPresenter list={items} bootstrapClasses="col-12 qs-timeline" presenter={customQuicksilverItemListTile} isCentered={true} />
+      </div>
     );
-}
+  };
+
+  const renderMainContent = () => {
+    if (status === NetworkState.Loading) return <SmallLoading />;
+    if (status === NetworkState.Error) return <Error />;
+
+    return (
+      <>
+        <VerticalTimeline>
+          {quicksilverStoreItems.map((qs: QuicksilverStore) => {
+            let status =
+              qs.MissionId > communityMission.missionId
+                ? translate(LocaleKey.futureCommunityMission)
+                : translate(LocaleKey.completedCommunityMission);
+            if (qs.MissionId === communityMission.missionId) {
+              status = translate(LocaleKey.inProgressCommunityMission);
+            }
+            return (
+              <VerticalTimelineElement
+                key={qs.MissionId}
+                className="vertical-timeline-element"
+                contentStyle={{ background: 'rgba(0,0,0,0.15)', color: '#fff' }}
+                contentArrowStyle={{
+                  borderRight: '1px solid rgba(0,0,0,0.15)',
+                }}
+                date={status}
+                iconStyle={{ background: '#80cbc4', color: '#000' }}
+                icon={<p style={{ paddingTop: '1em' }}>{qs.MissionId}</p>}
+              >
+                {renderQuickSilverContent(qs)}
+              </VerticalTimelineElement>
+            );
+          })}
+        </VerticalTimeline>
+        <div className="col-12">
+          <PositiveButton additionalClass="customButton noselect">
+            <BasicLink href="https://nomanssky.fandom.com/wiki/Quicksilver_Synthesis_Companion">
+              <span style={{ color: 'black' }}>{translate(LocaleKey.viewMoreOnNmsWiki)}</span>
+            </BasicLink>
+          </PositiveButton>
+        </div>
+      </>
+    );
+  };
+
+  const title = translate(LocaleKey.communityMission);
+  return (
+    <DefaultAnimation>
+      <HeadComponent title={title} />
+      <NavBar title={title} />
+      <div className="content">
+        <div className="container full pt1 pb5">
+          <div className="row justify noselect" style={{ overflowX: 'hidden' }}>
+            {renderMainContent()}
+          </div>
+        </div>
+      </div>
+    </DefaultAnimation>
+  );
+};
 
 export const CommunityMissionTimeline = withServices<IWithoutDepInj, IWithDepInj>(
-    CommunityMissionTimelineUnconnected,
-    (services: IDependencyInjection) => ({
-        apiService: services.apiService,
-        dataJsonService: services.dataJsonService,
-    })
+  CommunityMissionTimelineUnconnected,
+  (services: IDependencyInjection) => ({
+    apiService: services.apiService,
+    dataJsonService: services.dataJsonService,
+  }),
 );

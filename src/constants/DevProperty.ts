@@ -1,7 +1,7 @@
 export enum DevPropertyType {
-    Unknown,
-    Str,
-    Colour,
-    Bool,
-    StrList,
+  Unknown,
+  Str,
+  Colour,
+  Bool,
+  StrList,
 }

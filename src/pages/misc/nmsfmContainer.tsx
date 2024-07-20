@@ -7,69 +7,61 @@ import { ApiService } from '../../services/api/ApiService';
 import { NmsfmPresenter } from './nmsfmPresenter';
 
 interface IWithDepInj {
-    apiService: ApiService;
+  apiService: ApiService;
 }
-interface IWithoutDepInj {
-}
+interface IWithoutDepInj {}
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 interface IState {
-    trackListIsOpen: boolean;
-    trackStatus: NetworkState;
-    trackInfoRows: Array<NmsfmTrackDataViewModel>;
+  trackListIsOpen: boolean;
+  trackStatus: NetworkState;
+  trackInfoRows: Array<NmsfmTrackDataViewModel>;
 }
 
 export class NmsfmContainerUnconnected extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
-        super(props);
+  constructor(props: IProps) {
+    super(props);
 
-        this.state = {
-            trackInfoRows: [],
-            trackListIsOpen: false,
-            trackStatus: NetworkState.Loading,
+    this.state = {
+      trackInfoRows: [],
+      trackListIsOpen: false,
+      trackStatus: NetworkState.Loading,
+    };
+    this.fetchTrackData();
+  }
+
+  fetchTrackData = async () => {
+    const nmsfmListResult = await this.props.apiService.getNmsfm();
+    if (!nmsfmListResult.isSuccess) {
+      this.setState(() => {
+        return {
+          trackStatus: NetworkState.Error,
         };
-        this.fetchTrackData();
+      });
+      return;
     }
+    this.setState(() => {
+      return {
+        trackInfoRows: nmsfmListResult.value,
+        trackStatus: NetworkState.Success,
+      };
+    });
+  };
 
-    fetchTrackData = async () => {
-        const nmsfmListResult = await this.props.apiService.getNmsfm();
-        if (!nmsfmListResult.isSuccess) {
-            this.setState(() => {
-                return {
-                    trackStatus: NetworkState.Error
-                }
-            });
-            return;
-        }
-        this.setState(() => {
-            return {
-                trackInfoRows: nmsfmListResult.value,
-                trackStatus: NetworkState.Success
-            }
-        });
-    }
+  toggleTrackListOpen = (value?: boolean) => {
+    this.setState((prevState: IState) => {
+      return {
+        trackListIsOpen: value != null ? value : !prevState.trackListIsOpen,
+      };
+    });
+  };
 
-    toggleTrackListOpen = (value?: boolean) => {
-        this.setState((prevState: IState) => {
-            return {
-                trackListIsOpen: (value != null) ? value : !prevState.trackListIsOpen,
-            }
-        })
-    }
-
-    render() {
-        return (
-            <NmsfmPresenter {...this.state}
-                toggleTrackListOpen={this.toggleTrackListOpen}
-            />
-        );
-    }
+  render() {
+    return <NmsfmPresenter {...this.state} toggleTrackListOpen={this.toggleTrackListOpen} />;
+  }
 }
 
-export const NmsfmContainer = withServices<IWithoutDepInj, IWithDepInj>(
-    NmsfmContainerUnconnected,
-    (services: IDependencyInjection) => ({
-        apiService: services.apiService,
-    })
-);
+export const NmsfmContainer = withServices<IWithoutDepInj, IWithDepInj>(NmsfmContainerUnconnected, (services: IDependencyInjection) => ({
+  apiService: services.apiService,
+}));

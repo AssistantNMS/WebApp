@@ -13,175 +13,172 @@ import { DataJsonService } from '../../../services/json/DataJsonService';
 import { Error } from '../../core/error/error';
 import { Loading } from '../../core/loading/loading';
 import { SpotlightSearchResult } from './spotlightSearchResults';
+import { EventTargetValue, OnClickEvent, OnKeyDownEvent } from '../../../helper/typescriptHacks';
 
-
-interface INavProps {
-}
+interface INavProps {}
 
 interface IProps extends INavProps {
-    isOpen: boolean;
-    dataJsonService: DataJsonService;
-    onClose: () => void;
+  isOpen: boolean;
+  dataJsonService: DataJsonService;
+  onClose: () => void;
 }
 
 export const SpotlightSearch: React.FC<IProps> = (props: IProps) => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const [text, setText] = useState<string | undefined>();
-    const [dataLookup, setDataLookup] = useState<Array<DevDetail>>([]);
-    const [selectedSearchResult, setSelectedSearchResult] = useState(0);
-    const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
-    let inputRef = useRef<HTMLInputElement | null>(null);
+  const [text, setText] = useState<string | undefined>();
+  const [dataLookup, setDataLookup] = useState<Array<DevDetail>>([]);
+  const [selectedSearchResult, setSelectedSearchResult] = useState(0);
+  const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
+  let inputRef = useRef<HTMLInputElement | null>(null);
 
-    const variants = {
-        initial: { scale: 0, opacity: 0, marginTop: '-50vh' },
-        open: { scale: 1, opacity: 1, marginTop: 0 },
-        closed: { scale: 0, opacity: 0, marginTop: 0 },
+  const variants = {
+    initial: { scale: 0, opacity: 0, marginTop: '-50vh' },
+    open: { scale: 1, opacity: 1, marginTop: 0 },
+    closed: { scale: 0, opacity: 0, marginTop: 0 },
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const devResult: ResultWithValue<Array<DevDetail>> = await props.dataJsonService.getDeveloperDetails();
+    if (devResult.isSuccess === false) {
+      setNetworkState(NetworkState.Error);
+      return;
+    }
+    setDataLookup(devResult.value);
+    setNetworkState(NetworkState.Success);
+  };
+
+  const getGameId = (devItem: DevDetail) => devItem?.Properties?.find?.((p) => p.Name === 'GameId')?.Value;
+
+  const getSearchResults = (searchText?: string): Array<DevDetail> => {
+    const localSearchText = searchText ?? '';
+    const searchResults: Array<DevDetail> = [];
+    for (const devItem of dataLookup) {
+      const gameId = getGameId(devItem);
+      if (gameId == null) continue;
+      if (localSearchText === '' || localSearchText.includes('*') || gameId.toLocaleLowerCase().includes(localSearchText.toLocaleLowerCase())) {
+        searchResults.push(devItem);
+      }
+    }
+    return searchResults;
+  };
+
+  const onCloseSpotlight = () => {
+    (inputRef as any)?.blur?.();
+    setTimeout(() => {
+      setText(undefined);
+      setSelectedSearchResult(0);
+    }, 1000);
+    props.onClose?.();
+  };
+
+  const setSelectedSearchResultSafely = (newValue: number) => {
+    if (newValue < 0) {
+      setSelectedSearchResult(0);
+      return;
     }
 
-    useEffect(() => {
-        fetchData();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    if (newValue !== 0 && newValue >= searchResults.length) {
+      setSelectedSearchResult(searchResults.length - 1);
+      return;
+    }
+    setSelectedSearchResult(newValue);
+  };
 
-    const fetchData = async () => {
-        const devResult: ResultWithValue<Array<DevDetail>> = await props.dataJsonService.getDeveloperDetails();
-        if (devResult.isSuccess === false) {
-            setNetworkState(NetworkState.Error);
-            return;
-        }
-        setDataLookup(devResult.value);
-        setNetworkState(NetworkState.Success);
+  const onSpotlightType = (e: OnKeyDownEvent) => {
+    if (e?.keyCode === knownKeyCodes.esc) onCloseSpotlight();
+    if (e?.keyCode === knownKeyCodes.enter) {
+      const openAppFunc = openItem(searchResults[selectedSearchResult]);
+      openAppFunc({ preventDefault: undefined, stopPropagation: undefined });
+      return;
     }
 
-    const getGameId = (devItem: DevDetail) => devItem?.Properties?.find?.(p => p.Name === 'GameId')?.Value;
-
-    const getSearchResults = (searchText?: string): Array<DevDetail> => {
-        const localSearchText = searchText ?? '';
-        const searchResults: Array<DevDetail> = [];
-        for (const devItem of dataLookup) {
-            const gameId = getGameId(devItem);
-            if (gameId == null) continue;
-            if (localSearchText === '' || localSearchText.includes('*') || gameId.toLocaleLowerCase().includes((localSearchText).toLocaleLowerCase())) {
-                searchResults.push(devItem);
-            }
-        }
-        return searchResults;
+    if (e?.keyCode === knownKeyCodes.up || e?.keyCode === knownKeyCodes.down) {
+      e?.preventDefault?.();
+    }
+    if (e?.keyCode === knownKeyCodes.up) {
+      setSelectedSearchResultSafely(selectedSearchResult - 1); // up
+      return;
+    }
+    if (e?.keyCode === knownKeyCodes.down) {
+      setSelectedSearchResultSafely(selectedSearchResult + 1); // down
+      return;
     }
 
-    const onCloseSpotlight = () => {
-        (inputRef as any)?.blur?.();
-        setTimeout(() => {
-            setText(undefined);
-            setSelectedSearchResult(0);
-        }, 1000);
-        props.onClose?.();
-    }
+    setSelectedSearchResultSafely(0); // set to first item
+  };
 
-    const setSelectedSearchResultSafely = (newValue: number) => {
-        if (newValue < 0) {
-            setSelectedSearchResult(0);
-            return;
-        }
+  const openItem = (devItem: DevDetail) => (e: OnClickEvent) => {
+    e?.preventDefault?.();
+    e?.stopPropagation?.();
 
-        if (newValue !== 0 && newValue >= searchResults.length) {
-            setSelectedSearchResult(searchResults.length - 1);
-            return;
-        }
-        setSelectedSearchResult(newValue);
-    }
+    const gameId = getGameId(devItem);
+    if (gameId == null) return;
 
-    const onSpotlightType = (e: any) => {
-        if (e?.keyCode === knownKeyCodes.esc) onCloseSpotlight();
-        if (e?.keyCode === knownKeyCodes.enter) {
-            const openAppFunc = openItem(searchResults[selectedSearchResult]);
-            openAppFunc({});
-            return;
-        }
+    onCloseSpotlight();
+    navigate(`${Route.catalogueItem}/${gameId}`);
+  };
 
-        if (e?.keyCode === knownKeyCodes.up || e?.keyCode === knownKeyCodes.down) {
-            e?.preventDefault?.();
-        }
-        if (e?.keyCode === knownKeyCodes.up) {
-            setSelectedSearchResultSafely(selectedSearchResult - 1); // up
-            return;
-        }
-        if (e?.keyCode === knownKeyCodes.down) {
-            setSelectedSearchResultSafely(selectedSearchResult + 1); // down
-            return;
-        }
+  const onSpotlightTextChange = (e: EventTargetValue) => {
+    setText(e?.target?.value ?? text ?? '');
+  };
 
-        setSelectedSearchResultSafely(0); // set to first item
-    }
+  const onSpotlightGroupClick = (e: any) => {
+    if (e?.customEvent === 'spotlightSelect') return;
 
-    const openItem = (devItem: DevDetail) => (e: any) => {
-        e?.preventDefault?.();
-        e?.stopPropagation?.();
+    (inputRef as any)?.focus?.();
+  };
 
-        const gameId = getGameId(devItem);
-        if (gameId == null) return;
+  const onClick = props.isOpen ? onCloseSpotlight : () => {};
+  const searchResults: Array<DevDetail> = getSearchResults(text?.toLocaleLowerCase?.());
 
-        onCloseSpotlight();
-        navigate(`${Route.catalogueItem}/${gameId}`);
-    }
-
-    const onSpotlightTextChange = (e: any) => {
-        setText((e?.target?.value ?? text) ?? '');
-    }
-
-    const onSpotlightGroupClick = (e: any) => {
-        if (e?.customEvent === 'spotlightSelect') return;
-        (inputRef as any)?.focus?.();
-    }
-
-    const onClick = (props.isOpen) ? onCloseSpotlight : () => { };
-    const searchResults: Array<DevDetail> = getSearchResults(text?.toLocaleLowerCase?.());
-
-    return (
-        <div className={classNames('spotlight', { 'isOpen': props.isOpen })} draggable="false">
-            <div className={classNames('spotlight-bg', { 'isOpen': props.isOpen })} onClick={onClick}></div>
-            <motion.div
-                key="spotlight"
-                id="spotlight-wrapper"
-                initial={variants.initial}
-                transition={{ duration: 0.5 }}
-                animate={(props.isOpen ?? false) ? "open" : "initial"}
-                variants={variants}
-                exit={variants.closed}
-                onClick={() => { }}
-            >
-                <div className="spotlight-group" onClick={onSpotlightGroupClick}>
-                    <p>GameId {translate(LocaleKey.search)}</p>
-                    <input
-                        ref={input => {
-                            input && props.isOpen && input.focus();
-                            inputRef = input as any;
-                        }}
-                        id="spotlight"
-                        type="text"
-                        placeholder="Search"
-                        className="form-control"
-                        value={text ?? ''}
-                        onKeyDown={onSpotlightType}
-                        onChange={onSpotlightTextChange}
-                    />
-                    {
-                        networkState === NetworkState.Success
-                            ? (
-                                <SpotlightSearchResult
-                                    searchText={text}
-                                    searchResults={searchResults}
-                                    selectedSearchResult={selectedSearchResult}
-                                    setSelectedSearchResult={setSelectedSearchResultSafely}
-                                    openItem={openItem}
-                                />
-                            )
-                            : (networkState === NetworkState.Loading)
-                                ? <Loading />
-                                : <Error />
-                    }
-                </div>
-            </motion.div>
+  return (
+    <div className={classNames('spotlight', { isOpen: props.isOpen })} draggable="false">
+      <div className={classNames('spotlight-bg', { isOpen: props.isOpen })} onClick={onClick}></div>
+      <motion.div
+        key="spotlight"
+        id="spotlight-wrapper"
+        initial={variants.initial}
+        transition={{ duration: 0.5 }}
+        animate={props.isOpen ?? false ? 'open' : 'initial'}
+        variants={variants}
+        exit={variants.closed}
+        onClick={() => {}}
+      >
+        <div className="spotlight-group" onClick={onSpotlightGroupClick}>
+          <p>GameId {translate(LocaleKey.search)}</p>
+          <input
+            ref={(input) => {
+              input && props.isOpen && input.focus();
+              inputRef = input as unknown as React.MutableRefObject<HTMLInputElement | null>;
+            }}
+            id="spotlight"
+            type="text"
+            placeholder="Search"
+            className="form-control"
+            value={text ?? ''}
+            onKeyDown={onSpotlightType}
+            onChange={onSpotlightTextChange}
+          />
+          {networkState === NetworkState.Success ? (
+            <SpotlightSearchResult
+              searchText={text}
+              searchResults={searchResults}
+              selectedSearchResult={selectedSearchResult}
+              setSelectedSearchResult={setSelectedSearchResultSafely}
+              openItem={openItem}
+            />
+          ) : networkState === NetworkState.Loading ? (
+            <Loading />
+          ) : (
+            <Error />
+          )}
         </div>
-    );
-}
+      </motion.div>
+    </div>
+  );
+};

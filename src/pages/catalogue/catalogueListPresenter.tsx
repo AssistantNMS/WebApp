@@ -15,55 +15,46 @@ import { DefaultAnimation } from '../../components/common/animation/defaultAnim'
 import { SearchBar } from '../../components/common/searchBar';
 
 interface IProps {
-    // Container Props
-    selectedLanguage?: string;
+  // Container Props
+  selectedLanguage?: string;
 
-    // Container State
-    items: Array<GameItemModel>;
-    displayItems: Array<GameItemModel>;
-    searchTerm: string;
-    networkState: NetworkState;
-    dataJsonService: DataJsonService;
+  // Container State
+  items: Array<GameItemModel>;
+  displayItems: Array<GameItemModel>;
+  searchTerm: string;
+  networkState: NetworkState;
+  dataJsonService: DataJsonService;
 
-    // Container Specific
-    onSearchTextChange: (e: any) => void;
+  // Container Specific
+  onSearchTextChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const CatalogueListPresenter: React.FC<IProps> = (props: IProps) => {
-    const [isSpotlightOpen, setSpotlightOpen] = useState<boolean>(false);
+  const [isSpotlightOpen, setSpotlightOpen] = useState<boolean>(false);
 
-    const getNavActionButtons = (): Array<any> => {
-        const components: any[] = [];
-        components.push(<GameIdSearchFloatingActionButton key="gameIdSearch" onClick={() => setSpotlightOpen(true)} />);
-        return components;
-    }
+  const getNavActionButtons = (): Array<JSX.Element> => {
+    const components: Array<JSX.Element> = [];
+    components.push(<GameIdSearchFloatingActionButton key="gameIdSearch" onClick={() => setSpotlightOpen(true)} />);
+    return components;
+  };
 
-    const renderContent = () => {
-        if (props.networkState === NetworkState.Loading) return (<SmallLoading />);
-        if (props.networkState === NetworkState.Error) return (<Error />);
+  const renderContent = () => {
+    if (props.networkState === NetworkState.Loading) return <SmallLoading />;
+    if (props.networkState === NetworkState.Error) return <Error />;
 
-        return (
-            <GameItemList key={props.displayItems.length} items={props.displayItems} />
-        );
-    }
+    return <GameItemList key={props.displayItems.length} items={props.displayItems} />;
+  };
 
-    const title = translate(LocaleKey.catalogue);
-    return (
-        <DefaultAnimation>
-            <HeadComponent title={title} />
-            <NavBar title={title} additionalItems={getNavActionButtons()} />
-            <div className="content" data-id="CatalogueListPresenter">
-                <SearchBar
-                    searchTerm={props.searchTerm}
-                    onSearchTextChange={props.onSearchTextChange}
-                />
-                {renderContent()}
-            </div>
-            <SpotlightSearch
-                isOpen={isSpotlightOpen}
-                onClose={() => setSpotlightOpen(false)}
-                dataJsonService={props.dataJsonService}
-            />
-        </DefaultAnimation>
-    );
-}
+  const title = translate(LocaleKey.catalogue);
+  return (
+    <DefaultAnimation>
+      <HeadComponent title={title} />
+      <NavBar title={title} additionalItems={getNavActionButtons()} />
+      <div className="content" data-id="CatalogueListPresenter">
+        <SearchBar searchTerm={props.searchTerm} onSearchTextChange={props.onSearchTextChange} />
+        {renderContent()}
+      </div>
+      <SpotlightSearch isOpen={isSpotlightOpen} onClose={() => setSpotlightOpen(false)} dataJsonService={props.dataJsonService} />
+    </DefaultAnimation>
+  );
+};

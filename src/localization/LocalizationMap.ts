@@ -1,4 +1,4 @@
-import { LocaleKey } from "./LocaleKey";
+import { LocaleKey } from './LocaleKey';
 
 export class LocalizationMap {
   name: LocaleKey;

@@ -1,7 +1,7 @@
 ﻿/* Auto Generated */
 
 export enum GuideStatusType {
-    live,
-    pending,
-    rejected,
+  live,
+  pending,
+  rejected,
 }

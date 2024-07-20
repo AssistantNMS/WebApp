@@ -1,5 +1,5 @@
 export enum NetworkState {
-    Loading,
-    Success,
-    Error,
+  Loading,
+  Success,
+  Error,
 }

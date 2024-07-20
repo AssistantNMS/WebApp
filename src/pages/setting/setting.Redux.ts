@@ -1,42 +1,41 @@
-import { State } from '../../redux/state';
-import { setLanguage, toggleAltGlyphs, setFont, setPlatform } from '../../redux/modules/setting/action';
-import { getUseAltGlyphs, getCurrentLanguage, getSelectedFont, getChosenPlatform } from '../../redux/modules/setting/selector';
 import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
+import { setFont, setLanguage, setPlatform, toggleAltGlyphs } from '../../redux/modules/setting/action';
+import { getChosenPlatform, getCurrentLanguage, getSelectedFont, getUseAltGlyphs } from '../../redux/modules/setting/selector';
+import { State } from '../../redux/state';
 
 export interface IReduxProps {
-    useAltGlyphs: boolean;
-    selectedLanguage: string;
-    selectedFont: string;
-    selectedPlatform: ControllerPlatformType;
-    toggleAltGlyphs: () => void;
-    setLanguage: (selectedLanguage: string) => void;
-    setFont: (selectedFont: string) => void;
-    setPlatform: (platform: ControllerPlatformType) => void;
+  useAltGlyphs: boolean;
+  selectedLanguage: string;
+  selectedFont: string;
+  selectedPlatform: ControllerPlatformType;
+  toggleAltGlyphs: () => void;
+  setLanguage: (selectedLanguage: string) => void;
+  setFont: (selectedFont: string) => void;
+  setPlatform: (platform: ControllerPlatformType) => void;
 }
 
 export const mapStateToProps = (state: State) => {
-    return {
-        useAltGlyphs: getUseAltGlyphs(state),
-        selectedLanguage: getCurrentLanguage(state),
-        selectedFont: getSelectedFont(state),
-        selectedPlatform: getChosenPlatform(state),
-    };
+  return {
+    useAltGlyphs: getUseAltGlyphs(state),
+    selectedLanguage: getCurrentLanguage(state),
+    selectedFont: getSelectedFont(state),
+    selectedPlatform: getChosenPlatform(state),
+  };
 };
 
 export const mapDispatchToProps = (dispatch: any) => {
-
-    let newProps: any = {};
-    newProps.setLanguage = (selectedLanguage: string) => {
-        dispatch(setLanguage(selectedLanguage));
-    };
-    newProps.toggleAltGlyphs = () => {
-        dispatch(toggleAltGlyphs());
-    };
-    newProps.setFont = (selectedFont: string) => {
-        dispatch(setFont(selectedFont));
-    };
-    newProps.setPlatform = (platform: ControllerPlatformType) => {
-        dispatch(setPlatform(platform));
-    };
-    return { ...newProps };
-}
+  return {
+    setLanguage: (selectedLanguage: string) => {
+      dispatch(setLanguage(selectedLanguage));
+    },
+    toggleAltGlyphs: () => {
+      dispatch(toggleAltGlyphs());
+    },
+    setFont: (selectedFont: string) => {
+      dispatch(setFont(selectedFont));
+    },
+    setPlatform: (platform: ControllerPlatformType) => {
+      dispatch(setPlatform(platform));
+    },
+  };
+};

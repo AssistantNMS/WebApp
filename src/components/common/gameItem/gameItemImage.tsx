@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { IDependencyInjection, withServices } from '../../../integration/dependencyInjection';
@@ -6,35 +5,29 @@ import { GameItemService } from '../../../services/json/GameItemService';
 import { ImageContainer } from '../tile/imageContainer';
 
 interface IWithDepInj {
-    gameItemService: GameItemService;
+  gameItemService: GameItemService;
 }
 interface IWithoutDepInj {
-    id: string;
+  id: string;
 }
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 const GameItemImageUnconnected: React.FC<IProps> = (props: IProps) => {
-    const [icon, setIcon] = useState<string>('loader.svg');
+  const [icon, setIcon] = useState<string>('loader.svg');
 
-    useEffect(() => {
-        fetchData(props.id);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+  useEffect(() => {
+    fetchData(props.id);
+  }, []);
 
-    const fetchData = async (itemId: string) => {
-        const itemDetails = await props.gameItemService.getItemDetails(itemId);
-        setIcon(itemDetails.value.Icon);
-    }
+  const fetchData = async (itemId: string) => {
+    const itemDetails = await props.gameItemService.getItemDetails(itemId);
+    setIcon(itemDetails.value.Icon);
+  };
 
-    return (
-        <ImageContainer Name={icon} Icon={icon} />
-    );
-}
+  return <ImageContainer Name={icon} Icon={icon} />;
+};
 
-export const GameItemImage = withServices<IWithoutDepInj, IWithDepInj>(
-    GameItemImageUnconnected,
-    (services: IDependencyInjection) => ({
-        gameItemService: services.gameItemService,
-    })
-);
+export const GameItemImage = withServices<IWithoutDepInj, IWithDepInj>(GameItemImageUnconnected, (services: IDependencyInjection) => ({
+  gameItemService: services.gameItemService,
+}));

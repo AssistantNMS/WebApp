@@ -5,23 +5,22 @@ import { removePortal } from '../../redux/modules/portal/action';
 import { getUseAltGlyphs } from '../../redux/modules/setting/selector';
 
 export interface IReduxProps {
-    portals: Array<PortalRecord>
-    useAltGlyphs: boolean;
-    removePortal: (portalId: string) => void;
+  portals: Array<PortalRecord>;
+  useAltGlyphs: boolean;
+  removePortal: (portalId: string) => void;
 }
 
 export const mapStateToProps = (state: State) => {
-    return {
-        portals: getPortals(state),
-        useAltGlyphs: getUseAltGlyphs(state),
-    };
+  return {
+    portals: getPortals(state),
+    useAltGlyphs: getUseAltGlyphs(state),
+  };
 };
 
 export const mapDispatchToProps = (dispatch: any) => {
-
-    let newProps: any = {};
-    newProps.removePortal = (portalId: string) => {
-        dispatch(removePortal(portalId));
-    };
-    return { ...newProps };
-}
+  return {
+    removePortal: (portalId: string) => {
+      dispatch(removePortal(portalId));
+    },
+  };
+};

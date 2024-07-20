@@ -26,18 +26,22 @@ import 'react-vertical-timeline-component/style.min.css';
 import 'flag-icons/css/flag-icons.min.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-type CustomElement<T> = Partial<T & DOMAttributes<T> & { children: any }>;
+type CustomElement<T> = Partial<T & DOMAttributes<T> & { children: unknown }>;
 
 declare global {
-    interface Window { config: any; registration: any }
-    namespace JSX {
-        interface IntrinsicElements {
-            ['assistant-apps-patreon-list']: CustomElement<any>;
-            ['assistant-apps-team-list']: CustomElement<any>;
-            ['assistant-apps-translation-leaderboard']: CustomElement<any>;
-            ['assistant-apps-store-tile']: CustomElement<any>;
-        }
+  interface Window {
+    config: any;
+    registration: any;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      ['assistant-apps-patreon-list']: CustomElement<any>;
+      ['assistant-apps-team-list']: CustomElement<any>;
+      ['assistant-apps-translation-leaderboard']: CustomElement<any>;
+      ['assistant-apps-store-tile']: CustomElement<any>;
+      ['assistant-apps-donation-option-list']: CustomElement<any>;
     }
+  }
 }
 
 const reactAppId = 'nms-app';
@@ -47,51 +51,40 @@ const store = createStore(reducer, persistedState);
 store.subscribe(() => saveStateToLocalStorage(store));
 
 window.config = window.config || {};
-getJSON('/assets/config.json', (status: boolean, response: string) => {
-    window.config = (status === true)
-        ? (response || anyObject)
-        : defaultConfig;
+getJSON('/assets/config.json', (status: boolean, response: Response) => {
+  window.config = status === true ? response ?? anyObject : defaultConfig;
 
-    if (window.config.consoleLogDebug) console.log('Config', window.config);
+  if (window.config.consoleLogDebug) console.log('Config', window.config);
 
-    initAnalytics();
-    initLocalization(getCurrentLanguage(store.getState()));
-    modalSetup(reactAppId);
+  initAnalytics();
+  initLocalization(getCurrentLanguage(store.getState()));
+  modalSetup(reactAppId);
 
-    const container = document.getElementById(reactAppId);
-    const root = createRoot(container!);
+  const container = document.getElementById(reactAppId);
+  const root = createRoot(container!);
 
-    root.render(
-        <DependencyInjectionProvider>
-            <StateProvider store={store}>
-                <BrowserRouter>
-                    <App />
-                    <ToastContainer
-                        position="bottom-right"
-                        theme="colored"
-                        autoClose={false}
-                        newestOnTop={false}
-                        closeOnClick
-                        rtl={false}
-                        draggable
-                    />
-                </BrowserRouter>
-            </StateProvider>
-        </DependencyInjectionProvider>
-    );
+  root.render(
+    <DependencyInjectionProvider>
+      <StateProvider store={store}>
+        <BrowserRouter>
+          <App />
+          <ToastContainer position="bottom-right" theme="colored" autoClose={false} newestOnTop={false} closeOnClick rtl={false} draggable />
+        </BrowserRouter>
+      </StateProvider>
+    </DependencyInjectionProvider>,
+  );
 
-    if (window.config.useServiceWorker) {
-        serviceWorker.register({
-            onUpdate: registration => {
-                toast.info(<UpdateButton onClick={() => updateServiceWorker(registration)} />, {
-                    autoClose: false,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                });
-            }
+  if (window.config.useServiceWorker) {
+    serviceWorker.register({
+      onUpdate: (registration) => {
+        toast.info(<UpdateButton onClick={() => updateServiceWorker(registration)} />, {
+          autoClose: false,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
         });
-    }
-})
-
+      },
+    });
+  }
+});

@@ -1,4 +1,3 @@
-
 export interface ProceduralStatBonus {
   AlwaysChoose: boolean;
   Name: string;

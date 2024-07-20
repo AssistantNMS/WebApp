@@ -1,16 +1,16 @@
 export interface TwitchDrop {
-    Id: number;
-    StartDate: Date;
-    EndDate: Date;
-    Days: Array<TwitchDropDay>;
+  Id: number;
+  StartDate: Date;
+  EndDate: Date;
+  Days: Array<TwitchDropDay>;
 }
 
 export interface TwitchDropDay {
-    DayNumber: number;
-    Rewards: Array<TwitchDropReward>;
+  DayNumber: number;
+  Rewards: Array<TwitchDropReward>;
 }
 
 export interface TwitchDropReward {
-    Id: string;
-    WatchTimeInMin: number;
+  Id: string;
+  WatchTimeInMin: number;
 }

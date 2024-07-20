@@ -52,24 +52,21 @@ import { TwitchDropPage } from './pages/twitchDrops/twitchDropPage';
 import { TwitchDropViewerPage } from './pages/twitchDrops/twitchDropViewerPage';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
 
-interface IProps extends IStateProps, IStateDispatch { }
+interface IProps extends IStateProps, IStateDispatch {}
 
-const AppUnconnected: React.FC<any> = (props: IProps) => {
-  let location = useLocation();
+const AppUnconnected: React.FC<IProps> = (props: IProps) => {
+  const location = useLocation();
 
   useEffect(() => {
     if (location == null) return;
     if (location.pathname == null) return;
     trackPageView(location.pathname);
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location, location.pathname]);
 
-  const toggleMenu = () => props?.toggleMenu != null ? props?.toggleMenu() : () => { };
+  const toggleMenu = () => (props?.toggleMenu != null ? props?.toggleMenu() : () => {});
 
   return (
-    <div id="app"
-      className={classNames('menu-on-left', props.selectedLanguage, props.selectedFont)}>
+    <div id="app" className={classNames('menu-on-left', props.selectedLanguage, props.selectedFont)}>
       <ScrollToTop>
         <Drawer key={props.selectedLanguage} />
         <div className="main-panel ps-theme-default">
@@ -135,6 +132,6 @@ const AppUnconnected: React.FC<any> = (props: IProps) => {
       </ScrollToTop>
     </div>
   );
-}
+};
 
 export const App = connect(mapStateToProps, mapDispatchToProps)(AppUnconnected);

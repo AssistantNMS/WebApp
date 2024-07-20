@@ -1,5 +1,5 @@
 ﻿/* Auto Generated */
 
 export interface UserNewPasswordViewModel {
-    newPassword: string;
+  newPassword: string;
 }

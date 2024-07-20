@@ -1,4 +1,3 @@
-
 export interface StatBonus {
   Name: string;
   LocaleKeyTemplate: string;

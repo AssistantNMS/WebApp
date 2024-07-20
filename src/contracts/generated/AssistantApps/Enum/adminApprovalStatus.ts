@@ -1,8 +1,8 @@
 ﻿/* Auto Generated */
 
 export enum AdminApprovalStatus {
-    pending,
-    inReview,
-    denied,
-    approved,
+  pending,
+  inReview,
+  denied,
+  approved,
 }

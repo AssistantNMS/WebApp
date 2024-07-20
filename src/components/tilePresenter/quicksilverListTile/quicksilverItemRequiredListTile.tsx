@@ -11,46 +11,44 @@ import { TextContainer } from '../../common/tile/textContainer';
 import { TileLoading } from '../../core/loading/loading';
 
 interface IWithDepInj {
-    gameItemService: GameItemService;
+  gameItemService: GameItemService;
 }
 
-interface IWithoutDepInj extends RequiredItem {
-}
+interface IWithoutDepInj extends RequiredItem {}
 
-interface IProps extends IWithDepInj, IWithoutDepInj { }
+interface IProps extends IWithDepInj, IWithoutDepInj {}
 
 const QuicksilverRequiredItemListTileClass: React.FC<IProps> = (props: IProps) => {
-    const [item, setItem] = useState<GameItemModel>();
+  const [item, setItem] = useState<GameItemModel>();
 
-    useEffect(() => {
-        fetchData(props.Id);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+  useEffect(() => {
+    fetchData(props.Id);
+  }, []);
 
-    const fetchData = async (itemId: string) => {
-        const itemDetails = await props.gameItemService.getItemDetails(itemId);
-        setItem(itemDetails.value);
-    }
+  const fetchData = async (itemId: string) => {
+    const itemDetails = await props.gameItemService.getItemDetails(itemId);
+    setItem(itemDetails.value);
+  };
 
-    if (item == null) {
-        return (<TileLoading />);
-    }
+  if (item == null) {
+    return <TileLoading />;
+  }
 
-    return (
-        <Link to={`${catalogueItem}/${props.Id}`} data-id="QuicksilverRequiredItemListTile" className="gen-item-container qs-special" draggable={false}>
-            <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} />
-            <div className="gen-item-content-container">
-                <TextContainer text={item.Name} additionalCss="full" />
-            </div>
-        </Link>
-    );
-}
+  return (
+    <Link to={`${catalogueItem}/${props.Id}`} data-id="QuicksilverRequiredItemListTile" className="gen-item-container qs-special" draggable={false}>
+      <ImageContainer Name={item.Name} Icon={item.Icon} Colour={item.Colour} />
+      <div className="gen-item-content-container">
+        <TextContainer text={item.Name} additionalCss="full" />
+      </div>
+    </Link>
+  );
+};
 
 const QuicksilverRequiredItemListTileClassWithDepInj = withServices<IWithoutDepInj, IWithDepInj>(
-    QuicksilverRequiredItemListTileClass,
-    (services: IDependencyInjection) => ({
-        gameItemService: services.gameItemService,
-    })
+  QuicksilverRequiredItemListTileClass,
+  (services: IDependencyInjection) => ({
+    gameItemService: services.gameItemService,
+  }),
 );
 
 export const QuicksilverRequiredItemListTile = (props: IWithoutDepInj): JSX.Element => <QuicksilverRequiredItemListTileClassWithDepInj {...props} />;
