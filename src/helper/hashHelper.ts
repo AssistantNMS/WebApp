@@ -1,9 +1,10 @@
+import { getCurrentLang } from '../localization/Translate';
 import { formatDate } from './dateHelper';
 import hash from 'object-hash';
 
 export const getHashForObject = (object: hash.NotUndefined) => {
   const dateString = formatDate(new Date(), 'HH:00');
-  const hashString = hash([object, dateString]);
+  const hashString = hash([object, dateString, getCurrentLang()]);
   return hashString;
 };
 
