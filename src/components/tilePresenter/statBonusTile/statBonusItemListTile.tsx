@@ -27,6 +27,10 @@ export const StatBonusItemListTile = (props: StatBonus): JSX.Element => <StatBon
 
 const ProceduralStatBonusItemListTileClass: React.FC<ProceduralStatBonus> = (props: ProceduralStatBonus) => {
   let subTitle = props.MinValue + ' => ' + props.MaxValue;
+  if (props.MinValue === props.MaxValue) {
+    subTitle = props.MinValue;
+  }
+  
   if (props.LocaleKeyTemplate !== 'defaultTemplate') {
     if (props.MinValue === props.MaxValue) {
       subTitle = translate(props.LocaleKeyTemplate).replace('{0}', props.MinValue.toString());
