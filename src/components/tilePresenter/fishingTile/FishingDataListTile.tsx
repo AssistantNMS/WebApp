@@ -24,7 +24,7 @@ export const FishingDataListTile = (props: FishingData) => (
       </div>
       <div className="action-container">
         <div className="action-list">
-            <img src={`/${AppImage.base}special/fishing-${props.Time}.svg`} className="dayNight" alt={props.TimeKey} />
+            <img src={`/${AppImage.base}special/fishing-${props.Time.toLocaleLowerCase()}.svg`} className="dayNight" alt={props.TimeKey} />
         </div>
       </div>
     </div>
