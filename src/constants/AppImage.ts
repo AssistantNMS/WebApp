@@ -2,7 +2,7 @@ export class AppImage {
   static base: string = 'assets/images/';
   static controls: string = AppImage.base + 'buttons/';
   static unknown: string = 'unknown.png';
-
+  
   static twitch: string = 'special/twitchAlt.png';
   static quicksilver: string = 'special/quicksilverAlt.png';
   static starshipScrap: string = 'special/starshipScrap.png';
@@ -10,6 +10,7 @@ export class AppImage {
   static creatureKill: string = 'special/creatureKill.png';
   static communityMissionProgress: string = 'special/communityMissionProgress.png';
   static cronus: string = 'special/cronus.png';
+  static patreon: string = AppImage.base + 'patreon.png';
 
   static sclass: string = 'special/sclass.png';
   static aclass: string = 'special/aclass.png';

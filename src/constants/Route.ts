@@ -40,3 +40,4 @@ export const newItemsAdded = '/new-items-added';
 export const newItemsAddedParam = ':id';
 export const newItemsAddedDetails = `${newItemsAdded}/${newItemsAddedParam}`;
 export const solarPanel = 'solar-panel';
+export const fishing = 'fishing';

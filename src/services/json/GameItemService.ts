@@ -1,5 +1,6 @@
 import { CatalogueType } from '../../constants/CatalogueType';
 import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
+import { FishingData } from '../../contracts/data/fishingData';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { ExpeditionSeason } from '../../contracts/helloGames/expeditionSeason';
 import { WeekendMission } from '../../contracts/helloGames/weekendMission';
@@ -463,6 +464,48 @@ export class GameItemService extends BaseJsonService {
     return {
       isSuccess: true,
       value: specificToItemId,
+      errorMessage: '',
+    };
+  }
+
+
+  async getAllFishing(): Promise<ResultWithValue<Array<FishingData>>> {
+    return this._getOrAdd(() => this._getAllFishing(), ['_getAllFishing']);
+  }
+  async _getAllFishing(): Promise<ResultWithValue<Array<FishingData>>> {
+    const path = translate(LocaleKey.fishingJson).toString();
+    const jsonResult = await this.getAsset<Array<FishingData>>(`json/${path}.json`);
+    if (!jsonResult.isSuccess)
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: jsonResult.errorMessage,
+      };
+
+    return {
+      isSuccess: true,
+      value: jsonResult.value,
+      errorMessage: '',
+    };
+  }
+
+  async getFishingForItem(itemId: string): Promise<ResultWithValue<FishingData>> {
+    return this._getOrAdd(() => this._getFishingForItem(itemId), ['_getFishingForItem', itemId]);
+  }
+  async _getFishingForItem(itemId: string): Promise<ResultWithValue<FishingData>> {
+    const jsonResult = await this._getAllFishing()
+
+    if (!jsonResult.isSuccess)
+      return {
+        isSuccess: false,
+        value: anyObject,
+        errorMessage: jsonResult.errorMessage,
+      };
+
+    const specificToItemId = jsonResult.value.find((Fishing) => Fishing.AppId === itemId);
+    return {
+      isSuccess: specificToItemId != null,
+      value: specificToItemId ?? anyObject,
       errorMessage: '',
     };
   }

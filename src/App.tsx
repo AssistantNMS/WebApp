@@ -41,6 +41,7 @@ import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
 import { PortalListContainer } from './pages/portal/portalListContainer';
 import { RandomPortal } from './pages/portal/randomPortalPresenter';
 import { SolarPanelPage } from './pages/power/solarPanelPage';
+import { FishingListPage } from './pages/fishing/fishingList';
 import { ProcessorItemContainer } from './pages/processor/processorItemContainer';
 import { SettingPresenter } from './pages/setting/settingPresenter';
 import { SocialPresenter } from './pages/social/socialPresenter';
@@ -111,6 +112,7 @@ const AppUnconnected: React.FC<IProps> = (props: IProps) => {
               <Route path={route.newItemsAdded} element={<NewItemsPresenter />} />
               <Route path={route.newItemsAddedDetails} element={<NewItemsDetailPresenter />} />
               <Route path={route.solarPanel} element={<SolarPanelPage />} />
+              <Route path={route.fishing} element={<FishingListPage />} />
 
               <Route path={route.techTree} element={<TechTreeContainer />} />
               <Route path={route.titles} element={<TitlesContainer />} />

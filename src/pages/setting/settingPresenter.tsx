@@ -1,15 +1,15 @@
-import { translate } from '../../localization/Translate';
 import React from 'react';
 import { connect } from 'react-redux';
-import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 
+import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { HeadComponent } from '../../components/core/headComponent';
 import { NavBar } from '../../components/core/navbar/navbar';
 import { withServices } from '../../integration/dependencyInjection';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { LocalizationMap } from '../../localization/LocalizationMap';
-import { mapDispatchToProps, mapStateToProps, IReduxProps } from './setting.Redux';
-import { BoolSettingTile, LangSettingTile, FontSettingTile, ControlPlatformSettingTile } from './settingComponent';
+import { translate } from '../../localization/Translate';
+import { IReduxProps, mapDispatchToProps, mapStateToProps } from './setting.Redux';
+import { BoolSettingTile, ControlPlatformSettingTile, FontSettingTile, LangSettingTile } from './settingComponent';
 
 interface IWithDepInj {}
 interface IWithoutDepInj {}

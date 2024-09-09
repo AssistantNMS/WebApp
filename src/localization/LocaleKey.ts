@@ -79,6 +79,7 @@ export enum LocaleKey {
   licenceJson = 'licenceJson',
   milestoneJson = 'milestoneJson',
   peopleJson = 'peopleJson',
+  fishingJson = 'fishingJson',
   title = 'title',
   loading = 'loading',
   about = 'about',
