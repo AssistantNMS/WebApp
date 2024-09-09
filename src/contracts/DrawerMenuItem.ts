@@ -11,6 +11,7 @@ export interface DrawerMenuItem {
   iconType: DrawerIconType;
   isActive: boolean;
   isSeparator?: boolean;
+  isPatreon?: boolean;
   subs?: Array<DrawerMenuItem>;
   onClick?: (props: IDrawerProps) => void;
 }

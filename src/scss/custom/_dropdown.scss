@@ -1,0 +1,28 @@
+.nms-drop {
+    position: relative;
+
+    &.is-open {
+        &:after {
+            content: ' ';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 100;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        background: $brand-secondary;
+        color: black;
+    }
+
+    .dropdown-menu {
+        top: calc(100% - 0.25em);
+        left: 0;
+        right: -1px;
+    }
+}

@@ -149,6 +149,14 @@ export const getMenuSection3 = () => {
     iconType: DrawerIconType.Material,
     isActive: false,
   });
+  menuItems.push({
+    name: 'Fishing',
+    link: routes.fishing,
+    icon: 'phishing',
+    iconType: DrawerIconType.Material,
+    isActive: false,
+    isPatreon: true,
+  });
   menuItems.push(menuItemSeperator);
   return menuItems;
 };

@@ -18,6 +18,7 @@ import { GameItemService } from '../../../services/json/GameItemService';
 import { AboutDrawerTilePresenter } from '../../common/about/aboutDrawerTilePresenter';
 import { AssistantAppsAboutDrawerTilePresenter } from '../../common/about/assistantAppsAboutDrawerTilePresenter';
 import { mapDispatchToProps, mapStateToProps } from './drawer.Redux';
+import { AppImage } from '../../../constants/AppImage';
 
 interface IWithDepInj {
   gameItemService: GameItemService;
@@ -83,6 +84,11 @@ const DrawerUnconnected: React.FC<IProps> = (props: IProps) => {
         <Link onClick={menuItemClick} to={menuItem.link} className="nav-link" draggable={false}>
           {icon}
           <p>{menuItem.name}</p>
+          {
+            menuItem.isPatreon && (
+              <img style={{position: 'absolute', top: '0.77em', right: '1.75em', height: '2.5em'}} src={AppImage.patreon} alt="patreon" />
+            )
+          }
         </Link>
       );
     }

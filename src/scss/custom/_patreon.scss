@@ -1,0 +1,23 @@
+.patreon-block-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .patreon-notice {
+        max-width: 700px;
+        margin: 0 auto;
+
+        .card {
+            padding: 1em;
+
+            * {
+                color: white;
+            }
+
+            img {
+                max-width: 200px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -11,3 +11,10 @@ export const lowercaseAllButCapitaliseFirstChar = (name: string): string => {
   const rest = name.slice(1).toLowerCase();
   return firstLetter + rest;
 };
+
+
+export const capitaliseFirstChar = (name: string): string => {
+  const firstLetter = name.slice(0, 1).toUpperCase();
+  const rest = name.slice(1);
+  return firstLetter + rest;
+};
