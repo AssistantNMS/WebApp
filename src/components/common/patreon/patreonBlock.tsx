@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { translate } from '../../../localization/Translate';
 import { LocaleKey } from '../../../localization/LocaleKey';
 import { AppImage } from '../../../constants/AppImage';
-import { getHashForObject } from '../../../helper/hashHelper';
+import { simpleHash } from '../../../helper/hashHelper';
 
 interface IProps {
   children: JSX.Element;
@@ -12,10 +12,10 @@ interface IProps {
 
 const localStorageKey = 'assistantNMS-patreon-block';
 const validCodes = [
-    '0dab8e1b3a7cd6661d8c93255dbe4818882479c9',
-    '6c4c342dfb52aa8243cc55a264f121148951c44f',
-    '31fbf9a9ed57c47b7df66bdefa9a065c730fb969',
-    '9546d2a26825a8a4bd04969437df832af90d0abe',
+    'e8d081bbd60ceaa883abc965cdaf92885a34600e',
+    'bc982c8a6bf9d5b496c494bcbcc3ba34ec7a0bf2',
+    'd3de35824a2e46f2bbf405f3b649d3d90ebd7934',
+    '7c3524a96086ec17bc42970ee01f5c9b918fb1af',
 ];
 export const PatreonBlock: React.FC<IProps> = (props: IProps) => {
     const savedCode = localStorage.getItem(localStorageKey) ?? '';
@@ -28,7 +28,8 @@ export const PatreonBlock: React.FC<IProps> = (props: IProps) => {
     const onTextChange = (value: string) => {
         setPassword(value);
 
-        const hashedValue = getHashForObject({hash: value});
+        const hashedValue = simpleHash({hash: value});
+        console.log(value, hashedValue)
         if (validCodes.includes(hashedValue) == false) return;
 
         localStorage.setItem(localStorageKey, hashedValue);
