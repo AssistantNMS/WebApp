@@ -639,4 +639,13 @@ export enum LocaleKey {
   optional = 'optional',
   communityMissionProgressTracker = 'communityMissionProgressTracker',
   dataFromNMSCD = 'dataFromNMSCD',
+  backup = 'backup',
+  fishing = 'fishing',
+  fishingLocation = 'fishingLocation',
+  fishingBait = 'fishingBait',
+  biome = 'biome',
+  time = 'time',
+  size = 'size',
+  infoProvidedByAndOther = 'infoProvidedByAndOther',
+  contributeToExternalInfo = 'contributeToExternalInfo',
 }

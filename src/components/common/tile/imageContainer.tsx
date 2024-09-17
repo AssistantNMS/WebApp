@@ -13,6 +13,7 @@ interface IProps {
   Description?: string;
   Colour?: string;
   BadgeColour?: string;
+  Height?: string;
   OutputQuantity?: number;
 }
 
@@ -30,6 +31,7 @@ export const ImageContainer = (props: IProps) => {
       <LazyLoadImage
         src={imageString}
         className={classNames({ grayscale: props.greyScale === true })}
+        height={props.Height}
         alt={props.Name ?? props.Icon}
         draggable={false}
       />

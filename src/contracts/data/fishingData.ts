@@ -13,4 +13,3 @@ export interface FishingData {
   RequiredMissionName: string;
   MissionCatchChanceOverride: number;
 }
-

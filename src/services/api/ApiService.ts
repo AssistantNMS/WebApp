@@ -2,6 +2,7 @@ import { CommunityMissionViewModel } from '../../contracts/generated/communityMi
 import { GuideMetaViewModel } from '../../contracts/generated/guideMetaViewModel';
 import { CommunitySpotlightViewModel } from '../../contracts/generated/Model/Community/communitySpotlightViewModel';
 import { ContributorViewModel } from '../../contracts/generated/Model/Contributor/contributorViewModel';
+import { GoodGuyFreeBaitViewModel } from '../../contracts/generated/Model/goodGuyFreeBaitViewModel';
 import { ExpeditionSeasonViewModel } from '../../contracts/generated/Model/HelloGames/expeditionSeasonViewModel';
 import { WeekendMissionViewModel } from '../../contracts/generated/Model/HelloGames/weekendMissionViewModel';
 import { NmsfmTrackDataViewModel } from '../../contracts/generated/Model/nmsfmTrackDataViewModel';
@@ -24,11 +25,7 @@ export class ApiService extends BaseApiService {
   _getOrAdd = getOrAddFunc(this._hashLookup);
 
   async getCommunityMission(): Promise<ResultWithValue<CommunityMissionViewModel>> {
-    return this._getOrAdd(() => this._getCommunityMission(), ['_getCommunityMission', new Date().getMinutes().toString()]);
-  }
-
-  async _getCommunityMission(): Promise<ResultWithValue<CommunityMissionViewModel>> {
-    return await this.get<CommunityMissionViewModel>('HelloGames/CommunityMission/');
+    return this._getOrAdd(() => this.get<CommunityMissionViewModel>('HelloGames/CommunityMission/'), ['_getCommunityMission', new Date().getMinutes().toString()]);
   }
 
   async getGuideMetaData(guid: string): Promise<ResultWithValue<GuideMetaViewModel>> {
@@ -69,5 +66,9 @@ export class ApiService extends BaseApiService {
 
   async getCommunitySpotlight(): Promise<ResultWithValue<Array<CommunitySpotlightViewModel>>> {
     return await this.get<Array<CommunitySpotlightViewModel>>('CommunitySpotlight');
+  }
+
+  async getGoodGuysFreeBait(langCode: string): Promise<ResultWithValue<Array<GoodGuyFreeBaitViewModel>>> {
+    return this._getOrAdd(() => this.get<Array<GoodGuyFreeBaitViewModel>>(`GoodGuysFree/${langCode}/bait`), ['_getGoodGuysFreeBait', new Date().getMinutes().toString()]);
   }
 }

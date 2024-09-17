@@ -14,6 +14,7 @@ import { anyObject } from '../../helper/typescriptHacks';
 import { BaseJsonService } from './BaseJsonService';
 import { SocialItem } from '../../contracts/data/socialItem';
 import { getOrAddFunc } from '../../helper/hashHelper';
+import { BaitData } from '../../contracts/data/baitData';
 
 export class DataJsonService extends BaseJsonService {
   private _hashLookup: Record<string, unknown> = {};
@@ -120,6 +121,26 @@ export class DataJsonService extends BaseJsonService {
     };
   }
 
+  async getBaitDataForItem(itemId: string): Promise<ResultWithValue<Array<BaitData>>> {
+    return this._getOrAdd(() => this._getBaitDataForItem(itemId), ['_getBaitDataForItem', itemId]);
+  }
+  async _getBaitDataForItem(itemId: string): Promise<ResultWithValue<Array<BaitData>>> {
+    const allItemsresult = await this.getBaitData();
+    if (!allItemsresult.isSuccess)
+      return {
+        isSuccess: false,
+        value: [],
+        errorMessage: allItemsresult.errorMessage,
+      };
+
+    const specificToItemId = allItemsresult.value.filter((sc) => sc.AppId == itemId);
+    return {
+      isSuccess: true,
+      value: specificToItemId,
+      errorMessage: '',
+    };
+  }
+
   getAlphabetTranslations = () => this.getDataJsonBasic<Array<AlphabetTranslation>>('alphabetTranslations.json');
   getAssistantAppLinks = () => this.getDataJsonBasic<Array<AssistantAppLinks>>('assistantAppLinks.json');
   getDeveloperDetails = () => this.getDataJsonBasic<Array<DevDetail>>('developerDetails.json');
@@ -132,4 +153,5 @@ export class DataJsonService extends BaseJsonService {
   getSocial = () => this.getDataJsonBasic<Array<SocialItem>>('social.json');
   getUnusedMilestonePatches = () => this.getDataJsonBasic<Array<QuicksilverStore>>('unusedMilestonePatches.json');
   getTwitchDrops = () => this.getDataJsonBasic<Array<TwitchDrop>>('twitchDrops.json');
+  getBaitData = () => this.getDataJsonBasic<Array<BaitData>>('bait.json');
 }

@@ -1,8 +1,12 @@
 import React, { ReactNode } from 'react';
 import { NavigateFunction } from 'react-router-dom';
+
 import { PositiveButton } from '../../components/common/button/positiveButton';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
+import { PatreonBlock } from '../../components/common/patreon/patreonBlock';
 import { EggTraitListTile } from '../../components/tilePresenter/eggTraitTile/eggTraitListTile';
+import { BaitDataListTile } from '../../components/tilePresenter/fishingTile/baitDataListTile';
+import { GgfBaitDataListTileForCatalogue } from '../../components/tilePresenter/fishingTile/ggfBaitDataListTile';
 import { GenericItemWithRequirementsListTile } from '../../components/tilePresenter/genericItemListTile/genericItemWithRequirementsListTile';
 import { CronusCookingListTile } from '../../components/tilePresenter/processorItemListTile/cronusCookingTile';
 import { ProcessorItemListTile } from '../../components/tilePresenter/processorItemListTile/processorItemListTile';
@@ -18,8 +22,10 @@ import { RewardFromQuicksilverTile } from '../../components/tilePresenter/reward
 import { ProceduralStatBonusItemListTile, StatBonusItemListTile } from '../../components/tilePresenter/statBonusTile/statBonusItemListTile';
 import { UpdateItemListTile } from '../../components/tilePresenter/updateItemTilePresenter';
 import { IdPrefix } from '../../constants/IdPrefix';
+import { patreonUnlockDate } from '../../constants/Patreon';
 import * as Route from '../../constants/Route';
 import { UsageKey } from '../../constants/UsageKey';
+import { BaitData } from '../../contracts/data/baitData';
 import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
 import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
@@ -35,6 +41,7 @@ import { StatBonus } from '../../contracts/StatBonus';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { translate } from '../../localization/Translate';
+import { ApiService } from '../../services/api/ApiService';
 
 export const displayRequiredItems = (resArray: Array<RequiredItemDetails>, navigate: NavigateFunction) => {
   if (resArray == null || resArray.length < 1) return null;
@@ -256,6 +263,40 @@ export const displayFromUpdate = (addedInUpdateArray: Array<MajorUpdateItem>) =>
         />
       }
     />
+  );
+};
+
+export const displayBaitData = (
+  itemId: string,
+  apiService: ApiService,
+  baitData: Array<BaitData>,
+  selectedLanguage?: string,
+) => {
+  if (baitData == null || baitData.length < 1) {
+    return (
+      <PatreonBlock dateAvailable={patreonUnlockDate.fishing} hideBlocker={true}>
+        <GgfBaitDataListTileForCatalogue
+          itemId={itemId}
+          apiService={apiService}
+          selectedLanguage={selectedLanguage}
+        />
+      </PatreonBlock>
+    );
+  }
+
+  return (
+    <PatreonBlock dateAvailable={patreonUnlockDate.fishing} hideBlocker={true}>
+      <CommonSection
+        heading={translate(LocaleKey.fishingBait)}
+        content={
+          <GenericListPresenter
+            list={baitData}
+            presenter={(listItem) => <BaitDataListTile {...listItem} isCatalogueMode={true} />}
+            isCentered={shouldListBeCentered(baitData.length)}
+          />
+        }
+      />
+    </PatreonBlock>
   );
 };
 

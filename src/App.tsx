@@ -19,6 +19,9 @@ import { DonationPresenter } from './pages/donation/donationPresenter';
 import { ExpeditionSeasonList } from './pages/expeditionSeason/expeditionSeasonList';
 import { ExpeditionSeasonPhaseList } from './pages/expeditionSeason/expeditionSeasonPhaseList';
 import { FavouritePresenter } from './pages/favourite/favouritePresenter';
+import { FishingBaitPage } from './pages/fishing/fishingBait';
+import { FishingListPage } from './pages/fishing/fishingList';
+import { FishingPage } from './pages/fishing/fishingPage';
 import { GenericPageAllRequiredContainer } from './pages/generic/genericPageAllRequiredContainer';
 import { GuideDetailPageContainer } from './pages/guide/guideDetailPageContainer';
 import { GuidePageContainer } from './pages/guide/guidePageContainer';
@@ -41,7 +44,6 @@ import { AddEditPortalContainer } from './pages/portal/addEditPortalContainer';
 import { PortalListContainer } from './pages/portal/portalListContainer';
 import { RandomPortal } from './pages/portal/randomPortalPresenter';
 import { SolarPanelPage } from './pages/power/solarPanelPage';
-import { FishingListPage } from './pages/fishing/fishingList';
 import { ProcessorItemContainer } from './pages/processor/processorItemContainer';
 import { SettingPresenter } from './pages/setting/settingPresenter';
 import { SocialPresenter } from './pages/social/socialPresenter';
@@ -53,7 +55,7 @@ import { TwitchDropPage } from './pages/twitchDrops/twitchDropPage';
 import { TwitchDropViewerPage } from './pages/twitchDrops/twitchDropViewerPage';
 import { WhatIsNewContainer } from './pages/whatIsNew/whatIsNewContainer';
 
-interface IProps extends IStateProps, IStateDispatch {}
+interface IProps extends IStateProps, IStateDispatch { }
 
 const AppUnconnected: React.FC<IProps> = (props: IProps) => {
   const location = useLocation();
@@ -64,7 +66,7 @@ const AppUnconnected: React.FC<IProps> = (props: IProps) => {
     trackPageView(location.pathname);
   }, [location, location.pathname]);
 
-  const toggleMenu = () => (props?.toggleMenu != null ? props?.toggleMenu() : () => {});
+  const toggleMenu = () => (props?.toggleMenu != null ? props?.toggleMenu() : () => { });
 
   return (
     <div id="app" className={classNames('menu-on-left', props.selectedLanguage, props.selectedFont)}>
@@ -112,7 +114,9 @@ const AppUnconnected: React.FC<IProps> = (props: IProps) => {
               <Route path={route.newItemsAdded} element={<NewItemsPresenter />} />
               <Route path={route.newItemsAddedDetails} element={<NewItemsDetailPresenter />} />
               <Route path={route.solarPanel} element={<SolarPanelPage />} />
-              <Route path={route.fishing} element={<FishingListPage />} />
+              <Route path={route.fishing} element={<FishingPage />} />
+              <Route path={route.fishingLocation} element={<FishingListPage />} />
+              <Route path={route.fishingBait} element={<FishingBaitPage />} />
 
               <Route path={route.techTree} element={<TechTreeContainer />} />
               <Route path={route.titles} element={<TitlesContainer />} />

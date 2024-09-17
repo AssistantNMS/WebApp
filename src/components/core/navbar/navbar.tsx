@@ -9,14 +9,15 @@ import { translate } from '../../../localization/Translate';
 import { BaseFloatingActionButton } from '../../floatingActionButton/baseFloatingActionButton';
 import { LanguageListTile } from '../../tilePresenter/languageTilePresenter';
 import { IReduxProps, mapDispatchToProps, mapStateToProps } from './navbar.Redux';
+import { BaitData } from '../../../contracts/data/baitData';
 
-interface IWithDepInj {}
+interface IWithDepInj { }
 interface IWithoutDepInj {
   title: string;
   additionalItems?: Array<JSX.Element>;
 }
 
-interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps {}
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
 
 const NavBarUnconnected: React.FC<IProps> = (props: IProps) => {
   const [langDropdownVisible, setLangDropdownVisible] = useState<boolean>(false);
@@ -61,10 +62,10 @@ const NavBarUnconnected: React.FC<IProps> = (props: IProps) => {
           <ul className="navbar-nav">
             {props.additionalItems != null && props.additionalItems.length > 0
               ? props.additionalItems.map((child, index) => (
-                  <li key={`additionalItems: ${index}`} data-id={`additionalItems: ${index}`}>
-                    {child}
-                  </li>
-                ))
+                <li key={`additionalItems: ${index}`} data-id={`additionalItems: ${index}`}>
+                  {child}
+                </li>
+              ))
               : null}
             <li className="nav-item dropdown noselect" draggable={false}>
               <BaseFloatingActionButton

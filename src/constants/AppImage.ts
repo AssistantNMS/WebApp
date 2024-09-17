@@ -10,7 +10,7 @@ export class AppImage {
   static creatureKill: string = 'special/creatureKill.png';
   static communityMissionProgress: string = 'special/communityMissionProgress.png';
   static cronus: string = 'special/cronus.png';
-  static patreon: string = AppImage.base + 'patreon.png';
+  static patreon: string = '/'+ AppImage.base + 'patreon.png';
 
   static sclass: string = 'special/sclass.png';
   static aclass: string = 'special/aclass.png';
@@ -37,6 +37,8 @@ export class AppImage {
   static platformNswAlt: string = '/' + AppImage.base + 'platformNswAlt.png';
   static unknownButton: string = 'unknown.png';
 
+  static fishingBait: string = 'technology/280.png';
+  static fishingLocation: string = 'curiosities/173.png';
   static nanites: string = '/' + AppImage.base + 'nanites.png';
   static units: string = '/' + AppImage.base + 'credits.png';
   static quicksilverForChips: string = '/' + AppImage.base + 'rawMaterials/57.png';

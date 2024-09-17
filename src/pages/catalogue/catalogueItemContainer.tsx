@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { IChipProps } from '../../components/common/chip/additionalInfoChip';
 import { AppImage } from '../../constants/AppImage';
 import { CurrencyGameItems } from '../../constants/Currency';
 import { NetworkState } from '../../constants/NetworkState';
@@ -8,6 +9,7 @@ import { UsageKey } from '../../constants/UsageKey';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
+import { BaitData } from '../../contracts/data/baitData';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
@@ -25,6 +27,7 @@ import { IDependencyInjection, withServices } from '../../integration/dependency
 import { LocaleKey } from '../../localization/LocaleKey';
 import { localeMap } from '../../localization/Localization';
 import { translate } from '../../localization/Translate';
+import { ApiService } from '../../services/api/ApiService';
 import { AllGameItemsService } from '../../services/json/AllGameItemsService';
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { GameItemService } from '../../services/json/GameItemService';
@@ -32,18 +35,18 @@ import { RechargeByService } from '../../services/json/RechargeByService';
 import { ToastService } from '../../services/toastService';
 import { IReduxProps, mapDispatchToProps, mapStateToProps } from './catalogueItem.Redux';
 import { CatalogueItemPresenter } from './catalogueItemPresenter';
-import { IChipProps } from '../../components/common/chip/additionalInfoChip';
 
 interface IWithDepInj {
+  apiService: ApiService;
   gameItemService: GameItemService;
   allGameItemsService: AllGameItemsService;
   rechargeByService: RechargeByService;
   dataJsonService: DataJsonService;
   toastService: ToastService;
 }
-interface IWithoutDepInj {}
+interface IWithoutDepInj { }
 
-interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps {}
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
 
 interface IState {
   item: GameItemModel;
@@ -60,6 +63,7 @@ interface IState {
   starshipScrapItems: Array<StarshipScrap>;
   creatureHarvests: Array<CreatureHarvest>;
   addedInUpdate: Array<MajorUpdateItem>;
+  baitData: Array<BaitData>;
   additionalData: Array<IChipProps>;
 }
 
@@ -81,6 +85,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     starshipScrapItems: [],
     creatureHarvests: [],
     addedInUpdate: [],
+    baitData: [],
     additionalData: [],
   };
 
@@ -139,6 +144,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
 
     const addedInUpdateTask = optionalListTask(usages, UsageKey.isAddedInTrackedUpdate, () => getAddedInUpdateForItem(itemId));
     const eggTraitTask = optionalListTask(['true'], 'true', () => getEggTrait(itemId));
+    const baitDataTask = optionalListTask(['true'], 'true', () => getBaitData(itemId));
     const controlLookupTask = optionalListTask(['true'], 'true', () => getControlLookup(props.controlPlatform));
 
     const newMeta: IState = {
@@ -156,6 +162,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
       starshipScrapItems: await scrapDataTask,
       creatureHarvests: await creatureHarvestsTask,
       addedInUpdate: await addedInUpdateTask,
+      baitData: await baitDataTask,
       additionalData: await getAdditionalData(item),
     };
     setItemMeta(newMeta);
@@ -238,6 +245,12 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     const majorUpdates = await props.dataJsonService.getMajorUpdateForItem(itemId);
     if (!majorUpdates.isSuccess) return [];
     return majorUpdates.value;
+  };
+
+  const getBaitData = async (itemId: string) => {
+    const baitData = await props.dataJsonService.getBaitDataForItem(itemId);
+    if (!baitData.isSuccess) return [];
+    return baitData.value;
   };
 
   const getAdditionalData = async (itemDetail: GameItemModel): Promise<Array<IChipProps>> => {
@@ -373,6 +386,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     starshipScrapItems,
     creatureHarvests,
     addedInUpdate,
+    baitData,
     additionalData,
   } = itemMeta;
 
@@ -393,6 +407,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
       starshipScrapItems={starshipScrapItems}
       creatureHarvests={creatureHarvests}
       addedInUpdate={addedInUpdate}
+      baitData={baitData}
       additionalData={additionalData}
       networkState={networkState}
       addThisItemToCart={addThisItemToCart}
@@ -406,6 +421,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
 export const CatalogueItemContainer = withServices<IWithoutDepInj, IWithDepInj>(
   connect(mapStateToProps, mapDispatchToProps)(CatalogueItemContainerUnconnected),
   (services: IDependencyInjection) => ({
+    apiService: services.apiService,
     gameItemService: services.gameItemService,
     allGameItemsService: services.allGameItemsService,
     rechargeByService: services.rechargeByService,

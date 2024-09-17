@@ -18,6 +18,8 @@ import {
   patreonMenuItem,
   whatIsNewMenuItem,
 } from '../constants/MenuItems';
+import { dateIsBefore } from './dateHelper';
+import { patreonUnlockDate } from '../constants/Patreon';
 
 export const menuItemSeperator = {
   name: 'Separator',
@@ -155,7 +157,7 @@ export const getMenuSection3 = () => {
     icon: 'phishing',
     iconType: DrawerIconType.Material,
     isActive: false,
-    isPatreon: true,
+    isPatreon: (dateIsBefore(new Date(), patreonUnlockDate.fishing)),
   });
   menuItems.push(menuItemSeperator);
   return menuItems;

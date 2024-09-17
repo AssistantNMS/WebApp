@@ -17,6 +17,7 @@ import { NetworkState } from '../../constants/NetworkState';
 import { GameItemModel } from '../../contracts/GameItemModel';
 import { Processor } from '../../contracts/Processor';
 import { RequiredItemDetails } from '../../contracts/RequiredItemDetails';
+import { BaitData } from '../../contracts/data/baitData';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
@@ -30,6 +31,7 @@ import { translate } from '../../localization/Translate';
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { ToastService } from '../../services/toastService';
 import {
+  displayBaitData,
   displayCookItems,
   displayEggTraits,
   displayExtraDetailsSection,
@@ -48,6 +50,7 @@ import {
 } from './catalogueItem.Components';
 import { IReduxProps } from './catalogueItem.Redux';
 import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
+import { ApiService } from '../../services/api/ApiService';
 
 interface IProps extends IReduxProps {
   // Container State
@@ -65,12 +68,14 @@ interface IProps extends IReduxProps {
   starshipScrapItems: Array<StarshipScrap>;
   creatureHarvests: Array<CreatureHarvest>;
   addedInUpdate: Array<MajorUpdateItem>;
+  baitData: Array<BaitData>;
   additionalData: Array<IChipProps>;
 
   networkState: NetworkState;
 
   toastService: ToastService;
   dataJsonService: DataJsonService;
+  apiService: ApiService;
 
   // Container Specific
   addThisItemToCart: () => void;
@@ -159,6 +164,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
           {displayProceduralStatBonuses(props.item.NumStatsMin, props.item.NumStatsMax, props.item.ProceduralStatBonuses)}
           {displayRewardFrom(props.item, props.starshipScrapItems, props.creatureHarvests)}
           {displayEggTraits(props.eggTrait)}
+          {displayBaitData(props.item.Id, props.apiService, props.baitData, props.selectedLanguage)}
           {displayFromUpdate(props.addedInUpdate)}
         </div>
         <DevDetailsBottomModalSheet
@@ -179,7 +185,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
         title={title}
         description={description}
         selectedLanguage={props.selectedLanguage}
-        // updateUrl={true}
+      // updateUrl={true}
       />
       <NavBar title={title} additionalItems={getFloatingActionButtons(true)} />
       {handleLoadingOrError()}
