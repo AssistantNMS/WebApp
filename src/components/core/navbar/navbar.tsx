@@ -9,7 +9,6 @@ import { translate } from '../../../localization/Translate';
 import { BaseFloatingActionButton } from '../../floatingActionButton/baseFloatingActionButton';
 import { LanguageListTile } from '../../tilePresenter/languageTilePresenter';
 import { IReduxProps, mapDispatchToProps, mapStateToProps } from './navbar.Redux';
-import { BaitData } from '../../../contracts/data/baitData';
 
 interface IWithDepInj { }
 interface IWithoutDepInj {
@@ -79,9 +78,11 @@ const NavBarUnconnected: React.FC<IProps> = (props: IProps) => {
                 onClick={showLangDropdown}
               />
               <div className={classNames('dropdown-menu dropdown-menu-right noselect', { show: langDropdownVisible })} draggable={false}>
-                {localeMap.map((locale: LocalizationMap) => (
-                  <LanguageListTile key={`${locale.countryCode}-${locale.code}`} onClick={() => selectLanguage(locale)} {...locale} />
-                ))}
+                {localeMap
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((locale: LocalizationMap) => (
+                    <LanguageListTile key={`${locale.countryCode}-${locale.code}`} onClick={() => selectLanguage(locale)} {...locale} />
+                  ))}
               </div>
             </li>
           </ul>

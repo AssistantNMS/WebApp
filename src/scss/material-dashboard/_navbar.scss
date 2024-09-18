@@ -61,9 +61,12 @@
 
     .dropdown-menu-right {
       transform-origin: 100% 0;
+      max-height: 80vh;
+      overflow-y: auto;
     }
 
     .nav-item.active .nav-link {
+
       &,
       &:hover,
       &:focus {
@@ -91,7 +94,7 @@
       display: block;
       border-radius: 1px;
 
-      & + .navbar-toggler-icon {
+      &+.navbar-toggler-icon {
         margin-top: 4px;
       }
     }
@@ -122,7 +125,7 @@
     margin-left: 1rem;
   }
 
-  > .container {
+  >.container {
     flex: 1;
   }
 
