@@ -8,6 +8,11 @@ export const getHashForObject = (object: hash.NotUndefined) => {
   return hashString;
 };
 
+export const simpleHash = (object: hash.NotUndefined) => {
+  const hashString = hash([object]);
+  return hashString;
+};
+
 export const getOrAddFunc =
   (hashLookup: Record<string, unknown>) =>
   async <T>(promise: () => Promise<T>, argsArray: Array<string>): Promise<T> => {

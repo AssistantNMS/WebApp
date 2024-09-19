@@ -1,22 +1,17 @@
 import React, { useState } from 'react';
 
-import { translate } from '../../../localization/Translate';
-import { LocaleKey } from '../../../localization/LocaleKey';
 import { AppImage } from '../../../constants/AppImage';
-import { getHashForObject } from '../../../helper/hashHelper';
+import { localStorageKey, validCodes } from '../../../constants/Patreon';
+import { simpleHash } from '../../../helper/hashHelper';
+import { LocaleKey } from '../../../localization/LocaleKey';
+import { translate } from '../../../localization/Translate';
 
 interface IProps {
-  children: JSX.Element;
-  dateAvailable: Date;
+    children: JSX.Element;
+    dateAvailable: Date;
+    hideBlocker?: boolean;
 }
 
-const localStorageKey = 'assistantNMS-patreon-block';
-const validCodes = [
-    '0dab8e1b3a7cd6661d8c93255dbe4818882479c9',
-    '6c4c342dfb52aa8243cc55a264f121148951c44f',
-    '31fbf9a9ed57c47b7df66bdefa9a065c730fb969',
-    '9546d2a26825a8a4bd04969437df832af90d0abe',
-];
 export const PatreonBlock: React.FC<IProps> = (props: IProps) => {
     const savedCode = localStorage.getItem(localStorageKey) ?? '';
     const [password, setPassword] = useState<string>(savedCode);
@@ -28,7 +23,8 @@ export const PatreonBlock: React.FC<IProps> = (props: IProps) => {
     const onTextChange = (value: string) => {
         setPassword(value);
 
-        const hashedValue = getHashForObject({hash: value});
+        const hashedValue = simpleHash({ hash: value });
+        console.log(value, hashedValue)
         if (validCodes.includes(hashedValue) == false) return;
 
         localStorage.setItem(localStorageKey, hashedValue);
@@ -36,44 +32,48 @@ export const PatreonBlock: React.FC<IProps> = (props: IProps) => {
 
     const getFriendlyTimeLeft = (millisecondsLeft: number) => {
         if (millisecondsLeft <= 0) {
-          return translate(LocaleKey.completed);
+            return translate(LocaleKey.completed);
         }
-      
+
         const seconds = millisecondsLeft / 1000;
         if (seconds < 1) return translate(LocaleKey.completed);
         if (seconds < 60) {
-          return translate(LocaleKey.seconds)
-              .replaceAll('{0}', seconds.toFixed(0));
+            return translate(LocaleKey.seconds)
+                .replaceAll('{0}', seconds.toFixed(0));
         }
-      
+
         const minutes = seconds / 60;
         if (minutes < 1) {
-          return translate(LocaleKey.seconds)
-              .replaceAll('{0}', seconds.toFixed(0));
+            return translate(LocaleKey.seconds)
+                .replaceAll('{0}', seconds.toFixed(0));
         }
         if (minutes < 60) {
-          return translate(LocaleKey.minutes)
-              .replaceAll('{0}', minutes.toFixed(0));
+            return translate(LocaleKey.minutes)
+                .replaceAll('{0}', minutes.toFixed(0));
         }
-      
+
         const hours = minutes / 60;
         if (hours < 1) {
-          return translate(LocaleKey.minutes)
-              .replaceAll('{0}', minutes.toFixed(0));
+            return translate(LocaleKey.minutes)
+                .replaceAll('{0}', minutes.toFixed(0));
         }
         if (hours < 60) {
-          return translate(LocaleKey.hours)
-              .replaceAll('{0}', hours.toFixed(0));
+            return translate(LocaleKey.hours)
+                .replaceAll('{0}', hours.toFixed(0));
         }
-      
+
         const days = hours / 24;
         if (days < 1) {
-          return translate(LocaleKey.hours)
-              .replaceAll('{0}', hours.toFixed(0));
+            return translate(LocaleKey.hours)
+                .replaceAll('{0}', hours.toFixed(0));
         }
         return translate(LocaleKey.days)
             .replaceAll('{0}', days.toFixed(0));
-    }      
+    }
+
+    if (props.hideBlocker == true) {
+        return (<span></span>);
+    }
 
     return (
         <div className="patreon-block-container">

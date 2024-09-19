@@ -3,27 +3,30 @@ import { connect } from 'react-redux';
 import { DefaultAnimation } from '../../components/common/animation/defaultAnim';
 import { DropDown } from '../../components/common/dropdown/dropdown';
 import { GenericListPresenter } from '../../components/common/genericListPresenter/genericListPresenter';
+import { PatreonBlock } from '../../components/common/patreon/patreonBlock';
 import { SearchBar } from '../../components/common/searchBar';
 import { Error } from '../../components/core/error/error';
 import { HeadComponent } from '../../components/core/headComponent';
-import { Loading, SmallLoading } from '../../components/core/loading/loading';
+import { Loading } from '../../components/core/loading/loading';
 import { NavBar } from '../../components/core/navbar/navbar';
-import { FishingDataListTile } from '../../components/tilePresenter/fishingTile/FishingDataListTile';
+import { FishingDataListTile } from '../../components/tilePresenter/fishingTile/fishingDataListTile';
 import { NetworkState } from '../../constants/NetworkState';
+import { patreonUnlockDate } from '../../constants/Patreon';
 import { FishingData } from '../../contracts/data/fishingData';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { capitaliseFirstChar } from '../../helper/stringHelper';
 import { IDependencyInjection, withServices } from '../../integration/dependencyInjection';
+import { LocaleKey } from '../../localization/LocaleKey';
+import { translate } from '../../localization/Translate';
 import { GameItemService } from '../../services/json/GameItemService';
 import { IReduxProps, mapStateToProps } from './fishingList.Redux';
-import { PatreonBlock } from '../../components/common/patreon/patreonBlock';
 
 interface IWithDepInj {
   gameItemService: GameItemService;
 }
-interface IWithoutDepInj {}
+interface IWithoutDepInj { }
 
-interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps {}
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
 
 interface ISearchState {
   search: string;
@@ -31,6 +34,8 @@ interface ISearchState {
   time?: string;
   size?: string;
 }
+
+const defaultDisplayValue = '...';
 
 export const FishingListPageUnconnected: React.FC<IProps> = (props: IProps) => {
   const [networkState, setNetworkState] = useState<NetworkState>(NetworkState.Loading);
@@ -45,7 +50,7 @@ export const FishingListPageUnconnected: React.FC<IProps> = (props: IProps) => {
     size: undefined,
   });
 
-  const defaultOption = {title: '...', value: undefined as unknown as string}
+  const defaultOption = { title: '❌', value: undefined as unknown as string }
 
   useEffect(() => {
     fetchData();
@@ -63,9 +68,9 @@ export const FishingListPageUnconnected: React.FC<IProps> = (props: IProps) => {
     const sizeRecord: Record<string, string> = {};
 
     for (const item of itemsResult.value) {
-    for (const biome of item.Biomes) {
-      biomesRecord[biome] = biome;
-    }
+      for (const biome of item.Biomes) {
+        biomesRecord[biome] = biome;
+      }
       timesRecord[item.Time] = item.Time;
       sizeRecord[item.Size] = item.Size;
     }
@@ -110,7 +115,7 @@ export const FishingListPageUnconnected: React.FC<IProps> = (props: IProps) => {
   };
 
   const renderContent = () => {
-    if (networkState === NetworkState.Loading) return <SmallLoading />;
+    if (networkState === NetworkState.Loading) return <Loading />;
     if (networkState === NetworkState.Error) return <Error />;
 
     const displayItems = getDisplayItems(items, searchState);
@@ -127,58 +132,42 @@ export const FishingListPageUnconnected: React.FC<IProps> = (props: IProps) => {
     );
   };
 
-  const title = 'Fishing (UNDER CONSTRUCTION)';//translate(LocaleKey.catalogue);
+  const title = translate(LocaleKey.fishingLocation);
   return (
     <DefaultAnimation>
       <HeadComponent title={title} />
       <NavBar title={title} />
-      <div className="content" data-id="FishingListPage">
-        <PatreonBlock dateAvailable={new Date('2024-09-30T23:59')}>
+      <div className="content" data-id="FishingList">
+        <PatreonBlock dateAvailable={patreonUnlockDate.fishing}>
           <>
-            {
-              networkState == NetworkState.Loading && (
-                <Loading />
-              )
-            }
-            {
-              networkState == NetworkState.Error && (
-                <Error />
-              )
-            }
-            {
-              networkState == NetworkState.Success && (    
-                <>
-                  <SearchBar searchTerm={searchState.search} onSearchTextChange={onSearchTextChange} />
-                  <div className="row">
-                    <div className="col-4 mb-3">
-                      <DropDown
-                        btnPrefix='Biome: '
-                        defaultValue='...'
-                        options={[defaultOption, ...biomes.map(d => ({title: capitaliseFirstChar(d), value: d}))]}
-                        onClick={(value) => setSearchState(prev => ({...prev, biome: value}))}
-                      />
-                    </div>
-                    <div className="col-4 mb-3">
-                      <DropDown
-                        btnPrefix='Time: '
-                        defaultValue='...'
-                        options={[defaultOption, ...times.map(d => ({title: capitaliseFirstChar(d), value: d}))]}
-                        onClick={(value) => setSearchState(prev => ({...prev, time: value}))}
-                      />
-                    </div>
-                    <div className="col-4 mb-3">
-                      <DropDown
-                        btnPrefix='Size: '
-                        defaultValue='...'
-                        options={[defaultOption, ...size.map(d => ({title: capitaliseFirstChar(d), value: d}))]}
-                        onClick={(value) => setSearchState(prev => ({...prev, size: value}))}
-                      />
-                    </div>
-                    {renderContent()}
-                  </div>
-                </>      
-              )
-            }
+            <SearchBar searchTerm={searchState.search} onSearchTextChange={onSearchTextChange} />
+            <div className="row">
+              <div className="col-4 mb-3">
+                <DropDown
+                  btnPrefix={`${translate(LocaleKey.biome)}: `}
+                  defaultValue={defaultDisplayValue}
+                  options={[defaultOption, ...biomes.map(d => ({ title: capitaliseFirstChar(d), value: d }))]}
+                  onClick={(value) => setSearchState(prev => ({ ...prev, biome: value }))}
+                />
+              </div>
+              <div className="col-4 mb-3">
+                <DropDown
+                  btnPrefix={`${translate(LocaleKey.time)}: `}
+                  defaultValue={defaultDisplayValue}
+                  options={[defaultOption, ...times.map(d => ({ title: capitaliseFirstChar(d), value: d }))]}
+                  onClick={(value) => setSearchState(prev => ({ ...prev, time: value }))}
+                />
+              </div>
+              <div className="col-4 mb-3">
+                <DropDown
+                  btnPrefix={`${translate(LocaleKey.size)}: `}
+                  defaultValue={defaultDisplayValue}
+                  options={[defaultOption, ...size.map(d => ({ title: capitaliseFirstChar(d), value: d }))]}
+                  onClick={(value) => setSearchState(prev => ({ ...prev, size: value }))}
+                />
+              </div>
+              {renderContent()}
+            </div>
           </>
         </PatreonBlock>
       </div>

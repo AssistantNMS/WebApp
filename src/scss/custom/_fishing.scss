@@ -1,15 +1,139 @@
 .fishing {
 
+    &.row {
+        .update.item.card {
+            border-radius: 0.5em;
+            overflow: hidden;
+
+            .text-container {
+                margin: 0;
+            }
+        }
+    }
+
     .action-container {
         .action-list {
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin-right: 0.6em;
-    
+            padding-block: 0.5em;
+            gap: 0.5em;
+
             .dayNight {
                 max-height: 50%;
             }
         }
+    }
+}
+
+.bait.alert {
+    border-radius: 0.5em;
+    border: 2px solid #ff9e0f;
+    background-color: transparent;
+    box-shadow: none;
+
+    span {
+        display: inline;
+        max-width: unset;
+    }
+
+    a,
+    .secondary {
+        color: $link-color;
+    }
+}
+
+.bait-detailed {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+
+    * {
+        color: white;
+    }
+
+    &.reduced-content {
+
+        .image-container,
+        .image-container img {
+            max-height: 50px !important;
+        }
+
+        .text-container {
+            display: none;
+        }
+
+        .stats {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 0.7em;
+            padding-right: 50px;
+        }
+    }
+
+    .info {
+        display: flex;
+
+        .image-container,
+        .image-container img {
+            max-height: 100px;
+            border-top-left-radius: 0.5em;
+        }
+
+        .info-text {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            .text-container {
+                font-size: 1.5em;
+                text-align: left;
+                padding-top: 0.6em;
+                padding-left: 1rem;
+                padding-right: 0.5rem;
+            }
+
+            .stats {
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+                padding-left: 1rem;
+            }
+        }
+
+        .img-stat {
+            img {
+                max-width: 2rem;
+                max-height: 2rem;
+                margin-top: -0.125em;
+                margin-right: 0.25em;
+            }
+        }
+    }
+
+    .details {
+        display: block;
+        border-top: 2px solid rgba(255, 255, 255, 0.2);
+
+        table {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            width: 100%;
+        }
+    }
+
+    .negative {
+        color: rgb(255, 162, 178);
+    }
+
+    .neutral {
+        opacity: 0.33;
+    }
+
+    .positive {
+        color: lightgreen;
     }
 }
