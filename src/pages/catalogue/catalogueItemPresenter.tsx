@@ -21,6 +21,7 @@ import { BaitData } from '../../contracts/data/baitData';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
+import { FishingData } from '../../contracts/data/fishingData';
 import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
 import { ControllerPlatformType } from '../../contracts/enum/ControllerPlatformType';
@@ -28,6 +29,7 @@ import { Recharge } from '../../contracts/recharge/recharge';
 import { anyObject } from '../../helper/typescriptHacks';
 import { LocaleKey } from '../../localization/LocaleKey';
 import { translate } from '../../localization/Translate';
+import { ApiService } from '../../services/api/ApiService';
 import { DataJsonService } from '../../services/json/DataJsonService';
 import { ToastService } from '../../services/toastService';
 import {
@@ -35,6 +37,7 @@ import {
   displayCookItems,
   displayEggTraits,
   displayExtraDetailsSection,
+  displayFishData,
   displayFromUpdate,
   displayObsoleteTech,
   displayProceduralStatBonuses,
@@ -50,7 +53,6 @@ import {
 } from './catalogueItem.Components';
 import { IReduxProps } from './catalogueItem.Redux';
 import { DevDetailsBottomModalSheet } from './devDetailsBottomModalSheet';
-import { ApiService } from '../../services/api/ApiService';
 
 interface IProps extends IReduxProps {
   // Container State
@@ -68,6 +70,7 @@ interface IProps extends IReduxProps {
   starshipScrapItems: Array<StarshipScrap>;
   creatureHarvests: Array<CreatureHarvest>;
   addedInUpdate: Array<MajorUpdateItem>;
+  fishData: Array<FishingData>;
   baitData: Array<BaitData>;
   additionalData: Array<IChipProps>;
 
@@ -164,6 +167,7 @@ export const CatalogueItemPresenter: React.FC<IProps> = (props: IProps) => {
           {displayProceduralStatBonuses(props.item.NumStatsMin, props.item.NumStatsMax, props.item.ProceduralStatBonuses)}
           {displayRewardFrom(props.item, props.starshipScrapItems, props.creatureHarvests)}
           {displayEggTraits(props.eggTrait)}
+          {displayFishData(props.fishData)}
           {displayBaitData(props.item.Id, props.apiService, props.baitData, props.selectedLanguage)}
           {displayFromUpdate(props.addedInUpdate)}
         </div>

@@ -13,6 +13,7 @@ import { BaitData } from '../../contracts/data/baitData';
 import { PlatformControlMapping } from '../../contracts/data/controlMapping';
 import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
+import { FishingData } from '../../contracts/data/fishingData';
 import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
 import { BlueprintSource, blueprintToLocalKey } from '../../contracts/enum/BlueprintSource';
@@ -64,6 +65,7 @@ interface IState {
   creatureHarvests: Array<CreatureHarvest>;
   addedInUpdate: Array<MajorUpdateItem>;
   baitData: Array<BaitData>;
+  fishData: Array<FishingData>;
   additionalData: Array<IChipProps>;
 }
 
@@ -86,6 +88,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     creatureHarvests: [],
     addedInUpdate: [],
     baitData: [],
+    fishData: anyObject,
     additionalData: [],
   };
 
@@ -142,9 +145,11 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     const scrapDataTask = optionalTask(usages, UsageKey.isRewardFromShipScrap, () => getScrapDataForItem(itemId));
     const creatureHarvestsTask = optionalTask(usages, UsageKey.hasCreatureHarvest, () => getCreatureHarvestsForItem(itemId));
 
+    const fishDataTask = optionalListTask(usages, UsageKey.hasFishingLocation, () => getFishData(itemId));
+    const baitDataTask = optionalListTask(usages, UsageKey.hasFishingBait, () => getBaitData(itemId));
+
     const addedInUpdateTask = optionalListTask(usages, UsageKey.isAddedInTrackedUpdate, () => getAddedInUpdateForItem(itemId));
     const eggTraitTask = optionalListTask(['true'], 'true', () => getEggTrait(itemId));
-    const baitDataTask = optionalListTask(['true'], 'true', () => getBaitData(itemId));
     const controlLookupTask = optionalListTask(['true'], 'true', () => getControlLookup(props.controlPlatform));
 
     const newMeta: IState = {
@@ -163,6 +168,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
       creatureHarvests: await creatureHarvestsTask,
       addedInUpdate: await addedInUpdateTask,
       baitData: await baitDataTask,
+      fishData: await fishDataTask,
       additionalData: await getAdditionalData(item),
     };
     setItemMeta(newMeta);
@@ -245,6 +251,12 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     const majorUpdates = await props.dataJsonService.getMajorUpdateForItem(itemId);
     if (!majorUpdates.isSuccess) return [];
     return majorUpdates.value;
+  };
+
+  const getFishData = async (itemId: string) => {
+    const fishData = await props.gameItemService.getFishingForItem(itemId);
+    if (!fishData.isSuccess) return [];
+    return [fishData.value];
   };
 
   const getBaitData = async (itemId: string) => {
@@ -386,6 +398,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
     starshipScrapItems,
     creatureHarvests,
     addedInUpdate,
+    fishData,
     baitData,
     additionalData,
   } = itemMeta;
@@ -407,6 +420,7 @@ const CatalogueItemContainerUnconnected: React.FC<IProps> = (props: IProps) => {
       starshipScrapItems={starshipScrapItems}
       creatureHarvests={creatureHarvests}
       addedInUpdate={addedInUpdate}
+      fishData={fishData}
       baitData={baitData}
       additionalData={additionalData}
       networkState={networkState}
