@@ -14,6 +14,9 @@ export const UsageKey = {
   isRewardFromShipScrap: 'IsRewardFromShipScrap',
   isAddedInTrackedUpdate: 'IsAddedInTrackedUpdate',
   hasCreatureHarvest: 'HasCreatureHarvest',
+  hasFishingLocation: 'HasFishingLocation',
+  hasFishingBait: 'HasFishingBait',
+  hasGoodGuysFreeBait: 'HasGoodGuysFreeBait',
 
   isExpeditionSeason: 'IsExpeditionSeason{0}Reward',
   isTwitchCampaign: 'IsTwitchCampaign{0}Reward',

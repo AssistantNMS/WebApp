@@ -6,6 +6,7 @@ import { GenericListPresenter } from '../../components/common/genericListPresent
 import { PatreonBlock } from '../../components/common/patreon/patreonBlock';
 import { EggTraitListTile } from '../../components/tilePresenter/eggTraitTile/eggTraitListTile';
 import { BaitDataListTile } from '../../components/tilePresenter/fishingTile/baitDataListTile';
+import { FishingDataListTile } from '../../components/tilePresenter/fishingTile/fishingDataListTile';
 import { GgfBaitDataListTileForCatalogue } from '../../components/tilePresenter/fishingTile/ggfBaitDataListTile';
 import { GenericItemWithRequirementsListTile } from '../../components/tilePresenter/genericItemListTile/genericItemWithRequirementsListTile';
 import { CronusCookingListTile } from '../../components/tilePresenter/processorItemListTile/cronusCookingTile';
@@ -28,6 +29,7 @@ import { UsageKey } from '../../constants/UsageKey';
 import { BaitData } from '../../contracts/data/baitData';
 import { CreatureHarvest } from '../../contracts/data/creatureHarvest';
 import { EggNeuralTrait } from '../../contracts/data/eggNeuralTrait';
+import { FishingData } from '../../contracts/data/fishingData';
 import { MajorUpdateItem } from '../../contracts/data/majorUpdateItem';
 import { StarshipScrap } from '../../contracts/data/starshipScrap';
 import { CurrencyType } from '../../contracts/enum/CurrencyType';
@@ -263,6 +265,25 @@ export const displayFromUpdate = (addedInUpdateArray: Array<MajorUpdateItem>) =>
         />
       }
     />
+  );
+};
+
+export const displayFishData = (fishData: Array<FishingData>) => {
+  if (fishData == null || fishData.length < 1) return null;
+
+  return (
+    <PatreonBlock dateAvailable={patreonUnlockDate.fishing} hideBlocker={true}>
+      <CommonSection
+        heading={translate(LocaleKey.fishingBait)}
+        content={
+          <GenericListPresenter
+            list={fishData}
+            presenter={(listItem) => <FishingDataListTile {...listItem} isCatalogueMode={true} />}
+            isCentered={shouldListBeCentered(fishData.length)}
+          />
+        }
+      />
+    </PatreonBlock>
   );
 };
 
