@@ -274,7 +274,7 @@ export const displayFishData = (fishData: Array<FishingData>) => {
   return (
     <PatreonBlock dateAvailable={patreonUnlockDate.fishing} hideBlocker={true}>
       <CommonSection
-        heading={translate(LocaleKey.fishingBait)}
+        heading={translate(LocaleKey.fishingLocation)}
         content={
           <GenericListPresenter
             list={fishData}

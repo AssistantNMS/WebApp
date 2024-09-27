@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { AppImage } from '../../../constants/AppImage';
 import { catalogueItem, fishingLocation } from '../../../constants/Route';
 import { FishingData } from '../../../contracts/data/fishingData';
+import { LocaleKey } from '../../../localization/LocaleKey';
+import { translate } from '../../../localization/Translate';
 import { ImageContainer } from '../../common/tile/imageContainer';
 import { TextContainer } from '../../common/tile/textContainer';
-import { AppImage } from '../../../constants/AppImage';
 
 interface IProps extends FishingData {
   isCatalogueMode?: boolean;
@@ -17,6 +19,7 @@ export const FishingDataListTile = (props: IProps) => (
     <div className="gen-item-content-container fishing">
       <TextContainer text={props.Name} />
       <div className="quantity-container">
+        {translate(LocaleKey.biome)}:&nbsp;
         {
           props.Biomes.map((b, index) => (
             <span key={`${b}-${index}`}>

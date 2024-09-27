@@ -3,6 +3,7 @@ export interface FishingData {
   AppId: string;
   Name: string;
   Icon: string;
+  Colour: string;
   Quality: string;
   Size: string;
   Time: string;
