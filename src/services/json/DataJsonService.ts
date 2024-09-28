@@ -18,23 +18,25 @@ import { BaitData } from '../../contracts/data/baitData';
 
 export class DataJsonService extends BaseJsonService {
   private _hashLookup: Record<string, unknown> = {};
+  private _versionNum: string;
 
   constructor() {
     super();
     this._hashLookup = anyObject;
+    this._versionNum = `v=${process.env.REACT_APP_VERSION}`;
   }
 
   _getOrAdd = getOrAddFunc(this._hashLookup);
 
   getDataJsonBasic = async <T>(fileName: string): Promise<ResultWithValue<T>> => {
-    return this._getOrAdd(async () => await this.getAsset<T>(`data/${fileName}`), [fileName]);
+    return this._getOrAdd(async () => await this.getAsset<T>(`data/${fileName}?${this._versionNum}`), [fileName]);
   };
 
   async getAllControls(): Promise<ResultWithValue<ControlMappingList>> {
     return this._getOrAdd(() => this._getAllControls(), ['_getAllControls']);
   }
   async _getAllControls(): Promise<ResultWithValue<ControlMappingList>> {
-    const result = await this.getAsset<ControlMappingList>(`data/controllerLookup.json`);
+    const result = await this.getAsset<ControlMappingList>(`data/controllerLookup.json?${this._versionNum}`);
     if (!result.isSuccess)
       return {
         isSuccess: false,
@@ -70,14 +72,14 @@ export class DataJsonService extends BaseJsonService {
     return this._getOrAdd(() => this._getStarshipScrapData(), ['_getStarshipScrapData']);
   }
   async _getStarshipScrapData(): Promise<ResultWithValue<Array<StarshipScrap>>> {
-    return this.getDataJsonBasic<Array<StarshipScrap>>('starshipScrap.json');
+    return this.getDataJsonBasic<Array<StarshipScrap>>(`starshipScrap.json?${this._versionNum}`);
   }
 
   async getStarshipScrapDataForItem(itemId: string): Promise<ResultWithValue<Array<StarshipScrap>>> {
     return this._getOrAdd(() => this._getStarshipScrapDataForItem(itemId), ['_getStarshipScrapDataForItem', itemId]);
   }
   async _getStarshipScrapDataForItem(itemId: string): Promise<ResultWithValue<Array<StarshipScrap>>> {
-    const allItemsresult = await this.getDataJsonBasic<Array<StarshipScrap>>('starshipScrap.json');
+    const allItemsresult = await this.getDataJsonBasic<Array<StarshipScrap>>(`starshipScrap.json?${this._versionNum}`);
 
     if (!allItemsresult.isSuccess)
       return {
@@ -98,7 +100,7 @@ export class DataJsonService extends BaseJsonService {
     return this._getOrAdd(() => this._getMajorUpdateItems(), ['_getMajorUpdateItems']);
   }
   async _getMajorUpdateItems(): Promise<ResultWithValue<Array<MajorUpdateItem>>> {
-    return this.getDataJsonBasic<Array<MajorUpdateItem>>('updates.json');
+    return this.getDataJsonBasic<Array<MajorUpdateItem>>(`updates.json?${this._versionNum}`);
   }
 
   async getMajorUpdateForItem(itemId: string): Promise<ResultWithValue<Array<MajorUpdateItem>>> {

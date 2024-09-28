@@ -20,10 +20,12 @@ import { BaseJsonService } from './BaseJsonService';
 
 export class GameItemService extends BaseJsonService {
   private _hashLookup: Record<string, unknown> = {};
+  private _versionNum: string;
 
   constructor() {
     super();
     this._hashLookup = anyObject;
+    this._versionNum = `v=${process.env.REACT_APP_VERSION}`;
   }
 
   _getOrAdd = getOrAddFunc(this._hashLookup);
@@ -38,7 +40,7 @@ export class GameItemService extends BaseJsonService {
       return { isSuccess: false, value: [], errorMessage: 'Locale not found' };
     }
 
-    const langResult = await this.getAsset<Array<GameItemModel>>(`json/${detailJson}.json`);
+    const langResult = await this.getAsset<Array<GameItemModel>>(`json/${detailJson}.json?${this._versionNum}`);
     if (!langResult.isSuccess)
       return {
         isSuccess: false,
@@ -144,7 +146,7 @@ export class GameItemService extends BaseJsonService {
       return { isSuccess: false, value: [], errorMessage: 'Locale not found' };
     }
 
-    const langResult = await this.getAsset<Array<Processor>>(`json/${detailJson}.json`);
+    const langResult = await this.getAsset<Array<Processor>>(`json/${detailJson}.json?${this._versionNum}`);
     if (!langResult.isSuccess)
       return {
         isSuccess: false,
@@ -351,7 +353,7 @@ export class GameItemService extends BaseJsonService {
       };
 
     const path = translate(weekendMissionJson).toString();
-    const weekendMissionsResult = await this.getAsset<Array<WeekendMission>>(`json/${path}.json`);
+    const weekendMissionsResult = await this.getAsset<Array<WeekendMission>>(`json/${path}.json?${this._versionNum}`);
     if (!weekendMissionsResult.isSuccess)
       return {
         isSuccess: false,
@@ -391,7 +393,7 @@ export class GameItemService extends BaseJsonService {
   }
   async _getAllSeasonExpeditions(): Promise<ResultWithValue<Array<ExpeditionSeason>>> {
     const path = translate(LocaleKey.seasonalExpeditionJson).toString();
-    const seasonExpeditionResult = await this.getAsset<Array<ExpeditionSeason>>(`json/${path}.json`);
+    const seasonExpeditionResult = await this.getAsset<Array<ExpeditionSeason>>(`json/${path}.json?${this._versionNum}`);
     if (!seasonExpeditionResult.isSuccess)
       return {
         isSuccess: false,
@@ -411,7 +413,7 @@ export class GameItemService extends BaseJsonService {
   }
   async _getTechTree(): Promise<ResultWithValue<Array<UnlockableTechTree>>> {
     const path = translate(LocaleKey.techTreeJson).toString();
-    const jsonResult = await this.getAsset<Array<UnlockableTechTree>>(`json/${path}.json`);
+    const jsonResult = await this.getAsset<Array<UnlockableTechTree>>(`json/${path}.json?${this._versionNum}`);
     if (!jsonResult.isSuccess)
       return {
         isSuccess: false,
@@ -431,7 +433,7 @@ export class GameItemService extends BaseJsonService {
   }
   async _getTitles(): Promise<ResultWithValue<Array<TitleData>>> {
     const path = translate(LocaleKey.titlesJson).toString();
-    const jsonResult = await this.getAsset<Array<TitleData>>(`json/${path}.json`);
+    const jsonResult = await this.getAsset<Array<TitleData>>(`json/${path}.json?${this._versionNum}`);
     if (!jsonResult.isSuccess)
       return {
         isSuccess: false,
@@ -451,7 +453,7 @@ export class GameItemService extends BaseJsonService {
   }
   async _getCreatureHarvestForItem(itemId: string): Promise<ResultWithValue<Array<CreatureHarvest>>> {
     const path = translate(LocaleKey.creatureHarvestJson).toString();
-    const jsonResult = await this.getAsset<Array<CreatureHarvest>>(`json/${path}.json`);
+    const jsonResult = await this.getAsset<Array<CreatureHarvest>>(`json/${path}.json?${this._versionNum}`);
 
     if (!jsonResult.isSuccess)
       return {
@@ -468,13 +470,12 @@ export class GameItemService extends BaseJsonService {
     };
   }
 
-
   async getAllFishing(): Promise<ResultWithValue<Array<FishingData>>> {
     return this._getOrAdd(() => this._getAllFishing(), ['_getAllFishing']);
   }
   async _getAllFishing(): Promise<ResultWithValue<Array<FishingData>>> {
     const path = translate(LocaleKey.fishingJson).toString();
-    const jsonResult = await this.getAsset<Array<FishingData>>(`json/${path}.json`);
+    const jsonResult = await this.getAsset<Array<FishingData>>(`json/${path}.json?${this._versionNum}`);
     if (!jsonResult.isSuccess)
       return {
         isSuccess: false,
@@ -493,7 +494,7 @@ export class GameItemService extends BaseJsonService {
     return this._getOrAdd(() => this._getFishingForItem(itemId), ['_getFishingForItem', itemId]);
   }
   async _getFishingForItem(itemId: string): Promise<ResultWithValue<FishingData>> {
-    const jsonResult = await this._getAllFishing()
+    const jsonResult = await this._getAllFishing();
 
     if (!jsonResult.isSuccess)
       return {
