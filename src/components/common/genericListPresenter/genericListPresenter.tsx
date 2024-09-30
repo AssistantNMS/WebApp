@@ -22,7 +22,7 @@ export function GenericListPresenter<T>(props: IProps<T>) {
 
   const bootstrapClasses = props.bootstrapClasses || defaultGenericListPresenterClasses;
   const safeList = props.list ?? [];
-  const list = safeList.slice(0, showMore ? safeList.length : (props.limitResultsTo ?? safeList.length));
+  const list = safeList.slice(0, showMore ? safeList.length : props.limitResultsTo ?? safeList.length);
 
   const renderShowHideMore = (localList: Array<T>) => {
     if (props.limitResultsTo == null || localList.length <= props.limitResultsTo || props.hideViewMoreButton === true) {

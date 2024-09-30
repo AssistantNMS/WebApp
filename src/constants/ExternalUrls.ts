@@ -26,5 +26,6 @@ export class ExternalUrls {
   static communityMissionProgress = 'https://nmscd.github.io/CommunityMission-Progress-Viewer/';
   static communitySearch = 'https://community.nmscd.com';
   static captainSteveYoutubeDiceRollPlaylist = 'https://www.youtube.com/playlist?list=PLFVRR5wqxfgy3LKw29OG3OTekvQdayz4s';
+  static captainSteveYoutubeFishLocationsPlaylist = 'https://www.youtube.com/playlist?list=PLFVRR5wqxfgw_NJIpVzltiyl2oN_dePES';
   static devilinPixyFiddle = 'https://jsfiddle.net/DevilinPixy/vm6k1woe/';
 }
