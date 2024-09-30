@@ -20,13 +20,17 @@ import { LocaleKey } from '../../localization/LocaleKey';
 import { translate } from '../../localization/Translate';
 import { GameItemService } from '../../services/json/GameItemService';
 import { IReduxProps, mapStateToProps } from './fishingList.Redux';
+import { BasicLink } from '../../components/core/link';
+import { ExternalUrls } from '../../constants/ExternalUrls';
+import { ImageContainer } from '../../components/common/tile/imageContainer';
+import { TextContainer } from '../../components/common/tile/textContainer';
 
 interface IWithDepInj {
   gameItemService: GameItemService;
 }
-interface IWithoutDepInj { }
+interface IWithoutDepInj {}
 
-interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps { }
+interface IProps extends IWithDepInj, IWithoutDepInj, IReduxProps {}
 
 interface ISearchState {
   search: string;
@@ -50,7 +54,7 @@ export const FishingListPageUnconnected: React.FC<IProps> = (props: IProps) => {
     size: undefined,
   });
 
-  const defaultOption = { title: '❌', value: undefined as unknown as string }
+  const defaultOption = { title: '❌', value: undefined as unknown as string };
 
   useEffect(() => {
     fetchData();
@@ -88,9 +92,9 @@ export const FishingListPageUnconnected: React.FC<IProps> = (props: IProps) => {
     const searchValue = e?.target?.value || '';
     if (searchState.search === searchValue) return;
 
-    setSearchState(prev => ({
+    setSearchState((prev) => ({
       ...prev,
-      search: searchValue
+      search: searchValue,
     }));
   };
 
@@ -101,7 +105,7 @@ export const FishingListPageUnconnected: React.FC<IProps> = (props: IProps) => {
         if (!item.Name.toLowerCase().includes(searchState?.search.trim().toLowerCase())) continue;
       }
       if (searchState?.biome != null) {
-        if (!item.Biomes.map(b => b.toLocaleLowerCase()).includes(searchState.biome.toLocaleLowerCase())) continue;
+        if (!item.Biomes.map((b) => b.toLocaleLowerCase()).includes(searchState.biome.toLocaleLowerCase())) continue;
       }
       if (searchState?.time != null) {
         if (!item.Time.toLocaleLowerCase().includes(searchState.time.toLocaleLowerCase())) continue;
@@ -124,7 +128,7 @@ export const FishingListPageUnconnected: React.FC<IProps> = (props: IProps) => {
       <div className="col-12">
         <GenericListPresenter
           list={displayItems}
-          identifier={item => item.Id}
+          identifier={(item) => item.Id}
           presenter={FishingDataListTile}
           isCentered={shouldListBeCentered(displayItems.length)}
         />
@@ -133,6 +137,7 @@ export const FishingListPageUnconnected: React.FC<IProps> = (props: IProps) => {
   };
 
   const title = translate(LocaleKey.fishingLocation);
+  const isEnglish = props.selectedLanguage == 'en';
   return (
     <DefaultAnimation>
       <HeadComponent title={title} />
@@ -146,27 +151,60 @@ export const FishingListPageUnconnected: React.FC<IProps> = (props: IProps) => {
                 <DropDown
                   btnPrefix={`${translate(LocaleKey.biome)}: `}
                   defaultValue={defaultDisplayValue}
-                  options={[defaultOption, ...biomes.map(d => ({ title: capitaliseFirstChar(d), value: d }))]}
-                  onClick={(value) => setSearchState(prev => ({ ...prev, biome: value }))}
+                  options={[defaultOption, ...biomes.map((d) => ({ title: capitaliseFirstChar(d), value: d }))]}
+                  onClick={(value) => setSearchState((prev) => ({ ...prev, biome: value }))}
                 />
               </div>
               <div className="col-4 mb-3">
                 <DropDown
                   btnPrefix={`${translate(LocaleKey.time)}: `}
                   defaultValue={defaultDisplayValue}
-                  options={[defaultOption, ...times.map(d => ({ title: capitaliseFirstChar(d), value: d }))]}
-                  onClick={(value) => setSearchState(prev => ({ ...prev, time: value }))}
+                  options={[defaultOption, ...times.map((d) => ({ title: capitaliseFirstChar(d), value: d }))]}
+                  onClick={(value) => setSearchState((prev) => ({ ...prev, time: value }))}
                 />
               </div>
               <div className="col-4 mb-3">
                 <DropDown
                   btnPrefix={`${translate(LocaleKey.size)}: `}
                   defaultValue={defaultDisplayValue}
-                  options={[defaultOption, ...size.map(d => ({ title: capitaliseFirstChar(d), value: d }))]}
-                  onClick={(value) => setSearchState(prev => ({ ...prev, size: value }))}
+                  options={[defaultOption, ...size.map((d) => ({ title: capitaliseFirstChar(d), value: d }))]}
+                  onClick={(value) => setSearchState((prev) => ({ ...prev, size: value }))}
                 />
               </div>
               {renderContent()}
+
+              {isEnglish && (
+                <div className="col-12">
+                  <br />
+                  <br />
+                  <GenericListPresenter
+                    list={[
+                      {
+                        link: ExternalUrls.captainSteveYoutubeFishLocationsPlaylist,
+                        icon: 'contributors/captainSteve.png',
+                        name: 'Captain Steve',
+                        subtitle: 'Collecting all fish Playlist',
+                      },
+                    ]}
+                    presenter={(data: any) => (
+                      <BasicLink key={data.link} href={data.link} additionalClassNames="gen-item-container">
+                        <ImageContainer Icon={data.icon} Name={data.name} />
+                        <div className="gen-item-content-container">
+                          <TextContainer text={data.name} />
+                          <div className="quantity-container">{data.subtitle}</div>
+                        </div>
+                      </BasicLink>
+                    )}
+                    isCentered={true}
+                  />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </div>
+              )}
             </div>
           </>
         </PatreonBlock>
