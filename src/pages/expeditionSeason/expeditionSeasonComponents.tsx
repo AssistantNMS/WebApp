@@ -21,6 +21,7 @@ import {
   ExpeditionSeasonReward,
   MilestoneType,
 } from '../../contracts/helloGames/expeditionSeason';
+import { removeTags } from '../../components/common/descriptionRegexHighlighter';
 import { formatDate, friendlyTimeLeft, percentageProgress } from '../../helper/dateHelper';
 import { shouldListBeCentered } from '../../helper/mathHelper';
 import { LocaleKey } from '../../localization/LocaleKey';
@@ -247,7 +248,7 @@ export const ExpeditionSeasonPhaseMilestone: React.FC<IExpeditionSeasonPhaseMile
       <div className="milestone-content" onClick={openDetailPane}>
         <ImageContainer Icon={props.milestone.Icon} Name={props.milestone.Title} />
         <div className="text-container">
-          <h3>{props.milestone.Title}</h3>
+          <h3>{removeTags(props.milestone.Title)}</h3>
           <DecriptionRegexHighlightText orig={props.milestone.Description} controlLookup={[]} />
         </div>
         <div className="text-container rewards hidden-in-mobile">
