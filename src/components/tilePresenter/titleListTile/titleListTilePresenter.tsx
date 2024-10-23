@@ -40,7 +40,7 @@ export const TitleItemListTile: React.FC<IProps> = (props: IProps) => {
   const descrip = props.Description.replace('%NUM%', props.UnlockedByStatValue?.toString?.() ?? '');
   return (
     <div data-id="TitleItemListTile" className="gen-item-container title-item pointer" onClick={handleClick} draggable={false}>
-      <ImageContainer Icon={props.AppIcon} Name={props.Title} />
+      <ImageContainer Icon={props.AppIcon} Name={props.Title} notFoundImageSrc="/assets/images/other/52.png" />
       <div className="gen-item-content-container">
         <TextContainer text={title} additionalCss="pt2" />
         <div className="quantity-container pr-6">{descrip}</div>

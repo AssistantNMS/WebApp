@@ -169,3 +169,6 @@ export const DecriptionRegexHighlightText: React.FC<IProps> = (props: IProps) =>
 
   return <span className="highlight-text">{paragraphNodes}</span>;
 };
+export const removeTags = (name: string) => {
+  return name.replaceAll(/<(\w+)>(.*)<>/g, '');
+};

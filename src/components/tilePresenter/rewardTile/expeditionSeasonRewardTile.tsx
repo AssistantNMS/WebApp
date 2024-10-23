@@ -13,6 +13,7 @@ import { ImageContainer } from '../../common/tile/imageContainer';
 import { CustomizedRequiredItemDetails } from '../../common/tile/quantityContainer';
 import { TextContainer } from '../../common/tile/textContainer';
 import { TileLoading } from '../../core/loading/loading';
+import { removeTags } from '../../common/descriptionRegexHighlighter';
 
 interface IWithDepInj {
   gameItemService: GameItemService;
@@ -60,7 +61,7 @@ const ExpeditionSeasonRewardTileInternal: React.FC<IProps> = (props: IProps) => 
     <Link to={`${catalogueItem}/${props.Id}`} data-id="ExpeditionSeasonRewardTile" className="gen-item-container" draggable={false}>
       <ImageContainer {...item} />
       <div className="gen-item-content-container" data-type={props.Type}>
-        <TextContainer text={item.Name} additionalCss={additionalCss} />
+        <TextContainer text={removeTags(item.Name)} additionalCss={additionalCss} />
         {displayQuantity && (
           <div className="quantity-container">
             {translate(LocaleKey.quantity)}: {props.AmountMax}

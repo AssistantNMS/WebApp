@@ -11,6 +11,7 @@ interface IProps {
   Name: string;
   greyScale?: boolean;
   Description?: string;
+  notFoundImageSrc?: string;
   Colour?: string;
   BadgeColour?: string;
   Height?: string;
@@ -31,6 +32,7 @@ export const ImageContainer = (props: IProps) => {
       <LazyLoadImage
         src={imageString}
         className={classNames({ grayscale: props.greyScale === true })}
+        notFoundImageSrc={props.notFoundImageSrc}
         height={props.Height}
         alt={props.Name ?? props.Icon}
         draggable={false}
