@@ -7861,7 +7861,7 @@
       "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 500,
-    "BlueprintCostType": "None",
+    "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
     "RequiredItems": [
       {
@@ -7925,7 +7925,7 @@
       "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 500,
-    "BlueprintCostType": "None",
+    "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
     "RequiredItems": [
       {
@@ -7977,7 +7977,7 @@
       "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 500,
-    "BlueprintCostType": "None",
+    "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
     "RequiredItems": [
       {
@@ -8019,7 +8019,7 @@
       "IsAddedInTrackedUpdate"
     ],
     "BlueprintCost": 480,
-    "BlueprintCostType": "None",
+    "BlueprintCostType": "Nanites",
     "BlueprintSource": 0,
     "RequiredItems": [
       {
@@ -10688,6 +10688,38 @@
       }
     ],
     "StatBonuses": [],
+    "ConsumableRewardTexts": []
+  },
+  {
+    "Id": "tech294",
+    "Icon": "technology/294.png",
+    "Name": "Plasma Starship Trail",
+    "Group": "Starship Exhaust Override",
+    "Description": "An exclusive <STELLAR>Starship Exhaust Modifier<>.\n\nA visual enhancement for the starship, replacing traditional exhaust jets with a plasma thruster and generating a dramatic exhaust plume of ionized matter.\n\nInstall this <TECHNOLOGY>technology<> in your starship inventory to change the appearance of the engine exhaust trails.",
+    "BaseValueUnits": 1.0,
+    "CurrencyType": "None",
+    "Colour": "1A2733",
+    "Usages": [
+      "HasDevProperties",
+      "IsAddedInTrackedUpdate"
+    ],
+    "BlueprintCost": 1,
+    "BlueprintCostType": "None",
+    "BlueprintSource": 0,
+    "RequiredItems": [
+      {
+        "Id": "raw8",
+        "Quantity": 10
+      }
+    ],
+    "StatBonuses": [
+      {
+        "Name": "Boost",
+        "LocaleKeyTemplate": "percentage",
+        "Image": "recovery",
+        "Value": "1"
+      }
+    ],
     "ConsumableRewardTexts": []
   }
 ]
