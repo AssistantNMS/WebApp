@@ -74,11 +74,11 @@ export const NmsfmPresenter: React.FC<IProps> = (props: IProps) => {
               <ul style={{ listStyleType: 'none' }}>
                 <li className="radio-link">
                   <hr />
-                  <a href="https://zeno.fm/nms-fm/" style={{ textAlign: 'left' }}>
+                  <a href="https://zeno.fm/radio/nms-fm/" style={{ textAlign: 'left' }}>
                     <h4 className="mb-0">
                       <strong>Zeno Radio</strong>
                     </h4>
-                    <p>https://zeno.fm/nms-fm/</p>
+                    <p>https://zeno.fm/radio/nms-fm/</p>
                     <i className="material-icons" style={{ fontSize: '2em' }}>
                       open_in_new
                     </i>
